@@ -1,0 +1,1802 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.52
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.52,
+        "duration": 3.36
+    },
+    {
+        "text": "let's solve the problem",
+        "start": 3.52,
+        "duration": 4.239
+    },
+    {
+        "text": "clone graph so we're given a reference",
+        "start": 4.88,
+        "duration": 3.36
+    },
+    {
+        "text": "to a",
+        "start": 7.759,
+        "duration": 3.441
+    },
+    {
+        "text": "node that is in a connected undirected",
+        "start": 8.24,
+        "duration": 4.64
+    },
+    {
+        "text": "graph so it's convenient for us that the",
+        "start": 11.2,
+        "duration": 2.16
+    },
+    {
+        "text": "graph",
+        "start": 12.88,
+        "duration": 3.04
+    },
+    {
+        "text": "is completely connected and all we want",
+        "start": 13.36,
+        "duration": 3.839
+    },
+    {
+        "text": "to do is return a",
+        "start": 15.92,
+        "duration": 4.64
+    },
+    {
+        "text": "deep copy of that graph in other words a",
+        "start": 17.199,
+        "duration": 6.641
+    },
+    {
+        "text": "clone of that graph and for every single",
+        "start": 20.56,
+        "duration": 3.76
+    },
+    {
+        "text": "node",
+        "start": 23.84,
+        "duration": 4.0
+    },
+    {
+        "text": "we have two things we are given a value",
+        "start": 24.32,
+        "duration": 6.08
+    },
+    {
+        "text": "and we're also given a list of its",
+        "start": 27.84,
+        "duration": 4.48
+    },
+    {
+        "text": "neighbors so this is what's telling us",
+        "start": 30.4,
+        "duration": 3.679
+    },
+    {
+        "text": "you know how the graph happens to be",
+        "start": 32.32,
+        "duration": 4.079
+    },
+    {
+        "text": "connected these are the edges",
+        "start": 34.079,
+        "duration": 4.48
+    },
+    {
+        "text": "in our graph now if you're not super",
+        "start": 36.399,
+        "duration": 4.32
+    },
+    {
+        "text": "familiar with what a deep copy is so",
+        "start": 38.559,
+        "duration": 3.361
+    },
+    {
+        "text": "let's say that this",
+        "start": 40.719,
+        "duration": 4.241
+    },
+    {
+        "text": "is our example our input graph we're not",
+        "start": 41.92,
+        "duration": 4.88
+    },
+    {
+        "text": "just going to create a shallow copy",
+        "start": 44.96,
+        "duration": 2.96
+    },
+    {
+        "text": "meaning like this",
+        "start": 46.8,
+        "duration": 3.439
+    },
+    {
+        "text": "is the exact same graph like the color",
+        "start": 47.92,
+        "duration": 3.119
+    },
+    {
+        "text": "is yellow",
+        "start": 50.239,
+        "duration": 2.241
+    },
+    {
+        "text": "for both of these meaning like it's the",
+        "start": 51.039,
+        "duration": 2.801
+    },
+    {
+        "text": "exact same graph we didn't actually",
+        "start": 52.48,
+        "duration": 2.88
+    },
+    {
+        "text": "create a clone of it",
+        "start": 53.84,
+        "duration": 3.68
+    },
+    {
+        "text": "so this is not what we're looking for",
+        "start": 55.36,
+        "duration": 4.24
+    },
+    {
+        "text": "this is also not what we're looking for",
+        "start": 57.52,
+        "duration": 2.96
+    },
+    {
+        "text": "so this is a",
+        "start": 59.6,
+        "duration": 3.2
+    },
+    {
+        "text": "new graph because the color is slightly",
+        "start": 60.48,
+        "duration": 3.2
+    },
+    {
+        "text": "different",
+        "start": 62.8,
+        "duration": 3.2
+    },
+    {
+        "text": "but you see that the values aren't",
+        "start": 63.68,
+        "duration": 4.0
+    },
+    {
+        "text": "exactly how they're supposed to be we",
+        "start": 66.0,
+        "duration": 2.159
+    },
+    {
+        "text": "have a",
+        "start": 67.68,
+        "duration": 2.96
+    },
+    {
+        "text": "3 here whereas we have a 2 in the",
+        "start": 68.159,
+        "duration": 4.32
+    },
+    {
+        "text": "original graph right so basically we",
+        "start": 70.64,
+        "duration": 3.44
+    },
+    {
+        "text": "have these two's",
+        "start": 72.479,
+        "duration": 3.521
+    },
+    {
+        "text": "values mixed up so that's not what we",
+        "start": 74.08,
+        "duration": 4.719
+    },
+    {
+        "text": "want either we want an exact clone so",
+        "start": 76.0,
+        "duration": 5.68
+    },
+    {
+        "text": "it has the exact same structure and",
+        "start": 78.799,
+        "duration": 4.96
+    },
+    {
+        "text": "values right the values and structure is",
+        "start": 81.68,
+        "duration": 3.6
+    },
+    {
+        "text": "the exact same",
+        "start": 83.759,
+        "duration": 4.241
+    },
+    {
+        "text": "and this happens to be a new graph this",
+        "start": 85.28,
+        "duration": 4.72
+    },
+    {
+        "text": "is not the exact same graph as this one",
+        "start": 88.0,
+        "duration": 3.68
+    },
+    {
+        "text": "because this one is blue",
+        "start": 90.0,
+        "duration": 4.24
+    },
+    {
+        "text": "whereas this one is yellow so how are we",
+        "start": 91.68,
+        "duration": 4.32
+    },
+    {
+        "text": "going to solve this problem well you can",
+        "start": 94.24,
+        "duration": 2.08
+    },
+    {
+        "text": "see",
+        "start": 96.0,
+        "duration": 2.079
+    },
+    {
+        "text": "i'm going to use a hash map like pretty",
+        "start": 96.32,
+        "duration": 3.6
+    },
+    {
+        "text": "much every graph problem and we're going",
+        "start": 98.079,
+        "duration": 2.241
+    },
+    {
+        "text": "to use",
+        "start": 99.92,
+        "duration": 2.559
+    },
+    {
+        "text": "depth for a search where you can also",
+        "start": 100.32,
+        "duration": 3.92
+    },
+    {
+        "text": "use breadth first search if you want but",
+        "start": 102.479,
+        "duration": 4.081
+    },
+    {
+        "text": "let me show you the general algorithm",
+        "start": 104.24,
+        "duration": 4.159
+    },
+    {
+        "text": "so you can see these edges are",
+        "start": 106.56,
+        "duration": 3.519
+    },
+    {
+        "text": "undirected meaning you know if",
+        "start": 108.399,
+        "duration": 4.961
+    },
+    {
+        "text": "one has a neighbor two well two is also",
+        "start": 110.079,
+        "duration": 4.961
+    },
+    {
+        "text": "going to have a neighbor 1 in its",
+        "start": 113.36,
+        "duration": 2.88
+    },
+    {
+        "text": "neighbor list",
+        "start": 115.04,
+        "duration": 3.84
+    },
+    {
+        "text": "so let's say that 1 is our entry point",
+        "start": 116.24,
+        "duration": 4.32
+    },
+    {
+        "text": "in the graph what are we going to do you",
+        "start": 118.88,
+        "duration": 3.76
+    },
+    {
+        "text": "can see initially our hash map is empty",
+        "start": 120.56,
+        "duration": 4.48
+    },
+    {
+        "text": "what we're going to try to do is map the",
+        "start": 122.64,
+        "duration": 3.36
+    },
+    {
+        "text": "old nodes",
+        "start": 125.04,
+        "duration": 4.079
+    },
+    {
+        "text": "to the new nodes or the copy nodes so we",
+        "start": 126.0,
+        "duration": 4.879
+    },
+    {
+        "text": "start at one so what's the first thing",
+        "start": 129.119,
+        "duration": 3.361
+    },
+    {
+        "text": "we should do well obviously we should",
+        "start": 130.879,
+        "duration": 3.121
+    },
+    {
+        "text": "create a copy of this",
+        "start": 132.48,
+        "duration": 3.44
+    },
+    {
+        "text": "node that's what i'm gonna do so create",
+        "start": 134.0,
+        "duration": 3.52
+    },
+    {
+        "text": "a copy of one",
+        "start": 135.92,
+        "duration": 4.56
+    },
+    {
+        "text": "now this copy of one is not complete yet",
+        "start": 137.52,
+        "duration": 4.32
+    },
+    {
+        "text": "right because take a look at the",
+        "start": 140.48,
+        "duration": 3.6
+    },
+    {
+        "text": "original one it has two neighbors",
+        "start": 141.84,
+        "duration": 6.0
+    },
+    {
+        "text": "three and two so what can i do",
+        "start": 144.08,
+        "duration": 5.84
+    },
+    {
+        "text": "we know we're gonna have two neighbors",
+        "start": 147.84,
+        "duration": 3.6
+    },
+    {
+        "text": "for node one right",
+        "start": 149.92,
+        "duration": 4.88
+    },
+    {
+        "text": "can i just take these two original nodes",
+        "start": 151.44,
+        "duration": 4.72
+    },
+    {
+        "text": "and then put them over here",
+        "start": 154.8,
+        "duration": 5.36
+    },
+    {
+        "text": "three and two no i can't do that because",
+        "start": 156.16,
+        "duration": 5.68
+    },
+    {
+        "text": "for these nodes three and two we",
+        "start": 160.16,
+        "duration": 3.76
+    },
+    {
+        "text": "actually have to create copies of",
+        "start": 161.84,
+        "duration": 3.92
+    },
+    {
+        "text": "them as well so you can see that this is",
+        "start": 163.92,
+        "duration": 3.36
+    },
+    {
+        "text": "gonna be recursive",
+        "start": 165.76,
+        "duration": 3.28
+    },
+    {
+        "text": "so first thing i'm gonna do is i'm gonna",
+        "start": 167.28,
+        "duration": 3.44
+    },
+    {
+        "text": "go to its first neighbor which let's",
+        "start": 169.04,
+        "duration": 3.36
+    },
+    {
+        "text": "just say it happens to be two in this",
+        "start": 170.72,
+        "duration": 2.48
+    },
+    {
+        "text": "case right",
+        "start": 172.4,
+        "duration": 2.8
+    },
+    {
+        "text": "so i'm gonna now i'm gonna i'm gonna",
+        "start": 173.2,
+        "duration": 4.56
+    },
+    {
+        "text": "start cloning starting at two so",
+        "start": 175.2,
+        "duration": 4.56
+    },
+    {
+        "text": "we're at two we're gonna create a clone",
+        "start": 177.76,
+        "duration": 4.479
+    },
+    {
+        "text": "of two oh and by the way before i forget",
+        "start": 179.76,
+        "duration": 4.64
+    },
+    {
+        "text": "before we make a clone of two we know we",
+        "start": 182.239,
+        "duration": 3.92
+    },
+    {
+        "text": "just created a clone for one so what are",
+        "start": 184.4,
+        "duration": 2.72
+    },
+    {
+        "text": "we gonna do",
+        "start": 186.159,
+        "duration": 4.481
+    },
+    {
+        "text": "we're gonna map the original node one",
+        "start": 187.12,
+        "duration": 7.36
+    },
+    {
+        "text": "to its now clone node once we're mapping",
+        "start": 190.64,
+        "duration": 5.12
+    },
+    {
+        "text": "the old node",
+        "start": 194.48,
+        "duration": 3.759
+    },
+    {
+        "text": "to the new node and i'm going to show",
+        "start": 195.76,
+        "duration": 4.559
+    },
+    {
+        "text": "you why we're doing that in a second",
+        "start": 198.239,
+        "duration": 5.28
+    },
+    {
+        "text": "so now we're going to go to node 2 right",
+        "start": 200.319,
+        "duration": 4.881
+    },
+    {
+        "text": "and we're going to create a clone of",
+        "start": 203.519,
+        "duration": 4.161
+    },
+    {
+        "text": "node 2. so let's create that clone",
+        "start": 205.2,
+        "duration": 5.039
+    },
+    {
+        "text": "node 2. we're also going to add it to",
+        "start": 207.68,
+        "duration": 4.32
+    },
+    {
+        "text": "our hashmap right we're mapping the",
+        "start": 210.239,
+        "duration": 5.36
+    },
+    {
+        "text": "old node 2 to its clone so the clone",
+        "start": 212.0,
+        "duration": 6.64
+    },
+    {
+        "text": "in blue is the new node",
+        "start": 215.599,
+        "duration": 5.36
+    },
+    {
+        "text": "so now we've cloned one and we've cloned",
+        "start": 218.64,
+        "duration": 3.04
+    },
+    {
+        "text": "two",
+        "start": 220.959,
+        "duration": 3.2
+    },
+    {
+        "text": "and for two now let's look at two's",
+        "start": 221.68,
+        "duration": 3.52
+    },
+    {
+        "text": "neighbors well",
+        "start": 224.159,
+        "duration": 3.121
+    },
+    {
+        "text": "look you can see that it has a neighbor",
+        "start": 225.2,
+        "duration": 3.2
+    },
+    {
+        "text": "of one",
+        "start": 227.28,
+        "duration": 4.239
+    },
+    {
+        "text": "right and it has a neighbor of four so",
+        "start": 228.4,
+        "duration": 5.919
+    },
+    {
+        "text": "first we're gonna end up trying to do is",
+        "start": 231.519,
+        "duration": 4.241
+    },
+    {
+        "text": "create a clone for",
+        "start": 234.319,
+        "duration": 4.0
+    },
+    {
+        "text": "two because we know that we have to in",
+        "start": 235.76,
+        "duration": 4.96
+    },
+    {
+        "text": "the list of neighbors for two we have to",
+        "start": 238.319,
+        "duration": 3.681
+    },
+    {
+        "text": "add the clone",
+        "start": 240.72,
+        "duration": 3.36
+    },
+    {
+        "text": "one which we haven't done yet so what",
+        "start": 242.0,
+        "duration": 3.599
+    },
+    {
+        "text": "we're gonna end up doing is we're gonna",
+        "start": 244.08,
+        "duration": 5.04
+    },
+    {
+        "text": "try to clone one but we're gonna see",
+        "start": 245.599,
+        "duration": 6.961
+    },
+    {
+        "text": "in our hash map look we already ended up",
+        "start": 249.12,
+        "duration": 4.16
+    },
+    {
+        "text": "cloning",
+        "start": 252.56,
+        "duration": 3.44
+    },
+    {
+        "text": "one so basically what i'm saying is now",
+        "start": 253.28,
+        "duration": 4.16
+    },
+    {
+        "text": "we can say okay we can add",
+        "start": 256.0,
+        "duration": 4.079
+    },
+    {
+        "text": "this edge that two is connected to one",
+        "start": 257.44,
+        "duration": 4.24
+    },
+    {
+        "text": "that two has a neighbor",
+        "start": 260.079,
+        "duration": 4.801
+    },
+    {
+        "text": "that happens to be one and basically",
+        "start": 261.68,
+        "duration": 4.56
+    },
+    {
+        "text": "the reason i'm doing that is because we",
+        "start": 264.88,
+        "duration": 3.68
+    },
+    {
+        "text": "know this edge is going to be undirected",
+        "start": 266.24,
+        "duration": 3.28
+    },
+    {
+        "text": "it goes both",
+        "start": 268.56,
+        "duration": 2.8
+    },
+    {
+        "text": "ways so that's what i'm trying to do",
+        "start": 269.52,
+        "duration": 4.16
+    },
+    {
+        "text": "here so now we know that 2 is connected",
+        "start": 271.36,
+        "duration": 3.04
+    },
+    {
+        "text": "to 1",
+        "start": 273.68,
+        "duration": 3.76
+    },
+    {
+        "text": "we also know we have to clone node 4.",
+        "start": 274.4,
+        "duration": 4.799
+    },
+    {
+        "text": "so now we're going to visit position 4.",
+        "start": 277.44,
+        "duration": 3.6
+    },
+    {
+        "text": "let's create a clone for 4",
+        "start": 279.199,
+        "duration": 4.641
+    },
+    {
+        "text": "so let's add it to our hash map as well",
+        "start": 281.04,
+        "duration": 4.8
+    },
+    {
+        "text": "we're mapping the original node",
+        "start": 283.84,
+        "duration": 5.68
+    },
+    {
+        "text": "4 to its clone so now we're at the node",
+        "start": 285.84,
+        "duration": 5.2
+    },
+    {
+        "text": "4. we want to clone",
+        "start": 289.52,
+        "duration": 4.32
+    },
+    {
+        "text": "4's neighbors first you see that 4 has a",
+        "start": 291.04,
+        "duration": 3.36
+    },
+    {
+        "text": "neighbor",
+        "start": 293.84,
+        "duration": 2.799
+    },
+    {
+        "text": "2 which we already cloned so we're going",
+        "start": 294.4,
+        "duration": 4.4
+    },
+    {
+        "text": "to take this original node 4 right we",
+        "start": 296.639,
+        "duration": 3.521
+    },
+    {
+        "text": "know the original node",
+        "start": 298.8,
+        "duration": 3.76
+    },
+    {
+        "text": "we know the original node 4 has a as an",
+        "start": 300.16,
+        "duration": 4.16
+    },
+    {
+        "text": "original neighbor of 2",
+        "start": 302.56,
+        "duration": 4.16
+    },
+    {
+        "text": "so then we're going to take that 2 look",
+        "start": 304.32,
+        "duration": 4.56
+    },
+    {
+        "text": "it up in our hash map see okay we",
+        "start": 306.72,
+        "duration": 3.28
+    },
+    {
+        "text": "already created a",
+        "start": 308.88,
+        "duration": 3.28
+    },
+    {
+        "text": "clone of it and this is the clone and",
+        "start": 310.0,
+        "duration": 4.0
+    },
+    {
+        "text": "then we're gonna end up taking four and",
+        "start": 312.16,
+        "duration": 3.12
+    },
+    {
+        "text": "connecting it to",
+        "start": 314.0,
+        "duration": 3.44
+    },
+    {
+        "text": "two and let's just say that you know",
+        "start": 315.28,
+        "duration": 4.16
+    },
+    {
+        "text": "when we created the node four we ended",
+        "start": 317.44,
+        "duration": 3.52
+    },
+    {
+        "text": "up connecting two",
+        "start": 319.44,
+        "duration": 4.24
+    },
+    {
+        "text": "to four so let's just make this edge go",
+        "start": 320.96,
+        "duration": 3.04
+    },
+    {
+        "text": "both",
+        "start": 323.68,
+        "duration": 2.32
+    },
+    {
+        "text": "ways because we know that originally the",
+        "start": 324.0,
+        "duration": 3.6
+    },
+    {
+        "text": "edges are undirected",
+        "start": 326.0,
+        "duration": 4.479
+    },
+    {
+        "text": "so now that we've for four we wanted to",
+        "start": 327.6,
+        "duration": 4.56
+    },
+    {
+        "text": "create a clone of two",
+        "start": 330.479,
+        "duration": 3.521
+    },
+    {
+        "text": "we also want to create a clone of its",
+        "start": 332.16,
+        "duration": 3.2
+    },
+    {
+        "text": "second neighbor three",
+        "start": 334.0,
+        "duration": 3.919
+    },
+    {
+        "text": "so now let's create a clone of three so",
+        "start": 335.36,
+        "duration": 4.16
+    },
+    {
+        "text": "we know that four is going to be able to",
+        "start": 337.919,
+        "duration": 2.161
+    },
+    {
+        "text": "connect",
+        "start": 339.52,
+        "duration": 2.959
+    },
+    {
+        "text": "to this neighbor of three so we're",
+        "start": 340.08,
+        "duration": 4.0
+    },
+    {
+        "text": "creating a clone for it",
+        "start": 342.479,
+        "duration": 3.44
+    },
+    {
+        "text": "and we're gonna take the original three",
+        "start": 344.08,
+        "duration": 4.0
+    },
+    {
+        "text": "node and map it to its",
+        "start": 345.919,
+        "duration": 5.761
+    },
+    {
+        "text": "new copy node of three so now we're",
+        "start": 348.08,
+        "duration": 4.64
+    },
+    {
+        "text": "almost done",
+        "start": 351.68,
+        "duration": 3.28
+    },
+    {
+        "text": "right you can see that all four of the",
+        "start": 352.72,
+        "duration": 3.919
+    },
+    {
+        "text": "nodes have been copied",
+        "start": 354.96,
+        "duration": 4.72
+    },
+    {
+        "text": "but for three we haven't added threes",
+        "start": 356.639,
+        "duration": 4.0
+    },
+    {
+        "text": "and neighbors right",
+        "start": 359.68,
+        "duration": 3.359
+    },
+    {
+        "text": "three isn't ended up connecting to any",
+        "start": 360.639,
+        "duration": 3.921
+    },
+    {
+        "text": "other nodes yet but we know in the",
+        "start": 363.039,
+        "duration": 3.44
+    },
+    {
+        "text": "original three has two neighbors",
+        "start": 364.56,
+        "duration": 3.759
+    },
+    {
+        "text": "the first neighbor is four so we're",
+        "start": 366.479,
+        "duration": 3.921
+    },
+    {
+        "text": "going to say okay we know that",
+        "start": 368.319,
+        "duration": 4.88
+    },
+    {
+        "text": "this 4 needs to have a clone but the",
+        "start": 370.4,
+        "duration": 5.2
+    },
+    {
+        "text": "good thing is we already created a clone",
+        "start": 373.199,
+        "duration": 3.601
+    },
+    {
+        "text": "for that node",
+        "start": 375.6,
+        "duration": 3.52
+    },
+    {
+        "text": "and this is the clone so now we have it",
+        "start": 376.8,
+        "duration": 3.28
+    },
+    {
+        "text": "so we're gonna take",
+        "start": 379.12,
+        "duration": 4.0
+    },
+    {
+        "text": "three and ah and connect it to",
+        "start": 380.08,
+        "duration": 4.48
+    },
+    {
+        "text": "four so we're gonna make this edge",
+        "start": 383.12,
+        "duration": 3.28
+    },
+    {
+        "text": "basically double directed",
+        "start": 384.56,
+        "duration": 4.96
+    },
+    {
+        "text": "and three also has another neighbor of",
+        "start": 386.4,
+        "duration": 5.84
+    },
+    {
+        "text": "one and so basically what we need to do",
+        "start": 389.52,
+        "duration": 4.959
+    },
+    {
+        "text": "is make a clone of that one but we",
+        "start": 392.24,
+        "duration": 4.48
+    },
+    {
+        "text": "look in our hash map first and we see we",
+        "start": 394.479,
+        "duration": 4.0
+    },
+    {
+        "text": "already cloned one",
+        "start": 396.72,
+        "duration": 3.759
+    },
+    {
+        "text": "this is the clone so we're gonna take",
+        "start": 398.479,
+        "duration": 3.28
+    },
+    {
+        "text": "three and",
+        "start": 400.479,
+        "duration": 4.56
+    },
+    {
+        "text": "connect it to one right but wait we have",
+        "start": 401.759,
+        "duration": 4.72
+    },
+    {
+        "text": "one last problem right this",
+        "start": 405.039,
+        "duration": 3.521
+    },
+    {
+        "text": "one should also be connected to the",
+        "start": 406.479,
+        "duration": 4.321
+    },
+    {
+        "text": "three right you're right and that's what",
+        "start": 408.56,
+        "duration": 4.079
+    },
+    {
+        "text": "we're doing recursively now",
+        "start": 410.8,
+        "duration": 4.399
+    },
+    {
+        "text": "so we originally started at one then we",
+        "start": 412.639,
+        "duration": 3.68
+    },
+    {
+        "text": "went to two",
+        "start": 415.199,
+        "duration": 3.28
+    },
+    {
+        "text": "then we went to four then we went to",
+        "start": 416.319,
+        "duration": 3.44
+    },
+    {
+        "text": "three now what we're going to end up",
+        "start": 418.479,
+        "duration": 2.0
+    },
+    {
+        "text": "doing is",
+        "start": 419.759,
+        "duration": 2.401
+    },
+    {
+        "text": "reversing that because we remember we're",
+        "start": 420.479,
+        "duration": 3.12
+    },
+    {
+        "text": "doing this recursively so we're gonna",
+        "start": 422.16,
+        "duration": 2.879
+    },
+    {
+        "text": "pop back up to four",
+        "start": 423.599,
+        "duration": 3.841
+    },
+    {
+        "text": "we're gonna see four has already cloned",
+        "start": 425.039,
+        "duration": 4.16
+    },
+    {
+        "text": "its neighbors three already cloned its",
+        "start": 427.44,
+        "duration": 2.319
+    },
+    {
+        "text": "neighbors",
+        "start": 429.199,
+        "duration": 2.961
+    },
+    {
+        "text": "we're gonna pop back to two two already",
+        "start": 429.759,
+        "duration": 3.521
+    },
+    {
+        "text": "cloned its neighbors",
+        "start": 432.16,
+        "duration": 3.759
+    },
+    {
+        "text": "we're gonna pop back to one one we ended",
+        "start": 433.28,
+        "duration": 3.759
+    },
+    {
+        "text": "up cloning",
+        "start": 435.919,
+        "duration": 4.321
+    },
+    {
+        "text": "the neighbor two right but we didn't end",
+        "start": 437.039,
+        "duration": 3.6
+    },
+    {
+        "text": "up",
+        "start": 440.24,
+        "duration": 2.959
+    },
+    {
+        "text": "going this way so from three now we're",
+        "start": 440.639,
+        "duration": 3.601
+    },
+    {
+        "text": "gonna end up",
+        "start": 443.199,
+        "duration": 2.56
+    },
+    {
+        "text": "we're gonna end up checking okay did we",
+        "start": 444.24,
+        "duration": 3.12
+    },
+    {
+        "text": "already clone three let's look in our",
+        "start": 445.759,
+        "duration": 3.761
+    },
+    {
+        "text": "hash map yep we already did",
+        "start": 447.36,
+        "duration": 5.44
+    },
+    {
+        "text": "so this is the clone that we created so",
+        "start": 449.52,
+        "duration": 5.44
+    },
+    {
+        "text": "all we really need to do is make one",
+        "start": 452.8,
+        "duration": 4.0
+    },
+    {
+        "text": "connected to three so basically make",
+        "start": 454.96,
+        "duration": 3.519
+    },
+    {
+        "text": "this edge double directed",
+        "start": 456.8,
+        "duration": 3.839
+    },
+    {
+        "text": "so now you can see that we finally",
+        "start": 458.479,
+        "duration": 4.0
+    },
+    {
+        "text": "created a complete clone",
+        "start": 460.639,
+        "duration": 4.96
+    },
+    {
+        "text": "of the graph we did this in o of n",
+        "start": 462.479,
+        "duration": 6.961
+    },
+    {
+        "text": "time where n is basically the number of",
+        "start": 465.599,
+        "duration": 6.16
+    },
+    {
+        "text": "edges plus the number of vertices right",
+        "start": 469.44,
+        "duration": 4.64
+    },
+    {
+        "text": "the number of nodes plus the number of",
+        "start": 471.759,
+        "duration": 4.72
+    },
+    {
+        "text": "edges connecting them because we have to",
+        "start": 474.08,
+        "duration": 4.799
+    },
+    {
+        "text": "basically make a clone of each of these",
+        "start": 476.479,
+        "duration": 4.72
+    },
+    {
+        "text": "and with that being said now let's jump",
+        "start": 478.879,
+        "duration": 3.681
+    },
+    {
+        "text": "into the code",
+        "start": 481.199,
+        "duration": 3.28
+    },
+    {
+        "text": "so we remember that we only need a",
+        "start": 482.56,
+        "duration": 3.12
+    },
+    {
+        "text": "single data structure",
+        "start": 484.479,
+        "duration": 3.681
+    },
+    {
+        "text": "old to new which is a hash map mapping",
+        "start": 485.68,
+        "duration": 4.48
+    },
+    {
+        "text": "the old nodes to the new nodes and i'm",
+        "start": 488.16,
+        "duration": 3.599
+    },
+    {
+        "text": "going to implement this in depth first",
+        "start": 490.16,
+        "duration": 2.319
+    },
+    {
+        "text": "search",
+        "start": 491.759,
+        "duration": 2.56
+    },
+    {
+        "text": "and you can see that this function is",
+        "start": 492.479,
+        "duration": 3.761
+    },
+    {
+        "text": "nested in the outer function which just",
+        "start": 494.319,
+        "duration": 3.761
+    },
+    {
+        "text": "makes things easier meaning that this",
+        "start": 496.24,
+        "duration": 3.359
+    },
+    {
+        "text": "data structure doesn't need to be passed",
+        "start": 498.08,
+        "duration": 3.36
+    },
+    {
+        "text": "into every single function call",
+        "start": 499.599,
+        "duration": 3.841
+    },
+    {
+        "text": "but we do need to pass in everything",
+        "start": 501.44,
+        "duration": 4.0
+    },
+    {
+        "text": "every time the node that we're visiting",
+        "start": 503.44,
+        "duration": 3.52
+    },
+    {
+        "text": "so in depth first search we're going to",
+        "start": 505.44,
+        "duration": 2.64
+    },
+    {
+        "text": "pass in the node",
+        "start": 506.96,
+        "duration": 3.2
+    },
+    {
+        "text": "first thing we're going to check is if",
+        "start": 508.08,
+        "duration": 3.28
+    },
+    {
+        "text": "the node is",
+        "start": 510.16,
+        "duration": 3.759
+    },
+    {
+        "text": "in our hashmap if it is in our hashmap",
+        "start": 511.36,
+        "duration": 4.479
+    },
+    {
+        "text": "then that means we already made a clone",
+        "start": 513.919,
+        "duration": 2.401
+    },
+    {
+        "text": "of it",
+        "start": 515.839,
+        "duration": 2.56
+    },
+    {
+        "text": "if we already made a clone of it then",
+        "start": 516.32,
+        "duration": 3.76
+    },
+    {
+        "text": "i'm just going to return that clone",
+        "start": 518.399,
+        "duration": 4.801
+    },
+    {
+        "text": "we don't need to create another clone so",
+        "start": 520.08,
+        "duration": 6.4
+    },
+    {
+        "text": "if it exists return the new node",
+        "start": 523.2,
+        "duration": 5.36
+    },
+    {
+        "text": "so if this statement doesn't execute",
+        "start": 526.48,
+        "duration": 4.0
+    },
+    {
+        "text": "that means a clone doesn't already exist",
+        "start": 528.56,
+        "duration": 4.08
+    },
+    {
+        "text": "so let's create that clone i guess i'll",
+        "start": 530.48,
+        "duration": 4.4
+    },
+    {
+        "text": "call it a copy so we're going to create",
+        "start": 532.64,
+        "duration": 2.56
+    },
+    {
+        "text": "a",
+        "start": 534.88,
+        "duration": 1.92
+    },
+    {
+        "text": "copy of this node so we're going to use",
+        "start": 535.2,
+        "duration": 3.44
+    },
+    {
+        "text": "the node constructor and the value we're",
+        "start": 536.8,
+        "duration": 4.4
+    },
+    {
+        "text": "going to give it is the value of this",
+        "start": 538.64,
+        "duration": 4.72
+    },
+    {
+        "text": "original node and we're also going to",
+        "start": 541.2,
+        "duration": 4.4
+    },
+    {
+        "text": "take that copy and then add it to our",
+        "start": 543.36,
+        "duration": 4.64
+    },
+    {
+        "text": "old to new hash map so",
+        "start": 545.6,
+        "duration": 5.52
+    },
+    {
+        "text": "old to new so the old node is just node",
+        "start": 548.0,
+        "duration": 5.279
+    },
+    {
+        "text": "and the new node is the copy",
+        "start": 551.12,
+        "duration": 4.32
+    },
+    {
+        "text": "so we're mapping the old node to the",
+        "start": 553.279,
+        "duration": 3.12
+    },
+    {
+        "text": "copy",
+        "start": 555.44,
+        "duration": 3.44
+    },
+    {
+        "text": "and then we want to make copies of every",
+        "start": 556.399,
+        "duration": 3.201
+    },
+    {
+        "text": "single",
+        "start": 558.88,
+        "duration": 3.88
+    },
+    {
+        "text": "neighbor of the original node so",
+        "start": 559.6,
+        "duration": 4.96
+    },
+    {
+        "text": "node.neighbors",
+        "start": 562.76,
+        "duration": 3.639
+    },
+    {
+        "text": "let's go through every single neighbor",
+        "start": 564.56,
+        "duration": 4.24
+    },
+    {
+        "text": "and let's run depth first search on that",
+        "start": 566.399,
+        "duration": 3.361
+    },
+    {
+        "text": "neighbor",
+        "start": 568.8,
+        "duration": 3.039
+    },
+    {
+        "text": "for the and so basically if we run debt",
+        "start": 569.76,
+        "duration": 3.519
+    },
+    {
+        "text": "for search on that neighbor what it's",
+        "start": 571.839,
+        "duration": 3.361
+    },
+    {
+        "text": "going to do is it's going to return",
+        "start": 573.279,
+        "duration": 3.841
+    },
+    {
+        "text": "the copy that we end up creating and",
+        "start": 575.2,
+        "duration": 3.84
+    },
+    {
+        "text": "with that copy what am i going to do",
+        "start": 577.12,
+        "duration": 4.56
+    },
+    {
+        "text": "i'm going to take this old node or this",
+        "start": 579.04,
+        "duration": 4.479
+    },
+    {
+        "text": "new node the copy that we made",
+        "start": 581.68,
+        "duration": 3.599
+    },
+    {
+        "text": "and i'm going to take its list of",
+        "start": 583.519,
+        "duration": 3.201
+    },
+    {
+        "text": "neighbors",
+        "start": 585.279,
+        "duration": 4.081
+    },
+    {
+        "text": "and i'm going to append to that list of",
+        "start": 586.72,
+        "duration": 3.52
+    },
+    {
+        "text": "neighbors",
+        "start": 589.36,
+        "duration": 3.36
+    },
+    {
+        "text": "this uh the return statement from this",
+        "start": 590.24,
+        "duration": 3.68
+    },
+    {
+        "text": "debt first search call",
+        "start": 592.72,
+        "duration": 4.72
+    },
+    {
+        "text": "so let's copy and paste that in here so",
+        "start": 593.92,
+        "duration": 5.52
+    },
+    {
+        "text": "that's all i really really need to do",
+        "start": 597.44,
+        "duration": 3.2
+    },
+    {
+        "text": "depth first search",
+        "start": 599.44,
+        "duration": 3.92
+    },
+    {
+        "text": "and add it to the neighbors of this copy",
+        "start": 600.64,
+        "duration": 3.36
+    },
+    {
+        "text": "that we just",
+        "start": 603.36,
+        "duration": 3.68
+    },
+    {
+        "text": "made and once we're done making all",
+        "start": 604.0,
+        "duration": 4.88
+    },
+    {
+        "text": "the copies of the neighbors then we can",
+        "start": 607.04,
+        "duration": 4.88
+    },
+    {
+        "text": "return the copy that we just made in the",
+        "start": 608.88,
+        "duration": 5.84
+    },
+    {
+        "text": "current function call and it's actually",
+        "start": 611.92,
+        "duration": 4.32
+    },
+    {
+        "text": "that simple because",
+        "start": 614.72,
+        "duration": 2.88
+    },
+    {
+        "text": "even though this is called that first",
+        "start": 616.24,
+        "duration": 3.36
+    },
+    {
+        "text": "search it might even be better to call",
+        "start": 617.6,
+        "duration": 2.799
+    },
+    {
+        "text": "this function",
+        "start": 619.6,
+        "duration": 3.52
+    },
+    {
+        "text": "clone because cloning is basically what",
+        "start": 620.399,
+        "duration": 4.241
+    },
+    {
+        "text": "we're doing we're taking the original",
+        "start": 623.12,
+        "duration": 3.279
+    },
+    {
+        "text": "node and creating a clone",
+        "start": 624.64,
+        "duration": 4.319
+    },
+    {
+        "text": "of that node and we're cloning all of",
+        "start": 626.399,
+        "duration": 4.721
+    },
+    {
+        "text": "its neighbors recursively that's what",
+        "start": 628.959,
+        "duration": 3.041
+    },
+    {
+        "text": "this recursive",
+        "start": 631.12,
+        "duration": 4.0
+    },
+    {
+        "text": "call is right and then to the neighbors",
+        "start": 632.0,
+        "duration": 4.56
+    },
+    {
+        "text": "that we're creating we're",
+        "start": 635.12,
+        "duration": 4.399
+    },
+    {
+        "text": "adding them or appending them to the",
+        "start": 636.56,
+        "duration": 5.12
+    },
+    {
+        "text": "list of neighbors of this node",
+        "start": 639.519,
+        "duration": 4.721
+    },
+    {
+        "text": "and so it's actually the last thing to",
+        "start": 641.68,
+        "duration": 4.0
+    },
+    {
+        "text": "do is easier than you would think we're",
+        "start": 644.24,
+        "duration": 1.76
+    },
+    {
+        "text": "going to",
+        "start": 645.68,
+        "duration": 2.399
+    },
+    {
+        "text": "call debt for search passing in the",
+        "start": 646.0,
+        "duration": 4.0
+    },
+    {
+        "text": "original node that we're given in the",
+        "start": 648.079,
+        "duration": 3.281
+    },
+    {
+        "text": "original function call",
+        "start": 650.0,
+        "duration": 3.2
+    },
+    {
+        "text": "and then we're just going to return the",
+        "start": 651.36,
+        "duration": 3.12
+    },
+    {
+        "text": "result of that",
+        "start": 653.2,
+        "duration": 3.04
+    },
+    {
+        "text": "because that's going to give us the",
+        "start": 654.48,
+        "duration": 3.76
+    },
+    {
+        "text": "connected graph it doesn't really matter",
+        "start": 656.24,
+        "duration": 2.4
+    },
+    {
+        "text": "which",
+        "start": 658.24,
+        "duration": 3.039
+    },
+    {
+        "text": "node we return i think so any node that",
+        "start": 658.64,
+        "duration": 3.6
+    },
+    {
+        "text": "we end up returning",
+        "start": 661.279,
+        "duration": 3.761
+    },
+    {
+        "text": "is good after the entire clone has been",
+        "start": 662.24,
+        "duration": 3.44
+    },
+    {
+        "text": "made",
+        "start": 665.04,
+        "duration": 3.76
+    },
+    {
+        "text": "oh and one last thing we forgot to check",
+        "start": 665.68,
+        "duration": 4.88
+    },
+    {
+        "text": "one edge case the original node that",
+        "start": 668.8,
+        "duration": 2.8
+    },
+    {
+        "text": "we're given could be",
+        "start": 670.56,
+        "duration": 4.32
+    },
+    {
+        "text": "null so if the node",
+        "start": 671.6,
+        "duration": 4.88
+    },
+    {
+        "text": "is non-null then we're going to call",
+        "start": 674.88,
+        "duration": 3.28
+    },
+    {
+        "text": "this function return the result",
+        "start": 676.48,
+        "duration": 4.08
+    },
+    {
+        "text": "else if the node is null we'll just",
+        "start": 678.16,
+        "duration": 3.2
+    },
+    {
+        "text": "return",
+        "start": 680.56,
+        "duration": 4.0
+    },
+    {
+        "text": "null so with that being said this",
+        "start": 681.36,
+        "duration": 3.76
+    },
+    {
+        "text": "function",
+        "start": 684.56,
+        "duration": 3.12
+    },
+    {
+        "text": "should work and there you go it's pretty",
+        "start": 685.12,
+        "duration": 3.839
+    },
+    {
+        "text": "efficient even though",
+        "start": 687.68,
+        "duration": 3.36
+    },
+    {
+        "text": "this indication makes it seem like it's",
+        "start": 688.959,
+        "duration": 3.841
+    },
+    {
+        "text": "not i think if i ran it one more time it",
+        "start": 691.04,
+        "duration": 3.6
+    },
+    {
+        "text": "would probably be closer to like 50 or",
+        "start": 692.8,
+        "duration": 3.44
+    },
+    {
+        "text": "60 percent",
+        "start": 694.64,
+        "duration": 4.0
+    },
+    {
+        "text": "but i hope this was helpful if you",
+        "start": 696.24,
+        "duration": 3.039
+    },
+    {
+        "text": "enjoyed",
+        "start": 698.64,
+        "duration": 2.4
+    },
+    {
+        "text": "please like and subscribe it supports",
+        "start": 699.279,
+        "duration": 4.24
+    },
+    {
+        "text": "the channel a lot and i'll hopefully",
+        "start": 701.04,
+        "duration": 8.32
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 703.519,
+        "duration": 5.841
+    }
+]

@@ -1,0 +1,2562 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.84
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.839,
+        "duration": 2.721
+    },
+    {
+        "text": "let's solve",
+        "start": 3.84,
+        "duration": 3.039
+    },
+    {
+        "text": "number of connected components in an",
+        "start": 4.56,
+        "duration": 3.999
+    },
+    {
+        "text": "undirected graph",
+        "start": 6.879,
+        "duration": 3.601
+    },
+    {
+        "text": "and yes this is once again a problem",
+        "start": 8.559,
+        "duration": 3.761
+    },
+    {
+        "text": "from our blind 75 list",
+        "start": 10.48,
+        "duration": 3.44
+    },
+    {
+        "text": "the link to the spreadsheet will be in",
+        "start": 12.32,
+        "duration": 2.88
+    },
+    {
+        "text": "the description if you want to take a",
+        "start": 13.92,
+        "duration": 2.16
+    },
+    {
+        "text": "look you can see about",
+        "start": 15.2,
+        "duration": 3.04
+    },
+    {
+        "text": "18 people are currently viewing it",
+        "start": 16.08,
+        "duration": 3.68
+    },
+    {
+        "text": "including me but",
+        "start": 18.24,
+        "duration": 4.48
+    },
+    {
+        "text": "so this is a problem problem 34 from",
+        "start": 19.76,
+        "duration": 4.8
+    },
+    {
+        "text": "that list number of connected components",
+        "start": 22.72,
+        "duration": 3.28
+    },
+    {
+        "text": "so this is the graph one we'll be",
+        "start": 24.56,
+        "duration": 2.559
+    },
+    {
+        "text": "solving today",
+        "start": 26.0,
+        "duration": 3.119
+    },
+    {
+        "text": "probably tomorrow i'll finally go ahead",
+        "start": 27.119,
+        "duration": 3.601
+    },
+    {
+        "text": "and do alien dictionary",
+        "start": 29.119,
+        "duration": 3.44
+    },
+    {
+        "text": "so the main reason i've been putting off",
+        "start": 30.72,
+        "duration": 3.839
+    },
+    {
+        "text": "alien dictionary and even this problem",
+        "start": 32.559,
+        "duration": 4.081
+    },
+    {
+        "text": "is because i couldn't really find a free",
+        "start": 34.559,
+        "duration": 4.16
+    },
+    {
+        "text": "version of these problems on the website",
+        "start": 36.64,
+        "duration": 4.079
+    },
+    {
+        "text": "lint code so i actually went ahead and",
+        "start": 38.719,
+        "duration": 3.121
+    },
+    {
+        "text": "and shelled out the",
+        "start": 40.719,
+        "duration": 4.721
+    },
+    {
+        "text": "35 bucks for a leak code monthly",
+        "start": 41.84,
+        "duration": 6.16
+    },
+    {
+        "text": "premium subscription so for the next 30",
+        "start": 45.44,
+        "duration": 4.48
+    },
+    {
+        "text": "days i will have leak code premium so if",
+        "start": 48.0,
+        "duration": 3.52
+    },
+    {
+        "text": "you have any premium problems that you",
+        "start": 49.92,
+        "duration": 3.119
+    },
+    {
+        "text": "want to suggest feel free to do that in",
+        "start": 51.52,
+        "duration": 2.32
+    },
+    {
+        "text": "the description",
+        "start": 53.039,
+        "duration": 2.881
+    },
+    {
+        "text": "big shout out to my patreon supporters",
+        "start": 53.84,
+        "duration": 3.6
+    },
+    {
+        "text": "for making this possible",
+        "start": 55.92,
+        "duration": 3.04
+    },
+    {
+        "text": "but yeah so now let's actually get into",
+        "start": 57.44,
+        "duration": 3.599
+    },
+    {
+        "text": "the problems so we're given a graph of",
+        "start": 58.96,
+        "duration": 5.12
+    },
+    {
+        "text": "n nodes pretty simple so far so the",
+        "start": 61.039,
+        "duration": 4.08
+    },
+    {
+        "text": "number of nodes will",
+        "start": 64.08,
+        "duration": 3.12
+    },
+    {
+        "text": "be given to us with an integer n and",
+        "start": 65.119,
+        "duration": 4.721
+    },
+    {
+        "text": "we're also just given an array of",
+        "start": 67.2,
+        "duration": 5.84
+    },
+    {
+        "text": "edges belonging to this graph every edge",
+        "start": 69.84,
+        "duration": 6.24
+    },
+    {
+        "text": "is undirected it connects two nodes",
+        "start": 73.04,
+        "duration": 6.56
+    },
+    {
+        "text": "a and b together and all we need to do",
+        "start": 76.08,
+        "duration": 6.399
+    },
+    {
+        "text": "is just return the number of connected",
+        "start": 79.6,
+        "duration": 4.8
+    },
+    {
+        "text": "components in the graph now what is a",
+        "start": 82.479,
+        "duration": 3.761
+    },
+    {
+        "text": "connected component you probably already",
+        "start": 84.4,
+        "duration": 3.359
+    },
+    {
+        "text": "know but it's basically just",
+        "start": 86.24,
+        "duration": 3.919
+    },
+    {
+        "text": "an individual portion of the graph",
+        "start": 87.759,
+        "duration": 3.921
+    },
+    {
+        "text": "that's all contiguous",
+        "start": 90.159,
+        "duration": 3.441
+    },
+    {
+        "text": "see how everything in this portion is",
+        "start": 91.68,
+        "duration": 3.6
+    },
+    {
+        "text": "connected we also have",
+        "start": 93.6,
+        "duration": 4.479
+    },
+    {
+        "text": "a second portion which is disjoint right",
+        "start": 95.28,
+        "duration": 5.6
+    },
+    {
+        "text": "so these two components are disjoint",
+        "start": 98.079,
+        "duration": 4.881
+    },
+    {
+        "text": "right they they are not connected to",
+        "start": 100.88,
+        "duration": 3.12
+    },
+    {
+        "text": "each other but",
+        "start": 102.96,
+        "duration": 2.88
+    },
+    {
+        "text": "each of them separately is connected",
+        "start": 104.0,
+        "duration": 3.92
+    },
+    {
+        "text": "right like every of these three nodes is",
+        "start": 105.84,
+        "duration": 3.52
+    },
+    {
+        "text": "connected together",
+        "start": 107.92,
+        "duration": 3.04
+    },
+    {
+        "text": "these two nodes are connected together",
+        "start": 109.36,
+        "duration": 3.52
+    },
+    {
+        "text": "therefore we have two",
+        "start": 110.96,
+        "duration": 4.56
+    },
+    {
+        "text": "different contiguous components so",
+        "start": 112.88,
+        "duration": 4.32
+    },
+    {
+        "text": "there's not a lot of edge cases with",
+        "start": 115.52,
+        "duration": 3.279
+    },
+    {
+        "text": "this problem it's pretty straightforward",
+        "start": 117.2,
+        "duration": 3.279
+    },
+    {
+        "text": "so for example if we were just given",
+        "start": 118.799,
+        "duration": 4.561
+    },
+    {
+        "text": "two nodes zero two no edges between them",
+        "start": 120.479,
+        "duration": 4.481
+    },
+    {
+        "text": "then we would just return the number of",
+        "start": 123.36,
+        "duration": 3.119
+    },
+    {
+        "text": "nodes we're given two nodes",
+        "start": 124.96,
+        "duration": 3.04
+    },
+    {
+        "text": "therefore we have two connected",
+        "start": 126.479,
+        "duration": 3.92
+    },
+    {
+        "text": "components right one node by itself does",
+        "start": 128.0,
+        "duration": 4.16
+    },
+    {
+        "text": "count as a connected component",
+        "start": 130.399,
+        "duration": 3.281
+    },
+    {
+        "text": "and of course if we're not given any",
+        "start": 132.16,
+        "duration": 3.6
+    },
+    {
+        "text": "nodes n equals zero then we return zero",
+        "start": 133.68,
+        "duration": 2.639
+    },
+    {
+        "text": "but",
+        "start": 135.76,
+        "duration": 2.479
+    },
+    {
+        "text": "clearly this is pretty straightforward",
+        "start": 136.319,
+        "duration": 3.28
+    },
+    {
+        "text": "so far so there's a couple of ways to",
+        "start": 138.239,
+        "duration": 2.561
+    },
+    {
+        "text": "solve this problem",
+        "start": 139.599,
+        "duration": 3.28
+    },
+    {
+        "text": "so we're given the edges as a list of",
+        "start": 140.8,
+        "duration": 3.92
+    },
+    {
+        "text": "edges but we could make an adjacency",
+        "start": 142.879,
+        "duration": 2.321
+    },
+    {
+        "text": "list",
+        "start": 144.72,
+        "duration": 3.2
+    },
+    {
+        "text": "which would make it easy to do a dfs",
+        "start": 145.2,
+        "duration": 4.56
+    },
+    {
+        "text": "search on the entire graph so that's one",
+        "start": 147.92,
+        "duration": 3.2
+    },
+    {
+        "text": "way to solve this problem just go",
+        "start": 149.76,
+        "duration": 2.88
+    },
+    {
+        "text": "through every single node starting at",
+        "start": 151.12,
+        "duration": 3.04
+    },
+    {
+        "text": "zero right so we start at zero",
+        "start": 152.64,
+        "duration": 4.0
+    },
+    {
+        "text": "then do a dfs search from here so we're",
+        "start": 154.16,
+        "duration": 3.12
+    },
+    {
+        "text": "going to mark",
+        "start": 156.64,
+        "duration": 2.48
+    },
+    {
+        "text": "zero as visited we're going to see okay",
+        "start": 157.28,
+        "duration": 4.319
+    },
+    {
+        "text": "we can reach a one mark that is visited",
+        "start": 159.12,
+        "duration": 4.88
+    },
+    {
+        "text": "from the one we can reach a two mark",
+        "start": 161.599,
+        "duration": 4.321
+    },
+    {
+        "text": "that as visited so so far",
+        "start": 164.0,
+        "duration": 5.2
+    },
+    {
+        "text": "we've only done one dfs",
+        "start": 165.92,
+        "duration": 5.84
+    },
+    {
+        "text": "search right so therefore we found one",
+        "start": 169.2,
+        "duration": 4.08
+    },
+    {
+        "text": "connected component now",
+        "start": 171.76,
+        "duration": 3.759
+    },
+    {
+        "text": "now we are then going to try to do a dfs",
+        "start": 173.28,
+        "duration": 3.36
+    },
+    {
+        "text": "starting from one",
+        "start": 175.519,
+        "duration": 2.321
+    },
+    {
+        "text": "right but what we're going to find is",
+        "start": 176.64,
+        "duration": 3.04
+    },
+    {
+        "text": "that's already been visited so we don't",
+        "start": 177.84,
+        "duration": 2.24
+    },
+    {
+        "text": "want to",
+        "start": 179.68,
+        "duration": 2.0
+    },
+    {
+        "text": "add that to the number of connected",
+        "start": 180.08,
+        "duration": 3.6
+    },
+    {
+        "text": "components right so so far we still only",
+        "start": 181.68,
+        "duration": 3.6
+    },
+    {
+        "text": "have one connected component",
+        "start": 183.68,
+        "duration": 3.199
+    },
+    {
+        "text": "we can do the same exact thing for",
+        "start": 185.28,
+        "duration": 3.84
+    },
+    {
+        "text": "second node for node number two it's",
+        "start": 186.879,
+        "duration": 4.161
+    },
+    {
+        "text": "already been visited no need to",
+        "start": 189.12,
+        "duration": 3.44
+    },
+    {
+        "text": "increment the number of connected",
+        "start": 191.04,
+        "duration": 2.64
+    },
+    {
+        "text": "components",
+        "start": 192.56,
+        "duration": 3.12
+    },
+    {
+        "text": "then we're gonna get to node three this",
+        "start": 193.68,
+        "duration": 4.0
+    },
+    {
+        "text": "one has not been visited therefore now",
+        "start": 195.68,
+        "duration": 2.4
+    },
+    {
+        "text": "we have",
+        "start": 197.68,
+        "duration": 2.08
+    },
+    {
+        "text": "two connected components so now let's",
+        "start": 198.08,
+        "duration": 3.519
+    },
+    {
+        "text": "just do a dfs on here to mark",
+        "start": 199.76,
+        "duration": 4.479
+    },
+    {
+        "text": "all of them visited three is visited it",
+        "start": 201.599,
+        "duration": 3.841
+    },
+    {
+        "text": "has one neighbor four",
+        "start": 204.239,
+        "duration": 3.041
+    },
+    {
+        "text": "four is visited and then there's none",
+        "start": 205.44,
+        "duration": 3.84
+    },
+    {
+        "text": "left so we got two connected commands",
+        "start": 207.28,
+        "duration": 4.08
+    },
+    {
+        "text": "we'll try to do a dfs from four but it's",
+        "start": 209.28,
+        "duration": 3.92
+    },
+    {
+        "text": "already been visited so therefore",
+        "start": 211.36,
+        "duration": 4.159
+    },
+    {
+        "text": "we in the end notice we only had two",
+        "start": 213.2,
+        "duration": 3.599
+    },
+    {
+        "text": "connected components",
+        "start": 215.519,
+        "duration": 3.36
+    },
+    {
+        "text": "now this isn't a bad algorithm at all",
+        "start": 216.799,
+        "duration": 4.0
+    },
+    {
+        "text": "the overall time complexity is basically",
+        "start": 218.879,
+        "duration": 2.881
+    },
+    {
+        "text": "going to be",
+        "start": 220.799,
+        "duration": 4.0
+    },
+    {
+        "text": "it's basically going to be big o of e",
+        "start": 221.76,
+        "duration": 5.28
+    },
+    {
+        "text": "plus v because notice we are gonna have",
+        "start": 224.799,
+        "duration": 3.601
+    },
+    {
+        "text": "to go through every single",
+        "start": 227.04,
+        "duration": 3.6
+    },
+    {
+        "text": "edge when we traverse the graph end when",
+        "start": 228.4,
+        "duration": 4.24
+    },
+    {
+        "text": "we actually build the adjacency list and",
+        "start": 230.64,
+        "duration": 2.959
+    },
+    {
+        "text": "we're also gonna have to go through",
+        "start": 232.64,
+        "duration": 1.84
+    },
+    {
+        "text": "every node",
+        "start": 233.599,
+        "duration": 2.64
+    },
+    {
+        "text": "iterating through it as we traverse the",
+        "start": 234.48,
+        "duration": 3.36
+    },
+    {
+        "text": "graph and as we you know",
+        "start": 236.239,
+        "duration": 3.36
+    },
+    {
+        "text": "try to do the dfs starting at every",
+        "start": 237.84,
+        "duration": 3.28
+    },
+    {
+        "text": "single position so this is going to be",
+        "start": 239.599,
+        "duration": 3.121
+    },
+    {
+        "text": "the overall time complexity",
+        "start": 241.12,
+        "duration": 4.0
+    },
+    {
+        "text": "not bad at all but there actually",
+        "start": 242.72,
+        "duration": 4.4
+    },
+    {
+        "text": "happens to be a more natural way to",
+        "start": 245.12,
+        "duration": 3.92
+    },
+    {
+        "text": "solve this problem and if you have heard",
+        "start": 247.12,
+        "duration": 3.28
+    },
+    {
+        "text": "of the algorithm called",
+        "start": 249.04,
+        "duration": 3.44
+    },
+    {
+        "text": "union find it's a pretty rare algorithm",
+        "start": 250.4,
+        "duration": 4.24
+    },
+    {
+        "text": "to need on leak code but if you do know",
+        "start": 252.48,
+        "duration": 3.039
+    },
+    {
+        "text": "this algorithm",
+        "start": 254.64,
+        "duration": 2.48
+    },
+    {
+        "text": "then you basically know that this",
+        "start": 255.519,
+        "duration": 3.68
+    },
+    {
+        "text": "algorithm was literally made for a",
+        "start": 257.12,
+        "duration": 3.119
+    },
+    {
+        "text": "problem like this",
+        "start": 259.199,
+        "duration": 3.041
+    },
+    {
+        "text": "literally made to be able to count",
+        "start": 260.239,
+        "duration": 3.201
+    },
+    {
+        "text": "connected components",
+        "start": 262.24,
+        "duration": 3.04
+    },
+    {
+        "text": "as well as to be able to identify you",
+        "start": 263.44,
+        "duration": 4.24
+    },
+    {
+        "text": "know disjoint sets and all that stuff",
+        "start": 265.28,
+        "duration": 4.32
+    },
+    {
+        "text": "so i'm gonna use this problem as an",
+        "start": 267.68,
+        "duration": 4.0
+    },
+    {
+        "text": "opportunity to go over union find once",
+        "start": 269.6,
+        "duration": 3.92
+    },
+    {
+        "text": "again i think i've done this once before",
+        "start": 271.68,
+        "duration": 3.6
+    },
+    {
+        "text": "in a previous problem but let's dive",
+        "start": 273.52,
+        "duration": 3.679
+    },
+    {
+        "text": "into this so we're gonna mainly be",
+        "start": 275.28,
+        "duration": 3.04
+    },
+    {
+        "text": "maintaining two",
+        "start": 277.199,
+        "duration": 3.841
+    },
+    {
+        "text": "arrays one called the parent array and",
+        "start": 278.32,
+        "duration": 4.56
+    },
+    {
+        "text": "we're going to have a value in that",
+        "start": 281.04,
+        "duration": 3.92
+    },
+    {
+        "text": "array for each node that we're given in",
+        "start": 282.88,
+        "duration": 3.44
+    },
+    {
+        "text": "the input and initially",
+        "start": 284.96,
+        "duration": 2.88
+    },
+    {
+        "text": "the array is just going to look like",
+        "start": 286.32,
+        "duration": 3.439
+    },
+    {
+        "text": "this 0 1 2",
+        "start": 287.84,
+        "duration": 6.0
+    },
+    {
+        "text": "3 4. so each index so the index 0",
+        "start": 289.759,
+        "duration": 4.88
+    },
+    {
+        "text": "represents",
+        "start": 293.84,
+        "duration": 4.0
+    },
+    {
+        "text": "the 0 node index one represents",
+        "start": 294.639,
+        "duration": 5.521
+    },
+    {
+        "text": "the one node and the value in every",
+        "start": 297.84,
+        "duration": 4.48
+    },
+    {
+        "text": "single array clearly matches that",
+        "start": 300.16,
+        "duration": 4.16
+    },
+    {
+        "text": "of every single node initially at least",
+        "start": 302.32,
+        "duration": 3.599
+    },
+    {
+        "text": "so initially they do match",
+        "start": 304.32,
+        "duration": 3.92
+    },
+    {
+        "text": "what that basically means is each node",
+        "start": 305.919,
+        "duration": 3.521
+    },
+    {
+        "text": "is the parent",
+        "start": 308.24,
+        "duration": 3.6
+    },
+    {
+        "text": "of itself so the way union find works",
+        "start": 309.44,
+        "duration": 4.24
+    },
+    {
+        "text": "it's basically a forest of",
+        "start": 311.84,
+        "duration": 4.16
+    },
+    {
+        "text": "trees so we're gonna have multiple trees",
+        "start": 313.68,
+        "duration": 3.68
+    },
+    {
+        "text": "initially clearly we have",
+        "start": 316.0,
+        "duration": 4.639
+    },
+    {
+        "text": "n trees uh one for every single node",
+        "start": 317.36,
+        "duration": 5.839
+    },
+    {
+        "text": "in the input and as we go through every",
+        "start": 320.639,
+        "duration": 4.721
+    },
+    {
+        "text": "single edge such as zero and one what",
+        "start": 323.199,
+        "duration": 4.241
+    },
+    {
+        "text": "we're gonna do is take okay let's say",
+        "start": 325.36,
+        "duration": 4.08
+    },
+    {
+        "text": "zero is gonna be the parent so zero is a",
+        "start": 327.44,
+        "duration": 3.039
+    },
+    {
+        "text": "parent of itself",
+        "start": 329.44,
+        "duration": 3.199
+    },
+    {
+        "text": "but what we're gonna do to one is say no",
+        "start": 330.479,
+        "duration": 3.361
+    },
+    {
+        "text": "one's parent now",
+        "start": 332.639,
+        "duration": 3.681
+    },
+    {
+        "text": "is going to be zero basically what we're",
+        "start": 333.84,
+        "duration": 4.32
+    },
+    {
+        "text": "doing is just connecting",
+        "start": 336.32,
+        "duration": 5.04
+    },
+    {
+        "text": "the two nodes right and since we know",
+        "start": 338.16,
+        "duration": 3.84
+    },
+    {
+        "text": "that we just",
+        "start": 341.36,
+        "duration": 2.72
+    },
+    {
+        "text": "made a single connection what we can say",
+        "start": 342.0,
+        "duration": 3.759
+    },
+    {
+        "text": "now is that okay we started out with",
+        "start": 344.08,
+        "duration": 3.44
+    },
+    {
+        "text": "five different connected components",
+        "start": 345.759,
+        "duration": 4.16
+    },
+    {
+        "text": "we just merged two of them every time we",
+        "start": 347.52,
+        "duration": 4.16
+    },
+    {
+        "text": "perform a merge we're basically taking",
+        "start": 349.919,
+        "duration": 3.441
+    },
+    {
+        "text": "the number of connected components we",
+        "start": 351.68,
+        "duration": 2.239
+    },
+    {
+        "text": "have",
+        "start": 353.36,
+        "duration": 2.64
+    },
+    {
+        "text": "decrementing it by one so that's how we",
+        "start": 353.919,
+        "duration": 3.441
+    },
+    {
+        "text": "can keep track of the connected",
+        "start": 356.0,
+        "duration": 2.08
+    },
+    {
+        "text": "components",
+        "start": 357.36,
+        "duration": 3.6
+    },
+    {
+        "text": "and there's one slight un and it's not",
+        "start": 358.08,
+        "duration": 5.119
+    },
+    {
+        "text": "required but it's an optimization that's",
+        "start": 360.96,
+        "duration": 3.92
+    },
+    {
+        "text": "pretty easy to make with this problem",
+        "start": 363.199,
+        "duration": 3.44
+    },
+    {
+        "text": "we're going to maintain the rank of",
+        "start": 364.88,
+        "duration": 3.52
+    },
+    {
+        "text": "every single component so basically for",
+        "start": 366.639,
+        "duration": 2.881
+    },
+    {
+        "text": "every single node we're going to",
+        "start": 368.4,
+        "duration": 1.919
+    },
+    {
+        "text": "maintain",
+        "start": 369.52,
+        "duration": 3.519
+    },
+    {
+        "text": "what's the size of it basically you know",
+        "start": 370.319,
+        "duration": 5.041
+    },
+    {
+        "text": "if this is the parent what's the size of",
+        "start": 373.039,
+        "duration": 4.481
+    },
+    {
+        "text": "its entire connected component right now",
+        "start": 375.36,
+        "duration": 3.04
+    },
+    {
+        "text": "what we would",
+        "start": 377.52,
+        "duration": 2.399
+    },
+    {
+        "text": "initially for each of them it's",
+        "start": 378.4,
+        "duration": 3.2
+    },
+    {
+        "text": "obviously going to be one right the size",
+        "start": 379.919,
+        "duration": 2.081
+    },
+    {
+        "text": "for",
+        "start": 381.6,
+        "duration": 3.2
+    },
+    {
+        "text": "all of them is going to be one initially",
+        "start": 382.0,
+        "duration": 3.12
+    },
+    {
+        "text": "but",
+        "start": 384.8,
+        "duration": 2.16
+    },
+    {
+        "text": "since we just made this merge we're",
+        "start": 385.12,
+        "duration": 3.199
+    },
+    {
+        "text": "going to leave the rank",
+        "start": 386.96,
+        "duration": 3.6
+    },
+    {
+        "text": "of one as it is because it's not the",
+        "start": 388.319,
+        "duration": 4.0
+    },
+    {
+        "text": "parent but for the parent",
+        "start": 390.56,
+        "duration": 4.32
+    },
+    {
+        "text": "zero we can say okay it's rank is now",
+        "start": 392.319,
+        "duration": 3.041
+    },
+    {
+        "text": "not",
+        "start": 394.88,
+        "duration": 2.879
+    },
+    {
+        "text": "one it's actually going to be two really",
+        "start": 395.36,
+        "duration": 3.839
+    },
+    {
+        "text": "we're just talking about the size",
+        "start": 397.759,
+        "duration": 3.921
+    },
+    {
+        "text": "if this was the parent which it is the",
+        "start": 399.199,
+        "duration": 3.681
+    },
+    {
+        "text": "parent right so what",
+        "start": 401.68,
+        "duration": 3.2
+    },
+    {
+        "text": "in our rank array we could change the",
+        "start": 402.88,
+        "duration": 3.039
+    },
+    {
+        "text": "first one",
+        "start": 404.88,
+        "duration": 3.12
+    },
+    {
+        "text": "into a two and the reason we're",
+        "start": 405.919,
+        "duration": 3.761
+    },
+    {
+        "text": "maintaining this rank is basically just",
+        "start": 408.0,
+        "duration": 3.199
+    },
+    {
+        "text": "an optimization",
+        "start": 409.68,
+        "duration": 4.0
+    },
+    {
+        "text": "so right now you can clearly see we have",
+        "start": 411.199,
+        "duration": 4.161
+    },
+    {
+        "text": "one component of size two and we have",
+        "start": 413.68,
+        "duration": 3.919
+    },
+    {
+        "text": "one component of size one if we were",
+        "start": 415.36,
+        "duration": 4.72
+    },
+    {
+        "text": "if we were merging these two right would",
+        "start": 417.599,
+        "duration": 3.841
+    },
+    {
+        "text": "we want to merge",
+        "start": 420.08,
+        "duration": 4.16
+    },
+    {
+        "text": "this one as a child of this one if we",
+        "start": 421.44,
+        "duration": 3.68
+    },
+    {
+        "text": "did that",
+        "start": 424.24,
+        "duration": 2.56
+    },
+    {
+        "text": "we would get something like this right",
+        "start": 425.12,
+        "duration": 3.199
+    },
+    {
+        "text": "we'd get one",
+        "start": 426.8,
+        "duration": 4.72
+    },
+    {
+        "text": "and then zero right we'd get basically a",
+        "start": 428.319,
+        "duration": 5.041
+    },
+    {
+        "text": "linked list so why would we do",
+        "start": 431.52,
+        "duration": 4.48
+    },
+    {
+        "text": "that when we would rather merge the",
+        "start": 433.36,
+        "duration": 4.399
+    },
+    {
+        "text": "smaller connected component",
+        "start": 436.0,
+        "duration": 3.759
+    },
+    {
+        "text": "underneath the bigger one so if we do",
+        "start": 437.759,
+        "duration": 5.041
+    },
+    {
+        "text": "that we'll get something like this",
+        "start": 439.759,
+        "duration": 5.44
+    },
+    {
+        "text": "right and clearly here you can see if",
+        "start": 442.8,
+        "duration": 4.32
+    },
+    {
+        "text": "this was a tree the height of the tree",
+        "start": 445.199,
+        "duration": 4.161
+    },
+    {
+        "text": "is now minimized before we had a tree",
+        "start": 447.12,
+        "duration": 4.079
+    },
+    {
+        "text": "that was basically a linked list now we",
+        "start": 449.36,
+        "duration": 3.279
+    },
+    {
+        "text": "have a tree that's actually kind of a",
+        "start": 451.199,
+        "duration": 3.601
+    },
+    {
+        "text": "binary tree if you you know adjust your",
+        "start": 452.639,
+        "duration": 4.56
+    },
+    {
+        "text": "head by 90 degrees you can kind of see",
+        "start": 454.8,
+        "duration": 4.48
+    },
+    {
+        "text": "what i'm talking about but so that's the",
+        "start": 457.199,
+        "duration": 3.12
+    },
+    {
+        "text": "main algorithm",
+        "start": 459.28,
+        "duration": 3.199
+    },
+    {
+        "text": "so so far we've just done the first edge",
+        "start": 460.319,
+        "duration": 3.761
+    },
+    {
+        "text": "so now let's look at the second edge in",
+        "start": 462.479,
+        "duration": 2.481
+    },
+    {
+        "text": "our input one",
+        "start": 464.08,
+        "duration": 3.519
+    },
+    {
+        "text": "and two so we're connecting one and two",
+        "start": 464.96,
+        "duration": 3.6
+    },
+    {
+        "text": "and the way",
+        "start": 467.599,
+        "duration": 2.72
+    },
+    {
+        "text": "we're gonna merge these is first we're",
+        "start": 468.56,
+        "duration": 3.199
+    },
+    {
+        "text": "gonna get the root",
+        "start": 470.319,
+        "duration": 4.56
+    },
+    {
+        "text": "parent of both of these so for two two",
+        "start": 471.759,
+        "duration": 3.84
+    },
+    {
+        "text": "itself",
+        "start": 474.879,
+        "duration": 3.921
+    },
+    {
+        "text": "is its parent but for one one has",
+        "start": 475.599,
+        "duration": 6.241
+    },
+    {
+        "text": "another parent zero so when you",
+        "start": 478.8,
+        "duration": 6.079
+    },
+    {
+        "text": "get the root parent of two",
+        "start": 481.84,
+        "duration": 4.88
+    },
+    {
+        "text": "nodes that's how you know if they're",
+        "start": 484.879,
+        "duration": 3.76
+    },
+    {
+        "text": "already connected or not",
+        "start": 486.72,
+        "duration": 4.96
+    },
+    {
+        "text": "because if if maybe this two",
+        "start": 488.639,
+        "duration": 5.12
+    },
+    {
+        "text": "was connected to one then we would say",
+        "start": 491.68,
+        "duration": 4.16
+    },
+    {
+        "text": "okay one two's parent is one",
+        "start": 493.759,
+        "duration": 4.56
+    },
+    {
+        "text": "one's parent is zero and and then what",
+        "start": 495.84,
+        "duration": 4.56
+    },
+    {
+        "text": "we would say is okay one and zero both",
+        "start": 498.319,
+        "duration": 3.921
+    },
+    {
+        "text": "have the same root parent so therefore",
+        "start": 500.4,
+        "duration": 4.239
+    },
+    {
+        "text": "they're already merged so we don't need",
+        "start": 502.24,
+        "duration": 4.399
+    },
+    {
+        "text": "to merge them again but in this case you",
+        "start": 504.639,
+        "duration": 2.721
+    },
+    {
+        "text": "can see",
+        "start": 506.639,
+        "duration": 3.12
+    },
+    {
+        "text": "two has its own two is the parent of",
+        "start": 507.36,
+        "duration": 5.039
+    },
+    {
+        "text": "itself one has a root parent of zero",
+        "start": 509.759,
+        "duration": 4.481
+    },
+    {
+        "text": "so therefore they're not connected so we",
+        "start": 512.399,
+        "duration": 4.0
+    },
+    {
+        "text": "can connect them together we can union",
+        "start": 514.24,
+        "duration": 4.4
+    },
+    {
+        "text": "these two components together",
+        "start": 516.399,
+        "duration": 4.161
+    },
+    {
+        "text": "so this one is larger this one is",
+        "start": 518.64,
+        "duration": 3.759
+    },
+    {
+        "text": "smaller so we're going to add this",
+        "start": 520.56,
+        "duration": 5.04
+    },
+    {
+        "text": "as a child of zero where we're always",
+        "start": 522.399,
+        "duration": 5.041
+    },
+    {
+        "text": "adding to the root parent right we're",
+        "start": 525.6,
+        "duration": 3.12
+    },
+    {
+        "text": "not going to add it to one we're going",
+        "start": 527.44,
+        "duration": 1.92
+    },
+    {
+        "text": "to add it to",
+        "start": 528.72,
+        "duration": 3.119
+    },
+    {
+        "text": "zero even though this edge is connecting",
+        "start": 529.36,
+        "duration": 3.599
+    },
+    {
+        "text": "these two together",
+        "start": 531.839,
+        "duration": 3.12
+    },
+    {
+        "text": "when we add that edge itself we're going",
+        "start": 532.959,
+        "duration": 3.601
+    },
+    {
+        "text": "to make sure that 2 is connected",
+        "start": 534.959,
+        "duration": 3.44
+    },
+    {
+        "text": "to the root parent because we want to",
+        "start": 536.56,
+        "duration": 4.24
+    },
+    {
+        "text": "minimize the height of the tree",
+        "start": 538.399,
+        "duration": 4.721
+    },
+    {
+        "text": "and once we do that we know that the",
+        "start": 540.8,
+        "duration": 3.68
+    },
+    {
+        "text": "rank of this is actually going to",
+        "start": 543.12,
+        "duration": 4.08
+    },
+    {
+        "text": "increase so in our rank array we're",
+        "start": 544.48,
+        "duration": 4.16
+    },
+    {
+        "text": "going to get rid of two and now it's",
+        "start": 547.2,
+        "duration": 2.319
+    },
+    {
+        "text": "actually going to be",
+        "start": 548.64,
+        "duration": 3.04
+    },
+    {
+        "text": "three and also what i didn't update in",
+        "start": 549.519,
+        "duration": 3.921
+    },
+    {
+        "text": "the first go around was the parent of",
+        "start": 551.68,
+        "duration": 2.8
+    },
+    {
+        "text": "one and two so",
+        "start": 553.44,
+        "duration": 3.76
+    },
+    {
+        "text": "one and two have new parents now they",
+        "start": 554.48,
+        "duration": 4.4
+    },
+    {
+        "text": "both have parents of zero",
+        "start": 557.2,
+        "duration": 3.6
+    },
+    {
+        "text": "zero so this array is what we're going",
+        "start": 558.88,
+        "duration": 4.48
+    },
+    {
+        "text": "to use to go through every node and find",
+        "start": 560.8,
+        "duration": 3.84
+    },
+    {
+        "text": "its root parent",
+        "start": 563.36,
+        "duration": 3.52
+    },
+    {
+        "text": "so we've done both of the first edges",
+        "start": 564.64,
+        "duration": 3.199
+    },
+    {
+        "text": "now the last",
+        "start": 566.88,
+        "duration": 2.56
+    },
+    {
+        "text": "and third edge we're connecting three",
+        "start": 567.839,
+        "duration": 3.12
+    },
+    {
+        "text": "and four together so in this case it",
+        "start": 569.44,
+        "duration": 2.959
+    },
+    {
+        "text": "doesn't really matter which one is the",
+        "start": 570.959,
+        "duration": 2.88
+    },
+    {
+        "text": "parent i'm just gonna draw it like this",
+        "start": 572.399,
+        "duration": 2.401
+    },
+    {
+        "text": "because it's easier",
+        "start": 573.839,
+        "duration": 4.401
+    },
+    {
+        "text": "so three will be the parent of four so",
+        "start": 574.8,
+        "duration": 5.84
+    },
+    {
+        "text": "for node three we will update its rank",
+        "start": 578.24,
+        "duration": 4.159
+    },
+    {
+        "text": "its rank is going to be two",
+        "start": 580.64,
+        "duration": 3.6
+    },
+    {
+        "text": "and the parent of three is going to stay",
+        "start": 582.399,
+        "duration": 3.681
+    },
+    {
+        "text": "the same but the parent of four is now",
+        "start": 584.24,
+        "duration": 3.52
+    },
+    {
+        "text": "going to be three so that's just kind of",
+        "start": 586.08,
+        "duration": 3.28
+    },
+    {
+        "text": "the bookkeeping we're going to be doing",
+        "start": 587.76,
+        "duration": 2.48
+    },
+    {
+        "text": "to update",
+        "start": 589.36,
+        "duration": 4.0
+    },
+    {
+        "text": "our parent and rank arrays but each time",
+        "start": 590.24,
+        "duration": 5.68
+    },
+    {
+        "text": "we made a union operation we",
+        "start": 593.36,
+        "duration": 4.08
+    },
+    {
+        "text": "were taking our initial number of",
+        "start": 595.92,
+        "duration": 3.919
+    },
+    {
+        "text": "components five decrementing it by one",
+        "start": 597.44,
+        "duration": 4.32
+    },
+    {
+        "text": "and so we did a union three different",
+        "start": 599.839,
+        "duration": 2.481
+    },
+    {
+        "text": "times",
+        "start": 601.76,
+        "duration": 2.88
+    },
+    {
+        "text": "so we got a result of two two is the",
+        "start": 602.32,
+        "duration": 4.0
+    },
+    {
+        "text": "number of connected components we have",
+        "start": 604.64,
+        "duration": 2.72
+    },
+    {
+        "text": "at the end",
+        "start": 606.32,
+        "duration": 3.199
+    },
+    {
+        "text": "but let's say we just had one more edge",
+        "start": 607.36,
+        "duration": 3.36
+    },
+    {
+        "text": "let's say we had an edge",
+        "start": 609.519,
+        "duration": 3.041
+    },
+    {
+        "text": "zero two so let's say we're trying to",
+        "start": 610.72,
+        "duration": 3.2
+    },
+    {
+        "text": "merge zero and two right",
+        "start": 612.56,
+        "duration": 3.44
+    },
+    {
+        "text": "first we'll get the parent of two the",
+        "start": 613.92,
+        "duration": 3.599
+    },
+    {
+        "text": "root parent which is zero",
+        "start": 616.0,
+        "duration": 3.92
+    },
+    {
+        "text": "then we'll get the root parent of zero",
+        "start": 617.519,
+        "duration": 4.32
+    },
+    {
+        "text": "zero is the root parent of zero so what",
+        "start": 619.92,
+        "duration": 2.72
+    },
+    {
+        "text": "we're going to find",
+        "start": 621.839,
+        "duration": 2.961
+    },
+    {
+        "text": "since both of these have the exact same",
+        "start": 622.64,
+        "duration": 3.04
+    },
+    {
+        "text": "root parent",
+        "start": 624.8,
+        "duration": 3.279
+    },
+    {
+        "text": "that means they're already connected so",
+        "start": 625.68,
+        "duration": 4.399
+    },
+    {
+        "text": "we had two connected components we're",
+        "start": 628.079,
+        "duration": 3.521
+    },
+    {
+        "text": "not going to decrement this by one",
+        "start": 630.079,
+        "duration": 2.0
+    },
+    {
+        "text": "because we",
+        "start": 631.6,
+        "duration": 2.799
+    },
+    {
+        "text": "didn't end up you know decreasing the",
+        "start": 632.079,
+        "duration": 3.841
+    },
+    {
+        "text": "number of connected components we didn't",
+        "start": 634.399,
+        "duration": 3.521
+    },
+    {
+        "text": "even do a union operation so in that",
+        "start": 635.92,
+        "duration": 2.4
+    },
+    {
+        "text": "case",
+        "start": 637.92,
+        "duration": 2.8
+    },
+    {
+        "text": "we would return before we made any",
+        "start": 638.32,
+        "duration": 3.759
+    },
+    {
+        "text": "changes to the graph",
+        "start": 640.72,
+        "duration": 3.04
+    },
+    {
+        "text": "once we see that they both have the same",
+        "start": 642.079,
+        "duration": 3.681
+    },
+    {
+        "text": "parent we return immediately",
+        "start": 643.76,
+        "duration": 4.56
+    },
+    {
+        "text": "so that's the main idea of this",
+        "start": 645.76,
+        "duration": 4.4
+    },
+    {
+        "text": "algorithm once you've implemented it",
+        "start": 648.32,
+        "duration": 3.92
+    },
+    {
+        "text": "you've written it out and coded it once",
+        "start": 650.16,
+        "duration": 3.52
+    },
+    {
+        "text": "or twice or three times",
+        "start": 652.24,
+        "duration": 3.039
+    },
+    {
+        "text": "it gets pretty straightforward because",
+        "start": 653.68,
+        "duration": 3.44
+    },
+    {
+        "text": "most union find problems are pretty",
+        "start": 655.279,
+        "duration": 2.56
+    },
+    {
+        "text": "similar",
+        "start": 657.12,
+        "duration": 2.56
+    },
+    {
+        "text": "so now let's get into the code and like",
+        "start": 657.839,
+        "duration": 3.44
+    },
+    {
+        "text": "i said this is a leak code premium",
+        "start": 659.68,
+        "duration": 2.159
+    },
+    {
+        "text": "problem",
+        "start": 661.279,
+        "duration": 2.481
+    },
+    {
+        "text": "but if you don't have leak code premium",
+        "start": 661.839,
+        "duration": 4.961
+    },
+    {
+        "text": "i'd recommend solving leak code 547",
+        "start": 663.76,
+        "duration": 5.68
+    },
+    {
+        "text": "so this problem leak code 547 number of",
+        "start": 666.8,
+        "duration": 4.8
+    },
+    {
+        "text": "provinces is pretty much exactly",
+        "start": 669.44,
+        "duration": 4.399
+    },
+    {
+        "text": "like a union find problem so if you want",
+        "start": 671.6,
+        "duration": 3.84
+    },
+    {
+        "text": "to practice union find go ahead and do",
+        "start": 673.839,
+        "duration": 3.201
+    },
+    {
+        "text": "it on this problem it's pretty much the",
+        "start": 675.44,
+        "duration": 2.639
+    },
+    {
+        "text": "exact same",
+        "start": 677.04,
+        "duration": 2.479
+    },
+    {
+        "text": "so like i mentioned we're going to have",
+        "start": 678.079,
+        "duration": 3.601
+    },
+    {
+        "text": "a parent array initially",
+        "start": 679.519,
+        "duration": 5.201
+    },
+    {
+        "text": "each node so for i and range of",
+        "start": 681.68,
+        "duration": 4.56
+    },
+    {
+        "text": "n each node is just going to be the",
+        "start": 684.72,
+        "duration": 3.84
+    },
+    {
+        "text": "parent of itself and we're gonna have a",
+        "start": 686.24,
+        "duration": 3.68
+    },
+    {
+        "text": "list of ranks each",
+        "start": 688.56,
+        "duration": 3.76
+    },
+    {
+        "text": "uh you know component is just gonna have",
+        "start": 689.92,
+        "duration": 4.64
+    },
+    {
+        "text": "a rank of one initially so",
+        "start": 692.32,
+        "duration": 3.759
+    },
+    {
+        "text": "and then we're gonna define our two",
+        "start": 694.56,
+        "duration": 3.92
+    },
+    {
+        "text": "functions find and union find is the",
+        "start": 696.079,
+        "duration": 3.76
+    },
+    {
+        "text": "simpler one so let's start with that",
+        "start": 698.48,
+        "duration": 2.72
+    },
+    {
+        "text": "let's say we're given a",
+        "start": 699.839,
+        "duration": 4.801
+    },
+    {
+        "text": "node n1 we want to find its root parent",
+        "start": 701.2,
+        "duration": 6.0
+    },
+    {
+        "text": "so for n1 we want to return its root",
+        "start": 704.64,
+        "duration": 4.24
+    },
+    {
+        "text": "parent so initially we'll just set the",
+        "start": 707.2,
+        "duration": 3.84
+    },
+    {
+        "text": "result equal to n1 and we'll say",
+        "start": 708.88,
+        "duration": 5.759
+    },
+    {
+        "text": "while result is not equal to the parent",
+        "start": 711.04,
+        "duration": 5.919
+    },
+    {
+        "text": "of itself we know we can stop searching",
+        "start": 714.639,
+        "duration": 3.921
+    },
+    {
+        "text": "once we've gotten to a node",
+        "start": 716.959,
+        "duration": 4.401
+    },
+    {
+        "text": "where the node itself is its own parent",
+        "start": 718.56,
+        "duration": 4.16
+    },
+    {
+        "text": "because that means we can't go any",
+        "start": 721.36,
+        "duration": 3.2
+    },
+    {
+        "text": "higher we found the root parent",
+        "start": 722.72,
+        "duration": 3.28
+    },
+    {
+        "text": "so in that case what we would do is just",
+        "start": 724.56,
+        "duration": 3.279
+    },
+    {
+        "text": "return the result which is the root",
+        "start": 726.0,
+        "duration": 3.04
+    },
+    {
+        "text": "parent but if we don't",
+        "start": 727.839,
+        "duration": 3.12
+    },
+    {
+        "text": "have that what we can do then is",
+        "start": 729.04,
+        "duration": 3.52
+    },
+    {
+        "text": "basically update the current",
+        "start": 730.959,
+        "duration": 4.721
+    },
+    {
+        "text": "pointer to be its parent",
+        "start": 732.56,
+        "duration": 5.04
+    },
+    {
+        "text": "right we just want to go up that chain",
+        "start": 735.68,
+        "duration": 3.76
+    },
+    {
+        "text": "until we get to the parent now before we",
+        "start": 737.6,
+        "duration": 2.64
+    },
+    {
+        "text": "do that",
+        "start": 739.44,
+        "duration": 2.079
+    },
+    {
+        "text": "one thing i didn't mention in the",
+        "start": 740.24,
+        "duration": 2.88
+    },
+    {
+        "text": "drawing explanation because i don't want",
+        "start": 741.519,
+        "duration": 2.241
+    },
+    {
+        "text": "to get too",
+        "start": 743.12,
+        "duration": 3.2
+    },
+    {
+        "text": "in-depth it's basically an idea of path",
+        "start": 743.76,
+        "duration": 4.16
+    },
+    {
+        "text": "compression i would google it it's",
+        "start": 746.32,
+        "duration": 2.639
+    },
+    {
+        "text": "pretty simple",
+        "start": 747.92,
+        "duration": 3.28
+    },
+    {
+        "text": "to understand that's just kind of how",
+        "start": 748.959,
+        "duration": 4.161
+    },
+    {
+        "text": "union find problems are optimized it's",
+        "start": 751.2,
+        "duration": 3.84
+    },
+    {
+        "text": "just adding one line of code which can",
+        "start": 753.12,
+        "duration": 3.6
+    },
+    {
+        "text": "optimize it so basically what we're",
+        "start": 755.04,
+        "duration": 3.599
+    },
+    {
+        "text": "saying is before we go to the parent",
+        "start": 756.72,
+        "duration": 5.84
+    },
+    {
+        "text": "we want to set the parent of result",
+        "start": 758.639,
+        "duration": 7.601
+    },
+    {
+        "text": "equal to its grandparent so if we did",
+        "start": 762.56,
+        "duration": 5.76
+    },
+    {
+        "text": "have a linked list that we were going up",
+        "start": 766.24,
+        "duration": 4.08
+    },
+    {
+        "text": "the chain of what we would do now is",
+        "start": 768.32,
+        "duration": 3.68
+    },
+    {
+        "text": "basically make the linked lists",
+        "start": 770.32,
+        "duration": 3.68
+    },
+    {
+        "text": "a little bit shorter so we're just",
+        "start": 772.0,
+        "duration": 4.56
+    },
+    {
+        "text": "setting our parent equal to the parent",
+        "start": 774.0,
+        "duration": 5.6
+    },
+    {
+        "text": "of our parent if it happens to exist if",
+        "start": 776.56,
+        "duration": 4.8
+    },
+    {
+        "text": "it doesn't exist if we don't actually",
+        "start": 779.6,
+        "duration": 3.52
+    },
+    {
+        "text": "have a grandparent then",
+        "start": 781.36,
+        "duration": 4.159
+    },
+    {
+        "text": "this line will basically do nothing so",
+        "start": 783.12,
+        "duration": 3.839
+    },
+    {
+        "text": "that's pretty simple for the",
+        "start": 785.519,
+        "duration": 4.0
+    },
+    {
+        "text": "find function and last we're going to do",
+        "start": 786.959,
+        "duration": 4.401
+    },
+    {
+        "text": "the union so we're going to take two",
+        "start": 789.519,
+        "duration": 4.081
+    },
+    {
+        "text": "nodes this time n1 and n2 and we want to",
+        "start": 791.36,
+        "duration": 4.159
+    },
+    {
+        "text": "union their components together",
+        "start": 793.6,
+        "duration": 3.76
+    },
+    {
+        "text": "so first thing we need to do is find the",
+        "start": 795.519,
+        "duration": 4.081
+    },
+    {
+        "text": "root parents of each of these nodes this",
+        "start": 797.36,
+        "duration": 4.479
+    },
+    {
+        "text": "is exactly why we just wrote our find",
+        "start": 799.6,
+        "duration": 3.28
+    },
+    {
+        "text": "function first",
+        "start": 801.839,
+        "duration": 2.641
+    },
+    {
+        "text": "because we want to get the root parents",
+        "start": 802.88,
+        "duration": 4.0
+    },
+    {
+        "text": "of n1 and n2",
+        "start": 804.48,
+        "duration": 4.159
+    },
+    {
+        "text": "and then we can go ahead and merge them",
+        "start": 806.88,
+        "duration": 3.84
+    },
+    {
+        "text": "together now it's possible that they",
+        "start": 808.639,
+        "duration": 3.841
+    },
+    {
+        "text": "have the same parent in which case we're",
+        "start": 810.72,
+        "duration": 3.359
+    },
+    {
+        "text": "just going to return immediately",
+        "start": 812.48,
+        "duration": 3.919
+    },
+    {
+        "text": "so if p1 equals p2 we're going to return",
+        "start": 814.079,
+        "duration": 4.0
+    },
+    {
+        "text": "immediately we're going to return 0 to",
+        "start": 816.399,
+        "duration": 3.44
+    },
+    {
+        "text": "indicate that we did not actually",
+        "start": 818.079,
+        "duration": 3.44
+    },
+    {
+        "text": "perform a union",
+        "start": 819.839,
+        "duration": 3.281
+    },
+    {
+        "text": "otherwise we're actually going to do the",
+        "start": 821.519,
+        "duration": 2.961
+    },
+    {
+        "text": "union and remember we're going to do",
+        "start": 823.12,
+        "duration": 2.32
+    },
+    {
+        "text": "this union by",
+        "start": 824.48,
+        "duration": 4.56
+    },
+    {
+        "text": "rank so let's say the rank of p2",
+        "start": 825.44,
+        "duration": 6.72
+    },
+    {
+        "text": "is greater than the rank of p1",
+        "start": 829.04,
+        "duration": 5.599
+    },
+    {
+        "text": "in that case p2 is going to be the",
+        "start": 832.16,
+        "duration": 4.4
+    },
+    {
+        "text": "parent of p1 so we're going to say for",
+        "start": 834.639,
+        "duration": 2.721
+    },
+    {
+        "text": "p1",
+        "start": 836.56,
+        "duration": 3.44
+    },
+    {
+        "text": "let's set its parent equal to p2 and",
+        "start": 837.36,
+        "duration": 3.68
+    },
+    {
+        "text": "then we can",
+        "start": 840.0,
+        "duration": 3.6
+    },
+    {
+        "text": "increase the rank of p2 because since",
+        "start": 841.04,
+        "duration": 3.599
+    },
+    {
+        "text": "it's the parent",
+        "start": 843.6,
+        "duration": 2.96
+    },
+    {
+        "text": "we've just added some children to it so",
+        "start": 844.639,
+        "duration": 3.601
+    },
+    {
+        "text": "we're going to add to it the rank",
+        "start": 846.56,
+        "duration": 4.16
+    },
+    {
+        "text": "of whatever p1 happened to be before",
+        "start": 848.24,
+        "duration": 3.039
+    },
+    {
+        "text": "that",
+        "start": 850.72,
+        "duration": 2.559
+    },
+    {
+        "text": "and the else case is basically just",
+        "start": 851.279,
+        "duration": 4.401
+    },
+    {
+        "text": "doing the exact opposite of this so",
+        "start": 853.279,
+        "duration": 4.56
+    },
+    {
+        "text": "that would be if p1 was greater",
+        "start": 855.68,
+        "duration": 3.76
+    },
+    {
+        "text": "therefore we'd want p",
+        "start": 857.839,
+        "duration": 4.401
+    },
+    {
+        "text": "p1 to be the parent of p2 and we'd want",
+        "start": 859.44,
+        "duration": 4.24
+    },
+    {
+        "text": "to increase the rank",
+        "start": 862.24,
+        "duration": 3.92
+    },
+    {
+        "text": "of p1 by whatever the rank of p2",
+        "start": 863.68,
+        "duration": 3.92
+    },
+    {
+        "text": "happened to be before that",
+        "start": 866.16,
+        "duration": 3.28
+    },
+    {
+        "text": "once that's all said and done we're just",
+        "start": 867.6,
+        "duration": 3.679
+    },
+    {
+        "text": "going to return 1 to indicate that we",
+        "start": 869.44,
+        "duration": 4.88
+    },
+    {
+        "text": "actually did perform a successful union",
+        "start": 871.279,
+        "duration": 4.8
+    },
+    {
+        "text": "and those return values are going to",
+        "start": 874.32,
+        "duration": 3.68
+    },
+    {
+        "text": "come in useful for us right about now",
+        "start": 876.079,
+        "duration": 3.281
+    },
+    {
+        "text": "when we go through every single",
+        "start": 878.0,
+        "duration": 2.88
+    },
+    {
+        "text": "edge so let's go through every single",
+        "start": 879.36,
+        "duration": 3.2
+    },
+    {
+        "text": "edge which is a pair of nodes",
+        "start": 880.88,
+        "duration": 4.079
+    },
+    {
+        "text": "in our input edges so we're going to be",
+        "start": 882.56,
+        "duration": 4.8
+    },
+    {
+        "text": "unioning n1 and n2 together",
+        "start": 884.959,
+        "duration": 5.44
+    },
+    {
+        "text": "so we can call union on n1 and n2",
+        "start": 887.36,
+        "duration": 5.2
+    },
+    {
+        "text": "remember the number of connected",
+        "start": 890.399,
+        "duration": 3.761
+    },
+    {
+        "text": "components we initially start out with",
+        "start": 892.56,
+        "duration": 1.92
+    },
+    {
+        "text": "is",
+        "start": 894.16,
+        "duration": 1.919
+    },
+    {
+        "text": "n so we're going to set the result equal",
+        "start": 894.48,
+        "duration": 4.719
+    },
+    {
+        "text": "to n every time we perform a successful",
+        "start": 896.079,
+        "duration": 6.081
+    },
+    {
+        "text": "union operation we want to decrement the",
+        "start": 899.199,
+        "duration": 3.76
+    },
+    {
+        "text": "result by",
+        "start": 902.16,
+        "duration": 3.28
+    },
+    {
+        "text": "one which is the return value of union",
+        "start": 902.959,
+        "duration": 3.841
+    },
+    {
+        "text": "if it's successful if it's",
+        "start": 905.44,
+        "duration": 3.44
+    },
+    {
+        "text": "unsuccessful then we're going to return",
+        "start": 906.8,
+        "duration": 4.24
+    },
+    {
+        "text": "zero in which case our result is",
+        "start": 908.88,
+        "duration": 4.399
+    },
+    {
+        "text": "not going to be updated at all right if",
+        "start": 911.04,
+        "duration": 4.4
+    },
+    {
+        "text": "we don't perform a union there's no need",
+        "start": 913.279,
+        "duration": 3.68
+    },
+    {
+        "text": "to update the number of connected",
+        "start": 915.44,
+        "duration": 2.24
+    },
+    {
+        "text": "components",
+        "start": 916.959,
+        "duration": 2.721
+    },
+    {
+        "text": "so you can see that the math works out",
+        "start": 917.68,
+        "duration": 3.2
+    },
+    {
+        "text": "pretty nicely for us",
+        "start": 919.68,
+        "duration": 3.2
+    },
+    {
+        "text": "once that is completed we can go ahead",
+        "start": 920.88,
+        "duration": 3.44
+    },
+    {
+        "text": "and return the result which is the",
+        "start": 922.88,
+        "duration": 2.88
+    },
+    {
+        "text": "number of connected components that's",
+        "start": 924.32,
+        "duration": 3.199
+    },
+    {
+        "text": "what we originally wanted to do",
+        "start": 925.76,
+        "duration": 3.12
+    },
+    {
+        "text": "and it wouldn't be a video of mine",
+        "start": 927.519,
+        "duration": 3.12
+    },
+    {
+        "text": "without a typo i don't know how i missed",
+        "start": 928.88,
+        "duration": 3.36
+    },
+    {
+        "text": "it but on this first line i didn't",
+        "start": 930.639,
+        "duration": 2.32
+    },
+    {
+        "text": "actually",
+        "start": 932.24,
+        "duration": 3.599
+    },
+    {
+        "text": "declare the variable so for i in range",
+        "start": 932.959,
+        "duration": 5.041
+    },
+    {
+        "text": "and you probably caught that earlier",
+        "start": 935.839,
+        "duration": 4.081
+    },
+    {
+        "text": "so sorry if it was frustrating to watch",
+        "start": 938.0,
+        "duration": 3.279
+    },
+    {
+        "text": "but as you can see",
+        "start": 939.92,
+        "duration": 4.32
+    },
+    {
+        "text": "we've run the code and this problem is",
+        "start": 941.279,
+        "duration": 5.201
+    },
+    {
+        "text": "pretty efficient union find is about as",
+        "start": 944.24,
+        "duration": 3.76
+    },
+    {
+        "text": "efficient as you can get for this",
+        "start": 946.48,
+        "duration": 3.12
+    },
+    {
+        "text": "problem this problem is literally made",
+        "start": 948.0,
+        "duration": 3.12
+    },
+    {
+        "text": "for union finding so i hope this was",
+        "start": 949.6,
+        "duration": 2.08
+    },
+    {
+        "text": "helpful",
+        "start": 951.12,
+        "duration": 2.639
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 951.68,
+        "duration": 3.839
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 953.759,
+        "duration": 3.44
+    },
+    {
+        "text": "hopefully see you pretty soon",
+        "start": 955.519,
+        "duration": 4.721
+    },
+    {
+        "text": "thanks for watching",
+        "start": 957.199,
+        "duration": 3.041
+    }
+]

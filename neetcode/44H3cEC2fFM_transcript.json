@@ -1,0 +1,1437 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.08,
+        "duration": 3.599
+    },
+    {
+        "text": "some more neat code today so today let's",
+        "start": 1.599,
+        "duration": 2.641
+    },
+    {
+        "text": "solve",
+        "start": 3.679,
+        "duration": 3.921
+    },
+    {
+        "text": "merge intervals we are given an array of",
+        "start": 4.24,
+        "duration": 6.08
+    },
+    {
+        "text": "intervals with a start and an end value",
+        "start": 7.6,
+        "duration": 5.039
+    },
+    {
+        "text": "so an interval is a start and end value",
+        "start": 10.32,
+        "duration": 4.479
+    },
+    {
+        "text": "you can think of it like a class or a",
+        "start": 12.639,
+        "duration": 3.761
+    },
+    {
+        "text": "meeting or some",
+        "start": 14.799,
+        "duration": 4.4
+    },
+    {
+        "text": "kind of time period or whatever and for",
+        "start": 16.4,
+        "duration": 3.52
+    },
+    {
+        "text": "each of these",
+        "start": 19.199,
+        "duration": 3.601
+    },
+    {
+        "text": "intervals we want to take all the",
+        "start": 19.92,
+        "duration": 3.92
+    },
+    {
+        "text": "overlapping",
+        "start": 22.8,
+        "duration": 4.0
+    },
+    {
+        "text": "intervals and then merge them and then",
+        "start": 23.84,
+        "duration": 4.16
+    },
+    {
+        "text": "we're going to have a new",
+        "start": 26.8,
+        "duration": 4.559
+    },
+    {
+        "text": "output array of intervals and since we",
+        "start": 28.0,
+        "duration": 5.52
+    },
+    {
+        "text": "merged the overlapping intervals the",
+        "start": 31.359,
+        "duration": 2.72
+    },
+    {
+        "text": "result",
+        "start": 33.52,
+        "duration": 3.6
+    },
+    {
+        "text": "is going to be non-overlapping so in",
+        "start": 34.079,
+        "duration": 3.681
+    },
+    {
+        "text": "this case",
+        "start": 37.12,
+        "duration": 3.84
+    },
+    {
+        "text": "we see we have an interval 1 3 and",
+        "start": 37.76,
+        "duration": 7.04
+    },
+    {
+        "text": "2 6. so these two are overlapping we can",
+        "start": 40.96,
+        "duration": 5.119
+    },
+    {
+        "text": "merge them into one",
+        "start": 44.8,
+        "duration": 5.04
+    },
+    {
+        "text": "interval 1 6. the remaining two",
+        "start": 46.079,
+        "duration": 4.64
+    },
+    {
+        "text": "intervals",
+        "start": 49.84,
+        "duration": 4.64
+    },
+    {
+        "text": "are non-overlapping so they do not get",
+        "start": 50.719,
+        "duration": 6.881
+    },
+    {
+        "text": "merged and then we see that the",
+        "start": 54.48,
+        "duration": 6.399
+    },
+    {
+        "text": "output has three on intervals one",
+        "start": 57.6,
+        "duration": 6.16
+    },
+    {
+        "text": "that we had to merge to get and then the",
+        "start": 60.879,
+        "duration": 3.36
+    },
+    {
+        "text": "two",
+        "start": 63.76,
+        "duration": 3.039
+    },
+    {
+        "text": "original and this second example just",
+        "start": 64.239,
+        "duration": 5.281
+    },
+    {
+        "text": "basically clarifies that if we have one",
+        "start": 66.799,
+        "duration": 5.601
+    },
+    {
+        "text": "interval one four and a second interval",
+        "start": 69.52,
+        "duration": 3.2
+    },
+    {
+        "text": "four",
+        "start": 72.4,
+        "duration": 2.28
+    },
+    {
+        "text": "five now these aren't technically",
+        "start": 72.72,
+        "duration": 3.12
+    },
+    {
+        "text": "overlapping",
+        "start": 74.68,
+        "duration": 3.4
+    },
+    {
+        "text": "in a sense right like we have one to",
+        "start": 75.84,
+        "duration": 3.279
+    },
+    {
+        "text": "four and",
+        "start": 78.08,
+        "duration": 4.719
+    },
+    {
+        "text": "four to five so they clarify that these",
+        "start": 79.119,
+        "duration": 4.481
+    },
+    {
+        "text": "two actually",
+        "start": 82.799,
+        "duration": 3.841
+    },
+    {
+        "text": "do count as overlapping so what's a",
+        "start": 83.6,
+        "duration": 5.36
+    },
+    {
+        "text": "good and efficient way to solve this",
+        "start": 86.64,
+        "duration": 3.92
+    },
+    {
+        "text": "problem let's say we're given",
+        "start": 88.96,
+        "duration": 4.479
+    },
+    {
+        "text": "the exact same four intervals that we",
+        "start": 90.56,
+        "duration": 4.8
+    },
+    {
+        "text": "were given in the original example but",
+        "start": 93.439,
+        "duration": 2.32
+    },
+    {
+        "text": "notice",
+        "start": 95.36,
+        "duration": 2.799
+    },
+    {
+        "text": "this time they're out of order this one",
+        "start": 95.759,
+        "duration": 4.32
+    },
+    {
+        "text": "is 1 3 this one is 8",
+        "start": 98.159,
+        "duration": 5.681
+    },
+    {
+        "text": "10 this is 2 6. it was originally over",
+        "start": 100.079,
+        "duration": 4.32
+    },
+    {
+        "text": "here",
+        "start": 103.84,
+        "duration": 3.279
+    },
+    {
+        "text": "right they had given the input to us in",
+        "start": 104.399,
+        "duration": 3.441
+    },
+    {
+        "text": "sorted",
+        "start": 107.119,
+        "duration": 3.121
+    },
+    {
+        "text": "order right so that's kind of a hint",
+        "start": 107.84,
+        "duration": 4.88
+    },
+    {
+        "text": "that it might be helpful for us",
+        "start": 110.24,
+        "duration": 6.479
+    },
+    {
+        "text": "to keep our intervals in sorted order",
+        "start": 112.72,
+        "duration": 6.48
+    },
+    {
+        "text": "but what's a good way to kind of",
+        "start": 116.719,
+        "duration": 4.801
+    },
+    {
+        "text": "visualize what's actually going on with",
+        "start": 119.2,
+        "duration": 3.12
+    },
+    {
+        "text": "these intervals",
+        "start": 121.52,
+        "duration": 3.12
+    },
+    {
+        "text": "these numbers are pretty descriptive but",
+        "start": 122.32,
+        "duration": 4.96
+    },
+    {
+        "text": "it's better to have a picture to look at",
+        "start": 124.64,
+        "duration": 5.44
+    },
+    {
+        "text": "so i'm gonna draw a number line and",
+        "start": 127.28,
+        "duration": 3.36
+    },
+    {
+        "text": "we're gonna",
+        "start": 130.08,
+        "duration": 2.879
+    },
+    {
+        "text": "start at zero because they clarify for",
+        "start": 130.64,
+        "duration": 3.599
+    },
+    {
+        "text": "us in the problem",
+        "start": 132.959,
+        "duration": 3.681
+    },
+    {
+        "text": "that any interval is not gonna start at",
+        "start": 134.239,
+        "duration": 4.561
+    },
+    {
+        "text": "like a negative value so we can",
+        "start": 136.64,
+        "duration": 4.8
+    },
+    {
+        "text": "start at zero so let's just start",
+        "start": 138.8,
+        "duration": 3.519
+    },
+    {
+        "text": "putting these",
+        "start": 141.44,
+        "duration": 3.76
+    },
+    {
+        "text": "intervals into our number line and see",
+        "start": 142.319,
+        "duration": 3.92
+    },
+    {
+        "text": "what happens",
+        "start": 145.2,
+        "duration": 4.32
+    },
+    {
+        "text": "so we have one three so i'm gonna",
+        "start": 146.239,
+        "duration": 6.481
+    },
+    {
+        "text": "have a line going from one",
+        "start": 149.52,
+        "duration": 5.92
+    },
+    {
+        "text": "going from one to three which is over",
+        "start": 152.72,
+        "duration": 3.28
+    },
+    {
+        "text": "here",
+        "start": 155.44,
+        "duration": 3.519
+    },
+    {
+        "text": "so this interval is length 2. we'll have",
+        "start": 156.0,
+        "duration": 4.48
+    },
+    {
+        "text": "an interval going from",
+        "start": 158.959,
+        "duration": 4.721
+    },
+    {
+        "text": "8 to 10 another interval of length",
+        "start": 160.48,
+        "duration": 6.72
+    },
+    {
+        "text": "2. we'll have an interval from 15 to 18",
+        "start": 163.68,
+        "duration": 6.88
+    },
+    {
+        "text": "and the last interval is from two to six",
+        "start": 167.2,
+        "duration": 6.56
+    },
+    {
+        "text": "so notice this time we actually do have",
+        "start": 170.56,
+        "duration": 3.6
+    },
+    {
+        "text": "an",
+        "start": 173.76,
+        "duration": 3.6
+    },
+    {
+        "text": "overlapping interval two to six",
+        "start": 174.16,
+        "duration": 6.079
+    },
+    {
+        "text": "so i'm gonna draw it above so i'm gonna",
+        "start": 177.36,
+        "duration": 3.519
+    },
+    {
+        "text": "draw it",
+        "start": 180.239,
+        "duration": 2.801
+    },
+    {
+        "text": "where it's obvious that we have two",
+        "start": 180.879,
+        "duration": 3.161
+    },
+    {
+        "text": "intervals that are",
+        "start": 183.04,
+        "duration": 3.76
+    },
+    {
+        "text": "overlapping now when you actually draw",
+        "start": 184.04,
+        "duration": 4.199
+    },
+    {
+        "text": "out the number line",
+        "start": 186.8,
+        "duration": 4.64
+    },
+    {
+        "text": "it kind of becomes obvious that",
+        "start": 188.239,
+        "duration": 6.0
+    },
+    {
+        "text": "it would be very helpful for us to take",
+        "start": 191.44,
+        "duration": 3.36
+    },
+    {
+        "text": "these",
+        "start": 194.239,
+        "duration": 4.241
+    },
+    {
+        "text": "intervals and sort them based on",
+        "start": 194.8,
+        "duration": 7.12
+    },
+    {
+        "text": "the start value we don't care so much",
+        "start": 198.48,
+        "duration": 7.44
+    },
+    {
+        "text": "about the end value because we want to",
+        "start": 201.92,
+        "duration": 7.039
+    },
+    {
+        "text": "go through our number line starting",
+        "start": 205.92,
+        "duration": 5.679
+    },
+    {
+        "text": "at the beginning starting at the start",
+        "start": 208.959,
+        "duration": 3.521
+    },
+    {
+        "text": "value",
+        "start": 211.599,
+        "duration": 3.92
+    },
+    {
+        "text": "going to the next start value going to",
+        "start": 212.48,
+        "duration": 5.039
+    },
+    {
+        "text": "the next start value and then continuing",
+        "start": 215.519,
+        "duration": 2.481
+    },
+    {
+        "text": "that",
+        "start": 217.519,
+        "duration": 3.521
+    },
+    {
+        "text": "because this allows us to detect",
+        "start": 218.0,
+        "duration": 5.519
+    },
+    {
+        "text": "so for example we look at this interval",
+        "start": 221.04,
+        "duration": 4.0
+    },
+    {
+        "text": "first we know it goes",
+        "start": 223.519,
+        "duration": 5.041
+    },
+    {
+        "text": "from one to three next we look",
+        "start": 225.04,
+        "duration": 6.559
+    },
+    {
+        "text": "at the second interval it goes from",
+        "start": 228.56,
+        "duration": 6.16
+    },
+    {
+        "text": "two to six and since we just looked at",
+        "start": 231.599,
+        "duration": 4.64
+    },
+    {
+        "text": "the previous interval",
+        "start": 234.72,
+        "duration": 5.68
+    },
+    {
+        "text": "over here we know that this one overlaps",
+        "start": 236.239,
+        "duration": 6.56
+    },
+    {
+        "text": "with this one so what are we going to do",
+        "start": 240.4,
+        "duration": 3.6
+    },
+    {
+        "text": "we're going to merge them",
+        "start": 242.799,
+        "duration": 4.481
+    },
+    {
+        "text": "together into a new interval",
+        "start": 244.0,
+        "duration": 6.48
+    },
+    {
+        "text": "so it results in a new interval from",
+        "start": 247.28,
+        "duration": 6.4
+    },
+    {
+        "text": "1 to 6 because remember ultimately we",
+        "start": 250.48,
+        "duration": 4.08
+    },
+    {
+        "text": "are trying to",
+        "start": 253.68,
+        "duration": 3.92
+    },
+    {
+        "text": "merge the intervals and then we go to",
+        "start": 254.56,
+        "duration": 6.639
+    },
+    {
+        "text": "our next starting position which is",
+        "start": 257.6,
+        "duration": 7.2
+    },
+    {
+        "text": "a so we have an interval from 8 to 10",
+        "start": 261.199,
+        "duration": 6.72
+    },
+    {
+        "text": "and we know it does not merge with this",
+        "start": 264.8,
+        "duration": 4.88
+    },
+    {
+        "text": "one because they're non-overlapping we",
+        "start": 267.919,
+        "duration": 2.641
+    },
+    {
+        "text": "got some",
+        "start": 269.68,
+        "duration": 4.64
+    },
+    {
+        "text": "space over here right lastly we go to",
+        "start": 270.56,
+        "duration": 7.199
+    },
+    {
+        "text": "this interval and it goes from 15",
+        "start": 274.32,
+        "duration": 6.56
+    },
+    {
+        "text": "to 18 we know it does not overlap with",
+        "start": 277.759,
+        "duration": 3.761
+    },
+    {
+        "text": "this one",
+        "start": 280.88,
+        "duration": 3.44
+    },
+    {
+        "text": "there's all this space in between right",
+        "start": 281.52,
+        "duration": 5.119
+    },
+    {
+        "text": "so just to reiterate we're going to take",
+        "start": 284.32,
+        "duration": 5.52
+    },
+    {
+        "text": "our input list of intervals sort",
+        "start": 286.639,
+        "duration": 6.481
+    },
+    {
+        "text": "by the start value",
+        "start": 289.84,
+        "duration": 5.6
+    },
+    {
+        "text": "of each interval and then we're gonna",
+        "start": 293.12,
+        "duration": 4.4
+    },
+    {
+        "text": "iterate through each start value right",
+        "start": 295.44,
+        "duration": 2.88
+    },
+    {
+        "text": "starting at",
+        "start": 297.52,
+        "duration": 3.44
+    },
+    {
+        "text": "the first one then the next one then",
+        "start": 298.32,
+        "duration": 3.52
+    },
+    {
+        "text": "this one",
+        "start": 300.96,
+        "duration": 2.959
+    },
+    {
+        "text": "then this one and where each time we're",
+        "start": 301.84,
+        "duration": 3.52
+    },
+    {
+        "text": "going to check okay",
+        "start": 303.919,
+        "duration": 3.84
+    },
+    {
+        "text": "does the current interval does the most",
+        "start": 305.36,
+        "duration": 3.36
+    },
+    {
+        "text": "recent interval",
+        "start": 307.759,
+        "duration": 3.761
+    },
+    {
+        "text": "overlap with the previous interval if it",
+        "start": 308.72,
+        "duration": 4.24
+    },
+    {
+        "text": "doesn't we don't do anything",
+        "start": 311.52,
+        "duration": 5.44
+    },
+    {
+        "text": "if it does which it did in this case",
+        "start": 312.96,
+        "duration": 7.84
+    },
+    {
+        "text": "then we can merge them into one interval",
+        "start": 316.96,
+        "duration": 6.88
+    },
+    {
+        "text": "now it might seem unnecessary to even",
+        "start": 320.8,
+        "duration": 4.88
+    },
+    {
+        "text": "have a picture like this because",
+        "start": 323.84,
+        "duration": 3.76
+    },
+    {
+        "text": "this interval problem is actually",
+        "start": 325.68,
+        "duration": 3.92
+    },
+    {
+        "text": "straightforward right we just sort and",
+        "start": 327.6,
+        "duration": 3.599
+    },
+    {
+        "text": "then we merge the intervals",
+        "start": 329.6,
+        "duration": 3.68
+    },
+    {
+        "text": "but there are a lot more difficult",
+        "start": 331.199,
+        "duration": 3.041
+    },
+    {
+        "text": "interval problems",
+        "start": 333.28,
+        "duration": 3.44
+    },
+    {
+        "text": "where i'm telling you drawing a picture",
+        "start": 334.24,
+        "duration": 3.04
+    },
+    {
+        "text": "like this",
+        "start": 336.72,
+        "duration": 2.96
+    },
+    {
+        "text": "drawing a number line to understand",
+        "start": 337.28,
+        "duration": 3.6
+    },
+    {
+        "text": "what's actually going",
+        "start": 339.68,
+        "duration": 3.76
+    },
+    {
+        "text": "on makes the problem a lot easier to",
+        "start": 340.88,
+        "duration": 3.36
+    },
+    {
+        "text": "solve",
+        "start": 343.44,
+        "duration": 3.039
+    },
+    {
+        "text": "so now let's write the code remember we",
+        "start": 344.24,
+        "duration": 4.239
+    },
+    {
+        "text": "are sorting the entire input",
+        "start": 346.479,
+        "duration": 4.081
+    },
+    {
+        "text": "so the and then iterating through the",
+        "start": 348.479,
+        "duration": 3.041
+    },
+    {
+        "text": "input so the",
+        "start": 350.56,
+        "duration": 3.919
+    },
+    {
+        "text": "time complexity is going to be big o n",
+        "start": 351.52,
+        "duration": 3.84
+    },
+    {
+        "text": "log n",
+        "start": 354.479,
+        "duration": 3.28
+    },
+    {
+        "text": "where n is the number of intervals that",
+        "start": 355.36,
+        "duration": 3.119
+    },
+    {
+        "text": "we're given",
+        "start": 357.759,
+        "duration": 3.361
+    },
+    {
+        "text": "so thankfully for us in python it's",
+        "start": 358.479,
+        "duration": 4.241
+    },
+    {
+        "text": "pretty straightforward to sort we can",
+        "start": 361.12,
+        "duration": 2.079
+    },
+    {
+        "text": "just take",
+        "start": 362.72,
+        "duration": 2.88
+    },
+    {
+        "text": "interval sort and what's the key we're",
+        "start": 363.199,
+        "duration": 4.161
+    },
+    {
+        "text": "sorting by because remember we're",
+        "start": 365.6,
+        "duration": 3.12
+    },
+    {
+        "text": "sorting a list",
+        "start": 367.36,
+        "duration": 4.88
+    },
+    {
+        "text": "of pairs so the key is going to be a",
+        "start": 368.72,
+        "duration": 6.64
+    },
+    {
+        "text": "in python a lambda function so in this",
+        "start": 372.24,
+        "duration": 3.679
+    },
+    {
+        "text": "case",
+        "start": 375.36,
+        "duration": 3.76
+    },
+    {
+        "text": "i is going to stand for the interval and",
+        "start": 375.919,
+        "duration": 5.441
+    },
+    {
+        "text": "what value of this interval are we going",
+        "start": 379.12,
+        "duration": 3.76
+    },
+    {
+        "text": "to use we're going to use the first",
+        "start": 381.36,
+        "duration": 2.72
+    },
+    {
+        "text": "value so at index",
+        "start": 382.88,
+        "duration": 3.439
+    },
+    {
+        "text": "0 we're sorting by the start value if we",
+        "start": 384.08,
+        "duration": 3.92
+    },
+    {
+        "text": "wanted to sort by the end value this",
+        "start": 386.319,
+        "duration": 2.481
+    },
+    {
+        "text": "would be",
+        "start": 388.0,
+        "duration": 2.72
+    },
+    {
+        "text": "i of 1 but we're going to sort by the",
+        "start": 388.8,
+        "duration": 3.44
+    },
+    {
+        "text": "start value only",
+        "start": 390.72,
+        "duration": 3.919
+    },
+    {
+        "text": "and so let's also declare an output",
+        "start": 392.24,
+        "duration": 4.239
+    },
+    {
+        "text": "where we're going to put the merged",
+        "start": 394.639,
+        "duration": 3.761
+    },
+    {
+        "text": "intervals so i'm not going to initialize",
+        "start": 396.479,
+        "duration": 2.401
+    },
+    {
+        "text": "this to",
+        "start": 398.4,
+        "duration": 2.239
+    },
+    {
+        "text": "empty i'm actually going to take the",
+        "start": 398.88,
+        "duration": 3.12
+    },
+    {
+        "text": "first interval",
+        "start": 400.639,
+        "duration": 4.0
+    },
+    {
+        "text": "and have it inserted into the output",
+        "start": 402.0,
+        "duration": 3.28
+    },
+    {
+        "text": "just so",
+        "start": 404.639,
+        "duration": 3.68
+    },
+    {
+        "text": "i can avoid an edge case so we have",
+        "start": 405.28,
+        "duration": 4.16
+    },
+    {
+        "text": "initialized",
+        "start": 408.319,
+        "duration": 2.88
+    },
+    {
+        "text": "the interval so now we're going to",
+        "start": 409.44,
+        "duration": 3.759
+    },
+    {
+        "text": "iterate through every",
+        "start": 411.199,
+        "duration": 5.601
+    },
+    {
+        "text": "single interval in sorted order",
+        "start": 413.199,
+        "duration": 5.84
+    },
+    {
+        "text": "and technically we can skip the first",
+        "start": 416.8,
+        "duration": 4.32
+    },
+    {
+        "text": "one because we already added the first",
+        "start": 419.039,
+        "duration": 5.361
+    },
+    {
+        "text": "interval into the output",
+        "start": 421.12,
+        "duration": 5.76
+    },
+    {
+        "text": "and instead of just having the interval",
+        "start": 424.4,
+        "duration": 3.919
+    },
+    {
+        "text": "itself we know we're going to use the",
+        "start": 426.88,
+        "duration": 3.039
+    },
+    {
+        "text": "start and end value so i'm just going to",
+        "start": 428.319,
+        "duration": 2.641
+    },
+    {
+        "text": "extract them",
+        "start": 429.919,
+        "duration": 4.321
+    },
+    {
+        "text": "like this and so how do we know if",
+        "start": 430.96,
+        "duration": 5.679
+    },
+    {
+        "text": "the interval is overlapping with the",
+        "start": 434.24,
+        "duration": 3.519
+    },
+    {
+        "text": "most recent",
+        "start": 436.639,
+        "duration": 3.601
+    },
+    {
+        "text": "interval well we can get from our output",
+        "start": 437.759,
+        "duration": 4.56
+    },
+    {
+        "text": "this is why i added one so we can avoid",
+        "start": 440.24,
+        "duration": 3.359
+    },
+    {
+        "text": "the edge case from our",
+        "start": 442.319,
+        "duration": 4.801
+    },
+    {
+        "text": "output we can get the most recently",
+        "start": 443.599,
+        "duration": 4.88
+    },
+    {
+        "text": "added interval",
+        "start": 447.12,
+        "duration": 4.72
+    },
+    {
+        "text": "and get the end value of it because",
+        "start": 448.479,
+        "duration": 5.201
+    },
+    {
+        "text": "that's what we need to know if it",
+        "start": 451.84,
+        "duration": 2.799
+    },
+    {
+        "text": "overlaps",
+        "start": 453.68,
+        "duration": 3.28
+    },
+    {
+        "text": "so the end value of the most recent",
+        "start": 454.639,
+        "duration": 3.12
+    },
+    {
+        "text": "interval",
+        "start": 456.96,
+        "duration": 3.84
+    },
+    {
+        "text": "we'll call it last end and we're going",
+        "start": 457.759,
+        "duration": 4.801
+    },
+    {
+        "text": "to check of the current interval we're",
+        "start": 460.8,
+        "duration": 3.6
+    },
+    {
+        "text": "at the start and end value",
+        "start": 462.56,
+        "duration": 5.44
+    },
+    {
+        "text": "we're iterating through if the star",
+        "start": 464.4,
+        "duration": 7.199
+    },
+    {
+        "text": "is less than or equal",
+        "start": 468.0,
+        "duration": 6.8
+    },
+    {
+        "text": "to the last ending value that means",
+        "start": 471.599,
+        "duration": 5.121
+    },
+    {
+        "text": "they're overlapping the equal is",
+        "start": 474.8,
+        "duration": 3.2
+    },
+    {
+        "text": "important because they",
+        "start": 476.72,
+        "duration": 3.199
+    },
+    {
+        "text": "they told us in the second example that",
+        "start": 478.0,
+        "duration": 3.199
+    },
+    {
+        "text": "we are counting",
+        "start": 479.919,
+        "duration": 4.0
+    },
+    {
+        "text": "equal as overlapping so if they are",
+        "start": 481.199,
+        "duration": 4.161
+    },
+    {
+        "text": "overlapping what are we gonna do we're",
+        "start": 483.919,
+        "duration": 2.4
+    },
+    {
+        "text": "gonna merge them",
+        "start": 485.36,
+        "duration": 3.679
+    },
+    {
+        "text": "how do we merge them well all we have to",
+        "start": 486.319,
+        "duration": 3.28
+    },
+    {
+        "text": "do",
+        "start": 489.039,
+        "duration": 4.241
+    },
+    {
+        "text": "is take the most recently added",
+        "start": 489.599,
+        "duration": 7.04
+    },
+    {
+        "text": "interval and take the ending value",
+        "start": 493.28,
+        "duration": 7.039
+    },
+    {
+        "text": "of it and set it to the max",
+        "start": 496.639,
+        "duration": 7.12
+    },
+    {
+        "text": "of itself which we already have in last",
+        "start": 500.319,
+        "duration": 4.241
+    },
+    {
+        "text": "end",
+        "start": 503.759,
+        "duration": 3.681
+    },
+    {
+        "text": "and the max of the current end value",
+        "start": 504.56,
+        "duration": 4.0
+    },
+    {
+        "text": "that we're at",
+        "start": 507.44,
+        "duration": 3.039
+    },
+    {
+        "text": "and the reason we need to take the max",
+        "start": 508.56,
+        "duration": 3.28
+    },
+    {
+        "text": "is what if we had",
+        "start": 510.479,
+        "duration": 4.721
+    },
+    {
+        "text": "two intervals starting at 1 5",
+        "start": 511.84,
+        "duration": 7.04
+    },
+    {
+        "text": "and the second interval is 2",
+        "start": 515.2,
+        "duration": 6.8
+    },
+    {
+        "text": "4 because we would iterate through them",
+        "start": 518.88,
+        "duration": 5.12
+    },
+    {
+        "text": "in this order because this has a",
+        "start": 522.0,
+        "duration": 3.68
+    },
+    {
+        "text": "starting value of 1 this has a starting",
+        "start": 524.0,
+        "duration": 4.08
+    },
+    {
+        "text": "value of 2 but notice how this actually",
+        "start": 525.68,
+        "duration": 2.96
+    },
+    {
+        "text": "has a",
+        "start": 528.08,
+        "duration": 3.84
+    },
+    {
+        "text": "larger end value than this one so if we",
+        "start": 528.64,
+        "duration": 3.92
+    },
+    {
+        "text": "just take",
+        "start": 531.92,
+        "duration": 3.68
+    },
+    {
+        "text": "4 and merge this together and set this",
+        "start": 532.56,
+        "duration": 4.399
+    },
+    {
+        "text": "to four we're actually making the",
+        "start": 535.6,
+        "duration": 1.84
+    },
+    {
+        "text": "interval",
+        "start": 536.959,
+        "duration": 3.281
+    },
+    {
+        "text": "smaller we want to keep the five because",
+        "start": 537.44,
+        "duration": 4.399
+    },
+    {
+        "text": "merging these two together",
+        "start": 540.24,
+        "duration": 5.039
+    },
+    {
+        "text": "is going to actually result in one",
+        "start": 541.839,
+        "duration": 6.281
+    },
+    {
+        "text": "five so in the case that they're",
+        "start": 545.279,
+        "duration": 4.801
+    },
+    {
+        "text": "non-overlapping what are we going to do",
+        "start": 548.12,
+        "duration": 4.12
+    },
+    {
+        "text": "well we don't have to merge but we do",
+        "start": 550.08,
+        "duration": 2.96
+    },
+    {
+        "text": "have to",
+        "start": 552.24,
+        "duration": 4.0
+    },
+    {
+        "text": "take that interval and still add it to",
+        "start": 553.04,
+        "duration": 3.52
+    },
+    {
+        "text": "our",
+        "start": 556.24,
+        "duration": 3.599
+    },
+    {
+        "text": "output so we're going to take start end",
+        "start": 556.56,
+        "duration": 5.44
+    },
+    {
+        "text": "and just add it to our output so what",
+        "start": 559.839,
+        "duration": 3.841
+    },
+    {
+        "text": "would be an example of that well what if",
+        "start": 562.0,
+        "duration": 2.48
+    },
+    {
+        "text": "we had",
+        "start": 563.68,
+        "duration": 4.36
+    },
+    {
+        "text": "7 a right these two intervals are",
+        "start": 564.48,
+        "duration": 5.6
+    },
+    {
+        "text": "non-overlapping so the result would",
+        "start": 568.04,
+        "duration": 2.52
+    },
+    {
+        "text": "actually",
+        "start": 570.08,
+        "duration": 2.8
+    },
+    {
+        "text": "be itself right we don't have to make",
+        "start": 570.56,
+        "duration": 4.16
+    },
+    {
+        "text": "any changes we don't have to merge",
+        "start": 572.88,
+        "duration": 4.48
+    },
+    {
+        "text": "we can just leave it as it is and that's",
+        "start": 574.72,
+        "duration": 3.76
+    },
+    {
+        "text": "actually it",
+        "start": 577.36,
+        "duration": 3.039
+    },
+    {
+        "text": "so we didn't really have to do anything",
+        "start": 578.48,
+        "duration": 3.6
+    },
+    {
+        "text": "since we used the",
+        "start": 580.399,
+        "duration": 4.481
+    },
+    {
+        "text": "built in sort we took care of the main",
+        "start": 582.08,
+        "duration": 3.6
+    },
+    {
+        "text": "problem",
+        "start": 584.88,
+        "duration": 2.88
+    },
+    {
+        "text": "main part of this problem and all we",
+        "start": 585.68,
+        "duration": 3.76
+    },
+    {
+        "text": "have to do now is return",
+        "start": 587.76,
+        "duration": 4.0
+    },
+    {
+        "text": "the output and so this is a pretty",
+        "start": 589.44,
+        "duration": 3.6
+    },
+    {
+        "text": "efficient solution",
+        "start": 591.76,
+        "duration": 3.12
+    },
+    {
+        "text": "i hope this kind of explained a little",
+        "start": 593.04,
+        "duration": 3.44
+    },
+    {
+        "text": "bit of the intuition",
+        "start": 594.88,
+        "duration": 3.44
+    },
+    {
+        "text": "and you kind of have like a visual",
+        "start": 596.48,
+        "duration": 3.919
+    },
+    {
+        "text": "picture of what is actually going",
+        "start": 598.32,
+        "duration": 4.56
+    },
+    {
+        "text": "on as we run this algorithm and why",
+        "start": 600.399,
+        "duration": 3.601
+    },
+    {
+        "text": "we're doing it the way we",
+        "start": 602.88,
+        "duration": 3.36
+    },
+    {
+        "text": "are and i hope this was helpful if you",
+        "start": 604.0,
+        "duration": 3.12
+    },
+    {
+        "text": "enjoyed",
+        "start": 606.24,
+        "duration": 2.719
+    },
+    {
+        "text": "please leave a like and subscribe it",
+        "start": 607.12,
+        "duration": 3.44
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 608.959,
+        "duration": 6.961
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 610.56,
+        "duration": 5.36
+    }
+]

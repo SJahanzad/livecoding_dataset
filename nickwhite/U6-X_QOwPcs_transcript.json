@@ -1,0 +1,1052 @@
+[
+    {
+        "text": "okay think we're recording hey guys",
+        "start": 1.61,
+        "duration": 6.189
+    },
+    {
+        "text": "what's up Nick white here I do tech and",
+        "start": 5.7,
+        "duration": 4.019
+    },
+    {
+        "text": "coding stuff on twitch and YouTube so",
+        "start": 7.799,
+        "duration": 3.3
+    },
+    {
+        "text": "check the description and I'll have",
+        "start": 9.719,
+        "duration": 3.391
+    },
+    {
+        "text": "everything that you need to know right",
+        "start": 11.099,
+        "duration": 5.76
+    },
+    {
+        "text": "now I am doing leak code series where I",
+        "start": 13.11,
+        "duration": 5.28
+    },
+    {
+        "text": "just explain all the problems while I do",
+        "start": 16.859,
+        "duration": 2.941
+    },
+    {
+        "text": "them because I'm you know I'm doing",
+        "start": 18.39,
+        "duration": 4.71
+    },
+    {
+        "text": "myself studying right now we're doing",
+        "start": 19.8,
+        "duration": 6.149
+    },
+    {
+        "text": "this questions called number of islands",
+        "start": 23.1,
+        "duration": 4.56
+    },
+    {
+        "text": "and I was doing it in the explore page",
+        "start": 25.949,
+        "duration": 4.531
+    },
+    {
+        "text": "on leak code really cool this is a",
+        "start": 27.66,
+        "duration": 4.08
+    },
+    {
+        "text": "really common I was actually asked this",
+        "start": 30.48,
+        "duration": 2.91
+    },
+    {
+        "text": "in a Twilio interview which is I",
+        "start": 31.74,
+        "duration": 3.69
+    },
+    {
+        "text": "literally recorded not an interview but",
+        "start": 33.39,
+        "duration": 4.169
+    },
+    {
+        "text": "of the hacker ranks and I have that on",
+        "start": 35.43,
+        "duration": 3.39
+    },
+    {
+        "text": "my page if you wanna check that out but",
+        "start": 37.559,
+        "duration": 5.011
+    },
+    {
+        "text": "I don't I didn't solve it so here we go",
+        "start": 38.82,
+        "duration": 5.28
+    },
+    {
+        "text": "this is what the question is basically",
+        "start": 42.57,
+        "duration": 4.14
+    },
+    {
+        "text": "it wants to know how many islands are in",
+        "start": 44.1,
+        "duration": 6.06
+    },
+    {
+        "text": "this grid we're given a grid of chars so",
+        "start": 46.71,
+        "duration": 6.029
+    },
+    {
+        "text": "a char grid right and the characters are",
+        "start": 50.16,
+        "duration": 5.489
+    },
+    {
+        "text": "1 or 0 and we want to find the number of",
+        "start": 52.739,
+        "duration": 6.331
+    },
+    {
+        "text": "islands in an island is a string of ones",
+        "start": 55.649,
+        "duration": 5.521
+    },
+    {
+        "text": "connected horizontally or vertically",
+        "start": 59.07,
+        "duration": 5.339
+    },
+    {
+        "text": "right so this is one island because all",
+        "start": 61.17,
+        "duration": 5.79
+    },
+    {
+        "text": "of these ones are connected horizontally",
+        "start": 64.409,
+        "duration": 5.161
+    },
+    {
+        "text": "and vertically but you know this is its",
+        "start": 66.96,
+        "duration": 4.89
+    },
+    {
+        "text": "own island and this is a separate island",
+        "start": 69.57,
+        "duration": 3.839
+    },
+    {
+        "text": "because these are diagonally to each",
+        "start": 71.85,
+        "duration": 2.49
+    },
+    {
+        "text": "other and they're not connected",
+        "start": 73.409,
+        "duration": 2.731
+    },
+    {
+        "text": "horizontally or vertically and then this",
+        "start": 74.34,
+        "duration": 3.18
+    },
+    {
+        "text": "is its own Island too that's why there's",
+        "start": 76.14,
+        "duration": 2.82
+    },
+    {
+        "text": "three islands here because these are",
+        "start": 77.52,
+        "duration": 3.51
+    },
+    {
+        "text": "horizontally connected this is its own",
+        "start": 78.96,
+        "duration": 4.199
+    },
+    {
+        "text": "little island and then these are this is",
+        "start": 81.03,
+        "duration": 3.629
+    },
+    {
+        "text": "its own little island because it's just",
+        "start": 83.159,
+        "duration": 3.57
+    },
+    {
+        "text": "the vertical and horizontal connections",
+        "start": 84.659,
+        "duration": 4.71
+    },
+    {
+        "text": "like I said one more time right diagonal",
+        "start": 86.729,
+        "duration": 5.761
+    },
+    {
+        "text": "doesn't count so it says yeah an island",
+        "start": 89.369,
+        "duration": 4.441
+    },
+    {
+        "text": "is surrounded by water",
+        "start": 92.49,
+        "duration": 4.23
+    },
+    {
+        "text": "one is lands here with water and formed",
+        "start": 93.81,
+        "duration": 4.26
+    },
+    {
+        "text": "by connecting adjacent lines horizontal",
+        "start": 96.72,
+        "duration": 3.09
+    },
+    {
+        "text": "and vertical you may assume off the grid",
+        "start": 98.07,
+        "duration": 3.21
+    },
+    {
+        "text": "or surrounded by water find the number",
+        "start": 99.81,
+        "duration": 4.769
+    },
+    {
+        "text": "of violence right so this was a little",
+        "start": 101.28,
+        "duration": 6.6
+    },
+    {
+        "text": "confusing at first for me but uh you",
+        "start": 104.579,
+        "duration": 5.491
+    },
+    {
+        "text": "know it makes sense you basically want",
+        "start": 107.88,
+        "duration": 3.93
+    },
+    {
+        "text": "to use breadth-first search to figure",
+        "start": 110.07,
+        "duration": 6.99
+    },
+    {
+        "text": "this out and what we do is we we have",
+        "start": 111.81,
+        "duration": 7.89
+    },
+    {
+        "text": "our initial count is equal to zero right",
+        "start": 117.06,
+        "duration": 3.96
+    },
+    {
+        "text": "so this is going to be what we returned",
+        "start": 119.7,
+        "duration": 3.269
+    },
+    {
+        "text": "the number of islands and we loop",
+        "start": 121.02,
+        "duration": 5.19
+    },
+    {
+        "text": "through this is a 2d grid so we have you",
+        "start": 122.969,
+        "duration": 9.751
+    },
+    {
+        "text": "know each each element is a row of it",
+        "start": 126.21,
+        "duration": 9.72
+    },
+    {
+        "text": "char's and so first thing we want to do",
+        "start": 132.72,
+        "duration": 6.21
+    },
+    {
+        "text": "is we want to do in size zero I is less",
+        "start": 135.93,
+        "duration": 6.0
+    },
+    {
+        "text": "than grid dot lengths to get into each",
+        "start": 138.93,
+        "duration": 7.68
+    },
+    {
+        "text": "row of the the 2d array and then we're",
+        "start": 141.93,
+        "duration": 8.36
+    },
+    {
+        "text": "going to want to do inch J equals zero",
+        "start": 146.61,
+        "duration": 7.92
+    },
+    {
+        "text": "and J is less than grid of I dot lengths",
+        "start": 150.29,
+        "duration": 8.11
+    },
+    {
+        "text": "to get the columns right you know just",
+        "start": 154.53,
+        "duration": 5.7
+    },
+    {
+        "text": "that's just how you live through a 2d",
+        "start": 158.4,
+        "duration": 4.35
+    },
+    {
+        "text": "mate like array or matrices or whatever",
+        "start": 160.23,
+        "duration": 5.31
+    },
+    {
+        "text": "matrix or whoever just through the rows",
+        "start": 162.75,
+        "duration": 5.1
+    },
+    {
+        "text": "so we can get the row by index and then",
+        "start": 165.54,
+        "duration": 5.1
+    },
+    {
+        "text": "we go through each actual element so",
+        "start": 167.85,
+        "duration": 3.96
+    },
+    {
+        "text": "this so now we're going through each",
+        "start": 170.64,
+        "duration": 3.569
+    },
+    {
+        "text": "element and what we want to do is if we",
+        "start": 171.81,
+        "duration": 5.399
+    },
+    {
+        "text": "see a one as we go through then we want",
+        "start": 174.209,
+        "duration": 5.191
+    },
+    {
+        "text": "to what we're gonna want to do is we're",
+        "start": 177.209,
+        "duration": 4.051
+    },
+    {
+        "text": "gonna want to see a 1 and then we're",
+        "start": 179.4,
+        "duration": 6.69
+    },
+    {
+        "text": "gonna want to you know find the whole",
+        "start": 181.26,
+        "duration": 6.87
+    },
+    {
+        "text": "island structure of that one so we do a",
+        "start": 186.09,
+        "duration": 4.65
+    },
+    {
+        "text": "breadth-first search and we turn every",
+        "start": 188.13,
+        "duration": 8.19
+    },
+    {
+        "text": "single one that we see into a 0 so we we",
+        "start": 190.74,
+        "duration": 7.95
+    },
+    {
+        "text": "go horizontally and vertically through",
+        "start": 196.32,
+        "duration": 4.68
+    },
+    {
+        "text": "all connected ones so we go through the",
+        "start": 198.69,
+        "duration": 4.92
+    },
+    {
+        "text": "whole island once we see it and we turn",
+        "start": 201.0,
+        "duration": 4.47
+    },
+    {
+        "text": "all the ones into zeros so that it's",
+        "start": 203.61,
+        "duration": 3.84
+    },
+    {
+        "text": "like and we increment the counter by one",
+        "start": 205.47,
+        "duration": 3.9
+    },
+    {
+        "text": "so it's like we see the island we see a",
+        "start": 207.45,
+        "duration": 3.81
+    },
+    {
+        "text": "one we explore all the other ones we",
+        "start": 209.37,
+        "duration": 4.02
+    },
+    {
+        "text": "turn everything to a zero so in this",
+        "start": 211.26,
+        "duration": 4.44
+    },
+    {
+        "text": "case everything would be a zero in the",
+        "start": 213.39,
+        "duration": 4.379
+    },
+    {
+        "text": "island count would be one and then we",
+        "start": 215.7,
+        "duration": 4.319
+    },
+    {
+        "text": "didn't see any other ones so there we go",
+        "start": 217.769,
+        "duration": 4.051
+    },
+    {
+        "text": "that's what we would return in this one",
+        "start": 220.019,
+        "duration": 3.72
+    },
+    {
+        "text": "we would we would turn all of we would",
+        "start": 221.82,
+        "duration": 3.18
+    },
+    {
+        "text": "see this one right away",
+        "start": 223.739,
+        "duration": 3.271
+    },
+    {
+        "text": "we'd find all the ones connected to it",
+        "start": 225.0,
+        "duration": 4.14
+    },
+    {
+        "text": "horizontally or vertically turn them all",
+        "start": 227.01,
+        "duration": 4.199
+    },
+    {
+        "text": "the zeros so these would all be zeros",
+        "start": 229.14,
+        "duration": 5.069
+    },
+    {
+        "text": "now and then we would keep going and so",
+        "start": 231.209,
+        "duration": 4.771
+    },
+    {
+        "text": "the counter would be one we would keep",
+        "start": 234.209,
+        "duration": 3.121
+    },
+    {
+        "text": "going and then eventually we would see",
+        "start": 235.98,
+        "duration": 3.72
+    },
+    {
+        "text": "this new one we'd check for you know",
+        "start": 237.33,
+        "duration": 5.45
+    },
+    {
+        "text": "horizontally and vertically adjacent",
+        "start": 239.7,
+        "duration": 6.509
+    },
+    {
+        "text": "ones to find the rest of that own in",
+        "start": 242.78,
+        "duration": 5.56
+    },
+    {
+        "text": "this case there's only one one so we",
+        "start": 246.209,
+        "duration": 4.291
+    },
+    {
+        "text": "explore everything that's easy it's just",
+        "start": 248.34,
+        "duration": 4.59
+    },
+    {
+        "text": "one element so we add one to it now it's",
+        "start": 250.5,
+        "duration": 4.29
+    },
+    {
+        "text": "to the counters too and then finally we",
+        "start": 252.93,
+        "duration": 3.33
+    },
+    {
+        "text": "get to the last row and we see these two",
+        "start": 254.79,
+        "duration": 5.669
+    },
+    {
+        "text": "and that's pretty much it so you know",
+        "start": 256.26,
+        "duration": 5.58
+    },
+    {
+        "text": "let's implement the rest of this really",
+        "start": 260.459,
+        "duration": 4.171
+    },
+    {
+        "text": "quick so into IJ is equal to one so if",
+        "start": 261.84,
+        "duration": 4.59
+    },
+    {
+        "text": "we see a one",
+        "start": 264.63,
+        "duration": 6.21
+    },
+    {
+        "text": "as we go through then we'll do call BFS",
+        "start": 266.43,
+        "duration": 5.76
+    },
+    {
+        "text": "you can call it whatever you want this",
+        "start": 270.84,
+        "duration": 3.78
+    },
+    {
+        "text": "is the method we pass in our grid we",
+        "start": 272.19,
+        "duration": 4.349
+    },
+    {
+        "text": "pass in the position we saw the one that",
+        "start": 274.62,
+        "duration": 5.73
+    },
+    {
+        "text": "you in using the I and J and also we",
+        "start": 276.539,
+        "duration": 5.671
+    },
+    {
+        "text": "want to increment counter because once",
+        "start": 280.35,
+        "duration": 3.72
+    },
+    {
+        "text": "we see a one we know that we're we've",
+        "start": 282.21,
+        "duration": 4.89
+    },
+    {
+        "text": "found at least one island and then at",
+        "start": 284.07,
+        "duration": 4.74
+    },
+    {
+        "text": "the end of this whole loop we're going",
+        "start": 287.1,
+        "duration": 3.03
+    },
+    {
+        "text": "to return count which is going to have",
+        "start": 288.81,
+        "duration": 3.449
+    },
+    {
+        "text": "the number of islands but all we have to",
+        "start": 290.13,
+        "duration": 5.7
+    },
+    {
+        "text": "do now is implement this BFS method so",
+        "start": 292.259,
+        "duration": 7.201
+    },
+    {
+        "text": "public void call BFS and this can be",
+        "start": 295.83,
+        "duration": 6.48
+    },
+    {
+        "text": "implemented a few different ways but you",
+        "start": 299.46,
+        "duration": 4.32
+    },
+    {
+        "text": "know I like to do with the way that I'm",
+        "start": 302.31,
+        "duration": 3.87
+    },
+    {
+        "text": "going to do it right here into ICU",
+        "start": 303.78,
+        "duration": 4.65
+    },
+    {
+        "text": "taking what we passed in right the",
+        "start": 306.18,
+        "duration": 6.06
+    },
+    {
+        "text": "position in the grid so first thing what",
+        "start": 308.43,
+        "duration": 5.43
+    },
+    {
+        "text": "I like to do is I like to do the",
+        "start": 312.24,
+        "duration": 3.0
+    },
+    {
+        "text": "boundary checks or it away so some",
+        "start": 313.86,
+        "duration": 2.94
+    },
+    {
+        "text": "people like to do this differently you",
+        "start": 315.24,
+        "duration": 3.72
+    },
+    {
+        "text": "can use math you can do a few different",
+        "start": 316.8,
+        "duration": 4.95
+    },
+    {
+        "text": "ways to do these boundary checks but I",
+        "start": 318.96,
+        "duration": 5.31
+    },
+    {
+        "text": "just like to do it right away so if I is",
+        "start": 321.75,
+        "duration": 4.83
+    },
+    {
+        "text": "less than zero over I is greater than or",
+        "start": 324.27,
+        "duration": 6.57
+    },
+    {
+        "text": "equal to grid dot length or J is less",
+        "start": 326.58,
+        "duration": 8.339
+    },
+    {
+        "text": "than zero or J is greater than or equal",
+        "start": 330.84,
+        "duration": 6.48
+    },
+    {
+        "text": "to this is the trickier part you just",
+        "start": 334.919,
+        "duration": 3.81
+    },
+    {
+        "text": "have to make sure you do grid of I dot",
+        "start": 337.32,
+        "duration": 4.05
+    },
+    {
+        "text": "length because you know we have to check",
+        "start": 338.729,
+        "duration": 5.491
+    },
+    {
+        "text": "the the number of elements in each row",
+        "start": 341.37,
+        "duration": 5.91
+    },
+    {
+        "text": "and then or if we made a mistake somehow",
+        "start": 344.22,
+        "duration": 5.699
+    },
+    {
+        "text": "or you know we're going to be doing",
+        "start": 347.28,
+        "duration": 4.47
+    },
+    {
+        "text": "recursion so we do have to do this check",
+        "start": 349.919,
+        "duration": 5.041
+    },
+    {
+        "text": "or if grid of I've J is equal to 0 and",
+        "start": 351.75,
+        "duration": 5.22
+    },
+    {
+        "text": "not equal to 1 like we would have wanted",
+        "start": 354.96,
+        "duration": 4.29
+    },
+    {
+        "text": "then we do return and this is basically",
+        "start": 356.97,
+        "duration": 5.129
+    },
+    {
+        "text": "gonna break us out of the method when we",
+        "start": 359.25,
+        "duration": 5.22
+    },
+    {
+        "text": "do the recursion otherwise literally all",
+        "start": 362.099,
+        "duration": 6.211
+    },
+    {
+        "text": "we have to do in this method is set like",
+        "start": 364.47,
+        "duration": 6.78
+    },
+    {
+        "text": "I said we're setting the element so we",
+        "start": 368.31,
+        "duration": 6.329
+    },
+    {
+        "text": "see a 1 we call this and then we do this",
+        "start": 371.25,
+        "duration": 4.949
+    },
+    {
+        "text": "boundary check to just make sure we're",
+        "start": 374.639,
+        "duration": 3.181
+    },
+    {
+        "text": "not going out of bounds and stuff so we",
+        "start": 376.199,
+        "duration": 3.06
+    },
+    {
+        "text": "see a 1 we call this and then we turn",
+        "start": 377.82,
+        "duration": 3.39
+    },
+    {
+        "text": "that one so this would be the position",
+        "start": 379.259,
+        "duration": 3.331
+    },
+    {
+        "text": "that we see the one we pass in the",
+        "start": 381.21,
+        "duration": 4.38
+    },
+    {
+        "text": "position on the grid we set the one to a",
+        "start": 382.59,
+        "duration": 5.04
+    },
+    {
+        "text": "zero so the first thing we would do we",
+        "start": 385.59,
+        "duration": 3.329
+    },
+    {
+        "text": "would see this one we'd set it right to",
+        "start": 387.63,
+        "duration": 4.819
+    },
+    {
+        "text": "a zero then we do the recursive calls",
+        "start": 388.919,
+        "duration": 8.911
+    },
+    {
+        "text": "passing in grid IJ four times now and",
+        "start": 392.449,
+        "duration": 7.011
+    },
+    {
+        "text": "since this is",
+        "start": 397.83,
+        "duration": 4.089
+    },
+    {
+        "text": "the only that's gonna fail accidently",
+        "start": 399.46,
+        "duration": 5.04
+    },
+    {
+        "text": "had some I put since all we have to do",
+        "start": 401.919,
+        "duration": 10.161
+    },
+    {
+        "text": "is check the up down left and right",
+        "start": 404.5,
+        "duration": 9.63
+    },
+    {
+        "text": "positions because the islands are",
+        "start": 412.08,
+        "duration": 4.989
+    },
+    {
+        "text": "vertically and horizontally adjacent we",
+        "start": 414.13,
+        "duration": 5.55
+    },
+    {
+        "text": "just want to do so I plus one because",
+        "start": 417.069,
+        "duration": 6.211
+    },
+    {
+        "text": "the I is the row number I minus one and",
+        "start": 419.68,
+        "duration": 6.359
+    },
+    {
+        "text": "then we want to do left and right so J",
+        "start": 423.28,
+        "duration": 7.05
+    },
+    {
+        "text": "minus 1 and J plus 1 and that should be",
+        "start": 426.039,
+        "duration": 5.611
+    },
+    {
+        "text": "it that should be it that's how that's",
+        "start": 430.33,
+        "duration": 3.42
+    },
+    {
+        "text": "all you have to do is recursively do a",
+        "start": 431.65,
+        "duration": 6.269
+    },
+    {
+        "text": "call and make sure that you have the",
+        "start": 433.75,
+        "duration": 5.759
+    },
+    {
+        "text": "syntax right and type everything right",
+        "start": 437.919,
+        "duration": 3.211
+    },
+    {
+        "text": "that was a semicolon instead of an or",
+        "start": 439.509,
+        "duration": 5.521
+    },
+    {
+        "text": "but yeah it should actually work yeah so",
+        "start": 441.13,
+        "duration": 5.06
+    },
+    {
+        "text": "success it works",
+        "start": 445.03,
+        "duration": 3.06
+    },
+    {
+        "text": "maybe I'll go through it one more time",
+        "start": 446.19,
+        "duration": 6.64
+    },
+    {
+        "text": "really quick before I end this video so",
+        "start": 448.09,
+        "duration": 8.46
+    },
+    {
+        "text": "yeah it works you want then we want the",
+        "start": 452.83,
+        "duration": 6.059
+    },
+    {
+        "text": "number of islands in a 2d grid you do",
+        "start": 456.55,
+        "duration": 3.78
+    },
+    {
+        "text": "the double for loop so you're going each",
+        "start": 458.889,
+        "duration": 3.361
+    },
+    {
+        "text": "position at a time once you see a 1 we",
+        "start": 460.33,
+        "duration": 4.14
+    },
+    {
+        "text": "explore all the ones in one single",
+        "start": 462.25,
+        "duration": 4.199
+    },
+    {
+        "text": "island we increment the counter each",
+        "start": 464.47,
+        "duration": 3.93
+    },
+    {
+        "text": "time we see an island and we turn all",
+        "start": 466.449,
+        "duration": 3.991
+    },
+    {
+        "text": "the ones in that island to a 0 so that",
+        "start": 468.4,
+        "duration": 4.65
+    },
+    {
+        "text": "we can't see them again it's gonna fix",
+        "start": 470.44,
+        "duration": 4.199
+    },
+    {
+        "text": "everything you do the boundary check",
+        "start": 473.05,
+        "duration": 2.7
+    },
+    {
+        "text": "right at the beginning there's a few",
+        "start": 474.639,
+        "duration": 2.52
+    },
+    {
+        "text": "ways to do the boundary check maybe look",
+        "start": 475.75,
+        "duration": 3.33
+    },
+    {
+        "text": "up other implementations of it you set",
+        "start": 477.159,
+        "duration": 3.331
+    },
+    {
+        "text": "the current element to 0 and then you do",
+        "start": 479.08,
+        "duration": 3.929
+    },
+    {
+        "text": "the recursive calls on the row before",
+        "start": 480.49,
+        "duration": 5.22
+    },
+    {
+        "text": "the row after so the up the position",
+        "start": 483.009,
+        "duration": 4.65
+    },
+    {
+        "text": "above the position below and then the",
+        "start": 485.71,
+        "duration": 3.36
+    },
+    {
+        "text": "position is left in the position to the",
+        "start": 487.659,
+        "duration": 4.681
+    },
+    {
+        "text": "right using the I and J index indexes so",
+        "start": 489.07,
+        "duration": 5.399
+    },
+    {
+        "text": "yeah that's the first medium problem we",
+        "start": 492.34,
+        "duration": 3.389
+    },
+    {
+        "text": "did on the channel maybe it's not even",
+        "start": 494.469,
+        "duration": 3.241
+    },
+    {
+        "text": "considered a medium problem really I'll",
+        "start": 495.729,
+        "duration": 6.901
+    },
+    {
+        "text": "give it a thumbs up but yeah thank you",
+        "start": 497.71,
+        "duration": 7.44
+    },
+    {
+        "text": "guys for watching there's probably more",
+        "start": 502.63,
+        "duration": 4.68
+    },
+    {
+        "text": "complicated versions of this I think and",
+        "start": 505.15,
+        "duration": 3.78
+    },
+    {
+        "text": "we'll be doing those in the future so",
+        "start": 507.31,
+        "duration": 3.15
+    },
+    {
+        "text": "thanks for watching let me know in the",
+        "start": 508.93,
+        "duration": 3.33
+    },
+    {
+        "text": "comments what you think maybe I can",
+        "start": 510.46,
+        "duration": 3.24
+    },
+    {
+        "text": "explain these butters in the future but",
+        "start": 512.26,
+        "duration": 3.99
+    },
+    {
+        "text": "thank you for watching and appreciate it",
+        "start": 513.7,
+        "duration": 5.089
+    },
+    {
+        "text": "see you in a bit",
+        "start": 516.25,
+        "duration": 2.539
+    }
+]

@@ -1,0 +1,1087 @@
+[
+    {
+        "text": "let's all eat code 128 longest",
+        "start": 0.06,
+        "duration": 4.83
+    },
+    {
+        "text": "consecutive sequence this is a pretty",
+        "start": 2.58,
+        "duration": 4.14
+    },
+    {
+        "text": "interesting problem and it's actually",
+        "start": 4.89,
+        "duration": 3.36
+    },
+    {
+        "text": "been asked by a lot of companies",
+        "start": 6.72,
+        "duration": 3.78
+    },
+    {
+        "text": "including Google for a coding interview",
+        "start": 8.25,
+        "duration": 3.509
+    },
+    {
+        "text": "so I think it's a good problem to",
+        "start": 10.5,
+        "duration": 3.78
+    },
+    {
+        "text": "understand so we're given an input array",
+        "start": 11.759,
+        "duration": 4.711
+    },
+    {
+        "text": "of numbers right in this case we have",
+        "start": 14.28,
+        "duration": 3.96
+    },
+    {
+        "text": "six numbers and we want to find the",
+        "start": 16.47,
+        "duration": 3.63
+    },
+    {
+        "text": "longest consecutive sequence in this",
+        "start": 18.24,
+        "duration": 3.9
+    },
+    {
+        "text": "case the longest consecutive sequence is",
+        "start": 20.1,
+        "duration": 4.5
+    },
+    {
+        "text": "one two three four right",
+        "start": 22.14,
+        "duration": 4.35
+    },
+    {
+        "text": "it doesn't matter what order of the",
+        "start": 24.6,
+        "duration": 3.81
+    },
+    {
+        "text": "numbers appear in and the input array we",
+        "start": 26.49,
+        "duration": 3.6
+    },
+    {
+        "text": "just want to know the longest",
+        "start": 28.41,
+        "duration": 3.3
+    },
+    {
+        "text": "consecutive sequence that we can make",
+        "start": 30.09,
+        "duration": 3.96
+    },
+    {
+        "text": "from the input array now the most",
+        "start": 31.71,
+        "duration": 4.439
+    },
+    {
+        "text": "obvious way to solve this problem is",
+        "start": 34.05,
+        "duration": 3.72
+    },
+    {
+        "text": "just by sorting right so if you look at",
+        "start": 36.149,
+        "duration": 3.631
+    },
+    {
+        "text": "the sorted array over here we have",
+        "start": 37.77,
+        "duration": 4.44
+    },
+    {
+        "text": "obviously one consecutive sequence of",
+        "start": 39.78,
+        "duration": 5.04
+    },
+    {
+        "text": "length four right one two three four",
+        "start": 42.21,
+        "duration": 4.86
+    },
+    {
+        "text": "they're all consecutive numbers we also",
+        "start": 44.82,
+        "duration": 4.68
+    },
+    {
+        "text": "have another one that's length one just",
+        "start": 47.07,
+        "duration": 5.34
+    },
+    {
+        "text": "100 and we have the last one that's also",
+        "start": 49.5,
+        "duration": 6.0
+    },
+    {
+        "text": "length one just 200 right now this is",
+        "start": 52.41,
+        "duration": 5.16
+    },
+    {
+        "text": "definitely a valid solution we can",
+        "start": 55.5,
+        "duration": 4.199
+    },
+    {
+        "text": "definitely code this up but the time",
+        "start": 57.57,
+        "duration": 5.75
+    },
+    {
+        "text": "complexity is going to be o n log n so",
+        "start": 59.699,
+        "duration": 6.901
+    },
+    {
+        "text": "the question is can we do better so this",
+        "start": 63.32,
+        "duration": 5.17
+    },
+    {
+        "text": "is a leak code hard obviously the",
+        "start": 66.6,
+        "duration": 3.69
+    },
+    {
+        "text": "solution wouldn't be this simple so we",
+        "start": 68.49,
+        "duration": 4.199
+    },
+    {
+        "text": "can do better but how do we get there",
+        "start": 70.29,
+        "duration": 4.53
+    },
+    {
+        "text": "now the first thing to do is try to",
+        "start": 72.689,
+        "duration": 4.531
+    },
+    {
+        "text": "visualize the problem in a way that it",
+        "start": 74.82,
+        "duration": 4.049
+    },
+    {
+        "text": "makes the problem really easy to",
+        "start": 77.22,
+        "duration": 4.53
+    },
+    {
+        "text": "understand so I visualized the problem",
+        "start": 78.869,
+        "duration": 5.161
+    },
+    {
+        "text": "by drawing out an imaginary number line",
+        "start": 81.75,
+        "duration": 4.409
+    },
+    {
+        "text": "right so we can kind of see what the",
+        "start": 84.03,
+        "duration": 4.17
+    },
+    {
+        "text": "sequences actually look like this makes",
+        "start": 86.159,
+        "duration": 3.511
+    },
+    {
+        "text": "it a lot easier to recognize the",
+        "start": 88.2,
+        "duration": 4.02
+    },
+    {
+        "text": "patterns so we know we have one sequence",
+        "start": 89.67,
+        "duration": 12.18
+    },
+    {
+        "text": "that starts at one two three and four we",
+        "start": 92.22,
+        "duration": 11.429
+    },
+    {
+        "text": "have another sequence that comes after",
+        "start": 101.85,
+        "duration": 6.21
+    },
+    {
+        "text": "it with just one number 100 we have the",
+        "start": 103.649,
+        "duration": 6.841
+    },
+    {
+        "text": "last sequence with also only one number",
+        "start": 108.06,
+        "duration": 7.26
+    },
+    {
+        "text": "200 so just by looking at it we can tell",
+        "start": 110.49,
+        "duration": 7.309
+    },
+    {
+        "text": "we have three distinct sequences right",
+        "start": 115.32,
+        "duration": 8.189
+    },
+    {
+        "text": "that's something to recognize now by",
+        "start": 117.799,
+        "duration": 7.78
+    },
+    {
+        "text": "visualizing it we can kind of try to",
+        "start": 123.509,
+        "duration": 4.741
+    },
+    {
+        "text": "approach how would a human solve it well",
+        "start": 125.579,
+        "duration": 4.891
+    },
+    {
+        "text": "the easiest way is just look at each of",
+        "start": 128.25,
+        "duration": 4.23
+    },
+    {
+        "text": "the sequences right and count how long",
+        "start": 130.47,
+        "duration": 2.89
+    },
+    {
+        "text": "they are",
+        "start": 132.48,
+        "duration": 2.38
+    },
+    {
+        "text": "so let's look at the first sequence",
+        "start": 133.36,
+        "duration": 5.46
+    },
+    {
+        "text": "right we have one two three and four so",
+        "start": 134.86,
+        "duration": 6.27
+    },
+    {
+        "text": "this sequence has four numbers in it we",
+        "start": 138.82,
+        "duration": 4.77
+    },
+    {
+        "text": "have the second sequence just 100 so it",
+        "start": 141.13,
+        "duration": 4.41
+    },
+    {
+        "text": "only has one number in it so it's a",
+        "start": 143.59,
+        "duration": 4.05
+    },
+    {
+        "text": "sequence of length 1 the last one is",
+        "start": 145.54,
+        "duration": 4.53
+    },
+    {
+        "text": "also a sequence of length 1 now this is",
+        "start": 147.64,
+        "duration": 4.98
+    },
+    {
+        "text": "so easy to solve when you visualize it",
+        "start": 150.07,
+        "duration": 4.38
+    },
+    {
+        "text": "and try to approach it how a human would",
+        "start": 152.62,
+        "duration": 4.05
+    },
+    {
+        "text": "but can we actually convert this into",
+        "start": 154.45,
+        "duration": 5.37
+    },
+    {
+        "text": "code somehow the answer is yes so the",
+        "start": 156.67,
+        "duration": 5.19
+    },
+    {
+        "text": "most important thing to notice is that",
+        "start": 159.82,
+        "duration": 4.8
+    },
+    {
+        "text": "we have three sequences but how can we",
+        "start": 161.86,
+        "duration": 5.82
+    },
+    {
+        "text": "identify what makes a sequence how can",
+        "start": 164.62,
+        "duration": 5.13
+    },
+    {
+        "text": "we actually start at the beginning of a",
+        "start": 167.68,
+        "duration": 4.47
+    },
+    {
+        "text": "sequence the thing to notice and this is",
+        "start": 169.75,
+        "duration": 4.14
+    },
+    {
+        "text": "really easy when you actually look at",
+        "start": 172.15,
+        "duration": 4.41
+    },
+    {
+        "text": "the picture that each sequence has a",
+        "start": 173.89,
+        "duration": 5.67
+    },
+    {
+        "text": "start value the start value in this case",
+        "start": 176.56,
+        "duration": 5.28
+    },
+    {
+        "text": "the start value for the first range or",
+        "start": 179.56,
+        "duration": 5.79
+    },
+    {
+        "text": "the first sequence has no left neighbour",
+        "start": 181.84,
+        "duration": 6.39
+    },
+    {
+        "text": "the first value 1 has no left neighbour",
+        "start": 185.35,
+        "duration": 5.31
+    },
+    {
+        "text": "right that's really obvious look at the",
+        "start": 188.23,
+        "duration": 5.1
+    },
+    {
+        "text": "second range 100 it doesn't have a left",
+        "start": 190.66,
+        "duration": 5.1
+    },
+    {
+        "text": "neighbour the third range 200 doesn't",
+        "start": 193.33,
+        "duration": 5.25
+    },
+    {
+        "text": "have a left neighbour so we can get the",
+        "start": 195.76,
+        "duration": 5.789
+    },
+    {
+        "text": "start of each sequence by just looking",
+        "start": 198.58,
+        "duration": 6.86
+    },
+    {
+        "text": "at our entire array of numbers right and",
+        "start": 201.549,
+        "duration": 6.841
+    },
+    {
+        "text": "figuring out which numbers don't have a",
+        "start": 205.44,
+        "duration": 5.62
+    },
+    {
+        "text": "left neighbour so meaning if we were if",
+        "start": 208.39,
+        "duration": 4.92
+    },
+    {
+        "text": "we wanted to check if one had a left",
+        "start": 211.06,
+        "duration": 4.14
+    },
+    {
+        "text": "neighbour we would check does our array",
+        "start": 213.31,
+        "duration": 4.17
+    },
+    {
+        "text": "contain the number 0 if we wanted to",
+        "start": 215.2,
+        "duration": 4.47
+    },
+    {
+        "text": "know if 100 have had a left neighbour we",
+        "start": 217.48,
+        "duration": 4.95
+    },
+    {
+        "text": "checked does the array contain 99 the",
+        "start": 219.67,
+        "duration": 4.74
+    },
+    {
+        "text": "easiest way to do this and the most",
+        "start": 222.43,
+        "duration": 4.05
+    },
+    {
+        "text": "efficient way to do it is by taking our",
+        "start": 224.41,
+        "duration": 3.9
+    },
+    {
+        "text": "initial array and converting it into a",
+        "start": 226.48,
+        "duration": 6.18
+    },
+    {
+        "text": "set so now to find the start ranges",
+        "start": 228.31,
+        "duration": 6.06
+    },
+    {
+        "text": "let's start iterating through our array",
+        "start": 232.66,
+        "duration": 3.69
+    },
+    {
+        "text": "so we got we get to the first element",
+        "start": 234.37,
+        "duration": 4.74
+    },
+    {
+        "text": "100 does it have a left neighbour well",
+        "start": 236.35,
+        "duration": 5.85
+    },
+    {
+        "text": "we can check our set it doesn't have 99",
+        "start": 239.11,
+        "duration": 7.2
+    },
+    {
+        "text": "in it so this is the first so this is",
+        "start": 242.2,
+        "duration": 6.18
+    },
+    {
+        "text": "the start of a sequence so let's get the",
+        "start": 246.31,
+        "duration": 7.459
+    },
+    {
+        "text": "length of the sequence we start at 100",
+        "start": 248.38,
+        "duration": 8.099
+    },
+    {
+        "text": "now to get the length of the sequence we",
+        "start": 253.769,
+        "duration": 4.181
+    },
+    {
+        "text": "want to count how many consecutive",
+        "start": 256.479,
+        "duration": 4.26
+    },
+    {
+        "text": "numbers come after 100 so we want to",
+        "start": 257.95,
+        "duration": 6.24
+    },
+    {
+        "text": "know does 101 exist in our sequence",
+        "start": 260.739,
+        "duration": 5.911
+    },
+    {
+        "text": "looking at the number line obviously it",
+        "start": 264.19,
+        "duration": 2.94
+    },
+    {
+        "text": "doesn't",
+        "start": 266.65,
+        "duration": 2.31
+    },
+    {
+        "text": "how can we check this efficiently with",
+        "start": 267.13,
+        "duration": 4.47
+    },
+    {
+        "text": "code well we already have a set that",
+        "start": 268.96,
+        "duration": 4.71
+    },
+    {
+        "text": "takes up this entire array so let's just",
+        "start": 271.6,
+        "duration": 4.95
+    },
+    {
+        "text": "use our set to check if 101 exists since",
+        "start": 273.67,
+        "duration": 5.82
+    },
+    {
+        "text": "it doesn't we can no longer continue",
+        "start": 276.55,
+        "duration": 5.25
+    },
+    {
+        "text": "this sequence so now we go we get to the",
+        "start": 279.49,
+        "duration": 5.85
+    },
+    {
+        "text": "next number for is for the start of a",
+        "start": 281.8,
+        "duration": 5.76
+    },
+    {
+        "text": "sequence let's look at our picture we",
+        "start": 285.34,
+        "duration": 4.68
+    },
+    {
+        "text": "drove for is not the start of a sequence",
+        "start": 287.56,
+        "duration": 4.62
+    },
+    {
+        "text": "and we can check this using our set we",
+        "start": 290.02,
+        "duration": 3.87
+    },
+    {
+        "text": "would check that it does have a left",
+        "start": 292.18,
+        "duration": 3.69
+    },
+    {
+        "text": "neighbor right three so it's not the",
+        "start": 293.89,
+        "duration": 3.69
+    },
+    {
+        "text": "start of a sequence we're not going to",
+        "start": 295.87,
+        "duration": 4.02
+    },
+    {
+        "text": "make a range from it we get to the next",
+        "start": 297.58,
+        "duration": 4.5
+    },
+    {
+        "text": "number 200 is this the start of a",
+        "start": 299.89,
+        "duration": 4.26
+    },
+    {
+        "text": "sequence looking at our picture yes it",
+        "start": 302.08,
+        "duration": 5.19
+    },
+    {
+        "text": "is and we know that 199 does not exist",
+        "start": 304.15,
+        "duration": 7.04
+    },
+    {
+        "text": "in our set so let's make this sequence",
+        "start": 307.27,
+        "duration": 3.92
+    },
+    {
+        "text": "let's try to make it as long as we can",
+        "start": 313.83,
+        "duration": 5.47
+    },
+    {
+        "text": "we check this 201 exists no it doesn't",
+        "start": 316.3,
+        "duration": 4.56
+    },
+    {
+        "text": "we can tell that from our picture and we",
+        "start": 319.3,
+        "duration": 4.08
+    },
+    {
+        "text": "would use the set to determine that so",
+        "start": 320.86,
+        "duration": 4.53
+    },
+    {
+        "text": "now we'll this is as long as we can make",
+        "start": 323.38,
+        "duration": 3.63
+    },
+    {
+        "text": "this set so let's get to the next number",
+        "start": 325.39,
+        "duration": 4.95
+    },
+    {
+        "text": "one is one the start of a sequence at",
+        "start": 327.01,
+        "duration": 5.16
+    },
+    {
+        "text": "our picture we can tell one does not",
+        "start": 330.34,
+        "duration": 3.69
+    },
+    {
+        "text": "have a left neighbor so what is the",
+        "start": 332.17,
+        "duration": 4.89
+    },
+    {
+        "text": "start of a sequence now let's check if",
+        "start": 334.03,
+        "duration": 6.33
+    },
+    {
+        "text": "two exists in our set it does so we can",
+        "start": 337.06,
+        "duration": 5.99
+    },
+    {
+        "text": "make this sequence a little bit longer",
+        "start": 340.36,
+        "duration": 5.4
+    },
+    {
+        "text": "now let's check if the next number three",
+        "start": 343.05,
+        "duration": 5.32
+    },
+    {
+        "text": "exists in our set yes it does so let's",
+        "start": 345.76,
+        "duration": 6.27
+    },
+    {
+        "text": "make it even longer now does four exist",
+        "start": 348.37,
+        "duration": 6.98
+    },
+    {
+        "text": "in our set yes it does",
+        "start": 352.03,
+        "duration": 3.32
+    },
+    {
+        "text": "now let's check if five exists in our",
+        "start": 356.37,
+        "duration": 5.92
+    },
+    {
+        "text": "set it doesn't right there is no there",
+        "start": 358.9,
+        "duration": 5.19
+    },
+    {
+        "text": "is no 5 so we can't make this sequence",
+        "start": 362.29,
+        "duration": 4.38
+    },
+    {
+        "text": "any longer so now let's continue through",
+        "start": 364.09,
+        "duration": 5.34
+    },
+    {
+        "text": "the array 3 is to read the start of a",
+        "start": 366.67,
+        "duration": 4.95
+    },
+    {
+        "text": "sequence no it's not it has a left",
+        "start": 369.43,
+        "duration": 6.6
+    },
+    {
+        "text": "neighbor too now let's try 2 this 2 is",
+        "start": 371.62,
+        "duration": 6.75
+    },
+    {
+        "text": "to the start of a sequence it's not",
+        "start": 376.03,
+        "duration": 4.62
+    },
+    {
+        "text": "because it has a left neighbor 1 so we",
+        "start": 378.37,
+        "duration": 4.35
+    },
+    {
+        "text": "went through the entire array we created",
+        "start": 380.65,
+        "duration": 4.11
+    },
+    {
+        "text": "all the sequences we could the first",
+        "start": 382.72,
+        "duration": 4.89
+    },
+    {
+        "text": "sequence is length 1 the second sequence",
+        "start": 384.76,
+        "duration": 4.29
+    },
+    {
+        "text": "is also length 1",
+        "start": 387.61,
+        "duration": 4.26
+    },
+    {
+        "text": "the third sequence is length 4 so this",
+        "start": 389.05,
+        "duration": 4.98
+    },
+    {
+        "text": "is the longest sequence now we took a",
+        "start": 391.87,
+        "duration": 4.59
+    },
+    {
+        "text": "really complicated problem or seemingly",
+        "start": 394.03,
+        "duration": 4.62
+    },
+    {
+        "text": "complicated and we broke it down so",
+        "start": 396.46,
+        "duration": 4.21
+    },
+    {
+        "text": "easily all we had to do is",
+        "start": 398.65,
+        "duration": 4.27
+    },
+    {
+        "text": "iterate through the initial array use a",
+        "start": 400.67,
+        "duration": 6.09
+    },
+    {
+        "text": "set and check if I've nodes had values",
+        "start": 402.92,
+        "duration": 6.0
+    },
+    {
+        "text": "had left neighbors and if they didn't",
+        "start": 406.76,
+        "duration": 4.29
+    },
+    {
+        "text": "then they were the start of sequences we",
+        "start": 408.92,
+        "duration": 4.17
+    },
+    {
+        "text": "made this problem so easy with only",
+        "start": 411.05,
+        "duration": 4.8
+    },
+    {
+        "text": "using one data structure since we only",
+        "start": 413.09,
+        "duration": 4.56
+    },
+    {
+        "text": "had to iterate through the entire array",
+        "start": 415.85,
+        "duration": 5.04
+    },
+    {
+        "text": "and we had to expand each range we know",
+        "start": 417.65,
+        "duration": 4.71
+    },
+    {
+        "text": "that we're only going to visit each",
+        "start": 420.89,
+        "duration": 4.5
+    },
+    {
+        "text": "number at most twice so our solution is",
+        "start": 422.36,
+        "duration": 9.33
+    },
+    {
+        "text": "very efficient and we did have to use an",
+        "start": 425.39,
+        "duration": 8.37
+    },
+    {
+        "text": "additional memory to create a set",
+        "start": 431.69,
+        "duration": 3.66
+    },
+    {
+        "text": "because we wanted to check if neighbors",
+        "start": 433.76,
+        "duration": 4.65
+    },
+    {
+        "text": "existed so we so for the memory",
+        "start": 435.35,
+        "duration": 7.89
+    },
+    {
+        "text": "complexity it is also Big O of N in this",
+        "start": 438.41,
+        "duration": 7.62
+    },
+    {
+        "text": "case n is the size of the input array so",
+        "start": 443.24,
+        "duration": 4.68
+    },
+    {
+        "text": "now let's get to the code so we remember",
+        "start": 446.03,
+        "duration": 3.9
+    },
+    {
+        "text": "we need to create a set from the initial",
+        "start": 447.92,
+        "duration": 3.12
+    },
+    {
+        "text": "array nums",
+        "start": 449.93,
+        "duration": 3.12
+    },
+    {
+        "text": "so it's really easy to do that in Python",
+        "start": 451.04,
+        "duration": 4.62
+    },
+    {
+        "text": "we can just pass their D array into a",
+        "start": 453.05,
+        "duration": 5.22
+    },
+    {
+        "text": "set constructor next we want to keep",
+        "start": 455.66,
+        "duration": 4.62
+    },
+    {
+        "text": "track of what the longest consecutive",
+        "start": 458.27,
+        "duration": 4.79
+    },
+    {
+        "text": "sequence is initially we can say it's 0",
+        "start": 460.28,
+        "duration": 5.76
+    },
+    {
+        "text": "so we want to iterate through every",
+        "start": 463.06,
+        "duration": 6.4
+    },
+    {
+        "text": "number in the number Rea and we want to",
+        "start": 466.04,
+        "duration": 8.46
+    },
+    {
+        "text": "check if it's the start of a sequence",
+        "start": 469.46,
+        "duration": 9.42
+    },
+    {
+        "text": "and we can check that simply by checking",
+        "start": 474.5,
+        "duration": 8.73
+    },
+    {
+        "text": "if n minus 1 does not exist in our num",
+        "start": 478.88,
+        "duration": 7.65
+    },
+    {
+        "text": "set if this number doesn't have a left",
+        "start": 483.23,
+        "duration": 4.92
+    },
+    {
+        "text": "neighbour that means the start of a",
+        "start": 486.53,
+        "duration": 3.36
+    },
+    {
+        "text": "sequence so now we want to get the",
+        "start": 488.15,
+        "duration": 3.84
+    },
+    {
+        "text": "length of the sequence initially we can",
+        "start": 489.89,
+        "duration": 4.77
+    },
+    {
+        "text": "say the length is 0 and we want to keep",
+        "start": 491.99,
+        "duration": 4.74
+    },
+    {
+        "text": "getting each consecutive number and",
+        "start": 494.66,
+        "duration": 4.62
+    },
+    {
+        "text": "checking if it exists in our num set if",
+        "start": 496.73,
+        "duration": 5.37
+    },
+    {
+        "text": "it does then we can keep expanding the",
+        "start": 499.28,
+        "duration": 6.65
+    },
+    {
+        "text": "length so initially I'm going to check n",
+        "start": 502.1,
+        "duration": 6.03
+    },
+    {
+        "text": "plus lengths because that's going to",
+        "start": 505.93,
+        "duration": 7.15
+    },
+    {
+        "text": "check the current number initially",
+        "start": 508.13,
+        "duration": 6.78
+    },
+    {
+        "text": "length is 0 so we're just checking the",
+        "start": 513.08,
+        "duration": 5.13
+    },
+    {
+        "text": "current number as it as the length grows",
+        "start": 514.91,
+        "duration": 5.43
+    },
+    {
+        "text": "we'll check more consecutive numbers at",
+        "start": 518.21,
+        "duration": 4.8
+    },
+    {
+        "text": "the end we could have potentially found",
+        "start": 520.34,
+        "duration": 4.77
+    },
+    {
+        "text": "the longest sequence so we want to",
+        "start": 523.01,
+        "duration": 4.35
+    },
+    {
+        "text": "potentially update our longest by just",
+        "start": 525.11,
+        "duration": 4.23
+    },
+    {
+        "text": "taking the max of the current length we",
+        "start": 527.36,
+        "duration": 3.78
+    },
+    {
+        "text": "just computed as well as what the",
+        "start": 529.34,
+        "duration": 4.5
+    },
+    {
+        "text": "longest originally was",
+        "start": 531.14,
+        "duration": 5.52
+    },
+    {
+        "text": "and it's really that simple so now all",
+        "start": 533.84,
+        "duration": 4.8
+    },
+    {
+        "text": "we have left to do is just return what",
+        "start": 536.66,
+        "duration": 5.52
+    },
+    {
+        "text": "the longest subsequence was that we just",
+        "start": 538.64,
+        "duration": 5.88
+    },
+    {
+        "text": "computed so we did this in such a small",
+        "start": 542.18,
+        "duration": 4.56
+    },
+    {
+        "text": "amount of code now let's just run it to",
+        "start": 544.52,
+        "duration": 8.58
+    },
+    {
+        "text": "see that it works and it works perfectly",
+        "start": 546.74,
+        "duration": 9.63
+    },
+    {
+        "text": "so this is a linear time solution in a",
+        "start": 553.1,
+        "duration": 5.73
+    },
+    {
+        "text": "linear memory complexity solution once",
+        "start": 556.37,
+        "duration": 4.29
+    },
+    {
+        "text": "we visualize the problem the solution",
+        "start": 558.83,
+        "duration": 5.54
+    },
+    {
+        "text": "became so easy to derive",
+        "start": 560.66,
+        "duration": 3.71
+    }
+]

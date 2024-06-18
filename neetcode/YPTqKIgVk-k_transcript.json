@@ -1,0 +1,2097 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.84
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.76,
+        "duration": 2.88
+    },
+    {
+        "text": "let's solve",
+        "start": 3.84,
+        "duration": 3.519
+    },
+    {
+        "text": "top k frequent elements i really like",
+        "start": 4.64,
+        "duration": 4.32
+    },
+    {
+        "text": "this problem because it's pretty",
+        "start": 7.359,
+        "duration": 3.521
+    },
+    {
+        "text": "clever and once you figure it out the",
+        "start": 8.96,
+        "duration": 3.52
+    },
+    {
+        "text": "code is really easy to write",
+        "start": 10.88,
+        "duration": 4.48
+    },
+    {
+        "text": "so we're given an input array nums and",
+        "start": 12.48,
+        "duration": 3.119
+    },
+    {
+        "text": "an",
+        "start": 15.36,
+        "duration": 3.36
+    },
+    {
+        "text": "integer k and we want to return the k",
+        "start": 15.599,
+        "duration": 5.52
+    },
+    {
+        "text": "most frequent elements that appear in",
+        "start": 18.72,
+        "duration": 3.68
+    },
+    {
+        "text": "the array nums",
+        "start": 21.119,
+        "duration": 4.32
+    },
+    {
+        "text": "we can return the answer in any order so",
+        "start": 22.4,
+        "duration": 4.639
+    },
+    {
+        "text": "for example we have this",
+        "start": 25.439,
+        "duration": 4.961
+    },
+    {
+        "text": "input array three ones two twos",
+        "start": 27.039,
+        "duration": 5.841
+    },
+    {
+        "text": "and a single three and we wanna return",
+        "start": 30.4,
+        "duration": 3.44
+    },
+    {
+        "text": "the two most",
+        "start": 32.88,
+        "duration": 2.8
+    },
+    {
+        "text": "frequent elements right so we know that",
+        "start": 33.84,
+        "duration": 3.44
+    },
+    {
+        "text": "the most frequent is of course",
+        "start": 35.68,
+        "duration": 3.92
+    },
+    {
+        "text": "one it appears three times so we add a",
+        "start": 37.28,
+        "duration": 3.439
+    },
+    {
+        "text": "one to the output",
+        "start": 39.6,
+        "duration": 3.279
+    },
+    {
+        "text": "the second most frequent is two so then",
+        "start": 40.719,
+        "duration": 3.921
+    },
+    {
+        "text": "we add a 2 to the output and that's all",
+        "start": 42.879,
+        "duration": 2.721
+    },
+    {
+        "text": "we want now if",
+        "start": 44.64,
+        "duration": 3.759
+    },
+    {
+        "text": "if k was 3 of course we'd add the last",
+        "start": 45.6,
+        "duration": 3.439
+    },
+    {
+        "text": "element",
+        "start": 48.399,
+        "duration": 2.64
+    },
+    {
+        "text": "k is never going to be greater than the",
+        "start": 49.039,
+        "duration": 4.241
+    },
+    {
+        "text": "distinct number of elements in the input",
+        "start": 51.039,
+        "duration": 3.761
+    },
+    {
+        "text": "array so that's good for us",
+        "start": 53.28,
+        "duration": 3.04
+    },
+    {
+        "text": "and our input array is always going to",
+        "start": 54.8,
+        "duration": 4.239
+    },
+    {
+        "text": "be non-empty so for example for each",
+        "start": 56.32,
+        "duration": 4.16
+    },
+    {
+        "text": "value right we're going to",
+        "start": 59.039,
+        "duration": 3.761
+    },
+    {
+        "text": "count how many occurrences it has so for",
+        "start": 60.48,
+        "duration": 3.36
+    },
+    {
+        "text": "example one",
+        "start": 62.8,
+        "duration": 4.16
+    },
+    {
+        "text": "occurs three times two occurs",
+        "start": 63.84,
+        "duration": 6.8
+    },
+    {
+        "text": "twice and three occurs once",
+        "start": 66.96,
+        "duration": 6.159
+    },
+    {
+        "text": "and then we can take this basically this",
+        "start": 70.64,
+        "duration": 4.799
+    },
+    {
+        "text": "list of pairs right then we can sort it",
+        "start": 73.119,
+        "duration": 4.161
+    },
+    {
+        "text": "in ascending order right so",
+        "start": 75.439,
+        "duration": 3.441
+    },
+    {
+        "text": "basically it's already sorted in",
+        "start": 77.28,
+        "duration": 3.28
+    },
+    {
+        "text": "ascending order right because the most",
+        "start": 78.88,
+        "duration": 2.64
+    },
+    {
+        "text": "frequent is here",
+        "start": 80.56,
+        "duration": 2.8
+    },
+    {
+        "text": "the second most frequent is here the",
+        "start": 81.52,
+        "duration": 3.76
+    },
+    {
+        "text": "third most frequent is here right",
+        "start": 83.36,
+        "duration": 3.84
+    },
+    {
+        "text": "now of course sorting it in the worst",
+        "start": 85.28,
+        "duration": 3.199
+    },
+    {
+        "text": "case right basically",
+        "start": 87.2,
+        "duration": 2.879
+    },
+    {
+        "text": "if every single value in here was",
+        "start": 88.479,
+        "duration": 3.6
+    },
+    {
+        "text": "distinct and we wanted the top k",
+        "start": 90.079,
+        "duration": 3.121
+    },
+    {
+        "text": "distinct values",
+        "start": 92.079,
+        "duration": 4.161
+    },
+    {
+        "text": "we'd get a time complexity of n log",
+        "start": 93.2,
+        "duration": 5.44
+    },
+    {
+        "text": "n right but we don't necessarily need to",
+        "start": 96.24,
+        "duration": 4.48
+    },
+    {
+        "text": "sort the entire thing because",
+        "start": 98.64,
+        "duration": 4.56
+    },
+    {
+        "text": "we only want the top k frequent elements",
+        "start": 100.72,
+        "duration": 4.64
+    },
+    {
+        "text": "so in another solution we could actually",
+        "start": 103.2,
+        "duration": 2.64
+    },
+    {
+        "text": "use",
+        "start": 105.36,
+        "duration": 3.759
+    },
+    {
+        "text": "a max heap so we would still do this",
+        "start": 105.84,
+        "duration": 4.88
+    },
+    {
+        "text": "whole operation where we count the",
+        "start": 109.119,
+        "duration": 3.28
+    },
+    {
+        "text": "number of occurrences of each value and",
+        "start": 110.72,
+        "duration": 3.359
+    },
+    {
+        "text": "then we'd add each pair",
+        "start": 112.399,
+        "duration": 4.72
+    },
+    {
+        "text": "to our max heap and the key of this max",
+        "start": 114.079,
+        "duration": 3.761
+    },
+    {
+        "text": "heap would",
+        "start": 117.119,
+        "duration": 2.64
+    },
+    {
+        "text": "of course be the number of occurrences",
+        "start": 117.84,
+        "duration": 3.44
+    },
+    {
+        "text": "right so the count right",
+        "start": 119.759,
+        "duration": 4.64
+    },
+    {
+        "text": "and then we'd pop from our heap exactly",
+        "start": 121.28,
+        "duration": 5.76
+    },
+    {
+        "text": "k times so why is this more efficient",
+        "start": 124.399,
+        "duration": 3.601
+    },
+    {
+        "text": "well we know popping",
+        "start": 127.04,
+        "duration": 3.04
+    },
+    {
+        "text": "from the heap well first of all we when",
+        "start": 128.0,
+        "duration": 3.68
+    },
+    {
+        "text": "we initialize our heap we're going to",
+        "start": 130.08,
+        "duration": 3.519
+    },
+    {
+        "text": "add this entire set and there's a",
+        "start": 131.68,
+        "duration": 2.639
+    },
+    {
+        "text": "function called",
+        "start": 133.599,
+        "duration": 3.121
+    },
+    {
+        "text": "heapify i think that can do that in",
+        "start": 134.319,
+        "duration": 3.441
+    },
+    {
+        "text": "actually",
+        "start": 136.72,
+        "duration": 3.2
+    },
+    {
+        "text": "linear time so big o of n time so that's",
+        "start": 137.76,
+        "duration": 3.68
+    },
+    {
+        "text": "the good thing and of course we know",
+        "start": 139.92,
+        "duration": 2.8
+    },
+    {
+        "text": "we're only going to be popping from the",
+        "start": 141.44,
+        "duration": 1.84
+    },
+    {
+        "text": "heap",
+        "start": 142.72,
+        "duration": 4.08
+    },
+    {
+        "text": "k times each pop is going to take log n",
+        "start": 143.28,
+        "duration": 5.599
+    },
+    {
+        "text": "and we're going to be doing that k times",
+        "start": 146.8,
+        "duration": 3.2
+    },
+    {
+        "text": "right so that's going to be",
+        "start": 148.879,
+        "duration": 3.281
+    },
+    {
+        "text": "k times log n right so that's a little",
+        "start": 150.0,
+        "duration": 3.2
+    },
+    {
+        "text": "bit better than",
+        "start": 152.16,
+        "duration": 4.079
+    },
+    {
+        "text": "n log n at least as long as k is",
+        "start": 153.2,
+        "duration": 5.92
+    },
+    {
+        "text": "less than n right but it turns out that",
+        "start": 156.239,
+        "duration": 3.921
+    },
+    {
+        "text": "there's actually an",
+        "start": 159.12,
+        "duration": 3.28
+    },
+    {
+        "text": "even better solution there's actually a",
+        "start": 160.16,
+        "duration": 3.6
+    },
+    {
+        "text": "solution that can be done",
+        "start": 162.4,
+        "duration": 4.479
+    },
+    {
+        "text": "in o of n time linear time",
+        "start": 163.76,
+        "duration": 6.559
+    },
+    {
+        "text": "so big o of n time and big o of n memory",
+        "start": 166.879,
+        "duration": 5.201
+    },
+    {
+        "text": "but we are still going to be using this",
+        "start": 170.319,
+        "duration": 2.481
+    },
+    {
+        "text": "exact",
+        "start": 172.08,
+        "duration": 3.04
+    },
+    {
+        "text": "a technique where for each value like",
+        "start": 172.8,
+        "duration": 4.48
+    },
+    {
+        "text": "one we count the number of recurrences",
+        "start": 175.12,
+        "duration": 4.88
+    },
+    {
+        "text": "like three so this problem can actually",
+        "start": 177.28,
+        "duration": 5.12
+    },
+    {
+        "text": "be solved in linear time if you use the",
+        "start": 180.0,
+        "duration": 3.36
+    },
+    {
+        "text": "algorithm called",
+        "start": 182.4,
+        "duration": 3.119
+    },
+    {
+        "text": "bucket sore so when you first think of",
+        "start": 183.36,
+        "duration": 3.76
+    },
+    {
+        "text": "bucket sort this is probably what you're",
+        "start": 185.519,
+        "duration": 2.64
+    },
+    {
+        "text": "going to think of",
+        "start": 187.12,
+        "duration": 3.28
+    },
+    {
+        "text": "the way bucket sort is usually taught is",
+        "start": 188.159,
+        "duration": 4.481
+    },
+    {
+        "text": "that for each value for example 1",
+        "start": 190.4,
+        "duration": 3.919
+    },
+    {
+        "text": "we're going to take an input array right",
+        "start": 192.64,
+        "duration": 3.44
+    },
+    {
+        "text": "this is our input array this",
+        "start": 194.319,
+        "duration": 4.961
+    },
+    {
+        "text": "this row is the indices the index of the",
+        "start": 196.08,
+        "duration": 4.4
+    },
+    {
+        "text": "array and this is actually going to be",
+        "start": 199.28,
+        "duration": 3.12
+    },
+    {
+        "text": "the value so for example for one",
+        "start": 200.48,
+        "duration": 3.92
+    },
+    {
+        "text": "we're going to go to the posit the index",
+        "start": 202.4,
+        "duration": 4.0
+    },
+    {
+        "text": "one and in the value we're gonna put",
+        "start": 204.4,
+        "duration": 4.479
+    },
+    {
+        "text": "okay one occurs exactly once now we're",
+        "start": 206.4,
+        "duration": 3.919
+    },
+    {
+        "text": "gonna see a second one we're gonna say",
+        "start": 208.879,
+        "duration": 3.121
+    },
+    {
+        "text": "one occurs twice right basically we're",
+        "start": 210.319,
+        "duration": 2.961
+    },
+    {
+        "text": "going to go through the input array",
+        "start": 212.0,
+        "duration": 2.48
+    },
+    {
+        "text": "count how many times",
+        "start": 213.28,
+        "duration": 3.92
+    },
+    {
+        "text": "each value occurs and then in our input",
+        "start": 214.48,
+        "duration": 3.28
+    },
+    {
+        "text": "array",
+        "start": 217.2,
+        "duration": 3.679
+    },
+    {
+        "text": "put that count for that index right map",
+        "start": 217.76,
+        "duration": 5.039
+    },
+    {
+        "text": "the value to the index and then put the",
+        "start": 220.879,
+        "duration": 4.321
+    },
+    {
+        "text": "count of that value so 1 occurs 3 times",
+        "start": 222.799,
+        "duration": 5.601
+    },
+    {
+        "text": "2 occurs twice 100 in this case occurs",
+        "start": 225.2,
+        "duration": 6.8
+    },
+    {
+        "text": "once now this algorithm would be",
+        "start": 228.4,
+        "duration": 6.72
+    },
+    {
+        "text": "linear time if our input values right",
+        "start": 232.0,
+        "duration": 5.12
+    },
+    {
+        "text": "were bounded for example if we knew for",
+        "start": 235.12,
+        "duration": 3.679
+    },
+    {
+        "text": "a fact that every value",
+        "start": 237.12,
+        "duration": 4.24
+    },
+    {
+        "text": "was between 1 and 10 then we would know",
+        "start": 238.799,
+        "duration": 4.481
+    },
+    {
+        "text": "that the size of our input array is also",
+        "start": 241.36,
+        "duration": 3.76
+    },
+    {
+        "text": "going to be 10 right but in this case",
+        "start": 243.28,
+        "duration": 3.84
+    },
+    {
+        "text": "the values are unbounded right like this",
+        "start": 245.12,
+        "duration": 2.56
+    },
+    {
+        "text": "could have been",
+        "start": 247.12,
+        "duration": 2.72
+    },
+    {
+        "text": "a million and then the size of our input",
+        "start": 247.68,
+        "duration": 3.68
+    },
+    {
+        "text": "array would have been a million even",
+        "start": 249.84,
+        "duration": 2.56
+    },
+    {
+        "text": "though the total",
+        "start": 251.36,
+        "duration": 3.519
+    },
+    {
+        "text": "input array size is only six right we",
+        "start": 252.4,
+        "duration": 3.52
+    },
+    {
+        "text": "have six elements",
+        "start": 254.879,
+        "duration": 3.2
+    },
+    {
+        "text": "but then that array where we actually",
+        "start": 255.92,
+        "duration": 3.52
+    },
+    {
+        "text": "store the buckets",
+        "start": 258.079,
+        "duration": 3.201
+    },
+    {
+        "text": "sort values is going to be unbounded",
+        "start": 259.44,
+        "duration": 4.0
+    },
+    {
+        "text": "right and also we want the top k",
+        "start": 261.28,
+        "duration": 4.8
+    },
+    {
+        "text": "elements this still isn't very clear of",
+        "start": 263.44,
+        "duration": 4.08
+    },
+    {
+        "text": "where exactly the top k",
+        "start": 266.08,
+        "duration": 3.04
+    },
+    {
+        "text": "elements are actually going to be so in",
+        "start": 267.52,
+        "duration": 4.0
+    },
+    {
+        "text": "this case this type of bucket sort",
+        "start": 269.12,
+        "duration": 4.72
+    },
+    {
+        "text": "doesn't work but there's another way",
+        "start": 271.52,
+        "duration": 4.88
+    },
+    {
+        "text": "we can do it so in this case you can see",
+        "start": 273.84,
+        "duration": 3.28
+    },
+    {
+        "text": "for our",
+        "start": 276.4,
+        "duration": 2.239
+    },
+    {
+        "text": "for our array where we're going to be",
+        "start": 277.12,
+        "duration": 3.359
+    },
+    {
+        "text": "doing the bucket sort the index",
+        "start": 278.639,
+        "duration": 4.401
+    },
+    {
+        "text": "i was using the each value in the",
+        "start": 280.479,
+        "duration": 4.321
+    },
+    {
+        "text": "inquiry for example you know one was",
+        "start": 283.04,
+        "duration": 3.2
+    },
+    {
+        "text": "being mapped to index one right and",
+        "start": 284.8,
+        "duration": 2.88
+    },
+    {
+        "text": "there we were storing the count",
+        "start": 286.24,
+        "duration": 3.36
+    },
+    {
+        "text": "there's actually another tricky way that",
+        "start": 287.68,
+        "duration": 3.519
+    },
+    {
+        "text": "you can do it that will lead us to a",
+        "start": 289.6,
+        "duration": 3.039
+    },
+    {
+        "text": "linear time solution",
+        "start": 291.199,
+        "duration": 3.521
+    },
+    {
+        "text": "so if we're pretty clever this is what",
+        "start": 292.639,
+        "duration": 3.201
+    },
+    {
+        "text": "we're going to do",
+        "start": 294.72,
+        "duration": 3.68
+    },
+    {
+        "text": "for the index we're actually going to be",
+        "start": 295.84,
+        "duration": 3.2
+    },
+    {
+        "text": "mapping",
+        "start": 298.4,
+        "duration": 3.2
+    },
+    {
+        "text": "the accounts of each value and in the",
+        "start": 299.04,
+        "duration": 4.56
+    },
+    {
+        "text": "values we're actually going to have a",
+        "start": 301.6,
+        "duration": 5.2
+    },
+    {
+        "text": "list of which values have exactly",
+        "start": 303.6,
+        "duration": 6.64
+    },
+    {
+        "text": "this particular count for example",
+        "start": 306.8,
+        "duration": 6.08
+    },
+    {
+        "text": "a hundred right we know that a hundred",
+        "start": 310.24,
+        "duration": 3.28
+    },
+    {
+        "text": "occurs",
+        "start": 312.88,
+        "duration": 3.36
+    },
+    {
+        "text": "one time so what we're gonna do is for",
+        "start": 313.52,
+        "duration": 3.84
+    },
+    {
+        "text": "this position",
+        "start": 316.24,
+        "duration": 3.6
+    },
+    {
+        "text": "one we're gonna say okay this value",
+        "start": 317.36,
+        "duration": 4.72
+    },
+    {
+        "text": "occurs only once a hundred a hundred",
+        "start": 319.84,
+        "duration": 4.88
+    },
+    {
+        "text": "occurs one single time which value",
+        "start": 322.08,
+        "duration": 5.119
+    },
+    {
+        "text": "for another value in our input array 2",
+        "start": 324.72,
+        "duration": 4.8
+    },
+    {
+        "text": "we see it occurs exactly twice right we",
+        "start": 327.199,
+        "duration": 4.0
+    },
+    {
+        "text": "can count that with a hash map pretty",
+        "start": 329.52,
+        "duration": 2.32
+    },
+    {
+        "text": "easily",
+        "start": 331.199,
+        "duration": 2.401
+    },
+    {
+        "text": "and then we'll say okay this value",
+        "start": 331.84,
+        "duration": 4.16
+    },
+    {
+        "text": "occurs twice so in the position",
+        "start": 333.6,
+        "duration": 5.52
+    },
+    {
+        "text": "2 index position 2 of our array we're",
+        "start": 336.0,
+        "duration": 4.639
+    },
+    {
+        "text": "going to add that value 2.",
+        "start": 339.12,
+        "duration": 4.32
+    },
+    {
+        "text": "2 is the value that occurs twice we see",
+        "start": 340.639,
+        "duration": 3.12
+    },
+    {
+        "text": "a",
+        "start": 343.44,
+        "duration": 2.56
+    },
+    {
+        "text": "last distinct value in our input array",
+        "start": 343.759,
+        "duration": 4.72
+    },
+    {
+        "text": "1. we count it occurs exactly three",
+        "start": 346.0,
+        "duration": 4.24
+    },
+    {
+        "text": "times so in this position",
+        "start": 348.479,
+        "duration": 3.601
+    },
+    {
+        "text": "index 3 we're gonna say okay there's a",
+        "start": 350.24,
+        "duration": 4.239
+    },
+    {
+        "text": "value a single value a one",
+        "start": 352.08,
+        "duration": 3.76
+    },
+    {
+        "text": "that occurs three times now it's",
+        "start": 354.479,
+        "duration": 3.041
+    },
+    {
+        "text": "possible maybe we had a third",
+        "start": 355.84,
+        "duration": 4.16
+    },
+    {
+        "text": "three right maybe two occurs three times",
+        "start": 357.52,
+        "duration": 3.119
+    },
+    {
+        "text": "in that case",
+        "start": 360.0,
+        "duration": 2.72
+    },
+    {
+        "text": "we would actually have multiple values",
+        "start": 360.639,
+        "duration": 3.521
+    },
+    {
+        "text": "in this position right but in this case",
+        "start": 362.72,
+        "duration": 3.199
+    },
+    {
+        "text": "we can see one occurs three times two",
+        "start": 364.16,
+        "duration": 2.72
+    },
+    {
+        "text": "occurs twice",
+        "start": 365.919,
+        "duration": 2.641
+    },
+    {
+        "text": "100 occurs once so they're all going to",
+        "start": 366.88,
+        "duration": 3.92
+    },
+    {
+        "text": "go in separate positions",
+        "start": 368.56,
+        "duration": 4.24
+    },
+    {
+        "text": "and then you know once we've taken every",
+        "start": 370.8,
+        "duration": 3.679
+    },
+    {
+        "text": "single input value and then",
+        "start": 372.8,
+        "duration": 3.36
+    },
+    {
+        "text": "and counted how many times each value",
+        "start": 374.479,
+        "duration": 3.041
+    },
+    {
+        "text": "occurs and then put it in the",
+        "start": 376.16,
+        "duration": 3.44
+    },
+    {
+        "text": "appropriate spot in this array what are",
+        "start": 377.52,
+        "duration": 2.959
+    },
+    {
+        "text": "we going to do well",
+        "start": 379.6,
+        "duration": 3.92
+    },
+    {
+        "text": "we want the top k values right the",
+        "start": 380.479,
+        "duration": 4.321
+    },
+    {
+        "text": "values that occur",
+        "start": 383.52,
+        "duration": 3.2
+    },
+    {
+        "text": "the top k values that occur most",
+        "start": 384.8,
+        "duration": 3.2
+    },
+    {
+        "text": "frequently right so what are we going to",
+        "start": 386.72,
+        "duration": 2.8
+    },
+    {
+        "text": "do we're going to start at this",
+        "start": 388.0,
+        "duration": 4.0
+    },
+    {
+        "text": "end of the array we want all the values",
+        "start": 389.52,
+        "duration": 3.36
+    },
+    {
+        "text": "that occur",
+        "start": 392.0,
+        "duration": 4.0
+    },
+    {
+        "text": "six times why are we stopping at six",
+        "start": 392.88,
+        "duration": 4.879
+    },
+    {
+        "text": "though why don't i extend this array",
+        "start": 396.0,
+        "duration": 2.88
+    },
+    {
+        "text": "farther right seven",
+        "start": 397.759,
+        "duration": 3.28
+    },
+    {
+        "text": "eight a hundred right why did the",
+        "start": 398.88,
+        "duration": 4.159
+    },
+    {
+        "text": "indices stop at six",
+        "start": 401.039,
+        "duration": 4.641
+    },
+    {
+        "text": "notice something about our input array",
+        "start": 403.039,
+        "duration": 4.16
+    },
+    {
+        "text": "our input array is",
+        "start": 405.68,
+        "duration": 4.799
+    },
+    {
+        "text": "size six right so that means if every",
+        "start": 407.199,
+        "duration": 3.761
+    },
+    {
+        "text": "single",
+        "start": 410.479,
+        "duration": 2.801
+    },
+    {
+        "text": "value in the input array was the exact",
+        "start": 410.96,
+        "duration": 3.359
+    },
+    {
+        "text": "same the",
+        "start": 413.28,
+        "duration": 3.919
+    },
+    {
+        "text": "most number of times a value could occur",
+        "start": 414.319,
+        "duration": 4.0
+    },
+    {
+        "text": "would be exactly",
+        "start": 417.199,
+        "duration": 4.161
+    },
+    {
+        "text": "six time so the cool thing about this in",
+        "start": 418.319,
+        "duration": 4.961
+    },
+    {
+        "text": "about this new array that we're creating",
+        "start": 421.36,
+        "duration": 3.36
+    },
+    {
+        "text": "is it's bounded",
+        "start": 423.28,
+        "duration": 3.919
+    },
+    {
+        "text": "by six or well technically six plus one",
+        "start": 424.72,
+        "duration": 4.319
+    },
+    {
+        "text": "because we do have a zero but that's not",
+        "start": 427.199,
+        "duration": 2.961
+    },
+    {
+        "text": "actually necessary",
+        "start": 429.039,
+        "duration": 3.44
+    },
+    {
+        "text": "but it's basically it's proportionate to",
+        "start": 430.16,
+        "duration": 5.039
+    },
+    {
+        "text": "the size of the input array right so",
+        "start": 432.479,
+        "duration": 4.72
+    },
+    {
+        "text": "so you know when we're scanning from",
+        "start": 435.199,
+        "duration": 3.201
+    },
+    {
+        "text": "right to left or",
+        "start": 437.199,
+        "duration": 3.28
+    },
+    {
+        "text": "however we do it we're only going to be",
+        "start": 438.4,
+        "duration": 3.6
+    },
+    {
+        "text": "doing that we can scan through the",
+        "start": 440.479,
+        "duration": 3.521
+    },
+    {
+        "text": "entire thing in linear time",
+        "start": 442.0,
+        "duration": 4.56
+    },
+    {
+        "text": "now in this case we see six there's no",
+        "start": 444.0,
+        "duration": 4.72
+    },
+    {
+        "text": "values that occur six times so we can't",
+        "start": 446.56,
+        "duration": 3.52
+    },
+    {
+        "text": "find our top k element",
+        "start": 448.72,
+        "duration": 3.28
+    },
+    {
+        "text": "in that position we'll try the same",
+        "start": 450.08,
+        "duration": 3.04
+    },
+    {
+        "text": "thing with five",
+        "start": 452.0,
+        "duration": 4.56
+    },
+    {
+        "text": "five no values occur five times four",
+        "start": 453.12,
+        "duration": 6.56
+    },
+    {
+        "text": "no values occur four times three oh a",
+        "start": 456.56,
+        "duration": 4.639
+    },
+    {
+        "text": "single value we're going to go through",
+        "start": 459.68,
+        "duration": 2.32
+    },
+    {
+        "text": "every",
+        "start": 461.199,
+        "duration": 2.641
+    },
+    {
+        "text": "value in this array there's only a",
+        "start": 462.0,
+        "duration": 3.44
+    },
+    {
+        "text": "single value in this case",
+        "start": 463.84,
+        "duration": 4.96
+    },
+    {
+        "text": "but we do see a 1 occur so to our result",
+        "start": 465.44,
+        "duration": 5.039
+    },
+    {
+        "text": "we want the top k values",
+        "start": 468.8,
+        "duration": 4.0
+    },
+    {
+        "text": "the top k occurring values we are going",
+        "start": 470.479,
+        "duration": 3.681
+    },
+    {
+        "text": "to add a 1 to that",
+        "start": 472.8,
+        "duration": 4.64
+    },
+    {
+        "text": "1 occurs most frequently in the input",
+        "start": 474.16,
+        "duration": 4.319
+    },
+    {
+        "text": "array so",
+        "start": 477.44,
+        "duration": 3.039
+    },
+    {
+        "text": "we add one to our result we need one",
+        "start": 478.479,
+        "duration": 4.0
+    },
+    {
+        "text": "more because i think we were looking for",
+        "start": 480.479,
+        "duration": 3.041
+    },
+    {
+        "text": "the top",
+        "start": 482.479,
+        "duration": 3.361
+    },
+    {
+        "text": "two values k in this case is going to be",
+        "start": 483.52,
+        "duration": 4.32
+    },
+    {
+        "text": "two so now we're going to go here which",
+        "start": 485.84,
+        "duration": 2.799
+    },
+    {
+        "text": "values occur",
+        "start": 487.84,
+        "duration": 3.759
+    },
+    {
+        "text": "twice a single value and that value is",
+        "start": 488.639,
+        "duration": 3.361
+    },
+    {
+        "text": "two",
+        "start": 491.599,
+        "duration": 2.641
+    },
+    {
+        "text": "so we're going to add that to our output",
+        "start": 492.0,
+        "duration": 4.639
+    },
+    {
+        "text": "array so now we've gotten the top two",
+        "start": 494.24,
+        "duration": 3.04
+    },
+    {
+        "text": "values",
+        "start": 496.639,
+        "duration": 2.881
+    },
+    {
+        "text": "and then we can return this array now",
+        "start": 497.28,
+        "duration": 4.479
+    },
+    {
+        "text": "why is this linear time again",
+        "start": 499.52,
+        "duration": 4.32
+    },
+    {
+        "text": "because remember the max size that this",
+        "start": 501.759,
+        "duration": 4.081
+    },
+    {
+        "text": "array could possibly be is going to be",
+        "start": 503.84,
+        "duration": 3.759
+    },
+    {
+        "text": "about equal to the size of the input",
+        "start": 505.84,
+        "duration": 3.68
+    },
+    {
+        "text": "array right because we could have a",
+        "start": 507.599,
+        "duration": 3.841
+    },
+    {
+        "text": "value for example one could occur six",
+        "start": 509.52,
+        "duration": 3.36
+    },
+    {
+        "text": "times in that case we'd have",
+        "start": 511.44,
+        "duration": 3.36
+    },
+    {
+        "text": "one over here now what if every single",
+        "start": 512.88,
+        "duration": 4.0
+    },
+    {
+        "text": "value in the input array was distinct",
+        "start": 514.8,
+        "duration": 3.76
+    },
+    {
+        "text": "right that's another extreme what if we",
+        "start": 516.88,
+        "duration": 2.399
+    },
+    {
+        "text": "had one",
+        "start": 518.56,
+        "duration": 3.919
+    },
+    {
+        "text": "two three four five six",
+        "start": 519.279,
+        "duration": 5.201
+    },
+    {
+        "text": "in that case this position would be",
+        "start": 522.479,
+        "duration": 4.001
+    },
+    {
+        "text": "empty because no values occur six times",
+        "start": 524.48,
+        "duration": 3.2
+    },
+    {
+        "text": "no values occur",
+        "start": 526.48,
+        "duration": 3.44
+    },
+    {
+        "text": "five times four times three times or two",
+        "start": 527.68,
+        "duration": 3.04
+    },
+    {
+        "text": "times",
+        "start": 529.92,
+        "duration": 3.76
+    },
+    {
+        "text": "every one of these six values would go",
+        "start": 530.72,
+        "duration": 3.36
+    },
+    {
+        "text": "in",
+        "start": 533.68,
+        "duration": 3.68
+    },
+    {
+        "text": "this position at index one reason being",
+        "start": 534.08,
+        "duration": 6.0
+    },
+    {
+        "text": "each one of these occurs exactly once so",
+        "start": 537.36,
+        "duration": 3.599
+    },
+    {
+        "text": "in that case we'll have",
+        "start": 540.08,
+        "duration": 3.439
+    },
+    {
+        "text": "all six values concentrated over here",
+        "start": 540.959,
+        "duration": 4.641
+    },
+    {
+        "text": "and that's still going to be linear time",
+        "start": 543.519,
+        "duration": 4.161
+    },
+    {
+        "text": "because yes we are going to be iterating",
+        "start": 545.6,
+        "duration": 3.84
+    },
+    {
+        "text": "through this entire input array which is",
+        "start": 547.68,
+        "duration": 2.719
+    },
+    {
+        "text": "going to be big o",
+        "start": 549.44,
+        "duration": 3.76
+    },
+    {
+        "text": "of n and then we're going to add another",
+        "start": 550.399,
+        "duration": 3.601
+    },
+    {
+        "text": "big o of n",
+        "start": 553.2,
+        "duration": 3.28
+    },
+    {
+        "text": "to that right big o of n plus big o of n",
+        "start": 554.0,
+        "duration": 3.6
+    },
+    {
+        "text": "because we're going to have to iterate",
+        "start": 556.48,
+        "duration": 3.12
+    },
+    {
+        "text": "through six values in exactly one",
+        "start": 557.6,
+        "duration": 2.799
+    },
+    {
+        "text": "position",
+        "start": 559.6,
+        "duration": 3.679
+    },
+    {
+        "text": "so that's still technically linear time",
+        "start": 560.399,
+        "duration": 4.641
+    },
+    {
+        "text": "now we are creating this",
+        "start": 563.279,
+        "duration": 4.401
+    },
+    {
+        "text": "uh array to help us and we're also going",
+        "start": 565.04,
+        "duration": 4.239
+    },
+    {
+        "text": "to be needing a hash map to",
+        "start": 567.68,
+        "duration": 3.92
+    },
+    {
+        "text": "count the occurrences of each value in",
+        "start": 569.279,
+        "duration": 4.24
+    },
+    {
+        "text": "the input array so the memory complexity",
+        "start": 571.6,
+        "duration": 3.44
+    },
+    {
+        "text": "is also going to be big o",
+        "start": 573.519,
+        "duration": 4.0
+    },
+    {
+        "text": "of n with that being said let's jump",
+        "start": 575.04,
+        "duration": 4.479
+    },
+    {
+        "text": "into the linear time code it's pretty",
+        "start": 577.519,
+        "duration": 4.0
+    },
+    {
+        "text": "easy once you can identify this",
+        "start": 579.519,
+        "duration": 4.801
+    },
+    {
+        "text": "trick so we are going to use a hash map",
+        "start": 581.519,
+        "duration": 4.641
+    },
+    {
+        "text": "to count the occurrences of each value",
+        "start": 584.32,
+        "duration": 2.8
+    },
+    {
+        "text": "or also",
+        "start": 586.16,
+        "duration": 3.28
+    },
+    {
+        "text": "the array the special array that's going",
+        "start": 587.12,
+        "duration": 4.719
+    },
+    {
+        "text": "to be the same size as the input array",
+        "start": 589.44,
+        "duration": 2.88
+    },
+    {
+        "text": "about",
+        "start": 591.839,
+        "duration": 2.081
+    },
+    {
+        "text": "is going to be called frequency",
+        "start": 592.32,
+        "duration": 3.199
+    },
+    {
+        "text": "basically you know",
+        "start": 593.92,
+        "duration": 3.68
+    },
+    {
+        "text": "the index is going to be the frequency",
+        "start": 595.519,
+        "duration": 3.921
+    },
+    {
+        "text": "of an element or the count of an element",
+        "start": 597.6,
+        "duration": 3.2
+    },
+    {
+        "text": "and the value is just going to be the",
+        "start": 599.44,
+        "duration": 2.32
+    },
+    {
+        "text": "list of",
+        "start": 600.8,
+        "duration": 3.36
+    },
+    {
+        "text": "values that occur that particular many",
+        "start": 601.76,
+        "duration": 3.519
+    },
+    {
+        "text": "number of times",
+        "start": 604.16,
+        "duration": 2.16
+    },
+    {
+        "text": "so i'm going to have an empty i'm going",
+        "start": 605.279,
+        "duration": 3.361
+    },
+    {
+        "text": "to initialize this as an empty array",
+        "start": 606.32,
+        "duration": 4.32
+    },
+    {
+        "text": "the number of empty arrays that go in",
+        "start": 608.64,
+        "duration": 3.759
+    },
+    {
+        "text": "this is going to be about",
+        "start": 610.64,
+        "duration": 4.96
+    },
+    {
+        "text": "the size of our input plus one",
+        "start": 612.399,
+        "duration": 4.641
+    },
+    {
+        "text": "so now i'm just going to go through",
+        "start": 615.6,
+        "duration": 3.52
+    },
+    {
+        "text": "every value in nums and just count how",
+        "start": 617.04,
+        "duration": 3.76
+    },
+    {
+        "text": "many times it occurs so for count of",
+        "start": 619.12,
+        "duration": 3.52
+    },
+    {
+        "text": "this particular end value we're going to",
+        "start": 620.8,
+        "duration": 2.159
+    },
+    {
+        "text": "do",
+        "start": 622.64,
+        "duration": 2.96
+    },
+    {
+        "text": "1 plus what its current count is count",
+        "start": 622.959,
+        "duration": 3.041
+    },
+    {
+        "text": "dot",
+        "start": 625.6,
+        "duration": 3.359
+    },
+    {
+        "text": "get n now if n doesn't already exist in",
+        "start": 626.0,
+        "duration": 4.72
+    },
+    {
+        "text": "our hash map or dictionary",
+        "start": 628.959,
+        "duration": 3.521
+    },
+    {
+        "text": "we're just going to put a default value",
+        "start": 630.72,
+        "duration": 3.6
+    },
+    {
+        "text": "of zero so this will return zero if it",
+        "start": 632.48,
+        "duration": 3.28
+    },
+    {
+        "text": "doesn't exist but this is",
+        "start": 634.32,
+        "duration": 2.56
+    },
+    {
+        "text": "how we're going to be counting the",
+        "start": 635.76,
+        "duration": 2.88
+    },
+    {
+        "text": "number of times each value in nums",
+        "start": 636.88,
+        "duration": 2.399
+    },
+    {
+        "text": "occurs",
+        "start": 638.64,
+        "duration": 2.319
+    },
+    {
+        "text": "next we're going to be going through",
+        "start": 639.279,
+        "duration": 4.0
+    },
+    {
+        "text": "each value that we counted so",
+        "start": 640.959,
+        "duration": 5.521
+    },
+    {
+        "text": "n c in count",
+        "start": 643.279,
+        "duration": 5.521
+    },
+    {
+        "text": "dot items because that's going to return",
+        "start": 646.48,
+        "duration": 4.32
+    },
+    {
+        "text": "the key value pair every single key",
+        "start": 648.8,
+        "duration": 3.599
+    },
+    {
+        "text": "value pair that we added to",
+        "start": 650.8,
+        "duration": 4.0
+    },
+    {
+        "text": "our dictionary and for every key value",
+        "start": 652.399,
+        "duration": 3.761
+    },
+    {
+        "text": "pair for every number",
+        "start": 654.8,
+        "duration": 3.92
+    },
+    {
+        "text": "and count i want to change the free i",
+        "start": 656.16,
+        "duration": 4.239
+    },
+    {
+        "text": "want to in the frequency array i want to",
+        "start": 658.72,
+        "duration": 3.52
+    },
+    {
+        "text": "insert so for this particular",
+        "start": 660.399,
+        "duration": 3.521
+    },
+    {
+        "text": "count remember the count is what's going",
+        "start": 662.24,
+        "duration": 3.279
+    },
+    {
+        "text": "to be the index so",
+        "start": 663.92,
+        "duration": 4.159
+    },
+    {
+        "text": "at index count we're going to append to",
+        "start": 665.519,
+        "duration": 3.521
+    },
+    {
+        "text": "that list",
+        "start": 668.079,
+        "duration": 3.921
+    },
+    {
+        "text": "this value n what we're saying is this",
+        "start": 669.04,
+        "duration": 3.52
+    },
+    {
+        "text": "value",
+        "start": 672.0,
+        "duration": 3.76
+    },
+    {
+        "text": "n occurs exactly c number of times",
+        "start": 672.56,
+        "duration": 5.04
+    },
+    {
+        "text": "and once we've done this we've basically",
+        "start": 675.76,
+        "duration": 3.6
+    },
+    {
+        "text": "initialized everything we need to so now",
+        "start": 677.6,
+        "duration": 2.64
+    },
+    {
+        "text": "we're going to have our",
+        "start": 679.36,
+        "duration": 3.36
+    },
+    {
+        "text": "result output right we want the top k",
+        "start": 680.24,
+        "duration": 3.279
+    },
+    {
+        "text": "elements so",
+        "start": 682.72,
+        "duration": 2.96
+    },
+    {
+        "text": "4 and so we're going to be iterating",
+        "start": 683.519,
+        "duration": 3.681
+    },
+    {
+        "text": "through this array frequency in",
+        "start": 685.68,
+        "duration": 2.96
+    },
+    {
+        "text": "descending order right because we want",
+        "start": 687.2,
+        "duration": 2.96
+    },
+    {
+        "text": "to start with the numbers that occur",
+        "start": 688.64,
+        "duration": 3.28
+    },
+    {
+        "text": "most frequently so for i",
+        "start": 690.16,
+        "duration": 5.6
+    },
+    {
+        "text": "in range length of frequency",
+        "start": 691.92,
+        "duration": 5.919
+    },
+    {
+        "text": "minus one which is the last index and",
+        "start": 695.76,
+        "duration": 3.28
+    },
+    {
+        "text": "we're going to go all the way",
+        "start": 697.839,
+        "duration": 3.041
+    },
+    {
+        "text": "up until zero and we're going to be",
+        "start": 699.04,
+        "duration": 3.44
+    },
+    {
+        "text": "going in descending order so we're going",
+        "start": 700.88,
+        "duration": 4.079
+    },
+    {
+        "text": "to put a negative 1 as the decrementer",
+        "start": 702.48,
+        "duration": 4.24
+    },
+    {
+        "text": "and we're going to go through every",
+        "start": 704.959,
+        "duration": 3.841
+    },
+    {
+        "text": "value so for every let's say",
+        "start": 706.72,
+        "duration": 5.52
+    },
+    {
+        "text": "n value in frequency at this index",
+        "start": 708.8,
+        "duration": 6.32
+    },
+    {
+        "text": "i because we know everything inserted in",
+        "start": 712.24,
+        "duration": 5.039
+    },
+    {
+        "text": "i is actually another sub list so it",
+        "start": 715.12,
+        "duration": 3.76
+    },
+    {
+        "text": "could be empty or it could have some",
+        "start": 717.279,
+        "duration": 3.521
+    },
+    {
+        "text": "values whatever it does so let's say",
+        "start": 718.88,
+        "duration": 4.48
+    },
+    {
+        "text": "n is non-empty then we're going to go",
+        "start": 720.8,
+        "duration": 3.599
+    },
+    {
+        "text": "ahead and take that",
+        "start": 723.36,
+        "duration": 2.8
+    },
+    {
+        "text": "end value and append it to our result",
+        "start": 724.399,
+        "duration": 3.281
+    },
+    {
+        "text": "because we're basically getting the end",
+        "start": 726.16,
+        "duration": 2.56
+    },
+    {
+        "text": "value that occurs",
+        "start": 727.68,
+        "duration": 3.04
+    },
+    {
+        "text": "most frequently now when are we going to",
+        "start": 728.72,
+        "duration": 4.16
+    },
+    {
+        "text": "stop at some point our result",
+        "start": 730.72,
+        "duration": 4.32
+    },
+    {
+        "text": "output is going to be the exact same",
+        "start": 732.88,
+        "duration": 3.199
+    },
+    {
+        "text": "size as k",
+        "start": 735.04,
+        "duration": 2.32
+    },
+    {
+        "text": "because we're guaranteed to have at",
+        "start": 736.079,
+        "duration": 3.601
+    },
+    {
+        "text": "least k values in our input array so",
+        "start": 737.36,
+        "duration": 3.36
+    },
+    {
+        "text": "once that happens",
+        "start": 739.68,
+        "duration": 4.719
+    },
+    {
+        "text": "once if the length of result is matching",
+        "start": 740.72,
+        "duration": 5.28
+    },
+    {
+        "text": "exactly k",
+        "start": 744.399,
+        "duration": 3.521
+    },
+    {
+        "text": "that's when we can go ahead and return",
+        "start": 746.0,
+        "duration": 3.12
+    },
+    {
+        "text": "result we know this is",
+        "start": 747.92,
+        "duration": 3.44
+    },
+    {
+        "text": "guaranteed to execute at some point so",
+        "start": 749.12,
+        "duration": 3.92
+    },
+    {
+        "text": "we don't have to put a return statement",
+        "start": 751.36,
+        "duration": 2.88
+    },
+    {
+        "text": "outside of the loop",
+        "start": 753.04,
+        "duration": 3.76
+    },
+    {
+        "text": "and that is the entire code so we could",
+        "start": 754.24,
+        "duration": 3.76
+    },
+    {
+        "text": "have solved this problem",
+        "start": 756.8,
+        "duration": 3.039
+    },
+    {
+        "text": "in decent time if we used a heap it",
+        "start": 758.0,
+        "duration": 3.12
+    },
+    {
+        "text": "wouldn't be too bad k",
+        "start": 759.839,
+        "duration": 3.44
+    },
+    {
+        "text": "log n i think that's a doable solution",
+        "start": 761.12,
+        "duration": 4.0
+    },
+    {
+        "text": "but with this kind of neat trick",
+        "start": 763.279,
+        "duration": 5.041
+    },
+    {
+        "text": "we can do this in big o of n time and i",
+        "start": 765.12,
+        "duration": 4.959
+    },
+    {
+        "text": "hope that you did learn something maybe",
+        "start": 768.32,
+        "duration": 2.639
+    },
+    {
+        "text": "a little about",
+        "start": 770.079,
+        "duration": 2.481
+    },
+    {
+        "text": "a little bit about bucket sort this",
+        "start": 770.959,
+        "duration": 3.201
+    },
+    {
+        "text": "problem definitely taught me something",
+        "start": 772.56,
+        "duration": 2.8
+    },
+    {
+        "text": "when i first solved it",
+        "start": 774.16,
+        "duration": 2.479
+    },
+    {
+        "text": "and i know many people have been",
+        "start": 775.36,
+        "duration": 2.88
+    },
+    {
+        "text": "requesting problems and i'm trying to",
+        "start": 776.639,
+        "duration": 1.921
+    },
+    {
+        "text": "get",
+        "start": 778.24,
+        "duration": 2.32
+    },
+    {
+        "text": "to all those requested problems as",
+        "start": 778.56,
+        "duration": 3.519
+    },
+    {
+        "text": "quickly as i can so i hope it was",
+        "start": 780.56,
+        "duration": 2.0
+    },
+    {
+        "text": "helpful",
+        "start": 782.079,
+        "duration": 2.401
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 782.56,
+        "duration": 3.44
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 784.48,
+        "duration": 3.76
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 786.0,
+        "duration": 8.72
+    },
+    {
+        "text": "thanks for watching",
+        "start": 788.24,
+        "duration": 6.48
+    }
+]

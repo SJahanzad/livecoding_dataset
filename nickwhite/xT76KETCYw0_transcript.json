@@ -1,0 +1,1012 @@
+[
+    {
+        "text": "hey what's up guys Nick white here I do",
+        "start": 0.949,
+        "duration": 5.381
+    },
+    {
+        "text": "tech and coding stuff on twitch and",
+        "start": 4.47,
+        "duration": 4.62
+    },
+    {
+        "text": "YouTube I do all the hacker ink and leak",
+        "start": 6.33,
+        "duration": 4.559
+    },
+    {
+        "text": "code problems I have solution playlist",
+        "start": 9.09,
+        "duration": 4.29
+    },
+    {
+        "text": "on my channel check those out just going",
+        "start": 10.889,
+        "duration": 4.08
+    },
+    {
+        "text": "in order here so we have self dividing",
+        "start": 13.38,
+        "duration": 3.42
+    },
+    {
+        "text": "numbers a self dividing number is a",
+        "start": 14.969,
+        "duration": 4.23
+    },
+    {
+        "text": "number that is divisible by every digit",
+        "start": 16.8,
+        "duration": 4.95
+    },
+    {
+        "text": "it contains for example one to eight is",
+        "start": 19.199,
+        "duration": 5.33
+    },
+    {
+        "text": "a self dividing number because 128",
+        "start": 21.75,
+        "duration": 7.5
+    },
+    {
+        "text": "remainder 1 is equal to 0 so 1 goes into",
+        "start": 24.529,
+        "duration": 7.631
+    },
+    {
+        "text": "128 perfectly because that's the first",
+        "start": 29.25,
+        "duration": 6.09
+    },
+    {
+        "text": "digit 2 goes in perfectly that's the",
+        "start": 32.16,
+        "duration": 4.739
+    },
+    {
+        "text": "second digit and 8 also goes on",
+        "start": 35.34,
+        "duration": 5.82
+    },
+    {
+        "text": "perfectly if the digit goes in perfect",
+        "start": 36.899,
+        "duration": 6.121
+    },
+    {
+        "text": "is perfectly divisible by the number",
+        "start": 41.16,
+        "duration": 4.35
+    },
+    {
+        "text": "then the remainder is 0 obviously and if",
+        "start": 43.02,
+        "duration": 4.019
+    },
+    {
+        "text": "it's greater than 0 then it's not",
+        "start": 45.51,
+        "duration": 5.13
+    },
+    {
+        "text": "divisible by that number so also a self",
+        "start": 47.039,
+        "duration": 4.921
+    },
+    {
+        "text": "dividing number is not allowed to",
+        "start": 50.64,
+        "duration": 3.72
+    },
+    {
+        "text": "contain the digit zero so if the digit",
+        "start": 51.96,
+        "duration": 4.65
+    },
+    {
+        "text": "zero is anywhere in here then also that",
+        "start": 54.36,
+        "duration": 4.56
+    },
+    {
+        "text": "is not a self dividing number so giving",
+        "start": 56.61,
+        "duration": 4.679
+    },
+    {
+        "text": "a lower and upper bound I'll put a list",
+        "start": 58.92,
+        "duration": 4.47
+    },
+    {
+        "text": "of every possible self dividing number",
+        "start": 61.289,
+        "duration": 4.08
+    },
+    {
+        "text": "including the bounds if possible so",
+        "start": 63.39,
+        "duration": 5.37
+    },
+    {
+        "text": "there's two ways to do this that I think",
+        "start": 65.369,
+        "duration": 4.981
+    },
+    {
+        "text": "are actually reasonable there's probably",
+        "start": 68.76,
+        "duration": 2.73
+    },
+    {
+        "text": "there's a lot of ways to do it but",
+        "start": 70.35,
+        "duration": 4.32
+    },
+    {
+        "text": "there's two main ways to do this right",
+        "start": 71.49,
+        "duration": 5.25
+    },
+    {
+        "text": "so we have to return a list of all the",
+        "start": 74.67,
+        "duration": 3.9
+    },
+    {
+        "text": "numbers that are self dividing between",
+        "start": 76.74,
+        "duration": 4.919
+    },
+    {
+        "text": "these boundaries right so we're gonna",
+        "start": 78.57,
+        "duration": 5.82
+    },
+    {
+        "text": "have to loop from 1 to 22 and then on",
+        "start": 81.659,
+        "duration": 4.411
+    },
+    {
+        "text": "each number we're gonna have to check if",
+        "start": 84.39,
+        "duration": 3.51
+    },
+    {
+        "text": "is self dividing so we're gonna use a",
+        "start": 86.07,
+        "duration": 4.589
+    },
+    {
+        "text": "separate method for sure this is gonna",
+        "start": 87.9,
+        "duration": 6.329
+    },
+    {
+        "text": "be a boolean method called is self",
+        "start": 90.659,
+        "duration": 7.441
+    },
+    {
+        "text": "dividing if I could spell dividing right",
+        "start": 94.229,
+        "duration": 5.82
+    },
+    {
+        "text": "and it's gonna take in the current",
+        "start": 98.1,
+        "duration": 3.659
+    },
+    {
+        "text": "number and then it's gonna do something",
+        "start": 100.049,
+        "duration": 3.421
+    },
+    {
+        "text": "in here to check if it's self dividing",
+        "start": 101.759,
+        "duration": 4.521
+    },
+    {
+        "text": "so we're gonna have a list of integers",
+        "start": 103.47,
+        "duration": 4.92
+    },
+    {
+        "text": "that's what we're returning from this",
+        "start": 106.28,
+        "duration": 5.71
+    },
+    {
+        "text": "method called itself dividing notes",
+        "start": 108.39,
+        "duration": 8.43
+    },
+    {
+        "text": "right that's set to list okay then we're",
+        "start": 111.99,
+        "duration": 7.14
+    },
+    {
+        "text": "gonna have to loop from the left",
+        "start": 116.82,
+        "duration": 5.85
+    },
+    {
+        "text": "boundary to less than or equal the right",
+        "start": 119.13,
+        "duration": 5.37
+    },
+    {
+        "text": "boundary because it says including the",
+        "start": 122.67,
+        "duration": 5.339
+    },
+    {
+        "text": "bounds if possible I plus plus and then",
+        "start": 124.5,
+        "duration": 6.119
+    },
+    {
+        "text": "we're just going to do if is self",
+        "start": 128.009,
+        "duration": 4.31
+    },
+    {
+        "text": "dividing",
+        "start": 130.619,
+        "duration": 3.2
+    },
+    {
+        "text": "on the current numba tween the",
+        "start": 132.319,
+        "duration": 5.301
+    },
+    {
+        "text": "boundaries of I then just do self",
+        "start": 133.819,
+        "duration": 10.2
+    },
+    {
+        "text": "dividing Nomad I right just add it into",
+        "start": 137.62,
+        "duration": 8.769
+    },
+    {
+        "text": "that output array because we know it's",
+        "start": 144.019,
+        "duration": 4.56
+    },
+    {
+        "text": "self dividing this is a boolean if it is",
+        "start": 146.389,
+        "duration": 3.72
+    },
+    {
+        "text": "self dividing we'll add it into the",
+        "start": 148.579,
+        "duration": 3.841
+    },
+    {
+        "text": "array if it's not we won't and at the",
+        "start": 150.109,
+        "duration": 4.35
+    },
+    {
+        "text": "end we'll just return the array that's",
+        "start": 152.42,
+        "duration": 5.459
+    },
+    {
+        "text": "what we have to return anyway I cannot",
+        "start": 154.459,
+        "duration": 8.4
+    },
+    {
+        "text": "spell self dividing give David David",
+        "start": 157.879,
+        "duration": 9.54
+    },
+    {
+        "text": "divided in return self dividing gnomes",
+        "start": 162.859,
+        "duration": 6.391
+    },
+    {
+        "text": "right so now all we have to do is",
+        "start": 167.419,
+        "duration": 5.28
+    },
+    {
+        "text": "implement method to check each number so",
+        "start": 169.25,
+        "duration": 4.859
+    },
+    {
+        "text": "each number is getting called within",
+        "start": 172.699,
+        "duration": 5.281
+    },
+    {
+        "text": "this range so we have to check each",
+        "start": 174.109,
+        "duration": 5.22
+    },
+    {
+        "text": "number and make sure that it is self",
+        "start": 177.98,
+        "duration": 2.819
+    },
+    {
+        "text": "dividing and how do we do that we have",
+        "start": 179.329,
+        "duration": 3.601
+    },
+    {
+        "text": "to make sure that the whole number is",
+        "start": 180.799,
+        "duration": 4.14
+    },
+    {
+        "text": "divisible by each digit of it and",
+        "start": 182.93,
+        "duration": 4.199
+    },
+    {
+        "text": "there's no zeros within it so what we're",
+        "start": 184.939,
+        "duration": 3.841
+    },
+    {
+        "text": "gonna do here is we're going to do a",
+        "start": 187.129,
+        "duration": 4.681
+    },
+    {
+        "text": "loop and we're going the one of the",
+        "start": 188.78,
+        "duration": 5.429
+    },
+    {
+        "text": "methods of doing this is to actually",
+        "start": 191.81,
+        "duration": 5.25
+    },
+    {
+        "text": "convert the number into a string because",
+        "start": 194.209,
+        "duration": 4.68
+    },
+    {
+        "text": "converting it to a string makes it easy",
+        "start": 197.06,
+        "duration": 3.66
+    },
+    {
+        "text": "to loop through character by character",
+        "start": 198.889,
+        "duration": 5.34
+    },
+    {
+        "text": "and then we just check the number",
+        "start": 200.72,
+        "duration": 6.329
+    },
+    {
+        "text": "version of the character we just convert",
+        "start": 204.229,
+        "duration": 4.44
+    },
+    {
+        "text": "the each character back into a number",
+        "start": 207.049,
+        "duration": 3.631
+    },
+    {
+        "text": "and check the number if the number is",
+        "start": 208.669,
+        "duration": 4.29
+    },
+    {
+        "text": "divisible by it so it's just converting",
+        "start": 210.68,
+        "duration": 4.38
+    },
+    {
+        "text": "it to a string mix is always a way that",
+        "start": 212.959,
+        "duration": 4.62
+    },
+    {
+        "text": "makes it really easy to loop through you",
+        "start": 215.06,
+        "duration": 4.44
+    },
+    {
+        "text": "know digits or characters of something",
+        "start": 217.579,
+        "duration": 6.481
+    },
+    {
+        "text": "so we're gonna do four char C in it's an",
+        "start": 219.5,
+        "duration": 8.459
+    },
+    {
+        "text": "object loop in the string dot value of",
+        "start": 224.06,
+        "duration": 7.109
+    },
+    {
+        "text": "an string is a class and value of is",
+        "start": 227.959,
+        "duration": 5.31
+    },
+    {
+        "text": "just going to convert our current number",
+        "start": 231.169,
+        "duration": 4.861
+    },
+    {
+        "text": "into a it's string format and then we're",
+        "start": 233.269,
+        "duration": 5.4
+    },
+    {
+        "text": "also going to call two two char array to",
+        "start": 236.03,
+        "duration": 5.51
+    },
+    {
+        "text": "get the character array version of this",
+        "start": 238.669,
+        "duration": 5.761
+    },
+    {
+        "text": "string version of this number so now we",
+        "start": 241.54,
+        "duration": 6.33
+    },
+    {
+        "text": "have all the characters in this number",
+        "start": 244.43,
+        "duration": 7.019
+    },
+    {
+        "text": "for each number in the range and what we",
+        "start": 247.87,
+        "duration": 6.22
+    },
+    {
+        "text": "want to do now is do a check first of",
+        "start": 251.449,
+        "duration": 7.081
+    },
+    {
+        "text": "all if C is equal to character of 0 well",
+        "start": 254.09,
+        "duration": 7.129
+    },
+    {
+        "text": "that's not allowed so we can already or",
+        "start": 258.53,
+        "duration": 5.669
+    },
+    {
+        "text": "so that's a false so and then we have",
+        "start": 261.219,
+        "duration": 4.631
+    },
+    {
+        "text": "this other condition too",
+        "start": 264.199,
+        "duration": 4.831
+    },
+    {
+        "text": "or Sosa's equal to zero or what's",
+        "start": 265.85,
+        "duration": 4.86
+    },
+    {
+        "text": "another failing condition if it's not",
+        "start": 269.03,
+        "duration": 3.66
+    },
+    {
+        "text": "divisible right by the current character",
+        "start": 270.71,
+        "duration": 6.69
+    },
+    {
+        "text": "or if the naam is so the number we pass",
+        "start": 272.69,
+        "duration": 7.47
+    },
+    {
+        "text": "in here is still an integer we just for",
+        "start": 277.4,
+        "duration": 4.71
+    },
+    {
+        "text": "the duration of the for loop we got the",
+        "start": 280.16,
+        "duration": 3.42
+    },
+    {
+        "text": "string value and we're looping through",
+        "start": 282.11,
+        "duration": 2.16
+    },
+    {
+        "text": "the chart right",
+        "start": 283.58,
+        "duration": 5.82
+    },
+    {
+        "text": "if the num remainder of the current",
+        "start": 284.27,
+        "duration": 8.61
+    },
+    {
+        "text": "characters value the actual ASCII value",
+        "start": 289.4,
+        "duration": 6.0
+    },
+    {
+        "text": "so if we want the ASCII value I've done",
+        "start": 292.88,
+        "duration": 4.71
+    },
+    {
+        "text": "this in a lot of character string",
+        "start": 295.4,
+        "duration": 4.53
+    },
+    {
+        "text": "problems you just do C minus whatever",
+        "start": 297.59,
+        "duration": 5.04
+    },
+    {
+        "text": "value is the base we're dealing with",
+        "start": 299.93,
+        "duration": 5.19
+    },
+    {
+        "text": "numbers here so instead of you know the",
+        "start": 302.63,
+        "duration": 4.17
+    },
+    {
+        "text": "current character minus a because we're",
+        "start": 305.12,
+        "duration": 3.03
+    },
+    {
+        "text": "not dealing with letters we're gonna get",
+        "start": 306.8,
+        "duration": 3.06
+    },
+    {
+        "text": "the ASCII value of zero and subtract",
+        "start": 308.15,
+        "duration": 4.38
+    },
+    {
+        "text": "this will automatically convert it into",
+        "start": 309.86,
+        "duration": 6.32
+    },
+    {
+        "text": "the actual integer value of the string",
+        "start": 312.53,
+        "duration": 9.0
+    },
+    {
+        "text": "so if the number modulus the current",
+        "start": 316.18,
+        "duration": 7.84
+    },
+    {
+        "text": "character which we convert to an integer",
+        "start": 321.53,
+        "duration": 4.52
+    },
+    {
+        "text": "at the current integer digit of the",
+        "start": 324.02,
+        "duration": 7.26
+    },
+    {
+        "text": "number is greater than zero that means",
+        "start": 326.05,
+        "duration": 7.9
+    },
+    {
+        "text": "it's not divisible so if the number was",
+        "start": 331.28,
+        "duration": 5.07
+    },
+    {
+        "text": "128 the first part of this loop would",
+        "start": 333.95,
+        "duration": 5.61
+    },
+    {
+        "text": "check if 128 is divisible by 1 because",
+        "start": 336.35,
+        "duration": 6.24
+    },
+    {
+        "text": "the current character would be 1 1 the",
+        "start": 339.56,
+        "duration": 5.19
+    },
+    {
+        "text": "string version of 1 minus the string",
+        "start": 342.59,
+        "duration": 5.73
+    },
+    {
+        "text": "version of 0 if it was greater than that",
+        "start": 344.75,
+        "duration": 8.49
+    },
+    {
+        "text": "would you know give us no modulus 1 and",
+        "start": 348.32,
+        "duration": 6.81
+    },
+    {
+        "text": "then we check if that was greater than 0",
+        "start": 353.24,
+        "duration": 3.93
+    },
+    {
+        "text": "which it wouldn't be and that would be",
+        "start": 355.13,
+        "duration": 4.68
+    },
+    {
+        "text": "fine but if it was greater than 0 we'd",
+        "start": 357.17,
+        "duration": 4.23
+    },
+    {
+        "text": "return false because we these are the",
+        "start": 359.81,
+        "duration": 3.75
+    },
+    {
+        "text": "conditions that we don't want to see if",
+        "start": 361.4,
+        "duration": 4.26
+    },
+    {
+        "text": "the we see is 0 is a character or if",
+        "start": 363.56,
+        "duration": 4.65
+    },
+    {
+        "text": "it's not divisible we return false and",
+        "start": 365.66,
+        "duration": 4.23
+    },
+    {
+        "text": "it doesn't get added to our output array",
+        "start": 368.21,
+        "duration": 3.36
+    },
+    {
+        "text": "if we make it through the whole loop",
+        "start": 369.89,
+        "duration": 4.08
+    },
+    {
+        "text": "then we return true it successfully made",
+        "start": 371.57,
+        "duration": 3.75
+    },
+    {
+        "text": "it through every every character is",
+        "start": 373.97,
+        "duration": 1.98
+    },
+    {
+        "text": "divisible",
+        "start": 375.32,
+        "duration": 4.98
+    },
+    {
+        "text": "there's no zeros in it and yeah we add",
+        "start": 375.95,
+        "duration": 6.6
+    },
+    {
+        "text": "all of them we return true for all of",
+        "start": 380.3,
+        "duration": 6.63
+    },
+    {
+        "text": "them we return we add whatever the",
+        "start": 382.55,
+        "duration": 6.18
+    },
+    {
+        "text": "values the correct values into ourself",
+        "start": 386.93,
+        "duration": 4.14
+    },
+    {
+        "text": "dividing nums list and we return that",
+        "start": 388.73,
+        "duration": 3.75
+    },
+    {
+        "text": "list hopefully that makes sense to you",
+        "start": 391.07,
+        "duration": 2.37
+    },
+    {
+        "text": "guys",
+        "start": 392.48,
+        "duration": 3.6
+    },
+    {
+        "text": "we submit works perfectly and there we",
+        "start": 393.44,
+        "duration": 7.46
+    },
+    {
+        "text": "go that's one way to do this problem",
+        "start": 396.08,
+        "duration": 4.82
+    },
+    {
+        "text": "the only other way that I did first and",
+        "start": 400.99,
+        "duration": 4.95
+    },
+    {
+        "text": "then I saw it this way I actually",
+        "start": 403.72,
+        "duration": 4.05
+    },
+    {
+        "text": "thought of the I don't know if you guys",
+        "start": 405.94,
+        "duration": 4.53
+    },
+    {
+        "text": "have checked out my reverse string or",
+        "start": 407.77,
+        "duration": 7.2
+    },
+    {
+        "text": "reverse integer the reverse integer",
+        "start": 410.47,
+        "duration": 6.419
+    },
+    {
+        "text": "specifically that problem you can",
+        "start": 414.97,
+        "duration": 3.87
+    },
+    {
+        "text": "actually just pop the we can loop",
+        "start": 416.889,
+        "duration": 4.861
+    },
+    {
+        "text": "through the number digit by digit if we",
+        "start": 418.84,
+        "duration": 6.57
+    },
+    {
+        "text": "just use the modulus and we do modulus",
+        "start": 421.75,
+        "duration": 7.199
+    },
+    {
+        "text": "10 and divide by 10 as we pop we could",
+        "start": 425.41,
+        "duration": 5.58
+    },
+    {
+        "text": "pop the last digit off the number check",
+        "start": 428.949,
+        "duration": 3.571
+    },
+    {
+        "text": "if the original number is divisible by",
+        "start": 430.99,
+        "duration": 4.2
+    },
+    {
+        "text": "it and then we can just divide the",
+        "start": 432.52,
+        "duration": 4.35
+    },
+    {
+        "text": "number by 10 and do that until the",
+        "start": 435.19,
+        "duration": 4.68
+    },
+    {
+        "text": "number is equal to zero and that would",
+        "start": 436.87,
+        "duration": 4.53
+    },
+    {
+        "text": "be another way to do it that doesn't",
+        "start": 439.87,
+        "duration": 3.09
+    },
+    {
+        "text": "involve using two string because two",
+        "start": 441.4,
+        "duration": 4.59
+    },
+    {
+        "text": "string is you know that in itself is a",
+        "start": 442.96,
+        "duration": 5.61
+    },
+    {
+        "text": "method unnecessary method call we don't",
+        "start": 445.99,
+        "duration": 5.61
+    },
+    {
+        "text": "we might not want to use so I don't want",
+        "start": 448.57,
+        "duration": 4.65
+    },
+    {
+        "text": "this video to be too long so I'm just",
+        "start": 451.6,
+        "duration": 3.81
+    },
+    {
+        "text": "gonna show you right here idea is to",
+        "start": 453.22,
+        "duration": 4.229
+    },
+    {
+        "text": "traverse each editor so you just have a",
+        "start": 455.41,
+        "duration": 3.9
+    },
+    {
+        "text": "left and right boundary you do that loop",
+        "start": 457.449,
+        "duration": 4.981
+    },
+    {
+        "text": "and then just like I'm saying you you",
+        "start": 459.31,
+        "duration": 5.729
+    },
+    {
+        "text": "have a temp you have a temp pointer to",
+        "start": 462.43,
+        "duration": 5.84
+    },
+    {
+        "text": "the current number and you want to",
+        "start": 465.039,
+        "duration": 5.85
+    },
+    {
+        "text": "decriminalise digit right here if the",
+        "start": 468.27,
+        "duration": 4.869
+    },
+    {
+        "text": "last digit zero or it's the same kind of",
+        "start": 470.889,
+        "duration": 4.141
+    },
+    {
+        "text": "deal except we can avoid using two",
+        "start": 473.139,
+        "duration": 4.621
+    },
+    {
+        "text": "string or if the last digit the whole",
+        "start": 475.03,
+        "duration": 3.93
+    },
+    {
+        "text": "number the current number isn't",
+        "start": 477.76,
+        "duration": 3.089
+    },
+    {
+        "text": "divisible by the last digit then you",
+        "start": 478.96,
+        "duration": 3.63
+    },
+    {
+        "text": "break you can use greater than zero here",
+        "start": 480.849,
+        "duration": 2.641
+    },
+    {
+        "text": "as well",
+        "start": 482.59,
+        "duration": 2.91
+    },
+    {
+        "text": "I like greater than zero rather than not",
+        "start": 483.49,
+        "duration": 5.07
+    },
+    {
+        "text": "equal zero and there you go then you can",
+        "start": 485.5,
+        "duration": 4.53
+    },
+    {
+        "text": "just add it to the list it's the same",
+        "start": 488.56,
+        "duration": 4.2
+    },
+    {
+        "text": "kind of solution there this one's pretty",
+        "start": 490.03,
+        "duration": 5.009
+    },
+    {
+        "text": "good just as good this is the one I",
+        "start": 492.76,
+        "duration": 5.61
+    },
+    {
+        "text": "implemented first but I think the string",
+        "start": 495.039,
+        "duration": 5.581
+    },
+    {
+        "text": "one is easier this one is a little more",
+        "start": 498.37,
+        "duration": 4.56
+    },
+    {
+        "text": "mathy but let me know if you guys have",
+        "start": 500.62,
+        "duration": 3.84
+    },
+    {
+        "text": "any other different solutions I think",
+        "start": 502.93,
+        "duration": 3.18
+    },
+    {
+        "text": "those are the best ones but let me know",
+        "start": 504.46,
+        "duration": 2.519
+    },
+    {
+        "text": "if you find something better",
+        "start": 506.11,
+        "duration": 2.94
+    },
+    {
+        "text": "thank you for watching check out my",
+        "start": 506.979,
+        "duration": 4.321
+    },
+    {
+        "text": "other videos I do them all so yeah",
+        "start": 509.05,
+        "duration": 5.869
+    },
+    {
+        "text": "thanks see you guys next time",
+        "start": 511.3,
+        "duration": 3.619
+    }
+]

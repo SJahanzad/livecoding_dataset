@@ -1,0 +1,1332 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.36
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.52,
+        "duration": 3.04
+    },
+    {
+        "text": "let's solve a problem",
+        "start": 3.36,
+        "duration": 3.6
+    },
+    {
+        "text": "meeting rooms and you notice that the ui",
+        "start": 4.56,
+        "duration": 3.84
+    },
+    {
+        "text": "of this looks a little bit different and",
+        "start": 6.96,
+        "duration": 2.8
+    },
+    {
+        "text": "let me show you why",
+        "start": 8.4,
+        "duration": 3.119
+    },
+    {
+        "text": "so if you go on leak code and you try to",
+        "start": 9.76,
+        "duration": 3.52
+    },
+    {
+        "text": "solve this problem meeting rooms you'll",
+        "start": 11.519,
+        "duration": 2.561
+    },
+    {
+        "text": "notice that",
+        "start": 13.28,
+        "duration": 2.72
+    },
+    {
+        "text": "it's a locked problem and you have to",
+        "start": 14.08,
+        "duration": 4.4
+    },
+    {
+        "text": "subscribe and pay money to be able to",
+        "start": 16.0,
+        "duration": 4.24
+    },
+    {
+        "text": "solve this premium really good problem",
+        "start": 18.48,
+        "duration": 3.76
+    },
+    {
+        "text": "but there's actually a workaround that i",
+        "start": 20.24,
+        "duration": 2.48
+    },
+    {
+        "text": "found",
+        "start": 22.24,
+        "duration": 2.64
+    },
+    {
+        "text": "and that is that there's a site called",
+        "start": 22.72,
+        "duration": 3.28
+    },
+    {
+        "text": "lint code",
+        "start": 24.88,
+        "duration": 3.6
+    },
+    {
+        "text": "and on that site lint code you can",
+        "start": 26.0,
+        "duration": 3.679
+    },
+    {
+        "text": "basically solve",
+        "start": 28.48,
+        "duration": 3.119
+    },
+    {
+        "text": "it's it's pretty much a leak code clone",
+        "start": 29.679,
+        "duration": 3.201
+    },
+    {
+        "text": "and you can basically solve",
+        "start": 31.599,
+        "duration": 3.841
+    },
+    {
+        "text": "premium leak code problems for free so",
+        "start": 32.88,
+        "duration": 3.199
+    },
+    {
+        "text": "you know this",
+        "start": 35.44,
+        "duration": 2.0
+    },
+    {
+        "text": "is so yeah if you don't want to pay",
+        "start": 36.079,
+        "duration": 2.64
+    },
+    {
+        "text": "money to be able to solve certain",
+        "start": 37.44,
+        "duration": 2.88
+    },
+    {
+        "text": "problems on leak code i'd recommend",
+        "start": 38.719,
+        "duration": 3.441
+    },
+    {
+        "text": "solving them on this site instead so",
+        "start": 40.32,
+        "duration": 3.44
+    },
+    {
+        "text": "that's what i'm going to be doing today",
+        "start": 42.16,
+        "duration": 3.52
+    },
+    {
+        "text": "but nevertheless this is basically the",
+        "start": 43.76,
+        "duration": 3.84
+    },
+    {
+        "text": "exact same problem i don't know how they",
+        "start": 45.68,
+        "duration": 3.52
+    },
+    {
+        "text": "can get away with doing that but that's",
+        "start": 47.6,
+        "duration": 2.0
+    },
+    {
+        "text": "okay",
+        "start": 49.2,
+        "duration": 3.44
+    },
+    {
+        "text": "so we're given an array of meeting time",
+        "start": 49.6,
+        "duration": 5.76
+    },
+    {
+        "text": "intervals consisting of start and end",
+        "start": 52.64,
+        "duration": 3.759
+    },
+    {
+        "text": "time so each",
+        "start": 55.36,
+        "duration": 4.16
+    },
+    {
+        "text": "interval is basically a tuple or a pair",
+        "start": 56.399,
+        "duration": 5.521
+    },
+    {
+        "text": "of values the first value is the start",
+        "start": 59.52,
+        "duration": 4.56
+    },
+    {
+        "text": "time the second value is the end time",
+        "start": 61.92,
+        "duration": 4.64
+    },
+    {
+        "text": "of a particular meeting so for example",
+        "start": 64.08,
+        "duration": 4.399
+    },
+    {
+        "text": "if we were given two meetings one starts",
+        "start": 66.56,
+        "duration": 2.8
+    },
+    {
+        "text": "at zero and",
+        "start": 68.479,
+        "duration": 3.201
+    },
+    {
+        "text": "ends at eight and the next one starts at",
+        "start": 69.36,
+        "duration": 3.68
+    },
+    {
+        "text": "eight and ends at",
+        "start": 71.68,
+        "duration": 4.88
+    },
+    {
+        "text": "ten these do not overlap basically we're",
+        "start": 73.04,
+        "duration": 4.96
+    },
+    {
+        "text": "trying to determine if a person could",
+        "start": 76.56,
+        "duration": 2.8
+    },
+    {
+        "text": "attend both of these meetings and",
+        "start": 78.0,
+        "duration": 2.64
+    },
+    {
+        "text": "technically they could",
+        "start": 79.36,
+        "duration": 3.52
+    },
+    {
+        "text": "because it's one ends at eight and the",
+        "start": 80.64,
+        "duration": 3.68
+    },
+    {
+        "text": "other one starts at eight so that's",
+        "start": 82.88,
+        "duration": 2.0
+    },
+    {
+        "text": "technically",
+        "start": 84.32,
+        "duration": 2.88
+    },
+    {
+        "text": "non-overlapping and in this case we",
+        "start": 84.88,
+        "duration": 3.919
+    },
+    {
+        "text": "would return true because",
+        "start": 87.2,
+        "duration": 3.36
+    },
+    {
+        "text": "the person could attend both of these",
+        "start": 88.799,
+        "duration": 3.28
+    },
+    {
+        "text": "meetings but let's look at the second",
+        "start": 90.56,
+        "duration": 2.32
+    },
+    {
+        "text": "example",
+        "start": 92.079,
+        "duration": 2.801
+    },
+    {
+        "text": "so we see that one meeting starts at",
+        "start": 92.88,
+        "duration": 3.76
+    },
+    {
+        "text": "zero and ends at thirty",
+        "start": 94.88,
+        "duration": 4.16
+    },
+    {
+        "text": "the next meeting that starts after it",
+        "start": 96.64,
+        "duration": 3.36
+    },
+    {
+        "text": "starts at five so",
+        "start": 99.04,
+        "duration": 3.359
+    },
+    {
+        "text": "technically it starts after this meeting",
+        "start": 100.0,
+        "duration": 3.36
+    },
+    {
+        "text": "but it ends",
+        "start": 102.399,
+        "duration": 4.321
+    },
+    {
+        "text": "at 10. so the main thing to notice is",
+        "start": 103.36,
+        "duration": 4.16
+    },
+    {
+        "text": "this meeting",
+        "start": 106.72,
+        "duration": 3.84
+    },
+    {
+        "text": "starts before this meeting has even",
+        "start": 107.52,
+        "duration": 5.599
+    },
+    {
+        "text": "ended right so if this goes from zero",
+        "start": 110.56,
+        "duration": 3.44
+    },
+    {
+        "text": "all the way",
+        "start": 113.119,
+        "duration": 3.761
+    },
+    {
+        "text": "to thirty we see another meeting starts",
+        "start": 114.0,
+        "duration": 3.92
+    },
+    {
+        "text": "over here at",
+        "start": 116.88,
+        "duration": 3.599
+    },
+    {
+        "text": "five and it goes to ten but the thing",
+        "start": 117.92,
+        "duration": 4.4
+    },
+    {
+        "text": "we're paying attention to is it started",
+        "start": 120.479,
+        "duration": 3.761
+    },
+    {
+        "text": "before the other meeting even",
+        "start": 122.32,
+        "duration": 4.56
+    },
+    {
+        "text": "ended right like we can see that they",
+        "start": 124.24,
+        "duration": 4.48
+    },
+    {
+        "text": "are overlapping therefore nobody could",
+        "start": 126.88,
+        "duration": 3.999
+    },
+    {
+        "text": "be able to attend both of the meetings",
+        "start": 128.72,
+        "duration": 4.159
+    },
+    {
+        "text": "at the same time so we have to return",
+        "start": 130.879,
+        "duration": 3.521
+    },
+    {
+        "text": "false because we found",
+        "start": 132.879,
+        "duration": 4.481
+    },
+    {
+        "text": "overlapping intervals so as you can tell",
+        "start": 134.4,
+        "duration": 5.199
+    },
+    {
+        "text": "it might be helpful for us if we're able",
+        "start": 137.36,
+        "duration": 2.959
+    },
+    {
+        "text": "to sort",
+        "start": 139.599,
+        "duration": 3.521
+    },
+    {
+        "text": "all of the meetings based on the start",
+        "start": 140.319,
+        "duration": 3.441
+    },
+    {
+        "text": "time",
+        "start": 143.12,
+        "duration": 3.28
+    },
+    {
+        "text": "of each meeting and they basically gave",
+        "start": 143.76,
+        "duration": 3.28
+    },
+    {
+        "text": "us that",
+        "start": 146.4,
+        "duration": 3.04
+    },
+    {
+        "text": "sorted array you know just as an input",
+        "start": 147.04,
+        "duration": 4.32
+    },
+    {
+        "text": "but and they're basically hinting us",
+        "start": 149.44,
+        "duration": 4.32
+    },
+    {
+        "text": "to do exactly that sort it based on the",
+        "start": 151.36,
+        "duration": 3.92
+    },
+    {
+        "text": "start value of each",
+        "start": 153.76,
+        "duration": 4.64
+    },
+    {
+        "text": "interval so if we we are given an array",
+        "start": 155.28,
+        "duration": 4.88
+    },
+    {
+        "text": "of meeting intervals and we sort based",
+        "start": 158.4,
+        "duration": 3.44
+    },
+    {
+        "text": "on the start time that is going to take",
+        "start": 160.16,
+        "duration": 4.48
+    },
+    {
+        "text": "n log n complexity for that sorting",
+        "start": 161.84,
+        "duration": 4.72
+    },
+    {
+        "text": "but after we're done sorting what you're",
+        "start": 164.64,
+        "duration": 3.28
+    },
+    {
+        "text": "going to notice is we're basically",
+        "start": 166.56,
+        "duration": 2.64
+    },
+    {
+        "text": "allowed to start at the beginning and",
+        "start": 167.92,
+        "duration": 2.08
+    },
+    {
+        "text": "just scan",
+        "start": 169.2,
+        "duration": 2.16
+    },
+    {
+        "text": "through so the next part of the",
+        "start": 170.0,
+        "duration": 3.36
+    },
+    {
+        "text": "algorithm is going to be o of n",
+        "start": 171.36,
+        "duration": 3.76
+    },
+    {
+        "text": "so the overall time complexity is just",
+        "start": 173.36,
+        "duration": 3.599
+    },
+    {
+        "text": "going to be big o and log n",
+        "start": 175.12,
+        "duration": 3.28
+    },
+    {
+        "text": "so what we're going to do is we're going",
+        "start": 176.959,
+        "duration": 3.041
+    },
+    {
+        "text": "to look at the first",
+        "start": 178.4,
+        "duration": 4.0
+    },
+    {
+        "text": "two intervals available to us and the",
+        "start": 180.0,
+        "duration": 4.4
+    },
+    {
+        "text": "only thing we're going to compare",
+        "start": 182.4,
+        "duration": 5.36
+    },
+    {
+        "text": "is the end time of the first interval",
+        "start": 184.4,
+        "duration": 5.68
+    },
+    {
+        "text": "and the start time of the second",
+        "start": 187.76,
+        "duration": 3.28
+    },
+    {
+        "text": "interval because we",
+        "start": 190.08,
+        "duration": 3.2
+    },
+    {
+        "text": "know for sure since these are in sorted",
+        "start": 191.04,
+        "duration": 4.479
+    },
+    {
+        "text": "order this one is going to start",
+        "start": 193.28,
+        "duration": 5.2
+    },
+    {
+        "text": "before or equal to the same time as this",
+        "start": 195.519,
+        "duration": 4.561
+    },
+    {
+        "text": "one so we know for sure the start time",
+        "start": 198.48,
+        "duration": 3.2
+    },
+    {
+        "text": "of this is either going to be right here",
+        "start": 200.08,
+        "duration": 4.0
+    },
+    {
+        "text": "or it's going to come after it and for",
+        "start": 201.68,
+        "duration": 3.52
+    },
+    {
+        "text": "us to detect",
+        "start": 204.08,
+        "duration": 3.68
+    },
+    {
+        "text": "that these two intervals are overlapping",
+        "start": 205.2,
+        "duration": 4.24
+    },
+    {
+        "text": "it's very simple",
+        "start": 207.76,
+        "duration": 4.96
+    },
+    {
+        "text": "if the start time of this is before the",
+        "start": 209.44,
+        "duration": 3.76
+    },
+    {
+        "text": "end",
+        "start": 212.72,
+        "duration": 3.68
+    },
+    {
+        "text": "time of this one that means they are",
+        "start": 213.2,
+        "duration": 4.959
+    },
+    {
+        "text": "overlapping so for example if the start",
+        "start": 216.4,
+        "duration": 3.44
+    },
+    {
+        "text": "time of this was over here",
+        "start": 218.159,
+        "duration": 3.921
+    },
+    {
+        "text": "that means it starts before this one",
+        "start": 219.84,
+        "duration": 3.2
+    },
+    {
+        "text": "ends therefore",
+        "start": 222.08,
+        "duration": 2.719
+    },
+    {
+        "text": "they are overlapping and we can",
+        "start": 223.04,
+        "duration": 3.68
+    },
+    {
+        "text": "immediately return false right that",
+        "start": 224.799,
+        "duration": 3.681
+    },
+    {
+        "text": "means no one could attend all of the",
+        "start": 226.72,
+        "duration": 2.64
+    },
+    {
+        "text": "meetings",
+        "start": 228.48,
+        "duration": 3.28
+    },
+    {
+        "text": "but if they're not overlapping which is",
+        "start": 229.36,
+        "duration": 3.84
+    },
+    {
+        "text": "the case right now right",
+        "start": 231.76,
+        "duration": 4.64
+    },
+    {
+        "text": "this one starts right as this one ends",
+        "start": 233.2,
+        "duration": 4.8
+    },
+    {
+        "text": "so that technically does not mean that",
+        "start": 236.4,
+        "duration": 2.88
+    },
+    {
+        "text": "they're overlapping",
+        "start": 238.0,
+        "duration": 3.439
+    },
+    {
+        "text": "so that means these two intervals are",
+        "start": 239.28,
+        "duration": 3.36
+    },
+    {
+        "text": "not overlapping",
+        "start": 241.439,
+        "duration": 2.961
+    },
+    {
+        "text": "so my next question to you is does that",
+        "start": 242.64,
+        "duration": 3.76
+    },
+    {
+        "text": "mean now we have to compare this one",
+        "start": 244.4,
+        "duration": 4.96
+    },
+    {
+        "text": "to this one as well we don't and that's",
+        "start": 246.4,
+        "duration": 5.28
+    },
+    {
+        "text": "exactly why we sorted the input because",
+        "start": 249.36,
+        "duration": 3.28
+    },
+    {
+        "text": "do we know",
+        "start": 251.68,
+        "duration": 3.68
+    },
+    {
+        "text": "if this one if this interval starting",
+        "start": 252.64,
+        "duration": 3.999
+    },
+    {
+        "text": "value came after",
+        "start": 255.36,
+        "duration": 3.999
+    },
+    {
+        "text": "or equal to this interval's n value then",
+        "start": 256.639,
+        "duration": 3.6
+    },
+    {
+        "text": "there's no",
+        "start": 259.359,
+        "duration": 3.761
+    },
+    {
+        "text": "way that this interval could possibly",
+        "start": 260.239,
+        "duration": 4.881
+    },
+    {
+        "text": "overlap with this one because we know",
+        "start": 263.12,
+        "duration": 2.56
+    },
+    {
+        "text": "for sure",
+        "start": 265.12,
+        "duration": 2.48
+    },
+    {
+        "text": "this interval start time is going to",
+        "start": 265.68,
+        "duration": 4.0
+    },
+    {
+        "text": "come after this interval start time",
+        "start": 267.6,
+        "duration": 2.72
+    },
+    {
+        "text": "right",
+        "start": 269.68,
+        "duration": 3.2
+    },
+    {
+        "text": "or equal to it so if this one did not",
+        "start": 270.32,
+        "duration": 4.56
+    },
+    {
+        "text": "overlap this one then there's no way",
+        "start": 272.88,
+        "duration": 4.16
+    },
+    {
+        "text": "this could possibly overlap this one so",
+        "start": 274.88,
+        "duration": 3.92
+    },
+    {
+        "text": "we don't have to check that so now",
+        "start": 277.04,
+        "duration": 3.68
+    },
+    {
+        "text": "as we move to the next position we're",
+        "start": 278.8,
+        "duration": 3.04
+    },
+    {
+        "text": "going to be checking if",
+        "start": 280.72,
+        "duration": 4.24
+    },
+    {
+        "text": "these two intervals are overlapping",
+        "start": 281.84,
+        "duration": 4.88
+    },
+    {
+        "text": "and so again we're just going to repeat",
+        "start": 284.96,
+        "duration": 3.519
+    },
+    {
+        "text": "that process okay the end time of this",
+        "start": 286.72,
+        "duration": 3.6
+    },
+    {
+        "text": "one and the start time of this one well",
+        "start": 288.479,
+        "duration": 4.401
+    },
+    {
+        "text": "this the start time of this is after",
+        "start": 290.32,
+        "duration": 3.52
+    },
+    {
+        "text": "this one",
+        "start": 292.88,
+        "duration": 2.72
+    },
+    {
+        "text": "after the end time of this interval so",
+        "start": 293.84,
+        "duration": 3.2
+    },
+    {
+        "text": "therefore they're definitely not",
+        "start": 295.6,
+        "duration": 2.64
+    },
+    {
+        "text": "overlapping right",
+        "start": 297.04,
+        "duration": 3.599
+    },
+    {
+        "text": "and if this one does not overlap with",
+        "start": 298.24,
+        "duration": 4.48
+    },
+    {
+        "text": "this one if we had a bunch of intervals",
+        "start": 300.639,
+        "duration": 3.761
+    },
+    {
+        "text": "that came after over here right even if",
+        "start": 302.72,
+        "duration": 3.68
+    },
+    {
+        "text": "they started at the exact same time",
+        "start": 304.4,
+        "duration": 4.16
+    },
+    {
+        "text": "right maybe some intervals like this",
+        "start": 306.4,
+        "duration": 3.6
+    },
+    {
+        "text": "then if we can determine that",
+        "start": 308.56,
+        "duration": 3.84
+    },
+    {
+        "text": "this interval does not overlap this",
+        "start": 310.0,
+        "duration": 4.16
+    },
+    {
+        "text": "interval then for sure",
+        "start": 312.4,
+        "duration": 3.359
+    },
+    {
+        "text": "all of these intervals that could",
+        "start": 314.16,
+        "duration": 3.52
+    },
+    {
+        "text": "possibly exist towards the right",
+        "start": 315.759,
+        "duration": 3.921
+    },
+    {
+        "text": "are definitely not going to overlap with",
+        "start": 317.68,
+        "duration": 3.359
+    },
+    {
+        "text": "this one either",
+        "start": 319.68,
+        "duration": 4.239
+    },
+    {
+        "text": "so then we just continue our comparisons",
+        "start": 321.039,
+        "duration": 3.44
+    },
+    {
+        "text": "comparing",
+        "start": 323.919,
+        "duration": 3.681
+    },
+    {
+        "text": "each adjacent pair of intervals so that",
+        "start": 324.479,
+        "duration": 5.041
+    },
+    {
+        "text": "is basically the solution the main idea",
+        "start": 327.6,
+        "duration": 2.48
+    },
+    {
+        "text": "to notice",
+        "start": 329.52,
+        "duration": 2.8
+    },
+    {
+        "text": "is that we can sort the input based on",
+        "start": 330.08,
+        "duration": 3.679
+    },
+    {
+        "text": "the start time and",
+        "start": 332.32,
+        "duration": 2.8
+    },
+    {
+        "text": "that's going to give us the most",
+        "start": 333.759,
+        "duration": 3.201
+    },
+    {
+        "text": "efficient solution so now let's jump",
+        "start": 335.12,
+        "duration": 2.88
+    },
+    {
+        "text": "into the code",
+        "start": 336.96,
+        "duration": 3.28
+    },
+    {
+        "text": "on lint code rather than leak code this",
+        "start": 338.0,
+        "duration": 4.639
+    },
+    {
+        "text": "time so one thing before i start coding",
+        "start": 340.24,
+        "duration": 3.84
+    },
+    {
+        "text": "is i want to mention that the list of",
+        "start": 342.639,
+        "duration": 3.601
+    },
+    {
+        "text": "intervals is given to us not as a pair",
+        "start": 344.08,
+        "duration": 3.2
+    },
+    {
+        "text": "but it's actually an",
+        "start": 346.24,
+        "duration": 2.959
+    },
+    {
+        "text": "object so interval happens to be an",
+        "start": 347.28,
+        "duration": 3.68
+    },
+    {
+        "text": "object it has two members",
+        "start": 349.199,
+        "duration": 4.0
+    },
+    {
+        "text": "start and end and they basically mean",
+        "start": 350.96,
+        "duration": 3.36
+    },
+    {
+        "text": "what they say they mean",
+        "start": 353.199,
+        "duration": 3.44
+    },
+    {
+        "text": "so now we can code it so remember the",
+        "start": 354.32,
+        "duration": 3.76
+    },
+    {
+        "text": "first thing we're going to want to do is",
+        "start": 356.639,
+        "duration": 2.721
+    },
+    {
+        "text": "sort the intervals and we're going to",
+        "start": 358.08,
+        "duration": 2.8
+    },
+    {
+        "text": "sort it based on the start time so in",
+        "start": 359.36,
+        "duration": 3.279
+    },
+    {
+        "text": "python we can give the key that we're",
+        "start": 360.88,
+        "duration": 2.96
+    },
+    {
+        "text": "going to be sorting on",
+        "start": 362.639,
+        "duration": 2.881
+    },
+    {
+        "text": "as this it's going to be lambda",
+        "start": 363.84,
+        "duration": 4.079
+    },
+    {
+        "text": "basically an inline function",
+        "start": 365.52,
+        "duration": 4.56
+    },
+    {
+        "text": "so for this function if we're given an",
+        "start": 367.919,
+        "duration": 3.761
+    },
+    {
+        "text": "input i for the interval",
+        "start": 370.08,
+        "duration": 3.839
+    },
+    {
+        "text": "the return value or rather what we're",
+        "start": 371.68,
+        "duration": 3.6
+    },
+    {
+        "text": "going to be sorting it based on",
+        "start": 373.919,
+        "duration": 4.801
+    },
+    {
+        "text": "is going to be i of start right so for",
+        "start": 375.28,
+        "duration": 4.72
+    },
+    {
+        "text": "an interval we're going to be sorting it",
+        "start": 378.72,
+        "duration": 2.72
+    },
+    {
+        "text": "based on the start time",
+        "start": 380.0,
+        "duration": 3.36
+    },
+    {
+        "text": "of that interval and once we're done",
+        "start": 381.44,
+        "duration": 3.28
+    },
+    {
+        "text": "with that we're just going to iterate",
+        "start": 383.36,
+        "duration": 2.399
+    },
+    {
+        "text": "through the entire",
+        "start": 384.72,
+        "duration": 4.16
+    },
+    {
+        "text": "array of intervals so i'm going to",
+        "start": 385.759,
+        "duration": 5.681
+    },
+    {
+        "text": "use i for index it's not the interval",
+        "start": 388.88,
+        "duration": 4.319
+    },
+    {
+        "text": "itself and we're going to go through the",
+        "start": 391.44,
+        "duration": 3.44
+    },
+    {
+        "text": "length of intervals and since we're",
+        "start": 393.199,
+        "duration": 3.761
+    },
+    {
+        "text": "comparing adjacent intervals",
+        "start": 394.88,
+        "duration": 5.039
+    },
+    {
+        "text": "we can actually start at index 1 because",
+        "start": 396.96,
+        "duration": 4.0
+    },
+    {
+        "text": "we're going to compare",
+        "start": 399.919,
+        "duration": 3.601
+    },
+    {
+        "text": "index 1 with the previous index so we're",
+        "start": 400.96,
+        "duration": 4.0
+    },
+    {
+        "text": "going to be looking at two intervals",
+        "start": 403.52,
+        "duration": 2.239
+    },
+    {
+        "text": "interval 1",
+        "start": 404.96,
+        "duration": 3.84
+    },
+    {
+        "text": "is going to be the interval at index i",
+        "start": 405.759,
+        "duration": 4.72
+    },
+    {
+        "text": "minus 1. so that's going to be the first",
+        "start": 408.8,
+        "duration": 3.839
+    },
+    {
+        "text": "interval interval 2 is going to be",
+        "start": 410.479,
+        "duration": 3.921
+    },
+    {
+        "text": "the interval at the current index or",
+        "start": 412.639,
+        "duration": 3.201
+    },
+    {
+        "text": "intervals at index",
+        "start": 414.4,
+        "duration": 4.48
+    },
+    {
+        "text": "i and remember we want to compare the",
+        "start": 415.84,
+        "duration": 6.24
+    },
+    {
+        "text": "end time of interval 1 and the start",
+        "start": 418.88,
+        "duration": 5.759
+    },
+    {
+        "text": "time of interval 2 and how are we",
+        "start": 422.08,
+        "duration": 4.239
+    },
+    {
+        "text": "comparing them how do we know if we're",
+        "start": 424.639,
+        "duration": 2.641
+    },
+    {
+        "text": "going to be returning",
+        "start": 426.319,
+        "duration": 5.121
+    },
+    {
+        "text": "false if and only if the start time",
+        "start": 427.28,
+        "duration": 7.44
+    },
+    {
+        "text": "of interval 2 is less than the",
+        "start": 431.44,
+        "duration": 5.68
+    },
+    {
+        "text": "end time of interval 1 that means",
+        "start": 434.72,
+        "duration": 4.8
+    },
+    {
+        "text": "interval 2 starts before interval 1",
+        "start": 437.12,
+        "duration": 4.72
+    },
+    {
+        "text": "ends and therefore we would have to",
+        "start": 439.52,
+        "duration": 5.36
+    },
+    {
+        "text": "return false",
+        "start": 441.84,
+        "duration": 3.04
+    },
+    {
+        "text": "if that's not the case though then we",
+        "start": 445.68,
+        "duration": 3.6
+    },
+    {
+        "text": "don't have to do anything right then we",
+        "start": 447.52,
+        "duration": 3.36
+    },
+    {
+        "text": "just have to go to the next iteration of",
+        "start": 449.28,
+        "duration": 3.359
+    },
+    {
+        "text": "our loop and then compare the next two",
+        "start": 450.88,
+        "duration": 2.56
+    },
+    {
+        "text": "intervals",
+        "start": 452.639,
+        "duration": 3.28
+    },
+    {
+        "text": "and if we never end up returning false",
+        "start": 453.44,
+        "duration": 3.199
+    },
+    {
+        "text": "that means we",
+        "start": 455.919,
+        "duration": 2.961
+    },
+    {
+        "text": "never had overlapping intervals then we",
+        "start": 456.639,
+        "duration": 4.641
+    },
+    {
+        "text": "can just return true as soon as we exit",
+        "start": 458.88,
+        "duration": 3.52
+    },
+    {
+        "text": "out of the loop",
+        "start": 461.28,
+        "duration": 2.639
+    },
+    {
+        "text": "so now let me just submit it make sure",
+        "start": 462.4,
+        "duration": 3.6
+    },
+    {
+        "text": "that it works",
+        "start": 463.919,
+        "duration": 4.081
+    },
+    {
+        "text": "and yep you can see it's about as",
+        "start": 466.0,
+        "duration": 4.0
+    },
+    {
+        "text": "efficient as we could get so",
+        "start": 468.0,
+        "duration": 3.759
+    },
+    {
+        "text": "uh probably the biggest thing that you",
+        "start": 470.0,
+        "duration": 3.12
+    },
+    {
+        "text": "learned in this is that you can use a",
+        "start": 471.759,
+        "duration": 3.041
+    },
+    {
+        "text": "website called link code to solve",
+        "start": 473.12,
+        "duration": 3.6
+    },
+    {
+        "text": "premium leak code problems for free",
+        "start": 474.8,
+        "duration": 3.2
+    },
+    {
+        "text": "and i think i'm probably going to be",
+        "start": 476.72,
+        "duration": 3.12
+    },
+    {
+        "text": "making use of this site when i'm solving",
+        "start": 478.0,
+        "duration": 3.599
+    },
+    {
+        "text": "some other premium questions such as",
+        "start": 479.84,
+        "duration": 3.759
+    },
+    {
+        "text": "alien dictionary and some other ones",
+        "start": 481.599,
+        "duration": 3.921
+    },
+    {
+        "text": "that i think are pretty important and",
+        "start": 483.599,
+        "duration": 3.6
+    },
+    {
+        "text": "good problems to practice",
+        "start": 485.52,
+        "duration": 3.44
+    },
+    {
+        "text": "so i hope that this was helpful if it",
+        "start": 487.199,
+        "duration": 3.521
+    },
+    {
+        "text": "was please like and subscribe it",
+        "start": 488.96,
+        "duration": 3.519
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 490.72,
+        "duration": 2.4
+    },
+    {
+        "text": "hopefully",
+        "start": 492.479,
+        "duration": 5.041
+    },
+    {
+        "text": "see you pretty soon thanks for watching",
+        "start": 493.12,
+        "duration": 4.4
+    }
+]

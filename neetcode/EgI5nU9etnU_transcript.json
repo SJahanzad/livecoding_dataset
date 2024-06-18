@@ -1,0 +1,2217 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.16,
+        "duration": 3.68
+    },
+    {
+        "text": "some more neat code today so today let's",
+        "start": 1.68,
+        "duration": 4.079
+    },
+    {
+        "text": "look at a graph problem actually it's",
+        "start": 3.84,
+        "duration": 2.32
+    },
+    {
+        "text": "called",
+        "start": 5.759,
+        "duration": 2.961
+    },
+    {
+        "text": "course schedule we're given a total",
+        "start": 6.16,
+        "duration": 4.88
+    },
+    {
+        "text": "number of courses and these are our",
+        "start": 8.72,
+        "duration": 5.36
+    },
+    {
+        "text": "nodes and they're labeled from zero",
+        "start": 11.04,
+        "duration": 6.4
+    },
+    {
+        "text": "to n minus 1 basically so some courses",
+        "start": 14.08,
+        "duration": 4.119
+    },
+    {
+        "text": "have",
+        "start": 17.44,
+        "duration": 2.96
+    },
+    {
+        "text": "prerequisites for example if you want to",
+        "start": 18.199,
+        "duration": 3.401
+    },
+    {
+        "text": "take course 0",
+        "start": 20.4,
+        "duration": 3.44
+    },
+    {
+        "text": "you have to first take course 1 and",
+        "start": 21.6,
+        "duration": 4.4
+    },
+    {
+        "text": "that's represented as a pair",
+        "start": 23.84,
+        "duration": 5.439
+    },
+    {
+        "text": "or as an edge in our graph so if you",
+        "start": 26.0,
+        "duration": 4.48
+    },
+    {
+        "text": "want to take course",
+        "start": 29.279,
+        "duration": 4.481
+    },
+    {
+        "text": "zero you have to first take course one",
+        "start": 30.48,
+        "duration": 4.079
+    },
+    {
+        "text": "and the only",
+        "start": 33.76,
+        "duration": 4.08
+    },
+    {
+        "text": "question we want to answer is is it",
+        "start": 34.559,
+        "duration": 6.961
+    },
+    {
+        "text": "possible for us to finish every course",
+        "start": 37.84,
+        "duration": 5.6
+    },
+    {
+        "text": "so let's just look at the first example",
+        "start": 41.52,
+        "duration": 3.76
+    },
+    {
+        "text": "where given number of courses are two so",
+        "start": 43.44,
+        "duration": 3.439
+    },
+    {
+        "text": "that means we have one course",
+        "start": 45.28,
+        "duration": 4.4
+    },
+    {
+        "text": "zero and another course one we know that",
+        "start": 46.879,
+        "duration": 4.401
+    },
+    {
+        "text": "the prerequisites are like",
+        "start": 49.68,
+        "duration": 4.0
+    },
+    {
+        "text": "this meaning that if we want to take",
+        "start": 51.28,
+        "duration": 3.439
+    },
+    {
+        "text": "course one",
+        "start": 53.68,
+        "duration": 3.92
+    },
+    {
+        "text": "we have to first take course 0 and i'm",
+        "start": 54.719,
+        "duration": 4.081
+    },
+    {
+        "text": "going to represent it as an",
+        "start": 57.6,
+        "duration": 4.24
+    },
+    {
+        "text": "edge going outward from 1",
+        "start": 58.8,
+        "duration": 6.639
+    },
+    {
+        "text": "into 0. so what do they mean by possible",
+        "start": 61.84,
+        "duration": 6.48
+    },
+    {
+        "text": "let's just run through each of our",
+        "start": 65.439,
+        "duration": 4.961
+    },
+    {
+        "text": "courses and see is it possible to take",
+        "start": 68.32,
+        "duration": 2.72
+    },
+    {
+        "text": "each one",
+        "start": 70.4,
+        "duration": 3.44
+    },
+    {
+        "text": "so for zero is it possible to take zero",
+        "start": 71.04,
+        "duration": 4.24
+    },
+    {
+        "text": "well we don't have any",
+        "start": 73.84,
+        "duration": 3.84
+    },
+    {
+        "text": "outward edges from zero so that means",
+        "start": 75.28,
+        "duration": 5.28
+    },
+    {
+        "text": "zero does not have any prerequisites so",
+        "start": 77.68,
+        "duration": 5.92
+    },
+    {
+        "text": "it is possible for us to complete course",
+        "start": 80.56,
+        "duration": 6.0
+    },
+    {
+        "text": "zero then we look at course one it has",
+        "start": 83.6,
+        "duration": 5.04
+    },
+    {
+        "text": "one prerequisite which is",
+        "start": 86.56,
+        "duration": 5.12
+    },
+    {
+        "text": "zero and we know zero is possible to",
+        "start": 88.64,
+        "duration": 3.76
+    },
+    {
+        "text": "complete",
+        "start": 91.68,
+        "duration": 3.28
+    },
+    {
+        "text": "so once we finish course zero then we're",
+        "start": 92.4,
+        "duration": 3.6
+    },
+    {
+        "text": "allowed to take",
+        "start": 94.96,
+        "duration": 3.28
+    },
+    {
+        "text": "course one which has no other",
+        "start": 96.0,
+        "duration": 3.92
+    },
+    {
+        "text": "prerequisites right the only",
+        "start": 98.24,
+        "duration": 2.879
+    },
+    {
+        "text": "prerequisite was",
+        "start": 99.92,
+        "duration": 4.08
+    },
+    {
+        "text": "course zero so therefore both of these",
+        "start": 101.119,
+        "duration": 4.481
+    },
+    {
+        "text": "courses are possible",
+        "start": 104.0,
+        "duration": 4.72
+    },
+    {
+        "text": "to complete so we can return true",
+        "start": 105.6,
+        "duration": 5.04
+    },
+    {
+        "text": "so let's look at an example where it's",
+        "start": 108.72,
+        "duration": 4.0
+    },
+    {
+        "text": "actually impossible so we're given",
+        "start": 110.64,
+        "duration": 4.4
+    },
+    {
+        "text": "n equals two that means we have two",
+        "start": 112.72,
+        "duration": 3.28
+    },
+    {
+        "text": "courses",
+        "start": 115.04,
+        "duration": 3.759
+    },
+    {
+        "text": "zero and one and we're given two",
+        "start": 116.0,
+        "duration": 4.159
+    },
+    {
+        "text": "prerequisites so",
+        "start": 118.799,
+        "duration": 4.64
+    },
+    {
+        "text": "one zero and zero one this one means",
+        "start": 120.159,
+        "duration": 5.6
+    },
+    {
+        "text": "that if we want to finish course one we",
+        "start": 123.439,
+        "duration": 3.761
+    },
+    {
+        "text": "have to first complete",
+        "start": 125.759,
+        "duration": 4.241
+    },
+    {
+        "text": "course zero so zero is a prerequisite",
+        "start": 127.2,
+        "duration": 4.8
+    },
+    {
+        "text": "the second one means that if we want to",
+        "start": 130.0,
+        "duration": 2.8
+    },
+    {
+        "text": "finish course",
+        "start": 132.0,
+        "duration": 3.52
+    },
+    {
+        "text": "zero we have to finish course one first",
+        "start": 132.8,
+        "duration": 3.36
+    },
+    {
+        "text": "so",
+        "start": 135.52,
+        "duration": 3.359
+    },
+    {
+        "text": "one is a prerequisite of zero so the",
+        "start": 136.16,
+        "duration": 3.92
+    },
+    {
+        "text": "problem with this",
+        "start": 138.879,
+        "duration": 4.481
+    },
+    {
+        "text": "is kind of obvious right there's a cycle",
+        "start": 140.08,
+        "duration": 5.44
+    },
+    {
+        "text": "so we if we want to finish course zero",
+        "start": 143.36,
+        "duration": 3.84
+    },
+    {
+        "text": "we gotta go finish course one",
+        "start": 145.52,
+        "duration": 3.2
+    },
+    {
+        "text": "if we wanna finish course one we gotta",
+        "start": 147.2,
+        "duration": 3.2
+    },
+    {
+        "text": "finish course zero and it just goes like",
+        "start": 148.72,
+        "duration": 2.239
+    },
+    {
+        "text": "that",
+        "start": 150.4,
+        "duration": 3.199
+    },
+    {
+        "text": "forever so neither of the courses are",
+        "start": 150.959,
+        "duration": 3.761
+    },
+    {
+        "text": "possible to finish",
+        "start": 153.599,
+        "duration": 4.321
+    },
+    {
+        "text": "so in this case we return false",
+        "start": 154.72,
+        "duration": 5.68
+    },
+    {
+        "text": "so we can actually solve this problem",
+        "start": 157.92,
+        "duration": 3.12
+    },
+    {
+        "text": "using",
+        "start": 160.4,
+        "duration": 2.72
+    },
+    {
+        "text": "depth first search we can also use",
+        "start": 161.04,
+        "duration": 3.6
+    },
+    {
+        "text": "breadth first search and i'm going to",
+        "start": 163.12,
+        "duration": 2.56
+    },
+    {
+        "text": "show you",
+        "start": 164.64,
+        "duration": 2.959
+    },
+    {
+        "text": "just the depth for search version",
+        "start": 165.68,
+        "duration": 3.199
+    },
+    {
+        "text": "because i like it better",
+        "start": 167.599,
+        "duration": 3.601
+    },
+    {
+        "text": "so given this new example the first",
+        "start": 168.879,
+        "duration": 4.0
+    },
+    {
+        "text": "thing you want to do is visualize it so",
+        "start": 171.2,
+        "duration": 2.96
+    },
+    {
+        "text": "i'm going to draw a picture",
+        "start": 172.879,
+        "duration": 3.601
+    },
+    {
+        "text": "so we're given five nodes so we have",
+        "start": 174.16,
+        "duration": 3.359
+    },
+    {
+        "text": "zero one",
+        "start": 176.48,
+        "duration": 4.08
+    },
+    {
+        "text": "two three four that's five nodes",
+        "start": 177.519,
+        "duration": 5.601
+    },
+    {
+        "text": "we're also given five prerequisites so",
+        "start": 180.56,
+        "duration": 4.48
+    },
+    {
+        "text": "in this case we end up having five",
+        "start": 183.12,
+        "duration": 6.64
+    },
+    {
+        "text": "edges right from zero to one zero to two",
+        "start": 185.04,
+        "duration": 8.24
+    },
+    {
+        "text": "one two three one to four",
+        "start": 189.76,
+        "duration": 7.119
+    },
+    {
+        "text": "and three to four so my goal here",
+        "start": 193.28,
+        "duration": 6.319
+    },
+    {
+        "text": "is for each of these nodes i just want",
+        "start": 196.879,
+        "duration": 4.321
+    },
+    {
+        "text": "to know right for each of these",
+        "start": 199.599,
+        "duration": 4.56
+    },
+    {
+        "text": "classes can we complete this course or",
+        "start": 201.2,
+        "duration": 3.759
+    },
+    {
+        "text": "not",
+        "start": 204.159,
+        "duration": 2.881
+    },
+    {
+        "text": "and how do we know if a course can be",
+        "start": 204.959,
+        "duration": 3.28
+    },
+    {
+        "text": "completed well",
+        "start": 207.04,
+        "duration": 3.119
+    },
+    {
+        "text": "just looking at this picture is obvious",
+        "start": 208.239,
+        "duration": 3.761
+    },
+    {
+        "text": "right xero has a prerequisite",
+        "start": 210.159,
+        "duration": 3.601
+    },
+    {
+        "text": "of two but two does not have any",
+        "start": 212.0,
+        "duration": 3.44
+    },
+    {
+        "text": "prerequisites which is great",
+        "start": 213.76,
+        "duration": 4.32
+    },
+    {
+        "text": "it also has a prerequisite of one and",
+        "start": 215.44,
+        "duration": 3.28
+    },
+    {
+        "text": "one has",
+        "start": 218.08,
+        "duration": 3.92
+    },
+    {
+        "text": "two prerequisites three and four",
+        "start": 218.72,
+        "duration": 6.239
+    },
+    {
+        "text": "three has one prerequisite of four and",
+        "start": 222.0,
+        "duration": 3.36
+    },
+    {
+        "text": "four",
+        "start": 224.959,
+        "duration": 2.64
+    },
+    {
+        "text": "luckily for us does not have any",
+        "start": 225.36,
+        "duration": 3.28
+    },
+    {
+        "text": "prerequisites",
+        "start": 227.599,
+        "duration": 4.0
+    },
+    {
+        "text": "so looking at this it's kind of obvious",
+        "start": 228.64,
+        "duration": 3.519
+    },
+    {
+        "text": "that",
+        "start": 231.599,
+        "duration": 2.881
+    },
+    {
+        "text": "we can complete all these courses so",
+        "start": 232.159,
+        "duration": 4.321
+    },
+    {
+        "text": "let's do the algorithm to be able to",
+        "start": 234.48,
+        "duration": 3.119
+    },
+    {
+        "text": "determine that",
+        "start": 236.48,
+        "duration": 3.2
+    },
+    {
+        "text": "we see that these are kind of our base",
+        "start": 237.599,
+        "duration": 3.28
+    },
+    {
+        "text": "cases right 2",
+        "start": 239.68,
+        "duration": 4.72
+    },
+    {
+        "text": "and 4 don't have any prerequisites",
+        "start": 240.879,
+        "duration": 5.841
+    },
+    {
+        "text": "that's useful information but we don't",
+        "start": 244.4,
+        "duration": 4.399
+    },
+    {
+        "text": "need a graph to tell us that",
+        "start": 246.72,
+        "duration": 4.4
+    },
+    {
+        "text": "we can use a data structure called an",
+        "start": 248.799,
+        "duration": 3.921
+    },
+    {
+        "text": "adjacency list",
+        "start": 251.12,
+        "duration": 3.839
+    },
+    {
+        "text": "and i'm going to call it prerequisite",
+        "start": 252.72,
+        "duration": 3.359
+    },
+    {
+        "text": "map because the",
+        "start": 254.959,
+        "duration": 3.041
+    },
+    {
+        "text": "what the data structure i'm going to use",
+        "start": 256.079,
+        "duration": 4.241
+    },
+    {
+        "text": "is a hashmap to represent this",
+        "start": 258.0,
+        "duration": 5.44
+    },
+    {
+        "text": "so for each of our courses we are going",
+        "start": 260.32,
+        "duration": 3.84
+    },
+    {
+        "text": "to have",
+        "start": 263.44,
+        "duration": 4.16
+    },
+    {
+        "text": "a list of all of its prerequisites so",
+        "start": 264.16,
+        "duration": 4.56
+    },
+    {
+        "text": "for zero we know",
+        "start": 267.6,
+        "duration": 4.48
+    },
+    {
+        "text": "zero has two prerequisites one and two",
+        "start": 268.72,
+        "duration": 6.24
+    },
+    {
+        "text": "and we're going to repeat that for every",
+        "start": 272.08,
+        "duration": 6.08
+    },
+    {
+        "text": "single course so for one",
+        "start": 274.96,
+        "duration": 5.44
+    },
+    {
+        "text": "we know that two does not have any",
+        "start": 278.16,
+        "duration": 4.08
+    },
+    {
+        "text": "prerequisites so we can just put",
+        "start": 280.4,
+        "duration": 5.2
+    },
+    {
+        "text": "an empty list over here 4 also does not",
+        "start": 282.24,
+        "duration": 5.6
+    },
+    {
+        "text": "have any prerequisites so we get another",
+        "start": 285.6,
+        "duration": 5.2
+    },
+    {
+        "text": "empty list so now we're going to run",
+        "start": 287.84,
+        "duration": 4.4
+    },
+    {
+        "text": "depth first search on",
+        "start": 290.8,
+        "duration": 4.08
+    },
+    {
+        "text": "every single node i'm going to do it in",
+        "start": 292.24,
+        "duration": 3.76
+    },
+    {
+        "text": "the order from",
+        "start": 294.88,
+        "duration": 4.72
+    },
+    {
+        "text": "zero to n minus one so",
+        "start": 296.0,
+        "duration": 5.199
+    },
+    {
+        "text": "be starting at zero so we're going to",
+        "start": 299.6,
+        "duration": 3.36
+    },
+    {
+        "text": "run debt first search on it right",
+        "start": 301.199,
+        "duration": 3.44
+    },
+    {
+        "text": "how are we gonna do the depth first",
+        "start": 302.96,
+        "duration": 4.239
+    },
+    {
+        "text": "search well we have our prerequisite map",
+        "start": 304.639,
+        "duration": 5.041
+    },
+    {
+        "text": "so we're gonna do it recursively we see",
+        "start": 307.199,
+        "duration": 4.321
+    },
+    {
+        "text": "that it has two prerequisites",
+        "start": 309.68,
+        "duration": 5.28
+    },
+    {
+        "text": "one and two so now let's run depth first",
+        "start": 311.52,
+        "duration": 4.239
+    },
+    {
+        "text": "search",
+        "start": 314.96,
+        "duration": 3.92
+    },
+    {
+        "text": "on the first neighbor",
+        "start": 315.759,
+        "duration": 6.88
+    },
+    {
+        "text": "one so now we look at one we see that it",
+        "start": 318.88,
+        "duration": 4.8
+    },
+    {
+        "text": "has two neighbors",
+        "start": 322.639,
+        "duration": 3.521
+    },
+    {
+        "text": "three and four so let's recursively run",
+        "start": 323.68,
+        "duration": 3.44
+    },
+    {
+        "text": "depth first search",
+        "start": 326.16,
+        "duration": 3.92
+    },
+    {
+        "text": "on its first neighbor three so since",
+        "start": 327.12,
+        "duration": 5.44
+    },
+    {
+        "text": "three is a prerequisite of one",
+        "start": 330.08,
+        "duration": 5.2
+    },
+    {
+        "text": "now we wanna know if we can take we can",
+        "start": 332.56,
+        "duration": 4.32
+    },
+    {
+        "text": "complete course three",
+        "start": 335.28,
+        "duration": 4.24
+    },
+    {
+        "text": "so we look at its prerequisites it only",
+        "start": 336.88,
+        "duration": 3.039
+    },
+    {
+        "text": "has",
+        "start": 339.52,
+        "duration": 3.04
+    },
+    {
+        "text": "one four so now we're going to check",
+        "start": 339.919,
+        "duration": 4.241
+    },
+    {
+        "text": "it's only prerequisite",
+        "start": 342.56,
+        "duration": 4.639
+    },
+    {
+        "text": "for can we complete course four and then",
+        "start": 344.16,
+        "duration": 5.28
+    },
+    {
+        "text": "we want to look at the prerequisites",
+        "start": 347.199,
+        "duration": 5.681
+    },
+    {
+        "text": "of course for which we know are empty",
+        "start": 349.44,
+        "duration": 5.36
+    },
+    {
+        "text": "this is good right so now we see that",
+        "start": 352.88,
+        "duration": 3.2
+    },
+    {
+        "text": "this is empty",
+        "start": 354.8,
+        "duration": 3.679
+    },
+    {
+        "text": "so what does that tell us that tells us",
+        "start": 356.08,
+        "duration": 3.52
+    },
+    {
+        "text": "course 4",
+        "start": 358.479,
+        "duration": 3.921
+    },
+    {
+        "text": "can be completed which we basically",
+        "start": 359.6,
+        "duration": 3.52
+    },
+    {
+        "text": "already",
+        "start": 362.4,
+        "duration": 4.48
+    },
+    {
+        "text": "knew because course 4 has an empty",
+        "start": 363.12,
+        "duration": 7.04
+    },
+    {
+        "text": "uh empty prerequisite list so i'm just",
+        "start": 366.88,
+        "duration": 4.159
+    },
+    {
+        "text": "going to put a little",
+        "start": 370.16,
+        "duration": 3.2
+    },
+    {
+        "text": "check mark here to say that we know",
+        "start": 371.039,
+        "duration": 3.201
+    },
+    {
+        "text": "course 4",
+        "start": 373.36,
+        "duration": 3.92
+    },
+    {
+        "text": "can be completed and so recursively",
+        "start": 374.24,
+        "duration": 3.6
+    },
+    {
+        "text": "we're going to",
+        "start": 377.28,
+        "duration": 3.84
+    },
+    {
+        "text": "end up going back to our three and we",
+        "start": 377.84,
+        "duration": 4.799
+    },
+    {
+        "text": "see that it only had",
+        "start": 381.12,
+        "duration": 4.72
+    },
+    {
+        "text": "one prerequisite and we were able to",
+        "start": 382.639,
+        "duration": 5.441
+    },
+    {
+        "text": "complete that prerequisite for",
+        "start": 385.84,
+        "duration": 5.52
+    },
+    {
+        "text": "so therefore three is also",
+        "start": 388.08,
+        "duration": 6.48
+    },
+    {
+        "text": "a course that can be completed and so",
+        "start": 391.36,
+        "duration": 4.559
+    },
+    {
+        "text": "what we can actually do",
+        "start": 394.56,
+        "duration": 3.759
+    },
+    {
+        "text": "is from its prerequisite list we see",
+        "start": 395.919,
+        "duration": 4.801
+    },
+    {
+        "text": "four we can just remove the four we",
+        "start": 398.319,
+        "duration": 5.521
+    },
+    {
+        "text": "know it can be completed and so i'm",
+        "start": 400.72,
+        "duration": 4.479
+    },
+    {
+        "text": "representing that",
+        "start": 403.84,
+        "duration": 3.76
+    },
+    {
+        "text": "by having an empty list here right just",
+        "start": 405.199,
+        "duration": 4.241
+    },
+    {
+        "text": "an empty list means that it has no",
+        "start": 407.6,
+        "duration": 3.36
+    },
+    {
+        "text": "prerequisites therefore it can be",
+        "start": 409.44,
+        "duration": 3.759
+    },
+    {
+        "text": "completed so i removed the only",
+        "start": 410.96,
+        "duration": 3.84
+    },
+    {
+        "text": "prerequisite that three",
+        "start": 413.199,
+        "duration": 5.201
+    },
+    {
+        "text": "had then from three we can actually go",
+        "start": 414.8,
+        "duration": 7.36
+    },
+    {
+        "text": "backwards to one which we see here",
+        "start": 418.4,
+        "duration": 6.32
+    },
+    {
+        "text": "we can kind of get rid of this 3 because",
+        "start": 422.16,
+        "duration": 3.039
+    },
+    {
+        "text": "we know",
+        "start": 424.72,
+        "duration": 4.479
+    },
+    {
+        "text": "3 can be completed and then from the 3",
+        "start": 425.199,
+        "duration": 6.801
+    },
+    {
+        "text": "we're going to end up going to 4 to",
+        "start": 429.199,
+        "duration": 3.761
+    },
+    {
+        "text": "check again",
+        "start": 432.0,
+        "duration": 3.28
+    },
+    {
+        "text": "if 4 can be completed because it is a",
+        "start": 432.96,
+        "duration": 3.2
+    },
+    {
+        "text": "prerequisite",
+        "start": 435.28,
+        "duration": 4.16
+    },
+    {
+        "text": "of one and since we already know four",
+        "start": 436.16,
+        "duration": 5.52
+    },
+    {
+        "text": "can be completed we can get rid of that",
+        "start": 439.44,
+        "duration": 5.84
+    },
+    {
+        "text": "as well so now we know for sure that one",
+        "start": 441.68,
+        "duration": 7.359
+    },
+    {
+        "text": "can also be completed and now",
+        "start": 445.28,
+        "duration": 7.52
+    },
+    {
+        "text": "i'm gonna go back to zero which is where",
+        "start": 449.039,
+        "duration": 6.16
+    },
+    {
+        "text": "we how we even got to one in the first",
+        "start": 452.8,
+        "duration": 4.56
+    },
+    {
+        "text": "place and we look at the prerequisites",
+        "start": 455.199,
+        "duration": 3.041
+    },
+    {
+        "text": "of zero",
+        "start": 457.36,
+        "duration": 3.679
+    },
+    {
+        "text": "we see one is no longer a prerequisite",
+        "start": 458.24,
+        "duration": 3.28
+    },
+    {
+        "text": "because we",
+        "start": 461.039,
+        "duration": 3.28
+    },
+    {
+        "text": "basically know that one can be completed",
+        "start": 461.52,
+        "duration": 4.64
+    },
+    {
+        "text": "but we still have to look at this",
+        "start": 464.319,
+        "duration": 5.121
+    },
+    {
+        "text": "too so then we're gonna go to the last",
+        "start": 466.16,
+        "duration": 6.4
+    },
+    {
+        "text": "unvisited node in our entire graph which",
+        "start": 469.44,
+        "duration": 3.439
+    },
+    {
+        "text": "is",
+        "start": 472.56,
+        "duration": 3.84
+    },
+    {
+        "text": "two so now we've gotten to the last",
+        "start": 472.879,
+        "duration": 6.72
+    },
+    {
+        "text": "course two we see it's an empty list",
+        "start": 476.4,
+        "duration": 3.76
+    },
+    {
+        "text": "right",
+        "start": 479.599,
+        "duration": 4.081
+    },
+    {
+        "text": "therefore two can be completed it has",
+        "start": 480.16,
+        "duration": 6.24
+    },
+    {
+        "text": "no neighbors it has no prerequisites so",
+        "start": 483.68,
+        "duration": 4.959
+    },
+    {
+        "text": "i can put a little check mark here",
+        "start": 486.4,
+        "duration": 4.88
+    },
+    {
+        "text": "two can be completed and then we can",
+        "start": 488.639,
+        "duration": 3.521
+    },
+    {
+        "text": "finally go",
+        "start": 491.28,
+        "duration": 4.24
+    },
+    {
+        "text": "back to our original node 0",
+        "start": 492.16,
+        "duration": 6.08
+    },
+    {
+        "text": "cross out its last prerequisite which",
+        "start": 495.52,
+        "duration": 3.2
+    },
+    {
+        "text": "was",
+        "start": 498.24,
+        "duration": 3.84
+    },
+    {
+        "text": "2 and now when we look at 0 even",
+        "start": 498.72,
+        "duration": 6.479
+    },
+    {
+        "text": "0 has an empty list of prerequisites",
+        "start": 502.08,
+        "duration": 6.799
+    },
+    {
+        "text": "therefore we know zero can be completed",
+        "start": 505.199,
+        "duration": 7.28
+    },
+    {
+        "text": "so since we were able to complete every",
+        "start": 508.879,
+        "duration": 4.241
+    },
+    {
+        "text": "single",
+        "start": 512.479,
+        "duration": 3.601
+    },
+    {
+        "text": "course that that means we can return",
+        "start": 513.12,
+        "duration": 3.52
+    },
+    {
+        "text": "true",
+        "start": 516.08,
+        "duration": 3.12
+    },
+    {
+        "text": "every course is completable and the time",
+        "start": 516.64,
+        "duration": 4.079
+    },
+    {
+        "text": "complexity for this",
+        "start": 519.2,
+        "duration": 4.639
+    },
+    {
+        "text": "is going to be big o the",
+        "start": 520.719,
+        "duration": 6.161
+    },
+    {
+        "text": "number of nodes we have which is n i'll",
+        "start": 523.839,
+        "duration": 3.361
+    },
+    {
+        "text": "use",
+        "start": 526.88,
+        "duration": 3.2
+    },
+    {
+        "text": "n as that and i'll use p for the number",
+        "start": 527.2,
+        "duration": 4.72
+    },
+    {
+        "text": "of prerequisites that we had",
+        "start": 530.08,
+        "duration": 4.4
+    },
+    {
+        "text": "because if you notice in this graph we",
+        "start": 531.92,
+        "duration": 3.44
+    },
+    {
+        "text": "have to",
+        "start": 534.48,
+        "duration": 4.08
+    },
+    {
+        "text": "we have to visit every single node",
+        "start": 535.36,
+        "duration": 5.44
+    },
+    {
+        "text": "and we have to visit and we have to move",
+        "start": 538.56,
+        "duration": 3.12
+    },
+    {
+        "text": "along",
+        "start": 540.8,
+        "duration": 4.08
+    },
+    {
+        "text": "every single edge and once we get rid",
+        "start": 541.68,
+        "duration": 5.68
+    },
+    {
+        "text": "of the prerequisites from here we don't",
+        "start": 544.88,
+        "duration": 3.12
+    },
+    {
+        "text": "really have to",
+        "start": 547.36,
+        "duration": 2.96
+    },
+    {
+        "text": "visit a course twice because once we",
+        "start": 548.0,
+        "duration": 3.92
+    },
+    {
+        "text": "know it can be completed",
+        "start": 550.32,
+        "duration": 4.16
+    },
+    {
+        "text": "we we can instantly do that we don't",
+        "start": 551.92,
+        "duration": 4.479
+    },
+    {
+        "text": "have to go through its prerequisites",
+        "start": 554.48,
+        "duration": 2.72
+    },
+    {
+        "text": "twice",
+        "start": 556.399,
+        "duration": 2.801
+    },
+    {
+        "text": "so i'm gonna show you one last example",
+        "start": 557.2,
+        "duration": 3.52
+    },
+    {
+        "text": "this is the example",
+        "start": 559.2,
+        "duration": 3.199
+    },
+    {
+        "text": "that what we're going to do how are we",
+        "start": 560.72,
+        "duration": 3.36
+    },
+    {
+        "text": "actually going to detect this loop",
+        "start": 562.399,
+        "duration": 2.56
+    },
+    {
+        "text": "because we see",
+        "start": 564.08,
+        "duration": 2.4
+    },
+    {
+        "text": "so i'm just going to cross this stuff",
+        "start": 564.959,
+        "duration": 3.361
+    },
+    {
+        "text": "out because we're looking at a different",
+        "start": 566.48,
+        "duration": 2.479
+    },
+    {
+        "text": "example",
+        "start": 568.32,
+        "duration": 2.88
+    },
+    {
+        "text": "but here we see that zero has a",
+        "start": 568.959,
+        "duration": 3.201
+    },
+    {
+        "text": "prerequisite of one",
+        "start": 571.2,
+        "duration": 3.36
+    },
+    {
+        "text": "one has a preset pre-rec of two two has",
+        "start": 572.16,
+        "duration": 4.48
+    },
+    {
+        "text": "a pre-rec of 3. so this is a loop",
+        "start": 574.56,
+        "duration": 4.08
+    },
+    {
+        "text": "we cannot complete these courses but how",
+        "start": 576.64,
+        "duration": 3.04
+    },
+    {
+        "text": "can we actually",
+        "start": 578.64,
+        "duration": 3.759
+    },
+    {
+        "text": "how can we actually detect this loop i'm",
+        "start": 579.68,
+        "duration": 4.48
+    },
+    {
+        "text": "going to show you how really quickly so",
+        "start": 582.399,
+        "duration": 3.681
+    },
+    {
+        "text": "to detect a loop i'm going to use one",
+        "start": 584.16,
+        "duration": 3.6
+    },
+    {
+        "text": "last data structure and it's going to be",
+        "start": 586.08,
+        "duration": 2.08
+    },
+    {
+        "text": "a",
+        "start": 587.76,
+        "duration": 2.4
+    },
+    {
+        "text": "set though i think you could just use an",
+        "start": 588.16,
+        "duration": 4.16
+    },
+    {
+        "text": "array if you want to call it the visit",
+        "start": 590.16,
+        "duration": 4.96
+    },
+    {
+        "text": "set and all it's going to contain is the",
+        "start": 592.32,
+        "duration": 3.28
+    },
+    {
+        "text": "list",
+        "start": 595.12,
+        "duration": 3.04
+    },
+    {
+        "text": "of courses that we're currently visiting",
+        "start": 595.6,
+        "duration": 3.359
+    },
+    {
+        "text": "along",
+        "start": 598.16,
+        "duration": 3.2
+    },
+    {
+        "text": "our depth first search so let's say we",
+        "start": 598.959,
+        "duration": 5.201
+    },
+    {
+        "text": "start at 0 then we add zero",
+        "start": 601.36,
+        "duration": 5.44
+    },
+    {
+        "text": "to our visit set we take a look at the",
+        "start": 604.16,
+        "duration": 5.28
+    },
+    {
+        "text": "prerequisites of zero we see it as one",
+        "start": 606.8,
+        "duration": 4.32
+    },
+    {
+        "text": "prerequisite so then we",
+        "start": 609.44,
+        "duration": 5.04
+    },
+    {
+        "text": "move to one so now we visit one",
+        "start": 611.12,
+        "duration": 5.44
+    },
+    {
+        "text": "so we're going to add one to our visit",
+        "start": 614.48,
+        "duration": 4.08
+    },
+    {
+        "text": "set and we look at the prerequisites of",
+        "start": 616.56,
+        "duration": 4.16
+    },
+    {
+        "text": "one it has one prerequisite two so then",
+        "start": 618.56,
+        "duration": 2.48
+    },
+    {
+        "text": "we",
+        "start": 620.72,
+        "duration": 2.96
+    },
+    {
+        "text": "move to two we run debt for search on",
+        "start": 621.04,
+        "duration": 3.12
+    },
+    {
+        "text": "two",
+        "start": 623.68,
+        "duration": 3.279
+    },
+    {
+        "text": "so to do that we have to first visit two",
+        "start": 624.16,
+        "duration": 3.2
+    },
+    {
+        "text": "so",
+        "start": 626.959,
+        "duration": 2.241
+    },
+    {
+        "text": "two is also going to be added to our",
+        "start": 627.36,
+        "duration": 3.919
+    },
+    {
+        "text": "visit set and lastly",
+        "start": 629.2,
+        "duration": 4.8
+    },
+    {
+        "text": "we see two has one prerequisite of zero",
+        "start": 631.279,
+        "duration": 4.401
+    },
+    {
+        "text": "so then we of course want to",
+        "start": 634.0,
+        "duration": 4.399
+    },
+    {
+        "text": "visit zero and so now we're going to",
+        "start": 635.68,
+        "duration": 3.2
+    },
+    {
+        "text": "visit",
+        "start": 638.399,
+        "duration": 3.921
+    },
+    {
+        "text": "zero twice but you see that zero is",
+        "start": 638.88,
+        "duration": 6.32
+    },
+    {
+        "text": "already in the visit set therefore we",
+        "start": 642.32,
+        "duration": 3.68
+    },
+    {
+        "text": "detected",
+        "start": 645.2,
+        "duration": 4.56
+    },
+    {
+        "text": "a loop therefore we have to return",
+        "start": 646.0,
+        "duration": 6.88
+    },
+    {
+        "text": "false these courses cannot be",
+        "start": 649.76,
+        "duration": 5.44
+    },
+    {
+        "text": "completed so now let's finally look at",
+        "start": 652.88,
+        "duration": 3.28
+    },
+    {
+        "text": "the code so",
+        "start": 655.2,
+        "duration": 3.36
+    },
+    {
+        "text": "the first thing i want to do is create",
+        "start": 656.16,
+        "duration": 3.919
+    },
+    {
+        "text": "our pre-map",
+        "start": 658.56,
+        "duration": 4.08
+    },
+    {
+        "text": "so our list of prerequisites so we know",
+        "start": 660.079,
+        "duration": 3.281
+    },
+    {
+        "text": "for each",
+        "start": 662.64,
+        "duration": 3.92
+    },
+    {
+        "text": "course initially we can set it to an",
+        "start": 663.36,
+        "duration": 5.039
+    },
+    {
+        "text": "empty list so an empty list of",
+        "start": 666.56,
+        "duration": 4.16
+    },
+    {
+        "text": "prerequisites and we want to do that for",
+        "start": 668.399,
+        "duration": 4.721
+    },
+    {
+        "text": "every course that we got which the",
+        "start": 670.72,
+        "duration": 3.84
+    },
+    {
+        "text": "number of that is just",
+        "start": 673.12,
+        "duration": 3.2
+    },
+    {
+        "text": "number of courses so this is if you're",
+        "start": 674.56,
+        "duration": 3.68
+    },
+    {
+        "text": "not familiar this is some python stuff",
+        "start": 676.32,
+        "duration": 3.6
+    },
+    {
+        "text": "i'm just saying that for every course",
+        "start": 678.24,
+        "duration": 3.52
+    },
+    {
+        "text": "initially we want to map it to an",
+        "start": 679.92,
+        "duration": 3.84
+    },
+    {
+        "text": "empty list and we know that the",
+        "start": 681.76,
+        "duration": 3.68
+    },
+    {
+        "text": "prerequisites are actually contained in",
+        "start": 683.76,
+        "duration": 2.079
+    },
+    {
+        "text": "this",
+        "start": 685.44,
+        "duration": 2.24
+    },
+    {
+        "text": "nested list variable so let's iterate",
+        "start": 685.839,
+        "duration": 3.761
+    },
+    {
+        "text": "through that let's get each",
+        "start": 687.68,
+        "duration": 5.68
+    },
+    {
+        "text": "course prerequisite pair from that list",
+        "start": 689.6,
+        "duration": 6.72
+    },
+    {
+        "text": "and then just start appending them so",
+        "start": 693.36,
+        "duration": 3.68
+    },
+    {
+        "text": "pre-map",
+        "start": 696.32,
+        "duration": 4.16
+    },
+    {
+        "text": "of course we want to append to this list",
+        "start": 697.04,
+        "duration": 6.239
+    },
+    {
+        "text": "this prerequisite so we also want a",
+        "start": 700.48,
+        "duration": 3.28
+    },
+    {
+        "text": "visit",
+        "start": 703.279,
+        "duration": 4.081
+    },
+    {
+        "text": "set which is going to store",
+        "start": 703.76,
+        "duration": 6.96
+    },
+    {
+        "text": "the it's going to store all the courses",
+        "start": 707.36,
+        "duration": 6.719
+    },
+    {
+        "text": "along the current depth first search",
+        "start": 710.72,
+        "duration": 5.2
+    },
+    {
+        "text": "path and of course it's initially just",
+        "start": 714.079,
+        "duration": 3.44
+    },
+    {
+        "text": "going to be empty so since we're going",
+        "start": 715.92,
+        "duration": 2.479
+    },
+    {
+        "text": "to do this",
+        "start": 717.519,
+        "duration": 3.12
+    },
+    {
+        "text": "recursively i'm going to define a nested",
+        "start": 718.399,
+        "duration": 4.481
+    },
+    {
+        "text": "function depth first search inside of",
+        "start": 720.639,
+        "duration": 4.241
+    },
+    {
+        "text": "our can finish function because then",
+        "start": 722.88,
+        "duration": 3.28
+    },
+    {
+        "text": "we'll have access",
+        "start": 724.88,
+        "duration": 3.28
+    },
+    {
+        "text": "to all these variables without having to",
+        "start": 726.16,
+        "duration": 3.84
+    },
+    {
+        "text": "pass them in as a parameter",
+        "start": 728.16,
+        "duration": 3.6
+    },
+    {
+        "text": "the only parameter that we have to pass",
+        "start": 730.0,
+        "duration": 3.04
+    },
+    {
+        "text": "in is the current",
+        "start": 731.76,
+        "duration": 3.84
+    },
+    {
+        "text": "course that we're visiting and so like",
+        "start": 733.04,
+        "duration": 4.32
+    },
+    {
+        "text": "most recursive functions we want to look",
+        "start": 735.6,
+        "duration": 3.919
+    },
+    {
+        "text": "at our base cases first the first",
+        "start": 737.36,
+        "duration": 5.599
+    },
+    {
+        "text": "base case is if course is in",
+        "start": 739.519,
+        "duration": 6.721
+    },
+    {
+        "text": "the visit set already so what this",
+        "start": 742.959,
+        "duration": 6.161
+    },
+    {
+        "text": "means is that we're visiting a course",
+        "start": 746.24,
+        "duration": 3.52
+    },
+    {
+        "text": "twice",
+        "start": 749.12,
+        "duration": 4.159
+    },
+    {
+        "text": "so we detected a loop so we can return",
+        "start": 749.76,
+        "duration": 6.16
+    },
+    {
+        "text": "false meaning that this course cannot be",
+        "start": 753.279,
+        "duration": 3.521
+    },
+    {
+        "text": "completed",
+        "start": 755.92,
+        "duration": 4.32
+    },
+    {
+        "text": "the other base case we know is if",
+        "start": 756.8,
+        "duration": 6.719
+    },
+    {
+        "text": "the prerequisites of this course happen",
+        "start": 760.24,
+        "duration": 4.159
+    },
+    {
+        "text": "to be an",
+        "start": 763.519,
+        "duration": 3.361
+    },
+    {
+        "text": "empty list what that tells us is that",
+        "start": 764.399,
+        "duration": 3.201
+    },
+    {
+        "text": "this course",
+        "start": 766.88,
+        "duration": 3.6
+    },
+    {
+        "text": "has no prerequisites and we can return",
+        "start": 767.6,
+        "duration": 4.56
+    },
+    {
+        "text": "true because it can definitely",
+        "start": 770.48,
+        "duration": 4.0
+    },
+    {
+        "text": "be completed if neither of these",
+        "start": 772.16,
+        "duration": 3.28
+    },
+    {
+        "text": "conditions that",
+        "start": 774.48,
+        "duration": 3.28
+    },
+    {
+        "text": "is satisfied then we can take this",
+        "start": 775.44,
+        "duration": 4.079
+    },
+    {
+        "text": "course",
+        "start": 777.76,
+        "duration": 3.84
+    },
+    {
+        "text": "and add it to our visit set because that",
+        "start": 779.519,
+        "duration": 4.081
+    },
+    {
+        "text": "means we are currently visiting this and",
+        "start": 781.6,
+        "duration": 3.679
+    },
+    {
+        "text": "we're going to recursively run debt",
+        "start": 783.6,
+        "duration": 2.4
+    },
+    {
+        "text": "first search",
+        "start": 785.279,
+        "duration": 3.921
+    },
+    {
+        "text": "on its prerequisites so i'm gonna loop",
+        "start": 786.0,
+        "duration": 8.0
+    },
+    {
+        "text": "through the prerequisites of this course",
+        "start": 789.2,
+        "duration": 7.439
+    },
+    {
+        "text": "for each one i'm gonna run debt for",
+        "start": 794.0,
+        "duration": 3.68
+    },
+    {
+        "text": "search on it",
+        "start": 796.639,
+        "duration": 2.64
+    },
+    {
+        "text": "so debt first search on this",
+        "start": 797.68,
+        "duration": 4.48
+    },
+    {
+        "text": "prerequisite if it happens to return",
+        "start": 799.279,
+        "duration": 5.921
+    },
+    {
+        "text": "false though then we know we can return",
+        "start": 802.16,
+        "duration": 5.2
+    },
+    {
+        "text": "false immediately we don't have to wait",
+        "start": 805.2,
+        "duration": 3.12
+    },
+    {
+        "text": "because if we find",
+        "start": 807.36,
+        "duration": 3.36
+    },
+    {
+        "text": "one course that can't be completed then",
+        "start": 808.32,
+        "duration": 4.319
+    },
+    {
+        "text": "we can return false for the entire",
+        "start": 810.72,
+        "duration": 2.48
+    },
+    {
+        "text": "function",
+        "start": 812.639,
+        "duration": 2.64
+    },
+    {
+        "text": "so i forgot to put a not over here so if",
+        "start": 813.2,
+        "duration": 3.28
+    },
+    {
+        "text": "not meaning if",
+        "start": 815.279,
+        "duration": 3.601
+    },
+    {
+        "text": "it returns false then we return false",
+        "start": 816.48,
+        "duration": 5.28
+    },
+    {
+        "text": "but if this does not execute that means",
+        "start": 818.88,
+        "duration": 5.92
+    },
+    {
+        "text": "it's a course that can be taken and",
+        "start": 821.76,
+        "duration": 6.4
+    },
+    {
+        "text": "we want to return true in that case but",
+        "start": 824.8,
+        "duration": 5.599
+    },
+    {
+        "text": "before we return true we want to remove",
+        "start": 828.16,
+        "duration": 4.0
+    },
+    {
+        "text": "it from our visit set",
+        "start": 830.399,
+        "duration": 4.081
+    },
+    {
+        "text": "because we are no longer visiting this",
+        "start": 832.16,
+        "duration": 5.119
+    },
+    {
+        "text": "we've already finished visiting it",
+        "start": 834.48,
+        "duration": 6.96
+    },
+    {
+        "text": "so visit remove this course",
+        "start": 837.279,
+        "duration": 7.201
+    },
+    {
+        "text": "and also since we know this course can",
+        "start": 841.44,
+        "duration": 4.0
+    },
+    {
+        "text": "be visited",
+        "start": 844.48,
+        "duration": 4.0
+    },
+    {
+        "text": "what we can do is say pre-map we can",
+        "start": 845.44,
+        "duration": 6.16
+    },
+    {
+        "text": "set it to an empty list so that",
+        "start": 848.48,
+        "duration": 5.599
+    },
+    {
+        "text": "if if we ever have to run debt first",
+        "start": 851.6,
+        "duration": 3.84
+    },
+    {
+        "text": "search on it again",
+        "start": 854.079,
+        "duration": 4.32
+    },
+    {
+        "text": "we will in that case execute this",
+        "start": 855.44,
+        "duration": 3.6
+    },
+    {
+        "text": "condition",
+        "start": 858.399,
+        "duration": 3.281
+    },
+    {
+        "text": "and return true immediately we will not",
+        "start": 859.04,
+        "duration": 3.76
+    },
+    {
+        "text": "have to repeat",
+        "start": 861.68,
+        "duration": 3.76
+    },
+    {
+        "text": "all this work of running debt first",
+        "start": 862.8,
+        "duration": 3.52
+    },
+    {
+        "text": "search on",
+        "start": 865.44,
+        "duration": 3.44
+    },
+    {
+        "text": "its neighbors so that's all for our debt",
+        "start": 866.32,
+        "duration": 3.759
+    },
+    {
+        "text": "for search function",
+        "start": 868.88,
+        "duration": 3.36
+    },
+    {
+        "text": "the function is done all we have to do",
+        "start": 870.079,
+        "duration": 3.76
+    },
+    {
+        "text": "is call it now",
+        "start": 872.24,
+        "duration": 4.48
+    },
+    {
+        "text": "but we have to potentially call it for",
+        "start": 873.839,
+        "duration": 3.921
+    },
+    {
+        "text": "every single",
+        "start": 876.72,
+        "duration": 3.84
+    },
+    {
+        "text": "course in the number of courses that we",
+        "start": 877.76,
+        "duration": 5.199
+    },
+    {
+        "text": "have",
+        "start": 880.56,
+        "duration": 2.399
+    },
+    {
+        "text": "and if any of them happen to return",
+        "start": 883.44,
+        "duration": 3.199
+    },
+    {
+        "text": "false",
+        "start": 885.519,
+        "duration": 4.32
+    },
+    {
+        "text": "then we have to return false immediately",
+        "start": 886.639,
+        "duration": 5.521
+    },
+    {
+        "text": "and if they don't return false then we",
+        "start": 889.839,
+        "duration": 3.12
+    },
+    {
+        "text": "can return",
+        "start": 892.16,
+        "duration": 4.239
+    },
+    {
+        "text": "true all courses can be completed",
+        "start": 892.959,
+        "duration": 6.0
+    },
+    {
+        "text": "and the reason we are looping like this",
+        "start": 896.399,
+        "duration": 4.161
+    },
+    {
+        "text": "is mainly because",
+        "start": 898.959,
+        "duration": 4.721
+    },
+    {
+        "text": "what if our graph is not fully connected",
+        "start": 900.56,
+        "duration": 5.279
+    },
+    {
+        "text": "like what if we have a graph like this",
+        "start": 903.68,
+        "duration": 5.68
+    },
+    {
+        "text": "one has a prerequisite of two",
+        "start": 905.839,
+        "duration": 6.721
+    },
+    {
+        "text": "and maybe three has a prerequisite",
+        "start": 909.36,
+        "duration": 6.479
+    },
+    {
+        "text": "of four so these are two separate",
+        "start": 912.56,
+        "duration": 5.2
+    },
+    {
+        "text": "graphs that are not connected right so",
+        "start": 915.839,
+        "duration": 3.36
+    },
+    {
+        "text": "we have to ch we have to",
+        "start": 917.76,
+        "duration": 3.68
+    },
+    {
+        "text": "manually iterate through every course",
+        "start": 919.199,
+        "duration": 3.041
+    },
+    {
+        "text": "and check",
+        "start": 921.44,
+        "duration": 2.56
+    },
+    {
+        "text": "can one be completed can two be",
+        "start": 922.24,
+        "duration": 3.039
+    },
+    {
+        "text": "completed can three",
+        "start": 924.0,
+        "duration": 3.68
+    },
+    {
+        "text": "and can four be completed so this is the",
+        "start": 925.279,
+        "duration": 3.36
+    },
+    {
+        "text": "depth first search",
+        "start": 927.68,
+        "duration": 4.079
+    },
+    {
+        "text": "solution you can see that it does run",
+        "start": 928.639,
+        "duration": 5.921
+    },
+    {
+        "text": "very efficiently about as efficiently as",
+        "start": 931.759,
+        "duration": 5.041
+    },
+    {
+        "text": "the breadth for search solution as well",
+        "start": 934.56,
+        "duration": 5.199
+    },
+    {
+        "text": "and i hope this was helpful if it was",
+        "start": 936.8,
+        "duration": 4.719
+    },
+    {
+        "text": "please like and subscribe it supports",
+        "start": 939.759,
+        "duration": 3.921
+    },
+    {
+        "text": "the channel a lot and i'll hopefully",
+        "start": 941.519,
+        "duration": 6.56
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 943.68,
+        "duration": 4.399
+    }
+]

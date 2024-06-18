@@ -1,0 +1,1077 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white I do",
+        "start": 0.8,
+        "duration": 4.959
+    },
+    {
+        "text": "tech coding stuff on twitch and YouTube",
+        "start": 3.72,
+        "duration": 3.599
+    },
+    {
+        "text": "I do all the hacker rank and lead code",
+        "start": 5.759,
+        "duration": 3.451
+    },
+    {
+        "text": "solutions so just check those out a",
+        "start": 7.319,
+        "duration": 5.28
+    },
+    {
+        "text": "playlist on my channel description has",
+        "start": 9.21,
+        "duration": 6.45
+    },
+    {
+        "text": "everything else if you're bad at strings",
+        "start": 12.599,
+        "duration": 6.69
+    },
+    {
+        "text": "this is a great problem if you don't if",
+        "start": 15.66,
+        "duration": 7.199
+    },
+    {
+        "text": "you're not familiar with ASCII to charge",
+        "start": 19.289,
+        "duration": 6.121
+    },
+    {
+        "text": "char to ASCII or if you're just not that",
+        "start": 22.859,
+        "duration": 5.131
+    },
+    {
+        "text": "good at it this is really good I'd say",
+        "start": 25.41,
+        "duration": 4.05
+    },
+    {
+        "text": "check out a couple string problems",
+        "start": 27.99,
+        "duration": 3.0
+    },
+    {
+        "text": "before this because it's a little more",
+        "start": 29.46,
+        "duration": 3.09
+    },
+    {
+        "text": "advanced but it's not that bad",
+        "start": 30.99,
+        "duration": 4.26
+    },
+    {
+        "text": "given an array of strings made from only",
+        "start": 32.55,
+        "duration": 4.89
+    },
+    {
+        "text": "lowercase letters return a list of all",
+        "start": 35.25,
+        "duration": 4.11
+    },
+    {
+        "text": "characters that show up in all strings",
+        "start": 37.44,
+        "duration": 6.0
+    },
+    {
+        "text": "within the list including duplicates for",
+        "start": 39.36,
+        "duration": 6.719
+    },
+    {
+        "text": "example if a character occurs three",
+        "start": 43.44,
+        "duration": 4.23
+    },
+    {
+        "text": "times in all strings but not for you",
+        "start": 46.079,
+        "duration": 2.881
+    },
+    {
+        "text": "need to include that character three",
+        "start": 47.67,
+        "duration": 4.549
+    },
+    {
+        "text": "times so we're gonna get the frequency",
+        "start": 48.96,
+        "duration": 6.72
+    },
+    {
+        "text": "of all the characters in each string and",
+        "start": 52.219,
+        "duration": 7.991
+    },
+    {
+        "text": "then we want to return the minimum",
+        "start": 55.68,
+        "duration": 10.369
+    },
+    {
+        "text": "frequency of we want to have a list of",
+        "start": 60.21,
+        "duration": 9.03
+    },
+    {
+        "text": "characters that show up in each string",
+        "start": 66.049,
+        "duration": 5.411
+    },
+    {
+        "text": "but we want the minimum frequency of",
+        "start": 69.24,
+        "duration": 5.73
+    },
+    {
+        "text": "that character so you know if there's",
+        "start": 71.46,
+        "duration": 6.6
+    },
+    {
+        "text": "two L's in each of these words so",
+        "start": 74.97,
+        "duration": 4.41
+    },
+    {
+        "text": "there's two owls in this and two hours",
+        "start": 78.06,
+        "duration": 2.849
+    },
+    {
+        "text": "on this but there's three L's in this we",
+        "start": 79.38,
+        "duration": 2.97
+    },
+    {
+        "text": "only want two else we want the minimum",
+        "start": 80.909,
+        "duration": 4.831
+    },
+    {
+        "text": "frequency of that L we they have the",
+        "start": 82.35,
+        "duration": 5.07
+    },
+    {
+        "text": "letters have to show up in each word and",
+        "start": 85.74,
+        "duration": 3.96
+    },
+    {
+        "text": "then we just output them in a list of",
+        "start": 87.42,
+        "duration": 4.17
+    },
+    {
+        "text": "strings I don't know why it's not a list",
+        "start": 89.7,
+        "duration": 3.54
+    },
+    {
+        "text": "of characters but it's a list of strings",
+        "start": 91.59,
+        "duration": 5.16
+    },
+    {
+        "text": "so that's it so how do we do this we",
+        "start": 93.24,
+        "duration": 5.6
+    },
+    {
+        "text": "just do this exactly how I'm saying it",
+        "start": 96.75,
+        "duration": 4.5
+    },
+    {
+        "text": "let's have a list of strings this is",
+        "start": 98.84,
+        "duration": 4.66
+    },
+    {
+        "text": "gonna be lower returning called common",
+        "start": 101.25,
+        "duration": 10.02
+    },
+    {
+        "text": "chars and then we're going to have this",
+        "start": 103.5,
+        "duration": 10.649
+    },
+    {
+        "text": "int array this is a really common thing",
+        "start": 111.27,
+        "duration": 6.209
+    },
+    {
+        "text": "in character frequency problems like you",
+        "start": 114.149,
+        "duration": 4.771
+    },
+    {
+        "text": "don't need a hash map like you do in",
+        "start": 117.479,
+        "duration": 3.39
+    },
+    {
+        "text": "like string frequency stuff you can",
+        "start": 118.92,
+        "duration": 5.04
+    },
+    {
+        "text": "literally just have a character an int",
+        "start": 120.869,
+        "duration": 5.011
+    },
+    {
+        "text": "array for every character in the",
+        "start": 123.96,
+        "duration": 2.46
+    },
+    {
+        "text": "alphabet",
+        "start": 125.88,
+        "duration": 5.06
+    },
+    {
+        "text": "so we're gonna call this min frequencies",
+        "start": 126.42,
+        "duration": 4.52
+    },
+    {
+        "text": "it's of 26 and let me just explain this",
+        "start": 131.36,
+        "duration": 4.65
+    },
+    {
+        "text": "for anyone who doesn't know you have an",
+        "start": 134.21,
+        "duration": 4.35
+    },
+    {
+        "text": "int array of 26 and usually you set",
+        "start": 136.01,
+        "duration": 5.52
+    },
+    {
+        "text": "every value to zero right away and then",
+        "start": 138.56,
+        "duration": 5.73
+    },
+    {
+        "text": "you do a loop through a string and then",
+        "start": 141.53,
+        "duration": 4.77
+    },
+    {
+        "text": "every time you see a new character you",
+        "start": 144.29,
+        "duration": 4.68
+    },
+    {
+        "text": "just go to you get the ASCII value of",
+        "start": 146.3,
+        "duration": 4.29
+    },
+    {
+        "text": "the character you look it up in the",
+        "start": 148.97,
+        "duration": 4.53
+    },
+    {
+        "text": "center a it corresponds to the index so",
+        "start": 150.59,
+        "duration": 6.75
+    },
+    {
+        "text": "there was a it would go to index zero of",
+        "start": 153.5,
+        "duration": 5.67
+    },
+    {
+        "text": "this array and then we'd add one and",
+        "start": 157.34,
+        "duration": 3.3
+    },
+    {
+        "text": "then for every letter of the alphabet",
+        "start": 159.17,
+        "duration": 3.86
+    },
+    {
+        "text": "you just have the count for each word",
+        "start": 160.64,
+        "duration": 4.68
+    },
+    {
+        "text": "for this we're gonna do it a little bit",
+        "start": 163.03,
+        "duration": 3.76
+    },
+    {
+        "text": "differently we're gonna do arrays dot",
+        "start": 165.32,
+        "duration": 4.53
+    },
+    {
+        "text": "fill in frequencies because we're doing",
+        "start": 166.79,
+        "duration": 5.58
+    },
+    {
+        "text": "minimums with integer dot max value this",
+        "start": 169.85,
+        "duration": 5.19
+    },
+    {
+        "text": "is also a common thing with minimums you",
+        "start": 172.37,
+        "duration": 5.07
+    },
+    {
+        "text": "usually set it to a high value and I'll",
+        "start": 175.04,
+        "duration": 4.35
+    },
+    {
+        "text": "explain why we actually have to do this",
+        "start": 177.44,
+        "duration": 4.23
+    },
+    {
+        "text": "in a second so we're gonna do a loop",
+        "start": 179.39,
+        "duration": 4.02
+    },
+    {
+        "text": "through the array that we're given of",
+        "start": 181.67,
+        "duration": 4.74
+    },
+    {
+        "text": "strings we're gonna do for string",
+        "start": 183.41,
+        "duration": 6.39
+    },
+    {
+        "text": "current string and a we're gonna have a",
+        "start": 186.41,
+        "duration": 6.45
+    },
+    {
+        "text": "char frequency array for each string",
+        "start": 189.8,
+        "duration": 4.68
+    },
+    {
+        "text": "we're gonna have our own separate char",
+        "start": 192.86,
+        "duration": 9.96
+    },
+    {
+        "text": "frequency array is of 26 once again this",
+        "start": 194.48,
+        "duration": 10.259
+    },
+    {
+        "text": "one's gonna be set to all 0 this one's",
+        "start": 202.82,
+        "duration": 4.29
+    },
+    {
+        "text": "all huge numbers and then we're gonna",
+        "start": 204.739,
+        "duration": 7.171
+    },
+    {
+        "text": "loop through char C current string you",
+        "start": 207.11,
+        "duration": 6.42
+    },
+    {
+        "text": "can't do it just to through the current",
+        "start": 211.91,
+        "duration": 3.39
+    },
+    {
+        "text": "string you got to remember dot to char",
+        "start": 213.53,
+        "duration": 9.69
+    },
+    {
+        "text": "array characters sorry I'm just oh there",
+        "start": 215.3,
+        "duration": 9.42
+    },
+    {
+        "text": "we go going through all the characters",
+        "start": 223.22,
+        "duration": 4.65
+    },
+    {
+        "text": "and then we just we're gonna just do",
+        "start": 224.72,
+        "duration": 4.799
+    },
+    {
+        "text": "this how we would normally do it we did",
+        "start": 227.87,
+        "duration": 4.32
+    },
+    {
+        "text": "this on a bunch of other problems pretty",
+        "start": 229.519,
+        "duration": 7.921
+    },
+    {
+        "text": "easy just do char frequencies of C minus",
+        "start": 232.19,
+        "duration": 7.35
+    },
+    {
+        "text": "a because this is the current character",
+        "start": 237.44,
+        "duration": 5.19
+    },
+    {
+        "text": "minus a which is let's say the current",
+        "start": 239.54,
+        "duration": 4.86
+    },
+    {
+        "text": "character is B that would have a value",
+        "start": 242.63,
+        "duration": 5.73
+    },
+    {
+        "text": "of 98 and ASCII a as a value 97 98 minus",
+        "start": 244.4,
+        "duration": 7.26
+    },
+    {
+        "text": "97 is 1 well what is that would be the",
+        "start": 248.36,
+        "duration": 5.64
+    },
+    {
+        "text": "perfect index of B in the frequency",
+        "start": 251.66,
+        "duration": 5.639
+    },
+    {
+        "text": "because 0 would be a 1 1 would be a B",
+        "start": 254.0,
+        "duration": 5.43
+    },
+    {
+        "text": "right just one you know this our",
+        "start": 257.299,
+        "duration": 5.401
+    },
+    {
+        "text": "subtraction or up in our worth metic",
+        "start": 259.43,
+        "duration": 4.56
+    },
+    {
+        "text": "operation between characters",
+        "start": 262.7,
+        "duration": 2.13
+    },
+    {
+        "text": "automatically",
+        "start": 263.99,
+        "duration": 5.1
+    },
+    {
+        "text": "a ski so we just increment that we get",
+        "start": 264.83,
+        "duration": 6.799
+    },
+    {
+        "text": "the ASCII value access it in the",
+        "start": 269.09,
+        "duration": 5.49
+    },
+    {
+        "text": "frequency array increment that value now",
+        "start": 271.629,
+        "duration": 5.231
+    },
+    {
+        "text": "we have the perfect frequency now while",
+        "start": 274.58,
+        "duration": 5.899
+    },
+    {
+        "text": "we have to do is loop from 0 to 26",
+        "start": 276.86,
+        "duration": 6.209
+    },
+    {
+        "text": "basically through the mac min",
+        "start": 280.479,
+        "duration": 4.69
+    },
+    {
+        "text": "frequencies and we're going to do min",
+        "start": 283.069,
+        "duration": 6.931
+    },
+    {
+        "text": "frequencies of I is equal and what is",
+        "start": 285.169,
+        "duration": 9.5
+    },
+    {
+        "text": "this equal to math dot min of min",
+        "start": 290.0,
+        "duration": 11.43
+    },
+    {
+        "text": "frequencies of I and current free char",
+        "start": 294.669,
+        "duration": 9.43
+    },
+    {
+        "text": "frequencies of I and it's pretty",
+        "start": 301.43,
+        "duration": 4.949
+    },
+    {
+        "text": "self-explanatory honestly like it's the",
+        "start": 304.099,
+        "duration": 5.37
+    },
+    {
+        "text": "min frequencies is gonna be the math dot",
+        "start": 306.379,
+        "duration": 5.16
+    },
+    {
+        "text": "min of the mid frequencies and the char",
+        "start": 309.469,
+        "duration": 5.611
+    },
+    {
+        "text": "frequencies we do set this to max value",
+        "start": 311.539,
+        "duration": 5.37
+    },
+    {
+        "text": "first because if it was set to all zeros",
+        "start": 315.08,
+        "duration": 5.13
+    },
+    {
+        "text": "and then we see the letters in a string",
+        "start": 316.909,
+        "duration": 4.861
+    },
+    {
+        "text": "obviously the count is gonna be greater",
+        "start": 320.21,
+        "duration": 3.54
+    },
+    {
+        "text": "than zero and the char frequency array",
+        "start": 321.77,
+        "duration": 3.84
+    },
+    {
+        "text": "but the min frequency would always stay",
+        "start": 323.75,
+        "duration": 4.259
+    },
+    {
+        "text": "at zero because there's no way a minimum",
+        "start": 325.61,
+        "duration": 4.529
+    },
+    {
+        "text": "of 0 and 1 is always gonna be 0 so we",
+        "start": 328.009,
+        "duration": 4.201
+    },
+    {
+        "text": "have to set these two higher values so",
+        "start": 330.139,
+        "duration": 5.601
+    },
+    {
+        "text": "that we can actually get a valid count",
+        "start": 332.21,
+        "duration": 8.22
+    },
+    {
+        "text": "in the outer array here right so after",
+        "start": 335.74,
+        "duration": 6.669
+    },
+    {
+        "text": "this first string we already know the",
+        "start": 340.43,
+        "duration": 4.68
+    },
+    {
+        "text": "only possible letters like the when you",
+        "start": 342.409,
+        "duration": 3.931
+    },
+    {
+        "text": "see the first string you already know",
+        "start": 345.11,
+        "duration": 2.79
+    },
+    {
+        "text": "the only possible letters that can be in",
+        "start": 346.34,
+        "duration": 4.47
+    },
+    {
+        "text": "the output array right it can be be e ll",
+        "start": 347.9,
+        "duration": 4.829
+    },
+    {
+        "text": "ma there's no possible way it could be",
+        "start": 350.81,
+        "duration": 4.169
+    },
+    {
+        "text": "anything else so we just set these to",
+        "start": 352.729,
+        "duration": 4.981
+    },
+    {
+        "text": "all huge values and then the counts of",
+        "start": 354.979,
+        "duration": 6.59
+    },
+    {
+        "text": "these B is gonna be 1 P 1 a 1 and L 2",
+        "start": 357.71,
+        "duration": 6.389
+    },
+    {
+        "text": "while being here everything else gets",
+        "start": 361.569,
+        "duration": 4.75
+    },
+    {
+        "text": "set to 0 in the alphabet array up here",
+        "start": 364.099,
+        "duration": 4.47
+    },
+    {
+        "text": "and then like it's fine after that like",
+        "start": 366.319,
+        "duration": 3.451
+    },
+    {
+        "text": "hopefully that makes sense to you if it",
+        "start": 368.569,
+        "duration": 3.391
+    },
+    {
+        "text": "doesn't like it's pretty",
+        "start": 369.77,
+        "duration": 4.32
+    },
+    {
+        "text": "self-explanatory like you should watch",
+        "start": 371.96,
+        "duration": 4.709
+    },
+    {
+        "text": "other videos and maybe come back like if",
+        "start": 374.09,
+        "duration": 3.87
+    },
+    {
+        "text": "you're beginner it should make sense",
+        "start": 376.669,
+        "duration": 4.201
+    },
+    {
+        "text": "though like you know like everything",
+        "start": 377.96,
+        "duration": 5.19
+    },
+    {
+        "text": "will just go to 0 here everything's huge",
+        "start": 380.87,
+        "duration": 4.62
+    },
+    {
+        "text": "but when you go through here all the",
+        "start": 383.15,
+        "duration": 4.29
+    },
+    {
+        "text": "counts of anything but these will be 0",
+        "start": 385.49,
+        "duration": 4.169
+    },
+    {
+        "text": "so all the counts over here will all be",
+        "start": 387.44,
+        "duration": 5.49
+    },
+    {
+        "text": "0 except for these letters so and then",
+        "start": 389.659,
+        "duration": 5.07
+    },
+    {
+        "text": "you have the counts of these letters in",
+        "start": 392.93,
+        "duration": 3.09
+    },
+    {
+        "text": "this out one and then you go through",
+        "start": 394.729,
+        "duration": 3.111
+    },
+    {
+        "text": "that the out the min free",
+        "start": 396.02,
+        "duration": 3.59
+    },
+    {
+        "text": "and then you go through the next strings",
+        "start": 397.84,
+        "duration": 4.02
+    },
+    {
+        "text": "and then we just find the minimum",
+        "start": 399.61,
+        "duration": 4.59
+    },
+    {
+        "text": "frequency of all those letters right so",
+        "start": 401.86,
+        "duration": 5.01
+    },
+    {
+        "text": "pretty self-explanatory now we have this",
+        "start": 404.2,
+        "duration": 4.88
+    },
+    {
+        "text": "is perfect we have the min frequencies",
+        "start": 406.87,
+        "duration": 5.67
+    },
+    {
+        "text": "we have the values that we want we need",
+        "start": 409.08,
+        "duration": 4.99
+    },
+    {
+        "text": "this is perfect all we do is loop",
+        "start": 412.54,
+        "duration": 3.45
+    },
+    {
+        "text": "through it so we just do a loop through",
+        "start": 414.07,
+        "duration": 5.64
+    },
+    {
+        "text": "zero I is less than 26 hopefully this is",
+        "start": 415.99,
+        "duration": 5.55
+    },
+    {
+        "text": "making sense and then this is the only",
+        "start": 419.71,
+        "duration": 5.61
+    },
+    {
+        "text": "hard last hard part is just wow you just",
+        "start": 421.54,
+        "duration": 4.71
+    },
+    {
+        "text": "have to do a check",
+        "start": 425.32,
+        "duration": 3.51
+    },
+    {
+        "text": "while min frequencies of I is greater",
+        "start": 426.25,
+        "duration": 4.5
+    },
+    {
+        "text": "than zero and this is how we account for",
+        "start": 428.83,
+        "duration": 3.63
+    },
+    {
+        "text": "duplicates like if we want to put two",
+        "start": 430.75,
+        "duration": 4.11
+    },
+    {
+        "text": "L's in because min frequencies will have",
+        "start": 432.46,
+        "duration": 4.29
+    },
+    {
+        "text": "the count if there's two L's and all of",
+        "start": 434.86,
+        "duration": 6.48
+    },
+    {
+        "text": "these words then we just want to do add",
+        "start": 436.75,
+        "duration": 7.83
+    },
+    {
+        "text": "to our output array common chars dot add",
+        "start": 441.34,
+        "duration": 4.77
+    },
+    {
+        "text": "it has to be a string so you just do",
+        "start": 444.58,
+        "duration": 3.839
+    },
+    {
+        "text": "empty string plus and then you typecast",
+        "start": 446.11,
+        "duration": 10.38
+    },
+    {
+        "text": "a character of I plus a so we do I plus",
+        "start": 448.419,
+        "duration": 10.321
+    },
+    {
+        "text": "a to get to the character we need is",
+        "start": 456.49,
+        "duration": 6.81
+    },
+    {
+        "text": "between 0 and 26 is this will give us",
+        "start": 458.74,
+        "duration": 6.239
+    },
+    {
+        "text": "the index of the value we need we",
+        "start": 463.3,
+        "duration": 3.3
+    },
+    {
+        "text": "converted to a character we add it to",
+        "start": 464.979,
+        "duration": 3.181
+    },
+    {
+        "text": "our string so this gives us the",
+        "start": 466.6,
+        "duration": 3.39
+    },
+    {
+        "text": "character and then we decrement the",
+        "start": 468.16,
+        "duration": 5.48
+    },
+    {
+        "text": "count in min frequencies so if L was 2",
+        "start": 469.99,
+        "duration": 7.23
+    },
+    {
+        "text": "we would add 1 L into the final common",
+        "start": 473.64,
+        "duration": 6.46
+    },
+    {
+        "text": "chars then we would determine the 2 to 1",
+        "start": 477.22,
+        "duration": 5.1
+    },
+    {
+        "text": "we'd add another L do you command it to",
+        "start": 480.1,
+        "duration": 3.87
+    },
+    {
+        "text": "0 and then we died no Morell's and then",
+        "start": 482.32,
+        "duration": 3.81
+    },
+    {
+        "text": "we go to the next letter that's pretty",
+        "start": 483.97,
+        "duration": 5.759
+    },
+    {
+        "text": "much it and then you return common chars",
+        "start": 486.13,
+        "duration": 5.31
+    },
+    {
+        "text": "this is one of the hardest ones for me",
+        "start": 489.729,
+        "duration": 4.321
+    },
+    {
+        "text": "to explain so far for some reason it's",
+        "start": 491.44,
+        "duration": 4.83
+    },
+    {
+        "text": "just like you know the it's kind of like",
+        "start": 494.05,
+        "duration": 9.72
+    },
+    {
+        "text": "you just got to get it decrements it's",
+        "start": 496.27,
+        "duration": 10.619
+    },
+    {
+        "text": "successful that's how you do it just",
+        "start": 503.77,
+        "duration": 5.399
+    },
+    {
+        "text": "like look at it kind of take it in it's",
+        "start": 506.889,
+        "duration": 4.351
+    },
+    {
+        "text": "really hard for me to explain just know",
+        "start": 509.169,
+        "duration": 4.651
+    },
+    {
+        "text": "that using you don't need a hash map for",
+        "start": 511.24,
+        "duration": 5.13
+    },
+    {
+        "text": "char frequencies you use an alphabet int",
+        "start": 513.82,
+        "duration": 4.95
+    },
+    {
+        "text": "array int array of size of the alphabet",
+        "start": 516.37,
+        "duration": 5.159
+    },
+    {
+        "text": "and each index corresponds to the",
+        "start": 518.77,
+        "duration": 4.079
+    },
+    {
+        "text": "position of the letter in the alphabet",
+        "start": 521.529,
+        "duration": 5.371
+    },
+    {
+        "text": "you convert from ascii to char by top",
+        "start": 522.849,
+        "duration": 5.041
+    },
+    {
+        "text": "you could typecast",
+        "start": 526.9,
+        "duration": 4.2
+    },
+    {
+        "text": "or you can do arithmetic operations so",
+        "start": 527.89,
+        "duration": 3.389
+    },
+    {
+        "text": "you",
+        "start": 531.1,
+        "duration": 3.419
+    },
+    {
+        "text": "just do I plus a or you know the current",
+        "start": 531.279,
+        "duration": 6.211
+    },
+    {
+        "text": "charm minus a to get the index in the",
+        "start": 534.519,
+        "duration": 5.37
+    },
+    {
+        "text": "alphabet you increment and decrement",
+        "start": 537.49,
+        "duration": 3.99
+    },
+    {
+        "text": "values and then you know that's pretty",
+        "start": 539.889,
+        "duration": 3.151
+    },
+    {
+        "text": "much it you can just use math dot min",
+        "start": 541.48,
+        "duration": 3.0
+    },
+    {
+        "text": "it's pretty self-explanatory besides",
+        "start": 543.04,
+        "duration": 3.149
+    },
+    {
+        "text": "that so let me know if you have a better",
+        "start": 544.48,
+        "duration": 4.079
+    },
+    {
+        "text": "solution in the comments thank you guys",
+        "start": 546.189,
+        "duration": 4.32
+    },
+    {
+        "text": "for watching sorry if the explanation",
+        "start": 548.559,
+        "duration": 4.95
+    },
+    {
+        "text": "wasn't that good I really tried but it",
+        "start": 550.509,
+        "duration": 5.461
+    },
+    {
+        "text": "is a tough one to explain so please",
+        "start": 553.509,
+        "duration": 3.961
+    },
+    {
+        "text": "watch my other videos",
+        "start": 555.97,
+        "duration": 3.179
+    },
+    {
+        "text": "they're usually better explanations but",
+        "start": 557.47,
+        "duration": 3.21
+    },
+    {
+        "text": "thanks for watching hey miss you guys",
+        "start": 559.149,
+        "duration": 4.04
+    },
+    {
+        "text": "next time",
+        "start": 560.68,
+        "duration": 2.509
+    }
+]

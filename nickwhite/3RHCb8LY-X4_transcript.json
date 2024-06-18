@@ -1,0 +1,437 @@
+[
+    {
+        "text": "um hey what's up guys NIC ye I do",
+        "start": 0.03,
+        "duration": 4.74
+    },
+    {
+        "text": "tacking cutting stuff on twitching",
+        "start": 3.149,
+        "duration": 3.48
+    },
+    {
+        "text": "YouTube I'm doing all the leak out and a",
+        "start": 4.77,
+        "duration": 3.539
+    },
+    {
+        "text": "crank rum so I playlist for those I'm a",
+        "start": 6.629,
+        "duration": 2.671
+    },
+    {
+        "text": "channel everything else in the",
+        "start": 8.309,
+        "duration": 3.151
+    },
+    {
+        "text": "description this problem is called best",
+        "start": 9.3,
+        "duration": 3.99
+    },
+    {
+        "text": "time to buy and sell stock it's an easy",
+        "start": 11.46,
+        "duration": 4.17
+    },
+    {
+        "text": "problem a lot of likes will give it a",
+        "start": 13.29,
+        "duration": 5.34
+    },
+    {
+        "text": "like it's super easy alright so you have",
+        "start": 15.63,
+        "duration": 5.85
+    },
+    {
+        "text": "an array for the iPhone meant for which",
+        "start": 18.63,
+        "duration": 4.95
+    },
+    {
+        "text": "the iPhone mint is a price of a given",
+        "start": 21.48,
+        "duration": 4.049
+    },
+    {
+        "text": "stock on a day I all right so this is",
+        "start": 23.58,
+        "duration": 5.459
+    },
+    {
+        "text": "the each day each index index of the",
+        "start": 25.529,
+        "duration": 7.321
+    },
+    {
+        "text": "array is a day and each value is the",
+        "start": 29.039,
+        "duration": 6.661
+    },
+    {
+        "text": "value of the stock on this day so if you",
+        "start": 32.85,
+        "duration": 4.11
+    },
+    {
+        "text": "were permitted to complete one",
+        "start": 35.7,
+        "duration": 3.78
+    },
+    {
+        "text": "transaction we can buy and sell one",
+        "start": 36.96,
+        "duration": 4.619
+    },
+    {
+        "text": "stock we divide then we have to define",
+        "start": 39.48,
+        "duration": 4.079
+    },
+    {
+        "text": "an algorithm to find the maximum profit",
+        "start": 41.579,
+        "duration": 4.471
+    },
+    {
+        "text": "we can make right so if we buy a stock",
+        "start": 43.559,
+        "duration": 5.221
+    },
+    {
+        "text": "on the first day and it's you know worth",
+        "start": 46.05,
+        "duration": 5.04
+    },
+    {
+        "text": "$7 and then we sell it on the second day",
+        "start": 48.78,
+        "duration": 2.91
+    },
+    {
+        "text": "for $1",
+        "start": 51.09,
+        "duration": 2.19
+    },
+    {
+        "text": "we're losing six bucks so that's",
+        "start": 51.69,
+        "duration": 4.5
+    },
+    {
+        "text": "obviously terrible algorithm or terrible",
+        "start": 53.28,
+        "duration": 5.82
+    },
+    {
+        "text": "solution right what we want to do is we",
+        "start": 56.19,
+        "duration": 5.25
+    },
+    {
+        "text": "want to buy for $1 and then sell at the",
+        "start": 59.1,
+        "duration": 4.949
+    },
+    {
+        "text": "next maximum value right we can't sell",
+        "start": 61.44,
+        "duration": 4.35
+    },
+    {
+        "text": "we can't keep grabbing for $1 and then",
+        "start": 64.049,
+        "duration": 5.311
+    },
+    {
+        "text": "sell it for $7 because that was the day",
+        "start": 65.79,
+        "duration": 5.369
+    },
+    {
+        "text": "before we bought it and we can't go back",
+        "start": 69.36,
+        "duration": 5.31
+    },
+    {
+        "text": "in time obviously so what we're gonna do",
+        "start": 71.159,
+        "duration": 5.881
+    },
+    {
+        "text": "here is you can't you can do a double",
+        "start": 74.67,
+        "duration": 4.46
+    },
+    {
+        "text": "for loop so you can do a for loop and",
+        "start": 77.04,
+        "duration": 5.61
+    },
+    {
+        "text": "find you know you can check each element",
+        "start": 79.13,
+        "duration": 5.62
+    },
+    {
+        "text": "so you start at 7 and then you have",
+        "start": 82.65,
+        "duration": 4.17
+    },
+    {
+        "text": "another loop that checks the difference",
+        "start": 84.75,
+        "duration": 4.56
+    },
+    {
+        "text": "between 7 and all of the next elements",
+        "start": 86.82,
+        "duration": 4.56
+    },
+    {
+        "text": "that come after it and then to have a",
+        "start": 89.31,
+        "duration": 4.47
+    },
+    {
+        "text": "max profit variable and keep updating it",
+        "start": 91.38,
+        "duration": 4.349
+    },
+    {
+        "text": "like that but that's event squared",
+        "start": 93.78,
+        "duration": 5.04
+    },
+    {
+        "text": "solution and no one's gonna like that so",
+        "start": 95.729,
+        "duration": 4.291
+    },
+    {
+        "text": "what we're gonna do is we're gonna have",
+        "start": 98.82,
+        "duration": 3.259
+    },
+    {
+        "text": "a variable called min bail set to",
+        "start": 100.02,
+        "duration": 7.32
+    },
+    {
+        "text": "integer dot max value right always 7",
+        "start": 102.079,
+        "duration": 8.771
+    },
+    {
+        "text": "mins to Max's and maxes 2 mins initially",
+        "start": 107.34,
+        "duration": 5.91
+    },
+    {
+        "text": "and then we'll have an int max profit",
+        "start": 110.85,
+        "duration": 4.559
+    },
+    {
+        "text": "we're assuming these are all positive so",
+        "start": 113.25,
+        "duration": 4.11
+    },
+    {
+        "text": "I'm just going to say a zero okay so",
+        "start": 115.409,
+        "duration": 3.451
+    },
+    {
+        "text": "we're gonna do our it's a single scan",
+        "start": 117.36,
+        "duration": 7.23
+    },
+    {
+        "text": "through prices prices top lane I plus",
+        "start": 118.86,
+        "duration": 8.939
+    },
+    {
+        "text": "plus we're gonna do two checks each time",
+        "start": 124.59,
+        "duration": 4.889
+    },
+    {
+        "text": "so each time we're gonna check the",
+        "start": 127.799,
+        "duration": 4.701
+    },
+    {
+        "text": "prices of I less than",
+        "start": 129.479,
+        "duration": 7.281
+    },
+    {
+        "text": "then we just set them down to prices by",
+        "start": 132.5,
+        "duration": 10.81
+    },
+    {
+        "text": "pretty standard right this is just I",
+        "start": 136.76,
+        "duration": 8.35
+    },
+    {
+        "text": "found them in an array like pretty easy",
+        "start": 143.31,
+        "duration": 4.32
+    },
+    {
+        "text": "okay otherwise this is the well not",
+        "start": 145.11,
+        "duration": 4.29
+    },
+    {
+        "text": "otherwise but this is just another check",
+        "start": 147.63,
+        "duration": 3.72
+    },
+    {
+        "text": "we're always gonna do we're gonna do if",
+        "start": 149.4,
+        "duration": 6.75
+    },
+    {
+        "text": "prices of I - min Val is greater than",
+        "start": 151.35,
+        "duration": 10.43
+    },
+    {
+        "text": "max profit then we reset the max profit",
+        "start": 156.15,
+        "duration": 5.63
+    },
+    {
+        "text": "those prices by - min Bell so just",
+        "start": 162.2,
+        "duration": 7.89
+    },
+    {
+        "text": "pretty much an intuitive algorithm here",
+        "start": 168.12,
+        "duration": 4.89
+    },
+    {
+        "text": "you just set the min bow so each time we",
+        "start": 170.09,
+        "duration": 5.32
+    },
+    {
+        "text": "would go from it would start at 7 and",
+        "start": 173.01,
+        "duration": 4.38
+    },
+    {
+        "text": "then it would go to 1 and we would check",
+        "start": 175.41,
+        "duration": 4.83
+    },
+    {
+        "text": "each time you know say it's one now and",
+        "start": 177.39,
+        "duration": 4.71
+    },
+    {
+        "text": "then we're on element five we would do",
+        "start": 180.24,
+        "duration": 5.73
+    },
+    {
+        "text": "up 5 - 1 that's 4 so 4 would get set as",
+        "start": 182.1,
+        "duration": 5.13
+    },
+    {
+        "text": "the max profit because all we have to",
+        "start": 185.97,
+        "duration": 3.75
+    },
+    {
+        "text": "return is the max profit and then you",
+        "start": 187.23,
+        "duration": 4.05
+    },
+    {
+        "text": "know if the min bell would stay at 1",
+        "start": 189.72,
+        "duration": 3.12
+    },
+    {
+        "text": "obviously in this case cuz one's the",
+        "start": 191.28,
+        "duration": 3.45
+    },
+    {
+        "text": "lowest value and then you know as we",
+        "start": 192.84,
+        "duration": 3.66
+    },
+    {
+        "text": "keep looping we always check if prices",
+        "start": 194.73,
+        "duration": 3.87
+    },
+    {
+        "text": "of I so we'd get to 6 eventually if 6 is",
+        "start": 196.5,
+        "duration": 5.459
+    },
+    {
+        "text": "minus 1 is greater than max profit then",
+        "start": 198.6,
+        "duration": 5.01
+    },
+    {
+        "text": "we would reset it and then we get the",
+        "start": 201.959,
+        "duration": 4.411
+    },
+    {
+        "text": "max profit so really easy right here all",
+        "start": 203.61,
+        "duration": 4.02
+    },
+    {
+        "text": "you have to return is the max profit",
+        "start": 206.37,
+        "duration": 3.57
+    },
+    {
+        "text": "that's all we're searching for not",
+        "start": 207.63,
+        "duration": 4.41
+    },
+    {
+        "text": "really it's kind of like a more beginner",
+        "start": 209.94,
+        "duration": 6.24
+    },
+    {
+        "text": "problem mode say so that's pretty much",
+        "start": 212.04,
+        "duration": 6.15
+    },
+    {
+        "text": "it so let me know if you have a better",
+        "start": 216.18,
+        "duration": 4.98
+    },
+    {
+        "text": "solution but yeah definitely check out",
+        "start": 218.19,
+        "duration": 7.46
+    },
+    {
+        "text": "the other problems and thank you so see",
+        "start": 221.16,
+        "duration": 4.49
+    }
+]

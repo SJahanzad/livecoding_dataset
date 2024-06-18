@@ -1,0 +1,557 @@
+[
+    {
+        "text": "hey what's up guys Nick white I do tech",
+        "start": 1.34,
+        "duration": 4.479
+    },
+    {
+        "text": "and coding stuff on twitch and YouTube",
+        "start": 4.23,
+        "duration": 3.0
+    },
+    {
+        "text": "so if you want to check anything out",
+        "start": 5.819,
+        "duration": 3.631
+    },
+    {
+        "text": "it's all in the description I do all the",
+        "start": 7.23,
+        "duration": 3.81
+    },
+    {
+        "text": "Waco problems I got a super long",
+        "start": 9.45,
+        "duration": 3.63
+    },
+    {
+        "text": "playlist of explanations so if you want",
+        "start": 11.04,
+        "duration": 3.179
+    },
+    {
+        "text": "to check that it's a playlist on my",
+        "start": 13.08,
+        "duration": 3.24
+    },
+    {
+        "text": "channel I got them and they're like 50",
+        "start": 14.219,
+        "duration": 4.89
+    },
+    {
+        "text": "now this one's called peak index in a",
+        "start": 16.32,
+        "duration": 5.879
+    },
+    {
+        "text": "mountain array let's call in array a a",
+        "start": 19.109,
+        "duration": 5.16
+    },
+    {
+        "text": "mountain if the following properties",
+        "start": 22.199,
+        "duration": 4.111
+    },
+    {
+        "text": "hold this one's super easy a lot of",
+        "start": 24.269,
+        "duration": 3.721
+    },
+    {
+        "text": "dislikes I don't really know why there's",
+        "start": 26.31,
+        "duration": 4.139
+    },
+    {
+        "text": "this let me see oh yeah people said that",
+        "start": 27.99,
+        "duration": 5.79
+    },
+    {
+        "text": "the solutions didn't work basically a",
+        "start": 30.449,
+        "duration": 7.741
+    },
+    {
+        "text": "mountain means that the array has a",
+        "start": 33.78,
+        "duration": 6.209
+    },
+    {
+        "text": "length greater than 3 greater than or",
+        "start": 38.19,
+        "duration": 3.77
+    },
+    {
+        "text": "equal to 3 and then there exists some I",
+        "start": 39.989,
+        "duration": 5.791
+    },
+    {
+        "text": "where a of I is going to be so an",
+        "start": 41.96,
+        "duration": 5.65
+    },
+    {
+        "text": "element is going to be greater than the",
+        "start": 45.78,
+        "duration": 3.66
+    },
+    {
+        "text": "previous element and greater than the",
+        "start": 47.61,
+        "duration": 4.08
+    },
+    {
+        "text": "element afterwards so basically how",
+        "start": 49.44,
+        "duration": 7.32
+    },
+    {
+        "text": "these arrays work is the array is",
+        "start": 51.69,
+        "duration": 8.189
+    },
+    {
+        "text": "basically sorted in the input except for",
+        "start": 56.76,
+        "duration": 4.83
+    },
+    {
+        "text": "one element 1 element is gonna be",
+        "start": 59.879,
+        "duration": 3.09
+    },
+    {
+        "text": "greater than the element before and",
+        "start": 61.59,
+        "duration": 4.19
+    },
+    {
+        "text": "greater than the element afterwards",
+        "start": 62.969,
+        "duration": 5.101
+    },
+    {
+        "text": "other than that they're pretty much",
+        "start": 65.78,
+        "duration": 5.199
+    },
+    {
+        "text": "sorted all of the elements beforehand",
+        "start": 68.07,
+        "duration": 5.549
+    },
+    {
+        "text": "are going to be look as you can see this",
+        "start": 70.979,
+        "duration": 5.0
+    },
+    {
+        "text": "is gonna be the input it's gonna be this",
+        "start": 73.619,
+        "duration": 4.411
+    },
+    {
+        "text": "elements gonna be less than the next",
+        "start": 75.979,
+        "duration": 5.771
+    },
+    {
+        "text": "element until we hit that mountain and",
+        "start": 78.03,
+        "duration": 9.36
+    },
+    {
+        "text": "then yeah that's pretty much it so and",
+        "start": 81.75,
+        "duration": 7.32
+    },
+    {
+        "text": "then after that they're gonna be greater",
+        "start": 87.39,
+        "duration": 3.96
+    },
+    {
+        "text": "than so to do this you could do a linear",
+        "start": 89.07,
+        "duration": 5.31
+    },
+    {
+        "text": "scan which is one of the methods in the",
+        "start": 91.35,
+        "duration": 5.159
+    },
+    {
+        "text": "solution you just do a linear scan until",
+        "start": 94.38,
+        "duration": 4.8
+    },
+    {
+        "text": "you find the mountain obviously while",
+        "start": 96.509,
+        "duration": 4.32
+    },
+    {
+        "text": "the elements are all less than the next",
+        "start": 99.18,
+        "duration": 4.53
+    },
+    {
+        "text": "element just increment until you get to",
+        "start": 100.829,
+        "duration": 5.101
+    },
+    {
+        "text": "until this loop breaks and then you",
+        "start": 103.71,
+        "duration": 3.839
+    },
+    {
+        "text": "actually find the element where the",
+        "start": 105.93,
+        "duration": 4.92
+    },
+    {
+        "text": "mountain exists oh that's Alvin easy and",
+        "start": 107.549,
+        "duration": 4.831
+    },
+    {
+        "text": "then you have binary search is the other",
+        "start": 110.85,
+        "duration": 4.49
+    },
+    {
+        "text": "one we can implement that really quick",
+        "start": 112.38,
+        "duration": 5.73
+    },
+    {
+        "text": "all you have to do is this is just a",
+        "start": 115.34,
+        "duration": 4.87
+    },
+    {
+        "text": "basic binary search and left equals 0",
+        "start": 118.11,
+        "duration": 4.38
+    },
+    {
+        "text": "sorry about the noise 2 is equal the",
+        "start": 120.21,
+        "duration": 5.729
+    },
+    {
+        "text": "right is equal to a a tile and minus 1",
+        "start": 122.49,
+        "duration": 5.4
+    },
+    {
+        "text": "while left is less than right just like",
+        "start": 125.939,
+        "duration": 4.621
+    },
+    {
+        "text": "all the other binary searches midpoint",
+        "start": 127.89,
+        "duration": 4.38
+    },
+    {
+        "text": "is equal to love",
+        "start": 130.56,
+        "duration": 5.19
+    },
+    {
+        "text": "Plus right - left / - that's how you",
+        "start": 132.27,
+        "duration": 6.36
+    },
+    {
+        "text": "pick a midpoint binary search and then",
+        "start": 135.75,
+        "duration": 6.84
+    },
+    {
+        "text": "this is the condition if a midpoint is",
+        "start": 138.63,
+        "duration": 10.44
+    },
+    {
+        "text": "less an a midpoint + 1 then that means",
+        "start": 142.59,
+        "duration": 10.17
+    },
+    {
+        "text": "we're still in the increasing area on",
+        "start": 149.07,
+        "duration": 5.13
+    },
+    {
+        "text": "the left side of the array we're still",
+        "start": 152.76,
+        "duration": 5.07
+    },
+    {
+        "text": "increasing in value so we want to find",
+        "start": 154.2,
+        "duration": 5.07
+    },
+    {
+        "text": "the mountain exactly so we're gonna do",
+        "start": 157.83,
+        "duration": 5.67
+    },
+    {
+        "text": "left equals midpoint plus 1 because we",
+        "start": 159.27,
+        "duration": 6.09
+    },
+    {
+        "text": "know but the midpoint is less than the",
+        "start": 163.5,
+        "duration": 4.8
+    },
+    {
+        "text": "element after it so we're gonna put left",
+        "start": 165.36,
+        "duration": 5.46
+    },
+    {
+        "text": "- at least the midpoint if we start left",
+        "start": 168.3,
+        "duration": 7.91
+    },
+    {
+        "text": "in midpoint + 1 and that just means that",
+        "start": 170.82,
+        "duration": 5.39
+    },
+    {
+        "text": "there's a chance that we could break out",
+        "start": 176.51,
+        "duration": 4.51
+    },
+    {
+        "text": "at this condition 1 when it happened so",
+        "start": 179.07,
+        "duration": 5.03
+    },
+    {
+        "text": "you want to set left in midpoint plus 1",
+        "start": 181.02,
+        "duration": 6.39
+    },
+    {
+        "text": "because otherwise and then otherwise you",
+        "start": 184.1,
+        "duration": 5.56
+    },
+    {
+        "text": "want to set right this is like all the",
+        "start": 187.41,
+        "duration": 3.21
+    },
+    {
+        "text": "other binary search",
+        "start": 189.66,
+        "duration": 3.75
+    },
+    {
+        "text": "it's a midpoint so yeah if we the other",
+        "start": 190.62,
+        "duration": 4.65
+    },
+    {
+        "text": "the other condition is that midpoint is",
+        "start": 193.41,
+        "duration": 4.56
+    },
+    {
+        "text": "greater than or equal to midpoint Plus",
+        "start": 195.27,
+        "duration": 3.27
+    },
+    {
+        "text": "Ones",
+        "start": 197.97,
+        "duration": 2.16
+    },
+    {
+        "text": "that means we at least found the",
+        "start": 198.54,
+        "duration": 3.54
+    },
+    {
+        "text": "mountain or we're decreasing in value",
+        "start": 200.13,
+        "duration": 4.62
+    },
+    {
+        "text": "now so all we're doing is we're doing",
+        "start": 202.08,
+        "duration": 5.28
+    },
+    {
+        "text": "the second form of binary search that we",
+        "start": 204.75,
+        "duration": 4.74
+    },
+    {
+        "text": "learned in the explore page and we're",
+        "start": 207.36,
+        "duration": 4.44
+    },
+    {
+        "text": "returning low after all this because",
+        "start": 209.49,
+        "duration": 5.22
+    },
+    {
+        "text": "when we return low low I mean sorry left",
+        "start": 211.8,
+        "duration": 5.42
+    },
+    {
+        "text": "I was mixed up because I saw this one",
+        "start": 214.71,
+        "duration": 5.52
+    },
+    {
+        "text": "left is going to be at the exact index",
+        "start": 217.22,
+        "duration": 6.91
+    },
+    {
+        "text": "that we want for the mouth because we're",
+        "start": 220.23,
+        "duration": 5.85
+    },
+    {
+        "text": "setting the wife to midpoint plus one",
+        "start": 224.13,
+        "duration": 3.45
+    },
+    {
+        "text": "each time that we see this condition",
+        "start": 226.08,
+        "duration": 2.76
+    },
+    {
+        "text": "because we're still increasing in value",
+        "start": 227.58,
+        "duration": 3.0
+    },
+    {
+        "text": "and we want to find we want this",
+        "start": 228.84,
+        "duration": 4.14
+    },
+    {
+        "text": "condition to be a a midpoint plus one is",
+        "start": 230.58,
+        "duration": 5.31
+    },
+    {
+        "text": "greater than a midpoint or a midpoint is",
+        "start": 232.98,
+        "duration": 4.35
+    },
+    {
+        "text": "greater than they have a midpoint minus",
+        "start": 235.89,
+        "duration": 4.38
+    },
+    {
+        "text": "1 we want left to be we want to hit that",
+        "start": 237.33,
+        "duration": 6.18
+    },
+    {
+        "text": "condition and returns one left gets to",
+        "start": 240.27,
+        "duration": 5.64
+    },
+    {
+        "text": "the correct index right will also be if",
+        "start": 243.51,
+        "duration": 4.29
+    },
+    {
+        "text": "the correct index will break out of this",
+        "start": 245.91,
+        "duration": 3.54
+    },
+    {
+        "text": "I'm pretty sure you could return right",
+        "start": 247.8,
+        "duration": 5.58
+    },
+    {
+        "text": "and it would work too they'll both just",
+        "start": 249.45,
+        "duration": 6.63
+    },
+    {
+        "text": "give set to the perfect index so that's",
+        "start": 253.38,
+        "duration": 4.14
+    },
+    {
+        "text": "pretty much it just a standard binary",
+        "start": 256.08,
+        "duration": 2.7
+    },
+    {
+        "text": "search thing sorry about the noise",
+        "start": 257.52,
+        "duration": 2.7
+    },
+    {
+        "text": "there's a lot of people around them in",
+        "start": 258.78,
+        "duration": 3.209
+    },
+    {
+        "text": "the library but it's a really easy",
+        "start": 260.22,
+        "duration": 3.77
+    },
+    {
+        "text": "problem so hopefully you guys understand",
+        "start": 261.989,
+        "duration": 4.921
+    },
+    {
+        "text": "people are mad those don't work but",
+        "start": 263.99,
+        "duration": 6.31
+    },
+    {
+        "text": "works fine for me so we'll just go on to",
+        "start": 266.91,
+        "duration": 4.95
+    },
+    {
+        "text": "new ones obviously not the best problem",
+        "start": 270.3,
+        "duration": 2.85
+    },
+    {
+        "text": "for interviews I don't think that would",
+        "start": 271.86,
+        "duration": 3.06
+    },
+    {
+        "text": "come up but thanks for watching and",
+        "start": 273.15,
+        "duration": 5.42
+    },
+    {
+        "text": "check out the other solutions see was",
+        "start": 274.92,
+        "duration": 3.65
+    }
+]

@@ -1,0 +1,977 @@
+[
+    {
+        "text": "let's all leak code one to some the most",
+        "start": 0.03,
+        "duration": 4.95
+    },
+    {
+        "text": "popular leak code question so we're",
+        "start": 2.73,
+        "duration": 4.77
+    },
+    {
+        "text": "given an input array and some target in",
+        "start": 4.98,
+        "duration": 5.13
+    },
+    {
+        "text": "this case 9 and we want to find the two",
+        "start": 7.5,
+        "duration": 5.099
+    },
+    {
+        "text": "values in this input array that sum to 9",
+        "start": 10.11,
+        "duration": 5.399
+    },
+    {
+        "text": "so in this case it's 2 & 7 now we want",
+        "start": 12.599,
+        "duration": 4.591
+    },
+    {
+        "text": "to return the indices of these two",
+        "start": 15.509,
+        "duration": 4.591
+    },
+    {
+        "text": "values so the index of zero of the index",
+        "start": 17.19,
+        "duration": 5.73
+    },
+    {
+        "text": "of two is zero the index of 7 is 1 so we",
+        "start": 20.1,
+        "duration": 3.96
+    },
+    {
+        "text": "return 0 & 1",
+        "start": 22.92,
+        "duration": 3.119
+    },
+    {
+        "text": "we're guaranteed that there's exactly",
+        "start": 24.06,
+        "duration": 3.84
+    },
+    {
+        "text": "one solution so we don't have to worry",
+        "start": 26.039,
+        "duration": 4.111
+    },
+    {
+        "text": "about not finding a solution and we",
+        "start": 27.9,
+        "duration": 3.36
+    },
+    {
+        "text": "don't have to worry about multiple",
+        "start": 30.15,
+        "duration": 3.78
+    },
+    {
+        "text": "solutions now the most intuitive way to",
+        "start": 31.26,
+        "duration": 4.65
+    },
+    {
+        "text": "solve this problem is basically just",
+        "start": 33.93,
+        "duration": 4.08
+    },
+    {
+        "text": "check every combination of two values",
+        "start": 35.91,
+        "duration": 4.19
+    },
+    {
+        "text": "and see if they can sum up to our target",
+        "start": 38.01,
+        "duration": 5.639
+    },
+    {
+        "text": "so we start at 2 we check every",
+        "start": 40.1,
+        "duration": 5.619
+    },
+    {
+        "text": "combination we can make that includes 2",
+        "start": 43.649,
+        "duration": 4.41
+    },
+    {
+        "text": "so we scan through the remainder of the",
+        "start": 45.719,
+        "duration": 5.671
+    },
+    {
+        "text": "array 1 5 3 and check if any of those",
+        "start": 48.059,
+        "duration": 6.301
+    },
+    {
+        "text": "numbers added to 2 some store target for",
+        "start": 51.39,
+        "duration": 8.91
+    },
+    {
+        "text": "in this case none of them do so next we",
+        "start": 54.36,
+        "duration": 7.14
+    },
+    {
+        "text": "can repeat the process",
+        "start": 60.3,
+        "duration": 3.81
+    },
+    {
+        "text": "let's check every combination including",
+        "start": 61.5,
+        "duration": 5.25
+    },
+    {
+        "text": "one that sums up the target for so we",
+        "start": 64.11,
+        "duration": 4.29
+    },
+    {
+        "text": "scan through every element that comes",
+        "start": 66.75,
+        "duration": 5.43
+    },
+    {
+        "text": "after at 5 & 3 and we find that one",
+        "start": 68.4,
+        "duration": 7.19
+    },
+    {
+        "text": "added with 3 sums up to our target 4",
+        "start": 72.18,
+        "duration": 5.97
+    },
+    {
+        "text": "notice that we didn't have to check the",
+        "start": 75.59,
+        "duration": 4.66
+    },
+    {
+        "text": "values that came before 1 because we",
+        "start": 78.15,
+        "duration": 4.59
+    },
+    {
+        "text": "already checked the combination 2 & 1",
+        "start": 80.25,
+        "duration": 4.619
+    },
+    {
+        "text": "when we were up over here remember when",
+        "start": 82.74,
+        "duration": 4.71
+    },
+    {
+        "text": "we checked every combination with 2 so",
+        "start": 84.869,
+        "duration": 4.261
+    },
+    {
+        "text": "we didn't have to repeat that work down",
+        "start": 87.45,
+        "duration": 3.33
+    },
+    {
+        "text": "here we only had to check the numbers",
+        "start": 89.13,
+        "duration": 3.15
+    },
+    {
+        "text": "that came after 1",
+        "start": 90.78,
+        "duration": 3.72
+    },
+    {
+        "text": "so the runtime of this algorithm isn't",
+        "start": 92.28,
+        "duration": 4.5
+    },
+    {
+        "text": "super efficient this is basically brute",
+        "start": 94.5,
+        "duration": 3.84
+    },
+    {
+        "text": "force we're going through the entire",
+        "start": 96.78,
+        "duration": 3.629
+    },
+    {
+        "text": "array of length and and we're gonna do",
+        "start": 98.34,
+        "duration": 5.099
+    },
+    {
+        "text": "that worst case n times for each number",
+        "start": 100.409,
+        "duration": 5.67
+    },
+    {
+        "text": "this means that over all worst case time",
+        "start": 103.439,
+        "duration": 5.731
+    },
+    {
+        "text": "complexity will be O of N squared so can",
+        "start": 106.079,
+        "duration": 5.881
+    },
+    {
+        "text": "we do better now the thing to notice is",
+        "start": 109.17,
+        "duration": 6.839
+    },
+    {
+        "text": "that for each number for example 1 the",
+        "start": 111.96,
+        "duration": 6.21
+    },
+    {
+        "text": "value we're looking for is the",
+        "start": 116.009,
+        "duration": 4.71
+    },
+    {
+        "text": "difference between the target and this",
+        "start": 118.17,
+        "duration": 5.699
+    },
+    {
+        "text": "value 1 so we're looking for 4 minus 1",
+        "start": 120.719,
+        "duration": 5.911
+    },
+    {
+        "text": "which is equal to 3 so that means this",
+        "start": 123.869,
+        "duration": 5.25
+    },
+    {
+        "text": "is the only value we can add to one",
+        "start": 126.63,
+        "duration": 4.59
+    },
+    {
+        "text": "that'll equal the target so we don't",
+        "start": 129.119,
+        "duration": 3.751
+    },
+    {
+        "text": "have to check every number we just want",
+        "start": 131.22,
+        "duration": 2.379
+    },
+    {
+        "text": "to know if",
+        "start": 132.87,
+        "duration": 3.129
+    },
+    {
+        "text": "resist s-- now the easiest way we can do",
+        "start": 133.599,
+        "duration": 4.351
+    },
+    {
+        "text": "this the most efficient is by making a",
+        "start": 135.999,
+        "duration": 4.531
+    },
+    {
+        "text": "hash map of every value in our input",
+        "start": 137.95,
+        "duration": 4.409
+    },
+    {
+        "text": "array so we can instantly check if the",
+        "start": 140.53,
+        "duration": 7.14
+    },
+    {
+        "text": "value 3 exists now let's try the same",
+        "start": 142.359,
+        "duration": 7.621
+    },
+    {
+        "text": "problem except let's use a hash map this",
+        "start": 147.67,
+        "duration": 9.149
+    },
+    {
+        "text": "time now in our hash map we're going to",
+        "start": 149.98,
+        "duration": 9.479
+    },
+    {
+        "text": "be mapping each value to the index of",
+        "start": 156.819,
+        "duration": 5.7
+    },
+    {
+        "text": "each value so the index of 2 is 0 the",
+        "start": 159.459,
+        "duration": 5.521
+    },
+    {
+        "text": "index of 1 is 1 the index of 5 is 2 the",
+        "start": 162.519,
+        "duration": 5.101
+    },
+    {
+        "text": "index of 3 is 3 so let's so in our hash",
+        "start": 164.98,
+        "duration": 4.649
+    },
+    {
+        "text": "map we're going to be mapping the value",
+        "start": 167.62,
+        "duration": 5.599
+    },
+    {
+        "text": "to the index",
+        "start": 169.629,
+        "duration": 3.59
+    },
+    {
+        "text": "now we could add every value in this",
+        "start": 175.29,
+        "duration": 7.0
+    },
+    {
+        "text": "array into the hash map before we start",
+        "start": 179.409,
+        "duration": 4.41
+    },
+    {
+        "text": "iterating through it but there's",
+        "start": 182.29,
+        "duration": 3.779
+    },
+    {
+        "text": "actually an easier way to do it if we",
+        "start": 183.819,
+        "duration": 4.471
+    },
+    {
+        "text": "added the entire array into the hash map",
+        "start": 186.069,
+        "duration": 4.021
+    },
+    {
+        "text": "initially then we would get to the value",
+        "start": 188.29,
+        "duration": 4.14
+    },
+    {
+        "text": "2 first right we would want to checked",
+        "start": 190.09,
+        "duration": 5.399
+    },
+    {
+        "text": "as the difference between target 4 minus",
+        "start": 192.43,
+        "duration": 6.389
+    },
+    {
+        "text": "this value 2 which is equal to 2 exists",
+        "start": 195.489,
+        "duration": 5.52
+    },
+    {
+        "text": "in our hash map and we would find that 2",
+        "start": 198.819,
+        "duration": 4.41
+    },
+    {
+        "text": "does exist in our hash map but we're not",
+        "start": 201.009,
+        "duration": 5.19
+    },
+    {
+        "text": "allowed to reuse the same one right",
+        "start": 203.229,
+        "duration": 5.13
+    },
+    {
+        "text": "because they're both at the same index",
+        "start": 206.199,
+        "duration": 4.74
+    },
+    {
+        "text": "we can't use the same value twice so we",
+        "start": 208.359,
+        "duration": 4.44
+    },
+    {
+        "text": "would have to compare the index of our",
+        "start": 210.939,
+        "duration": 4.8
+    },
+    {
+        "text": "current 2 with the index of the 2 that's",
+        "start": 212.799,
+        "duration": 5.4
+    },
+    {
+        "text": "in our hash map there's actually an",
+        "start": 215.739,
+        "duration": 4.17
+    },
+    {
+        "text": "easier way to do this though and it's a",
+        "start": 218.199,
+        "duration": 3.301
+    },
+    {
+        "text": "little clever and let me show you how to",
+        "start": 219.909,
+        "duration": 3.961
+    },
+    {
+        "text": "do it that way so doing it this clever",
+        "start": 221.5,
+        "duration": 4.5
+    },
+    {
+        "text": "way initially we say our hash map is",
+        "start": 223.87,
+        "duration": 4.649
+    },
+    {
+        "text": "empty so we get to the value 2 first of",
+        "start": 226.0,
+        "duration": 4.59
+    },
+    {
+        "text": "all right and we want to look for the",
+        "start": 228.519,
+        "duration": 5.821
+    },
+    {
+        "text": "difference 4 minus 2 in our hash map our",
+        "start": 230.59,
+        "duration": 7.049
+    },
+    {
+        "text": "hash map is empty so we don't find 2 so",
+        "start": 234.34,
+        "duration": 6.329
+    },
+    {
+        "text": "then after we visited this element then",
+        "start": 237.639,
+        "duration": 5.31
+    },
+    {
+        "text": "we can add it to our hash map so now",
+        "start": 240.669,
+        "duration": 4.29
+    },
+    {
+        "text": "that I'm done visiting it I'm gonna move",
+        "start": 242.949,
+        "duration": 4.38
+    },
+    {
+        "text": "to the second element 1 and before I do",
+        "start": 244.959,
+        "duration": 4.59
+    },
+    {
+        "text": "that I'm gonna add this value 2 to our",
+        "start": 247.329,
+        "duration": 4.68
+    },
+    {
+        "text": "hash map and the index of this value is",
+        "start": 249.549,
+        "duration": 6.0
+    },
+    {
+        "text": "gonna be 0 now I'm at 1 I'm looking for",
+        "start": 252.009,
+        "duration": 6.21
+    },
+    {
+        "text": "4 minus 1 which is 3",
+        "start": 255.549,
+        "duration": 5.46
+    },
+    {
+        "text": "I see 3 isn't in our hash map but it",
+        "start": 258.219,
+        "duration": 5.221
+    },
+    {
+        "text": "actually is in our array so what's the",
+        "start": 261.009,
+        "duration": 4.77
+    },
+    {
+        "text": "problem well for now we're going to say",
+        "start": 263.44,
+        "duration": 3.87
+    },
+    {
+        "text": "we don't find our find",
+        "start": 265.779,
+        "duration": 4.171
+    },
+    {
+        "text": "three so we add one to our hash map the",
+        "start": 267.31,
+        "duration": 5.88
+    },
+    {
+        "text": "index of this one is one and now we move",
+        "start": 269.95,
+        "duration": 6.09
+    },
+    {
+        "text": "to the next element five we check does",
+        "start": 273.19,
+        "duration": 6.78
+    },
+    {
+        "text": "four minus five it's four minus five",
+        "start": 276.04,
+        "duration": 6.09
+    },
+    {
+        "text": "exists in our hash map that's negative",
+        "start": 279.97,
+        "duration": 4.86
+    },
+    {
+        "text": "one so no it does not then we add this",
+        "start": 282.13,
+        "duration": 5.7
+    },
+    {
+        "text": "five to our hash map and it's index",
+        "start": 284.83,
+        "duration": 6.27
+    },
+    {
+        "text": "which is two and we move to the last",
+        "start": 287.83,
+        "duration": 6.63
+    },
+    {
+        "text": "value in the array three we checked this",
+        "start": 291.1,
+        "duration": 5.789
+    },
+    {
+        "text": "four minus three e",
+        "start": 294.46,
+        "duration": 5.31
+    },
+    {
+        "text": "exists in our hash map now that's one so",
+        "start": 296.889,
+        "duration": 6.151
+    },
+    {
+        "text": "we see it does exist right right over",
+        "start": 299.77,
+        "duration": 6.24
+    },
+    {
+        "text": "here it exists the value exists and it's",
+        "start": 303.04,
+        "duration": 6.99
+    },
+    {
+        "text": "index is one so now we found our two",
+        "start": 306.01,
+        "duration": 6.39
+    },
+    {
+        "text": "values that sum to the target and we",
+        "start": 310.03,
+        "duration": 4.17
+    },
+    {
+        "text": "want to return their indexes their",
+        "start": 312.4,
+        "duration": 4.2
+    },
+    {
+        "text": "indices which are going to be one and",
+        "start": 314.2,
+        "duration": 7.17
+    },
+    {
+        "text": "three so with this algorithm we don't",
+        "start": 316.6,
+        "duration": 6.87
+    },
+    {
+        "text": "have to initialize our hash map it can",
+        "start": 321.37,
+        "duration": 4.41
+    },
+    {
+        "text": "be initially empty and then we can just",
+        "start": 323.47,
+        "duration": 4.83
+    },
+    {
+        "text": "iterate through this array in one pass",
+        "start": 325.78,
+        "duration": 5.1
+    },
+    {
+        "text": "now the reason the algorithm can work in",
+        "start": 328.3,
+        "duration": 6.239
+    },
+    {
+        "text": "that way with just one pass is this so",
+        "start": 330.88,
+        "duration": 6.84
+    },
+    {
+        "text": "let's say we had a giant array right we",
+        "start": 334.539,
+        "duration": 5.611
+    },
+    {
+        "text": "know for sure that there are two",
+        "start": 337.72,
+        "duration": 5.94
+    },
+    {
+        "text": "elements in this array that sum to our",
+        "start": 340.15,
+        "duration": 5.37
+    },
+    {
+        "text": "target right we don't know where they",
+        "start": 343.66,
+        "duration": 3.84
+    },
+    {
+        "text": "are they're at some arbitrary location",
+        "start": 345.52,
+        "duration": 4.2
+    },
+    {
+        "text": "when we visit the first one of those",
+        "start": 347.5,
+        "duration": 5.1
+    },
+    {
+        "text": "elements our hash map is only going to",
+        "start": 349.72,
+        "duration": 5.4
+    },
+    {
+        "text": "be this portion of the array it's only",
+        "start": 352.6,
+        "duration": 4.41
+    },
+    {
+        "text": "going to have the values that came",
+        "start": 355.12,
+        "duration": 4.53
+    },
+    {
+        "text": "before the first value so we're gonna",
+        "start": 357.01,
+        "duration": 5.07
+    },
+    {
+        "text": "we're gonna notice that the second value",
+        "start": 359.65,
+        "duration": 5.97
+    },
+    {
+        "text": "that can sum to the target is no is not",
+        "start": 362.08,
+        "duration": 6.6
+    },
+    {
+        "text": "going to be in our hash map yet but once",
+        "start": 365.62,
+        "duration": 5.85
+    },
+    {
+        "text": "we get to the second value our hash map",
+        "start": 368.68,
+        "duration": 6.09
+    },
+    {
+        "text": "is going to be this portion so every",
+        "start": 371.47,
+        "duration": 5.94
+    },
+    {
+        "text": "value that comes before this right so",
+        "start": 374.77,
+        "duration": 5.519
+    },
+    {
+        "text": "we're gonna be guaranteed that once we",
+        "start": 377.41,
+        "duration": 5.34
+    },
+    {
+        "text": "visit the second element that sums up to",
+        "start": 380.289,
+        "duration": 4.44
+    },
+    {
+        "text": "the target we're gonna be guaranteed",
+        "start": 382.75,
+        "duration": 3.96
+    },
+    {
+        "text": "that the first one is already in our",
+        "start": 384.729,
+        "duration": 4.5
+    },
+    {
+        "text": "hash map so we're guaranteed to find the",
+        "start": 386.71,
+        "duration": 4.8
+    },
+    {
+        "text": "solution now since we only have to",
+        "start": 389.229,
+        "duration": 4.981
+    },
+    {
+        "text": "iterate through the array once and we're",
+        "start": 391.51,
+        "duration": 4.77
+    },
+    {
+        "text": "adding each value to our hash map which",
+        "start": 394.21,
+        "duration": 4.38
+    },
+    {
+        "text": "is a constant time operation and we're",
+        "start": 396.28,
+        "duration": 4.62
+    },
+    {
+        "text": "checking if a value exists in our hash",
+        "start": 398.59,
+        "duration": 4.44
+    },
+    {
+        "text": "which is also a constant time operation",
+        "start": 400.9,
+        "duration": 4.23
+    },
+    {
+        "text": "the time complexity is going to be Big O",
+        "start": 403.03,
+        "duration": 4.74
+    },
+    {
+        "text": "of n we are using extra memory right",
+        "start": 405.13,
+        "duration": 4.98
+    },
+    {
+        "text": "that hash map isn't free so the memory",
+        "start": 407.77,
+        "duration": 4.26
+    },
+    {
+        "text": "complexity is also going to be O of n",
+        "start": 410.11,
+        "duration": 3.99
+    },
+    {
+        "text": "because we could potentially add every",
+        "start": 412.03,
+        "duration": 3.389
+    },
+    {
+        "text": "value to the hash map",
+        "start": 414.1,
+        "duration": 3.06
+    },
+    {
+        "text": "so now let's code the solution so",
+        "start": 415.419,
+        "duration": 3.571
+    },
+    {
+        "text": "remember we need a hash map right I'm",
+        "start": 417.16,
+        "duration": 3.539
+    },
+    {
+        "text": "going to call this previous map because",
+        "start": 418.99,
+        "duration": 3.69
+    },
+    {
+        "text": "it's basically every element that comes",
+        "start": 420.699,
+        "duration": 3.541
+    },
+    {
+        "text": "before the current home that every",
+        "start": 422.68,
+        "duration": 3.269
+    },
+    {
+        "text": "previous element is going to be stored",
+        "start": 424.24,
+        "duration": 3.42
+    },
+    {
+        "text": "in this map where it can be mapping the",
+        "start": 425.949,
+        "duration": 4.051
+    },
+    {
+        "text": "value to the index of that value",
+        "start": 427.66,
+        "duration": 5.34
+    },
+    {
+        "text": "so now let's iterate through every value",
+        "start": 430.0,
+        "duration": 5.52
+    },
+    {
+        "text": "in this array we need the index as well",
+        "start": 433.0,
+        "duration": 5.34
+    },
+    {
+        "text": "as the actual number so let's do it like",
+        "start": 435.52,
+        "duration": 9.09
+    },
+    {
+        "text": "this and Python before we add this to",
+        "start": 438.34,
+        "duration": 8.1
+    },
+    {
+        "text": "our map let's check if the difference",
+        "start": 444.61,
+        "duration": 6.089
+    },
+    {
+        "text": "which is equal to target minus n now",
+        "start": 446.44,
+        "duration": 5.909
+    },
+    {
+        "text": "let's check if this difference is",
+        "start": 450.699,
+        "duration": 9.9
+    },
+    {
+        "text": "already in the hash map if it is then we",
+        "start": 452.349,
+        "duration": 10.171
+    },
+    {
+        "text": "can return the solution which is going",
+        "start": 460.599,
+        "duration": 8.731
+    },
+    {
+        "text": "to be a pair of the indices so I can get",
+        "start": 462.52,
+        "duration": 9.51
+    },
+    {
+        "text": "the first index like this and the second",
+        "start": 469.33,
+        "duration": 5.64
+    },
+    {
+        "text": "index is just AI now if we don't find",
+        "start": 472.03,
+        "duration": 4.44
+    },
+    {
+        "text": "the solution then we have to update our",
+        "start": 474.97,
+        "duration": 5.759
+    },
+    {
+        "text": "hash map so for this value n I'm gonna",
+        "start": 476.47,
+        "duration": 6.75
+    },
+    {
+        "text": "say the index is I and then we're going",
+        "start": 480.729,
+        "duration": 4.981
+    },
+    {
+        "text": "to continue since we're guaranteed that",
+        "start": 483.22,
+        "duration": 4.199
+    },
+    {
+        "text": "a solution exists we don't have to",
+        "start": 485.71,
+        "duration": 3.42
+    },
+    {
+        "text": "return anything out here right but I'll",
+        "start": 487.419,
+        "duration": 3.601
+    },
+    {
+        "text": "just put a return for no reason now",
+        "start": 489.13,
+        "duration": 4.92
+    },
+    {
+        "text": "let's see if it works and it works",
+        "start": 491.02,
+        "duration": 5.28
+    },
+    {
+        "text": "perfectly so with this kind of neat",
+        "start": 494.05,
+        "duration": 4.14
+    },
+    {
+        "text": "little trick but just doing it in one",
+        "start": 496.3,
+        "duration": 3.869
+    },
+    {
+        "text": "pass you can reduce the amount of code",
+        "start": 498.19,
+        "duration": 3.719
+    },
+    {
+        "text": "you have to write and not have to worry",
+        "start": 500.169,
+        "duration": 3.87
+    },
+    {
+        "text": "about like edge cases and comparisons",
+        "start": 501.909,
+        "duration": 4.971
+    },
+    {
+        "text": "and things like that",
+        "start": 504.039,
+        "duration": 2.841
+    }
+]

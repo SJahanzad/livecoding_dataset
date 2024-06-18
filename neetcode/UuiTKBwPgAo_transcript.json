@@ -1,0 +1,1742 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.16,
+        "duration": 4.4
+    },
+    {
+        "text": "write some more neat code so today we're",
+        "start": 2.639,
+        "duration": 2.961
+    },
+    {
+        "text": "going to be solving",
+        "start": 4.56,
+        "duration": 4.16
+    },
+    {
+        "text": "leak code 11 container with most water",
+        "start": 5.6,
+        "duration": 5.76
+    },
+    {
+        "text": "so we're given an array of heights so",
+        "start": 8.72,
+        "duration": 4.56
+    },
+    {
+        "text": "this is a height 1 this is i",
+        "start": 11.36,
+        "duration": 5.12
+    },
+    {
+        "text": "8 6 so on and so on and",
+        "start": 13.28,
+        "duration": 5.36
+    },
+    {
+        "text": "using these heights we want to see",
+        "start": 16.48,
+        "duration": 3.52
+    },
+    {
+        "text": "what's the biggest",
+        "start": 18.64,
+        "duration": 4.08
+    },
+    {
+        "text": "area we can form with a container that",
+        "start": 20.0,
+        "duration": 3.199
+    },
+    {
+        "text": "has a",
+        "start": 22.72,
+        "duration": 2.639
+    },
+    {
+        "text": "left height and a right height so in",
+        "start": 23.199,
+        "duration": 3.281
+    },
+    {
+        "text": "this example",
+        "start": 25.359,
+        "duration": 3.92
+    },
+    {
+        "text": "you can see that if we take this one",
+        "start": 26.48,
+        "duration": 4.0
+    },
+    {
+        "text": "with a height of eight",
+        "start": 29.279,
+        "duration": 3.841
+    },
+    {
+        "text": "and this one with a height of seven we",
+        "start": 30.48,
+        "duration": 3.52
+    },
+    {
+        "text": "can create an",
+        "start": 33.12,
+        "duration": 3.76
+    },
+    {
+        "text": "area let's see how wide this is at one",
+        "start": 34.0,
+        "duration": 4.0
+    },
+    {
+        "text": "two three",
+        "start": 36.88,
+        "duration": 4.24
+    },
+    {
+        "text": "one two three seven wide and seven tall",
+        "start": 38.0,
+        "duration": 4.8
+    },
+    {
+        "text": "so that's seven by seven",
+        "start": 41.12,
+        "duration": 4.48
+    },
+    {
+        "text": "and the area is going to be 49 and they",
+        "start": 42.8,
+        "duration": 4.0
+    },
+    {
+        "text": "tell us that much",
+        "start": 45.6,
+        "duration": 4.32
+    },
+    {
+        "text": "in the explanation so since we're given",
+        "start": 46.8,
+        "duration": 4.88
+    },
+    {
+        "text": "a list of heights and we want to",
+        "start": 49.92,
+        "duration": 3.52
+    },
+    {
+        "text": "maximize the area",
+        "start": 51.68,
+        "duration": 4.16
+    },
+    {
+        "text": "we can potentially just take every",
+        "start": 53.44,
+        "duration": 4.799
+    },
+    {
+        "text": "single combination right so check every",
+        "start": 55.84,
+        "duration": 3.44
+    },
+    {
+        "text": "left pointer",
+        "start": 58.239,
+        "duration": 3.681
+    },
+    {
+        "text": "and every right pointer so my first",
+        "start": 59.28,
+        "duration": 3.439
+    },
+    {
+        "text": "thought with this",
+        "start": 61.92,
+        "duration": 3.199
+    },
+    {
+        "text": "is what's the brute force way what's the",
+        "start": 62.719,
+        "duration": 4.72
+    },
+    {
+        "text": "easiest way to solve this problem",
+        "start": 65.119,
+        "duration": 5.521
+    },
+    {
+        "text": "well let's just try every single",
+        "start": 67.439,
+        "duration": 5.601
+    },
+    {
+        "text": "combination of left and right let's just",
+        "start": 70.64,
+        "duration": 2.96
+    },
+    {
+        "text": "try",
+        "start": 73.04,
+        "duration": 3.36
+    },
+    {
+        "text": "every single possible container we could",
+        "start": 73.6,
+        "duration": 3.28
+    },
+    {
+        "text": "make",
+        "start": 76.4,
+        "duration": 2.719
+    },
+    {
+        "text": "and see if it works so let's say this is",
+        "start": 76.88,
+        "duration": 3.279
+    },
+    {
+        "text": "our left",
+        "start": 79.119,
+        "duration": 3.601
+    },
+    {
+        "text": "and this is our right what's the most",
+        "start": 80.159,
+        "duration": 4.161
+    },
+    {
+        "text": "what's the max area we can make with",
+        "start": 82.72,
+        "duration": 2.24
+    },
+    {
+        "text": "this well",
+        "start": 84.32,
+        "duration": 3.68
+    },
+    {
+        "text": "let's fill it up to 1 and if we keep",
+        "start": 84.96,
+        "duration": 3.519
+    },
+    {
+        "text": "filling",
+        "start": 88.0,
+        "duration": 2.4
+    },
+    {
+        "text": "it up with water notice how it's going",
+        "start": 88.479,
+        "duration": 3.761
+    },
+    {
+        "text": "to spill to the left right",
+        "start": 90.4,
+        "duration": 5.2
+    },
+    {
+        "text": "so this left pointer is our bottleneck",
+        "start": 92.24,
+        "duration": 3.839
+    },
+    {
+        "text": "right",
+        "start": 95.6,
+        "duration": 3.519
+    },
+    {
+        "text": "we have a height of 1 and we have a",
+        "start": 96.079,
+        "duration": 4.72
+    },
+    {
+        "text": "height of seven",
+        "start": 99.119,
+        "duration": 5.121
+    },
+    {
+        "text": "the minimum one is one so you know",
+        "start": 100.799,
+        "duration": 5.761
+    },
+    {
+        "text": "we can't fill it up any higher the width",
+        "start": 104.24,
+        "duration": 3.44
+    },
+    {
+        "text": "of this is also",
+        "start": 106.56,
+        "duration": 4.48
+    },
+    {
+        "text": "one so we get a we get an area of one by",
+        "start": 107.68,
+        "duration": 4.16
+    },
+    {
+        "text": "one",
+        "start": 111.04,
+        "duration": 3.28
+    },
+    {
+        "text": "with water and of course if this one",
+        "start": 111.84,
+        "duration": 4.4
+    },
+    {
+        "text": "remains our left pointer we can try this",
+        "start": 114.32,
+        "duration": 3.92
+    },
+    {
+        "text": "one as our right pointer",
+        "start": 116.24,
+        "duration": 4.0
+    },
+    {
+        "text": "and in this case the width is going to",
+        "start": 118.24,
+        "duration": 3.6
+    },
+    {
+        "text": "be two",
+        "start": 120.24,
+        "duration": 4.159
+    },
+    {
+        "text": "but the height is still going to be one",
+        "start": 121.84,
+        "duration": 3.279
+    },
+    {
+        "text": "our",
+        "start": 124.399,
+        "duration": 2.961
+    },
+    {
+        "text": "remember our left height is only one so",
+        "start": 125.119,
+        "duration": 4.321
+    },
+    {
+        "text": "our bottleneck is one so we get an area",
+        "start": 127.36,
+        "duration": 4.72
+    },
+    {
+        "text": "of two by one",
+        "start": 129.44,
+        "duration": 4.48
+    },
+    {
+        "text": "so i'm starting to notice a bit of a",
+        "start": 132.08,
+        "duration": 3.519
+    },
+    {
+        "text": "pattern but let's just keep continuing",
+        "start": 133.92,
+        "duration": 2.88
+    },
+    {
+        "text": "with the brute force",
+        "start": 135.599,
+        "duration": 4.241
+    },
+    {
+        "text": "so next we can try this area",
+        "start": 136.8,
+        "duration": 5.12
+    },
+    {
+        "text": "that's going to be three next we can try",
+        "start": 139.84,
+        "duration": 4.24
+    },
+    {
+        "text": "this area that's going to be 4.",
+        "start": 141.92,
+        "duration": 3.92
+    },
+    {
+        "text": "next we try this one that's going to be",
+        "start": 144.08,
+        "duration": 3.44
+    },
+    {
+        "text": "5 and we can just keep going",
+        "start": 145.84,
+        "duration": 3.36
+    },
+    {
+        "text": "the height is going to stay 1 because",
+        "start": 147.52,
+        "duration": 3.439
+    },
+    {
+        "text": "our left pointer has a height",
+        "start": 149.2,
+        "duration": 6.24
+    },
+    {
+        "text": "of 1. next we move our left pointer",
+        "start": 150.959,
+        "duration": 7.201
+    },
+    {
+        "text": "here and again we're just going to",
+        "start": 155.44,
+        "duration": 4.96
+    },
+    {
+        "text": "continue with the brute force solution",
+        "start": 158.16,
+        "duration": 5.28
+    },
+    {
+        "text": "eventually we're going to have our right",
+        "start": 160.4,
+        "duration": 4.8
+    },
+    {
+        "text": "pointer set here and then we're going to",
+        "start": 163.44,
+        "duration": 2.159
+    },
+    {
+        "text": "find",
+        "start": 165.2,
+        "duration": 4.399
+    },
+    {
+        "text": "our result right it's going to be 7 by 7",
+        "start": 165.599,
+        "duration": 6.321
+    },
+    {
+        "text": "that's the biggest area we can do and",
+        "start": 169.599,
+        "duration": 3.761
+    },
+    {
+        "text": "since we're checking every single",
+        "start": 171.92,
+        "duration": 3.28
+    },
+    {
+        "text": "combination we know we're eventually",
+        "start": 173.36,
+        "duration": 2.56
+    },
+    {
+        "text": "going to find",
+        "start": 175.2,
+        "duration": 3.039
+    },
+    {
+        "text": "the correct solution the only downside",
+        "start": 175.92,
+        "duration": 3.84
+    },
+    {
+        "text": "is that this algorithm",
+        "start": 178.239,
+        "duration": 4.08
+    },
+    {
+        "text": "is big o of n squared now is that good",
+        "start": 179.76,
+        "duration": 3.28
+    },
+    {
+        "text": "enough",
+        "start": 182.319,
+        "duration": 2.64
+    },
+    {
+        "text": "i guess it depends on your interviewer",
+        "start": 183.04,
+        "duration": 3.6
+    },
+    {
+        "text": "and let me just quickly code up the",
+        "start": 184.959,
+        "duration": 2.721
+    },
+    {
+        "text": "solution",
+        "start": 186.64,
+        "duration": 4.08
+    },
+    {
+        "text": "for that so this is the brute force of",
+        "start": 187.68,
+        "duration": 6.16
+    },
+    {
+        "text": "n solution let's first initialize our",
+        "start": 190.72,
+        "duration": 4.239
+    },
+    {
+        "text": "result",
+        "start": 193.84,
+        "duration": 2.72
+    },
+    {
+        "text": "which is our area i'm going to",
+        "start": 194.959,
+        "duration": 3.601
+    },
+    {
+        "text": "initialize it to 0 because you can't",
+        "start": 196.56,
+        "duration": 3.28
+    },
+    {
+        "text": "really have a negative area",
+        "start": 198.56,
+        "duration": 3.759
+    },
+    {
+        "text": "at least not in this context and we want",
+        "start": 199.84,
+        "duration": 4.479
+    },
+    {
+        "text": "to go through every single combination",
+        "start": 202.319,
+        "duration": 2.321
+    },
+    {
+        "text": "so",
+        "start": 204.319,
+        "duration": 2.721
+    },
+    {
+        "text": "i'm going to have our left pointer go",
+        "start": 204.64,
+        "duration": 3.04
+    },
+    {
+        "text": "through",
+        "start": 207.04,
+        "duration": 3.68
+    },
+    {
+        "text": "every single indices of height",
+        "start": 207.68,
+        "duration": 5.199
+    },
+    {
+        "text": "so i'm going to get the length of height",
+        "start": 210.72,
+        "duration": 3.2
+    },
+    {
+        "text": "which is our",
+        "start": 212.879,
+        "duration": 4.481
+    },
+    {
+        "text": "array so left is going to",
+        "start": 213.92,
+        "duration": 5.599
+    },
+    {
+        "text": "be at every single position at least",
+        "start": 217.36,
+        "duration": 3.28
+    },
+    {
+        "text": "once now",
+        "start": 219.519,
+        "duration": 5.28
+    },
+    {
+        "text": "right pointer we can just have this one",
+        "start": 220.64,
+        "duration": 7.36
+    },
+    {
+        "text": "be always at least one position ahead of",
+        "start": 224.799,
+        "duration": 7.36
+    },
+    {
+        "text": "left so left plus one",
+        "start": 228.0,
+        "duration": 6.64
+    },
+    {
+        "text": "because it all our right pointer of",
+        "start": 232.159,
+        "duration": 4.16
+    },
+    {
+        "text": "course always needs to be",
+        "start": 234.64,
+        "duration": 3.679
+    },
+    {
+        "text": "to the right of our left pointer right",
+        "start": 236.319,
+        "duration": 3.92
+    },
+    {
+        "text": "and for each of these",
+        "start": 238.319,
+        "duration": 3.92
+    },
+    {
+        "text": "combinations we want to compute the area",
+        "start": 240.239,
+        "duration": 3.28
+    },
+    {
+        "text": "so let's do that",
+        "start": 242.239,
+        "duration": 4.241
+    },
+    {
+        "text": "area is going to be equal let me just",
+        "start": 243.519,
+        "duration": 3.841
+    },
+    {
+        "text": "remember",
+        "start": 246.48,
+        "duration": 3.039
+    },
+    {
+        "text": "how to i don't know about you guys but",
+        "start": 247.36,
+        "duration": 3.92
+    },
+    {
+        "text": "sometimes even i forget how to compute",
+        "start": 249.519,
+        "duration": 3.44
+    },
+    {
+        "text": "the area of a rectangle",
+        "start": 251.28,
+        "duration": 4.64
+    },
+    {
+        "text": "so we're going to do width times height",
+        "start": 252.959,
+        "duration": 3.761
+    },
+    {
+        "text": "so the width",
+        "start": 255.92,
+        "duration": 4.319
+    },
+    {
+        "text": "is going to be right minus left",
+        "start": 256.72,
+        "duration": 6.8
+    },
+    {
+        "text": "multiplied by the height now how do we",
+        "start": 260.239,
+        "duration": 6.001
+    },
+    {
+        "text": "find the height so how do we find the",
+        "start": 263.52,
+        "duration": 3.44
+    },
+    {
+        "text": "height",
+        "start": 266.24,
+        "duration": 2.8
+    },
+    {
+        "text": "remember we're focusing on what the",
+        "start": 266.96,
+        "duration": 3.28
+    },
+    {
+        "text": "bottleneck is",
+        "start": 269.04,
+        "duration": 3.52
+    },
+    {
+        "text": "and by bottleneck in this case we mean",
+        "start": 270.24,
+        "duration": 4.0
+    },
+    {
+        "text": "the minimum height because",
+        "start": 272.56,
+        "duration": 3.84
+    },
+    {
+        "text": "no matter how tall our right no matter",
+        "start": 274.24,
+        "duration": 4.0
+    },
+    {
+        "text": "how tall one of the heights is right",
+        "start": 276.4,
+        "duration": 3.84
+    },
+    {
+        "text": "we could extend this to a million but",
+        "start": 278.24,
+        "duration": 3.92
+    },
+    {
+        "text": "look how small this one is it's just too",
+        "start": 280.24,
+        "duration": 3.84
+    },
+    {
+        "text": "small the water is going to spill out",
+        "start": 282.16,
+        "duration": 4.24
+    },
+    {
+        "text": "so we care about the minimum height of",
+        "start": 284.08,
+        "duration": 3.36
+    },
+    {
+        "text": "the left and right",
+        "start": 286.4,
+        "duration": 3.6
+    },
+    {
+        "text": "pointers so let's get that minimum so",
+        "start": 287.44,
+        "duration": 3.199
+    },
+    {
+        "text": "minimum",
+        "start": 290.0,
+        "duration": 3.919
+    },
+    {
+        "text": "of height of left",
+        "start": 290.639,
+        "duration": 7.201
+    },
+    {
+        "text": "and minimum of height of right",
+        "start": 293.919,
+        "duration": 5.761
+    },
+    {
+        "text": "so now that we've computed the area",
+        "start": 297.84,
+        "duration": 4.0
+    },
+    {
+        "text": "remember we want the max area so we can",
+        "start": 299.68,
+        "duration": 3.68
+    },
+    {
+        "text": "set our result",
+        "start": 301.84,
+        "duration": 4.96
+    },
+    {
+        "text": "equal to the max of",
+        "start": 303.36,
+        "duration": 6.32
+    },
+    {
+        "text": "itself and of the area that we just",
+        "start": 306.8,
+        "duration": 3.6
+    },
+    {
+        "text": "computed",
+        "start": 309.68,
+        "duration": 3.359
+    },
+    {
+        "text": "so every time we compute an area if it's",
+        "start": 310.4,
+        "duration": 4.88
+    },
+    {
+        "text": "the max we're going to update our result",
+        "start": 313.039,
+        "duration": 5.121
+    },
+    {
+        "text": "and now all we need to do is return that",
+        "start": 315.28,
+        "duration": 4.24
+    },
+    {
+        "text": "result that we computed",
+        "start": 318.16,
+        "duration": 4.08
+    },
+    {
+        "text": "let's see if it works unfortunately it",
+        "start": 319.52,
+        "duration": 4.88
+    },
+    {
+        "text": "doesn't work we got time limit exceeded",
+        "start": 322.24,
+        "duration": 2.72
+    },
+    {
+        "text": "so",
+        "start": 324.4,
+        "duration": 2.48
+    },
+    {
+        "text": "now we need to figure out how we can",
+        "start": 324.96,
+        "duration": 3.76
+    },
+    {
+        "text": "make this a little bit better",
+        "start": 326.88,
+        "duration": 5.039
+    },
+    {
+        "text": "can we get a linear time solution so now",
+        "start": 328.72,
+        "duration": 4.8
+    },
+    {
+        "text": "let's take a look at the",
+        "start": 331.919,
+        "duration": 4.0
+    },
+    {
+        "text": "linear time solution the one that will",
+        "start": 333.52,
+        "duration": 4.48
+    },
+    {
+        "text": "actually work in late code",
+        "start": 335.919,
+        "duration": 4.801
+    },
+    {
+        "text": "so remember how we said that the minimum",
+        "start": 338.0,
+        "duration": 3.12
+    },
+    {
+        "text": "height",
+        "start": 340.72,
+        "duration": 3.039
+    },
+    {
+        "text": "is our limiting factor we really don't",
+        "start": 341.12,
+        "duration": 3.04
+    },
+    {
+        "text": "want",
+        "start": 343.759,
+        "duration": 3.601
+    },
+    {
+        "text": "small heights so let's see if we can try",
+        "start": 344.16,
+        "duration": 6.4
+    },
+    {
+        "text": "a two pointer technique now i'm gonna",
+        "start": 347.36,
+        "duration": 4.16
+    },
+    {
+        "text": "initialize",
+        "start": 350.56,
+        "duration": 4.479
+    },
+    {
+        "text": "the left pointer all the way at the left",
+        "start": 351.52,
+        "duration": 5.36
+    },
+    {
+        "text": "and i'm going to initialize the right",
+        "start": 355.039,
+        "duration": 4.0
+    },
+    {
+        "text": "pointer all the way at the right",
+        "start": 356.88,
+        "duration": 4.8
+    },
+    {
+        "text": "why because we want to maximize the area",
+        "start": 359.039,
+        "duration": 3.201
+    },
+    {
+        "text": "so",
+        "start": 361.68,
+        "duration": 3.84
+    },
+    {
+        "text": "why would i initialize them like",
+        "start": 362.24,
+        "duration": 5.28
+    },
+    {
+        "text": "because we want the width to be as big",
+        "start": 365.52,
+        "duration": 4.399
+    },
+    {
+        "text": "as possible because if this left height",
+        "start": 367.52,
+        "duration": 4.72
+    },
+    {
+        "text": "is super tall and this right height is",
+        "start": 369.919,
+        "duration": 3.28
+    },
+    {
+        "text": "super tall",
+        "start": 372.24,
+        "duration": 4.64
+    },
+    {
+        "text": "then we've instantly found our result",
+        "start": 373.199,
+        "duration": 6.161
+    },
+    {
+        "text": "but of course in this case that doesn't",
+        "start": 376.88,
+        "duration": 3.759
+    },
+    {
+        "text": "work we get an",
+        "start": 379.36,
+        "duration": 4.72
+    },
+    {
+        "text": "area of 1 by 8 i think so that's",
+        "start": 380.639,
+        "duration": 4.161
+    },
+    {
+        "text": "obviously",
+        "start": 384.08,
+        "duration": 3.44
+    },
+    {
+        "text": "not the result so what do we do how do",
+        "start": 384.8,
+        "duration": 6.88
+    },
+    {
+        "text": "we update our left and right pointers",
+        "start": 387.52,
+        "duration": 4.16
+    },
+    {
+        "text": "so the first area that we computed was",
+        "start": 392.639,
+        "duration": 3.361
+    },
+    {
+        "text": "an 8 which is",
+        "start": 394.72,
+        "duration": 3.68
+    },
+    {
+        "text": "our max because our initial max because",
+        "start": 396.0,
+        "duration": 4.96
+    },
+    {
+        "text": "this is basically the maximum so far",
+        "start": 398.4,
+        "duration": 4.239
+    },
+    {
+        "text": "so now how are we going to update our",
+        "start": 400.96,
+        "duration": 3.04
+    },
+    {
+        "text": "pointer well",
+        "start": 402.639,
+        "duration": 2.721
+    },
+    {
+        "text": "we're going to look at what's the",
+        "start": 404.0,
+        "duration": 3.6
+    },
+    {
+        "text": "minimum height this one has a height of",
+        "start": 405.36,
+        "duration": 3.04
+    },
+    {
+        "text": "one",
+        "start": 407.6,
+        "duration": 3.28
+    },
+    {
+        "text": "this one has a height of seven so why",
+        "start": 408.4,
+        "duration": 4.639
+    },
+    {
+        "text": "would i shift my right pointer when it",
+        "start": 410.88,
+        "duration": 2.96
+    },
+    {
+        "text": "has a height of",
+        "start": 413.039,
+        "duration": 3.921
+    },
+    {
+        "text": "seven when i could instead shift my left",
+        "start": 413.84,
+        "duration": 3.84
+    },
+    {
+        "text": "pointer",
+        "start": 416.96,
+        "duration": 2.32
+    },
+    {
+        "text": "which has a height of one and",
+        "start": 417.68,
+        "duration": 3.68
+    },
+    {
+        "text": "potentially increase it",
+        "start": 419.28,
+        "duration": 4.72
+    },
+    {
+        "text": "so now left is over here and we have a",
+        "start": 421.36,
+        "duration": 4.48
+    },
+    {
+        "text": "height of 8",
+        "start": 424.0,
+        "duration": 4.16
+    },
+    {
+        "text": "and lucky for us we've basically found",
+        "start": 425.84,
+        "duration": 3.919
+    },
+    {
+        "text": "our solution but i'm just going to keep",
+        "start": 428.16,
+        "duration": 2.96
+    },
+    {
+        "text": "going with the algorithm",
+        "start": 429.759,
+        "duration": 3.681
+    },
+    {
+        "text": "just to kind of show you how it works so",
+        "start": 431.12,
+        "duration": 3.359
+    },
+    {
+        "text": "now we have an",
+        "start": 433.44,
+        "duration": 4.159
+    },
+    {
+        "text": "area of seven by seven which we know is",
+        "start": 434.479,
+        "duration": 4.0
+    },
+    {
+        "text": "49",
+        "start": 437.599,
+        "duration": 3.281
+    },
+    {
+        "text": "so our max area gets updated our max is",
+        "start": 438.479,
+        "duration": 4.321
+    },
+    {
+        "text": "no longer eight it's 49",
+        "start": 440.88,
+        "duration": 4.319
+    },
+    {
+        "text": "which we know is the correct solution",
+        "start": 442.8,
+        "duration": 4.08
+    },
+    {
+        "text": "next i'm gonna take the minimum",
+        "start": 445.199,
+        "duration": 5.041
+    },
+    {
+        "text": "of eight and seven",
+        "start": 446.88,
+        "duration": 5.039
+    },
+    {
+        "text": "is smaller so we're going to shift our",
+        "start": 450.24,
+        "duration": 3.44
+    },
+    {
+        "text": "right pointer to the left",
+        "start": 451.919,
+        "duration": 5.68
+    },
+    {
+        "text": "now our right height is looks like three",
+        "start": 453.68,
+        "duration": 5.919
+    },
+    {
+        "text": "so the area that we're going to compute",
+        "start": 457.599,
+        "duration": 5.241
+    },
+    {
+        "text": "is going to be 3",
+        "start": 459.599,
+        "duration": 5.28
+    },
+    {
+        "text": "by 6",
+        "start": 462.84,
+        "duration": 4.52
+    },
+    {
+        "text": "which is 18 but that's too small that's",
+        "start": 464.879,
+        "duration": 4.401
+    },
+    {
+        "text": "not bigger than our maximum",
+        "start": 467.36,
+        "duration": 4.08
+    },
+    {
+        "text": "so we don't need to update our max area",
+        "start": 469.28,
+        "duration": 3.039
+    },
+    {
+        "text": "now our minimum",
+        "start": 471.44,
+        "duration": 7.199
+    },
+    {
+        "text": "is 3 so we're going to shift",
+        "start": 472.319,
+        "duration": 9.521
+    },
+    {
+        "text": "now we have an 8 by 5 rectangle which is",
+        "start": 478.639,
+        "duration": 6.161
+    },
+    {
+        "text": "40 but that's still not greater than 49",
+        "start": 481.84,
+        "duration": 4.0
+    },
+    {
+        "text": "and",
+        "start": 484.8,
+        "duration": 2.88
+    },
+    {
+        "text": "and now we get to a nice little edge",
+        "start": 485.84,
+        "duration": 3.84
+    },
+    {
+        "text": "case where both of the values",
+        "start": 487.68,
+        "duration": 4.0
+    },
+    {
+        "text": "are equal in this case it doesn't",
+        "start": 489.68,
+        "duration": 3.68
+    },
+    {
+        "text": "actually matter which pointer that we",
+        "start": 491.68,
+        "duration": 2.239
+    },
+    {
+        "text": "shift",
+        "start": 493.36,
+        "duration": 3.839
+    },
+    {
+        "text": "but if you wanted to you could shift",
+        "start": 493.919,
+        "duration": 6.081
+    },
+    {
+        "text": "the one that has a larger height coming",
+        "start": 497.199,
+        "duration": 3.12
+    },
+    {
+        "text": "like",
+        "start": 500.0,
+        "duration": 2.96
+    },
+    {
+        "text": "for example like this height is at six",
+        "start": 500.319,
+        "duration": 4.88
+    },
+    {
+        "text": "whereas this height is at four",
+        "start": 502.96,
+        "duration": 4.239
+    },
+    {
+        "text": "we could choose to shift this one just",
+        "start": 505.199,
+        "duration": 3.761
+    },
+    {
+        "text": "because we know that a larger height",
+        "start": 507.199,
+        "duration": 2.801
+    },
+    {
+        "text": "exists over here",
+        "start": 508.96,
+        "duration": 3.519
+    },
+    {
+        "text": "but it actually doesn't matter you could",
+        "start": 510.0,
+        "duration": 5.36
+    },
+    {
+        "text": "shift either one",
+        "start": 512.479,
+        "duration": 2.881
+    },
+    {
+        "text": "so now our left is six so we get",
+        "start": 518.959,
+        "duration": 7.121
+    },
+    {
+        "text": "six by four which is 24 too small",
+        "start": 522.479,
+        "duration": 6.001
+    },
+    {
+        "text": "we don't care about it let's just keep",
+        "start": 526.08,
+        "duration": 3.12
+    },
+    {
+        "text": "going",
+        "start": 528.48,
+        "duration": 2.88
+    },
+    {
+        "text": "so now our minimum height is six let's",
+        "start": 529.2,
+        "duration": 6.639
+    },
+    {
+        "text": "shift our left pointer",
+        "start": 531.36,
+        "duration": 4.479
+    },
+    {
+        "text": "now we get a two by three rectangle",
+        "start": 536.72,
+        "duration": 4.4
+    },
+    {
+        "text": "which is too small",
+        "start": 538.8,
+        "duration": 4.0
+    },
+    {
+        "text": "let's shift our left pointer one more",
+        "start": 541.12,
+        "duration": 3.04
+    },
+    {
+        "text": "time",
+        "start": 542.8,
+        "duration": 3.599
+    },
+    {
+        "text": "hey this time we got a five by two",
+        "start": 544.16,
+        "duration": 4.239
+    },
+    {
+        "text": "that's a little better than before but",
+        "start": 546.399,
+        "duration": 4.961
+    },
+    {
+        "text": "still not better than our max and so",
+        "start": 548.399,
+        "duration": 4.801
+    },
+    {
+        "text": "this is basically the last",
+        "start": 551.36,
+        "duration": 4.64
+    },
+    {
+        "text": "rectangle or water container that we can",
+        "start": 553.2,
+        "duration": 3.6
+    },
+    {
+        "text": "form",
+        "start": 556.0,
+        "duration": 3.519
+    },
+    {
+        "text": "it's going to be four by one and now if",
+        "start": 556.8,
+        "duration": 4.8
+    },
+    {
+        "text": "we try to shift our left pointer",
+        "start": 559.519,
+        "duration": 4.32
+    },
+    {
+        "text": "we get to the terminating condition we",
+        "start": 561.6,
+        "duration": 4.64
+    },
+    {
+        "text": "get to the condition that's going to",
+        "start": 563.839,
+        "duration": 4.961
+    },
+    {
+        "text": "end our code so now that we shift our",
+        "start": 566.24,
+        "duration": 3.599
+    },
+    {
+        "text": "left pointer",
+        "start": 568.8,
+        "duration": 3.039
+    },
+    {
+        "text": "here we're going to get our left here",
+        "start": 569.839,
+        "duration": 4.081
+    },
+    {
+        "text": "left and right are at the same",
+        "start": 571.839,
+        "duration": 4.321
+    },
+    {
+        "text": "position so let's get rid of this let's",
+        "start": 573.92,
+        "duration": 4.16
+    },
+    {
+        "text": "get a solution that can actually work",
+        "start": 576.16,
+        "duration": 5.359
+    },
+    {
+        "text": "on leak code and maybe you might need",
+        "start": 578.08,
+        "duration": 5.759
+    },
+    {
+        "text": "this solution in your interview if the",
+        "start": 581.519,
+        "duration": 4.241
+    },
+    {
+        "text": "brute force is not good enough",
+        "start": 583.839,
+        "duration": 3.521
+    },
+    {
+        "text": "so once again i'm going to set our",
+        "start": 585.76,
+        "duration": 3.84
+    },
+    {
+        "text": "result equal to zero",
+        "start": 587.36,
+        "duration": 4.32
+    },
+    {
+        "text": "i'm going to do what i did in the",
+        "start": 589.6,
+        "duration": 3.84
+    },
+    {
+        "text": "explanation our left pointer is going to",
+        "start": 591.68,
+        "duration": 2.719
+    },
+    {
+        "text": "be initialized",
+        "start": 593.44,
+        "duration": 4.24
+    },
+    {
+        "text": "all the way to the",
+        "start": 594.399,
+        "duration": 5.601
+    },
+    {
+        "text": "left which is zero and our right pointer",
+        "start": 597.68,
+        "duration": 3.839
+    },
+    {
+        "text": "is going to be initialized all the way",
+        "start": 600.0,
+        "duration": 2.88
+    },
+    {
+        "text": "to the right",
+        "start": 601.519,
+        "duration": 4.801
+    },
+    {
+        "text": "so these values are zero and length",
+        "start": 602.88,
+        "duration": 7.12
+    },
+    {
+        "text": "of heights minus one",
+        "start": 606.32,
+        "duration": 6.16
+    },
+    {
+        "text": "and remember our condition for the loop",
+        "start": 610.0,
+        "duration": 4.32
+    },
+    {
+        "text": "is while",
+        "start": 612.48,
+        "duration": 4.56
+    },
+    {
+        "text": "left is less than right because if",
+        "start": 614.32,
+        "duration": 4.16
+    },
+    {
+        "text": "they're equal that's no",
+        "start": 617.04,
+        "duration": 4.32
+    },
+    {
+        "text": "good and if they if left passes right",
+        "start": 618.48,
+        "duration": 4.4
+    },
+    {
+        "text": "that's no good either",
+        "start": 621.36,
+        "duration": 4.32
+    },
+    {
+        "text": "so let's compute the area again i'm just",
+        "start": 622.88,
+        "duration": 4.8
+    },
+    {
+        "text": "going to copy and paste it from my above",
+        "start": 625.68,
+        "duration": 3.52
+    },
+    {
+        "text": "solution because",
+        "start": 627.68,
+        "duration": 3.12
+    },
+    {
+        "text": "that's what the brute force solution is",
+        "start": 629.2,
+        "duration": 3.68
+    },
+    {
+        "text": "for right you can learn",
+        "start": 630.8,
+        "duration": 4.479
+    },
+    {
+        "text": "the basic problem the basic parts of the",
+        "start": 632.88,
+        "duration": 3.92
+    },
+    {
+        "text": "problem before doing",
+        "start": 635.279,
+        "duration": 4.56
+    },
+    {
+        "text": "the clever stuff i can also just copy",
+        "start": 636.8,
+        "duration": 4.479
+    },
+    {
+        "text": "and paste the part where we update our",
+        "start": 639.839,
+        "duration": 3.041
+    },
+    {
+        "text": "result as well",
+        "start": 641.279,
+        "duration": 3.841
+    },
+    {
+        "text": "now the part that we have to change",
+        "start": 642.88,
+        "duration": 3.44
+    },
+    {
+        "text": "though is",
+        "start": 645.12,
+        "duration": 2.959
+    },
+    {
+        "text": "when we're updating our left and right",
+        "start": 646.32,
+        "duration": 3.84
+    },
+    {
+        "text": "pointers we're doing it",
+        "start": 648.079,
+        "duration": 5.281
+    },
+    {
+        "text": "based on a certain condition if",
+        "start": 650.16,
+        "duration": 6.72
+    },
+    {
+        "text": "the height at position left is less than",
+        "start": 653.36,
+        "duration": 4.96
+    },
+    {
+        "text": "the height at position",
+        "start": 656.88,
+        "duration": 4.639
+    },
+    {
+        "text": "right we're going to shift our left",
+        "start": 658.32,
+        "duration": 4.56
+    },
+    {
+        "text": "pointer to the right",
+        "start": 661.519,
+        "duration": 2.641
+    },
+    {
+        "text": "we're going to increment our left",
+        "start": 662.88,
+        "duration": 4.56
+    },
+    {
+        "text": "pointer because we want to maximize",
+        "start": 664.16,
+        "duration": 6.08
+    },
+    {
+        "text": "both of these heights now the other",
+        "start": 667.44,
+        "duration": 3.519
+    },
+    {
+        "text": "condition",
+        "start": 670.24,
+        "duration": 3.44
+    },
+    {
+        "text": "is the opposite case so if height of",
+        "start": 670.959,
+        "duration": 3.041
+    },
+    {
+        "text": "left",
+        "start": 673.68,
+        "duration": 3.839
+    },
+    {
+        "text": "was greater than height of right",
+        "start": 674.0,
+        "duration": 3.519
+    },
+    {
+        "text": "then we would want to shift our right",
+        "start": 680.88,
+        "duration": 4.639
+    },
+    {
+        "text": "pointer and we want to decrement it",
+        "start": 682.64,
+        "duration": 5.04
+    },
+    {
+        "text": "and the last case is if they're equal",
+        "start": 685.519,
+        "duration": 4.0
+    },
+    {
+        "text": "right that's our else condition",
+        "start": 687.68,
+        "duration": 3.36
+    },
+    {
+        "text": "and remember how i said we could do",
+        "start": 689.519,
+        "duration": 3.44
+    },
+    {
+        "text": "either one if",
+        "start": 691.04,
+        "duration": 4.479
+    },
+    {
+        "text": "uh if they're both equal right we could",
+        "start": 692.959,
+        "duration": 4.081
+    },
+    {
+        "text": "increment our left pointer or we could",
+        "start": 695.519,
+        "duration": 3.601
+    },
+    {
+        "text": "decrement our",
+        "start": 697.04,
+        "duration": 5.6
+    },
+    {
+        "text": "right pointer uh notice how both of",
+        "start": 699.12,
+        "duration": 5.279
+    },
+    {
+        "text": "these are doing the same thing",
+        "start": 702.64,
+        "duration": 4.4
+    },
+    {
+        "text": "so i'm just going to condense this i'm",
+        "start": 704.399,
+        "duration": 3.68
+    },
+    {
+        "text": "just going to get rid of",
+        "start": 707.04,
+        "duration": 4.239
+    },
+    {
+        "text": "these two lines of code",
+        "start": 708.079,
+        "duration": 3.2
+    },
+    {
+        "text": "now all we need to do is return the",
+        "start": 711.839,
+        "duration": 4.401
+    },
+    {
+        "text": "maximum that we computed",
+        "start": 714.16,
+        "duration": 4.0
+    },
+    {
+        "text": "let's see if it actually works this time",
+        "start": 716.24,
+        "duration": 3.2
+    },
+    {
+        "text": "okay of course i had",
+        "start": 718.16,
+        "duration": 4.799
+    },
+    {
+        "text": "a typo so i had a s at the end of",
+        "start": 719.44,
+        "duration": 4.24
+    },
+    {
+        "text": "heights",
+        "start": 722.959,
+        "duration": 2.481
+    },
+    {
+        "text": "let's run it one more time and this time",
+        "start": 723.68,
+        "duration": 3.279
+    },
+    {
+        "text": "it'll work so",
+        "start": 725.44,
+        "duration": 5.519
+    },
+    {
+        "text": "this is the actual linear time solution",
+        "start": 726.959,
+        "duration": 8.801
+    },
+    {
+        "text": "the big o of n solution",
+        "start": 730.959,
+        "duration": 7.44
+    },
+    {
+        "text": "as always thank you so much for watching",
+        "start": 735.76,
+        "duration": 4.639
+    },
+    {
+        "text": "like and subscribe if this was helpful",
+        "start": 738.399,
+        "duration": 7.44
+    },
+    {
+        "text": "and i'll see you pretty soon",
+        "start": 740.399,
+        "duration": 5.44
+    },
+    {
+        "text": "you",
+        "start": 755.92,
+        "duration": 2.08
+    }
+]

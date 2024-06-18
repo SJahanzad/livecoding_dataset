@@ -1,0 +1,2502 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.52
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.68,
+        "duration": 4.0
+    },
+    {
+        "text": "let's solve a pretty fun problem",
+        "start": 3.52,
+        "duration": 5.76
+    },
+    {
+        "text": "construct a binary tree from a pre-order",
+        "start": 5.68,
+        "duration": 6.16
+    },
+    {
+        "text": "and in order traversal so we're actually",
+        "start": 9.28,
+        "duration": 3.439
+    },
+    {
+        "text": "given",
+        "start": 11.84,
+        "duration": 3.919
+    },
+    {
+        "text": "two integer arrays representing one",
+        "start": 12.719,
+        "duration": 6.001
+    },
+    {
+        "text": "the pre-order traversal and two the",
+        "start": 15.759,
+        "duration": 4.401
+    },
+    {
+        "text": "in-order traversal",
+        "start": 18.72,
+        "duration": 4.639
+    },
+    {
+        "text": "of a binary tree and our",
+        "start": 20.16,
+        "duration": 6.8
+    },
+    {
+        "text": "goal is to take these two traversals",
+        "start": 23.359,
+        "duration": 6.16
+    },
+    {
+        "text": "and the orderings of those nodes and",
+        "start": 26.96,
+        "duration": 3.52
+    },
+    {
+        "text": "then can",
+        "start": 29.519,
+        "duration": 3.681
+    },
+    {
+        "text": "reconstruct basically the original",
+        "start": 30.48,
+        "duration": 4.32
+    },
+    {
+        "text": "binary tree",
+        "start": 33.2,
+        "duration": 4.48
+    },
+    {
+        "text": "that the traversals are from and it is",
+        "start": 34.8,
+        "duration": 4.32
+    },
+    {
+        "text": "technically possible",
+        "start": 37.68,
+        "duration": 3.6
+    },
+    {
+        "text": "these two traversals have all the",
+        "start": 39.12,
+        "duration": 3.599
+    },
+    {
+        "text": "information we need",
+        "start": 41.28,
+        "duration": 3.52
+    },
+    {
+        "text": "we just need to take that information",
+        "start": 42.719,
+        "duration": 4.241
+    },
+    {
+        "text": "and then deconstruct it",
+        "start": 44.8,
+        "duration": 5.439
+    },
+    {
+        "text": "and then reconstruct this binary tree",
+        "start": 46.96,
+        "duration": 6.48
+    },
+    {
+        "text": "from those so just to verify it let's go",
+        "start": 50.239,
+        "duration": 4.241
+    },
+    {
+        "text": "through this",
+        "start": 53.44,
+        "duration": 3.2
+    },
+    {
+        "text": "tree and actually do the pre-order",
+        "start": 54.48,
+        "duration": 3.84
+    },
+    {
+        "text": "traversal first of all so",
+        "start": 56.64,
+        "duration": 3.68
+    },
+    {
+        "text": "first we know pre-order traversal is you",
+        "start": 58.32,
+        "duration": 4.0
+    },
+    {
+        "text": "start at the root and then you process",
+        "start": 60.32,
+        "duration": 3.28
+    },
+    {
+        "text": "the current node",
+        "start": 62.32,
+        "duration": 3.52
+    },
+    {
+        "text": "then you do the left subtree then you do",
+        "start": 63.6,
+        "duration": 3.76
+    },
+    {
+        "text": "the right subtree right",
+        "start": 65.84,
+        "duration": 3.44
+    },
+    {
+        "text": "so let's just let's just do the",
+        "start": 67.36,
+        "duration": 3.84
+    },
+    {
+        "text": "pre-order traversal so we're starting at",
+        "start": 69.28,
+        "duration": 2.72
+    },
+    {
+        "text": "the root we",
+        "start": 71.2,
+        "duration": 2.56
+    },
+    {
+        "text": "do the root node first that's how",
+        "start": 72.0,
+        "duration": 4.159
+    },
+    {
+        "text": "pre-order works so then we get a three",
+        "start": 73.76,
+        "duration": 4.719
+    },
+    {
+        "text": "next we're going to go to the left sub",
+        "start": 76.159,
+        "duration": 3.28
+    },
+    {
+        "text": "tree and then",
+        "start": 78.479,
+        "duration": 3.041
+    },
+    {
+        "text": "and then do pre-order traversal on that",
+        "start": 79.439,
+        "duration": 3.281
+    },
+    {
+        "text": "left subtree",
+        "start": 81.52,
+        "duration": 3.44
+    },
+    {
+        "text": "we see nine right so we're going to add",
+        "start": 82.72,
+        "duration": 3.6
+    },
+    {
+        "text": "nine to our",
+        "start": 84.96,
+        "duration": 3.44
+    },
+    {
+        "text": "pre-order traversal and it doesn't have",
+        "start": 86.32,
+        "duration": 4.64
+    },
+    {
+        "text": "any children so we're actually done with",
+        "start": 88.4,
+        "duration": 4.64
+    },
+    {
+        "text": "nine we're done with three now it's time",
+        "start": 90.96,
+        "duration": 4.32
+    },
+    {
+        "text": "to do the right subtree",
+        "start": 93.04,
+        "duration": 4.88
+    },
+    {
+        "text": "in pre-order traversal so we start at 20",
+        "start": 95.28,
+        "duration": 3.04
+    },
+    {
+        "text": "add",
+        "start": 97.92,
+        "duration": 3.44
+    },
+    {
+        "text": "20 to our pre-order",
+        "start": 98.32,
+        "duration": 6.479
+    },
+    {
+        "text": "go left we see 15 add 15 to the",
+        "start": 101.36,
+        "duration": 4.399
+    },
+    {
+        "text": "pre-order",
+        "start": 104.799,
+        "duration": 3.28
+    },
+    {
+        "text": "15 doesn't have any children now we go",
+        "start": 105.759,
+        "duration": 3.121
+    },
+    {
+        "text": "to the right",
+        "start": 108.079,
+        "duration": 3.441
+    },
+    {
+        "text": "subtree seven so add seven it's our last",
+        "start": 108.88,
+        "duration": 3.279
+    },
+    {
+        "text": "node",
+        "start": 111.52,
+        "duration": 2.959
+    },
+    {
+        "text": "to the pre-order traversal right and",
+        "start": 112.159,
+        "duration": 4.081
+    },
+    {
+        "text": "this actually take a look at this take a",
+        "start": 114.479,
+        "duration": 3.361
+    },
+    {
+        "text": "look at all the values it matches",
+        "start": 116.24,
+        "duration": 2.239
+    },
+    {
+        "text": "exactly",
+        "start": 117.84,
+        "duration": 3.84
+    },
+    {
+        "text": "with the input so this is the uh",
+        "start": 118.479,
+        "duration": 4.881
+    },
+    {
+        "text": "pre-order traversal now let's just",
+        "start": 121.68,
+        "duration": 4.079
+    },
+    {
+        "text": "validate the in-order traversal",
+        "start": 123.36,
+        "duration": 5.519
+    },
+    {
+        "text": "as well inorder traversal is we start at",
+        "start": 125.759,
+        "duration": 3.521
+    },
+    {
+        "text": "the",
+        "start": 128.879,
+        "duration": 3.681
+    },
+    {
+        "text": "root right we take care of the entire",
+        "start": 129.28,
+        "duration": 6.64
+    },
+    {
+        "text": "left subtree first then we take care of",
+        "start": 132.56,
+        "duration": 4.399
+    },
+    {
+        "text": "the root node",
+        "start": 135.92,
+        "duration": 3.2
+    },
+    {
+        "text": "and then we take care of the right",
+        "start": 136.959,
+        "duration": 3.28
+    },
+    {
+        "text": "subtree with",
+        "start": 139.12,
+        "duration": 3.52
+    },
+    {
+        "text": "in order traversal that's the general",
+        "start": 140.239,
+        "duration": 4.321
+    },
+    {
+        "text": "order so let's validate",
+        "start": 142.64,
+        "duration": 4.319
+    },
+    {
+        "text": "the inorder traversal of this tree so",
+        "start": 144.56,
+        "duration": 3.28
+    },
+    {
+        "text": "we're starting",
+        "start": 146.959,
+        "duration": 3.121
+    },
+    {
+        "text": "at one we're we're starting at the root",
+        "start": 147.84,
+        "duration": 3.84
+    },
+    {
+        "text": "three but we're not going to add three",
+        "start": 150.08,
+        "duration": 3.2
+    },
+    {
+        "text": "yet first we're gonna do the left",
+        "start": 151.68,
+        "duration": 2.32
+    },
+    {
+        "text": "subtree",
+        "start": 153.28,
+        "duration": 3.2
+    },
+    {
+        "text": "we see we have a nine the nine does not",
+        "start": 154.0,
+        "duration": 4.56
+    },
+    {
+        "text": "have any left or right children so now",
+        "start": 156.48,
+        "duration": 3.68
+    },
+    {
+        "text": "we can add that nine",
+        "start": 158.56,
+        "duration": 3.52
+    },
+    {
+        "text": "to our inorder traversal remember we're",
+        "start": 160.16,
+        "duration": 3.04
+    },
+    {
+        "text": "doing this in order",
+        "start": 162.08,
+        "duration": 3.68
+    },
+    {
+        "text": "left to right we go back up to the root",
+        "start": 163.2,
+        "duration": 4.56
+    },
+    {
+        "text": "now we can process the root we can take",
+        "start": 165.76,
+        "duration": 3.52
+    },
+    {
+        "text": "three and add it to the inorder",
+        "start": 167.76,
+        "duration": 2.64
+    },
+    {
+        "text": "traversal",
+        "start": 169.28,
+        "duration": 3.36
+    },
+    {
+        "text": "and now we're going to do the entire",
+        "start": 170.4,
+        "duration": 3.119
+    },
+    {
+        "text": "right subtree",
+        "start": 172.64,
+        "duration": 3.12
+    },
+    {
+        "text": "so we get to 20 but we're not we're",
+        "start": 173.519,
+        "duration": 3.44
+    },
+    {
+        "text": "going to wait for 20. we're going to",
+        "start": 175.76,
+        "duration": 2.479
+    },
+    {
+        "text": "first do the left",
+        "start": 176.959,
+        "duration": 4.801
+    },
+    {
+        "text": "subtree 15 15 is the only value here so",
+        "start": 178.239,
+        "duration": 5.92
+    },
+    {
+        "text": "it doesn't have any children add 15 to",
+        "start": 181.76,
+        "duration": 4.0
+    },
+    {
+        "text": "the inorder traversal",
+        "start": 184.159,
+        "duration": 4.481
+    },
+    {
+        "text": "now we can add 20 because we've done the",
+        "start": 185.76,
+        "duration": 3.759
+    },
+    {
+        "text": "left subtree",
+        "start": 188.64,
+        "duration": 3.44
+    },
+    {
+        "text": "20 is added and then last we go to the",
+        "start": 189.519,
+        "duration": 3.36
+    },
+    {
+        "text": "right subtree",
+        "start": 192.08,
+        "duration": 3.12
+    },
+    {
+        "text": "only one value seven let's add that",
+        "start": 192.879,
+        "duration": 3.041
+    },
+    {
+        "text": "seven to",
+        "start": 195.2,
+        "duration": 3.6
+    },
+    {
+        "text": "our in order now let's take a look at",
+        "start": 195.92,
+        "duration": 3.28
+    },
+    {
+        "text": "these",
+        "start": 198.8,
+        "duration": 3.359
+    },
+    {
+        "text": "five values notice how they are the",
+        "start": 199.2,
+        "duration": 3.84
+    },
+    {
+        "text": "exact same",
+        "start": 202.159,
+        "duration": 3.761
+    },
+    {
+        "text": "five values in the exact same order as",
+        "start": 203.04,
+        "duration": 4.72
+    },
+    {
+        "text": "that in-order traversal that we were",
+        "start": 205.92,
+        "duration": 2.48
+    },
+    {
+        "text": "given",
+        "start": 207.76,
+        "duration": 3.759
+    },
+    {
+        "text": "so we can see that the",
+        "start": 208.4,
+        "duration": 5.28
+    },
+    {
+        "text": "that what they gave us was correct but",
+        "start": 211.519,
+        "duration": 4.161
+    },
+    {
+        "text": "now the question remains how can we",
+        "start": 213.68,
+        "duration": 2.8
+    },
+    {
+        "text": "actually take",
+        "start": 215.68,
+        "duration": 4.4
+    },
+    {
+        "text": "these two uh arrays these two",
+        "start": 216.48,
+        "duration": 6.08
+    },
+    {
+        "text": "traversals and construct this tree well",
+        "start": 220.08,
+        "duration": 4.0
+    },
+    {
+        "text": "it's definitely possible",
+        "start": 222.56,
+        "duration": 3.84
+    },
+    {
+        "text": "let me show you how to do that right now",
+        "start": 224.08,
+        "duration": 3.519
+    },
+    {
+        "text": "so i just want to let you know that",
+        "start": 226.4,
+        "duration": 2.08
+    },
+    {
+        "text": "there's actually",
+        "start": 227.599,
+        "duration": 3.92
+    },
+    {
+        "text": "two things two main facts that we're",
+        "start": 228.48,
+        "duration": 5.2
+    },
+    {
+        "text": "going to be using to construct this tree",
+        "start": 231.519,
+        "duration": 3.28
+    },
+    {
+        "text": "so the first",
+        "start": 233.68,
+        "duration": 4.639
+    },
+    {
+        "text": "fact is that the first value",
+        "start": 234.799,
+        "duration": 6.241
+    },
+    {
+        "text": "in pre-order traversal is always going",
+        "start": 238.319,
+        "duration": 3.361
+    },
+    {
+        "text": "to be the",
+        "start": 241.04,
+        "duration": 3.04
+    },
+    {
+        "text": "root right we remember when we do",
+        "start": 241.68,
+        "duration": 4.479
+    },
+    {
+        "text": "pre-order traversal right",
+        "start": 244.08,
+        "duration": 4.799
+    },
+    {
+        "text": "we're always processing the root first",
+        "start": 246.159,
+        "duration": 4.481
+    },
+    {
+        "text": "so if i was taking",
+        "start": 248.879,
+        "duration": 4.401
+    },
+    {
+        "text": "the pre-order traversal that we're given",
+        "start": 250.64,
+        "duration": 3.36
+    },
+    {
+        "text": "right we we",
+        "start": 253.28,
+        "duration": 2.56
+    },
+    {
+        "text": "remember this is the pre-order traversal",
+        "start": 254.0,
+        "duration": 3.28
+    },
+    {
+        "text": "that we're given the",
+        "start": 255.84,
+        "duration": 4.56
+    },
+    {
+        "text": "first value in pre-order traversal is",
+        "start": 257.28,
+        "duration": 6.16
+    },
+    {
+        "text": "always going to be the root so",
+        "start": 260.4,
+        "duration": 5.16
+    },
+    {
+        "text": "this is the first value three it's",
+        "start": 263.44,
+        "duration": 3.44
+    },
+    {
+        "text": "guaranteed",
+        "start": 265.56,
+        "duration": 3.8
+    },
+    {
+        "text": "to be the root because that's how",
+        "start": 266.88,
+        "duration": 4.8
+    },
+    {
+        "text": "pre-order traversal works the first",
+        "start": 269.36,
+        "duration": 3.04
+    },
+    {
+        "text": "value",
+        "start": 271.68,
+        "duration": 2.799
+    },
+    {
+        "text": "in pre-order traversal is always the",
+        "start": 272.4,
+        "duration": 4.56
+    },
+    {
+        "text": "root node now we don't know about the",
+        "start": 274.479,
+        "duration": 3.44
+    },
+    {
+        "text": "rest of these",
+        "start": 276.96,
+        "duration": 4.4
+    },
+    {
+        "text": "right but we can recursively",
+        "start": 277.919,
+        "duration": 6.0
+    },
+    {
+        "text": "construct now the left subtree and the",
+        "start": 281.36,
+        "duration": 4.08
+    },
+    {
+        "text": "right subtree right we can",
+        "start": 283.919,
+        "duration": 3.761
+    },
+    {
+        "text": "we can we're done with this three right",
+        "start": 285.44,
+        "duration": 4.56
+    },
+    {
+        "text": "now our goal is to reconstruct the left",
+        "start": 287.68,
+        "duration": 2.959
+    },
+    {
+        "text": "subtree",
+        "start": 290.0,
+        "duration": 4.24
+    },
+    {
+        "text": "hey lucky for us the first value here",
+        "start": 290.639,
+        "duration": 7.28
+    },
+    {
+        "text": "is always going to be the root of",
+        "start": 294.24,
+        "duration": 6.48
+    },
+    {
+        "text": "the of the left subtree right because",
+        "start": 297.919,
+        "duration": 4.72
+    },
+    {
+        "text": "that's how pre-order traversal works",
+        "start": 300.72,
+        "duration": 2.479
+    },
+    {
+        "text": "right",
+        "start": 302.639,
+        "duration": 2.4
+    },
+    {
+        "text": "so that's one thing that we're going to",
+        "start": 303.199,
+        "duration": 3.761
+    },
+    {
+        "text": "use the first value is",
+        "start": 305.039,
+        "duration": 4.0
+    },
+    {
+        "text": "always going to be the root and then we",
+        "start": 306.96,
+        "duration": 3.04
+    },
+    {
+        "text": "can take the sub",
+        "start": 309.039,
+        "duration": 2.72
+    },
+    {
+        "text": "list right we can remove the three we",
+        "start": 310.0,
+        "duration": 3.12
+    },
+    {
+        "text": "don't need to look at it anymore then we",
+        "start": 311.759,
+        "duration": 2.72
+    },
+    {
+        "text": "take the sub list and then",
+        "start": 313.12,
+        "duration": 2.56
+    },
+    {
+        "text": "basically we're going to do this",
+        "start": 314.479,
+        "duration": 3.44
+    },
+    {
+        "text": "recursively that's what i'm telling you",
+        "start": 315.68,
+        "duration": 4.64
+    },
+    {
+        "text": "okay we can construct the root but we",
+        "start": 317.919,
+        "duration": 4.881
+    },
+    {
+        "text": "need more information than that right",
+        "start": 320.32,
+        "duration": 3.76
+    },
+    {
+        "text": "and then we're let's say we're done",
+        "start": 322.8,
+        "duration": 4.0
+    },
+    {
+        "text": "looking at this three now i want to take",
+        "start": 324.08,
+        "duration": 6.32
+    },
+    {
+        "text": "this uh array right and i want to know",
+        "start": 326.8,
+        "duration": 6.239
+    },
+    {
+        "text": "which values are going to go in the left",
+        "start": 330.4,
+        "duration": 4.4
+    },
+    {
+        "text": "subtree and which are going to go on the",
+        "start": 333.039,
+        "duration": 2.641
+    },
+    {
+        "text": "right subtree",
+        "start": 334.8,
+        "duration": 3.119
+    },
+    {
+        "text": "from looking at the actual tree itself",
+        "start": 335.68,
+        "duration": 4.32
+    },
+    {
+        "text": "we know the answer right we know that",
+        "start": 337.919,
+        "duration": 4.481
+    },
+    {
+        "text": "this is where we're going to cut our",
+        "start": 340.0,
+        "duration": 3.199
+    },
+    {
+        "text": "list right",
+        "start": 342.4,
+        "duration": 4.4
+    },
+    {
+        "text": "the 9 is going in the left subtree",
+        "start": 343.199,
+        "duration": 6.801
+    },
+    {
+        "text": "right these three values are going in",
+        "start": 346.8,
+        "duration": 5.76
+    },
+    {
+        "text": "the right subtree but how can we",
+        "start": 350.0,
+        "duration": 3.44
+    },
+    {
+        "text": "determine that",
+        "start": 352.56,
+        "duration": 3.28
+    },
+    {
+        "text": "well that's what we need our inorder",
+        "start": 353.44,
+        "duration": 4.479
+    },
+    {
+        "text": "traversal array for",
+        "start": 355.84,
+        "duration": 4.32
+    },
+    {
+        "text": "okay so now let's take a look at the",
+        "start": 357.919,
+        "duration": 4.081
+    },
+    {
+        "text": "input array we're given for the inorder",
+        "start": 360.16,
+        "duration": 3.44
+    },
+    {
+        "text": "traversal and by the way let me just",
+        "start": 362.0,
+        "duration": 2.4
+    },
+    {
+        "text": "mention that",
+        "start": 363.6,
+        "duration": 3.439
+    },
+    {
+        "text": "every value in the traversal is",
+        "start": 364.4,
+        "duration": 4.4
+    },
+    {
+        "text": "guaranteed to be unique",
+        "start": 367.039,
+        "duration": 4.241
+    },
+    {
+        "text": "that's true for both of the traversals",
+        "start": 368.8,
+        "duration": 4.16
+    },
+    {
+        "text": "the inorder and the pre-order every",
+        "start": 371.28,
+        "duration": 3.44
+    },
+    {
+        "text": "value is going to be unique because",
+        "start": 372.96,
+        "duration": 3.2
+    },
+    {
+        "text": "every value in the tree",
+        "start": 374.72,
+        "duration": 4.24
+    },
+    {
+        "text": "is going to be unique but okay so far we",
+        "start": 376.16,
+        "duration": 3.84
+    },
+    {
+        "text": "know that this first",
+        "start": 378.96,
+        "duration": 3.679
+    },
+    {
+        "text": "value three is gonna be the root right",
+        "start": 380.0,
+        "duration": 3.6
+    },
+    {
+        "text": "so now let's",
+        "start": 382.639,
+        "duration": 3.601
+    },
+    {
+        "text": "find three right we we know three is the",
+        "start": 383.6,
+        "duration": 3.36
+    },
+    {
+        "text": "root right",
+        "start": 386.24,
+        "duration": 3.519
+    },
+    {
+        "text": "so we removed it from our first list",
+        "start": 386.96,
+        "duration": 4.079
+    },
+    {
+        "text": "basically right",
+        "start": 389.759,
+        "duration": 4.641
+    },
+    {
+        "text": "but now let's find it in our in",
+        "start": 391.039,
+        "duration": 7.121
+    },
+    {
+        "text": "order list we find it's right over here",
+        "start": 394.4,
+        "duration": 7.04
+    },
+    {
+        "text": "3 is in this index right so we know we",
+        "start": 398.16,
+        "duration": 5.2
+    },
+    {
+        "text": "don't need this 3 anymore right we",
+        "start": 401.44,
+        "duration": 3.039
+    },
+    {
+        "text": "already created that",
+        "start": 403.36,
+        "duration": 4.399
+    },
+    {
+        "text": "node but so now what does",
+        "start": 404.479,
+        "duration": 6.72
+    },
+    {
+        "text": "this in order array tell us",
+        "start": 407.759,
+        "duration": 6.0
+    },
+    {
+        "text": "notice how this is convenient for us",
+        "start": 411.199,
+        "duration": 3.201
+    },
+    {
+        "text": "every",
+        "start": 413.759,
+        "duration": 3.921
+    },
+    {
+        "text": "value to the left of the 3 that we just",
+        "start": 414.4,
+        "duration": 4.72
+    },
+    {
+        "text": "created the root from",
+        "start": 417.68,
+        "duration": 4.239
+    },
+    {
+        "text": "every value over here which is only 9 is",
+        "start": 419.12,
+        "duration": 3.28
+    },
+    {
+        "text": "going to",
+        "start": 421.919,
+        "duration": 4.0
+    },
+    {
+        "text": "go in the left subtree and every value",
+        "start": 422.4,
+        "duration": 4.0
+    },
+    {
+        "text": "to the",
+        "start": 425.919,
+        "duration": 3.68
+    },
+    {
+        "text": "right of 3 is going to go in the right",
+        "start": 426.4,
+        "duration": 4.16
+    },
+    {
+        "text": "subtree that's",
+        "start": 429.599,
+        "duration": 3.761
+    },
+    {
+        "text": "really convenient for us why is this the",
+        "start": 430.56,
+        "duration": 4.16
+    },
+    {
+        "text": "case because that's",
+        "start": 433.36,
+        "duration": 3.52
+    },
+    {
+        "text": "basically the purpose of in-order",
+        "start": 434.72,
+        "duration": 3.199
+    },
+    {
+        "text": "traversal right",
+        "start": 436.88,
+        "duration": 3.52
+    },
+    {
+        "text": "it guarantees that we're going to go",
+        "start": 437.919,
+        "duration": 4.481
+    },
+    {
+        "text": "through the tree in order right from",
+        "start": 440.4,
+        "duration": 4.799
+    },
+    {
+        "text": "left to right basically right so if we",
+        "start": 442.4,
+        "duration": 4.16
+    },
+    {
+        "text": "see the three here",
+        "start": 445.199,
+        "duration": 3.361
+    },
+    {
+        "text": "and that's and this is the position in",
+        "start": 446.56,
+        "duration": 3.52
+    },
+    {
+        "text": "the array we know everything",
+        "start": 448.56,
+        "duration": 3.28
+    },
+    {
+        "text": "here is going to be in the left sub tree",
+        "start": 450.08,
+        "duration": 2.959
+    },
+    {
+        "text": "everything here is going to be in the",
+        "start": 451.84,
+        "duration": 3.199
+    },
+    {
+        "text": "right subtree that's what it tells us",
+        "start": 453.039,
+        "duration": 4.321
+    },
+    {
+        "text": "this is really convenient for us because",
+        "start": 455.039,
+        "duration": 4.321
+    },
+    {
+        "text": "we can count it right we can see there's",
+        "start": 457.36,
+        "duration": 2.88
+    },
+    {
+        "text": "exactly",
+        "start": 459.36,
+        "duration": 4.08
+    },
+    {
+        "text": "one value that's going to go in the",
+        "start": 460.24,
+        "duration": 5.76
+    },
+    {
+        "text": "left subtree and there's exactly three",
+        "start": 463.44,
+        "duration": 4.159
+    },
+    {
+        "text": "values that are going to go in the right",
+        "start": 466.0,
+        "duration": 3.199
+    },
+    {
+        "text": "subtree so what we can do",
+        "start": 467.599,
+        "duration": 4.72
+    },
+    {
+        "text": "is we can take we can take the remainder",
+        "start": 469.199,
+        "duration": 4.72
+    },
+    {
+        "text": "of the pre-order",
+        "start": 472.319,
+        "duration": 4.0
+    },
+    {
+        "text": "array and then partition it right",
+        "start": 473.919,
+        "duration": 4.72
+    },
+    {
+        "text": "partition it over here because we know",
+        "start": 476.319,
+        "duration": 4.241
+    },
+    {
+        "text": "one value is going to go in the left",
+        "start": 478.639,
+        "duration": 3.361
+    },
+    {
+        "text": "subtree and three",
+        "start": 480.56,
+        "duration": 2.88
+    },
+    {
+        "text": "values are going to go in the right",
+        "start": 482.0,
+        "duration": 3.44
+    },
+    {
+        "text": "subtree so that's what we're doing and",
+        "start": 483.44,
+        "duration": 3.759
+    },
+    {
+        "text": "we're going to continue this right",
+        "start": 485.44,
+        "duration": 4.56
+    },
+    {
+        "text": "so now let's recur and by the way in the",
+        "start": 487.199,
+        "duration": 4.641
+    },
+    {
+        "text": "code we're going to do this recursively",
+        "start": 490.0,
+        "duration": 4.16
+    },
+    {
+        "text": "let's create the left subtree",
+        "start": 491.84,
+        "duration": 5.52
+    },
+    {
+        "text": "we know that okay this is the in",
+        "start": 494.16,
+        "duration": 6.0
+    },
+    {
+        "text": "order portion right and this is how",
+        "start": 497.36,
+        "duration": 3.92
+    },
+    {
+        "text": "we're gonna partition",
+        "start": 500.16,
+        "duration": 4.319
+    },
+    {
+        "text": "it from pre-order right we see this is",
+        "start": 501.28,
+        "duration": 5.52
+    },
+    {
+        "text": "the array to create the left subtree the",
+        "start": 504.479,
+        "duration": 3.681
+    },
+    {
+        "text": "thing here is",
+        "start": 506.8,
+        "duration": 3.519
+    },
+    {
+        "text": "notice how this is size one right",
+        "start": 508.16,
+        "duration": 3.52
+    },
+    {
+        "text": "there's only one value here and there's",
+        "start": 510.319,
+        "duration": 3.28
+    },
+    {
+        "text": "only one value here right that tells us",
+        "start": 511.68,
+        "duration": 3.599
+    },
+    {
+        "text": "that the sub tree we're creating is only",
+        "start": 513.599,
+        "duration": 4.0
+    },
+    {
+        "text": "gonna have one node in it right so",
+        "start": 515.279,
+        "duration": 5.281
+    },
+    {
+        "text": "nine is the only node in the left",
+        "start": 517.599,
+        "duration": 4.401
+    },
+    {
+        "text": "subtree so we're going to create that",
+        "start": 520.56,
+        "duration": 3.279
+    },
+    {
+        "text": "node put the value there and now we're",
+        "start": 522.0,
+        "duration": 2.56
+    },
+    {
+        "text": "basically",
+        "start": 523.839,
+        "duration": 3.12
+    },
+    {
+        "text": "done with this left sub tree obviously",
+        "start": 524.56,
+        "duration": 4.0
+    },
+    {
+        "text": "because there's no more",
+        "start": 526.959,
+        "duration": 4.801
+    },
+    {
+        "text": "uh you know there's no more nodes left",
+        "start": 528.56,
+        "duration": 5.52
+    },
+    {
+        "text": "in this general area right this these",
+        "start": 531.76,
+        "duration": 3.84
+    },
+    {
+        "text": "values are reserved",
+        "start": 534.08,
+        "duration": 4.48
+    },
+    {
+        "text": "for the right subtree this is reserved",
+        "start": 535.6,
+        "duration": 4.32
+    },
+    {
+        "text": "for the right subtree",
+        "start": 538.56,
+        "duration": 3.36
+    },
+    {
+        "text": "okay so now we're looking at the",
+        "start": 539.92,
+        "duration": 3.919
+    },
+    {
+        "text": "pre-order portion right there's three",
+        "start": 541.92,
+        "duration": 4.56
+    },
+    {
+        "text": "values just like in the in order portion",
+        "start": 543.839,
+        "duration": 5.12
+    },
+    {
+        "text": "and remember how are we gonna create the",
+        "start": 546.48,
+        "duration": 5.12
+    },
+    {
+        "text": "root node of this subtree now we always",
+        "start": 548.959,
+        "duration": 5.521
+    },
+    {
+        "text": "take the first value in pre-order",
+        "start": 551.6,
+        "duration": 4.0
+    },
+    {
+        "text": "traversal it's",
+        "start": 554.48,
+        "duration": 3.919
+    },
+    {
+        "text": "20 right the value is 20 so we're going",
+        "start": 555.6,
+        "duration": 3.52
+    },
+    {
+        "text": "to take this",
+        "start": 558.399,
+        "duration": 3.44
+    },
+    {
+        "text": "value 20. we don't need it anymore",
+        "start": 559.12,
+        "duration": 4.32
+    },
+    {
+        "text": "because we're going to create a",
+        "start": 561.839,
+        "duration": 4.56
+    },
+    {
+        "text": "a node from that value and so now we",
+        "start": 563.44,
+        "duration": 4.64
+    },
+    {
+        "text": "need to know which values are going to",
+        "start": 566.399,
+        "duration": 3.281
+    },
+    {
+        "text": "go in the left sub tree and which are",
+        "start": 568.08,
+        "duration": 2.08
+    },
+    {
+        "text": "going to go",
+        "start": 569.68,
+        "duration": 3.92
+    },
+    {
+        "text": "in the right subtree we know by finding",
+        "start": 570.16,
+        "duration": 6.48
+    },
+    {
+        "text": "20 right 20 is the value let's find 20",
+        "start": 573.6,
+        "duration": 5.84
+    },
+    {
+        "text": "in our in order traversal it's over here",
+        "start": 576.64,
+        "duration": 4.48
+    },
+    {
+        "text": "by the way in the code i'm going to be",
+        "start": 579.44,
+        "duration": 3.6
+    },
+    {
+        "text": "calling the index of this",
+        "start": 581.12,
+        "duration": 5.2
+    },
+    {
+        "text": "mid so m for mid we find the",
+        "start": 583.04,
+        "duration": 7.359
+    },
+    {
+        "text": "index of 20 right we know we don't need",
+        "start": 586.32,
+        "duration": 7.6
+    },
+    {
+        "text": "20 anymore so we can get rid of it right",
+        "start": 590.399,
+        "duration": 6.241
+    },
+    {
+        "text": "we see that there's one value on the",
+        "start": 593.92,
+        "duration": 3.84
+    },
+    {
+        "text": "left of 20",
+        "start": 596.64,
+        "duration": 4.72
+    },
+    {
+        "text": "and there's one value on the right of",
+        "start": 597.76,
+        "duration": 4.319
+    },
+    {
+        "text": "20.",
+        "start": 601.36,
+        "duration": 2.88
+    },
+    {
+        "text": "this tells us that one value is going to",
+        "start": 602.079,
+        "duration": 4.241
+    },
+    {
+        "text": "go in the left subtree and one value is",
+        "start": 604.24,
+        "duration": 3.52
+    },
+    {
+        "text": "going to go in the right subtree right",
+        "start": 606.32,
+        "duration": 2.88
+    },
+    {
+        "text": "just like we have over here",
+        "start": 607.76,
+        "duration": 4.56
+    },
+    {
+        "text": "so now let's construct that left subtree",
+        "start": 609.2,
+        "duration": 5.36
+    },
+    {
+        "text": "we know it's going to be exactly size 1",
+        "start": 612.32,
+        "duration": 5.12
+    },
+    {
+        "text": "from looking over here so we take this",
+        "start": 614.56,
+        "duration": 3.6
+    },
+    {
+        "text": "15",
+        "start": 617.44,
+        "duration": 2.639
+    },
+    {
+        "text": "right where can we now our job is to",
+        "start": 618.16,
+        "duration": 4.08
+    },
+    {
+        "text": "recursively create the left subtree",
+        "start": 620.079,
+        "duration": 3.921
+    },
+    {
+        "text": "we're going to take this 15 since it's",
+        "start": 622.24,
+        "duration": 4.64
+    },
+    {
+        "text": "the first value in the subarray for",
+        "start": 624.0,
+        "duration": 4.8
+    },
+    {
+        "text": "pre-order right we know that it's going",
+        "start": 626.88,
+        "duration": 3.28
+    },
+    {
+        "text": "to be the root of",
+        "start": 628.8,
+        "duration": 2.96
+    },
+    {
+        "text": "the current subtree we're at so let's",
+        "start": 630.16,
+        "duration": 3.76
+    },
+    {
+        "text": "get rid of this this 15.",
+        "start": 631.76,
+        "duration": 5.44
+    },
+    {
+        "text": "let's create that node right 15 over",
+        "start": 633.92,
+        "duration": 4.72
+    },
+    {
+        "text": "here is going to be a node",
+        "start": 637.2,
+        "duration": 4.16
+    },
+    {
+        "text": "and there's no more values left in this",
+        "start": 638.64,
+        "duration": 4.72
+    },
+    {
+        "text": "subtree because we know it's only going",
+        "start": 641.36,
+        "duration": 2.88
+    },
+    {
+        "text": "to be size",
+        "start": 643.36,
+        "duration": 3.12
+    },
+    {
+        "text": "1. okay now we're creating the right",
+        "start": 644.24,
+        "duration": 3.039
+    },
+    {
+        "text": "subtree",
+        "start": 646.48,
+        "duration": 2.64
+    },
+    {
+        "text": "we know that there's only one value in",
+        "start": 647.279,
+        "duration": 4.161
+    },
+    {
+        "text": "the right subtree from looking over here",
+        "start": 649.12,
+        "duration": 4.159
+    },
+    {
+        "text": "with and since there's only one value",
+        "start": 651.44,
+        "duration": 3.76
+    },
+    {
+        "text": "left in general it's a seven",
+        "start": 653.279,
+        "duration": 5.12
+    },
+    {
+        "text": "we can make a node from it and then",
+        "start": 655.2,
+        "duration": 4.0
+    },
+    {
+        "text": "we're done",
+        "start": 658.399,
+        "duration": 2.801
+    },
+    {
+        "text": "we know we're done because we've",
+        "start": 659.2,
+        "duration": 4.079
+    },
+    {
+        "text": "basically gotten rid of every single",
+        "start": 661.2,
+        "duration": 3.04
+    },
+    {
+        "text": "value",
+        "start": 663.279,
+        "duration": 4.56
+    },
+    {
+        "text": "in our arrays pre-order and in order",
+        "start": 664.24,
+        "duration": 6.0
+    },
+    {
+        "text": "so using these two arrays we were able",
+        "start": 667.839,
+        "duration": 3.761
+    },
+    {
+        "text": "to create our",
+        "start": 670.24,
+        "duration": 3.52
+    },
+    {
+        "text": "tree correctly and just let me just",
+        "start": 671.6,
+        "duration": 4.239
+    },
+    {
+        "text": "summarize what we're actually doing",
+        "start": 673.76,
+        "duration": 3.519
+    },
+    {
+        "text": "we're not doing a lot",
+        "start": 675.839,
+        "duration": 3.601
+    },
+    {
+        "text": "we don't need a ton of information",
+        "start": 677.279,
+        "duration": 3.201
+    },
+    {
+        "text": "remember",
+        "start": 679.44,
+        "duration": 4.32
+    },
+    {
+        "text": "the first value in pre-order",
+        "start": 680.48,
+        "duration": 5.599
+    },
+    {
+        "text": "the pre-order array is always going to",
+        "start": 683.76,
+        "duration": 4.319
+    },
+    {
+        "text": "be the root right that's just how it",
+        "start": 686.079,
+        "duration": 3.521
+    },
+    {
+        "text": "works and then once we",
+        "start": 688.079,
+        "duration": 3.921
+    },
+    {
+        "text": "take that value create a node from it",
+        "start": 689.6,
+        "duration": 3.679
+    },
+    {
+        "text": "and then when we try to",
+        "start": 692.0,
+        "duration": 4.8
+    },
+    {
+        "text": "look that value up in in order traversal",
+        "start": 693.279,
+        "duration": 4.24
+    },
+    {
+        "text": "right",
+        "start": 696.8,
+        "duration": 4.0
+    },
+    {
+        "text": "then we can get some subarrays",
+        "start": 697.519,
+        "duration": 6.241
+    },
+    {
+        "text": "right we can take we can take the length",
+        "start": 700.8,
+        "duration": 3.92
+    },
+    {
+        "text": "of the left",
+        "start": 703.76,
+        "duration": 3.04
+    },
+    {
+        "text": "and right sub array so the right sub",
+        "start": 704.72,
+        "duration": 3.6
+    },
+    {
+        "text": "array is three",
+        "start": 706.8,
+        "duration": 4.64
+    },
+    {
+        "text": "and the left sub array is one note",
+        "start": 708.32,
+        "duration": 6.56
+    },
+    {
+        "text": "now these counts one and three they tell",
+        "start": 711.44,
+        "duration": 3.839
+    },
+    {
+        "text": "us",
+        "start": 714.88,
+        "duration": 3.759
+    },
+    {
+        "text": "how to partition the pre-order traversal",
+        "start": 715.279,
+        "duration": 4.641
+    },
+    {
+        "text": "so take a look at the pre-order",
+        "start": 718.639,
+        "duration": 2.401
+    },
+    {
+        "text": "traversal",
+        "start": 719.92,
+        "duration": 4.08
+    },
+    {
+        "text": "one tells us that we're gonna cut over",
+        "start": 721.04,
+        "duration": 5.28
+    },
+    {
+        "text": "here because this needs to be size",
+        "start": 724.0,
+        "duration": 5.36
+    },
+    {
+        "text": "one this needs to be size three",
+        "start": 726.32,
+        "duration": 6.0
+    },
+    {
+        "text": "and then from this subarray this",
+        "start": 729.36,
+        "duration": 4.64
+    },
+    {
+        "text": "subarray with only one value",
+        "start": 732.32,
+        "duration": 3.759
+    },
+    {
+        "text": "we are going to recursively run the",
+        "start": 734.0,
+        "duration": 3.04
+    },
+    {
+        "text": "algorithm",
+        "start": 736.079,
+        "duration": 4.0
+    },
+    {
+        "text": "to create this left subtree and with",
+        "start": 737.04,
+        "duration": 4.16
+    },
+    {
+        "text": "this sub array we're going to",
+        "start": 740.079,
+        "duration": 2.88
+    },
+    {
+        "text": "recursively run the algorithm",
+        "start": 741.2,
+        "duration": 4.639
+    },
+    {
+        "text": "to create this subtree and we're just",
+        "start": 742.959,
+        "duration": 4.641
+    },
+    {
+        "text": "going to continuously repeat that",
+        "start": 745.839,
+        "duration": 3.841
+    },
+    {
+        "text": "process until we get to our base cases",
+        "start": 747.6,
+        "duration": 3.44
+    },
+    {
+        "text": "and until we're finished with every",
+        "start": 749.68,
+        "duration": 3.12
+    },
+    {
+        "text": "single node that we need to create",
+        "start": 751.04,
+        "duration": 3.599
+    },
+    {
+        "text": "so now let me actually show you the code",
+        "start": 752.8,
+        "duration": 3.599
+    },
+    {
+        "text": "it's actually very short",
+        "start": 754.639,
+        "duration": 4.401
+    },
+    {
+        "text": "less than 10 lines okay so as i",
+        "start": 756.399,
+        "duration": 4.56
+    },
+    {
+        "text": "mentioned this is a recursive algorithm",
+        "start": 759.04,
+        "duration": 3.68
+    },
+    {
+        "text": "so we always want to start with the base",
+        "start": 760.959,
+        "duration": 3.44
+    },
+    {
+        "text": "case and the base case is going to be",
+        "start": 762.72,
+        "duration": 3.76
+    },
+    {
+        "text": "what if we don't have any nodes",
+        "start": 764.399,
+        "duration": 4.481
+    },
+    {
+        "text": "to traverse through the two arrays that",
+        "start": 766.48,
+        "duration": 3.2
+    },
+    {
+        "text": "we're given",
+        "start": 768.88,
+        "duration": 3.44
+    },
+    {
+        "text": "that means we can return null or",
+        "start": 769.68,
+        "duration": 4.48
+    },
+    {
+        "text": "basically we don't have to create",
+        "start": 772.32,
+        "duration": 5.28
+    },
+    {
+        "text": "a tree so if pre-order is empty or",
+        "start": 774.16,
+        "duration": 7.2
+    },
+    {
+        "text": "in order is empty then we can return",
+        "start": 777.6,
+        "duration": 5.76
+    },
+    {
+        "text": "null we have no values so we don't need",
+        "start": 781.36,
+        "duration": 4.4
+    },
+    {
+        "text": "to create a tree we can return null",
+        "start": 783.36,
+        "duration": 4.56
+    },
+    {
+        "text": "otherwise we're going to create a tree",
+        "start": 785.76,
+        "duration": 3.12
+    },
+    {
+        "text": "node right",
+        "start": 787.92,
+        "duration": 2.64
+    },
+    {
+        "text": "and what's the value of that tree node",
+        "start": 788.88,
+        "duration": 3.04
+    },
+    {
+        "text": "going to be well it's going to be",
+        "start": 790.56,
+        "duration": 3.519
+    },
+    {
+        "text": "the first value that happens to be in",
+        "start": 791.92,
+        "duration": 3.12
+    },
+    {
+        "text": "the pre-order",
+        "start": 794.079,
+        "duration": 2.641
+    },
+    {
+        "text": "array just like i showed you right",
+        "start": 795.04,
+        "duration": 3.52
+    },
+    {
+        "text": "always going to be the first value so",
+        "start": 796.72,
+        "duration": 3.119
+    },
+    {
+        "text": "it's always going to be",
+        "start": 798.56,
+        "duration": 3.519
+    },
+    {
+        "text": "index of zero and then whatever that",
+        "start": 799.839,
+        "duration": 3.201
+    },
+    {
+        "text": "value was",
+        "start": 802.079,
+        "duration": 4.161
+    },
+    {
+        "text": "we want to find the position of it in",
+        "start": 803.04,
+        "duration": 6.4
+    },
+    {
+        "text": "the in order array so inorder dot",
+        "start": 806.24,
+        "duration": 6.08
+    },
+    {
+        "text": "index so we want the index of that value",
+        "start": 809.44,
+        "duration": 4.88
+    },
+    {
+        "text": "pre-order of zero",
+        "start": 812.32,
+        "duration": 4.079
+    },
+    {
+        "text": "and we're going to get it in mid now",
+        "start": 814.32,
+        "duration": 3.6
+    },
+    {
+        "text": "this is the part",
+        "start": 816.399,
+        "duration": 3.12
+    },
+    {
+        "text": "where we're going to build the subtree",
+        "start": 817.92,
+        "duration": 4.159
+    },
+    {
+        "text": "so root.left let's create the left",
+        "start": 819.519,
+        "duration": 4.161
+    },
+    {
+        "text": "subtree and we're going to do this",
+        "start": 822.079,
+        "duration": 3.601
+    },
+    {
+        "text": "recursively as i mentioned",
+        "start": 823.68,
+        "duration": 5.36
+    },
+    {
+        "text": "so self.build tree we're calling the",
+        "start": 825.68,
+        "duration": 4.32
+    },
+    {
+        "text": "function that we're",
+        "start": 829.04,
+        "duration": 4.0
+    },
+    {
+        "text": "inside of and the convenient part about",
+        "start": 830.0,
+        "duration": 4.639
+    },
+    {
+        "text": "python is we can do",
+        "start": 833.04,
+        "duration": 3.919
+    },
+    {
+        "text": "sublist so that's going to cut down our",
+        "start": 834.639,
+        "duration": 4.241
+    },
+    {
+        "text": "code quite a bit so we need to pass in",
+        "start": 836.959,
+        "duration": 3.041
+    },
+    {
+        "text": "the new",
+        "start": 838.88,
+        "duration": 4.399
+    },
+    {
+        "text": "pre-order and in order arrays or the",
+        "start": 840.0,
+        "duration": 6.72
+    },
+    {
+        "text": "sub-arrays more likely so pre-order",
+        "start": 843.279,
+        "duration": 5.281
+    },
+    {
+        "text": "what are we going to pass in for the",
+        "start": 846.72,
+        "duration": 3.2
+    },
+    {
+        "text": "left subtree of",
+        "start": 848.56,
+        "duration": 4.48
+    },
+    {
+        "text": "pre-order well mid tells us",
+        "start": 849.92,
+        "duration": 6.56
+    },
+    {
+        "text": "mid tells us how many nodes we want the",
+        "start": 853.04,
+        "duration": 4.479
+    },
+    {
+        "text": "index",
+        "start": 856.48,
+        "duration": 3.039
+    },
+    {
+        "text": "of basically the value of mid tells us",
+        "start": 857.519,
+        "duration": 3.68
+    },
+    {
+        "text": "how many nodes we want in the left",
+        "start": 859.519,
+        "duration": 3.12
+    },
+    {
+        "text": "subtree so what i'm going to do is for",
+        "start": 861.199,
+        "duration": 2.161
+    },
+    {
+        "text": "pre-order",
+        "start": 862.639,
+        "duration": 2.481
+    },
+    {
+        "text": "we're going to start at index one we're",
+        "start": 863.36,
+        "duration": 3.44
+    },
+    {
+        "text": "basically skipping the zero index",
+        "start": 865.12,
+        "duration": 3.839
+    },
+    {
+        "text": "because we already just created a node",
+        "start": 866.8,
+        "duration": 4.159
+    },
+    {
+        "text": "for the zero index we're starting at",
+        "start": 868.959,
+        "duration": 4.0
+    },
+    {
+        "text": "index one going all the way",
+        "start": 870.959,
+        "duration": 5.68
+    },
+    {
+        "text": "up until mid plus one in python",
+        "start": 872.959,
+        "duration": 6.081
+    },
+    {
+        "text": "this mid plus one is non-inclusive so",
+        "start": 876.639,
+        "duration": 4.241
+    },
+    {
+        "text": "this sub array is really just",
+        "start": 879.04,
+        "duration": 5.28
+    },
+    {
+        "text": "a pre-order from index one to mid so",
+        "start": 880.88,
+        "duration": 5.12
+    },
+    {
+        "text": "that's what we're doing and we're going",
+        "start": 884.32,
+        "duration": 3.28
+    },
+    {
+        "text": "to pass in the in",
+        "start": 886.0,
+        "duration": 3.839
+    },
+    {
+        "text": "order portion that we need as well and",
+        "start": 887.6,
+        "duration": 3.359
+    },
+    {
+        "text": "that's just going to be",
+        "start": 889.839,
+        "duration": 4.081
+    },
+    {
+        "text": "from the beginning up until mid but not",
+        "start": 890.959,
+        "duration": 4.641
+    },
+    {
+        "text": "including mid right",
+        "start": 893.92,
+        "duration": 3.599
+    },
+    {
+        "text": "this probably makes more sense if you go",
+        "start": 895.6,
+        "duration": 3.599
+    },
+    {
+        "text": "back and look at the picture but",
+        "start": 897.519,
+        "duration": 3.201
+    },
+    {
+        "text": "basically we're just creating the",
+        "start": 899.199,
+        "duration": 3.281
+    },
+    {
+        "text": "appropriate sub-lists",
+        "start": 900.72,
+        "duration": 4.96
+    },
+    {
+        "text": "that we need to create the left subtree",
+        "start": 902.48,
+        "duration": 5.039
+    },
+    {
+        "text": "we're going to do basically the exact",
+        "start": 905.68,
+        "duration": 3.12
+    },
+    {
+        "text": "same thing with the",
+        "start": 907.519,
+        "duration": 3.521
+    },
+    {
+        "text": "right subtree and i would encourage you",
+        "start": 908.8,
+        "duration": 3.2
+    },
+    {
+        "text": "to draw this out",
+        "start": 911.04,
+        "duration": 3.919
+    },
+    {
+        "text": "yourself to basically reinforce what",
+        "start": 912.0,
+        "duration": 4.16
+    },
+    {
+        "text": "you're learning or",
+        "start": 914.959,
+        "duration": 4.24
+    },
+    {
+        "text": "watching me do right now so to build the",
+        "start": 916.16,
+        "duration": 4.239
+    },
+    {
+        "text": "right subtree",
+        "start": 919.199,
+        "duration": 4.801
+    },
+    {
+        "text": "we need every value after this sub list",
+        "start": 920.399,
+        "duration": 6.56
+    },
+    {
+        "text": "right so we can just say starting at",
+        "start": 924.0,
+        "duration": 3.519
+    },
+    {
+        "text": "index",
+        "start": 926.959,
+        "duration": 4.481
+    },
+    {
+        "text": "mid plus one going until the end",
+        "start": 927.519,
+        "duration": 5.841
+    },
+    {
+        "text": "of the list that's how you do it in",
+        "start": 931.44,
+        "duration": 3.6
+    },
+    {
+        "text": "python we're starting at mid plus one",
+        "start": 933.36,
+        "duration": 3.599
+    },
+    {
+        "text": "and going until the end of that",
+        "start": 935.04,
+        "duration": 3.84
+    },
+    {
+        "text": "sub list just like i showed in the",
+        "start": 936.959,
+        "duration": 3.041
+    },
+    {
+        "text": "picture and",
+        "start": 938.88,
+        "duration": 3.44
+    },
+    {
+        "text": "for in order we can actually do the",
+        "start": 940.0,
+        "duration": 3.44
+    },
+    {
+        "text": "exact same thing",
+        "start": 942.32,
+        "duration": 4.48
+    },
+    {
+        "text": "we want every node to the right of",
+        "start": 943.44,
+        "duration": 6.56
+    },
+    {
+        "text": "mid in in order right from our inorder",
+        "start": 946.8,
+        "duration": 5.44
+    },
+    {
+        "text": "array we want every value to the right",
+        "start": 950.0,
+        "duration": 2.8
+    },
+    {
+        "text": "of this",
+        "start": 952.24,
+        "duration": 4.24
+    },
+    {
+        "text": "index mid so we can do that with mid",
+        "start": 952.8,
+        "duration": 7.599
+    },
+    {
+        "text": "plus one start starting at mid plus one",
+        "start": 956.48,
+        "duration": 5.76
+    },
+    {
+        "text": "and then going until the end of the",
+        "start": 960.399,
+        "duration": 4.0
+    },
+    {
+        "text": "array so now let me close this function",
+        "start": 962.24,
+        "duration": 4.24
+    },
+    {
+        "text": "and so this is literally all you have to",
+        "start": 964.399,
+        "duration": 3.761
+    },
+    {
+        "text": "do the reason it's so easy",
+        "start": 966.48,
+        "duration": 3.84
+    },
+    {
+        "text": "is mainly because i'm using python but",
+        "start": 968.16,
+        "duration": 3.119
+    },
+    {
+        "text": "you could you could",
+        "start": 970.32,
+        "duration": 2.72
+    },
+    {
+        "text": "read you could do this code without",
+        "start": 971.279,
+        "duration": 3.201
+    },
+    {
+        "text": "python it would probably just be a",
+        "start": 973.04,
+        "duration": 2.64
+    },
+    {
+        "text": "couple extra lines",
+        "start": 974.48,
+        "duration": 3.039
+    },
+    {
+        "text": "you might need to pass in a couple extra",
+        "start": 975.68,
+        "duration": 4.24
+    },
+    {
+        "text": "parameters into this build tree function",
+        "start": 977.519,
+        "duration": 4.56
+    },
+    {
+        "text": "basically just these indices that i'm",
+        "start": 979.92,
+        "duration": 3.76
+    },
+    {
+        "text": "doing you might not be able to create",
+        "start": 982.079,
+        "duration": 2.401
+    },
+    {
+        "text": "sub lists",
+        "start": 983.68,
+        "duration": 2.959
+    },
+    {
+        "text": "but you can at least create you can at",
+        "start": 984.48,
+        "duration": 4.0
+    },
+    {
+        "text": "least pass these indices into your",
+        "start": 986.639,
+        "duration": 2.401
+    },
+    {
+        "text": "functions",
+        "start": 988.48,
+        "duration": 3.52
+    },
+    {
+        "text": "in java and other languages so with that",
+        "start": 989.04,
+        "duration": 4.799
+    },
+    {
+        "text": "we have actually created our",
+        "start": 992.0,
+        "duration": 4.079
+    },
+    {
+        "text": "uh tree so the only thing left for us to",
+        "start": 993.839,
+        "duration": 3.841
+    },
+    {
+        "text": "do is return that tree",
+        "start": 996.079,
+        "duration": 3.521
+    },
+    {
+        "text": "so with that being said this is the",
+        "start": 997.68,
+        "duration": 3.44
+    },
+    {
+        "text": "final solution it's probably",
+        "start": 999.6,
+        "duration": 3.599
+    },
+    {
+        "text": "less code than you would have predicted",
+        "start": 1001.12,
+        "duration": 4.159
+    },
+    {
+        "text": "but the problem is a little tricky",
+        "start": 1003.199,
+        "duration": 4.241
+    },
+    {
+        "text": "but it's kind of enjoyable at least in",
+        "start": 1005.279,
+        "duration": 3.12
+    },
+    {
+        "text": "my opinion",
+        "start": 1007.44,
+        "duration": 3.12
+    },
+    {
+        "text": "so i hope that this was helpful if you",
+        "start": 1008.399,
+        "duration": 4.161
+    },
+    {
+        "text": "enjoyed please like and subscribe it",
+        "start": 1010.56,
+        "duration": 4.16
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 1012.56,
+        "duration": 2.88
+    },
+    {
+        "text": "hopefully",
+        "start": 1014.72,
+        "duration": 8.96
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 1015.44,
+        "duration": 8.24
+    }
+]

@@ -1,0 +1,852 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white and I",
+        "start": 0.53,
+        "duration": 4.78
+    },
+    {
+        "text": "do tack encoding stuff on twitch and",
+        "start": 3.33,
+        "duration": 3.27
+    },
+    {
+        "text": "YouTube and everything's in the",
+        "start": 5.31,
+        "duration": 2.97
+    },
+    {
+        "text": "description should check that out if",
+        "start": 6.6,
+        "duration": 3.63
+    },
+    {
+        "text": "you're interested I do all the way code",
+        "start": 8.28,
+        "duration": 3.239
+    },
+    {
+        "text": "problems I have a ton of them on my",
+        "start": 10.23,
+        "duration": 2.52
+    },
+    {
+        "text": "channel so go check those out if you",
+        "start": 11.519,
+        "duration": 2.37
+    },
+    {
+        "text": "like these explained to you I'm doing",
+        "start": 12.75,
+        "duration": 3.179
+    },
+    {
+        "text": "trees right now so this one's called",
+        "start": 13.889,
+        "duration": 4.191
+    },
+    {
+        "text": "check completeness of a binary tree",
+        "start": 15.929,
+        "duration": 4.561
+    },
+    {
+        "text": "given a binary tree determine if it's a",
+        "start": 18.08,
+        "duration": 3.67
+    },
+    {
+        "text": "complete binary tree",
+        "start": 20.49,
+        "duration": 3.99
+    },
+    {
+        "text": "what's a complete binary tree well they",
+        "start": 21.75,
+        "duration": 4.439
+    },
+    {
+        "text": "give us a definition here in a complete",
+        "start": 24.48,
+        "duration": 3.84
+    },
+    {
+        "text": "binary tree every level except possibly",
+        "start": 26.189,
+        "duration": 5.131
+    },
+    {
+        "text": "the last is completely filled so all the",
+        "start": 28.32,
+        "duration": 5.16
+    },
+    {
+        "text": "levels are completely filled except for",
+        "start": 31.32,
+        "duration": 5.669
+    },
+    {
+        "text": "the last level and also all nodes in the",
+        "start": 33.48,
+        "duration": 5.46
+    },
+    {
+        "text": "last level are as far left as possible",
+        "start": 36.989,
+        "duration": 5.041
+    },
+    {
+        "text": "so in the last if there was a node here",
+        "start": 38.94,
+        "duration": 5.4
+    },
+    {
+        "text": "instead of the 6 so if the 6 was on the",
+        "start": 42.03,
+        "duration": 3.93
+    },
+    {
+        "text": "right node that would be false",
+        "start": 44.34,
+        "duration": 3.3
+    },
+    {
+        "text": "that's not complete they all have to be",
+        "start": 45.96,
+        "duration": 5.009
+    },
+    {
+        "text": "as left as possible in the last level so",
+        "start": 47.64,
+        "duration": 5.099
+    },
+    {
+        "text": "it can have between 1 and 2 to the edge",
+        "start": 50.969,
+        "duration": 4.531
+    },
+    {
+        "text": "nodes inclusive of the last level H so",
+        "start": 52.739,
+        "duration": 4.171
+    },
+    {
+        "text": "you have we could see that example right",
+        "start": 55.5,
+        "duration": 3.69
+    },
+    {
+        "text": "here the 7 is not as left as possible",
+        "start": 56.91,
+        "duration": 4.5
+    },
+    {
+        "text": "the 7 could be the left child of 3 and",
+        "start": 59.19,
+        "duration": 3.93
+    },
+    {
+        "text": "that would be complete but it's actually",
+        "start": 61.41,
+        "duration": 4.77
+    },
+    {
+        "text": "the right child so it's not so I looked",
+        "start": 63.12,
+        "duration": 4.8
+    },
+    {
+        "text": "at the solution for this and the",
+        "start": 66.18,
+        "duration": 4.59
+    },
+    {
+        "text": "solution is kind of weird this guy does",
+        "start": 67.92,
+        "duration": 7.14
+    },
+    {
+        "text": "like some weird trap where he creates a",
+        "start": 70.77,
+        "duration": 7.44
+    },
+    {
+        "text": "modified version of a tree node and he",
+        "start": 75.06,
+        "duration": 5.07
+    },
+    {
+        "text": "adds a code to it and then he has this",
+        "start": 78.21,
+        "duration": 5.28
+    },
+    {
+        "text": "list of these modified nodes and he kind",
+        "start": 80.13,
+        "duration": 5.25
+    },
+    {
+        "text": "of does this thing that we learned in",
+        "start": 83.49,
+        "duration": 3.629
+    },
+    {
+        "text": "data structures a long time ago if you",
+        "start": 85.38,
+        "duration": 3.239
+    },
+    {
+        "text": "learned data structures where the left",
+        "start": 87.119,
+        "duration": 6.061
+    },
+    {
+        "text": "node is 2 to the N 2 times the huge at",
+        "start": 88.619,
+        "duration": 6.57
+    },
+    {
+        "text": "multiplies the code times 2 and then the",
+        "start": 93.18,
+        "duration": 6.24
+    },
+    {
+        "text": "right is 2 n times 2 I mean plus 1 for",
+        "start": 95.189,
+        "duration": 6.031
+    },
+    {
+        "text": "the right child and then he does like",
+        "start": 99.42,
+        "duration": 3.269
+    },
+    {
+        "text": "this thing at the end where he checks I",
+        "start": 101.22,
+        "duration": 3.719
+    },
+    {
+        "text": "mean you can look at this solution it's",
+        "start": 102.689,
+        "duration": 4.081
+    },
+    {
+        "text": "I'll leave I'll link it in the",
+        "start": 104.939,
+        "duration": 4.531
+    },
+    {
+        "text": "description it's an it's a solution I",
+        "start": 106.77,
+        "duration": 5.04
+    },
+    {
+        "text": "wrote it I rewrote it and it makes sense",
+        "start": 109.47,
+        "duration": 4.95
+    },
+    {
+        "text": "to me but I looked at the discussion and",
+        "start": 111.81,
+        "duration": 4.47
+    },
+    {
+        "text": "I found way better solutions here so I'm",
+        "start": 114.42,
+        "duration": 3.299
+    },
+    {
+        "text": "going to show you the one that I really",
+        "start": 116.28,
+        "duration": 3.689
+    },
+    {
+        "text": "liked the best and basically the concept",
+        "start": 117.719,
+        "duration": 4.83
+    },
+    {
+        "text": "behind it is when you're checking the",
+        "start": 119.969,
+        "duration": 5.01
+    },
+    {
+        "text": "completeness here the first null node",
+        "start": 122.549,
+        "duration": 4.231
+    },
+    {
+        "text": "that you run into if you're traversing",
+        "start": 124.979,
+        "duration": 3.87
+    },
+    {
+        "text": "this tree if we do a level order",
+        "start": 126.78,
+        "duration": 4.41
+    },
+    {
+        "text": "traversal meaning we go here and then we",
+        "start": 128.849,
+        "duration": 4.021
+    },
+    {
+        "text": "go let him we have to do the left and",
+        "start": 131.19,
+        "duration": 2.19
+    },
+    {
+        "text": "then right",
+        "start": 132.87,
+        "duration": 3.12
+    },
+    {
+        "text": "first so if we go one two three four",
+        "start": 133.38,
+        "duration": 4.95
+    },
+    {
+        "text": "five six and we go and order level level",
+        "start": 135.99,
+        "duration": 5.43
+    },
+    {
+        "text": "the very first null node that we ever",
+        "start": 138.33,
+        "duration": 6.39
+    },
+    {
+        "text": "hit should be the last node that we ever",
+        "start": 141.42,
+        "duration": 7.14
+    },
+    {
+        "text": "see right so if we were to see a null",
+        "start": 144.72,
+        "duration": 6.27
+    },
+    {
+        "text": "here and then we see an actual node",
+        "start": 148.56,
+        "duration": 4.92
+    },
+    {
+        "text": "without a null value after that that",
+        "start": 150.99,
+        "duration": 4.71
+    },
+    {
+        "text": "would be false so what we want to do is",
+        "start": 153.48,
+        "duration": 4.17
+    },
+    {
+        "text": "we just want to have a boolean to keep",
+        "start": 155.7,
+        "duration": 3.84
+    },
+    {
+        "text": "track of whether we've seen a null node",
+        "start": 157.65,
+        "duration": 4.23
+    },
+    {
+        "text": "and if we see the first null node we see",
+        "start": 159.54,
+        "duration": 4.05
+    },
+    {
+        "text": "if we ever see a node after that",
+        "start": 161.88,
+        "duration": 3.9
+    },
+    {
+        "text": "that means it's false otherwise it's",
+        "start": 163.59,
+        "duration": 3.96
+    },
+    {
+        "text": "true and it works out perfectly and we",
+        "start": 165.78,
+        "duration": 3.36
+    },
+    {
+        "text": "just do a basic level order traversal",
+        "start": 167.55,
+        "duration": 3.18
+    },
+    {
+        "text": "and that's pretty much it so that's why",
+        "start": 169.14,
+        "duration": 3.48
+    },
+    {
+        "text": "I like that solution a lot better so",
+        "start": 170.73,
+        "duration": 4.4
+    },
+    {
+        "text": "we'll have this boolean called end",
+        "start": 172.62,
+        "duration": 5.16
+    },
+    {
+        "text": "that's set to false so this will track",
+        "start": 175.13,
+        "duration": 4.51
+    },
+    {
+        "text": "whether we've seen a null node and hit",
+        "start": 177.78,
+        "duration": 4.14
+    },
+    {
+        "text": "the end of the tree and then we'll have",
+        "start": 179.64,
+        "duration": 5.25
+    },
+    {
+        "text": "just a queue which is basically just a",
+        "start": 181.92,
+        "duration": 5.1
+    },
+    {
+        "text": "linked list it took me a while to figure",
+        "start": 184.89,
+        "duration": 5.4
+    },
+    {
+        "text": "that out to queue is set to new linked",
+        "start": 187.02,
+        "duration": 6.06
+    },
+    {
+        "text": "list yeah you just implement a queue a",
+        "start": 190.29,
+        "duration": 4.41
+    },
+    {
+        "text": "queue is just an implementation of a",
+        "start": 193.08,
+        "duration": 3.48
+    },
+    {
+        "text": "linked list so and then just like all",
+        "start": 194.7,
+        "duration": 4.02
+    },
+    {
+        "text": "these other problems for trees just you",
+        "start": 196.56,
+        "duration": 4.35
+    },
+    {
+        "text": "know add your first thing you can add a",
+        "start": 198.72,
+        "duration": 4.62
+    },
+    {
+        "text": "lot of problems it's a stack sometimes",
+        "start": 200.91,
+        "duration": 4.62
+    },
+    {
+        "text": "it's a queue just add the first node I",
+        "start": 203.34,
+        "duration": 4.62
+    },
+    {
+        "text": "started using offer for queues because",
+        "start": 205.53,
+        "duration": 4.56
+    },
+    {
+        "text": "that just makes sure that it's not a",
+        "start": 207.96,
+        "duration": 4.95
+    },
+    {
+        "text": "null value I'm pretty sure and we just",
+        "start": 210.09,
+        "duration": 6.36
+    },
+    {
+        "text": "do Wow so why not you know",
+        "start": 212.91,
+        "duration": 6.51
+    },
+    {
+        "text": "while queue is not empty all the other",
+        "start": 216.45,
+        "duration": 5.34
+    },
+    {
+        "text": "problems do this too we pop the node off",
+        "start": 219.42,
+        "duration": 4.35
+    },
+    {
+        "text": "the queue and not pop it's a queue so",
+        "start": 221.79,
+        "duration": 3.57
+    },
+    {
+        "text": "you actually use the pole method on a",
+        "start": 223.77,
+        "duration": 4.05
+    },
+    {
+        "text": "linked list to get the next the head the",
+        "start": 225.36,
+        "duration": 5.01
+    },
+    {
+        "text": "next element up because you put elements",
+        "start": 227.82,
+        "duration": 4.17
+    },
+    {
+        "text": "in on the back of a queue and then you",
+        "start": 230.37,
+        "duration": 3.36
+    },
+    {
+        "text": "add them you pull them from the front",
+        "start": 231.99,
+        "duration": 3.99
+    },
+    {
+        "text": "that's how it why a queue is a line so",
+        "start": 233.73,
+        "duration": 3.54
+    },
+    {
+        "text": "that's all line works you get in the",
+        "start": 235.98,
+        "duration": 2.46
+    },
+    {
+        "text": "back of the line you come out the front",
+        "start": 237.27,
+        "duration": 5.4
+    },
+    {
+        "text": "so we pull our current node current node",
+        "start": 238.44,
+        "duration": 8.519
+    },
+    {
+        "text": "will get pulled that's from the head so",
+        "start": 242.67,
+        "duration": 8.58
+    },
+    {
+        "text": "just cube pull pull that gets our next",
+        "start": 246.959,
+        "duration": 8.371
+    },
+    {
+        "text": "node up and then all we have to do is do",
+        "start": 251.25,
+        "duration": 7.709
+    },
+    {
+        "text": "our check if current node is equal to",
+        "start": 255.33,
+        "duration": 6.029
+    },
+    {
+        "text": "null then we've seen our first null and",
+        "start": 258.959,
+        "duration": 5.041
+    },
+    {
+        "text": "we could adjust our end variable our end",
+        "start": 261.359,
+        "duration": 4.981
+    },
+    {
+        "text": "bullion we've now seen end",
+        "start": 264.0,
+        "duration": 4.47
+    },
+    {
+        "text": "so if we see a cur if we see a null",
+        "start": 266.34,
+        "duration": 3.66
+    },
+    {
+        "text": "value node that means we're done we",
+        "start": 268.47,
+        "duration": 3.12
+    },
+    {
+        "text": "should never see a node with the value",
+        "start": 270.0,
+        "duration": 5.55
+    },
+    {
+        "text": "again else so this is in the case we see",
+        "start": 271.59,
+        "duration": 5.97
+    },
+    {
+        "text": "in our current node is not equal to null",
+        "start": 275.55,
+        "duration": 4.23
+    },
+    {
+        "text": "meaning it has a value and it's act a",
+        "start": 277.56,
+        "duration": 4.68
+    },
+    {
+        "text": "real node then if we just do a check in",
+        "start": 279.78,
+        "duration": 5.07
+    },
+    {
+        "text": "here if end is set to true then we're",
+        "start": 282.24,
+        "duration": 4.17
+    },
+    {
+        "text": "gonna it's false it's not a complete",
+        "start": 284.85,
+        "duration": 3.33
+    },
+    {
+        "text": "tree because we've seen a node with a",
+        "start": 286.41,
+        "duration": 4.35
+    },
+    {
+        "text": "value and we've already seen a node with",
+        "start": 288.18,
+        "duration": 5.16
+    },
+    {
+        "text": "a null value so that means that in this",
+        "start": 290.76,
+        "duration": 4.35
+    },
+    {
+        "text": "case we would have we'd see a note of",
+        "start": 293.34,
+        "duration": 3.45
+    },
+    {
+        "text": "the value this would be executing but",
+        "start": 295.11,
+        "duration": 2.94
+    },
+    {
+        "text": "we've already seen a node with a null",
+        "start": 296.79,
+        "duration": 3.18
+    },
+    {
+        "text": "value so it's false just like what we",
+        "start": 298.05,
+        "duration": 6.03
+    },
+    {
+        "text": "want so event is true we return false in",
+        "start": 299.97,
+        "duration": 6.21
+    },
+    {
+        "text": "this little loop otherwise we just keep",
+        "start": 304.08,
+        "duration": 4.5
+    },
+    {
+        "text": "doing our level order traversal on the",
+        "start": 306.18,
+        "duration": 6.989
+    },
+    {
+        "text": "current node dot left and current node",
+        "start": 308.58,
+        "duration": 6.0
+    },
+    {
+        "text": "right and you have to make sure that",
+        "start": 313.169,
+        "duration": 2.851
+    },
+    {
+        "text": "you're adding these to the queue in the",
+        "start": 314.58,
+        "duration": 4.2
+    },
+    {
+        "text": "correct order because we have to go left",
+        "start": 316.02,
+        "duration": 5.85
+    },
+    {
+        "text": "then right if we went right then left",
+        "start": 318.78,
+        "duration": 5.34
+    },
+    {
+        "text": "then that wouldn't be checking that the",
+        "start": 321.87,
+        "duration": 6.06
+    },
+    {
+        "text": "last row is all pushed as far to the",
+        "start": 324.12,
+        "duration": 5.43
+    },
+    {
+        "text": "left as possible because it wouldn't be",
+        "start": 327.93,
+        "duration": 3.42
+    },
+    {
+        "text": "traversing it correctly and it would",
+        "start": 329.55,
+        "duration": 4.02
+    },
+    {
+        "text": "mess it up so because if we were going",
+        "start": 331.35,
+        "duration": 4.05
+    },
+    {
+        "text": "down the right first it would just if we",
+        "start": 333.57,
+        "duration": 3.659
+    },
+    {
+        "text": "get the wrong answer that should be",
+        "start": 335.4,
+        "duration": 5.16
+    },
+    {
+        "text": "intuitive you guys but hopefully this",
+        "start": 337.229,
+        "duration": 5.101
+    },
+    {
+        "text": "made sense and then we could just return",
+        "start": 340.56,
+        "duration": 3.06
+    },
+    {
+        "text": "true if we made it through all of that",
+        "start": 342.33,
+        "duration": 5.31
+    },
+    {
+        "text": "so we make it through all that we do the",
+        "start": 343.62,
+        "duration": 5.549
+    },
+    {
+        "text": "whole level order traversal and we don't",
+        "start": 347.64,
+        "duration": 3.48
+    },
+    {
+        "text": "run into this one condition right here",
+        "start": 349.169,
+        "duration": 4.411
+    },
+    {
+        "text": "then it's a complete binary tree with",
+        "start": 351.12,
+        "duration": 5.43
+    },
+    {
+        "text": "all the nodes left as possible in the",
+        "start": 353.58,
+        "duration": 5.58
+    },
+    {
+        "text": "last level so hopefully that all makes",
+        "start": 356.55,
+        "duration": 4.77
+    },
+    {
+        "text": "sense to you it I think that's a lot",
+        "start": 359.16,
+        "duration": 3.93
+    },
+    {
+        "text": "better of a solution than creating a",
+        "start": 361.32,
+        "duration": 3.93
+    },
+    {
+        "text": "cusp and it's the same runtime in stack",
+        "start": 363.09,
+        "duration": 3.99
+    },
+    {
+        "text": "space so I think that's just a lot",
+        "start": 365.25,
+        "duration": 5.49
+    },
+    {
+        "text": "better of a solution than this modifying",
+        "start": 367.08,
+        "duration": 7.32
+    },
+    {
+        "text": "the node class and having a code let me",
+        "start": 370.74,
+        "duration": 4.77
+    },
+    {
+        "text": "know what you guys think what's your",
+        "start": 374.4,
+        "duration": 3.3
+    },
+    {
+        "text": "favorite solution I found this solution",
+        "start": 375.51,
+        "duration": 3.9
+    },
+    {
+        "text": "in the discussion this level order",
+        "start": 377.7,
+        "duration": 3.689
+    },
+    {
+        "text": "traversal this guy so I'll link his",
+        "start": 379.41,
+        "duration": 3.629
+    },
+    {
+        "text": "thing here we'll give them an upvote",
+        "start": 381.389,
+        "duration": 3.561
+    },
+    {
+        "text": "here",
+        "start": 383.039,
+        "duration": 5.431
+    },
+    {
+        "text": "shoutout to mote oryx thank you for that",
+        "start": 384.95,
+        "duration": 5.5
+    },
+    {
+        "text": "solution and let me know you guys think",
+        "start": 388.47,
+        "duration": 3.99
+    },
+    {
+        "text": "I'll link that and thanks for watching",
+        "start": 390.45,
+        "duration": 5.45
+    },
+    {
+        "text": "and I'll see you guys next time",
+        "start": 392.46,
+        "duration": 3.44
+    }
+]

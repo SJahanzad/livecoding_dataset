@@ -1,0 +1,332 @@
+[
+    {
+        "text": "hey what's up guys this is Nick white",
+        "start": 0.03,
+        "duration": 4.95
+    },
+    {
+        "text": "here I do tech encoding stuff on twitch",
+        "start": 2.429,
+        "duration": 5.611
+    },
+    {
+        "text": "and YouTube and I do all the weight Co",
+        "start": 4.98,
+        "duration": 4.92
+    },
+    {
+        "text": "problems so if you want to be have one",
+        "start": 8.04,
+        "duration": 3.66
+    },
+    {
+        "text": "explained to you just to look at have a",
+        "start": 9.9,
+        "duration": 3.51
+    },
+    {
+        "text": "million videos because well there's a",
+        "start": 11.7,
+        "duration": 4.46
+    },
+    {
+        "text": "thousand so thousand videos probably so",
+        "start": 13.41,
+        "duration": 6.0
+    },
+    {
+        "text": "here we go so this one's just this one's",
+        "start": 16.16,
+        "duration": 5.47
+    },
+    {
+        "text": "really easy actually so this one is",
+        "start": 19.41,
+        "duration": 4.77
+    },
+    {
+        "text": "given a non empty singly linked list",
+        "start": 21.63,
+        "duration": 4.229
+    },
+    {
+        "text": "with a head node head return the middle",
+        "start": 24.18,
+        "duration": 4.08
+    },
+    {
+        "text": "of a middle node of the linked list",
+        "start": 25.859,
+        "duration": 4.471
+    },
+    {
+        "text": "there are two middle nodes return the",
+        "start": 28.26,
+        "duration": 4.65
+    },
+    {
+        "text": "second metal node okay guys super easy",
+        "start": 30.33,
+        "duration": 5.43
+    },
+    {
+        "text": "one this is a pointer problem just like",
+        "start": 32.91,
+        "duration": 6.6
+    },
+    {
+        "text": "a lot of linked list node problems so",
+        "start": 35.76,
+        "duration": 6.93
+    },
+    {
+        "text": "we'll have a pointer our a pointer node",
+        "start": 39.51,
+        "duration": 5.52
+    },
+    {
+        "text": "is going to be equal to head and then",
+        "start": 42.69,
+        "duration": 6.029
+    },
+    {
+        "text": "we'll have our B pointer also equal to",
+        "start": 45.03,
+        "duration": 6.18
+    },
+    {
+        "text": "head and this is the whole problem right",
+        "start": 48.719,
+        "duration": 4.86
+    },
+    {
+        "text": "here just like a lot of these pointer",
+        "start": 51.21,
+        "duration": 4.65
+    },
+    {
+        "text": "ones well be point is not equal to null",
+        "start": 53.579,
+        "duration": 6.171
+    },
+    {
+        "text": "and the pointer X is not equal to null",
+        "start": 55.86,
+        "duration": 7.289
+    },
+    {
+        "text": "we just do a pointer and I should have",
+        "start": 59.75,
+        "duration": 5.019
+    },
+    {
+        "text": "called these slow and fast but it",
+        "start": 63.149,
+        "duration": 4.681
+    },
+    {
+        "text": "doesn't really matter a pointer next I",
+        "start": 64.769,
+        "duration": 8.42
+    },
+    {
+        "text": "mean a pointer equals eight pointer next",
+        "start": 67.83,
+        "duration": 5.359
+    },
+    {
+        "text": "any pointer is equal to be pointer next",
+        "start": 73.34,
+        "duration": 11.08
+    },
+    {
+        "text": "up and then we just return and then I'll",
+        "start": 79.59,
+        "duration": 6.779
+    },
+    {
+        "text": "explain this in a second hopefully this",
+        "start": 84.42,
+        "duration": 6.089
+    },
+    {
+        "text": "works first try and it works first try",
+        "start": 86.369,
+        "duration": 6.18
+    },
+    {
+        "text": "okay guys so this is a really common",
+        "start": 90.509,
+        "duration": 3.54
+    },
+    {
+        "text": "thing in",
+        "start": 92.549,
+        "duration": 4.771
+    },
+    {
+        "text": "pointer problems algorithms with linked",
+        "start": 94.049,
+        "duration": 5.311
+    },
+    {
+        "text": "lists especially these pointer problems",
+        "start": 97.32,
+        "duration": 3.479
+    },
+    {
+        "text": "a lot of the times have these kind of",
+        "start": 99.36,
+        "duration": 4.259
+    },
+    {
+        "text": "setups this one's a really easy one",
+        "start": 100.799,
+        "duration": 5.131
+    },
+    {
+        "text": "probably one of the easiest so you have",
+        "start": 103.619,
+        "duration": 4.89
+    },
+    {
+        "text": "a slow pointer in a fast pointer so",
+        "start": 105.93,
+        "duration": 3.93
+    },
+    {
+        "text": "basically what's happening is we have a",
+        "start": 108.509,
+        "duration": 3.72
+    },
+    {
+        "text": "linked list we set our slow and fast",
+        "start": 109.86,
+        "duration": 4.77
+    },
+    {
+        "text": "pointer rate at the first node and then",
+        "start": 112.229,
+        "duration": 4.771
+    },
+    {
+        "text": "we loop to the end and the fast ones",
+        "start": 114.63,
+        "duration": 4.29
+    },
+    {
+        "text": "gonna be going to nodes at a time well",
+        "start": 117.0,
+        "duration": 3.479
+    },
+    {
+        "text": "the slow one goes one at a time so the",
+        "start": 118.92,
+        "duration": 3.629
+    },
+    {
+        "text": "fast one is going fast one's gonna hit",
+        "start": 120.479,
+        "duration": 4.92
+    },
+    {
+        "text": "the end is soon it rate when the slow",
+        "start": 122.549,
+        "duration": 4.561
+    },
+    {
+        "text": "one gets to the middle because it's",
+        "start": 125.399,
+        "duration": 5.491
+    },
+    {
+        "text": "going twice as fast so when we get half",
+        "start": 127.11,
+        "duration": 4.95
+    },
+    {
+        "text": "of the",
+        "start": 130.89,
+        "duration": 4.44
+    },
+    {
+        "text": "list the middle of the list the fast one",
+        "start": 132.06,
+        "duration": 5.22
+    },
+    {
+        "text": "would have gone twice as fast twice of",
+        "start": 135.33,
+        "duration": 4.8
+    },
+    {
+        "text": "1/2 is 1 so that's the whole list right",
+        "start": 137.28,
+        "duration": 4.74
+    },
+    {
+        "text": "so that makes sense you get it to the",
+        "start": 140.13,
+        "duration": 3.93
+    },
+    {
+        "text": "half of the slow one the fast ones going",
+        "start": 142.02,
+        "duration": 4.89
+    },
+    {
+        "text": "twice as fast twice of the halfway point",
+        "start": 144.06,
+        "duration": 7.14
+    },
+    {
+        "text": "is the end point so when the once we",
+        "start": 146.91,
+        "duration": 6.15
+    },
+    {
+        "text": "just loop until the fast ball gets to",
+        "start": 151.2,
+        "duration": 4.17
+    },
+    {
+        "text": "the end and then we know that the slow",
+        "start": 153.06,
+        "duration": 4.259
+    },
+    {
+        "text": "ones already there so we just return the",
+        "start": 155.37,
+        "duration": 3.96
+    },
+    {
+        "text": "slow one and there you go you got the",
+        "start": 157.319,
+        "duration": 3.811
+    },
+    {
+        "text": "middle note that's one of the easiest",
+        "start": 159.33,
+        "duration": 5.4
+    },
+    {
+        "text": "ones on the site almost so thank you",
+        "start": 161.13,
+        "duration": 4.98
+    },
+    {
+        "text": "guys for watching check out the other",
+        "start": 164.73,
+        "duration": 4.229
+    },
+    {
+        "text": "ones not much to explain there so that's",
+        "start": 166.11,
+        "duration": 5.72
+    },
+    {
+        "text": "it see ya",
+        "start": 168.959,
+        "duration": 2.871
+    }
+]

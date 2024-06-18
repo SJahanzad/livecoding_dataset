@@ -1,0 +1,577 @@
+[
+    {
+        "text": "hey what's up guys Nick white here idea",
+        "start": 0.829,
+        "duration": 5.2
+    },
+    {
+        "text": "tech encoding stuff on twitch and",
+        "start": 4.08,
+        "duration": 7.769
+    },
+    {
+        "text": "YouTube and I usually sometimes at night",
+        "start": 6.029,
+        "duration": 7.561
+    },
+    {
+        "text": "like I sense I do these problems",
+        "start": 11.849,
+        "duration": 3.66
+    },
+    {
+        "text": "everyday I'll just look through leak",
+        "start": 13.59,
+        "duration": 5.97
+    },
+    {
+        "text": "code problems and find like ones that I",
+        "start": 15.509,
+        "duration": 5.94
+    },
+    {
+        "text": "might want to do like look through them",
+        "start": 19.56,
+        "duration": 3.99
+    },
+    {
+        "text": "just see like general ones and like make",
+        "start": 21.449,
+        "duration": 3.75
+    },
+    {
+        "text": "a mental note like what I might want to",
+        "start": 23.55,
+        "duration": 3.87
+    },
+    {
+        "text": "do by the way I do all the hacker ink",
+        "start": 25.199,
+        "duration": 3.631
+    },
+    {
+        "text": "and leak code problems I have solutions",
+        "start": 27.42,
+        "duration": 2.63
+    },
+    {
+        "text": "and playlist on my channel and",
+        "start": 28.83,
+        "duration": 3.569
+    },
+    {
+        "text": "description is everything else but I was",
+        "start": 30.05,
+        "duration": 3.97
+    },
+    {
+        "text": "just looking through and I saw this one",
+        "start": 32.399,
+        "duration": 3.57
+    },
+    {
+        "text": "and I saw like I always see all these",
+        "start": 34.02,
+        "duration": 3.51
+    },
+    {
+        "text": "ones with a lot of dislikes and it's",
+        "start": 35.969,
+        "duration": 4.651
+    },
+    {
+        "text": "usually because you look at the",
+        "start": 37.53,
+        "duration": 5.369
+    },
+    {
+        "text": "description of the problem and they just",
+        "start": 40.62,
+        "duration": 4.08
+    },
+    {
+        "text": "don't explain it very well but then you",
+        "start": 42.899,
+        "duration": 6.331
+    },
+    {
+        "text": "look at the solution and it's so easy so",
+        "start": 44.7,
+        "duration": 5.879
+    },
+    {
+        "text": "if you read this description right a",
+        "start": 49.23,
+        "duration": 5.64
+    },
+    {
+        "text": "class recent counter and we see this is",
+        "start": 50.579,
+        "duration": 6.66
+    },
+    {
+        "text": "the skeleton and then they give you",
+        "start": 54.87,
+        "duration": 3.45
+    },
+    {
+        "text": "these methods they give you a",
+        "start": 57.239,
+        "duration": 2.971
+    },
+    {
+        "text": "constructor and then it has this method",
+        "start": 58.32,
+        "duration": 6.54
+    },
+    {
+        "text": "ping and it counts recent requests it",
+        "start": 60.21,
+        "duration": 7.11
+    },
+    {
+        "text": "only has one method where T represents",
+        "start": 64.86,
+        "duration": 4.5
+    },
+    {
+        "text": "some time in milliseconds right so we",
+        "start": 67.32,
+        "duration": 4.979
+    },
+    {
+        "text": "have this T for time returned the number",
+        "start": 69.36,
+        "duration": 6.66
+    },
+    {
+        "text": "of pings that have been made from 3,000",
+        "start": 72.299,
+        "duration": 7.051
+    },
+    {
+        "text": "milliseconds ago until now any ping with",
+        "start": 76.02,
+        "duration": 6.72
+    },
+    {
+        "text": "time T 2 3 t minus 3000 2 T will count",
+        "start": 79.35,
+        "duration": 5.94
+    },
+    {
+        "text": "including the current ping it is",
+        "start": 82.74,
+        "duration": 6.03
+    },
+    {
+        "text": "guaranteed that every call to ping uses",
+        "start": 85.29,
+        "duration": 6.719
+    },
+    {
+        "text": "strictly larger value than T of T than",
+        "start": 88.77,
+        "duration": 7.139
+    },
+    {
+        "text": "before so inputs would look like this we",
+        "start": 92.009,
+        "duration": 6.54
+    },
+    {
+        "text": "have recent counter pincode moving so",
+        "start": 95.909,
+        "duration": 4.021
+    },
+    {
+        "text": "these are the actual inputs that we",
+        "start": 98.549,
+        "duration": 3.241
+    },
+    {
+        "text": "would want or these times right so we'd",
+        "start": 99.93,
+        "duration": 3.39
+    },
+    {
+        "text": "have one one hundred three thousand one",
+        "start": 101.79,
+        "duration": 3.899
+    },
+    {
+        "text": "three thousand two and it's one two",
+        "start": 103.32,
+        "duration": 4.92
+    },
+    {
+        "text": "three three and then these are the",
+        "start": 105.689,
+        "duration": 6.271
+    },
+    {
+        "text": "counts so ping returns the number of",
+        "start": 108.24,
+        "duration": 7.199
+    },
+    {
+        "text": "elements that are with within 3,000",
+        "start": 111.96,
+        "duration": 7.89
+    },
+    {
+        "text": "milliseconds ago so you think about this",
+        "start": 115.439,
+        "duration": 6.72
+    },
+    {
+        "text": "and you're like well how do you even",
+        "start": 119.85,
+        "duration": 4.14
+    },
+    {
+        "text": "implement a class I think class problems",
+        "start": 122.159,
+        "duration": 4.261
+    },
+    {
+        "text": "are hard in general like oh implement",
+        "start": 123.99,
+        "duration": 4.079
+    },
+    {
+        "text": "this class that does this it's like",
+        "start": 126.42,
+        "duration": 2.61
+    },
+    {
+        "text": "there's so many ways to implement",
+        "start": 128.069,
+        "duration": 2.511
+    },
+    {
+        "text": "something but you look at the solution",
+        "start": 129.03,
+        "duration": 4.38
+    },
+    {
+        "text": "basically I just wanted to this",
+        "start": 130.58,
+        "duration": 4.18
+    },
+    {
+        "text": "even a problem I should make a video on",
+        "start": 133.41,
+        "duration": 5.88
+    },
+    {
+        "text": "but I'm just gonna do the it's just a",
+        "start": 134.76,
+        "duration": 6.33
+    },
+    {
+        "text": "dumb problem that's why it's tit I'm",
+        "start": 139.29,
+        "duration": 3.96
+    },
+    {
+        "text": "gonna dislike it just a dumb problem so",
+        "start": 141.09,
+        "duration": 3.27
+    },
+    {
+        "text": "if you're struggling with this don't",
+        "start": 143.25,
+        "duration": 1.83
+    },
+    {
+        "text": "even worry about it",
+        "start": 144.36,
+        "duration": 2.24
+    },
+    {
+        "text": "you're just using a queue of integers",
+        "start": 145.08,
+        "duration": 6.36
+    },
+    {
+        "text": "I'm gonna call it Q and when you",
+        "start": 146.6,
+        "duration": 6.67
+    },
+    {
+        "text": "initialize your class you have the",
+        "start": 151.44,
+        "duration": 3.69
+    },
+    {
+        "text": "constructor Q is equal to new linked",
+        "start": 153.27,
+        "duration": 4.08
+    },
+    {
+        "text": "list just because you can use a linked",
+        "start": 155.13,
+        "duration": 4.05
+    },
+    {
+        "text": "list data structure to implement a queue",
+        "start": 157.35,
+        "duration": 6.09
+    },
+    {
+        "text": "obviously and then this is just you add",
+        "start": 159.18,
+        "duration": 6.66
+    },
+    {
+        "text": "to the lid to the queue so you add each",
+        "start": 163.44,
+        "duration": 4.83
+    },
+    {
+        "text": "time to the queue when you ping and then",
+        "start": 165.84,
+        "duration": 5.16
+    },
+    {
+        "text": "the queue handles all of these times so",
+        "start": 168.27,
+        "duration": 4.56
+    },
+    {
+        "text": "we want to route this method also it",
+        "start": 171.0,
+        "duration": 3.71
+    },
+    {
+        "text": "adds to the queue and then it returns",
+        "start": 172.83,
+        "duration": 6.42
+    },
+    {
+        "text": "the number of elements in the queue that",
+        "start": 174.71,
+        "duration": 6.49
+    },
+    {
+        "text": "have been the number of pings that have",
+        "start": 179.25,
+        "duration": 4.89
+    },
+    {
+        "text": "been made within 3000 seconds so we're",
+        "start": 181.2,
+        "duration": 6.15
+    },
+    {
+        "text": "gonna be returning Q dot size and we",
+        "start": 184.14,
+        "duration": 4.77
+    },
+    {
+        "text": "also need to manage this queue and keep",
+        "start": 187.35,
+        "duration": 3.96
+    },
+    {
+        "text": "these elements out that are more than",
+        "start": 188.91,
+        "duration": 4.32
+    },
+    {
+        "text": "3,000 seconds so we just have a little",
+        "start": 191.31,
+        "duration": 5.01
+    },
+    {
+        "text": "loop here so we just do a wild I peaked",
+        "start": 193.23,
+        "duration": 5.91
+    },
+    {
+        "text": "while the next element up one of the",
+        "start": 196.32,
+        "duration": 4.56
+    },
+    {
+        "text": "oldest elements that got put in because",
+        "start": 199.14,
+        "duration": 4.83
+    },
+    {
+        "text": "it's FIFO wait no first-in first-out",
+        "start": 200.88,
+        "duration": 4.23
+    },
+    {
+        "text": "yeah that's true",
+        "start": 203.97,
+        "duration": 3.51
+    },
+    {
+        "text": "it's like a line so yeah first in and",
+        "start": 205.11,
+        "duration": 4.47
+    },
+    {
+        "text": "you put it in at the end yeah it's gonna",
+        "start": 207.48,
+        "duration": 6.83
+    },
+    {
+        "text": "be the first out so while Q dot peak is",
+        "start": 209.58,
+        "duration": 12.24
+    },
+    {
+        "text": "less than T minus 3,000 then we just do",
+        "start": 214.31,
+        "duration": 12.25
+    },
+    {
+        "text": "Q dot pull and that will pop the element",
+        "start": 221.82,
+        "duration": 7.02
+    },
+    {
+        "text": "off of the queue and then we can submit",
+        "start": 226.56,
+        "duration": 4.86
+    },
+    {
+        "text": "it and that was it so we just have to",
+        "start": 228.84,
+        "duration": 7.8
+    },
+    {
+        "text": "manage that one constraint it's just the",
+        "start": 231.42,
+        "duration": 7.23
+    },
+    {
+        "text": "boundary and this boundary you just have",
+        "start": 236.64,
+        "duration": 3.48
+    },
+    {
+        "text": "to check for this boundary loop through",
+        "start": 238.65,
+        "duration": 4.95
+    },
+    {
+        "text": "the queue while this condition it's",
+        "start": 240.12,
+        "duration": 6.0
+    },
+    {
+        "text": "still true we just pull from the queue",
+        "start": 243.6,
+        "duration": 4.44
+    },
+    {
+        "text": "and then we return the size at the end",
+        "start": 246.12,
+        "duration": 3.39
+    },
+    {
+        "text": "because that will the size of the queue",
+        "start": 248.04,
+        "duration": 3.66
+    },
+    {
+        "text": "after will be all elements within 3,000",
+        "start": 249.51,
+        "duration": 3.33
+    },
+    {
+        "text": "milliseconds at the time we were just",
+        "start": 251.7,
+        "duration": 4.77
+    },
+    {
+        "text": "given so that's pretty much the entire",
+        "start": 252.84,
+        "duration": 7.23
+    },
+    {
+        "text": "problem it's really stupid problems so I",
+        "start": 256.47,
+        "duration": 6.42
+    },
+    {
+        "text": "would just honestly forget about it it's",
+        "start": 260.07,
+        "duration": 5.25
+    },
+    {
+        "text": "one of them just like a class",
+        "start": 262.89,
+        "duration": 3.96
+    },
+    {
+        "text": "implementation I guess employment",
+        "start": 265.32,
+        "duration": 2.01
+    },
+    {
+        "text": "classes",
+        "start": 266.85,
+        "duration": 2.339
+    },
+    {
+        "text": "is important but look at this we were",
+        "start": 267.33,
+        "duration": 3.839
+    },
+    {
+        "text": "doing good these are locked I made a",
+        "start": 269.189,
+        "duration": 3.48
+    },
+    {
+        "text": "video on all of these so far and I've",
+        "start": 271.169,
+        "duration": 3.72
+    },
+    {
+        "text": "been going through so we're at where are",
+        "start": 272.669,
+        "duration": 4.77
+    },
+    {
+        "text": "we at right here number of recent calls",
+        "start": 274.889,
+        "duration": 3.99
+    },
+    {
+        "text": "and I think we made a video on this so",
+        "start": 277.439,
+        "duration": 2.91
+    },
+    {
+        "text": "we're actually gonna do this one next so",
+        "start": 278.879,
+        "duration": 4.32
+    },
+    {
+        "text": "thanks for watching and all check you",
+        "start": 280.349,
+        "duration": 5.611
+    },
+    {
+        "text": "guys Chuck you guys later no just I'll",
+        "start": 283.199,
+        "duration": 3.571
+    },
+    {
+        "text": "see you guys later",
+        "start": 285.96,
+        "duration": 3.5
+    },
+    {
+        "text": "so see it",
+        "start": 286.77,
+        "duration": 2.69
+    }
+]

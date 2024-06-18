@@ -1,0 +1,487 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white I do",
+        "start": 0.86,
+        "duration": 4.18
+    },
+    {
+        "text": "a lot of tech and coding stuff on twitch",
+        "start": 3.27,
+        "duration": 3.359
+    },
+    {
+        "text": "and YouTube so check the description for",
+        "start": 5.04,
+        "duration": 3.78
+    },
+    {
+        "text": "everything you need to know I do all of",
+        "start": 6.629,
+        "duration": 3.961
+    },
+    {
+        "text": "the league code problems so I probably",
+        "start": 8.82,
+        "duration": 3.51
+    },
+    {
+        "text": "have ones that are struggling with if",
+        "start": 10.59,
+        "duration": 3.089
+    },
+    {
+        "text": "you want those explained to you go on my",
+        "start": 12.33,
+        "duration": 2.969
+    },
+    {
+        "text": "channel I have a playlist with all of",
+        "start": 13.679,
+        "duration": 4.951
+    },
+    {
+        "text": "them so it's late at night right now I'm",
+        "start": 15.299,
+        "duration": 5.221
+    },
+    {
+        "text": "just going over someone's problems that",
+        "start": 18.63,
+        "duration": 4.62
+    },
+    {
+        "text": "I did but I never made videos on I did a",
+        "start": 20.52,
+        "duration": 4.32
+    },
+    {
+        "text": "ton of easy ones I just never made",
+        "start": 23.25,
+        "duration": 3.599
+    },
+    {
+        "text": "videos on them so this one's called",
+        "start": 24.84,
+        "duration": 4.019
+    },
+    {
+        "text": "jewels and stones probably one of the",
+        "start": 26.849,
+        "duration": 3.721
+    },
+    {
+        "text": "easiest problems on leak code you're",
+        "start": 28.859,
+        "duration": 4.47
+    },
+    {
+        "text": "given strings GA representing the types",
+        "start": 30.57,
+        "duration": 4.14
+    },
+    {
+        "text": "of stones that are jewels and s",
+        "start": 33.329,
+        "duration": 3.331
+    },
+    {
+        "text": "representing the stones you have each",
+        "start": 34.71,
+        "duration": 3.63
+    },
+    {
+        "text": "character and S is the type of stone",
+        "start": 36.66,
+        "duration": 2.91
+    },
+    {
+        "text": "that you have you want to know how many",
+        "start": 38.34,
+        "duration": 3.48
+    },
+    {
+        "text": "stones you have that are also jewels the",
+        "start": 39.57,
+        "duration": 4.62
+    },
+    {
+        "text": "letters J letters and J are guaranteed",
+        "start": 41.82,
+        "duration": 4.2
+    },
+    {
+        "text": "distinct in the letters and J and s are",
+        "start": 44.19,
+        "duration": 4.529
+    },
+    {
+        "text": "all letters I guess in all characters",
+        "start": 46.02,
+        "duration": 5.46
+    },
+    {
+        "text": "and J and s or letters ok cool letters",
+        "start": 48.719,
+        "duration": 4.77
+    },
+    {
+        "text": "are case-sensitive so a is considered",
+        "start": 51.48,
+        "duration": 4.73
+    },
+    {
+        "text": "different type of stone from a capital a",
+        "start": 53.489,
+        "duration": 5.761
+    },
+    {
+        "text": "so we have a J equals lowercase a and",
+        "start": 56.21,
+        "duration": 4.869
+    },
+    {
+        "text": "capital a and we want to know how many",
+        "start": 59.25,
+        "duration": 4.949
+    },
+    {
+        "text": "stones that we have our jewels as well",
+        "start": 61.079,
+        "duration": 5.281
+    },
+    {
+        "text": "so we have a lowercase a in to capital",
+        "start": 64.199,
+        "duration": 4.17
+    },
+    {
+        "text": "A's and a lowercase a and a capital A",
+        "start": 66.36,
+        "duration": 4.02
+    },
+    {
+        "text": "are both different types of jewels so",
+        "start": 68.369,
+        "duration": 3.721
+    },
+    {
+        "text": "then we have three different we have",
+        "start": 70.38,
+        "duration": 3.39
+    },
+    {
+        "text": "three jewels not three different tools",
+        "start": 72.09,
+        "duration": 3.15
+    },
+    {
+        "text": "but we have three jewels all together",
+        "start": 73.77,
+        "duration": 4.349
+    },
+    {
+        "text": "because lowercase a and capital a are",
+        "start": 75.24,
+        "duration": 5.04
+    },
+    {
+        "text": "both tools and we have to capitalize in",
+        "start": 78.119,
+        "duration": 4.021
+    },
+    {
+        "text": "one lowercase a that's pretty much all",
+        "start": 80.28,
+        "duration": 3.12
+    },
+    {
+        "text": "there is to it so this is a really easy",
+        "start": 82.14,
+        "duration": 3.839
+    },
+    {
+        "text": "problem we'll just declare our num to",
+        "start": 83.4,
+        "duration": 4.2
+    },
+    {
+        "text": "less conser variable we're just gonna",
+        "start": 85.979,
+        "duration": 3.901
+    },
+    {
+        "text": "have a counter we're gonna loop through",
+        "start": 87.6,
+        "duration": 5.64
+    },
+    {
+        "text": "our stones and then we're gonna see what",
+        "start": 89.88,
+        "duration": 5.91
+    },
+    {
+        "text": "if our stone we're gonna iterate through",
+        "start": 93.24,
+        "duration": 4.5
+    },
+    {
+        "text": "all of our stones it's just a linear",
+        "start": 95.79,
+        "duration": 4.5
+    },
+    {
+        "text": "time scan through all of our stones it's",
+        "start": 97.74,
+        "duration": 5.78
+    },
+    {
+        "text": "a string character by character and",
+        "start": 100.29,
+        "duration": 5.88
+    },
+    {
+        "text": "we'll just check the current character",
+        "start": 103.52,
+        "duration": 4.629
+    },
+    {
+        "text": "and if it is a jewel then we increment",
+        "start": 106.17,
+        "duration": 3.6
+    },
+    {
+        "text": "our counter and that's pretty much it",
+        "start": 108.149,
+        "duration": 3.631
+    },
+    {
+        "text": "super easy problem I don't even know why",
+        "start": 109.77,
+        "duration": 3.45
+    },
+    {
+        "text": "I'm making a video I just want to make a",
+        "start": 111.78,
+        "duration": 3.99
+    },
+    {
+        "text": "video for all of them so that's it so",
+        "start": 113.22,
+        "duration": 6.689
+    },
+    {
+        "text": "why is less than s length I plus plus so",
+        "start": 115.77,
+        "duration": 5.73
+    },
+    {
+        "text": "that's our initial for loop through our",
+        "start": 119.909,
+        "duration": 3.99
+    },
+    {
+        "text": "stones that we have and then all we have",
+        "start": 121.5,
+        "duration": 4.77
+    },
+    {
+        "text": "to do is use this neat little handy",
+        "start": 123.899,
+        "duration": 3.961
+    },
+    {
+        "text": "method that everyone should get",
+        "start": 126.27,
+        "duration": 4.829
+    },
+    {
+        "text": "comfortable using its index of it's kind",
+        "start": 127.86,
+        "duration": 5.31
+    },
+    {
+        "text": "of just used to make sure that something",
+        "start": 131.099,
+        "duration": 2.581
+    },
+    {
+        "text": "exists",
+        "start": 133.17,
+        "duration": 4.099
+    },
+    {
+        "text": "in a string so if we use J dot index of",
+        "start": 133.68,
+        "duration": 8.729
+    },
+    {
+        "text": "SHR at I so STR dies the current",
+        "start": 137.269,
+        "duration": 7.121
+    },
+    {
+        "text": "character we're looping on so the first",
+        "start": 142.409,
+        "duration": 3.841
+    },
+    {
+        "text": "character we loop on is this lowercase a",
+        "start": 144.39,
+        "duration": 6.079
+    },
+    {
+        "text": "we do J dot index of if J dot index of",
+        "start": 146.25,
+        "duration": 7.109
+    },
+    {
+        "text": "this lowercase a is greater than",
+        "start": 150.469,
+        "duration": 4.63
+    },
+    {
+        "text": "negative one because it will return",
+        "start": 153.359,
+        "duration": 3.78
+    },
+    {
+        "text": "negative one if it's not in the string",
+        "start": 155.099,
+        "duration": 4.29
+    },
+    {
+        "text": "then that means it is in the string that",
+        "start": 157.139,
+        "duration": 4.35
+    },
+    {
+        "text": "means it is a jewel and we are able to",
+        "start": 159.389,
+        "duration": 3.99
+    },
+    {
+        "text": "increment our counter because we know",
+        "start": 161.489,
+        "duration": 5.521
+    },
+    {
+        "text": "that that stone is a jewel so that'll we",
+        "start": 163.379,
+        "duration": 5.04
+    },
+    {
+        "text": "just run through that whole loop in",
+        "start": 167.01,
+        "duration": 5.069
+    },
+    {
+        "text": "linear a linear scan through our string",
+        "start": 168.419,
+        "duration": 7.111
+    },
+    {
+        "text": "RS string all of our stones we do a",
+        "start": 172.079,
+        "duration": 5.49
+    },
+    {
+        "text": "linear scan at each character check if",
+        "start": 175.53,
+        "duration": 3.629
+    },
+    {
+        "text": "it's a jewel or not if it's a jewel we",
+        "start": 177.569,
+        "duration": 3.211
+    },
+    {
+        "text": "increment the jewel counter and then we",
+        "start": 179.159,
+        "duration": 3.81
+    },
+    {
+        "text": "just return num jewels at the end no",
+        "start": 180.78,
+        "duration": 4.26
+    },
+    {
+        "text": "jewels sorry make sure you get your",
+        "start": 182.969,
+        "duration": 5.821
+    },
+    {
+        "text": "syntax right and that's that's just one",
+        "start": 185.04,
+        "duration": 7.05
+    },
+    {
+        "text": "oh my gosh sorry guys",
+        "start": 188.79,
+        "duration": 6.809
+    },
+    {
+        "text": "I hate that rule riff do you resubmit",
+        "start": 192.09,
+        "duration": 6.149
+    },
+    {
+        "text": "too soon there we go success run time as",
+        "start": 195.599,
+        "duration": 5.48
+    },
+    {
+        "text": "of whatever so that's pretty much it",
+        "start": 198.239,
+        "duration": 7.11
+    },
+    {
+        "text": "that super easy problem not really even",
+        "start": 201.079,
+        "duration": 6.041
+    },
+    {
+        "text": "much of an explanation there it's just",
+        "start": 205.349,
+        "duration": 3.42
+    },
+    {
+        "text": "one of the easiest problems on LI code",
+        "start": 207.12,
+        "duration": 3.989
+    },
+    {
+        "text": "so thanks for watching that's probably",
+        "start": 208.769,
+        "duration": 5.28
+    },
+    {
+        "text": "beginner one so let me know what you",
+        "start": 211.109,
+        "duration": 4.171
+    },
+    {
+        "text": "think in the comments below if you have",
+        "start": 214.049,
+        "duration": 4.41
+    },
+    {
+        "text": "a better solution or anything that you",
+        "start": 215.28,
+        "duration": 5.4
+    },
+    {
+        "text": "want to tell me so thanks for watching",
+        "start": 218.459,
+        "duration": 3.87
+    },
+    {
+        "text": "check out the other ones and I'll see",
+        "start": 220.68,
+        "duration": 3.889
+    },
+    {
+        "text": "you guys later",
+        "start": 222.329,
+        "duration": 2.24
+    }
+]

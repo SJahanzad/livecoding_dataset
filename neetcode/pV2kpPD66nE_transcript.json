@@ -1,0 +1,1277 @@
+[
+    {
+        "text": "let's solve Li code 200 number of",
+        "start": 0.03,
+        "duration": 4.11
+    },
+    {
+        "text": "islands this is actually one of my",
+        "start": 2.52,
+        "duration": 3.72
+    },
+    {
+        "text": "favorite problems because I feel like a",
+        "start": 4.14,
+        "duration": 4.32
+    },
+    {
+        "text": "lot of graph problems build upon this",
+        "start": 6.24,
+        "duration": 4.5
+    },
+    {
+        "text": "one and you can learn a lot from just",
+        "start": 8.46,
+        "duration": 4.62
+    },
+    {
+        "text": "this one problem it's also a really",
+        "start": 10.74,
+        "duration": 4.26
+    },
+    {
+        "text": "popular interview question a lot of big",
+        "start": 13.08,
+        "duration": 4.14
+    },
+    {
+        "text": "tech companies including Google and uber",
+        "start": 15.0,
+        "duration": 4.5
+    },
+    {
+        "text": "ask it so it's a good question a common",
+        "start": 17.22,
+        "duration": 4.8
+    },
+    {
+        "text": "question to understand so we're given a",
+        "start": 19.5,
+        "duration": 6.119
+    },
+    {
+        "text": "2d grid where ones represent land zeros",
+        "start": 22.02,
+        "duration": 6.06
+    },
+    {
+        "text": "represent water we want to count the",
+        "start": 25.619,
+        "duration": 5.16
+    },
+    {
+        "text": "total number of islands that exist right",
+        "start": 28.08,
+        "duration": 5.61
+    },
+    {
+        "text": "and in this case an island is defined as",
+        "start": 30.779,
+        "duration": 5.011
+    },
+    {
+        "text": "one's being connected and jacent ly",
+        "start": 33.69,
+        "duration": 4.32
+    },
+    {
+        "text": "horizontally or vertically not",
+        "start": 35.79,
+        "duration": 4.199
+    },
+    {
+        "text": "diagonally right so they have to be",
+        "start": 38.01,
+        "duration": 3.84
+    },
+    {
+        "text": "connected horizontally or vertically and",
+        "start": 39.989,
+        "duration": 4.111
+    },
+    {
+        "text": "the entire grid is surrounded by water",
+        "start": 41.85,
+        "duration": 4.86
+    },
+    {
+        "text": "so in this example case we can see that",
+        "start": 44.1,
+        "duration": 6.11
+    },
+    {
+        "text": "there's only one island right this",
+        "start": 46.71,
+        "duration": 5.82
+    },
+    {
+        "text": "portion of one's and they're all",
+        "start": 50.21,
+        "duration": 3.97
+    },
+    {
+        "text": "connected horizontally and vertically",
+        "start": 52.53,
+        "duration": 4.32
+    },
+    {
+        "text": "and there's nothing else the rest of the",
+        "start": 54.18,
+        "duration": 4.41
+    },
+    {
+        "text": "grid is just made up of water so we",
+        "start": 56.85,
+        "duration": 2.79
+    },
+    {
+        "text": "don't have to look at it",
+        "start": 58.59,
+        "duration": 2.46
+    },
+    {
+        "text": "so if you don't know how to solve the",
+        "start": 59.64,
+        "duration": 3.0
+    },
+    {
+        "text": "problem the first thing you should do is",
+        "start": 61.05,
+        "duration": 3.66
+    },
+    {
+        "text": "not try to write any code just look at",
+        "start": 62.64,
+        "duration": 3.45
+    },
+    {
+        "text": "the picture and try to get as much",
+        "start": 64.71,
+        "duration": 3.6
+    },
+    {
+        "text": "information as you can so think about it",
+        "start": 66.09,
+        "duration": 4.23
+    },
+    {
+        "text": "how would a kid solve this problem if",
+        "start": 68.31,
+        "duration": 3.66
+    },
+    {
+        "text": "you gave them the picture and told them",
+        "start": 70.32,
+        "duration": 3.869
+    },
+    {
+        "text": "to count the number of islands well the",
+        "start": 71.97,
+        "duration": 4.11
+    },
+    {
+        "text": "first thing you would do is notice okay",
+        "start": 74.189,
+        "duration": 3.75
+    },
+    {
+        "text": "let's start at the top left hey there's",
+        "start": 76.08,
+        "duration": 3.99
+    },
+    {
+        "text": "a one here right okay that means it's an",
+        "start": 77.939,
+        "duration": 4.771
+    },
+    {
+        "text": "island how many other ones are connected",
+        "start": 80.07,
+        "duration": 4.56
+    },
+    {
+        "text": "to this one horizontally and vertically",
+        "start": 82.71,
+        "duration": 4.049
+    },
+    {
+        "text": "just by looking at it right you kind of",
+        "start": 84.63,
+        "duration": 4.32
+    },
+    {
+        "text": "draw the outline there's all these ones",
+        "start": 86.759,
+        "duration": 4.411
+    },
+    {
+        "text": "that are connected to each other so then",
+        "start": 88.95,
+        "duration": 4.529
+    },
+    {
+        "text": "that's one island we can say that the",
+        "start": 91.17,
+        "duration": 6.269
+    },
+    {
+        "text": "number of islands we have so far is one",
+        "start": 93.479,
+        "duration": 6.421
+    },
+    {
+        "text": "right and if you look at the other ones",
+        "start": 97.439,
+        "duration": 4.021
+    },
+    {
+        "text": "right maybe we have to count those as",
+        "start": 99.9,
+        "duration": 3.99
+    },
+    {
+        "text": "well like this one but you notice it's",
+        "start": 101.46,
+        "duration": 4.409
+    },
+    {
+        "text": "already a part of the island that we",
+        "start": 103.89,
+        "duration": 4.68
+    },
+    {
+        "text": "drew right this outline it's already",
+        "start": 105.869,
+        "duration": 4.171
+    },
+    {
+        "text": "there we're not going to count it twice",
+        "start": 108.57,
+        "duration": 3.45
+    },
+    {
+        "text": "these ones are part of the same island",
+        "start": 110.04,
+        "duration": 5.34
+    },
+    {
+        "text": "so the count of islands remains one and",
+        "start": 112.02,
+        "duration": 6.15
+    },
+    {
+        "text": "after looking at each of these ones we'd",
+        "start": 115.38,
+        "duration": 4.349
+    },
+    {
+        "text": "conclude the same thing right they're",
+        "start": 118.17,
+        "duration": 4.409
+    },
+    {
+        "text": "all a part of the same island next we",
+        "start": 119.729,
+        "duration": 4.17
+    },
+    {
+        "text": "could look at some of these zeros right",
+        "start": 122.579,
+        "duration": 4.051
+    },
+    {
+        "text": "okay we check is this an island nope its",
+        "start": 123.899,
+        "duration": 3.211
+    },
+    {
+        "text": "water",
+        "start": 126.63,
+        "duration": 2.609
+    },
+    {
+        "text": "so just cross it out right don't need to",
+        "start": 127.11,
+        "duration": 3.03
+    },
+    {
+        "text": "consider it anymore",
+        "start": 129.239,
+        "duration": 3.241
+    },
+    {
+        "text": "is this an island nope it's water this",
+        "start": 130.14,
+        "duration": 3.48
+    },
+    {
+        "text": "is water",
+        "start": 132.48,
+        "duration": 3.42
+    },
+    {
+        "text": "this is water this is water this is",
+        "start": 133.62,
+        "duration": 4.92
+    },
+    {
+        "text": "water this is water this is water",
+        "start": 135.9,
+        "duration": 4.77
+    },
+    {
+        "text": "it's getting pretty repetitive but this",
+        "start": 138.54,
+        "duration": 5.1
+    },
+    {
+        "text": "is water stillwater this is still water",
+        "start": 140.67,
+        "duration": 5.73
+    },
+    {
+        "text": "but now we get to a one that means we",
+        "start": 143.64,
+        "duration": 5.67
+    },
+    {
+        "text": "found another island and it's not a part",
+        "start": 146.4,
+        "duration": 4.559
+    },
+    {
+        "text": "of this island that we already counted",
+        "start": 149.31,
+        "duration": 3.899
+    },
+    {
+        "text": "right it's a part of a new island so",
+        "start": 150.959,
+        "duration": 4.17
+    },
+    {
+        "text": "we're gonna update the number of islands",
+        "start": 153.209,
+        "duration": 4.471
+    },
+    {
+        "text": "cross one out now we're gonna put two",
+        "start": 155.129,
+        "duration": 5.461
+    },
+    {
+        "text": "but we have to remember that we have to",
+        "start": 157.68,
+        "duration": 4.86
+    },
+    {
+        "text": "count all the ones that are connected to",
+        "start": 160.59,
+        "duration": 4.2
+    },
+    {
+        "text": "this one and there's only one right",
+        "start": 162.54,
+        "duration": 5.37
+    },
+    {
+        "text": "neighbor that it has right and so the",
+        "start": 164.79,
+        "duration": 5.19
+    },
+    {
+        "text": "total number of islands is now two when",
+        "start": 167.91,
+        "duration": 4.169
+    },
+    {
+        "text": "we get to this one again we see it's",
+        "start": 169.98,
+        "duration": 3.72
+    },
+    {
+        "text": "already a part of the island that we",
+        "start": 172.079,
+        "duration": 4.05
+    },
+    {
+        "text": "already counted right so we don't have",
+        "start": 173.7,
+        "duration": 4.8
+    },
+    {
+        "text": "to count it again so we visited every",
+        "start": 176.129,
+        "duration": 5.041
+    },
+    {
+        "text": "single cell and we concluded that the",
+        "start": 178.5,
+        "duration": 4.68
+    },
+    {
+        "text": "total number of islands is two so now we",
+        "start": 181.17,
+        "duration": 3.659
+    },
+    {
+        "text": "kind of have an idea of how the",
+        "start": 183.18,
+        "duration": 3.75
+    },
+    {
+        "text": "algorithm works but with a difficult",
+        "start": 184.829,
+        "duration": 3.961
+    },
+    {
+        "text": "part is that you might not know unless",
+        "start": 186.93,
+        "duration": 3.479
+    },
+    {
+        "text": "you know a little about a little bit",
+        "start": 188.79,
+        "duration": 3.72
+    },
+    {
+        "text": "about graph algorithms is how do we",
+        "start": 190.409,
+        "duration": 5.341
+    },
+    {
+        "text": "actually determine this entire area",
+        "start": 192.51,
+        "duration": 6.0
+    },
+    {
+        "text": "right how do we get all of the adjacent",
+        "start": 195.75,
+        "duration": 4.62
+    },
+    {
+        "text": "neighbors of an island how do we mark",
+        "start": 198.51,
+        "duration": 4.409
+    },
+    {
+        "text": "them as visited right let's take a look",
+        "start": 200.37,
+        "duration": 4.83
+    },
+    {
+        "text": "at how we can do that so when we first",
+        "start": 202.919,
+        "duration": 5.611
+    },
+    {
+        "text": "got to this one we realized we got to an",
+        "start": 205.2,
+        "duration": 5.42
+    },
+    {
+        "text": "island but then we wanted to mark the",
+        "start": 208.53,
+        "duration": 4.739
+    },
+    {
+        "text": "contiguous land of this island as",
+        "start": 210.62,
+        "duration": 5.11
+    },
+    {
+        "text": "visited right so the first thing we",
+        "start": 213.269,
+        "duration": 4.321
+    },
+    {
+        "text": "could do is say okay well the the",
+        "start": 215.73,
+        "duration": 4.11
+    },
+    {
+        "text": "adjacent neighbors of this one also have",
+        "start": 217.59,
+        "duration": 4.14
+    },
+    {
+        "text": "to be marked visited so its neighbors",
+        "start": 219.84,
+        "duration": 5.22
+    },
+    {
+        "text": "are this one below it and this one to",
+        "start": 221.73,
+        "duration": 5.61
+    },
+    {
+        "text": "the right of it okay but we're not done",
+        "start": 225.06,
+        "duration": 4.259
+    },
+    {
+        "text": "yet right there could be even more ones",
+        "start": 227.34,
+        "duration": 4.109
+    },
+    {
+        "text": "connected to these two that we just",
+        "start": 229.319,
+        "duration": 4.29
+    },
+    {
+        "text": "visited and then we can say that for",
+        "start": 231.449,
+        "duration": 5.22
+    },
+    {
+        "text": "this one below the the first one its",
+        "start": 233.609,
+        "duration": 7.44
+    },
+    {
+        "text": "neighbors are this one and this one but",
+        "start": 236.669,
+        "duration": 6.331
+    },
+    {
+        "text": "what about this one but above it well",
+        "start": 241.049,
+        "duration": 3.84
+    },
+    {
+        "text": "it's already visited so we don't want to",
+        "start": 243.0,
+        "duration": 3.48
+    },
+    {
+        "text": "mark it twice so we're not going to do",
+        "start": 244.889,
+        "duration": 3.69
+    },
+    {
+        "text": "that now let's get the neighbors of this",
+        "start": 246.48,
+        "duration": 3.539
+    },
+    {
+        "text": "one that was to the right of the",
+        "start": 248.579,
+        "duration": 3.72
+    },
+    {
+        "text": "original one so it has one neighbor to",
+        "start": 250.019,
+        "duration": 4.381
+    },
+    {
+        "text": "the right of it it also has a neighbor",
+        "start": 252.299,
+        "duration": 4.711
+    },
+    {
+        "text": "below it but hey we already marked that",
+        "start": 254.4,
+        "duration": 4.17
+    },
+    {
+        "text": "visited so we don't need to do that",
+        "start": 257.01,
+        "duration": 4.529
+    },
+    {
+        "text": "again and then let's look at this one",
+        "start": 258.57,
+        "duration": 5.19
+    },
+    {
+        "text": "and see it's neighbors well it only has",
+        "start": 261.539,
+        "duration": 2.821
+    },
+    {
+        "text": "one",
+        "start": 263.76,
+        "duration": 2.969
+    },
+    {
+        "text": "and then we notice that this one doesn't",
+        "start": 264.36,
+        "duration": 3.809
+    },
+    {
+        "text": "have any neighbors that aren't already",
+        "start": 266.729,
+        "duration": 2.97
+    },
+    {
+        "text": "visited and this one doesn't have any",
+        "start": 268.169,
+        "duration": 3.24
+    },
+    {
+        "text": "neighbors that aren't already visited",
+        "start": 269.699,
+        "duration": 3.601
+    },
+    {
+        "text": "either so you might already know what",
+        "start": 271.409,
+        "duration": 3.841
+    },
+    {
+        "text": "this algorithm is but it's basically a",
+        "start": 273.3,
+        "duration": 4.169
+    },
+    {
+        "text": "bet a breadth-first search we're just",
+        "start": 275.25,
+        "duration": 4.71
+    },
+    {
+        "text": "doing a graph traversal algorithm",
+        "start": 277.469,
+        "duration": 4.44
+    },
+    {
+        "text": "starting at the original point over here",
+        "start": 279.96,
+        "duration": 6.479
+    },
+    {
+        "text": "and marking each layer of ones so in the",
+        "start": 281.909,
+        "duration": 6.871
+    },
+    {
+        "text": "first layer we got this the second layer",
+        "start": 286.439,
+        "duration": 5.16
+    },
+    {
+        "text": "we got this the third layer we got this",
+        "start": 288.78,
+        "duration": 5.129
+    },
+    {
+        "text": "and the fourth layer we had just a",
+        "start": 291.599,
+        "duration": 5.31
+    },
+    {
+        "text": "single value so this is really easy to",
+        "start": 293.909,
+        "duration": 5.01
+    },
+    {
+        "text": "visualize and if you already know this",
+        "start": 296.909,
+        "duration": 4.051
+    },
+    {
+        "text": "algorithm you can code it up pretty",
+        "start": 298.919,
+        "duration": 4.291
+    },
+    {
+        "text": "quickly so knowing what we just learned",
+        "start": 300.96,
+        "duration": 5.009
+    },
+    {
+        "text": "let's code it up so the first thing just",
+        "start": 303.21,
+        "duration": 4.709
+    },
+    {
+        "text": "do some input validation if we had an",
+        "start": 305.969,
+        "duration": 4.38
+    },
+    {
+        "text": "empty grid we don't want to have to run",
+        "start": 307.919,
+        "duration": 4.65
+    },
+    {
+        "text": "our algorithm and we can simply just",
+        "start": 310.349,
+        "duration": 3.741
+    },
+    {
+        "text": "return zero",
+        "start": 312.569,
+        "duration": 3.78
+    },
+    {
+        "text": "there aren't any islands in that case",
+        "start": 314.09,
+        "duration": 4.539
+    },
+    {
+        "text": "the next thing I like to do is just get",
+        "start": 316.349,
+        "duration": 4.5
+    },
+    {
+        "text": "the dimensions of the grid so the number",
+        "start": 318.629,
+        "duration": 4.29
+    },
+    {
+        "text": "of rows and the number of columns we can",
+        "start": 320.849,
+        "duration": 5.07
+    },
+    {
+        "text": "get the number of rows by getting doing",
+        "start": 322.919,
+        "duration": 5.941
+    },
+    {
+        "text": "this and the number of columns by doing",
+        "start": 325.919,
+        "duration": 7.4
+    },
+    {
+        "text": "this we also want to be able to mark",
+        "start": 328.86,
+        "duration": 7.649
+    },
+    {
+        "text": "positions or cells visited when we're",
+        "start": 333.319,
+        "duration": 6.011
+    },
+    {
+        "text": "marking island masses so I'm going to",
+        "start": 336.509,
+        "duration": 5.821
+    },
+    {
+        "text": "use a set to do that we could also use a",
+        "start": 339.33,
+        "duration": 5.85
+    },
+    {
+        "text": "2d grid if we wanted to but I think sets",
+        "start": 342.33,
+        "duration": 4.799
+    },
+    {
+        "text": "are a little easier we also want to",
+        "start": 345.18,
+        "duration": 3.449
+    },
+    {
+        "text": "count the number of islands we can",
+        "start": 347.129,
+        "duration": 3.9
+    },
+    {
+        "text": "initialize that as zero so we want to",
+        "start": 348.629,
+        "duration": 4.71
+    },
+    {
+        "text": "visit every single position in the grid",
+        "start": 351.029,
+        "duration": 5.1
+    },
+    {
+        "text": "so let's iterate through each row and",
+        "start": 353.339,
+        "duration": 6.151
+    },
+    {
+        "text": "column so R is going to go through every",
+        "start": 356.129,
+        "duration": 7.201
+    },
+    {
+        "text": "single row C is going to go through",
+        "start": 359.49,
+        "duration": 8.31
+    },
+    {
+        "text": "every single column if we visit a zero",
+        "start": 363.33,
+        "duration": 5.94
+    },
+    {
+        "text": "we don't have to do anything right but",
+        "start": 367.8,
+        "duration": 8.76
+    },
+    {
+        "text": "if we visit a one then we have to do",
+        "start": 369.27,
+        "duration": 9.209
+    },
+    {
+        "text": "something then we have to traverse it",
+        "start": 376.56,
+        "duration": 3.779
+    },
+    {
+        "text": "and mark it visited and don't forget",
+        "start": 378.479,
+        "duration": 3.78
+    },
+    {
+        "text": "that this 2d grid is actually made up of",
+        "start": 380.339,
+        "duration": 4.711
+    },
+    {
+        "text": "strings not numbers that always trips me",
+        "start": 382.259,
+        "duration": 4.08
+    },
+    {
+        "text": "up I think it's kind of annoying that",
+        "start": 385.05,
+        "duration": 4.799
+    },
+    {
+        "text": "LICO does that but it does so now we",
+        "start": 386.339,
+        "duration": 5.07
+    },
+    {
+        "text": "have to run our traversal",
+        "start": 389.849,
+        "duration": 3.151
+    },
+    {
+        "text": "I'm gonna run breadth-first search",
+        "start": 391.409,
+        "duration": 3.48
+    },
+    {
+        "text": "because I kind of like it so run",
+        "start": 393.0,
+        "duration": 3.95
+    },
+    {
+        "text": "breadth-first search on this cell",
+        "start": 394.889,
+        "duration": 5.451
+    },
+    {
+        "text": "column we also have to increment the",
+        "start": 396.95,
+        "duration": 5.94
+    },
+    {
+        "text": "number of islands but remember we're",
+        "start": 400.34,
+        "duration": 4.17
+    },
+    {
+        "text": "only going to be incrementing the number",
+        "start": 402.89,
+        "duration": 3.21
+    },
+    {
+        "text": "of islands if we get to a one that we",
+        "start": 404.51,
+        "duration": 3.42
+    },
+    {
+        "text": "haven't already visited so we're going",
+        "start": 406.1,
+        "duration": 4.05
+    },
+    {
+        "text": "to make sure that if we execute this we",
+        "start": 407.93,
+        "duration": 3.87
+    },
+    {
+        "text": "we've gotten to a position we haven't",
+        "start": 410.15,
+        "duration": 9.75
+    },
+    {
+        "text": "visited and then ultimately we're just",
+        "start": 411.8,
+        "duration": 9.98
+    },
+    {
+        "text": "going to return the number of islands",
+        "start": 419.9,
+        "duration": 4.02
+    },
+    {
+        "text": "but we didn't actually write our",
+        "start": 421.78,
+        "duration": 3.67
+    },
+    {
+        "text": "breadth-first search let's do that right",
+        "start": 423.92,
+        "duration": 9.87
+    },
+    {
+        "text": "now so breadth-first search is not a",
+        "start": 425.45,
+        "duration": 10.65
+    },
+    {
+        "text": "recursive algorithm it's iterative so we",
+        "start": 433.79,
+        "duration": 4.83
+    },
+    {
+        "text": "need a data structure to use for memory",
+        "start": 436.1,
+        "duration": 4.95
+    },
+    {
+        "text": "so a queue is normally used for",
+        "start": 438.62,
+        "duration": 9.03
+    },
+    {
+        "text": "breadth-first search so we want to mark",
+        "start": 441.05,
+        "duration": 8.49
+    },
+    {
+        "text": "this position visit it as well so to",
+        "start": 447.65,
+        "duration": 4.38
+    },
+    {
+        "text": "visit we're gonna add this cell that",
+        "start": 449.54,
+        "duration": 4.44
+    },
+    {
+        "text": "we're about to use our traversal on our",
+        "start": 452.03,
+        "duration": 4.02
+    },
+    {
+        "text": "c we're also going to add it to our",
+        "start": 453.98,
+        "duration": 9.51
+    },
+    {
+        "text": "queue and so while our queue is not",
+        "start": 456.05,
+        "duration": 9.74
+    },
+    {
+        "text": "empty that means we're gonna be",
+        "start": 463.49,
+        "duration": 7.29
+    },
+    {
+        "text": "expanding our island so we're gonna pop",
+        "start": 465.79,
+        "duration": 12.91
+    },
+    {
+        "text": "from the queue and we want to check the",
+        "start": 470.78,
+        "duration": 10.89
+    },
+    {
+        "text": "adjacent positions of this position that",
+        "start": 478.7,
+        "duration": 5.22
+    },
+    {
+        "text": "we just popped so the way I like to do",
+        "start": 481.67,
+        "duration": 6.06
+    },
+    {
+        "text": "that is use a loop so we know that",
+        "start": 483.92,
+        "duration": 6.72
+    },
+    {
+        "text": "there's four directions that we can go",
+        "start": 487.73,
+        "duration": 7.02
+    },
+    {
+        "text": "in the direction to the right which is",
+        "start": 490.64,
+        "duration": 9.09
+    },
+    {
+        "text": "one zero the direction to the left which",
+        "start": 494.75,
+        "duration": 9.72
+    },
+    {
+        "text": "is negative one zero the direction above",
+        "start": 499.73,
+        "duration": 12.08
+    },
+    {
+        "text": "zero one and the direction below",
+        "start": 504.47,
+        "duration": 7.34
+    },
+    {
+        "text": "now for each of these directions we're",
+        "start": 515.36,
+        "duration": 9.899
+    },
+    {
+        "text": "gonna check something first we want to",
+        "start": 523.279,
+        "duration": 3.9
+    },
+    {
+        "text": "check that this position is in bounds",
+        "start": 525.259,
+        "duration": 3.75
+    },
+    {
+        "text": "the way in Python I like to check that",
+        "start": 527.179,
+        "duration": 6.6
+    },
+    {
+        "text": "is just if R Plus D R is in range of",
+        "start": 529.009,
+        "duration": 11.7
+    },
+    {
+        "text": "rows and check that the column plus",
+        "start": 533.779,
+        "duration": 10.441
+    },
+    {
+        "text": "direction that we're moving in is also",
+        "start": 540.709,
+        "duration": 8.55
+    },
+    {
+        "text": "in range of columns and that this",
+        "start": 544.22,
+        "duration": 14.01
+    },
+    {
+        "text": "position is a land position so this is",
+        "start": 549.259,
+        "duration": 14.81
+    },
+    {
+        "text": "equal to 1 meaning its land and lastly",
+        "start": 558.23,
+        "duration": 8.159
+    },
+    {
+        "text": "that this position hasn't already been",
+        "start": 564.069,
+        "duration": 17.32
+    },
+    {
+        "text": "visited so if this is true then we can",
+        "start": 566.389,
+        "duration": 16.651
+    },
+    {
+        "text": "add that to our queue because that means",
+        "start": 581.389,
+        "duration": 3.24
+    },
+    {
+        "text": "we have to run breadth-first search on",
+        "start": 583.04,
+        "duration": 10.32
+    },
+    {
+        "text": "this cell as well we also have to mark",
+        "start": 584.629,
+        "duration": 10.89
+    },
+    {
+        "text": "it visited so we don't visit it twice",
+        "start": 593.36,
+        "duration": 11.669
+    },
+    {
+        "text": "I noticed that we're doing this",
+        "start": 595.519,
+        "duration": 11.85
+    },
+    {
+        "text": "computation a lot by adding row plus",
+        "start": 605.029,
+        "duration": 4.56
+    },
+    {
+        "text": "different a direction of row so I'm",
+        "start": 607.369,
+        "duration": 5.241
+    },
+    {
+        "text": "going to fix that really quickly",
+        "start": 609.589,
+        "duration": 3.021
+    },
+    {
+        "text": "so that's a little bit cleaner and",
+        "start": 636.04,
+        "duration": 4.99
+    },
+    {
+        "text": "that's pretty much the entire breadth",
+        "start": 638.5,
+        "duration": 4.21
+    },
+    {
+        "text": "first search function it's gonna be",
+        "start": 641.03,
+        "duration": 3.21
+    },
+    {
+        "text": "running until the queue is empty which",
+        "start": 642.71,
+        "duration": 2.7
+    },
+    {
+        "text": "means that there's no more land",
+        "start": 644.24,
+        "duration": 3.9
+    },
+    {
+        "text": "positions to visit I had a sloppy bug I",
+        "start": 645.41,
+        "duration": 5.01
+    },
+    {
+        "text": "forgot to add this row column position",
+        "start": 648.14,
+        "duration": 4.65
+    },
+    {
+        "text": "as a tuple which we want to do as a pair",
+        "start": 650.42,
+        "duration": 5.46
+    },
+    {
+        "text": "not two elements separately I also use",
+        "start": 652.79,
+        "duration": 5.1
+    },
+    {
+        "text": "the wrong function name for visit we",
+        "start": 655.88,
+        "duration": 4.23
+    },
+    {
+        "text": "have to use visit add not append",
+        "start": 657.89,
+        "duration": 4.83
+    },
+    {
+        "text": "because it's a set and on a list and",
+        "start": 660.11,
+        "duration": 3.84
+    },
+    {
+        "text": "there is their breadth-first search",
+        "start": 662.72,
+        "duration": 3.3
+    },
+    {
+        "text": "solution to this problem sorry about a",
+        "start": 663.95,
+        "duration": 4.29
+    },
+    {
+        "text": "few of the bugs that i had oh that they",
+        "start": 666.02,
+        "duration": 4.98
+    },
+    {
+        "text": "didn't trip you up too much and also the",
+        "start": 668.24,
+        "duration": 4.32
+    },
+    {
+        "text": "neat thing about writing it this way is",
+        "start": 671.0,
+        "duration": 3.39
+    },
+    {
+        "text": "if your interview asked you at the end",
+        "start": 672.56,
+        "duration": 3.9
+    },
+    {
+        "text": "okay could you do a depth-first search",
+        "start": 674.39,
+        "duration": 3.96
+    },
+    {
+        "text": "solution to this you can actually do it",
+        "start": 676.46,
+        "duration": 4.56
+    },
+    {
+        "text": "really easily this pop left that we",
+        "start": 678.35,
+        "duration": 4.92
+    },
+    {
+        "text": "wrote if you just change it to a regular",
+        "start": 681.02,
+        "duration": 4.59
+    },
+    {
+        "text": "pop meaning a pop right it'll pop the",
+        "start": 683.27,
+        "duration": 4.11
+    },
+    {
+        "text": "most recent element that we added",
+        "start": 685.61,
+        "duration": 3.78
+    },
+    {
+        "text": "instead of the first element that we",
+        "start": 687.38,
+        "duration": 4.32
+    },
+    {
+        "text": "added which means it'll basic b it'll",
+        "start": 689.39,
+        "duration": 4.17
+    },
+    {
+        "text": "basically be a depth-first search but",
+        "start": 691.7,
+        "duration": 4.29
+    },
+    {
+        "text": "it's non recursive it's iterative if you",
+        "start": 693.56,
+        "duration": 4.29
+    },
+    {
+        "text": "enjoyed and if this was helpful please",
+        "start": 695.99,
+        "duration": 3.66
+    },
+    {
+        "text": "leave a like and subscribe and thank you",
+        "start": 697.85,
+        "duration": 4.1
+    },
+    {
+        "text": "for watching",
+        "start": 699.65,
+        "duration": 2.3
+    }
+]

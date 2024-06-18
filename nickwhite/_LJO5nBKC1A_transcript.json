@@ -1,0 +1,927 @@
+[
+    {
+        "text": "all right think we're recording hey guys",
+        "start": 2.389,
+        "duration": 8.201
+    },
+    {
+        "text": "with a Nick white here I do tech in live",
+        "start": 7.589,
+        "duration": 4.92
+    },
+    {
+        "text": "coding stuff on twitch in YouTube so if",
+        "start": 10.59,
+        "duration": 2.969
+    },
+    {
+        "text": "you want to check that out",
+        "start": 12.509,
+        "duration": 2.58
+    },
+    {
+        "text": "just you know look we're in the",
+        "start": 13.559,
+        "duration": 3.211
+    },
+    {
+        "text": "description and I appreciate it if you",
+        "start": 15.089,
+        "duration": 3.501
+    },
+    {
+        "text": "could fall unsubscribe this is basically",
+        "start": 16.77,
+        "duration": 4.44
+    },
+    {
+        "text": "so this is basically the elite elite",
+        "start": 18.59,
+        "duration": 4.15
+    },
+    {
+        "text": "code series I'm doing I just go through",
+        "start": 21.21,
+        "duration": 3.0
+    },
+    {
+        "text": "each of the problems one by one and I",
+        "start": 22.74,
+        "duration": 3.779
+    },
+    {
+        "text": "kind of explain the solution and you",
+        "start": 24.21,
+        "duration": 4.2
+    },
+    {
+        "text": "know I'll be solving it here for you too",
+        "start": 26.519,
+        "duration": 5.311
+    },
+    {
+        "text": "so this one is a tree problem and it is",
+        "start": 28.41,
+        "duration": 6.059
+    },
+    {
+        "text": "called merge two binary trees and you",
+        "start": 31.83,
+        "duration": 4.409
+    },
+    {
+        "text": "know I could read this but I'd rather",
+        "start": 34.469,
+        "duration": 3.691
+    },
+    {
+        "text": "just explain it to you",
+        "start": 36.239,
+        "duration": 4.23
+    },
+    {
+        "text": "we're given two trees right and if you",
+        "start": 38.16,
+        "duration": 4.44
+    },
+    {
+        "text": "look at our method merge trees we have a",
+        "start": 40.469,
+        "duration": 5.011
+    },
+    {
+        "text": "tree node one tree no.2 and you know",
+        "start": 42.6,
+        "duration": 5.07
+    },
+    {
+        "text": "giving us just though these tree nodes",
+        "start": 45.48,
+        "duration": 4.95
+    },
+    {
+        "text": "that were given in the as parameters are",
+        "start": 47.67,
+        "duration": 5.729
+    },
+    {
+        "text": "just you know they're they're the root",
+        "start": 50.43,
+        "duration": 5.16
+    },
+    {
+        "text": "nodes of the trees right so the root",
+        "start": 53.399,
+        "duration": 3.421
+    },
+    {
+        "text": "nodes are gonna give us access to the",
+        "start": 55.59,
+        "duration": 2.489
+    },
+    {
+        "text": "rest of the trees because we have you",
+        "start": 56.82,
+        "duration": 3.48
+    },
+    {
+        "text": "know left and right being like the left",
+        "start": 58.079,
+        "duration": 3.511
+    },
+    {
+        "text": "child and the right child and you know",
+        "start": 60.3,
+        "duration": 3.87
+    },
+    {
+        "text": "we can just do traversals down and you",
+        "start": 61.59,
+        "duration": 4.08
+    },
+    {
+        "text": "know get the next node we could traverse",
+        "start": 64.17,
+        "duration": 3.69
+    },
+    {
+        "text": "through the whole tree right so this is",
+        "start": 65.67,
+        "duration": 3.75
+    },
+    {
+        "text": "how we get access to both the trees we",
+        "start": 67.86,
+        "duration": 4.4
+    },
+    {
+        "text": "have true node want Reno to right so",
+        "start": 69.42,
+        "duration": 6.39
+    },
+    {
+        "text": "given two trees we want to given two",
+        "start": 72.26,
+        "duration": 4.87
+    },
+    {
+        "text": "binary trees we want to imagine that we",
+        "start": 75.81,
+        "duration": 3.78
+    },
+    {
+        "text": "put one over the other and you know like",
+        "start": 77.13,
+        "duration": 4.169
+    },
+    {
+        "text": "like as if we're covering one with the",
+        "start": 79.59,
+        "duration": 3.36
+    },
+    {
+        "text": "other right some nodes is a two tree",
+        "start": 81.299,
+        "duration": 3.0
+    },
+    {
+        "text": "overlap and some don't",
+        "start": 82.95,
+        "duration": 3.209
+    },
+    {
+        "text": "right so you need to merge them into a",
+        "start": 84.299,
+        "duration": 4.981
+    },
+    {
+        "text": "new tree and you know the merge rule in",
+        "start": 86.159,
+        "duration": 5.46
+    },
+    {
+        "text": "this problem is that if the two nodes",
+        "start": 89.28,
+        "duration": 4.65
+    },
+    {
+        "text": "overlap then you know we have to sum the",
+        "start": 91.619,
+        "duration": 4.051
+    },
+    {
+        "text": "values right so if we're giving this",
+        "start": 93.93,
+        "duration": 3.54
+    },
+    {
+        "text": "tree in this tree we have a 2 and a 1",
+        "start": 95.67,
+        "duration": 3.78
+    },
+    {
+        "text": "then you know the final tree is gonna",
+        "start": 97.47,
+        "duration": 4.38
+    },
+    {
+        "text": "have a 3 as a root right and you know we",
+        "start": 99.45,
+        "duration": 4.65
+    },
+    {
+        "text": "have a 3 in 1 that's gonna be a 4 2 and",
+        "start": 101.85,
+        "duration": 4.89
+    },
+    {
+        "text": "a 3 is 5 and then then we see otherwise",
+        "start": 104.1,
+        "duration": 5.129
+    },
+    {
+        "text": "you know the not null will you know not",
+        "start": 106.74,
+        "duration": 5.25
+    },
+    {
+        "text": "be used right I mean the the not null",
+        "start": 109.229,
+        "duration": 4.951
+    },
+    {
+        "text": "will be used and null won't be used",
+        "start": 111.99,
+        "duration": 3.9
+    },
+    {
+        "text": "right so there's nothing here but the",
+        "start": 114.18,
+        "duration": 4.02
+    },
+    {
+        "text": "you know we see a 7 so you know we'll",
+        "start": 115.89,
+        "duration": 3.99
+    },
+    {
+        "text": "just put the 7 and we see a 4 here",
+        "start": 118.2,
+        "duration": 4.379
+    },
+    {
+        "text": "nothing as a right child of 3 here so",
+        "start": 119.88,
+        "duration": 6.809
+    },
+    {
+        "text": "you know the 4 stays that's pretty much",
+        "start": 122.579,
+        "duration": 6.99
+    },
+    {
+        "text": "the problem description here pretty",
+        "start": 126.689,
+        "duration": 5.001
+    },
+    {
+        "text": "pretty standard",
+        "start": 129.569,
+        "duration": 4.191
+    },
+    {
+        "text": "tree problem I would say not too",
+        "start": 131.69,
+        "duration": 5.07
+    },
+    {
+        "text": "complicated here so there's three cases",
+        "start": 133.76,
+        "duration": 4.59
+    },
+    {
+        "text": "we need to account for so first of all",
+        "start": 136.76,
+        "duration": 6.42
+    },
+    {
+        "text": "if t1 is equal to null right then we",
+        "start": 138.35,
+        "duration": 7.35
+    },
+    {
+        "text": "want to use t2 right so we're going to",
+        "start": 143.18,
+        "duration": 9.23
+    },
+    {
+        "text": "return t2 also if t2 is equal to null",
+        "start": 145.7,
+        "duration": 9.96
+    },
+    {
+        "text": "return t1 now I'm pretty pretty",
+        "start": 152.41,
+        "duration": 5.83
+    },
+    {
+        "text": "straightforward and then there's only",
+        "start": 155.66,
+        "duration": 4.32
+    },
+    {
+        "text": "one other case right",
+        "start": 158.24,
+        "duration": 3.78
+    },
+    {
+        "text": "if neither of them are no we have to add",
+        "start": 159.98,
+        "duration": 4.08
+    },
+    {
+        "text": "the values together so you can pick",
+        "start": 162.02,
+        "duration": 4.62
+    },
+    {
+        "text": "either node to keep the value so you you",
+        "start": 164.06,
+        "duration": 4.68
+    },
+    {
+        "text": "know and the end of this function is",
+        "start": 166.64,
+        "duration": 4.95
+    },
+    {
+        "text": "going to return either t1 or t2 see you",
+        "start": 168.74,
+        "duration": 5.01
+    },
+    {
+        "text": "can put the value of T 1 into T 2 or T",
+        "start": 171.59,
+        "duration": 3.9
+    },
+    {
+        "text": "the value of T 2 and a t1 I'm just gonna",
+        "start": 173.75,
+        "duration": 5.67
+    },
+    {
+        "text": "do t1 right so t1 now plus equals t2 now",
+        "start": 175.49,
+        "duration": 6.45
+    },
+    {
+        "text": "so we just take the value from t2 which",
+        "start": 179.42,
+        "duration": 4.29
+    },
+    {
+        "text": "you know in this and at the beginning",
+        "start": 181.94,
+        "duration": 5.58
+    },
+    {
+        "text": "it'll be you know 2 and 1 and 2 will get",
+        "start": 183.71,
+        "duration": 6.9
+    },
+    {
+        "text": "added to 1 to give us 3 right and then",
+        "start": 187.52,
+        "duration": 5.04
+    },
+    {
+        "text": "what you want to do is you know we can't",
+        "start": 190.61,
+        "duration": 4.29
+    },
+    {
+        "text": "just all we have to do right now it's",
+        "start": 192.56,
+        "duration": 4.05
+    },
+    {
+        "text": "the problem is pretty much done we just",
+        "start": 194.9,
+        "duration": 4.38
+    },
+    {
+        "text": "return t1 right that's gonna give us",
+        "start": 196.61,
+        "duration": 5.52
+    },
+    {
+        "text": "access to the final node with with the",
+        "start": 199.28,
+        "duration": 6.09
+    },
+    {
+        "text": "new value of both of them combined but",
+        "start": 202.13,
+        "duration": 4.59
+    },
+    {
+        "text": "the final thing we have to do is you",
+        "start": 205.37,
+        "duration": 3.78
+    },
+    {
+        "text": "we're not just gonna do it for one pair",
+        "start": 206.72,
+        "duration": 4.71
+    },
+    {
+        "text": "of nodes right because that's not gonna",
+        "start": 209.15,
+        "duration": 4.29
+    },
+    {
+        "text": "do the whole tree that's not gonna merge",
+        "start": 211.43,
+        "duration": 5.19
+    },
+    {
+        "text": "the whole tree so just like many other",
+        "start": 213.44,
+        "duration": 5.16
+    },
+    {
+        "text": "tree problems we're gonna have to",
+        "start": 216.62,
+        "duration": 4.29
+    },
+    {
+        "text": "traverse the tree right and as we do",
+        "start": 218.6,
+        "duration": 5.13
+    },
+    {
+        "text": "that we're gonna set the t1 left equal",
+        "start": 220.91,
+        "duration": 8.16
+    },
+    {
+        "text": "to our you know next left in left child",
+        "start": 223.73,
+        "duration": 8.79
+    },
+    {
+        "text": "so we we just have to recursively call",
+        "start": 229.07,
+        "duration": 9.21
+    },
+    {
+        "text": "the function on t1 left T to dot left",
+        "start": 232.52,
+        "duration": 7.92
+    },
+    {
+        "text": "this is a super common entry problems",
+        "start": 238.28,
+        "duration": 4.05
+    },
+    {
+        "text": "traversing exactly like this you're",
+        "start": 240.44,
+        "duration": 3.69
+    },
+    {
+        "text": "gonna see it all over the place with",
+        "start": 242.33,
+        "duration": 4.11
+    },
+    {
+        "text": "recursive calls like this you know",
+        "start": 244.13,
+        "duration": 4.02
+    },
+    {
+        "text": "sometimes you store it in a variable but",
+        "start": 246.44,
+        "duration": 3.69
+    },
+    {
+        "text": "in this case we're just you know we're",
+        "start": 248.15,
+        "duration": 4.62
+    },
+    {
+        "text": "actually new do you know mutating the",
+        "start": 250.13,
+        "duration": 17.16
+    },
+    {
+        "text": "tree as we go along here so yeah that's",
+        "start": 252.77,
+        "duration": 16.11
+    },
+    {
+        "text": "that's pretty much it this should be a",
+        "start": 267.29,
+        "duration": 3.39
+    },
+    {
+        "text": "working solution and then maybe I'll",
+        "start": 268.88,
+        "duration": 4.23
+    },
+    {
+        "text": "explain you know kind of run through it",
+        "start": 270.68,
+        "duration": 5.04
+    },
+    {
+        "text": "a little bit more here for you hopefully",
+        "start": 273.11,
+        "duration": 4.05
+    },
+    {
+        "text": "I'm you know doing a good job explaining",
+        "start": 275.72,
+        "duration": 3.65
+    },
+    {
+        "text": "this is the one of one of the first",
+        "start": 277.16,
+        "duration": 5.87
+    },
+    {
+        "text": "problems I'm doing on stream here so",
+        "start": 279.37,
+        "duration": 6.19
+    },
+    {
+        "text": "that might be why the explanation isn't",
+        "start": 283.03,
+        "duration": 5.83
+    },
+    {
+        "text": "so good so so sorry sorry sorry you want",
+        "start": 285.56,
+        "duration": 4.32
+    },
+    {
+        "text": "to you want to make sure that you're",
+        "start": 288.86,
+        "duration": 3.15
+    },
+    {
+        "text": "setting t1 dot left into u 1 dot right",
+        "start": 289.88,
+        "duration": 3.24
+    },
+    {
+        "text": "because t1 is the one that we're",
+        "start": 292.01,
+        "duration": 2.79
+    },
+    {
+        "text": "returning here right so as you can see",
+        "start": 293.12,
+        "duration": 3.75
+    },
+    {
+        "text": "we passed a little 11 millisecond",
+        "start": 294.8,
+        "duration": 4.53
+    },
+    {
+        "text": "runtime 30% of solutions like whatever",
+        "start": 296.87,
+        "duration": 4.89
+    },
+    {
+        "text": "Li code actually is a problem with this",
+        "start": 299.33,
+        "duration": 4.23
+    },
+    {
+        "text": "like I don't know if you guys notice but",
+        "start": 301.76,
+        "duration": 3.78
+    },
+    {
+        "text": "if I submit it again you know the the",
+        "start": 303.56,
+        "duration": 4.02
+    },
+    {
+        "text": "percentage here might be a little bit",
+        "start": 305.54,
+        "duration": 4.53
+    },
+    {
+        "text": "different right now it's 74 percent so",
+        "start": 307.58,
+        "duration": 4.97
+    },
+    {
+        "text": "Li code you might want to fix that but",
+        "start": 310.07,
+        "duration": 5.25
+    },
+    {
+        "text": "pretty standard solution so you know",
+        "start": 312.55,
+        "duration": 4.81
+    },
+    {
+        "text": "let's just look at the description one",
+        "start": 315.32,
+        "duration": 6.06
+    },
+    {
+        "text": "more time before we end here as we",
+        "start": 317.36,
+        "duration": 5.94
+    },
+    {
+        "text": "traverse as we traverse through the tree",
+        "start": 321.38,
+        "duration": 3.539
+    },
+    {
+        "text": "right we're gonna call this initially",
+        "start": 323.3,
+        "duration": 4.46
+    },
+    {
+        "text": "our nodes right we'd have 1 and 2 right",
+        "start": 324.919,
+        "duration": 5.671
+    },
+    {
+        "text": "you know neither of these are know right",
+        "start": 327.76,
+        "duration": 5.23
+    },
+    {
+        "text": "now so we we get we come through and we",
+        "start": 330.59,
+        "duration": 4.56
+    },
+    {
+        "text": "add 2 to 1 in this case you know if this",
+        "start": 332.99,
+        "duration": 4.95
+    },
+    {
+        "text": "was t2 then we'd add 1 to 2 right do you",
+        "start": 335.15,
+        "duration": 5.31
+    },
+    {
+        "text": "guys get that that should make sense and",
+        "start": 337.94,
+        "duration": 6.17
+    },
+    {
+        "text": "then we'd go and make the recursive call",
+        "start": 340.46,
+        "duration": 7.68
+    },
+    {
+        "text": "you see a t1 dot left on the on the left",
+        "start": 344.11,
+        "duration": 6.25
+    },
+    {
+        "text": "side and you basically just do it again",
+        "start": 348.14,
+        "duration": 5.22
+    },
+    {
+        "text": "do you just keep in we set T 1 dot left",
+        "start": 350.36,
+        "duration": 5.94
+    },
+    {
+        "text": "so we set 1 dot left equal to the call",
+        "start": 353.36,
+        "duration": 6.54
+    },
+    {
+        "text": "with you know the new the new notes you",
+        "start": 356.3,
+        "duration": 6.78
+    },
+    {
+        "text": "know with 1 in 3 and you just traverse",
+        "start": 359.9,
+        "duration": 4.38
+    },
+    {
+        "text": "all the way down the left side",
+        "start": 363.08,
+        "duration": 2.61
+    },
+    {
+        "text": "traverse all the way down the right side",
+        "start": 364.28,
+        "duration": 3.09
+    },
+    {
+        "text": "you're setting the nodes at each level",
+        "start": 365.69,
+        "duration": 4.71
+    },
+    {
+        "text": "and the left and right at each level and",
+        "start": 367.37,
+        "duration": 5.82
+    },
+    {
+        "text": "then you return the final node which is",
+        "start": 370.4,
+        "duration": 4.86
+    },
+    {
+        "text": "just basically a new tree that is a",
+        "start": 373.19,
+        "duration": 4.53
+    },
+    {
+        "text": "combination of both of them so I mean",
+        "start": 375.26,
+        "duration": 4.409
+    },
+    {
+        "text": "not not too much to explain here if we",
+        "start": 377.72,
+        "duration": 3.509
+    },
+    {
+        "text": "look at the solution it's the same thing",
+        "start": 379.669,
+        "duration": 3.661
+    },
+    {
+        "text": "I mean obviously looked at the solution",
+        "start": 381.229,
+        "duration": 4.171
+    },
+    {
+        "text": "before I made this video there's two",
+        "start": 383.33,
+        "duration": 3.839
+    },
+    {
+        "text": "solutions is the recursive one there's",
+        "start": 385.4,
+        "duration": 2.94
+    },
+    {
+        "text": "an iterative one too if you want to",
+        "start": 387.169,
+        "duration": 2.881
+    },
+    {
+        "text": "check that out time complexity of M",
+        "start": 388.34,
+        "duration": 3.66
+    },
+    {
+        "text": "space capacity over them because you",
+        "start": 390.05,
+        "duration": 3.619
+    },
+    {
+        "text": "know recursion",
+        "start": 392.0,
+        "duration": 5.21
+    },
+    {
+        "text": "you know uses stack space so pretty much",
+        "start": 393.669,
+        "duration": 5.731
+    },
+    {
+        "text": "thank you guys for watching hopefully I",
+        "start": 397.21,
+        "duration": 4.019
+    },
+    {
+        "text": "can get better at explaining these as I",
+        "start": 399.4,
+        "duration": 4.38
+    },
+    {
+        "text": "go but yeah that's pretty much it",
+        "start": 401.229,
+        "duration": 5.16
+    },
+    {
+        "text": "I advise I will say about every video I",
+        "start": 403.78,
+        "duration": 5.37
+    },
+    {
+        "text": "do you know these for the tree problem",
+        "start": 406.389,
+        "duration": 4.74
+    },
+    {
+        "text": "specifically I noticed on leak code",
+        "start": 409.15,
+        "duration": 4.44
+    },
+    {
+        "text": "there's only about 40 questions I would",
+        "start": 411.129,
+        "duration": 4.201
+    },
+    {
+        "text": "just say go through and do them all",
+        "start": 413.59,
+        "duration": 3.81
+    },
+    {
+        "text": "there's no hard ones it says only easy",
+        "start": 415.33,
+        "duration": 4.32
+    },
+    {
+        "text": "and medium I mean there's probably some",
+        "start": 417.4,
+        "duration": 4.41
+    },
+    {
+        "text": "hard ones with advanced tree structures",
+        "start": 419.65,
+        "duration": 3.419
+    },
+    {
+        "text": "or something like that I don't know like",
+        "start": 421.81,
+        "duration": 3.87
+    },
+    {
+        "text": "red black trees or whatever or like",
+        "start": 423.069,
+        "duration": 6.361
+    },
+    {
+        "text": "forest you know all that crap but you",
+        "start": 425.68,
+        "duration": 5.639
+    },
+    {
+        "text": "know just for just for the trees I think",
+        "start": 429.43,
+        "duration": 3.359
+    },
+    {
+        "text": "it's probably pretty easy to understand",
+        "start": 431.319,
+        "duration": 2.91
+    },
+    {
+        "text": "if you want through undo like just the",
+        "start": 432.789,
+        "duration": 3.0
+    },
+    {
+        "text": "40 you'll probably good understanding of",
+        "start": 434.229,
+        "duration": 4.65
+    },
+    {
+        "text": "trees and tree algorithms so I highly",
+        "start": 435.789,
+        "duration": 5.1
+    },
+    {
+        "text": "suggest that and thank you guys for",
+        "start": 438.879,
+        "duration": 2.551
+    },
+    {
+        "text": "watching",
+        "start": 440.889,
+        "duration": 2.191
+    },
+    {
+        "text": "you know once again subscribe follow me",
+        "start": 441.43,
+        "duration": 2.82
+    },
+    {
+        "text": "on Twitch if you want to see this videos",
+        "start": 443.08,
+        "duration": 3.48
+    },
+    {
+        "text": "live and really appreciate it thank you",
+        "start": 444.25,
+        "duration": 5.15
+    },
+    {
+        "text": "see ya",
+        "start": 446.56,
+        "duration": 2.84
+    }
+]

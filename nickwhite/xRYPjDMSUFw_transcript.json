@@ -1,0 +1,1402 @@
+[
+    {
+        "text": "hey what's up guys Nick white here I do",
+        "start": 1.85,
+        "duration": 4.87
+    },
+    {
+        "text": "technical stuff on twitch and YouTube",
+        "start": 4.74,
+        "duration": 3.27
+    },
+    {
+        "text": "check the description for all my",
+        "start": 6.72,
+        "duration": 3.45
+    },
+    {
+        "text": "information that joined the discord",
+        "start": 8.01,
+        "duration": 3.78
+    },
+    {
+        "text": "follow me on github trying to build a",
+        "start": 10.17,
+        "duration": 3.929
+    },
+    {
+        "text": "community here I do these problems all",
+        "start": 11.79,
+        "duration": 3.599
+    },
+    {
+        "text": "the time I put a lot of work into this",
+        "start": 14.099,
+        "duration": 2.491
+    },
+    {
+        "text": "if you can support me on patreon I",
+        "start": 15.389,
+        "duration": 3.39
+    },
+    {
+        "text": "really appreciate that as well I do the",
+        "start": 16.59,
+        "duration": 3.18
+    },
+    {
+        "text": "premium problems there",
+        "start": 18.779,
+        "duration": 4.17
+    },
+    {
+        "text": "this question is reorder list this is a",
+        "start": 19.77,
+        "duration": 5.58
+    },
+    {
+        "text": "linked list question it is medium level",
+        "start": 22.949,
+        "duration": 6.0
+    },
+    {
+        "text": "a lot of people like it I would say this",
+        "start": 25.35,
+        "duration": 5.7
+    },
+    {
+        "text": "involves a culmination of a bunch of",
+        "start": 28.949,
+        "duration": 3.72
+    },
+    {
+        "text": "other linked list problems so I'd say",
+        "start": 31.05,
+        "duration": 3.96
+    },
+    {
+        "text": "check out those before specifically you",
+        "start": 32.669,
+        "duration": 3.841
+    },
+    {
+        "text": "want to know how to reverse a linked",
+        "start": 35.01,
+        "duration": 5.94
+    },
+    {
+        "text": "list and you know merge linked lists odd",
+        "start": 36.51,
+        "duration": 7.44
+    },
+    {
+        "text": "even link list and maybe reverse or good",
+        "start": 40.95,
+        "duration": 5.129
+    },
+    {
+        "text": "tutorials I have on my page before you",
+        "start": 43.95,
+        "duration": 5.039
+    },
+    {
+        "text": "do these so this one is given a singly",
+        "start": 46.079,
+        "duration": 4.441
+    },
+    {
+        "text": "linked list you're just given a regular",
+        "start": 48.989,
+        "duration": 3.66
+    },
+    {
+        "text": "list so for example one two three four",
+        "start": 50.52,
+        "duration": 4.92
+    },
+    {
+        "text": "or one two three four five nodes with",
+        "start": 52.649,
+        "duration": 4.951
+    },
+    {
+        "text": "these values of course the nodes looking",
+        "start": 55.44,
+        "duration": 4.23
+    },
+    {
+        "text": "like this the value in the next node",
+        "start": 57.6,
+        "duration": 4.709
+    },
+    {
+        "text": "there's no previous so given a regular",
+        "start": 59.67,
+        "duration": 5.94
+    },
+    {
+        "text": "linked list we want to reorder it so",
+        "start": 62.309,
+        "duration": 5.821
+    },
+    {
+        "text": "that the list looks like this in this",
+        "start": 65.61,
+        "duration": 6.509
+    },
+    {
+        "text": "pattern is basically first node then",
+        "start": 68.13,
+        "duration": 7.349
+    },
+    {
+        "text": "last node then second node then second",
+        "start": 72.119,
+        "duration": 5.911
+    },
+    {
+        "text": "last node then third node then third",
+        "start": 75.479,
+        "duration": 5.971
+    },
+    {
+        "text": "last node so that's what they want the",
+        "start": 78.03,
+        "duration": 7.409
+    },
+    {
+        "text": "reordering of the list to be so for",
+        "start": 81.45,
+        "duration": 6.3
+    },
+    {
+        "text": "example you know when you see 1 2 3 4",
+        "start": 85.439,
+        "duration": 4.921
+    },
+    {
+        "text": "it's gonna be first node then last node",
+        "start": 87.75,
+        "duration": 6.689
+    },
+    {
+        "text": "second node second last node so 1 4 2 3",
+        "start": 90.36,
+        "duration": 7.079
+    },
+    {
+        "text": "or in this case first node last node",
+        "start": 94.439,
+        "duration": 7.351
+    },
+    {
+        "text": "second node second last node third node",
+        "start": 97.439,
+        "duration": 8.521
+    },
+    {
+        "text": "right so for it you know 1 5 2 4 3 so",
+        "start": 101.79,
+        "duration": 5.88
+    },
+    {
+        "text": "yeah that's basically it's almost like",
+        "start": 105.96,
+        "duration": 3.479
+    },
+    {
+        "text": "two pointers if you're going towards the",
+        "start": 107.67,
+        "duration": 3.75
+    },
+    {
+        "text": "middle but you don't have two pointers",
+        "start": 109.439,
+        "duration": 3.661
+    },
+    {
+        "text": "in this case this is a linked list so",
+        "start": 111.42,
+        "duration": 4.17
+    },
+    {
+        "text": "two pointers works for an array but in",
+        "start": 113.1,
+        "duration": 3.96
+    },
+    {
+        "text": "linked lists we don't have access to the",
+        "start": 115.59,
+        "duration": 3.959
+    },
+    {
+        "text": "indices so we only we have to start at",
+        "start": 117.06,
+        "duration": 4.739
+    },
+    {
+        "text": "the head and we have to figure this out",
+        "start": 119.549,
+        "duration": 6.241
+    },
+    {
+        "text": "somehow it isn't insanely hard but it's",
+        "start": 121.799,
+        "duration": 5.701
+    },
+    {
+        "text": "a little bit tricky I would say I mean",
+        "start": 125.79,
+        "duration": 3.419
+    },
+    {
+        "text": "this is a little bit of a complicated",
+        "start": 127.5,
+        "duration": 4.11
+    },
+    {
+        "text": "problem like I said it involves the",
+        "start": 129.209,
+        "duration": 4.14
+    },
+    {
+        "text": "solutions to other ones so here's the",
+        "start": 131.61,
+        "duration": 2.19
+    },
+    {
+        "text": "strategy",
+        "start": 133.349,
+        "duration": 4.981
+    },
+    {
+        "text": "let's say we have a list like this 1 2 3",
+        "start": 133.8,
+        "duration": 9.45
+    },
+    {
+        "text": "4 5 6 let's do 7 8 so let's say this is",
+        "start": 138.33,
+        "duration": 7.41
+    },
+    {
+        "text": "our linked list right and I'll add these",
+        "start": 143.25,
+        "duration": 5.46
+    },
+    {
+        "text": "arrows just to make it nice and neat for",
+        "start": 145.74,
+        "duration": 6.09
+    },
+    {
+        "text": "you guys so here's our linked list 1",
+        "start": 148.71,
+        "duration": 7.67
+    },
+    {
+        "text": "through 8 in what we want is of course",
+        "start": 151.83,
+        "duration": 7.44
+    },
+    {
+        "text": "you know this what do we want our output",
+        "start": 156.38,
+        "duration": 9.6
+    },
+    {
+        "text": "to be well we want our output to be 1 8",
+        "start": 159.27,
+        "duration": 20.67
+    },
+    {
+        "text": "you know 2 7 3 6 4 all right this is",
+        "start": 165.98,
+        "duration": 18.31
+    },
+    {
+        "text": "what we really want our 5 sorry 4 or 5",
+        "start": 179.94,
+        "duration": 6.84
+    },
+    {
+        "text": "this is this is what we would want our",
+        "start": 184.29,
+        "duration": 4.23
+    },
+    {
+        "text": "output to be so how do we achieve this",
+        "start": 186.78,
+        "duration": 3.18
+    },
+    {
+        "text": "here's the idea",
+        "start": 188.52,
+        "duration": 4.47
+    },
+    {
+        "text": "you take your input array or input sorry",
+        "start": 189.96,
+        "duration": 6.93
+    },
+    {
+        "text": "you take your input linked list and you",
+        "start": 192.99,
+        "duration": 6.57
+    },
+    {
+        "text": "want to get to the middle of it so we're",
+        "start": 196.89,
+        "duration": 4.62
+    },
+    {
+        "text": "gonna split it up we're gonna get to the",
+        "start": 199.56,
+        "duration": 5.97
+    },
+    {
+        "text": "middle of the list and make seperate the",
+        "start": 201.51,
+        "duration": 5.76
+    },
+    {
+        "text": "lists so we're gonna go to the middle",
+        "start": 205.53,
+        "duration": 3.63
+    },
+    {
+        "text": "and we're gonna separate it into two",
+        "start": 207.27,
+        "duration": 4.38
+    },
+    {
+        "text": "separate linked lists so now it looks",
+        "start": 209.16,
+        "duration": 5.13
+    },
+    {
+        "text": "like this we separated them right 1",
+        "start": 211.65,
+        "duration": 5.85
+    },
+    {
+        "text": "through 8 turned into 1 2 3 4 & 5 6 7 8",
+        "start": 214.29,
+        "duration": 7.44
+    },
+    {
+        "text": "now we just make comp go through the",
+        "start": 217.5,
+        "duration": 8.72
+    },
+    {
+        "text": "lists and make it so that it goes 1 then",
+        "start": 221.73,
+        "duration": 6.06
+    },
+    {
+        "text": "no no",
+        "start": 226.22,
+        "duration": 4.12
+    },
+    {
+        "text": "then we want to reverse the second half",
+        "start": 227.79,
+        "duration": 4.56
+    },
+    {
+        "text": "so we reverse the second half and it",
+        "start": 230.34,
+        "duration": 8.67
+    },
+    {
+        "text": "looks like this 8 7 6 5",
+        "start": 232.35,
+        "duration": 9.93
+    },
+    {
+        "text": "boom now once we did that we can go",
+        "start": 239.01,
+        "duration": 5.34
+    },
+    {
+        "text": "through and we can go one eight two",
+        "start": 242.28,
+        "duration": 6.36
+    },
+    {
+        "text": "seven three six four five boom construct",
+        "start": 244.35,
+        "duration": 6.21
+    },
+    {
+        "text": "our new linked lists so you go to the",
+        "start": 248.64,
+        "duration": 4.17
+    },
+    {
+        "text": "halfway point separate it into two lists",
+        "start": 250.56,
+        "duration": 4.8
+    },
+    {
+        "text": "reverse the second half and then you",
+        "start": 252.81,
+        "duration": 4.56
+    },
+    {
+        "text": "could just go bang back and forth and",
+        "start": 255.36,
+        "duration": 6.809
+    },
+    {
+        "text": "construct your new list you know my dogs",
+        "start": 257.37,
+        "duration": 6.18
+    },
+    {
+        "text": "were barking in the background so it",
+        "start": 262.169,
+        "duration": 2.731
+    },
+    {
+        "text": "threw me off a little bit so hopefully",
+        "start": 263.55,
+        "duration": 4.23
+    },
+    {
+        "text": "that doesn't show up in this video all",
+        "start": 264.9,
+        "duration": 4.98
+    },
+    {
+        "text": "you or whatever but let's just keep",
+        "start": 267.78,
+        "duration": 4.5
+    },
+    {
+        "text": "going as if it's not happening so here",
+        "start": 269.88,
+        "duration": 4.83
+    },
+    {
+        "text": "we go we're head if head is an all our",
+        "start": 272.28,
+        "duration": 4.17
+    },
+    {
+        "text": "head is a head done X's in all that",
+        "start": 274.71,
+        "duration": 3.78
+    },
+    {
+        "text": "we've got nothing to construct there's a",
+        "start": 276.45,
+        "duration": 3.93
+    },
+    {
+        "text": "really note list here to change right",
+        "start": 278.49,
+        "duration": 4.05
+    },
+    {
+        "text": "there's no reading list to be reordered",
+        "start": 280.38,
+        "duration": 4.74
+    },
+    {
+        "text": "now here's what we need to do we need to",
+        "start": 282.54,
+        "duration": 6.09
+    },
+    {
+        "text": "create a slow this is in another video",
+        "start": 285.12,
+        "duration": 6.33
+    },
+    {
+        "text": "we did slow is equal to head list node",
+        "start": 288.63,
+        "duration": 6.3
+    },
+    {
+        "text": "fast is equal to head and then we need a",
+        "start": 291.45,
+        "duration": 6.65
+    },
+    {
+        "text": "previous node previz equal to null and",
+        "start": 294.93,
+        "duration": 6.72
+    },
+    {
+        "text": "this is just how we get to the middle of",
+        "start": 298.1,
+        "duration": 4.15
+    },
+    {
+        "text": "the list",
+        "start": 301.65,
+        "duration": 2.7
+    },
+    {
+        "text": "so while fast is not equal at all fast",
+        "start": 302.25,
+        "duration": 4.77
+    },
+    {
+        "text": "done next is not equal to null we will",
+        "start": 304.35,
+        "duration": 7.83
+    },
+    {
+        "text": "be doing previz equal to slow slow is",
+        "start": 307.02,
+        "duration": 8.76
+    },
+    {
+        "text": "equal to slow dot next and fast is equal",
+        "start": 312.18,
+        "duration": 7.38
+    },
+    {
+        "text": "to fast next next and this works because",
+        "start": 315.78,
+        "duration": 6.15
+    },
+    {
+        "text": "fast is going twice as fast so by the",
+        "start": 319.56,
+        "duration": 4.2
+    },
+    {
+        "text": "time fast gets to the end and the loop",
+        "start": 321.93,
+        "duration": 4.02
+    },
+    {
+        "text": "breaks out slow will be in the middle",
+        "start": 323.76,
+        "duration": 6.21
+    },
+    {
+        "text": "okay so we use previous as the tail of",
+        "start": 325.95,
+        "duration": 6.21
+    },
+    {
+        "text": "the first half of the list and we use",
+        "start": 329.97,
+        "duration": 4.14
+    },
+    {
+        "text": "slow as the head of the second half of",
+        "start": 332.16,
+        "duration": 3.54
+    },
+    {
+        "text": "the list and fast will be the tail of",
+        "start": 334.11,
+        "duration": 3.21
+    },
+    {
+        "text": "the second half the list the only thing",
+        "start": 335.7,
+        "duration": 3.81
+    },
+    {
+        "text": "we need is that a reference to the head",
+        "start": 337.32,
+        "duration": 5.64
+    },
+    {
+        "text": "of the first half so all of this",
+        "start": 339.51,
+        "duration": 6.9
+    },
+    {
+        "text": "together is this is the head of the we",
+        "start": 342.96,
+        "duration": 5.19
+    },
+    {
+        "text": "bullet we split the list into two now",
+        "start": 346.41,
+        "duration": 4.44
+    },
+    {
+        "text": "all we have to do is prove dot next is",
+        "start": 348.15,
+        "duration": 4.47
+    },
+    {
+        "text": "equal to null this splits the list in",
+        "start": 350.85,
+        "duration": 4.26
+    },
+    {
+        "text": "the two because pre vat the end you know",
+        "start": 352.62,
+        "duration": 5.94
+    },
+    {
+        "text": "if we were going one two three four",
+        "start": 355.11,
+        "duration": 7.92
+    },
+    {
+        "text": "you know pre will be node value of to",
+        "start": 358.56,
+        "duration": 9.06
+    },
+    {
+        "text": " l1 would be one pre will be too",
+        "start": 363.03,
+        "duration": 7.71
+    },
+    {
+        "text": "slow would be three fast would be four",
+        "start": 367.62,
+        "duration": 6.03
+    },
+    {
+        "text": "in this case so we just set prefix to",
+        "start": 370.74,
+        "duration": 4.98
+    },
+    {
+        "text": "null and then we have our two separate",
+        "start": 373.65,
+        "duration": 4.35
+    },
+    {
+        "text": "linked lists hopefully this makes sense",
+        "start": 375.72,
+        "duration": 4.009
+    },
+    {
+        "text": "I'd say watch the other videos though",
+        "start": 378.0,
+        "duration": 4.169
+    },
+    {
+        "text": "because you got to understand this is",
+        "start": 379.729,
+        "duration": 4.301
+    },
+    {
+        "text": "getting us to the middle and separating",
+        "start": 382.169,
+        "duration": 4.651
+    },
+    {
+        "text": "the lists and now we have reference you",
+        "start": 384.03,
+        "duration": 8.03
+    },
+    {
+        "text": "know head of first half of first half",
+        "start": 386.82,
+        "duration": 5.24
+    },
+    {
+        "text": "head of second half",
+        "start": 392.27,
+        "duration": 4.56
+    },
+    {
+        "text": "head I mean tail of second half tail of",
+        "start": 396.94,
+        "duration": 13.18
+    },
+    {
+        "text": "first half this is how the lists are",
+        "start": 406.88,
+        "duration": 5.7
+    },
+    {
+        "text": "separated okay I think we understand now",
+        "start": 410.12,
+        "duration": 6.53
+    },
+    {
+        "text": "now what we need to do it is it's a",
+        "start": 412.58,
+        "duration": 6.36
+    },
+    {
+        "text": "reverse the second half like I explained",
+        "start": 416.65,
+        "duration": 3.52
+    },
+    {
+        "text": "at the beginning so we reverse the",
+        "start": 418.94,
+        "duration": 3.87
+    },
+    {
+        "text": "second half by passing in the head and",
+        "start": 420.17,
+        "duration": 4.62
+    },
+    {
+        "text": "this is another problem we already did",
+        "start": 422.81,
+        "duration": 4.74
+    },
+    {
+        "text": "so we do public list node reverse takes",
+        "start": 424.79,
+        "duration": 5.76
+    },
+    {
+        "text": "in list node head this is a you could",
+        "start": 427.55,
+        "duration": 4.65
+    },
+    {
+        "text": "find this in Reverse linked list I'm",
+        "start": 430.55,
+        "duration": 2.97
+    },
+    {
+        "text": "just gonna blow through it really quick",
+        "start": 432.2,
+        "duration": 2.91
+    },
+    {
+        "text": "this is just how you reverse a linked",
+        "start": 433.52,
+        "duration": 1.95
+    },
+    {
+        "text": "list",
+        "start": 435.11,
+        "duration": 3.57
+    },
+    {
+        "text": "you set prove to null you set current",
+        "start": 435.47,
+        "duration": 9.57
+    },
+    {
+        "text": "node to head while current node not",
+        "start": 438.68,
+        "duration": 10.8
+    },
+    {
+        "text": "equal to null you get reference to the",
+        "start": 445.04,
+        "duration": 6.3
+    },
+    {
+        "text": "head nuttin the next node so you say",
+        "start": 449.48,
+        "duration": 4.26
+    },
+    {
+        "text": "list node next node is equal to current",
+        "start": 451.34,
+        "duration": 7.52
+    },
+    {
+        "text": "node nut next now you set the next node",
+        "start": 453.74,
+        "duration": 8.52
+    },
+    {
+        "text": "per node next is equal to prove to the",
+        "start": 458.86,
+        "duration": 5.05
+    },
+    {
+        "text": "previous node that's the reversal part",
+        "start": 462.26,
+        "duration": 7.34
+    },
+    {
+        "text": "and then you just gotta say pre VLEs",
+        "start": 463.91,
+        "duration": 9.12
+    },
+    {
+        "text": "current node and then we have this",
+        "start": 469.6,
+        "duration": 5.44
+    },
+    {
+        "text": "reference we get this reference to next",
+        "start": 473.03,
+        "duration": 4.02
+    },
+    {
+        "text": "node before we set current node next",
+        "start": 475.04,
+        "duration": 4.29
+    },
+    {
+        "text": "below because you know we lose the",
+        "start": 477.05,
+        "duration": 3.72
+    },
+    {
+        "text": "reference here we're setting it to prief",
+        "start": 479.33,
+        "duration": 3.48
+    },
+    {
+        "text": "so we got to get this variable next node",
+        "start": 480.77,
+        "duration": 5.04
+    },
+    {
+        "text": "so that we can say current node equals",
+        "start": 482.81,
+        "duration": 4.77
+    },
+    {
+        "text": "next node and keep moving along the list",
+        "start": 485.81,
+        "duration": 5.01
+    },
+    {
+        "text": "and reversing it and by the end of it",
+        "start": 487.58,
+        "duration": 5.37
+    },
+    {
+        "text": "will be current node will be equal to",
+        "start": 490.82,
+        "duration": 5.25
+    },
+    {
+        "text": "null so this is the end the end of the",
+        "start": 492.95,
+        "duration": 5.01
+    },
+    {
+        "text": "list return pre which is the head",
+        "start": 496.07,
+        "duration": 5.16
+    },
+    {
+        "text": "because we want we reversed it so there",
+        "start": 497.96,
+        "duration": 5.49
+    },
+    {
+        "text": "you go we have our method so we now this",
+        "start": 501.23,
+        "duration": 4.56
+    },
+    {
+        "text": "reversed the second half so now we have",
+        "start": 503.45,
+        "duration": 3.66
+    },
+    {
+        "text": "that we're gonna make this method called",
+        "start": 505.79,
+        "duration": 4.44
+    },
+    {
+        "text": "merge where we merge l1 and l2 because",
+        "start": 507.11,
+        "duration": 5.34
+    },
+    {
+        "text": "like I said l1 is the head of the first",
+        "start": 510.23,
+        "duration": 4.439
+    },
+    {
+        "text": "half of the list we split it into half",
+        "start": 512.45,
+        "duration": 5.76
+    },
+    {
+        "text": "how one's the first half in l2 is the",
+        "start": 514.669,
+        "duration": 5.701
+    },
+    {
+        "text": "head of the second half which is now",
+        "start": 518.21,
+        "duration": 4.44
+    },
+    {
+        "text": "reversed so now we just have to go back",
+        "start": 520.37,
+        "duration": 5.46
+    },
+    {
+        "text": "and forth l 1 for l1 of l1 s now it's",
+        "start": 522.65,
+        "duration": 4.98
+    },
+    {
+        "text": "then one of l 2 s notes 1 of L ones",
+        "start": 525.83,
+        "duration": 3.89
+    },
+    {
+        "text": "notes then one of l2",
+        "start": 527.63,
+        "duration": 4.28
+    },
+    {
+        "text": "so we just make this method public void",
+        "start": 529.72,
+        "duration": 5.61
+    },
+    {
+        "text": "merge where we take in lists note I'll",
+        "start": 531.91,
+        "duration": 8.97
+    },
+    {
+        "text": "one let's note l2 and we just say okay",
+        "start": 535.33,
+        "duration": 8.19
+    },
+    {
+        "text": "we get the reference we well first of",
+        "start": 540.88,
+        "duration": 4.47
+    },
+    {
+        "text": "all we have to make sure L 1 is not",
+        "start": 543.52,
+        "duration": 3.81
+    },
+    {
+        "text": "equal to null so we'll say well L 1 is",
+        "start": 545.35,
+        "duration": 3.69
+    },
+    {
+        "text": "not equal to null we do this because",
+        "start": 547.33,
+        "duration": 3.9
+    },
+    {
+        "text": "otherwise we'll be done with merging",
+        "start": 549.04,
+        "duration": 5.37
+    },
+    {
+        "text": "this is this condition has to be you",
+        "start": 551.23,
+        "duration": 5.25
+    },
+    {
+        "text": "know there's nothing to merge if l1 is",
+        "start": 554.41,
+        "duration": 4.44
+    },
+    {
+        "text": "null you know so okay",
+        "start": 556.48,
+        "duration": 9.27
+    },
+    {
+        "text": "lists node next l1 next is equal to l1 X",
+        "start": 558.85,
+        "duration": 11.19
+    },
+    {
+        "text": "so we get reference to l2 next and l1",
+        "start": 565.75,
+        "duration": 6.06
+    },
+    {
+        "text": "Mac so the next nodes of each of the",
+        "start": 570.04,
+        "duration": 7.2
+    },
+    {
+        "text": "lists and what do we do while we sit in",
+        "start": 571.81,
+        "duration": 7.29
+    },
+    {
+        "text": "this these are use we get these so that",
+        "start": 577.24,
+        "duration": 3.27
+    },
+    {
+        "text": "we can move through the lists and",
+        "start": 579.1,
+        "duration": 4.32
+    },
+    {
+        "text": "traverse them the linked list so now we",
+        "start": 580.51,
+        "duration": 5.91
+    },
+    {
+        "text": "could say L 1 dot next is equal to l2",
+        "start": 583.42,
+        "duration": 7.07
+    },
+    {
+        "text": "boom so that would be you know setting",
+        "start": 586.42,
+        "duration": 5.51
+    },
+    {
+        "text": "[Music]",
+        "start": 590.49,
+        "duration": 4.06
+    },
+    {
+        "text": "the next node",
+        "start": 591.93,
+        "duration": 4.63
+    },
+    {
+        "text": "you know we split it in half and one of",
+        "start": 594.55,
+        "duration": 4.14
+    },
+    {
+        "text": "the halves is reversed so it would say",
+        "start": 596.56,
+        "duration": 4.26
+    },
+    {
+        "text": "we'd have the right first we'd have the",
+        "start": 598.69,
+        "duration": 3.99
+    },
+    {
+        "text": "head of the first half of the list and",
+        "start": 600.82,
+        "duration": 4.68
+    },
+    {
+        "text": "we'd put the head of the second half",
+        "start": 602.68,
+        "duration": 4.8
+    },
+    {
+        "text": "that is a reverse which is exactly what",
+        "start": 605.5,
+        "duration": 3.18
+    },
+    {
+        "text": "we wanted to do when I showed it at the",
+        "start": 607.48,
+        "duration": 3.77
+    },
+    {
+        "text": "beginning now we just got to make sure",
+        "start": 608.68,
+        "duration": 5.91
+    },
+    {
+        "text": "the next node is not null if l1 done X",
+        "start": 611.25,
+        "duration": 5.11
+    },
+    {
+        "text": "is null then we're done so we can just",
+        "start": 614.59,
+        "duration": 3.09
+    },
+    {
+        "text": "break out of the loop at that point",
+        "start": 616.36,
+        "duration": 4.98
+    },
+    {
+        "text": "that's the end of it besides that we do",
+        "start": 617.68,
+        "duration": 6.66
+    },
+    {
+        "text": "L 2 dot next is equal to l1 next because",
+        "start": 621.34,
+        "duration": 5.22
+    },
+    {
+        "text": "we already updated L 1 dot next so we",
+        "start": 624.34,
+        "duration": 5.04
+    },
+    {
+        "text": "need to we make you know now the second",
+        "start": 626.56,
+        "duration": 5.13
+    },
+    {
+        "text": "list next has to point to the next node",
+        "start": 629.38,
+        "duration": 6.09
+    },
+    {
+        "text": "of l1 you know and that's why we have",
+        "start": 631.69,
+        "duration": 5.43
+    },
+    {
+        "text": "these references and then we just move",
+        "start": 635.47,
+        "duration": 4.35
+    },
+    {
+        "text": "along the list so we just say L 1 equals",
+        "start": 637.12,
+        "duration": 7.17
+    },
+    {
+        "text": "L 1 L 1 next and L 2 equals L 2 next so",
+        "start": 639.82,
+        "duration": 7.98
+    },
+    {
+        "text": "this is a lot to unpack here I think it",
+        "start": 644.29,
+        "duration": 6.84
+    },
+    {
+        "text": "should run and be fun there we go so it",
+        "start": 647.8,
+        "duration": 5.67
+    },
+    {
+        "text": "worked out let me know if you guys have",
+        "start": 651.13,
+        "duration": 4.02
+    },
+    {
+        "text": "any questions I know it's a long one so",
+        "start": 653.47,
+        "duration": 4.47
+    },
+    {
+        "text": "it is kind of difficult to go over all",
+        "start": 655.15,
+        "duration": 4.74
+    },
+    {
+        "text": "in one video especially without like",
+        "start": 657.94,
+        "duration": 4.81
+    },
+    {
+        "text": "whiteboarding and stuff",
+        "start": 659.89,
+        "duration": 5.24
+    },
+    {
+        "text": "basically I could go over a lot more",
+        "start": 662.75,
+        "duration": 7.51
+    },
+    {
+        "text": "time really quick so four five six so",
+        "start": 665.13,
+        "duration": 6.78
+    },
+    {
+        "text": "this is let's say this is our starting",
+        "start": 670.26,
+        "duration": 6.0
+    },
+    {
+        "text": "list we we we start off we get to the",
+        "start": 671.91,
+        "duration": 6.27
+    },
+    {
+        "text": "middle so we have in then we split it",
+        "start": 676.26,
+        "duration": 4.16
+    },
+    {
+        "text": "right so we split it right here and now",
+        "start": 678.18,
+        "duration": 6.0
+    },
+    {
+        "text": "there are two separate lists right then",
+        "start": 680.42,
+        "duration": 6.43
+    },
+    {
+        "text": "we reverse this list so one two three",
+        "start": 684.18,
+        "duration": 8.31
+    },
+    {
+        "text": "four five six sorry one two three four",
+        "start": 686.85,
+        "duration": 13.68
+    },
+    {
+        "text": "five six becomes six sorry",
+        "start": 692.49,
+        "duration": 12.24
+    },
+    {
+        "text": "four five six becomes six five four",
+        "start": 700.53,
+        "duration": 6.27
+    },
+    {
+        "text": "so we reverse this half of the list now",
+        "start": 704.73,
+        "duration": 5.07
+    },
+    {
+        "text": "and then we merge them and when we merge",
+        "start": 706.8,
+        "duration": 6.6
+    },
+    {
+        "text": "them you just pass in the head so you",
+        "start": 709.8,
+        "duration": 5.64
+    },
+    {
+        "text": "pass in one and six into this merge",
+        "start": 713.4,
+        "duration": 4.74
+    },
+    {
+        "text": "method right and when we merge them we",
+        "start": 715.44,
+        "duration": 4.71
+    },
+    {
+        "text": "do okay we get the next nodes of each of",
+        "start": 718.14,
+        "duration": 3.93
+    },
+    {
+        "text": "them so two and five and then we say",
+        "start": 720.15,
+        "duration": 5.16
+    },
+    {
+        "text": "okay one dot next to six right exactly",
+        "start": 722.07,
+        "duration": 6.36
+    },
+    {
+        "text": "like what we want and then L 2 dot next",
+        "start": 725.31,
+        "duration": 8.7
+    },
+    {
+        "text": "six dot next is one or two sorry about",
+        "start": 728.43,
+        "duration": 5.79
+    },
+    {
+        "text": "that",
+        "start": 734.01,
+        "duration": 3.84
+    },
+    {
+        "text": "six dot next is two and then you move",
+        "start": 734.22,
+        "duration": 5.61
+    },
+    {
+        "text": "along the list and eventually they merge",
+        "start": 737.85,
+        "duration": 4.59
+    },
+    {
+        "text": "and then it becomes at the end of it it",
+        "start": 739.83,
+        "duration": 5.28
+    },
+    {
+        "text": "becomes exactly what we want one six two",
+        "start": 742.44,
+        "duration": 5.25
+    },
+    {
+        "text": "five three four so let me know if you",
+        "start": 745.11,
+        "duration": 3.84
+    },
+    {
+        "text": "guys have any questions about that you",
+        "start": 747.69,
+        "duration": 3.24
+    },
+    {
+        "text": "can check out maybe descriptions on here",
+        "start": 748.95,
+        "duration": 3.69
+    },
+    {
+        "text": "I think I explained it though it's",
+        "start": 750.93,
+        "duration": 2.97
+    },
+    {
+        "text": "pretty straightforward if you did the",
+        "start": 752.64,
+        "duration": 2.79
+    },
+    {
+        "text": "other problems so check out the other",
+        "start": 753.9,
+        "duration": 2.16
+    },
+    {
+        "text": "problems",
+        "start": 755.43,
+        "duration": 2.01
+    },
+    {
+        "text": "thank you guys for watching sorry about",
+        "start": 756.06,
+        "duration": 2.76
+    },
+    {
+        "text": "my dogs bark and sorry if there was a",
+        "start": 757.44,
+        "duration": 3.15
+    },
+    {
+        "text": "little bit didn't feel a hundred",
+        "start": 758.82,
+        "duration": 4.2
+    },
+    {
+        "text": "percent perfect but I don't want to do",
+        "start": 760.59,
+        "duration": 4.82
+    },
+    {
+        "text": "this again it's kind of a long video so",
+        "start": 763.02,
+        "duration": 4.86
+    },
+    {
+        "text": "just message me and I'll explain",
+        "start": 765.41,
+        "duration": 5.05
+    },
+    {
+        "text": "anything you want me to all right thank",
+        "start": 767.88,
+        "duration": 4.14
+    },
+    {
+        "text": "you guys for watching we appreciate it",
+        "start": 770.46,
+        "duration": 5.42
+    },
+    {
+        "text": "and I'll see you guys in",
+        "start": 772.02,
+        "duration": 3.86
+    }
+]

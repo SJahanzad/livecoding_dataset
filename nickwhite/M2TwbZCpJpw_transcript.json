@@ -1,0 +1,852 @@
+[
+    {
+        "text": "hey what's a Knick white a Tekken I do",
+        "start": 0.03,
+        "duration": 5.7
+    },
+    {
+        "text": "tech encoding stuff on Twitch in YouTube",
+        "start": 3.899,
+        "duration": 3.661
+    },
+    {
+        "text": "and if you check the description you can",
+        "start": 5.73,
+        "duration": 4.8
+    },
+    {
+        "text": "find everything and I do all the hack",
+        "start": 7.56,
+        "duration": 4.44
+    },
+    {
+        "text": "ranking link code solutions I play for",
+        "start": 10.53,
+        "duration": 3.63
+    },
+    {
+        "text": "playlist for both of them so I just",
+        "start": 12.0,
+        "duration": 4.56
+    },
+    {
+        "text": "check those out this is called reversed",
+        "start": 14.16,
+        "duration": 5.19
+    },
+    {
+        "text": "only letters and we did reverse string",
+        "start": 16.56,
+        "duration": 4.71
+    },
+    {
+        "text": "and reverse number already that's",
+        "start": 19.35,
+        "duration": 3.599
+    },
+    {
+        "text": "basically the same concept it's only",
+        "start": 21.27,
+        "duration": 4.32
+    },
+    {
+        "text": "just a little bit harder and time and",
+        "start": 22.949,
+        "duration": 4.561
+    },
+    {
+        "text": "space complexities are worse because of",
+        "start": 25.59,
+        "duration": 5.82
+    },
+    {
+        "text": "that it says given a string s return the",
+        "start": 27.51,
+        "duration": 5.79
+    },
+    {
+        "text": "reverse string where all characters that",
+        "start": 31.41,
+        "duration": 3.36
+    },
+    {
+        "text": "are not a letter stay in the same place",
+        "start": 33.3,
+        "duration": 3.33
+    },
+    {
+        "text": "and all letters are in the reverse",
+        "start": 34.77,
+        "duration": 3.57
+    },
+    {
+        "text": "position so we're still reversing the",
+        "start": 36.63,
+        "duration": 3.78
+    },
+    {
+        "text": "string it's just anything that's not a",
+        "start": 38.34,
+        "duration": 3.36
+    },
+    {
+        "text": "letter has to stay in the same place",
+        "start": 40.41,
+        "duration": 4.11
+    },
+    {
+        "text": "meaning that the index of any character",
+        "start": 41.7,
+        "duration": 5.129
+    },
+    {
+        "text": "that is not a letter for example this -",
+        "start": 44.52,
+        "duration": 5.82
+    },
+    {
+        "text": "at index 1 in the input string is going",
+        "start": 46.829,
+        "duration": 5.431
+    },
+    {
+        "text": "to stay at index 1 in the output string",
+        "start": 50.34,
+        "duration": 3.39
+    },
+    {
+        "text": "so anything that's not a letter will",
+        "start": 52.26,
+        "duration": 3.81
+    },
+    {
+        "text": "stay at the same index so there's two",
+        "start": 53.73,
+        "duration": 4.379
+    },
+    {
+        "text": "ways to do this you can use this stack",
+        "start": 56.07,
+        "duration": 5.34
+    },
+    {
+        "text": "or you can use a counter so let's do the",
+        "start": 58.109,
+        "duration": 5.25
+    },
+    {
+        "text": "stack way first so we're gonna stack",
+        "start": 61.41,
+        "duration": 19.92
+    },
+    {
+        "text": "characters we're gonna do two characters",
+        "start": 63.359,
+        "duration": 20.101
+    },
+    {
+        "text": "letter and that's where this character",
+        "start": 81.33,
+        "duration": 4.98
+    },
+    {
+        "text": "class is useful because you can",
+        "start": 83.46,
+        "duration": 4.89
+    },
+    {
+        "text": "literally just call the method is letter",
+        "start": 86.31,
+        "duration": 4.199
+    },
+    {
+        "text": "and determine whether a character is a",
+        "start": 88.35,
+        "duration": 5.94
+    },
+    {
+        "text": "letter so if the character is a letter",
+        "start": 90.509,
+        "duration": 5.07
+    },
+    {
+        "text": "then we're just gonna push it onto the",
+        "start": 94.29,
+        "duration": 3.0
+    },
+    {
+        "text": "stack otherwise we're not going to do",
+        "start": 95.579,
+        "duration": 7.741
+    },
+    {
+        "text": "anything so letters dots push that stop",
+        "start": 97.29,
+        "duration": 10.35
+    },
+    {
+        "text": "char so what happens during this loop so",
+        "start": 103.32,
+        "duration": 5.549
+    },
+    {
+        "text": "we look through the string we push all",
+        "start": 107.64,
+        "duration": 2.49
+    },
+    {
+        "text": "the letters onto the stack so that",
+        "start": 108.869,
+        "duration": 3.121
+    },
+    {
+        "text": "reverses only the letters and that's",
+        "start": 110.13,
+        "duration": 3.15
+    },
+    {
+        "text": "literally the name of the problem it",
+        "start": 111.99,
+        "duration": 3.449
+    },
+    {
+        "text": "reverses the letters because when you",
+        "start": 113.28,
+        "duration": 3.78
+    },
+    {
+        "text": "put things on the stack the last",
+        "start": 115.439,
+        "duration": 3.36
+    },
+    {
+        "text": "elements gonna be the top of the stack",
+        "start": 117.06,
+        "duration": 6.39
+    },
+    {
+        "text": "is going to be the last letter in the",
+        "start": 118.799,
+        "duration": 8.041
+    },
+    {
+        "text": "input string so when we do the second",
+        "start": 123.45,
+        "duration": 5.339
+    },
+    {
+        "text": "loop we can just pop off of the stack",
+        "start": 126.84,
+        "duration": 3.869
+    },
+    {
+        "text": "and it'll be in the reversed order so",
+        "start": 128.789,
+        "duration": 4.141
+    },
+    {
+        "text": "that's what exactly we're gonna do we're",
+        "start": 130.709,
+        "duration": 8.37
+    },
+    {
+        "text": "is going to do this here it's gonna be",
+        "start": 132.93,
+        "duration": 9.929
+    },
+    {
+        "text": "kind of the same conditions here so if",
+        "start": 139.079,
+        "duration": 6.961
+    },
+    {
+        "text": "the character is a letter then we're",
+        "start": 142.859,
+        "duration": 5.46
+    },
+    {
+        "text": "going to pop off of we're going to put",
+        "start": 146.04,
+        "duration": 3.899
+    },
+    {
+        "text": "we're gonna we're also going to need a",
+        "start": 148.319,
+        "duration": 4.471
+    },
+    {
+        "text": "stringbuilder to store our new it's",
+        "start": 149.939,
+        "duration": 4.02
+    },
+    {
+        "text": "gonna we're going to need a",
+        "start": 152.79,
+        "duration": 2.429
+    },
+    {
+        "text": "stringbuilder in both of these versions",
+        "start": 153.959,
+        "duration": 5.521
+    },
+    {
+        "text": "to store our new string the reversed",
+        "start": 155.219,
+        "duration": 8.701
+    },
+    {
+        "text": "version so we've the string builder I'm",
+        "start": 159.48,
+        "duration": 13.259
+    },
+    {
+        "text": "gonna pen to the string builder letter",
+        "start": 163.92,
+        "duration": 12.81
+    },
+    {
+        "text": "stop pop now I'll explain this in a",
+        "start": 172.739,
+        "duration": 6.541
+    },
+    {
+        "text": "second and then otherwise we'll just",
+        "start": 176.73,
+        "duration": 14.58
+    },
+    {
+        "text": "append turn into character okay so what",
+        "start": 179.28,
+        "duration": 13.56
+    },
+    {
+        "text": "we're doing is we're looping through the",
+        "start": 191.31,
+        "duration": 3.149
+    },
+    {
+        "text": "second time we have the reverse version",
+        "start": 192.84,
+        "duration": 3.299
+    },
+    {
+        "text": "of the string and what we want to do is",
+        "start": 194.459,
+        "duration": 2.881
+    },
+    {
+        "text": "we want to keep anything that's not a",
+        "start": 196.139,
+        "duration": 3.72
+    },
+    {
+        "text": "character in the same order so if we see",
+        "start": 197.34,
+        "duration": 3.78
+    },
+    {
+        "text": "something that's not a character this",
+        "start": 199.859,
+        "duration": 3.151
+    },
+    {
+        "text": "else will get executed and we're just",
+        "start": 201.12,
+        "duration": 3.329
+    },
+    {
+        "text": "gonna offend the current character so",
+        "start": 203.01,
+        "duration": 3.479
+    },
+    {
+        "text": "that's gonna work perfectly otherwise if",
+        "start": 204.449,
+        "duration": 4.141
+    },
+    {
+        "text": "we saw a letter at the beginning so say",
+        "start": 206.489,
+        "duration": 4.89
+    },
+    {
+        "text": "a then we have this stack of reverse",
+        "start": 208.59,
+        "duration": 4.139
+    },
+    {
+        "text": "letters we just pop off the stack and",
+        "start": 211.379,
+        "duration": 2.97
+    },
+    {
+        "text": "get the ending because we want the",
+        "start": 212.729,
+        "duration": 5.1
+    },
+    {
+        "text": "reversed the actual reversed version of",
+        "start": 214.349,
+        "duration": 5.911
+    },
+    {
+        "text": "that so that's pretty much it that's the",
+        "start": 217.829,
+        "duration": 4.44
+    },
+    {
+        "text": "I think this is the easier way to do it",
+        "start": 220.26,
+        "duration": 3.599
+    },
+    {
+        "text": "easier way to see how it's working and",
+        "start": 222.269,
+        "duration": 4.62
+    },
+    {
+        "text": "understand it then you just return a",
+        "start": 223.859,
+        "duration": 6.81
+    },
+    {
+        "text": "string builder dot to string and this",
+        "start": 226.889,
+        "duration": 7.38
+    },
+    {
+        "text": "should work no you have to return it",
+        "start": 230.669,
+        "duration": 10.141
+    },
+    {
+        "text": "sorry okay so there you go that's it",
+        "start": 234.269,
+        "duration": 8.101
+    },
+    {
+        "text": "that's pretty much that's pretty simple",
+        "start": 240.81,
+        "duration": 4.679
+    },
+    {
+        "text": "you just have to kind of it's I mean",
+        "start": 242.37,
+        "duration": 4.229
+    },
+    {
+        "text": "hopefully I explained that well enough",
+        "start": 245.489,
+        "duration": 2.97
+    },
+    {
+        "text": "you just we're just keeping anything",
+        "start": 246.599,
+        "duration": 3.0
+    },
+    {
+        "text": "that's not a character on the same word",
+        "start": 248.459,
+        "duration": 2.581
+    },
+    {
+        "text": "it's not about hard to understand that's",
+        "start": 249.599,
+        "duration": 2.941
+    },
+    {
+        "text": "why this works we reverse all the",
+        "start": 251.04,
+        "duration": 3.409
+    },
+    {
+        "text": "characters we get the reverse character",
+        "start": 252.54,
+        "duration": 5.58
+    },
+    {
+        "text": "unless we see a character that isn't a",
+        "start": 254.449,
+        "duration": 5.681
+    },
+    {
+        "text": "letter and if it isn't a letter we just",
+        "start": 258.12,
+        "duration": 3.119
+    },
+    {
+        "text": "want to keep it the same so we just",
+        "start": 260.13,
+        "duration": 3.599
+    },
+    {
+        "text": "append it otherwise we have the reverse",
+        "start": 261.239,
+        "duration": 4.8
+    },
+    {
+        "text": "letter obviously so there's another way",
+        "start": 263.729,
+        "duration": 3.001
+    },
+    {
+        "text": "this",
+        "start": 266.039,
+        "duration": 2.551
+    },
+    {
+        "text": "seems more optimal to me even though in",
+        "start": 266.73,
+        "duration": 3.36
+    },
+    {
+        "text": "if you're dealing with something that's",
+        "start": 268.59,
+        "duration": 3.51
+    },
+    {
+        "text": "large-scale it's still the same time",
+        "start": 270.09,
+        "duration": 3.66
+    },
+    {
+        "text": "complexity and space complexity both of",
+        "start": 272.1,
+        "duration": 5.22
+    },
+    {
+        "text": "these are linear time and space so we're",
+        "start": 273.75,
+        "duration": 4.86
+    },
+    {
+        "text": "just gonna have the stringbuilder once",
+        "start": 277.32,
+        "duration": 8.52
+    },
+    {
+        "text": "again and then we're just gonna instead",
+        "start": 278.61,
+        "duration": 10.05
+    },
+    {
+        "text": "of having a stack we're just gonna have",
+        "start": 285.84,
+        "duration": 6.39
+    },
+    {
+        "text": "a counter J is equal to s dot length",
+        "start": 288.66,
+        "duration": 6.87
+    },
+    {
+        "text": "minus one kind of a pointer to the end",
+        "start": 292.23,
+        "duration": 5.16
+    },
+    {
+        "text": "of the string and we're just gonna kind",
+        "start": 295.53,
+        "duration": 3.54
+    },
+    {
+        "text": "of you know implement these stacks",
+        "start": 297.39,
+        "duration": 3.99
+    },
+    {
+        "text": "functionality in this problem with a",
+        "start": 299.07,
+        "duration": 4.05
+    },
+    {
+        "text": "pointer to the end of the string instead",
+        "start": 301.38,
+        "duration": 4.23
+    },
+    {
+        "text": "so we'll just use a condition in the",
+        "start": 303.12,
+        "duration": 7.01
+    },
+    {
+        "text": "little inner loop here so if character",
+        "start": 305.61,
+        "duration": 9.81
+    },
+    {
+        "text": "dot is letter so if the character",
+        "start": 310.13,
+        "duration": 10.21
+    },
+    {
+        "text": "character is a letter then just like in",
+        "start": 315.42,
+        "duration": 6.84
+    },
+    {
+        "text": "the last one if we see a letter we're",
+        "start": 320.34,
+        "duration": 4.08
+    },
+    {
+        "text": "gonna want the characters at the end",
+        "start": 322.26,
+        "duration": 5.64
+    },
+    {
+        "text": "instead of the ones at the beginning and",
+        "start": 324.42,
+        "duration": 5.58
+    },
+    {
+        "text": "if we don't see a letter then we're",
+        "start": 327.9,
+        "duration": 4.59
+    },
+    {
+        "text": "going to want to just append it's kind",
+        "start": 330.0,
+        "duration": 4.83
+    },
+    {
+        "text": "of the exact same thing it's the last",
+        "start": 332.49,
+        "duration": 5.01
+    },
+    {
+        "text": "version just a little bit different",
+        "start": 334.83,
+        "duration": 5.58
+    },
+    {
+        "text": "you'll see the second so if we don't see",
+        "start": 337.5,
+        "duration": 4.71
+    },
+    {
+        "text": "a letter we want the same exact order",
+        "start": 340.41,
+        "duration": 5.1
+    },
+    {
+        "text": "and everything so you just append to the",
+        "start": 342.21,
+        "duration": 5.04
+    },
+    {
+        "text": "stringbuilder and it's the same thing",
+        "start": 345.51,
+        "duration": 4.11
+    },
+    {
+        "text": "we're just turn the stringbuilder got to",
+        "start": 347.25,
+        "duration": 7.44
+    },
+    {
+        "text": "string at the end and then if you do see",
+        "start": 349.62,
+        "duration": 6.9
+    },
+    {
+        "text": "a character this is the only thing you",
+        "start": 354.69,
+        "duration": 5.13
+    },
+    {
+        "text": "have to think about here is Wow",
+        "start": 356.52,
+        "duration": 7.95
+    },
+    {
+        "text": "character while it's not a letter of s",
+        "start": 359.82,
+        "duration": 9.81
+    },
+    {
+        "text": "dot char at J so this is kind of",
+        "start": 364.47,
+        "duration": 8.46
+    },
+    {
+        "text": "handling the stacks functionality",
+        "start": 369.63,
+        "duration": 6.48
+    },
+    {
+        "text": "because what we don't want is we don't",
+        "start": 372.93,
+        "duration": 5.13
+    },
+    {
+        "text": "want to reverse like it says reverse",
+        "start": 376.11,
+        "duration": 3.39
+    },
+    {
+        "text": "only letters so we don't want to reverse",
+        "start": 378.06,
+        "duration": 3.41
+    },
+    {
+        "text": "things that aren't letters so if we",
+        "start": 379.5,
+        "duration": 5.25
+    },
+    {
+        "text": "check the end of the string because when",
+        "start": 381.47,
+        "duration": 4.48
+    },
+    {
+        "text": "we see a letter we just check the end of",
+        "start": 384.75,
+        "duration": 3.45
+    },
+    {
+        "text": "the string and that we actually grab you",
+        "start": 385.95,
+        "duration": 5.43
+    },
+    {
+        "text": "know the we would check you know in this",
+        "start": 388.2,
+        "duration": 4.92
+    },
+    {
+        "text": "case we would check for J at the end of",
+        "start": 391.38,
+        "duration": 3.18
+    },
+    {
+        "text": "the string we see a we check for J at",
+        "start": 393.12,
+        "duration": 2.88
+    },
+    {
+        "text": "the end of the string we put it at we",
+        "start": 394.56,
+        "duration": 4.11
+    },
+    {
+        "text": "put it into reverse string but if we",
+        "start": 396.0,
+        "duration": 4.5
+    },
+    {
+        "text": "were to see a dash here we would",
+        "start": 398.67,
+        "duration": 3.33
+    },
+    {
+        "text": "want to grab that because we don't want",
+        "start": 400.5,
+        "duration": 3.18
+    },
+    {
+        "text": "to reverse things that aren't letters so",
+        "start": 402.0,
+        "duration": 2.94
+    },
+    {
+        "text": "what we do is we just keep decrementing",
+        "start": 403.68,
+        "duration": 3.21
+    },
+    {
+        "text": "J so we would skip over anything that's",
+        "start": 404.94,
+        "duration": 4.08
+    },
+    {
+        "text": "not a letter until we found a letter and",
+        "start": 406.89,
+        "duration": 4.59
+    },
+    {
+        "text": "then once once this loop breaks we have",
+        "start": 409.02,
+        "duration": 4.05
+    },
+    {
+        "text": "found a letter that we can add to",
+        "start": 411.48,
+        "duration": 3.54
+    },
+    {
+        "text": "reverse string to keep reversing it and",
+        "start": 413.07,
+        "duration": 6.9
+    },
+    {
+        "text": "then we just append that in the",
+        "start": 415.02,
+        "duration": 9.12
+    },
+    {
+        "text": "decrement J so yeah that's pretty much",
+        "start": 419.97,
+        "duration": 6.93
+    },
+    {
+        "text": "it hopefully that works first try let's",
+        "start": 424.14,
+        "duration": 6.96
+    },
+    {
+        "text": "see there we go first try so those are",
+        "start": 426.9,
+        "duration": 6.21
+    },
+    {
+        "text": "the two solutions the same time and",
+        "start": 431.1,
+        "duration": 5.1
+    },
+    {
+        "text": "space complexity differences you have",
+        "start": 433.11,
+        "duration": 5.22
+    },
+    {
+        "text": "this little loop and condition versus a",
+        "start": 436.2,
+        "duration": 4.17
+    },
+    {
+        "text": "stack it doesn't really matter which one",
+        "start": 438.33,
+        "duration": 3.75
+    },
+    {
+        "text": "you use let me know if you guys have a",
+        "start": 440.37,
+        "duration": 4.26
+    },
+    {
+        "text": "found a better solution to those this",
+        "start": 442.08,
+        "duration": 4.2
+    },
+    {
+        "text": "one's pretty easy but I'm gonna do a",
+        "start": 444.63,
+        "duration": 3.57
+    },
+    {
+        "text": "bunch of them right now so let me know",
+        "start": 446.28,
+        "duration": 3.75
+    },
+    {
+        "text": "what you guys think and please check out",
+        "start": 448.2,
+        "duration": 6.44
+    },
+    {
+        "text": "the rest of these alright thanks",
+        "start": 450.03,
+        "duration": 4.61
+    }
+]

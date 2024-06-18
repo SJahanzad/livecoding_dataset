@@ -1,0 +1,402 @@
+[
+    {
+        "text": "hey what's up guys Nick white here doing",
+        "start": 0.03,
+        "duration": 4.86
+    },
+    {
+        "text": "another leaf killer video I do them all",
+        "start": 3.27,
+        "duration": 3.27
+    },
+    {
+        "text": "so if you're interested in getting these",
+        "start": 4.89,
+        "duration": 3.23
+    },
+    {
+        "text": "explained either just check them out",
+        "start": 6.54,
+        "duration": 5.82
+    },
+    {
+        "text": "this is a linked list cycle question",
+        "start": 8.12,
+        "duration": 6.96
+    },
+    {
+        "text": "basically we're given a linked list and",
+        "start": 12.36,
+        "duration": 5.07
+    },
+    {
+        "text": "don't worry about this input they don't",
+        "start": 15.08,
+        "duration": 4.0
+    },
+    {
+        "text": "even give us this input that they're",
+        "start": 17.43,
+        "duration": 4.59
+    },
+    {
+        "text": "talking about here so we're given a",
+        "start": 19.08,
+        "duration": 4.109
+    },
+    {
+        "text": "linked list and we want to determine",
+        "start": 22.02,
+        "duration": 4.29
+    },
+    {
+        "text": "whether there's a cycle and pretty much",
+        "start": 23.189,
+        "duration": 6.24
+    },
+    {
+        "text": "more giving a head node we just wanna",
+        "start": 26.31,
+        "duration": 5.219
+    },
+    {
+        "text": "there's there's a pretty easy way to do",
+        "start": 29.429,
+        "duration": 5.091
+    },
+    {
+        "text": "this it's a two pointer kind of method",
+        "start": 31.529,
+        "duration": 5.851
+    },
+    {
+        "text": "like there's a few linked list problems",
+        "start": 34.52,
+        "duration": 3.64
+    },
+    {
+        "text": "where you do this",
+        "start": 37.38,
+        "duration": 2.22
+    },
+    {
+        "text": "see all this slow pointer and ahead",
+        "start": 38.16,
+        "duration": 3.39
+    },
+    {
+        "text": "point a fast pointer and the fast",
+        "start": 39.6,
+        "duration": 3.45
+    },
+    {
+        "text": "pointer will be jumping two nodes at a",
+        "start": 41.55,
+        "duration": 3.54
+    },
+    {
+        "text": "time in the slow node will be going one",
+        "start": 43.05,
+        "duration": 4.02
+    },
+    {
+        "text": "note at a time base cool of the slow",
+        "start": 45.09,
+        "duration": 3.899
+    },
+    {
+        "text": "node here the fast node here and the",
+        "start": 47.07,
+        "duration": 5.43
+    },
+    {
+        "text": "fast node will be jumping you know two",
+        "start": 48.989,
+        "duration": 6.361
+    },
+    {
+        "text": "in the fast node will jump to four in",
+        "start": 52.5,
+        "duration": 6.03
+    },
+    {
+        "text": "the slow node will jump to 2 and 4 will",
+        "start": 55.35,
+        "duration": 8.549
+    },
+    {
+        "text": "be pointing right to 2 so well you know",
+        "start": 58.53,
+        "duration": 7.589
+    },
+    {
+        "text": "will be able to see the cycle like if",
+        "start": 63.899,
+        "duration": 4.561
+    },
+    {
+        "text": "they're equal if the values become equal",
+        "start": 66.119,
+        "duration": 5.0
+    },
+    {
+        "text": "of the nodes and stuff like that so",
+        "start": 68.46,
+        "duration": 7.86
+    },
+    {
+        "text": "hopefully that makes sense so we'll be",
+        "start": 71.119,
+        "duration": 9.64
+    },
+    {
+        "text": "able to see if the slow node is equal to",
+        "start": 76.32,
+        "duration": 8.01
+    },
+    {
+        "text": "the fast node then there's a cycle",
+        "start": 80.759,
+        "duration": 6.211
+    },
+    {
+        "text": "obviously because it without the fast",
+        "start": 84.33,
+        "duration": 4.56
+    },
+    {
+        "text": "node getting to the end if the fast food",
+        "start": 86.97,
+        "duration": 4.469
+    },
+    {
+        "text": "gets to the end of the list and we don't",
+        "start": 88.89,
+        "duration": 7.08
+    },
+    {
+        "text": "loop back so yeah that's pretty much it",
+        "start": 91.439,
+        "duration": 7.831
+    },
+    {
+        "text": "so let's declare our first of all his",
+        "start": 95.97,
+        "duration": 6.359
+    },
+    {
+        "text": "head is equal to null we just return",
+        "start": 99.27,
+        "duration": 14.19
+    },
+    {
+        "text": "false then we do listen no slow list",
+        "start": 102.329,
+        "duration": 15.091
+    },
+    {
+        "text": "node fast this one's pretty short see",
+        "start": 113.46,
+        "duration": 6.21
+    },
+    {
+        "text": "the head next feel like I didn't do a",
+        "start": 117.42,
+        "duration": 5.46
+    },
+    {
+        "text": "good job of explaining it though oh wow",
+        "start": 119.67,
+        "duration": 5.909
+    },
+    {
+        "text": "slow is not equal to no so while slow is",
+        "start": 122.88,
+        "duration": 4.23
+    },
+    {
+        "text": "I mean no while slow is not equal to",
+        "start": 125.579,
+        "duration": 4.49
+    },
+    {
+        "text": "fast is a mess of the video this one",
+        "start": 127.11,
+        "duration": 5.7
+    },
+    {
+        "text": "while slow is not equal to fast",
+        "start": 130.069,
+        "duration": 5.861
+    },
+    {
+        "text": "than we do slow is equal to slow dot",
+        "start": 132.81,
+        "duration": 6.93
+    },
+    {
+        "text": "next fast is equal to fast next next so",
+        "start": 135.93,
+        "duration": 5.22
+    },
+    {
+        "text": "you guys can see here the fast one is",
+        "start": 139.74,
+        "duration": 2.46
+    },
+    {
+        "text": "moving two at a time",
+        "start": 141.15,
+        "duration": 2.64
+    },
+    {
+        "text": "slow one's moving one at a time and",
+        "start": 142.2,
+        "duration": 3.21
+    },
+    {
+        "text": "we're making sure that they're not the",
+        "start": 143.79,
+        "duration": 3.39
+    },
+    {
+        "text": "same because if they're the same that",
+        "start": 145.41,
+        "duration": 3.42
+    },
+    {
+        "text": "would be bad and if they're the same",
+        "start": 147.18,
+        "duration": 3.63
+    },
+    {
+        "text": "we're gonna return true right that is a",
+        "start": 148.83,
+        "duration": 4.409
+    },
+    {
+        "text": "cycle so we'd break out of this loop and",
+        "start": 150.81,
+        "duration": 3.96
+    },
+    {
+        "text": "we'd return true and then all we have to",
+        "start": 153.239,
+        "duration": 4.951
+    },
+    {
+        "text": "do is this check if fast is equal to",
+        "start": 154.77,
+        "duration": 7.77
+    },
+    {
+        "text": "null or fast max is equal than all well",
+        "start": 158.19,
+        "duration": 5.7
+    },
+    {
+        "text": "that means that we've reached the end",
+        "start": 162.54,
+        "duration": 4.11
+    },
+    {
+        "text": "and we never came back around and there",
+        "start": 163.89,
+        "duration": 4.65
+    },
+    {
+        "text": "was never a cycle there so all we have",
+        "start": 166.65,
+        "duration": 4.83
+    },
+    {
+        "text": "to do is return false right because",
+        "start": 168.54,
+        "duration": 7.53
+    },
+    {
+        "text": "there's no cycle and yep some success",
+        "start": 171.48,
+        "duration": 7.229
+    },
+    {
+        "text": "first try hopefully that makes sense",
+        "start": 176.07,
+        "duration": 4.62
+    },
+    {
+        "text": "you got the fast one if we never hit the",
+        "start": 178.709,
+        "duration": 3.991
+    },
+    {
+        "text": "end it's gonna loop back around and",
+        "start": 180.69,
+        "duration": 3.9
+    },
+    {
+        "text": "eventually they'll collide they'll run",
+        "start": 182.7,
+        "duration": 3.75
+    },
+    {
+        "text": "into each other the slow one and the",
+        "start": 184.59,
+        "duration": 3.39
+    },
+    {
+        "text": "fast one because it'll just loop around",
+        "start": 186.45,
+        "duration": 3.539
+    },
+    {
+        "text": "it's not going to hit the end of the",
+        "start": 187.98,
+        "duration": 3.9
+    },
+    {
+        "text": "linked list it's gonna cycle back around",
+        "start": 189.989,
+        "duration": 4.231
+    },
+    {
+        "text": "and eventually the slow and head will be",
+        "start": 191.88,
+        "duration": 4.079
+    },
+    {
+        "text": "that the slow in the fast pointer will",
+        "start": 194.22,
+        "duration": 5.13
+    },
+    {
+        "text": "meet and they'll be the same which is",
+        "start": 195.959,
+        "duration": 5.611
+    },
+    {
+        "text": "gonna make us return true so hopefully",
+        "start": 199.35,
+        "duration": 4.139
+    },
+    {
+        "text": "you guys get that thing guys for",
+        "start": 201.57,
+        "duration": 2.85
+    },
+    {
+        "text": "watching let me know in the comments",
+        "start": 203.489,
+        "duration": 2.641
+    },
+    {
+        "text": "what you think about these and I'll see",
+        "start": 204.42,
+        "duration": 5.03
+    },
+    {
+        "text": "you guys later check out the other ones",
+        "start": 206.13,
+        "duration": 3.32
+    }
+]

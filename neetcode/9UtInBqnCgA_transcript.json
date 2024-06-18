@@ -1,0 +1,1657 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.16,
+        "duration": 3.519
+    },
+    {
+        "text": "some more neat code today so today let's",
+        "start": 1.839,
+        "duration": 4.721
+    },
+    {
+        "text": "solve the problem valid anagram and",
+        "start": 3.679,
+        "duration": 4.24
+    },
+    {
+        "text": "we're actually going to be solving this",
+        "start": 6.56,
+        "duration": 3.28
+    },
+    {
+        "text": "a few different ways so maybe you will",
+        "start": 7.919,
+        "duration": 4.001
+    },
+    {
+        "text": "learn something today so we're given two",
+        "start": 9.84,
+        "duration": 4.48
+    },
+    {
+        "text": "strings s and t and we want to return",
+        "start": 11.92,
+        "duration": 3.679
+    },
+    {
+        "text": "true if",
+        "start": 14.32,
+        "duration": 3.84
+    },
+    {
+        "text": "t is an anagram of s or basically if",
+        "start": 15.599,
+        "duration": 4.401
+    },
+    {
+        "text": "both of the strings are anagrams of each",
+        "start": 18.16,
+        "duration": 4.72
+    },
+    {
+        "text": "other and false if they're not anagrams",
+        "start": 20.0,
+        "duration": 4.72
+    },
+    {
+        "text": "so main thing that they don't mention in",
+        "start": 22.88,
+        "duration": 3.68
+    },
+    {
+        "text": "this problem is what exactly is an",
+        "start": 24.72,
+        "duration": 5.44
+    },
+    {
+        "text": "anagram and basically it means that you",
+        "start": 26.56,
+        "duration": 6.96
+    },
+    {
+        "text": "know to call t an anagram of s is",
+        "start": 30.16,
+        "duration": 5.68
+    },
+    {
+        "text": "basically saying that using the",
+        "start": 33.52,
+        "duration": 4.96
+    },
+    {
+        "text": "characters of s all of the characters",
+        "start": 35.84,
+        "duration": 5.44
+    },
+    {
+        "text": "right every single character we can",
+        "start": 38.48,
+        "duration": 6.079
+    },
+    {
+        "text": "create the string t so basically they're",
+        "start": 41.28,
+        "duration": 5.92
+    },
+    {
+        "text": "made up of the exact same list of",
+        "start": 44.559,
+        "duration": 4.32
+    },
+    {
+        "text": "characters so",
+        "start": 47.2,
+        "duration": 4.32
+    },
+    {
+        "text": "so the string s you can see that it has",
+        "start": 48.879,
+        "duration": 7.52
+    },
+    {
+        "text": "three a characters one n character a one",
+        "start": 51.52,
+        "duration": 8.64
+    },
+    {
+        "text": "g character one r character and one m",
+        "start": 56.399,
+        "duration": 5.921
+    },
+    {
+        "text": "character so it's made up of in total",
+        "start": 60.16,
+        "duration": 4.48
+    },
+    {
+        "text": "seven characters so that must mean that",
+        "start": 62.32,
+        "duration": 4.56
+    },
+    {
+        "text": "if t is an anagram of s",
+        "start": 64.64,
+        "duration": 4.479
+    },
+    {
+        "text": "t has to have exactly seven characters",
+        "start": 66.88,
+        "duration": 4.48
+    },
+    {
+        "text": "as well which clearly it does have seven",
+        "start": 69.119,
+        "duration": 4.32
+    },
+    {
+        "text": "characters but are they the exact same",
+        "start": 71.36,
+        "duration": 4.32
+    },
+    {
+        "text": "characters as i wrote up above well",
+        "start": 73.439,
+        "duration": 4.32
+    },
+    {
+        "text": "let's check okay does it have three a",
+        "start": 75.68,
+        "duration": 5.04
+    },
+    {
+        "text": "characters one two three yep it has",
+        "start": 77.759,
+        "duration": 5.201
+    },
+    {
+        "text": "three a characters does it have a single",
+        "start": 80.72,
+        "duration": 4.719
+    },
+    {
+        "text": "n character yep it has exactly one n",
+        "start": 82.96,
+        "duration": 5.28
+    },
+    {
+        "text": "character does it have a g character yes",
+        "start": 85.439,
+        "duration": 5.04
+    },
+    {
+        "text": "exactly one g character uh does it have",
+        "start": 88.24,
+        "duration": 5.44
+    },
+    {
+        "text": "an r exactly one r it has exactly one m",
+        "start": 90.479,
+        "duration": 4.801
+    },
+    {
+        "text": "as well so it has",
+        "start": 93.68,
+        "duration": 4.479
+    },
+    {
+        "text": "uh the exact same characters and the",
+        "start": 95.28,
+        "duration": 4.799
+    },
+    {
+        "text": "same quantity of each character that's",
+        "start": 98.159,
+        "duration": 4.561
+    },
+    {
+        "text": "also important right because three a's",
+        "start": 100.079,
+        "duration": 4.881
+    },
+    {
+        "text": "have to exist in t as well so in this",
+        "start": 102.72,
+        "duration": 4.719
+    },
+    {
+        "text": "case they're anagrams we can return true",
+        "start": 104.96,
+        "duration": 5.68
+    },
+    {
+        "text": "that's great uh second example uh rat",
+        "start": 107.439,
+        "duration": 4.32
+    },
+    {
+        "text": "and car",
+        "start": 110.64,
+        "duration": 3.839
+    },
+    {
+        "text": "both of them have an r both of them have",
+        "start": 111.759,
+        "duration": 5.601
+    },
+    {
+        "text": "an a character but one of them has a t",
+        "start": 114.479,
+        "duration": 4.881
+    },
+    {
+        "text": "while the other has a c character",
+        "start": 117.36,
+        "duration": 3.439
+    },
+    {
+        "text": "they're both the same length they're",
+        "start": 119.36,
+        "duration": 3.68
+    },
+    {
+        "text": "both length three but they have one",
+        "start": 120.799,
+        "duration": 4.64
+    },
+    {
+        "text": "differing character so they're not",
+        "start": 123.04,
+        "duration": 4.96
+    },
+    {
+        "text": "anagrams we return false in this case so",
+        "start": 125.439,
+        "duration": 3.921
+    },
+    {
+        "text": "the first solution i wanted to talk",
+        "start": 128.0,
+        "duration": 3.44
+    },
+    {
+        "text": "about is probably the most obvious one",
+        "start": 129.36,
+        "duration": 4.32
+    },
+    {
+        "text": "and probably uh by just listening to me",
+        "start": 131.44,
+        "duration": 3.68
+    },
+    {
+        "text": "talk about anagrams you might be able to",
+        "start": 133.68,
+        "duration": 3.12
+    },
+    {
+        "text": "come up with this by yourself we just",
+        "start": 135.12,
+        "duration": 3.839
+    },
+    {
+        "text": "want to count the occurrences of each",
+        "start": 136.8,
+        "duration": 4.32
+    },
+    {
+        "text": "character in both",
+        "start": 138.959,
+        "duration": 3.681
+    },
+    {
+        "text": "both strings right",
+        "start": 141.12,
+        "duration": 3.68
+    },
+    {
+        "text": "what's the easiest way to do that well",
+        "start": 142.64,
+        "duration": 4.239
+    },
+    {
+        "text": "you could use an array or a hash map",
+        "start": 144.8,
+        "duration": 3.6
+    },
+    {
+        "text": "that's what i'm going to use i like hash",
+        "start": 146.879,
+        "duration": 3.281
+    },
+    {
+        "text": "maps basically what the hash map is",
+        "start": 148.4,
+        "duration": 3.28
+    },
+    {
+        "text": "going to look like so basically we're",
+        "start": 150.16,
+        "duration": 3.28
+    },
+    {
+        "text": "going to have two hash maps one for each",
+        "start": 151.68,
+        "duration": 4.32
+    },
+    {
+        "text": "string and the key value in the hash map",
+        "start": 153.44,
+        "duration": 3.68
+    },
+    {
+        "text": "is going to be the character so for",
+        "start": 156.0,
+        "duration": 4.0
+    },
+    {
+        "text": "example a in string s right let's use a",
+        "start": 157.12,
+        "duration": 5.759
+    },
+    {
+        "text": "different color so a in string s so how",
+        "start": 160.0,
+        "duration": 4.4
+    },
+    {
+        "text": "many a's are there there's three a's",
+        "start": 162.879,
+        "duration": 3.041
+    },
+    {
+        "text": "right the the value is going to be the",
+        "start": 164.4,
+        "duration": 3.28
+    },
+    {
+        "text": "count the key is just going to be the",
+        "start": 165.92,
+        "duration": 3.039
+    },
+    {
+        "text": "character we're going to do that for",
+        "start": 167.68,
+        "duration": 2.8
+    },
+    {
+        "text": "every single character in the string so",
+        "start": 168.959,
+        "duration": 6.321
+    },
+    {
+        "text": "that's a n has one g has one r has one",
+        "start": 170.48,
+        "duration": 8.64
+    },
+    {
+        "text": "and m also has one and we know that t is",
+        "start": 175.28,
+        "duration": 6.959
+    },
+    {
+        "text": "the exact same right as three a's one n",
+        "start": 179.12,
+        "duration": 4.8
+    },
+    {
+        "text": "etcetera etcetera right i could continue",
+        "start": 182.239,
+        "duration": 3.681
+    },
+    {
+        "text": "this so in the end you can see that",
+        "start": 183.92,
+        "duration": 4.16
+    },
+    {
+        "text": "they're the exact same hash map right",
+        "start": 185.92,
+        "duration": 4.239
+    },
+    {
+        "text": "once we've built these hash maps we can",
+        "start": 188.08,
+        "duration": 3.6
+    },
+    {
+        "text": "then go through the keys and then",
+        "start": 190.159,
+        "duration": 2.961
+    },
+    {
+        "text": "compare that the counts for each",
+        "start": 191.68,
+        "duration": 3.04
+    },
+    {
+        "text": "character are the exact same which in",
+        "start": 193.12,
+        "duration": 3.839
+    },
+    {
+        "text": "this case yes it is so then after that",
+        "start": 194.72,
+        "duration": 4.159
+    },
+    {
+        "text": "comparison then we know that they're",
+        "start": 196.959,
+        "duration": 4.241
+    },
+    {
+        "text": "anagrams then we can return true and how",
+        "start": 198.879,
+        "duration": 3.681
+    },
+    {
+        "text": "exactly i'm going to do that is i'm just",
+        "start": 201.2,
+        "duration": 2.64
+    },
+    {
+        "text": "going to actually iterate through the",
+        "start": 202.56,
+        "duration": 3.84
+    },
+    {
+        "text": "keys of one of these so in this case for",
+        "start": 203.84,
+        "duration": 3.52
+    },
+    {
+        "text": "example i'm just going to iterate",
+        "start": 206.4,
+        "duration": 4.8
+    },
+    {
+        "text": "through all the keys in string s so a n",
+        "start": 207.36,
+        "duration": 5.84
+    },
+    {
+        "text": "g and then make sure the counts right we",
+        "start": 211.2,
+        "duration": 3.679
+    },
+    {
+        "text": "want to make sure that the count of each",
+        "start": 213.2,
+        "duration": 4.0
+    },
+    {
+        "text": "of the characters is the exact same and",
+        "start": 214.879,
+        "duration": 4.08
+    },
+    {
+        "text": "if we make sure that both strings have",
+        "start": 217.2,
+        "duration": 4.72
+    },
+    {
+        "text": "the exact same length before we actually",
+        "start": 218.959,
+        "duration": 5.28
+    },
+    {
+        "text": "do the hash map stuff then we actually",
+        "start": 221.92,
+        "duration": 3.599
+    },
+    {
+        "text": "only have to iterate through one of the",
+        "start": 224.239,
+        "duration": 3.601
+    },
+    {
+        "text": "hash maps and comparing it to the other",
+        "start": 225.519,
+        "duration": 4.321
+    },
+    {
+        "text": "hash map right because if we make sure",
+        "start": 227.84,
+        "duration": 3.039
+    },
+    {
+        "text": "that",
+        "start": 229.84,
+        "duration": 4.0
+    },
+    {
+        "text": "t has exactly three a's t has exactly",
+        "start": 230.879,
+        "duration": 6.0
+    },
+    {
+        "text": "one n t has exactly one g etcetera",
+        "start": 233.84,
+        "duration": 4.88
+    },
+    {
+        "text": "etcetera if we make sure that all of",
+        "start": 236.879,
+        "duration": 4.72
+    },
+    {
+        "text": "that is true and that's inside of t then",
+        "start": 238.72,
+        "duration": 4.879
+    },
+    {
+        "text": "we pretty much know t is exactly the",
+        "start": 241.599,
+        "duration": 4.161
+    },
+    {
+        "text": "same as s because they have to be if",
+        "start": 243.599,
+        "duration": 4.321
+    },
+    {
+        "text": "they are the same length so that's the",
+        "start": 245.76,
+        "duration": 4.64
+    },
+    {
+        "text": "solution uh time complexity of this is",
+        "start": 247.92,
+        "duration": 5.44
+    },
+    {
+        "text": "big o of n uh or rather let's say big o",
+        "start": 250.4,
+        "duration": 4.88
+    },
+    {
+        "text": "of s plus t",
+        "start": 253.36,
+        "duration": 3.92
+    },
+    {
+        "text": "uh because we're gonna have to iterate",
+        "start": 255.28,
+        "duration": 4.639
+    },
+    {
+        "text": "through both of the strings so we uh so",
+        "start": 257.28,
+        "duration": 4.4
+    },
+    {
+        "text": "that's the time complexity the memory",
+        "start": 259.919,
+        "duration": 4.0
+    },
+    {
+        "text": "complexity is the same s plus t because",
+        "start": 261.68,
+        "duration": 4.079
+    },
+    {
+        "text": "clearly we are building hash maps that",
+        "start": 263.919,
+        "duration": 3.521
+    },
+    {
+        "text": "are gonna be of size",
+        "start": 265.759,
+        "duration": 4.081
+    },
+    {
+        "text": "potentially up to the size of s and the",
+        "start": 267.44,
+        "duration": 4.56
+    },
+    {
+        "text": "size of t so the downside of this",
+        "start": 269.84,
+        "duration": 4.24
+    },
+    {
+        "text": "solution is we are going to need some",
+        "start": 272.0,
+        "duration": 4.72
+    },
+    {
+        "text": "extra memory and the second solution",
+        "start": 274.08,
+        "duration": 3.76
+    },
+    {
+        "text": "that i show you is actually going to",
+        "start": 276.72,
+        "duration": 3.919
+    },
+    {
+        "text": "solve that memory problem so stay tuned",
+        "start": 277.84,
+        "duration": 4.079
+    },
+    {
+        "text": "in the video if you want to see that but",
+        "start": 280.639,
+        "duration": 2.961
+    },
+    {
+        "text": "for now let's jump into the coding",
+        "start": 281.919,
+        "duration": 2.961
+    },
+    {
+        "text": "solution of",
+        "start": 283.6,
+        "duration": 2.96
+    },
+    {
+        "text": "this hashmap solution that i'm talking",
+        "start": 284.88,
+        "duration": 3.68
+    },
+    {
+        "text": "about okay so now let's code it up and",
+        "start": 286.56,
+        "duration": 3.919
+    },
+    {
+        "text": "like i mentioned a main thing we're just",
+        "start": 288.56,
+        "duration": 3.84
+    },
+    {
+        "text": "going to be doing is counting the",
+        "start": 290.479,
+        "duration": 3.44
+    },
+    {
+        "text": "characters in both of the strings so",
+        "start": 292.4,
+        "duration": 3.28
+    },
+    {
+        "text": "we're going to create hashmaps for that",
+        "start": 293.919,
+        "duration": 4.161
+    },
+    {
+        "text": "this is how you can do that in python",
+        "start": 295.68,
+        "duration": 4.16
+    },
+    {
+        "text": "but remember before we even do that we",
+        "start": 298.08,
+        "duration": 3.28
+    },
+    {
+        "text": "want to make sure that the length of",
+        "start": 299.84,
+        "duration": 3.6
+    },
+    {
+        "text": "both strings is exactly the same because",
+        "start": 301.36,
+        "duration": 4.0
+    },
+    {
+        "text": "if they're not the same length then of",
+        "start": 303.44,
+        "duration": 3.599
+    },
+    {
+        "text": "course it's impossible for them to be",
+        "start": 305.36,
+        "duration": 4.72
+    },
+    {
+        "text": "palindromes so we can immediately whoops",
+        "start": 307.039,
+        "duration": 5.361
+    },
+    {
+        "text": "then we can immediately return false if",
+        "start": 310.08,
+        "duration": 4.32
+    },
+    {
+        "text": "they are not the same length otherwise",
+        "start": 312.4,
+        "duration": 4.239
+    },
+    {
+        "text": "we can actually run the algorithm so",
+        "start": 314.4,
+        "duration": 3.44
+    },
+    {
+        "text": "let's just",
+        "start": 316.639,
+        "duration": 4.321
+    },
+    {
+        "text": "uh go through the strings at the same",
+        "start": 317.84,
+        "duration": 5.84
+    },
+    {
+        "text": "time so we can iterate uh basically",
+        "start": 320.96,
+        "duration": 4.64
+    },
+    {
+        "text": "through the length of the string s",
+        "start": 323.68,
+        "duration": 3.359
+    },
+    {
+        "text": "because we know they're both the same",
+        "start": 325.6,
+        "duration": 3.52
+    },
+    {
+        "text": "length so we can just use the index i",
+        "start": 327.039,
+        "duration": 4.561
+    },
+    {
+        "text": "for both of the strings uh count s is",
+        "start": 329.12,
+        "duration": 4.4
+    },
+    {
+        "text": "basically going to count the occurrence",
+        "start": 331.6,
+        "duration": 4.64
+    },
+    {
+        "text": "of each character in uh string s of",
+        "start": 333.52,
+        "duration": 5.76
+    },
+    {
+        "text": "course so each time we see the a",
+        "start": 336.24,
+        "duration": 4.799
+    },
+    {
+        "text": "character so a character is basically",
+        "start": 339.28,
+        "duration": 4.639
+    },
+    {
+        "text": "going to be s at index i that's the key",
+        "start": 341.039,
+        "duration": 4.961
+    },
+    {
+        "text": "of the hashmap uh every time we see a",
+        "start": 343.919,
+        "duration": 3.761
+    },
+    {
+        "text": "character we want to increment the count",
+        "start": 346.0,
+        "duration": 3.52
+    },
+    {
+        "text": "of that character by one so can we just",
+        "start": 347.68,
+        "duration": 4.32
+    },
+    {
+        "text": "say one plus this can we just say one",
+        "start": 349.52,
+        "duration": 5.28
+    },
+    {
+        "text": "plus this well in python no because what",
+        "start": 352.0,
+        "duration": 4.88
+    },
+    {
+        "text": "if that character doesn't even exist in",
+        "start": 354.8,
+        "duration": 4.72
+    },
+    {
+        "text": "the hashmap yet then this is gonna throw",
+        "start": 356.88,
+        "duration": 5.36
+    },
+    {
+        "text": "a key error right key does not exist so",
+        "start": 359.52,
+        "duration": 4.88
+    },
+    {
+        "text": "to get around that in python at least",
+        "start": 362.24,
+        "duration": 4.079
+    },
+    {
+        "text": "there's a nice little function uh with",
+        "start": 364.4,
+        "duration": 3.519
+    },
+    {
+        "text": "hash maps that you can use that's called",
+        "start": 366.319,
+        "duration": 2.961
+    },
+    {
+        "text": "get so",
+        "start": 367.919,
+        "duration": 5.12
+    },
+    {
+        "text": "get this uh you know this key and it'll",
+        "start": 369.28,
+        "duration": 5.84
+    },
+    {
+        "text": "basically do exactly what's being done",
+        "start": 373.039,
+        "duration": 3.521
+    },
+    {
+        "text": "over here on the left side but the",
+        "start": 375.12,
+        "duration": 3.359
+    },
+    {
+        "text": "second parameter to this function is",
+        "start": 376.56,
+        "duration": 4.479
+    },
+    {
+        "text": "basically a default value so 0 is the",
+        "start": 378.479,
+        "duration": 4.321
+    },
+    {
+        "text": "default value in this case that means",
+        "start": 381.039,
+        "duration": 3.841
+    },
+    {
+        "text": "that if this key does not exist in the",
+        "start": 382.8,
+        "duration": 4.16
+    },
+    {
+        "text": "hashmap then the default value that this",
+        "start": 384.88,
+        "duration": 4.319
+    },
+    {
+        "text": "function is going to return is 0 which",
+        "start": 386.96,
+        "duration": 3.92
+    },
+    {
+        "text": "is of course what we would want it to",
+        "start": 389.199,
+        "duration": 3.521
+    },
+    {
+        "text": "return right so with this line we're",
+        "start": 390.88,
+        "duration": 3.28
+    },
+    {
+        "text": "just counting the occurrences of each",
+        "start": 392.72,
+        "duration": 3.36
+    },
+    {
+        "text": "character in string s we can do the",
+        "start": 394.16,
+        "duration": 5.039
+    },
+    {
+        "text": "exact same thing uh with string t just",
+        "start": 396.08,
+        "duration": 5.28
+    },
+    {
+        "text": "by copy pasting this and then changing",
+        "start": 399.199,
+        "duration": 5.041
+    },
+    {
+        "text": "everything to t so making sure we use",
+        "start": 401.36,
+        "duration": 4.48
+    },
+    {
+        "text": "the t hash map and making sure we",
+        "start": 404.24,
+        "duration": 4.56
+    },
+    {
+        "text": "iterate through the string t right t at",
+        "start": 405.84,
+        "duration": 5.919
+    },
+    {
+        "text": "index i so that's pretty much it for",
+        "start": 408.8,
+        "duration": 4.88
+    },
+    {
+        "text": "building the hash maps next we want to",
+        "start": 411.759,
+        "duration": 4.0
+    },
+    {
+        "text": "iterate through the hash maps and make",
+        "start": 413.68,
+        "duration": 3.84
+    },
+    {
+        "text": "sure the counts are the same so let's",
+        "start": 415.759,
+        "duration": 5.681
+    },
+    {
+        "text": "say for c for the character in count uh",
+        "start": 417.52,
+        "duration": 6.079
+    },
+    {
+        "text": "s so we just want to make sure the",
+        "start": 421.44,
+        "duration": 4.96
+    },
+    {
+        "text": "counts of both uh hash maps are the same",
+        "start": 423.599,
+        "duration": 6.801
+    },
+    {
+        "text": "so count that character i is equal to",
+        "start": 426.4,
+        "duration": 5.68
+    },
+    {
+        "text": "count t",
+        "start": 430.4,
+        "duration": 4.639
+    },
+    {
+        "text": "at character i so the counts are the",
+        "start": 432.08,
+        "duration": 4.88
+    },
+    {
+        "text": "same actually in this case we'd want to",
+        "start": 435.039,
+        "duration": 3.201
+    },
+    {
+        "text": "make sure that the counts are not the",
+        "start": 436.96,
+        "duration": 3.2
+    },
+    {
+        "text": "same because if they're not the same",
+        "start": 438.24,
+        "duration": 4.56
+    },
+    {
+        "text": "then we basically know to return false",
+        "start": 440.16,
+        "duration": 4.56
+    },
+    {
+        "text": "immediately because",
+        "start": 442.8,
+        "duration": 4.48
+    },
+    {
+        "text": "then we know that they're not anagrams",
+        "start": 444.72,
+        "duration": 4.479
+    },
+    {
+        "text": "if you have noticed we're iterating",
+        "start": 447.28,
+        "duration": 3.68
+    },
+    {
+        "text": "through the keys in python at least",
+        "start": 449.199,
+        "duration": 3.361
+    },
+    {
+        "text": "we're iterating through all the key",
+        "start": 450.96,
+        "duration": 4.88
+    },
+    {
+        "text": "values of account s right the the count",
+        "start": 452.56,
+        "duration": 6.16
+    },
+    {
+        "text": "map of string s and c",
+        "start": 455.84,
+        "duration": 5.199
+    },
+    {
+        "text": "is going to be the key but what if that",
+        "start": 458.72,
+        "duration": 6.319
+    },
+    {
+        "text": "key does not exist in the t map right",
+        "start": 461.039,
+        "duration": 6.16
+    },
+    {
+        "text": "count t what if it doesn't exist in this",
+        "start": 465.039,
+        "duration": 4.401
+    },
+    {
+        "text": "map well again we can use that default",
+        "start": 467.199,
+        "duration": 5.28
+    },
+    {
+        "text": "function of get so that it doesn't throw",
+        "start": 469.44,
+        "duration": 5.36
+    },
+    {
+        "text": "a key error for us and it'll return a",
+        "start": 472.479,
+        "duration": 5.201
+    },
+    {
+        "text": "default value of zero so",
+        "start": 474.8,
+        "duration": 5.6
+    },
+    {
+        "text": "that's uh basically the entire algorithm",
+        "start": 477.68,
+        "duration": 4.88
+    },
+    {
+        "text": "right we built the hash map we performed",
+        "start": 480.4,
+        "duration": 4.56
+    },
+    {
+        "text": "the check and then if if we never return",
+        "start": 482.56,
+        "duration": 4.639
+    },
+    {
+        "text": "false here that must mean that they are",
+        "start": 484.96,
+        "duration": 4.88
+    },
+    {
+        "text": "anagram so then if the loop exits we can",
+        "start": 487.199,
+        "duration": 4.72
+    },
+    {
+        "text": "go ahead and return true that's the",
+        "start": 489.84,
+        "duration": 3.68
+    },
+    {
+        "text": "entire code let's run it to make sure",
+        "start": 491.919,
+        "duration": 3.361
+    },
+    {
+        "text": "that it works so you can see on the left",
+        "start": 493.52,
+        "duration": 3.6
+    },
+    {
+        "text": "it does run it's relatively efficient",
+        "start": 495.28,
+        "duration": 3.599
+    },
+    {
+        "text": "though it doesn't reflect that on leak",
+        "start": 497.12,
+        "duration": 4.16
+    },
+    {
+        "text": "code but basically you can actually do",
+        "start": 498.879,
+        "duration": 4.081
+    },
+    {
+        "text": "exactly what i just showed you with one",
+        "start": 501.28,
+        "duration": 4.24
+    },
+    {
+        "text": "line of code at least in python but i i",
+        "start": 502.96,
+        "duration": 3.919
+    },
+    {
+        "text": "think this is kind of cheating and it",
+        "start": 505.52,
+        "duration": 3.679
+    },
+    {
+        "text": "probably won't work in an interview but",
+        "start": 506.879,
+        "duration": 4.32
+    },
+    {
+        "text": "counter is a data structure in python",
+        "start": 509.199,
+        "duration": 3.76
+    },
+    {
+        "text": "which is a hashmap but it basically",
+        "start": 511.199,
+        "duration": 3.84
+    },
+    {
+        "text": "counts things automatically for you so",
+        "start": 512.959,
+        "duration": 4.96
+    },
+    {
+        "text": "we can run a counter on s and we can run",
+        "start": 515.039,
+        "duration": 5.841
+    },
+    {
+        "text": "a counter on t and if these counters are",
+        "start": 517.919,
+        "duration": 5.441
+    },
+    {
+        "text": "exactly equal basically by doing the",
+        "start": 520.88,
+        "duration": 4.56
+    },
+    {
+        "text": "equal sign i'm just doing what i did",
+        "start": 523.36,
+        "duration": 3.919
+    },
+    {
+        "text": "down here right with the for loop but",
+        "start": 525.44,
+        "duration": 3.92
+    },
+    {
+        "text": "the equal sign does it for us instantly",
+        "start": 527.279,
+        "duration": 2.801
+    },
+    {
+        "text": "so",
+        "start": 529.36,
+        "duration": 2.72
+    },
+    {
+        "text": "uh it does that and then we can just",
+        "start": 530.08,
+        "duration": 3.759
+    },
+    {
+        "text": "return the result if they're equal it'll",
+        "start": 532.08,
+        "duration": 3.6
+    },
+    {
+        "text": "return true if they're not equal it'll",
+        "start": 533.839,
+        "duration": 3.921
+    },
+    {
+        "text": "return false i can run that and make",
+        "start": 535.68,
+        "duration": 4.08
+    },
+    {
+        "text": "sure that it works which it does and",
+        "start": 537.76,
+        "duration": 3.759
+    },
+    {
+        "text": "it's actually slightly more efficient i",
+        "start": 539.76,
+        "duration": 3.759
+    },
+    {
+        "text": "guess the overall time complexity and",
+        "start": 541.519,
+        "duration": 3.361
+    },
+    {
+        "text": "space complexity of both of these",
+        "start": 543.519,
+        "duration": 3.201
+    },
+    {
+        "text": "solutions is exactly the same just this",
+        "start": 544.88,
+        "duration": 3.36
+    },
+    {
+        "text": "takes more lines of code because we're",
+        "start": 546.72,
+        "duration": 3.52
+    },
+    {
+        "text": "actually explicitly writing out all the",
+        "start": 548.24,
+        "duration": 4.24
+    },
+    {
+        "text": "operations so now what if as a follow-up",
+        "start": 550.24,
+        "duration": 4.08
+    },
+    {
+        "text": "question your interviewer asks you how",
+        "start": 552.48,
+        "duration": 3.6
+    },
+    {
+        "text": "can you make a solution where we don't",
+        "start": 554.32,
+        "duration": 3.6
+    },
+    {
+        "text": "actually need extra memory can you do a",
+        "start": 556.08,
+        "duration": 4.4
+    },
+    {
+        "text": "solution with of one memory how would",
+        "start": 557.92,
+        "duration": 4.88
+    },
+    {
+        "text": "you solve that problem it's a good",
+        "start": 560.48,
+        "duration": 4.64
+    },
+    {
+        "text": "question and the solution is actually",
+        "start": 562.8,
+        "duration": 4.32
+    },
+    {
+        "text": "simpler than you might think",
+        "start": 565.12,
+        "duration": 4.159
+    },
+    {
+        "text": "just kind of thinking about how anagrams",
+        "start": 567.12,
+        "duration": 5.52
+    },
+    {
+        "text": "work if you took all these characters",
+        "start": 569.279,
+        "duration": 4.801
+    },
+    {
+        "text": "and put them in a hash map where we can",
+        "start": 572.64,
+        "duration": 3.04
+    },
+    {
+        "text": "count the occurrences then it's pretty",
+        "start": 574.08,
+        "duration": 3.52
+    },
+    {
+        "text": "easy to check if they're equal but isn't",
+        "start": 575.68,
+        "duration": 4.08
+    },
+    {
+        "text": "there another way what if we",
+        "start": 577.6,
+        "duration": 4.0
+    },
+    {
+        "text": "made sure that the characters show up in",
+        "start": 579.76,
+        "duration": 4.56
+    },
+    {
+        "text": "the exact same order every single time",
+        "start": 581.6,
+        "duration": 4.96
+    },
+    {
+        "text": "what do we mean by order well one",
+        "start": 584.32,
+        "duration": 5.36
+    },
+    {
+        "text": "possible way would be sorted order right",
+        "start": 586.56,
+        "duration": 4.719
+    },
+    {
+        "text": "because if they're if they really are",
+        "start": 589.68,
+        "duration": 4.24
+    },
+    {
+        "text": "the exact same characters then if we put",
+        "start": 591.279,
+        "duration": 5.041
+    },
+    {
+        "text": "them in sorted order then they should",
+        "start": 593.92,
+        "duration": 5.68
+    },
+    {
+        "text": "actually become the exact same string",
+        "start": 596.32,
+        "duration": 5.44
+    },
+    {
+        "text": "then we can literally just do an equals",
+        "start": 599.6,
+        "duration": 4.72
+    },
+    {
+        "text": "operation on both of the sorted strings",
+        "start": 601.76,
+        "duration": 4.24
+    },
+    {
+        "text": "and guarantee that they're going to be",
+        "start": 604.32,
+        "duration": 4.24
+    },
+    {
+        "text": "equal but the downside is what's the",
+        "start": 606.0,
+        "duration": 5.12
+    },
+    {
+        "text": "time complexity of doing sort well in",
+        "start": 608.56,
+        "duration": 4.56
+    },
+    {
+        "text": "some cases with bad sorting algorithms",
+        "start": 611.12,
+        "duration": 3.68
+    },
+    {
+        "text": "like bubble sort or something it might",
+        "start": 613.12,
+        "duration": 3.36
+    },
+    {
+        "text": "be n squared right",
+        "start": 614.8,
+        "duration": 4.159
+    },
+    {
+        "text": "good sorting algorithms can do it in n",
+        "start": 616.48,
+        "duration": 6.08
+    },
+    {
+        "text": "log n time right worst case big o of n",
+        "start": 618.959,
+        "duration": 6.161
+    },
+    {
+        "text": "log n time uh but you know the space",
+        "start": 622.56,
+        "duration": 4.56
+    },
+    {
+        "text": "complexity is kind of iffy usually",
+        "start": 625.12,
+        "duration": 4.0
+    },
+    {
+        "text": "sorting algorithms at least good ones",
+        "start": 627.12,
+        "duration": 4.159
+    },
+    {
+        "text": "actually do use extra memory they use of",
+        "start": 629.12,
+        "duration": 4.64
+    },
+    {
+        "text": "n extra memory but sometimes they don't",
+        "start": 631.279,
+        "duration": 4.721
+    },
+    {
+        "text": "sometimes they can be really optimized",
+        "start": 633.76,
+        "duration": 4.0
+    },
+    {
+        "text": "and actually run on",
+        "start": 636.0,
+        "duration": 5.12
+    },
+    {
+        "text": "constant memory constant extra memory it",
+        "start": 637.76,
+        "duration": 5.28
+    },
+    {
+        "text": "will depend on which built-in library",
+        "start": 641.12,
+        "duration": 4.0
+    },
+    {
+        "text": "function you're using but usually for",
+        "start": 643.04,
+        "duration": 3.76
+    },
+    {
+        "text": "some reason interviewers just assume",
+        "start": 645.12,
+        "duration": 4.08
+    },
+    {
+        "text": "that sorting doesn't take extra space so",
+        "start": 646.8,
+        "duration": 3.76
+    },
+    {
+        "text": "it's definitely something to discuss",
+        "start": 649.2,
+        "duration": 3.52
+    },
+    {
+        "text": "with your interviewer yeah so basically",
+        "start": 650.56,
+        "duration": 3.519
+    },
+    {
+        "text": "if you just sort it it solves the",
+        "start": 652.72,
+        "duration": 3.28
+    },
+    {
+        "text": "problem for you right because if we took",
+        "start": 654.079,
+        "duration": 5.44
+    },
+    {
+        "text": "anagram and we sorted it we'd get aaa g",
+        "start": 656.0,
+        "duration": 6.959
+    },
+    {
+        "text": "m n r right it would be the same order",
+        "start": 659.519,
+        "duration": 6.0
+    },
+    {
+        "text": "and then if we take the this string t",
+        "start": 662.959,
+        "duration": 4.401
+    },
+    {
+        "text": "sort it it's the exact same characters",
+        "start": 665.519,
+        "duration": 3.201
+    },
+    {
+        "text": "so when we sort it it should be the",
+        "start": 667.36,
+        "duration": 3.919
+    },
+    {
+        "text": "exact same string and it is so now let's",
+        "start": 668.72,
+        "duration": 4.559
+    },
+    {
+        "text": "get into the code of this solution okay",
+        "start": 671.279,
+        "duration": 3.361
+    },
+    {
+        "text": "so now you can see that these were the",
+        "start": 673.279,
+        "duration": 3.361
+    },
+    {
+        "text": "two solutions we originally came up with",
+        "start": 674.64,
+        "duration": 3.84
+    },
+    {
+        "text": "now let's do the third and final",
+        "start": 676.64,
+        "duration": 2.879
+    },
+    {
+        "text": "solution",
+        "start": 678.48,
+        "duration": 4.32
+    },
+    {
+        "text": "we can just run the sort function on s",
+        "start": 679.519,
+        "duration": 5.041
+    },
+    {
+        "text": "and the sort function",
+        "start": 682.8,
+        "duration": 4.08
+    },
+    {
+        "text": "the built-in sort functions at least in",
+        "start": 684.56,
+        "duration": 5.2
+    },
+    {
+        "text": "python on t as well and if they're",
+        "start": 686.88,
+        "duration": 5.12
+    },
+    {
+        "text": "exactly equal it'll return true if",
+        "start": 689.76,
+        "duration": 4.24
+    },
+    {
+        "text": "they're not equal it will return false",
+        "start": 692.0,
+        "duration": 3.279
+    },
+    {
+        "text": "let's run it to make sure that it works",
+        "start": 694.0,
+        "duration": 3.04
+    },
+    {
+        "text": "and on the left you can see yes it does",
+        "start": 695.279,
+        "duration": 3.761
+    },
+    {
+        "text": "it's relatively efficient but",
+        "start": 697.04,
+        "duration": 4.64
+    },
+    {
+        "text": "technically it's not as efficient as the",
+        "start": 699.04,
+        "duration": 4.479
+    },
+    {
+        "text": "two previous solutions that we came up",
+        "start": 701.68,
+        "duration": 3.76
+    },
+    {
+        "text": "with below and who knows maybe your",
+        "start": 703.519,
+        "duration": 3.44
+    },
+    {
+        "text": "interviewer will actually want you to",
+        "start": 705.44,
+        "duration": 3.839
+    },
+    {
+        "text": "write out your own sorting function for",
+        "start": 706.959,
+        "duration": 4.081
+    },
+    {
+        "text": "this but i really hope that this was",
+        "start": 709.279,
+        "duration": 3.761
+    },
+    {
+        "text": "helpful if it was please like and",
+        "start": 711.04,
+        "duration": 3.76
+    },
+    {
+        "text": "subscribe it supports the channel a lot",
+        "start": 713.04,
+        "duration": 3.44
+    },
+    {
+        "text": "consider checking out my patreon where",
+        "start": 714.8,
+        "duration": 3.2
+    },
+    {
+        "text": "you can further support the channel and",
+        "start": 716.48,
+        "duration": 3.2
+    },
+    {
+        "text": "hopefully i'll see you pretty soon",
+        "start": 718.0,
+        "duration": 4.639
+    },
+    {
+        "text": "thanks for watching",
+        "start": 719.68,
+        "duration": 2.959
+    }
+]

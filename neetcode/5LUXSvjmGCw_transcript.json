@@ -1,0 +1,1672 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.52
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.599,
+        "duration": 2.641
+    },
+    {
+        "text": "let's solve",
+        "start": 3.52,
+        "duration": 4.0
+    },
+    {
+        "text": "kth smallest element in a binary search",
+        "start": 4.24,
+        "duration": 3.76
+    },
+    {
+        "text": "tree",
+        "start": 7.52,
+        "duration": 2.4
+    },
+    {
+        "text": "so we're given the root of a binary",
+        "start": 8.0,
+        "duration": 3.84
+    },
+    {
+        "text": "search tree and an integer",
+        "start": 9.92,
+        "duration": 5.52
+    },
+    {
+        "text": "k and we want to return the kth smallest",
+        "start": 11.84,
+        "duration": 6.48
+    },
+    {
+        "text": "element in the binary search tree right",
+        "start": 15.44,
+        "duration": 5.12
+    },
+    {
+        "text": "and so remember a binary search tree by",
+        "start": 18.32,
+        "duration": 4.32
+    },
+    {
+        "text": "definition means that it's in",
+        "start": 20.56,
+        "duration": 4.959
+    },
+    {
+        "text": "order meaning that for let's say 3",
+        "start": 22.64,
+        "duration": 4.559
+    },
+    {
+        "text": "everything in its left subtree is going",
+        "start": 25.519,
+        "duration": 2.08
+    },
+    {
+        "text": "to be",
+        "start": 27.199,
+        "duration": 2.961
+    },
+    {
+        "text": "less than 3. everything that's right sub",
+        "start": 27.599,
+        "duration": 3.44
+    },
+    {
+        "text": "tree is going to be",
+        "start": 30.16,
+        "duration": 3.84
+    },
+    {
+        "text": "greater than three and so let's say k",
+        "start": 31.039,
+        "duration": 3.52
+    },
+    {
+        "text": "equals",
+        "start": 34.0,
+        "duration": 3.12
+    },
+    {
+        "text": "one that means we want the one smallest",
+        "start": 34.559,
+        "duration": 3.201
+    },
+    {
+        "text": "element",
+        "start": 37.12,
+        "duration": 3.279
+    },
+    {
+        "text": "in the binary search tree so if you put",
+        "start": 37.76,
+        "duration": 4.56
+    },
+    {
+        "text": "all four of these elements in order we",
+        "start": 40.399,
+        "duration": 2.721
+    },
+    {
+        "text": "get a one",
+        "start": 42.32,
+        "duration": 4.079
+    },
+    {
+        "text": "two three and four the smallest element",
+        "start": 43.12,
+        "duration": 4.0
+    },
+    {
+        "text": "is",
+        "start": 46.399,
+        "duration": 4.241
+    },
+    {
+        "text": "one so then we can return one and now so",
+        "start": 47.12,
+        "duration": 4.4
+    },
+    {
+        "text": "your first",
+        "start": 50.64,
+        "duration": 3.36
+    },
+    {
+        "text": "thought with this problem might be that",
+        "start": 51.52,
+        "duration": 3.519
+    },
+    {
+        "text": "okay so",
+        "start": 54.0,
+        "duration": 3.12
+    },
+    {
+        "text": "in order like you saw what i just did",
+        "start": 55.039,
+        "duration": 3.68
+    },
+    {
+        "text": "right i just took every element and put",
+        "start": 57.12,
+        "duration": 2.0
+    },
+    {
+        "text": "it in",
+        "start": 58.719,
+        "duration": 2.721
+    },
+    {
+        "text": "order and then took the kth element",
+        "start": 59.12,
+        "duration": 4.72
+    },
+    {
+        "text": "right and if k was 2 we would get the",
+        "start": 61.44,
+        "duration": 4.32
+    },
+    {
+        "text": "second element if k was 3",
+        "start": 63.84,
+        "duration": 4.48
+    },
+    {
+        "text": "we'd get the third element right so is",
+        "start": 65.76,
+        "duration": 4.16
+    },
+    {
+        "text": "there a way i can take this binary",
+        "start": 68.32,
+        "duration": 2.32
+    },
+    {
+        "text": "search tree",
+        "start": 69.92,
+        "duration": 3.519
+    },
+    {
+        "text": "and then put it into a sorted array or",
+        "start": 70.64,
+        "duration": 3.68
+    },
+    {
+        "text": "something",
+        "start": 73.439,
+        "duration": 2.961
+    },
+    {
+        "text": "and the answer is yes right because",
+        "start": 74.32,
+        "duration": 3.04
+    },
+    {
+        "text": "binary search",
+        "start": 76.4,
+        "duration": 4.719
+    },
+    {
+        "text": "tree means that if we traverse this tree",
+        "start": 77.36,
+        "duration": 6.64
+    },
+    {
+        "text": "in order and then take each element and",
+        "start": 81.119,
+        "duration": 4.961
+    },
+    {
+        "text": "then put it into an array",
+        "start": 84.0,
+        "duration": 4.56
+    },
+    {
+        "text": "then we've basically solved this problem",
+        "start": 86.08,
+        "duration": 4.48
+    },
+    {
+        "text": "so for example we start at the root but",
+        "start": 88.56,
+        "duration": 2.559
+    },
+    {
+        "text": "we don't",
+        "start": 90.56,
+        "duration": 3.84
+    },
+    {
+        "text": "visit the value yet right we go to the",
+        "start": 91.119,
+        "duration": 5.68
+    },
+    {
+        "text": "left child right and then we see okay it",
+        "start": 94.4,
+        "duration": 3.039
+    },
+    {
+        "text": "doesn't have",
+        "start": 96.799,
+        "duration": 2.721
+    },
+    {
+        "text": "a left subtree right doesn't have any",
+        "start": 97.439,
+        "duration": 4.481
+    },
+    {
+        "text": "left child so then we visit one",
+        "start": 99.52,
+        "duration": 4.0
+    },
+    {
+        "text": "by that i mean we basically put it",
+        "start": 101.92,
+        "duration": 3.199
+    },
+    {
+        "text": "inside of our array",
+        "start": 103.52,
+        "duration": 3.76
+    },
+    {
+        "text": "then we go to its right subtree we see",
+        "start": 105.119,
+        "duration": 3.121
+    },
+    {
+        "text": "okay two",
+        "start": 107.28,
+        "duration": 3.839
+    },
+    {
+        "text": "we add two to the array and of course",
+        "start": 108.24,
+        "duration": 3.919
+    },
+    {
+        "text": "since we know",
+        "start": 111.119,
+        "duration": 3.121
+    },
+    {
+        "text": "k is one we could actually stop here",
+        "start": 112.159,
+        "duration": 3.681
+    },
+    {
+        "text": "once we visited the one",
+        "start": 114.24,
+        "duration": 3.519
+    },
+    {
+        "text": "but we could also continue to add",
+        "start": 115.84,
+        "duration": 3.52
+    },
+    {
+        "text": "elements so then we'd pop back",
+        "start": 117.759,
+        "duration": 4.561
+    },
+    {
+        "text": "up to the three add the three and then",
+        "start": 119.36,
+        "duration": 4.719
+    },
+    {
+        "text": "we go to the right child and then",
+        "start": 122.32,
+        "duration": 4.24
+    },
+    {
+        "text": "see the four and add the four and so you",
+        "start": 124.079,
+        "duration": 3.04
+    },
+    {
+        "text": "know",
+        "start": 126.56,
+        "duration": 3.119
+    },
+    {
+        "text": "that writing an in-order traversal for a",
+        "start": 127.119,
+        "duration": 5.041
+    },
+    {
+        "text": "binary search tree recursively is pretty",
+        "start": 129.679,
+        "duration": 3.28
+    },
+    {
+        "text": "easy right but",
+        "start": 132.16,
+        "duration": 2.079
+    },
+    {
+        "text": "i'm going to show you how to do it",
+        "start": 132.959,
+        "duration": 3.201
+    },
+    {
+        "text": "iteratively which you might not",
+        "start": 134.239,
+        "duration": 3.681
+    },
+    {
+        "text": "know yet but it's actually pretty",
+        "start": 136.16,
+        "duration": 3.68
+    },
+    {
+        "text": "similar to doing",
+        "start": 137.92,
+        "duration": 4.8
+    },
+    {
+        "text": "the recursive solution so you saw how",
+        "start": 139.84,
+        "duration": 4.72
+    },
+    {
+        "text": "the recursive solution works right let's",
+        "start": 142.72,
+        "duration": 2.96
+    },
+    {
+        "text": "say we visit one",
+        "start": 144.56,
+        "duration": 3.2
+    },
+    {
+        "text": "then we go to its right child right we",
+        "start": 145.68,
+        "duration": 4.16
+    },
+    {
+        "text": "visit one and then we visit two and then",
+        "start": 147.76,
+        "duration": 3.28
+    },
+    {
+        "text": "we end up having to",
+        "start": 149.84,
+        "duration": 4.399
+    },
+    {
+        "text": "pop back up to the three right",
+        "start": 151.04,
+        "duration": 5.44
+    },
+    {
+        "text": "so to pop back up here we know the",
+        "start": 154.239,
+        "duration": 4.321
+    },
+    {
+        "text": "recursive call will eventually",
+        "start": 156.48,
+        "duration": 4.16
+    },
+    {
+        "text": "come back like with the call stack right",
+        "start": 158.56,
+        "duration": 4.319
+    },
+    {
+        "text": "that's how function calls or method",
+        "start": 160.64,
+        "duration": 2.72
+    },
+    {
+        "text": "calls",
+        "start": 162.879,
+        "duration": 2.801
+    },
+    {
+        "text": "work but if we're doing it iteratively",
+        "start": 163.36,
+        "duration": 4.08
+    },
+    {
+        "text": "not recursively right",
+        "start": 165.68,
+        "duration": 5.36
+    },
+    {
+        "text": "then we need a stack to contain",
+        "start": 167.44,
+        "duration": 5.68
+    },
+    {
+        "text": "the previous nodes that we need to pop",
+        "start": 171.04,
+        "duration": 3.279
+    },
+    {
+        "text": "back up to",
+        "start": 173.12,
+        "duration": 2.64
+    },
+    {
+        "text": "so i'm going to show you how to do this",
+        "start": 174.319,
+        "duration": 4.0
+    },
+    {
+        "text": "problem with a stack iteratively",
+        "start": 175.76,
+        "duration": 5.6
+    },
+    {
+        "text": "so let's say that this is our stack",
+        "start": 178.319,
+        "duration": 5.84
+    },
+    {
+        "text": "so iteratively we start at the root",
+        "start": 181.36,
+        "duration": 3.599
+    },
+    {
+        "text": "right",
+        "start": 184.159,
+        "duration": 2.961
+    },
+    {
+        "text": "and we we're not going to visit this",
+        "start": 184.959,
+        "duration": 3.2
+    },
+    {
+        "text": "node yet right",
+        "start": 187.12,
+        "duration": 3.68
+    },
+    {
+        "text": "so we're not going to count it as a k",
+        "start": 188.159,
+        "duration": 4.16
+    },
+    {
+        "text": "value yet because we want to go through",
+        "start": 190.8,
+        "duration": 4.079
+    },
+    {
+        "text": "everything in the left sub tree first so",
+        "start": 192.319,
+        "duration": 6.081
+    },
+    {
+        "text": "next i'm just going to keep going as far",
+        "start": 194.879,
+        "duration": 6.481
+    },
+    {
+        "text": "left as i can so i'm going to go to this",
+        "start": 198.4,
+        "duration": 3.839
+    },
+    {
+        "text": "node right",
+        "start": 201.36,
+        "duration": 3.439
+    },
+    {
+        "text": "it's left child but before i go here i'm",
+        "start": 202.239,
+        "duration": 4.801
+    },
+    {
+        "text": "going to add the 3 to the stack",
+        "start": 204.799,
+        "duration": 4.881
+    },
+    {
+        "text": "because we know we want to pop back up",
+        "start": 207.04,
+        "duration": 4.479
+    },
+    {
+        "text": "to this 3 when we're done",
+        "start": 209.68,
+        "duration": 5.199
+    },
+    {
+        "text": "traversing the left subtree so now i'm",
+        "start": 211.519,
+        "duration": 4.8
+    },
+    {
+        "text": "at the one i'm going to go to",
+        "start": 214.879,
+        "duration": 4.241
+    },
+    {
+        "text": "its left child right but we see it's",
+        "start": 216.319,
+        "duration": 4.161
+    },
+    {
+        "text": "null",
+        "start": 219.12,
+        "duration": 3.52
+    },
+    {
+        "text": "right but before i go to null i'm going",
+        "start": 220.48,
+        "duration": 3.44
+    },
+    {
+        "text": "to add one",
+        "start": 222.64,
+        "duration": 4.319
+    },
+    {
+        "text": "to the stack but once we reach a null",
+        "start": 223.92,
+        "duration": 3.599
+    },
+    {
+        "text": "case",
+        "start": 226.959,
+        "duration": 3.601
+    },
+    {
+        "text": "that means it's time for us to pop back",
+        "start": 227.519,
+        "duration": 6.561
+    },
+    {
+        "text": "up and go back up to the previous node",
+        "start": 230.56,
+        "duration": 5.44
+    },
+    {
+        "text": "and we know that because we just look at",
+        "start": 234.08,
+        "duration": 4.48
+    },
+    {
+        "text": "the top of our stack so we take this one",
+        "start": 236.0,
+        "duration": 5.76
+    },
+    {
+        "text": "we remove the 1 and so basically when we",
+        "start": 238.56,
+        "duration": 5.039
+    },
+    {
+        "text": "remove an element from the stack that",
+        "start": 241.76,
+        "duration": 3.52
+    },
+    {
+        "text": "means we're processing it or",
+        "start": 243.599,
+        "duration": 5.121
+    },
+    {
+        "text": "visiting it and we see k is equal to",
+        "start": 245.28,
+        "duration": 6.56
+    },
+    {
+        "text": "1 this is the first value that we just",
+        "start": 248.72,
+        "duration": 4.079
+    },
+    {
+        "text": "visited right",
+        "start": 251.84,
+        "duration": 4.239
+    },
+    {
+        "text": "so then it must be the result so the one",
+        "start": 252.799,
+        "duration": 4.4
+    },
+    {
+        "text": "that we just popped",
+        "start": 256.079,
+        "duration": 3.521
+    },
+    {
+        "text": "is going to be the output right but",
+        "start": 257.199,
+        "duration": 3.6
+    },
+    {
+        "text": "let's say",
+        "start": 259.6,
+        "duration": 3.44
+    },
+    {
+        "text": "that it wasn't let's just continue the",
+        "start": 260.799,
+        "duration": 3.921
+    },
+    {
+        "text": "iterative solution just so you can kind",
+        "start": 263.04,
+        "duration": 2.879
+    },
+    {
+        "text": "of understand how it",
+        "start": 264.72,
+        "duration": 4.24
+    },
+    {
+        "text": "works so now i'm at the one right",
+        "start": 265.919,
+        "duration": 4.961
+    },
+    {
+        "text": "we just process the one we don't have to",
+        "start": 268.96,
+        "duration": 3.28
+    },
+    {
+        "text": "ever consider it again so i'm just going",
+        "start": 270.88,
+        "duration": 2.48
+    },
+    {
+        "text": "to cross it out",
+        "start": 272.24,
+        "duration": 4.8
+    },
+    {
+        "text": "but now once we pop up right we visit a",
+        "start": 273.36,
+        "duration": 4.16
+    },
+    {
+        "text": "node",
+        "start": 277.04,
+        "duration": 2.719
+    },
+    {
+        "text": "then we want to go to its right child",
+        "start": 277.52,
+        "duration": 3.44
+    },
+    {
+        "text": "only after we",
+        "start": 279.759,
+        "duration": 4.321
+    },
+    {
+        "text": "visit the node after that do we want to",
+        "start": 280.96,
+        "duration": 5.04
+    },
+    {
+        "text": "go to its right subtree right because",
+        "start": 284.08,
+        "duration": 3.6
+    },
+    {
+        "text": "remember we're trying to do this",
+        "start": 286.0,
+        "duration": 4.96
+    },
+    {
+        "text": "in order so",
+        "start": 287.68,
+        "duration": 5.76
+    },
+    {
+        "text": "with three still remaining in the stack",
+        "start": 290.96,
+        "duration": 4.72
+    },
+    {
+        "text": "we're gonna go to two right so now we're",
+        "start": 293.44,
+        "duration": 2.56
+    },
+    {
+        "text": "gonna",
+        "start": 295.68,
+        "duration": 3.44
+    },
+    {
+        "text": "add two to the stack and now i'm gonna",
+        "start": 296.0,
+        "duration": 5.36
+    },
+    {
+        "text": "go to the left child of two right we",
+        "start": 299.12,
+        "duration": 2.96
+    },
+    {
+        "text": "know it's",
+        "start": 301.36,
+        "duration": 4.24
+    },
+    {
+        "text": "null so so then we're allowed to pop",
+        "start": 302.08,
+        "duration": 3.839
+    },
+    {
+        "text": "back",
+        "start": 305.6,
+        "duration": 2.08
+    },
+    {
+        "text": "up right so we're gonna go to the two",
+        "start": 305.919,
+        "duration": 3.681
+    },
+    {
+        "text": "it's because it's at the top of our",
+        "start": 307.68,
+        "duration": 2.4
+    },
+    {
+        "text": "stack",
+        "start": 309.6,
+        "duration": 2.08
+    },
+    {
+        "text": "right so the 2 is at the top of our",
+        "start": 310.08,
+        "duration": 3.44
+    },
+    {
+        "text": "stack so now we're going to pop the two",
+        "start": 311.68,
+        "duration": 2.32
+    },
+    {
+        "text": "off",
+        "start": 313.52,
+        "duration": 2.64
+    },
+    {
+        "text": "so meaning we're processing the node 2",
+        "start": 314.0,
+        "duration": 4.08
+    },
+    {
+        "text": "or visiting it so we can cross it out",
+        "start": 316.16,
+        "duration": 2.96
+    },
+    {
+        "text": "now",
+        "start": 318.08,
+        "duration": 3.04
+    },
+    {
+        "text": "and now i'm going to go to its right",
+        "start": 319.12,
+        "duration": 3.04
+    },
+    {
+        "text": "subtree which is",
+        "start": 321.12,
+        "duration": 3.44
+    },
+    {
+        "text": "also now null right because now that we",
+        "start": 322.16,
+        "duration": 4.479
+    },
+    {
+        "text": "process two we're allowed to go to its",
+        "start": 324.56,
+        "duration": 4.24
+    },
+    {
+        "text": "right subtree but we see that it's",
+        "start": 326.639,
+        "duration": 4.961
+    },
+    {
+        "text": "null so since it's null that means we",
+        "start": 328.8,
+        "duration": 3.28
+    },
+    {
+        "text": "pop",
+        "start": 331.6,
+        "duration": 3.2
+    },
+    {
+        "text": "again from our stack right so we're done",
+        "start": 332.08,
+        "duration": 3.679
+    },
+    {
+        "text": "with this null but",
+        "start": 334.8,
+        "duration": 3.36
+    },
+    {
+        "text": "conveniently for us we have a three at",
+        "start": 335.759,
+        "duration": 4.241
+    },
+    {
+        "text": "the top of our stack we crossed these",
+        "start": 338.16,
+        "duration": 3.039
+    },
+    {
+        "text": "two values out",
+        "start": 340.0,
+        "duration": 2.96
+    },
+    {
+        "text": "so now we're going to automatically go",
+        "start": 341.199,
+        "duration": 3.201
+    },
+    {
+        "text": "back up here",
+        "start": 342.96,
+        "duration": 4.16
+    },
+    {
+        "text": "so we pop the three so now it's time to",
+        "start": 344.4,
+        "duration": 5.12
+    },
+    {
+        "text": "process the three right we process it we",
+        "start": 347.12,
+        "duration": 4.16
+    },
+    {
+        "text": "look at it we visit it whatever you want",
+        "start": 349.52,
+        "duration": 2.48
+    },
+    {
+        "text": "to call it",
+        "start": 351.28,
+        "duration": 2.96
+    },
+    {
+        "text": "and after we visit it then we were",
+        "start": 352.0,
+        "duration": 4.08
+    },
+    {
+        "text": "allowed to go to the right",
+        "start": 354.24,
+        "duration": 4.56
+    },
+    {
+        "text": "subtree so now we we're at four so we",
+        "start": 356.08,
+        "duration": 3.2
+    },
+    {
+        "text": "add",
+        "start": 358.8,
+        "duration": 3.839
+    },
+    {
+        "text": "four to our stack and you basically know",
+        "start": 359.28,
+        "duration": 4.639
+    },
+    {
+        "text": "what's gonna happen now we're gonna try",
+        "start": 362.639,
+        "duration": 2.721
+    },
+    {
+        "text": "to go to the left sub tree but it's",
+        "start": 363.919,
+        "duration": 2.481
+    },
+    {
+        "text": "going to be null",
+        "start": 365.36,
+        "duration": 4.08
+    },
+    {
+        "text": "so we pop from the from the stack so we",
+        "start": 366.4,
+        "duration": 3.6
+    },
+    {
+        "text": "process",
+        "start": 369.44,
+        "duration": 2.879
+    },
+    {
+        "text": "four but then we try going to the right",
+        "start": 370.0,
+        "duration": 3.44
+    },
+    {
+        "text": "subtree it's also",
+        "start": 372.319,
+        "duration": 4.0
+    },
+    {
+        "text": "null so now that so now we look at our",
+        "start": 373.44,
+        "duration": 4.16
+    },
+    {
+        "text": "stack right we're going to pop again",
+        "start": 376.319,
+        "duration": 2.72
+    },
+    {
+        "text": "from our stack but our stack is",
+        "start": 377.6,
+        "duration": 3.2
+    },
+    {
+        "text": "empty right so that's how you know the",
+        "start": 379.039,
+        "duration": 3.761
+    },
+    {
+        "text": "algorithm is done we visited",
+        "start": 380.8,
+        "duration": 4.16
+    },
+    {
+        "text": "every node that we needed to and if you",
+        "start": 382.8,
+        "duration": 3.839
+    },
+    {
+        "text": "were actually keeping track",
+        "start": 384.96,
+        "duration": 4.56
+    },
+    {
+        "text": "and you noticed the order that we popped",
+        "start": 386.639,
+        "duration": 4.161
+    },
+    {
+        "text": "the elements in",
+        "start": 389.52,
+        "duration": 3.36
+    },
+    {
+        "text": "so basically the first element we popped",
+        "start": 390.8,
+        "duration": 3.839
+    },
+    {
+        "text": "from our stack was a one if you were",
+        "start": 392.88,
+        "duration": 2.56
+    },
+    {
+        "text": "paying attention",
+        "start": 394.639,
+        "duration": 3.601
+    },
+    {
+        "text": "after that we did a two right we popped",
+        "start": 395.44,
+        "duration": 3.36
+    },
+    {
+        "text": "the two",
+        "start": 398.24,
+        "duration": 2.88
+    },
+    {
+        "text": "and then we went back up to the three we",
+        "start": 398.8,
+        "duration": 3.679
+    },
+    {
+        "text": "popped the three",
+        "start": 401.12,
+        "duration": 3.68
+    },
+    {
+        "text": "and then finally we visited the four",
+        "start": 402.479,
+        "duration": 3.84
+    },
+    {
+        "text": "right so even though we did it",
+        "start": 404.8,
+        "duration": 3.679
+    },
+    {
+        "text": "iteratively we visited the elements",
+        "start": 406.319,
+        "duration": 3.041
+    },
+    {
+        "text": "exactly",
+        "start": 408.479,
+        "duration": 4.241
+    },
+    {
+        "text": "in order so it's surprisingly the",
+        "start": 409.36,
+        "duration": 4.559
+    },
+    {
+        "text": "iterative solution",
+        "start": 412.72,
+        "duration": 3.759
+    },
+    {
+        "text": "is not quite as hard as you might expect",
+        "start": 413.919,
+        "duration": 5.761
+    },
+    {
+        "text": "let me show you the code for it now",
+        "start": 416.479,
+        "duration": 6.321
+    },
+    {
+        "text": "so i'm going to declare a variable n",
+        "start": 419.68,
+        "duration": 5.28
+    },
+    {
+        "text": "to basically tell us the number of",
+        "start": 422.8,
+        "duration": 4.32
+    },
+    {
+        "text": "elements that we visited from our tree",
+        "start": 424.96,
+        "duration": 2.639
+    },
+    {
+        "text": "once",
+        "start": 427.12,
+        "duration": 2.96
+    },
+    {
+        "text": "n equals k that's how you know we",
+        "start": 427.599,
+        "duration": 3.04
+    },
+    {
+        "text": "visited",
+        "start": 430.08,
+        "duration": 1.92
+    },
+    {
+        "text": "the element that we wanted to and then",
+        "start": 430.639,
+        "duration": 3.201
+    },
+    {
+        "text": "we can return that value",
+        "start": 432.0,
+        "duration": 3.52
+    },
+    {
+        "text": "and remember i'm also going to have a",
+        "start": 433.84,
+        "duration": 3.12
+    },
+    {
+        "text": "stack which is going to help us",
+        "start": 435.52,
+        "duration": 3.36
+    },
+    {
+        "text": "because we we need it because we're",
+        "start": 436.96,
+        "duration": 3.679
+    },
+    {
+        "text": "doing this iteratively",
+        "start": 438.88,
+        "duration": 3.68
+    },
+    {
+        "text": "so i'm also going to have actually a",
+        "start": 440.639,
+        "duration": 3.28
+    },
+    {
+        "text": "pointer cur",
+        "start": 442.56,
+        "duration": 2.56
+    },
+    {
+        "text": "it's going to initially point at the",
+        "start": 443.919,
+        "duration": 2.641
+    },
+    {
+        "text": "root it's basically going to tell us",
+        "start": 445.12,
+        "duration": 3.6
+    },
+    {
+        "text": "what node that we're currently visiting",
+        "start": 446.56,
+        "duration": 4.0
+    },
+    {
+        "text": "or at the node that we're currently at",
+        "start": 448.72,
+        "duration": 3.759
+    },
+    {
+        "text": "and so i'm going to have a while loop",
+        "start": 450.56,
+        "duration": 5.28
+    },
+    {
+        "text": "basically while current is not null and",
+        "start": 452.479,
+        "duration": 6.56
+    },
+    {
+        "text": "the stack is non-empty we're going to",
+        "start": 455.84,
+        "duration": 4.639
+    },
+    {
+        "text": "continue",
+        "start": 459.039,
+        "duration": 3.761
+    },
+    {
+        "text": "traversing our binary tree right that",
+        "start": 460.479,
+        "duration": 3.921
+    },
+    {
+        "text": "makes sense so far",
+        "start": 462.8,
+        "duration": 3.44
+    },
+    {
+        "text": "and remember the first thing we want to",
+        "start": 464.4,
+        "duration": 3.519
+    },
+    {
+        "text": "do is let's say we're at ker what are we",
+        "start": 466.24,
+        "duration": 3.04
+    },
+    {
+        "text": "going to do",
+        "start": 467.919,
+        "duration": 3.761
+    },
+    {
+        "text": "while current is not null we're just",
+        "start": 469.28,
+        "duration": 3.199
+    },
+    {
+        "text": "going to keep",
+        "start": 471.68,
+        "duration": 3.199
+    },
+    {
+        "text": "going left right remember we want to go",
+        "start": 472.479,
+        "duration": 5.12
+    },
+    {
+        "text": "through every node in the left sub tree",
+        "start": 474.879,
+        "duration": 5.201
+    },
+    {
+        "text": "before we visit the current node so",
+        "start": 477.599,
+        "duration": 4.481
+    },
+    {
+        "text": "while current is not null we're going to",
+        "start": 480.08,
+        "duration": 5.28
+    },
+    {
+        "text": "set current equal to current dot left",
+        "start": 482.08,
+        "duration": 5.6
+    },
+    {
+        "text": "but remember before we do that we have",
+        "start": 485.36,
+        "duration": 3.44
+    },
+    {
+        "text": "to go back",
+        "start": 487.68,
+        "duration": 3.04
+    },
+    {
+        "text": "up to current after we're done",
+        "start": 488.8,
+        "duration": 3.2
+    },
+    {
+        "text": "processing current dot",
+        "start": 490.72,
+        "duration": 3.759
+    },
+    {
+        "text": "left so before i do that i'm going to",
+        "start": 492.0,
+        "duration": 3.039
+    },
+    {
+        "text": "take",
+        "start": 494.479,
+        "duration": 3.681
+    },
+    {
+        "text": "the stack and add current",
+        "start": 495.039,
+        "duration": 6.081
+    },
+    {
+        "text": "to it and so when this loop is done",
+        "start": 498.16,
+        "duration": 4.879
+    },
+    {
+        "text": "executing that means current is at",
+        "start": 501.12,
+        "duration": 4.24
+    },
+    {
+        "text": "null so that means we went too far and",
+        "start": 503.039,
+        "duration": 3.761
+    },
+    {
+        "text": "that means we have to pop",
+        "start": 505.36,
+        "duration": 4.16
+    },
+    {
+        "text": "the last element that we added to our",
+        "start": 506.8,
+        "duration": 4.56
+    },
+    {
+        "text": "stack so actually stack",
+        "start": 509.52,
+        "duration": 4.079
+    },
+    {
+        "text": "pop we're popping the most recently",
+        "start": 511.36,
+        "duration": 4.72
+    },
+    {
+        "text": "added value from our stack",
+        "start": 513.599,
+        "duration": 4.961
+    },
+    {
+        "text": "and we're going to set it to cur so now",
+        "start": 516.08,
+        "duration": 4.24
+    },
+    {
+        "text": "that we popped this element",
+        "start": 518.56,
+        "duration": 3.839
+    },
+    {
+        "text": "curve that means we're processing it so",
+        "start": 520.32,
+        "duration": 3.44
+    },
+    {
+        "text": "what we can do is actually",
+        "start": 522.399,
+        "duration": 4.961
+    },
+    {
+        "text": "update our n value that means n",
+        "start": 523.76,
+        "duration": 5.36
+    },
+    {
+        "text": "that means we just visited another node",
+        "start": 527.36,
+        "duration": 3.12
+    },
+    {
+        "text": "so we can increment n",
+        "start": 529.12,
+        "duration": 4.88
+    },
+    {
+        "text": "by 1. and if n happens to be equal",
+        "start": 530.48,
+        "duration": 5.76
+    },
+    {
+        "text": "to k that means the current node that we",
+        "start": 534.0,
+        "duration": 3.2
+    },
+    {
+        "text": "just",
+        "start": 536.24,
+        "duration": 3.279
+    },
+    {
+        "text": "processed is the value we're looking for",
+        "start": 537.2,
+        "duration": 3.68
+    },
+    {
+        "text": "because remember we are",
+        "start": 539.519,
+        "duration": 4.561
+    },
+    {
+        "text": "looking for the kth smallest element",
+        "start": 540.88,
+        "duration": 5.76
+    },
+    {
+        "text": "so if that's true then we can just",
+        "start": 544.08,
+        "duration": 3.04
+    },
+    {
+        "text": "return",
+        "start": 546.64,
+        "duration": 2.639
+    },
+    {
+        "text": "current.value and we're done we don't",
+        "start": 547.12,
+        "duration": 4.64
+    },
+    {
+        "text": "have to visit any extra elements",
+        "start": 549.279,
+        "duration": 5.12
+    },
+    {
+        "text": "but what happens if this is not the case",
+        "start": 551.76,
+        "duration": 3.12
+    },
+    {
+        "text": "well",
+        "start": 554.399,
+        "duration": 3.281
+    },
+    {
+        "text": "we just processed current right that",
+        "start": 554.88,
+        "duration": 3.36
+    },
+    {
+        "text": "means",
+        "start": 557.68,
+        "duration": 2.8
+    },
+    {
+        "text": "that we're allowed to now go to its",
+        "start": 558.24,
+        "duration": 4.08
+    },
+    {
+        "text": "right subtree so we can actually",
+        "start": 560.48,
+        "duration": 4.24
+    },
+    {
+        "text": "update current now and set it to current",
+        "start": 562.32,
+        "duration": 3.28
+    },
+    {
+        "text": "dot",
+        "start": 564.72,
+        "duration": 3.28
+    },
+    {
+        "text": "right and so what's gonna happen now",
+        "start": 565.6,
+        "duration": 4.48
+    },
+    {
+        "text": "well the loop is gonna actually go back",
+        "start": 568.0,
+        "duration": 4.959
+    },
+    {
+        "text": "up if current dot write is non-null or",
+        "start": 570.08,
+        "duration": 5.36
+    },
+    {
+        "text": "the stack is not null then we're gonna",
+        "start": 572.959,
+        "duration": 4.88
+    },
+    {
+        "text": "start our loop and for that node we're",
+        "start": 575.44,
+        "duration": 4.72
+    },
+    {
+        "text": "gonna keep going left as much as we can",
+        "start": 577.839,
+        "duration": 3.921
+    },
+    {
+        "text": "maybe it doesn't have a left",
+        "start": 580.16,
+        "duration": 4.0
+    },
+    {
+        "text": "sub tree so then this part isn't is not",
+        "start": 581.76,
+        "duration": 4.32
+    },
+    {
+        "text": "gonna execute and then we'll end up",
+        "start": 584.16,
+        "duration": 4.239
+    },
+    {
+        "text": "we're gonna end up just popping again",
+        "start": 586.08,
+        "duration": 3.6
+    },
+    {
+        "text": "from our stack",
+        "start": 588.399,
+        "duration": 4.721
+    },
+    {
+        "text": "and conveniently for us in this problem",
+        "start": 589.68,
+        "duration": 6.159
+    },
+    {
+        "text": "we're guaranteed to have at least k",
+        "start": 593.12,
+        "duration": 4.56
+    },
+    {
+        "text": "nodes in our tree so this",
+        "start": 595.839,
+        "duration": 4.0
+    },
+    {
+        "text": "is actually always going to execute",
+        "start": 597.68,
+        "duration": 3.36
+    },
+    {
+        "text": "we're not going to end up",
+        "start": 599.839,
+        "duration": 3.68
+    },
+    {
+        "text": "exiting this while loop so we actually",
+        "start": 601.04,
+        "duration": 4.72
+    },
+    {
+        "text": "don't even need a return statement over",
+        "start": 603.519,
+        "duration": 3.121
+    },
+    {
+        "text": "here",
+        "start": 605.76,
+        "duration": 2.88
+    },
+    {
+        "text": "and this actually is the entire code let",
+        "start": 606.64,
+        "duration": 3.84
+    },
+    {
+        "text": "me just run it for you to prove that it",
+        "start": 608.64,
+        "duration": 2.56
+    },
+    {
+        "text": "works",
+        "start": 610.48,
+        "duration": 3.12
+    },
+    {
+        "text": "and as you can see it's according to",
+        "start": 611.2,
+        "duration": 4.079
+    },
+    {
+        "text": "this not pretty efficient but i'm pretty",
+        "start": 613.6,
+        "duration": 3.84
+    },
+    {
+        "text": "sure if i ran it again i would get a",
+        "start": 615.279,
+        "duration": 4.56
+    },
+    {
+        "text": "much more efficient time but you can see",
+        "start": 617.44,
+        "duration": 3.28
+    },
+    {
+        "text": "this is the",
+        "start": 619.839,
+        "duration": 3.201
+    },
+    {
+        "text": "iterative solution it's roughly this the",
+        "start": 620.72,
+        "duration": 4.16
+    },
+    {
+        "text": "same time complexity as",
+        "start": 623.04,
+        "duration": 4.64
+    },
+    {
+        "text": "the uh recursive solution and",
+        "start": 624.88,
+        "duration": 4.079
+    },
+    {
+        "text": "surprisingly",
+        "start": 627.68,
+        "duration": 3.68
+    },
+    {
+        "text": "uh it's not that much code right like",
+        "start": 628.959,
+        "duration": 4.401
+    },
+    {
+        "text": "you might expect the iterative solution",
+        "start": 631.36,
+        "duration": 3.52
+    },
+    {
+        "text": "to be more complex",
+        "start": 633.36,
+        "duration": 3.12
+    },
+    {
+        "text": "but we're actually not doing anything",
+        "start": 634.88,
+        "duration": 3.76
+    },
+    {
+        "text": "fancy we're just going as far",
+        "start": 636.48,
+        "duration": 4.56
+    },
+    {
+        "text": "left as we possibly can adding the",
+        "start": 638.64,
+        "duration": 3.68
+    },
+    {
+        "text": "values to the stack",
+        "start": 641.04,
+        "duration": 3.52
+    },
+    {
+        "text": "and then popping from the right when we",
+        "start": 642.32,
+        "duration": 3.36
+    },
+    {
+        "text": "need to",
+        "start": 644.56,
+        "duration": 4.0
+    },
+    {
+        "text": "so i hope this was helpful if it was",
+        "start": 645.68,
+        "duration": 4.719
+    },
+    {
+        "text": "please like and subscribe it supports",
+        "start": 648.56,
+        "duration": 4.16
+    },
+    {
+        "text": "the channel a lot and i'll hopefully",
+        "start": 650.399,
+        "duration": 6.801
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 652.72,
+        "duration": 4.48
+    }
+]

@@ -1,0 +1,1017 @@
+[
+    {
+        "text": "hey what's up guys",
+        "start": 3.41,
+        "duration": 5.5
+    },
+    {
+        "text": "Nick white here I do tech and coding",
+        "start": 6.54,
+        "duration": 4.019
+    },
+    {
+        "text": "stuff on twitch in YouTube and I just",
+        "start": 8.91,
+        "duration": 5.099
+    },
+    {
+        "text": "made this video uploaded it made the",
+        "start": 10.559,
+        "duration": 10.501
+    },
+    {
+        "text": "thumbnail and I have to redo it because",
+        "start": 14.009,
+        "duration": 9.421
+    },
+    {
+        "text": "I my face was in the way so now my face",
+        "start": 21.06,
+        "duration": 4.17
+    },
+    {
+        "text": "is on the left so hopefully you guys",
+        "start": 23.43,
+        "duration": 4.83
+    },
+    {
+        "text": "like that before I start this I'd say if",
+        "start": 25.23,
+        "duration": 5.16
+    },
+    {
+        "text": "you can support me on patreon please do",
+        "start": 28.26,
+        "duration": 4.17
+    },
+    {
+        "text": "that still paying back my student loans",
+        "start": 30.39,
+        "duration": 5.34
+    },
+    {
+        "text": "so that would help out a lot and I'm",
+        "start": 32.43,
+        "duration": 4.62
+    },
+    {
+        "text": "working on these study guide so I'm on",
+        "start": 35.73,
+        "duration": 4.349
+    },
+    {
+        "text": "part two and that should be up soon but",
+        "start": 37.05,
+        "duration": 5.759
+    },
+    {
+        "text": "part one is up and you know we're",
+        "start": 40.079,
+        "duration": 5.82
+    },
+    {
+        "text": "working away at them so do that if you",
+        "start": 42.809,
+        "duration": 6.75
+    },
+    {
+        "text": "can if you can't well that's fine but if",
+        "start": 45.899,
+        "duration": 5.371
+    },
+    {
+        "text": "you can that would be great okay so this",
+        "start": 49.559,
+        "duration": 7.02
+    },
+    {
+        "text": "is max area of Island medium thousand",
+        "start": 51.27,
+        "duration": 7.17
+    },
+    {
+        "text": "seventy eight whatever given a non empty",
+        "start": 56.579,
+        "duration": 4.921
+    },
+    {
+        "text": "2d array grid of zero someone's Island",
+        "start": 58.44,
+        "duration": 4.609
+    },
+    {
+        "text": "is a group of ones connected",
+        "start": 61.5,
+        "duration": 3.9
+    },
+    {
+        "text": "horizontally or vertically you may",
+        "start": 63.049,
+        "duration": 5.651
+    },
+    {
+        "text": "assume all four find the maximum area of",
+        "start": 65.4,
+        "duration": 5.55
+    },
+    {
+        "text": "an island so what's an island one is an",
+        "start": 68.7,
+        "duration": 4.349
+    },
+    {
+        "text": "island they just said so this is an",
+        "start": 70.95,
+        "duration": 3.93
+    },
+    {
+        "text": "island this little index right here it's",
+        "start": 73.049,
+        "duration": 5.521
+    },
+    {
+        "text": "an island with an area of one so one",
+        "start": 74.88,
+        "duration": 5.91
+    },
+    {
+        "text": "cell is an area this is not an island",
+        "start": 78.57,
+        "duration": 4.65
+    },
+    {
+        "text": "it's a zero this is not an island this",
+        "start": 80.79,
+        "duration": 4.71
+    },
+    {
+        "text": "is not an island this is Nayan here's an",
+        "start": 83.22,
+        "duration": 5.82
+    },
+    {
+        "text": "island and it's one two three four this",
+        "start": 85.5,
+        "duration": 6.45
+    },
+    {
+        "text": "is the area for that's pretty big so",
+        "start": 89.04,
+        "duration": 5.16
+    },
+    {
+        "text": "that's almost the max but we see the max",
+        "start": 91.95,
+        "duration": 5.34
+    },
+    {
+        "text": "is here one two three four five six",
+        "start": 94.2,
+        "duration": 5.489
+    },
+    {
+        "text": "check that out pretty good right and",
+        "start": 97.29,
+        "duration": 4.469
+    },
+    {
+        "text": "then it's actually not they're saying",
+        "start": 99.689,
+        "duration": 3.781
+    },
+    {
+        "text": "that this doesn't count it's not",
+        "start": 101.759,
+        "duration": 3.15
+    },
+    {
+        "text": "connected because this is diagonal it",
+        "start": 103.47,
+        "duration": 3.509
+    },
+    {
+        "text": "has to be horizontally and vertically if",
+        "start": 104.909,
+        "duration": 4.35
+    },
+    {
+        "text": "it was diagonal this it would be 11 cuz",
+        "start": 106.979,
+        "duration": 3.93
+    },
+    {
+        "text": "we'd count these but nope only",
+        "start": 109.259,
+        "duration": 5.191
+    },
+    {
+        "text": "horizontally vertically so it's six you",
+        "start": 110.909,
+        "duration": 5.67
+    },
+    {
+        "text": "understand so if you guys have seen",
+        "start": 114.45,
+        "duration": 4.199
+    },
+    {
+        "text": "number of island it's another video I",
+        "start": 116.579,
+        "duration": 6.15
+    },
+    {
+        "text": "made very similar concept this is the",
+        "start": 118.649,
+        "duration": 6.121
+    },
+    {
+        "text": "same thing it's not counting the number",
+        "start": 122.729,
+        "duration": 3.271
+    },
+    {
+        "text": "of islands since we're looking for the",
+        "start": 124.77,
+        "duration": 3.299
+    },
+    {
+        "text": "biggest one so when you're looking for",
+        "start": 126.0,
+        "duration": 3.599
+    },
+    {
+        "text": "the biggest of something we're gonna",
+        "start": 128.069,
+        "duration": 3.901
+    },
+    {
+        "text": "have to have a max very right so we're",
+        "start": 129.599,
+        "duration": 3.941
+    },
+    {
+        "text": "gonna say max area",
+        "start": 131.97,
+        "duration": 5.439
+    },
+    {
+        "text": "is equal to zero right the smallest area",
+        "start": 133.54,
+        "duration": 7.47
+    },
+    {
+        "text": "we're gonna find is zero and you know",
+        "start": 137.409,
+        "duration": 5.881
+    },
+    {
+        "text": "we're gonna grab the Rose we have this",
+        "start": 141.01,
+        "duration": 4.89
+    },
+    {
+        "text": "grid representation to the array of all",
+        "start": 143.29,
+        "duration": 5.69
+    },
+    {
+        "text": "these cells and let's just grab the",
+        "start": 145.9,
+        "duration": 6.179
+    },
+    {
+        "text": "dimensions grid that length is rows and",
+        "start": 148.98,
+        "duration": 8.009
+    },
+    {
+        "text": "columns is equal to grid of 0 dot line",
+        "start": 152.079,
+        "duration": 7.321
+    },
+    {
+        "text": "and then just like number of islands",
+        "start": 156.989,
+        "duration": 6.181
+    },
+    {
+        "text": "we're gonna loop through the whole grid",
+        "start": 159.4,
+        "duration": 3.77
+    },
+    {
+        "text": "right so now we're looping through each",
+        "start": 169.049,
+        "duration": 5.741
+    },
+    {
+        "text": "cell of the grid you guys understand",
+        "start": 172.75,
+        "duration": 4.53
+    },
+    {
+        "text": "that that's pretty easy right you got 1",
+        "start": 174.79,
+        "duration": 4.979
+    },
+    {
+        "text": "2 3 4 you go through the whole row let",
+        "start": 177.28,
+        "duration": 4.019
+    },
+    {
+        "text": "me go to this one you go to this one",
+        "start": 179.769,
+        "duration": 3.87
+    },
+    {
+        "text": "every cell we're going through right and",
+        "start": 181.299,
+        "duration": 4.41
+    },
+    {
+        "text": "what we're gonna do here is we're gonna",
+        "start": 183.639,
+        "duration": 4.981
+    },
+    {
+        "text": "just update the max area each time we're",
+        "start": 185.709,
+        "duration": 5.131
+    },
+    {
+        "text": "gonna say max area is math dot max",
+        "start": 188.62,
+        "duration": 5.13
+    },
+    {
+        "text": "between whatever the current max area is",
+        "start": 190.84,
+        "duration": 5.88
+    },
+    {
+        "text": "and whatever the new whatever the max",
+        "start": 193.75,
+        "duration": 5.669
+    },
+    {
+        "text": "area of the current cell is so what's",
+        "start": 196.72,
+        "duration": 4.799
+    },
+    {
+        "text": "the max area of this zero because",
+        "start": 199.419,
+        "duration": 4.29
+    },
+    {
+        "text": "there's no island what about this zero",
+        "start": 201.519,
+        "duration": 4.68
+    },
+    {
+        "text": "what about this one see so to get",
+        "start": 203.709,
+        "duration": 4.261
+    },
+    {
+        "text": "updated there does that make sense and",
+        "start": 206.199,
+        "duration": 3.451
+    },
+    {
+        "text": "then you keep going and now the max",
+        "start": 207.97,
+        "duration": 3.18
+    },
+    {
+        "text": "there's one and then we get down to here",
+        "start": 209.65,
+        "duration": 4.199
+    },
+    {
+        "text": "oh look we're gonna find a four this",
+        "start": 211.15,
+        "duration": 5.699
+    },
+    {
+        "text": "time so you know the only hard part now",
+        "start": 213.849,
+        "duration": 5.25
+    },
+    {
+        "text": "is we're gonna have to do max area",
+        "start": 216.849,
+        "duration": 4.441
+    },
+    {
+        "text": "between we're gonna have to do",
+        "start": 219.099,
+        "duration": 4.411
+    },
+    {
+        "text": "mathematics of max area and we're gonna",
+        "start": 221.29,
+        "duration": 4.86
+    },
+    {
+        "text": "call this area function to get the area",
+        "start": 223.51,
+        "duration": 4.979
+    },
+    {
+        "text": "of the current cell so we're just gonna",
+        "start": 226.15,
+        "duration": 5.91
+    },
+    {
+        "text": "pass in IJ in the grid and that's it",
+        "start": 228.489,
+        "duration": 5.46
+    },
+    {
+        "text": "that's the whole part of this function",
+        "start": 232.06,
+        "duration": 3.299
+    },
+    {
+        "text": "now we just have to write the area",
+        "start": 233.949,
+        "duration": 7.65
+    },
+    {
+        "text": "function so let's just do this area will",
+        "start": 235.359,
+        "duration": 8.641
+    },
+    {
+        "text": "return an integer and it's gonna just be",
+        "start": 241.599,
+        "duration": 4.801
+    },
+    {
+        "text": "called area and it takes in a grid but",
+        "start": 244.0,
+        "duration": 4.859
+    },
+    {
+        "text": "it also takes in you know row it takes",
+        "start": 246.4,
+        "duration": 5.369
+    },
+    {
+        "text": "in column and it takes in the grid there",
+        "start": 248.859,
+        "duration": 5.19
+    },
+    {
+        "text": "we go right so how are we gonna",
+        "start": 251.769,
+        "duration": 4.47
+    },
+    {
+        "text": "determine the area of a cell well if",
+        "start": 254.049,
+        "duration": 5.28
+    },
+    {
+        "text": "it's a zero the area is zero right so",
+        "start": 256.239,
+        "duration": 9.451
+    },
+    {
+        "text": "you know if grid of row in the column is",
+        "start": 259.329,
+        "duration": 8.011
+    },
+    {
+        "text": "equal to zero",
+        "start": 265.69,
+        "duration": 3.93
+    },
+    {
+        "text": "then return zero right that's the area",
+        "start": 267.34,
+        "duration": 5.42
+    },
+    {
+        "text": "of the zero cell right easy enough right",
+        "start": 269.62,
+        "duration": 6.269
+    },
+    {
+        "text": "also if it's out of bounds we're gonna",
+        "start": 272.76,
+        "duration": 5.08
+    },
+    {
+        "text": "return zero too so let's just do that",
+        "start": 275.889,
+        "duration": 3.811
+    },
+    {
+        "text": "while we're at it you know let's make",
+        "start": 277.84,
+        "duration": 4.56
+    },
+    {
+        "text": "this a little bit bigger so let's say if",
+        "start": 279.7,
+        "duration": 6.6
+    },
+    {
+        "text": "Rho is less than zero or Rho is greater",
+        "start": 282.4,
+        "duration": 6.78
+    },
+    {
+        "text": "than or equal to grid dot length or",
+        "start": 286.3,
+        "duration": 8.28
+    },
+    {
+        "text": "column is less than zero or column is",
+        "start": 289.18,
+        "duration": 9.48
+    },
+    {
+        "text": "greater than or equal to grid of Rho dot",
+        "start": 294.58,
+        "duration": 8.43
+    },
+    {
+        "text": "lines then those are all out of bounds -",
+        "start": 298.66,
+        "duration": 6.06
+    },
+    {
+        "text": "right does that make sense to you guys",
+        "start": 303.01,
+        "duration": 3.57
+    },
+    {
+        "text": "it should make sense it's pretty",
+        "start": 304.72,
+        "duration": 7.71
+    },
+    {
+        "text": "straightforward you know then that's it",
+        "start": 306.58,
+        "duration": 6.33
+    },
+    {
+        "text": "pretty much",
+        "start": 312.43,
+        "duration": 2.28
+    },
+    {
+        "text": "and now how are we gonna know that we",
+        "start": 312.91,
+        "duration": 4.71
+    },
+    {
+        "text": "don't see how are we gonna recur somnus",
+        "start": 314.71,
+        "duration": 4.679
+    },
+    {
+        "text": "well it's the same as number of islands",
+        "start": 317.62,
+        "duration": 4.23
+    },
+    {
+        "text": "we're basically gonna do return if it's",
+        "start": 319.389,
+        "duration": 5.971
+    },
+    {
+        "text": "not a zero we're gonna say return 1 plus",
+        "start": 321.85,
+        "duration": 8.58
+    },
+    {
+        "text": "a recursive call on Rho plus 1 for the",
+        "start": 325.36,
+        "duration": 9.179
+    },
+    {
+        "text": "you know vertically upwards position you",
+        "start": 330.43,
+        "duration": 7.68
+    },
+    {
+        "text": "know like the upper row with the same",
+        "start": 334.539,
+        "duration": 6.481
+    },
+    {
+        "text": "column we're just checking horizontally",
+        "start": 338.11,
+        "duration": 5.369
+    },
+    {
+        "text": "and vertically you know if that makes",
+        "start": 341.02,
+        "duration": 2.97
+    },
+    {
+        "text": "sense",
+        "start": 343.479,
+        "duration": 7.171
+    },
+    {
+        "text": "plus area of Rho minus 1 column litter",
+        "start": 343.99,
+        "duration": 8.549
+    },
+    {
+        "text": "if you check number violence this is the",
+        "start": 350.65,
+        "duration": 6.48
+    },
+    {
+        "text": "same exact strategy minus 1 and plus",
+        "start": 352.539,
+        "duration": 10.291
+    },
+    {
+        "text": "area of Rho plus 1 there we go",
+        "start": 357.13,
+        "duration": 7.86
+    },
+    {
+        "text": "so we would see this is what we see we",
+        "start": 362.83,
+        "duration": 4.77
+    },
+    {
+        "text": "see a zero and we'd return zero right",
+        "start": 364.99,
+        "duration": 5.64
+    },
+    {
+        "text": "but if we see a 1 we would this would",
+        "start": 367.6,
+        "duration": 5.4
+    },
+    {
+        "text": "never get hit and we would say you know",
+        "start": 370.63,
+        "duration": 5.789
+    },
+    {
+        "text": "okay 1 plus area of and then we check",
+        "start": 373.0,
+        "duration": 5.4
+    },
+    {
+        "text": "all the other cells to and get that",
+        "start": 376.419,
+        "duration": 4.231
+    },
+    {
+        "text": "total so we'd say 1 plus but these",
+        "start": 378.4,
+        "duration": 5.76
+    },
+    {
+        "text": "alternate Eero so it's just 1 and then",
+        "start": 380.65,
+        "duration": 5.22
+    },
+    {
+        "text": "that gets returned up here and you take",
+        "start": 384.16,
+        "duration": 3.42
+    },
+    {
+        "text": "the max of those values at first it",
+        "start": 385.87,
+        "duration": 3.0
+    },
+    {
+        "text": "would be 1 and 0 and then it would",
+        "start": 387.58,
+        "duration": 2.97
+    },
+    {
+        "text": "become 1 and then at the end of this we",
+        "start": 388.87,
+        "duration": 5.94
+    },
+    {
+        "text": "just return max area now why won't this",
+        "start": 390.55,
+        "duration": 8.07
+    },
+    {
+        "text": "work well this won't work because we",
+        "start": 394.81,
+        "duration": 6.359
+    },
+    {
+        "text": "because we're doing recursive calls",
+        "start": 398.62,
+        "duration": 4.799
+    },
+    {
+        "text": "we're going to have seen this element",
+        "start": 401.169,
+        "duration": 4.201
+    },
+    {
+        "text": "and then we're gonna see this one and",
+        "start": 403.419,
+        "duration": 3.541
+    },
+    {
+        "text": "we're gonna call a recursive call in",
+        "start": 405.37,
+        "duration": 2.789
+    },
+    {
+        "text": "this element if that makes sense right",
+        "start": 406.96,
+        "duration": 3.72
+    },
+    {
+        "text": "we see this first one and we check to",
+        "start": 408.159,
+        "duration": 5.461
+    },
+    {
+        "text": "the left of it because we do column",
+        "start": 410.68,
+        "duration": 4.769
+    },
+    {
+        "text": "minus one column minus one is this",
+        "start": 413.62,
+        "duration": 4.289
+    },
+    {
+        "text": "element so we actually we're gonna have",
+        "start": 415.449,
+        "duration": 4.861
+    },
+    {
+        "text": "to keep track of things we've seen just",
+        "start": 417.909,
+        "duration": 5.551
+    },
+    {
+        "text": "so that we don't reach reverse over to",
+        "start": 420.31,
+        "duration": 5.729
+    },
+    {
+        "text": "islands and you know count them again",
+        "start": 423.46,
+        "duration": 5.579
+    },
+    {
+        "text": "that would be bad so this won't work",
+        "start": 426.039,
+        "duration": 5.19
+    },
+    {
+        "text": "until we do this we just have to say",
+        "start": 429.039,
+        "duration": 4.831
+    },
+    {
+        "text": "boolean scene and then we'll initialize",
+        "start": 431.229,
+        "duration": 7.59
+    },
+    {
+        "text": "it right here we'll just say scene is",
+        "start": 433.87,
+        "duration": 10.049
+    },
+    {
+        "text": "equal to new boolean of rows columns and",
+        "start": 438.819,
+        "duration": 6.541
+    },
+    {
+        "text": "that should be it and this time you guys",
+        "start": 443.919,
+        "duration": 4.53
+    },
+    {
+        "text": "should be able to see you know the code",
+        "start": 445.36,
+        "duration": 5.13
+    },
+    {
+        "text": "and let me know if this is it works for",
+        "start": 448.449,
+        "duration": 3.601
+    },
+    {
+        "text": "you guys and we might have to fix a",
+        "start": 450.49,
+        "duration": 4.349
+    },
+    {
+        "text": "couple of things here but oh if that",
+        "start": 452.05,
+        "duration": 6.869
+    },
+    {
+        "text": "grid to all these methods and yeah you",
+        "start": 454.839,
+        "duration": 6.061
+    },
+    {
+        "text": "guys might you know let me know if he",
+        "start": 458.919,
+        "duration": 4.59
+    },
+    {
+        "text": "goes like this you know my face on the",
+        "start": 460.9,
+        "duration": 5.509
+    },
+    {
+        "text": "other side of the screen",
+        "start": 463.509,
+        "duration": 2.9
+    },
+    {
+        "text": "you know Stack Overflow that's not good",
+        "start": 469.56,
+        "duration": 6.4
+    },
+    {
+        "text": "that's not good at all what are we doing",
+        "start": 473.5,
+        "duration": 5.37
+    },
+    {
+        "text": "rope us one row minus one column minus",
+        "start": 475.96,
+        "duration": 6.479
+    },
+    {
+        "text": "one column plus one that's fine to me we",
+        "start": 478.87,
+        "duration": 6.06
+    },
+    {
+        "text": "also have to say seen we have to set",
+        "start": 482.439,
+        "duration": 4.32
+    },
+    {
+        "text": "okay here's the last part we made the",
+        "start": 484.93,
+        "duration": 3.719
+    },
+    {
+        "text": "same thing but how we never said it so",
+        "start": 486.759,
+        "duration": 4.321
+    },
+    {
+        "text": "we have to say seen of row and column",
+        "start": 488.649,
+        "duration": 4.711
+    },
+    {
+        "text": "the current row and column is equal to",
+        "start": 491.08,
+        "duration": 4.35
+    },
+    {
+        "text": "true so now we've seen it and we have to",
+        "start": 493.36,
+        "duration": 4.859
+    },
+    {
+        "text": "do another check here god I forgot a",
+        "start": 495.43,
+        "duration": 3.57
+    },
+    {
+        "text": "couple things",
+        "start": 498.219,
+        "duration": 8.85
+    },
+    {
+        "text": "also if seen row and column so we're",
+        "start": 499.0,
+        "duration": 10.05
+    },
+    {
+        "text": "gonna return 0 if we've already seen it",
+        "start": 507.069,
+        "duration": 3.75
+    },
+    {
+        "text": "as well right that makes sense so if",
+        "start": 509.05,
+        "duration": 3.899
+    },
+    {
+        "text": "we've seen the element already we're",
+        "start": 510.819,
+        "duration": 4.441
+    },
+    {
+        "text": "just gonna return 0 and if we haven't we",
+        "start": 512.949,
+        "duration": 4.02
+    },
+    {
+        "text": "set it to true and then we actually have",
+        "start": 515.26,
+        "duration": 3.449
+    },
+    {
+        "text": "it there we go that's the success hope",
+        "start": 516.969,
+        "duration": 3.06
+    },
+    {
+        "text": "you guys understand that let me know if",
+        "start": 518.709,
+        "duration": 2.52
+    },
+    {
+        "text": "you didn't understand it my first",
+        "start": 520.029,
+        "duration": 2.971
+    },
+    {
+        "text": "explanation videos better I'm not gonna",
+        "start": 521.229,
+        "duration": 5.22
+    },
+    {
+        "text": "do it again after this because you know",
+        "start": 523.0,
+        "duration": 5.399
+    },
+    {
+        "text": "we already had that mishap let's see how",
+        "start": 526.449,
+        "duration": 4.32
+    },
+    {
+        "text": "the I think you should be able to have",
+        "start": 528.399,
+        "duration": 5.011
+    },
+    {
+        "text": "seen the code now this time but I mean I",
+        "start": 530.769,
+        "duration": 4.261
+    },
+    {
+        "text": "guess thank please support my page",
+        "start": 533.41,
+        "duration": 2.97
+    },
+    {
+        "text": "if you want that study guide I'm still",
+        "start": 535.03,
+        "duration": 4.47
+    },
+    {
+        "text": "working on it and you know we're back on",
+        "start": 536.38,
+        "duration": 5.55
+    },
+    {
+        "text": "the lead code grind guys medium problem",
+        "start": 539.5,
+        "duration": 4.29
+    },
+    {
+        "text": "to cap it off",
+        "start": 541.93,
+        "duration": 4.23
+    },
+    {
+        "text": "let's give it a like and thank you guys",
+        "start": 543.79,
+        "duration": 4.41
+    },
+    {
+        "text": "please subscribe please like and I'll",
+        "start": 546.16,
+        "duration": 4.94
+    },
+    {
+        "text": "talk to you guys later",
+        "start": 548.2,
+        "duration": 2.9
+    },
+    {
+        "text": "yeah that wasn't cool",
+        "start": 554.46,
+        "duration": 6.6
+    }
+]

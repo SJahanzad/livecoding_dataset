@@ -1,0 +1,797 @@
+[
+    {
+        "text": "hey what's up guys Nick white here I do",
+        "start": 0.62,
+        "duration": 4.27
+    },
+    {
+        "text": "tech encoding stuff on twitching YouTube",
+        "start": 3.24,
+        "duration": 3.63
+    },
+    {
+        "text": "check the description below for all my",
+        "start": 4.89,
+        "duration": 3.87
+    },
+    {
+        "text": "information if you want to support me I",
+        "start": 6.87,
+        "duration": 5.97
+    },
+    {
+        "text": "do P premium problems on patreon and my",
+        "start": 8.76,
+        "duration": 6.859
+    },
+    {
+        "text": "discord is pretty cool so check that out",
+        "start": 12.84,
+        "duration": 5.04
+    },
+    {
+        "text": "this problem was called distance between",
+        "start": 15.619,
+        "duration": 4.871
+    },
+    {
+        "text": "bus stops it's pretty easy and it looks",
+        "start": 17.88,
+        "duration": 4.319
+    },
+    {
+        "text": "new there's not that many votes on it",
+        "start": 20.49,
+        "duration": 3.89
+    },
+    {
+        "text": "and I just did it and it was pretty easy",
+        "start": 22.199,
+        "duration": 5.041
+    },
+    {
+        "text": "it's kind of a little bit weird how they",
+        "start": 24.38,
+        "duration": 4.989
+    },
+    {
+        "text": "word it and the problems kind of broken",
+        "start": 27.24,
+        "duration": 4.199
+    },
+    {
+        "text": "a little bit but you know bear with me",
+        "start": 29.369,
+        "duration": 3.421
+    },
+    {
+        "text": "here it's pretty easy we'll get it done",
+        "start": 31.439,
+        "duration": 3.87
+    },
+    {
+        "text": "in a second so bus has n stops number",
+        "start": 32.79,
+        "duration": 4.8
+    },
+    {
+        "text": "from 0 to n minus 1 that for me circle",
+        "start": 35.309,
+        "duration": 4.41
+    },
+    {
+        "text": "in the examples they are squares but",
+        "start": 37.59,
+        "duration": 4.26
+    },
+    {
+        "text": "whatever they say it's a circle we know",
+        "start": 39.719,
+        "duration": 3.871
+    },
+    {
+        "text": "that the distance between all pairs of",
+        "start": 41.85,
+        "duration": 3.209
+    },
+    {
+        "text": "neighboring stops dissin size the",
+        "start": 43.59,
+        "duration": 3.539
+    },
+    {
+        "text": "distance between number stops I and I",
+        "start": 45.059,
+        "duration": 5.011
+    },
+    {
+        "text": "plus 1 modulus n that seems like useless",
+        "start": 47.129,
+        "duration": 4.711
+    },
+    {
+        "text": "sentence because you'll see what the",
+        "start": 50.07,
+        "duration": 4.11
+    },
+    {
+        "text": "problem really is in a second the bus",
+        "start": 51.84,
+        "duration": 4.379
+    },
+    {
+        "text": "goes along both directions clockwise and",
+        "start": 54.18,
+        "duration": 4.559
+    },
+    {
+        "text": "counterclockwise return the shortest",
+        "start": 56.219,
+        "duration": 4.381
+    },
+    {
+        "text": "distance between the given start and",
+        "start": 58.739,
+        "duration": 5.07
+    },
+    {
+        "text": "destination stops ok so we have this",
+        "start": 60.6,
+        "duration": 4.889
+    },
+    {
+        "text": "distance array all of these are",
+        "start": 63.809,
+        "duration": 4.92
+    },
+    {
+        "text": "distances 1 2 3 & 4 we have a starting",
+        "start": 65.489,
+        "duration": 5.791
+    },
+    {
+        "text": "index in a destination index so we want",
+        "start": 68.729,
+        "duration": 5.761
+    },
+    {
+        "text": "to go from here this one to 2 and we can",
+        "start": 71.28,
+        "duration": 6.54
+    },
+    {
+        "text": "go clockwise so we can go 1 2 2 or we",
+        "start": 74.49,
+        "duration": 9.15
+    },
+    {
+        "text": "can go for 2 3 2 2 so obviously we're",
+        "start": 77.82,
+        "duration": 7.409
+    },
+    {
+        "text": "going to go 1 2 2 because the distance",
+        "start": 83.64,
+        "duration": 4.38
+    },
+    {
+        "text": "from 1 to 2 is just 1 compared to 4 plus",
+        "start": 85.229,
+        "duration": 6.811
+    },
+    {
+        "text": "3 plus 2 is 9 and another example down",
+        "start": 88.02,
+        "duration": 6.18
+    },
+    {
+        "text": "here would be you know 1 2 3 4 we're",
+        "start": 92.04,
+        "duration": 4.92
+    },
+    {
+        "text": "going from 0 to position 2 now so we're",
+        "start": 94.2,
+        "duration": 7.23
+    },
+    {
+        "text": "going from you know it was 1 we go 1 2 2",
+        "start": 96.96,
+        "duration": 11.79
+    },
+    {
+        "text": "2 3 or we can go you know 4 to 3 so",
+        "start": 101.43,
+        "duration": 10.2
+    },
+    {
+        "text": "basically here's the problem with the",
+        "start": 108.75,
+        "duration": 5.909
+    },
+    {
+        "text": "logic I guess is if you look at these",
+        "start": 111.63,
+        "duration": 9.0
+    },
+    {
+        "text": "diagrams you have 0 is a 1 of the spots",
+        "start": 114.659,
+        "duration": 9.691
+    },
+    {
+        "text": "on these diagrams and then it does 1 2 3",
+        "start": 120.63,
+        "duration": 6.599
+    },
+    {
+        "text": "and then it doesn't have 4 so they",
+        "start": 124.35,
+        "duration": 6.99
+    },
+    {
+        "text": "should be putting the 4 I think in here",
+        "start": 127.229,
+        "duration": 5.461
+    },
+    {
+        "text": "and then it would have made more sense",
+        "start": 131.34,
+        "duration": 2.02
+    },
+    {
+        "text": "but",
+        "start": 132.69,
+        "duration": 2.35
+    },
+    {
+        "text": "no it's a little bit confusing with",
+        "start": 133.36,
+        "duration": 3.72
+    },
+    {
+        "text": "these diagrams and the other thing is",
+        "start": 135.04,
+        "duration": 3.87
+    },
+    {
+        "text": "when you're going counterclockwise they",
+        "start": 137.08,
+        "duration": 4.83
+    },
+    {
+        "text": "want you to not count this index so when",
+        "start": 138.91,
+        "duration": 5.28
+    },
+    {
+        "text": "you start at zero you're starting it",
+        "start": 141.91,
+        "duration": 6.12
+    },
+    {
+        "text": "goes four to seven you know it says 7 or",
+        "start": 144.19,
+        "duration": 5.52
+    },
+    {
+        "text": "3 but when you go from the front",
+        "start": 148.03,
+        "duration": 4.23
+    },
+    {
+        "text": "clockwise you count 1 & 2 you know what",
+        "start": 149.71,
+        "duration": 2.91
+    },
+    {
+        "text": "I mean",
+        "start": 152.26,
+        "duration": 2.49
+    },
+    {
+        "text": "so you count 1 & 2 to get to 2 and you",
+        "start": 152.62,
+        "duration": 4.83
+    },
+    {
+        "text": "count 4 & 3 to get to 2 from the back so",
+        "start": 154.75,
+        "duration": 4.2
+    },
+    {
+        "text": "it's almost like this is the starting",
+        "start": 157.45,
+        "duration": 4.35
+    },
+    {
+        "text": "index when you go counterclockwise so",
+        "start": 158.95,
+        "duration": 4.68
+    },
+    {
+        "text": "it's a little bit tricky just gotta kind",
+        "start": 161.8,
+        "duration": 3.3
+    },
+    {
+        "text": "of get that in your mind look through it",
+        "start": 163.63,
+        "duration": 3.48
+    },
+    {
+        "text": "a little bit before we start I'm linking",
+        "start": 165.1,
+        "duration": 3.27
+    },
+    {
+        "text": "the problem below when you want to check",
+        "start": 167.11,
+        "duration": 3.15
+    },
+    {
+        "text": "it out but other than that it's pretty",
+        "start": 168.37,
+        "duration": 4.41
+    },
+    {
+        "text": "easy so here's the strategy",
+        "start": 170.26,
+        "duration": 4.89
+    },
+    {
+        "text": "you just make variables for the",
+        "start": 172.78,
+        "duration": 4.02
+    },
+    {
+        "text": "clockwise distance it's going to be a",
+        "start": 175.15,
+        "duration": 5.58
+    },
+    {
+        "text": "sum of distances as we Traverse and then",
+        "start": 176.8,
+        "duration": 6.38
+    },
+    {
+        "text": "we'll have a total distance sum as well",
+        "start": 180.73,
+        "duration": 5.22
+    },
+    {
+        "text": "so you know this should be pretty",
+        "start": 183.18,
+        "duration": 6.67
+    },
+    {
+        "text": "intuitive but we're gonna loop through",
+        "start": 185.95,
+        "duration": 8.34
+    },
+    {
+        "text": "the distance array so and to calculate",
+        "start": 189.85,
+        "duration": 6.27
+    },
+    {
+        "text": "the total sum I don't know if you guys",
+        "start": 194.29,
+        "duration": 4.86
+    },
+    {
+        "text": "ever did a sum before the total distance",
+        "start": 196.12,
+        "duration": 5.13
+    },
+    {
+        "text": "is just going to be plus equal every",
+        "start": 199.15,
+        "duration": 4.14
+    },
+    {
+        "text": "distance in the distance array so this",
+        "start": 201.25,
+        "duration": 3.57
+    },
+    {
+        "text": "is for sure going to be the total",
+        "start": 203.29,
+        "duration": 4.229
+    },
+    {
+        "text": "distance right and now all we have to do",
+        "start": 204.82,
+        "duration": 4.71
+    },
+    {
+        "text": "is calculate the clockwise distance and",
+        "start": 207.519,
+        "duration": 4.381
+    },
+    {
+        "text": "what we're gonna return is the math dot",
+        "start": 209.53,
+        "duration": 6.14
+    },
+    {
+        "text": "min between the clockwise distance and",
+        "start": 211.9,
+        "duration": 8.399
+    },
+    {
+        "text": "the total distance minus the clockwise",
+        "start": 215.67,
+        "duration": 7.21
+    },
+    {
+        "text": "distance because total distance minus",
+        "start": 220.299,
+        "duration": 3.991
+    },
+    {
+        "text": "clockwise distance is the",
+        "start": 222.88,
+        "duration": 3.54
+    },
+    {
+        "text": "counterclockwise distance right you know",
+        "start": 224.29,
+        "duration": 4.02
+    },
+    {
+        "text": "what I mean it's a half and a half will",
+        "start": 226.42,
+        "duration": 3.24
+    },
+    {
+        "text": "not happen half thing but you know",
+        "start": 228.31,
+        "duration": 3.78
+    },
+    {
+        "text": "whatever is in clockwise distance has to",
+        "start": 229.66,
+        "duration": 5.389
+    },
+    {
+        "text": "be counterclockwise the opposite right",
+        "start": 232.09,
+        "duration": 5.91
+    },
+    {
+        "text": "you know for example you know the",
+        "start": 235.049,
+        "duration": 8.171
+    },
+    {
+        "text": "clockwise distance is 1 but the sum of",
+        "start": 238.0,
+        "duration": 8.19
+    },
+    {
+        "text": "all these values is you know 4 7 9 10",
+        "start": 243.22,
+        "duration": 5.67
+    },
+    {
+        "text": "and then you just do you know 10 minus 1",
+        "start": 246.19,
+        "duration": 4.47
+    },
+    {
+        "text": "and you would get 9 as the",
+        "start": 248.89,
+        "duration": 4.14
+    },
+    {
+        "text": "counterclockwise distance right it's",
+        "start": 250.66,
+        "duration": 4.95
+    },
+    {
+        "text": "obvious so all we have to do is",
+        "start": 253.03,
+        "duration": 4.019
+    },
+    {
+        "text": "calculate the clockwise distance and",
+        "start": 255.61,
+        "duration": 2.76
+    },
+    {
+        "text": "we're done with this problem so there's",
+        "start": 257.049,
+        "duration": 3.301
+    },
+    {
+        "text": "two conditions we have to account for",
+        "start": 258.37,
+        "duration": 5.31
+    },
+    {
+        "text": "right starting the starting index",
+        "start": 260.35,
+        "duration": 5.069
+    },
+    {
+        "text": "doesn't have to be less than the",
+        "start": 263.68,
+        "duration": 3.84
+    },
+    {
+        "text": "destination you know destination can be",
+        "start": 265.419,
+        "duration": 3.9
+    },
+    {
+        "text": "and x1 in the starting index could be",
+        "start": 267.52,
+        "duration": 3.81
+    },
+    {
+        "text": "indexed too so we have to just do two",
+        "start": 269.319,
+        "duration": 4.021
+    },
+    {
+        "text": "checks we have to say okay well if",
+        "start": 271.33,
+        "duration": 4.559
+    },
+    {
+        "text": "starting index is less than destination",
+        "start": 273.34,
+        "duration": 5.639
+    },
+    {
+        "text": "that's the more normal one we're gonna",
+        "start": 275.889,
+        "duration": 7.981
+    },
+    {
+        "text": "say well then also I have to be greater",
+        "start": 278.979,
+        "duration": 7.861
+    },
+    {
+        "text": "than or equal to start and I has to be",
+        "start": 283.87,
+        "duration": 4.889
+    },
+    {
+        "text": "less than destination for us to count",
+        "start": 286.84,
+        "duration": 5.579
+    },
+    {
+        "text": "this in the clockwise distance so if",
+        "start": 288.759,
+        "duration": 5.671
+    },
+    {
+        "text": "these conditions are all met we can",
+        "start": 292.419,
+        "duration": 4.021
+    },
+    {
+        "text": "increment clockwise distance by that",
+        "start": 294.43,
+        "duration": 5.34
+    },
+    {
+        "text": "distance right that makes sense right so",
+        "start": 296.44,
+        "duration": 6.75
+    },
+    {
+        "text": "from zero to one if start is less than",
+        "start": 299.77,
+        "duration": 5.25
+    },
+    {
+        "text": "destination so if zero is less than one",
+        "start": 303.19,
+        "duration": 2.64
+    },
+    {
+        "text": "that's true",
+        "start": 305.02,
+        "duration": 3.54
+    },
+    {
+        "text": "and I is greater than or equal to start",
+        "start": 305.83,
+        "duration": 5.489
+    },
+    {
+        "text": "meaning I is at the starting index and",
+        "start": 308.56,
+        "duration": 5.609
+    },
+    {
+        "text": "it is less than the destination index so",
+        "start": 311.319,
+        "duration": 5.671
+    },
+    {
+        "text": "when I is zero we count that one onto",
+        "start": 314.169,
+        "duration": 4.921
+    },
+    {
+        "text": "our clockwise distance and that's it and",
+        "start": 316.99,
+        "duration": 3.39
+    },
+    {
+        "text": "then it would break out and we'd be done",
+        "start": 319.09,
+        "duration": 4.889
+    },
+    {
+        "text": "now here's the other condition only",
+        "start": 320.38,
+        "duration": 5.249
+    },
+    {
+        "text": "other one is the start is greater than",
+        "start": 323.979,
+        "duration": 3.87
+    },
+    {
+        "text": "the destination and in that case like in",
+        "start": 325.629,
+        "duration": 4.35
+    },
+    {
+        "text": "this case if let's say the start was",
+        "start": 327.849,
+        "duration": 4.261
+    },
+    {
+        "text": "three and then we had to go from this",
+        "start": 329.979,
+        "duration": 4.62
+    },
+    {
+        "text": "two to this three we would want to",
+        "start": 332.11,
+        "duration": 6.57
+    },
+    {
+        "text": "account for the I being greater than or",
+        "start": 334.599,
+        "duration": 6.211
+    },
+    {
+        "text": "equal to the start so we would want to",
+        "start": 338.68,
+        "duration": 7.28
+    },
+    {
+        "text": "count you know the distance from",
+        "start": 340.81,
+        "duration": 7.59
+    },
+    {
+        "text": "anywhere after the starting point so if",
+        "start": 345.96,
+        "duration": 4.69
+    },
+    {
+        "text": "the start was three we'd want to count",
+        "start": 348.4,
+        "duration": 5.31
+    },
+    {
+        "text": "this three this four and then this one",
+        "start": 350.65,
+        "duration": 4.829
+    },
+    {
+        "text": "because that's clockwise to get to this",
+        "start": 353.71,
+        "duration": 4.5
+    },
+    {
+        "text": "two right you go to the right so from we",
+        "start": 355.479,
+        "duration": 5.25
+    },
+    {
+        "text": "do three four and one so we would want",
+        "start": 358.21,
+        "duration": 4.949
+    },
+    {
+        "text": "to count things aft greater than or",
+        "start": 360.729,
+        "duration": 6.99
+    },
+    {
+        "text": "equal to the starting points or not and",
+        "start": 363.159,
+        "duration": 6.48
+    },
+    {
+        "text": "anymore that's all we had to change is",
+        "start": 367.719,
+        "duration": 4.92
+    },
+    {
+        "text": "the or I has to also be less than the",
+        "start": 369.639,
+        "duration": 4.951
+    },
+    {
+        "text": "destination so so that we can go to the",
+        "start": 372.639,
+        "duration": 3.601
+    },
+    {
+        "text": "end of the array and then when we're at",
+        "start": 374.59,
+        "duration": 4.71
+    },
+    {
+        "text": "the beginning we can account for those",
+        "start": 376.24,
+        "duration": 6.419
+    },
+    {
+        "text": "as well you know before so that's it",
+        "start": 379.3,
+        "duration": 5.28
+    },
+    {
+        "text": "that's all the that's all you got to do",
+        "start": 382.659,
+        "duration": 4.701
+    },
+    {
+        "text": "and we can submit that and it passes",
+        "start": 384.58,
+        "duration": 5.579
+    },
+    {
+        "text": "hopefully that made sense it wasn't too",
+        "start": 387.36,
+        "duration": 4.69
+    },
+    {
+        "text": "difficult and the problems pretty much",
+        "start": 390.159,
+        "duration": 5.88
+    },
+    {
+        "text": "built not really great but it's fine you",
+        "start": 392.05,
+        "duration": 5.369
+    },
+    {
+        "text": "know whatever we're doing all the",
+        "start": 396.039,
+        "duration": 4.181
+    },
+    {
+        "text": "problems so I'm doing them whatever",
+        "start": 397.419,
+        "duration": 6.011
+    },
+    {
+        "text": "let me know you guys think and yeah",
+        "start": 400.22,
+        "duration": 5.07
+    },
+    {
+        "text": "thanks for watching and I'll see you",
+        "start": 403.43,
+        "duration": 4.55
+    },
+    {
+        "text": "guys in the",
+        "start": 405.29,
+        "duration": 2.69
+    }
+]

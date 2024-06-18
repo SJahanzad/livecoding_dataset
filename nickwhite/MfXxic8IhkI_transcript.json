@@ -1,0 +1,1002 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white I do",
+        "start": 1.31,
+        "duration": 3.82
+    },
+    {
+        "text": "tech encoding stuff on twitch and",
+        "start": 3.689,
+        "duration": 3.601
+    },
+    {
+        "text": "YouTube and I'm doing all the leak oh",
+        "start": 5.13,
+        "duration": 3.63
+    },
+    {
+        "text": "problems everything's in the description",
+        "start": 7.29,
+        "duration": 3.3
+    },
+    {
+        "text": "and my youtube channel has a playlist of",
+        "start": 8.76,
+        "duration": 3.6
+    },
+    {
+        "text": "all these little code problems doing all",
+        "start": 10.59,
+        "duration": 2.91
+    },
+    {
+        "text": "the tree ones today",
+        "start": 12.36,
+        "duration": 3.27
+    },
+    {
+        "text": "this one's called distribute coins in a",
+        "start": 13.5,
+        "duration": 5.85
+    },
+    {
+        "text": "binary tree so given the root of a",
+        "start": 15.63,
+        "duration": 6.0
+    },
+    {
+        "text": "binary tree with n nodes each node in",
+        "start": 19.35,
+        "duration": 5.189
+    },
+    {
+        "text": "the tree has no dot Bal coins and there",
+        "start": 21.63,
+        "duration": 4.92
+    },
+    {
+        "text": "are n coins total in one move we might",
+        "start": 24.539,
+        "duration": 5.011
+    },
+    {
+        "text": "choose to adjacent moves to adjacent",
+        "start": 26.55,
+        "duration": 6.54
+    },
+    {
+        "text": "nodes and move one coin from the no.1",
+        "start": 29.55,
+        "duration": 7.05
+    },
+    {
+        "text": "one node to another ok so I got a little",
+        "start": 33.09,
+        "duration": 5.25
+    },
+    {
+        "text": "bit tangled up in the wording there but",
+        "start": 36.6,
+        "duration": 3.779
+    },
+    {
+        "text": "basically a node will have a bunch of",
+        "start": 38.34,
+        "duration": 3.84
+    },
+    {
+        "text": "coins it'll have access cones and you",
+        "start": 40.379,
+        "duration": 5.281
+    },
+    {
+        "text": "want to return the number of moves",
+        "start": 42.18,
+        "duration": 5.609
+    },
+    {
+        "text": "that's gonna take for us to distribute",
+        "start": 45.66,
+        "duration": 4.71
+    },
+    {
+        "text": "the coins evenly among the whole binary",
+        "start": 47.789,
+        "duration": 4.77
+    },
+    {
+        "text": "tree right so you can see that the route",
+        "start": 50.37,
+        "duration": 4.74
+    },
+    {
+        "text": "has three coins here but these two",
+        "start": 52.559,
+        "duration": 4.14
+    },
+    {
+        "text": "children don't have notes so it takes",
+        "start": 55.11,
+        "duration": 4.32
+    },
+    {
+        "text": "two nodes two moves because we just give",
+        "start": 56.699,
+        "duration": 3.871
+    },
+    {
+        "text": "one to the left and one to the right",
+        "start": 59.43,
+        "duration": 4.23
+    },
+    {
+        "text": "this one takes three moves because we're",
+        "start": 60.57,
+        "duration": 5.22
+    },
+    {
+        "text": "at the leaf the left leaf node and it",
+        "start": 63.66,
+        "duration": 3.81
+    },
+    {
+        "text": "only takes one move to get to the parent",
+        "start": 65.79,
+        "duration": 4.05
+    },
+    {
+        "text": "but it takes two and it moves to get to",
+        "start": 67.47,
+        "duration": 4.98
+    },
+    {
+        "text": "the rightmost node right and then you",
+        "start": 69.84,
+        "duration": 4.02
+    },
+    {
+        "text": "can look at the rest of this it's pretty",
+        "start": 72.45,
+        "duration": 4.349
+    },
+    {
+        "text": "self-explanatory how this works you just",
+        "start": 73.86,
+        "duration": 4.41
+    },
+    {
+        "text": "keep we're just returning the number of",
+        "start": 76.799,
+        "duration": 2.64
+    },
+    {
+        "text": "moves it'll take to evenly distribute",
+        "start": 78.27,
+        "duration": 3.989
+    },
+    {
+        "text": "all these coins so to do this this",
+        "start": 79.439,
+        "duration": 4.771
+    },
+    {
+        "text": "actually took me a few minutes if anyone",
+        "start": 82.259,
+        "duration": 3.93
+    },
+    {
+        "text": "was watching my stream to figure out",
+        "start": 84.21,
+        "duration": 4.65
+    },
+    {
+        "text": "because of its kind of just a",
+        "start": 86.189,
+        "duration": 5.79
+    },
+    {
+        "text": "mathematical thing that you have to like",
+        "start": 88.86,
+        "duration": 5.34
+    },
+    {
+        "text": "know it took me a while I wanted to",
+        "start": 91.979,
+        "duration": 4.441
+    },
+    {
+        "text": "figure out like why but I looked at the",
+        "start": 94.2,
+        "duration": 3.989
+    },
+    {
+        "text": "solution and I actually have this",
+        "start": 96.42,
+        "duration": 4.379
+    },
+    {
+        "text": "diagram to show you guys but basically",
+        "start": 98.189,
+        "duration": 5.281
+    },
+    {
+        "text": "the number of moves that it's going to",
+        "start": 100.799,
+        "duration": 4.371
+    },
+    {
+        "text": "take to evenly distribute these",
+        "start": 103.47,
+        "duration": 4.259
+    },
+    {
+        "text": "corresponds exactly to what we're gonna",
+        "start": 105.17,
+        "duration": 4.0
+    },
+    {
+        "text": "do to solve this is we're going to",
+        "start": 107.729,
+        "duration": 3.871
+    },
+    {
+        "text": "traverse the whole tree and just take",
+        "start": 109.17,
+        "duration": 5.4
+    },
+    {
+        "text": "the absolute value of the current node",
+        "start": 111.6,
+        "duration": 6.72
+    },
+    {
+        "text": "and add it to an ongoing sum and then",
+        "start": 114.57,
+        "duration": 5.88
+    },
+    {
+        "text": "subtract one from that sum at the very",
+        "start": 118.32,
+        "duration": 5.549
+    },
+    {
+        "text": "end right so you could see I don't know",
+        "start": 120.45,
+        "duration": 5.4
+    },
+    {
+        "text": "if I can explain this value but you",
+        "start": 123.869,
+        "duration": 3.811
+    },
+    {
+        "text": "could see these are the absolute values",
+        "start": 125.85,
+        "duration": 5.189
+    },
+    {
+        "text": "of all of the notes here right and it's",
+        "start": 127.68,
+        "duration": 5.58
+    },
+    {
+        "text": "just a fact that the absolute value of",
+        "start": 131.039,
+        "duration": 2.731
+    },
+    {
+        "text": "all",
+        "start": 133.26,
+        "duration": 2.28
+    },
+    {
+        "text": "the notes together - one is going to",
+        "start": 133.77,
+        "duration": 3.57
+    },
+    {
+        "text": "give us the exact amount of moves that",
+        "start": 135.54,
+        "duration": 3.72
+    },
+    {
+        "text": "we need to distribute the coins evenly",
+        "start": 137.34,
+        "duration": 2.97
+    },
+    {
+        "text": "it's just a fact",
+        "start": 139.26,
+        "duration": 3.51
+    },
+    {
+        "text": "there's reasoning behind it but you just",
+        "start": 140.31,
+        "duration": 4.68
+    },
+    {
+        "text": "have to realize that that's a fact and I",
+        "start": 142.77,
+        "duration": 3.57
+    },
+    {
+        "text": "was trying to figure I was like I don't",
+        "start": 144.99,
+        "duration": 3.57
+    },
+    {
+        "text": "figure this out but it's just that is",
+        "start": 146.34,
+        "duration": 4.86
+    },
+    {
+        "text": "the that the absolute value of all the",
+        "start": 148.56,
+        "duration": 4.68
+    },
+    {
+        "text": "nodes together - one is gonna be the",
+        "start": 151.2,
+        "duration": 4.17
+    },
+    {
+        "text": "exact amount we need right so we're",
+        "start": 153.24,
+        "duration": 4.29
+    },
+    {
+        "text": "adding if you take the absolute value of",
+        "start": 155.37,
+        "duration": 4.77
+    },
+    {
+        "text": "each node and you subtract one from the",
+        "start": 157.53,
+        "duration": 4.92
+    },
+    {
+        "text": "absolute value obviously and you add all",
+        "start": 160.14,
+        "duration": 3.93
+    },
+    {
+        "text": "of those together you would get eight",
+        "start": 162.45,
+        "duration": 3.54
+    },
+    {
+        "text": "here which is the exact amount that we",
+        "start": 164.07,
+        "duration": 3.69
+    },
+    {
+        "text": "would need to evenly distribute the",
+        "start": 165.99,
+        "duration": 4.02
+    },
+    {
+        "text": "nodes from here right so this this is",
+        "start": 167.76,
+        "duration": 4.05
+    },
+    {
+        "text": "three we subtract one from the absolute",
+        "start": 170.01,
+        "duration": 4.17
+    },
+    {
+        "text": "value of four which is three and we're",
+        "start": 171.81,
+        "duration": 3.99
+    },
+    {
+        "text": "just going to evenly distribute you know",
+        "start": 174.18,
+        "duration": 5.79
+    },
+    {
+        "text": "here you go one two one two you know",
+        "start": 175.8,
+        "duration": 5.88
+    },
+    {
+        "text": "basically you can count these output it",
+        "start": 179.97,
+        "duration": 3.21
+    },
+    {
+        "text": "would end up being eight moves at the",
+        "start": 181.68,
+        "duration": 3.36
+    },
+    {
+        "text": "very end if you kind of distribute these",
+        "start": 183.18,
+        "duration": 3.57
+    },
+    {
+        "text": "out I thought this is a good diagram but",
+        "start": 185.04,
+        "duration": 3.39
+    },
+    {
+        "text": "yeah if you just go to the discussion",
+        "start": 186.75,
+        "duration": 3.12
+    },
+    {
+        "text": "maybe I'll link this in the description",
+        "start": 188.43,
+        "duration": 3.45
+    },
+    {
+        "text": "it's the same thing and if you look at",
+        "start": 189.87,
+        "duration": 6.18
+    },
+    {
+        "text": "the solution it actually says the same",
+        "start": 191.88,
+        "duration": 5.13
+    },
+    {
+        "text": "thing that I'm telling you right now",
+        "start": 196.05,
+        "duration": 4.59
+    },
+    {
+        "text": "it's just gonna be the XS if a tree leaf",
+        "start": 197.01,
+        "duration": 6.24
+    },
+    {
+        "text": "has if a leaf of a tree has zero coins",
+        "start": 200.64,
+        "duration": 4.11
+    },
+    {
+        "text": "or an excessive negative one then what",
+        "start": 203.25,
+        "duration": 2.73
+    },
+    {
+        "text": "it means we should push coin from a",
+        "start": 204.75,
+        "duration": 2.79
+    },
+    {
+        "text": "parent to the leaf let's say it has four",
+        "start": 205.98,
+        "duration": 3.09
+    },
+    {
+        "text": "coins XS three then we should push three",
+        "start": 207.54,
+        "duration": 3.419
+    },
+    {
+        "text": "coins off a leaf in total the number of",
+        "start": 209.07,
+        "duration": 3.45
+    },
+    {
+        "text": "moves here's the sentence that we need",
+        "start": 210.959,
+        "duration": 4.111
+    },
+    {
+        "text": "in total the number of moves from that",
+        "start": 212.52,
+        "duration": 5.7
+    },
+    {
+        "text": "leaf to its parents is the XS which is",
+        "start": 215.07,
+        "duration": 6.63
+    },
+    {
+        "text": "equal math.abs of nums of coins of num",
+        "start": 218.22,
+        "duration": 6.06
+    },
+    {
+        "text": "coins minus one afterwards we never have",
+        "start": 221.7,
+        "duration": 4.02
+    },
+    {
+        "text": "to consider that leaf again for the rest",
+        "start": 224.28,
+        "duration": 2.94
+    },
+    {
+        "text": "of our calculation so yeah all we have",
+        "start": 225.72,
+        "duration": 3.57
+    },
+    {
+        "text": "to do is we'll have this variable called",
+        "start": 227.22,
+        "duration": 5.55
+    },
+    {
+        "text": "num moves will set now moves to zero",
+        "start": 229.29,
+        "duration": 5.19
+    },
+    {
+        "text": "obviously at first because we're making",
+        "start": 232.77,
+        "duration": 3.84
+    },
+    {
+        "text": "zero moves to distribute the coins",
+        "start": 234.48,
+        "duration": 2.79
+    },
+    {
+        "text": "evenly",
+        "start": 236.61,
+        "duration": 3.18
+    },
+    {
+        "text": "I'm gonna call give coins it's basically",
+        "start": 237.27,
+        "duration": 4.32
+    },
+    {
+        "text": "just a helper method will pass on the",
+        "start": 239.79,
+        "duration": 4.98
+    },
+    {
+        "text": "route and then we'll do return num moves",
+        "start": 241.59,
+        "duration": 4.74
+    },
+    {
+        "text": "because we'll update now moves in the",
+        "start": 244.77,
+        "duration": 3.75
+    },
+    {
+        "text": "gift Keynes method at the end so if this",
+        "start": 246.33,
+        "duration": 7.379
+    },
+    {
+        "text": "public int give coins method where we'll",
+        "start": 248.52,
+        "duration": 7.05
+    },
+    {
+        "text": "update our num moves variable up here",
+        "start": 253.709,
+        "duration": 3.691
+    },
+    {
+        "text": "that's why we make it public to the",
+        "start": 255.57,
+        "duration": 4.62
+    },
+    {
+        "text": "other method that's we declared above",
+        "start": 257.4,
+        "duration": 4.589
+    },
+    {
+        "text": "this first method so that we can get it",
+        "start": 260.19,
+        "duration": 4.14
+    },
+    {
+        "text": "in the second one that takes in a tree",
+        "start": 261.989,
+        "duration": 5.061
+    },
+    {
+        "text": "node node and call it root or node",
+        "start": 264.33,
+        "duration": 5.839
+    },
+    {
+        "text": " if node is equal to null so if",
+        "start": 267.05,
+        "duration": 4.95
+    },
+    {
+        "text": "it's a null node then obviously we're",
+        "start": 270.169,
+        "duration": 3.72
+    },
+    {
+        "text": "just going to return zero",
+        "start": 272.0,
+        "duration": 5.819
+    },
+    {
+        "text": "cuz it's an integer method it returns an",
+        "start": 273.889,
+        "duration": 5.52
+    },
+    {
+        "text": "integer it's gonna be zero because",
+        "start": 277.819,
+        "duration": 6.511
+    },
+    {
+        "text": "that's there it's a null node otherwise",
+        "start": 279.409,
+        "duration": 7.051
+    },
+    {
+        "text": "we're going to recurse on the left and",
+        "start": 284.33,
+        "duration": 4.2
+    },
+    {
+        "text": "right side so on the left side we'll",
+        "start": 286.46,
+        "duration": 5.519
+    },
+    {
+        "text": "recurse on the left node obviously no",
+        "start": 288.53,
+        "duration": 5.669
+    },
+    {
+        "text": "dot left this is like all the other tree",
+        "start": 291.979,
+        "duration": 5.43
+    },
+    {
+        "text": "problems where you do just left and",
+        "start": 294.199,
+        "duration": 7.56
+    },
+    {
+        "text": "right Ricker's recursive calls no doubt",
+        "start": 297.409,
+        "duration": 5.73
+    },
+    {
+        "text": "right so we're cursing through the whole",
+        "start": 301.759,
+        "duration": 3.681
+    },
+    {
+        "text": "tree and then all we have to do is",
+        "start": 303.139,
+        "duration": 6.291
+    },
+    {
+        "text": "increment our numbers variable with",
+        "start": 305.44,
+        "duration": 6.729
+    },
+    {
+        "text": "we'll have these these are going to be",
+        "start": 309.43,
+        "duration": 5.709
+    },
+    {
+        "text": "calculations of the absolute values of",
+        "start": 312.169,
+        "duration": 5.131
+    },
+    {
+        "text": "these nodes so we just I mean not of the",
+        "start": 315.139,
+        "duration": 3.571
+    },
+    {
+        "text": "absolute values of these nodes but of",
+        "start": 317.3,
+        "duration": 4.739
+    },
+    {
+        "text": "the values of these nodes so all we have",
+        "start": 318.71,
+        "duration": 7.56
+    },
+    {
+        "text": "to do is math dot ABS of Left plus math",
+        "start": 322.039,
+        "duration": 10.291
+    },
+    {
+        "text": "dot ABS of right onto our num moves and",
+        "start": 326.27,
+        "duration": 8.699
+    },
+    {
+        "text": "what we'll do here is we'll return at",
+        "start": 332.33,
+        "duration": 4.26
+    },
+    {
+        "text": "the bottom what we're gonna return is",
+        "start": 334.969,
+        "duration": 4.411
+    },
+    {
+        "text": "the node dot Val plus the left and right",
+        "start": 336.59,
+        "duration": 5.669
+    },
+    {
+        "text": "to get all the other values too and then",
+        "start": 339.38,
+        "duration": 5.069
+    },
+    {
+        "text": "subtract 1 we subtract 1 at the bottom",
+        "start": 342.259,
+        "duration": 3.421
+    },
+    {
+        "text": "so we don't have to account for that",
+        "start": 344.449,
+        "duration": 4.351
+    },
+    {
+        "text": "minus 1 subtraction each node that we",
+        "start": 345.68,
+        "duration": 4.979
+    },
+    {
+        "text": "when we get to the bottom we're gonna",
+        "start": 348.8,
+        "duration": 4.29
+    },
+    {
+        "text": "return minus 1 because we don't have to",
+        "start": 350.659,
+        "duration": 4.26
+    },
+    {
+        "text": "worry about those notes anymore sorry it",
+        "start": 353.09,
+        "duration": 3.15
+    },
+    {
+        "text": "hasn't been fullscreen the whole time",
+        "start": 354.919,
+        "duration": 3.24
+    },
+    {
+        "text": "and then this is the answer I don't",
+        "start": 356.24,
+        "duration": 3.78
+    },
+    {
+        "text": "really know I know this is a bad",
+        "start": 358.159,
+        "duration": 3.54
+    },
+    {
+        "text": "explanation and it kind of took me a",
+        "start": 360.02,
+        "duration": 3.209
+    },
+    {
+        "text": "little bit to kind of understand it but",
+        "start": 361.699,
+        "duration": 3.03
+    },
+    {
+        "text": "you kind of just have to look at it and",
+        "start": 363.229,
+        "duration": 6.06
+    },
+    {
+        "text": "understand that the absolute value when",
+        "start": 364.729,
+        "duration": 6.391
+    },
+    {
+        "text": "you do the recursive call on the current",
+        "start": 369.289,
+        "duration": 4.321
+    },
+    {
+        "text": "node you take the value of that current",
+        "start": 371.12,
+        "duration": 5.19
+    },
+    {
+        "text": "node you subtract 1 and then all of",
+        "start": 373.61,
+        "duration": 5.549
+    },
+    {
+        "text": "those values together of every node in",
+        "start": 376.31,
+        "duration": 4.979
+    },
+    {
+        "text": "the tree the map absolute value of all",
+        "start": 379.159,
+        "duration": 4.44
+    },
+    {
+        "text": "those notes together after subtracting 1",
+        "start": 381.289,
+        "duration": 4.56
+    },
+    {
+        "text": "so if the value is 0 and you subtract 1",
+        "start": 383.599,
+        "duration": 5.25
+    },
+    {
+        "text": "that's going to add onto the num moves",
+        "start": 385.849,
+        "duration": 6.18
+    },
+    {
+        "text": "because you need one move it's it just",
+        "start": 388.849,
+        "duration": 5.22
+    },
+    {
+        "text": "works out so that's how you do it the",
+        "start": 392.029,
+        "duration": 5.64
+    },
+    {
+        "text": "math absolute value minus 1 for each",
+        "start": 394.069,
+        "duration": 6.121
+    },
+    {
+        "text": "node if you have an excess amount or if",
+        "start": 397.669,
+        "duration": 4.291
+    },
+    {
+        "text": "you need nodes that's all gonna add up",
+        "start": 400.19,
+        "duration": 3.539
+    },
+    {
+        "text": "to the perfect number of moves to",
+        "start": 401.96,
+        "duration": 3.629
+    },
+    {
+        "text": "distribute evenly among the truth it",
+        "start": 403.729,
+        "duration": 5.25
+    },
+    {
+        "text": "just works like that so you can look",
+        "start": 405.589,
+        "duration": 5.94
+    },
+    {
+        "text": "into the solution a little bit more with",
+        "start": 408.979,
+        "duration": 5.041
+    },
+    {
+        "text": "the explanations and what this guy says",
+        "start": 411.529,
+        "duration": 3.75
+    },
+    {
+        "text": "but it's just kind of something you have",
+        "start": 414.02,
+        "duration": 4.47
+    },
+    {
+        "text": "to come to terms with and yeah that took",
+        "start": 415.279,
+        "duration": 4.98
+    },
+    {
+        "text": "me a minute to I was like what how does",
+        "start": 418.49,
+        "duration": 3.899
+    },
+    {
+        "text": "this work exactly but you just kind of",
+        "start": 420.259,
+        "duration": 3.96
+    },
+    {
+        "text": "if you just go through an example and",
+        "start": 422.389,
+        "duration": 4.2
+    },
+    {
+        "text": "you kind of drag the numbers from like",
+        "start": 424.219,
+        "duration": 4.56
+    },
+    {
+        "text": "these for you drag them out to these and",
+        "start": 426.589,
+        "duration": 3.75
+    },
+    {
+        "text": "then you're like oh yeah it's exactly",
+        "start": 428.779,
+        "duration": 5.491
+    },
+    {
+        "text": "the amount so that's it that's the",
+        "start": 430.339,
+        "duration": 6.121
+    },
+    {
+        "text": "solution pretty straightforward once you",
+        "start": 434.27,
+        "duration": 3.899
+    },
+    {
+        "text": "learn that fact and you understand that",
+        "start": 436.46,
+        "duration": 3.9
+    },
+    {
+        "text": "fact let me know what you guys think",
+        "start": 438.169,
+        "duration": 4.381
+    },
+    {
+        "text": "about that explanation in the comments",
+        "start": 440.36,
+        "duration": 4.26
+    },
+    {
+        "text": "below I know it was kind of all over the",
+        "start": 442.55,
+        "duration": 4.679
+    },
+    {
+        "text": "place there but that's as kind of as",
+        "start": 444.62,
+        "duration": 4.169
+    },
+    {
+        "text": "good as I can do right now if anyone has",
+        "start": 447.229,
+        "duration": 2.94
+    },
+    {
+        "text": "a better explanation please leave it in",
+        "start": 448.789,
+        "duration": 3.06
+    },
+    {
+        "text": "the comments below and check out all the",
+        "start": 450.169,
+        "duration": 2.701
+    },
+    {
+        "text": "other videos if you like these",
+        "start": 451.849,
+        "duration": 3.391
+    },
+    {
+        "text": "explanations I do them for every problem",
+        "start": 452.87,
+        "duration": 5.82
+    },
+    {
+        "text": "until I get hired at Google so let me",
+        "start": 455.24,
+        "duration": 5.07
+    },
+    {
+        "text": "know what you guys think and thank you",
+        "start": 458.69,
+        "duration": 5.089
+    },
+    {
+        "text": "very much for watching see you guys",
+        "start": 460.31,
+        "duration": 3.469
+    }
+]

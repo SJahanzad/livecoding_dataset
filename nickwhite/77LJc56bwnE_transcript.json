@@ -1,0 +1,507 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white here",
+        "start": 1.22,
+        "duration": 5.26
+    },
+    {
+        "text": "and I do tech encoding stuff on twitch",
+        "start": 4.23,
+        "duration": 3.629
+    },
+    {
+        "text": "and YouTube and I do all the way code",
+        "start": 6.48,
+        "duration": 2.67
+    },
+    {
+        "text": "problems so check the description you",
+        "start": 7.859,
+        "duration": 3.331
+    },
+    {
+        "text": "can find everything that you need about",
+        "start": 9.15,
+        "duration": 4.02
+    },
+    {
+        "text": "me personally and I do all of these",
+        "start": 11.19,
+        "duration": 3.69
+    },
+    {
+        "text": "problems so you could check the videos I",
+        "start": 13.17,
+        "duration": 3.209
+    },
+    {
+        "text": "probably got it up by now I got a ton of",
+        "start": 14.88,
+        "duration": 3.21
+    },
+    {
+        "text": "them up this one's called binary tree",
+        "start": 16.379,
+        "duration": 3.451
+    },
+    {
+        "text": "for pruning I've done like all these",
+        "start": 18.09,
+        "duration": 4.17
+    },
+    {
+        "text": "binary tree problems almost so it's a",
+        "start": 19.83,
+        "duration": 5.52
+    },
+    {
+        "text": "medium problem a pretty good problem it",
+        "start": 22.26,
+        "duration": 5.16
+    },
+    {
+        "text": "says we're given a head node root of a",
+        "start": 25.35,
+        "duration": 3.87
+    },
+    {
+        "text": "binary tree where all the nodes values",
+        "start": 27.42,
+        "duration": 2.79
+    },
+    {
+        "text": "are either 0 or 1",
+        "start": 29.22,
+        "duration": 2.85
+    },
+    {
+        "text": "so we're giving the week to a binary",
+        "start": 30.21,
+        "duration": 5.369
+    },
+    {
+        "text": "tree binary tree means you have a left",
+        "start": 32.07,
+        "duration": 7.95
+    },
+    {
+        "text": "and right node the children node and the",
+        "start": 35.579,
+        "duration": 7.351
+    },
+    {
+        "text": "node values are Warner 0 1 or 0 and we",
+        "start": 40.02,
+        "duration": 7.89
+    },
+    {
+        "text": "want to remove every subtree that does",
+        "start": 42.93,
+        "duration": 8.609
+    },
+    {
+        "text": "not contain a 1 so basically we're gonna",
+        "start": 47.91,
+        "duration": 6.18
+    },
+    {
+        "text": "traverse this tree and if we find a",
+        "start": 51.539,
+        "duration": 4.11
+    },
+    {
+        "text": "subtree that doesn't contain a 1 so we",
+        "start": 54.09,
+        "duration": 3.239
+    },
+    {
+        "text": "see like here this doesn't contain a 1",
+        "start": 55.649,
+        "duration": 3.901
+    },
+    {
+        "text": "this is a subtree see this subtree right",
+        "start": 57.329,
+        "duration": 4.89
+    },
+    {
+        "text": "here but it has a right child of a 1 so",
+        "start": 59.55,
+        "duration": 3.96
+    },
+    {
+        "text": "that we're not gonna delete this node",
+        "start": 62.219,
+        "duration": 4.351
+    },
+    {
+        "text": "but this is a century where the left and",
+        "start": 63.51,
+        "duration": 4.44
+    },
+    {
+        "text": "right now they're null so that",
+        "start": 66.57,
+        "duration": 3.72
+    },
+    {
+        "text": "technically doesn't contain one we're",
+        "start": 67.95,
+        "duration": 5.25
+    },
+    {
+        "text": "deleting that and here right this is a",
+        "start": 70.29,
+        "duration": 4.77
+    },
+    {
+        "text": "subtree where there's no ones with any",
+        "start": 73.2,
+        "duration": 4.11
+    },
+    {
+        "text": "throws so you gotta get the idea we're",
+        "start": 75.06,
+        "duration": 5.28
+    },
+    {
+        "text": "just reversing and deleting a subtree so",
+        "start": 77.31,
+        "duration": 5.07
+    },
+    {
+        "text": "don't contain so first thing we're gonna",
+        "start": 80.34,
+        "duration": 4.65
+    },
+    {
+        "text": "want to do with 3 problems is just if it",
+        "start": 82.38,
+        "duration": 8.51
+    },
+    {
+        "text": "is no then we are going to return",
+        "start": 84.99,
+        "duration": 8.43
+    },
+    {
+        "text": "otherwise we're gonna call our helper",
+        "start": 90.89,
+        "duration": 5.799
+    },
+    {
+        "text": "method contains one on the root and then",
+        "start": 93.42,
+        "duration": 7.05
+    },
+    {
+        "text": "we're going to return because return",
+        "start": 96.689,
+        "duration": 6.89
+    },
+    {
+        "text": "we're gonna just modify the main tree",
+        "start": 100.47,
+        "duration": 5.579
+    },
+    {
+        "text": "that we're given and then we're gonna",
+        "start": 103.579,
+        "duration": 3.761
+    },
+    {
+        "text": "return the root because it's still going",
+        "start": 106.049,
+        "duration": 2.85
+    },
+    {
+        "text": "to be the root of the new tree which",
+        "start": 107.34,
+        "duration": 3.27
+    },
+    {
+        "text": "isn't a nutrients the same tree we're",
+        "start": 108.899,
+        "duration": 4.381
+    },
+    {
+        "text": "modifying the tree in place so public",
+        "start": 110.61,
+        "duration": 4.92
+    },
+    {
+        "text": "boolean it contains one it's going to be",
+        "start": 113.28,
+        "duration": 4.32
+    },
+    {
+        "text": "a method that we use that will tell us",
+        "start": 115.53,
+        "duration": 6.0
+    },
+    {
+        "text": "whether our node our node is a subtree",
+        "start": 117.6,
+        "duration": 6.51
+    },
+    {
+        "text": "that contains a one so we're gonna pass",
+        "start": 121.53,
+        "duration": 5.97
+    },
+    {
+        "text": "in a node here if we know it is equal to",
+        "start": 124.11,
+        "duration": 4.759
+    },
+    {
+        "text": "null",
+        "start": 127.5,
+        "duration": 2.929
+    },
+    {
+        "text": "we're just going to return the flouse",
+        "start": 128.869,
+        "duration": 3.361
+    },
+    {
+        "text": "right because it doesn't contain a one",
+        "start": 130.429,
+        "duration": 4.261
+    },
+    {
+        "text": "then we're going to have these new",
+        "start": 132.23,
+        "duration": 4.49
+    },
+    {
+        "text": "boolean values called Left contains",
+        "start": 134.69,
+        "duration": 6.35
+    },
+    {
+        "text": "where we do a recursive ball on the left",
+        "start": 136.72,
+        "duration": 4.32
+    },
+    {
+        "text": "if the left doesn't if the left doesn't",
+        "start": 153.13,
+        "duration": 10.63
+    },
+    {
+        "text": "contain one then we're just going to set",
+        "start": 160.7,
+        "duration": 5.819
+    },
+    {
+        "text": "node left to null and remove that",
+        "start": 163.76,
+        "duration": 6.72
+    },
+    {
+        "text": "subtree completely and if the right",
+        "start": 166.519,
+        "duration": 7.591
+    },
+    {
+        "text": "doesn't contain we're going to set the",
+        "start": 170.48,
+        "duration": 6.77
+    },
+    {
+        "text": "right to null that's up three completely",
+        "start": 174.11,
+        "duration": 6.03
+    },
+    {
+        "text": "so we just remove the node if it doesn't",
+        "start": 177.25,
+        "duration": 4.209
+    },
+    {
+        "text": "contain because these will just keep",
+        "start": 180.14,
+        "duration": 3.24
+    },
+    {
+        "text": "doing recursive calls and it'll check",
+        "start": 181.459,
+        "duration": 3.721
+    },
+    {
+        "text": "the whole subtree so you can just take",
+        "start": 183.38,
+        "duration": 4.2
+    },
+    {
+        "text": "that one node out immediately and we're",
+        "start": 185.18,
+        "duration": 4.47
+    },
+    {
+        "text": "discarding the whole subtree so if we",
+        "start": 187.58,
+        "duration": 3.629
+    },
+    {
+        "text": "find that the left doesn't contain the",
+        "start": 189.65,
+        "duration": 3.059
+    },
+    {
+        "text": "right doesn't contain we just set it to",
+        "start": 191.209,
+        "duration": 3.241
+    },
+    {
+        "text": "no and then all we have to do after that",
+        "start": 192.709,
+        "duration": 4.951
+    },
+    {
+        "text": "is return that node dot val is equal to",
+        "start": 194.45,
+        "duration": 7.77
+    },
+    {
+        "text": "one left or left contains or right",
+        "start": 197.66,
+        "duration": 8.07
+    },
+    {
+        "text": "contains because this is gonna give us",
+        "start": 202.22,
+        "duration": 6.81
+    },
+    {
+        "text": "our this is gonna return true if we do",
+        "start": 205.73,
+        "duration": 5.16
+    },
+    {
+        "text": "see a one which is what we need to do",
+        "start": 209.03,
+        "duration": 3.81
+    },
+    {
+        "text": "when we do all these recursive calls if",
+        "start": 210.89,
+        "duration": 3.48
+    },
+    {
+        "text": "you see a one then we would see the left",
+        "start": 212.84,
+        "duration": 3.69
+    },
+    {
+        "text": "contains the right contains and it's",
+        "start": 214.37,
+        "duration": 6.39
+    },
+    {
+        "text": "also checking that along with or each of",
+        "start": 216.53,
+        "duration": 7.17
+    },
+    {
+        "text": "these left and right contains so if the",
+        "start": 220.76,
+        "duration": 5.16
+    },
+    {
+        "text": "value is a one or the left or right",
+        "start": 223.7,
+        "duration": 4.89
+    },
+    {
+        "text": "container on that it's safe and that's",
+        "start": 225.92,
+        "duration": 4.11
+    },
+    {
+        "text": "pretty much here we just return it and",
+        "start": 228.59,
+        "duration": 5.179
+    },
+    {
+        "text": "we'll submit it and this is should work",
+        "start": 230.03,
+        "duration": 8.209
+    },
+    {
+        "text": "see oh sorry we're putting the word",
+        "start": 233.769,
+        "duration": 4.47
+    },
+    {
+        "text": "always good to check stuff like that and",
+        "start": 240.67,
+        "duration": 3.52
+    },
+    {
+        "text": "that's it success",
+        "start": 243.29,
+        "duration": 3.569
+    },
+    {
+        "text": "so that's pruning a binary tree think",
+        "start": 244.19,
+        "duration": 3.81
+    },
+    {
+        "text": "that's what let's go up binary tree",
+        "start": 246.859,
+        "duration": 3.69
+    },
+    {
+        "text": "pruning pretty easy problem right there",
+        "start": 248.0,
+        "duration": 5.549
+    },
+    {
+        "text": "even though it's a medium but I like it",
+        "start": 250.549,
+        "duration": 5.011
+    },
+    {
+        "text": "it was pretty good let me know what you",
+        "start": 253.549,
+        "duration": 3.24
+    },
+    {
+        "text": "guys think in the comments about",
+        "start": 255.56,
+        "duration": 2.099
+    },
+    {
+        "text": "explaining it",
+        "start": 256.789,
+        "duration": 2.221
+    },
+    {
+        "text": "sorry about the boning and there's",
+        "start": 257.659,
+        "duration": 2.73
+    },
+    {
+        "text": "people talking",
+        "start": 259.01,
+        "duration": 4.2
+    },
+    {
+        "text": "but yeah check out the other videos and",
+        "start": 260.389,
+        "duration": 6.441
+    },
+    {
+        "text": "thank you guys very much see ya",
+        "start": 263.21,
+        "duration": 3.62
+    },
+    {
+        "text": "[Music]",
+        "start": 266.86,
+        "duration": 2.12
+    }
+]

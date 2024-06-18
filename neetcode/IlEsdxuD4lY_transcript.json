@@ -1,0 +1,1632 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.04
+    },
+    {
+        "text": "write some more neat code today",
+        "start": 1.599,
+        "duration": 4.081
+    },
+    {
+        "text": "so today let's look at unique paths so",
+        "start": 3.04,
+        "duration": 5.04
+    },
+    {
+        "text": "this is a dynamic programming problem",
+        "start": 5.68,
+        "duration": 4.48
+    },
+    {
+        "text": "and it's a relatively straightforward",
+        "start": 8.08,
+        "duration": 3.76
+    },
+    {
+        "text": "one compared to a lot of more difficult",
+        "start": 10.16,
+        "duration": 3.359
+    },
+    {
+        "text": "dynamic programming problems",
+        "start": 11.84,
+        "duration": 4.96
+    },
+    {
+        "text": "we are given a m by n grid",
+        "start": 13.519,
+        "duration": 6.641
+    },
+    {
+        "text": "and so the top left in the grid is",
+        "start": 16.8,
+        "duration": 6.08
+    },
+    {
+        "text": "always going to be our start value and",
+        "start": 20.16,
+        "duration": 3.119
+    },
+    {
+        "text": "so",
+        "start": 22.88,
+        "duration": 2.96
+    },
+    {
+        "text": "from our start value it's like a game we",
+        "start": 23.279,
+        "duration": 4.801
+    },
+    {
+        "text": "have two choices no matter what position",
+        "start": 25.84,
+        "duration": 3.12
+    },
+    {
+        "text": "we're at we",
+        "start": 28.08,
+        "duration": 4.88
+    },
+    {
+        "text": "can only move right or we can move",
+        "start": 28.96,
+        "duration": 6.56
+    },
+    {
+        "text": "down those are our only choices we can't",
+        "start": 32.96,
+        "duration": 3.68
+    },
+    {
+        "text": "go diagonal",
+        "start": 35.52,
+        "duration": 2.879
+    },
+    {
+        "text": "we can't go up and we definitely can't",
+        "start": 36.64,
+        "duration": 3.36
+    },
+    {
+        "text": "go left so our",
+        "start": 38.399,
+        "duration": 4.16
+    },
+    {
+        "text": "goal is to reach the end position or the",
+        "start": 40.0,
+        "duration": 3.36
+    },
+    {
+        "text": "finished",
+        "start": 42.559,
+        "duration": 2.801
+    },
+    {
+        "text": "position that's always going to be the",
+        "start": 43.36,
+        "duration": 4.48
+    },
+    {
+        "text": "bottom right so we start at the top",
+        "start": 45.36,
+        "duration": 4.64
+    },
+    {
+        "text": "left but we want to go to the bottom",
+        "start": 47.84,
+        "duration": 3.92
+    },
+    {
+        "text": "right and the only question",
+        "start": 50.0,
+        "duration": 4.96
+    },
+    {
+        "text": "is how many unique paths are there to",
+        "start": 51.76,
+        "duration": 4.799
+    },
+    {
+        "text": "get to the end position",
+        "start": 54.96,
+        "duration": 3.919
+    },
+    {
+        "text": "so at first this kind of seems like a",
+        "start": 56.559,
+        "duration": 4.16
+    },
+    {
+        "text": "recursive problem right so",
+        "start": 58.879,
+        "duration": 4.801
+    },
+    {
+        "text": "we have two choices right we can go down",
+        "start": 60.719,
+        "duration": 3.921
+    },
+    {
+        "text": "or we can go",
+        "start": 63.68,
+        "duration": 3.52
+    },
+    {
+        "text": "right and then that's a sub problem one",
+        "start": 64.64,
+        "duration": 4.32
+    },
+    {
+        "text": "thing to notice is see how from this",
+        "start": 67.2,
+        "duration": 2.8
+    },
+    {
+        "text": "start position",
+        "start": 68.96,
+        "duration": 3.519
+    },
+    {
+        "text": "we are actually able to move to any",
+        "start": 70.0,
+        "duration": 3.28
+    },
+    {
+        "text": "position",
+        "start": 72.479,
+        "duration": 4.32
+    },
+    {
+        "text": "in the entire grid but if we move",
+        "start": 73.28,
+        "duration": 6.24
+    },
+    {
+        "text": "right from this position what are the",
+        "start": 76.799,
+        "duration": 4.64
+    },
+    {
+        "text": "possible spots we can go to well we can",
+        "start": 79.52,
+        "duration": 2.239
+    },
+    {
+        "text": "go",
+        "start": 81.439,
+        "duration": 1.761
+    },
+    {
+        "text": "right and we can go down so we can",
+        "start": 81.759,
+        "duration": 3.36
+    },
+    {
+        "text": "actually go to any spot",
+        "start": 83.2,
+        "duration": 4.239
+    },
+    {
+        "text": "here but notice we will never be able to",
+        "start": 85.119,
+        "duration": 4.481
+    },
+    {
+        "text": "reach these two elements if we",
+        "start": 87.439,
+        "duration": 4.64
+    },
+    {
+        "text": "start from here and similarly if we go",
+        "start": 89.6,
+        "duration": 3.199
+    },
+    {
+        "text": "down",
+        "start": 92.079,
+        "duration": 3.281
+    },
+    {
+        "text": "from here then what positions can we",
+        "start": 92.799,
+        "duration": 4.481
+    },
+    {
+        "text": "reach we can reach any position to the",
+        "start": 95.36,
+        "duration": 4.0
+    },
+    {
+        "text": "right or below but we'll never be able",
+        "start": 97.28,
+        "duration": 3.519
+    },
+    {
+        "text": "to reach any of these",
+        "start": 99.36,
+        "duration": 3.759
+    },
+    {
+        "text": "positions and another thing to notice is",
+        "start": 100.799,
+        "duration": 5.28
+    },
+    {
+        "text": "literally any spot in the entire grid",
+        "start": 103.119,
+        "duration": 5.521
+    },
+    {
+        "text": "uh the nature of this grid and since we",
+        "start": 106.079,
+        "duration": 4.561
+    },
+    {
+        "text": "can go down and we can go right",
+        "start": 108.64,
+        "duration": 4.479
+    },
+    {
+        "text": "any spot in this grid will be able to",
+        "start": 110.64,
+        "duration": 4.0
+    },
+    {
+        "text": "reach our destination",
+        "start": 113.119,
+        "duration": 3.521
+    },
+    {
+        "text": "so we don't have to worry about not",
+        "start": 114.64,
+        "duration": 3.119
+    },
+    {
+        "text": "being able to reach",
+        "start": 116.64,
+        "duration": 3.28
+    },
+    {
+        "text": "the destination so yeah you might try",
+        "start": 117.759,
+        "duration": 3.761
+    },
+    {
+        "text": "this problem recursively right so we",
+        "start": 119.92,
+        "duration": 3.28
+    },
+    {
+        "text": "have two decisions go down",
+        "start": 121.52,
+        "duration": 4.0
+    },
+    {
+        "text": "or go right and that's great right so",
+        "start": 123.2,
+        "duration": 5.039
+    },
+    {
+        "text": "now from here we also have two choices",
+        "start": 125.52,
+        "duration": 3.359
+    },
+    {
+        "text": "go",
+        "start": 128.239,
+        "duration": 3.441
+    },
+    {
+        "text": "down or go right from here we have two",
+        "start": 128.879,
+        "duration": 3.521
+    },
+    {
+        "text": "choices",
+        "start": 131.68,
+        "duration": 4.0
+    },
+    {
+        "text": "go down or go right",
+        "start": 132.4,
+        "duration": 4.8
+    },
+    {
+        "text": "you kind of notice though there's some",
+        "start": 135.68,
+        "duration": 3.279
+    },
+    {
+        "text": "repeated work",
+        "start": 137.2,
+        "duration": 3.92
+    },
+    {
+        "text": "obviously we can get to this position",
+        "start": 138.959,
+        "duration": 3.601
+    },
+    {
+        "text": "two different ways so",
+        "start": 141.12,
+        "duration": 3.119
+    },
+    {
+        "text": "in that case we're gonna end up doing",
+        "start": 142.56,
+        "duration": 3.2
+    },
+    {
+        "text": "repeated work right from",
+        "start": 144.239,
+        "duration": 4.0
+    },
+    {
+        "text": "this uh way that we got here we're gonna",
+        "start": 145.76,
+        "duration": 4.24
+    },
+    {
+        "text": "we can go down and we can go",
+        "start": 148.239,
+        "duration": 4.161
+    },
+    {
+        "text": "right and we're gonna repeat that over",
+        "start": 150.0,
+        "duration": 3.44
+    },
+    {
+        "text": "here right go",
+        "start": 152.4,
+        "duration": 4.72
+    },
+    {
+        "text": "down or go right so if we're doing depth",
+        "start": 153.44,
+        "duration": 5.439
+    },
+    {
+        "text": "first search recursively",
+        "start": 157.12,
+        "duration": 5.28
+    },
+    {
+        "text": "one thing we can do is have a cache so",
+        "start": 158.879,
+        "duration": 6.881
+    },
+    {
+        "text": "for every row column",
+        "start": 162.4,
+        "duration": 6.4
+    },
+    {
+        "text": "position so for example in this",
+        "start": 165.76,
+        "duration": 6.24
+    },
+    {
+        "text": "position we cache the result so if we",
+        "start": 168.8,
+        "duration": 3.68
+    },
+    {
+        "text": "ever",
+        "start": 172.0,
+        "duration": 3.36
+    },
+    {
+        "text": "reach this spot multiple times we will",
+        "start": 172.48,
+        "duration": 4.56
+    },
+    {
+        "text": "be able to store that and we won't have",
+        "start": 175.36,
+        "duration": 2.159
+    },
+    {
+        "text": "to run",
+        "start": 177.04,
+        "duration": 2.8
+    },
+    {
+        "text": "debt for search again because debt for",
+        "start": 177.519,
+        "duration": 4.08
+    },
+    {
+        "text": "search is pretty expensive",
+        "start": 179.84,
+        "duration": 3.759
+    },
+    {
+        "text": "and so what is this value even going to",
+        "start": 181.599,
+        "duration": 3.041
+    },
+    {
+        "text": "store well",
+        "start": 183.599,
+        "duration": 4.0
+    },
+    {
+        "text": "this is recursive so for each position",
+        "start": 184.64,
+        "duration": 5.28
+    },
+    {
+        "text": "we're actually calculating the number of",
+        "start": 187.599,
+        "duration": 2.881
+    },
+    {
+        "text": "ways",
+        "start": 189.92,
+        "duration": 3.2
+    },
+    {
+        "text": "we can reach the destination right and",
+        "start": 190.48,
+        "duration": 4.24
+    },
+    {
+        "text": "if we can compute that for",
+        "start": 193.12,
+        "duration": 4.96
+    },
+    {
+        "text": "every single like square then",
+        "start": 194.72,
+        "duration": 6.0
+    },
+    {
+        "text": "we can compute that for the original",
+        "start": 198.08,
+        "duration": 3.12
+    },
+    {
+        "text": "square",
+        "start": 200.72,
+        "duration": 3.2
+    },
+    {
+        "text": "right basically what i'm saying is the",
+        "start": 201.2,
+        "duration": 4.88
+    },
+    {
+        "text": "result that we're looking for",
+        "start": 203.92,
+        "duration": 4.879
+    },
+    {
+        "text": "is actually equal so let's say we call",
+        "start": 206.08,
+        "duration": 3.36
+    },
+    {
+        "text": "this spot",
+        "start": 208.799,
+        "duration": 3.121
+    },
+    {
+        "text": "r we call this spot down right so this",
+        "start": 209.44,
+        "duration": 3.2
+    },
+    {
+        "text": "is r",
+        "start": 211.92,
+        "duration": 4.08
+    },
+    {
+        "text": "for right this is d for down the result",
+        "start": 212.64,
+        "duration": 5.04
+    },
+    {
+        "text": "that we're looking for is actually the",
+        "start": 216.0,
+        "duration": 5.04
+    },
+    {
+        "text": "sum of r plus d right but then you might",
+        "start": 217.68,
+        "duration": 4.72
+    },
+    {
+        "text": "ask well how do we compute",
+        "start": 221.04,
+        "duration": 4.0
+    },
+    {
+        "text": "r and how do we compute d well r is just",
+        "start": 222.4,
+        "duration": 3.199
+    },
+    {
+        "text": "gonna be",
+        "start": 225.04,
+        "duration": 2.4
+    },
+    {
+        "text": "r has a value to the right of it and it",
+        "start": 225.599,
+        "duration": 3.681
+    },
+    {
+        "text": "has a value below it right",
+        "start": 227.44,
+        "duration": 4.96
+    },
+    {
+        "text": "so if we want to compute this value",
+        "start": 229.28,
+        "duration": 5.76
+    },
+    {
+        "text": "we can just take the right and down",
+        "start": 232.4,
+        "duration": 3.36
+    },
+    {
+        "text": "values",
+        "start": 235.04,
+        "duration": 3.119
+    },
+    {
+        "text": "and get them right but so what's the",
+        "start": 235.76,
+        "duration": 4.96
+    },
+    {
+        "text": "what ends up being the base case",
+        "start": 238.159,
+        "duration": 4.8
+    },
+    {
+        "text": "so with all that in mind what ends up",
+        "start": 240.72,
+        "duration": 4.4
+    },
+    {
+        "text": "actually being the base case well",
+        "start": 242.959,
+        "duration": 4.56
+    },
+    {
+        "text": "so this is the ending position right so",
+        "start": 245.12,
+        "duration": 3.119
+    },
+    {
+        "text": "how many ways",
+        "start": 247.519,
+        "duration": 2.481
+    },
+    {
+        "text": "from the ending position are there how",
+        "start": 248.239,
+        "duration": 3.36
+    },
+    {
+        "text": "many unique paths are there to",
+        "start": 250.0,
+        "duration": 5.12
+    },
+    {
+        "text": "get to itself well we can choose",
+        "start": 251.599,
+        "duration": 6.961
+    },
+    {
+        "text": "to define that as one so if we've",
+        "start": 255.12,
+        "duration": 5.839
+    },
+    {
+        "text": "defined that value as one we'll notice",
+        "start": 258.56,
+        "duration": 4.16
+    },
+    {
+        "text": "that things actually work out pretty",
+        "start": 260.959,
+        "duration": 2.561
+    },
+    {
+        "text": "nicely",
+        "start": 262.72,
+        "duration": 3.68
+    },
+    {
+        "text": "because let's let's take a look at this",
+        "start": 263.52,
+        "duration": 5.04
+    },
+    {
+        "text": "cell right we want to take the bottom",
+        "start": 266.4,
+        "duration": 2.72
+    },
+    {
+        "text": "value",
+        "start": 268.56,
+        "duration": 3.359
+    },
+    {
+        "text": "and the right value and then add them up",
+        "start": 269.12,
+        "duration": 4.32
+    },
+    {
+        "text": "and then that's what we're going to put",
+        "start": 271.919,
+        "duration": 2.321
+    },
+    {
+        "text": "in this spot",
+        "start": 273.44,
+        "duration": 2.72
+    },
+    {
+        "text": "but we see that there's nothing below it",
+        "start": 274.24,
+        "duration": 3.44
+    },
+    {
+        "text": "right that's out of bounds",
+        "start": 276.16,
+        "duration": 2.96
+    },
+    {
+        "text": "what we can say is well we'll just",
+        "start": 277.68,
+        "duration": 3.2
+    },
+    {
+        "text": "define that to be 0 right",
+        "start": 279.12,
+        "duration": 5.44
+    },
+    {
+        "text": "we'll define every value out of bounds",
+        "start": 280.88,
+        "duration": 6.319
+    },
+    {
+        "text": "to be zero so if we ever need them well",
+        "start": 284.56,
+        "duration": 3.44
+    },
+    {
+        "text": "we can just say",
+        "start": 287.199,
+        "duration": 3.121
+    },
+    {
+        "text": "that they're zero so then what becomes",
+        "start": 288.0,
+        "duration": 4.16
+    },
+    {
+        "text": "the value that we place in the cell well",
+        "start": 290.32,
+        "duration": 2.72
+    },
+    {
+        "text": "we can take",
+        "start": 292.16,
+        "duration": 3.44
+    },
+    {
+        "text": "the right value which is one and the",
+        "start": 293.04,
+        "duration": 4.56
+    },
+    {
+        "text": "bottom value which is zero add them",
+        "start": 295.6,
+        "duration": 3.28
+    },
+    {
+        "text": "together and then we get",
+        "start": 297.6,
+        "duration": 3.52
+    },
+    {
+        "text": "one so we can just put a one over here",
+        "start": 298.88,
+        "duration": 3.12
+    },
+    {
+        "text": "right and",
+        "start": 301.12,
+        "duration": 2.799
+    },
+    {
+        "text": "you might notice well what if we want to",
+        "start": 302.0,
+        "duration": 4.639
+    },
+    {
+        "text": "compute the value in this position",
+        "start": 303.919,
+        "duration": 4.56
+    },
+    {
+        "text": "well the exact same thing will take",
+        "start": 306.639,
+        "duration": 3.681
+    },
+    {
+        "text": "place right the value below is zero the",
+        "start": 308.479,
+        "duration": 3.921
+    },
+    {
+        "text": "value to the right is one",
+        "start": 310.32,
+        "duration": 4.96
+    },
+    {
+        "text": "so we can say that there's one way from",
+        "start": 312.4,
+        "duration": 4.079
+    },
+    {
+        "text": "this position",
+        "start": 315.28,
+        "duration": 3.759
+    },
+    {
+        "text": "to reach the end result and now what's",
+        "start": 316.479,
+        "duration": 3.761
+    },
+    {
+        "text": "what actually is that",
+        "start": 319.039,
+        "duration": 4.081
+    },
+    {
+        "text": "path well we can we can't move down",
+        "start": 320.24,
+        "duration": 4.399
+    },
+    {
+        "text": "right that's out of bounds so we can",
+        "start": 323.12,
+        "duration": 3.44
+    },
+    {
+        "text": "only choose to move",
+        "start": 324.639,
+        "duration": 4.161
+    },
+    {
+        "text": "right and then right and then we'll be",
+        "start": 326.56,
+        "duration": 3.359
+    },
+    {
+        "text": "able to get to the result",
+        "start": 328.8,
+        "duration": 3.04
+    },
+    {
+        "text": "and you can see that's true for every",
+        "start": 329.919,
+        "duration": 4.0
+    },
+    {
+        "text": "position in the bottom row so we're just",
+        "start": 331.84,
+        "duration": 2.639
+    },
+    {
+        "text": "going to fill",
+        "start": 333.919,
+        "duration": 2.72
+    },
+    {
+        "text": "these to be one and you might be able to",
+        "start": 334.479,
+        "duration": 3.041
+    },
+    {
+        "text": "see how",
+        "start": 336.639,
+        "duration": 3.84
+    },
+    {
+        "text": "we are going to arrive at the dynamic",
+        "start": 337.52,
+        "duration": 4.72
+    },
+    {
+        "text": "programming solution now",
+        "start": 340.479,
+        "duration": 3.681
+    },
+    {
+        "text": "so the first thing for us to do is to",
+        "start": 342.24,
+        "duration": 4.08
+    },
+    {
+        "text": "compute this bottom row now let's start",
+        "start": 344.16,
+        "duration": 3.28
+    },
+    {
+        "text": "doing the next",
+        "start": 346.32,
+        "duration": 3.439
+    },
+    {
+        "text": "row right because our ultimate goal is",
+        "start": 347.44,
+        "duration": 4.24
+    },
+    {
+        "text": "to be able to do this value we can work",
+        "start": 349.759,
+        "duration": 2.72
+    },
+    {
+        "text": "our way",
+        "start": 351.68,
+        "duration": 3.6
+    },
+    {
+        "text": "from the bottom to the left and then",
+        "start": 352.479,
+        "duration": 3.681
+    },
+    {
+        "text": "from here",
+        "start": 355.28,
+        "duration": 3.199
+    },
+    {
+        "text": "to the left and then keep doing that and",
+        "start": 356.16,
+        "duration": 3.2
+    },
+    {
+        "text": "eventually we'll",
+        "start": 358.479,
+        "duration": 3.201
+    },
+    {
+        "text": "arrive at the result so what about this",
+        "start": 359.36,
+        "duration": 3.2
+    },
+    {
+        "text": "position",
+        "start": 361.68,
+        "duration": 3.12
+    },
+    {
+        "text": "well it has a zero to the right of it",
+        "start": 362.56,
+        "duration": 4.079
+    },
+    {
+        "text": "because the right is out of bounds it",
+        "start": 364.8,
+        "duration": 2.64
+    },
+    {
+        "text": "has a one",
+        "start": 366.639,
+        "duration": 3.761
+    },
+    {
+        "text": "below it so we'll take zero plus one",
+        "start": 367.44,
+        "duration": 3.92
+    },
+    {
+        "text": "again we get",
+        "start": 370.4,
+        "duration": 3.68
+    },
+    {
+        "text": "one now what about this spot this spot",
+        "start": 371.36,
+        "duration": 4.72
+    },
+    {
+        "text": "actually has a value below it",
+        "start": 374.08,
+        "duration": 5.2
+    },
+    {
+        "text": "and a value to the right of it and those",
+        "start": 376.08,
+        "duration": 5.839
+    },
+    {
+        "text": "values are one and one respectively so",
+        "start": 379.28,
+        "duration": 5.199
+    },
+    {
+        "text": "the sum is gonna be two and that makes",
+        "start": 381.919,
+        "duration": 3.761
+    },
+    {
+        "text": "sense right because if you",
+        "start": 384.479,
+        "duration": 4.081
+    },
+    {
+        "text": "start here there's one path going to the",
+        "start": 385.68,
+        "duration": 4.799
+    },
+    {
+        "text": "right and then going down right that's",
+        "start": 388.56,
+        "duration": 3.759
+    },
+    {
+        "text": "one path to get to the result",
+        "start": 390.479,
+        "duration": 4.321
+    },
+    {
+        "text": "and there's another path going down and",
+        "start": 392.319,
+        "duration": 3.281
+    },
+    {
+        "text": "going",
+        "start": 394.8,
+        "duration": 3.119
+    },
+    {
+        "text": "right that lets us get to the result so",
+        "start": 395.6,
+        "duration": 4.0
+    },
+    {
+        "text": "it makes sense that this would be",
+        "start": 397.919,
+        "duration": 4.481
+    },
+    {
+        "text": "two unique paths to get to the result",
+        "start": 399.6,
+        "duration": 5.12
+    },
+    {
+        "text": "and from here on out it's basic addition",
+        "start": 402.4,
+        "duration": 4.0
+    },
+    {
+        "text": "right so down is one",
+        "start": 404.72,
+        "duration": 4.08
+    },
+    {
+        "text": "right is two add those together we get",
+        "start": 406.4,
+        "duration": 4.96
+    },
+    {
+        "text": "three here we get one plus three that's",
+        "start": 408.8,
+        "duration": 3.119
+    },
+    {
+        "text": "going to be",
+        "start": 411.36,
+        "duration": 2.959
+    },
+    {
+        "text": "four add this together with this that's",
+        "start": 411.919,
+        "duration": 3.441
+    },
+    {
+        "text": "gonna be five",
+        "start": 414.319,
+        "duration": 2.801
+    },
+    {
+        "text": "add these two together that's gonna be",
+        "start": 415.36,
+        "duration": 3.6
+    },
+    {
+        "text": "six add these two together that's gonna",
+        "start": 417.12,
+        "duration": 2.88
+    },
+    {
+        "text": "be seven",
+        "start": 418.96,
+        "duration": 3.519
+    },
+    {
+        "text": "and so you notice now we have filled in",
+        "start": 420.0,
+        "duration": 3.919
+    },
+    {
+        "text": "the second row it looks a little bit",
+        "start": 422.479,
+        "duration": 3.521
+    },
+    {
+        "text": "different than the first row right",
+        "start": 423.919,
+        "duration": 4.56
+    },
+    {
+        "text": "the bottom was all ones and now the only",
+        "start": 426.0,
+        "duration": 4.0
+    },
+    {
+        "text": "thing for us to do is to get this",
+        "start": 428.479,
+        "duration": 4.72
+    },
+    {
+        "text": "last row so we look down and we look",
+        "start": 430.0,
+        "duration": 5.36
+    },
+    {
+        "text": "right that's one plus zero so we're",
+        "start": 433.199,
+        "duration": 3.201
+    },
+    {
+        "text": "going to get a one",
+        "start": 435.36,
+        "duration": 3.679
+    },
+    {
+        "text": "notice how the entire first column is",
+        "start": 436.4,
+        "duration": 3.04
+    },
+    {
+        "text": "one",
+        "start": 439.039,
+        "duration": 2.321
+    },
+    {
+        "text": "that's actually always going to be true",
+        "start": 439.44,
+        "duration": 3.599
+    },
+    {
+        "text": "right because think about it from any",
+        "start": 441.36,
+        "duration": 2.64
+    },
+    {
+        "text": "position",
+        "start": 443.039,
+        "duration": 2.72
+    },
+    {
+        "text": "in the rightmost column the only",
+        "start": 444.0,
+        "duration": 3.12
+    },
+    {
+        "text": "decision we can do is move",
+        "start": 445.759,
+        "duration": 3.601
+    },
+    {
+        "text": "down so there's only going to be one",
+        "start": 447.12,
+        "duration": 3.04
+    },
+    {
+        "text": "path",
+        "start": 449.36,
+        "duration": 3.44
+    },
+    {
+        "text": "to the result so this is going to be two",
+        "start": 450.16,
+        "duration": 3.12
+    },
+    {
+        "text": "plus",
+        "start": 452.8,
+        "duration": 3.76
+    },
+    {
+        "text": "one this is going to be three plus three",
+        "start": 453.28,
+        "duration": 5.84
+    },
+    {
+        "text": "this is going to be four plus six this",
+        "start": 456.56,
+        "duration": 4.16
+    },
+    {
+        "text": "is going to be five plus ten",
+        "start": 459.12,
+        "duration": 4.079
+    },
+    {
+        "text": "this is going to be six plus fifteen and",
+        "start": 460.72,
+        "duration": 3.84
+    },
+    {
+        "text": "so finally",
+        "start": 463.199,
+        "duration": 3.921
+    },
+    {
+        "text": "we are at our start position so we can",
+        "start": 464.56,
+        "duration": 4.639
+    },
+    {
+        "text": "take the bottom and right values",
+        "start": 467.12,
+        "duration": 6.24
+    },
+    {
+        "text": "7 plus 21 add them together we get 28",
+        "start": 469.199,
+        "duration": 7.28
+    },
+    {
+        "text": "so that tells us if we start here there",
+        "start": 473.36,
+        "duration": 3.519
+    },
+    {
+        "text": "are",
+        "start": 476.479,
+        "duration": 3.601
+    },
+    {
+        "text": "28 different paths we can use",
+        "start": 476.879,
+        "duration": 6.961
+    },
+    {
+        "text": "to get to the result 28 unique paths",
+        "start": 480.08,
+        "duration": 5.2
+    },
+    {
+        "text": "and when you look at the picture it",
+        "start": 483.84,
+        "duration": 3.12
+    },
+    {
+        "text": "actually looks more like a math problem",
+        "start": 485.28,
+        "duration": 3.28
+    },
+    {
+        "text": "than a coding problem right and that's",
+        "start": 486.96,
+        "duration": 3.2
+    },
+    {
+        "text": "because it is you can actually",
+        "start": 488.56,
+        "duration": 3.52
+    },
+    {
+        "text": "calculate the number of ways from the",
+        "start": 490.16,
+        "duration": 4.56
+    },
+    {
+        "text": "top left i think in constant time if you",
+        "start": 492.08,
+        "duration": 3.44
+    },
+    {
+        "text": "have like a",
+        "start": 494.72,
+        "duration": 2.96
+    },
+    {
+        "text": "math equation but i don't know a ton",
+        "start": 495.52,
+        "duration": 3.84
+    },
+    {
+        "text": "about it i'm just going to stick to the",
+        "start": 497.68,
+        "duration": 3.68
+    },
+    {
+        "text": "dynamic programming solution",
+        "start": 499.36,
+        "duration": 4.0
+    },
+    {
+        "text": "so let's do what we just did in the",
+        "start": 501.36,
+        "duration": 3.6
+    },
+    {
+        "text": "picture so i'm going to have",
+        "start": 503.36,
+        "duration": 3.519
+    },
+    {
+        "text": "a row and this is initially going to be",
+        "start": 504.96,
+        "duration": 4.16
+    },
+    {
+        "text": "the bottom row it's going to be",
+        "start": 506.879,
+        "duration": 4.561
+    },
+    {
+        "text": "the length of the number of rows that we",
+        "start": 509.12,
+        "duration": 3.44
+    },
+    {
+        "text": "have which is",
+        "start": 511.44,
+        "duration": 3.12
+    },
+    {
+        "text": "n but since it's a grid you could",
+        "start": 512.56,
+        "duration": 3.2
+    },
+    {
+        "text": "probably use either m",
+        "start": 514.56,
+        "duration": 3.52
+    },
+    {
+        "text": "or n and so since we know the bottom row",
+        "start": 515.76,
+        "duration": 4.32
+    },
+    {
+        "text": "is going to be all ones we can start",
+        "start": 518.08,
+        "duration": 5.28
+    },
+    {
+        "text": "going through the other rows",
+        "start": 520.08,
+        "duration": 5.12
+    },
+    {
+        "text": "so we can go through all of the other",
+        "start": 523.36,
+        "duration": 3.76
+    },
+    {
+        "text": "rows except for the last one so",
+        "start": 525.2,
+        "duration": 4.72
+    },
+    {
+        "text": "m minus one and for each row we're going",
+        "start": 527.12,
+        "duration": 3.6
+    },
+    {
+        "text": "to compute",
+        "start": 529.92,
+        "duration": 3.28
+    },
+    {
+        "text": "a new row so this new row is going to be",
+        "start": 530.72,
+        "duration": 3.44
+    },
+    {
+        "text": "above",
+        "start": 533.2,
+        "duration": 3.28
+    },
+    {
+        "text": "the old row and so it's going to be the",
+        "start": 534.16,
+        "duration": 4.08
+    },
+    {
+        "text": "same dimensions of course",
+        "start": 536.48,
+        "duration": 4.4
+    },
+    {
+        "text": "we'll initialize it to all ones and to",
+        "start": 538.24,
+        "duration": 3.44
+    },
+    {
+        "text": "avoid",
+        "start": 540.88,
+        "duration": 2.959
+    },
+    {
+        "text": "the edge case of having to check out of",
+        "start": 541.68,
+        "duration": 3.76
+    },
+    {
+        "text": "bounds what i'm going to do",
+        "start": 543.839,
+        "duration": 4.56
+    },
+    {
+        "text": "is go through every position every",
+        "start": 545.44,
+        "duration": 4.0
+    },
+    {
+        "text": "column except",
+        "start": 548.399,
+        "duration": 3.601
+    },
+    {
+        "text": "the rightmost column and we can do that",
+        "start": 549.44,
+        "duration": 4.72
+    },
+    {
+        "text": "like this because we know the rightmost",
+        "start": 552.0,
+        "duration": 2.88
+    },
+    {
+        "text": "column",
+        "start": 554.16,
+        "duration": 3.92
+    },
+    {
+        "text": "or the last value in every single row is",
+        "start": 554.88,
+        "duration": 4.079
+    },
+    {
+        "text": "always going to be",
+        "start": 558.08,
+        "duration": 3.52
+    },
+    {
+        "text": "one right i showed that in the drawing",
+        "start": 558.959,
+        "duration": 3.521
+    },
+    {
+        "text": "and so we're going to",
+        "start": 561.6,
+        "duration": 3.359
+    },
+    {
+        "text": "start at the second to last position",
+        "start": 562.48,
+        "duration": 4.32
+    },
+    {
+        "text": "keep going until we get to the beginning",
+        "start": 564.959,
+        "duration": 2.32
+    },
+    {
+        "text": "and go",
+        "start": 566.8,
+        "duration": 2.479
+    },
+    {
+        "text": "in reverse order so we're going from",
+        "start": 567.279,
+        "duration": 3.041
+    },
+    {
+        "text": "right to left",
+        "start": 569.279,
+        "duration": 3.521
+    },
+    {
+        "text": "and we know that the new row so if we're",
+        "start": 570.32,
+        "duration": 3.76
+    },
+    {
+        "text": "computing new row of",
+        "start": 572.8,
+        "duration": 4.719
+    },
+    {
+        "text": "j it's going to be new",
+        "start": 574.08,
+        "duration": 6.72
+    },
+    {
+        "text": "row of j plus 1 so the",
+        "start": 577.519,
+        "duration": 5.44
+    },
+    {
+        "text": "this is the right value and the value",
+        "start": 580.8,
+        "duration": 3.76
+    },
+    {
+        "text": "below is just going to be",
+        "start": 582.959,
+        "duration": 5.281
+    },
+    {
+        "text": "the old row at index j and so with this",
+        "start": 584.56,
+        "duration": 5.52
+    },
+    {
+        "text": "loop we'll be able to compute the new",
+        "start": 588.24,
+        "duration": 4.56
+    },
+    {
+        "text": "row and so after we do that we can",
+        "start": 590.08,
+        "duration": 4.8
+    },
+    {
+        "text": "update the row so the old row is now",
+        "start": 592.8,
+        "duration": 3.599
+    },
+    {
+        "text": "going to be set to the",
+        "start": 594.88,
+        "duration": 3.92
+    },
+    {
+        "text": "new row and so it's going to keep doing",
+        "start": 596.399,
+        "duration": 3.44
+    },
+    {
+        "text": "that until we",
+        "start": 598.8,
+        "duration": 4.0
+    },
+    {
+        "text": "end up getting the last or rather the",
+        "start": 599.839,
+        "duration": 4.24
+    },
+    {
+        "text": "first row the top",
+        "start": 602.8,
+        "duration": 3.52
+    },
+    {
+        "text": "row that we actually want to compute so",
+        "start": 604.079,
+        "duration": 4.161
+    },
+    {
+        "text": "after this has been executed that's",
+        "start": 606.32,
+        "duration": 3.44
+    },
+    {
+        "text": "what's going to happen and what we",
+        "start": 608.24,
+        "duration": 3.039
+    },
+    {
+        "text": "actually want to return though",
+        "start": 609.76,
+        "duration": 4.24
+    },
+    {
+        "text": "is in that first row which will be in",
+        "start": 611.279,
+        "duration": 3.921
+    },
+    {
+        "text": "this variable",
+        "start": 614.0,
+        "duration": 4.0
+    },
+    {
+        "text": "we want the first value so at index 0",
+        "start": 615.2,
+        "duration": 4.319
+    },
+    {
+        "text": "that's what we're going to return",
+        "start": 618.0,
+        "duration": 4.56
+    },
+    {
+        "text": "so now we can run our code and by the",
+        "start": 619.519,
+        "duration": 3.681
+    },
+    {
+        "text": "way",
+        "start": 622.56,
+        "duration": 2.88
+    },
+    {
+        "text": "so it is pretty efficient because we did",
+        "start": 623.2,
+        "duration": 3.28
+    },
+    {
+        "text": "this in o",
+        "start": 625.44,
+        "duration": 4.639
+    },
+    {
+        "text": "of n times n time and the memory",
+        "start": 626.48,
+        "duration": 6.08
+    },
+    {
+        "text": "complexity is just the",
+        "start": 630.079,
+        "duration": 5.921
+    },
+    {
+        "text": "big o of n because that's the length of",
+        "start": 632.56,
+        "duration": 3.68
+    },
+    {
+        "text": "a",
+        "start": 636.0,
+        "duration": 2.8
+    },
+    {
+        "text": "row so i hope this was helpful if you",
+        "start": 636.24,
+        "duration": 3.12
+    },
+    {
+        "text": "enjoyed",
+        "start": 638.8,
+        "duration": 2.32
+    },
+    {
+        "text": "please like and subscribe it supports",
+        "start": 639.36,
+        "duration": 3.919
+    },
+    {
+        "text": "the channel a lot and i'll hopefully",
+        "start": 641.12,
+        "duration": 6.719
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 643.279,
+        "duration": 4.56
+    }
+]

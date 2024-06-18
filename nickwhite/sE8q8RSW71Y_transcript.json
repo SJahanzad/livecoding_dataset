@@ -1,0 +1,392 @@
+[
+    {
+        "text": "hey what's up guys it's Nick Dwight I do",
+        "start": 0.03,
+        "duration": 4.41
+    },
+    {
+        "text": "tech and coding stuff on twitch and",
+        "start": 2.73,
+        "duration": 3.66
+    },
+    {
+        "text": "YouTube and I do all the weaker problems",
+        "start": 4.44,
+        "duration": 4.68
+    },
+    {
+        "text": "so I have a channel YouTube channel yeah",
+        "start": 6.39,
+        "duration": 5.34
+    },
+    {
+        "text": "a YouTube channel with a playlist with",
+        "start": 9.12,
+        "duration": 4.62
+    },
+    {
+        "text": "like 50 of them so far and we're gonna",
+        "start": 11.73,
+        "duration": 3.84
+    },
+    {
+        "text": "keep doing them ten a day or something",
+        "start": 13.74,
+        "duration": 5.01
+    },
+    {
+        "text": "like that until we do them all so check",
+        "start": 15.57,
+        "duration": 4.68
+    },
+    {
+        "text": "those out yeah everything else in the",
+        "start": 18.75,
+        "duration": 3.15
+    },
+    {
+        "text": "description this one's super easy it's",
+        "start": 20.25,
+        "duration": 4.98
+    },
+    {
+        "text": "gonna be a couple minutes only search in",
+        "start": 21.9,
+        "duration": 5.61
+    },
+    {
+        "text": "a binary tree just traversing a binary",
+        "start": 25.23,
+        "duration": 4.5
+    },
+    {
+        "text": "tree and looking for a node super easy",
+        "start": 27.51,
+        "duration": 3.63
+    },
+    {
+        "text": "you can do depth-first search you do",
+        "start": 29.73,
+        "duration": 3.21
+    },
+    {
+        "text": "breadth-first search in or a pre-order",
+        "start": 31.14,
+        "duration": 4.41
+    },
+    {
+        "text": "post order traversal so you can just do",
+        "start": 32.94,
+        "duration": 4.74
+    },
+    {
+        "text": "level orders for any traversal in",
+        "start": 35.55,
+        "duration": 3.87
+    },
+    {
+        "text": "traverse the tree you check each node",
+        "start": 37.68,
+        "duration": 4.74
+    },
+    {
+        "text": "and if obviously what we're gonna do",
+        "start": 39.42,
+        "duration": 4.53
+    },
+    {
+        "text": "let's just read a real quick given a",
+        "start": 42.42,
+        "duration": 3.24
+    },
+    {
+        "text": "roof value of a binary tree and a value",
+        "start": 43.95,
+        "duration": 3.06
+    },
+    {
+        "text": "need to find the node in the binary",
+        "start": 45.66,
+        "duration": 3.54
+    },
+    {
+        "text": "search tree that the nodes value comes",
+        "start": 47.01,
+        "duration": 4.26
+    },
+    {
+        "text": "to give them value return the subtree",
+        "start": 49.2,
+        "duration": 3.66
+    },
+    {
+        "text": "rooted with that node if such node",
+        "start": 51.27,
+        "duration": 3.42
+    },
+    {
+        "text": "doesn't exist for turned off so we're",
+        "start": 52.86,
+        "duration": 3.42
+    },
+    {
+        "text": "just returning the node we're doing",
+        "start": 54.69,
+        "duration": 3.509
+    },
+    {
+        "text": "recursive calls on the left and right",
+        "start": 56.28,
+        "duration": 4.77
+    },
+    {
+        "text": "children until we find this is the main",
+        "start": 58.199,
+        "duration": 4.79
+    },
+    {
+        "text": "condition if rooftop Val equals Val",
+        "start": 61.05,
+        "duration": 5.16
+    },
+    {
+        "text": "return root that's it",
+        "start": 62.989,
+        "duration": 5.651
+    },
+    {
+        "text": "super easy and obviously this is always",
+        "start": 66.21,
+        "duration": 9.33
+    },
+    {
+        "text": "at the top if we're equals null and then",
+        "start": 68.64,
+        "duration": 8.61
+    },
+    {
+        "text": "what do we have to do what's the only",
+        "start": 75.54,
+        "duration": 3.719
+    },
+    {
+        "text": "hard part of this is how we're going to",
+        "start": 77.25,
+        "duration": 4.979
+    },
+    {
+        "text": "recurse and search the rest of the tree",
+        "start": 79.259,
+        "duration": 4.891
+    },
+    {
+        "text": "so if we have the value we return the",
+        "start": 82.229,
+        "duration": 5.011
+    },
+    {
+        "text": "root returning which returns a subtree",
+        "start": 84.15,
+        "duration": 4.89
+    },
+    {
+        "text": "don't get confused by returning the sub",
+        "start": 87.24,
+        "duration": 3.18
+    },
+    {
+        "text": "for you just return the root of the",
+        "start": 89.04,
+        "duration": 4.35
+    },
+    {
+        "text": "subtree and return to so would just",
+        "start": 90.42,
+        "duration": 4.379
+    },
+    {
+        "text": "refer to the value that we're looking",
+        "start": 93.39,
+        "duration": 3.21
+    },
+    {
+        "text": "for",
+        "start": 94.799,
+        "duration": 3.661
+    },
+    {
+        "text": "sorry I'm in a library and there's",
+        "start": 96.6,
+        "duration": 4.229
+    },
+    {
+        "text": "people talking so first of all if val is",
+        "start": 98.46,
+        "duration": 7.229
+    },
+    {
+        "text": "less than root dot val so we're on we we",
+        "start": 100.829,
+        "duration": 7.201
+    },
+    {
+        "text": "search on the current node and if the",
+        "start": 105.689,
+        "duration": 4.021
+    },
+    {
+        "text": "values on the left side well I don't",
+        "start": 108.03,
+        "duration": 3.03
+    },
+    {
+        "text": "know if you guys know how binary search",
+        "start": 109.71,
+        "duration": 3.689
+    },
+    {
+        "text": "trees work but smaller values are on the",
+        "start": 111.06,
+        "duration": 4.8
+    },
+    {
+        "text": "Left greater values are on the right so",
+        "start": 113.399,
+        "duration": 4.231
+    },
+    {
+        "text": "if the value that we're looking for is",
+        "start": 115.86,
+        "duration": 4.35
+    },
+    {
+        "text": "be less than the current value we're",
+        "start": 117.63,
+        "duration": 4.559
+    },
+    {
+        "text": "gonna go to the left so what to do is",
+        "start": 120.21,
+        "duration": 4.439
+    },
+    {
+        "text": "recurse on the left side search BST i'm",
+        "start": 122.189,
+        "duration": 4.921
+    },
+    {
+        "text": "we've got left with the same value that",
+        "start": 124.649,
+        "duration": 4.741
+    },
+    {
+        "text": "we're passing in otherwise the value is",
+        "start": 127.11,
+        "duration": 4.099
+    },
+    {
+        "text": "greater than or equal to so we search",
+        "start": 129.39,
+        "duration": 3.96
+    },
+    {
+        "text": "BST on the",
+        "start": 131.209,
+        "duration": 4.751
+    },
+    {
+        "text": "rights and bow and the only thing we",
+        "start": 133.35,
+        "duration": 4.5
+    },
+    {
+        "text": "have to do is put return before these",
+        "start": 135.96,
+        "duration": 4.23
+    },
+    {
+        "text": "because we're returning the node when we",
+        "start": 137.85,
+        "duration": 2.94
+    },
+    {
+        "text": "find it",
+        "start": 140.19,
+        "duration": 2.64
+    },
+    {
+        "text": "so these recursively go traverse the",
+        "start": 140.79,
+        "duration": 4.5
+    },
+    {
+        "text": "whole tree once if the valleys null we",
+        "start": 142.83,
+        "duration": 4.17
+    },
+    {
+        "text": "were turned off if we find the value we",
+        "start": 145.29,
+        "duration": 4.28
+    },
+    {
+        "text": "return the roof that's it so easy",
+        "start": 147.0,
+        "duration": 4.41
+    },
+    {
+        "text": "easiest problem ever",
+        "start": 149.57,
+        "duration": 3.7
+    },
+    {
+        "text": "there we go solution hundred percent",
+        "start": 151.41,
+        "duration": 4.2
+    },
+    {
+        "text": "hundred percent and that's pretty much",
+        "start": 153.27,
+        "duration": 4.38
+    },
+    {
+        "text": "it guys I mean that's one of the easiest",
+        "start": 155.61,
+        "duration": 3.72
+    },
+    {
+        "text": "problems on leak codes for trees",
+        "start": 157.65,
+        "duration": 4.05
+    },
+    {
+        "text": "especially so please check out any of",
+        "start": 159.33,
+        "duration": 3.9
+    },
+    {
+        "text": "the other ones we go through a lot of",
+        "start": 161.7,
+        "duration": 4.77
+    },
+    {
+        "text": "harder and medium ones so check out the",
+        "start": 163.23,
+        "duration": 5.31
+    },
+    {
+        "text": "other videos and please subscribe and",
+        "start": 166.47,
+        "duration": 3.75
+    },
+    {
+        "text": "like thank you guys for watching and",
+        "start": 168.54,
+        "duration": 4.7
+    },
+    {
+        "text": "I'll see you next time",
+        "start": 170.22,
+        "duration": 3.02
+    }
+]

@@ -1,0 +1,2522 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.52
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.52,
+        "duration": 3.2
+    },
+    {
+        "text": "let's look at",
+        "start": 3.52,
+        "duration": 4.239
+    },
+    {
+        "text": "spiral matrix we are given an m by",
+        "start": 4.72,
+        "duration": 6.48
+    },
+    {
+        "text": "n matrix and all we need to do is return",
+        "start": 7.759,
+        "duration": 6.96
+    },
+    {
+        "text": "all of the elements in spiral order",
+        "start": 11.2,
+        "duration": 4.88
+    },
+    {
+        "text": "so the order that we're given the",
+        "start": 14.719,
+        "duration": 3.601
+    },
+    {
+        "text": "elements in is one two three",
+        "start": 16.08,
+        "duration": 4.8
+    },
+    {
+        "text": "four five six seven eight nine right if",
+        "start": 18.32,
+        "duration": 4.0
+    },
+    {
+        "text": "you go from left to right",
+        "start": 20.88,
+        "duration": 3.84
+    },
+    {
+        "text": "but we actually wanna return these",
+        "start": 22.32,
+        "duration": 3.039
+    },
+    {
+        "text": "elements",
+        "start": 24.72,
+        "duration": 4.16
+    },
+    {
+        "text": "in spiral order so we are gonna start at",
+        "start": 25.359,
+        "duration": 4.16
+    },
+    {
+        "text": "the top",
+        "start": 28.88,
+        "duration": 3.519
+    },
+    {
+        "text": "left and we're going to go 1 we're going",
+        "start": 29.519,
+        "duration": 3.841
+    },
+    {
+        "text": "to go right",
+        "start": 32.399,
+        "duration": 4.32
+    },
+    {
+        "text": "2 go right again 3 now we can't go",
+        "start": 33.36,
+        "duration": 5.6
+    },
+    {
+        "text": "right anymore so now we're going to go",
+        "start": 36.719,
+        "duration": 3.601
+    },
+    {
+        "text": "down because that is",
+        "start": 38.96,
+        "duration": 3.919
+    },
+    {
+        "text": "spiral order so we're going to do 6 go",
+        "start": 40.32,
+        "duration": 3.919
+    },
+    {
+        "text": "down one more time",
+        "start": 42.879,
+        "duration": 4.321
+    },
+    {
+        "text": "do nine now go left because we can't go",
+        "start": 44.239,
+        "duration": 3.84
+    },
+    {
+        "text": "down anymore",
+        "start": 47.2,
+        "duration": 3.199
+    },
+    {
+        "text": "we're gonna get eight go left again",
+        "start": 48.079,
+        "duration": 3.441
+    },
+    {
+        "text": "we're gonna get seven",
+        "start": 50.399,
+        "duration": 4.64
+    },
+    {
+        "text": "now we can't go left anymore so we go up",
+        "start": 51.52,
+        "duration": 6.64
+    },
+    {
+        "text": "to four and if we try to go up now we",
+        "start": 55.039,
+        "duration": 4.801
+    },
+    {
+        "text": "actually see well we already visited",
+        "start": 58.16,
+        "duration": 3.68
+    },
+    {
+        "text": "that right the one's been visited",
+        "start": 59.84,
+        "duration": 5.679
+    },
+    {
+        "text": "so now we actually go right we have the",
+        "start": 61.84,
+        "duration": 4.639
+    },
+    {
+        "text": "five and the five",
+        "start": 65.519,
+        "duration": 2.64
+    },
+    {
+        "text": "is the last element if we try to go",
+        "start": 66.479,
+        "duration": 4.081
+    },
+    {
+        "text": "right we cannot go right anymore",
+        "start": 68.159,
+        "duration": 4.481
+    },
+    {
+        "text": "so how can we write an efficient",
+        "start": 70.56,
+        "duration": 4.0
+    },
+    {
+        "text": "algorithm to do that right to worry",
+        "start": 72.64,
+        "duration": 2.4
+    },
+    {
+        "text": "about",
+        "start": 74.56,
+        "duration": 2.32
+    },
+    {
+        "text": "okay we're going in this direction and",
+        "start": 75.04,
+        "duration": 3.28
+    },
+    {
+        "text": "then eventually we have to change",
+        "start": 76.88,
+        "duration": 3.12
+    },
+    {
+        "text": "directions and all that stuff",
+        "start": 78.32,
+        "duration": 4.32
+    },
+    {
+        "text": "well in my opinion the easiest way is",
+        "start": 80.0,
+        "duration": 5.04
+    },
+    {
+        "text": "also the most efficient way so one thing",
+        "start": 82.64,
+        "duration": 3.36
+    },
+    {
+        "text": "to notice is",
+        "start": 85.04,
+        "duration": 3.52
+    },
+    {
+        "text": "we let's say we start at the top left we",
+        "start": 86.0,
+        "duration": 4.479
+    },
+    {
+        "text": "go right right right we go here",
+        "start": 88.56,
+        "duration": 4.16
+    },
+    {
+        "text": "so we cross out all these elements then",
+        "start": 90.479,
+        "duration": 3.921
+    },
+    {
+        "text": "we go down down down",
+        "start": 92.72,
+        "duration": 4.64
+    },
+    {
+        "text": "we get here then we go left we go here",
+        "start": 94.4,
+        "duration": 4.48
+    },
+    {
+        "text": "so we cross out these elements",
+        "start": 97.36,
+        "duration": 4.16
+    },
+    {
+        "text": "and then we go up right so we went all",
+        "start": 98.88,
+        "duration": 4.0
+    },
+    {
+        "text": "four directions we went",
+        "start": 101.52,
+        "duration": 4.8
+    },
+    {
+        "text": "right we went down we went left",
+        "start": 102.88,
+        "duration": 5.76
+    },
+    {
+        "text": "and then we went up until we couldn't",
+        "start": 106.32,
+        "duration": 4.64
+    },
+    {
+        "text": "anymore but we still have some elements",
+        "start": 108.64,
+        "duration": 5.2
+    },
+    {
+        "text": "left but do you see what we kind of did",
+        "start": 110.96,
+        "duration": 3.519
+    },
+    {
+        "text": "here",
+        "start": 113.84,
+        "duration": 3.919
+    },
+    {
+        "text": "we took the outermost layer",
+        "start": 114.479,
+        "duration": 5.92
+    },
+    {
+        "text": "and shrinked it right so now we have a",
+        "start": 117.759,
+        "duration": 3.121
+    },
+    {
+        "text": "sub",
+        "start": 120.399,
+        "duration": 3.441
+    },
+    {
+        "text": "rectangle or sub matrix here that now",
+        "start": 120.88,
+        "duration": 4.64
+    },
+    {
+        "text": "we're going to do the exact same",
+        "start": 123.84,
+        "duration": 4.479
+    },
+    {
+        "text": "algorithm on but you notice that our",
+        "start": 125.52,
+        "duration": 3.519
+    },
+    {
+        "text": "boundary",
+        "start": 128.319,
+        "duration": 3.361
+    },
+    {
+        "text": "our left boundary was over here and our",
+        "start": 129.039,
+        "duration": 4.881
+    },
+    {
+        "text": "right boundary was initially over here",
+        "start": 131.68,
+        "duration": 5.279
+    },
+    {
+        "text": "but now we shrinked it right this is our",
+        "start": 133.92,
+        "duration": 5.84
+    },
+    {
+        "text": "new sub matrix right originally we had",
+        "start": 136.959,
+        "duration": 4.0
+    },
+    {
+        "text": "this",
+        "start": 139.76,
+        "duration": 3.68
+    },
+    {
+        "text": "so our left and our new left and right",
+        "start": 140.959,
+        "duration": 3.201
+    },
+    {
+        "text": "boundaries",
+        "start": 143.44,
+        "duration": 4.159
+    },
+    {
+        "text": "are here right so we shrunk it by one we",
+        "start": 144.16,
+        "duration": 4.64
+    },
+    {
+        "text": "had to move",
+        "start": 147.599,
+        "duration": 3.92
+    },
+    {
+        "text": "our left and right boundaries inward",
+        "start": 148.8,
+        "duration": 4.0
+    },
+    {
+        "text": "similarly we had a",
+        "start": 151.519,
+        "duration": 4.241
+    },
+    {
+        "text": "top boundary of here and we had a bottom",
+        "start": 152.8,
+        "duration": 3.92
+    },
+    {
+        "text": "boundary",
+        "start": 155.76,
+        "duration": 3.52
+    },
+    {
+        "text": "over here but we had to shrink that as",
+        "start": 156.72,
+        "duration": 4.239
+    },
+    {
+        "text": "well right we had to move our top",
+        "start": 159.28,
+        "duration": 3.599
+    },
+    {
+        "text": "boundary down one and we had to move",
+        "start": 160.959,
+        "duration": 4.881
+    },
+    {
+        "text": "our bottom boundary up by one so now our",
+        "start": 162.879,
+        "duration": 5.121
+    },
+    {
+        "text": "top boundary is over here and our bottom",
+        "start": 165.84,
+        "duration": 3.92
+    },
+    {
+        "text": "boundary is over here",
+        "start": 168.0,
+        "duration": 4.319
+    },
+    {
+        "text": "and we still have some elements to go in",
+        "start": 169.76,
+        "duration": 4.479
+    },
+    {
+        "text": "spiral order so again what are we going",
+        "start": 172.319,
+        "duration": 3.2
+    },
+    {
+        "text": "to do with this",
+        "start": 174.239,
+        "duration": 3.841
+    },
+    {
+        "text": "sub matrix well we're going to start at",
+        "start": 175.519,
+        "duration": 3.121
+    },
+    {
+        "text": "the top",
+        "start": 178.08,
+        "duration": 2.799
+    },
+    {
+        "text": "left which is over here and we're going",
+        "start": 178.64,
+        "duration": 3.92
+    },
+    {
+        "text": "to go in spiral order so now we're going",
+        "start": 180.879,
+        "duration": 2.08
+    },
+    {
+        "text": "to go",
+        "start": 182.56,
+        "duration": 4.24
+    },
+    {
+        "text": "right so we get to seven but notice now",
+        "start": 182.959,
+        "duration": 6.481
+    },
+    {
+        "text": "notice now how we pretty much have gone",
+        "start": 186.8,
+        "duration": 4.079
+    },
+    {
+        "text": "through all the elements right",
+        "start": 189.44,
+        "duration": 4.159
+    },
+    {
+        "text": "and so since we done these elements what",
+        "start": 190.879,
+        "duration": 4.801
+    },
+    {
+        "text": "we can now say is our left and right",
+        "start": 193.599,
+        "duration": 3.201
+    },
+    {
+        "text": "boundaries were moved",
+        "start": 195.68,
+        "duration": 3.04
+    },
+    {
+        "text": "once more right so left and right are",
+        "start": 196.8,
+        "duration": 4.24
+    },
+    {
+        "text": "now at the same position",
+        "start": 198.72,
+        "duration": 4.56
+    },
+    {
+        "text": "or they've intersected or overlapped or",
+        "start": 201.04,
+        "duration": 4.24
+    },
+    {
+        "text": "whatever and so what that basically",
+        "start": 203.28,
+        "duration": 2.8
+    },
+    {
+        "text": "means is",
+        "start": 205.28,
+        "duration": 2.959
+    },
+    {
+        "text": "we don't really have a rectangle anymore",
+        "start": 206.08,
+        "duration": 3.84
+    },
+    {
+        "text": "right our",
+        "start": 208.239,
+        "duration": 4.56
+    },
+    {
+        "text": "boundaries are not in a position so",
+        "start": 209.92,
+        "duration": 4.8
+    },
+    {
+        "text": "therefore we don't have to continue",
+        "start": 212.799,
+        "duration": 3.761
+    },
+    {
+        "text": "going anymore right and you can tell by",
+        "start": 214.72,
+        "duration": 4.079
+    },
+    {
+        "text": "the picture well we already visited",
+        "start": 216.56,
+        "duration": 3.44
+    },
+    {
+        "text": "every single element",
+        "start": 218.799,
+        "duration": 3.281
+    },
+    {
+        "text": "we don't have to continue the spiral",
+        "start": 220.0,
+        "duration": 3.12
+    },
+    {
+        "text": "we're just going to repeat",
+        "start": 222.08,
+        "duration": 3.92
+    },
+    {
+        "text": "old elements anyway so that's the main",
+        "start": 223.12,
+        "duration": 5.119
+    },
+    {
+        "text": "idea but i'm just going to show you",
+        "start": 226.0,
+        "duration": 3.519
+    },
+    {
+        "text": "i'm just going to actually walk through",
+        "start": 228.239,
+        "duration": 3.201
+    },
+    {
+        "text": "the algorithm and show you a couple",
+        "start": 229.519,
+        "duration": 3.36
+    },
+    {
+        "text": "of things that i'm going to do slightly",
+        "start": 231.44,
+        "duration": 2.96
+    },
+    {
+        "text": "differently so i am going to initialize",
+        "start": 232.879,
+        "duration": 3.36
+    },
+    {
+        "text": "the left boundary over here because this",
+        "start": 234.4,
+        "duration": 2.8
+    },
+    {
+        "text": "is our zero",
+        "start": 236.239,
+        "duration": 3.121
+    },
+    {
+        "text": "column right and this is our third",
+        "start": 237.2,
+        "duration": 4.0
+    },
+    {
+        "text": "column but what i'm actually gonna do is",
+        "start": 239.36,
+        "duration": 2.4
+    },
+    {
+        "text": "put the",
+        "start": 241.2,
+        "duration": 3.119
+    },
+    {
+        "text": "right boundary over here just mainly",
+        "start": 241.76,
+        "duration": 4.08
+    },
+    {
+        "text": "because it's gonna make the code a",
+        "start": 244.319,
+        "duration": 2.881
+    },
+    {
+        "text": "little bit easier for us",
+        "start": 245.84,
+        "duration": 4.479
+    },
+    {
+        "text": "and so this is the zeroth row and this",
+        "start": 247.2,
+        "duration": 5.039
+    },
+    {
+        "text": "is the second row right",
+        "start": 250.319,
+        "duration": 4.081
+    },
+    {
+        "text": "so what i'm gonna do is put our top",
+        "start": 252.239,
+        "duration": 3.761
+    },
+    {
+        "text": "boundary over here",
+        "start": 254.4,
+        "duration": 3.44
+    },
+    {
+        "text": "and i'm gonna put our bottom boundary",
+        "start": 256.0,
+        "duration": 3.28
+    },
+    {
+        "text": "not at index two but",
+        "start": 257.84,
+        "duration": 3.919
+    },
+    {
+        "text": "one more so i'm gonna put our bottom",
+        "start": 259.28,
+        "duration": 4.479
+    },
+    {
+        "text": "boundary over here just because it makes",
+        "start": 261.759,
+        "duration": 3.761
+    },
+    {
+        "text": "the code a little bit easier",
+        "start": 263.759,
+        "duration": 3.761
+    },
+    {
+        "text": "and so as you can tell basically what",
+        "start": 265.52,
+        "duration": 3.36
+    },
+    {
+        "text": "we're doing is we have",
+        "start": 267.52,
+        "duration": 3.36
+    },
+    {
+        "text": "four pointers and these four pointers",
+        "start": 268.88,
+        "duration": 3.2
+    },
+    {
+        "text": "are going to make co",
+        "start": 270.88,
+        "duration": 3.12
+    },
+    {
+        "text": "make coding this solution the spiral",
+        "start": 272.08,
+        "duration": 4.64
+    },
+    {
+        "text": "matrix solution a lot easier for us",
+        "start": 274.0,
+        "duration": 5.04
+    },
+    {
+        "text": "we are going to start over here because",
+        "start": 276.72,
+        "duration": 3.039
+    },
+    {
+        "text": "it's the",
+        "start": 279.04,
+        "duration": 4.32
+    },
+    {
+        "text": "position that our top left is pointing",
+        "start": 279.759,
+        "duration": 5.521
+    },
+    {
+        "text": "at so we're always going to start at the",
+        "start": 283.36,
+        "duration": 2.64
+    },
+    {
+        "text": "top",
+        "start": 285.28,
+        "duration": 3.52
+    },
+    {
+        "text": "left position and so we are going to",
+        "start": 286.0,
+        "duration": 3.199
+    },
+    {
+        "text": "have an",
+        "start": 288.8,
+        "duration": 2.8
+    },
+    {
+        "text": "output we know the output is going to be",
+        "start": 289.199,
+        "duration": 4.72
+    },
+    {
+        "text": "a list or an array so we're going to add",
+        "start": 291.6,
+        "duration": 5.36
+    },
+    {
+        "text": "1 to our output and then we are going to",
+        "start": 293.919,
+        "duration": 3.921
+    },
+    {
+        "text": "go",
+        "start": 296.96,
+        "duration": 3.519
+    },
+    {
+        "text": "right so so whenever we start at the top",
+        "start": 297.84,
+        "duration": 3.919
+    },
+    {
+        "text": "left we're going to go right because",
+        "start": 300.479,
+        "duration": 2.801
+    },
+    {
+        "text": "we're going to do the first",
+        "start": 301.759,
+        "duration": 3.921
+    },
+    {
+        "text": "row so now we're going to be at 2 we're",
+        "start": 303.28,
+        "duration": 3.04
+    },
+    {
+        "text": "going to add",
+        "start": 305.68,
+        "duration": 3.04
+    },
+    {
+        "text": "2 to our output and we're just going to",
+        "start": 306.32,
+        "duration": 4.48
+    },
+    {
+        "text": "keep repeating this until we",
+        "start": 308.72,
+        "duration": 4.16
+    },
+    {
+        "text": "reach our right boundary our right",
+        "start": 310.8,
+        "duration": 3.839
+    },
+    {
+        "text": "boundary is going to tell us when we can",
+        "start": 312.88,
+        "duration": 2.56
+    },
+    {
+        "text": "stop",
+        "start": 314.639,
+        "duration": 4.241
+    },
+    {
+        "text": "now we get to 3 we add 3 to our output",
+        "start": 315.44,
+        "duration": 6.479
+    },
+    {
+        "text": "now we get to 4 we can add 4 to our",
+        "start": 318.88,
+        "duration": 3.68
+    },
+    {
+        "text": "output",
+        "start": 321.919,
+        "duration": 3.201
+    },
+    {
+        "text": "and now we know we cannot go any further",
+        "start": 322.56,
+        "duration": 3.04
+    },
+    {
+        "text": "we've",
+        "start": 325.12,
+        "duration": 2.4
+    },
+    {
+        "text": "basically reached our right boundary so",
+        "start": 325.6,
+        "duration": 3.28
+    },
+    {
+        "text": "now what we're going to do",
+        "start": 327.52,
+        "duration": 4.8
+    },
+    {
+        "text": "is we are going to go down but before we",
+        "start": 328.88,
+        "duration": 3.84
+    },
+    {
+        "text": "go",
+        "start": 332.32,
+        "duration": 3.52
+    },
+    {
+        "text": "down since we just did this entire row",
+        "start": 332.72,
+        "duration": 4.64
+    },
+    {
+        "text": "we added it to the output we don't",
+        "start": 335.84,
+        "duration": 2.16
+    },
+    {
+        "text": "really need",
+        "start": 337.36,
+        "duration": 2.96
+    },
+    {
+        "text": "this top boundary anymore right but what",
+        "start": 338.0,
+        "duration": 3.68
+    },
+    {
+        "text": "can we do with it",
+        "start": 340.32,
+        "duration": 4.56
+    },
+    {
+        "text": "we can basically shift it down because",
+        "start": 341.68,
+        "duration": 3.519
+    },
+    {
+        "text": "our",
+        "start": 344.88,
+        "duration": 2.8
+    },
+    {
+        "text": "new top boundary of our rectangle right",
+        "start": 345.199,
+        "duration": 4.321
+    },
+    {
+        "text": "now look at our current rectangle",
+        "start": 347.68,
+        "duration": 5.2
+    },
+    {
+        "text": "is this so our top boundary belongs in",
+        "start": 349.52,
+        "duration": 6.72
+    },
+    {
+        "text": "this spot so now we are going to go",
+        "start": 352.88,
+        "duration": 5.68
+    },
+    {
+        "text": "down we're going to reach this 8 we're",
+        "start": 356.24,
+        "duration": 4.56
+    },
+    {
+        "text": "going to add that 8 to our output",
+        "start": 358.56,
+        "duration": 4.32
+    },
+    {
+        "text": "and we're going to go down one more time",
+        "start": 360.8,
+        "duration": 3.44
+    },
+    {
+        "text": "and we're going to keep going down",
+        "start": 362.88,
+        "duration": 3.84
+    },
+    {
+        "text": "until we reach our bottom boundary right",
+        "start": 364.24,
+        "duration": 3.36
+    },
+    {
+        "text": "that's pretty",
+        "start": 366.72,
+        "duration": 3.12
+    },
+    {
+        "text": "obvious from looking at the picture so",
+        "start": 367.6,
+        "duration": 3.2
+    },
+    {
+        "text": "now we reach",
+        "start": 369.84,
+        "duration": 3.28
+    },
+    {
+        "text": "our bottom boundary and the last value",
+        "start": 370.8,
+        "duration": 3.6
+    },
+    {
+        "text": "is 12.",
+        "start": 373.12,
+        "duration": 3.84
+    },
+    {
+        "text": "so now obviously we're gonna start going",
+        "start": 374.4,
+        "duration": 3.12
+    },
+    {
+        "text": "left",
+        "start": 376.96,
+        "duration": 3.359
+    },
+    {
+        "text": "right but do you notice any differences",
+        "start": 377.52,
+        "duration": 3.28
+    },
+    {
+        "text": "about",
+        "start": 380.319,
+        "duration": 3.921
+    },
+    {
+        "text": "our matrix now well clearly we just did",
+        "start": 380.8,
+        "duration": 3.839
+    },
+    {
+        "text": "this",
+        "start": 384.24,
+        "duration": 3.12
+    },
+    {
+        "text": "entire row what does that tell us well",
+        "start": 384.639,
+        "duration": 3.921
+    },
+    {
+        "text": "that tells us we can",
+        "start": 387.36,
+        "duration": 3.36
+    },
+    {
+        "text": "update our right boundary right because",
+        "start": 388.56,
+        "duration": 4.639
+    },
+    {
+        "text": "if you look at the new rectangle",
+        "start": 390.72,
+        "duration": 5.36
+    },
+    {
+        "text": "we've we've moved our top boundary over",
+        "start": 393.199,
+        "duration": 4.801
+    },
+    {
+        "text": "here but we can also take our right",
+        "start": 396.08,
+        "duration": 2.959
+    },
+    {
+        "text": "boundary",
+        "start": 398.0,
+        "duration": 3.84
+    },
+    {
+        "text": "and and move our right boundary in this",
+        "start": 399.039,
+        "duration": 4.081
+    },
+    {
+        "text": "position right",
+        "start": 401.84,
+        "duration": 3.44
+    },
+    {
+        "text": "of course the left and bottom boundaries",
+        "start": 403.12,
+        "duration": 4.0
+    },
+    {
+        "text": "can still be the same because look at",
+        "start": 405.28,
+        "duration": 3.68
+    },
+    {
+        "text": "our rectangle we need those boundaries",
+        "start": 407.12,
+        "duration": 2.799
+    },
+    {
+        "text": "still",
+        "start": 408.96,
+        "duration": 3.359
+    },
+    {
+        "text": "but now we are going to go left we reach",
+        "start": 409.919,
+        "duration": 5.041
+    },
+    {
+        "text": "an 11 we can add that to our output",
+        "start": 412.319,
+        "duration": 5.6
+    },
+    {
+        "text": "we go left again keep going left until",
+        "start": 414.96,
+        "duration": 4.079
+    },
+    {
+        "text": "we reach our",
+        "start": 417.919,
+        "duration": 3.361
+    },
+    {
+        "text": "left boundary right until we reach the",
+        "start": 419.039,
+        "duration": 4.16
+    },
+    {
+        "text": "element at our left boundary but in this",
+        "start": 421.28,
+        "duration": 4.0
+    },
+    {
+        "text": "case it's inclusive when we were going",
+        "start": 423.199,
+        "duration": 4.081
+    },
+    {
+        "text": "right we were going to stop before we",
+        "start": 425.28,
+        "duration": 3.44
+    },
+    {
+        "text": "got to the right boundary",
+        "start": 427.28,
+        "duration": 3.039
+    },
+    {
+        "text": "and this is basically just to make the",
+        "start": 428.72,
+        "duration": 3.039
+    },
+    {
+        "text": "code easier even though it's",
+        "start": 430.319,
+        "duration": 4.0
+    },
+    {
+        "text": "a little bit inconsistent so now we get",
+        "start": 431.759,
+        "duration": 3.121
+    },
+    {
+        "text": "a 10",
+        "start": 434.319,
+        "duration": 3.761
+    },
+    {
+        "text": "we add that 10 to our output we go left",
+        "start": 434.88,
+        "duration": 4.4
+    },
+    {
+        "text": "one more time",
+        "start": 438.08,
+        "duration": 3.92
+    },
+    {
+        "text": "we get a 9 and we add that to our output",
+        "start": 439.28,
+        "duration": 3.919
+    },
+    {
+        "text": "but now you can see",
+        "start": 442.0,
+        "duration": 4.319
+    },
+    {
+        "text": "that this left boundary is where we need",
+        "start": 443.199,
+        "duration": 4.0
+    },
+    {
+        "text": "to stop",
+        "start": 446.319,
+        "duration": 4.16
+    },
+    {
+        "text": "but as you can see we just finished the",
+        "start": 447.199,
+        "duration": 5.041
+    },
+    {
+        "text": "entire bottom row",
+        "start": 450.479,
+        "duration": 4.801
+    },
+    {
+        "text": "what does that tell us well our bottom",
+        "start": 452.24,
+        "duration": 6.239
+    },
+    {
+        "text": "boundary can be shifted up by one",
+        "start": 455.28,
+        "duration": 6.4
+    },
+    {
+        "text": "over here because our new rectangle",
+        "start": 458.479,
+        "duration": 6.961
+    },
+    {
+        "text": "is like this right our right boundary",
+        "start": 461.68,
+        "duration": 6.639
+    },
+    {
+        "text": "tells us about this our bottom boundary",
+        "start": 465.44,
+        "duration": 4.08
+    },
+    {
+        "text": "tells us about",
+        "start": 468.319,
+        "duration": 4.0
+    },
+    {
+        "text": "this our top boundary tells us about",
+        "start": 469.52,
+        "duration": 3.28
+    },
+    {
+        "text": "this",
+        "start": 472.319,
+        "duration": 3.681
+    },
+    {
+        "text": "and our left boundary tells us about",
+        "start": 472.8,
+        "duration": 6.0
+    },
+    {
+        "text": "this so this is the resulting rectangle",
+        "start": 476.0,
+        "duration": 3.84
+    },
+    {
+        "text": "one by three",
+        "start": 478.8,
+        "duration": 3.04
+    },
+    {
+        "text": "so now we're gonna put the bottom",
+        "start": 479.84,
+        "duration": 3.12
+    },
+    {
+        "text": "boundary here",
+        "start": 481.84,
+        "duration": 3.6
+    },
+    {
+        "text": "and now we're gonna start going up and",
+        "start": 482.96,
+        "duration": 4.079
+    },
+    {
+        "text": "we're not just gonna keep going up",
+        "start": 485.44,
+        "duration": 2.319
+    },
+    {
+        "text": "forever",
+        "start": 487.039,
+        "duration": 3.521
+    },
+    {
+        "text": "we're gonna stop once we reach our top",
+        "start": 487.759,
+        "duration": 4.241
+    },
+    {
+        "text": "boundary which is pretty easy",
+        "start": 490.56,
+        "duration": 3.6
+    },
+    {
+        "text": "for us because we only have one element",
+        "start": 492.0,
+        "duration": 4.16
+    },
+    {
+        "text": "and now we're at the top boundary",
+        "start": 494.16,
+        "duration": 4.879
+    },
+    {
+        "text": "so we get a five and we add that to our",
+        "start": 496.16,
+        "duration": 3.439
+    },
+    {
+        "text": "output",
+        "start": 499.039,
+        "duration": 3.761
+    },
+    {
+        "text": "now you can see that this this problem",
+        "start": 499.599,
+        "duration": 5.6
+    },
+    {
+        "text": "has been reduced we took our matrix and",
+        "start": 502.8,
+        "duration": 4.959
+    },
+    {
+        "text": "chopped off each side of it we chopped",
+        "start": 505.199,
+        "duration": 3.44
+    },
+    {
+        "text": "off the top",
+        "start": 507.759,
+        "duration": 3.681
+    },
+    {
+        "text": "the bottom the right column and the left",
+        "start": 508.639,
+        "duration": 3.681
+    },
+    {
+        "text": "column",
+        "start": 511.44,
+        "duration": 3.039
+    },
+    {
+        "text": "but we can still continue our our",
+        "start": 512.32,
+        "duration": 3.279
+    },
+    {
+        "text": "algorithm as it",
+        "start": 514.479,
+        "duration": 3.68
+    },
+    {
+        "text": "is the only thing that we have to update",
+        "start": 515.599,
+        "duration": 3.36
+    },
+    {
+        "text": "now is take",
+        "start": 518.159,
+        "duration": 2.721
+    },
+    {
+        "text": "our left boundary because we just did",
+        "start": 518.959,
+        "duration": 3.841
+    },
+    {
+        "text": "the entire left column now",
+        "start": 520.88,
+        "duration": 5.6
+    },
+    {
+        "text": "and shift it to the right by one",
+        "start": 522.8,
+        "duration": 6.8
+    },
+    {
+        "text": "so now again we're going to start at the",
+        "start": 526.48,
+        "duration": 3.68
+    },
+    {
+        "text": "top",
+        "start": 529.6,
+        "duration": 3.52
+    },
+    {
+        "text": "left because the top is pointing here",
+        "start": 530.16,
+        "duration": 5.28
+    },
+    {
+        "text": "the left is also pointing here",
+        "start": 533.12,
+        "duration": 3.839
+    },
+    {
+        "text": "so we're going to start here and we're",
+        "start": 535.44,
+        "duration": 3.04
+    },
+    {
+        "text": "going to go right",
+        "start": 536.959,
+        "duration": 4.32
+    },
+    {
+        "text": "but we have to add 6 to our output so we",
+        "start": 538.48,
+        "duration": 4.88
+    },
+    {
+        "text": "add a 6 to the output",
+        "start": 541.279,
+        "duration": 4.56
+    },
+    {
+        "text": "we keep going right until we reach this",
+        "start": 543.36,
+        "duration": 3.76
+    },
+    {
+        "text": "boundary right which",
+        "start": 545.839,
+        "duration": 3.12
+    },
+    {
+        "text": "we've reached once we've gotten to the",
+        "start": 547.12,
+        "duration": 4.399
+    },
+    {
+        "text": "seven so we add the seven to the output",
+        "start": 548.959,
+        "duration": 5.361
+    },
+    {
+        "text": "and now we stop because we reached the",
+        "start": 551.519,
+        "duration": 3.76
+    },
+    {
+        "text": "right boundary",
+        "start": 554.32,
+        "duration": 3.68
+    },
+    {
+        "text": "and since we've just finished this top",
+        "start": 555.279,
+        "duration": 4.481
+    },
+    {
+        "text": "row what are we gonna do",
+        "start": 558.0,
+        "duration": 3.839
+    },
+    {
+        "text": "we're gonna update the top pointer right",
+        "start": 559.76,
+        "duration": 3.36
+    },
+    {
+        "text": "we're going to cross it out and we're",
+        "start": 561.839,
+        "duration": 2.321
+    },
+    {
+        "text": "going to shift it",
+        "start": 563.12,
+        "duration": 4.32
+    },
+    {
+        "text": "down over here right so now top is over",
+        "start": 564.16,
+        "duration": 3.6
+    },
+    {
+        "text": "here",
+        "start": 567.44,
+        "duration": 2.64
+    },
+    {
+        "text": "as well as bottom they're both pointing",
+        "start": 567.76,
+        "duration": 3.36
+    },
+    {
+        "text": "at the same",
+        "start": 570.08,
+        "duration": 4.4
+    },
+    {
+        "text": "row and basically that's the condition",
+        "start": 571.12,
+        "duration": 5.68
+    },
+    {
+        "text": "once pointers reach like in this case",
+        "start": 574.48,
+        "duration": 4.0
+    },
+    {
+        "text": "top and bottom reach but it could have",
+        "start": 576.8,
+        "duration": 2.64
+    },
+    {
+        "text": "been possible that",
+        "start": 578.48,
+        "duration": 3.919
+    },
+    {
+        "text": "left and right reach the same position",
+        "start": 579.44,
+        "duration": 3.28
+    },
+    {
+        "text": "if",
+        "start": 582.399,
+        "duration": 2.721
+    },
+    {
+        "text": "either of those things happen then we",
+        "start": 582.72,
+        "duration": 4.4
+    },
+    {
+        "text": "can stop our algorithm because we know",
+        "start": 585.12,
+        "duration": 2.719
+    },
+    {
+        "text": "we've",
+        "start": 587.12,
+        "duration": 3.04
+    },
+    {
+        "text": "done every single element that we needed",
+        "start": 587.839,
+        "duration": 4.801
+    },
+    {
+        "text": "to so now let's get into the code and by",
+        "start": 590.16,
+        "duration": 3.359
+    },
+    {
+        "text": "the way the time",
+        "start": 592.64,
+        "duration": 3.759
+    },
+    {
+        "text": "complexity of this is big o m by n which",
+        "start": 593.519,
+        "duration": 4.721
+    },
+    {
+        "text": "is the dimensions of the matrix",
+        "start": 596.399,
+        "duration": 4.88
+    },
+    {
+        "text": "the memory complexity is big o of 1",
+        "start": 598.24,
+        "duration": 5.36
+    },
+    {
+        "text": "because we are not saving any extra",
+        "start": 601.279,
+        "duration": 3.201
+    },
+    {
+        "text": "memory we're just",
+        "start": 603.6,
+        "duration": 4.4
+    },
+    {
+        "text": "running the code and it's big of one if",
+        "start": 604.48,
+        "duration": 4.72
+    },
+    {
+        "text": "you do not count the",
+        "start": 608.0,
+        "duration": 4.32
+    },
+    {
+        "text": "output as extra memory so we have our",
+        "start": 609.2,
+        "duration": 4.319
+    },
+    {
+        "text": "result variable",
+        "start": 612.32,
+        "duration": 3.36
+    },
+    {
+        "text": "i'm gonna have the four pointers that we",
+        "start": 613.519,
+        "duration": 3.361
+    },
+    {
+        "text": "mentioned left",
+        "start": 615.68,
+        "duration": 2.8
+    },
+    {
+        "text": "and right so left is going to be",
+        "start": 616.88,
+        "duration": 4.079
+    },
+    {
+        "text": "initially at zero right is going to be",
+        "start": 618.48,
+        "duration": 5.039
+    },
+    {
+        "text": "the length of the matrix right is",
+        "start": 620.959,
+        "duration": 3.921
+    },
+    {
+        "text": "basically going to be the",
+        "start": 623.519,
+        "duration": 4.401
+    },
+    {
+        "text": "number of columns plus one which is",
+        "start": 624.88,
+        "duration": 5.44
+    },
+    {
+        "text": "exactly what the length is going to give",
+        "start": 627.92,
+        "duration": 3.76
+    },
+    {
+        "text": "us we also have a",
+        "start": 630.32,
+        "duration": 4.88
+    },
+    {
+        "text": "top and bottom variable so top is gonna",
+        "start": 631.68,
+        "duration": 5.36
+    },
+    {
+        "text": "be zero we know we start at",
+        "start": 635.2,
+        "duration": 4.639
+    },
+    {
+        "text": "top left is zero zero the bottom is",
+        "start": 637.04,
+        "duration": 3.68
+    },
+    {
+        "text": "going to be",
+        "start": 639.839,
+        "duration": 3.841
+    },
+    {
+        "text": "the length of the matrix which is going",
+        "start": 640.72,
+        "duration": 4.64
+    },
+    {
+        "text": "to tell us the number of",
+        "start": 643.68,
+        "duration": 4.719
+    },
+    {
+        "text": "rows and basically all i'm gonna do is",
+        "start": 645.36,
+        "duration": 5.76
+    },
+    {
+        "text": "just keep looping until we know that",
+        "start": 648.399,
+        "duration": 4.641
+    },
+    {
+        "text": "either of the pointers cross so we know",
+        "start": 651.12,
+        "duration": 3.44
+    },
+    {
+        "text": "that left has to be",
+        "start": 653.04,
+        "duration": 3.68
+    },
+    {
+        "text": "less than right we don't want them to",
+        "start": 654.56,
+        "duration": 3.36
+    },
+    {
+        "text": "meet each other",
+        "start": 656.72,
+        "duration": 4.96
+    },
+    {
+        "text": "and top has to be less than the bottom",
+        "start": 657.92,
+        "duration": 5.76
+    },
+    {
+        "text": "so the first thing i'm going to do is go",
+        "start": 661.68,
+        "duration": 3.04
+    },
+    {
+        "text": "left to right",
+        "start": 663.68,
+        "duration": 5.36
+    },
+    {
+        "text": "and get every single get every value",
+        "start": 664.72,
+        "duration": 8.48
+    },
+    {
+        "text": "in the top row so every i in the top row",
+        "start": 669.04,
+        "duration": 6.799
+    },
+    {
+        "text": "so i'm just going to iterate for i in",
+        "start": 673.2,
+        "duration": 3.28
+    },
+    {
+        "text": "range",
+        "start": 675.839,
+        "duration": 4.081
+    },
+    {
+        "text": "left to right and this is basically why",
+        "start": 676.48,
+        "duration": 4.96
+    },
+    {
+        "text": "i'm setting the right",
+        "start": 679.92,
+        "duration": 4.159
+    },
+    {
+        "text": "uh out of bounds because in python it's",
+        "start": 681.44,
+        "duration": 4.32
+    },
+    {
+        "text": "going to go from left which is initially",
+        "start": 684.079,
+        "duration": 3.841
+    },
+    {
+        "text": "going to be 0 maybe right is let's say",
+        "start": 685.76,
+        "duration": 2.8
+    },
+    {
+        "text": "four",
+        "start": 687.92,
+        "duration": 4.159
+    },
+    {
+        "text": "it's gonna it's basically gonna go from",
+        "start": 688.56,
+        "duration": 6.0
+    },
+    {
+        "text": "zero to three in this case that's what",
+        "start": 692.079,
+        "duration": 3.44
+    },
+    {
+        "text": "python does",
+        "start": 694.56,
+        "duration": 3.76
+    },
+    {
+        "text": "the four is non-inclusive so this right",
+        "start": 695.519,
+        "duration": 4.801
+    },
+    {
+        "text": "value is non-inclusive",
+        "start": 698.32,
+        "duration": 4.24
+    },
+    {
+        "text": "and so for each of these values we know",
+        "start": 700.32,
+        "duration": 3.199
+    },
+    {
+        "text": "all we have to do",
+        "start": 702.56,
+        "duration": 4.0
+    },
+    {
+        "text": "is append it to our result so",
+        "start": 703.519,
+        "duration": 4.56
+    },
+    {
+        "text": "how do we get the value well we know",
+        "start": 706.56,
+        "duration": 3.04
+    },
+    {
+        "text": "we're in the top row",
+        "start": 708.079,
+        "duration": 4.961
+    },
+    {
+        "text": "so for the row we just put top for the",
+        "start": 709.6,
+        "duration": 4.64
+    },
+    {
+        "text": "column we can put",
+        "start": 713.04,
+        "duration": 4.4
+    },
+    {
+        "text": "i and since we just completed our top",
+        "start": 714.24,
+        "duration": 5.279
+    },
+    {
+        "text": "row before we do anything else let's",
+        "start": 717.44,
+        "duration": 4.16
+    },
+    {
+        "text": "update our top variable so if we",
+        "start": 719.519,
+        "duration": 3.44
+    },
+    {
+        "text": "increment it by one",
+        "start": 721.6,
+        "duration": 3.2
+    },
+    {
+        "text": "basically what we're doing is shifting",
+        "start": 722.959,
+        "duration": 3.761
+    },
+    {
+        "text": "top down by one",
+        "start": 724.8,
+        "duration": 4.96
+    },
+    {
+        "text": "next i want to get every i in",
+        "start": 726.72,
+        "duration": 5.76
+    },
+    {
+        "text": "the right column right the rightmost",
+        "start": 729.76,
+        "duration": 3.519
+    },
+    {
+        "text": "column",
+        "start": 732.48,
+        "duration": 3.359
+    },
+    {
+        "text": "how can we do that well i'm going to",
+        "start": 733.279,
+        "duration": 3.281
+    },
+    {
+        "text": "iterate",
+        "start": 735.839,
+        "duration": 4.0
+    },
+    {
+        "text": "i in range from top",
+        "start": 736.56,
+        "duration": 6.079
+    },
+    {
+        "text": "to bottom right it's as easy as that and",
+        "start": 739.839,
+        "duration": 4.56
+    },
+    {
+        "text": "we are allowed to do this because we",
+        "start": 742.639,
+        "duration": 2.241
+    },
+    {
+        "text": "just",
+        "start": 744.399,
+        "duration": 2.481
+    },
+    {
+        "text": "incremented our top by one so we're not",
+        "start": 744.88,
+        "duration": 4.0
+    },
+    {
+        "text": "going to have any repeated elements",
+        "start": 746.88,
+        "duration": 4.0
+    },
+    {
+        "text": "so now i'm just going to take every",
+        "start": 748.88,
+        "duration": 3.36
+    },
+    {
+        "text": "single one of these elements",
+        "start": 750.88,
+        "duration": 4.8
+    },
+    {
+        "text": "and add it to our result so the row that",
+        "start": 752.24,
+        "duration": 4.0
+    },
+    {
+        "text": "we're in",
+        "start": 755.68,
+        "duration": 2.88
+    },
+    {
+        "text": "is of course i because we're going from",
+        "start": 756.24,
+        "duration": 4.719
+    },
+    {
+        "text": "top to bottom the column that we're in",
+        "start": 758.56,
+        "duration": 5.2
+    },
+    {
+        "text": "is right but we're going to subtract by",
+        "start": 760.959,
+        "duration": 4.641
+    },
+    {
+        "text": "1 because we know that our right is",
+        "start": 763.76,
+        "duration": 2.4
+    },
+    {
+        "text": "actually",
+        "start": 765.6,
+        "duration": 3.12
+    },
+    {
+        "text": "out of bounds and so after we do this we",
+        "start": 766.16,
+        "duration": 4.32
+    },
+    {
+        "text": "know we just completed the rightmost",
+        "start": 768.72,
+        "duration": 3.919
+    },
+    {
+        "text": "column so what can we do we can take our",
+        "start": 770.48,
+        "duration": 4.479
+    },
+    {
+        "text": "right variable and decrement it by one",
+        "start": 772.639,
+        "duration": 4.161
+    },
+    {
+        "text": "because then we're shifting it to the",
+        "start": 774.959,
+        "duration": 2.721
+    },
+    {
+        "text": "left",
+        "start": 776.8,
+        "duration": 2.64
+    },
+    {
+        "text": "now this is the part that you're kind of",
+        "start": 777.68,
+        "duration": 3.36
+    },
+    {
+        "text": "gonna have to trust me on",
+        "start": 779.44,
+        "duration": 3.6
+    },
+    {
+        "text": "so so basically if the pointers have",
+        "start": 781.04,
+        "duration": 3.68
+    },
+    {
+        "text": "crossed so if this condition is no",
+        "start": 783.04,
+        "duration": 2.64
+    },
+    {
+        "text": "longer true",
+        "start": 784.72,
+        "duration": 3.44
+    },
+    {
+        "text": "what we have to do is break out of our",
+        "start": 785.68,
+        "duration": 3.279
+    },
+    {
+        "text": "loop",
+        "start": 788.16,
+        "duration": 2.4
+    },
+    {
+        "text": "and if you don't understand exactly why",
+        "start": 788.959,
+        "duration": 3.041
+    },
+    {
+        "text": "we're doing this i would encourage you",
+        "start": 790.56,
+        "duration": 2.16
+    },
+    {
+        "text": "to run",
+        "start": 792.0,
+        "duration": 3.519
+    },
+    {
+        "text": "this entire code or at least do it by",
+        "start": 792.72,
+        "duration": 4.88
+    },
+    {
+        "text": "hand on a couple examples so imagine our",
+        "start": 795.519,
+        "duration": 2.88
+    },
+    {
+        "text": "matrix was",
+        "start": 797.6,
+        "duration": 4.32
+    },
+    {
+        "text": "this if we had like a single row matrix",
+        "start": 798.399,
+        "duration": 5.361
+    },
+    {
+        "text": "see what happens when you do that or",
+        "start": 801.92,
+        "duration": 3.039
+    },
+    {
+        "text": "imagine if we had a",
+        "start": 803.76,
+        "duration": 4.72
+    },
+    {
+        "text": "column matrix like this see what happens",
+        "start": 804.959,
+        "duration": 5.12
+    },
+    {
+        "text": "when you run this code",
+        "start": 808.48,
+        "duration": 3.68
+    },
+    {
+        "text": "so we did the top row and we did the",
+        "start": 810.079,
+        "duration": 4.241
+    },
+    {
+        "text": "rightmost column so now we have to do",
+        "start": 812.16,
+        "duration": 3.919
+    },
+    {
+        "text": "the bottom row",
+        "start": 814.32,
+        "duration": 3.44
+    },
+    {
+        "text": "and we know we have to do this from",
+        "start": 816.079,
+        "duration": 3.361
+    },
+    {
+        "text": "right to left so that's going to be a",
+        "start": 817.76,
+        "duration": 3.519
+    },
+    {
+        "text": "little annoying so we're going to go",
+        "start": 819.44,
+        "duration": 4.399
+    },
+    {
+        "text": "for i in range so we're going to start",
+        "start": 821.279,
+        "duration": 3.92
+    },
+    {
+        "text": "at our right boundary",
+        "start": 823.839,
+        "duration": 3.36
+    },
+    {
+        "text": "minus 1 because we know our right is",
+        "start": 825.199,
+        "duration": 4.481
+    },
+    {
+        "text": "actually a little bit farther to the",
+        "start": 827.199,
+        "duration": 3.041
+    },
+    {
+        "text": "right",
+        "start": 829.68,
+        "duration": 3.12
+    },
+    {
+        "text": "and we're going to do this from right to",
+        "start": 830.24,
+        "duration": 3.12
+    },
+    {
+        "text": "left",
+        "start": 832.8,
+        "duration": 3.12
+    },
+    {
+        "text": "but left we're also going to take -1",
+        "start": 833.36,
+        "duration": 4.64
+    },
+    {
+        "text": "because that's how python works",
+        "start": 835.92,
+        "duration": 4.24
+    },
+    {
+        "text": "the left is non-inclusive so if we",
+        "start": 838.0,
+        "duration": 3.199
+    },
+    {
+        "text": "actually want to go",
+        "start": 840.16,
+        "duration": 2.64
+    },
+    {
+        "text": "all the way to left we have to subtract",
+        "start": 841.199,
+        "duration": 3.121
+    },
+    {
+        "text": "it by one and",
+        "start": 842.8,
+        "duration": 3.599
+    },
+    {
+        "text": "to do this in reverse order we just have",
+        "start": 844.32,
+        "duration": 3.519
+    },
+    {
+        "text": "to add a negative one",
+        "start": 846.399,
+        "duration": 3.041
+    },
+    {
+        "text": "so basically what we're doing is going",
+        "start": 847.839,
+        "duration": 4.481
+    },
+    {
+        "text": "from right to left in reverse order so",
+        "start": 849.44,
+        "duration": 4.48
+    },
+    {
+        "text": "backwards so now we're going to take",
+        "start": 852.32,
+        "duration": 3.28
+    },
+    {
+        "text": "each of these and append it to our",
+        "start": 853.92,
+        "duration": 2.32
+    },
+    {
+        "text": "result",
+        "start": 855.6,
+        "duration": 3.599
+    },
+    {
+        "text": "so we are in the bottom row so for the",
+        "start": 856.24,
+        "duration": 3.92
+    },
+    {
+        "text": "row we're going to take",
+        "start": 859.199,
+        "duration": 3.521
+    },
+    {
+        "text": "bottom minus 1 because we know even the",
+        "start": 860.16,
+        "duration": 3.44
+    },
+    {
+        "text": "bottom",
+        "start": 862.72,
+        "duration": 3.04
+    },
+    {
+        "text": "pointer is actually out of bounds by",
+        "start": 863.6,
+        "duration": 3.44
+    },
+    {
+        "text": "just one value",
+        "start": 865.76,
+        "duration": 3.28
+    },
+    {
+        "text": "right so this is just an off by one",
+        "start": 867.04,
+        "duration": 3.28
+    },
+    {
+        "text": "error and",
+        "start": 869.04,
+        "duration": 3.68
+    },
+    {
+        "text": "the column is going to be i that's what",
+        "start": 870.32,
+        "duration": 3.759
+    },
+    {
+        "text": "we're doing when we're going from",
+        "start": 872.72,
+        "duration": 3.359
+    },
+    {
+        "text": "right to left and so after we've done",
+        "start": 874.079,
+        "duration": 3.921
+    },
+    {
+        "text": "this we've just done the bottom row so",
+        "start": 876.079,
+        "duration": 3.361
+    },
+    {
+        "text": "we're going to update the bottom",
+        "start": 878.0,
+        "duration": 4.16
+    },
+    {
+        "text": "pointer how are we going to update it in",
+        "start": 879.44,
+        "duration": 4.72
+    },
+    {
+        "text": "this case we subtract it by",
+        "start": 882.16,
+        "duration": 5.119
+    },
+    {
+        "text": "one if we want to shift it upwards so",
+        "start": 884.16,
+        "duration": 6.08
+    },
+    {
+        "text": "last but not least we want to get every",
+        "start": 887.279,
+        "duration": 3.601
+    },
+    {
+        "text": "i",
+        "start": 890.24,
+        "duration": 3.92
+    },
+    {
+        "text": "in the leftmost column right so",
+        "start": 890.88,
+        "duration": 5.36
+    },
+    {
+        "text": "we can and we want to do that from",
+        "start": 894.16,
+        "duration": 3.2
+    },
+    {
+        "text": "bottom to top",
+        "start": 896.24,
+        "duration": 3.52
+    },
+    {
+        "text": "because we are going in spiral order so",
+        "start": 897.36,
+        "duration": 3.12
+    },
+    {
+        "text": "for i",
+        "start": 899.76,
+        "duration": 3.84
+    },
+    {
+        "text": "in range we're gonna start at the bottom",
+        "start": 900.48,
+        "duration": 4.88
+    },
+    {
+        "text": "but we are have we have to subtract it",
+        "start": 903.6,
+        "duration": 4.16
+    },
+    {
+        "text": "by one to make sure we don't get",
+        "start": 905.36,
+        "duration": 4.64
+    },
+    {
+        "text": "the off by one error and we're gonna go",
+        "start": 907.76,
+        "duration": 3.28
+    },
+    {
+        "text": "all the way to top",
+        "start": 910.0,
+        "duration": 2.959
+    },
+    {
+        "text": "but we're again going to subtract by one",
+        "start": 911.04,
+        "duration": 3.28
+    },
+    {
+        "text": "basically we're doing the same thing",
+        "start": 912.959,
+        "duration": 2.161
+    },
+    {
+        "text": "that we just did",
+        "start": 914.32,
+        "duration": 2.879
+    },
+    {
+        "text": "up here so we're going from bottom to",
+        "start": 915.12,
+        "duration": 3.76
+    },
+    {
+        "text": "top in reverse order",
+        "start": 917.199,
+        "duration": 4.08
+    },
+    {
+        "text": "so we add a negative one and now for",
+        "start": 918.88,
+        "duration": 3.68
+    },
+    {
+        "text": "each of these elements",
+        "start": 921.279,
+        "duration": 4.321
+    },
+    {
+        "text": "we're gonna add it to our result",
+        "start": 922.56,
+        "duration": 6.0
+    },
+    {
+        "text": "so matrix the row is going to be i",
+        "start": 925.6,
+        "duration": 4.159
+    },
+    {
+        "text": "that's what we're doing when we're",
+        "start": 928.56,
+        "duration": 3.279
+    },
+    {
+        "text": "iterating from bottom to top",
+        "start": 929.759,
+        "duration": 5.52
+    },
+    {
+        "text": "the column is going to be the leftmost",
+        "start": 931.839,
+        "duration": 6.641
+    },
+    {
+        "text": "column and after we've completed this we",
+        "start": 935.279,
+        "duration": 6.0
+    },
+    {
+        "text": "are allowed to increment left by one",
+        "start": 938.48,
+        "duration": 4.64
+    },
+    {
+        "text": "because we just completed the entire",
+        "start": 941.279,
+        "duration": 4.081
+    },
+    {
+        "text": "left column so we're shifting our left",
+        "start": 943.12,
+        "duration": 2.959
+    },
+    {
+        "text": "pointer",
+        "start": 945.36,
+        "duration": 4.32
+    },
+    {
+        "text": "to the right by one so this is the code",
+        "start": 946.079,
+        "duration": 5.76
+    },
+    {
+        "text": "with these comments it makes it seem a",
+        "start": 949.68,
+        "duration": 4.399
+    },
+    {
+        "text": "little longer than it actually is but",
+        "start": 951.839,
+        "duration": 4.56
+    },
+    {
+        "text": "this code is not too long the only thing",
+        "start": 954.079,
+        "duration": 3.481
+    },
+    {
+        "text": "we have to do now is",
+        "start": 956.399,
+        "duration": 4.641
+    },
+    {
+        "text": "return the result that we just",
+        "start": 957.56,
+        "duration": 6.04
+    },
+    {
+        "text": "computed the array now we can run this",
+        "start": 961.04,
+        "duration": 3.359
+    },
+    {
+        "text": "code",
+        "start": 963.6,
+        "duration": 2.88
+    },
+    {
+        "text": "and you can see the code is pretty",
+        "start": 964.399,
+        "duration": 3.281
+    },
+    {
+        "text": "efficient and",
+        "start": 966.48,
+        "duration": 3.52
+    },
+    {
+        "text": "one thing i'll mention is that see we're",
+        "start": 967.68,
+        "duration": 3.599
+    },
+    {
+        "text": "kind of repeating",
+        "start": 970.0,
+        "duration": 4.56
+    },
+    {
+        "text": "the same thing like four times over here",
+        "start": 971.279,
+        "duration": 5.761
+    },
+    {
+        "text": "in total that is only like 12 lines of",
+        "start": 974.56,
+        "duration": 4.24
+    },
+    {
+        "text": "code but if you wanted you could put it",
+        "start": 977.04,
+        "duration": 3.2
+    },
+    {
+        "text": "in a helper function",
+        "start": 978.8,
+        "duration": 3.12
+    },
+    {
+        "text": "but i think in this case a helper",
+        "start": 980.24,
+        "duration": 3.76
+    },
+    {
+        "text": "function just makes it more confusing i",
+        "start": 981.92,
+        "duration": 2.96
+    },
+    {
+        "text": "prefer to actually",
+        "start": 984.0,
+        "duration": 3.199
+    },
+    {
+        "text": "write this out because it's pretty",
+        "start": 984.88,
+        "duration": 4.079
+    },
+    {
+        "text": "obvious when you write it out and add a",
+        "start": 987.199,
+        "duration": 2.64
+    },
+    {
+        "text": "comment",
+        "start": 988.959,
+        "duration": 3.281
+    },
+    {
+        "text": "what exactly we're doing but other than",
+        "start": 989.839,
+        "duration": 4.161
+    },
+    {
+        "text": "that i hope this was helpful",
+        "start": 992.24,
+        "duration": 3.44
+    },
+    {
+        "text": "i hope it showed you that this problem",
+        "start": 994.0,
+        "duration": 4.56
+    },
+    {
+        "text": "can be written in pretty simple code",
+        "start": 995.68,
+        "duration": 4.32
+    },
+    {
+        "text": "and if you enjoyed please like and",
+        "start": 998.56,
+        "duration": 3.68
+    },
+    {
+        "text": "subscribe it supports the channel a lot",
+        "start": 1000.0,
+        "duration": 7.68
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 1002.24,
+        "duration": 5.44
+    }
+]

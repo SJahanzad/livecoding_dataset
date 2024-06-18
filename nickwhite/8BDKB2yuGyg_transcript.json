@@ -1,0 +1,1237 @@
+[
+    {
+        "text": "hey what's up guys and they're quite",
+        "start": 0.03,
+        "duration": 4.32
+    },
+    {
+        "text": "here I do tecnico ting stuff on Twitch",
+        "start": 2.669,
+        "duration": 3.36
+    },
+    {
+        "text": "in YouTube check the description you get",
+        "start": 4.35,
+        "duration": 3.9
+    },
+    {
+        "text": "all my information discord is pretty",
+        "start": 6.029,
+        "duration": 3.57
+    },
+    {
+        "text": "cool if you want to join that and I do",
+        "start": 8.25,
+        "duration": 3.36
+    },
+    {
+        "text": "all these premium problems on patreon",
+        "start": 9.599,
+        "duration": 7.051
+    },
+    {
+        "text": "also help me up on github you are given",
+        "start": 11.61,
+        "duration": 7.74
+    },
+    {
+        "text": "to a raise I don't like hit me up so",
+        "start": 16.65,
+        "duration": 5.16
+    },
+    {
+        "text": "forget I said that but that was just",
+        "start": 19.35,
+        "duration": 4.53
+    },
+    {
+        "text": "bothering me sorry this is called next",
+        "start": 21.81,
+        "duration": 4.289
+    },
+    {
+        "text": "grader element one you're given to a",
+        "start": 23.88,
+        "duration": 4.02
+    },
+    {
+        "text": "raise and there's no duplicates so",
+        "start": 26.099,
+        "duration": 3.451
+    },
+    {
+        "text": "they're all unique values in the arrays",
+        "start": 27.9,
+        "duration": 5.64
+    },
+    {
+        "text": "num1 and num2 where nums one elements",
+        "start": 29.55,
+        "duration": 7.11
+    },
+    {
+        "text": "are a subset of nums two elements so for",
+        "start": 33.54,
+        "duration": 5.19
+    },
+    {
+        "text": "one and two are automatically going to",
+        "start": 36.66,
+        "duration": 4.559
+    },
+    {
+        "text": "be you know the numbers 1 elements are a",
+        "start": 38.73,
+        "duration": 5.46
+    },
+    {
+        "text": "subset of these elements right so you",
+        "start": 41.219,
+        "duration": 6.18
+    },
+    {
+        "text": "can see 4 1 & 2 are found in numbers 2 4",
+        "start": 44.19,
+        "duration": 5.76
+    },
+    {
+        "text": "1 & 2 but you know not in the they don't",
+        "start": 47.399,
+        "duration": 4.14
+    },
+    {
+        "text": "have to be in the same indices it's just",
+        "start": 49.95,
+        "duration": 3.929
+    },
+    {
+        "text": "a subset of the elements so what we want",
+        "start": 51.539,
+        "duration": 4.321
+    },
+    {
+        "text": "to do is find the next greater numbers",
+        "start": 53.879,
+        "duration": 4.141
+    },
+    {
+        "text": "for num ones elements in the",
+        "start": 55.86,
+        "duration": 4.32
+    },
+    {
+        "text": "corresponding places of num two's",
+        "start": 58.02,
+        "duration": 5.07
+    },
+    {
+        "text": "elements and what is the next greater",
+        "start": 60.18,
+        "duration": 4.589
+    },
+    {
+        "text": "element that means the next greater",
+        "start": 63.09,
+        "duration": 5.01
+    },
+    {
+        "text": "number of a number X in nums 1 is the",
+        "start": 64.769,
+        "duration": 5.64
+    },
+    {
+        "text": "first greater number 2 it's right in",
+        "start": 68.1,
+        "duration": 5.07
+    },
+    {
+        "text": "nums 2 so basically what they're saying",
+        "start": 70.409,
+        "duration": 6.57
+    },
+    {
+        "text": "is if we look through this list we want",
+        "start": 73.17,
+        "duration": 6.69
+    },
+    {
+        "text": "to find 4 4 we want to find the next",
+        "start": 76.979,
+        "duration": 5.491
+    },
+    {
+        "text": "greater element in this list so there is",
+        "start": 79.86,
+        "duration": 4.86
+    },
+    {
+        "text": "none and it has to be to the right of 4",
+        "start": 82.47,
+        "duration": 4.02
+    },
+    {
+        "text": "in this list and there's nothing greater",
+        "start": 84.72,
+        "duration": 3.84
+    },
+    {
+        "text": "than 4 so we have to put negative 1 if",
+        "start": 86.49,
+        "duration": 4.589
+    },
+    {
+        "text": "it does not exist negative 1 when we",
+        "start": 88.56,
+        "duration": 5.04
+    },
+    {
+        "text": "look at 1 in this list in num from nums",
+        "start": 91.079,
+        "duration": 5.131
+    },
+    {
+        "text": "1 when we look at 1 and nums to there",
+        "start": 93.6,
+        "duration": 4.409
+    },
+    {
+        "text": "our next greater elements right and the",
+        "start": 96.21,
+        "duration": 4.11
+    },
+    {
+        "text": "next greatest one to the right is 3 so",
+        "start": 98.009,
+        "duration": 6.031
+    },
+    {
+        "text": "we put 3 4 2 we look in the next list",
+        "start": 100.32,
+        "duration": 5.549
+    },
+    {
+        "text": "there's nothing to the right of 2 so",
+        "start": 104.04,
+        "duration": 3.109
+    },
+    {
+        "text": "it's negative 1 again there's nothing",
+        "start": 105.869,
+        "duration": 3.301
+    },
+    {
+        "text": "okay let's go through one more example",
+        "start": 107.149,
+        "duration": 4.271
+    },
+    {
+        "text": "when we look at 2 in this list the next",
+        "start": 109.17,
+        "duration": 4.68
+    },
+    {
+        "text": "query is 1 is 3 when we look at 4 in",
+        "start": 111.42,
+        "duration": 3.87
+    },
+    {
+        "text": "this list there's nothing to the right",
+        "start": 113.85,
+        "duration": 3.36
+    },
+    {
+        "text": "so we put negative 1 hopefully you",
+        "start": 115.29,
+        "duration": 4.41
+    },
+    {
+        "text": "understand it now so what are the",
+        "start": 117.21,
+        "duration": 4.49
+    },
+    {
+        "text": "solutions how do we solve this",
+        "start": 119.7,
+        "duration": 5.669
+    },
+    {
+        "text": "intuitively I would say that I also say",
+        "start": 121.7,
+        "duration": 5.47
+    },
+    {
+        "text": "intuitively and not a lot so I should",
+        "start": 125.369,
+        "duration": 3.571
+    },
+    {
+        "text": "stop saying that so much but um just",
+        "start": 127.17,
+        "duration": 4.709
+    },
+    {
+        "text": "brute force wise you would think okay",
+        "start": 128.94,
+        "duration": 4.769
+    },
+    {
+        "text": "well let's loop through this well you're",
+        "start": 131.879,
+        "duration": 2.011
+    },
+    {
+        "text": "going",
+        "start": 133.709,
+        "duration": 1.321
+    },
+    {
+        "text": "have to loop through the arrays no",
+        "start": 133.89,
+        "duration": 3.06
+    },
+    {
+        "text": "matter what but let's loop through this",
+        "start": 135.03,
+        "duration": 4.41
+    },
+    {
+        "text": "and then let's do a nested loop through",
+        "start": 136.95,
+        "duration": 4.29
+    },
+    {
+        "text": "this and then just find the next",
+        "start": 139.44,
+        "duration": 4.11
+    },
+    {
+        "text": "greatest one to the right right",
+        "start": 141.24,
+        "duration": 4.23
+    },
+    {
+        "text": "and then make like an output array that",
+        "start": 143.55,
+        "duration": 3.75
+    },
+    {
+        "text": "is a solution that's bird force though",
+        "start": 145.47,
+        "duration": 3.72
+    },
+    {
+        "text": "and it's pretty slow there's a better",
+        "start": 147.3,
+        "duration": 4.79
+    },
+    {
+        "text": "way to do this and you can use things",
+        "start": 149.19,
+        "duration": 6.24
+    },
+    {
+        "text": "you can use data structures so what",
+        "start": 152.09,
+        "duration": 5.29
+    },
+    {
+        "text": "we're gonna use to solve this problem is",
+        "start": 155.43,
+        "duration": 5.46
+    },
+    {
+        "text": "a stack in the hash map the hash map is",
+        "start": 157.38,
+        "duration": 6.3
+    },
+    {
+        "text": "going to keep track of it's gonna we're",
+        "start": 160.89,
+        "duration": 4.38
+    },
+    {
+        "text": "gonna loop through this nums to array",
+        "start": 163.68,
+        "duration": 3.63
+    },
+    {
+        "text": "and we're just gonna build a hash map up",
+        "start": 165.27,
+        "duration": 7.92
+    },
+    {
+        "text": "with you know the number each number and",
+        "start": 167.31,
+        "duration": 8.34
+    },
+    {
+        "text": "its next greatest element even if the",
+        "start": 173.19,
+        "duration": 4.56
+    },
+    {
+        "text": "number doesn't exist so like 3 doesn't",
+        "start": 175.65,
+        "duration": 4.17
+    },
+    {
+        "text": "exist in nums 1 but we're gonna find",
+        "start": 177.75,
+        "duration": 3.9
+    },
+    {
+        "text": "whatever that we're gonna say oh we'll",
+        "start": 179.82,
+        "duration": 4.38
+    },
+    {
+        "text": "put 3 and the next greatest number is 4",
+        "start": 181.65,
+        "duration": 4.65
+    },
+    {
+        "text": "in the hash map so we're just going to",
+        "start": 184.2,
+        "duration": 3.6
+    },
+    {
+        "text": "loop through this array build a hash map",
+        "start": 186.3,
+        "duration": 3.24
+    },
+    {
+        "text": "and then at the end we'll loop through",
+        "start": 187.8,
+        "duration": 4.439
+    },
+    {
+        "text": "this array do lookups into the hash map",
+        "start": 189.54,
+        "duration": 5.07
+    },
+    {
+        "text": "in return we'll be like oh we look in",
+        "start": 192.239,
+        "duration": 4.201
+    },
+    {
+        "text": "the hash map what's 4 is next greatest",
+        "start": 194.61,
+        "duration": 3.39
+    },
+    {
+        "text": "element oh there's nothing so it's",
+        "start": 196.44,
+        "duration": 3.69
+    },
+    {
+        "text": "negative 1 there you go so that's it",
+        "start": 198.0,
+        "duration": 3.54
+    },
+    {
+        "text": "you're gonna build a hash map we're also",
+        "start": 200.13,
+        "duration": 3.24
+    },
+    {
+        "text": "gonna use a stack to help us but I'll",
+        "start": 201.54,
+        "duration": 3.78
+    },
+    {
+        "text": "explain that in a second so let's just",
+        "start": 203.37,
+        "duration": 3.69
+    },
+    {
+        "text": "start off by initializing our hash map",
+        "start": 205.32,
+        "duration": 4.35
+    },
+    {
+        "text": "it's gonna be in the integer the current",
+        "start": 207.06,
+        "duration": 4.98
+    },
+    {
+        "text": "integer and then another integer that",
+        "start": 209.67,
+        "duration": 4.11
+    },
+    {
+        "text": "represents the next greatest element so",
+        "start": 212.04,
+        "duration": 3.75
+    },
+    {
+        "text": "we could call this hash map next",
+        "start": 213.78,
+        "duration": 6.11
+    },
+    {
+        "text": "greatest equal new hash map okay great",
+        "start": 215.79,
+        "duration": 6.81
+    },
+    {
+        "text": "and then we're gonna have a stack like I",
+        "start": 219.89,
+        "duration": 4.54
+    },
+    {
+        "text": "said I'll talk about this in a second",
+        "start": 222.6,
+        "duration": 3.96
+    },
+    {
+        "text": "we'll just call it stack for now new",
+        "start": 224.43,
+        "duration": 5.16
+    },
+    {
+        "text": "stack and we're gonna be looping through",
+        "start": 226.56,
+        "duration": 4.8
+    },
+    {
+        "text": "nums to at first to build this hash map",
+        "start": 229.59,
+        "duration": 3.239
+    },
+    {
+        "text": "look I just said so we're gonna go",
+        "start": 231.36,
+        "duration": 5.39
+    },
+    {
+        "text": "integer for integer num num in nums to",
+        "start": 232.829,
+        "duration": 8.701
+    },
+    {
+        "text": "we're gonna say okay stack dot push num",
+        "start": 236.75,
+        "duration": 6.7
+    },
+    {
+        "text": "so we're gonna be pushing these numbers",
+        "start": 241.53,
+        "duration": 4.5
+    },
+    {
+        "text": "on to a stack as we loop through and",
+        "start": 243.45,
+        "duration": 5.55
+    },
+    {
+        "text": "we're gonna do a check each time this is",
+        "start": 246.03,
+        "duration": 4.11
+    },
+    {
+        "text": "how we're putting them in the hash map",
+        "start": 249.0,
+        "duration": 2.579
+    },
+    {
+        "text": "and I'll explain it right after I write",
+        "start": 250.14,
+        "duration": 4.89
+    },
+    {
+        "text": "this if the stack is not empty",
+        "start": 251.579,
+        "duration": 5.011
+    },
+    {
+        "text": "this is the main part of the whole",
+        "start": 255.03,
+        "duration": 3.54
+    },
+    {
+        "text": "problem this is the only hard part if",
+        "start": 256.59,
+        "duration": 6.35
+    },
+    {
+        "text": "the stack is not empty and stack peak is",
+        "start": 258.57,
+        "duration": 8.61
+    },
+    {
+        "text": "less than num we're gonna put the value",
+        "start": 262.94,
+        "duration": 4.93
+    },
+    {
+        "text": "into the hash",
+        "start": 267.18,
+        "duration": 4.2
+    },
+    {
+        "text": "map next greatest dot put and we're",
+        "start": 267.87,
+        "duration": 6.96
+    },
+    {
+        "text": "gonna put stack dot pop so we're gonna",
+        "start": 271.38,
+        "duration": 5.009
+    },
+    {
+        "text": "pop off the stack and we're gonna put",
+        "start": 274.83,
+        "duration": 2.85
+    },
+    {
+        "text": "them so let's walk through what this",
+        "start": 276.389,
+        "duration": 3.211
+    },
+    {
+        "text": "means we're looping through this array",
+        "start": 277.68,
+        "duration": 4.14
+    },
+    {
+        "text": "and we want to build this hash map with",
+        "start": 279.6,
+        "duration": 4.47
+    },
+    {
+        "text": "the next greatest elements right we're",
+        "start": 281.82,
+        "duration": 4.349
+    },
+    {
+        "text": "gonna put the number onto the stack so",
+        "start": 284.07,
+        "duration": 4.14
+    },
+    {
+        "text": "when the stacks empty we're gonna put a",
+        "start": 286.169,
+        "duration": 3.78
+    },
+    {
+        "text": "number onto the stack right so we would",
+        "start": 288.21,
+        "duration": 3.87
+    },
+    {
+        "text": "put one onto the stack so right in this",
+        "start": 289.949,
+        "duration": 4.381
+    },
+    {
+        "text": "example right here let's just grab this",
+        "start": 292.08,
+        "duration": 5.16
+    },
+    {
+        "text": "so we can look at the example we're",
+        "start": 294.33,
+        "duration": 5.46
+    },
+    {
+        "text": "gonna have our stack equal to this right",
+        "start": 297.24,
+        "duration": 5.25
+    },
+    {
+        "text": "so our stack we're gonna put one on it",
+        "start": 299.79,
+        "duration": 4.349
+    },
+    {
+        "text": "at first right the stacks not empty so",
+        "start": 302.49,
+        "duration": 3.209
+    },
+    {
+        "text": "we're looping through the numbers we're",
+        "start": 304.139,
+        "duration": 3.0
+    },
+    {
+        "text": "looping through all these numbers so",
+        "start": 305.699,
+        "duration": 2.881
+    },
+    {
+        "text": "let's just put one onto the stack right",
+        "start": 307.139,
+        "duration": 3.871
+    },
+    {
+        "text": "now now the stack isn't empty and we're",
+        "start": 308.58,
+        "duration": 4.11
+    },
+    {
+        "text": "gonna be looking at three and we're",
+        "start": 311.01,
+        "duration": 4.02
+    },
+    {
+        "text": "gonna say okay the stacks not empty",
+        "start": 312.69,
+        "duration": 5.91
+    },
+    {
+        "text": "anymore and is stack dot peak is one",
+        "start": 315.03,
+        "duration": 5.85
+    },
+    {
+        "text": "less than three yes one is less than",
+        "start": 318.6,
+        "duration": 4.53
+    },
+    {
+        "text": "three so we found the next greatest",
+        "start": 320.88,
+        "duration": 4.11
+    },
+    {
+        "text": "element if whatever's in the stack is",
+        "start": 323.13,
+        "duration": 4.349
+    },
+    {
+        "text": "less than the current number then we",
+        "start": 324.99,
+        "duration": 5.399
+    },
+    {
+        "text": "found the next greatest element so you",
+        "start": 327.479,
+        "duration": 6.511
+    },
+    {
+        "text": "could see we would do we would pop this",
+        "start": 330.389,
+        "duration": 5.521
+    },
+    {
+        "text": "element off so we take the one off and",
+        "start": 333.99,
+        "duration": 5.79
+    },
+    {
+        "text": "we would do map dot put and we would put",
+        "start": 335.91,
+        "duration": 6.66
+    },
+    {
+        "text": "that one in the next greatest element",
+        "start": 339.78,
+        "duration": 3.87
+    },
+    {
+        "text": "into the hashmap",
+        "start": 342.57,
+        "duration": 4.83
+    },
+    {
+        "text": "then the stack gets pushed on the three",
+        "start": 343.65,
+        "duration": 5.76
+    },
+    {
+        "text": "value and then we repeat the process",
+        "start": 347.4,
+        "duration": 6.0
+    },
+    {
+        "text": "where we say okay now we check is 3 less",
+        "start": 349.41,
+        "duration": 6.06
+    },
+    {
+        "text": "than num okay three is less than in",
+        "start": 353.4,
+        "duration": 4.739
+    },
+    {
+        "text": "we're on four so 3 is less than four so",
+        "start": 355.47,
+        "duration": 4.47
+    },
+    {
+        "text": "we say ok 3 is less than four so we",
+        "start": 358.139,
+        "duration": 3.181
+    },
+    {
+        "text": "found the next greatest to three so we",
+        "start": 359.94,
+        "duration": 3.24
+    },
+    {
+        "text": "say mapped up put three and then four",
+        "start": 361.32,
+        "duration": 3.48
+    },
+    {
+        "text": "and we keep doing this and then we put",
+        "start": 363.18,
+        "duration": 3.989
+    },
+    {
+        "text": "in we you know we popped three off of",
+        "start": 364.8,
+        "duration": 4.56
+    },
+    {
+        "text": "the stack and then four goes on to the",
+        "start": 367.169,
+        "duration": 5.481
+    },
+    {
+        "text": "stack etc so that's how it works and",
+        "start": 369.36,
+        "duration": 5.4
+    },
+    {
+        "text": "here's the only change you have to make",
+        "start": 372.65,
+        "duration": 4.6
+    },
+    {
+        "text": "this is pretty much like the solution",
+        "start": 374.76,
+        "duration": 4.62
+    },
+    {
+        "text": "because we build our hash map right so",
+        "start": 377.25,
+        "duration": 3.599
+    },
+    {
+        "text": "the hash map is going to be built after",
+        "start": 379.38,
+        "duration": 3.33
+    },
+    {
+        "text": "this point and what we want to do is we",
+        "start": 380.849,
+        "duration": 3.781
+    },
+    {
+        "text": "want to loop through now we want to loop",
+        "start": 382.71,
+        "duration": 4.32
+    },
+    {
+        "text": "through nomes one because the hash map",
+        "start": 384.63,
+        "duration": 7.56
+    },
+    {
+        "text": "is built and we just want to say we want",
+        "start": 387.03,
+        "duration": 7.74
+    },
+    {
+        "text": "to reconstruct nums one so we have to",
+        "start": 392.19,
+        "duration": 4.14
+    },
+    {
+        "text": "output this array with all the next",
+        "start": 394.77,
+        "duration": 3.09
+    },
+    {
+        "text": "greater values so we might as well just",
+        "start": 396.33,
+        "duration": 3.12
+    },
+    {
+        "text": "modify instead of making a new array",
+        "start": 397.86,
+        "duration": 3.32
+    },
+    {
+        "text": "let's just modify do",
+        "start": 399.45,
+        "duration": 4.01
+    },
+    {
+        "text": "right so we just say numbs one is equal",
+        "start": 401.18,
+        "duration": 4.74
+    },
+    {
+        "text": "to you know next greatest doc gets or",
+        "start": 403.46,
+        "duration": 5.73
+    },
+    {
+        "text": "default gets or default so if the number",
+        "start": 405.92,
+        "duration": 7.32
+    },
+    {
+        "text": "has a value for numbs one of I so if the",
+        "start": 409.19,
+        "duration": 5.85
+    },
+    {
+        "text": "current element so when we look at four",
+        "start": 413.24,
+        "duration": 3.84
+    },
+    {
+        "text": "we're gonna say okay it is four in the",
+        "start": 415.04,
+        "duration": 4.56
+    },
+    {
+        "text": "hashmap of an escalator element if it",
+        "start": 417.08,
+        "duration": 5.07
+    },
+    {
+        "text": "doesn't well it defaults to negative one",
+        "start": 419.6,
+        "duration": 4.5
+    },
+    {
+        "text": "and then after that you just return",
+        "start": 422.15,
+        "duration": 3.98
+    },
+    {
+        "text": "numbers one array because it'll be",
+        "start": 424.1,
+        "duration": 3.9
+    },
+    {
+        "text": "reconstructed to have all the next",
+        "start": 426.13,
+        "duration": 4.24
+    },
+    {
+        "text": "greater elements this is the solution",
+        "start": 428.0,
+        "duration": 5.22
+    },
+    {
+        "text": "but this isn't the full solution this",
+        "start": 430.37,
+        "duration": 5.25
+    },
+    {
+        "text": "isn't going to work because we have to",
+        "start": 433.22,
+        "duration": 5.82
+    },
+    {
+        "text": "make this a while loop so why do we have",
+        "start": 435.62,
+        "duration": 5.01
+    },
+    {
+        "text": "to make this a while loop we have to",
+        "start": 439.04,
+        "duration": 3.53
+    },
+    {
+        "text": "make this a while loop because of",
+        "start": 440.63,
+        "duration": 6.12
+    },
+    {
+        "text": "decreasing elements let's say that the",
+        "start": 442.57,
+        "duration": 7.15
+    },
+    {
+        "text": "array looks something like this when we",
+        "start": 446.75,
+        "duration": 4.83
+    },
+    {
+        "text": "want to construct our hash map if it's",
+        "start": 449.72,
+        "duration": 7.74
+    },
+    {
+        "text": "one three four five or one you know",
+        "start": 451.58,
+        "duration": 8.6
+    },
+    {
+        "text": "sorry there's no duplicates so we can do",
+        "start": 457.46,
+        "duration": 12.36
+    },
+    {
+        "text": "eight seven six five and then ten look",
+        "start": 460.18,
+        "duration": 12.09
+    },
+    {
+        "text": "at this so let's say this is our array",
+        "start": 469.82,
+        "duration": 5.34
+    },
+    {
+        "text": "if we wanted to construct our hash map",
+        "start": 472.27,
+        "duration": 7.33
+    },
+    {
+        "text": "we need to make sure that we are not",
+        "start": 475.16,
+        "duration": 7.8
+    },
+    {
+        "text": "putting the this isn't gonna work we're",
+        "start": 479.6,
+        "duration": 4.41
+    },
+    {
+        "text": "just going to keep pushing things onto",
+        "start": 482.96,
+        "duration": 2.91
+    },
+    {
+        "text": "the stack if we make this a while loop",
+        "start": 484.01,
+        "duration": 3.48
+    },
+    {
+        "text": "this is gonna work because we're gonna",
+        "start": 485.87,
+        "duration": 3.78
+    },
+    {
+        "text": "be putting things onto the stack in this",
+        "start": 487.49,
+        "duration": 3.54
+    },
+    {
+        "text": "condition will never trigger because",
+        "start": 489.65,
+        "duration": 3.57
+    },
+    {
+        "text": "stack dot peak won't be less than num",
+        "start": 491.03,
+        "duration": 4.92
+    },
+    {
+        "text": "for example when we get to you know",
+        "start": 493.22,
+        "duration": 5.1
+    },
+    {
+        "text": "eight goes onto the stack and then is",
+        "start": 495.95,
+        "duration": 4.53
+    },
+    {
+        "text": "stack top peak less than seven no eight",
+        "start": 498.32,
+        "duration": 3.99
+    },
+    {
+        "text": "isn't less than seven so we keep we put",
+        "start": 500.48,
+        "duration": 3.54
+    },
+    {
+        "text": "seven on then we put six on then we put",
+        "start": 502.31,
+        "duration": 4.08
+    },
+    {
+        "text": "five on so it's just a stack with all",
+        "start": 504.02,
+        "duration": 4.83
+    },
+    {
+        "text": "these values but once we see a ten and",
+        "start": 506.39,
+        "duration": 6.12
+    },
+    {
+        "text": "we see that stack top peak is less than",
+        "start": 508.85,
+        "duration": 6.06
+    },
+    {
+        "text": "num now we just keep popping off those",
+        "start": 512.51,
+        "duration": 4.26
+    },
+    {
+        "text": "stacks and we put into the hash map",
+        "start": 514.91,
+        "duration": 4.62
+    },
+    {
+        "text": "every single value because you'll notice",
+        "start": 516.77,
+        "duration": 4.8
+    },
+    {
+        "text": "that all decree if it's a row of",
+        "start": 519.53,
+        "duration": 3.6
+    },
+    {
+        "text": "decreasing values followed by an",
+        "start": 521.57,
+        "duration": 5.1
+    },
+    {
+        "text": "increased value it will put the every",
+        "start": 523.13,
+        "duration": 6.42
+    },
+    {
+        "text": "single one of these indexes the next",
+        "start": 526.67,
+        "duration": 5.16
+    },
+    {
+        "text": "greater value put into the hash map is",
+        "start": 529.55,
+        "duration": 4.71
+    },
+    {
+        "text": "going to be 10 so 5s next greatest is",
+        "start": 531.83,
+        "duration": 3.0
+    },
+    {
+        "text": "town",
+        "start": 534.26,
+        "duration": 3.75
+    },
+    {
+        "text": "ten seven eight so we need a while loop",
+        "start": 534.83,
+        "duration": 5.34
+    },
+    {
+        "text": "to pop all of those off to the stat off",
+        "start": 538.01,
+        "duration": 4.29
+    },
+    {
+        "text": "of the stack and put that next greatest",
+        "start": 540.17,
+        "duration": 5.34
+    },
+    {
+        "text": "value so that's the whole problem pretty",
+        "start": 542.3,
+        "duration": 4.65
+    },
+    {
+        "text": "straightforward we could run it make",
+        "start": 545.51,
+        "duration": 4.8
+    },
+    {
+        "text": "sure it's all good let me know if you",
+        "start": 546.95,
+        "duration": 5.82
+    },
+    {
+        "text": "guys have any questions about this it's",
+        "start": 550.31,
+        "duration": 4.56
+    },
+    {
+        "text": "not too difficult to understand but I",
+        "start": 552.77,
+        "duration": 4.68
+    },
+    {
+        "text": "mean it's a little bit of a trick for an",
+        "start": 554.87,
+        "duration": 5.1
+    },
+    {
+        "text": "easy problem you know but I don't think",
+        "start": 557.45,
+        "duration": 4.53
+    },
+    {
+        "text": "it's too difficult so let me know if you",
+        "start": 559.97,
+        "duration": 4.41
+    },
+    {
+        "text": "guys have any questions I'll be glad to",
+        "start": 561.98,
+        "duration": 4.8
+    },
+    {
+        "text": "answer them and yeah definitely thank",
+        "start": 564.38,
+        "duration": 4.44
+    },
+    {
+        "text": "you guys for watching I'm gonna continue",
+        "start": 566.78,
+        "duration": 3.36
+    },
+    {
+        "text": "going I guess there's a next greatest",
+        "start": 568.82,
+        "duration": 3.06
+    },
+    {
+        "text": "element too as well and some other ones",
+        "start": 570.14,
+        "duration": 3.84
+    },
+    {
+        "text": "I do think they throw you off with these",
+        "start": 571.88,
+        "duration": 4.86
+    },
+    {
+        "text": "two arrays because in some of them I've",
+        "start": 573.98,
+        "duration": 5.61
+    },
+    {
+        "text": "seen it looks like there's a you know",
+        "start": 576.74,
+        "duration": 7.17
+    },
+    {
+        "text": "some extra I mean someone just wanna",
+        "start": 579.59,
+        "duration": 6.6
+    },
+    {
+        "text": "write some all right and that's what we",
+        "start": 583.91,
+        "duration": 3.69
+    },
+    {
+        "text": "kind of do we just ignore the first",
+        "start": 586.19,
+        "duration": 3.45
+    },
+    {
+        "text": "array honestly so alright see you guys",
+        "start": 587.6,
+        "duration": 4.85
+    },
+    {
+        "text": "in the next one",
+        "start": 589.64,
+        "duration": 2.81
+    }
+]

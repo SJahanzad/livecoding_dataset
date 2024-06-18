@@ -1,0 +1,772 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white I do",
+        "start": 1.79,
+        "duration": 5.14
+    },
+    {
+        "text": "tech encoding stuff on twitch and",
+        "start": 5.37,
+        "duration": 3.3
+    },
+    {
+        "text": "YouTube and everything is in the",
+        "start": 6.93,
+        "duration": 3.57
+    },
+    {
+        "text": "description I do all of the LICO",
+        "start": 8.67,
+        "duration": 3.27
+    },
+    {
+        "text": "problems I have a ton of them up so go",
+        "start": 10.5,
+        "duration": 2.79
+    },
+    {
+        "text": "check this out if you want to explain to",
+        "start": 11.94,
+        "duration": 4.58
+    },
+    {
+        "text": "you this is called hand of straights so",
+        "start": 13.29,
+        "duration": 5.79
+    },
+    {
+        "text": "Alice has a hand of cards given as an",
+        "start": 16.52,
+        "duration": 4.599
+    },
+    {
+        "text": "array of integers as you can see a hand",
+        "start": 19.08,
+        "duration": 4.109
+    },
+    {
+        "text": "is this array of integers she wants to",
+        "start": 21.119,
+        "duration": 4.051
+    },
+    {
+        "text": "rearrange the cards into groups so that",
+        "start": 23.189,
+        "duration": 4.321
+    },
+    {
+        "text": "each group is of size W and consists of",
+        "start": 25.17,
+        "duration": 4.47
+    },
+    {
+        "text": "W consecutive cards so remember",
+        "start": 27.51,
+        "duration": 5.01
+    },
+    {
+        "text": "consecutive or tuned to return true if",
+        "start": 29.64,
+        "duration": 5.55
+    },
+    {
+        "text": "and only if she can so if W is 3 and we",
+        "start": 32.52,
+        "duration": 4.35
+    },
+    {
+        "text": "have this is the array we would return",
+        "start": 35.19,
+        "duration": 3.779
+    },
+    {
+        "text": "true because Alice can will rearrange",
+        "start": 36.87,
+        "duration": 7.439
+    },
+    {
+        "text": "the cards as 3 groups of 3 1 2 3 2 3 4 6",
+        "start": 38.969,
+        "duration": 6.691
+    },
+    {
+        "text": "7 8 and they all have to be consecutive",
+        "start": 44.309,
+        "duration": 5.421
+    },
+    {
+        "text": "numbers so basically the go on this is",
+        "start": 45.66,
+        "duration": 6.629
+    },
+    {
+        "text": "this doesn't look sorted right here but",
+        "start": 49.73,
+        "duration": 4.329
+    },
+    {
+        "text": "we're gonna need our elements to be",
+        "start": 52.289,
+        "duration": 3.421
+    },
+    {
+        "text": "sorted so we're basically gonna have",
+        "start": 54.059,
+        "duration": 4.5
+    },
+    {
+        "text": "these elements sorted we're gonna store",
+        "start": 55.71,
+        "duration": 6.66
+    },
+    {
+        "text": "the counts of them and have them sorted",
+        "start": 58.559,
+        "duration": 8.31
+    },
+    {
+        "text": "and we're going to loop through and make",
+        "start": 62.37,
+        "duration": 7.64
+    },
+    {
+        "text": "sure that we can have these consecutive",
+        "start": 66.869,
+        "duration": 7.531
+    },
+    {
+        "text": "small sub arrays kind of filled up as we",
+        "start": 70.01,
+        "duration": 6.31
+    },
+    {
+        "text": "loop through a data structure that holds",
+        "start": 74.4,
+        "duration": 4.2
+    },
+    {
+        "text": "them all in a sorted order and we would",
+        "start": 76.32,
+        "duration": 6.659
+    },
+    {
+        "text": "go from smallest index to largest index",
+        "start": 78.6,
+        "duration": 6.839
+    },
+    {
+        "text": "and we're gonna use a tree map to do",
+        "start": 82.979,
+        "duration": 5.28
+    },
+    {
+        "text": "that so we would use a hash map but hash",
+        "start": 85.439,
+        "duration": 4.381
+    },
+    {
+        "text": "map doesn't really keep order so we have",
+        "start": 88.259,
+        "duration": 4.951
+    },
+    {
+        "text": "to use a tree map in this case so it is",
+        "start": 89.82,
+        "duration": 4.89
+    },
+    {
+        "text": "a little weird but it's all good so",
+        "start": 93.21,
+        "duration": 3.839
+    },
+    {
+        "text": "let's call this car card count C's equal",
+        "start": 94.71,
+        "duration": 5.04
+    },
+    {
+        "text": "to new tree map you'll kind of see how",
+        "start": 97.049,
+        "duration": 4.11
+    },
+    {
+        "text": "this comes together so we have a tree",
+        "start": 99.75,
+        "duration": 3.03
+    },
+    {
+        "text": "map here and then we're gonna loop",
+        "start": 101.159,
+        "duration": 4.761
+    },
+    {
+        "text": "through the card so for each card E and",
+        "start": 102.78,
+        "duration": 7.44
+    },
+    {
+        "text": "sorry I just gonna then we're going to",
+        "start": 105.92,
+        "duration": 7.51
+    },
+    {
+        "text": "check much like other half map problems",
+        "start": 110.22,
+        "duration": 9.05
+    },
+    {
+        "text": "if card counts dot contains key of card",
+        "start": 113.43,
+        "duration": 8.969
+    },
+    {
+        "text": "if card cops doesn't contain key of card",
+        "start": 119.27,
+        "duration": 5.29
+    },
+    {
+        "text": "actually I'm gonna check if it's not in",
+        "start": 122.399,
+        "duration": 4.021
+    },
+    {
+        "text": "the true map ever we're looping through",
+        "start": 124.56,
+        "duration": 3.96
+    },
+    {
+        "text": "the cards if the current card is not in",
+        "start": 126.42,
+        "duration": 4.649
+    },
+    {
+        "text": "the tree map we're gonna do card counts",
+        "start": 128.52,
+        "duration": 5.31
+    },
+    {
+        "text": "dots put",
+        "start": 131.069,
+        "duration": 7.861
+    },
+    {
+        "text": "card so the current index Allah so card",
+        "start": 133.83,
+        "duration": 7.11
+    },
+    {
+        "text": "will be the index the number will be the",
+        "start": 138.93,
+        "duration": 6.39
+    },
+    {
+        "text": "index along with a card will be the",
+        "start": 140.94,
+        "duration": 6.09
+    },
+    {
+        "text": "index because it's looping through and",
+        "start": 145.32,
+        "duration": 5.73
+    },
+    {
+        "text": "then along with one if we haven't seen",
+        "start": 147.03,
+        "duration": 5.64
+    },
+    {
+        "text": "it before and it's not in there sorry I",
+        "start": 151.05,
+        "duration": 3.87
+    },
+    {
+        "text": "took a second to remember and then",
+        "start": 152.67,
+        "duration": 4.23
+    },
+    {
+        "text": "otherwise it's already in there so we",
+        "start": 154.92,
+        "duration": 4.04
+    },
+    {
+        "text": "just have to replace the count of it",
+        "start": 156.9,
+        "duration": 9.65
+    },
+    {
+        "text": "with card counts dot get we'll get it",
+        "start": 158.96,
+        "duration": 7.59
+    },
+    {
+        "text": "and add one to it so now we just",
+        "start": 166.67,
+        "duration": 5.08
+    },
+    {
+        "text": "increment the count alright so that's it",
+        "start": 169.59,
+        "duration": 4.08
+    },
+    {
+        "text": "now we have our ordered set of card",
+        "start": 171.75,
+        "duration": 4.65
+    },
+    {
+        "text": "counts and now all we have to do down",
+        "start": 173.67,
+        "duration": 7.44
+    },
+    {
+        "text": "here is wild card counts dot size is",
+        "start": 176.4,
+        "duration": 7.05
+    },
+    {
+        "text": "greater than zero so while the size of",
+        "start": 181.11,
+        "duration": 3.57
+    },
+    {
+        "text": "our data structure that holds everything",
+        "start": 183.45,
+        "duration": 3.41
+    },
+    {
+        "text": "is greater than zero we're going to",
+        "start": 184.68,
+        "duration": 6.6
+    },
+    {
+        "text": "first get our first card is equal to",
+        "start": 186.86,
+        "duration": 9.94
+    },
+    {
+        "text": "card count first key so we get our first",
+        "start": 191.28,
+        "duration": 7.17
+    },
+    {
+        "text": "card from this data structure and then",
+        "start": 196.8,
+        "duration": 4.47
+    },
+    {
+        "text": "we do another loop where we set I to",
+        "start": 198.45,
+        "duration": 9.23
+    },
+    {
+        "text": "first card I is less than first card",
+        "start": 201.27,
+        "duration": 6.41
+    },
+    {
+        "text": "plus W so and then I plus plus so this",
+        "start": 207.71,
+        "duration": 7.18
+    },
+    {
+        "text": "loop what this does is we as we go",
+        "start": 212.73,
+        "duration": 5.22
+    },
+    {
+        "text": "through our sorted data structure we're",
+        "start": 214.89,
+        "duration": 5.01
+    },
+    {
+        "text": "gonna pull these cards out and then",
+        "start": 217.95,
+        "duration": 3.81
+    },
+    {
+        "text": "we're creating our little mint this",
+        "start": 219.9,
+        "duration": 3.95
+    },
+    {
+        "text": "inner loop is gonna create each",
+        "start": 221.76,
+        "duration": 5.4
+    },
+    {
+        "text": "individual sub array kind of so we're",
+        "start": 223.85,
+        "duration": 5.47
+    },
+    {
+        "text": "gonna be checking our first card and",
+        "start": 227.16,
+        "duration": 5.01
+    },
+    {
+        "text": "adding W which is the size we need to it",
+        "start": 229.32,
+        "duration": 5.37
+    },
+    {
+        "text": "so each time we're going to be able to",
+        "start": 232.17,
+        "duration": 7.47
+    },
+    {
+        "text": "do this if card counts dot contains",
+        "start": 234.69,
+        "duration": 8.16
+    },
+    {
+        "text": "doesn't contain the current card so if",
+        "start": 239.64,
+        "duration": 5.4
+    },
+    {
+        "text": "it doesn't contain I we return false",
+        "start": 242.85,
+        "duration": 6.6
+    },
+    {
+        "text": "right eye is going to be the current",
+        "start": 245.04,
+        "duration": 7.86
+    },
+    {
+        "text": "card that we need to have a conceive our",
+        "start": 249.45,
+        "duration": 5.52
+    },
+    {
+        "text": "consecutive order in the sub array so I",
+        "start": 252.9,
+        "duration": 4.5
+    },
+    {
+        "text": "would be two and then three I is gonna",
+        "start": 254.97,
+        "duration": 4.92
+    },
+    {
+        "text": "be two if it was two here then we would",
+        "start": 257.4,
+        "duration": 4.68
+    },
+    {
+        "text": "check for three and four I is just gonna",
+        "start": 259.89,
+        "duration": 4.76
+    },
+    {
+        "text": "give us that number that we need next",
+        "start": 262.08,
+        "duration": 5.14
+    },
+    {
+        "text": "because we just add W",
+        "start": 264.65,
+        "duration": 5.6
+    },
+    {
+        "text": "do it and we're looping up to the what",
+        "start": 267.22,
+        "duration": 6.99
+    },
+    {
+        "text": "we the initial card plus W value so",
+        "start": 270.25,
+        "duration": 5.37
+    },
+    {
+        "text": "we're gonna be checking all along the",
+        "start": 274.21,
+        "duration": 5.58
+    },
+    {
+        "text": "way and get those consecutive numbers so",
+        "start": 275.62,
+        "duration": 6.27
+    },
+    {
+        "text": "if it doesn't we return false otherwise",
+        "start": 279.79,
+        "duration": 5.63
+    },
+    {
+        "text": "all we have to do is grab that count so",
+        "start": 281.89,
+        "duration": 7.04
+    },
+    {
+        "text": "into count is going to be card counts",
+        "start": 285.42,
+        "duration": 7.27
+    },
+    {
+        "text": "gets I will get that current count this",
+        "start": 288.93,
+        "duration": 7.21
+    },
+    {
+        "text": "count is equal to equal to one then we",
+        "start": 292.69,
+        "duration": 6.66
+    },
+    {
+        "text": "can do card accounts then we have to",
+        "start": 296.14,
+        "duration": 4.8
+    },
+    {
+        "text": "remove it because we're using it in one",
+        "start": 299.35,
+        "duration": 3.6
+    },
+    {
+        "text": "of the subways we have to remove it from",
+        "start": 300.94,
+        "duration": 3.42
+    },
+    {
+        "text": "the data structure so we don't run into",
+        "start": 302.95,
+        "duration": 5.01
+    },
+    {
+        "text": "it again card counts tile remove if",
+        "start": 304.36,
+        "duration": 5.85
+    },
+    {
+        "text": "there's only one of them left then we",
+        "start": 307.96,
+        "duration": 5.01
+    },
+    {
+        "text": "saw it we'll just remove it right from",
+        "start": 310.21,
+        "duration": 5.49
+    },
+    {
+        "text": "the card counts data structure else will",
+        "start": 312.97,
+        "duration": 4.38
+    },
+    {
+        "text": "do what we did at the top and we'll do",
+        "start": 315.7,
+        "duration": 4.59
+    },
+    {
+        "text": "card count stop replace but instead of",
+        "start": 317.35,
+        "duration": 4.44
+    },
+    {
+        "text": "incrementing this time we're deeper",
+        "start": 320.29,
+        "duration": 12.18
+    },
+    {
+        "text": "matching card with card counts so that's",
+        "start": 321.79,
+        "duration": 12.24
+    },
+    {
+        "text": "pretty much it and then all we have to",
+        "start": 332.47,
+        "duration": 3.18
+    },
+    {
+        "text": "do is return true down here if we made",
+        "start": 334.03,
+        "duration": 3.48
+    },
+    {
+        "text": "it through everything hopefully this",
+        "start": 335.65,
+        "duration": 4.26
+    },
+    {
+        "text": "works first try it doesn't work first",
+        "start": 337.51,
+        "duration": 4.98
+    },
+    {
+        "text": "try because we are not using card",
+        "start": 339.91,
+        "duration": 4.259
+    },
+    {
+        "text": "anymore those at the top are using the I",
+        "start": 342.49,
+        "duration": 4.77
+    },
+    {
+        "text": "now and there we go works there",
+        "start": 344.169,
+        "duration": 6.571
+    },
+    {
+        "text": "perfectly so yeah we just have a data",
+        "start": 347.26,
+        "duration": 5.159
+    },
+    {
+        "text": "structure we store everything in a",
+        "start": 350.74,
+        "duration": 3.239
+    },
+    {
+        "text": "sorted order that's why we don't use a",
+        "start": 352.419,
+        "duration": 4.051
+    },
+    {
+        "text": "hash map and we store the count of it",
+        "start": 353.979,
+        "duration": 5.281
+    },
+    {
+        "text": "and then later on down below as we build",
+        "start": 356.47,
+        "duration": 4.83
+    },
+    {
+        "text": "our sub arrays we go through that data",
+        "start": 359.26,
+        "duration": 4.56
+    },
+    {
+        "text": "structure and it's nice that as a tree",
+        "start": 361.3,
+        "duration": 4.53
+    },
+    {
+        "text": "map so we had it in sorted order so that",
+        "start": 363.82,
+        "duration": 5.01
+    },
+    {
+        "text": "we can do this loop right here we're and",
+        "start": 365.83,
+        "duration": 4.86
+    },
+    {
+        "text": "we're pulling things out of the data",
+        "start": 368.83,
+        "duration": 3.66
+    },
+    {
+        "text": "structure now and to use them in these",
+        "start": 370.69,
+        "duration": 4.11
+    },
+    {
+        "text": "sub arrays we're going through this",
+        "start": 372.49,
+        "duration": 4.29
+    },
+    {
+        "text": "inner loop and building them to the",
+        "start": 374.8,
+        "duration": 3.78
+    },
+    {
+        "text": "perfect size because we're just going",
+        "start": 376.78,
+        "duration": 4.5
+    },
+    {
+        "text": "right up to the card value that we",
+        "start": 378.58,
+        "duration": 6.03
+    },
+    {
+        "text": "currently pull plus W and checking that",
+        "start": 381.28,
+        "duration": 6.84
+    },
+    {
+        "text": "each consecutive card exists right here",
+        "start": 384.61,
+        "duration": 5.64
+    },
+    {
+        "text": "and if it doesn't we return false and if",
+        "start": 388.12,
+        "duration": 3.33
+    },
+    {
+        "text": "we make it through all that we return",
+        "start": 390.25,
+        "duration": 3.72
+    },
+    {
+        "text": "true because we can make all of these",
+        "start": 391.45,
+        "duration": 4.23
+    },
+    {
+        "text": "sub where is the exact size that we need",
+        "start": 393.97,
+        "duration": 4.11
+    },
+    {
+        "text": "them to be so that's pretty much it for",
+        "start": 395.68,
+        "duration": 4.92
+    },
+    {
+        "text": "the hand of",
+        "start": 398.08,
+        "duration": 5.7
+    },
+    {
+        "text": "greates problem on leak code thank you",
+        "start": 400.6,
+        "duration": 4.14
+    },
+    {
+        "text": "guys very much",
+        "start": 403.78,
+        "duration": 2.94
+    },
+    {
+        "text": "hopeful I did a good job explaining that",
+        "start": 404.74,
+        "duration": 3.18
+    },
+    {
+        "text": "let me know in the comments below if you",
+        "start": 406.72,
+        "duration": 2.88
+    },
+    {
+        "text": "have any suggestions for improvements",
+        "start": 407.92,
+        "duration": 3.54
+    },
+    {
+        "text": "and stuff like that check out the other",
+        "start": 409.6,
+        "duration": 3.66
+    },
+    {
+        "text": "videos cuz I'm making a ton of these and",
+        "start": 411.46,
+        "duration": 3.78
+    },
+    {
+        "text": "I'm doing all of them so alright I'll",
+        "start": 413.26,
+        "duration": 4.88
+    },
+    {
+        "text": "see you guys in a little bit",
+        "start": 415.24,
+        "duration": 2.9
+    }
+]

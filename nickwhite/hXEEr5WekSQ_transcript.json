@@ -1,0 +1,962 @@
+[
+    {
+        "text": "hey how's it going um you know I I'm I'm",
+        "start": 1.1,
+        "duration": 8.8
+    },
+    {
+        "text": "do I'm gonna continue finish all these",
+        "start": 8.13,
+        "duration": 3.6
+    },
+    {
+        "text": "Alico problems I said I was gonna do it",
+        "start": 9.9,
+        "duration": 3.869
+    },
+    {
+        "text": "I'm gonna do it you know I don't care",
+        "start": 11.73,
+        "duration": 3.69
+    },
+    {
+        "text": "how long it takes me I'm in the middle",
+        "start": 13.769,
+        "duration": 3.151
+    },
+    {
+        "text": "of building this course that you guys",
+        "start": 15.42,
+        "duration": 3.33
+    },
+    {
+        "text": "should definitely go check out that will",
+        "start": 16.92,
+        "duration": 3.96
+    },
+    {
+        "text": "be a full course that if you study",
+        "start": 18.75,
+        "duration": 3.66
+    },
+    {
+        "text": "through you will be able to pass your",
+        "start": 20.88,
+        "duration": 3.69
+    },
+    {
+        "text": "technical interviews I just wrapped up",
+        "start": 22.41,
+        "duration": 5.039
+    },
+    {
+        "text": "week one and I decided I'm gonna",
+        "start": 24.57,
+        "duration": 4.23
+    },
+    {
+        "text": "continue doing some of these problems",
+        "start": 27.449,
+        "duration": 4.23
+    },
+    {
+        "text": "now I'm gonna keep doing the course but",
+        "start": 28.8,
+        "duration": 5.189
+    },
+    {
+        "text": "I do want to get some more LICO done",
+        "start": 31.679,
+        "duration": 4.081
+    },
+    {
+        "text": "here cuz I know people care about those",
+        "start": 33.989,
+        "duration": 5.16
+    },
+    {
+        "text": "as well you know these aren't gonna be",
+        "start": 35.76,
+        "duration": 4.979
+    },
+    {
+        "text": "professional quality they've always been",
+        "start": 39.149,
+        "duration": 4.531
+    },
+    {
+        "text": "kind of like this and you know that's",
+        "start": 40.739,
+        "duration": 4.59
+    },
+    {
+        "text": "fine so let's just get right back into",
+        "start": 43.68,
+        "duration": 4.199
+    },
+    {
+        "text": "it remove all adjacent duplicates and",
+        "start": 45.329,
+        "duration": 3.871
+    },
+    {
+        "text": "string give it a string of lowercase",
+        "start": 47.879,
+        "duration": 3.66
+    },
+    {
+        "text": "letters so we're gonna be given a string",
+        "start": 49.2,
+        "duration": 5.94
+    },
+    {
+        "text": "s of lowercase letters a duplicate",
+        "start": 51.539,
+        "duration": 7.41
+    },
+    {
+        "text": "removal is consists of choosing two",
+        "start": 55.14,
+        "duration": 6.149
+    },
+    {
+        "text": "adjacent and equal letters and removing",
+        "start": 58.949,
+        "duration": 3.871
+    },
+    {
+        "text": "them so we're gonna be doing duplicate",
+        "start": 61.289,
+        "duration": 4.08
+    },
+    {
+        "text": "removals to adjacent letters means these",
+        "start": 62.82,
+        "duration": 4.44
+    },
+    {
+        "text": "are two adjacent letters these are two",
+        "start": 65.369,
+        "duration": 3.57
+    },
+    {
+        "text": "letters any two letters that are right",
+        "start": 67.26,
+        "duration": 4.44
+    },
+    {
+        "text": "next to each other we're getting so when",
+        "start": 68.939,
+        "duration": 4.171
+    },
+    {
+        "text": "we see two letters right next to each",
+        "start": 71.7,
+        "duration": 3.209
+    },
+    {
+        "text": "other they have to be equal as well so",
+        "start": 73.11,
+        "duration": 5.25
+    },
+    {
+        "text": "it's adjacent and equal so b and b are",
+        "start": 74.909,
+        "duration": 5.131
+    },
+    {
+        "text": "right next to each other and equal those",
+        "start": 78.36,
+        "duration": 3.57
+    },
+    {
+        "text": "are the only two now we delete both of",
+        "start": 80.04,
+        "duration": 3.84
+    },
+    {
+        "text": "these right but what happens after that",
+        "start": 81.93,
+        "duration": 3.93
+    },
+    {
+        "text": "then a and a will be right next to each",
+        "start": 83.88,
+        "duration": 3.809
+    },
+    {
+        "text": "other and we also need to delete those",
+        "start": 85.86,
+        "duration": 4.799
+    },
+    {
+        "text": "and what's left CN a so that's what we",
+        "start": 87.689,
+        "duration": 4.651
+    },
+    {
+        "text": "return so it looks like we're gonna",
+        "start": 90.659,
+        "duration": 4.111
+    },
+    {
+        "text": "repeatedly make duplicate removals until",
+        "start": 92.34,
+        "duration": 5.849
+    },
+    {
+        "text": "we no longer can return the final string",
+        "start": 94.77,
+        "duration": 5.22
+    },
+    {
+        "text": "after that and then that will be the",
+        "start": 98.189,
+        "duration": 4.651
+    },
+    {
+        "text": "answer so the way we're gonna do this is",
+        "start": 99.99,
+        "duration": 5.519
+    },
+    {
+        "text": "we have to use extra space I thought",
+        "start": 102.84,
+        "duration": 5.069
+    },
+    {
+        "text": "about this a little bit for a few",
+        "start": 105.509,
+        "duration": 3.781
+    },
+    {
+        "text": "minutes I had to think about it and",
+        "start": 107.909,
+        "duration": 3.811
+    },
+    {
+        "text": "there is no solution that you don't use",
+        "start": 109.29,
+        "duration": 4.71
+    },
+    {
+        "text": "extra space if you find one let me know",
+        "start": 111.72,
+        "duration": 4.02
+    },
+    {
+        "text": "in the comments but I cannot figure it",
+        "start": 114.0,
+        "duration": 4.979
+    },
+    {
+        "text": "out this is the fastest it can be is o",
+        "start": 115.74,
+        "duration": 5.669
+    },
+    {
+        "text": "of n with open space from what I'm",
+        "start": 118.979,
+        "duration": 5.131
+    },
+    {
+        "text": "seeing this is my method for it there's",
+        "start": 121.409,
+        "duration": 4.32
+    },
+    {
+        "text": "a few ways I know how to do it with this",
+        "start": 124.11,
+        "duration": 3.869
+    },
+    {
+        "text": "with that time and space complexity but",
+        "start": 125.729,
+        "duration": 5.34
+    },
+    {
+        "text": "we're gonna go over using a stack here",
+        "start": 127.979,
+        "duration": 4.62
+    },
+    {
+        "text": "and I'm gonna implement it using just a",
+        "start": 131.069,
+        "duration": 2.64
+    },
+    {
+        "text": "char array so",
+        "start": 132.599,
+        "duration": 4.95
+    },
+    {
+        "text": "just declare that and we're gonna set it",
+        "start": 133.709,
+        "duration": 7.65
+    },
+    {
+        "text": "the length of the stack to the length of",
+        "start": 137.549,
+        "duration": 7.591
+    },
+    {
+        "text": "the string that won't really be used",
+        "start": 141.359,
+        "duration": 6.63
+    },
+    {
+        "text": "usually the you know this is the stacks",
+        "start": 145.14,
+        "duration": 4.53
+    },
+    {
+        "text": "going to be used to return our final",
+        "start": 147.989,
+        "duration": 3.45
+    },
+    {
+        "text": "string so really you're only gonna use",
+        "start": 149.67,
+        "duration": 3.689
+    },
+    {
+        "text": "about two characters with the space from",
+        "start": 151.439,
+        "duration": 5.25
+    },
+    {
+        "text": "this but we're gonna use the set the",
+        "start": 153.359,
+        "duration": 5.46
+    },
+    {
+        "text": "length too because in case if there's no",
+        "start": 156.689,
+        "duration": 4.08
+    },
+    {
+        "text": "duplicates we're gonna be returning the",
+        "start": 158.819,
+        "duration": 4.081
+    },
+    {
+        "text": "same thing and in that case we actually",
+        "start": 160.769,
+        "duration": 4.44
+    },
+    {
+        "text": "will use a lot more of the space but",
+        "start": 162.9,
+        "duration": 4.679
+    },
+    {
+        "text": "it's not that big of a deal we're gonna",
+        "start": 165.209,
+        "duration": 6.81
+    },
+    {
+        "text": "set a index point this this eye is gonna",
+        "start": 167.579,
+        "duration": 7.681
+    },
+    {
+        "text": "be used to use be tracking indexes of",
+        "start": 172.019,
+        "duration": 6.181
+    },
+    {
+        "text": "the stack and show the indexes of the",
+        "start": 175.26,
+        "duration": 5.49
+    },
+    {
+        "text": "final string we want to return so the",
+        "start": 178.2,
+        "duration": 3.989
+    },
+    {
+        "text": "concept of this I'll explain it before",
+        "start": 180.75,
+        "duration": 4.379
+    },
+    {
+        "text": "and after is we have a stack and we have",
+        "start": 182.189,
+        "duration": 4.741
+    },
+    {
+        "text": "a string right our stack is just an",
+        "start": 185.129,
+        "duration": 3.54
+    },
+    {
+        "text": "empty array of characters right now and",
+        "start": 186.93,
+        "duration": 3.33
+    },
+    {
+        "text": "we have this string we're gonna loop",
+        "start": 188.669,
+        "duration": 2.82
+    },
+    {
+        "text": "through the string character by",
+        "start": 190.26,
+        "duration": 2.819
+    },
+    {
+        "text": "character so we're gonna loop through",
+        "start": 191.489,
+        "duration": 4.86
+    },
+    {
+        "text": "like a be BAC a character by character",
+        "start": 193.079,
+        "duration": 5.94
+    },
+    {
+        "text": "and we're gonna add characters onto the",
+        "start": 196.349,
+        "duration": 4.92
+    },
+    {
+        "text": "stack right and when there's characters",
+        "start": 199.019,
+        "duration": 4.86
+    },
+    {
+        "text": "in the stack we're gonna check on the",
+        "start": 201.269,
+        "duration": 4.65
+    },
+    {
+        "text": "current character as well so maybe a is",
+        "start": 203.879,
+        "duration": 3.961
+    },
+    {
+        "text": "in the stack right and then we see B is",
+        "start": 205.919,
+        "duration": 5.04
+    },
+    {
+        "text": "it are a and B equal no now we'll add B",
+        "start": 207.84,
+        "duration": 5.069
+    },
+    {
+        "text": "to the stack or B and and then we'll",
+        "start": 210.959,
+        "duration": 3.42
+    },
+    {
+        "text": "keep checking the top of the stack and",
+        "start": 212.909,
+        "duration": 4.14
+    },
+    {
+        "text": "the current character and that way we",
+        "start": 214.379,
+        "duration": 4.411
+    },
+    {
+        "text": "can see if two elements were adjacent",
+        "start": 217.049,
+        "duration": 3.66
+    },
+    {
+        "text": "and if they are we're gonna basically",
+        "start": 218.79,
+        "duration": 5.64
+    },
+    {
+        "text": "the idea is pop off of the just remove",
+        "start": 220.709,
+        "duration": 6.06
+    },
+    {
+        "text": "them and keep going and then whatever is",
+        "start": 224.43,
+        "duration": 3.63
+    },
+    {
+        "text": "left at the end is where we're gonna",
+        "start": 226.769,
+        "duration": 3.451
+    },
+    {
+        "text": "return so we'll go through an example at",
+        "start": 228.06,
+        "duration": 4.079
+    },
+    {
+        "text": "the end here but let's just coat it out",
+        "start": 230.22,
+        "duration": 4.859
+    },
+    {
+        "text": "so we have our stack we're gonna do our",
+        "start": 232.139,
+        "duration": 5.671
+    },
+    {
+        "text": "for loop now we use J in this case J is",
+        "start": 235.079,
+        "duration": 7.711
+    },
+    {
+        "text": "less than s length J plus plus char",
+        "start": 237.81,
+        "duration": 12.23
+    },
+    {
+        "text": "current char is equal to s dot char at J",
+        "start": 242.79,
+        "duration": 9.3
+    },
+    {
+        "text": "and then we have these two conditions",
+        "start": 250.04,
+        "duration": 3.939
+    },
+    {
+        "text": "right so first of all we want to check",
+        "start": 252.09,
+        "duration": 5.069
+    },
+    {
+        "text": "is I greater than zero that means that",
+        "start": 253.979,
+        "duration": 4.741
+    },
+    {
+        "text": "an element is on the stack because I is",
+        "start": 257.159,
+        "duration": 5.851
+    },
+    {
+        "text": "going to be used to index the stack if I",
+        "start": 258.72,
+        "duration": 7.99
+    },
+    {
+        "text": "is greater than 0 and s dot char at",
+        "start": 263.01,
+        "duration": 7.81
+    },
+    {
+        "text": "and actually and stack in the top of the",
+        "start": 266.71,
+        "duration": 6.54
+    },
+    {
+        "text": "stack which will be a stack of I minus",
+        "start": 270.82,
+        "duration": 5.31
+    },
+    {
+        "text": "one is equal to current char so if the",
+        "start": 273.25,
+        "duration": 4.38
+    },
+    {
+        "text": "top of the stack is equal to current",
+        "start": 276.13,
+        "duration": 7.58
+    },
+    {
+        "text": "char we're gonna decriminalized to",
+        "start": 277.63,
+        "duration": 9.69
+    },
+    {
+        "text": "monitor the stack and otherwise the",
+        "start": 283.71,
+        "duration": 6.64
+    },
+    {
+        "text": "elements are not equal so we can just",
+        "start": 287.32,
+        "duration": 4.95
+    },
+    {
+        "text": "add it on to the stack right so we'll go",
+        "start": 290.35,
+        "duration": 4.439
+    },
+    {
+        "text": "through an example here so stack of I is",
+        "start": 292.27,
+        "duration": 7.709
+    },
+    {
+        "text": "equal to current char and then I plus",
+        "start": 294.789,
+        "duration": 8.19
+    },
+    {
+        "text": "equals one so that's it and then we",
+        "start": 299.979,
+        "duration": 5.641
+    },
+    {
+        "text": "return the new string you can actually",
+        "start": 302.979,
+        "duration": 5.341
+    },
+    {
+        "text": "pass in an array of characters into this",
+        "start": 305.62,
+        "duration": 5.88
+    },
+    {
+        "text": "constructor for a string and then 0 to I",
+        "start": 308.32,
+        "duration": 5.64
+    },
+    {
+        "text": "and yeah this will this will work",
+        "start": 311.5,
+        "duration": 5.22
+    },
+    {
+        "text": "perfectly we can submit it here there we",
+        "start": 313.96,
+        "duration": 5.34
+    },
+    {
+        "text": "go we passed that was it that's all we",
+        "start": 316.72,
+        "duration": 3.87
+    },
+    {
+        "text": "had to do let's go over an example",
+        "start": 319.3,
+        "duration": 2.73
+    },
+    {
+        "text": "really quick so you guys really",
+        "start": 320.59,
+        "duration": 4.68
+    },
+    {
+        "text": "understand this so first we have I is",
+        "start": 322.03,
+        "duration": 5.58
+    },
+    {
+        "text": "equal to 0 right and we have an empty",
+        "start": 325.27,
+        "duration": 4.53
+    },
+    {
+        "text": "stack where the stack is equal to this",
+        "start": 327.61,
+        "duration": 5.16
+    },
+    {
+        "text": "now let's go let's go through this so",
+        "start": 329.8,
+        "duration": 5.88
+    },
+    {
+        "text": "we're looping right we see an a first so",
+        "start": 332.77,
+        "duration": 4.11
+    },
+    {
+        "text": "we're gonna see an a as our first",
+        "start": 335.68,
+        "duration": 3.78
+    },
+    {
+        "text": "character woman Lupin is I greater than",
+        "start": 336.88,
+        "duration": 3.09
+    },
+    {
+        "text": "0",
+        "start": 339.46,
+        "duration": 2.459
+    },
+    {
+        "text": "no automatically we're not going to do",
+        "start": 339.97,
+        "duration": 3.6
+    },
+    {
+        "text": "this condition so we're gonna say okay",
+        "start": 341.919,
+        "duration": 4.201
+    },
+    {
+        "text": "stack of 0 so the first character is",
+        "start": 343.57,
+        "duration": 4.95
+    },
+    {
+        "text": "gonna be a right because a is current",
+        "start": 346.12,
+        "duration": 4.59
+    },
+    {
+        "text": "char so we put a onto the stack and then",
+        "start": 348.52,
+        "duration": 5.61
+    },
+    {
+        "text": "we increment I so I is now one next loop",
+        "start": 350.71,
+        "duration": 6.0
+    },
+    {
+        "text": "we see a B okay now we can actually",
+        "start": 354.13,
+        "duration": 3.93
+    },
+    {
+        "text": "check this condition because I is",
+        "start": 356.71,
+        "duration": 2.07
+    },
+    {
+        "text": "greater than 0",
+        "start": 358.06,
+        "duration": 3.81
+    },
+    {
+        "text": "okay so is stack of I minus 1 I is 1 so",
+        "start": 358.78,
+        "duration": 7.199
+    },
+    {
+        "text": "a stack of 0 equal to B no it's not",
+        "start": 361.87,
+        "duration": 6.299
+    },
+    {
+        "text": "because stack of 0 is a so we're gonna",
+        "start": 365.979,
+        "duration": 8.461
+    },
+    {
+        "text": "do okay now stack of 1 is B so you could",
+        "start": 368.169,
+        "duration": 8.49
+    },
+    {
+        "text": "really imagine it as like this whatever",
+        "start": 374.44,
+        "duration": 4.59
+    },
+    {
+        "text": "however many characters there are it's a",
+        "start": 376.659,
+        "duration": 9.6
+    },
+    {
+        "text": "bunch of 0 so it's it's like this right",
+        "start": 379.03,
+        "duration": 10.229
+    },
+    {
+        "text": "now and then okay so now and then we",
+        "start": 386.259,
+        "duration": 5.19
+    },
+    {
+        "text": "increment I so as to in the next",
+        "start": 389.259,
+        "duration": 5.071
+    },
+    {
+        "text": "character is B again so we say okay is I",
+        "start": 391.449,
+        "duration": 5.161
+    },
+    {
+        "text": "greater than 0 yes in this stack of I",
+        "start": 394.33,
+        "duration": 5.94
+    },
+    {
+        "text": "minus 1 so stack of 1 B stack of 1 is B",
+        "start": 396.61,
+        "duration": 6.18
+    },
+    {
+        "text": "okay so this time we actually hit so I -",
+        "start": 400.27,
+        "duration": 6.05
+    },
+    {
+        "text": "- so we're gonna say okay now I is one",
+        "start": 402.79,
+        "duration": 7.23
+    },
+    {
+        "text": "okay and then next time around we see an",
+        "start": 406.32,
+        "duration": 6.1
+    },
+    {
+        "text": "a we see an a okay",
+        "start": 410.02,
+        "duration": 5.37
+    },
+    {
+        "text": "is I greater than zero yes is stack of",
+        "start": 412.42,
+        "duration": 6.39
+    },
+    {
+        "text": "0n a yes we yes it is so now I is zero",
+        "start": 415.39,
+        "duration": 7.5
+    },
+    {
+        "text": "okay now we're at C so we see stack I is",
+        "start": 418.81,
+        "duration": 5.76
+    },
+    {
+        "text": "not greater than zero so we're at sea",
+        "start": 422.89,
+        "duration": 4.79
+    },
+    {
+        "text": "stack of I so stack of 0 is equal to C",
+        "start": 424.57,
+        "duration": 5.55
+    },
+    {
+        "text": "stack of zero is equal to C so we update",
+        "start": 427.68,
+        "duration": 7.08
+    },
+    {
+        "text": "this we go in then I is 1 we go around",
+        "start": 430.12,
+        "duration": 8.73
+    },
+    {
+        "text": "is I greater than 0 yes is a equal to C",
+        "start": 434.76,
+        "duration": 6.82
+    },
+    {
+        "text": "no so then we do this again and we set",
+        "start": 438.85,
+        "duration": 5.25
+    },
+    {
+        "text": "this equal to a and then will we return",
+        "start": 441.58,
+        "duration": 9.33
+    },
+    {
+        "text": "is 0 to 2 0 to 2 gives us C and a it",
+        "start": 444.1,
+        "duration": 8.58
+    },
+    {
+        "text": "only it makes a string out of this and",
+        "start": 450.91,
+        "duration": 3.3
+    },
+    {
+        "text": "that's why we return hopefully that",
+        "start": 452.68,
+        "duration": 2.1
+    },
+    {
+        "text": "makes sense",
+        "start": 454.21,
+        "duration": 2.97
+    },
+    {
+        "text": "I don't I didn't do it visually I don't",
+        "start": 454.78,
+        "duration": 3.96
+    },
+    {
+        "text": "have a whiteboard because I can't afford",
+        "start": 457.18,
+        "duration": 4.95
+    },
+    {
+        "text": "to pay for an editor and filmer for all",
+        "start": 458.74,
+        "duration": 5.22
+    },
+    {
+        "text": "these a hundred you know a thousand Li",
+        "start": 462.13,
+        "duration": 3.69
+    },
+    {
+        "text": "code videos unless I had a ton of money",
+        "start": 463.96,
+        "duration": 5.58
+    },
+    {
+        "text": "so that was it hopefully guys understand",
+        "start": 465.82,
+        "duration": 4.83
+    },
+    {
+        "text": "let me know if you have any questions",
+        "start": 469.54,
+        "duration": 2.13
+    },
+    {
+        "text": "let me know there's a few",
+        "start": 470.65,
+        "duration": 2.49
+    },
+    {
+        "text": "implementations of this there's a two",
+        "start": 471.67,
+        "duration": 2.88
+    },
+    {
+        "text": "pointer one but it doesn't really matter",
+        "start": 473.14,
+        "duration": 3.96
+    },
+    {
+        "text": "either way you're gonna need event space",
+        "start": 474.55,
+        "duration": 4.49
+    },
+    {
+        "text": "over on time let me know you guys think",
+        "start": 477.1,
+        "duration": 3.93
+    },
+    {
+        "text": "let me know if you have any questions",
+        "start": 479.04,
+        "duration": 4.09
+    },
+    {
+        "text": "and please for me on patreon if you can",
+        "start": 481.03,
+        "duration": 4.95
+    },
+    {
+        "text": "so I can continue making higher quality",
+        "start": 483.13,
+        "duration": 4.11
+    },
+    {
+        "text": "videos in the future",
+        "start": 485.98,
+        "duration": 5.24
+    },
+    {
+        "text": "thanks guys see you guys in the next one",
+        "start": 487.24,
+        "duration": 3.98
+    }
+]

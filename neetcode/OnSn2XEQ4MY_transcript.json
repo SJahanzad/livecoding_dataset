@@ -1,0 +1,572 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.16,
+        "duration": 3.68
+    },
+    {
+        "text": "some more neat code today so today let's",
+        "start": 1.599,
+        "duration": 5.121
+    },
+    {
+        "text": "solve a pretty easy and popular question",
+        "start": 3.84,
+        "duration": 5.52
+    },
+    {
+        "text": "invert binary search tree so all they",
+        "start": 6.72,
+        "duration": 3.44
+    },
+    {
+        "text": "tell us to do",
+        "start": 9.36,
+        "duration": 3.6
+    },
+    {
+        "text": "is invert a binary tree and what exactly",
+        "start": 10.16,
+        "duration": 3.84
+    },
+    {
+        "text": "does that mean",
+        "start": 12.96,
+        "duration": 4.159
+    },
+    {
+        "text": "so let's say that this is our initial",
+        "start": 14.0,
+        "duration": 3.92
+    },
+    {
+        "text": "tree",
+        "start": 17.119,
+        "duration": 4.08
+    },
+    {
+        "text": "to invert it is basically what you can",
+        "start": 17.92,
+        "duration": 3.68
+    },
+    {
+        "text": "tell",
+        "start": 21.199,
+        "duration": 2.481
+    },
+    {
+        "text": "in the output right so the root stayed",
+        "start": 21.6,
+        "duration": 3.919
+    },
+    {
+        "text": "the same but you can see it's two",
+        "start": 23.68,
+        "duration": 5.2
+    },
+    {
+        "text": "children which were left child two left",
+        "start": 25.519,
+        "duration": 4.721
+    },
+    {
+        "text": "or right child seven",
+        "start": 28.88,
+        "duration": 4.24
+    },
+    {
+        "text": "were swapped right so seven is now on",
+        "start": 30.24,
+        "duration": 3.92
+    },
+    {
+        "text": "the other side",
+        "start": 33.12,
+        "duration": 3.2
+    },
+    {
+        "text": "two has been moved right so basically we",
+        "start": 34.16,
+        "duration": 3.04
+    },
+    {
+        "text": "took these",
+        "start": 36.32,
+        "duration": 3.44
+    },
+    {
+        "text": "and then we swapped them and when they",
+        "start": 37.2,
+        "duration": 4.32
+    },
+    {
+        "text": "say invert the binary tree it's a",
+        "start": 39.76,
+        "duration": 4.0
+    },
+    {
+        "text": "recursive definition so take a look at",
+        "start": 41.52,
+        "duration": 2.64
+    },
+    {
+        "text": "this",
+        "start": 43.76,
+        "duration": 2.959
+    },
+    {
+        "text": "subtree right you can see since we moved",
+        "start": 44.16,
+        "duration": 5.2
+    },
+    {
+        "text": "it to this side that's where it is",
+        "start": 46.719,
+        "duration": 5.52
+    },
+    {
+        "text": "right but notice how even these sub",
+        "start": 49.36,
+        "duration": 3.44
+    },
+    {
+        "text": "trees",
+        "start": 52.239,
+        "duration": 3.041
+    },
+    {
+        "text": "are are different now right one was",
+        "start": 52.8,
+        "duration": 4.239
+    },
+    {
+        "text": "initially on the left and three was",
+        "start": 55.28,
+        "duration": 3.04
+    },
+    {
+        "text": "initially on the right",
+        "start": 57.039,
+        "duration": 4.401
+    },
+    {
+        "text": "but now three is on the left and one is",
+        "start": 58.32,
+        "duration": 4.079
+    },
+    {
+        "text": "on the right",
+        "start": 61.44,
+        "duration": 2.96
+    },
+    {
+        "text": "the exact same thing happened with this",
+        "start": 62.399,
+        "duration": 3.361
+    },
+    {
+        "text": "tree right it was moved",
+        "start": 64.4,
+        "duration": 4.399
+    },
+    {
+        "text": "over here to the left side but then",
+        "start": 65.76,
+        "duration": 6.0
+    },
+    {
+        "text": "its children were also swapped right so",
+        "start": 68.799,
+        "duration": 3.521
+    },
+    {
+        "text": "nine",
+        "start": 71.76,
+        "duration": 2.96
+    },
+    {
+        "text": "was moved to the left six to the right",
+        "start": 72.32,
+        "duration": 3.439
+    },
+    {
+        "text": "so when they say",
+        "start": 74.72,
+        "duration": 3.68
+    },
+    {
+        "text": "invert the binary tree what we're saying",
+        "start": 75.759,
+        "duration": 3.36
+    },
+    {
+        "text": "is",
+        "start": 78.4,
+        "duration": 4.399
+    },
+    {
+        "text": "visit every single node in the tree",
+        "start": 79.119,
+        "duration": 4.32
+    },
+    {
+        "text": "right",
+        "start": 82.799,
+        "duration": 3.921
+    },
+    {
+        "text": "and every time we visit a node take a",
+        "start": 83.439,
+        "duration": 4.241
+    },
+    {
+        "text": "look at its",
+        "start": 86.72,
+        "duration": 4.88
+    },
+    {
+        "text": "two children and swap the positions",
+        "start": 87.68,
+        "duration": 6.64
+    },
+    {
+        "text": "of the children right so in other words",
+        "start": 91.6,
+        "duration": 3.839
+    },
+    {
+        "text": "if we're given a",
+        "start": 94.32,
+        "duration": 4.159
+    },
+    {
+        "text": "tree look at the root node and take its",
+        "start": 95.439,
+        "duration": 5.921
+    },
+    {
+        "text": "children and then swap the positions and",
+        "start": 98.479,
+        "duration": 3.521
+    },
+    {
+        "text": "then",
+        "start": 101.36,
+        "duration": 3.759
+    },
+    {
+        "text": "recursively run inver binaries",
+        "start": 102.0,
+        "duration": 6.159
+    },
+    {
+        "text": "or invert tree on the left subtree and",
+        "start": 105.119,
+        "duration": 5.68
+    },
+    {
+        "text": "run invert on the right subtree so it's",
+        "start": 108.159,
+        "duration": 4.401
+    },
+    {
+        "text": "a recursive definition",
+        "start": 110.799,
+        "duration": 3.761
+    },
+    {
+        "text": "so we can solve this problem with",
+        "start": 112.56,
+        "duration": 3.68
+    },
+    {
+        "text": "recursion we can do",
+        "start": 114.56,
+        "duration": 3.28
+    },
+    {
+        "text": "a depth first search whether it's",
+        "start": 116.24,
+        "duration": 3.04
+    },
+    {
+        "text": "pre-order or post",
+        "start": 117.84,
+        "duration": 3.52
+    },
+    {
+        "text": "order it doesn't actually matter a depth",
+        "start": 119.28,
+        "duration": 3.199
+    },
+    {
+        "text": "first search will",
+        "start": 121.36,
+        "duration": 2.64
+    },
+    {
+        "text": "allow us to solve this problem",
+        "start": 122.479,
+        "duration": 3.68
+    },
+    {
+        "text": "recursively so this problem would",
+        "start": 124.0,
+        "duration": 4.399
+    },
+    {
+        "text": "probably be a lot more annoying",
+        "start": 126.159,
+        "duration": 4.24
+    },
+    {
+        "text": "if it were iterative but luckily we can",
+        "start": 128.399,
+        "duration": 3.761
+    },
+    {
+        "text": "do it recursively so",
+        "start": 130.399,
+        "duration": 4.081
+    },
+    {
+        "text": "we can first check the base case so if",
+        "start": 132.16,
+        "duration": 3.84
+    },
+    {
+        "text": "the root is null",
+        "start": 134.48,
+        "duration": 4.24
+    },
+    {
+        "text": "then we can return null we don't have to",
+        "start": 136.0,
+        "duration": 3.68
+    },
+    {
+        "text": "continue",
+        "start": 138.72,
+        "duration": 3.68
+    },
+    {
+        "text": "otherwise what we're going to do is swap",
+        "start": 139.68,
+        "duration": 3.68
+    },
+    {
+        "text": "the children",
+        "start": 142.4,
+        "duration": 4.76
+    },
+    {
+        "text": "so we're going to save the left value",
+        "start": 143.36,
+        "duration": 7.04
+    },
+    {
+        "text": "root.left in a temporary variable then",
+        "start": 147.16,
+        "duration": 3.96
+    },
+    {
+        "text": "we're going to",
+        "start": 150.4,
+        "duration": 3.24
+    },
+    {
+        "text": "replace the root.left value with",
+        "start": 151.12,
+        "duration": 3.759
+    },
+    {
+        "text": "root.right",
+        "start": 153.64,
+        "duration": 2.679
+    },
+    {
+        "text": "and then we're going to replace the",
+        "start": 154.879,
+        "duration": 4.08
+    },
+    {
+        "text": "root.right value with the left value",
+        "start": 156.319,
+        "duration": 3.841
+    },
+    {
+        "text": "which we know is now",
+        "start": 158.959,
+        "duration": 3.841
+    },
+    {
+        "text": "stored in temp so after we swap the",
+        "start": 160.16,
+        "duration": 3.12
+    },
+    {
+        "text": "nodes",
+        "start": 162.8,
+        "duration": 2.64
+    },
+    {
+        "text": "all we have to do is now recursively",
+        "start": 163.28,
+        "duration": 3.12
+    },
+    {
+        "text": "invert the",
+        "start": 165.44,
+        "duration": 4.72
+    },
+    {
+        "text": "subtrees so we can invert the left",
+        "start": 166.4,
+        "duration": 4.64
+    },
+    {
+        "text": "subtree",
+        "start": 170.16,
+        "duration": 4.0
+    },
+    {
+        "text": "and then we can invert the right subtree",
+        "start": 171.04,
+        "duration": 5.6
+    },
+    {
+        "text": "so by doing self.invert tree what we're",
+        "start": 174.16,
+        "duration": 4.24
+    },
+    {
+        "text": "doing is making a recursive call to the",
+        "start": 176.64,
+        "duration": 3.12
+    },
+    {
+        "text": "function we're inside",
+        "start": 178.4,
+        "duration": 3.759
+    },
+    {
+        "text": "and once we have swapped the roots",
+        "start": 179.76,
+        "duration": 4.479
+    },
+    {
+        "text": "children once we have inverted the left",
+        "start": 182.159,
+        "duration": 2.881
+    },
+    {
+        "text": "subtree and",
+        "start": 184.239,
+        "duration": 3.041
+    },
+    {
+        "text": "inverted the right subtree we know we're",
+        "start": 185.04,
+        "duration": 4.64
+    },
+    {
+        "text": "finished so then we can return the root",
+        "start": 187.28,
+        "duration": 4.8
+    },
+    {
+        "text": "so there it is this problem is a",
+        "start": 189.68,
+        "duration": 4.24
+    },
+    {
+        "text": "relatively short code it's a very good",
+        "start": 192.08,
+        "duration": 4.159
+    },
+    {
+        "text": "problem to kind of understand the basics",
+        "start": 193.92,
+        "duration": 3.52
+    },
+    {
+        "text": "of",
+        "start": 196.239,
+        "duration": 3.521
+    },
+    {
+        "text": "depth first search and tree problems in",
+        "start": 197.44,
+        "duration": 4.24
+    },
+    {
+        "text": "general and it's actually a pretty",
+        "start": 199.76,
+        "duration": 3.36
+    },
+    {
+        "text": "popular problem",
+        "start": 201.68,
+        "duration": 3.52
+    },
+    {
+        "text": "and if you weren't able to solve this on",
+        "start": 203.12,
+        "duration": 4.08
+    },
+    {
+        "text": "your first try don't feel too bad take a",
+        "start": 205.2,
+        "duration": 4.0
+    },
+    {
+        "text": "look at this trivia",
+        "start": 207.2,
+        "duration": 4.0
+    },
+    {
+        "text": "there was a very good engineer who",
+        "start": 209.2,
+        "duration": 3.679
+    },
+    {
+        "text": "actually failed this problem in their",
+        "start": 211.2,
+        "duration": 3.039
+    },
+    {
+        "text": "google interview",
+        "start": 212.879,
+        "duration": 3.36
+    },
+    {
+        "text": "but his career still turned out pretty",
+        "start": 214.239,
+        "duration": 4.401
+    },
+    {
+        "text": "fine so i hope this was helpful",
+        "start": 216.239,
+        "duration": 4.481
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 218.64,
+        "duration": 3.12
+    },
+    {
+        "text": "supports the channel",
+        "start": 220.72,
+        "duration": 4.12
+    },
+    {
+        "text": "a lot and i'll hopefully see you pretty",
+        "start": 221.76,
+        "duration": 6.08
+    },
+    {
+        "text": "soon",
+        "start": 224.84,
+        "duration": 3.0
+    }
+]

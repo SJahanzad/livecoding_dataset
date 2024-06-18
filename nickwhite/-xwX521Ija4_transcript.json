@@ -1,0 +1,492 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white here",
+        "start": 0.65,
+        "duration": 5.62
+    },
+    {
+        "text": "and I do tech encoding stuff on twitch",
+        "start": 4.14,
+        "duration": 4.379
+    },
+    {
+        "text": "and YouTube I'm doing all the Waco",
+        "start": 6.27,
+        "duration": 3.42
+    },
+    {
+        "text": "problems and I have them on my channel",
+        "start": 8.519,
+        "duration": 2.79
+    },
+    {
+        "text": "so if you want to go check those out of",
+        "start": 9.69,
+        "duration": 3.09
+    },
+    {
+        "text": "downtown of them",
+        "start": 11.309,
+        "duration": 4.31
+    },
+    {
+        "text": "this one's called swab nodes in pairs",
+        "start": 12.78,
+        "duration": 5.28
+    },
+    {
+        "text": "given a linked list swap every two",
+        "start": 15.619,
+        "duration": 4.211
+    },
+    {
+        "text": "adjacent nodes and return its head you",
+        "start": 18.06,
+        "duration": 3.75
+    },
+    {
+        "text": "may not model you may not modify the",
+        "start": 19.83,
+        "duration": 3.84
+    },
+    {
+        "text": "value of the list nodes or only the",
+        "start": 21.81,
+        "duration": 4.08
+    },
+    {
+        "text": "nodes itself may change so I did this at",
+        "start": 23.67,
+        "duration": 5.13
+    },
+    {
+        "text": "first and I made a video on it and I was",
+        "start": 25.89,
+        "duration": 6.36
+    },
+    {
+        "text": "swapping the values 2x2 of the nodes and",
+        "start": 28.8,
+        "duration": 5.16
+    },
+    {
+        "text": "then I read you may not modify the value",
+        "start": 32.25,
+        "duration": 4.38
+    },
+    {
+        "text": "so I read rethought and then I did it",
+        "start": 33.96,
+        "duration": 5.7
+    },
+    {
+        "text": "again so to do this what I do is I",
+        "start": 36.63,
+        "duration": 4.62
+    },
+    {
+        "text": "declare a temp node because we're",
+        "start": 39.66,
+        "duration": 3.96
+    },
+    {
+        "text": "actually going to be f2 set we're gonna",
+        "start": 41.25,
+        "duration": 4.829
+    },
+    {
+        "text": "be how do you swap notes while you set",
+        "start": 43.62,
+        "duration": 6.36
+    },
+    {
+        "text": "the dot next of a node to you skip the",
+        "start": 46.079,
+        "duration": 6.21
+    },
+    {
+        "text": "node you skip the note after it and you",
+        "start": 49.98,
+        "duration": 5.489
+    },
+    {
+        "text": "set the next to the node after it of the",
+        "start": 52.289,
+        "duration": 5.43
+    },
+    {
+        "text": "current node and then you have to kind",
+        "start": 55.469,
+        "duration": 4.921
+    },
+    {
+        "text": "of swap around and use the next the dot",
+        "start": 57.719,
+        "duration": 6.351
+    },
+    {
+        "text": "next to kind of swap them so we'll have",
+        "start": 60.39,
+        "duration": 6.299
+    },
+    {
+        "text": "we'll go through all the nodes and we'll",
+        "start": 64.07,
+        "duration": 4.6
+    },
+    {
+        "text": "set the next of the current node that",
+        "start": 66.689,
+        "duration": 4.5
+    },
+    {
+        "text": "we're at to the one after the next node",
+        "start": 68.67,
+        "duration": 7.019
+    },
+    {
+        "text": "and then we'll set the next of the node",
+        "start": 71.189,
+        "duration": 8.281
+    },
+    {
+        "text": "before that one to the node that was",
+        "start": 75.689,
+        "duration": 6.121
+    },
+    {
+        "text": "previously next of the current node I",
+        "start": 79.47,
+        "duration": 4.05
+    },
+    {
+        "text": "know that doesn't really make sense it's",
+        "start": 81.81,
+        "duration": 3.0
+    },
+    {
+        "text": "hard to explain with the linked lists",
+        "start": 83.52,
+        "duration": 3.3
+    },
+    {
+        "text": "and all these next it's is kind of hard",
+        "start": 84.81,
+        "duration": 5.76
+    },
+    {
+        "text": "to explain so we're just gonna start",
+        "start": 86.82,
+        "duration": 6.42
+    },
+    {
+        "text": "writing it out here so list temp will be",
+        "start": 90.57,
+        "duration": 4.71
+    },
+    {
+        "text": "equal to name list node and we're gonna",
+        "start": 93.24,
+        "duration": 4.89
+    },
+    {
+        "text": "have come to our next point to head just",
+        "start": 95.28,
+        "duration": 6.78
+    },
+    {
+        "text": "so we have a kind of a reference to head",
+        "start": 98.13,
+        "duration": 7.169
+    },
+    {
+        "text": "and then we're gonna also have a list",
+        "start": 102.06,
+        "duration": 7.16
+    },
+    {
+        "text": "node current equals 10",
+        "start": 105.299,
+        "duration": 8.791
+    },
+    {
+        "text": "so where this is we're gonna use current",
+        "start": 109.22,
+        "duration": 8.02
+    },
+    {
+        "text": "to loop through so while current dot",
+        "start": 114.09,
+        "duration": 5.79
+    },
+    {
+        "text": "next not equal no turned on next is",
+        "start": 117.24,
+        "duration": 5.4
+    },
+    {
+        "text": "gonna be a head at first so that's what",
+        "start": 119.88,
+        "duration": 5.25
+    },
+    {
+        "text": "we do that next time X is not equal to",
+        "start": 122.64,
+        "duration": 3.99
+    },
+    {
+        "text": "null that's going to be these are gonna",
+        "start": 125.13,
+        "duration": 3.39
+    },
+    {
+        "text": "be the nose we swap we're gonna say",
+        "start": 126.63,
+        "duration": 5.16
+    },
+    {
+        "text": "listen over the first node is equal to",
+        "start": 128.52,
+        "duration": 4.13
+    },
+    {
+        "text": "current",
+        "start": 131.79,
+        "duration": 4.97
+    },
+    {
+        "text": "next list node second node is equal to",
+        "start": 132.65,
+        "duration": 8.339
+    },
+    {
+        "text": "current dot next done next so we grab",
+        "start": 136.76,
+        "duration": 5.82
+    },
+    {
+        "text": "our two nodes that were gonna swap and",
+        "start": 140.989,
+        "duration": 4.08
+    },
+    {
+        "text": "then we set first node dot next equal to",
+        "start": 142.58,
+        "duration": 4.769
+    },
+    {
+        "text": "second node next like I said earlier",
+        "start": 145.069,
+        "duration": 4.17
+    },
+    {
+        "text": "that's basically taking this first node",
+        "start": 147.349,
+        "duration": 4.741
+    },
+    {
+        "text": "and it's setting the next to that and it",
+        "start": 149.239,
+        "duration": 6.121
+    },
+    {
+        "text": "was the first nodes next was second node",
+        "start": 152.09,
+        "duration": 4.739
+    },
+    {
+        "text": "but now it's going to be second node dot",
+        "start": 155.36,
+        "duration": 3.599
+    },
+    {
+        "text": "next so it's setting the next to skip",
+        "start": 156.829,
+        "duration": 2.58
+    },
+    {
+        "text": "that",
+        "start": 158.959,
+        "duration": 2.461
+    },
+    {
+        "text": "so we're basically taking second nodes",
+        "start": 159.409,
+        "duration": 5.281
+    },
+    {
+        "text": "next and we're making that first nodes",
+        "start": 161.42,
+        "duration": 4.709
+    },
+    {
+        "text": "next because we basically want to make",
+        "start": 164.69,
+        "duration": 3.81
+    },
+    {
+        "text": "first node become have the same kind of",
+        "start": 166.129,
+        "duration": 4.08
+    },
+    {
+        "text": "properties the second node we're",
+        "start": 168.5,
+        "duration": 3.42
+    },
+    {
+        "text": "swapping them so we want to have some",
+        "start": 170.209,
+        "duration": 4.261
+    },
+    {
+        "text": "more properties there then all we have",
+        "start": 171.92,
+        "duration": 7.08
+    },
+    {
+        "text": "to do is current dot next is going to be",
+        "start": 174.47,
+        "duration": 7.769
+    },
+    {
+        "text": "equal to second node so we switch the",
+        "start": 179.0,
+        "duration": 5.01
+    },
+    {
+        "text": "order here cuz current dot next was",
+        "start": 182.239,
+        "duration": 4.021
+    },
+    {
+        "text": "first node now it's gonna be second node",
+        "start": 184.01,
+        "duration": 6.42
+    },
+    {
+        "text": "and then current dot next dot next is",
+        "start": 186.26,
+        "duration": 6.33
+    },
+    {
+        "text": "gonna be first node it was second node",
+        "start": 190.43,
+        "duration": 4.08
+    },
+    {
+        "text": "now it's gonna be first node and then we",
+        "start": 192.59,
+        "duration": 6.209
+    },
+    {
+        "text": "just have to update current node current",
+        "start": 194.51,
+        "duration": 7.17
+    },
+    {
+        "text": "dot next current equals current dot next",
+        "start": 198.799,
+        "duration": 5.581
+    },
+    {
+        "text": "next because we're jumping two at a time",
+        "start": 201.68,
+        "duration": 6.75
+    },
+    {
+        "text": "as we loop through this length list and",
+        "start": 204.38,
+        "duration": 5.37
+    },
+    {
+        "text": "that's pretty much it all you have to do",
+        "start": 208.43,
+        "duration": 3.54
+    },
+    {
+        "text": "is return temp dot next because temps",
+        "start": 209.75,
+        "duration": 4.95
+    },
+    {
+        "text": "next reference was to the head of the",
+        "start": 211.97,
+        "duration": 5.22
+    },
+    {
+        "text": "linked list and there we go first try",
+        "start": 214.7,
+        "duration": 5.129
+    },
+    {
+        "text": "perfect solution as you see we grab two",
+        "start": 217.19,
+        "duration": 4.079
+    },
+    {
+        "text": "nodes at a time we're looping through",
+        "start": 219.829,
+        "duration": 3.66
+    },
+    {
+        "text": "the list two nodes at a time and we're",
+        "start": 221.269,
+        "duration": 4.05
+    },
+    {
+        "text": "just changing the properties of first",
+        "start": 223.489,
+        "duration": 4.321
+    },
+    {
+        "text": "and second node we're changing the next",
+        "start": 225.319,
+        "duration": 4.92
+    },
+    {
+        "text": "values of the current the first and the",
+        "start": 227.81,
+        "duration": 6.209
+    },
+    {
+        "text": "second to kind of change to do a swap",
+        "start": 230.239,
+        "duration": 5.25
+    },
+    {
+        "text": "between the first node and the second",
+        "start": 234.019,
+        "duration": 2.791
+    },
+    {
+        "text": "hopefully that made sense to you guys",
+        "start": 235.489,
+        "duration": 2.43
+    },
+    {
+        "text": "let me know in the comments if I did a",
+        "start": 236.81,
+        "duration": 2.789
+    },
+    {
+        "text": "good job of explaining that I have all",
+        "start": 237.919,
+        "duration": 3.061
+    },
+    {
+        "text": "the other videos too so good please go",
+        "start": 239.599,
+        "duration": 2.371
+    },
+    {
+        "text": "check those out and thank you guys for",
+        "start": 240.98,
+        "duration": 4.31
+    },
+    {
+        "text": "watching see you",
+        "start": 241.97,
+        "duration": 3.32
+    }
+]

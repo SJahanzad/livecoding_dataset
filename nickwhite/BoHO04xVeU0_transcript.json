@@ -1,0 +1,1147 @@
+[
+    {
+        "text": "all right I think we're recording so hey",
+        "start": 2.57,
+        "duration": 5.41
+    },
+    {
+        "text": "how's it going guys",
+        "start": 6.87,
+        "duration": 5.22
+    },
+    {
+        "text": "Nick white here I basically do tech and",
+        "start": 7.98,
+        "duration": 6.39
+    },
+    {
+        "text": "coding stuff on twitch and YouTube so if",
+        "start": 12.09,
+        "duration": 3.27
+    },
+    {
+        "text": "you wanna check those out please",
+        "start": 14.37,
+        "duration": 3.84
+    },
+    {
+        "text": "subscribe and follow I'm doing a I",
+        "start": 15.36,
+        "duration": 4.2
+    },
+    {
+        "text": "thought it would be a good idea to do a",
+        "start": 18.21,
+        "duration": 3.18
+    },
+    {
+        "text": "series on these algorithm problems since",
+        "start": 19.56,
+        "duration": 2.969
+    },
+    {
+        "text": "everyone's always stressed about",
+        "start": 21.39,
+        "duration": 3.45
+    },
+    {
+        "text": "technical interviews so I'm gonna go",
+        "start": 22.529,
+        "duration": 4.051
+    },
+    {
+        "text": "through each of the leak code problems",
+        "start": 24.84,
+        "duration": 5.07
+    },
+    {
+        "text": "and just expand explain them and go over",
+        "start": 26.58,
+        "duration": 7.8
+    },
+    {
+        "text": "the solutions so yeah check those out",
+        "start": 29.91,
+        "duration": 6.38
+    },
+    {
+        "text": "this is the first problem that I'm doing",
+        "start": 34.38,
+        "duration": 5.07
+    },
+    {
+        "text": "so this one's called twosome so to sum",
+        "start": 36.29,
+        "duration": 5.41
+    },
+    {
+        "text": "says given an array of integers return",
+        "start": 39.45,
+        "duration": 3.66
+    },
+    {
+        "text": "the indices of two numbers that add up",
+        "start": 41.7,
+        "duration": 3.66
+    },
+    {
+        "text": "to a specific target you may assume that",
+        "start": 43.11,
+        "duration": 3.81
+    },
+    {
+        "text": "each input would have exactly one",
+        "start": 45.36,
+        "duration": 3.57
+    },
+    {
+        "text": "solution and you may not use the same",
+        "start": 46.92,
+        "duration": 5.7
+    },
+    {
+        "text": "element twice okay so we have you know",
+        "start": 48.93,
+        "duration": 6.809
+    },
+    {
+        "text": "an array of integers so 2 7 11 and 15",
+        "start": 52.62,
+        "duration": 6.0
+    },
+    {
+        "text": "and target is equal to 9 so we would add",
+        "start": 55.739,
+        "duration": 5.701
+    },
+    {
+        "text": "2 & 7 to get 9 right and we would return",
+        "start": 58.62,
+        "duration": 5.91
+    },
+    {
+        "text": "0 & 1 because the right indices are you",
+        "start": 61.44,
+        "duration": 6.51
+    },
+    {
+        "text": "know 0 1 2 3 right so we return 0 & 1",
+        "start": 64.53,
+        "duration": 5.879
+    },
+    {
+        "text": "and that would be the return right right",
+        "start": 67.95,
+        "duration": 5.91
+    },
+    {
+        "text": "so if we had an array 1 to 10 1 2 3 4 5",
+        "start": 70.409,
+        "duration": 5.971
+    },
+    {
+        "text": "6 7 8 9 10 and we were looking to add up",
+        "start": 73.86,
+        "duration": 7.25
+    },
+    {
+        "text": "to 10 we would return you know zero and",
+        "start": 76.38,
+        "duration": 8.04
+    },
+    {
+        "text": "not wall zero Nate because of the",
+        "start": 81.11,
+        "duration": 5.41
+    },
+    {
+        "text": "indices and that would be one in nine or",
+        "start": 84.42,
+        "duration": 4.409
+    },
+    {
+        "text": "you could return four and six you're",
+        "start": 86.52,
+        "duration": 4.47
+    },
+    {
+        "text": "basically looking for a match within the",
+        "start": 88.829,
+        "duration": 4.68
+    },
+    {
+        "text": "array and you can't use the same thing",
+        "start": 90.99,
+        "duration": 4.83
+    },
+    {
+        "text": "so we couldn't use if we had array of 1",
+        "start": 93.509,
+        "duration": 6.15
+    },
+    {
+        "text": "to 10 1 2 3 4 5 6 7 8 9 10 like you know",
+        "start": 95.82,
+        "duration": 11.729
+    },
+    {
+        "text": "1 2 3 4 5 6 7 8 9 10 and we were looking",
+        "start": 99.659,
+        "duration": 10.651
+    },
+    {
+        "text": "in our target let's say our target was",
+        "start": 107.549,
+        "duration": 6.36
+    },
+    {
+        "text": "equal to 10 then we couldn't use 5 twice",
+        "start": 110.31,
+        "duration": 7.23
+    },
+    {
+        "text": "so we would not return you know 0 1 2 3",
+        "start": 113.909,
+        "duration": 7.53
+    },
+    {
+        "text": "4 we would not return 4 comma 4 because",
+        "start": 117.54,
+        "duration": 5.91
+    },
+    {
+        "text": "we can't use the same moment twice we",
+        "start": 121.439,
+        "duration": 5.25
+    },
+    {
+        "text": "would return one and nine or 406 or",
+        "start": 123.45,
+        "duration": 4.71
+    },
+    {
+        "text": "anything like that but I think they want",
+        "start": 126.689,
+        "duration": 3.681
+    },
+    {
+        "text": "the first occurrence but",
+        "start": 128.16,
+        "duration": 6.63
+    },
+    {
+        "text": "so how can we do this well by intuition",
+        "start": 130.37,
+        "duration": 6.94
+    },
+    {
+        "text": "brute force would say that we would have",
+        "start": 134.79,
+        "duration": 4.229
+    },
+    {
+        "text": "a for-loop right first of all obviously",
+        "start": 137.31,
+        "duration": 3.81
+    },
+    {
+        "text": "just you know pretty much any problem",
+        "start": 139.019,
+        "duration": 3.631
+    },
+    {
+        "text": "you're gonna have a for-loop most of the",
+        "start": 141.12,
+        "duration": 4.83
+    },
+    {
+        "text": "time so I is less than non-stop lane so",
+        "start": 142.65,
+        "duration": 6.51
+    },
+    {
+        "text": "we're iterating through it right each",
+        "start": 145.95,
+        "duration": 6.09
+    },
+    {
+        "text": "element of the array so now how are we",
+        "start": 149.16,
+        "duration": 5.37
+    },
+    {
+        "text": "gonna be able to actually meet the",
+        "start": 152.04,
+        "duration": 4.38
+    },
+    {
+        "text": "target right we're going one element at",
+        "start": 154.53,
+        "duration": 4.05
+    },
+    {
+        "text": "a time but we need two things right so",
+        "start": 156.42,
+        "duration": 4.379
+    },
+    {
+        "text": "you might think well two for loops right",
+        "start": 158.58,
+        "duration": 4.86
+    },
+    {
+        "text": "yeah exactly so you know if you're going",
+        "start": 160.799,
+        "duration": 4.531
+    },
+    {
+        "text": "down the element you're gonna want a",
+        "start": 163.44,
+        "duration": 3.42
+    },
+    {
+        "text": "different element so we're gonna start",
+        "start": 165.33,
+        "duration": 4.23
+    },
+    {
+        "text": "the counter after this for loops counter",
+        "start": 166.86,
+        "duration": 5.7
+    },
+    {
+        "text": "so if we see the first element we're",
+        "start": 169.56,
+        "duration": 4.019
+    },
+    {
+        "text": "gonna go through the rest of the",
+        "start": 172.56,
+        "duration": 2.88
+    },
+    {
+        "text": "elements with the second for loop to try",
+        "start": 173.579,
+        "duration": 3.511
+    },
+    {
+        "text": "to find something that matches up and",
+        "start": 175.44,
+        "duration": 4.95
+    },
+    {
+        "text": "we'll return that pair right so here's",
+        "start": 177.09,
+        "duration": 4.739
+    },
+    {
+        "text": "the second floor loop we're just gonna",
+        "start": 180.39,
+        "duration": 2.069
+    },
+    {
+        "text": "write it",
+        "start": 181.829,
+        "duration": 4.831
+    },
+    {
+        "text": "it'll be equal to I plus 1 and then also",
+        "start": 182.459,
+        "duration": 7.53
+    },
+    {
+        "text": "go to less than length the rest of the",
+        "start": 186.66,
+        "duration": 6.57
+    },
+    {
+        "text": "array and then we'll increment we'll",
+        "start": 189.989,
+        "duration": 6.75
+    },
+    {
+        "text": "just have our complement here which will",
+        "start": 193.23,
+        "duration": 7.319
+    },
+    {
+        "text": "be equal to target - nomes of i right",
+        "start": 196.739,
+        "duration": 5.461
+    },
+    {
+        "text": "because that's what we're looking for in",
+        "start": 200.549,
+        "duration": 3.78
+    },
+    {
+        "text": "this second for loop we're looking for",
+        "start": 202.2,
+        "duration": 4.49
+    },
+    {
+        "text": "this complement right",
+        "start": 204.329,
+        "duration": 7.38
+    },
+    {
+        "text": "so if nums of j right is equal to the",
+        "start": 206.69,
+        "duration": 11.26
+    },
+    {
+        "text": "complement then we're going to return a",
+        "start": 211.709,
+        "duration": 8.971
+    },
+    {
+        "text": "new array because they it's an int array",
+        "start": 217.95,
+        "duration": 4.379
+    },
+    {
+        "text": "that we're returning so we're returning",
+        "start": 220.68,
+        "duration": 6.6
+    },
+    {
+        "text": "new and sorry with a new int array of I",
+        "start": 222.329,
+        "duration": 8.13
+    },
+    {
+        "text": "and J all right those are the indexes we",
+        "start": 227.28,
+        "duration": 4.769
+    },
+    {
+        "text": "want and that's pretty much everything",
+        "start": 230.459,
+        "duration": 4.11
+    },
+    {
+        "text": "and that's how you like solve it and if",
+        "start": 232.049,
+        "duration": 4.44
+    },
+    {
+        "text": "we don't find anything I don't think we",
+        "start": 234.569,
+        "duration": 4.591
+    },
+    {
+        "text": "actually have to do this row I think",
+        "start": 236.489,
+        "duration": 4.801
+    },
+    {
+        "text": "maybe we do but it said assume that",
+        "start": 239.16,
+        "duration": 3.54
+    },
+    {
+        "text": "there's exactly one solution for",
+        "start": 241.29,
+        "duration": 3.599
+    },
+    {
+        "text": "everything so there are new illegal",
+        "start": 242.7,
+        "duration": 10.17
+    },
+    {
+        "text": "argument exception so that should work I",
+        "start": 244.889,
+        "duration": 9.621
+    },
+    {
+        "text": "would say you know something like this",
+        "start": 252.87,
+        "duration": 4.28
+    },
+    {
+        "text": "would be the brute-force approach and",
+        "start": 254.51,
+        "duration": 5.56
+    },
+    {
+        "text": "the time complexity of this at scale is",
+        "start": 257.15,
+        "duration": 5.11
+    },
+    {
+        "text": "what they're worried about so you know",
+        "start": 260.07,
+        "duration": 5.79
+    },
+    {
+        "text": "when you have we could submit this just",
+        "start": 262.26,
+        "duration": 5.37
+    },
+    {
+        "text": "in case you guys don't think it just",
+        "start": 265.86,
+        "duration": 4.47
+    },
+    {
+        "text": "passes everything but alright yeah 18",
+        "start": 267.63,
+        "duration": 4.53
+    },
+    {
+        "text": "milliseconds right 18 milliseconds is",
+        "start": 270.33,
+        "duration": 3.57
+    },
+    {
+        "text": "sure but that's on these short test",
+        "start": 272.16,
+        "duration": 5.01
+    },
+    {
+        "text": "cases so why Tech interview technical",
+        "start": 273.9,
+        "duration": 6.51
+    },
+    {
+        "text": "interviews are so serious about time",
+        "start": 277.17,
+        "duration": 5.43
+    },
+    {
+        "text": "complexity is that they're worried about",
+        "start": 280.41,
+        "duration": 5.49
+    },
+    {
+        "text": "right this is good for like enough no",
+        "start": 282.6,
+        "duration": 5.37
+    },
+    {
+        "text": "data like if you have no data but let's",
+        "start": 285.9,
+        "duration": 4.65
+    },
+    {
+        "text": "say we have millions of numbers in this",
+        "start": 287.97,
+        "duration": 4.02
+    },
+    {
+        "text": "array like that's gonna take a lot",
+        "start": 290.55,
+        "duration": 3.06
+    },
+    {
+        "text": "longer than 18 milliseconds so we want",
+        "start": 291.99,
+        "duration": 4.32
+    },
+    {
+        "text": "the fastest solution to scale right so",
+        "start": 293.61,
+        "duration": 4.95
+    },
+    {
+        "text": "this scales at events squared which",
+        "start": 296.31,
+        "duration": 3.3
+    },
+    {
+        "text": "isn't really good",
+        "start": 298.56,
+        "duration": 4.08
+    },
+    {
+        "text": "what we want is linear linear time so to",
+        "start": 299.61,
+        "duration": 4.98
+    },
+    {
+        "text": "do that in this case we're gonna have to",
+        "start": 302.64,
+        "duration": 4.8
+    },
+    {
+        "text": "use a hash map and that's gonna be space",
+        "start": 304.59,
+        "duration": 4.29
+    },
+    {
+        "text": "complexity so if we're worried about",
+        "start": 307.44,
+        "duration": 2.85
+    },
+    {
+        "text": "that we might want to take that into",
+        "start": 308.88,
+        "duration": 2.58
+    },
+    {
+        "text": "consideration as well",
+        "start": 310.29,
+        "duration": 4.2
+    },
+    {
+        "text": "but it shouldn't be too bad so I don't",
+        "start": 311.46,
+        "duration": 4.32
+    },
+    {
+        "text": "know if you guys have ever used a hash",
+        "start": 314.49,
+        "duration": 5.28
+    },
+    {
+        "text": "map before and Java but it's a data",
+        "start": 315.78,
+        "duration": 7.91
+    },
+    {
+        "text": "structure that stores key value pairs so",
+        "start": 319.77,
+        "duration": 7.11
+    },
+    {
+        "text": "you can do a shorthand like this you",
+        "start": 323.69,
+        "duration": 5.53
+    },
+    {
+        "text": "know usually you have to write before",
+        "start": 326.88,
+        "duration": 4.71
+    },
+    {
+        "text": "like a more recent version you have to",
+        "start": 329.22,
+        "duration": 4.89
+    },
+    {
+        "text": "do write the integer things again",
+        "start": 331.59,
+        "duration": 5.34
+    },
+    {
+        "text": "declare the type again but you can do",
+        "start": 334.11,
+        "duration": 4.89
+    },
+    {
+        "text": "this a shorthand so what we're gonna do",
+        "start": 336.93,
+        "duration": 4.89
+    },
+    {
+        "text": "now is just one loop right this is open",
+        "start": 339.0,
+        "duration": 7.16
+    },
+    {
+        "text": "so one loop and we're gonna loop through",
+        "start": 341.82,
+        "duration": 10.41
+    },
+    {
+        "text": "the whole array in this time we're going",
+        "start": 346.16,
+        "duration": 8.71
+    },
+    {
+        "text": "to store in the hash map right cuz",
+        "start": 352.23,
+        "duration": 5.16
+    },
+    {
+        "text": "hashmaps have constant time lookup so",
+        "start": 354.87,
+        "duration": 4.38
+    },
+    {
+        "text": "that's why it's still a linear runtime",
+        "start": 357.39,
+        "duration": 4.59
+    },
+    {
+        "text": "because you know if it was an array we",
+        "start": 359.25,
+        "duration": 4.26
+    },
+    {
+        "text": "were storing in or something else it",
+        "start": 361.98,
+        "duration": 3.78
+    },
+    {
+        "text": "would be it wouldn't be linear because",
+        "start": 363.51,
+        "duration": 4.5
+    },
+    {
+        "text": "you'd have to search through but a",
+        "start": 365.76,
+        "duration": 3.99
+    },
+    {
+        "text": "constant time lookup allows for this to",
+        "start": 368.01,
+        "duration": 3.78
+    },
+    {
+        "text": "be one you're still so what we're gonna",
+        "start": 369.75,
+        "duration": 6.09
+    },
+    {
+        "text": "do is we're gonna calculate the",
+        "start": 371.79,
+        "duration": 7.14
+    },
+    {
+        "text": "complement again which is equal to",
+        "start": 375.84,
+        "duration": 5.37
+    },
+    {
+        "text": "target my spawn right",
+        "start": 378.93,
+        "duration": 5.36
+    },
+    {
+        "text": "just like before and we're gonna see if",
+        "start": 381.21,
+        "duration": 8.88
+    },
+    {
+        "text": "hash map contains the complement right",
+        "start": 384.29,
+        "duration": 7.57
+    },
+    {
+        "text": "because if it contains it we can just",
+        "start": 390.09,
+        "duration": 5.01
+    },
+    {
+        "text": "get it and return the",
+        "start": 391.86,
+        "duration": 6.01
+    },
+    {
+        "text": "int array with that because they already",
+        "start": 395.1,
+        "duration": 7.15
+    },
+    {
+        "text": "have it along with you know the ice",
+        "start": 397.87,
+        "duration": 7.47
+    },
+    {
+        "text": "element or whatever right so return new",
+        "start": 402.25,
+        "duration": 9.57
+    },
+    {
+        "text": "int array of Magnum map dot gets a",
+        "start": 405.34,
+        "duration": 8.34
+    },
+    {
+        "text": "compliment right because we already have",
+        "start": 411.82,
+        "duration": 4.62
+    },
+    {
+        "text": "it right there along with I right so",
+        "start": 413.68,
+        "duration": 5.79
+    },
+    {
+        "text": "that's easy right else we're gonna add",
+        "start": 416.44,
+        "duration": 4.62
+    },
+    {
+        "text": "to the no map right because that means",
+        "start": 419.47,
+        "duration": 3.6
+    },
+    {
+        "text": "complements not in num map so we're",
+        "start": 421.06,
+        "duration": 3.48
+    },
+    {
+        "text": "gonna have to you know keep putting",
+        "start": 423.07,
+        "duration": 5.61
+    },
+    {
+        "text": "things in until we find a match right so",
+        "start": 424.54,
+        "duration": 9.24
+    },
+    {
+        "text": "we put in numbs lie and we put in I",
+        "start": 428.68,
+        "duration": 7.02
+    },
+    {
+        "text": "right so basically every time we go",
+        "start": 433.78,
+        "duration": 4.2
+    },
+    {
+        "text": "through it with the loop we're looking",
+        "start": 435.7,
+        "duration": 4.77
+    },
+    {
+        "text": "we're accessing this hash map and we're",
+        "start": 437.98,
+        "duration": 5.61
+    },
+    {
+        "text": "adding in the eye ailment along with its",
+        "start": 440.47,
+        "duration": 6.09
+    },
+    {
+        "text": "index so when we look and we were more",
+        "start": 443.59,
+        "duration": 5.94
+    },
+    {
+        "text": "later in the loop if we find and we",
+        "start": 446.56,
+        "duration": 5.16
+    },
+    {
+        "text": "calculate the complement if we find the",
+        "start": 449.53,
+        "duration": 4.2
+    },
+    {
+        "text": "count a complement in the hash map",
+        "start": 451.72,
+        "duration": 4.11
+    },
+    {
+        "text": "already we can just pull that index and",
+        "start": 453.73,
+        "duration": 5.07
+    },
+    {
+        "text": "it'll be returned right here along with",
+        "start": 455.83,
+        "duration": 5.13
+    },
+    {
+        "text": "the index of the current element right",
+        "start": 458.8,
+        "duration": 4.26
+    },
+    {
+        "text": "so we have the correct answer we just",
+        "start": 460.96,
+        "duration": 4.08
+    },
+    {
+        "text": "pull a in constant time it's all counts",
+        "start": 463.06,
+        "duration": 3.42
+    },
+    {
+        "text": "of time it's there is some space",
+        "start": 465.04,
+        "duration": 5.7
+    },
+    {
+        "text": "complexity behind it but it's definitely",
+        "start": 466.48,
+        "duration": 6.54
+    },
+    {
+        "text": "a better solution in certain cases so",
+        "start": 470.74,
+        "duration": 3.72
+    },
+    {
+        "text": "that's one that we're gonna want to",
+        "start": 473.02,
+        "duration": 2.67
+    },
+    {
+        "text": "consider and we can run this code",
+        "start": 474.46,
+        "duration": 2.97
+    },
+    {
+        "text": "hopefully it works actually we might",
+        "start": 475.69,
+        "duration": 4.62
+    },
+    {
+        "text": "want to missing return statement I don't",
+        "start": 477.43,
+        "duration": 5.25
+    },
+    {
+        "text": "know what's what that's about I think",
+        "start": 480.31,
+        "duration": 6.59
+    },
+    {
+        "text": "it's we might have to actually throw",
+        "start": 482.68,
+        "duration": 4.22
+    },
+    {
+        "text": "exception sorry I used to Java no match",
+        "start": 489.27,
+        "duration": 6.87
+    },
+    {
+        "text": "found",
+        "start": 494.49,
+        "duration": 7.33
+    },
+    {
+        "text": "oops so maybe this will work okay great",
+        "start": 496.14,
+        "duration": 8.23
+    },
+    {
+        "text": "it works so we run this it's a lot",
+        "start": 501.82,
+        "duration": 6.57
+    },
+    {
+        "text": "faster right should have been a lot",
+        "start": 504.37,
+        "duration": 8.1
+    },
+    {
+        "text": "faster oh yeah was faster right 67% and",
+        "start": 508.39,
+        "duration": 6.209
+    },
+    {
+        "text": "you know you can make it faster doing a",
+        "start": 512.47,
+        "duration": 4.56
+    },
+    {
+        "text": "few other things too right I'm sure if",
+        "start": 514.599,
+        "duration": 7.291
+    },
+    {
+        "text": "you don't have this variable at all you",
+        "start": 517.03,
+        "duration": 7.53
+    },
+    {
+        "text": "can you know do something like this",
+        "start": 521.89,
+        "duration": 6.15
+    },
+    {
+        "text": "get rid of this get rid of this and",
+        "start": 524.56,
+        "duration": 5.1
+    },
+    {
+        "text": "let's see what happens now I'm probably",
+        "start": 528.04,
+        "duration": 5.279
+    },
+    {
+        "text": "bounces off well you know what I'm",
+        "start": 529.66,
+        "duration": 5.299
+    },
+    {
+        "text": "saying",
+        "start": 533.319,
+        "duration": 5.221
+    },
+    {
+        "text": "without the semicolons right something",
+        "start": 534.959,
+        "duration": 8.05
+    },
+    {
+        "text": "like that should work sorry okay it does",
+        "start": 538.54,
+        "duration": 9.479
+    },
+    {
+        "text": "work that didn't get faster okay so",
+        "start": 543.009,
+        "duration": 6.93
+    },
+    {
+        "text": "that's interesting I don't know why I",
+        "start": 548.019,
+        "duration": 5.271
+    },
+    {
+        "text": "didn't get faster I would think that",
+        "start": 549.939,
+        "duration": 3.351
+    },
+    {
+        "text": "instead of accessing variables okay so",
+        "start": 553.41,
+        "duration": 8.169
+    },
+    {
+        "text": "now it's 99 I don't know what this",
+        "start": 559.839,
+        "duration": 3.781
+    },
+    {
+        "text": "what's up with this it seems to be kind",
+        "start": 561.579,
+        "duration": 4.95
+    },
+    {
+        "text": "of random here with the speed or",
+        "start": 563.62,
+        "duration": 4.139
+    },
+    {
+        "text": "something I don't know if it's like",
+        "start": 566.529,
+        "duration": 4.641
+    },
+    {
+        "text": "connection time is taken into it but",
+        "start": 567.759,
+        "duration": 5.911
+    },
+    {
+        "text": "those are basically two solutions for",
+        "start": 571.17,
+        "duration": 5.68
+    },
+    {
+        "text": "this I mean I think you guys from what I",
+        "start": 573.67,
+        "duration": 4.889
+    },
+    {
+        "text": "explained like I might have not have",
+        "start": 576.85,
+        "duration": 3.209
+    },
+    {
+        "text": "done a perfect job but I think you",
+        "start": 578.559,
+        "duration": 4.02
+    },
+    {
+        "text": "should be able to kind of understand the",
+        "start": 580.059,
+        "duration": 5.181
+    },
+    {
+        "text": "two for loop thing ovince squared",
+        "start": 582.579,
+        "duration": 5.31
+    },
+    {
+        "text": "because it's nested for-loops if the",
+        "start": 585.24,
+        "duration": 4.329
+    },
+    {
+        "text": "four loops are separated that's just o",
+        "start": 587.889,
+        "duration": 5.06
+    },
+    {
+        "text": "of T line right when you go through the",
+        "start": 589.569,
+        "duration": 6.151
+    },
+    {
+        "text": "hashmap version it's better because we",
+        "start": 592.949,
+        "duration": 4.481
+    },
+    {
+        "text": "just store things and we pull them down",
+        "start": 595.72,
+        "duration": 3.659
+    },
+    {
+        "text": "at constant time but we do have to take",
+        "start": 597.43,
+        "duration": 3.93
+    },
+    {
+        "text": "space into consideration too sometimes",
+        "start": 599.379,
+        "duration": 4.64
+    },
+    {
+        "text": "so that's pretty much it for this",
+        "start": 601.36,
+        "duration": 6.269
+    },
+    {
+        "text": "problem it was called to sum and I'll",
+        "start": 604.019,
+        "duration": 5.531
+    },
+    {
+        "text": "have a bunch of other ones later I'm",
+        "start": 607.629,
+        "duration": 3.39
+    },
+    {
+        "text": "gonna go through pretty much all of them",
+        "start": 609.55,
+        "duration": 4.829
+    },
+    {
+        "text": "so um yeah that was the first one so",
+        "start": 611.019,
+        "duration": 5.911
+    },
+    {
+        "text": "enjoy and let me know what you think if",
+        "start": 614.379,
+        "duration": 4.621
+    },
+    {
+        "text": "I'm doing a good job hopefully I get",
+        "start": 616.93,
+        "duration": 3.629
+    },
+    {
+        "text": "better at explaining these as I go on",
+        "start": 619.0,
+        "duration": 3.24
+    },
+    {
+        "text": "you know I could tell that wasn't that",
+        "start": 620.559,
+        "duration": 6.14
+    },
+    {
+        "text": "great but that's that's about it so",
+        "start": 622.24,
+        "duration": 8.75
+    },
+    {
+        "text": "thanks for watching alright see you guys",
+        "start": 626.699,
+        "duration": 4.291
+    }
+]

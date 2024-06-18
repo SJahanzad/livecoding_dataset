@@ -1,0 +1,1462 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.439
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.52,
+        "duration": 2.72
+    },
+    {
+        "text": "let's solve",
+        "start": 3.439,
+        "duration": 4.001
+    },
+    {
+        "text": "binary tree level order traversal it's",
+        "start": 4.24,
+        "duration": 5.2
+    },
+    {
+        "text": "basically just like it sounds so we're",
+        "start": 7.44,
+        "duration": 3.68
+    },
+    {
+        "text": "given a binary tree",
+        "start": 9.44,
+        "duration": 4.239
+    },
+    {
+        "text": "and we want to return the level order",
+        "start": 11.12,
+        "duration": 3.439
+    },
+    {
+        "text": "traversal",
+        "start": 13.679,
+        "duration": 3.201
+    },
+    {
+        "text": "of its nodes so basically going through",
+        "start": 14.559,
+        "duration": 3.121
+    },
+    {
+        "text": "every single",
+        "start": 16.88,
+        "duration": 3.44
+    },
+    {
+        "text": "level of the tree and going from left to",
+        "start": 17.68,
+        "duration": 3.2
+    },
+    {
+        "text": "right",
+        "start": 20.32,
+        "duration": 2.959
+    },
+    {
+        "text": "so for example for this tree we have",
+        "start": 20.88,
+        "duration": 3.28
+    },
+    {
+        "text": "this level",
+        "start": 23.279,
+        "duration": 3.121
+    },
+    {
+        "text": "so that's going to be one list we have",
+        "start": 24.16,
+        "duration": 3.119
+    },
+    {
+        "text": "the second level",
+        "start": 26.4,
+        "duration": 3.039
+    },
+    {
+        "text": "9 and 20 and then we have the third",
+        "start": 27.279,
+        "duration": 3.281
+    },
+    {
+        "text": "level 15",
+        "start": 29.439,
+        "duration": 4.561
+    },
+    {
+        "text": "and seven so we have one two three lists",
+        "start": 30.56,
+        "duration": 5.28
+    },
+    {
+        "text": "and these lists are going to be put",
+        "start": 34.0,
+        "duration": 3.68
+    },
+    {
+        "text": "together and that's going to be",
+        "start": 35.84,
+        "duration": 5.12
+    },
+    {
+        "text": "our result the three lists in that order",
+        "start": 37.68,
+        "duration": 6.08
+    },
+    {
+        "text": "so to understand what we want to do is",
+        "start": 40.96,
+        "duration": 4.56
+    },
+    {
+        "text": "pretty straightforward right so",
+        "start": 43.76,
+        "duration": 3.76
+    },
+    {
+        "text": "basically we have the first level right",
+        "start": 45.52,
+        "duration": 3.44
+    },
+    {
+        "text": "go from left to right",
+        "start": 47.52,
+        "duration": 3.28
+    },
+    {
+        "text": "we see that there's only a single node",
+        "start": 48.96,
+        "duration": 3.279
+    },
+    {
+        "text": "in this level three",
+        "start": 50.8,
+        "duration": 3.68
+    },
+    {
+        "text": "that's going to be one list we see the",
+        "start": 52.239,
+        "duration": 3.761
+    },
+    {
+        "text": "second level right that's what we want",
+        "start": 54.48,
+        "duration": 3.2
+    },
+    {
+        "text": "to do we want to traverse this",
+        "start": 56.0,
+        "duration": 4.239
+    },
+    {
+        "text": "tree every single level right one level",
+        "start": 57.68,
+        "duration": 3.199
+    },
+    {
+        "text": "at a time",
+        "start": 60.239,
+        "duration": 3.441
+    },
+    {
+        "text": "going from left to right so the second",
+        "start": 60.879,
+        "duration": 3.201
+    },
+    {
+        "text": "level",
+        "start": 63.68,
+        "duration": 2.96
+    },
+    {
+        "text": "we'll see 9 and 20 right we want to add",
+        "start": 64.08,
+        "duration": 3.359
+    },
+    {
+        "text": "that to a",
+        "start": 66.64,
+        "duration": 3.839
+    },
+    {
+        "text": "separate list and lastly we'll get to",
+        "start": 67.439,
+        "duration": 4.241
+    },
+    {
+        "text": "the third level",
+        "start": 70.479,
+        "duration": 3.841
+    },
+    {
+        "text": "going from left to right we have a 15",
+        "start": 71.68,
+        "duration": 3.2
+    },
+    {
+        "text": "and then",
+        "start": 74.32,
+        "duration": 3.04
+    },
+    {
+        "text": "a seven we're going to add that to the",
+        "start": 74.88,
+        "duration": 3.599
+    },
+    {
+        "text": "third list",
+        "start": 77.36,
+        "duration": 3.439
+    },
+    {
+        "text": "and so we've traversed the list in level",
+        "start": 78.479,
+        "duration": 4.64
+    },
+    {
+        "text": "order traversal and each of these sub",
+        "start": 80.799,
+        "duration": 3.441
+    },
+    {
+        "text": "lists are going to be",
+        "start": 83.119,
+        "duration": 5.04
+    },
+    {
+        "text": "put together into a single list and then",
+        "start": 84.24,
+        "duration": 5.68
+    },
+    {
+        "text": "that's going to be our results so that's",
+        "start": 88.159,
+        "duration": 2.96
+    },
+    {
+        "text": "what we want to do we",
+        "start": 89.92,
+        "duration": 3.839
+    },
+    {
+        "text": "know that that's pretty straightforward",
+        "start": 91.119,
+        "duration": 3.201
+    },
+    {
+        "text": "so",
+        "start": 93.759,
+        "duration": 3.201
+    },
+    {
+        "text": "the only question now is do you know an",
+        "start": 94.32,
+        "duration": 4.24
+    },
+    {
+        "text": "algorithm that can do that",
+        "start": 96.96,
+        "duration": 4.08
+    },
+    {
+        "text": "that can traverse it level order and if",
+        "start": 98.56,
+        "duration": 3.12
+    },
+    {
+        "text": "you don't",
+        "start": 101.04,
+        "duration": 3.52
+    },
+    {
+        "text": "the algorithm is breadth first search so",
+        "start": 101.68,
+        "duration": 3.759
+    },
+    {
+        "text": "we want to run",
+        "start": 104.56,
+        "duration": 4.16
+    },
+    {
+        "text": "breadth first search on our tree",
+        "start": 105.439,
+        "duration": 6.72
+    },
+    {
+        "text": "and then add the values into lists",
+        "start": 108.72,
+        "duration": 6.16
+    },
+    {
+        "text": "and the second thing to notice is do you",
+        "start": 112.159,
+        "duration": 3.28
+    },
+    {
+        "text": "know",
+        "start": 114.88,
+        "duration": 2.559
+    },
+    {
+        "text": "how to implement this breadth first",
+        "start": 115.439,
+        "duration": 3.521
+    },
+    {
+        "text": "search so we need to know",
+        "start": 117.439,
+        "duration": 3.601
+    },
+    {
+        "text": "this is the algorithm to use and now we",
+        "start": 118.96,
+        "duration": 3.68
+    },
+    {
+        "text": "need to know how to implement it and let",
+        "start": 121.04,
+        "duration": 3.039
+    },
+    {
+        "text": "me show you how to do that",
+        "start": 122.64,
+        "duration": 4.079
+    },
+    {
+        "text": "so we have a tree and we want to run a",
+        "start": 124.079,
+        "duration": 4.4
+    },
+    {
+        "text": "pretty standard algorithm",
+        "start": 126.719,
+        "duration": 4.401
+    },
+    {
+        "text": "on that tree called breadth first search",
+        "start": 128.479,
+        "duration": 4.081
+    },
+    {
+        "text": "and you might know how to",
+        "start": 131.12,
+        "duration": 3.52
+    },
+    {
+        "text": "already implement this algorithm you",
+        "start": 132.56,
+        "duration": 3.36
+    },
+    {
+        "text": "need a q",
+        "start": 134.64,
+        "duration": 3.44
+    },
+    {
+        "text": "data structure because we're going to be",
+        "start": 135.92,
+        "duration": 4.0
+    },
+    {
+        "text": "inserting elements",
+        "start": 138.08,
+        "duration": 3.68
+    },
+    {
+        "text": "to the right meaning we're gonna you",
+        "start": 139.92,
+        "duration": 4.0
+    },
+    {
+        "text": "know insert an element here here",
+        "start": 141.76,
+        "duration": 4.24
+    },
+    {
+        "text": "here right we're gonna be adding",
+        "start": 143.92,
+        "duration": 4.56
+    },
+    {
+        "text": "elements to the right portion",
+        "start": 146.0,
+        "duration": 4.56
+    },
+    {
+        "text": "and we're gonna be popping elements from",
+        "start": 148.48,
+        "duration": 4.479
+    },
+    {
+        "text": "the left portion so as soon as an",
+        "start": 150.56,
+        "duration": 4.8
+    },
+    {
+        "text": "so basically we're following first in",
+        "start": 152.959,
+        "duration": 4.401
+    },
+    {
+        "text": "first out right the first element that",
+        "start": 155.36,
+        "duration": 3.2
+    },
+    {
+        "text": "gets inserted",
+        "start": 157.36,
+        "duration": 2.48
+    },
+    {
+        "text": "over here is going to be the first",
+        "start": 158.56,
+        "duration": 3.2
+    },
+    {
+        "text": "element that gets removed right so",
+        "start": 159.84,
+        "duration": 2.96
+    },
+    {
+        "text": "that's the order",
+        "start": 161.76,
+        "duration": 3.759
+    },
+    {
+        "text": "we're going to be doing things in so the",
+        "start": 162.8,
+        "duration": 4.24
+    },
+    {
+        "text": "first thing we're going to do is take",
+        "start": 165.519,
+        "duration": 2.561
+    },
+    {
+        "text": "the first element",
+        "start": 167.04,
+        "duration": 4.32
+    },
+    {
+        "text": "3 and add it to our queue this is based",
+        "start": 168.08,
+        "duration": 5.84
+    },
+    {
+        "text": "basically to initialize the queue right",
+        "start": 171.36,
+        "duration": 3.76
+    },
+    {
+        "text": "and we know we're creating",
+        "start": 173.92,
+        "duration": 4.16
+    },
+    {
+        "text": "sub lists right so what we're gonna do",
+        "start": 175.12,
+        "duration": 3.36
+    },
+    {
+        "text": "now",
+        "start": 178.08,
+        "duration": 2.239
+    },
+    {
+        "text": "is see that okay how count how many",
+        "start": 178.48,
+        "duration": 3.839
+    },
+    {
+        "text": "elements are in our queue initially",
+        "start": 180.319,
+        "duration": 2.56
+    },
+    {
+        "text": "right there's",
+        "start": 182.319,
+        "duration": 2.961
+    },
+    {
+        "text": "one element in our queue so we're going",
+        "start": 182.879,
+        "duration": 3.28
+    },
+    {
+        "text": "to basically",
+        "start": 185.28,
+        "duration": 3.2
+    },
+    {
+        "text": "remove one element from our queue we're",
+        "start": 186.159,
+        "duration": 4.72
+    },
+    {
+        "text": "going to see okay the 3 is in the queue",
+        "start": 188.48,
+        "duration": 4.72
+    },
+    {
+        "text": "now let's get rid of the 3 and add it to",
+        "start": 190.879,
+        "duration": 3.121
+    },
+    {
+        "text": "a sub list",
+        "start": 193.2,
+        "duration": 3.44
+    },
+    {
+        "text": "right now the queue is empty so we know",
+        "start": 194.0,
+        "duration": 3.28
+    },
+    {
+        "text": "that this",
+        "start": 196.64,
+        "duration": 3.519
+    },
+    {
+        "text": "sub list is complete and what that tells",
+        "start": 197.28,
+        "duration": 4.08
+    },
+    {
+        "text": "us is basically we",
+        "start": 200.159,
+        "duration": 4.08
+    },
+    {
+        "text": "we went through the entire first level",
+        "start": 201.36,
+        "duration": 3.439
+    },
+    {
+        "text": "right",
+        "start": 204.239,
+        "duration": 1.761
+    },
+    {
+        "text": "that's what we're trying to do we're",
+        "start": 204.799,
+        "duration": 2.8
+    },
+    {
+        "text": "going through every level we know that",
+        "start": 206.0,
+        "duration": 3.84
+    },
+    {
+        "text": "the first level only had one element in",
+        "start": 207.599,
+        "duration": 2.56
+    },
+    {
+        "text": "it",
+        "start": 209.84,
+        "duration": 3.6
+    },
+    {
+        "text": "so now we're done but when we pop that",
+        "start": 210.159,
+        "duration": 6.481
+    },
+    {
+        "text": "three we need to add its children",
+        "start": 213.44,
+        "duration": 5.68
+    },
+    {
+        "text": "right it has two children it has a child",
+        "start": 216.64,
+        "duration": 3.12
+    },
+    {
+        "text": "nine",
+        "start": 219.12,
+        "duration": 2.96
+    },
+    {
+        "text": "and a child twenty so we're gonna add",
+        "start": 219.76,
+        "duration": 3.199
+    },
+    {
+        "text": "those children",
+        "start": 222.08,
+        "duration": 3.84
+    },
+    {
+        "text": "to our cue and we're to do it from left",
+        "start": 222.959,
+        "duration": 4.64
+    },
+    {
+        "text": "to right because that's important right",
+        "start": 225.92,
+        "duration": 3.36
+    },
+    {
+        "text": "we're doing this from left to right so",
+        "start": 227.599,
+        "duration": 2.961
+    },
+    {
+        "text": "we're going to add a 9",
+        "start": 229.28,
+        "duration": 3.28
+    },
+    {
+        "text": "then we're going to add a 20. okay so",
+        "start": 230.56,
+        "duration": 4.319
+    },
+    {
+        "text": "now we want to go through the second",
+        "start": 232.56,
+        "duration": 3.84
+    },
+    {
+        "text": "level of the tree right so we're going",
+        "start": 234.879,
+        "duration": 3.601
+    },
+    {
+        "text": "to have a sub list for the second",
+        "start": 236.4,
+        "duration": 5.28
+    },
+    {
+        "text": "level clearly we have two elements",
+        "start": 238.48,
+        "duration": 4.959
+    },
+    {
+        "text": "in our queue so we're gonna basically",
+        "start": 241.68,
+        "duration": 3.04
+    },
+    {
+        "text": "pop these two",
+        "start": 243.439,
+        "duration": 4.0
+    },
+    {
+        "text": "elements from our queue from left to",
+        "start": 244.72,
+        "duration": 3.2
+    },
+    {
+        "text": "right",
+        "start": 247.439,
+        "duration": 4.0
+    },
+    {
+        "text": "so the left is nine we're gonna pop nine",
+        "start": 247.92,
+        "duration": 6.56
+    },
+    {
+        "text": "from the queue add it to the sub list",
+        "start": 251.439,
+        "duration": 5.681
+    },
+    {
+        "text": "so nine is added to the sub list and",
+        "start": 254.48,
+        "duration": 3.439
+    },
+    {
+        "text": "notice how",
+        "start": 257.12,
+        "duration": 3.839
+    },
+    {
+        "text": "nine did not have any children right so",
+        "start": 257.919,
+        "duration": 4.961
+    },
+    {
+        "text": "we don't have to add any children",
+        "start": 260.959,
+        "duration": 5.361
+    },
+    {
+        "text": "for nine into our queue so next we still",
+        "start": 262.88,
+        "duration": 5.039
+    },
+    {
+        "text": "remember we had two elements we were",
+        "start": 266.32,
+        "duration": 3.36
+    },
+    {
+        "text": "trying to remove we have two elements in",
+        "start": 267.919,
+        "duration": 3.041
+    },
+    {
+        "text": "this level so let's",
+        "start": 269.68,
+        "duration": 4.56
+    },
+    {
+        "text": "now pop 20 so we can add 20 to our sub",
+        "start": 270.96,
+        "duration": 4.4
+    },
+    {
+        "text": "list right so now",
+        "start": 274.24,
+        "duration": 3.6
+    },
+    {
+        "text": "clearly this level is complete we added",
+        "start": 275.36,
+        "duration": 5.04
+    },
+    {
+        "text": "both nodes in the order 9 and 20",
+        "start": 277.84,
+        "duration": 6.079
+    },
+    {
+        "text": "to a sub list but notice 20 had a couple",
+        "start": 280.4,
+        "duration": 6.56
+    },
+    {
+        "text": "children had 15 and seven so as we",
+        "start": 283.919,
+        "duration": 3.761
+    },
+    {
+        "text": "remove",
+        "start": 286.96,
+        "duration": 3.679
+    },
+    {
+        "text": "20 from our q we're adding its children",
+        "start": 287.68,
+        "duration": 3.76
+    },
+    {
+        "text": "to the queue",
+        "start": 290.639,
+        "duration": 3.28
+    },
+    {
+        "text": "for the next level right because we know",
+        "start": 291.44,
+        "duration": 3.52
+    },
+    {
+        "text": "we want to keep",
+        "start": 293.919,
+        "duration": 4.321
+    },
+    {
+        "text": "going down a level so when we get here",
+        "start": 294.96,
+        "duration": 5.6
+    },
+    {
+        "text": "the values will already be added to our",
+        "start": 298.24,
+        "duration": 3.28
+    },
+    {
+        "text": "queue so",
+        "start": 300.56,
+        "duration": 3.52
+    },
+    {
+        "text": "15 and 7 are added to our queue we're",
+        "start": 301.52,
+        "duration": 4.399
+    },
+    {
+        "text": "done with the second level now time to",
+        "start": 304.08,
+        "duration": 3.119
+    },
+    {
+        "text": "go to the third level",
+        "start": 305.919,
+        "duration": 4.401
+    },
+    {
+        "text": "we see that there's two nodes two values",
+        "start": 307.199,
+        "duration": 3.921
+    },
+    {
+        "text": "in our queue",
+        "start": 310.32,
+        "duration": 3.04
+    },
+    {
+        "text": "so we're gonna pop both of these values",
+        "start": 311.12,
+        "duration": 3.6
+    },
+    {
+        "text": "first we pop 15",
+        "start": 313.36,
+        "duration": 3.679
+    },
+    {
+        "text": "add it to the sub list for the third",
+        "start": 314.72,
+        "duration": 3.039
+    },
+    {
+        "text": "level",
+        "start": 317.039,
+        "duration": 3.841
+    },
+    {
+        "text": "and then we pop seven add it to the sub",
+        "start": 317.759,
+        "duration": 4.961
+    },
+    {
+        "text": "list for the third level",
+        "start": 320.88,
+        "duration": 3.92
+    },
+    {
+        "text": "neither of these nodes had any children",
+        "start": 322.72,
+        "duration": 4.16
+    },
+    {
+        "text": "so now we're done we know we're done",
+        "start": 324.8,
+        "duration": 3.6
+    },
+    {
+        "text": "because our queue is now",
+        "start": 326.88,
+        "duration": 4.24
+    },
+    {
+        "text": "empty right there's nothing left in our",
+        "start": 328.4,
+        "duration": 3.359
+    },
+    {
+        "text": "queue",
+        "start": 331.12,
+        "duration": 3.44
+    },
+    {
+        "text": "so we created a sub list for every",
+        "start": 331.759,
+        "duration": 3.361
+    },
+    {
+        "text": "single",
+        "start": 334.56,
+        "duration": 3.12
+    },
+    {
+        "text": "level and as the question wanted us to",
+        "start": 335.12,
+        "duration": 3.76
+    },
+    {
+        "text": "do we're going to package",
+        "start": 337.68,
+        "duration": 3.76
+    },
+    {
+        "text": "all three of these sub-lists into one",
+        "start": 338.88,
+        "duration": 4.4
+    },
+    {
+        "text": "list and then return",
+        "start": 341.44,
+        "duration": 4.8
+    },
+    {
+        "text": "that as our result so we're really just",
+        "start": 343.28,
+        "duration": 4.96
+    },
+    {
+        "text": "doing a breadth first search algorithm",
+        "start": 346.24,
+        "duration": 4.959
+    },
+    {
+        "text": "with a queue on this binary search tree",
+        "start": 348.24,
+        "duration": 4.799
+    },
+    {
+        "text": "and since we're doing it like that",
+        "start": 351.199,
+        "duration": 3.601
+    },
+    {
+        "text": "the time complexity is going to be o of",
+        "start": 353.039,
+        "duration": 4.0
+    },
+    {
+        "text": "n we're only visiting every single node",
+        "start": 354.8,
+        "duration": 3.92
+    },
+    {
+        "text": "a single time",
+        "start": 357.039,
+        "duration": 4.801
+    },
+    {
+        "text": "the memory complexity is also o",
+        "start": 358.72,
+        "duration": 6.96
+    },
+    {
+        "text": "of n because our q at any given point in",
+        "start": 361.84,
+        "duration": 4.16
+    },
+    {
+        "text": "time",
+        "start": 365.68,
+        "duration": 4.239
+    },
+    {
+        "text": "our q could have up to n divided by two",
+        "start": 366.0,
+        "duration": 6.88
+    },
+    {
+        "text": "elements in it because the biggest level",
+        "start": 369.919,
+        "duration": 4.081
+    },
+    {
+        "text": "of a tree",
+        "start": 372.88,
+        "duration": 3.84
+    },
+    {
+        "text": "could be n divided by two that's how",
+        "start": 374.0,
+        "duration": 3.52
+    },
+    {
+        "text": "trees work",
+        "start": 376.72,
+        "duration": 3.68
+    },
+    {
+        "text": "binary trees at least and so we know",
+        "start": 377.52,
+        "duration": 3.44
+    },
+    {
+        "text": "that n",
+        "start": 380.4,
+        "duration": 3.919
+    },
+    {
+        "text": "divided by 2 can be rounded to big o of",
+        "start": 380.96,
+        "duration": 4.959
+    },
+    {
+        "text": "n so the memory complexity",
+        "start": 384.319,
+        "duration": 4.081
+    },
+    {
+        "text": "is big o of n with breadth with breadth",
+        "start": 385.919,
+        "duration": 3.361
+    },
+    {
+        "text": "first search",
+        "start": 388.4,
+        "duration": 2.96
+    },
+    {
+        "text": "so with that being said let's jump into",
+        "start": 389.28,
+        "duration": 3.359
+    },
+    {
+        "text": "the code",
+        "start": 391.36,
+        "duration": 4.0
+    },
+    {
+        "text": "so first let's initialize an array for",
+        "start": 392.639,
+        "duration": 3.84
+    },
+    {
+        "text": "the result",
+        "start": 395.36,
+        "duration": 4.0
+    },
+    {
+        "text": "and we also remember want to have a q so",
+        "start": 396.479,
+        "duration": 3.601
+    },
+    {
+        "text": "in python",
+        "start": 399.36,
+        "duration": 4.24
+    },
+    {
+        "text": "we can do that with collections dot deck",
+        "start": 400.08,
+        "duration": 6.0
+    },
+    {
+        "text": "this will give us a q and the first",
+        "start": 403.6,
+        "duration": 4.4
+    },
+    {
+        "text": "value we want to initialize this q",
+        "start": 406.08,
+        "duration": 4.48
+    },
+    {
+        "text": "with is the root node that we're given",
+        "start": 408.0,
+        "duration": 4.639
+    },
+    {
+        "text": "so with that we can start running the",
+        "start": 410.56,
+        "duration": 3.68
+    },
+    {
+        "text": "breadth first search and we're going to",
+        "start": 412.639,
+        "duration": 2.801
+    },
+    {
+        "text": "run breadth first search",
+        "start": 414.24,
+        "duration": 4.079
+    },
+    {
+        "text": "while our queue is non-empty remember",
+        "start": 415.44,
+        "duration": 4.24
+    },
+    {
+        "text": "and since the queue is not",
+        "start": 418.319,
+        "duration": 3.041
+    },
+    {
+        "text": "empty we're going to get the length of",
+        "start": 419.68,
+        "duration": 3.2
+    },
+    {
+        "text": "the cube right so we're going to get the",
+        "start": 421.36,
+        "duration": 2.64
+    },
+    {
+        "text": "number of",
+        "start": 422.88,
+        "duration": 4.24
+    },
+    {
+        "text": "nodes or values that are in this queue",
+        "start": 424.0,
+        "duration": 4.72
+    },
+    {
+        "text": "currently and we're going to go we're",
+        "start": 427.12,
+        "duration": 3.04
+    },
+    {
+        "text": "going to loop through",
+        "start": 428.72,
+        "duration": 3.84
+    },
+    {
+        "text": "every single one of those values this q",
+        "start": 430.16,
+        "duration": 4.479
+    },
+    {
+        "text": "length is basically ensuring that we we",
+        "start": 432.56,
+        "duration": 3.12
+    },
+    {
+        "text": "iterate through",
+        "start": 434.639,
+        "duration": 3.68
+    },
+    {
+        "text": "one level at a time we're going through",
+        "start": 435.68,
+        "duration": 3.28
+    },
+    {
+        "text": "one",
+        "start": 438.319,
+        "duration": 3.6
+    },
+    {
+        "text": "level at a time and with those nodes",
+        "start": 438.96,
+        "duration": 4.639
+    },
+    {
+        "text": "from that level we're going to be adding",
+        "start": 441.919,
+        "duration": 3.041
+    },
+    {
+        "text": "them to its own",
+        "start": 443.599,
+        "duration": 2.961
+    },
+    {
+        "text": "list right and then we're going to add",
+        "start": 444.96,
+        "duration": 3.44
+    },
+    {
+        "text": "that list to the result",
+        "start": 446.56,
+        "duration": 4.96
+    },
+    {
+        "text": "list so i'm going to loop through every",
+        "start": 448.4,
+        "duration": 6.56
+    },
+    {
+        "text": "value in this queue currently so for",
+        "start": 451.52,
+        "duration": 6.799
+    },
+    {
+        "text": "q length i'm going to pop nodes from the",
+        "start": 454.96,
+        "duration": 3.76
+    },
+    {
+        "text": "left",
+        "start": 458.319,
+        "duration": 3.44
+    },
+    {
+        "text": "of the queue right first in first out",
+        "start": 458.72,
+        "duration": 4.8
+    },
+    {
+        "text": "and it's technically possible that the",
+        "start": 461.759,
+        "duration": 3.201
+    },
+    {
+        "text": "node could be null",
+        "start": 463.52,
+        "duration": 3.6
+    },
+    {
+        "text": "so i'm going to have a check to make",
+        "start": 464.96,
+        "duration": 3.2
+    },
+    {
+        "text": "sure it's not null",
+        "start": 467.12,
+        "duration": 3.84
+    },
+    {
+        "text": "then we're going to take the node value",
+        "start": 468.16,
+        "duration": 3.12
+    },
+    {
+        "text": "and",
+        "start": 470.96,
+        "duration": 3.359
+    },
+    {
+        "text": "append it to the list level",
+        "start": 471.28,
+        "duration": 5.599
+    },
+    {
+        "text": "and and don't forget this is also",
+        "start": 474.319,
+        "duration": 4.481
+    },
+    {
+        "text": "important that to our queue",
+        "start": 476.879,
+        "duration": 4.641
+    },
+    {
+        "text": "we make sure to add the children of this",
+        "start": 478.8,
+        "duration": 4.56
+    },
+    {
+        "text": "node so node.left",
+        "start": 481.52,
+        "duration": 4.959
+    },
+    {
+        "text": "and node.right technically these could",
+        "start": 483.36,
+        "duration": 3.44
+    },
+    {
+        "text": "be",
+        "start": 486.479,
+        "duration": 2.56
+    },
+    {
+        "text": "null but that's why we have this if",
+        "start": 486.8,
+        "duration": 3.2
+    },
+    {
+        "text": "statement",
+        "start": 489.039,
+        "duration": 2.801
+    },
+    {
+        "text": "so then when the next loop comes around",
+        "start": 490.0,
+        "duration": 3.44
+    },
+    {
+        "text": "right we come around to the next",
+        "start": 491.84,
+        "duration": 2.72
+    },
+    {
+        "text": "iteration",
+        "start": 493.44,
+        "duration": 3.199
+    },
+    {
+        "text": "of the while loop it'll make sure to",
+        "start": 494.56,
+        "duration": 4.0
+    },
+    {
+        "text": "check that these nodes are non-null",
+        "start": 496.639,
+        "duration": 3.84
+    },
+    {
+        "text": "before adding them to its own",
+        "start": 498.56,
+        "duration": 4.72
+    },
+    {
+        "text": "level list okay so now we have the loop",
+        "start": 500.479,
+        "duration": 4.321
+    },
+    {
+        "text": "in place that's going to iterate through",
+        "start": 503.28,
+        "duration": 3.44
+    },
+    {
+        "text": "every node of a single",
+        "start": 504.8,
+        "duration": 4.88
+    },
+    {
+        "text": "level after we've done that entire level",
+        "start": 506.72,
+        "duration": 3.759
+    },
+    {
+        "text": "what we're going to do",
+        "start": 509.68,
+        "duration": 3.359
+    },
+    {
+        "text": "is take our result and make sure we add",
+        "start": 510.479,
+        "duration": 3.92
+    },
+    {
+        "text": "every single level",
+        "start": 513.039,
+        "duration": 3.201
+    },
+    {
+        "text": "to that result right and then we're",
+        "start": 514.399,
+        "duration": 3.2
+    },
+    {
+        "text": "going to keep running",
+        "start": 516.24,
+        "duration": 4.0
+    },
+    {
+        "text": "this outside while loop the outer while",
+        "start": 517.599,
+        "duration": 3.281
+    },
+    {
+        "text": "loop",
+        "start": 520.24,
+        "duration": 4.08
+    },
+    {
+        "text": "until there are no nodes left",
+        "start": 520.88,
+        "duration": 5.519
+    },
+    {
+        "text": "in our queue that's how we know we've",
+        "start": 524.32,
+        "duration": 4.0
+    },
+    {
+        "text": "gone through every single level",
+        "start": 526.399,
+        "duration": 3.841
+    },
+    {
+        "text": "added it to the result and then at the",
+        "start": 528.32,
+        "duration": 4.56
+    },
+    {
+        "text": "end we can finally return the result",
+        "start": 530.24,
+        "duration": 5.12
+    },
+    {
+        "text": "and one last thing we want to do is make",
+        "start": 532.88,
+        "duration": 3.2
+    },
+    {
+        "text": "sure that",
+        "start": 535.36,
+        "duration": 2.8
+    },
+    {
+        "text": "if we're adding a level to the result we",
+        "start": 536.08,
+        "duration": 3.6
+    },
+    {
+        "text": "want to make sure that level is",
+        "start": 538.16,
+        "duration": 4.48
+    },
+    {
+        "text": "non-empty because we know technically",
+        "start": 539.68,
+        "duration": 4.0
+    },
+    {
+        "text": "our queue could have",
+        "start": 542.64,
+        "duration": 3.36
+    },
+    {
+        "text": "null nodes we're not adding null nodes",
+        "start": 543.68,
+        "duration": 3.68
+    },
+    {
+        "text": "to the level list so",
+        "start": 546.0,
+        "duration": 3.279
+    },
+    {
+        "text": "we want to make sure that level is",
+        "start": 547.36,
+        "duration": 3.68
+    },
+    {
+        "text": "non-empty if we're adding it to the",
+        "start": 549.279,
+        "duration": 2.481
+    },
+    {
+        "text": "result",
+        "start": 551.04,
+        "duration": 2.96
+    },
+    {
+        "text": "we can run the code and see that it does",
+        "start": 551.76,
+        "duration": 4.48
+    },
+    {
+        "text": "work and it is pretty efficient this is",
+        "start": 554.0,
+        "duration": 3.92
+    },
+    {
+        "text": "a breadth-first search",
+        "start": 556.24,
+        "duration": 5.12
+    },
+    {
+        "text": "level order traversal of a binary tree",
+        "start": 557.92,
+        "duration": 6.16
+    },
+    {
+        "text": "and we did it in linear time and i hope",
+        "start": 561.36,
+        "duration": 4.32
+    },
+    {
+        "text": "that this was helpful",
+        "start": 564.08,
+        "duration": 4.0
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 565.68,
+        "duration": 4.159
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 568.08,
+        "duration": 9.12
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 569.839,
+        "duration": 7.361
+    }
+]

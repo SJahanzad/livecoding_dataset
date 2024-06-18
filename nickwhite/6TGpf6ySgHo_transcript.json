@@ -1,0 +1,337 @@
+[
+    {
+        "text": "let's do hey what's up guys it's Nick",
+        "start": 0.03,
+        "duration": 7.74
+    },
+    {
+        "text": "white I do tech and coding stuff on",
+        "start": 5.339,
+        "duration": 4.501
+    },
+    {
+        "text": "twitch and YouTube and I do all the way",
+        "start": 7.77,
+        "duration": 3.989
+    },
+    {
+        "text": "code problems so if you do a code and",
+        "start": 9.84,
+        "duration": 4.549
+    },
+    {
+        "text": "you like lee code go and check this out",
+        "start": 11.759,
+        "duration": 5.52
+    },
+    {
+        "text": "here's another one this one's called to",
+        "start": 14.389,
+        "duration": 5.941
+    },
+    {
+        "text": "lower case it is a very hated problem",
+        "start": 17.279,
+        "duration": 9.061
+    },
+    {
+        "text": "because it's what you can do is you're",
+        "start": 20.33,
+        "duration": 7.51
+    },
+    {
+        "text": "implementing the two lower case method",
+        "start": 26.34,
+        "duration": 4.349
+    },
+    {
+        "text": "to turn any capital letters in a string",
+        "start": 27.84,
+        "duration": 6.27
+    },
+    {
+        "text": "to lowercase and people probably hate it",
+        "start": 30.689,
+        "duration": 5.341
+    },
+    {
+        "text": "I think because you can literally just",
+        "start": 34.11,
+        "duration": 6.42
+    },
+    {
+        "text": "do use the two lowercase method that's",
+        "start": 36.03,
+        "duration": 8.52
+    },
+    {
+        "text": "built into Java and it gives you it'll",
+        "start": 40.53,
+        "duration": 8.49
+    },
+    {
+        "text": "allow you to actually compile it so they",
+        "start": 44.55,
+        "duration": 6.57
+    },
+    {
+        "text": "don't like that probably they don't like",
+        "start": 49.02,
+        "duration": 3.21
+    },
+    {
+        "text": "the problem probably because of that",
+        "start": 51.12,
+        "duration": 3.63
+    },
+    {
+        "text": "otherwise what we could do is implement",
+        "start": 52.23,
+        "duration": 5.849
+    },
+    {
+        "text": "an actual algorithm which is gonna be",
+        "start": 54.75,
+        "duration": 7.109
+    },
+    {
+        "text": "like a linear scan here and through the",
+        "start": 58.079,
+        "duration": 6.69
+    },
+    {
+        "text": "string character by character we're",
+        "start": 61.859,
+        "duration": 5.881
+    },
+    {
+        "text": "gonna have a result variable to hold our",
+        "start": 64.769,
+        "duration": 5.181
+    },
+    {
+        "text": "new string that's gonna be all lowercase",
+        "start": 67.74,
+        "duration": 4.32
+    },
+    {
+        "text": "then we're gonna iterate through our",
+        "start": 69.95,
+        "duration": 5.26
+    },
+    {
+        "text": "actual string here so char C or char C",
+        "start": 72.06,
+        "duration": 6.72
+    },
+    {
+        "text": "and string dot to char array this is a",
+        "start": 75.21,
+        "duration": 5.07
+    },
+    {
+        "text": "method you can call in a string to get a",
+        "start": 78.78,
+        "duration": 2.97
+    },
+    {
+        "text": "character array C we can iterate",
+        "start": 80.28,
+        "duration": 3.57
+    },
+    {
+        "text": "character by character and then we're",
+        "start": 81.75,
+        "duration": 4.11
+    },
+    {
+        "text": "just gonna want to check if using the",
+        "start": 83.85,
+        "duration": 3.87
+    },
+    {
+        "text": "character class the character class has",
+        "start": 85.86,
+        "duration": 4.38
+    },
+    {
+        "text": "a method called is upper case where you",
+        "start": 87.72,
+        "duration": 4.439
+    },
+    {
+        "text": "pass in a character to the current",
+        "start": 90.24,
+        "duration": 3.54
+    },
+    {
+        "text": "character if the current character is",
+        "start": 92.159,
+        "duration": 5.85
+    },
+    {
+        "text": "capital then we're going to append to",
+        "start": 93.78,
+        "duration": 11.1
+    },
+    {
+        "text": "our result variable result plus we're",
+        "start": 98.009,
+        "duration": 11.551
+    },
+    {
+        "text": "casting char C plus 32",
+        "start": 104.88,
+        "duration": 8.07
+    },
+    {
+        "text": "so why C plus 32 because we're taking",
+        "start": 109.56,
+        "duration": 6.239
+    },
+    {
+        "text": "the ASCII value this is if we see an",
+        "start": 112.95,
+        "duration": 5.79
+    },
+    {
+        "text": "uppercase character we take that ASCII",
+        "start": 115.799,
+        "duration": 7.021
+    },
+    {
+        "text": "value and we add 32 to it adding 32 to",
+        "start": 118.74,
+        "duration": 6.15
+    },
+    {
+        "text": "that ASCII value is going to give us the",
+        "start": 122.82,
+        "duration": 4.2
+    },
+    {
+        "text": "lowercase version of it which is exactly",
+        "start": 124.89,
+        "duration": 3.63
+    },
+    {
+        "text": "what we want then we append the",
+        "start": 127.02,
+        "duration": 2.84
+    },
+    {
+        "text": "lowercase version to the result",
+        "start": 128.52,
+        "duration": 5.02
+    },
+    {
+        "text": "otherwise it's already lowercase",
+        "start": 129.86,
+        "duration": 6.3
+    },
+    {
+        "text": "we just add the lowercase version right",
+        "start": 133.54,
+        "duration": 5.16
+    },
+    {
+        "text": "onto the result we're all good to go",
+        "start": 136.16,
+        "duration": 4.62
+    },
+    {
+        "text": "that's pretty much it it's a pretty",
+        "start": 138.7,
+        "duration": 4.27
+    },
+    {
+        "text": "simple one right here oh and then we",
+        "start": 140.78,
+        "duration": 5.37
+    },
+    {
+        "text": "just return results pretty simple one",
+        "start": 142.97,
+        "duration": 9.81
+    },
+    {
+        "text": "right here should be able to compile did",
+        "start": 146.15,
+        "duration": 16.56
+    },
+    {
+        "text": "I it's acceptable lowercase yeah so you",
+        "start": 152.78,
+        "duration": 12.48
+    },
+    {
+        "text": "can see it worked first draw a pretty",
+        "start": 162.71,
+        "duration": 6.0
+    },
+    {
+        "text": "simple one there doesn't seem like",
+        "start": 165.26,
+        "duration": 4.53
+    },
+    {
+        "text": "anything you'd be asked in the interview",
+        "start": 168.71,
+        "duration": 3.78
+    },
+    {
+        "text": "I guess it's good to know that adding 32",
+        "start": 169.79,
+        "duration": 6.27
+    },
+    {
+        "text": "to an ASCII value is gonna make it lower",
+        "start": 172.49,
+        "duration": 6.3
+    },
+    {
+        "text": "case and maybe subtracting 32 is upper",
+        "start": 176.06,
+        "duration": 8.52
+    },
+    {
+        "text": "case so that's good to know the two char",
+        "start": 178.79,
+        "duration": 7.62
+    },
+    {
+        "text": "array methods good to know the two upper",
+        "start": 184.58,
+        "duration": 3.66
+    },
+    {
+        "text": "is upper case is good to know the",
+        "start": 186.41,
+        "duration": 4.77
+    },
+    {
+        "text": "character class I guess so that's pretty",
+        "start": 188.24,
+        "duration": 3.48
+    },
+    {
+        "text": "much it",
+        "start": 191.18,
+        "duration": 2.67
+    },
+    {
+        "text": "check out the other videos there's a lot",
+        "start": 191.72,
+        "duration": 3.84
+    },
+    {
+        "text": "harder problems that we go through so",
+        "start": 193.85,
+        "duration": 4.609
+    },
+    {
+        "text": "see you guys later",
+        "start": 195.56,
+        "duration": 2.899
+    }
+]

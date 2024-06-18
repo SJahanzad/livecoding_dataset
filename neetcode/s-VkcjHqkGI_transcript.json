@@ -1,0 +1,2577 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.76
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.839,
+        "duration": 3.44
+    },
+    {
+        "text": "let's solve pacific",
+        "start": 3.76,
+        "duration": 4.879
+    },
+    {
+        "text": "atlantic water flow so this is another",
+        "start": 5.279,
+        "duration": 5.601
+    },
+    {
+        "text": "problem from the blind 75 list and",
+        "start": 8.639,
+        "duration": 3.92
+    },
+    {
+        "text": "that's why i'm doing it today the link",
+        "start": 10.88,
+        "duration": 2.96
+    },
+    {
+        "text": "to this spreadsheet will be in the",
+        "start": 12.559,
+        "duration": 2.481
+    },
+    {
+        "text": "description again",
+        "start": 13.84,
+        "duration": 2.72
+    },
+    {
+        "text": "and so we will be able to fill in one",
+        "start": 15.04,
+        "duration": 3.44
+    },
+    {
+        "text": "more graph problem today from that blind",
+        "start": 16.56,
+        "duration": 4.479
+    },
+    {
+        "text": "75 list we're nearly done with that list",
+        "start": 18.48,
+        "duration": 4.879
+    },
+    {
+        "text": "now at least most of the important",
+        "start": 21.039,
+        "duration": 3.921
+    },
+    {
+        "text": "problems on this list i think there are",
+        "start": 23.359,
+        "duration": 3.441
+    },
+    {
+        "text": "some binary questions that i haven't",
+        "start": 24.96,
+        "duration": 2.88
+    },
+    {
+        "text": "really done and",
+        "start": 26.8,
+        "duration": 2.96
+    },
+    {
+        "text": "i might not do these because i feel like",
+        "start": 27.84,
+        "duration": 3.759
+    },
+    {
+        "text": "binary questions rarely come up in",
+        "start": 29.76,
+        "duration": 2.799
+    },
+    {
+        "text": "interviews",
+        "start": 31.599,
+        "duration": 3.201
+    },
+    {
+        "text": "but for this problem so the text is a",
+        "start": 32.559,
+        "duration": 4.0
+    },
+    {
+        "text": "little small so let's focus",
+        "start": 34.8,
+        "duration": 5.04
+    },
+    {
+        "text": "more on the picture so we're given a two",
+        "start": 36.559,
+        "duration": 4.081
+    },
+    {
+        "text": "dimensional",
+        "start": 39.84,
+        "duration": 3.76
+    },
+    {
+        "text": "grid of values and so each value",
+        "start": 40.64,
+        "duration": 4.0
+    },
+    {
+        "text": "represents a",
+        "start": 43.6,
+        "duration": 2.88
+    },
+    {
+        "text": "height so this has a height of 4 this",
+        "start": 44.64,
+        "duration": 4.079
+    },
+    {
+        "text": "has a height of 5 etc etc",
+        "start": 46.48,
+        "duration": 5.44
+    },
+    {
+        "text": "we are claiming that the top border",
+        "start": 48.719,
+        "duration": 5.921
+    },
+    {
+        "text": "of our grid everything you know right",
+        "start": 51.92,
+        "duration": 4.56
+    },
+    {
+        "text": "above our grid and everything to the",
+        "start": 54.64,
+        "duration": 5.04
+    },
+    {
+        "text": "left of the grid is going to be",
+        "start": 56.48,
+        "duration": 6.0
+    },
+    {
+        "text": "called the pacific ocean and everything",
+        "start": 59.68,
+        "duration": 5.04
+    },
+    {
+        "text": "to the right of the grid and everything",
+        "start": 62.48,
+        "duration": 3.679
+    },
+    {
+        "text": "below the grid",
+        "start": 64.72,
+        "duration": 4.48
+    },
+    {
+        "text": "is going to be the atlantic ocean",
+        "start": 66.159,
+        "duration": 6.561
+    },
+    {
+        "text": "so for any particular cell we want to",
+        "start": 69.2,
+        "duration": 4.0
+    },
+    {
+        "text": "know",
+        "start": 72.72,
+        "duration": 5.36
+    },
+    {
+        "text": "can this cell reach the pacific ocean",
+        "start": 73.2,
+        "duration": 8.08
+    },
+    {
+        "text": "and can it reach the atlantic ocean",
+        "start": 78.08,
+        "duration": 6.16
+    },
+    {
+        "text": "if it can then we are going to include",
+        "start": 81.28,
+        "duration": 3.92
+    },
+    {
+        "text": "this position",
+        "start": 84.24,
+        "duration": 3.84
+    },
+    {
+        "text": "in the result if it cannot reach the",
+        "start": 85.2,
+        "duration": 5.599
+    },
+    {
+        "text": "atlantic and pacific ocean then we don't",
+        "start": 88.08,
+        "duration": 4.399
+    },
+    {
+        "text": "include it in the result",
+        "start": 90.799,
+        "duration": 4.801
+    },
+    {
+        "text": "so how do we know if this cell can reach",
+        "start": 92.479,
+        "duration": 4.96
+    },
+    {
+        "text": "the pacific and atlantic ocean because",
+        "start": 95.6,
+        "duration": 3.199
+    },
+    {
+        "text": "clearly there's a path",
+        "start": 97.439,
+        "duration": 3.68
+    },
+    {
+        "text": "you know straight to it well there's one",
+        "start": 98.799,
+        "duration": 3.441
+    },
+    {
+        "text": "condition",
+        "start": 101.119,
+        "duration": 3.36
+    },
+    {
+        "text": "we want to know if water from this cell",
+        "start": 102.24,
+        "duration": 4.239
+    },
+    {
+        "text": "can flow to the pacific end to the",
+        "start": 104.479,
+        "duration": 3.041
+    },
+    {
+        "text": "atlantic and",
+        "start": 106.479,
+        "duration": 4.0
+    },
+    {
+        "text": "water can only flow from the perspective",
+        "start": 107.52,
+        "duration": 3.44
+    },
+    {
+        "text": "of a",
+        "start": 110.479,
+        "duration": 3.761
+    },
+    {
+        "text": "cell to an adjacent cell that has",
+        "start": 110.96,
+        "duration": 6.64
+    },
+    {
+        "text": "a value that is lower than the original",
+        "start": 114.24,
+        "duration": 4.08
+    },
+    {
+        "text": "cell or",
+        "start": 117.6,
+        "duration": 3.6
+    },
+    {
+        "text": "equal to the cell and it can only flow",
+        "start": 118.32,
+        "duration": 4.24
+    },
+    {
+        "text": "in four directions",
+        "start": 121.2,
+        "duration": 3.919
+    },
+    {
+        "text": "straight above to the left to the right",
+        "start": 122.56,
+        "duration": 4.48
+    },
+    {
+        "text": "and below that's pretty straightforward",
+        "start": 125.119,
+        "duration": 4.64
+    },
+    {
+        "text": "usually you can't go diagonally in these",
+        "start": 127.04,
+        "duration": 4.4
+    },
+    {
+        "text": "types of graph problems",
+        "start": 129.759,
+        "duration": 4.001
+    },
+    {
+        "text": "and so in this case for this five we see",
+        "start": 131.44,
+        "duration": 3.6
+    },
+    {
+        "text": "that the above neighbor",
+        "start": 133.76,
+        "duration": 3.28
+    },
+    {
+        "text": "three is less than five this is less",
+        "start": 135.04,
+        "duration": 3.68
+    },
+    {
+        "text": "than five this is less than five and",
+        "start": 137.04,
+        "duration": 3.12
+    },
+    {
+        "text": "this is less than five so",
+        "start": 138.72,
+        "duration": 4.08
+    },
+    {
+        "text": "clearly five can go to all of its",
+        "start": 140.16,
+        "duration": 3.36
+    },
+    {
+        "text": "neighbors",
+        "start": 142.8,
+        "duration": 3.36
+    },
+    {
+        "text": "now let's take a look at the three okay",
+        "start": 143.52,
+        "duration": 4.16
+    },
+    {
+        "text": "three has a neighbor one",
+        "start": 146.16,
+        "duration": 3.28
+    },
+    {
+        "text": "one is less than three so it can",
+        "start": 147.68,
+        "duration": 3.68
+    },
+    {
+        "text": "definitely flow in that direction and",
+        "start": 149.44,
+        "duration": 2.32
+    },
+    {
+        "text": "now",
+        "start": 151.36,
+        "duration": 3.04
+    },
+    {
+        "text": "see this one is bordering the atlantic",
+        "start": 151.76,
+        "duration": 3.92
+    },
+    {
+        "text": "ocean so clearly",
+        "start": 154.4,
+        "duration": 3.52
+    },
+    {
+        "text": "that means five is able to reach the",
+        "start": 155.68,
+        "duration": 3.52
+    },
+    {
+        "text": "atlantic ocean",
+        "start": 157.92,
+        "duration": 3.52
+    },
+    {
+        "text": "now let's look left it can reach four",
+        "start": 159.2,
+        "duration": 4.08
+    },
+    {
+        "text": "and four can definitely reach two",
+        "start": 161.44,
+        "duration": 2.64
+    },
+    {
+        "text": "because two",
+        "start": 163.28,
+        "duration": 2.959
+    },
+    {
+        "text": "is less than or equal to four so from",
+        "start": 164.08,
+        "duration": 4.239
+    },
+    {
+        "text": "this perspective we can also now reach",
+        "start": 166.239,
+        "duration": 3.36
+    },
+    {
+        "text": "the pacific ocean",
+        "start": 168.319,
+        "duration": 3.92
+    },
+    {
+        "text": "so water from this position can flow to",
+        "start": 169.599,
+        "duration": 3.681
+    },
+    {
+        "text": "the pacific",
+        "start": 172.239,
+        "duration": 3.121
+    },
+    {
+        "text": "and it can flow to the atlantic so this",
+        "start": 173.28,
+        "duration": 4.08
+    },
+    {
+        "text": "position is going to be included in",
+        "start": 175.36,
+        "duration": 5.44
+    },
+    {
+        "text": "our result so a brute force and naive",
+        "start": 177.36,
+        "duration": 5.44
+    },
+    {
+        "text": "way to solve this problem is to",
+        "start": 180.8,
+        "duration": 5.2
+    },
+    {
+        "text": "simply go to every single position",
+        "start": 182.8,
+        "duration": 5.92
+    },
+    {
+        "text": "do some kind of graph traversal dfs or",
+        "start": 186.0,
+        "duration": 4.64
+    },
+    {
+        "text": "bfs would probably work",
+        "start": 188.72,
+        "duration": 4.96
+    },
+    {
+        "text": "and doing that search check from a cell",
+        "start": 190.64,
+        "duration": 4.319
+    },
+    {
+        "text": "can we reach the top",
+        "start": 193.68,
+        "duration": 4.16
+    },
+    {
+        "text": "and left border and can we reach the",
+        "start": 194.959,
+        "duration": 3.521
+    },
+    {
+        "text": "right",
+        "start": 197.84,
+        "duration": 3.36
+    },
+    {
+        "text": "and bottom border and if we can then",
+        "start": 198.48,
+        "duration": 4.399
+    },
+    {
+        "text": "we're going to add this cell",
+        "start": 201.2,
+        "duration": 4.08
+    },
+    {
+        "text": "to the solution set if we can't then we",
+        "start": 202.879,
+        "duration": 3.521
+    },
+    {
+        "text": "don't add it right",
+        "start": 205.28,
+        "duration": 4.08
+    },
+    {
+        "text": "so if we're doing a dfs or bfs on every",
+        "start": 206.4,
+        "duration": 4.08
+    },
+    {
+        "text": "single position",
+        "start": 209.36,
+        "duration": 2.799
+    },
+    {
+        "text": "starting at every single position in the",
+        "start": 210.48,
+        "duration": 4.24
+    },
+    {
+        "text": "grid we're gonna get a time complexity",
+        "start": 212.159,
+        "duration": 4.72
+    },
+    {
+        "text": "of basically the size of the grid let's",
+        "start": 214.72,
+        "duration": 3.439
+    },
+    {
+        "text": "say that's that's",
+        "start": 216.879,
+        "duration": 3.92
+    },
+    {
+        "text": "n times m which is you know the",
+        "start": 218.159,
+        "duration": 4.0
+    },
+    {
+        "text": "dimensions of the grid",
+        "start": 220.799,
+        "duration": 3.041
+    },
+    {
+        "text": "and if we do that from every single",
+        "start": 222.159,
+        "duration": 3.201
+    },
+    {
+        "text": "starting point we're gonna get",
+        "start": 223.84,
+        "duration": 4.88
+    },
+    {
+        "text": "n by m squared as the big o",
+        "start": 225.36,
+        "duration": 6.239
+    },
+    {
+        "text": "time complexity and you might think well",
+        "start": 228.72,
+        "duration": 3.28
+    },
+    {
+        "text": "since",
+        "start": 231.599,
+        "duration": 2.081
+    },
+    {
+        "text": "we're doing this recursively we're",
+        "start": 232.0,
+        "duration": 3.519
+    },
+    {
+        "text": "probably doing a lot of repeated work",
+        "start": 233.68,
+        "duration": 4.32
+    },
+    {
+        "text": "right so for example if i'm starting at",
+        "start": 235.519,
+        "duration": 3.041
+    },
+    {
+        "text": "3",
+        "start": 238.0,
+        "duration": 2.4
+    },
+    {
+        "text": "right doing a dfs from here i'm gonna go",
+        "start": 238.56,
+        "duration": 3.759
+    },
+    {
+        "text": "to its neighbors and then do dfs from",
+        "start": 240.4,
+        "duration": 2.479
+    },
+    {
+        "text": "here",
+        "start": 242.319,
+        "duration": 3.601
+    },
+    {
+        "text": "here here and here and maybe",
+        "start": 242.879,
+        "duration": 5.601
+    },
+    {
+        "text": "you know by doing that i can cut out the",
+        "start": 245.92,
+        "duration": 3.76
+    },
+    {
+        "text": "repeated work right",
+        "start": 248.48,
+        "duration": 3.36
+    },
+    {
+        "text": "and so i won't and so we won't have to",
+        "start": 249.68,
+        "duration": 4.639
+    },
+    {
+        "text": "you know restart a dfs for every single",
+        "start": 251.84,
+        "duration": 3.039
+    },
+    {
+        "text": "position",
+        "start": 254.319,
+        "duration": 2.721
+    },
+    {
+        "text": "in the entire grid and you might think",
+        "start": 254.879,
+        "duration": 3.36
+    },
+    {
+        "text": "that that will work",
+        "start": 257.04,
+        "duration": 4.159
+    },
+    {
+        "text": "but i'm pretty sure it doesn't i'm not",
+        "start": 258.239,
+        "duration": 4.24
+    },
+    {
+        "text": "going to go through",
+        "start": 261.199,
+        "duration": 4.321
+    },
+    {
+        "text": "the details of why and somebody in the",
+        "start": 262.479,
+        "duration": 4.561
+    },
+    {
+        "text": "comments can correct me if i'm wrong",
+        "start": 265.52,
+        "duration": 3.28
+    },
+    {
+        "text": "maybe there is a clever way to get that",
+        "start": 267.04,
+        "duration": 2.48
+    },
+    {
+        "text": "to work",
+        "start": 268.8,
+        "duration": 3.119
+    },
+    {
+        "text": "but i i tried to do it myself and i was",
+        "start": 269.52,
+        "duration": 4.48
+    },
+    {
+        "text": "not able to so i don't know if it's",
+        "start": 271.919,
+        "duration": 3.121
+    },
+    {
+        "text": "actually possible",
+        "start": 274.0,
+        "duration": 3.12
+    },
+    {
+        "text": "to do it that way there's a different",
+        "start": 275.04,
+        "duration": 4.48
+    },
+    {
+        "text": "clever way to solve this problem",
+        "start": 277.12,
+        "duration": 5.2
+    },
+    {
+        "text": "how about rather than us going through",
+        "start": 279.52,
+        "duration": 4.16
+    },
+    {
+        "text": "every single cell",
+        "start": 282.32,
+        "duration": 3.36
+    },
+    {
+        "text": "and checking if this cell can reach",
+        "start": 283.68,
+        "duration": 4.56
+    },
+    {
+        "text": "pacific and reach atlantic how about",
+        "start": 285.68,
+        "duration": 6.56
+    },
+    {
+        "text": "we go for start from the pacific ocean",
+        "start": 288.24,
+        "duration": 7.04
+    },
+    {
+        "text": "right and let's find every",
+        "start": 292.24,
+        "duration": 5.44
+    },
+    {
+        "text": "cell that borders the pacific ocean",
+        "start": 295.28,
+        "duration": 3.28
+    },
+    {
+        "text": "clearly",
+        "start": 297.68,
+        "duration": 3.12
+    },
+    {
+        "text": "everything in the first row borders the",
+        "start": 298.56,
+        "duration": 4.079
+    },
+    {
+        "text": "pacific ocean right that means",
+        "start": 300.8,
+        "duration": 4.16
+    },
+    {
+        "text": "everything in this cell can reach the",
+        "start": 302.639,
+        "duration": 3.84
+    },
+    {
+        "text": "pacific ocean",
+        "start": 304.96,
+        "duration": 4.32
+    },
+    {
+        "text": "and everything in the left column can",
+        "start": 306.479,
+        "duration": 3.601
+    },
+    {
+        "text": "also",
+        "start": 309.28,
+        "duration": 3.919
+    },
+    {
+        "text": "reach the pacific ocean and starting",
+        "start": 310.08,
+        "duration": 5.04
+    },
+    {
+        "text": "from each of these nodes",
+        "start": 313.199,
+        "duration": 4.481
+    },
+    {
+        "text": "what we're going to do is now find what",
+        "start": 315.12,
+        "duration": 3.6
+    },
+    {
+        "text": "are all the",
+        "start": 317.68,
+        "duration": 3.6
+    },
+    {
+        "text": "other nodes that can also reach the",
+        "start": 318.72,
+        "duration": 4.24
+    },
+    {
+        "text": "pacific ocean right so",
+        "start": 321.28,
+        "duration": 3.6
+    },
+    {
+        "text": "at the end we would have you know some",
+        "start": 322.96,
+        "duration": 3.6
+    },
+    {
+        "text": "kind of set maybe you know it looks",
+        "start": 324.88,
+        "duration": 3.039
+    },
+    {
+        "text": "something like this right",
+        "start": 326.56,
+        "duration": 3.44
+    },
+    {
+        "text": "or whatever and then we know okay these",
+        "start": 327.919,
+        "duration": 4.0
+    },
+    {
+        "text": "are all all the ones in purple",
+        "start": 330.0,
+        "duration": 4.08
+    },
+    {
+        "text": "can reach the pacific ocean and",
+        "start": 331.919,
+        "duration": 3.12
+    },
+    {
+        "text": "similarly",
+        "start": 334.08,
+        "duration": 2.72
+    },
+    {
+        "text": "we would also do that with the atlantic",
+        "start": 335.039,
+        "duration": 3.041
+    },
+    {
+        "text": "ocean we know everything",
+        "start": 336.8,
+        "duration": 3.28
+    },
+    {
+        "text": "here on the right side can reach the",
+        "start": 338.08,
+        "duration": 3.04
+    },
+    {
+        "text": "atlantic ocean",
+        "start": 340.08,
+        "duration": 3.44
+    },
+    {
+        "text": "everything at the bottom can reach the",
+        "start": 341.12,
+        "duration": 4.639
+    },
+    {
+        "text": "atlantic ocean similarly we do some kind",
+        "start": 343.52,
+        "duration": 2.88
+    },
+    {
+        "text": "of dr",
+        "start": 345.759,
+        "duration": 2.561
+    },
+    {
+        "text": "graf traversal starting from each of",
+        "start": 346.4,
+        "duration": 3.04
+    },
+    {
+        "text": "these positions",
+        "start": 348.32,
+        "duration": 3.52
+    },
+    {
+        "text": "right and see okay what what nodes can",
+        "start": 349.44,
+        "duration": 3.759
+    },
+    {
+        "text": "reach the",
+        "start": 351.84,
+        "duration": 4.0
+    },
+    {
+        "text": "pacific ocean as well and at the end we",
+        "start": 353.199,
+        "duration": 4.241
+    },
+    {
+        "text": "would want to go through every single",
+        "start": 355.84,
+        "duration": 3.28
+    },
+    {
+        "text": "position in the grid and we'd want to",
+        "start": 357.44,
+        "duration": 2.08
+    },
+    {
+        "text": "find",
+        "start": 359.12,
+        "duration": 3.04
+    },
+    {
+        "text": "positions like this one that can reach",
+        "start": 359.52,
+        "duration": 3.76
+    },
+    {
+        "text": "the atlantic",
+        "start": 362.16,
+        "duration": 3.12
+    },
+    {
+        "text": "and pacific ocean that we marked as",
+        "start": 363.28,
+        "duration": 3.84
+    },
+    {
+        "text": "being able to reach the atlantic",
+        "start": 365.28,
+        "duration": 4.96
+    },
+    {
+        "text": "and pacific and then from these ones",
+        "start": 367.12,
+        "duration": 5.919
+    },
+    {
+        "text": "that can reach both we would add them to",
+        "start": 370.24,
+        "duration": 4.64
+    },
+    {
+        "text": "our result and then return the results",
+        "start": 373.039,
+        "duration": 2.961
+    },
+    {
+        "text": "so that's kind of",
+        "start": 374.88,
+        "duration": 2.8
+    },
+    {
+        "text": "the general algorithm of how we're going",
+        "start": 376.0,
+        "duration": 4.08
+    },
+    {
+        "text": "to do things the reason this is more",
+        "start": 377.68,
+        "duration": 3.04
+    },
+    {
+        "text": "efficient",
+        "start": 380.08,
+        "duration": 3.2
+    },
+    {
+        "text": "this is going to be big o n times m",
+        "start": 380.72,
+        "duration": 4.479
+    },
+    {
+        "text": "we're not going to be revisiting nodes",
+        "start": 383.28,
+        "duration": 2.32
+    },
+    {
+        "text": "mult",
+        "start": 385.199,
+        "duration": 1.761
+    },
+    {
+        "text": "you know several times we're not going",
+        "start": 385.6,
+        "duration": 3.36
+    },
+    {
+        "text": "to be re-running a graph traversal",
+        "start": 386.96,
+        "duration": 4.32
+    },
+    {
+        "text": "what we're going to be doing is starting",
+        "start": 388.96,
+        "duration": 4.16
+    },
+    {
+        "text": "at each of these nodes right doing a",
+        "start": 391.28,
+        "duration": 3.12
+    },
+    {
+        "text": "depth first search right so",
+        "start": 393.12,
+        "duration": 3.44
+    },
+    {
+        "text": "for example let's say we started at this",
+        "start": 394.4,
+        "duration": 4.16
+    },
+    {
+        "text": "one right we'd do a depth first search",
+        "start": 396.56,
+        "duration": 4.16
+    },
+    {
+        "text": "and then see all the other nodes that",
+        "start": 398.56,
+        "duration": 4.079
+    },
+    {
+        "text": "can reach the pacific ocean right",
+        "start": 400.72,
+        "duration": 3.599
+    },
+    {
+        "text": "you know let's say we marked these and",
+        "start": 402.639,
+        "duration": 3.521
+    },
+    {
+        "text": "these right and then maybe we do the",
+        "start": 404.319,
+        "duration": 3.681
+    },
+    {
+        "text": "same thing starting at this one",
+        "start": 406.16,
+        "duration": 4.319
+    },
+    {
+        "text": "right and we'd you know go over here",
+        "start": 408.0,
+        "duration": 4.08
+    },
+    {
+        "text": "maybe and then go over here and then",
+        "start": 410.479,
+        "duration": 3.681
+    },
+    {
+        "text": "we'd come back here if we ever got to a",
+        "start": 412.08,
+        "duration": 2.72
+    },
+    {
+        "text": "cell that we",
+        "start": 414.16,
+        "duration": 2.96
+    },
+    {
+        "text": "revisited we would not want to continue",
+        "start": 414.8,
+        "duration": 3.36
+    },
+    {
+        "text": "our debt for search from",
+        "start": 417.12,
+        "duration": 3.919
+    },
+    {
+        "text": "a repeated cell right so we we just",
+        "start": 418.16,
+        "duration": 4.0
+    },
+    {
+        "text": "wouldn't do that",
+        "start": 421.039,
+        "duration": 3.28
+    },
+    {
+        "text": "so that's the main idea of this",
+        "start": 422.16,
+        "duration": 4.08
+    },
+    {
+        "text": "algorithm but there's one last point i",
+        "start": 424.319,
+        "duration": 3.44
+    },
+    {
+        "text": "want to make before i start going",
+        "start": 426.24,
+        "duration": 2.64
+    },
+    {
+        "text": "through the code",
+        "start": 427.759,
+        "duration": 3.121
+    },
+    {
+        "text": "and that is remember how if we're",
+        "start": 428.88,
+        "duration": 4.48
+    },
+    {
+        "text": "starting at a cell like this one",
+        "start": 430.88,
+        "duration": 5.68
+    },
+    {
+        "text": "water can flow from this cell to a cell",
+        "start": 433.36,
+        "duration": 4.64
+    },
+    {
+        "text": "that has a smaller",
+        "start": 436.56,
+        "duration": 3.68
+    },
+    {
+        "text": "value right like a cell a small cell",
+        "start": 438.0,
+        "duration": 4.0
+    },
+    {
+        "text": "like three for example and then it can",
+        "start": 440.24,
+        "duration": 3.92
+    },
+    {
+        "text": "flow down to a smaller cell like one and",
+        "start": 442.0,
+        "duration": 4.56
+    },
+    {
+        "text": "then it can reach the ocean right",
+        "start": 444.16,
+        "duration": 5.36
+    },
+    {
+        "text": "so if we are going starting from a cell",
+        "start": 446.56,
+        "duration": 4.4
+    },
+    {
+        "text": "and reaching the ocean",
+        "start": 449.52,
+        "duration": 4.56
+    },
+    {
+        "text": "we are allowed to go at equal heights so",
+        "start": 450.96,
+        "duration": 4.48
+    },
+    {
+        "text": "one can reach one",
+        "start": 454.08,
+        "duration": 4.08
+    },
+    {
+        "text": "or we can go in decreasing heights like",
+        "start": 455.44,
+        "duration": 3.44
+    },
+    {
+        "text": "these ones",
+        "start": 458.16,
+        "duration": 2.8
+    },
+    {
+        "text": "but if we're going in the opposite",
+        "start": 458.88,
+        "duration": 4.4
+    },
+    {
+        "text": "direction if we're starting",
+        "start": 460.96,
+        "duration": 5.12
+    },
+    {
+        "text": "at the atlantic ocean and going to a",
+        "start": 463.28,
+        "duration": 4.0
+    },
+    {
+        "text": "cell like 1",
+        "start": 466.08,
+        "duration": 3.2
+    },
+    {
+        "text": "going to a cell like 3 and going to a",
+        "start": 467.28,
+        "duration": 3.52
+    },
+    {
+        "text": "cell like 5 then we're",
+        "start": 469.28,
+        "duration": 3.44
+    },
+    {
+        "text": "going to have to do the opposite we can",
+        "start": 470.8,
+        "duration": 3.04
+    },
+    {
+        "text": "go to cells of",
+        "start": 472.72,
+        "duration": 4.479
+    },
+    {
+        "text": "equal heights or cells of increasing",
+        "start": 473.84,
+        "duration": 4.24
+    },
+    {
+        "text": "heights right",
+        "start": 477.199,
+        "duration": 2.961
+    },
+    {
+        "text": "you kind of see why that's the case",
+        "start": 478.08,
+        "duration": 3.44
+    },
+    {
+        "text": "because what we're saying is",
+        "start": 480.16,
+        "duration": 4.0
+    },
+    {
+        "text": "water is allowed to flow from five to",
+        "start": 481.52,
+        "duration": 3.359
+    },
+    {
+        "text": "three to",
+        "start": 484.16,
+        "duration": 3.68
+    },
+    {
+        "text": "one so therefore water from the ocean is",
+        "start": 484.879,
+        "duration": 4.0
+    },
+    {
+        "text": "allowed to go",
+        "start": 487.84,
+        "duration": 4.639
+    },
+    {
+        "text": "from one to three to five because that",
+        "start": 488.879,
+        "duration": 4.481
+    },
+    {
+        "text": "does mean that",
+        "start": 492.479,
+        "duration": 4.16
+    },
+    {
+        "text": "five can reach the ocean so with that",
+        "start": 493.36,
+        "duration": 3.92
+    },
+    {
+        "text": "being said",
+        "start": 496.639,
+        "duration": 3.041
+    },
+    {
+        "text": "the first thing i'm gonna do is go",
+        "start": 497.28,
+        "duration": 3.199
+    },
+    {
+        "text": "through",
+        "start": 499.68,
+        "duration": 3.28
+    },
+    {
+        "text": "the first row which is gonna be pacific",
+        "start": 500.479,
+        "duration": 3.361
+    },
+    {
+        "text": "ocean",
+        "start": 502.96,
+        "duration": 2.799
+    },
+    {
+        "text": "values and then i'm gonna and from there",
+        "start": 503.84,
+        "duration": 3.359
+    },
+    {
+        "text": "i'm gonna run depth first search to see",
+        "start": 505.759,
+        "duration": 2.641
+    },
+    {
+        "text": "all the other nodes",
+        "start": 507.199,
+        "duration": 3.601
+    },
+    {
+        "text": "that can reach the pacific ocean and i'm",
+        "start": 508.4,
+        "duration": 4.079
+    },
+    {
+        "text": "gonna do the same thing at the",
+        "start": 510.8,
+        "duration": 4.4
+    },
+    {
+        "text": "bottom row seeing which nodes can reach",
+        "start": 512.479,
+        "duration": 4.161
+    },
+    {
+        "text": "the atlantic ocean",
+        "start": 515.2,
+        "duration": 3.759
+    },
+    {
+        "text": "and i'm gonna be maintaining those in a",
+        "start": 516.64,
+        "duration": 4.24
+    },
+    {
+        "text": "set let's call it a visit set it's going",
+        "start": 518.959,
+        "duration": 3.44
+    },
+    {
+        "text": "to be a hash set so that",
+        "start": 520.88,
+        "duration": 4.48
+    },
+    {
+        "text": "we don't end up adding duplicates to it",
+        "start": 522.399,
+        "duration": 4.641
+    },
+    {
+        "text": "so now getting into the code so the",
+        "start": 525.36,
+        "duration": 3.28
+    },
+    {
+        "text": "first thing i like to do with these",
+        "start": 527.04,
+        "duration": 3.28
+    },
+    {
+        "text": "problems is just get the dimensions of",
+        "start": 528.64,
+        "duration": 3.199
+    },
+    {
+        "text": "the grid so we're guaranteed that this",
+        "start": 530.32,
+        "duration": 3.36
+    },
+    {
+        "text": "grid is not going to be empty so we",
+        "start": 531.839,
+        "duration": 2.801
+    },
+    {
+        "text": "don't have to",
+        "start": 533.68,
+        "duration": 2.4
+    },
+    {
+        "text": "you know worry about that so let's get",
+        "start": 534.64,
+        "duration": 2.879
+    },
+    {
+        "text": "the length of heights which is going to",
+        "start": 536.08,
+        "duration": 2.8
+    },
+    {
+        "text": "give us the number of rows",
+        "start": 537.519,
+        "duration": 3.681
+    },
+    {
+        "text": "and then get the number of columns as",
+        "start": 538.88,
+        "duration": 3.04
+    },
+    {
+        "text": "well",
+        "start": 541.2,
+        "duration": 2.56
+    },
+    {
+        "text": "and so i'm going to be having two hash",
+        "start": 541.92,
+        "duration": 3.52
+    },
+    {
+        "text": "sets pacific and atlantic",
+        "start": 543.76,
+        "duration": 4.32
+    },
+    {
+        "text": "maintaining all the positions that can",
+        "start": 545.44,
+        "duration": 4.48
+    },
+    {
+        "text": "reach the pacific and atlantic oceans",
+        "start": 548.08,
+        "duration": 3.04
+    },
+    {
+        "text": "respectively",
+        "start": 549.92,
+        "duration": 3.359
+    },
+    {
+        "text": "and then what i'm gonna do is i'm gonna",
+        "start": 551.12,
+        "duration": 4.159
+    },
+    {
+        "text": "go through every single position",
+        "start": 553.279,
+        "duration": 4.081
+    },
+    {
+        "text": "in the first row so i'm gonna go through",
+        "start": 555.279,
+        "duration": 3.521
+    },
+    {
+        "text": "every single column",
+        "start": 557.36,
+        "duration": 4.72
+    },
+    {
+        "text": "in the first row right and what's going",
+        "start": 558.8,
+        "duration": 4.96
+    },
+    {
+        "text": "to be every single position in the first",
+        "start": 562.08,
+        "duration": 3.28
+    },
+    {
+        "text": "row from here it's going to be",
+        "start": 563.76,
+        "duration": 4.72
+    },
+    {
+        "text": "0 0 right in the first row is 0 and",
+        "start": 565.36,
+        "duration": 4.56
+    },
+    {
+        "text": "column is going to be the column",
+        "start": 568.48,
+        "duration": 3.68
+    },
+    {
+        "text": "position and so what i want to do",
+        "start": 569.92,
+        "duration": 5.28
+    },
+    {
+        "text": "on this position is run a dfs right so",
+        "start": 572.16,
+        "duration": 5.04
+    },
+    {
+        "text": "i'm going to run a dfs on this position",
+        "start": 575.2,
+        "duration": 2.4
+    },
+    {
+        "text": "right",
+        "start": 577.2,
+        "duration": 3.12
+    },
+    {
+        "text": "and so i'm going to pass in a visit set",
+        "start": 577.6,
+        "duration": 4.32
+    },
+    {
+        "text": "to this dfs function",
+        "start": 580.32,
+        "duration": 4.4
+    },
+    {
+        "text": "since this is the first row the first",
+        "start": 581.92,
+        "duration": 4.72
+    },
+    {
+        "text": "row means it's the pacific ocean right",
+        "start": 584.72,
+        "duration": 3.52
+    },
+    {
+        "text": "it's not the atlantic it's the pacific",
+        "start": 586.64,
+        "duration": 3.04
+    },
+    {
+        "text": "so that's what i'm going to pass in as",
+        "start": 588.24,
+        "duration": 2.4
+    },
+    {
+        "text": "the visit set",
+        "start": 589.68,
+        "duration": 3.92
+    },
+    {
+        "text": "the pacific ocean so i want to visit",
+        "start": 590.64,
+        "duration": 4.879
+    },
+    {
+        "text": "this position and i want to see all the",
+        "start": 593.6,
+        "duration": 3.919
+    },
+    {
+        "text": "other positions it can reach",
+        "start": 595.519,
+        "duration": 5.44
+    },
+    {
+        "text": "now we know that water from the ocean",
+        "start": 597.519,
+        "duration": 6.241
+    },
+    {
+        "text": "to other cells can only go at equal",
+        "start": 600.959,
+        "duration": 3.841
+    },
+    {
+        "text": "values or",
+        "start": 603.76,
+        "duration": 2.72
+    },
+    {
+        "text": "greater values right remember we",
+        "start": 604.8,
+        "duration": 3.68
+    },
+    {
+        "text": "reversed the thinking since we're going",
+        "start": 606.48,
+        "duration": 3.68
+    },
+    {
+        "text": "from the ocean to the cells we're going",
+        "start": 608.48,
+        "duration": 2.88
+    },
+    {
+        "text": "to have to do the opposite",
+        "start": 610.16,
+        "duration": 4.0
+    },
+    {
+        "text": "so we can go to greater cells so i want",
+        "start": 611.36,
+        "duration": 5.28
+    },
+    {
+        "text": "to always pass in a previous height",
+        "start": 614.16,
+        "duration": 4.799
+    },
+    {
+        "text": "variable to this so if we're going to",
+        "start": 616.64,
+        "duration": 4.4
+    },
+    {
+        "text": "visit a cell i want to make sure that",
+        "start": 618.959,
+        "duration": 3.681
+    },
+    {
+        "text": "you know we're allowed to visit that",
+        "start": 621.04,
+        "duration": 3.2
+    },
+    {
+        "text": "cell so i'm going to pass in a previous",
+        "start": 622.64,
+        "duration": 2.319
+    },
+    {
+        "text": "height so",
+        "start": 624.24,
+        "duration": 2.64
+    },
+    {
+        "text": "since there is no previous height for",
+        "start": 624.959,
+        "duration": 3.521
+    },
+    {
+        "text": "this position i can just give it a",
+        "start": 626.88,
+        "duration": 3.44
+    },
+    {
+        "text": "default value and i'll just give it the",
+        "start": 628.48,
+        "duration": 3.68
+    },
+    {
+        "text": "same height as this position because",
+        "start": 630.32,
+        "duration": 3.6
+    },
+    {
+        "text": "that's going to be allowed remember",
+        "start": 632.16,
+        "duration": 3.2
+    },
+    {
+        "text": "we're always allowed",
+        "start": 633.92,
+        "duration": 3.919
+    },
+    {
+        "text": "to visit heights of the exact same",
+        "start": 635.36,
+        "duration": 3.12
+    },
+    {
+        "text": "height",
+        "start": 637.839,
+        "duration": 3.12
+    },
+    {
+        "text": "as the previous position and so while",
+        "start": 638.48,
+        "duration": 3.44
+    },
+    {
+        "text": "we're at this",
+        "start": 640.959,
+        "duration": 3.601
+    },
+    {
+        "text": "right we're going through every position",
+        "start": 641.92,
+        "duration": 3.76
+    },
+    {
+        "text": "in the first row",
+        "start": 644.56,
+        "duration": 3.04
+    },
+    {
+        "text": "why not go through every single position",
+        "start": 645.68,
+        "duration": 3.279
+    },
+    {
+        "text": "in the last row",
+        "start": 647.6,
+        "duration": 3.44
+    },
+    {
+        "text": "which tells us the atlantic ocean right",
+        "start": 648.959,
+        "duration": 3.681
+    },
+    {
+        "text": "so what's the last row it's going to be",
+        "start": 651.04,
+        "duration": 2.88
+    },
+    {
+        "text": "the number of rows",
+        "start": 652.64,
+        "duration": 4.319
+    },
+    {
+        "text": "minus one and going through every column",
+        "start": 653.92,
+        "duration": 4.4
+    },
+    {
+        "text": "in that rows and",
+        "start": 656.959,
+        "duration": 3.12
+    },
+    {
+        "text": "so instead of passing in pacific let's",
+        "start": 658.32,
+        "duration": 3.199
+    },
+    {
+        "text": "pass an atlantic",
+        "start": 660.079,
+        "duration": 3.281
+    },
+    {
+        "text": "because the bottom row refers to the",
+        "start": 661.519,
+        "duration": 3.76
+    },
+    {
+        "text": "atlantic ocean and similarly we'll pass",
+        "start": 663.36,
+        "duration": 2.88
+    },
+    {
+        "text": "in the height",
+        "start": 665.279,
+        "duration": 5.12
+    },
+    {
+        "text": "of this position as the previous height",
+        "start": 666.24,
+        "duration": 6.24
+    },
+    {
+        "text": "so we're calling this dfs function so",
+        "start": 670.399,
+        "duration": 4.0
+    },
+    {
+        "text": "let's might as well define it up above",
+        "start": 672.48,
+        "duration": 2.88
+    },
+    {
+        "text": "here now",
+        "start": 674.399,
+        "duration": 2.721
+    },
+    {
+        "text": "the first two parameters are going to be",
+        "start": 675.36,
+        "duration": 3.76
+    },
+    {
+        "text": "the row and column and the next is going",
+        "start": 677.12,
+        "duration": 3.76
+    },
+    {
+        "text": "to be the visit set now",
+        "start": 679.12,
+        "duration": 3.6
+    },
+    {
+        "text": "since we're reusing this function for",
+        "start": 680.88,
+        "duration": 3.519
+    },
+    {
+        "text": "both atlantic and pacific we'll just",
+        "start": 682.72,
+        "duration": 3.44
+    },
+    {
+        "text": "give it a generic name like visit we",
+        "start": 684.399,
+        "duration": 3.601
+    },
+    {
+        "text": "could be passing in either of these two",
+        "start": 686.16,
+        "duration": 4.16
+    },
+    {
+        "text": "sets and the last parameter is the",
+        "start": 688.0,
+        "duration": 3.04
+    },
+    {
+        "text": "previous",
+        "start": 690.32,
+        "duration": 4.32
+    },
+    {
+        "text": "height so if this position has already",
+        "start": 691.04,
+        "duration": 4.799
+    },
+    {
+        "text": "been visited meaning",
+        "start": 694.64,
+        "duration": 4.48
+    },
+    {
+        "text": "if row column is in",
+        "start": 695.839,
+        "duration": 4.801
+    },
+    {
+        "text": "visit then we're going to return we're",
+        "start": 699.12,
+        "duration": 3.36
+    },
+    {
+        "text": "not going to continue this function or",
+        "start": 700.64,
+        "duration": 4.56
+    },
+    {
+        "text": "if it's out of bounds we're also not",
+        "start": 702.48,
+        "duration": 4.08
+    },
+    {
+        "text": "going to return right because remember",
+        "start": 705.2,
+        "duration": 2.639
+    },
+    {
+        "text": "we're already going",
+        "start": 706.56,
+        "duration": 3.12
+    },
+    {
+        "text": "from the ocean from let's say the",
+        "start": 707.839,
+        "duration": 4.24
+    },
+    {
+        "text": "pacific ocean and trying to visit",
+        "start": 709.68,
+        "duration": 4.64
+    },
+    {
+        "text": "all the cells that we can because that's",
+        "start": 712.079,
+        "duration": 3.041
+    },
+    {
+        "text": "going to tell us",
+        "start": 714.32,
+        "duration": 2.8
+    },
+    {
+        "text": "all the cells that can reach the pacific",
+        "start": 715.12,
+        "duration": 4.399
+    },
+    {
+        "text": "ocean so we're not even trying to reach",
+        "start": 717.12,
+        "duration": 3.519
+    },
+    {
+        "text": "the ocean right now",
+        "start": 719.519,
+        "duration": 3.201
+    },
+    {
+        "text": "we're going from the ocean to all the",
+        "start": 720.639,
+        "duration": 4.0
+    },
+    {
+        "text": "cells so if we go out of bounds then",
+        "start": 722.72,
+        "duration": 3.6
+    },
+    {
+        "text": "we're going to have to return so",
+        "start": 724.639,
+        "duration": 4.961
+    },
+    {
+        "text": "if let's say r is less than 0 or",
+        "start": 726.32,
+        "duration": 6.4
+    },
+    {
+        "text": "c is less than zero or if r is",
+        "start": 729.6,
+        "duration": 4.72
+    },
+    {
+        "text": "equal to the number of rows that means",
+        "start": 732.72,
+        "duration": 3.2
+    },
+    {
+        "text": "we've gone too large",
+        "start": 734.32,
+        "duration": 4.24
+    },
+    {
+        "text": "or if c is equal to the number of",
+        "start": 735.92,
+        "duration": 4.719
+    },
+    {
+        "text": "columns that also means we've gone too",
+        "start": 738.56,
+        "duration": 3.04
+    },
+    {
+        "text": "large",
+        "start": 740.639,
+        "duration": 2.64
+    },
+    {
+        "text": "and the last case where we would want to",
+        "start": 741.6,
+        "duration": 3.12
+    },
+    {
+        "text": "return is if",
+        "start": 743.279,
+        "duration": 5.521
+    },
+    {
+        "text": "the height of this position row column",
+        "start": 744.72,
+        "duration": 7.2
+    },
+    {
+        "text": "is less than the previous height",
+        "start": 748.8,
+        "duration": 4.719
+    },
+    {
+        "text": "because remember we're only allowed to",
+        "start": 751.92,
+        "duration": 4.4
+    },
+    {
+        "text": "go to heights of greater height or equal",
+        "start": 753.519,
+        "duration": 4.241
+    },
+    {
+        "text": "so if the height was too small",
+        "start": 756.32,
+        "duration": 3.28
+    },
+    {
+        "text": "then we would want to return if we're",
+        "start": 757.76,
+        "duration": 3.68
+    },
+    {
+        "text": "not returning that means we're finding a",
+        "start": 759.6,
+        "duration": 3.679
+    },
+    {
+        "text": "new cell so let's go ahead and add it to",
+        "start": 761.44,
+        "duration": 3.92
+    },
+    {
+        "text": "visit we're visiting this new cell row",
+        "start": 763.279,
+        "duration": 2.961
+    },
+    {
+        "text": "column",
+        "start": 765.36,
+        "duration": 4.0
+    },
+    {
+        "text": "and then on all four of its neighbors we",
+        "start": 766.24,
+        "duration": 4.64
+    },
+    {
+        "text": "also want to run dfs",
+        "start": 769.36,
+        "duration": 3.039
+    },
+    {
+        "text": "on all four of those neighbors and we",
+        "start": 770.88,
+        "duration": 3.519
+    },
+    {
+        "text": "could do that with a loop but i'm lazy",
+        "start": 772.399,
+        "duration": 3.041
+    },
+    {
+        "text": "so i don't want to write that out i'm",
+        "start": 774.399,
+        "duration": 1.601
+    },
+    {
+        "text": "just going to",
+        "start": 775.44,
+        "duration": 3.199
+    },
+    {
+        "text": "copy and paste this four times so so row",
+        "start": 776.0,
+        "duration": 3.44
+    },
+    {
+        "text": "column",
+        "start": 778.639,
+        "duration": 2.64
+    },
+    {
+        "text": "passing in visit and passing in the",
+        "start": 779.44,
+        "duration": 3.04
+    },
+    {
+        "text": "previous height which is just going to",
+        "start": 781.279,
+        "duration": 1.521
+    },
+    {
+        "text": "be",
+        "start": 782.48,
+        "duration": 4.24
+    },
+    {
+        "text": "heights at this position row column",
+        "start": 782.8,
+        "duration": 6.8
+    },
+    {
+        "text": "let's copy and paste this four times and",
+        "start": 786.72,
+        "duration": 3.28
+    },
+    {
+        "text": "so",
+        "start": 789.6,
+        "duration": 1.84
+    },
+    {
+        "text": "we're gonna go through all four of its",
+        "start": 790.0,
+        "duration": 3.6
+    },
+    {
+        "text": "neighbors so row plus one",
+        "start": 791.44,
+        "duration": 4.079
+    },
+    {
+        "text": "is one neighbor row minus one is a",
+        "start": 793.6,
+        "duration": 4.239
+    },
+    {
+        "text": "neighbor column plus one",
+        "start": 795.519,
+        "duration": 5.361
+    },
+    {
+        "text": "is another neighbor and column minus one",
+        "start": 797.839,
+        "duration": 4.321
+    },
+    {
+        "text": "is another neighbor",
+        "start": 800.88,
+        "duration": 3.44
+    },
+    {
+        "text": "and that's going to be the entire dfs",
+        "start": 802.16,
+        "duration": 3.44
+    },
+    {
+        "text": "function for us",
+        "start": 804.32,
+        "duration": 3.199
+    },
+    {
+        "text": "it's going to be marking all nodes that",
+        "start": 805.6,
+        "duration": 3.12
+    },
+    {
+        "text": "can visit",
+        "start": 807.519,
+        "duration": 2.801
+    },
+    {
+        "text": "that can reach the pacific ocean or the",
+        "start": 808.72,
+        "duration": 3.359
+    },
+    {
+        "text": "atlantic ocean depending on what we pass",
+        "start": 810.32,
+        "duration": 2.16
+    },
+    {
+        "text": "in",
+        "start": 812.079,
+        "duration": 2.241
+    },
+    {
+        "text": "and so right now we're doing that for",
+        "start": 812.48,
+        "duration": 4.159
+    },
+    {
+        "text": "the first row and the last row",
+        "start": 814.32,
+        "duration": 4.8
+    },
+    {
+        "text": "but we also know the first column is",
+        "start": 816.639,
+        "duration": 4.241
+    },
+    {
+        "text": "going is going to be",
+        "start": 819.12,
+        "duration": 4.48
+    },
+    {
+        "text": "the pacific ocean and the last column is",
+        "start": 820.88,
+        "duration": 4.399
+    },
+    {
+        "text": "going to be the atlantic ocean so let's",
+        "start": 823.6,
+        "duration": 3.359
+    },
+    {
+        "text": "do that so for every",
+        "start": 825.279,
+        "duration": 5.041
+    },
+    {
+        "text": "row in range of rows",
+        "start": 826.959,
+        "duration": 6.161
+    },
+    {
+        "text": "we want to get every position at the",
+        "start": 830.32,
+        "duration": 3.519
+    },
+    {
+        "text": "left",
+        "start": 833.12,
+        "duration": 3.839
+    },
+    {
+        "text": "most column and call dfs on it so",
+        "start": 833.839,
+        "duration": 4.961
+    },
+    {
+        "text": "for row we're just going to pass in the",
+        "start": 836.959,
+        "duration": 3.281
+    },
+    {
+        "text": "current row we're going to go through",
+        "start": 838.8,
+        "duration": 2.8
+    },
+    {
+        "text": "every single row and for column we're",
+        "start": 840.24,
+        "duration": 2.399
+    },
+    {
+        "text": "going to pass in zero",
+        "start": 841.6,
+        "duration": 3.2
+    },
+    {
+        "text": "right we know that the first column is",
+        "start": 842.639,
+        "duration": 3.361
+    },
+    {
+        "text": "zero and if",
+        "start": 844.8,
+        "duration": 2.88
+    },
+    {
+        "text": "and the first column can reach the",
+        "start": 846.0,
+        "duration": 3.279
+    },
+    {
+        "text": "pacific ocean so that's what we're going",
+        "start": 847.68,
+        "duration": 3.04
+    },
+    {
+        "text": "to pass in and for heights",
+        "start": 849.279,
+        "duration": 2.721
+    },
+    {
+        "text": "we're just going to give it the default",
+        "start": 850.72,
+        "duration": 3.52
+    },
+    {
+        "text": "value of this position",
+        "start": 852.0,
+        "duration": 4.56
+    },
+    {
+        "text": "and similarly let's do the same thing",
+        "start": 854.24,
+        "duration": 4.08
+    },
+    {
+        "text": "for the last row",
+        "start": 856.56,
+        "duration": 3.279
+    },
+    {
+        "text": "let's do the same thing for the last",
+        "start": 858.32,
+        "duration": 3.36
+    },
+    {
+        "text": "column so for",
+        "start": 859.839,
+        "duration": 3.841
+    },
+    {
+        "text": "columns instead of zero let's do columns",
+        "start": 861.68,
+        "duration": 3.519
+    },
+    {
+        "text": "minus one",
+        "start": 863.68,
+        "duration": 3.92
+    },
+    {
+        "text": "and instead of pacific let's pass in the",
+        "start": 865.199,
+        "duration": 4.64
+    },
+    {
+        "text": "atlantic ocean because that's",
+        "start": 867.6,
+        "duration": 4.4
+    },
+    {
+        "text": "what the rightmost column refers to and",
+        "start": 869.839,
+        "duration": 3.761
+    },
+    {
+        "text": "heights is going to be the same default",
+        "start": 872.0,
+        "duration": 2.48
+    },
+    {
+        "text": "value",
+        "start": 873.6,
+        "duration": 3.28
+    },
+    {
+        "text": "and so we don't have to rewrite the dfs",
+        "start": 874.48,
+        "duration": 4.0
+    },
+    {
+        "text": "function right because we already wrote",
+        "start": 876.88,
+        "duration": 3.519
+    },
+    {
+        "text": "it up above here we're reusing that",
+        "start": 878.48,
+        "duration": 2.799
+    },
+    {
+        "text": "function",
+        "start": 880.399,
+        "duration": 3.281
+    },
+    {
+        "text": "so once these two loops have executed we",
+        "start": 881.279,
+        "duration": 3.441
+    },
+    {
+        "text": "will have marked",
+        "start": 883.68,
+        "duration": 3.2
+    },
+    {
+        "text": "every single position that can reach the",
+        "start": 884.72,
+        "duration": 3.04
+    },
+    {
+        "text": "pacific ocean",
+        "start": 886.88,
+        "duration": 2.24
+    },
+    {
+        "text": "in here and we'll have done the same",
+        "start": 887.76,
+        "duration": 3.04
+    },
+    {
+        "text": "with the atlantic ocean so",
+        "start": 889.12,
+        "duration": 3.36
+    },
+    {
+        "text": "now after that let's just go through",
+        "start": 890.8,
+        "duration": 4.0
+    },
+    {
+        "text": "every single position in the grid",
+        "start": 892.48,
+        "duration": 4.719
+    },
+    {
+        "text": "brute forcing it so every single",
+        "start": 894.8,
+        "duration": 4.08
+    },
+    {
+        "text": "position every single row every single",
+        "start": 897.199,
+        "duration": 2.401
+    },
+    {
+        "text": "column",
+        "start": 898.88,
+        "duration": 2.8
+    },
+    {
+        "text": "and for every single position we want to",
+        "start": 899.6,
+        "duration": 3.039
+    },
+    {
+        "text": "know if",
+        "start": 901.68,
+        "duration": 4.719
+    },
+    {
+        "text": "this position row column is in",
+        "start": 902.639,
+        "duration": 7.521
+    },
+    {
+        "text": "the pacific ocean and if row column",
+        "start": 906.399,
+        "duration": 7.041
+    },
+    {
+        "text": "is in the atlantic ocean then what we",
+        "start": 910.16,
+        "duration": 4.0
+    },
+    {
+        "text": "want to do",
+        "start": 913.44,
+        "duration": 4.079
+    },
+    {
+        "text": "is let's first declare a result list",
+        "start": 914.16,
+        "duration": 5.2
+    },
+    {
+        "text": "if this position was in both atlantic",
+        "start": 917.519,
+        "duration": 3.921
+    },
+    {
+        "text": "and pacific we want to go ahead and add",
+        "start": 919.36,
+        "duration": 2.64
+    },
+    {
+        "text": "it to",
+        "start": 921.44,
+        "duration": 3.759
+    },
+    {
+        "text": "our result and we want to add it as a",
+        "start": 922.0,
+        "duration": 5.68
+    },
+    {
+        "text": "let's say as a sub list and so once",
+        "start": 925.199,
+        "duration": 4.241
+    },
+    {
+        "text": "we've done that then we have definitely",
+        "start": 927.68,
+        "duration": 3.44
+    },
+    {
+        "text": "found out every single",
+        "start": 929.44,
+        "duration": 3.6
+    },
+    {
+        "text": "position that can reach both atlantic",
+        "start": 931.12,
+        "duration": 3.6
+    },
+    {
+        "text": "and pacific ocean and then we can go",
+        "start": 933.04,
+        "duration": 3.68
+    },
+    {
+        "text": "ahead and return that result",
+        "start": 934.72,
+        "duration": 4.16
+    },
+    {
+        "text": "okay i had a pretty stupid bug so sorry",
+        "start": 936.72,
+        "duration": 4.32
+    },
+    {
+        "text": "about that so when we're passing in",
+        "start": 938.88,
+        "duration": 4.0
+    },
+    {
+        "text": "uh we're you know we're finding the",
+        "start": 941.04,
+        "duration": 3.76
+    },
+    {
+        "text": "position of heights so",
+        "start": 942.88,
+        "duration": 3.28
+    },
+    {
+        "text": "you know we have column because that's",
+        "start": 944.8,
+        "duration": 3.12
+    },
+    {
+        "text": "what we're at for row we should have",
+        "start": 946.16,
+        "duration": 3.2
+    },
+    {
+        "text": "zero because that's the position that",
+        "start": 947.92,
+        "duration": 3.12
+    },
+    {
+        "text": "we're starting at so sorry about that",
+        "start": 949.36,
+        "duration": 3.52
+    },
+    {
+        "text": "let's change this to a zero and",
+        "start": 951.04,
+        "duration": 3.76
+    },
+    {
+        "text": "similarly down here",
+        "start": 952.88,
+        "duration": 3.92
+    },
+    {
+        "text": "i actually think we have this right so",
+        "start": 954.8,
+        "duration": 3.839
+    },
+    {
+        "text": "rows minus one because that matches over",
+        "start": 956.8,
+        "duration": 3.36
+    },
+    {
+        "text": "here but down here",
+        "start": 958.639,
+        "duration": 3.76
+    },
+    {
+        "text": "we have row and column zero so we want",
+        "start": 960.16,
+        "duration": 4.4
+    },
+    {
+        "text": "to change column to zero over here",
+        "start": 962.399,
+        "duration": 4.161
+    },
+    {
+        "text": "and over here we do have row so that",
+        "start": 964.56,
+        "duration": 4.16
+    },
+    {
+        "text": "matches but columns minus 1",
+        "start": 966.56,
+        "duration": 4.079
+    },
+    {
+        "text": "is the column value that we want to pass",
+        "start": 968.72,
+        "duration": 4.239
+    },
+    {
+        "text": "in so with those changes you can see",
+        "start": 970.639,
+        "duration": 4.32
+    },
+    {
+        "text": "that this solution does work and it is",
+        "start": 972.959,
+        "duration": 3.841
+    },
+    {
+        "text": "about as efficient as you can get for",
+        "start": 974.959,
+        "duration": 2.88
+    },
+    {
+        "text": "this problem",
+        "start": 976.8,
+        "duration": 3.599
+    },
+    {
+        "text": "so i hope that this was helpful if it",
+        "start": 977.839,
+        "duration": 4.24
+    },
+    {
+        "text": "was please like and subscribe",
+        "start": 980.399,
+        "duration": 3.761
+    },
+    {
+        "text": "it supports the channel a lot and i'll",
+        "start": 982.079,
+        "duration": 3.921
+    },
+    {
+        "text": "hopefully see you pretty soon",
+        "start": 984.16,
+        "duration": 4.799
+    },
+    {
+        "text": "thanks for watching",
+        "start": 986.0,
+        "duration": 2.959
+    }
+]

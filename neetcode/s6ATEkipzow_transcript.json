@@ -1,0 +1,1382 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.16,
+        "duration": 2.96
+    },
+    {
+        "text": "some more neat code today",
+        "start": 1.68,
+        "duration": 4.719
+    },
+    {
+        "text": "solving validate binary search a very",
+        "start": 3.12,
+        "duration": 6.479
+    },
+    {
+        "text": "good question for practicing binary",
+        "start": 6.399,
+        "duration": 5.681
+    },
+    {
+        "text": "search tree questions we're just given a",
+        "start": 9.599,
+        "duration": 4.481
+    },
+    {
+        "text": "root of a binary search tree and we just",
+        "start": 12.08,
+        "duration": 2.96
+    },
+    {
+        "text": "want to determine",
+        "start": 14.08,
+        "duration": 4.16
+    },
+    {
+        "text": "is it a valid binary search tree or not",
+        "start": 15.04,
+        "duration": 5.52
+    },
+    {
+        "text": "and from learning data structures and",
+        "start": 18.24,
+        "duration": 4.4
+    },
+    {
+        "text": "algorithms you might know that a valid",
+        "start": 20.56,
+        "duration": 3.36
+    },
+    {
+        "text": "binary search tree",
+        "start": 22.64,
+        "duration": 4.479
+    },
+    {
+        "text": "is such that we have a node",
+        "start": 23.92,
+        "duration": 6.48
+    },
+    {
+        "text": "like two and every every",
+        "start": 27.119,
+        "duration": 6.561
+    },
+    {
+        "text": "single node in the left subtree one",
+        "start": 30.4,
+        "duration": 5.839
+    },
+    {
+        "text": "and if it possibly had other children is",
+        "start": 33.68,
+        "duration": 3.68
+    },
+    {
+        "text": "going to be",
+        "start": 36.239,
+        "duration": 3.921
+    },
+    {
+        "text": "less than two right so one is going to",
+        "start": 37.36,
+        "duration": 3.12
+    },
+    {
+        "text": "be",
+        "start": 40.16,
+        "duration": 4.32
+    },
+    {
+        "text": "less than two and similarly every single",
+        "start": 40.48,
+        "duration": 7.12
+    },
+    {
+        "text": "value in the right subtree three",
+        "start": 44.48,
+        "duration": 5.68
+    },
+    {
+        "text": "including three's potential children's",
+        "start": 47.6,
+        "duration": 3.76
+    },
+    {
+        "text": "if it had any",
+        "start": 50.16,
+        "duration": 4.559
+    },
+    {
+        "text": "are going to be greater than",
+        "start": 51.36,
+        "duration": 7.28
+    },
+    {
+        "text": "two not greater or equal strictly",
+        "start": 54.719,
+        "duration": 6.801
+    },
+    {
+        "text": "greater and we know this is a recursive",
+        "start": 58.64,
+        "duration": 4.399
+    },
+    {
+        "text": "definition so if",
+        "start": 61.52,
+        "duration": 4.32
+    },
+    {
+        "text": "we had three and it had some children",
+        "start": 63.039,
+        "duration": 3.521
+    },
+    {
+        "text": "like",
+        "start": 65.84,
+        "duration": 4.08
+    },
+    {
+        "text": "five and maybe four over here we see",
+        "start": 66.56,
+        "duration": 4.48
+    },
+    {
+        "text": "that it's not",
+        "start": 69.92,
+        "duration": 4.16
+    },
+    {
+        "text": "a binary search tree because four",
+        "start": 71.04,
+        "duration": 5.759
+    },
+    {
+        "text": "should be less than three four should be",
+        "start": 74.08,
+        "duration": 4.64
+    },
+    {
+        "text": "less than three but it's not",
+        "start": 76.799,
+        "duration": 4.401
+    },
+    {
+        "text": "so this is not a binary search tree so",
+        "start": 78.72,
+        "duration": 3.84
+    },
+    {
+        "text": "we need to do",
+        "start": 81.2,
+        "duration": 3.68
+    },
+    {
+        "text": "a recursive depth first search to solve",
+        "start": 82.56,
+        "duration": 3.12
+    },
+    {
+        "text": "this problem",
+        "start": 84.88,
+        "duration": 2.879
+    },
+    {
+        "text": "but let me show you what you might try",
+        "start": 85.68,
+        "duration": 3.52
+    },
+    {
+        "text": "you might just try",
+        "start": 87.759,
+        "duration": 4.0
+    },
+    {
+        "text": "a simple solution like hey five we have",
+        "start": 89.2,
+        "duration": 3.52
+    },
+    {
+        "text": "five is the root",
+        "start": 91.759,
+        "duration": 3.841
+    },
+    {
+        "text": "let's check its child okay three is less",
+        "start": 92.72,
+        "duration": 4.48
+    },
+    {
+        "text": "than five that's good",
+        "start": 95.6,
+        "duration": 4.64
+    },
+    {
+        "text": "okay let's check the right child okay",
+        "start": 97.2,
+        "duration": 6.64
+    },
+    {
+        "text": "seven is greater than five that's good",
+        "start": 100.24,
+        "duration": 4.08
+    },
+    {
+        "text": "right",
+        "start": 103.84,
+        "duration": 2.72
+    },
+    {
+        "text": "okay let's now let's check seven because",
+        "start": 104.32,
+        "duration": 3.2
+    },
+    {
+        "text": "we see three",
+        "start": 106.56,
+        "duration": 2.96
+    },
+    {
+        "text": "it doesn't have any children that's good",
+        "start": 107.52,
+        "duration": 3.44
+    },
+    {
+        "text": "for us we don't have to check anything",
+        "start": 109.52,
+        "duration": 1.76
+    },
+    {
+        "text": "but",
+        "start": 110.96,
+        "duration": 3.68
+    },
+    {
+        "text": "seven has a left child it has four as a",
+        "start": 111.28,
+        "duration": 4.64
+    },
+    {
+        "text": "left child well",
+        "start": 114.64,
+        "duration": 4.32
+    },
+    {
+        "text": "that's good four is less than seven",
+        "start": 115.92,
+        "duration": 5.68
+    },
+    {
+        "text": "and it has a right child eight that's",
+        "start": 118.96,
+        "duration": 3.439
+    },
+    {
+        "text": "good",
+        "start": 121.6,
+        "duration": 4.0
+    },
+    {
+        "text": "eight is greater than seven so is this a",
+        "start": 122.399,
+        "duration": 4.641
+    },
+    {
+        "text": "binary search tree",
+        "start": 125.6,
+        "duration": 4.719
+    },
+    {
+        "text": "the answer is no because",
+        "start": 127.04,
+        "duration": 5.919
+    },
+    {
+        "text": "it's really easy to miss we have a 5 as",
+        "start": 130.319,
+        "duration": 3.441
+    },
+    {
+        "text": "the root",
+        "start": 132.959,
+        "duration": 4.161
+    },
+    {
+        "text": "we have a right subtree over here and we",
+        "start": 133.76,
+        "duration": 4.08
+    },
+    {
+        "text": "have a",
+        "start": 137.12,
+        "duration": 3.839
+    },
+    {
+        "text": "4 in the right subtree",
+        "start": 137.84,
+        "duration": 7.2
+    },
+    {
+        "text": "but we know 5 is not less than 4",
+        "start": 140.959,
+        "duration": 6.801
+    },
+    {
+        "text": "that's not true so we need a better",
+        "start": 145.04,
+        "duration": 3.44
+    },
+    {
+        "text": "algorithm",
+        "start": 147.76,
+        "duration": 3.199
+    },
+    {
+        "text": "and it requires depth first search we",
+        "start": 148.48,
+        "duration": 3.039
+    },
+    {
+        "text": "can't",
+        "start": 150.959,
+        "duration": 3.761
+    },
+    {
+        "text": "just check the neighbors so our brute",
+        "start": 151.519,
+        "duration": 4.481
+    },
+    {
+        "text": "force approach would be",
+        "start": 154.72,
+        "duration": 4.159
+    },
+    {
+        "text": "for five check every value in its left",
+        "start": 156.0,
+        "duration": 4.72
+    },
+    {
+        "text": "subtree make sure that it's",
+        "start": 158.879,
+        "duration": 3.601
+    },
+    {
+        "text": "every value is less than five and then",
+        "start": 160.72,
+        "duration": 3.2
+    },
+    {
+        "text": "check every value",
+        "start": 162.48,
+        "duration": 4.08
+    },
+    {
+        "text": "in the right subtree make sure five is",
+        "start": 163.92,
+        "duration": 4.0
+    },
+    {
+        "text": "less than every value in the right",
+        "start": 166.56,
+        "duration": 2.16
+    },
+    {
+        "text": "subtree",
+        "start": 167.92,
+        "duration": 3.52
+    },
+    {
+        "text": "and so we would need n comparisons to do",
+        "start": 168.72,
+        "duration": 3.36
+    },
+    {
+        "text": "that right",
+        "start": 171.44,
+        "duration": 3.12
+    },
+    {
+        "text": "o of n and then we'd have to repeat that",
+        "start": 172.08,
+        "duration": 3.28
+    },
+    {
+        "text": "process for",
+        "start": 174.56,
+        "duration": 3.12
+    },
+    {
+        "text": "every sub tree so seven we got to repeat",
+        "start": 175.36,
+        "duration": 3.44
+    },
+    {
+        "text": "that compare it to",
+        "start": 177.68,
+        "duration": 4.88
+    },
+    {
+        "text": "every potential descendant of itself",
+        "start": 178.8,
+        "duration": 6.0
+    },
+    {
+        "text": "which is going to be o of n and the time",
+        "start": 182.56,
+        "duration": 3.44
+    },
+    {
+        "text": "complexity of that",
+        "start": 184.8,
+        "duration": 3.84
+    },
+    {
+        "text": "overall is going to be o n squared so",
+        "start": 186.0,
+        "duration": 3.44
+    },
+    {
+        "text": "can we do",
+        "start": 188.64,
+        "duration": 3.84
+    },
+    {
+        "text": "better than o of n squared so one",
+        "start": 189.44,
+        "duration": 6.32
+    },
+    {
+        "text": "thing to notice is the root value can be",
+        "start": 192.48,
+        "duration": 6.16
+    },
+    {
+        "text": "any value right there's no restrictions",
+        "start": 195.76,
+        "duration": 4.399
+    },
+    {
+        "text": "on what the value can be",
+        "start": 198.64,
+        "duration": 3.76
+    },
+    {
+        "text": "because it doesn't have any parents so",
+        "start": 200.159,
+        "duration": 3.521
+    },
+    {
+        "text": "we can say that",
+        "start": 202.4,
+        "duration": 4.16
+    },
+    {
+        "text": "it can be any value between negative",
+        "start": 203.68,
+        "duration": 3.839
+    },
+    {
+        "text": "infinity",
+        "start": 206.56,
+        "duration": 4.319
+    },
+    {
+        "text": "and positive infinity and as long as",
+        "start": 207.519,
+        "duration": 5.841
+    },
+    {
+        "text": "that's the case five is okay we don't",
+        "start": 210.879,
+        "duration": 3.041
+    },
+    {
+        "text": "have to make",
+        "start": 213.36,
+        "duration": 4.159
+    },
+    {
+        "text": "any other comparisons five is between",
+        "start": 213.92,
+        "duration": 6.48
+    },
+    {
+        "text": "negative infinity and positive infinity",
+        "start": 217.519,
+        "duration": 4.161
+    },
+    {
+        "text": "okay and then",
+        "start": 220.4,
+        "duration": 3.839
+    },
+    {
+        "text": "when we go down to the left subtree we",
+        "start": 221.68,
+        "duration": 4.559
+    },
+    {
+        "text": "know five is good we don't even have to",
+        "start": 224.239,
+        "duration": 3.041
+    },
+    {
+        "text": "check it anymore",
+        "start": 226.239,
+        "duration": 3.681
+    },
+    {
+        "text": "but when we go down to the left subtree",
+        "start": 227.28,
+        "duration": 3.679
+    },
+    {
+        "text": "what do we have to",
+        "start": 229.92,
+        "duration": 4.72
+    },
+    {
+        "text": "check all we have to check is that 3",
+        "start": 230.959,
+        "duration": 7.041
+    },
+    {
+        "text": "is less than 5 so in other words",
+        "start": 234.64,
+        "duration": 6.48
+    },
+    {
+        "text": "we just want to make sure three is",
+        "start": 238.0,
+        "duration": 5.84
+    },
+    {
+        "text": "greater than a negative infinity which",
+        "start": 241.12,
+        "duration": 3.92
+    },
+    {
+        "text": "of course it is",
+        "start": 243.84,
+        "duration": 4.0
+    },
+    {
+        "text": "and we're adding one more condition we",
+        "start": 245.04,
+        "duration": 4.0
+    },
+    {
+        "text": "want to make sure",
+        "start": 247.84,
+        "duration": 4.479
+    },
+    {
+        "text": "it's less than five so",
+        "start": 249.04,
+        "duration": 5.6
+    },
+    {
+        "text": "our left boundary stayed the same but we",
+        "start": 252.319,
+        "duration": 3.361
+    },
+    {
+        "text": "had to update",
+        "start": 254.64,
+        "duration": 4.159
+    },
+    {
+        "text": "our right boundary from up here",
+        "start": 255.68,
+        "duration": 5.839
+    },
+    {
+        "text": "right and so we're done with that and of",
+        "start": 258.799,
+        "duration": 4.481
+    },
+    {
+        "text": "course we don't have any children",
+        "start": 261.519,
+        "duration": 4.081
+    },
+    {
+        "text": "for three and five of course we don't",
+        "start": 263.28,
+        "duration": 4.32
+    },
+    {
+        "text": "have any children for three so",
+        "start": 265.6,
+        "duration": 5.2
+    },
+    {
+        "text": "we are done checking three next",
+        "start": 267.6,
+        "duration": 6.08
+    },
+    {
+        "text": "we want to also determine that the right",
+        "start": 270.8,
+        "duration": 3.839
+    },
+    {
+        "text": "subtree",
+        "start": 273.68,
+        "duration": 3.04
+    },
+    {
+        "text": "is a binary search tree so we want to",
+        "start": 274.639,
+        "duration": 3.201
+    },
+    {
+        "text": "make sure seven",
+        "start": 276.72,
+        "duration": 4.64
+    },
+    {
+        "text": "is greater than five but is there an",
+        "start": 277.84,
+        "duration": 5.44
+    },
+    {
+        "text": "upper boundary for seven like this could",
+        "start": 281.36,
+        "duration": 3.2
+    },
+    {
+        "text": "have been a hundred",
+        "start": 283.28,
+        "duration": 3.199
+    },
+    {
+        "text": "or could have been anything so there's",
+        "start": 284.56,
+        "duration": 3.52
+    },
+    {
+        "text": "no upper boundary yet",
+        "start": 286.479,
+        "duration": 4.561
+    },
+    {
+        "text": "so we just need to check that seven is",
+        "start": 288.08,
+        "duration": 4.24
+    },
+    {
+        "text": "less than infinity",
+        "start": 291.04,
+        "duration": 3.76
+    },
+    {
+        "text": "meaning that this is the right boundary",
+        "start": 292.32,
+        "duration": 5.2
+    },
+    {
+        "text": "and it's greater than",
+        "start": 294.8,
+        "duration": 5.92
+    },
+    {
+        "text": "5 so we had to update the left boundary",
+        "start": 297.52,
+        "duration": 4.56
+    },
+    {
+        "text": "over here when we went",
+        "start": 300.72,
+        "duration": 4.0
+    },
+    {
+        "text": "here we only had to update the right",
+        "start": 302.08,
+        "duration": 3.52
+    },
+    {
+        "text": "boundary",
+        "start": 304.72,
+        "duration": 4.319
+    },
+    {
+        "text": "and this condition is true so",
+        "start": 305.6,
+        "duration": 7.28
+    },
+    {
+        "text": "we are done checking 7 it is satisfied",
+        "start": 309.039,
+        "duration": 6.241
+    },
+    {
+        "text": "and when we go to the right child 8",
+        "start": 312.88,
+        "duration": 4.08
+    },
+    {
+        "text": "we're going to do the same thing we only",
+        "start": 315.28,
+        "duration": 2.24
+    },
+    {
+        "text": "have to",
+        "start": 316.96,
+        "duration": 2.64
+    },
+    {
+        "text": "update the left boundary so we have to",
+        "start": 317.52,
+        "duration": 4.08
+    },
+    {
+        "text": "make sure that 8 is at least",
+        "start": 319.6,
+        "duration": 5.039
+    },
+    {
+        "text": "greater than 7 but it could be",
+        "start": 321.6,
+        "duration": 5.92
+    },
+    {
+        "text": "anything so it's less than infinity so",
+        "start": 324.639,
+        "duration": 3.761
+    },
+    {
+        "text": "that's good",
+        "start": 327.52,
+        "duration": 3.92
+    },
+    {
+        "text": "8 is a binary search tree",
+        "start": 328.4,
+        "duration": 6.0
+    },
+    {
+        "text": "but now we get to the value that",
+        "start": 331.44,
+        "duration": 3.44
+    },
+    {
+        "text": "actually",
+        "start": 334.4,
+        "duration": 2.239
+    },
+    {
+        "text": "breaks our binary search tree and let's",
+        "start": 334.88,
+        "duration": 3.12
+    },
+    {
+        "text": "see what our algorithm",
+        "start": 336.639,
+        "duration": 4.56
+    },
+    {
+        "text": "does so we know since set four is the",
+        "start": 338.0,
+        "duration": 4.479
+    },
+    {
+        "text": "left child of seven",
+        "start": 341.199,
+        "duration": 4.56
+    },
+    {
+        "text": "it should be less than seven",
+        "start": 342.479,
+        "duration": 6.641
+    },
+    {
+        "text": "four is less than seven",
+        "start": 345.759,
+        "duration": 6.481
+    },
+    {
+        "text": "we have to update the right boundary for",
+        "start": 349.12,
+        "duration": 3.6
+    },
+    {
+        "text": "four",
+        "start": 352.24,
+        "duration": 3.6
+    },
+    {
+        "text": "but the left boundary stays the same",
+        "start": 352.72,
+        "duration": 6.319
+    },
+    {
+        "text": "so we're getting the left boundary from",
+        "start": 355.84,
+        "duration": 5.919
+    },
+    {
+        "text": "over here we're borrowing it from its",
+        "start": 359.039,
+        "duration": 3.361
+    },
+    {
+        "text": "parent",
+        "start": 361.759,
+        "duration": 3.921
+    },
+    {
+        "text": "because if seven is greater than 5",
+        "start": 362.4,
+        "duration": 6.239
+    },
+    {
+        "text": "then it's left child and 4 is a part of",
+        "start": 365.68,
+        "duration": 4.4
+    },
+    {
+        "text": "the sub tree 4 must",
+        "start": 368.639,
+        "duration": 4.721
+    },
+    {
+        "text": "also be greater than 5 so the left",
+        "start": 370.08,
+        "duration": 4.72
+    },
+    {
+        "text": "boundary is 5. now",
+        "start": 373.36,
+        "duration": 5.04
+    },
+    {
+        "text": "does this condition hold it does",
+        "start": 374.8,
+        "duration": 6.64
+    },
+    {
+        "text": "not 4 is not between",
+        "start": 378.4,
+        "duration": 6.32
+    },
+    {
+        "text": "7 and 5 so this value breaks",
+        "start": 381.44,
+        "duration": 5.84
+    },
+    {
+        "text": "our binary search tree so therefore this",
+        "start": 384.72,
+        "duration": 4.4
+    },
+    {
+        "text": "is not a binary search tree",
+        "start": 387.28,
+        "duration": 4.72
+    },
+    {
+        "text": "it's false we're returning false and",
+        "start": 389.12,
+        "duration": 4.88
+    },
+    {
+        "text": "with this algorithm since for each",
+        "start": 392.0,
+        "duration": 4.479
+    },
+    {
+        "text": "node all we're really doing is making a",
+        "start": 394.0,
+        "duration": 3.44
+    },
+    {
+        "text": "comparison",
+        "start": 396.479,
+        "duration": 2.961
+    },
+    {
+        "text": "we're making a single or rather two",
+        "start": 397.44,
+        "duration": 3.759
+    },
+    {
+        "text": "comparisons this is going to be",
+        "start": 399.44,
+        "duration": 4.879
+    },
+    {
+        "text": "big o of n or uh 2n",
+        "start": 401.199,
+        "duration": 5.44
+    },
+    {
+        "text": "which we know is still linear so we can",
+        "start": 404.319,
+        "duration": 3.281
+    },
+    {
+        "text": "just call it big",
+        "start": 406.639,
+        "duration": 3.521
+    },
+    {
+        "text": "o of n so now it's actually time to",
+        "start": 407.6,
+        "duration": 4.56
+    },
+    {
+        "text": "write the algorithm and the best way to",
+        "start": 410.16,
+        "duration": 2.56
+    },
+    {
+        "text": "do this",
+        "start": 412.16,
+        "duration": 2.24
+    },
+    {
+        "text": "is recursively so that's what i'm going",
+        "start": 412.72,
+        "duration": 2.879
+    },
+    {
+        "text": "to do i'm going to write a helper",
+        "start": 414.4,
+        "duration": 1.76
+    },
+    {
+        "text": "function",
+        "start": 415.599,
+        "duration": 3.201
+    },
+    {
+        "text": "nested inside of this helper or inside",
+        "start": 416.16,
+        "duration": 3.52
+    },
+    {
+        "text": "of our original",
+        "start": 418.8,
+        "duration": 3.44
+    },
+    {
+        "text": "function we'll call it valid we know we",
+        "start": 419.68,
+        "duration": 3.44
+    },
+    {
+        "text": "need to pass",
+        "start": 422.24,
+        "duration": 2.88
+    },
+    {
+        "text": "in the node since we are going to do",
+        "start": 423.12,
+        "duration": 3.76
+    },
+    {
+        "text": "this recursively and we're going to have",
+        "start": 425.12,
+        "duration": 2.799
+    },
+    {
+        "text": "two boundaries",
+        "start": 426.88,
+        "duration": 4.08
+    },
+    {
+        "text": "left and right boundaries like any",
+        "start": 427.919,
+        "duration": 5.12
+    },
+    {
+        "text": "binary search recursive function",
+        "start": 430.96,
+        "duration": 5.2
+    },
+    {
+        "text": "if we reach a null node we can just",
+        "start": 433.039,
+        "duration": 4.72
+    },
+    {
+        "text": "return what are we going to return",
+        "start": 436.16,
+        "duration": 3.28
+    },
+    {
+        "text": "we're going to return true because",
+        "start": 437.759,
+        "duration": 4.401
+    },
+    {
+        "text": "technically an empty binary search tree",
+        "start": 439.44,
+        "duration": 5.28
+    },
+    {
+        "text": "is still a binary search tree and then",
+        "start": 442.16,
+        "duration": 3.92
+    },
+    {
+        "text": "we want to check",
+        "start": 444.72,
+        "duration": 6.16
+    },
+    {
+        "text": "we want to make sure that node value is",
+        "start": 446.08,
+        "duration": 7.92
+    },
+    {
+        "text": "less than the right boundary",
+        "start": 450.88,
+        "duration": 6.96
+    },
+    {
+        "text": "and node value is greater than the left",
+        "start": 454.0,
+        "duration": 4.72
+    },
+    {
+        "text": "boundary",
+        "start": 457.84,
+        "duration": 3.919
+    },
+    {
+        "text": "but we know if this is not true if",
+        "start": 458.72,
+        "duration": 6.479
+    },
+    {
+        "text": "these conditions do not satisfy then",
+        "start": 461.759,
+        "duration": 6.321
+    },
+    {
+        "text": "we have to return false because we found",
+        "start": 465.199,
+        "duration": 3.84
+    },
+    {
+        "text": "a node that",
+        "start": 468.08,
+        "duration": 3.6
+    },
+    {
+        "text": "broke our binary search tree and now",
+        "start": 469.039,
+        "duration": 3.84
+    },
+    {
+        "text": "it's time to make",
+        "start": 471.68,
+        "duration": 3.76
+    },
+    {
+        "text": "our recursive call so we want to make",
+        "start": 472.879,
+        "duration": 5.44
+    },
+    {
+        "text": "sure that the left subtree of node",
+        "start": 475.44,
+        "duration": 6.08
+    },
+    {
+        "text": "is valid so we can pass node.left and",
+        "start": 478.319,
+        "duration": 5.041
+    },
+    {
+        "text": "what's going to be the boundary",
+        "start": 481.52,
+        "duration": 4.799
+    },
+    {
+        "text": "for these well since we are going left",
+        "start": 483.36,
+        "duration": 5.04
+    },
+    {
+        "text": "we can leave the left boundary the same",
+        "start": 486.319,
+        "duration": 2.801
+    },
+    {
+        "text": "but we're going to",
+        "start": 488.4,
+        "duration": 3.28
+    },
+    {
+        "text": "update the right boundary to the node's",
+        "start": 489.12,
+        "duration": 4.0
+    },
+    {
+        "text": "value because we know",
+        "start": 491.68,
+        "duration": 4.959
+    },
+    {
+        "text": "that a left sub tree has to be less than",
+        "start": 493.12,
+        "duration": 6.079
+    },
+    {
+        "text": "every value we know every value in the",
+        "start": 496.639,
+        "duration": 4.081
+    },
+    {
+        "text": "left sub tree has to be",
+        "start": 499.199,
+        "duration": 4.56
+    },
+    {
+        "text": "less than the parent and so the parent",
+        "start": 500.72,
+        "duration": 4.08
+    },
+    {
+        "text": "is going to be set",
+        "start": 503.759,
+        "duration": 4.0
+    },
+    {
+        "text": "to the right boundary because we need we",
+        "start": 504.8,
+        "duration": 4.16
+    },
+    {
+        "text": "need to make sure that this is going to",
+        "start": 507.759,
+        "duration": 1.521
+    },
+    {
+        "text": "be",
+        "start": 508.96,
+        "duration": 2.079
+    },
+    {
+        "text": "less than that so we want to make sure",
+        "start": 509.28,
+        "duration": 3.92
+    },
+    {
+        "text": "that the left sub tree is valid we",
+        "start": 511.039,
+        "duration": 4.8
+    },
+    {
+        "text": "also want to make sure that the right",
+        "start": 513.2,
+        "duration": 3.44
+    },
+    {
+        "text": "subtree",
+        "start": 515.839,
+        "duration": 2.961
+    },
+    {
+        "text": "is valid and in this case we're going to",
+        "start": 516.64,
+        "duration": 4.16
+    },
+    {
+        "text": "do the opposite of what we just did",
+        "start": 518.8,
+        "duration": 4.719
+    },
+    {
+        "text": "so the left boundary is going to be",
+        "start": 520.8,
+        "duration": 3.84
+    },
+    {
+        "text": "updated",
+        "start": 523.519,
+        "duration": 3.201
+    },
+    {
+        "text": "and the right boundary is going to stay",
+        "start": 524.64,
+        "duration": 3.36
+    },
+    {
+        "text": "the same because we know",
+        "start": 526.72,
+        "duration": 4.88
+    },
+    {
+        "text": "every value in a right subtree has to be",
+        "start": 528.0,
+        "duration": 7.6
+    },
+    {
+        "text": "greater than the root or the parent node",
+        "start": 531.6,
+        "duration": 6.96
+    },
+    {
+        "text": "which is the left boundary and if both",
+        "start": 535.6,
+        "duration": 4.64
+    },
+    {
+        "text": "of these return true",
+        "start": 538.56,
+        "duration": 3.76
+    },
+    {
+        "text": "then we can return true if they both",
+        "start": 540.24,
+        "duration": 3.36
+    },
+    {
+        "text": "return false",
+        "start": 542.32,
+        "duration": 3.519
+    },
+    {
+        "text": "then we can return false so what we can",
+        "start": 543.6,
+        "duration": 3.44
+    },
+    {
+        "text": "do is just",
+        "start": 545.839,
+        "duration": 4.721
+    },
+    {
+        "text": "return the result of this so whatever",
+        "start": 547.04,
+        "duration": 5.04
+    },
+    {
+        "text": "this evaluates to",
+        "start": 550.56,
+        "duration": 3.839
+    },
+    {
+        "text": "is going to be our result we don't",
+        "start": 552.08,
+        "duration": 4.08
+    },
+    {
+        "text": "really need any variables",
+        "start": 554.399,
+        "duration": 4.161
+    },
+    {
+        "text": "and now we just need to call the",
+        "start": 556.16,
+        "duration": 3.84
+    },
+    {
+        "text": "function that we just defined",
+        "start": 558.56,
+        "duration": 3.76
+    },
+    {
+        "text": "valid we'll pass in the root we want to",
+        "start": 560.0,
+        "duration": 4.0
+    },
+    {
+        "text": "make sure that this is a binary search",
+        "start": 562.32,
+        "duration": 2.639
+    },
+    {
+        "text": "tree",
+        "start": 564.0,
+        "duration": 3.92
+    },
+    {
+        "text": "initially the left boundary can be set",
+        "start": 564.959,
+        "duration": 4.401
+    },
+    {
+        "text": "to negative infinity",
+        "start": 567.92,
+        "duration": 4.24
+    },
+    {
+        "text": "and the right boundary can be set to",
+        "start": 569.36,
+        "duration": 4.4
+    },
+    {
+        "text": "positive infinity because",
+        "start": 572.16,
+        "duration": 3.84
+    },
+    {
+        "text": "the root value could be anything there's",
+        "start": 573.76,
+        "duration": 4.56
+    },
+    {
+        "text": "no restrictions on what the root value",
+        "start": 576.0,
+        "duration": 3.2
+    },
+    {
+        "text": "can be",
+        "start": 578.32,
+        "duration": 2.88
+    },
+    {
+        "text": "and as you can see this is a super",
+        "start": 579.2,
+        "duration": 3.12
+    },
+    {
+        "text": "efficient solution",
+        "start": 581.2,
+        "duration": 4.079
+    },
+    {
+        "text": "beats 97 percent and it doesn't take",
+        "start": 582.32,
+        "duration": 5.04
+    },
+    {
+        "text": "very much code either so i hope this was",
+        "start": 585.279,
+        "duration": 2.801
+    },
+    {
+        "text": "helpful",
+        "start": 587.36,
+        "duration": 2.96
+    },
+    {
+        "text": "if you enjoyed please like and subscribe",
+        "start": 588.08,
+        "duration": 4.16
+    },
+    {
+        "text": "and support the channel a lot and i'll",
+        "start": 590.32,
+        "duration": 2.56
+    },
+    {
+        "text": "hopefully",
+        "start": 592.24,
+        "duration": 5.039
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 592.88,
+        "duration": 4.399
+    }
+]

@@ -1,0 +1,1142 @@
+[
+    {
+        "text": "hey what's up guys Nick white here at",
+        "start": 0.03,
+        "duration": 3.389
+    },
+    {
+        "text": "detecting coding stuff on Twitch in",
+        "start": 1.589,
+        "duration": 3.571
+    },
+    {
+        "text": "YouTube check the description for all my",
+        "start": 3.419,
+        "duration": 4.801
+    },
+    {
+        "text": "information as well as you know discord",
+        "start": 5.16,
+        "duration": 5.49
+    },
+    {
+        "text": "I like the discord right now follow me",
+        "start": 8.22,
+        "duration": 5.129
+    },
+    {
+        "text": "on github and I do premium problems on",
+        "start": 10.65,
+        "duration": 4.92
+    },
+    {
+        "text": "patreon and my course I'm building on",
+        "start": 13.349,
+        "duration": 3.391
+    },
+    {
+        "text": "patreon and stuff if you're interested",
+        "start": 15.57,
+        "duration": 3.719
+    },
+    {
+        "text": "in that I really appreciate support here",
+        "start": 16.74,
+        "duration": 4.92
+    },
+    {
+        "text": "is subarray some equals k this is a",
+        "start": 19.289,
+        "duration": 4.051
+    },
+    {
+        "text": "medium problem on leak code I'll link",
+        "start": 21.66,
+        "duration": 2.91
+    },
+    {
+        "text": "the problem in the description it's not",
+        "start": 23.34,
+        "duration": 3.42
+    },
+    {
+        "text": "too difficult it's pretty easy it's",
+        "start": 24.57,
+        "duration": 4.44
+    },
+    {
+        "text": "pretty similar to like to some this is a",
+        "start": 26.76,
+        "duration": 4.95
+    },
+    {
+        "text": "hashmap problem a lot of like so pretty",
+        "start": 29.01,
+        "duration": 4.86
+    },
+    {
+        "text": "cool you're given an array of integers",
+        "start": 31.71,
+        "duration": 6.0
+    },
+    {
+        "text": "for example 1 1 1 1 2 3 whatever it",
+        "start": 33.87,
+        "duration": 5.189
+    },
+    {
+        "text": "could be anything just a bunch of",
+        "start": 37.71,
+        "duration": 3.99
+    },
+    {
+        "text": "integers right so 1 5 3 it might look",
+        "start": 39.059,
+        "duration": 4.561
+    },
+    {
+        "text": "like this right could look whatever but",
+        "start": 41.7,
+        "duration": 3.81
+    },
+    {
+        "text": "it's integers you need to find the total",
+        "start": 43.62,
+        "duration": 4.74
+    },
+    {
+        "text": "number of continuous sub arrays whose",
+        "start": 45.51,
+        "duration": 6.42
+    },
+    {
+        "text": "sum equals to K so this means numbers",
+        "start": 48.36,
+        "duration": 5.359
+    },
+    {
+        "text": "that are next to each other you know",
+        "start": 51.93,
+        "duration": 4.74
+    },
+    {
+        "text": "we're not talking about you know a sub",
+        "start": 53.719,
+        "duration": 4.691
+    },
+    {
+        "text": "array filled with this one and this one",
+        "start": 56.67,
+        "duration": 3.27
+    },
+    {
+        "text": "the numbers have to be next to each",
+        "start": 58.41,
+        "duration": 3.78
+    },
+    {
+        "text": "other so a continuous sub array in the",
+        "start": 59.94,
+        "duration": 4.439
+    },
+    {
+        "text": "sum of all the values in the continuous",
+        "start": 62.19,
+        "duration": 4.71
+    },
+    {
+        "text": "sub array has to be equal to K so we're",
+        "start": 64.379,
+        "duration": 4.35
+    },
+    {
+        "text": "given this array and we're given an",
+        "start": 66.9,
+        "duration": 4.53
+    },
+    {
+        "text": "integer k and we want to find the number",
+        "start": 68.729,
+        "duration": 4.651
+    },
+    {
+        "text": "of sub arrays and in this example",
+        "start": 71.43,
+        "duration": 4.68
+    },
+    {
+        "text": "there's two one here and then one here",
+        "start": 73.38,
+        "duration": 4.95
+    },
+    {
+        "text": "the number of continuous sub arrays",
+        "start": 76.11,
+        "duration": 5.939
+    },
+    {
+        "text": "whose total sum of all the values is",
+        "start": 78.33,
+        "duration": 7.38
+    },
+    {
+        "text": "equal to K so one plus one is two one",
+        "start": 82.049,
+        "duration": 4.471
+    },
+    {
+        "text": "plus one is two",
+        "start": 85.71,
+        "duration": 2.79
+    },
+    {
+        "text": "those are two sub arrays the other ones",
+        "start": 86.52,
+        "duration": 4.44
+    },
+    {
+        "text": "are you know this goes to 3 so that's",
+        "start": 88.5,
+        "duration": 5.64
+    },
+    {
+        "text": "wrong this is 1 this is 1 this is 1 and",
+        "start": 90.96,
+        "duration": 4.769
+    },
+    {
+        "text": "there's an empty array this is only 2",
+        "start": 94.14,
+        "duration": 4.89
+    },
+    {
+        "text": "how do we do this well there's some slow",
+        "start": 95.729,
+        "duration": 5.311
+    },
+    {
+        "text": "versions of this you could generate all",
+        "start": 99.03,
+        "duration": 5.76
+    },
+    {
+        "text": "sub arrays of lists and then go through",
+        "start": 101.04,
+        "duration": 6.869
+    },
+    {
+        "text": "and see if they all if any of them add",
+        "start": 104.79,
+        "duration": 6.18
+    },
+    {
+        "text": "up their total sum is K but that's you",
+        "start": 107.909,
+        "duration": 5.161
+    },
+    {
+        "text": "know that's pretty time-consuming so",
+        "start": 110.97,
+        "duration": 3.87
+    },
+    {
+        "text": "what we're gonna do is we're gonna use a",
+        "start": 113.07,
+        "duration": 4.35
+    },
+    {
+        "text": "hash map in the idea behind this is",
+        "start": 114.84,
+        "duration": 5.37
+    },
+    {
+        "text": "you're gonna keep a hash map you're",
+        "start": 117.42,
+        "duration": 5.1
+    },
+    {
+        "text": "gonna keep a cumulative sum so we're",
+        "start": 120.21,
+        "duration": 4.86
+    },
+    {
+        "text": "gonna have a sum starting at 0 and it's",
+        "start": 122.52,
+        "duration": 4.889
+    },
+    {
+        "text": "just gonna add all the values of the",
+        "start": 125.07,
+        "duration": 4.26
+    },
+    {
+        "text": "array as we loop through so let's just",
+        "start": 127.409,
+        "duration": 4.83
+    },
+    {
+        "text": "write that out so of a sum 0 and we'll",
+        "start": 129.33,
+        "duration": 6.17
+    },
+    {
+        "text": "be looping through the numbers",
+        "start": 132.239,
+        "duration": 3.261
+    },
+    {
+        "text": "some plus equal numbers of AI as well as",
+        "start": 137.18,
+        "duration": 7.089
+    },
+    {
+        "text": "we're also gonna need our results so",
+        "start": 142.469,
+        "duration": 4.11
+    },
+    {
+        "text": "this is the number of sub arrays to add",
+        "start": 144.269,
+        "duration": 4.351
+    },
+    {
+        "text": "up to K so you could call it whatever",
+        "start": 146.579,
+        "duration": 2.61
+    },
+    {
+        "text": "you want",
+        "start": 148.62,
+        "duration": 2.55
+    },
+    {
+        "text": "somewhere a count or whatever you want",
+        "start": 149.189,
+        "duration": 3.39
+    },
+    {
+        "text": "to call it but this is what we're gonna",
+        "start": 151.17,
+        "duration": 3.019
+    },
+    {
+        "text": "be returning",
+        "start": 152.579,
+        "duration": 4.11
+    },
+    {
+        "text": "okay so we're looping through the array",
+        "start": 154.189,
+        "duration": 4.241
+    },
+    {
+        "text": "of numbers we're adding them on to an",
+        "start": 156.689,
+        "duration": 5.25
+    },
+    {
+        "text": "ongoing sum now how do we what do we do",
+        "start": 158.43,
+        "duration": 4.529
+    },
+    {
+        "text": "with this what do we do with this",
+        "start": 161.939,
+        "duration": 4.351
+    },
+    {
+        "text": "ongoing sum well think about this the",
+        "start": 162.959,
+        "duration": 9.75
+    },
+    {
+        "text": "distance between two points if the if",
+        "start": 166.29,
+        "duration": 10.649
+    },
+    {
+        "text": "you're at a current sum and you have",
+        "start": 172.709,
+        "duration": 10.081
+    },
+    {
+        "text": "seen a sum and two different points two",
+        "start": 176.939,
+        "duration": 8.071
+    },
+    {
+        "text": "different points in an array if you",
+        "start": 182.79,
+        "duration": 5.849
+    },
+    {
+        "text": "subtract them the total sums from those",
+        "start": 185.01,
+        "duration": 5.159
+    },
+    {
+        "text": "different points in the array of",
+        "start": 188.639,
+        "duration": 4.921
+    },
+    {
+        "text": "different indices and it adds up decay",
+        "start": 190.169,
+        "duration": 6.451
+    },
+    {
+        "text": "then the array between those points is",
+        "start": 193.56,
+        "duration": 6.59
+    },
+    {
+        "text": "size K that's the whole thesis here is",
+        "start": 196.62,
+        "duration": 6.329
+    },
+    {
+        "text": "you know you just keep an ongoing some",
+        "start": 200.15,
+        "duration": 4.509
+    },
+    {
+        "text": "you put them in a hashmap with the",
+        "start": 202.949,
+        "duration": 4.68
+    },
+    {
+        "text": "respective times you've seen them at",
+        "start": 204.659,
+        "duration": 5.76
+    },
+    {
+        "text": "current indices and you just check you",
+        "start": 207.629,
+        "duration": 4.32
+    },
+    {
+        "text": "check back in your hash map and you say",
+        "start": 210.419,
+        "duration": 5.671
+    },
+    {
+        "text": "have we seen some have we seen our sum",
+        "start": 211.949,
+        "duration": 6.57
+    },
+    {
+        "text": "minus K before because if we've had if",
+        "start": 216.09,
+        "duration": 4.649
+    },
+    {
+        "text": "we have then we've seen an array of size",
+        "start": 218.519,
+        "duration": 5.25
+    },
+    {
+        "text": "K since the last time we added that into",
+        "start": 220.739,
+        "duration": 4.291
+    },
+    {
+        "text": "the hash map so that's the whole thing",
+        "start": 223.769,
+        "duration": 2.58
+    },
+    {
+        "text": "right here and I'll show you an",
+        "start": 225.03,
+        "duration": 4.5
+    },
+    {
+        "text": "animation at the end but you just do",
+        "start": 226.349,
+        "duration": 6.06
+    },
+    {
+        "text": "hash map of integer integer where the",
+        "start": 229.53,
+        "duration": 5.459
+    },
+    {
+        "text": "first integer is the current cumulative",
+        "start": 232.409,
+        "duration": 5.04
+    },
+    {
+        "text": "sum the second one is the number of",
+        "start": 234.989,
+        "duration": 4.14
+    },
+    {
+        "text": "times we've seen that sum because you",
+        "start": 237.449,
+        "duration": 4.231
+    },
+    {
+        "text": "could see them more than once and we can",
+        "start": 239.129,
+        "duration": 5.64
+    },
+    {
+        "text": "just call this array sums or whatever",
+        "start": 241.68,
+        "duration": 4.739
+    },
+    {
+        "text": "you want to call it and this will be our",
+        "start": 244.769,
+        "duration": 6.451
+    },
+    {
+        "text": "main hash map just to start out we put 0",
+        "start": 246.419,
+        "duration": 7.77
+    },
+    {
+        "text": "because you know we start out the sum is",
+        "start": 251.22,
+        "duration": 5.699
+    },
+    {
+        "text": "0 and we saw it once so we have seen a",
+        "start": 254.189,
+        "duration": 7.35
+    },
+    {
+        "text": "sum of 0 once at the beginning and each",
+        "start": 256.919,
+        "duration": 7.261
+    },
+    {
+        "text": "iteration of the loop will be adding to",
+        "start": 261.539,
+        "duration": 5.741
+    },
+    {
+        "text": "the array will be adding the current sum",
+        "start": 264.18,
+        "duration": 5.26
+    },
+    {
+        "text": "now these values can be negative so we",
+        "start": 267.28,
+        "duration": 4.47
+    },
+    {
+        "text": "could see the same sum twice right it",
+        "start": 269.44,
+        "duration": 5.37
+    },
+    {
+        "text": "could go to three you know this for",
+        "start": 271.75,
+        "duration": 7.01
+    },
+    {
+        "text": "example if this is our input array and",
+        "start": 274.81,
+        "duration": 6.75
+    },
+    {
+        "text": "sorry about that this is our input array",
+        "start": 278.76,
+        "duration": 7.15
+    },
+    {
+        "text": "the sum is 3 right but then say we saw 4",
+        "start": 281.56,
+        "duration": 8.04
+    },
+    {
+        "text": "and then we see negative 1 still 3 so",
+        "start": 285.91,
+        "duration": 6.11
+    },
+    {
+        "text": "you could see a sum of 3 in our hash map",
+        "start": 289.6,
+        "duration": 5.46
+    },
+    {
+        "text": "you know once at first and then we'll",
+        "start": 292.02,
+        "duration": 4.99
+    },
+    {
+        "text": "see it again so we have to change our",
+        "start": 295.06,
+        "duration": 3.75
+    },
+    {
+        "text": "hash map this is the number of times",
+        "start": 297.01,
+        "duration": 4.53
+    },
+    {
+        "text": "we've seen that some ok so we put the",
+        "start": 298.81,
+        "duration": 8.48
+    },
+    {
+        "text": "sum and then we put array sums dot get",
+        "start": 301.54,
+        "duration": 9.45
+    },
+    {
+        "text": "some get or default because we could",
+        "start": 307.29,
+        "duration": 6.25
+    },
+    {
+        "text": "have not seen it actually so if it's the",
+        "start": 310.99,
+        "duration": 3.51
+    },
+    {
+        "text": "first time we see it",
+        "start": 313.54,
+        "duration": 4.53
+    },
+    {
+        "text": "the it'll default to 0 and we'll add 1",
+        "start": 314.5,
+        "duration": 5.58
+    },
+    {
+        "text": "to it so the first time we'll see it",
+        "start": 318.07,
+        "duration": 4.65
+    },
+    {
+        "text": "will add 1 in the hash map will so add",
+        "start": 320.08,
+        "duration": 5.37
+    },
+    {
+        "text": "the sum and we saw it once if it's not",
+        "start": 322.72,
+        "duration": 4.53
+    },
+    {
+        "text": "it'll get the number of times we've",
+        "start": 325.45,
+        "duration": 3.45
+    },
+    {
+        "text": "already seen it so maybe we saw it once",
+        "start": 327.25,
+        "duration": 3.18
+    },
+    {
+        "text": "already and we'll add one so we'll have",
+        "start": 328.9,
+        "duration": 2.64
+    },
+    {
+        "text": "seen it twice now",
+        "start": 330.43,
+        "duration": 2.76
+    },
+    {
+        "text": "or maybe we'll have seen it three times",
+        "start": 331.54,
+        "duration": 4.439
+    },
+    {
+        "text": "or whatever this is just a cool method",
+        "start": 333.19,
+        "duration": 4.979
+    },
+    {
+        "text": "for helping us out with that now how",
+        "start": 335.979,
+        "duration": 3.511
+    },
+    {
+        "text": "does this help us how does this help us",
+        "start": 338.169,
+        "duration": 6.451
+    },
+    {
+        "text": "so you know we we go through this array",
+        "start": 339.49,
+        "duration": 7.679
+    },
+    {
+        "text": "we add we build our hash map with our",
+        "start": 344.62,
+        "duration": 3.9
+    },
+    {
+        "text": "thumbs and the number of times we've",
+        "start": 347.169,
+        "duration": 3.991
+    },
+    {
+        "text": "seen it well now all we have to do is",
+        "start": 348.52,
+        "duration": 5.82
+    },
+    {
+        "text": "check ok each iteration we should just",
+        "start": 351.16,
+        "duration": 7.62
+    },
+    {
+        "text": "check okay have we seen the sum the",
+        "start": 354.34,
+        "duration": 7.49
+    },
+    {
+        "text": "current sum minus K because if we have",
+        "start": 358.78,
+        "duration": 7.83
+    },
+    {
+        "text": "well then we found if the current sum is",
+        "start": 361.83,
+        "duration": 6.61
+    },
+    {
+        "text": "later on in the array and we saw it",
+        "start": 366.61,
+        "duration": 3.63
+    },
+    {
+        "text": "minus K and we put it in the hash map",
+        "start": 368.44,
+        "duration": 4.62
+    },
+    {
+        "text": "that means we saw an array of size K",
+        "start": 370.24,
+        "duration": 5.4
+    },
+    {
+        "text": "between those two points that's the",
+        "start": 373.06,
+        "duration": 4.08
+    },
+    {
+        "text": "whole thing it's really not that hard I",
+        "start": 375.64,
+        "duration": 3.15
+    },
+    {
+        "text": "just want to make it as clear as",
+        "start": 377.14,
+        "duration": 5.16
+    },
+    {
+        "text": "possible so you know maybe we saw maybe",
+        "start": 378.79,
+        "duration": 8.46
+    },
+    {
+        "text": "we saw three a few times and resolved",
+        "start": 382.3,
+        "duration": 7.38
+    },
+    {
+        "text": "plus equals array some stuck yet some",
+        "start": 387.25,
+        "duration": 4.44
+    },
+    {
+        "text": "minus K this is the whole thing that's",
+        "start": 389.68,
+        "duration": 3.84
+    },
+    {
+        "text": "the whole problem and you could submit",
+        "start": 391.69,
+        "duration": 5.34
+    },
+    {
+        "text": "that I'll show you right here what's the",
+        "start": 393.52,
+        "duration": 5.52
+    },
+    {
+        "text": "issue yeah extra parentheses",
+        "start": 397.03,
+        "duration": 7.05
+    },
+    {
+        "text": "bad oh my gosh guys I'm sorry what is",
+        "start": 399.04,
+        "duration": 8.97
+    },
+    {
+        "text": "this a method get' or defaults or not",
+        "start": 404.08,
+        "duration": 9.69
+    },
+    {
+        "text": "yet of default bad typing okay there we",
+        "start": 408.01,
+        "duration": 7.59
+    },
+    {
+        "text": "go so it runs so let me just explain",
+        "start": 413.77,
+        "duration": 4.5
+    },
+    {
+        "text": "this one more time though and I'll show",
+        "start": 415.6,
+        "duration": 4.35
+    },
+    {
+        "text": "you this this example right here",
+        "start": 418.27,
+        "duration": 4.95
+    },
+    {
+        "text": "it says right here sum of I minus sum of",
+        "start": 419.95,
+        "duration": 6.93
+    },
+    {
+        "text": "J two different points in the array with",
+        "start": 423.22,
+        "duration": 4.68
+    },
+    {
+        "text": "the sums in the hashmap",
+        "start": 426.88,
+        "duration": 4.32
+    },
+    {
+        "text": "if we see some minus K in the hashmap",
+        "start": 427.9,
+        "duration": 6.93
+    },
+    {
+        "text": "well then that means we've seen between",
+        "start": 431.2,
+        "duration": 6.6
+    },
+    {
+        "text": "our point now in the point before that",
+        "start": 434.83,
+        "duration": 5.19
+    },
+    {
+        "text": "we put it in the hashmap we've seen a",
+        "start": 437.8,
+        "duration": 5.01
+    },
+    {
+        "text": "sum of K you know it's pretty obvious",
+        "start": 440.02,
+        "duration": 6.09
+    },
+    {
+        "text": "since extending the idea behind is as",
+        "start": 442.81,
+        "duration": 5.04
+    },
+    {
+        "text": "far as cumulative sum represented by sum",
+        "start": 446.11,
+        "duration": 3.72
+    },
+    {
+        "text": "of odd I thinned X up to two indices is",
+        "start": 447.85,
+        "duration": 4.8
+    },
+    {
+        "text": "the same sum of elements lying between",
+        "start": 449.83,
+        "duration": 5.43
+    },
+    {
+        "text": "those indices is zero right like in the",
+        "start": 452.65,
+        "duration": 9.0
+    },
+    {
+        "text": "example of 1 1 1 1 negative 1 the sum",
+        "start": 455.26,
+        "duration": 10.83
+    },
+    {
+        "text": "here is 3 and then the sum here is also",
+        "start": 461.65,
+        "duration": 6.93
+    },
+    {
+        "text": "3 so that means that the sum of this",
+        "start": 466.09,
+        "duration": 5.61
+    },
+    {
+        "text": "sub-array would be 0 so we know that so",
+        "start": 468.58,
+        "duration": 6.03
+    },
+    {
+        "text": "you know the same logic applies to K so",
+        "start": 471.7,
+        "duration": 5.67
+    },
+    {
+        "text": "if K was 0 that means well we did find a",
+        "start": 474.61,
+        "duration": 6.77
+    },
+    {
+        "text": "sub array right here of size you know a",
+        "start": 477.37,
+        "duration": 7.83
+    },
+    {
+        "text": "sub array right here sorry of size 0 so",
+        "start": 481.38,
+        "duration": 7.6
+    },
+    {
+        "text": "that we would add 1 to the count okay so",
+        "start": 485.2,
+        "duration": 5.19
+    },
+    {
+        "text": "based on these thoughts we use a hash",
+        "start": 488.98,
+        "duration": 3.9
+    },
+    {
+        "text": "map when we store the communal it just",
+        "start": 490.39,
+        "duration": 3.84
+    },
+    {
+        "text": "explains what I'm saying but here's",
+        "start": 492.88,
+        "duration": 3.33
+    },
+    {
+        "text": "here's just a little animation so we",
+        "start": 494.23,
+        "duration": 4.62
+    },
+    {
+        "text": "start out for the sum of 0 right let's",
+        "start": 496.21,
+        "duration": 5.61
+    },
+    {
+        "text": "go backwards a little bit we start off",
+        "start": 498.85,
+        "duration": 4.92
+    },
+    {
+        "text": "with the sum of 0 and we're looking for",
+        "start": 501.82,
+        "duration": 4.53
+    },
+    {
+        "text": "K equals 7 in this example this is our",
+        "start": 503.77,
+        "duration": 5.01
+    },
+    {
+        "text": "input array and then our sum is 0 and",
+        "start": 506.35,
+        "duration": 4.65
+    },
+    {
+        "text": "our count of sub arrays that add up to K",
+        "start": 508.78,
+        "duration": 6.36
+    },
+    {
+        "text": "is 0 we see a 3 so we're like ok we saw",
+        "start": 511.0,
+        "duration": 6.81
+    },
+    {
+        "text": "now we see in a sum of 3 and we put it",
+        "start": 515.14,
+        "duration": 6.3
+    },
+    {
+        "text": "in we only saw it once so far ok and we",
+        "start": 517.81,
+        "duration": 6.39
+    },
+    {
+        "text": "look do we see negative 4 in here",
+        "start": 521.44,
+        "duration": 4.59
+    },
+    {
+        "text": "anywhere no we haven't we haven't seen",
+        "start": 524.2,
+        "duration": 5.04
+    },
+    {
+        "text": "in sum of negative 4 we see now we see a",
+        "start": 526.03,
+        "duration": 6.42
+    },
+    {
+        "text": "4 so we've seen a total sum of 7",
+        "start": 529.24,
+        "duration": 6.18
+    },
+    {
+        "text": "okay k is seven so we checked some - K",
+        "start": 532.45,
+        "duration": 5.1
+    },
+    {
+        "text": "is there a zero in the hashmap",
+        "start": 535.42,
+        "duration": 4.71
+    },
+    {
+        "text": "yes we saw some of zero so that means",
+        "start": 537.55,
+        "duration": 6.24
+    },
+    {
+        "text": "from this point up to this point we have",
+        "start": 540.13,
+        "duration": 7.11
+    },
+    {
+        "text": "found a sub array that equals to K in",
+        "start": 543.79,
+        "duration": 5.909
+    },
+    {
+        "text": "some so that's the whole idea here you",
+        "start": 547.24,
+        "duration": 4.02
+    },
+    {
+        "text": "can go through it a little bit more we",
+        "start": 549.699,
+        "duration": 6.211
+    },
+    {
+        "text": "see a seven so we do 14 minus 7 and oh",
+        "start": 551.26,
+        "duration": 7.829
+    },
+    {
+        "text": "we found a 7 so that's just a small sub",
+        "start": 555.91,
+        "duration": 6.179
+    },
+    {
+        "text": "array right there that we have found and",
+        "start": 559.089,
+        "duration": 7.141
+    },
+    {
+        "text": "we can add to our account 2 negative 3 1",
+        "start": 562.089,
+        "duration": 6.12
+    },
+    {
+        "text": "you know what I mean it's all it just",
+        "start": 566.23,
+        "duration": 4.59
+    },
+    {
+        "text": "keeps changing you can go through this",
+        "start": 568.209,
+        "duration": 4.471
+    },
+    {
+        "text": "example on your own I think I explained",
+        "start": 570.82,
+        "duration": 3.87
+    },
+    {
+        "text": "it pretty well let me know if you guys",
+        "start": 572.68,
+        "duration": 3.63
+    },
+    {
+        "text": "have any questions I know it's a little",
+        "start": 574.69,
+        "duration": 5.31
+    },
+    {
+        "text": "bit Hough tough to you know get",
+        "start": 576.31,
+        "duration": 7.019
+    },
+    {
+        "text": "visualize in your head but it's just",
+        "start": 580.0,
+        "duration": 5.699
+    },
+    {
+        "text": "like you know little difference thing",
+        "start": 583.329,
+        "duration": 3.481
+    },
+    {
+        "text": "you're putting them in a hash map and",
+        "start": 585.699,
+        "duration": 2.461
+    },
+    {
+        "text": "you just check the difference and if",
+        "start": 586.81,
+        "duration": 3.54
+    },
+    {
+        "text": "you've seen something minus K well then",
+        "start": 588.16,
+        "duration": 3.96
+    },
+    {
+        "text": "you know there you go you found",
+        "start": 590.35,
+        "duration": 3.299
+    },
+    {
+        "text": "something of size K and you can add it",
+        "start": 592.12,
+        "duration": 5.52
+    },
+    {
+        "text": "on so thank you guys for watching really",
+        "start": 593.649,
+        "duration": 5.971
+    },
+    {
+        "text": "appreciate everyone that sports the",
+        "start": 597.64,
+        "duration": 3.9
+    },
+    {
+        "text": "channel and let me know if you have any",
+        "start": 599.62,
+        "duration": 4.29
+    },
+    {
+        "text": "questions you want me to do your",
+        "start": 601.54,
+        "duration": 4.08
+    },
+    {
+        "text": "anything you know give me ideas I'll",
+        "start": 603.91,
+        "duration": 5.81
+    },
+    {
+        "text": "probably do them so see ya",
+        "start": 605.62,
+        "duration": 4.1
+    }
+]

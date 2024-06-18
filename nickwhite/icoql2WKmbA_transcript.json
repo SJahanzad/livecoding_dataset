@@ -1,0 +1,1157 @@
+[
+    {
+        "text": "hey what's up guys it is Nick white here",
+        "start": 0.949,
+        "duration": 7.001
+    },
+    {
+        "text": "and I do tech and coding stuff on Twitch",
+        "start": 5.25,
+        "duration": 4.08
+    },
+    {
+        "text": "YouTube check the description you get",
+        "start": 7.95,
+        "duration": 5.24
+    },
+    {
+        "text": "all my stuff and we are just doing a",
+        "start": 9.33,
+        "duration": 6.12
+    },
+    {
+        "text": "we're doing all the leak code problems",
+        "start": 13.19,
+        "duration": 5.11
+    },
+    {
+        "text": "alright so I'm still in the easy ones so",
+        "start": 15.45,
+        "duration": 4.38
+    },
+    {
+        "text": "and I'm trying to get better at",
+        "start": 18.3,
+        "duration": 2.61
+    },
+    {
+        "text": "explaining them over time which I",
+        "start": 19.83,
+        "duration": 4.74
+    },
+    {
+        "text": "definitely will but we're doing Pascal's",
+        "start": 20.91,
+        "duration": 5.85
+    },
+    {
+        "text": "triangle right now so Pascal's triangle",
+        "start": 24.57,
+        "duration": 4.56
+    },
+    {
+        "text": "is actually a pretty popular and common",
+        "start": 26.76,
+        "duration": 6.65
+    },
+    {
+        "text": "question it's it's an easy question but",
+        "start": 29.13,
+        "duration": 7.14
+    },
+    {
+        "text": "it you have to think about it there's",
+        "start": 33.41,
+        "duration": 4.419
+    },
+    {
+        "text": "there's like a trick to it a little",
+        "start": 36.27,
+        "duration": 3.629
+    },
+    {
+        "text": "trickier than some of the other easy",
+        "start": 37.829,
+        "duration": 5.611
+    },
+    {
+        "text": "ones so basically what Pascal's triangle",
+        "start": 39.899,
+        "duration": 5.551
+    },
+    {
+        "text": "is is it's just a triangle of numbers",
+        "start": 43.44,
+        "duration": 4.65
+    },
+    {
+        "text": "where you take the preceding row and you",
+        "start": 45.45,
+        "duration": 6.33
+    },
+    {
+        "text": "add the elements you know diagonally to",
+        "start": 48.09,
+        "duration": 6.359
+    },
+    {
+        "text": "get like you know sub triangles",
+        "start": 51.78,
+        "duration": 4.799
+    },
+    {
+        "text": "basically like inner triangles right so",
+        "start": 54.449,
+        "duration": 4.29
+    },
+    {
+        "text": "you know 1 1 1 and then this one and",
+        "start": 56.579,
+        "duration": 4.381
+    },
+    {
+        "text": "this one get added to make the two this",
+        "start": 58.739,
+        "duration": 5.28
+    },
+    {
+        "text": "1 and 2 added to 3 this 2 and 1 added to",
+        "start": 60.96,
+        "duration": 5.55
+    },
+    {
+        "text": "make the 3 and so on right so basically",
+        "start": 64.019,
+        "duration": 4.71
+    },
+    {
+        "text": "the problem is just there's some more",
+        "start": 66.51,
+        "duration": 3.99
+    },
+    {
+        "text": "advanced Pascal's triangle problems but",
+        "start": 68.729,
+        "duration": 5.131
+    },
+    {
+        "text": "this one is just 2 they give you a",
+        "start": 70.5,
+        "duration": 5.07
+    },
+    {
+        "text": "number of rows and then they want you to",
+        "start": 73.86,
+        "duration": 3.81
+    },
+    {
+        "text": "generate the triangle the correct",
+        "start": 75.57,
+        "duration": 6.54
+    },
+    {
+        "text": "triangle for that number of rows so the",
+        "start": 77.67,
+        "duration": 6.239
+    },
+    {
+        "text": "the way to go about doing this is",
+        "start": 82.11,
+        "duration": 5.64
+    },
+    {
+        "text": "actually just you know two to four loops",
+        "start": 83.909,
+        "duration": 6.0
+    },
+    {
+        "text": "and it's pretty straightforward so first",
+        "start": 87.75,
+        "duration": 3.81
+    },
+    {
+        "text": "of all it's just initialize our return",
+        "start": 89.909,
+        "duration": 3.661
+    },
+    {
+        "text": "type right so this is the return type",
+        "start": 91.56,
+        "duration": 4.019
+    },
+    {
+        "text": "we're returning a list of a list of",
+        "start": 93.57,
+        "duration": 3.33
+    },
+    {
+        "text": "integers right because we have this",
+        "start": 95.579,
+        "duration": 4.021
+    },
+    {
+        "text": "outer list where each element is a list",
+        "start": 96.9,
+        "duration": 4.5
+    },
+    {
+        "text": "and then each element of those lists is",
+        "start": 99.6,
+        "duration": 5.69
+    },
+    {
+        "text": "an integer right so list of a list of",
+        "start": 101.4,
+        "duration": 7.71
+    },
+    {
+        "text": "integer we're gonna call it triangle you",
+        "start": 105.29,
+        "duration": 5.079
+    },
+    {
+        "text": "can call whatever you want this is what",
+        "start": 109.11,
+        "duration": 4.17
+    },
+    {
+        "text": "we're returning though triangle is equal",
+        "start": 110.369,
+        "duration": 5.451
+    },
+    {
+        "text": "to new ArrayList just to initialize it",
+        "start": 113.28,
+        "duration": 6.75
+    },
+    {
+        "text": "and if num rows is equal to zero we",
+        "start": 115.82,
+        "duration": 5.77
+    },
+    {
+        "text": "always do this check for like algorithm",
+        "start": 120.03,
+        "duration": 2.97
+    },
+    {
+        "text": "problems if the if you're getting an",
+        "start": 121.59,
+        "duration": 2.73
+    },
+    {
+        "text": "input that's like zero usually you're",
+        "start": 123.0,
+        "duration": 2.45
+    },
+    {
+        "text": "just gonna want to return immediately",
+        "start": 124.32,
+        "duration": 3.439
+    },
+    {
+        "text": "we're just going to return triangle",
+        "start": 125.45,
+        "duration": 4.96
+    },
+    {
+        "text": "because there's zero rows and triangles",
+        "start": 127.759,
+        "duration": 4.361
+    },
+    {
+        "text": "empty our return",
+        "start": 130.41,
+        "duration": 5.13
+    },
+    {
+        "text": "ray is empty so that's about right so if",
+        "start": 132.12,
+        "duration": 4.979
+    },
+    {
+        "text": "it's zero if it's not then we actually",
+        "start": 135.54,
+        "duration": 4.04
+    },
+    {
+        "text": "do the solution for the problem right so",
+        "start": 137.099,
+        "duration": 5.28
+    },
+    {
+        "text": "these this is really this right here is",
+        "start": 139.58,
+        "duration": 4.75
+    },
+    {
+        "text": "the trick to the problem in each for",
+        "start": 142.379,
+        "duration": 5.64
+    },
+    {
+        "text": "loop we're gonna add something right at",
+        "start": 144.33,
+        "duration": 6.269
+    },
+    {
+        "text": "the beginning so right the first thing",
+        "start": 148.019,
+        "duration": 3.931
+    },
+    {
+        "text": "we're gonna want to do is create a list",
+        "start": 150.599,
+        "duration": 4.621
+    },
+    {
+        "text": "of an integer list of integers and this",
+        "start": 151.95,
+        "duration": 4.83
+    },
+    {
+        "text": "is going to be called first row and this",
+        "start": 155.22,
+        "duration": 3.239
+    },
+    {
+        "text": "is actually going to be the first row of",
+        "start": 156.78,
+        "duration": 4.14
+    },
+    {
+        "text": "our triangle right it's going to be this",
+        "start": 158.459,
+        "duration": 4.771
+    },
+    {
+        "text": "little list that just contains one so",
+        "start": 160.92,
+        "duration": 6.5
+    },
+    {
+        "text": "first row is equal to new ArrayList and",
+        "start": 163.23,
+        "duration": 6.39
+    },
+    {
+        "text": "you know obviously we just want to add",
+        "start": 167.42,
+        "duration": 7.69
+    },
+    {
+        "text": "one to this and then we're just gonna",
+        "start": 169.62,
+        "duration": 7.8
+    },
+    {
+        "text": "add this to the output array right so",
+        "start": 175.11,
+        "duration": 4.92
+    },
+    {
+        "text": "triangle gets added first row so right",
+        "start": 177.42,
+        "duration": 5.97
+    },
+    {
+        "text": "now our return arrays triangle and it",
+        "start": 180.03,
+        "duration": 5.91
+    },
+    {
+        "text": "all it has in it is a list with one so",
+        "start": 183.39,
+        "duration": 4.11
+    },
+    {
+        "text": "right it would be you know everything",
+        "start": 185.94,
+        "duration": 3.21
+    },
+    {
+        "text": "except for this stuff it would just be",
+        "start": 187.5,
+        "duration": 2.94
+    },
+    {
+        "text": "this list and it wouldn't just have a",
+        "start": 189.15,
+        "duration": 3.21
+    },
+    {
+        "text": "list with 1 in it",
+        "start": 190.44,
+        "duration": 5.75
+    },
+    {
+        "text": "so we do that because now we're going to",
+        "start": 192.36,
+        "duration": 6.779
+    },
+    {
+        "text": "iterate from 1 because we already have",
+        "start": 196.19,
+        "duration": 6.28
+    },
+    {
+        "text": "one list into it all the way until num",
+        "start": 199.139,
+        "duration": 6.301
+    },
+    {
+        "text": "rows because we want num rows sorry",
+        "start": 202.47,
+        "duration": 4.98
+    },
+    {
+        "text": "you have to do eyes less than num rows",
+        "start": 205.44,
+        "duration": 3.299
+    },
+    {
+        "text": "because we're iterating up to that",
+        "start": 207.45,
+        "duration": 4.02
+    },
+    {
+        "text": "number us because we're what we're doing",
+        "start": 208.739,
+        "duration": 5.28
+    },
+    {
+        "text": "is we're looping up to num rows each",
+        "start": 211.47,
+        "duration": 4.379
+    },
+    {
+        "text": "time we loop through we're gonna add a",
+        "start": 214.019,
+        "duration": 4.44
+    },
+    {
+        "text": "new list and right so the first time we",
+        "start": 215.849,
+        "duration": 4.621
+    },
+    {
+        "text": "loop through we would add you know this",
+        "start": 218.459,
+        "duration": 3.87
+    },
+    {
+        "text": "one then this one then this one then",
+        "start": 220.47,
+        "duration": 3.389
+    },
+    {
+        "text": "this one every iteration we're adding a",
+        "start": 222.329,
+        "duration": 3.72
+    },
+    {
+        "text": "list of integers until we finally have",
+        "start": 223.859,
+        "duration": 4.081
+    },
+    {
+        "text": "it done and we can just return this list",
+        "start": 226.049,
+        "duration": 4.62
+    },
+    {
+        "text": "of Lists right that's a good way to do",
+        "start": 227.94,
+        "duration": 5.25
+    },
+    {
+        "text": "it but you know the the thing that we",
+        "start": 230.669,
+        "duration": 5.4
+    },
+    {
+        "text": "have to we add the first list first",
+        "start": 233.19,
+        "duration": 5.37
+    },
+    {
+        "text": "before we even do the loop so that we",
+        "start": 236.069,
+        "duration": 5.73
+    },
+    {
+        "text": "can do this double index grab right",
+        "start": 238.56,
+        "duration": 6.149
+    },
+    {
+        "text": "because we don't want an index out of",
+        "start": 241.799,
+        "duration": 5.101
+    },
+    {
+        "text": "bounds error and if we start it if we",
+        "start": 244.709,
+        "duration": 5.941
+    },
+    {
+        "text": "started at 0 and we did this problem the",
+        "start": 246.9,
+        "duration": 5.309
+    },
+    {
+        "text": "way that we're doing it it it's not",
+        "start": 250.65,
+        "duration": 2.91
+    },
+    {
+        "text": "going to work and you'll see that in a",
+        "start": 252.209,
+        "duration": 4.231
+    },
+    {
+        "text": "second so we're iterating from 1 to num",
+        "start": 253.56,
+        "duration": 4.739
+    },
+    {
+        "text": "rows because we already have one array",
+        "start": 256.44,
+        "duration": 3.829
+    },
+    {
+        "text": "in the output array and",
+        "start": 258.299,
+        "duration": 4.701
+    },
+    {
+        "text": "you know then what we do here is we grab",
+        "start": 260.269,
+        "duration": 5.58
+    },
+    {
+        "text": "the previous row we grab the previous",
+        "start": 263.0,
+        "duration": 5.31
+    },
+    {
+        "text": "row and that's why we needed a row in",
+        "start": 265.849,
+        "duration": 4.651
+    },
+    {
+        "text": "the triangle already we grab the",
+        "start": 268.31,
+        "duration": 3.99
+    },
+    {
+        "text": "previous list we'll call it proved Row",
+        "start": 270.5,
+        "duration": 7.86
+    },
+    {
+        "text": "is equal to you know triangle doc gets",
+        "start": 272.3,
+        "duration": 10.799
+    },
+    {
+        "text": "of I minus one print and then we're",
+        "start": 278.36,
+        "duration": 8.61
+    },
+    {
+        "text": "gonna have current Row is equal to you",
+        "start": 283.099,
+        "duration": 5.491
+    },
+    {
+        "text": "can call it row or current row I'm just",
+        "start": 286.97,
+        "duration": 4.56
+    },
+    {
+        "text": "gonna call it row new ArrayList so we",
+        "start": 288.59,
+        "duration": 4.919
+    },
+    {
+        "text": "just initialize the current row and we",
+        "start": 291.53,
+        "duration": 4.229
+    },
+    {
+        "text": "get the previous row and if we were",
+        "start": 293.509,
+        "duration": 5.821
+    },
+    {
+        "text": "gonna do this without a row into it that",
+        "start": 295.759,
+        "duration": 5.071
+    },
+    {
+        "text": "would throw an error but since we",
+        "start": 299.33,
+        "duration": 3.059
+    },
+    {
+        "text": "already put the first row in the first",
+        "start": 300.83,
+        "duration": 3.149
+    },
+    {
+        "text": "rows already and we could rabbit so",
+        "start": 302.389,
+        "duration": 3.511
+    },
+    {
+        "text": "prove Row is going to be this one at",
+        "start": 303.979,
+        "duration": 4.951
+    },
+    {
+        "text": "first hopefully this is making sense you",
+        "start": 305.9,
+        "duration": 5.009
+    },
+    {
+        "text": "guys I know I'm not the best explaining",
+        "start": 308.93,
+        "duration": 3.45
+    },
+    {
+        "text": "these yet but you know we'll get better",
+        "start": 310.909,
+        "duration": 4.471
+    },
+    {
+        "text": "as we go on so we have the previous row",
+        "start": 312.38,
+        "duration": 4.83
+    },
+    {
+        "text": "in the current row and then what we're",
+        "start": 315.38,
+        "duration": 4.62
+    },
+    {
+        "text": "gonna want to do is every if you notice",
+        "start": 317.21,
+        "duration": 5.97
+    },
+    {
+        "text": "guys every single first element of every",
+        "start": 320.0,
+        "duration": 5.94
+    },
+    {
+        "text": "list is one so this is what we have to",
+        "start": 323.18,
+        "duration": 4.019
+    },
+    {
+        "text": "do for the second array like I said",
+        "start": 325.94,
+        "duration": 3.27
+    },
+    {
+        "text": "we're doing this in both cases in the",
+        "start": 327.199,
+        "duration": 3.96
+    },
+    {
+        "text": "outer loop we're adding the first row",
+        "start": 329.21,
+        "duration": 4.049
+    },
+    {
+        "text": "initially and in the inner when we get",
+        "start": 331.159,
+        "duration": 3.211
+    },
+    {
+        "text": "to the inner loop we're just gonna do",
+        "start": 333.259,
+        "duration": 3.271
+    },
+    {
+        "text": "row dot add one because we already know",
+        "start": 334.37,
+        "duration": 3.359
+    },
+    {
+        "text": "that we're gonna have one at the first",
+        "start": 336.53,
+        "duration": 2.52
+    },
+    {
+        "text": "element and we're gonna have one at the",
+        "start": 337.729,
+        "duration": 3.06
+    },
+    {
+        "text": "last element too so we don't even we're",
+        "start": 339.05,
+        "duration": 4.08
+    },
+    {
+        "text": "gonna add one at the end too then we do",
+        "start": 340.789,
+        "duration": 5.521
+    },
+    {
+        "text": "our inner loop so J is equal to one",
+        "start": 343.13,
+        "duration": 5.069
+    },
+    {
+        "text": "because we're you have it and we're",
+        "start": 346.31,
+        "duration": 3.509
+    },
+    {
+        "text": "doing this double index grab again so",
+        "start": 348.199,
+        "duration": 3.391
+    },
+    {
+        "text": "that's why we need to do this again it",
+        "start": 349.819,
+        "duration": 4.561
+    },
+    {
+        "text": "makes perfect sense J is less than I we",
+        "start": 351.59,
+        "duration": 4.56
+    },
+    {
+        "text": "iterate up to I because I is going to be",
+        "start": 354.38,
+        "duration": 4.98
+    },
+    {
+        "text": "the current row we're at each each time",
+        "start": 356.15,
+        "duration": 4.5
+    },
+    {
+        "text": "we loop through this outer loop we're",
+        "start": 359.36,
+        "duration": 3.63
+    },
+    {
+        "text": "gonna is going to Inc you know the",
+        "start": 360.65,
+        "duration": 4.889
+    },
+    {
+        "text": "number is going to increase to the",
+        "start": 362.99,
+        "duration": 5.88
+    },
+    {
+        "text": "current number of elements we need you",
+        "start": 365.539,
+        "duration": 4.591
+    },
+    {
+        "text": "know there's two elements in Row two",
+        "start": 368.87,
+        "duration": 2.579
+    },
+    {
+        "text": "there's three elements in Row three and",
+        "start": 370.13,
+        "duration": 3.3
+    },
+    {
+        "text": "that's why that makes sense so then we",
+        "start": 371.449,
+        "duration": 5.581
+    },
+    {
+        "text": "do J plus plus so we loop up to I on the",
+        "start": 373.43,
+        "duration": 6.81
+    },
+    {
+        "text": "inner loop and what we do is just add to",
+        "start": 377.03,
+        "duration": 5.669
+    },
+    {
+        "text": "our our row only has one in it right now",
+        "start": 380.24,
+        "duration": 3.899
+    },
+    {
+        "text": "so we need all the other elements and",
+        "start": 382.699,
+        "duration": 4.111
+    },
+    {
+        "text": "all of the other elements between the",
+        "start": 384.139,
+        "duration": 5.161
+    },
+    {
+        "text": "inner the first one and the last one are",
+        "start": 386.81,
+        "duration": 4.859
+    },
+    {
+        "text": "you know a combination of the previous",
+        "start": 389.3,
+        "duration": 4.48
+    },
+    {
+        "text": "rows elements like I said before",
+        "start": 391.669,
+        "duration": 3.791
+    },
+    {
+        "text": "the one in the two makes three the two",
+        "start": 393.78,
+        "duration": 4.79
+    },
+    {
+        "text": "and one makes three to do so to add that",
+        "start": 395.46,
+        "duration": 6.57
+    },
+    {
+        "text": "we we use our previous row because we're",
+        "start": 398.57,
+        "duration": 5.92
+    },
+    {
+        "text": "looping at this let's say we're looping",
+        "start": 402.03,
+        "duration": 4.859
+    },
+    {
+        "text": "at this current row right now previous",
+        "start": 404.49,
+        "duration": 3.929
+    },
+    {
+        "text": "row then we have all the elements",
+        "start": 406.889,
+        "duration": 3.171
+    },
+    {
+        "text": "already so all we have to do is do",
+        "start": 408.419,
+        "duration": 7.311
+    },
+    {
+        "text": "previous row dot gets you know J minus 1",
+        "start": 410.06,
+        "duration": 12.52
+    },
+    {
+        "text": "plus J plus proof rows plus pre road get",
+        "start": 415.73,
+        "duration": 9.07
+    },
+    {
+        "text": "J sorry it's hard to explain and type at",
+        "start": 422.58,
+        "duration": 5.7
+    },
+    {
+        "text": "the same time so this this basically",
+        "start": 424.8,
+        "duration": 5.52
+    },
+    {
+        "text": "grabs from our previous rows the",
+        "start": 428.28,
+        "duration": 3.75
+    },
+    {
+        "text": "elements adds them together and then it",
+        "start": 430.32,
+        "duration": 4.099
+    },
+    {
+        "text": "puts it into our row at the correct spot",
+        "start": 432.03,
+        "duration": 5.22
+    },
+    {
+        "text": "really I'm trying to explain this as",
+        "start": 434.419,
+        "duration": 4.181
+    },
+    {
+        "text": "best as I can hopefully you guys are",
+        "start": 437.25,
+        "duration": 4.2
+    },
+    {
+        "text": "kind of falling along with me and after",
+        "start": 438.6,
+        "duration": 4.62
+    },
+    {
+        "text": "that we'll be at the end the very end",
+        "start": 441.45,
+        "duration": 3.69
+    },
+    {
+        "text": "because we're looping up to I and then",
+        "start": 443.22,
+        "duration": 4.62
+    },
+    {
+        "text": "we'll just add the last one and then we",
+        "start": 445.14,
+        "duration": 4.65
+    },
+    {
+        "text": "do triangle dyad because we are we have",
+        "start": 447.84,
+        "duration": 3.6
+    },
+    {
+        "text": "our completed row at this point so we",
+        "start": 449.79,
+        "duration": 3.83
+    },
+    {
+        "text": "add it to our final output array and",
+        "start": 451.44,
+        "duration": 4.38
+    },
+    {
+        "text": "yeah then all you have to do is return",
+        "start": 453.62,
+        "duration": 4.72
+    },
+    {
+        "text": "triangle because that's the output and",
+        "start": 455.82,
+        "duration": 4.23
+    },
+    {
+        "text": "that's that's how you solved the problem",
+        "start": 458.34,
+        "duration": 3.23
+    },
+    {
+        "text": "and it's a pretty cool neat solution",
+        "start": 460.05,
+        "duration": 6.3
+    },
+    {
+        "text": "easy first row to add row I'm sorry oh",
+        "start": 461.57,
+        "duration": 7.06
+    },
+    {
+        "text": "my gosh those are huge mistake sorry",
+        "start": 466.35,
+        "duration": 4.56
+    },
+    {
+        "text": "that you're adding the first road to",
+        "start": 468.63,
+        "duration": 4.83
+    },
+    {
+        "text": "triangle sorry about that just it's hard",
+        "start": 470.91,
+        "duration": 4.14
+    },
+    {
+        "text": "to type like and explain at the same",
+        "start": 473.46,
+        "duration": 6.209
+    },
+    {
+        "text": "time like I said um what's the what's",
+        "start": 475.05,
+        "duration": 8.07
+    },
+    {
+        "text": "the issue here triangle that had oh my",
+        "start": 479.669,
+        "duration": 7.921
+    },
+    {
+        "text": "gosh oh wait okay it's fixed sorry",
+        "start": 483.12,
+        "duration": 6.99
+    },
+    {
+        "text": "yeah I'll explain it again in a second",
+        "start": 487.59,
+        "duration": 4.35
+    },
+    {
+        "text": "okay it works we got the right output",
+        "start": 490.11,
+        "duration": 5.369
+    },
+    {
+        "text": "and if we submit I should type before I",
+        "start": 491.94,
+        "duration": 4.979
+    },
+    {
+        "text": "finish explaining these from now on yeah",
+        "start": 495.479,
+        "duration": 3.931
+    },
+    {
+        "text": "we got it correct what you're doing is",
+        "start": 496.919,
+        "duration": 4.861
+    },
+    {
+        "text": "you instantiate the output array if the",
+        "start": 499.41,
+        "duration": 4.98
+    },
+    {
+        "text": "number is a 0 return triangle you have",
+        "start": 501.78,
+        "duration": 5.49
+    },
+    {
+        "text": "you get your first row you add one to it",
+        "start": 504.39,
+        "duration": 4.89
+    },
+    {
+        "text": "so we have our first list with one then",
+        "start": 507.27,
+        "duration": 3.269
+    },
+    {
+        "text": "you add it to our output array of",
+        "start": 509.28,
+        "duration": 3.569
+    },
+    {
+        "text": "triangle then we do our inner loops like",
+        "start": 510.539,
+        "duration": 4.38
+    },
+    {
+        "text": "I explained earlier the inner loop will",
+        "start": 512.849,
+        "duration": 3.901
+    },
+    {
+        "text": "grab the previous row and we instantiate",
+        "start": 514.919,
+        "duration": 4.021
+    },
+    {
+        "text": "the current row we had one of the",
+        "start": 516.75,
+        "duration": 3.36
+    },
+    {
+        "text": "current row at the beginning of the loop",
+        "start": 518.94,
+        "duration": 3.75
+    },
+    {
+        "text": "because the first element is 1 we loop",
+        "start": 520.11,
+        "duration": 4.62
+    },
+    {
+        "text": "through the rest of the elements to up",
+        "start": 522.69,
+        "duration": 4.59
+    },
+    {
+        "text": "to the number that we need and we grab",
+        "start": 524.73,
+        "duration": 2.85
+    },
+    {
+        "text": "four",
+        "start": 527.28,
+        "duration": 1.86
+    },
+    {
+        "text": "the previous row those elements so we",
+        "start": 527.58,
+        "duration": 2.67
+    },
+    {
+        "text": "can add them together and put them in",
+        "start": 529.14,
+        "duration": 3.15
+    },
+    {
+        "text": "the right spots and then we just add the",
+        "start": 530.25,
+        "duration": 3.9
+    },
+    {
+        "text": "completed row we had one of the",
+        "start": 532.29,
+        "duration": 3.09
+    },
+    {
+        "text": "completed row and then we add a to",
+        "start": 534.15,
+        "duration": 2.97
+    },
+    {
+        "text": "triangle and return triangle hopefully",
+        "start": 535.38,
+        "duration": 3.57
+    },
+    {
+        "text": "that makes sense you guys that's pretty",
+        "start": 537.12,
+        "duration": 5.34
+    },
+    {
+        "text": "much all there is you know if you have",
+        "start": 538.95,
+        "duration": 5.16
+    },
+    {
+        "text": "any questions or if you want to talk to",
+        "start": 542.46,
+        "duration": 4.62
+    },
+    {
+        "text": "me you can join my discord and literally",
+        "start": 544.11,
+        "duration": 4.53
+    },
+    {
+        "text": "just personally reach out to me I should",
+        "start": 547.08,
+        "duration": 3.03
+    },
+    {
+        "text": "be able to help you with anything that",
+        "start": 548.64,
+        "duration": 6.0
+    },
+    {
+        "text": "you don't understand and yeah thanks for",
+        "start": 550.11,
+        "duration": 6.24
+    },
+    {
+        "text": "watching and we'll be doing more videos",
+        "start": 554.64,
+        "duration": 5.27
+    },
+    {
+        "text": "so thanks see you guys",
+        "start": 556.35,
+        "duration": 3.56
+    }
+]

@@ -1,0 +1,2957 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.84
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.839,
+        "duration": 2.721
+    },
+    {
+        "text": "let's solve",
+        "start": 3.84,
+        "duration": 3.28
+    },
+    {
+        "text": "climbing stairs so this is going to be",
+        "start": 4.56,
+        "duration": 5.119
+    },
+    {
+        "text": "another dynamic programming problem",
+        "start": 7.12,
+        "duration": 4.479
+    },
+    {
+        "text": "and this is definitely more on the easy",
+        "start": 9.679,
+        "duration": 3.761
+    },
+    {
+        "text": "side definitely compared to some of the",
+        "start": 11.599,
+        "duration": 2.641
+    },
+    {
+        "text": "really hard",
+        "start": 13.44,
+        "duration": 2.399
+    },
+    {
+        "text": "dynamic programming problems that we've",
+        "start": 14.24,
+        "duration": 3.76
+    },
+    {
+        "text": "been solving recently but i still think",
+        "start": 15.839,
+        "duration": 3.681
+    },
+    {
+        "text": "that this is a good problem to really",
+        "start": 18.0,
+        "duration": 3.279
+    },
+    {
+        "text": "understand the fundamentals understand",
+        "start": 19.52,
+        "duration": 3.04
+    },
+    {
+        "text": "you know the brute force",
+        "start": 21.279,
+        "duration": 3.121
+    },
+    {
+        "text": "and taking that brute force you know",
+        "start": 22.56,
+        "duration": 3.84
+    },
+    {
+        "text": "using memoization and then of course",
+        "start": 24.4,
+        "duration": 3.92
+    },
+    {
+        "text": "getting the true dynamic programming",
+        "start": 26.4,
+        "duration": 2.879
+    },
+    {
+        "text": "solution",
+        "start": 28.32,
+        "duration": 3.44
+    },
+    {
+        "text": "and by the way if you don't already know",
+        "start": 29.279,
+        "duration": 4.881
+    },
+    {
+        "text": "we have been tracking a list of blind 75",
+        "start": 31.76,
+        "duration": 4.08
+    },
+    {
+        "text": "questions on the spreadsheet so today",
+        "start": 34.16,
+        "duration": 3.12
+    },
+    {
+        "text": "we're going to be solving this dynamic",
+        "start": 35.84,
+        "duration": 2.48
+    },
+    {
+        "text": "programming one",
+        "start": 37.28,
+        "duration": 2.799
+    },
+    {
+        "text": "the climbing stairs problem so i will be",
+        "start": 38.32,
+        "duration": 3.6
+    },
+    {
+        "text": "adding the solution once this video is",
+        "start": 40.079,
+        "duration": 2.64
+    },
+    {
+        "text": "uploaded",
+        "start": 41.92,
+        "duration": 2.319
+    },
+    {
+        "text": "and the link will be in the description",
+        "start": 42.719,
+        "duration": 2.881
+    },
+    {
+        "text": "if you do want to take a look at this",
+        "start": 44.239,
+        "duration": 1.921
+    },
+    {
+        "text": "sheet",
+        "start": 45.6,
+        "duration": 2.08
+    },
+    {
+        "text": "so the problem statement is pretty",
+        "start": 46.16,
+        "duration": 3.52
+    },
+    {
+        "text": "simple we're climbing a staircase and",
+        "start": 47.68,
+        "duration": 3.12
+    },
+    {
+        "text": "it's going to take us",
+        "start": 49.68,
+        "duration": 3.28
+    },
+    {
+        "text": "n steps to reach the top of the",
+        "start": 50.8,
+        "duration": 3.2
+    },
+    {
+        "text": "staircase",
+        "start": 52.96,
+        "duration": 3.2
+    },
+    {
+        "text": "every time we take a step we have two",
+        "start": 54.0,
+        "duration": 4.079
+    },
+    {
+        "text": "choices of how we can take a step",
+        "start": 56.16,
+        "duration": 4.559
+    },
+    {
+        "text": "we can either just take one single step",
+        "start": 58.079,
+        "duration": 3.601
+    },
+    {
+        "text": "or we can take",
+        "start": 60.719,
+        "duration": 4.16
+    },
+    {
+        "text": "two steps at once and all we want to",
+        "start": 61.68,
+        "duration": 3.92
+    },
+    {
+        "text": "know is",
+        "start": 64.879,
+        "duration": 4.081
+    },
+    {
+        "text": "how many different ways can we get to",
+        "start": 65.6,
+        "duration": 5.28
+    },
+    {
+        "text": "the top of the staircase",
+        "start": 68.96,
+        "duration": 3.76
+    },
+    {
+        "text": "so let's look at the first example n",
+        "start": 70.88,
+        "duration": 3.52
+    },
+    {
+        "text": "equals two that means we need to climb",
+        "start": 72.72,
+        "duration": 3.6
+    },
+    {
+        "text": "two steps so we could draw the picture",
+        "start": 74.4,
+        "duration": 3.28
+    },
+    {
+        "text": "kind of like this right so",
+        "start": 76.32,
+        "duration": 4.08
+    },
+    {
+        "text": "let's say we start over here right this",
+        "start": 77.68,
+        "duration": 3.439
+    },
+    {
+        "text": "is step",
+        "start": 80.4,
+        "duration": 2.48
+    },
+    {
+        "text": "zero basically when we haven't climbed",
+        "start": 81.119,
+        "duration": 4.32
+    },
+    {
+        "text": "anything and our goal is to get up here",
+        "start": 82.88,
+        "duration": 3.68
+    },
+    {
+        "text": "which clearly is",
+        "start": 85.439,
+        "duration": 4.161
+    },
+    {
+        "text": "two steps right so starting from here we",
+        "start": 86.56,
+        "duration": 4.64
+    },
+    {
+        "text": "know we can make two choices right we",
+        "start": 89.6,
+        "duration": 2.24
+    },
+    {
+        "text": "can take",
+        "start": 91.2,
+        "duration": 2.48
+    },
+    {
+        "text": "one step and that would land us over",
+        "start": 91.84,
+        "duration": 3.76
+    },
+    {
+        "text": "here or we could take",
+        "start": 93.68,
+        "duration": 4.0
+    },
+    {
+        "text": "two steps and that would land us over",
+        "start": 95.6,
+        "duration": 4.08
+    },
+    {
+        "text": "here so already we're seeing",
+        "start": 97.68,
+        "duration": 4.719
+    },
+    {
+        "text": "one way is to just take two steps right",
+        "start": 99.68,
+        "duration": 4.0
+    },
+    {
+        "text": "that's what this path",
+        "start": 102.399,
+        "duration": 3.281
+    },
+    {
+        "text": "would take us right that's one way we",
+        "start": 103.68,
+        "duration": 3.759
+    },
+    {
+        "text": "could reach the goal right just taking",
+        "start": 105.68,
+        "duration": 2.96
+    },
+    {
+        "text": "two steps at once",
+        "start": 107.439,
+        "duration": 3.761
+    },
+    {
+        "text": "now if we ended up taking one step then",
+        "start": 108.64,
+        "duration": 3.36
+    },
+    {
+        "text": "we would be",
+        "start": 111.2,
+        "duration": 4.16
+    },
+    {
+        "text": "at this position so from here we would",
+        "start": 112.0,
+        "duration": 5.2
+    },
+    {
+        "text": "we would have that same exact choice",
+        "start": 115.36,
+        "duration": 3.039
+    },
+    {
+        "text": "right we can take",
+        "start": 117.2,
+        "duration": 4.8
+    },
+    {
+        "text": "one step or we can take two steps now",
+        "start": 118.399,
+        "duration": 5.601
+    },
+    {
+        "text": "clearly if we take two steps we've gone",
+        "start": 122.0,
+        "duration": 3.52
+    },
+    {
+        "text": "too far right we were",
+        "start": 124.0,
+        "duration": 3.36
+    },
+    {
+        "text": "only trying to climb two steps total but",
+        "start": 125.52,
+        "duration": 3.92
+    },
+    {
+        "text": "if we you know end up over here",
+        "start": 127.36,
+        "duration": 3.599
+    },
+    {
+        "text": "then you know that's not going to count",
+        "start": 129.44,
+        "duration": 3.28
+    },
+    {
+        "text": "as a path right so that would not count",
+        "start": 130.959,
+        "duration": 4.561
+    },
+    {
+        "text": "but as you can see if we took one step",
+        "start": 132.72,
+        "duration": 4.4
+    },
+    {
+        "text": "initially then we could take another",
+        "start": 135.52,
+        "duration": 3.359
+    },
+    {
+        "text": "single step and that would be another",
+        "start": 137.12,
+        "duration": 2.8
+    },
+    {
+        "text": "way so either",
+        "start": 138.879,
+        "duration": 3.841
+    },
+    {
+        "text": "this is one way we could reach two steps",
+        "start": 139.92,
+        "duration": 4.08
+    },
+    {
+        "text": "or we could just take",
+        "start": 142.72,
+        "duration": 4.48
+    },
+    {
+        "text": "a single double step right so clearly",
+        "start": 144.0,
+        "duration": 4.64
+    },
+    {
+        "text": "there are two different ways we could",
+        "start": 147.2,
+        "duration": 3.28
+    },
+    {
+        "text": "climb the staircase and that's also the",
+        "start": 148.64,
+        "duration": 2.48
+    },
+    {
+        "text": "result",
+        "start": 150.48,
+        "duration": 2.24
+    },
+    {
+        "text": "of this problem and they basically",
+        "start": 151.12,
+        "duration": 3.119
+    },
+    {
+        "text": "explain it over here",
+        "start": 152.72,
+        "duration": 4.08
+    },
+    {
+        "text": "so let's look at the second example",
+        "start": 154.239,
+        "duration": 4.241
+    },
+    {
+        "text": "which is basically if we're climbing",
+        "start": 156.8,
+        "duration": 3.439
+    },
+    {
+        "text": "three steps instead of two right so",
+        "start": 158.48,
+        "duration": 3.839
+    },
+    {
+        "text": "let's look at the drawing so once again",
+        "start": 160.239,
+        "duration": 3.841
+    },
+    {
+        "text": "we're gonna do the exact same thing that",
+        "start": 162.319,
+        "duration": 3.681
+    },
+    {
+        "text": "we did right from here we could take",
+        "start": 164.08,
+        "duration": 4.879
+    },
+    {
+        "text": "one step or we could take two steps",
+        "start": 166.0,
+        "duration": 3.519
+    },
+    {
+        "text": "right",
+        "start": 168.959,
+        "duration": 2.801
+    },
+    {
+        "text": "and so so far we'd get here but remember",
+        "start": 169.519,
+        "duration": 3.841
+    },
+    {
+        "text": "our goal is to climb three steps so",
+        "start": 171.76,
+        "duration": 2.559
+    },
+    {
+        "text": "let's continue",
+        "start": 173.36,
+        "duration": 3.84
+    },
+    {
+        "text": "so from here we could take one step",
+        "start": 174.319,
+        "duration": 4.721
+    },
+    {
+        "text": "which would land us at the result or we",
+        "start": 177.2,
+        "duration": 2.48
+    },
+    {
+        "text": "could take",
+        "start": 179.04,
+        "duration": 2.24
+    },
+    {
+        "text": "two steps which would get us out of",
+        "start": 179.68,
+        "duration": 3.199
+    },
+    {
+        "text": "bounds right that's not what we want to",
+        "start": 181.28,
+        "duration": 2.0
+    },
+    {
+        "text": "do",
+        "start": 182.879,
+        "duration": 3.28
+    },
+    {
+        "text": "so so far we have found one way to get",
+        "start": 183.28,
+        "duration": 4.239
+    },
+    {
+        "text": "us to the result",
+        "start": 186.159,
+        "duration": 3.761
+    },
+    {
+        "text": "but let's continue that from over here",
+        "start": 187.519,
+        "duration": 4.401
+    },
+    {
+        "text": "again we can take a single step which",
+        "start": 189.92,
+        "duration": 4.48
+    },
+    {
+        "text": "would get us over here or we can take",
+        "start": 191.92,
+        "duration": 4.56
+    },
+    {
+        "text": "two steps which would get us at the",
+        "start": 194.4,
+        "duration": 4.479
+    },
+    {
+        "text": "result so now we've found two different",
+        "start": 196.48,
+        "duration": 4.88
+    },
+    {
+        "text": "ways we can get to the last step",
+        "start": 198.879,
+        "duration": 4.241
+    },
+    {
+        "text": "and lastly we still have a path to",
+        "start": 201.36,
+        "duration": 3.36
+    },
+    {
+        "text": "continue right we got here",
+        "start": 203.12,
+        "duration": 3.6
+    },
+    {
+        "text": "by taking one step and then taking",
+        "start": 204.72,
+        "duration": 3.28
+    },
+    {
+        "text": "another single step so",
+        "start": 206.72,
+        "duration": 3.599
+    },
+    {
+        "text": "here we have two choices take one step",
+        "start": 208.0,
+        "duration": 4.08
+    },
+    {
+        "text": "get to the result or take two steps and",
+        "start": 210.319,
+        "duration": 2.721
+    },
+    {
+        "text": "get out of bounds",
+        "start": 212.08,
+        "duration": 3.439
+    },
+    {
+        "text": "so in the end we see that there were",
+        "start": 213.04,
+        "duration": 3.919
+    },
+    {
+        "text": "three different ways",
+        "start": 215.519,
+        "duration": 4.161
+    },
+    {
+        "text": "we were able to get to this last step as",
+        "start": 216.959,
+        "duration": 4.081
+    },
+    {
+        "text": "you can see this is getting really hard",
+        "start": 219.68,
+        "duration": 2.479
+    },
+    {
+        "text": "to visualize",
+        "start": 221.04,
+        "duration": 3.68
+    },
+    {
+        "text": "with a single staircase a more easy way",
+        "start": 222.159,
+        "duration": 3.121
+    },
+    {
+        "text": "would be",
+        "start": 224.72,
+        "duration": 3.28
+    },
+    {
+        "text": "to get a decision tree to visualize and",
+        "start": 225.28,
+        "duration": 3.039
+    },
+    {
+        "text": "at",
+        "start": 228.0,
+        "duration": 2.239
+    },
+    {
+        "text": "every decision remember we can take one",
+        "start": 228.319,
+        "duration": 4.161
+    },
+    {
+        "text": "step or we can take two steps so let's",
+        "start": 230.239,
+        "duration": 3.841
+    },
+    {
+        "text": "try to visualize the problem like that",
+        "start": 232.48,
+        "duration": 3.6
+    },
+    {
+        "text": "and see if we can notice any patterns",
+        "start": 234.08,
+        "duration": 4.079
+    },
+    {
+        "text": "so let's say we're given n equals five",
+        "start": 236.08,
+        "duration": 3.04
+    },
+    {
+        "text": "we're trying to climb",
+        "start": 238.159,
+        "duration": 3.28
+    },
+    {
+        "text": "five steps so we can consider just like",
+        "start": 239.12,
+        "duration": 3.839
+    },
+    {
+        "text": "the previous drawing that we're starting",
+        "start": 241.439,
+        "duration": 2.16
+    },
+    {
+        "text": "at step",
+        "start": 242.959,
+        "duration": 3.521
+    },
+    {
+        "text": "zero and our goal is to get to step five",
+        "start": 243.599,
+        "duration": 3.92
+    },
+    {
+        "text": "now remember",
+        "start": 246.48,
+        "duration": 3.119
+    },
+    {
+        "text": "at every given point we have two",
+        "start": 247.519,
+        "duration": 3.041
+    },
+    {
+        "text": "decisions to make",
+        "start": 249.599,
+        "duration": 3.441
+    },
+    {
+        "text": "we can climb one step or we can climb",
+        "start": 250.56,
+        "duration": 4.239
+    },
+    {
+        "text": "two steps right and depending on the",
+        "start": 253.04,
+        "duration": 3.12
+    },
+    {
+        "text": "decision that we make",
+        "start": 254.799,
+        "duration": 3.041
+    },
+    {
+        "text": "each of these is going to lead to a",
+        "start": 256.16,
+        "duration": 3.759
+    },
+    {
+        "text": "different path we can take to get to the",
+        "start": 257.84,
+        "duration": 3.2
+    },
+    {
+        "text": "result and remember",
+        "start": 259.919,
+        "duration": 2.801
+    },
+    {
+        "text": "all we're trying to do is count the",
+        "start": 261.04,
+        "duration": 4.159
+    },
+    {
+        "text": "number of ways we can get to that result",
+        "start": 262.72,
+        "duration": 4.4
+    },
+    {
+        "text": "so in this decision tree you know we're",
+        "start": 265.199,
+        "duration": 4.321
+    },
+    {
+        "text": "gonna keep making two decisions at every",
+        "start": 267.12,
+        "duration": 3.84
+    },
+    {
+        "text": "step and at the end",
+        "start": 269.52,
+        "duration": 3.52
+    },
+    {
+        "text": "we're gonna count how many different",
+        "start": 270.96,
+        "duration": 3.2
+    },
+    {
+        "text": "ways were we",
+        "start": 273.04,
+        "duration": 4.56
+    },
+    {
+        "text": "able to get to five steps reached",
+        "start": 274.16,
+        "duration": 5.28
+    },
+    {
+        "text": "so we can get to step one and we can get",
+        "start": 277.6,
+        "duration": 3.68
+    },
+    {
+        "text": "to step two let's just continue drawing",
+        "start": 279.44,
+        "duration": 3.36
+    },
+    {
+        "text": "out the decision tree from here we can",
+        "start": 281.28,
+        "duration": 2.8
+    },
+    {
+        "text": "make two more decisions",
+        "start": 282.8,
+        "duration": 3.119
+    },
+    {
+        "text": "we can take one step which would get us",
+        "start": 284.08,
+        "duration": 4.08
+    },
+    {
+        "text": "to two we can take two steps get us to",
+        "start": 285.919,
+        "duration": 2.801
+    },
+    {
+        "text": "three",
+        "start": 288.16,
+        "duration": 2.4
+    },
+    {
+        "text": "and similar here we can take one step",
+        "start": 288.72,
+        "duration": 3.12
+    },
+    {
+        "text": "get us to three",
+        "start": 290.56,
+        "duration": 3.84
+    },
+    {
+        "text": "two steps get us to four from here we",
+        "start": 291.84,
+        "duration": 3.919
+    },
+    {
+        "text": "can also take one step",
+        "start": 294.4,
+        "duration": 4.56
+    },
+    {
+        "text": "get us to three two steps get us to four",
+        "start": 295.759,
+        "duration": 6.0
+    },
+    {
+        "text": "one step get us to four two steps get us",
+        "start": 298.96,
+        "duration": 3.36
+    },
+    {
+        "text": "to five",
+        "start": 301.759,
+        "duration": 2.88
+    },
+    {
+        "text": "now here we can see that we reached the",
+        "start": 302.32,
+        "duration": 3.84
+    },
+    {
+        "text": "result right n equals five",
+        "start": 304.639,
+        "duration": 4.721
+    },
+    {
+        "text": "so this is our first path that we",
+        "start": 306.16,
+        "duration": 5.52
+    },
+    {
+        "text": "could reach to get us to the result",
+        "start": 309.36,
+        "duration": 3.279
+    },
+    {
+        "text": "right you can see we took",
+        "start": 311.68,
+        "duration": 3.2
+    },
+    {
+        "text": "one step then we took two steps then we",
+        "start": 312.639,
+        "duration": 4.4
+    },
+    {
+        "text": "took another two steps so this is our",
+        "start": 314.88,
+        "duration": 2.56
+    },
+    {
+        "text": "result",
+        "start": 317.039,
+        "duration": 2.321
+    },
+    {
+        "text": "once we get to it that's our base case",
+        "start": 317.44,
+        "duration": 3.92
+    },
+    {
+        "text": "right we're gonna solve this recursively",
+        "start": 319.36,
+        "duration": 3.279
+    },
+    {
+        "text": "right that's pretty much what we're",
+        "start": 321.36,
+        "duration": 3.04
+    },
+    {
+        "text": "doing this decision tree is basically",
+        "start": 322.639,
+        "duration": 2.641
+    },
+    {
+        "text": "recursion",
+        "start": 324.4,
+        "duration": 2.799
+    },
+    {
+        "text": "and this is our base case we wouldn't",
+        "start": 325.28,
+        "duration": 3.28
+    },
+    {
+        "text": "want to continue",
+        "start": 327.199,
+        "duration": 4.641
+    },
+    {
+        "text": "if we got here so here we would return",
+        "start": 328.56,
+        "duration": 5.199
+    },
+    {
+        "text": "one we found one way to get to the",
+        "start": 331.84,
+        "duration": 4.079
+    },
+    {
+        "text": "result but for the remaining paths let's",
+        "start": 333.759,
+        "duration": 4.16
+    },
+    {
+        "text": "continue so here we can take one step or",
+        "start": 335.919,
+        "duration": 2.321
+    },
+    {
+        "text": "two",
+        "start": 337.919,
+        "duration": 2.081
+    },
+    {
+        "text": "that'd get us to four this would get us",
+        "start": 338.24,
+        "duration": 3.92
+    },
+    {
+        "text": "to five so you can see once again we",
+        "start": 340.0,
+        "duration": 2.72
+    },
+    {
+        "text": "found",
+        "start": 342.16,
+        "duration": 2.64
+    },
+    {
+        "text": "another way we can get to the results so",
+        "start": 342.72,
+        "duration": 3.759
+    },
+    {
+        "text": "so far we have two different paths that",
+        "start": 344.8,
+        "duration": 3.28
+    },
+    {
+        "text": "can lead us to step five",
+        "start": 346.479,
+        "duration": 3.361
+    },
+    {
+        "text": "and here let's do the same thing if we",
+        "start": 348.08,
+        "duration": 3.76
+    },
+    {
+        "text": "take one step we get to five that's the",
+        "start": 349.84,
+        "duration": 3.84
+    },
+    {
+        "text": "result if we take two steps we get to",
+        "start": 351.84,
+        "duration": 2.32
+    },
+    {
+        "text": "six",
+        "start": 353.68,
+        "duration": 3.12
+    },
+    {
+        "text": "that means we overshot right we went too",
+        "start": 354.16,
+        "duration": 4.479
+    },
+    {
+        "text": "far this is another base case",
+        "start": 356.8,
+        "duration": 4.239
+    },
+    {
+        "text": "if this number of steps ever exceeds",
+        "start": 358.639,
+        "duration": 4.081
+    },
+    {
+        "text": "five then we're going to return",
+        "start": 361.039,
+        "duration": 4.481
+    },
+    {
+        "text": "zero right we found zero ways from this",
+        "start": 362.72,
+        "duration": 4.0
+    },
+    {
+        "text": "path that can reach",
+        "start": 365.52,
+        "duration": 3.92
+    },
+    {
+        "text": "the result so now let's continue over",
+        "start": 366.72,
+        "duration": 4.88
+    },
+    {
+        "text": "here again we take one step or two",
+        "start": 369.44,
+        "duration": 4.4
+    },
+    {
+        "text": "so we'll get to four or five another",
+        "start": 371.6,
+        "duration": 4.0
+    },
+    {
+        "text": "path that leads us to the result",
+        "start": 373.84,
+        "duration": 3.84
+    },
+    {
+        "text": "and here we can also take one step or",
+        "start": 375.6,
+        "duration": 3.52
+    },
+    {
+        "text": "two which would get us five",
+        "start": 377.68,
+        "duration": 4.0
+    },
+    {
+        "text": "or six similarly over here right this is",
+        "start": 379.12,
+        "duration": 3.12
+    },
+    {
+        "text": "another",
+        "start": 381.68,
+        "duration": 2.72
+    },
+    {
+        "text": "four so the exact same thing is going to",
+        "start": 382.24,
+        "duration": 3.84
+    },
+    {
+        "text": "happen do you start to see",
+        "start": 384.4,
+        "duration": 4.72
+    },
+    {
+        "text": "we're repeating the exact same problem",
+        "start": 386.08,
+        "duration": 6.0
+    },
+    {
+        "text": "multiple times how can we better solve",
+        "start": 389.12,
+        "duration": 4.4
+    },
+    {
+        "text": "this problem knowing that",
+        "start": 392.08,
+        "duration": 3.04
+    },
+    {
+        "text": "so now we have another four we're just",
+        "start": 393.52,
+        "duration": 3.119
+    },
+    {
+        "text": "going to repeat the exact same thing",
+        "start": 395.12,
+        "duration": 3.6
+    },
+    {
+        "text": "that we just did before right take one",
+        "start": 396.639,
+        "duration": 3.761
+    },
+    {
+        "text": "step or two we know we're gonna get to a",
+        "start": 398.72,
+        "duration": 2.96
+    },
+    {
+        "text": "five and we know we're going to get to a",
+        "start": 400.4,
+        "duration": 2.0
+    },
+    {
+        "text": "six",
+        "start": 401.68,
+        "duration": 2.959
+    },
+    {
+        "text": "so you can see every path led to the",
+        "start": 402.4,
+        "duration": 4.079
+    },
+    {
+        "text": "base case except for this last one so",
+        "start": 404.639,
+        "duration": 3.361
+    },
+    {
+        "text": "let's complete this we can take one",
+        "start": 406.479,
+        "duration": 3.601
+    },
+    {
+        "text": "step which would get five or two steps",
+        "start": 408.0,
+        "duration": 4.639
+    },
+    {
+        "text": "six okay so now our entire decision tree",
+        "start": 410.08,
+        "duration": 4.16
+    },
+    {
+        "text": "is complete so what's the result gonna",
+        "start": 412.639,
+        "duration": 3.601
+    },
+    {
+        "text": "be remember red means we're gonna return",
+        "start": 414.24,
+        "duration": 4.16
+    },
+    {
+        "text": "zero green means we're gonna return one",
+        "start": 416.24,
+        "duration": 4.0
+    },
+    {
+        "text": "so let's just count the number of greens",
+        "start": 418.4,
+        "duration": 5.28
+    },
+    {
+        "text": "one two three four five six seven eight",
+        "start": 420.24,
+        "duration": 6.72
+    },
+    {
+        "text": "so there were eight different paths from",
+        "start": 423.68,
+        "duration": 6.56
+    },
+    {
+        "text": "the beginning that could reach step five",
+        "start": 426.96,
+        "duration": 5.44
+    },
+    {
+        "text": "but remember since we started here we",
+        "start": 430.24,
+        "duration": 3.76
+    },
+    {
+        "text": "were asking how many different ways",
+        "start": 432.4,
+        "duration": 3.44
+    },
+    {
+        "text": "starting at zero can we get to five and",
+        "start": 434.0,
+        "duration": 2.8
+    },
+    {
+        "text": "then we got to a",
+        "start": 435.84,
+        "duration": 3.199
+    },
+    {
+        "text": "sub problem we got to a sub problem of",
+        "start": 436.8,
+        "duration": 3.36
+    },
+    {
+        "text": "starting at step",
+        "start": 439.039,
+        "duration": 4.0
+    },
+    {
+        "text": "one how many ways can we reach five from",
+        "start": 440.16,
+        "duration": 4.72
+    },
+    {
+        "text": "this decision tree alone we see that",
+        "start": 443.039,
+        "duration": 2.401
+    },
+    {
+        "text": "there's one",
+        "start": 444.88,
+        "duration": 3.039
+    },
+    {
+        "text": "two three four five different ways we",
+        "start": 445.44,
+        "duration": 4.0
+    },
+    {
+        "text": "can reach the result",
+        "start": 447.919,
+        "duration": 4.481
+    },
+    {
+        "text": "and down two if we're starting at step",
+        "start": 449.44,
+        "duration": 3.28
+    },
+    {
+        "text": "two",
+        "start": 452.4,
+        "duration": 2.0
+    },
+    {
+        "text": "there's three different ways we can",
+        "start": 452.72,
+        "duration": 3.919
+    },
+    {
+        "text": "reach the result now if you solve the",
+        "start": 454.4,
+        "duration": 3.12
+    },
+    {
+        "text": "problem like this",
+        "start": 456.639,
+        "duration": 2.641
+    },
+    {
+        "text": "basically using recursion and you could",
+        "start": 457.52,
+        "duration": 3.6
+    },
+    {
+        "text": "probably do it with depth first search",
+        "start": 459.28,
+        "duration": 3.919
+    },
+    {
+        "text": "because this is basically a tree and",
+        "start": 461.12,
+        "duration": 3.519
+    },
+    {
+        "text": "what would be the time complexity of",
+        "start": 463.199,
+        "duration": 2.961
+    },
+    {
+        "text": "that well clearly we you can see that we",
+        "start": 464.639,
+        "duration": 3.201
+    },
+    {
+        "text": "have two decisions each time so it's",
+        "start": 466.16,
+        "duration": 3.92
+    },
+    {
+        "text": "going to be 2 to the power of the height",
+        "start": 467.84,
+        "duration": 3.759
+    },
+    {
+        "text": "of this tree what's the height going to",
+        "start": 470.08,
+        "duration": 1.839
+    },
+    {
+        "text": "be",
+        "start": 471.599,
+        "duration": 2.401
+    },
+    {
+        "text": "it's going to be roughly n equals 5",
+        "start": 471.919,
+        "duration": 3.441
+    },
+    {
+        "text": "right you can see that this is going to",
+        "start": 474.0,
+        "duration": 3.28
+    },
+    {
+        "text": "be the longest path so that's roughly",
+        "start": 475.36,
+        "duration": 3.44
+    },
+    {
+        "text": "the height so the overall time",
+        "start": 477.28,
+        "duration": 2.96
+    },
+    {
+        "text": "complexity is going to be 2 to the power",
+        "start": 478.8,
+        "duration": 1.76
+    },
+    {
+        "text": "of",
+        "start": 480.24,
+        "duration": 2.639
+    },
+    {
+        "text": "n that's not super efficient but you can",
+        "start": 480.56,
+        "duration": 3.039
+    },
+    {
+        "text": "see here",
+        "start": 482.879,
+        "duration": 2.32
+    },
+    {
+        "text": "we're repeating the same problem",
+        "start": 483.599,
+        "duration": 3.761
+    },
+    {
+        "text": "multiple times right when we get over",
+        "start": 485.199,
+        "duration": 2.801
+    },
+    {
+        "text": "here we're",
+        "start": 487.36,
+        "duration": 2.8
+    },
+    {
+        "text": "asking how many different ways starting",
+        "start": 488.0,
+        "duration": 4.0
+    },
+    {
+        "text": "from 2 can we get to five right",
+        "start": 490.16,
+        "duration": 5.28
+    },
+    {
+        "text": "and down in this decision tree we found",
+        "start": 492.0,
+        "duration": 5.759
+    },
+    {
+        "text": "yes there were three different ways",
+        "start": 495.44,
+        "duration": 3.759
+    },
+    {
+        "text": "right so then when we",
+        "start": 497.759,
+        "duration": 4.481
+    },
+    {
+        "text": "get over here why why do we have to",
+        "start": 499.199,
+        "duration": 6.4
+    },
+    {
+        "text": "recompute the exact same thing",
+        "start": 502.24,
+        "duration": 5.84
+    },
+    {
+        "text": "take a look at these two purple blocks i",
+        "start": 505.599,
+        "duration": 3.361
+    },
+    {
+        "text": "just drew",
+        "start": 508.08,
+        "duration": 4.079
+    },
+    {
+        "text": "notice how this decision tree looks the",
+        "start": 508.96,
+        "duration": 5.04
+    },
+    {
+        "text": "exact same as this one",
+        "start": 512.159,
+        "duration": 4.481
+    },
+    {
+        "text": "because in both cases we're solving the",
+        "start": 514.0,
+        "duration": 3.279
+    },
+    {
+        "text": "exact",
+        "start": 516.64,
+        "duration": 2.879
+    },
+    {
+        "text": "same sub problem and since we're doing",
+        "start": 517.279,
+        "duration": 3.68
+    },
+    {
+        "text": "it depth first search",
+        "start": 519.519,
+        "duration": 3.681
+    },
+    {
+        "text": "this one is going to be solved first",
+        "start": 520.959,
+        "duration": 3.041
+    },
+    {
+        "text": "right so",
+        "start": 523.2,
+        "duration": 3.12
+    },
+    {
+        "text": "if we solve this entire problem what we",
+        "start": 524.0,
+        "duration": 3.04
+    },
+    {
+        "text": "said was",
+        "start": 526.32,
+        "duration": 2.72
+    },
+    {
+        "text": "okay we found out starting at step two",
+        "start": 527.04,
+        "duration": 3.84
+    },
+    {
+        "text": "there were three different ways to get",
+        "start": 529.04,
+        "duration": 4.56
+    },
+    {
+        "text": "to step five so when we get here why",
+        "start": 530.88,
+        "duration": 3.68
+    },
+    {
+        "text": "don't we just take",
+        "start": 533.6,
+        "duration": 3.44
+    },
+    {
+        "text": "that result store it in memory store it",
+        "start": 534.56,
+        "duration": 3.36
+    },
+    {
+        "text": "in dp",
+        "start": 537.04,
+        "duration": 3.44
+    },
+    {
+        "text": "or basically this is a cache right we're",
+        "start": 537.92,
+        "duration": 4.16
+    },
+    {
+        "text": "we're storing it in memory so then when",
+        "start": 540.48,
+        "duration": 3.28
+    },
+    {
+        "text": "we get here we can just say we already",
+        "start": 542.08,
+        "duration": 3.28
+    },
+    {
+        "text": "know the result of this",
+        "start": 543.76,
+        "duration": 3.92
+    },
+    {
+        "text": "meaning that we don't need to draw out",
+        "start": 545.36,
+        "duration": 3.84
+    },
+    {
+        "text": "the entire decision tree we're just",
+        "start": 547.68,
+        "duration": 3.12
+    },
+    {
+        "text": "going to skip that all together we're",
+        "start": 549.2,
+        "duration": 2.72
+    },
+    {
+        "text": "not going to draw this",
+        "start": 550.8,
+        "duration": 2.88
+    },
+    {
+        "text": "we're not going to draw that and we're",
+        "start": 551.92,
+        "duration": 3.28
+    },
+    {
+        "text": "not going to draw any",
+        "start": 553.68,
+        "duration": 4.159
+    },
+    {
+        "text": "levels of this tree so as you can see",
+        "start": 555.2,
+        "duration": 3.6
+    },
+    {
+        "text": "i'm eliminating",
+        "start": 557.839,
+        "duration": 3.921
+    },
+    {
+        "text": "all that repeated work by saving that",
+        "start": 558.8,
+        "duration": 3.84
+    },
+    {
+        "text": "solution",
+        "start": 561.76,
+        "duration": 3.44
+    },
+    {
+        "text": "but that's not all right we see over",
+        "start": 562.64,
+        "duration": 3.199
+    },
+    {
+        "text": "here",
+        "start": 565.2,
+        "duration": 2.0
+    },
+    {
+        "text": "we're asking a different sub problem",
+        "start": 565.839,
+        "duration": 2.641
+    },
+    {
+        "text": "starting at step three how many",
+        "start": 567.2,
+        "duration": 2.88
+    },
+    {
+        "text": "different ways can we get to n equals",
+        "start": 568.48,
+        "duration": 2.08
+    },
+    {
+        "text": "five",
+        "start": 570.08,
+        "duration": 2.319
+    },
+    {
+        "text": "well in this case it was two different",
+        "start": 570.56,
+        "duration": 4.64
+    },
+    {
+        "text": "ways right notice how this decision tree",
+        "start": 572.399,
+        "duration": 6.0
+    },
+    {
+        "text": "is the exact same over here because",
+        "start": 575.2,
+        "duration": 4.88
+    },
+    {
+        "text": "here we're asking that same question",
+        "start": 578.399,
+        "duration": 3.44
+    },
+    {
+        "text": "starting at step three what's the number",
+        "start": 580.08,
+        "duration": 3.6
+    },
+    {
+        "text": "of ways and since we're doing the step",
+        "start": 581.839,
+        "duration": 2.641
+    },
+    {
+        "text": "for search",
+        "start": 583.68,
+        "duration": 2.32
+    },
+    {
+        "text": "this one is going to end up being",
+        "start": 584.48,
+        "duration": 3.84
+    },
+    {
+        "text": "computed before this one",
+        "start": 586.0,
+        "duration": 4.399
+    },
+    {
+        "text": "so when we get here we can just say we",
+        "start": 588.32,
+        "duration": 3.84
+    },
+    {
+        "text": "already know the answer is",
+        "start": 590.399,
+        "duration": 3.761
+    },
+    {
+        "text": "2 so we don't need to run through the",
+        "start": 592.16,
+        "duration": 4.32
+    },
+    {
+        "text": "entire decision tree again",
+        "start": 594.16,
+        "duration": 5.119
+    },
+    {
+        "text": "so in this case as well we can eliminate",
+        "start": 596.48,
+        "duration": 4.56
+    },
+    {
+        "text": "that repeated work so i'm just going to",
+        "start": 599.279,
+        "duration": 3.921
+    },
+    {
+        "text": "cross this entire thing out",
+        "start": 601.04,
+        "duration": 4.0
+    },
+    {
+        "text": "and we're not done yet see over here",
+        "start": 603.2,
+        "duration": 3.6
+    },
+    {
+        "text": "we're asking starting at step four",
+        "start": 605.04,
+        "duration": 3.52
+    },
+    {
+        "text": "how many ways can we get to five that",
+        "start": 606.8,
+        "duration": 3.52
+    },
+    {
+        "text": "same problem is over here",
+        "start": 608.56,
+        "duration": 3.6
+    },
+    {
+        "text": "notice how they have the exact same",
+        "start": 610.32,
+        "duration": 3.44
+    },
+    {
+        "text": "decision tree this one is going to be",
+        "start": 612.16,
+        "duration": 3.119
+    },
+    {
+        "text": "computed first because we're doing debt",
+        "start": 613.76,
+        "duration": 2.24
+    },
+    {
+        "text": "for search",
+        "start": 615.279,
+        "duration": 2.481
+    },
+    {
+        "text": "so once again let's eliminate this",
+        "start": 616.0,
+        "duration": 3.12
+    },
+    {
+        "text": "repeated work",
+        "start": 617.76,
+        "duration": 4.0
+    },
+    {
+        "text": "so now you can see when we do eliminate",
+        "start": 619.12,
+        "duration": 3.92
+    },
+    {
+        "text": "all that repeated work",
+        "start": 621.76,
+        "duration": 3.36
+    },
+    {
+        "text": "this is what our decision tree ends up",
+        "start": 623.04,
+        "duration": 3.6
+    },
+    {
+        "text": "looking like and this",
+        "start": 625.12,
+        "duration": 4.959
+    },
+    {
+        "text": "is roughly o of n this is",
+        "start": 626.64,
+        "duration": 6.24
+    },
+    {
+        "text": "linear time solution reason being we're",
+        "start": 630.079,
+        "duration": 5.281
+    },
+    {
+        "text": "only solving each sub problem once right",
+        "start": 632.88,
+        "duration": 4.88
+    },
+    {
+        "text": "so we know that the first sub problem",
+        "start": 635.36,
+        "duration": 4.32
+    },
+    {
+        "text": "the original problem is starting at zero",
+        "start": 637.76,
+        "duration": 3.519
+    },
+    {
+        "text": "then we get a sub problem of",
+        "start": 639.68,
+        "duration": 5.36
+    },
+    {
+        "text": "one two three four all the way to",
+        "start": 641.279,
+        "duration": 5.921
+    },
+    {
+        "text": "five which is our base case right so",
+        "start": 645.04,
+        "duration": 3.84
+    },
+    {
+        "text": "each of these sub problems is just being",
+        "start": 647.2,
+        "duration": 2.72
+    },
+    {
+        "text": "solved once",
+        "start": 648.88,
+        "duration": 3.84
+    },
+    {
+        "text": "n is five so overall the time complexity",
+        "start": 649.92,
+        "duration": 4.64
+    },
+    {
+        "text": "is big o of n",
+        "start": 652.72,
+        "duration": 4.08
+    },
+    {
+        "text": "and this is basically the the dynamic",
+        "start": 654.56,
+        "duration": 3.76
+    },
+    {
+        "text": "programming solution where we are",
+        "start": 656.8,
+        "duration": 5.279
+    },
+    {
+        "text": "caching the result aka memoization",
+        "start": 658.32,
+        "duration": 6.32
+    },
+    {
+        "text": "so we're using memoization but this",
+        "start": 662.079,
+        "duration": 4.241
+    },
+    {
+        "text": "problem can actually be solved with a",
+        "start": 664.64,
+        "duration": 3.92
+    },
+    {
+        "text": "true dynamic programming solution",
+        "start": 666.32,
+        "duration": 4.639
+    },
+    {
+        "text": "as you can see starting at the result",
+        "start": 668.56,
+        "duration": 3.44
+    },
+    {
+        "text": "the the result",
+        "start": 670.959,
+        "duration": 4.481
+    },
+    {
+        "text": "of zero depends on the sub problem",
+        "start": 672.0,
+        "duration": 5.279
+    },
+    {
+        "text": "this one right and this sub problem",
+        "start": 675.44,
+        "duration": 3.76
+    },
+    {
+        "text": "depends on another sub problem",
+        "start": 677.279,
+        "duration": 3.921
+    },
+    {
+        "text": "which depends on another sub problem",
+        "start": 679.2,
+        "duration": 3.84
+    },
+    {
+        "text": "which depends on another sub problem",
+        "start": 681.2,
+        "duration": 4.48
+    },
+    {
+        "text": "which depends on our base case so why",
+        "start": 683.04,
+        "duration": 3.2
+    },
+    {
+        "text": "don't we",
+        "start": 685.68,
+        "duration": 3.599
+    },
+    {
+        "text": "start at the bottom solve the base case",
+        "start": 686.24,
+        "duration": 6.8
+    },
+    {
+        "text": "and then work our way up to the original",
+        "start": 689.279,
+        "duration": 4.56
+    },
+    {
+        "text": "problem",
+        "start": 693.04,
+        "duration": 3.2
+    },
+    {
+        "text": "at zero right why don't we start at the",
+        "start": 693.839,
+        "duration": 3.68
+    },
+    {
+        "text": "bottom work our way",
+        "start": 696.24,
+        "duration": 4.4
+    },
+    {
+        "text": "up this is called a bottom up this is",
+        "start": 697.519,
+        "duration": 4.161
+    },
+    {
+        "text": "called a bottom",
+        "start": 700.64,
+        "duration": 2.96
+    },
+    {
+        "text": "up dynamic programming approach so",
+        "start": 701.68,
+        "duration": 2.88
+    },
+    {
+        "text": "that's what i'm going to show you we're",
+        "start": 703.6,
+        "duration": 2.479
+    },
+    {
+        "text": "going to start at the base case",
+        "start": 704.56,
+        "duration": 3.76
+    },
+    {
+        "text": "and then work our way up so remember",
+        "start": 706.079,
+        "duration": 3.2
+    },
+    {
+        "text": "we're starting",
+        "start": 708.32,
+        "duration": 3.12
+    },
+    {
+        "text": "at position zero and our goal is to get",
+        "start": 709.279,
+        "duration": 3.12
+    },
+    {
+        "text": "to the fifth step",
+        "start": 711.44,
+        "duration": 2.88
+    },
+    {
+        "text": "right each time we can take one step or",
+        "start": 712.399,
+        "duration": 3.601
+    },
+    {
+        "text": "we can take two steps right",
+        "start": 714.32,
+        "duration": 3.92
+    },
+    {
+        "text": "so i'm going to be storing our result in",
+        "start": 716.0,
+        "duration": 4.079
+    },
+    {
+        "text": "an array called dp",
+        "start": 718.24,
+        "duration": 4.24
+    },
+    {
+        "text": "so we're going to have a position in dp",
+        "start": 720.079,
+        "duration": 3.681
+    },
+    {
+        "text": "all the way from index",
+        "start": 722.48,
+        "duration": 4.32
+    },
+    {
+        "text": "0 all the way up to index n which is",
+        "start": 723.76,
+        "duration": 5.04
+    },
+    {
+        "text": "going to be our input value remember",
+        "start": 726.8,
+        "duration": 4.159
+    },
+    {
+        "text": "so remember we're we're at the base case",
+        "start": 728.8,
+        "duration": 4.0
+    },
+    {
+        "text": "initially right what's the base case",
+        "start": 730.959,
+        "duration": 2.401
+    },
+    {
+        "text": "gonna be",
+        "start": 732.8,
+        "duration": 2.8
+    },
+    {
+        "text": "well at the last step if we start here",
+        "start": 733.36,
+        "duration": 3.919
+    },
+    {
+        "text": "how many different ways can we land here",
+        "start": 735.6,
+        "duration": 2.64
+    },
+    {
+        "text": "well that's just gonna be",
+        "start": 737.279,
+        "duration": 3.521
+    },
+    {
+        "text": "one right that's our default value so",
+        "start": 738.24,
+        "duration": 3.039
+    },
+    {
+        "text": "now",
+        "start": 740.8,
+        "duration": 2.88
+    },
+    {
+        "text": "that we solved that we are able to solve",
+        "start": 741.279,
+        "duration": 3.921
+    },
+    {
+        "text": "this one right because remember this",
+        "start": 743.68,
+        "duration": 3.44
+    },
+    {
+        "text": "problem depends on the sub problem of",
+        "start": 745.2,
+        "duration": 2.8
+    },
+    {
+        "text": "this",
+        "start": 747.12,
+        "duration": 2.88
+    },
+    {
+        "text": "so from here let's say we're starting",
+        "start": 748.0,
+        "duration": 3.04
+    },
+    {
+        "text": "here we can take",
+        "start": 750.0,
+        "duration": 3.36
+    },
+    {
+        "text": "one step which lands us at the result we",
+        "start": 751.04,
+        "duration": 3.2
+    },
+    {
+        "text": "can take",
+        "start": 753.36,
+        "duration": 3.279
+    },
+    {
+        "text": "two steps which lands us out of bounds",
+        "start": 754.24,
+        "duration": 3.92
+    },
+    {
+        "text": "right so how many different ways",
+        "start": 756.639,
+        "duration": 4.161
+    },
+    {
+        "text": "from here can we reach the goal again",
+        "start": 758.16,
+        "duration": 4.32
+    },
+    {
+        "text": "it's going to be one",
+        "start": 760.8,
+        "duration": 3.76
+    },
+    {
+        "text": "and do you notice how this is always",
+        "start": 762.48,
+        "duration": 3.039
+    },
+    {
+        "text": "going to be the case",
+        "start": 764.56,
+        "duration": 3.12
+    },
+    {
+        "text": "even if we had something like n equals a",
+        "start": 765.519,
+        "duration": 4.081
+    },
+    {
+        "text": "hundred so let's say this was actually a",
+        "start": 767.68,
+        "duration": 3.839
+    },
+    {
+        "text": "hundred and this was 99",
+        "start": 769.6,
+        "duration": 4.0
+    },
+    {
+        "text": "this would always be one right this is",
+        "start": 771.519,
+        "duration": 3.521
+    },
+    {
+        "text": "always gonna be one because",
+        "start": 773.6,
+        "duration": 3.52
+    },
+    {
+        "text": "it's at the goal and starting from here",
+        "start": 775.04,
+        "duration": 3.599
+    },
+    {
+        "text": "it's also always going to be",
+        "start": 777.12,
+        "duration": 4.56
+    },
+    {
+        "text": "one because we can take one step which",
+        "start": 778.639,
+        "duration": 4.32
+    },
+    {
+        "text": "would get us to the result or we could",
+        "start": 781.68,
+        "duration": 2.719
+    },
+    {
+        "text": "take two steps which would get us out of",
+        "start": 782.959,
+        "duration": 3.44
+    },
+    {
+        "text": "bounds so no matter what the n",
+        "start": 784.399,
+        "duration": 5.281
+    },
+    {
+        "text": "e the input value n is this is always",
+        "start": 786.399,
+        "duration": 4.24
+    },
+    {
+        "text": "going to be the case",
+        "start": 789.68,
+        "duration": 4.08
+    },
+    {
+        "text": "it's always going to be uh 1 1.",
+        "start": 790.639,
+        "duration": 4.161
+    },
+    {
+        "text": "next we're going to get to the",
+        "start": 793.76,
+        "duration": 2.8
+    },
+    {
+        "text": "interesting part so then we want to know",
+        "start": 794.8,
+        "duration": 3.279
+    },
+    {
+        "text": "okay how many different ways from here",
+        "start": 796.56,
+        "duration": 2.399
+    },
+    {
+        "text": "can we reach",
+        "start": 798.079,
+        "duration": 3.281
+    },
+    {
+        "text": "five well this depends on two sub",
+        "start": 798.959,
+        "duration": 3.521
+    },
+    {
+        "text": "problems which come",
+        "start": 801.36,
+        "duration": 3.039
+    },
+    {
+        "text": "after it right so we can take one step",
+        "start": 802.48,
+        "duration": 4.0
+    },
+    {
+        "text": "over here or two steps over here right",
+        "start": 804.399,
+        "duration": 4.081
+    },
+    {
+        "text": "so and then we get to the sub problem",
+        "start": 806.48,
+        "duration": 2.4
+    },
+    {
+        "text": "right",
+        "start": 808.48,
+        "duration": 3.599
+    },
+    {
+        "text": "so from four we don't need to continue",
+        "start": 808.88,
+        "duration": 4.88
+    },
+    {
+        "text": "to figure out how many different ways",
+        "start": 812.079,
+        "duration": 4.161
+    },
+    {
+        "text": "from four can we get to five because we",
+        "start": 813.76,
+        "duration": 4.4
+    },
+    {
+        "text": "just computed that that's why we're",
+        "start": 816.24,
+        "duration": 3.92
+    },
+    {
+        "text": "using dynamic programming that's why we",
+        "start": 818.16,
+        "duration": 3.679
+    },
+    {
+        "text": "have this array because we already",
+        "start": 820.16,
+        "duration": 2.4
+    },
+    {
+        "text": "computed",
+        "start": 821.839,
+        "duration": 2.481
+    },
+    {
+        "text": "starting at four how many different ways",
+        "start": 822.56,
+        "duration": 3.76
+    },
+    {
+        "text": "can we reach five and we also",
+        "start": 824.32,
+        "duration": 3.759
+    },
+    {
+        "text": "starting at five how many different ways",
+        "start": 826.32,
+        "duration": 3.6
+    },
+    {
+        "text": "can we reach five that's also",
+        "start": 828.079,
+        "duration": 4.641
+    },
+    {
+        "text": "one so what we're gonna do in this value",
+        "start": 829.92,
+        "duration": 4.08
+    },
+    {
+        "text": "is basically take",
+        "start": 832.72,
+        "duration": 5.04
+    },
+    {
+        "text": "these next two values add them together",
+        "start": 834.0,
+        "duration": 5.6
+    },
+    {
+        "text": "one plus one and then we're gonna get",
+        "start": 837.76,
+        "duration": 4.24
+    },
+    {
+        "text": "two over here and we're gonna do the",
+        "start": 839.6,
+        "duration": 3.84
+    },
+    {
+        "text": "exact same thing",
+        "start": 842.0,
+        "duration": 3.839
+    },
+    {
+        "text": "for this position two so we know here we",
+        "start": 843.44,
+        "duration": 3.519
+    },
+    {
+        "text": "could take one step",
+        "start": 845.839,
+        "duration": 3.601
+    },
+    {
+        "text": "or two steps right so what we wanna do",
+        "start": 846.959,
+        "duration": 4.161
+    },
+    {
+        "text": "from here three is find out how many",
+        "start": 849.44,
+        "duration": 3.04
+    },
+    {
+        "text": "different ways can we reach five",
+        "start": 851.12,
+        "duration": 3.68
+    },
+    {
+        "text": "we just computed that that's two and",
+        "start": 852.48,
+        "duration": 4.0
+    },
+    {
+        "text": "from 4 we want to know how many",
+        "start": 854.8,
+        "duration": 2.88
+    },
+    {
+        "text": "different ways can we reach",
+        "start": 856.48,
+        "duration": 3.68
+    },
+    {
+        "text": "5 we also already computed that that's",
+        "start": 857.68,
+        "duration": 4.24
+    },
+    {
+        "text": "one so what we can do is take",
+        "start": 860.16,
+        "duration": 4.56
+    },
+    {
+        "text": "these two values add them together and",
+        "start": 861.92,
+        "duration": 3.76
+    },
+    {
+        "text": "that's going to be",
+        "start": 864.72,
+        "duration": 3.44
+    },
+    {
+        "text": "what we put here so starting at 2 we can",
+        "start": 865.68,
+        "duration": 3.44
+    },
+    {
+        "text": "get to 5",
+        "start": 868.16,
+        "duration": 3.44
+    },
+    {
+        "text": "three different ways and at this point i",
+        "start": 869.12,
+        "duration": 3.92
+    },
+    {
+        "text": "bet you probably get the idea we're",
+        "start": 871.6,
+        "duration": 3.28
+    },
+    {
+        "text": "gonna do the exact same thing over here",
+        "start": 873.04,
+        "duration": 4.799
+    },
+    {
+        "text": "so what value are we gonna put over here",
+        "start": 874.88,
+        "duration": 3.759
+    },
+    {
+        "text": "just take these",
+        "start": 877.839,
+        "duration": 3.12
+    },
+    {
+        "text": "next two values add them together three",
+        "start": 878.639,
+        "duration": 3.44
+    },
+    {
+        "text": "plus two is gonna be",
+        "start": 880.959,
+        "duration": 3.44
+    },
+    {
+        "text": "five and remember this is what we were",
+        "start": 882.079,
+        "duration": 3.681
+    },
+    {
+        "text": "originally trying to compute this is",
+        "start": 884.399,
+        "duration": 2.961
+    },
+    {
+        "text": "going to be the result it depends on",
+        "start": 885.76,
+        "duration": 3.28
+    },
+    {
+        "text": "only two sub problems",
+        "start": 887.36,
+        "duration": 3.36
+    },
+    {
+        "text": "which are listed right after it five",
+        "start": 889.04,
+        "duration": 3.68
+    },
+    {
+        "text": "plus three that's going to be eight so",
+        "start": 890.72,
+        "duration": 3.119
+    },
+    {
+        "text": "that's the result",
+        "start": 892.72,
+        "duration": 2.559
+    },
+    {
+        "text": "if you're familiar with what the",
+        "start": 893.839,
+        "duration": 3.521
+    },
+    {
+        "text": "fibonacci sequence is the fibonacci",
+        "start": 895.279,
+        "duration": 2.881
+    },
+    {
+        "text": "numbers",
+        "start": 897.36,
+        "duration": 2.32
+    },
+    {
+        "text": "that's exactly what we're doing right",
+        "start": 898.16,
+        "duration": 3.44
+    },
+    {
+        "text": "now we're starting at the base case of 1",
+        "start": 899.68,
+        "duration": 2.48
+    },
+    {
+        "text": "1",
+        "start": 901.6,
+        "duration": 2.799
+    },
+    {
+        "text": "adding these two values to get the next",
+        "start": 902.16,
+        "duration": 3.84
+    },
+    {
+        "text": "result then we're adding these two",
+        "start": 904.399,
+        "duration": 2.8
+    },
+    {
+        "text": "values to get three",
+        "start": 906.0,
+        "duration": 2.639
+    },
+    {
+        "text": "then we're adding these two values to",
+        "start": 907.199,
+        "duration": 3.041
+    },
+    {
+        "text": "get five then we're adding these two",
+        "start": 908.639,
+        "duration": 2.961
+    },
+    {
+        "text": "values to get a",
+        "start": 910.24,
+        "duration": 3.36
+    },
+    {
+        "text": "so you may or may not be familiar with",
+        "start": 911.6,
+        "duration": 3.359
+    },
+    {
+        "text": "it but that's what we're doing",
+        "start": 913.6,
+        "duration": 2.88
+    },
+    {
+        "text": "and you may have also noticed we're",
+        "start": 914.959,
+        "duration": 3.361
+    },
+    {
+        "text": "using extra memory right we're having an",
+        "start": 916.48,
+        "duration": 4.0
+    },
+    {
+        "text": "entire array size equals n that's going",
+        "start": 918.32,
+        "duration": 3.199
+    },
+    {
+        "text": "to be o of n",
+        "start": 920.48,
+        "duration": 3.039
+    },
+    {
+        "text": "extra memory but is it actually needed",
+        "start": 921.519,
+        "duration": 3.521
+    },
+    {
+        "text": "to have an entire array",
+        "start": 923.519,
+        "duration": 3.841
+    },
+    {
+        "text": "notice how each value such as this one",
+        "start": 925.04,
+        "duration": 4.56
+    },
+    {
+        "text": "only depends on the two values that come",
+        "start": 927.36,
+        "duration": 4.479
+    },
+    {
+        "text": "after it and this one only depended on",
+        "start": 929.6,
+        "duration": 3.359
+    },
+    {
+        "text": "the two values that came",
+        "start": 931.839,
+        "duration": 3.92
+    },
+    {
+        "text": "after it so in reality we don't need to",
+        "start": 932.959,
+        "duration": 4.481
+    },
+    {
+        "text": "have an entire array we just need to",
+        "start": 935.759,
+        "duration": 2.0
+    },
+    {
+        "text": "have",
+        "start": 937.44,
+        "duration": 3.28
+    },
+    {
+        "text": "two different variables let's initialize",
+        "start": 937.759,
+        "duration": 4.561
+    },
+    {
+        "text": "the two variables like this",
+        "start": 940.72,
+        "duration": 4.64
+    },
+    {
+        "text": "one is gonna be this position two",
+        "start": 942.32,
+        "duration": 5.759
+    },
+    {
+        "text": "is gonna be this position because",
+        "start": 945.36,
+        "duration": 4.399
+    },
+    {
+        "text": "starting from here we wanna know how",
+        "start": 948.079,
+        "duration": 2.88
+    },
+    {
+        "text": "many different ways could we reach the",
+        "start": 949.759,
+        "duration": 2.08
+    },
+    {
+        "text": "result if we took",
+        "start": 950.959,
+        "duration": 2.8
+    },
+    {
+        "text": "one step that's why this is called one",
+        "start": 951.839,
+        "duration": 3.36
+    },
+    {
+        "text": "and if we took two steps",
+        "start": 953.759,
+        "duration": 3.52
+    },
+    {
+        "text": "that's why this is called two and we're",
+        "start": 955.199,
+        "duration": 3.841
+    },
+    {
+        "text": "basically going to be computing this",
+        "start": 957.279,
+        "duration": 4.0
+    },
+    {
+        "text": "next value right and once we compute",
+        "start": 959.04,
+        "duration": 4.159
+    },
+    {
+        "text": "this next value we're gonna shift our",
+        "start": 961.279,
+        "duration": 3.441
+    },
+    {
+        "text": "one variable over here",
+        "start": 963.199,
+        "duration": 3.601
+    },
+    {
+        "text": "and we're gonna shift our two variable",
+        "start": 964.72,
+        "duration": 4.0
+    },
+    {
+        "text": "over here and we're going to keep doing",
+        "start": 966.8,
+        "duration": 3.68
+    },
+    {
+        "text": "that until we get to the result",
+        "start": 968.72,
+        "duration": 5.2
+    },
+    {
+        "text": "of zero and if we initialize two",
+        "start": 970.48,
+        "duration": 6.24
+    },
+    {
+        "text": "initial variables one and two as values",
+        "start": 973.92,
+        "duration": 4.159
+    },
+    {
+        "text": "one how many different",
+        "start": 976.72,
+        "duration": 3.119
+    },
+    {
+        "text": "values do we have to compute that come",
+        "start": 978.079,
+        "duration": 3.281
+    },
+    {
+        "text": "after in this case you can see we have",
+        "start": 979.839,
+        "duration": 2.24
+    },
+    {
+        "text": "to compute",
+        "start": 981.36,
+        "duration": 3.36
+    },
+    {
+        "text": "four values right so basically we",
+        "start": 982.079,
+        "duration": 3.281
+    },
+    {
+        "text": "compute",
+        "start": 984.72,
+        "duration": 3.84
+    },
+    {
+        "text": "n minus one values we have to loop n",
+        "start": 985.36,
+        "duration": 6.24
+    },
+    {
+        "text": "minus one times and then when our one",
+        "start": 988.56,
+        "duration": 3.76
+    },
+    {
+        "text": "variable",
+        "start": 991.6,
+        "duration": 3.52
+    },
+    {
+        "text": "ends up getting in this position that's",
+        "start": 992.32,
+        "duration": 3.84
+    },
+    {
+        "text": "what we're going to return",
+        "start": 995.12,
+        "duration": 3.36
+    },
+    {
+        "text": "as the result so this was a really long",
+        "start": 996.16,
+        "duration": 4.08
+    },
+    {
+        "text": "explanation because we did a lot of",
+        "start": 998.48,
+        "duration": 3.359
+    },
+    {
+        "text": "analysis but when i actually show you",
+        "start": 1000.24,
+        "duration": 3.519
+    },
+    {
+        "text": "the code it's going to be really simple",
+        "start": 1001.839,
+        "duration": 4.641
+    },
+    {
+        "text": "using this idea of two variables being",
+        "start": 1003.759,
+        "duration": 3.281
+    },
+    {
+        "text": "shifted",
+        "start": 1006.48,
+        "duration": 3.76
+    },
+    {
+        "text": "n minus 1 times so as i said from the",
+        "start": 1007.04,
+        "duration": 4.64
+    },
+    {
+        "text": "drawing explanation we're gonna have two",
+        "start": 1010.24,
+        "duration": 2.719
+    },
+    {
+        "text": "variables one and two",
+        "start": 1011.68,
+        "duration": 4.0
+    },
+    {
+        "text": "both are going to be initialized as one",
+        "start": 1012.959,
+        "duration": 3.201
+    },
+    {
+        "text": "and",
+        "start": 1015.68,
+        "duration": 2.719
+    },
+    {
+        "text": "then we're just gonna loop through n",
+        "start": 1016.16,
+        "duration": 4.56
+    },
+    {
+        "text": "minus one time so for i in range",
+        "start": 1018.399,
+        "duration": 4.8
+    },
+    {
+        "text": "n minus one and we're gonna continuously",
+        "start": 1020.72,
+        "duration": 4.719
+    },
+    {
+        "text": "update these two variables one and two",
+        "start": 1023.199,
+        "duration": 3.921
+    },
+    {
+        "text": "so the first thing i'm gonna do is",
+        "start": 1025.439,
+        "duration": 3.12
+    },
+    {
+        "text": "update one",
+        "start": 1027.12,
+        "duration": 4.959
+    },
+    {
+        "text": "one is gonna be set to one plus two",
+        "start": 1028.559,
+        "duration": 5.52
+    },
+    {
+        "text": "right because we're just adding the two",
+        "start": 1032.079,
+        "duration": 3.041
+    },
+    {
+        "text": "previous values",
+        "start": 1034.079,
+        "duration": 3.281
+    },
+    {
+        "text": "and then getting the new result so one",
+        "start": 1035.12,
+        "duration": 3.76
+    },
+    {
+        "text": "is being updated and we would also want",
+        "start": 1037.36,
+        "duration": 2.24
+    },
+    {
+        "text": "to shift",
+        "start": 1038.88,
+        "duration": 3.439
+    },
+    {
+        "text": "two to whatever the previous value of",
+        "start": 1039.6,
+        "duration": 3.439
+    },
+    {
+        "text": "one",
+        "start": 1042.319,
+        "duration": 2.961
+    },
+    {
+        "text": "was but you can see that we're updating",
+        "start": 1043.039,
+        "duration": 4.88
+    },
+    {
+        "text": "one before we actually shift two so what",
+        "start": 1045.28,
+        "duration": 4.32
+    },
+    {
+        "text": "we're actually going to do is store",
+        "start": 1047.919,
+        "duration": 5.041
+    },
+    {
+        "text": "one in a temporary variable before",
+        "start": 1049.6,
+        "duration": 5.199
+    },
+    {
+        "text": "we actually update it and then we're",
+        "start": 1052.96,
+        "duration": 3.839
+    },
+    {
+        "text": "going to set two to the temporary",
+        "start": 1054.799,
+        "duration": 2.801
+    },
+    {
+        "text": "variable",
+        "start": 1056.799,
+        "duration": 3.921
+    },
+    {
+        "text": "so that we don't end up setting it to",
+        "start": 1057.6,
+        "duration": 5.28
+    },
+    {
+        "text": "one plus two we do we just want it to be",
+        "start": 1060.72,
+        "duration": 4.079
+    },
+    {
+        "text": "set to one so we're gonna set two equal",
+        "start": 1062.88,
+        "duration": 2.64
+    },
+    {
+        "text": "to temp",
+        "start": 1064.799,
+        "duration": 3.361
+    },
+    {
+        "text": "once this loop goes through n minus 1",
+        "start": 1065.52,
+        "duration": 3.12
+    },
+    {
+        "text": "times",
+        "start": 1068.16,
+        "duration": 2.0
+    },
+    {
+        "text": "we're going to end up just returning",
+        "start": 1068.64,
+        "duration": 3.76
+    },
+    {
+        "text": "whatever one happens to land on",
+        "start": 1070.16,
+        "duration": 4.48
+    },
+    {
+        "text": "and that is the entire solution we went",
+        "start": 1072.4,
+        "duration": 4.24
+    },
+    {
+        "text": "through so much headache just to get to",
+        "start": 1074.64,
+        "duration": 3.919
+    },
+    {
+        "text": "these five lines of code",
+        "start": 1076.64,
+        "duration": 3.84
+    },
+    {
+        "text": "so i hope that this was helpful if it",
+        "start": 1078.559,
+        "duration": 3.761
+    },
+    {
+        "text": "was please like and subscribe it",
+        "start": 1080.48,
+        "duration": 2.88
+    },
+    {
+        "text": "supports the channel",
+        "start": 1082.32,
+        "duration": 3.28
+    },
+    {
+        "text": "a lot and i'll hopefully see you pretty",
+        "start": 1083.36,
+        "duration": 5.679
+    },
+    {
+        "text": "soon thanks for watching",
+        "start": 1085.6,
+        "duration": 3.439
+    }
+]

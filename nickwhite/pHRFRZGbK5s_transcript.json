@@ -1,0 +1,847 @@
+[
+    {
+        "text": "what's up guys it's Nick white here and",
+        "start": 0.03,
+        "duration": 5.82
+    },
+    {
+        "text": "I do all of the hacker achingly code",
+        "start": 2.97,
+        "duration": 5.4
+    },
+    {
+        "text": "problem solutions I playlist for both of",
+        "start": 5.85,
+        "duration": 4.35
+    },
+    {
+        "text": "those on my channel and everything else",
+        "start": 8.37,
+        "duration": 4.439
+    },
+    {
+        "text": "description this is sorta way by parity",
+        "start": 10.2,
+        "duration": 4.979
+    },
+    {
+        "text": "to we've done this problem before let me",
+        "start": 12.809,
+        "duration": 4.531
+    },
+    {
+        "text": "make sure we recording yeah we've done",
+        "start": 15.179,
+        "duration": 5.221
+    },
+    {
+        "text": "an array sort by parity one this one's a",
+        "start": 17.34,
+        "duration": 4.41
+    },
+    {
+        "text": "little bit better given an array of",
+        "start": 20.4,
+        "duration": 3.51
+    },
+    {
+        "text": "non-negative integers half the integers",
+        "start": 21.75,
+        "duration": 4.89
+    },
+    {
+        "text": "are a and a or odd half are even so",
+        "start": 23.91,
+        "duration": 3.84
+    },
+    {
+        "text": "they're non-negative integers",
+        "start": 26.64,
+        "duration": 2.879
+    },
+    {
+        "text": "non-negative numbers half the numbers",
+        "start": 27.75,
+        "duration": 4.649
+    },
+    {
+        "text": "are odd half or even sort the array so",
+        "start": 29.519,
+        "duration": 6.181
+    },
+    {
+        "text": "when you're in an odd index so meaning 1",
+        "start": 32.399,
+        "duration": 7.921
+    },
+    {
+        "text": "or 3 or 5 or 7 etc the element at that",
+        "start": 35.7,
+        "duration": 7.109
+    },
+    {
+        "text": "index is also the value of it is also",
+        "start": 40.32,
+        "duration": 5.04
+    },
+    {
+        "text": "odd and the if you're an even index the",
+        "start": 42.809,
+        "duration": 5.401
+    },
+    {
+        "text": "element at that at that index with the",
+        "start": 45.36,
+        "duration": 6.75
+    },
+    {
+        "text": "value has to be even you may consider",
+        "start": 48.21,
+        "duration": 5.849
+    },
+    {
+        "text": "any array that satisfies condition so",
+        "start": 52.11,
+        "duration": 5.07
+    },
+    {
+        "text": "how do we do this well brute force I",
+        "start": 54.059,
+        "duration": 6.09
+    },
+    {
+        "text": "guess it's pretty easy problem force I",
+        "start": 57.18,
+        "duration": 5.519
+    },
+    {
+        "text": "guess would be a solution where you just",
+        "start": 60.149,
+        "duration": 9.211
+    },
+    {
+        "text": "do a scan through and you have you use",
+        "start": 62.699,
+        "duration": 9.091
+    },
+    {
+        "text": "extra space so you'd have a new array",
+        "start": 69.36,
+        "duration": 4.23
+    },
+    {
+        "text": "you can have like a new array and you",
+        "start": 71.79,
+        "duration": 4.53
+    },
+    {
+        "text": "could set it to like new int of a dot",
+        "start": 73.59,
+        "duration": 4.65
+    },
+    {
+        "text": "length right and then you can loop",
+        "start": 76.32,
+        "duration": 5.479
+    },
+    {
+        "text": "through and when you're at an odd index",
+        "start": 78.24,
+        "duration": 8.28
+    },
+    {
+        "text": "you put you only put odd elements into",
+        "start": 81.799,
+        "duration": 7.841
+    },
+    {
+        "text": "the new array at odd indexes and then",
+        "start": 86.52,
+        "duration": 4.59
+    },
+    {
+        "text": "you only put even element so even",
+        "start": 89.64,
+        "duration": 5.22
+    },
+    {
+        "text": "indexes that's ok but they probably",
+        "start": 91.11,
+        "duration": 5.1
+    },
+    {
+        "text": "won't like that an interview like",
+        "start": 94.86,
+        "duration": 3.42
+    },
+    {
+        "text": "because that's just an easy that would",
+        "start": 96.21,
+        "duration": 3.659
+    },
+    {
+        "text": "just be too easy of a problem I feel",
+        "start": 98.28,
+        "duration": 3.87
+    },
+    {
+        "text": "like they'd be happy with that they'd",
+        "start": 99.869,
+        "duration": 3.631
+    },
+    {
+        "text": "give you that and then they'd be happy",
+        "start": 102.15,
+        "duration": 2.55
+    },
+    {
+        "text": "that you figured out that solution but",
+        "start": 103.5,
+        "duration": 3.299
+    },
+    {
+        "text": "they'd want you to improve so what is",
+        "start": 104.7,
+        "duration": 3.629
+    },
+    {
+        "text": "the improvement well we don't need",
+        "start": 106.799,
+        "duration": 3.541
+    },
+    {
+        "text": "constant space you can do this sort in",
+        "start": 108.329,
+        "duration": 4.32
+    },
+    {
+        "text": "place so how do we do the sort in place",
+        "start": 110.34,
+        "duration": 5.25
+    },
+    {
+        "text": "well basically we want even indexes to",
+        "start": 112.649,
+        "duration": 4.591
+    },
+    {
+        "text": "have even numbers odd index is odd",
+        "start": 115.59,
+        "duration": 3.72
+    },
+    {
+        "text": "numbers so how do we do this we have a",
+        "start": 117.24,
+        "duration": 4.199
+    },
+    {
+        "text": "pointer we have two pointers it's not",
+        "start": 119.31,
+        "duration": 4.08
+    },
+    {
+        "text": "technically a two pointer approach it's",
+        "start": 121.439,
+        "duration": 3.241
+    },
+    {
+        "text": "kind of there's a lot of two pointer",
+        "start": 123.39,
+        "duration": 3.329
+    },
+    {
+        "text": "approaches that involve swaps this is",
+        "start": 124.68,
+        "duration": 3.87
+    },
+    {
+        "text": "one of them you're gonna have a pointer",
+        "start": 126.719,
+        "duration": 3.93
+    },
+    {
+        "text": "at all even indexes so we're gonna have",
+        "start": 128.55,
+        "duration": 3.689
+    },
+    {
+        "text": "an we're gonna have one pointer that",
+        "start": 130.649,
+        "duration": 2.881
+    },
+    {
+        "text": "points to even negative X's",
+        "start": 132.239,
+        "duration": 3.181
+    },
+    {
+        "text": "it's gonna loop and it's gonna jump from",
+        "start": 133.53,
+        "duration": 4.23
+    },
+    {
+        "text": "zero to two to four to six to eight etc",
+        "start": 135.42,
+        "duration": 4.08
+    },
+    {
+        "text": "and we're gonna have one that jumps from",
+        "start": 137.76,
+        "duration": 3.51
+    },
+    {
+        "text": "one two three to five to seven on odd",
+        "start": 139.5,
+        "duration": 5.19
+    },
+    {
+        "text": "indexes and we're going to have a loop",
+        "start": 141.27,
+        "duration": 5.52
+    },
+    {
+        "text": "and we're gonna loop using those",
+        "start": 144.69,
+        "duration": 4.98
+    },
+    {
+        "text": "pointers check the values and make sure",
+        "start": 146.79,
+        "duration": 4.65
+    },
+    {
+        "text": "that it's right make sure that the",
+        "start": 149.67,
+        "duration": 3.45
+    },
+    {
+        "text": "elements that the even ones are even and",
+        "start": 151.44,
+        "duration": 4.23
+    },
+    {
+        "text": "the ones that are odd or odd and we're",
+        "start": 153.12,
+        "duration": 5.31
+    },
+    {
+        "text": "gonna keep doing that and if we find one",
+        "start": 155.67,
+        "duration": 4.92
+    },
+    {
+        "text": "that's out of place that in the even",
+        "start": 158.43,
+        "duration": 4.11
+    },
+    {
+        "text": "indexes obviously there has to be one",
+        "start": 160.59,
+        "duration": 3.21
+    },
+    {
+        "text": "out of place in the odd because there's",
+        "start": 162.54,
+        "duration": 4.5
+    },
+    {
+        "text": "a even number of evens and odds so or if",
+        "start": 163.8,
+        "duration": 4.5
+    },
+    {
+        "text": "we find one that's out of place in the",
+        "start": 167.04,
+        "duration": 2.19
+    },
+    {
+        "text": "odds we're gonna have to find well",
+        "start": 168.3,
+        "duration": 4.14
+    },
+    {
+        "text": "that's odd place to be even so we loop",
+        "start": 169.23,
+        "duration": 5.67
+    },
+    {
+        "text": "through until we find two elements out",
+        "start": 172.44,
+        "duration": 4.89
+    },
+    {
+        "text": "of place and then we swap them and I",
+        "start": 174.9,
+        "duration": 4.14
+    },
+    {
+        "text": "mean that's pretty much the gist of it",
+        "start": 177.33,
+        "duration": 4.2
+    },
+    {
+        "text": "it's an in-place swap and that saves all",
+        "start": 179.04,
+        "duration": 4.979
+    },
+    {
+        "text": "the space it's really not even that bad",
+        "start": 181.53,
+        "duration": 4.41
+    },
+    {
+        "text": "of a problem we're just gonna have I so",
+        "start": 184.019,
+        "duration": 3.981
+    },
+    {
+        "text": "in our solution will have I be the",
+        "start": 185.94,
+        "duration": 5.519
+    },
+    {
+        "text": "pointer to the even indexes will of J be",
+        "start": 188.0,
+        "duration": 5.47
+    },
+    {
+        "text": "a pointer to the odd indexes so we'll",
+        "start": 191.459,
+        "duration": 5.911
+    },
+    {
+        "text": "start at one and then we'll also get the",
+        "start": 193.47,
+        "duration": 7.5
+    },
+    {
+        "text": "size of the array and here's our loop",
+        "start": 197.37,
+        "duration": 13.41
+    },
+    {
+        "text": "we'll just do well and we will do wise",
+        "start": 200.97,
+        "duration": 12.03
+    },
+    {
+        "text": "less than no we don't need a double n",
+        "start": 210.78,
+        "duration": 3.63
+    },
+    {
+        "text": "sorry that's why we grabbed that's why I",
+        "start": 213.0,
+        "duration": 2.7
+    },
+    {
+        "text": "grabbed this size because I wrote this a",
+        "start": 214.41,
+        "duration": 2.91
+    },
+    {
+        "text": "second ago and it looked kind of messy",
+        "start": 215.7,
+        "duration": 3.96
+    },
+    {
+        "text": "with a bunch of a dot lines we loop",
+        "start": 217.32,
+        "duration": 6.69
+    },
+    {
+        "text": "through Y lies less than and and a of I",
+        "start": 219.66,
+        "duration": 10.139
+    },
+    {
+        "text": "so the element even index e is even you",
+        "start": 224.01,
+        "duration": 8.19
+    },
+    {
+        "text": "know we check the remainder of seeing if",
+        "start": 229.799,
+        "duration": 3.841
+    },
+    {
+        "text": "it's divisible by two and the remainder",
+        "start": 232.2,
+        "duration": 3.72
+    },
+    {
+        "text": "is zero then we know it's even we just",
+        "start": 233.64,
+        "duration": 4.469
+    },
+    {
+        "text": "jump by two because we're only going by",
+        "start": 235.92,
+        "duration": 3.9
+    },
+    {
+        "text": "even spaces this is gonna be the same",
+        "start": 238.109,
+        "duration": 3.991
+    },
+    {
+        "text": "thing for the odd indexes except you",
+        "start": 239.82,
+        "duration": 6.9
+    },
+    {
+        "text": "know obviously you know the rave J and",
+        "start": 242.1,
+        "duration": 7.05
+    },
+    {
+        "text": "we want to make sure these are odd so an",
+        "start": 246.72,
+        "duration": 5.519
+    },
+    {
+        "text": "odd element divisible by two would have",
+        "start": 249.15,
+        "duration": 6.6
+    },
+    {
+        "text": "a remainder of 1 so we just do this in J",
+        "start": 252.239,
+        "duration": 5.461
+    },
+    {
+        "text": "increments by 2 we just do this and we",
+        "start": 255.75,
+        "duration": 4.769
+    },
+    {
+        "text": "jump along and if these loops break that",
+        "start": 257.7,
+        "duration": 4.649
+    },
+    {
+        "text": "means that we found an element that is",
+        "start": 260.519,
+        "duration": 3.691
+    },
+    {
+        "text": "out of place in either the oter int",
+        "start": 262.349,
+        "duration": 3.871
+    },
+    {
+        "text": "because right we're just keep we're",
+        "start": 264.21,
+        "duration": 3.21
+    },
+    {
+        "text": "looping through we're",
+        "start": 266.22,
+        "duration": 2.97
+    },
+    {
+        "text": "just looping through by two everything's",
+        "start": 267.42,
+        "duration": 3.6
+    },
+    {
+        "text": "even everything is all good if we break",
+        "start": 269.19,
+        "duration": 2.55
+    },
+    {
+        "text": "out of this",
+        "start": 271.02,
+        "duration": 2.88
+    },
+    {
+        "text": "we're either done with looping through",
+        "start": 271.74,
+        "duration": 4.86
+    },
+    {
+        "text": "and everything was perfect or we found",
+        "start": 273.9,
+        "duration": 3.93
+    },
+    {
+        "text": "an element that's out of place",
+        "start": 276.6,
+        "duration": 3.0
+    },
+    {
+        "text": "same for this so we found two elements",
+        "start": 277.83,
+        "duration": 3.21
+    },
+    {
+        "text": "that's on a place now for example let's",
+        "start": 279.6,
+        "duration": 4.47
+    },
+    {
+        "text": "say so down here we can do a check you",
+        "start": 281.04,
+        "duration": 7.89
+    },
+    {
+        "text": "know if I is less than N and J is less",
+        "start": 284.07,
+        "duration": 7.68
+    },
+    {
+        "text": "than n so this is to check that because",
+        "start": 288.93,
+        "duration": 4.77
+    },
+    {
+        "text": "these loops could break out if we get to",
+        "start": 291.75,
+        "duration": 2.91
+    },
+    {
+        "text": "the end of the list and everything's",
+        "start": 293.7,
+        "duration": 3.36
+    },
+    {
+        "text": "perfect this is to check that we didn't",
+        "start": 294.66,
+        "duration": 3.72
+    },
+    {
+        "text": "reach the end and we actually found",
+        "start": 297.06,
+        "duration": 3.84
+    },
+    {
+        "text": "elements that are out of place so we",
+        "start": 298.38,
+        "duration": 4.56
+    },
+    {
+        "text": "just do this we do this track down here",
+        "start": 300.9,
+        "duration": 3.87
+    },
+    {
+        "text": "and then we can do that our swap right",
+        "start": 302.94,
+        "duration": 8.31
+    },
+    {
+        "text": "in temp is equal to a by a if J is equal",
+        "start": 304.77,
+        "duration": 20.49
+    },
+    {
+        "text": "to a of I and J then we do our swap and",
+        "start": 311.25,
+        "duration": 15.09
+    },
+    {
+        "text": "then we just keep looping and then",
+        "start": 325.26,
+        "duration": 2.34
+    },
+    {
+        "text": "eventually we get to the end and then",
+        "start": 326.34,
+        "duration": 2.58
+    },
+    {
+        "text": "that was the in-place sort and that's",
+        "start": 327.6,
+        "duration": 5.76
+    },
+    {
+        "text": "why it's way better than using a whole",
+        "start": 328.92,
+        "duration": 6.6
+    },
+    {
+        "text": "new array and doing you know loops",
+        "start": 333.36,
+        "duration": 4.62
+    },
+    {
+        "text": "through the current array and you know",
+        "start": 335.52,
+        "duration": 4.86
+    },
+    {
+        "text": "doing using a whole new array I mean if",
+        "start": 337.98,
+        "duration": 3.84
+    },
+    {
+        "text": "we look at the solution this guy wrote",
+        "start": 340.38,
+        "duration": 3.48
+    },
+    {
+        "text": "it a little bit differently here's the",
+        "start": 341.82,
+        "duration": 3.93
+    },
+    {
+        "text": "original solution you just have a new",
+        "start": 343.86,
+        "duration": 3.81
+    },
+    {
+        "text": "array you loop through at the even",
+        "start": 345.75,
+        "duration": 3.66
+    },
+    {
+        "text": "indexes you put even numbers at the odd",
+        "start": 347.67,
+        "duration": 5.55
+    },
+    {
+        "text": "to put odd o then o then space you don't",
+        "start": 349.41,
+        "duration": 7.08
+    },
+    {
+        "text": "want that this is the in place he did a",
+        "start": 353.22,
+        "duration": 6.33
+    },
+    {
+        "text": "little differently he had a he just had",
+        "start": 356.49,
+        "duration": 5.64
+    },
+    {
+        "text": "a for loop doing the even numbers with I",
+        "start": 359.55,
+        "duration": 5.46
+    },
+    {
+        "text": "odd with J still similar there and then",
+        "start": 362.13,
+        "duration": 6.39
+    },
+    {
+        "text": "he did if he sees an even number out of",
+        "start": 365.01,
+        "duration": 6.36
+    },
+    {
+        "text": "place so if he founds an odd and an even",
+        "start": 368.52,
+        "duration": 7.55
+    },
+    {
+        "text": "index then he loops until he finds the J",
+        "start": 371.37,
+        "duration": 7.17
+    },
+    {
+        "text": "he loops until he finds an even in an",
+        "start": 376.07,
+        "duration": 3.79
+    },
+    {
+        "text": "odd place and then he does the swap",
+        "start": 378.54,
+        "duration": 6.03
+    },
+    {
+        "text": "similar concept he just only kind of",
+        "start": 379.86,
+        "duration": 6.12
+    },
+    {
+        "text": "concerns themselves with putting the",
+        "start": 384.57,
+        "duration": 4.62
+    },
+    {
+        "text": "evens in place and then by default when",
+        "start": 385.98,
+        "duration": 4.5
+    },
+    {
+        "text": "the evens are all in place the odds are",
+        "start": 389.19,
+        "duration": 3.63
+    },
+    {
+        "text": "all in the place sorry for saying even",
+        "start": 390.48,
+        "duration": 4.38
+    },
+    {
+        "text": "an odd so much it's just like it's the",
+        "start": 392.82,
+        "duration": 4.77
+    },
+    {
+        "text": "problem so either way you can do this",
+        "start": 394.86,
+        "duration": 4.08
+    },
+    {
+        "text": "you can do this I think this one's a",
+        "start": 397.59,
+        "duration": 3.03
+    },
+    {
+        "text": "little bit cleaner",
+        "start": 398.94,
+        "duration": 3.51
+    },
+    {
+        "text": "I even saw someone solution where he",
+        "start": 400.62,
+        "duration": 4.35
+    },
+    {
+        "text": "modularized the swap a lot of people do",
+        "start": 402.45,
+        "duration": 4.26
+    },
+    {
+        "text": "that they just make a whole method for",
+        "start": 404.97,
+        "duration": 4.92
+    },
+    {
+        "text": "the swap and they just call swap so let",
+        "start": 406.71,
+        "duration": 4.32
+    },
+    {
+        "text": "me know what you guys think what's your",
+        "start": 409.89,
+        "duration": 4.29
+    },
+    {
+        "text": "preferred method for doing this",
+        "start": 411.03,
+        "duration": 6.6
+    },
+    {
+        "text": "yeah but cool problem easy problem cool",
+        "start": 414.18,
+        "duration": 5.49
+    },
+    {
+        "text": "solution thanks for watching check out",
+        "start": 417.63,
+        "duration": 3.6
+    },
+    {
+        "text": "the other videos and I'll see you guys",
+        "start": 419.67,
+        "duration": 4.07
+    },
+    {
+        "text": "next time",
+        "start": 421.23,
+        "duration": 2.51
+    }
+]

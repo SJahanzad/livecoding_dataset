@@ -1,0 +1,2482 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 4.0
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.92,
+        "duration": 2.72
+    },
+    {
+        "text": "let's solve",
+        "start": 4.0,
+        "duration": 3.44
+    },
+    {
+        "text": "palindromic substrings and this is",
+        "start": 4.64,
+        "duration": 5.039
+    },
+    {
+        "text": "another problem from the leak code",
+        "start": 7.44,
+        "duration": 5.76
+    },
+    {
+        "text": "blind 75 list a list of 75 very good",
+        "start": 9.679,
+        "duration": 5.441
+    },
+    {
+        "text": "leak code problems to solve and this",
+        "start": 13.2,
+        "duration": 3.52
+    },
+    {
+        "text": "time we will be doing palindromic",
+        "start": 15.12,
+        "duration": 3.04
+    },
+    {
+        "text": "substrings down here",
+        "start": 16.72,
+        "duration": 3.28
+    },
+    {
+        "text": "and so we are getting one step closer to",
+        "start": 18.16,
+        "duration": 3.68
+    },
+    {
+        "text": "filling out this entire list and this",
+        "start": 20.0,
+        "duration": 3.6
+    },
+    {
+        "text": "problem palindromic substrings is",
+        "start": 21.84,
+        "duration": 3.439
+    },
+    {
+        "text": "actually really similar to another",
+        "start": 23.6,
+        "duration": 2.88
+    },
+    {
+        "text": "problem i've solved",
+        "start": 25.279,
+        "duration": 3.84
+    },
+    {
+        "text": "longest palindromic substring so if you",
+        "start": 26.48,
+        "duration": 4.08
+    },
+    {
+        "text": "would like to i'd recommend watching",
+        "start": 29.119,
+        "duration": 3.44
+    },
+    {
+        "text": "this video as well longest palindromic",
+        "start": 30.56,
+        "duration": 3.76
+    },
+    {
+        "text": "substring i will probably link it in the",
+        "start": 32.559,
+        "duration": 3.281
+    },
+    {
+        "text": "description below",
+        "start": 34.32,
+        "duration": 4.16
+    },
+    {
+        "text": "so simply we are given a string s and we",
+        "start": 35.84,
+        "duration": 5.2
+    },
+    {
+        "text": "just want to return the total number of",
+        "start": 38.48,
+        "duration": 5.68
+    },
+    {
+        "text": "palindromic sub strings contained in the",
+        "start": 41.04,
+        "duration": 4.24
+    },
+    {
+        "text": "string s",
+        "start": 44.16,
+        "duration": 3.44
+    },
+    {
+        "text": "and as you may know a palindromic",
+        "start": 45.28,
+        "duration": 3.119
+    },
+    {
+        "text": "substring",
+        "start": 47.6,
+        "duration": 2.959
+    },
+    {
+        "text": "is basically a string that can be read",
+        "start": 48.399,
+        "duration": 3.921
+    },
+    {
+        "text": "backwards and it's the same string so",
+        "start": 50.559,
+        "duration": 2.401
+    },
+    {
+        "text": "you know a",
+        "start": 52.32,
+        "duration": 2.239
+    },
+    {
+        "text": "a if you read it backwards it's the",
+        "start": 52.96,
+        "duration": 3.04
+    },
+    {
+        "text": "exact same string right",
+        "start": 54.559,
+        "duration": 5.041
+    },
+    {
+        "text": "a b a you know this is the same string",
+        "start": 56.0,
+        "duration": 4.719
+    },
+    {
+        "text": "reversed",
+        "start": 59.6,
+        "duration": 2.56
+    },
+    {
+        "text": "you know because the first character is",
+        "start": 60.719,
+        "duration": 3.121
+    },
+    {
+        "text": "the same as the last character",
+        "start": 62.16,
+        "duration": 3.44
+    },
+    {
+        "text": "and then in the middle we're just left",
+        "start": 63.84,
+        "duration": 3.279
+    },
+    {
+        "text": "with one character and",
+        "start": 65.6,
+        "duration": 3.6
+    },
+    {
+        "text": "you know basically that kind of pushes",
+        "start": 67.119,
+        "duration": 4.081
+    },
+    {
+        "text": "us towards a base case so",
+        "start": 69.2,
+        "duration": 3.84
+    },
+    {
+        "text": "as you may know there's two types of",
+        "start": 71.2,
+        "duration": 3.44
+    },
+    {
+        "text": "palindromic substrings",
+        "start": 73.04,
+        "duration": 3.6
+    },
+    {
+        "text": "strings of odd length right so for",
+        "start": 74.64,
+        "duration": 3.839
+    },
+    {
+        "text": "example just a single letter a",
+        "start": 76.64,
+        "duration": 3.76
+    },
+    {
+        "text": "that's a palindrome right it's it's the",
+        "start": 78.479,
+        "duration": 3.121
+    },
+    {
+        "text": "same backwards",
+        "start": 80.4,
+        "duration": 3.12
+    },
+    {
+        "text": "if we add a b to the beginning and a b",
+        "start": 81.6,
+        "duration": 3.839
+    },
+    {
+        "text": "to the end it's still a palindrome",
+        "start": 83.52,
+        "duration": 2.48
+    },
+    {
+        "text": "because now we",
+        "start": 85.439,
+        "duration": 3.281
+    },
+    {
+        "text": "expanded it outwards with the exact same",
+        "start": 86.0,
+        "duration": 3.439
+    },
+    {
+        "text": "character",
+        "start": 88.72,
+        "duration": 2.48
+    },
+    {
+        "text": "similarly we can do the same thing with",
+        "start": 89.439,
+        "duration": 4.161
+    },
+    {
+        "text": "even length sub strings as well if we",
+        "start": 91.2,
+        "duration": 3.84
+    },
+    {
+        "text": "have two a's",
+        "start": 93.6,
+        "duration": 3.68
+    },
+    {
+        "text": "in the middle then of course this is a",
+        "start": 95.04,
+        "duration": 3.439
+    },
+    {
+        "text": "palindrome and then",
+        "start": 97.28,
+        "duration": 3.199
+    },
+    {
+        "text": "if we continue to expand outwards we add",
+        "start": 98.479,
+        "duration": 3.201
+    },
+    {
+        "text": "a b at the beginning",
+        "start": 100.479,
+        "duration": 3.361
+    },
+    {
+        "text": "and we add a b at the end it's",
+        "start": 101.68,
+        "duration": 3.2
+    },
+    {
+        "text": "continuously",
+        "start": 103.84,
+        "duration": 2.559
+    },
+    {
+        "text": "going to be a palindrome because these",
+        "start": 104.88,
+        "duration": 3.199
+    },
+    {
+        "text": "characters are also matching now if we",
+        "start": 106.399,
+        "duration": 3.521
+    },
+    {
+        "text": "instead of adding a b we added a",
+        "start": 108.079,
+        "duration": 5.04
+    },
+    {
+        "text": "c at the end the inside is a palindrome",
+        "start": 109.92,
+        "duration": 4.239
+    },
+    {
+        "text": "this string of length",
+        "start": 113.119,
+        "duration": 4.161
+    },
+    {
+        "text": "two but now if we expand outwards this",
+        "start": 114.159,
+        "duration": 5.521
+    },
+    {
+        "text": "is not a palindrome right yeah this just",
+        "start": 117.28,
+        "duration": 4.08
+    },
+    {
+        "text": "it can't be read backwards c is not the",
+        "start": 119.68,
+        "duration": 3.28
+    },
+    {
+        "text": "same as b it's not a palindrome",
+        "start": 121.36,
+        "duration": 3.359
+    },
+    {
+        "text": "so that's a little bit about palindromes",
+        "start": 122.96,
+        "duration": 3.119
+    },
+    {
+        "text": "even an odd length",
+        "start": 124.719,
+        "duration": 3.68
+    },
+    {
+        "text": "but so how can we apply that to our",
+        "start": 126.079,
+        "duration": 3.121
+    },
+    {
+        "text": "input",
+        "start": 128.399,
+        "duration": 4.001
+    },
+    {
+        "text": "so in this case we are given a string a",
+        "start": 129.2,
+        "duration": 6.16
+    },
+    {
+        "text": "b c now of course we have three",
+        "start": 132.4,
+        "duration": 3.6
+    },
+    {
+        "text": "different",
+        "start": 135.36,
+        "duration": 2.32
+    },
+    {
+        "text": "palindromes because each character by",
+        "start": 136.0,
+        "duration": 3.76
+    },
+    {
+        "text": "itself is a substring of course",
+        "start": 137.68,
+        "duration": 3.919
+    },
+    {
+        "text": "and each of those by themselves is a",
+        "start": 139.76,
+        "duration": 3.839
+    },
+    {
+        "text": "palindrome as well so that's three now",
+        "start": 141.599,
+        "duration": 4.401
+    },
+    {
+        "text": "is any other substring for example a b",
+        "start": 143.599,
+        "duration": 3.841
+    },
+    {
+        "text": "that's not a palindrome",
+        "start": 146.0,
+        "duration": 4.48
+    },
+    {
+        "text": "bc that's not a palindrome abc that's",
+        "start": 147.44,
+        "duration": 4.879
+    },
+    {
+        "text": "also not a palindrome that's basically",
+        "start": 150.48,
+        "duration": 3.52
+    },
+    {
+        "text": "all the substrings available to us",
+        "start": 152.319,
+        "duration": 3.361
+    },
+    {
+        "text": "so we only find three so we're going to",
+        "start": 154.0,
+        "duration": 3.28
+    },
+    {
+        "text": "return three so let's",
+        "start": 155.68,
+        "duration": 3.68
+    },
+    {
+        "text": "understand how we can do the brute force",
+        "start": 157.28,
+        "duration": 4.319
+    },
+    {
+        "text": "solution which is actually big o of n",
+        "start": 159.36,
+        "duration": 4.32
+    },
+    {
+        "text": "cubed and then we can actually optimize",
+        "start": 161.599,
+        "duration": 4.161
+    },
+    {
+        "text": "it a little bit understanding how even",
+        "start": 163.68,
+        "duration": 3.68
+    },
+    {
+        "text": "an odd palindromes work",
+        "start": 165.76,
+        "duration": 4.32
+    },
+    {
+        "text": "and then we can get a big o of n squared",
+        "start": 167.36,
+        "duration": 4.48
+    },
+    {
+        "text": "time complexity solution",
+        "start": 170.08,
+        "duration": 3.439
+    },
+    {
+        "text": "so let's say we're given a string that",
+        "start": 171.84,
+        "duration": 3.039
+    },
+    {
+        "text": "looks like this",
+        "start": 173.519,
+        "duration": 3.201
+    },
+    {
+        "text": "if we just start brute forcing it we",
+        "start": 174.879,
+        "duration": 3.681
+    },
+    {
+        "text": "want to go through every single",
+        "start": 176.72,
+        "duration": 3.12
+    },
+    {
+        "text": "substring right so every single",
+        "start": 178.56,
+        "duration": 2.959
+    },
+    {
+        "text": "substring starting at this first",
+        "start": 179.84,
+        "duration": 3.6
+    },
+    {
+        "text": "position would be something like this",
+        "start": 181.519,
+        "duration": 2.241
+    },
+    {
+        "text": "right",
+        "start": 183.44,
+        "duration": 2.4
+    },
+    {
+        "text": "there's these substrings right then we'd",
+        "start": 183.76,
+        "duration": 3.199
+    },
+    {
+        "text": "want to go through every single",
+        "start": 185.84,
+        "duration": 2.72
+    },
+    {
+        "text": "substring starting at this position",
+        "start": 186.959,
+        "duration": 3.28
+    },
+    {
+        "text": "which would look something like",
+        "start": 188.56,
+        "duration": 4.08
+    },
+    {
+        "text": "this right in total there's going to be",
+        "start": 190.239,
+        "duration": 4.321
+    },
+    {
+        "text": "n squared sub strings right",
+        "start": 192.64,
+        "duration": 4.8
+    },
+    {
+        "text": "and for each substring for example you",
+        "start": 194.56,
+        "duration": 3.44
+    },
+    {
+        "text": "know this",
+        "start": 197.44,
+        "duration": 2.879
+    },
+    {
+        "text": "one we need to determine if it's a",
+        "start": 198.0,
+        "duration": 4.4
+    },
+    {
+        "text": "palindrome or not and we know it you",
+        "start": 200.319,
+        "duration": 2.881
+    },
+    {
+        "text": "know that's not",
+        "start": 202.4,
+        "duration": 2.479
+    },
+    {
+        "text": "a difficult algorithm to write we could",
+        "start": 203.2,
+        "duration": 3.2
+    },
+    {
+        "text": "have two pointers one at the beginning",
+        "start": 204.879,
+        "duration": 2.401
+    },
+    {
+        "text": "one at the end",
+        "start": 206.4,
+        "duration": 2.479
+    },
+    {
+        "text": "we basically keep comparing the",
+        "start": 207.28,
+        "duration": 3.76
+    },
+    {
+        "text": "characters and making sure that they're",
+        "start": 208.879,
+        "duration": 3.201
+    },
+    {
+        "text": "the same right so",
+        "start": 211.04,
+        "duration": 3.6
+    },
+    {
+        "text": "and for a substring like this we'd also",
+        "start": 212.08,
+        "duration": 4.0
+    },
+    {
+        "text": "have two pointers right compare that",
+        "start": 214.64,
+        "duration": 2.48
+    },
+    {
+        "text": "okay these two",
+        "start": 216.08,
+        "duration": 3.28
+    },
+    {
+        "text": "characters are the same so then we can",
+        "start": 217.12,
+        "duration": 3.679
+    },
+    {
+        "text": "move inward right we'd shift our",
+        "start": 219.36,
+        "duration": 2.48
+    },
+    {
+        "text": "pointers here",
+        "start": 220.799,
+        "duration": 3.601
+    },
+    {
+        "text": "and then we'd see okay this character is",
+        "start": 221.84,
+        "duration": 4.399
+    },
+    {
+        "text": "also the same and then you know we we go",
+        "start": 224.4,
+        "duration": 3.199
+    },
+    {
+        "text": "through every character so we determine",
+        "start": 226.239,
+        "duration": 3.201
+    },
+    {
+        "text": "yes that's a palindrome then we can",
+        "start": 227.599,
+        "duration": 3.841
+    },
+    {
+        "text": "increment our count of palindromes right",
+        "start": 229.44,
+        "duration": 4.079
+    },
+    {
+        "text": "we'll call that our result variable",
+        "start": 231.44,
+        "duration": 3.92
+    },
+    {
+        "text": "so then we'll add one to it right",
+        "start": 233.519,
+        "duration": 3.121
+    },
+    {
+        "text": "because that's ultimately what we're",
+        "start": 235.36,
+        "duration": 2.879
+    },
+    {
+        "text": "trying to return the number of",
+        "start": 236.64,
+        "duration": 4.159
+    },
+    {
+        "text": "palindromic substrings inside of this",
+        "start": 238.239,
+        "duration": 5.441
+    },
+    {
+        "text": "string s and clearly finding and",
+        "start": 240.799,
+        "duration": 4.64
+    },
+    {
+        "text": "determining that a string",
+        "start": 243.68,
+        "duration": 5.279
+    },
+    {
+        "text": "is a palindrome is also big o of n",
+        "start": 245.439,
+        "duration": 6.401
+    },
+    {
+        "text": "so since there are n squared substrings",
+        "start": 248.959,
+        "duration": 3.84
+    },
+    {
+        "text": "in the entire string",
+        "start": 251.84,
+        "duration": 2.88
+    },
+    {
+        "text": "s and for each of those substrings we",
+        "start": 252.799,
+        "duration": 3.44
+    },
+    {
+        "text": "have to determine that it's a palindrome",
+        "start": 254.72,
+        "duration": 3.12
+    },
+    {
+        "text": "we're going to multiply it by n so this",
+        "start": 256.239,
+        "duration": 2.4
+    },
+    {
+        "text": "is going to give us an",
+        "start": 257.84,
+        "duration": 3.76
+    },
+    {
+        "text": "n cubed time complexity now we can",
+        "start": 258.639,
+        "duration": 3.84
+    },
+    {
+        "text": "improve this",
+        "start": 261.6,
+        "duration": 2.72
+    },
+    {
+        "text": "and it's going to require us to solve",
+        "start": 262.479,
+        "duration": 3.361
+    },
+    {
+        "text": "this problem in a different",
+        "start": 264.32,
+        "duration": 4.56
+    },
+    {
+        "text": "order what we're instead going to do is",
+        "start": 265.84,
+        "duration": 4.88
+    },
+    {
+        "text": "we're going to go through every single",
+        "start": 268.88,
+        "duration": 3.2
+    },
+    {
+        "text": "position in",
+        "start": 270.72,
+        "duration": 3.6
+    },
+    {
+        "text": "this right instead of finding for this",
+        "start": 272.08,
+        "duration": 4.16
+    },
+    {
+        "text": "position all the substrings that",
+        "start": 274.32,
+        "duration": 4.08
+    },
+    {
+        "text": "start at this position we're going to",
+        "start": 276.24,
+        "duration": 3.84
+    },
+    {
+        "text": "find all the sub strings",
+        "start": 278.4,
+        "duration": 4.799
+    },
+    {
+        "text": "that this position is the middle of so",
+        "start": 280.08,
+        "duration": 4.559
+    },
+    {
+        "text": "instead of you know just going to the",
+        "start": 283.199,
+        "duration": 3.041
+    },
+    {
+        "text": "right we're actually going to expand in",
+        "start": 284.639,
+        "duration": 2.961
+    },
+    {
+        "text": "both directions we're going to go",
+        "start": 286.24,
+        "duration": 1.76
+    },
+    {
+        "text": "through",
+        "start": 287.6,
+        "duration": 2.96
+    },
+    {
+        "text": "all sub strings where this position is",
+        "start": 288.0,
+        "duration": 4.16
+    },
+    {
+        "text": "the middle position",
+        "start": 290.56,
+        "duration": 4.32
+    },
+    {
+        "text": "now clearly this string itself is one",
+        "start": 292.16,
+        "duration": 3.84
+    },
+    {
+        "text": "string right and",
+        "start": 294.88,
+        "duration": 2.8
+    },
+    {
+        "text": "this is a palindrome so we're gonna have",
+        "start": 296.0,
+        "duration": 3.12
+    },
+    {
+        "text": "our left and right pointer just",
+        "start": 297.68,
+        "duration": 2.88
+    },
+    {
+        "text": "initially at this position",
+        "start": 299.12,
+        "duration": 2.88
+    },
+    {
+        "text": "we're gonna see that okay both of these",
+        "start": 300.56,
+        "duration": 3.04
+    },
+    {
+        "text": "characters are the same right so then we",
+        "start": 302.0,
+        "duration": 2.72
+    },
+    {
+        "text": "can take our result",
+        "start": 303.6,
+        "duration": 3.68
+    },
+    {
+        "text": "add one to it right so we found so we",
+        "start": 304.72,
+        "duration": 4.72
+    },
+    {
+        "text": "did find one palindromic substring",
+        "start": 307.28,
+        "duration": 3.52
+    },
+    {
+        "text": "and then we're going to try to expand",
+        "start": 309.44,
+        "duration": 2.72
+    },
+    {
+        "text": "outward right our left pointer is going",
+        "start": 310.8,
+        "duration": 2.959
+    },
+    {
+        "text": "to go here our right pointer is going to",
+        "start": 312.16,
+        "duration": 2.16
+    },
+    {
+        "text": "go here",
+        "start": 313.759,
+        "duration": 2.481
+    },
+    {
+        "text": "clearly we go out of bounds though to",
+        "start": 314.32,
+        "duration": 3.2
+    },
+    {
+        "text": "the left right so",
+        "start": 316.24,
+        "duration": 3.04
+    },
+    {
+        "text": "so basically what we're saying is",
+        "start": 317.52,
+        "duration": 3.76
+    },
+    {
+        "text": "there's only one substring where this is",
+        "start": 319.28,
+        "duration": 3.68
+    },
+    {
+        "text": "the middle position of",
+        "start": 321.28,
+        "duration": 2.8
+    },
+    {
+        "text": "and then we're going to do the same",
+        "start": 322.96,
+        "duration": 3.12
+    },
+    {
+        "text": "thing for here so from this position we",
+        "start": 324.08,
+        "duration": 3.679
+    },
+    {
+        "text": "want all sub strings where this",
+        "start": 326.08,
+        "duration": 3.04
+    },
+    {
+        "text": "is the middle of so we're going to have",
+        "start": 327.759,
+        "duration": 2.72
+    },
+    {
+        "text": "our left and right pointer initially",
+        "start": 329.12,
+        "duration": 1.76
+    },
+    {
+        "text": "here",
+        "start": 330.479,
+        "duration": 2.081
+    },
+    {
+        "text": "yes this character you know our left and",
+        "start": 330.88,
+        "duration": 2.72
+    },
+    {
+        "text": "right pointer point at the same",
+        "start": 332.56,
+        "duration": 1.919
+    },
+    {
+        "text": "character so we",
+        "start": 333.6,
+        "duration": 3.039
+    },
+    {
+        "text": "we found one palindromic substring just",
+        "start": 334.479,
+        "duration": 3.601
+    },
+    {
+        "text": "the single character itself",
+        "start": 336.639,
+        "duration": 2.721
+    },
+    {
+        "text": "then we are going to take our left and",
+        "start": 338.08,
+        "duration": 2.88
+    },
+    {
+        "text": "right pointers and then shift them so",
+        "start": 339.36,
+        "duration": 3.04
+    },
+    {
+        "text": "left is going to go over here",
+        "start": 340.96,
+        "duration": 3.2
+    },
+    {
+        "text": "right is going to go over here right so",
+        "start": 342.4,
+        "duration": 3.2
+    },
+    {
+        "text": "now let's compare left character and",
+        "start": 344.16,
+        "duration": 2.56
+    },
+    {
+        "text": "right character",
+        "start": 345.6,
+        "duration": 4.159
+    },
+    {
+        "text": "since we already know this middle",
+        "start": 346.72,
+        "duration": 3.919
+    },
+    {
+        "text": "portion",
+        "start": 349.759,
+        "duration": 3.521
+    },
+    {
+        "text": "is a palindrome right now we only have",
+        "start": 350.639,
+        "duration": 4.801
+    },
+    {
+        "text": "to compare the left and right characters",
+        "start": 353.28,
+        "duration": 4.16
+    },
+    {
+        "text": "the new left and right characters if",
+        "start": 355.44,
+        "duration": 4.879
+    },
+    {
+        "text": "they are equal right which they are a",
+        "start": 357.44,
+        "duration": 3.759
+    },
+    {
+        "text": "equals a",
+        "start": 360.319,
+        "duration": 4.081
+    },
+    {
+        "text": "right so therefore we found one",
+        "start": 361.199,
+        "duration": 5.361
+    },
+    {
+        "text": "additional palindrome this palindrome of",
+        "start": 364.4,
+        "duration": 3.84
+    },
+    {
+        "text": "length three",
+        "start": 366.56,
+        "duration": 4.8
+    },
+    {
+        "text": "where this character is still the middle",
+        "start": 368.24,
+        "duration": 4.799
+    },
+    {
+        "text": "position right so now we found an",
+        "start": 371.36,
+        "duration": 3.52
+    },
+    {
+        "text": "additional palindrome so i think our",
+        "start": 373.039,
+        "duration": 3.6
+    },
+    {
+        "text": "total number of palindromes is up to",
+        "start": 374.88,
+        "duration": 2.64
+    },
+    {
+        "text": "three now",
+        "start": 376.639,
+        "duration": 2.241
+    },
+    {
+        "text": "and once again we're going to take our",
+        "start": 377.52,
+        "duration": 3.6
+    },
+    {
+        "text": "left pointer shift it to the left",
+        "start": 378.88,
+        "duration": 3.599
+    },
+    {
+        "text": "right pointer and shift it to the right",
+        "start": 381.12,
+        "duration": 2.96
+    },
+    {
+        "text": "now clearly once again our left pointer",
+        "start": 382.479,
+        "duration": 2.641
+    },
+    {
+        "text": "goes out of bounds",
+        "start": 384.08,
+        "duration": 3.44
+    },
+    {
+        "text": "so you know this is we can't really find",
+        "start": 385.12,
+        "duration": 3.84
+    },
+    {
+        "text": "any more sub strings where this",
+        "start": 387.52,
+        "duration": 4.16
+    },
+    {
+        "text": "is the middle position but do you notice",
+        "start": 388.96,
+        "duration": 3.6
+    },
+    {
+        "text": "how",
+        "start": 391.68,
+        "duration": 3.519
+    },
+    {
+        "text": "what we just did right we we cut down on",
+        "start": 392.56,
+        "duration": 4.32
+    },
+    {
+        "text": "repeated work",
+        "start": 395.199,
+        "duration": 3.361
+    },
+    {
+        "text": "we found that this is a substring and",
+        "start": 396.88,
+        "duration": 3.68
+    },
+    {
+        "text": "then in another single operation we",
+        "start": 398.56,
+        "duration": 3.359
+    },
+    {
+        "text": "found that this is a palindromic",
+        "start": 400.56,
+        "duration": 3.12
+    },
+    {
+        "text": "substring as well",
+        "start": 401.919,
+        "duration": 3.681
+    },
+    {
+        "text": "that cuts down on the repeated work",
+        "start": 403.68,
+        "duration": 3.44
+    },
+    {
+        "text": "whereas before we would have done",
+        "start": 405.6,
+        "duration": 2.56
+    },
+    {
+        "text": "something like okay",
+        "start": 407.12,
+        "duration": 3.6
+    },
+    {
+        "text": "you know this is a polynomic substring",
+        "start": 408.16,
+        "duration": 3.039
+    },
+    {
+        "text": "then we",
+        "start": 410.72,
+        "duration": 2.4
+    },
+    {
+        "text": "increase it then we have to look at both",
+        "start": 411.199,
+        "duration": 3.12
+    },
+    {
+        "text": "of these and",
+        "start": 413.12,
+        "duration": 2.96
+    },
+    {
+        "text": "you know if we continue to increase it",
+        "start": 414.319,
+        "duration": 3.44
+    },
+    {
+        "text": "if we go all the way here then we have",
+        "start": 416.08,
+        "duration": 2.48
+    },
+    {
+        "text": "to still",
+        "start": 417.759,
+        "duration": 3.201
+    },
+    {
+        "text": "check okay this is the same and now this",
+        "start": 418.56,
+        "duration": 3.759
+    },
+    {
+        "text": "is the same right we're",
+        "start": 420.96,
+        "duration": 4.079
+    },
+    {
+        "text": "continuing to do repeated work if we",
+        "start": 422.319,
+        "duration": 4.561
+    },
+    {
+        "text": "start from the left and then expand to",
+        "start": 425.039,
+        "duration": 3.921
+    },
+    {
+        "text": "the right but if we start in the middle",
+        "start": 426.88,
+        "duration": 4.319
+    },
+    {
+        "text": "and expand left and right then we",
+        "start": 428.96,
+        "duration": 4.0
+    },
+    {
+        "text": "eliminate repeated work",
+        "start": 431.199,
+        "duration": 3.761
+    },
+    {
+        "text": "so let's do the same thing from here so",
+        "start": 432.96,
+        "duration": 3.76
+    },
+    {
+        "text": "this is a palindromic substring right",
+        "start": 434.96,
+        "duration": 3.04
+    },
+    {
+        "text": "left and right point at the same",
+        "start": 436.72,
+        "duration": 1.919
+    },
+    {
+        "text": "character",
+        "start": 438.0,
+        "duration": 3.36
+    },
+    {
+        "text": "then we expand once to the left once to",
+        "start": 438.639,
+        "duration": 3.441
+    },
+    {
+        "text": "the right",
+        "start": 441.36,
+        "duration": 3.839
+    },
+    {
+        "text": "are these characters the same right are",
+        "start": 442.08,
+        "duration": 3.519
+    },
+    {
+        "text": "a",
+        "start": 445.199,
+        "duration": 3.28
+    },
+    {
+        "text": "and b the same they're not the same so",
+        "start": 445.599,
+        "duration": 4.481
+    },
+    {
+        "text": "we knew that the initial",
+        "start": 448.479,
+        "duration": 3.761
+    },
+    {
+        "text": "substring just in the middle over here",
+        "start": 450.08,
+        "duration": 3.92
+    },
+    {
+        "text": "the one the single character",
+        "start": 452.24,
+        "duration": 4.799
+    },
+    {
+        "text": "was a palindrome but when we add this",
+        "start": 454.0,
+        "duration": 5.039
+    },
+    {
+        "text": "character and this character it's no",
+        "start": 457.039,
+        "duration": 3.681
+    },
+    {
+        "text": "longer a palindrome this is not a",
+        "start": 459.039,
+        "duration": 4.401
+    },
+    {
+        "text": "palindrome so no matter what we do now",
+        "start": 460.72,
+        "duration": 4.8
+    },
+    {
+        "text": "if i expand one more to the left and",
+        "start": 463.44,
+        "duration": 3.439
+    },
+    {
+        "text": "expand one more to the right",
+        "start": 465.52,
+        "duration": 3.44
+    },
+    {
+        "text": "even if these characters were the same",
+        "start": 466.879,
+        "duration": 4.32
+    },
+    {
+        "text": "assume we had an a in both positions",
+        "start": 468.96,
+        "duration": 4.56
+    },
+    {
+        "text": "it doesn't matter because the sub",
+        "start": 471.199,
+        "duration": 4.4
+    },
+    {
+        "text": "problem the substring in the middle",
+        "start": 473.52,
+        "duration": 5.359
+    },
+    {
+        "text": "is not a palindrome so therefore no more",
+        "start": 475.599,
+        "duration": 4.16
+    },
+    {
+        "text": "substrings",
+        "start": 478.879,
+        "duration": 3.201
+    },
+    {
+        "text": "expanded from the middle of this",
+        "start": 479.759,
+        "duration": 4.321
+    },
+    {
+        "text": "position to the left and right",
+        "start": 482.08,
+        "duration": 4.16
+    },
+    {
+        "text": "none of those additional substrings are",
+        "start": 484.08,
+        "duration": 4.16
+    },
+    {
+        "text": "going to be palindromes",
+        "start": 486.24,
+        "duration": 4.72
+    },
+    {
+        "text": "so so far our count of palindromes is at",
+        "start": 488.24,
+        "duration": 4.079
+    },
+    {
+        "text": "four i believe so",
+        "start": 490.96,
+        "duration": 3.679
+    },
+    {
+        "text": "now let's go to the last position so we",
+        "start": 492.319,
+        "duration": 3.201
+    },
+    {
+        "text": "want to expand",
+        "start": 494.639,
+        "duration": 2.641
+    },
+    {
+        "text": "from this middle position so we're gonna",
+        "start": 495.52,
+        "duration": 4.0
+    },
+    {
+        "text": "go so initially we're gonna say okay",
+        "start": 497.28,
+        "duration": 4.319
+    },
+    {
+        "text": "this itself is a palindrome so we can",
+        "start": 499.52,
+        "duration": 4.16
+    },
+    {
+        "text": "change our count of palindromes to five",
+        "start": 501.599,
+        "duration": 3.681
+    },
+    {
+        "text": "we try to expand left and we try to",
+        "start": 503.68,
+        "duration": 3.76
+    },
+    {
+        "text": "expand right but again we go out of",
+        "start": 505.28,
+        "duration": 3.44
+    },
+    {
+        "text": "bounds to the right side",
+        "start": 507.44,
+        "duration": 4.56
+    },
+    {
+        "text": "so we're done so in total we found five",
+        "start": 508.72,
+        "duration": 3.759
+    },
+    {
+        "text": "different",
+        "start": 512.0,
+        "duration": 3.039
+    },
+    {
+        "text": "palindromes but it turns out we actually",
+        "start": 512.479,
+        "duration": 3.521
+    },
+    {
+        "text": "missed a couple",
+        "start": 515.039,
+        "duration": 4.321
+    },
+    {
+        "text": "we missed this palindrome of length two",
+        "start": 516.0,
+        "duration": 6.479
+    },
+    {
+        "text": "and we missed this palindrome of length",
+        "start": 519.36,
+        "duration": 3.679
+    },
+    {
+        "text": "two",
+        "start": 522.479,
+        "duration": 3.04
+    },
+    {
+        "text": "how is it that we missed palindromes and",
+        "start": 523.039,
+        "duration": 3.761
+    },
+    {
+        "text": "how is it that they're both",
+        "start": 525.519,
+        "duration": 3.76
+    },
+    {
+        "text": "length two notice how we were starting",
+        "start": 526.8,
+        "duration": 3.92
+    },
+    {
+        "text": "at each middle position",
+        "start": 529.279,
+        "duration": 4.961
+    },
+    {
+        "text": "so this was a length of one right as we",
+        "start": 530.72,
+        "duration": 5.84
+    },
+    {
+        "text": "add the adjacent positions then we're",
+        "start": 534.24,
+        "duration": 3.84
+    },
+    {
+        "text": "increasing the palindrome",
+        "start": 536.56,
+        "duration": 3.92
+    },
+    {
+        "text": "to length three and then if we added a",
+        "start": 538.08,
+        "duration": 4.0
+    },
+    {
+        "text": "couple more we'd increase it to length",
+        "start": 540.48,
+        "duration": 2.64
+    },
+    {
+        "text": "five so we're only",
+        "start": 542.08,
+        "duration": 3.759
+    },
+    {
+        "text": "getting palindromes of odd length if we",
+        "start": 543.12,
+        "duration": 3.44
+    },
+    {
+        "text": "want to get",
+        "start": 545.839,
+        "duration": 3.12
+    },
+    {
+        "text": "palindromes of even lengths we have to",
+        "start": 546.56,
+        "duration": 3.04
+    },
+    {
+        "text": "start",
+        "start": 548.959,
+        "duration": 3.201
+    },
+    {
+        "text": "at every single even position so we'd",
+        "start": 549.6,
+        "duration": 3.52
+    },
+    {
+        "text": "have to start",
+        "start": 552.16,
+        "duration": 3.28
+    },
+    {
+        "text": "at here and then you know this is a",
+        "start": 553.12,
+        "duration": 3.92
+    },
+    {
+        "text": "problem this is a substring of length",
+        "start": 555.44,
+        "duration": 3.04
+    },
+    {
+        "text": "two and then we'd expand",
+        "start": 557.04,
+        "duration": 3.2
+    },
+    {
+        "text": "by one more so then we'd get a",
+        "start": 558.48,
+        "duration": 3.76
+    },
+    {
+        "text": "palindrome of length four and etcetera",
+        "start": 560.24,
+        "duration": 4.08
+    },
+    {
+        "text": "etcetera just keep increasing it by two",
+        "start": 562.24,
+        "duration": 3.279
+    },
+    {
+        "text": "so this is how we're going to get",
+        "start": 564.32,
+        "duration": 3.199
+    },
+    {
+        "text": "palindromes of even length",
+        "start": 565.519,
+        "duration": 3.44
+    },
+    {
+        "text": "so when we do this we're gonna have our",
+        "start": 567.519,
+        "duration": 3.281
+    },
+    {
+        "text": "left pointer initialized here and",
+        "start": 568.959,
+        "duration": 3.601
+    },
+    {
+        "text": "in this case the right pointer is",
+        "start": 570.8,
+        "duration": 3.12
+    },
+    {
+        "text": "actually just gonna be left",
+        "start": 572.56,
+        "duration": 4.399
+    },
+    {
+        "text": "plus one before we were doing it as left",
+        "start": 573.92,
+        "duration": 4.479
+    },
+    {
+        "text": "and right both starting at the same",
+        "start": 576.959,
+        "duration": 2.56
+    },
+    {
+        "text": "position in this case",
+        "start": 578.399,
+        "duration": 4.0
+    },
+    {
+        "text": "left right is going to be left plus one",
+        "start": 579.519,
+        "duration": 4.161
+    },
+    {
+        "text": "and so in this case we see",
+        "start": 582.399,
+        "duration": 2.88
+    },
+    {
+        "text": "these characters are equal therefore",
+        "start": 583.68,
+        "duration": 3.76
+    },
+    {
+        "text": "they are palindromes so we can increase",
+        "start": 585.279,
+        "duration": 3.441
+    },
+    {
+        "text": "our count from five",
+        "start": 587.44,
+        "duration": 3.839
+    },
+    {
+        "text": "to six we expand outwards left and right",
+        "start": 588.72,
+        "duration": 4.08
+    },
+    {
+        "text": "but we see left is going to be out of",
+        "start": 591.279,
+        "duration": 2.0
+    },
+    {
+        "text": "bounds",
+        "start": 592.8,
+        "duration": 3.12
+    },
+    {
+        "text": "so then we can stop so next we're gonna",
+        "start": 593.279,
+        "duration": 4.481
+    },
+    {
+        "text": "basically do the same thing for every",
+        "start": 595.92,
+        "duration": 3.76
+    },
+    {
+        "text": "pair of adjacent characters right to",
+        "start": 597.76,
+        "duration": 4.56
+    },
+    {
+        "text": "find even length palindromes so here",
+        "start": 599.68,
+        "duration": 4.08
+    },
+    {
+        "text": "left and right are once again the same",
+        "start": 602.32,
+        "duration": 1.68
+    },
+    {
+        "text": "so",
+        "start": 603.76,
+        "duration": 2.079
+    },
+    {
+        "text": "we're gonna get our total to be seven",
+        "start": 604.0,
+        "duration": 3.92
+    },
+    {
+        "text": "when we expand to the left and right",
+        "start": 605.839,
+        "duration": 4.801
+    },
+    {
+        "text": "we see we have an a and we have a b",
+        "start": 607.92,
+        "duration": 4.479
+    },
+    {
+        "text": "these characters are not the same so we",
+        "start": 610.64,
+        "duration": 3.68
+    },
+    {
+        "text": "can't continue to expand and we don't",
+        "start": 612.399,
+        "duration": 3.921
+    },
+    {
+        "text": "increment our result so now we have",
+        "start": 614.32,
+        "duration": 4.4
+    },
+    {
+        "text": "seven palindromes this is the last even",
+        "start": 616.32,
+        "duration": 4.0
+    },
+    {
+        "text": "length sub string that we're going to",
+        "start": 618.72,
+        "duration": 3.04
+    },
+    {
+        "text": "start at and",
+        "start": 620.32,
+        "duration": 2.639
+    },
+    {
+        "text": "the left and right characters are",
+        "start": 621.76,
+        "duration": 2.8
+    },
+    {
+        "text": "clearly not the same so we don't",
+        "start": 622.959,
+        "duration": 3.44
+    },
+    {
+        "text": "continue to expand and we don't",
+        "start": 624.56,
+        "duration": 3.279
+    },
+    {
+        "text": "increment our result so",
+        "start": 626.399,
+        "duration": 3.44
+    },
+    {
+        "text": "we're done with everything here we get a",
+        "start": 627.839,
+        "duration": 3.281
+    },
+    {
+        "text": "result of seven",
+        "start": 629.839,
+        "duration": 3.201
+    },
+    {
+        "text": "and the overall time complexity of doing",
+        "start": 631.12,
+        "duration": 3.279
+    },
+    {
+        "text": "it like this",
+        "start": 633.04,
+        "duration": 3.68
+    },
+    {
+        "text": "it's going to be big o of n because for",
+        "start": 634.399,
+        "duration": 3.841
+    },
+    {
+        "text": "let's say the odd lengths",
+        "start": 636.72,
+        "duration": 3.679
+    },
+    {
+        "text": "uh palindromes we're starting at every",
+        "start": 638.24,
+        "duration": 3.039
+    },
+    {
+        "text": "single position",
+        "start": 640.399,
+        "duration": 3.12
+    },
+    {
+        "text": "and potentially expanding outwards all",
+        "start": 641.279,
+        "duration": 4.081
+    },
+    {
+        "text": "the way to the end of the string so",
+        "start": 643.519,
+        "duration": 2.801
+    },
+    {
+        "text": "that's going to be",
+        "start": 645.36,
+        "duration": 4.0
+    },
+    {
+        "text": "an end time operation so since we're",
+        "start": 646.32,
+        "duration": 4.4
+    },
+    {
+        "text": "doing it for every single character in",
+        "start": 649.36,
+        "duration": 2.64
+    },
+    {
+        "text": "the array it's going to be big o",
+        "start": 650.72,
+        "duration": 3.6
+    },
+    {
+        "text": "n times n right so that's that's",
+        "start": 652.0,
+        "duration": 4.24
+    },
+    {
+        "text": "basically how we're doing the odd length",
+        "start": 654.32,
+        "duration": 3.12
+    },
+    {
+        "text": "palindromes and the",
+        "start": 656.24,
+        "duration": 2.719
+    },
+    {
+        "text": "the same time complexity is going to be",
+        "start": 657.44,
+        "duration": 3.28
+    },
+    {
+        "text": "true for even length right we're",
+        "start": 658.959,
+        "duration": 3.761
+    },
+    {
+        "text": "basically going through every pair",
+        "start": 660.72,
+        "duration": 5.119
+    },
+    {
+        "text": "of characters which there are you know",
+        "start": 662.72,
+        "duration": 5.2
+    },
+    {
+        "text": "big o of n of them and then we're still",
+        "start": 665.839,
+        "duration": 3.281
+    },
+    {
+        "text": "expanding outwards",
+        "start": 667.92,
+        "duration": 2.72
+    },
+    {
+        "text": "so that's also going to be big o of n",
+        "start": 669.12,
+        "duration": 4.159
+    },
+    {
+        "text": "times n now if you add these together",
+        "start": 670.64,
+        "duration": 4.4
+    },
+    {
+        "text": "we're still going to get a overall time",
+        "start": 673.279,
+        "duration": 3.281
+    },
+    {
+        "text": "complexity of big o",
+        "start": 675.04,
+        "duration": 4.08
+    },
+    {
+        "text": "n squared so that's the overall time",
+        "start": 676.56,
+        "duration": 3.279
+    },
+    {
+        "text": "complexity",
+        "start": 679.12,
+        "duration": 3.04
+    },
+    {
+        "text": "in this solution and coding it up is",
+        "start": 679.839,
+        "duration": 4.801
+    },
+    {
+        "text": "pretty easy so let's get into that",
+        "start": 682.16,
+        "duration": 5.2
+    },
+    {
+        "text": "so let's keep track of a single result",
+        "start": 684.64,
+        "duration": 4.24
+    },
+    {
+        "text": "variable and it's initially going to be",
+        "start": 687.36,
+        "duration": 2.719
+    },
+    {
+        "text": "zero it's going to be the count",
+        "start": 688.88,
+        "duration": 3.44
+    },
+    {
+        "text": "of the palindromic substrings so we want",
+        "start": 690.079,
+        "duration": 4.161
+    },
+    {
+        "text": "to go through every single position",
+        "start": 692.32,
+        "duration": 5.759
+    },
+    {
+        "text": "in the string s and expand from it right",
+        "start": 694.24,
+        "duration": 4.88
+    },
+    {
+        "text": "that's going to give us the",
+        "start": 698.079,
+        "duration": 3.521
+    },
+    {
+        "text": "odd length palindromes so we're going to",
+        "start": 699.12,
+        "duration": 4.0
+    },
+    {
+        "text": "initialize our left",
+        "start": 701.6,
+        "duration": 4.72
+    },
+    {
+        "text": "and right pointers both to be set to i",
+        "start": 703.12,
+        "duration": 5.44
+    },
+    {
+        "text": "because these are odd length palindromes",
+        "start": 706.32,
+        "duration": 4.0
+    },
+    {
+        "text": "and while",
+        "start": 708.56,
+        "duration": 4.32
+    },
+    {
+        "text": "left is inbound so while left is greater",
+        "start": 710.32,
+        "duration": 3.68
+    },
+    {
+        "text": "than or equal to zero",
+        "start": 712.88,
+        "duration": 3.28
+    },
+    {
+        "text": "and right is inbound so right is less",
+        "start": 714.0,
+        "duration": 3.76
+    },
+    {
+        "text": "than the length of the string",
+        "start": 716.16,
+        "duration": 4.799
+    },
+    {
+        "text": "and this the position at left in our",
+        "start": 717.76,
+        "duration": 4.96
+    },
+    {
+        "text": "string is equal to the position",
+        "start": 720.959,
+        "duration": 3.921
+    },
+    {
+        "text": "at right in our string that means we",
+        "start": 722.72,
+        "duration": 3.84
+    },
+    {
+        "text": "found a palindrome so let's",
+        "start": 724.88,
+        "duration": 4.16
+    },
+    {
+        "text": "increment our result by one let's shift",
+        "start": 726.56,
+        "duration": 4.48
+    },
+    {
+        "text": "our our left pointer to the left",
+        "start": 729.04,
+        "duration": 3.76
+    },
+    {
+        "text": "and let's shift our right pointer to the",
+        "start": 731.04,
+        "duration": 3.68
+    },
+    {
+        "text": "right and we're going to continue to do",
+        "start": 732.8,
+        "duration": 2.24
+    },
+    {
+        "text": "that",
+        "start": 734.72,
+        "duration": 3.04
+    },
+    {
+        "text": "while the pointers are in bounds and the",
+        "start": 735.04,
+        "duration": 4.239
+    },
+    {
+        "text": "characters are the same then we're going",
+        "start": 737.76,
+        "duration": 3.04
+    },
+    {
+        "text": "to continue to increment the number of",
+        "start": 739.279,
+        "duration": 3.36
+    },
+    {
+        "text": "palindromes so that's going to give us",
+        "start": 740.8,
+        "duration": 4.56
+    },
+    {
+        "text": "the palindromes of odd length we can we",
+        "start": 742.639,
+        "duration": 4.481
+    },
+    {
+        "text": "don't have to do a separate for loop for",
+        "start": 745.36,
+        "duration": 3.36
+    },
+    {
+        "text": "the even length palindromes let's just",
+        "start": 747.12,
+        "duration": 3.2
+    },
+    {
+        "text": "do the exact same thing we've done up",
+        "start": 748.72,
+        "duration": 2.559
+    },
+    {
+        "text": "above here",
+        "start": 750.32,
+        "duration": 2.72
+    },
+    {
+        "text": "except in this case we're going to",
+        "start": 751.279,
+        "duration": 3.441
+    },
+    {
+        "text": "initialize left to be",
+        "start": 753.04,
+        "duration": 4.239
+    },
+    {
+        "text": "i which is what we did before but we're",
+        "start": 754.72,
+        "duration": 3.44
+    },
+    {
+        "text": "going to initialize",
+        "start": 757.279,
+        "duration": 4.161
+    },
+    {
+        "text": "right to be i plus 1",
+        "start": 758.16,
+        "duration": 4.96
+    },
+    {
+        "text": "which is going to give us the even",
+        "start": 761.44,
+        "duration": 3.12
+    },
+    {
+        "text": "length palindromes",
+        "start": 763.12,
+        "duration": 2.959
+    },
+    {
+        "text": "and once we've done that we can",
+        "start": 764.56,
+        "duration": 3.519
+    },
+    {
+        "text": "literally just copy and paste this for",
+        "start": 766.079,
+        "duration": 3.041
+    },
+    {
+        "text": "loop up above",
+        "start": 768.079,
+        "duration": 3.041
+    },
+    {
+        "text": "down here and then that'll calculate the",
+        "start": 769.12,
+        "duration": 3.519
+    },
+    {
+        "text": "even length palindromes",
+        "start": 771.12,
+        "duration": 3.519
+    },
+    {
+        "text": "and then once that is done we can go",
+        "start": 772.639,
+        "duration": 4.081
+    },
+    {
+        "text": "ahead and return our result",
+        "start": 774.639,
+        "duration": 3.921
+    },
+    {
+        "text": "now as you can see this solution works",
+        "start": 776.72,
+        "duration": 3.119
+    },
+    {
+        "text": "that's the entire thing",
+        "start": 778.56,
+        "duration": 3.36
+    },
+    {
+        "text": "it's very efficient but maybe your",
+        "start": 779.839,
+        "duration": 3.601
+    },
+    {
+        "text": "interviewer will want you to",
+        "start": 781.92,
+        "duration": 3.039
+    },
+    {
+        "text": "you know this is copy and paste and",
+        "start": 783.44,
+        "duration": 3.04
+    },
+    {
+        "text": "sometimes they don't like copy and paste",
+        "start": 784.959,
+        "duration": 2.0
+    },
+    {
+        "text": "we can",
+        "start": 786.48,
+        "duration": 2.32
+    },
+    {
+        "text": "basically take these two and condense",
+        "start": 786.959,
+        "duration": 3.521
+    },
+    {
+        "text": "them down into a single function",
+        "start": 788.8,
+        "duration": 3.52
+    },
+    {
+        "text": "so i'm just going to do that even though",
+        "start": 790.48,
+        "duration": 3.12
+    },
+    {
+        "text": "i'm sure you could probably figure out",
+        "start": 792.32,
+        "duration": 2.8
+    },
+    {
+        "text": "how to do it in this case it's not too",
+        "start": 793.6,
+        "duration": 2.88
+    },
+    {
+        "text": "bad so i'm going to make a function",
+        "start": 795.12,
+        "duration": 4.56
+    },
+    {
+        "text": "called count palindromes and we'll pass",
+        "start": 796.48,
+        "duration": 3.52
+    },
+    {
+        "text": "into",
+        "start": 799.68,
+        "duration": 3.92
+    },
+    {
+        "text": "this the string s and the left",
+        "start": 800.0,
+        "duration": 5.6
+    },
+    {
+        "text": "and right pointers that we are",
+        "start": 803.6,
+        "duration": 3.28
+    },
+    {
+        "text": "initializing",
+        "start": 805.6,
+        "duration": 2.64
+    },
+    {
+        "text": "and so basically what i'm going to do",
+        "start": 806.88,
+        "duration": 3.36
+    },
+    {
+        "text": "here is take this and just copy and",
+        "start": 808.24,
+        "duration": 3.279
+    },
+    {
+        "text": "paste it into here",
+        "start": 810.24,
+        "duration": 4.0
+    },
+    {
+        "text": "right and so you can see that we're",
+        "start": 811.519,
+        "duration": 4.161
+    },
+    {
+        "text": "giving this function the information it",
+        "start": 814.24,
+        "duration": 2.96
+    },
+    {
+        "text": "needs we're giving it the string s we're",
+        "start": 815.68,
+        "duration": 3.12
+    },
+    {
+        "text": "giving it pointers left and right",
+        "start": 817.2,
+        "duration": 4.4
+    },
+    {
+        "text": "let's just give it a variable here let's",
+        "start": 818.8,
+        "duration": 3.839
+    },
+    {
+        "text": "declare it result",
+        "start": 821.6,
+        "duration": 2.56
+    },
+    {
+        "text": "is initially going to be 0 and then this",
+        "start": 822.639,
+        "duration": 3.2
+    },
+    {
+        "text": "function is just going to return result",
+        "start": 824.16,
+        "duration": 3.2
+    },
+    {
+        "text": "which is the number of palindromes it",
+        "start": 825.839,
+        "duration": 2.24
+    },
+    {
+        "text": "can count",
+        "start": 827.36,
+        "duration": 2.159
+    },
+    {
+        "text": "starting at these left and right",
+        "start": 828.079,
+        "duration": 3.12
+    },
+    {
+        "text": "pointers so now we can",
+        "start": 829.519,
+        "duration": 3.921
+    },
+    {
+        "text": "you know change this so here we're",
+        "start": 831.199,
+        "duration": 3.601
+    },
+    {
+        "text": "trying to count the odd length",
+        "start": 833.44,
+        "duration": 2.639
+    },
+    {
+        "text": "palindrome so",
+        "start": 834.8,
+        "duration": 3.599
+    },
+    {
+        "text": "instead of doing this for loop we can",
+        "start": 836.079,
+        "duration": 4.801
+    },
+    {
+        "text": "just say let's add to the result",
+        "start": 838.399,
+        "duration": 5.12
+    },
+    {
+        "text": "the whatever this function returns so",
+        "start": 840.88,
+        "duration": 3.92
+    },
+    {
+        "text": "count pally",
+        "start": 843.519,
+        "duration": 4.161
+    },
+    {
+        "text": "passing in the string s passing in the",
+        "start": 844.8,
+        "duration": 4.399
+    },
+    {
+        "text": "left pointer",
+        "start": 847.68,
+        "duration": 3.04
+    },
+    {
+        "text": "and passing in the right pointer which",
+        "start": 849.199,
+        "duration": 3.44
+    },
+    {
+        "text": "we just declared up above here",
+        "start": 850.72,
+        "duration": 4.16
+    },
+    {
+        "text": "and getting rid of this while loop we",
+        "start": 852.639,
+        "duration": 3.361
+    },
+    {
+        "text": "can do the same thing so",
+        "start": 854.88,
+        "duration": 3.12
+    },
+    {
+        "text": "add to result whatever this function",
+        "start": 856.0,
+        "duration": 3.76
+    },
+    {
+        "text": "returns count pali",
+        "start": 858.0,
+        "duration": 4.8
+    },
+    {
+        "text": "passing in s passing in left",
+        "start": 859.76,
+        "duration": 5.36
+    },
+    {
+        "text": "and passing in right and if we really",
+        "start": 862.8,
+        "duration": 3.2
+    },
+    {
+        "text": "want we can take",
+        "start": 865.12,
+        "duration": 3.68
+    },
+    {
+        "text": "left and replace it with i and right and",
+        "start": 866.0,
+        "duration": 4.24
+    },
+    {
+        "text": "replace it with i",
+        "start": 868.8,
+        "duration": 3.52
+    },
+    {
+        "text": "plus one so then we can get rid of these",
+        "start": 870.24,
+        "duration": 3.44
+    },
+    {
+        "text": "two lines",
+        "start": 872.32,
+        "duration": 2.959
+    },
+    {
+        "text": "and up above do the same thing so",
+        "start": 873.68,
+        "duration": 3.36
+    },
+    {
+        "text": "replace left and right with both",
+        "start": 875.279,
+        "duration": 4.401
+    },
+    {
+        "text": "i and then get rid of this line so this",
+        "start": 877.04,
+        "duration": 3.919
+    },
+    {
+        "text": "is a pretty condensed",
+        "start": 879.68,
+        "duration": 4.0
+    },
+    {
+        "text": "version of this function so with this",
+        "start": 880.959,
+        "duration": 4.161
+    },
+    {
+        "text": "little helper function that we have we",
+        "start": 883.68,
+        "duration": 2.56
+    },
+    {
+        "text": "can cut down on",
+        "start": 885.12,
+        "duration": 3.68
+    },
+    {
+        "text": "that repeated code that we were writing",
+        "start": 886.24,
+        "duration": 4.56
+    },
+    {
+        "text": "and basically get the same result",
+        "start": 888.8,
+        "duration": 4.32
+    },
+    {
+        "text": "same efficiency same everything so i",
+        "start": 890.8,
+        "duration": 3.599
+    },
+    {
+        "text": "hope that this was helpful",
+        "start": 893.12,
+        "duration": 3.519
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 894.399,
+        "duration": 3.841
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 896.639,
+        "duration": 3.76
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 898.24,
+        "duration": 5.2
+    },
+    {
+        "text": "thanks for watching",
+        "start": 900.399,
+        "duration": 3.041
+    }
+]

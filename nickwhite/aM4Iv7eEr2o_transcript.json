@@ -1,0 +1,692 @@
+[
+    {
+        "text": "hey what's up guys Nick white here I",
+        "start": 0.23,
+        "duration": 4.18
+    },
+    {
+        "text": "detect encoding stuff on Twitch on",
+        "start": 2.879,
+        "duration": 3.69
+    },
+    {
+        "text": "YouTube check the description for all my",
+        "start": 4.41,
+        "duration": 3.899
+    },
+    {
+        "text": "information or you can go to my channel",
+        "start": 6.569,
+        "duration": 3.721
+    },
+    {
+        "text": "and I have all the hacker ink and Lee",
+        "start": 8.309,
+        "duration": 4.351
+    },
+    {
+        "text": "code solutions for all the problems so",
+        "start": 10.29,
+        "duration": 3.929
+    },
+    {
+        "text": "go check that out",
+        "start": 12.66,
+        "duration": 3.869
+    },
+    {
+        "text": "this one's called add two numbers so",
+        "start": 14.219,
+        "duration": 4.771
+    },
+    {
+        "text": "you're given two non-empty linked lists",
+        "start": 16.529,
+        "duration": 4.981
+    },
+    {
+        "text": "in each linked list represents a",
+        "start": 18.99,
+        "duration": 4.98
+    },
+    {
+        "text": "non-negative integer the digits are",
+        "start": 21.51,
+        "duration": 4.349
+    },
+    {
+        "text": "stored in reverse order so each other",
+        "start": 23.97,
+        "duration": 3.84
+    },
+    {
+        "text": "nodes contains a single digit of that",
+        "start": 25.859,
+        "duration": 2.461
+    },
+    {
+        "text": "number",
+        "start": 27.81,
+        "duration": 2.309
+    },
+    {
+        "text": "so we're given reference to two heads of",
+        "start": 28.32,
+        "duration": 4.439
+    },
+    {
+        "text": "two separate lists right and each node",
+        "start": 30.119,
+        "duration": 5.85
+    },
+    {
+        "text": "is a number add the two numbers and",
+        "start": 32.759,
+        "duration": 5.101
+    },
+    {
+        "text": "return it is a new linked list so we're",
+        "start": 35.969,
+        "duration": 3.691
+    },
+    {
+        "text": "gonna have a new linked list with the",
+        "start": 37.86,
+        "duration": 5.76
+    },
+    {
+        "text": "addition of all of these right so if we",
+        "start": 39.66,
+        "duration": 6.059
+    },
+    {
+        "text": "were going to do this in the reverse",
+        "start": 43.62,
+        "duration": 6.419
+    },
+    {
+        "text": "order so it's not 243 plus 564 it's 342",
+        "start": 45.719,
+        "duration": 7.651
+    },
+    {
+        "text": "plus 465 and that makes it easier for us",
+        "start": 50.039,
+        "duration": 11.04
+    },
+    {
+        "text": "because if we were to do 243 plus 564 if",
+        "start": 53.37,
+        "duration": 9.09
+    },
+    {
+        "text": "we were gonna add these numbers we would",
+        "start": 61.079,
+        "duration": 5.641
+    },
+    {
+        "text": "do 4 plus 3 right and we would get 7 and",
+        "start": 62.46,
+        "duration": 7.92
+    },
+    {
+        "text": "then if we wanted 4 plus 6 we get a 0 if",
+        "start": 66.72,
+        "duration": 7.439
+    },
+    {
+        "text": "we wanted to plus 5 well we we'd get 10",
+        "start": 70.38,
+        "duration": 5.61
+    },
+    {
+        "text": "but we'd have to carry one over to this",
+        "start": 74.159,
+        "duration": 4.201
+    },
+    {
+        "text": "operation right 4 plus 6 is 10 we've",
+        "start": 75.99,
+        "duration": 4.8
+    },
+    {
+        "text": "carried 1 so now we get 1 plus 2 plus 5",
+        "start": 78.36,
+        "duration": 4.35
+    },
+    {
+        "text": "and then we get 8 right and that's how",
+        "start": 80.79,
+        "duration": 4.35
+    },
+    {
+        "text": "we get our answer so all we really have",
+        "start": 82.71,
+        "duration": 6.06
+    },
+    {
+        "text": "to do is traverse these lists at the",
+        "start": 85.14,
+        "duration": 6.479
+    },
+    {
+        "text": "same time and if one number is less",
+        "start": 88.77,
+        "duration": 5.37
+    },
+    {
+        "text": "digits than the other we just pretend",
+        "start": 91.619,
+        "duration": 4.441
+    },
+    {
+        "text": "there's a zero in that place value and",
+        "start": 94.14,
+        "duration": 3.839
+    },
+    {
+        "text": "we traverse these at the same amount of",
+        "start": 96.06,
+        "duration": 4.41
+    },
+    {
+        "text": "the same about same value at each time",
+        "start": 97.979,
+        "duration": 3.871
+    },
+    {
+        "text": "and we end the loops at the same time",
+        "start": 100.47,
+        "duration": 4.649
+    },
+    {
+        "text": "and we just do 2 plus 5 2 7 4 plus 6 is",
+        "start": 101.85,
+        "duration": 5.64
+    },
+    {
+        "text": "10 carry 1 over we do the same thing so",
+        "start": 105.119,
+        "duration": 4.14
+    },
+    {
+        "text": "that's it and then we add them as new",
+        "start": 107.49,
+        "duration": 3.48
+    },
+    {
+        "text": "nodes to our new length list we're gonna",
+        "start": 109.259,
+        "duration": 18.601
+    },
+    {
+        "text": "do lists no dummy is equal to new and",
+        "start": 110.97,
+        "duration": 19.53
+    },
+    {
+        "text": "then yeah we do this because we have to",
+        "start": 127.86,
+        "duration": 5.16
+    },
+    {
+        "text": "do the same place value at each time",
+        "start": 130.5,
+        "duration": 3.03
+    },
+    {
+        "text": "right",
+        "start": 133.02,
+        "duration": 2.76
+    },
+    {
+        "text": "last place value second last place value",
+        "start": 133.53,
+        "duration": 5.1
+    },
+    {
+        "text": "first place value every single time and",
+        "start": 135.78,
+        "duration": 5.31
+    },
+    {
+        "text": "if one number has more digits than the",
+        "start": 138.63,
+        "duration": 3.87
+    },
+    {
+        "text": "other so if it was five six four three",
+        "start": 141.09,
+        "duration": 3.63
+    },
+    {
+        "text": "and this one didn't have four digits",
+        "start": 142.5,
+        "duration": 3.87
+    },
+    {
+        "text": "this one had four digits this has three",
+        "start": 144.72,
+        "duration": 5.79
+    },
+    {
+        "text": "we just set the value of that we we have",
+        "start": 146.37,
+        "duration": 5.94
+    },
+    {
+        "text": "a fake value for it and it's just going",
+        "start": 150.51,
+        "duration": 4.68
+    },
+    {
+        "text": "to be zero because it's all addition so",
+        "start": 152.31,
+        "duration": 5.16
+    },
+    {
+        "text": "we just would add zero to it so we're",
+        "start": 155.19,
+        "duration": 4.44
+    },
+    {
+        "text": "gonna do that with ternary conditions so",
+        "start": 157.47,
+        "duration": 6.239
+    },
+    {
+        "text": "we do l1 Val is equal to if l1 bat is",
+        "start": 159.63,
+        "duration": 7.859
+    },
+    {
+        "text": "not equal to null then we're gonna use",
+        "start": 163.709,
+        "duration": 6.121
+    },
+    {
+        "text": "l1 dot bow otherwise we're gonna use",
+        "start": 167.489,
+        "duration": 3.121
+    },
+    {
+        "text": "zero right",
+        "start": 169.83,
+        "duration": 3.06
+    },
+    {
+        "text": "so as we loop through these are the",
+        "start": 170.61,
+        "duration": 3.66
+    },
+    {
+        "text": "variables that we're gonna add together",
+        "start": 172.89,
+        "duration": 4.44
+    },
+    {
+        "text": "when we extract the value the return air",
+        "start": 174.27,
+        "duration": 5.25
+    },
+    {
+        "text": "conditioner repair and we just have to",
+        "start": 177.33,
+        "duration": 4.86
+    },
+    {
+        "text": "make sure that the place value is not",
+        "start": 179.52,
+        "duration": 4.35
+    },
+    {
+        "text": "equal to null if it's equal and all then",
+        "start": 182.19,
+        "duration": 3.18
+    },
+    {
+        "text": "the value is going to be zero obviously",
+        "start": 183.87,
+        "duration": 3.45
+    },
+    {
+        "text": "otherwise we'll actually use the value",
+        "start": 185.37,
+        "duration": 3.839
+    },
+    {
+        "text": "so then we just calculate the current",
+        "start": 187.32,
+        "duration": 7.86
+    },
+    {
+        "text": "sum is equal to l1 Val plus l2 Val plus",
+        "start": 189.209,
+        "duration": 8.131
+    },
+    {
+        "text": "Carrie so we need to make sure we have",
+        "start": 195.18,
+        "duration": 4.14
+    },
+    {
+        "text": "the carry to the song when we add these",
+        "start": 197.34,
+        "duration": 3.84
+    },
+    {
+        "text": "rights because if we were adding four",
+        "start": 199.32,
+        "duration": 4.11
+    },
+    {
+        "text": "plus three we would be at seven but we",
+        "start": 201.18,
+        "duration": 4.559
+    },
+    {
+        "text": "need that carryover from the four plus",
+        "start": 203.43,
+        "duration": 4.89
+    },
+    {
+        "text": "six earlier that one right so we're",
+        "start": 205.739,
+        "duration": 5.791
+    },
+    {
+        "text": "gonna declare a current carry up here",
+        "start": 208.32,
+        "duration": 5.04
+    },
+    {
+        "text": "and just gonna be zero for the first",
+        "start": 211.53,
+        "duration": 5.07
+    },
+    {
+        "text": "loop and then it'll be set right here",
+        "start": 213.36,
+        "duration": 5.64
+    },
+    {
+        "text": "so Carrie is always gonna be current sum",
+        "start": 216.6,
+        "duration": 5.43
+    },
+    {
+        "text": "divided by ten and we'll also need the",
+        "start": 219.0,
+        "duration": 5.489
+    },
+    {
+        "text": "last digit it's go always going to be",
+        "start": 222.03,
+        "duration": 7.53
+    },
+    {
+        "text": "current song monta and this just",
+        "start": 224.489,
+        "duration": 7.291
+    },
+    {
+        "text": "expressed the last digit because if we 4",
+        "start": 229.56,
+        "duration": 4.17
+    },
+    {
+        "text": "plus 6 is 10 so one will be the carry",
+        "start": 231.78,
+        "duration": 7.019
+    },
+    {
+        "text": "because 10 divided by 10 is 1 and 10",
+        "start": 233.73,
+        "duration": 7.979
+    },
+    {
+        "text": "modulus 10 is going to be 0 because 10",
+        "start": 238.799,
+        "duration": 7.081
+    },
+    {
+        "text": "goes into 10 perfectly so we set have",
+        "start": 241.709,
+        "duration": 12.87
+    },
+    {
+        "text": "our new list note of last digit and then",
+        "start": 245.88,
+        "duration": 12.9
+    },
+    {
+        "text": "this is always to do l3x note and then",
+        "start": 254.579,
+        "duration": 5.671
+    },
+    {
+        "text": "that's pretty much it all we have to do",
+        "start": 258.78,
+        "duration": 5.97
+    },
+    {
+        "text": "now is if all ones we traverse that list",
+        "start": 260.25,
+        "duration": 7.44
+    },
+    {
+        "text": "one equals one the next same thing for",
+        "start": 264.75,
+        "duration": 6.09
+    },
+    {
+        "text": "l2 and l3 doesn't have to have a null",
+        "start": 267.69,
+        "duration": 5.7
+    },
+    {
+        "text": "check just I want to know - because",
+        "start": 270.84,
+        "duration": 7.44
+    },
+    {
+        "text": "we're doing we have this world here and",
+        "start": 273.39,
+        "duration": 8.31
+    },
+    {
+        "text": "then L 3 equals next and then obviously",
+        "start": 278.28,
+        "duration": 5.16
+    },
+    {
+        "text": "there could be a carry left over at the",
+        "start": 281.7,
+        "duration": 3.09
+    },
+    {
+        "text": "end so we just want to make sure right",
+        "start": 283.44,
+        "duration": 4.5
+    },
+    {
+        "text": "if there was you know two nines if we",
+        "start": 284.79,
+        "duration": 6.06
+    },
+    {
+        "text": "added nine hundred and nine hundred we",
+        "start": 287.94,
+        "duration": 5.49
+    },
+    {
+        "text": "would get 1800 obviously so we have to",
+        "start": 290.85,
+        "duration": 5.58
+    },
+    {
+        "text": "create a new place value so if the left",
+        "start": 293.43,
+        "duration": 6.51
+    },
+    {
+        "text": "over carry meaning this one is greater",
+        "start": 296.43,
+        "duration": 5.76
+    },
+    {
+        "text": "than zero then we just have another new",
+        "start": 299.94,
+        "duration": 6.15
+    },
+    {
+        "text": "list mode is going to be equal to list",
+        "start": 302.19,
+        "duration": 7.979
+    },
+    {
+        "text": "node of carry and that's going to",
+        "start": 306.09,
+        "duration": 8.19
+    },
+    {
+        "text": "usually be one I think always so L 3 dot",
+        "start": 310.169,
+        "duration": 7.231
+    },
+    {
+        "text": "next because the highest digits are nine",
+        "start": 314.28,
+        "duration": 7.65
+    },
+    {
+        "text": "you can add three and that's pretty much",
+        "start": 317.4,
+        "duration": 6.33
+    },
+    {
+        "text": "it and then we just had that dummy head",
+        "start": 321.93,
+        "duration": 3.36
+    },
+    {
+        "text": "up there so we can return a reference to",
+        "start": 323.73,
+        "duration": 3.3
+    },
+    {
+        "text": "the head of our new list so it's return",
+        "start": 325.29,
+        "duration": 7.4
+    },
+    {
+        "text": "dummy head dot next and that should work",
+        "start": 327.03,
+        "duration": 5.66
+    },
+    {
+        "text": "there we go perfect so that's pretty",
+        "start": 333.14,
+        "duration": 6.339
+    },
+    {
+        "text": "much it I guess I could explain it again",
+        "start": 336.96,
+        "duration": 4.22
+    },
+    {
+        "text": "this video is getting pretty long but",
+        "start": 339.479,
+        "duration": 5.461
+    },
+    {
+        "text": "we're given these two lists each node",
+        "start": 341.18,
+        "duration": 5.92
+    },
+    {
+        "text": "represents a digit of the number they're",
+        "start": 344.94,
+        "duration": 4.55
+    },
+    {
+        "text": "in reversed order so we do a regular",
+        "start": 347.1,
+        "duration": 4.74
+    },
+    {
+        "text": "perfect for us to do regular arithmetic",
+        "start": 349.49,
+        "duration": 5.04
+    },
+    {
+        "text": "addition so we add one digit at a time",
+        "start": 351.84,
+        "duration": 6.12
+    },
+    {
+        "text": "with this sum value we make sure that",
+        "start": 354.53,
+        "duration": 5.68
+    },
+    {
+        "text": "the digits aren't know if they're no we",
+        "start": 357.96,
+        "duration": 4.05
+    },
+    {
+        "text": "set the value to zero",
+        "start": 360.21,
+        "duration": 4.41
+    },
+    {
+        "text": "we add one digit at a time we calculate",
+        "start": 362.01,
+        "duration": 5.13
+    },
+    {
+        "text": "the carry we calculate the actual value",
+        "start": 364.62,
+        "duration": 4.32
+    },
+    {
+        "text": "we want our new digit to be in the",
+        "start": 367.14,
+        "duration": 3.87
+    },
+    {
+        "text": "addition and then we set it in our new",
+        "start": 368.94,
+        "duration": 4.08
+    },
+    {
+        "text": "list then we'd return reference to our",
+        "start": 371.01,
+        "duration": 3.99
+    },
+    {
+        "text": "new list that's pretty much it let me",
+        "start": 373.02,
+        "duration": 3.209
+    },
+    {
+        "text": "know what you guys think let me know if",
+        "start": 375.0,
+        "duration": 3.03
+    },
+    {
+        "text": "you have a better solution and thanks",
+        "start": 376.229,
+        "duration": 2.94
+    },
+    {
+        "text": "for watching check out the other videos",
+        "start": 378.03,
+        "duration": 4.25
+    },
+    {
+        "text": "in see you next time",
+        "start": 379.169,
+        "duration": 3.111
+    }
+]

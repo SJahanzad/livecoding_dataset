@@ -1,0 +1,2147 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.679
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.76,
+        "duration": 3.599
+    },
+    {
+        "text": "we're going to be solving a binary",
+        "start": 3.679,
+        "duration": 2.241
+    },
+    {
+        "text": "question",
+        "start": 5.359,
+        "duration": 2.721
+    },
+    {
+        "text": "counting bits and this is one of the",
+        "start": 5.92,
+        "duration": 4.639
+    },
+    {
+        "text": "binary questions from the blind 75 list",
+        "start": 8.08,
+        "duration": 3.519
+    },
+    {
+        "text": "that we've been tracking in the",
+        "start": 10.559,
+        "duration": 2.96
+    },
+    {
+        "text": "spreadsheet so we will finally be adding",
+        "start": 11.599,
+        "duration": 2.321
+    },
+    {
+        "text": "a",
+        "start": 13.519,
+        "duration": 2.641
+    },
+    {
+        "text": "video solution to this binary problem",
+        "start": 13.92,
+        "duration": 3.84
+    },
+    {
+        "text": "i'm pretty sure it used to be a medium",
+        "start": 16.16,
+        "duration": 3.039
+    },
+    {
+        "text": "problem which is why it's highlighted",
+        "start": 17.76,
+        "duration": 3.599
+    },
+    {
+        "text": "yellow but i think it got changed to an",
+        "start": 19.199,
+        "duration": 3.121
+    },
+    {
+        "text": "easy problem",
+        "start": 21.359,
+        "duration": 2.641
+    },
+    {
+        "text": "so the statement is pretty simple we're",
+        "start": 22.32,
+        "duration": 4.24
+    },
+    {
+        "text": "given an integer n and we want to return",
+        "start": 24.0,
+        "duration": 6.4
+    },
+    {
+        "text": "an answer array of length n plus one",
+        "start": 26.56,
+        "duration": 7.36
+    },
+    {
+        "text": "basically a value for every integer in",
+        "start": 30.4,
+        "duration": 4.88
+    },
+    {
+        "text": "the range from zero",
+        "start": 33.92,
+        "duration": 4.959
+    },
+    {
+        "text": "all the way up until n so if n happened",
+        "start": 35.28,
+        "duration": 4.08
+    },
+    {
+        "text": "to be",
+        "start": 38.879,
+        "duration": 2.881
+    },
+    {
+        "text": "zero then we would just return a single",
+        "start": 39.36,
+        "duration": 3.12
+    },
+    {
+        "text": "integer if",
+        "start": 41.76,
+        "duration": 2.319
+    },
+    {
+        "text": "zero happened to be two then we would",
+        "start": 42.48,
+        "duration": 3.2
+    },
+    {
+        "text": "return three integers for",
+        "start": 44.079,
+        "duration": 5.041
+    },
+    {
+        "text": "zero one and two and basically for every",
+        "start": 45.68,
+        "duration": 4.0
+    },
+    {
+        "text": "value",
+        "start": 49.12,
+        "duration": 3.68
+    },
+    {
+        "text": "in this range zero to n so if n was two",
+        "start": 49.68,
+        "duration": 4.96
+    },
+    {
+        "text": "we would have three values in that range",
+        "start": 52.8,
+        "duration": 4.399
+    },
+    {
+        "text": "zero one two for each of these values we",
+        "start": 54.64,
+        "duration": 3.439
+    },
+    {
+        "text": "want to know what",
+        "start": 57.199,
+        "duration": 3.761
+    },
+    {
+        "text": "is the number of ones in the binary",
+        "start": 58.079,
+        "duration": 4.0
+    },
+    {
+        "text": "representation",
+        "start": 60.96,
+        "duration": 3.199
+    },
+    {
+        "text": "of this particular integer now what's",
+        "start": 62.079,
+        "duration": 4.001
+    },
+    {
+        "text": "the binary representation of zero it's",
+        "start": 64.159,
+        "duration": 2.64
+    },
+    {
+        "text": "of course just",
+        "start": 66.08,
+        "duration": 3.28
+    },
+    {
+        "text": "zero right you could add multiple zeros",
+        "start": 66.799,
+        "duration": 3.201
+    },
+    {
+        "text": "but it's",
+        "start": 69.36,
+        "duration": 2.96
+    },
+    {
+        "text": "still going to be zero what's the binary",
+        "start": 70.0,
+        "duration": 3.6
+    },
+    {
+        "text": "representation of one",
+        "start": 72.32,
+        "duration": 3.439
+    },
+    {
+        "text": "it's going to be just one right you",
+        "start": 73.6,
+        "duration": 3.68
+    },
+    {
+        "text": "could have some leading zeros we could",
+        "start": 75.759,
+        "duration": 2.72
+    },
+    {
+        "text": "have as many as we want",
+        "start": 77.28,
+        "duration": 2.64
+    },
+    {
+        "text": "but at the end it's just going to end",
+        "start": 78.479,
+        "duration": 3.601
+    },
+    {
+        "text": "with a single one so there's only",
+        "start": 79.92,
+        "duration": 4.879
+    },
+    {
+        "text": "one occurrence of the integer one in the",
+        "start": 82.08,
+        "duration": 4.719
+    },
+    {
+        "text": "binary representation of 0.",
+        "start": 84.799,
+        "duration": 4.0
+    },
+    {
+        "text": "so so far our output is going to look",
+        "start": 86.799,
+        "duration": 3.521
+    },
+    {
+        "text": "something like 0",
+        "start": 88.799,
+        "duration": 3.28
+    },
+    {
+        "text": "1 and then now we just need the number",
+        "start": 90.32,
+        "duration": 3.6
+    },
+    {
+        "text": "of ones in the binary representation of",
+        "start": 92.079,
+        "duration": 2.4
+    },
+    {
+        "text": "2.",
+        "start": 93.92,
+        "duration": 2.32
+    },
+    {
+        "text": "the binary representation of 2 is going",
+        "start": 94.479,
+        "duration": 3.28
+    },
+    {
+        "text": "to look like this 1",
+        "start": 96.24,
+        "duration": 4.08
+    },
+    {
+        "text": "0. you could have some leading zeros but",
+        "start": 97.759,
+        "duration": 4.241
+    },
+    {
+        "text": "this is the main part that we're looking",
+        "start": 100.32,
+        "duration": 2.479
+    },
+    {
+        "text": "at so",
+        "start": 102.0,
+        "duration": 3.119
+    },
+    {
+        "text": "it just has a single one so then the",
+        "start": 102.799,
+        "duration": 3.761
+    },
+    {
+        "text": "output is going to be",
+        "start": 105.119,
+        "duration": 3.761
+    },
+    {
+        "text": "one for that so the array that we would",
+        "start": 106.56,
+        "duration": 3.76
+    },
+    {
+        "text": "return is going to look something like",
+        "start": 108.88,
+        "duration": 1.84
+    },
+    {
+        "text": "this",
+        "start": 110.32,
+        "duration": 2.88
+    },
+    {
+        "text": "zero one one now the brute force way to",
+        "start": 110.72,
+        "duration": 3.359
+    },
+    {
+        "text": "solve this problem",
+        "start": 113.2,
+        "duration": 3.919
+    },
+    {
+        "text": "is going to be n log n and that solution",
+        "start": 114.079,
+        "duration": 4.241
+    },
+    {
+        "text": "is going to look something like this",
+        "start": 117.119,
+        "duration": 2.721
+    },
+    {
+        "text": "let's say we had an arbitrary",
+        "start": 118.32,
+        "duration": 3.92
+    },
+    {
+        "text": "value such as 2 or maybe even 3 right we",
+        "start": 119.84,
+        "duration": 3.04
+    },
+    {
+        "text": "know the",
+        "start": 122.24,
+        "duration": 2.559
+    },
+    {
+        "text": "binary representation of 3 is going to",
+        "start": 122.88,
+        "duration": 3.199
+    },
+    {
+        "text": "look like 1",
+        "start": 124.799,
+        "duration": 3.68
+    },
+    {
+        "text": "1 right so how are we going to count the",
+        "start": 126.079,
+        "duration": 3.281
+    },
+    {
+        "text": "number of ones",
+        "start": 128.479,
+        "duration": 2.801
+    },
+    {
+        "text": "in the binary representation of three",
+        "start": 129.36,
+        "duration": 4.239
+    },
+    {
+        "text": "well we first let's get the ones place",
+        "start": 131.28,
+        "duration": 3.039
+    },
+    {
+        "text": "right is this gonna",
+        "start": 133.599,
+        "duration": 2.401
+    },
+    {
+        "text": "is this gonna be a one or a zero how can",
+        "start": 134.319,
+        "duration": 3.681
+    },
+    {
+        "text": "we get that well we can take three",
+        "start": 136.0,
+        "duration": 4.64
+    },
+    {
+        "text": "mod it by two which is gonna give us one",
+        "start": 138.0,
+        "duration": 3.52
+    },
+    {
+        "text": "so we have at least",
+        "start": 140.64,
+        "duration": 3.679
+    },
+    {
+        "text": "one one here right so we already looked",
+        "start": 141.52,
+        "duration": 4.16
+    },
+    {
+        "text": "at this position so what we do is",
+        "start": 144.319,
+        "duration": 3.201
+    },
+    {
+        "text": "basically cross it out and then we just",
+        "start": 145.68,
+        "duration": 3.36
+    },
+    {
+        "text": "want to look at the remaining",
+        "start": 147.52,
+        "duration": 3.439
+    },
+    {
+        "text": "portions now how can we actually do this",
+        "start": 149.04,
+        "duration": 4.08
+    },
+    {
+        "text": "uh like what kind of operation can we do",
+        "start": 150.959,
+        "duration": 3.041
+    },
+    {
+        "text": "basically if you take",
+        "start": 153.12,
+        "duration": 2.96
+    },
+    {
+        "text": "three and divide it by 2 integer",
+        "start": 154.0,
+        "duration": 3.04
+    },
+    {
+        "text": "division here",
+        "start": 156.08,
+        "duration": 2.799
+    },
+    {
+        "text": "and most programming languages will do",
+        "start": 157.04,
+        "duration": 4.479
+    },
+    {
+        "text": "this basically by integer division",
+        "start": 158.879,
+        "duration": 4.241
+    },
+    {
+        "text": "what that's going to do to this integer",
+        "start": 161.519,
+        "duration": 2.961
+    },
+    {
+        "text": "is it's basically going to take that",
+        "start": 163.12,
+        "duration": 2.88
+    },
+    {
+        "text": "ones place and remove it",
+        "start": 164.48,
+        "duration": 3.52
+    },
+    {
+        "text": "take the remaining bits and then shift",
+        "start": 166.0,
+        "duration": 3.519
+    },
+    {
+        "text": "it to the right so it basically does",
+        "start": 168.0,
+        "duration": 3.04
+    },
+    {
+        "text": "exactly what you would want to do",
+        "start": 169.519,
+        "duration": 3.201
+    },
+    {
+        "text": "and of course what do we get when we",
+        "start": 171.04,
+        "duration": 4.08
+    },
+    {
+        "text": "take 3 and divide it by 2",
+        "start": 172.72,
+        "duration": 4.879
+    },
+    {
+        "text": "integer division is going to give us a 1",
+        "start": 175.12,
+        "duration": 3.92
+    },
+    {
+        "text": "so we're basically going to get this",
+        "start": 177.599,
+        "duration": 3.201
+    },
+    {
+        "text": "and when you look at that yes this is",
+        "start": 179.04,
+        "duration": 3.76
+    },
+    {
+        "text": "the binary representation of 1",
+        "start": 180.8,
+        "duration": 3.92
+    },
+    {
+        "text": "right so now we're gonna take this and",
+        "start": 182.8,
+        "duration": 4.56
+    },
+    {
+        "text": "mod it by two as well we're taking one",
+        "start": 184.72,
+        "duration": 5.439
+    },
+    {
+        "text": "modding it by two that's also gonna be a",
+        "start": 187.36,
+        "duration": 4.0
+    },
+    {
+        "text": "one",
+        "start": 190.159,
+        "duration": 3.041
+    },
+    {
+        "text": "so so far we've counted two different",
+        "start": 191.36,
+        "duration": 3.599
+    },
+    {
+        "text": "ones for this integer",
+        "start": 193.2,
+        "duration": 4.88
+    },
+    {
+        "text": "and again we're gonna take this uh",
+        "start": 194.959,
+        "duration": 5.28
+    },
+    {
+        "text": "this one's place now and chop it off and",
+        "start": 198.08,
+        "duration": 3.92
+    },
+    {
+        "text": "now we're left with a single zero so if",
+        "start": 200.239,
+        "duration": 2.561
+    },
+    {
+        "text": "you take one",
+        "start": 202.0,
+        "duration": 2.959
+    },
+    {
+        "text": "divided by two yes you get zero once we",
+        "start": 202.8,
+        "duration": 3.76
+    },
+    {
+        "text": "get to zero that's how you know when",
+        "start": 204.959,
+        "duration": 2.64
+    },
+    {
+        "text": "we're stopping",
+        "start": 206.56,
+        "duration": 2.88
+    },
+    {
+        "text": "right there's obviously in zero there's",
+        "start": 207.599,
+        "duration": 3.121
+    },
+    {
+        "text": "no more ones",
+        "start": 209.44,
+        "duration": 3.92
+    },
+    {
+        "text": "in zero so basically we counted two",
+        "start": 210.72,
+        "duration": 3.439
+    },
+    {
+        "text": "different ones",
+        "start": 213.36,
+        "duration": 2.32
+    },
+    {
+        "text": "so that's how we would do it for every",
+        "start": 214.159,
+        "duration": 3.281
+    },
+    {
+        "text": "particular integer the example i showed",
+        "start": 215.68,
+        "duration": 3.119
+    },
+    {
+        "text": "right now is three",
+        "start": 217.44,
+        "duration": 5.28
+    },
+    {
+        "text": "and to get this the time complexity is",
+        "start": 218.799,
+        "duration": 4.401
+    },
+    {
+        "text": "log",
+        "start": 222.72,
+        "duration": 3.04
+    },
+    {
+        "text": "n because for any integer n how many",
+        "start": 223.2,
+        "duration": 4.319
+    },
+    {
+        "text": "times can you divide it by two well of",
+        "start": 225.76,
+        "duration": 2.24
+    },
+    {
+        "text": "course",
+        "start": 227.519,
+        "duration": 2.961
+    },
+    {
+        "text": "that's just log base two n now we don't",
+        "start": 228.0,
+        "duration": 3.84
+    },
+    {
+        "text": "really worry too much about the base",
+        "start": 230.48,
+        "duration": 3.44
+    },
+    {
+        "text": "usually but yes it's gonna be log n",
+        "start": 231.84,
+        "duration": 4.399
+    },
+    {
+        "text": "log base two n that's how many times we",
+        "start": 233.92,
+        "duration": 4.399
+    },
+    {
+        "text": "could divide any particular integer",
+        "start": 236.239,
+        "duration": 4.08
+    },
+    {
+        "text": "n by two and of course we know we're",
+        "start": 238.319,
+        "duration": 4.0
+    },
+    {
+        "text": "doing this for a bunch of integers in",
+        "start": 240.319,
+        "duration": 2.721
+    },
+    {
+        "text": "the range",
+        "start": 242.319,
+        "duration": 2.961
+    },
+    {
+        "text": "all the way from 0 to n so we're doing",
+        "start": 243.04,
+        "duration": 3.44
+    },
+    {
+        "text": "this n times",
+        "start": 245.28,
+        "duration": 4.64
+    },
+    {
+        "text": "doing a log n operation n times",
+        "start": 246.48,
+        "duration": 5.839
+    },
+    {
+        "text": "is going to be time complexity and log n",
+        "start": 249.92,
+        "duration": 3.84
+    },
+    {
+        "text": "now there's some repeated work",
+        "start": 252.319,
+        "duration": 3.041
+    },
+    {
+        "text": "that we can eliminate that you can",
+        "start": 253.76,
+        "duration": 3.52
+    },
+    {
+        "text": "easily recognize when you actually draw",
+        "start": 255.36,
+        "duration": 3.599
+    },
+    {
+        "text": "out the bit mappings",
+        "start": 257.28,
+        "duration": 3.84
+    },
+    {
+        "text": "the the binary representations of a",
+        "start": 258.959,
+        "duration": 4.081
+    },
+    {
+        "text": "bunch of integers and with that repeated",
+        "start": 261.12,
+        "duration": 4.079
+    },
+    {
+        "text": "work we can actually get a working o of",
+        "start": 263.04,
+        "duration": 2.48
+    },
+    {
+        "text": "n",
+        "start": 265.199,
+        "duration": 2.081
+    },
+    {
+        "text": "solution let me show you that right now",
+        "start": 265.52,
+        "duration": 3.92
+    },
+    {
+        "text": "now i just drew out the binary",
+        "start": 267.28,
+        "duration": 4.16
+    },
+    {
+        "text": "representations from zero all the way up",
+        "start": 269.44,
+        "duration": 3.52
+    },
+    {
+        "text": "to eight so we know that of course",
+        "start": 271.44,
+        "duration": 4.479
+    },
+    {
+        "text": "zero has zero ones in the binary",
+        "start": 272.96,
+        "duration": 3.84
+    },
+    {
+        "text": "representation",
+        "start": 275.919,
+        "duration": 4.321
+    },
+    {
+        "text": "when you get to one we have one",
+        "start": 276.8,
+        "duration": 5.04
+    },
+    {
+        "text": "occurrence of one in its binary",
+        "start": 280.24,
+        "duration": 3.92
+    },
+    {
+        "text": "representation for two we have",
+        "start": 281.84,
+        "duration": 4.72
+    },
+    {
+        "text": "one for three by looking at this we can",
+        "start": 284.16,
+        "duration": 4.56
+    },
+    {
+        "text": "see we have two different ones",
+        "start": 286.56,
+        "duration": 4.72
+    },
+    {
+        "text": "and now when you get to four you really",
+        "start": 288.72,
+        "duration": 4.88
+    },
+    {
+        "text": "start to notice how we are doing this",
+        "start": 291.28,
+        "duration": 3.44
+    },
+    {
+        "text": "repeated work",
+        "start": 293.6,
+        "duration": 4.08
+    },
+    {
+        "text": "notice how for four all the way to seven",
+        "start": 294.72,
+        "duration": 3.919
+    },
+    {
+        "text": "we have a",
+        "start": 297.68,
+        "duration": 3.6
+    },
+    {
+        "text": "one in this place right in the most",
+        "start": 298.639,
+        "duration": 3.921
+    },
+    {
+        "text": "significant place",
+        "start": 301.28,
+        "duration": 4.24
+    },
+    {
+        "text": "we have a one and notice how the",
+        "start": 302.56,
+        "duration": 4.24
+    },
+    {
+        "text": "remaining portion",
+        "start": 305.52,
+        "duration": 4.64
+    },
+    {
+        "text": "of this and then this and then",
+        "start": 306.8,
+        "duration": 6.399
+    },
+    {
+        "text": "this and this these four",
+        "start": 310.16,
+        "duration": 5.599
+    },
+    {
+        "text": "are just repeats of the previous four",
+        "start": 313.199,
+        "duration": 4.72
+    },
+    {
+        "text": "that we calculated right because",
+        "start": 315.759,
+        "duration": 4.241
+    },
+    {
+        "text": "we're you know we're counting zero zero",
+        "start": 317.919,
+        "duration": 3.12
+    },
+    {
+        "text": "adding a one",
+        "start": 320.0,
+        "duration": 2.72
+    },
+    {
+        "text": "right to four when you add a one you",
+        "start": 321.039,
+        "duration": 3.761
+    },
+    {
+        "text": "just change it to this from four when we",
+        "start": 322.72,
+        "duration": 2.96
+    },
+    {
+        "text": "add a two",
+        "start": 324.8,
+        "duration": 2.88
+    },
+    {
+        "text": "we get this which is basically the",
+        "start": 325.68,
+        "duration": 4.64
+    },
+    {
+        "text": "binary representation of two itself",
+        "start": 327.68,
+        "duration": 4.959
+    },
+    {
+        "text": "right and then you get a one zero and",
+        "start": 330.32,
+        "duration": 3.52
+    },
+    {
+        "text": "then you get a one",
+        "start": 332.639,
+        "duration": 4.241
+    },
+    {
+        "text": "one which is matching over here so now",
+        "start": 333.84,
+        "duration": 4.639
+    },
+    {
+        "text": "looking at it this is the binary",
+        "start": 336.88,
+        "duration": 2.64
+    },
+    {
+        "text": "representation of",
+        "start": 338.479,
+        "duration": 3.44
+    },
+    {
+        "text": "four right there's just a single one in",
+        "start": 339.52,
+        "duration": 3.519
+    },
+    {
+        "text": "this position",
+        "start": 341.919,
+        "duration": 3.921
+    },
+    {
+        "text": "so if we wanted to take zero and add",
+        "start": 343.039,
+        "duration": 4.321
+    },
+    {
+        "text": "four to it we would just",
+        "start": 345.84,
+        "duration": 3.76
+    },
+    {
+        "text": "to take this position and add a one here",
+        "start": 347.36,
+        "duration": 3.839
+    },
+    {
+        "text": "right that will take us",
+        "start": 349.6,
+        "duration": 4.56
+    },
+    {
+        "text": "four positions ahead and if you had a",
+        "start": 351.199,
+        "duration": 3.44
+    },
+    {
+        "text": "one",
+        "start": 354.16,
+        "duration": 2.4
+    },
+    {
+        "text": "and you and you changed this bit to a",
+        "start": 354.639,
+        "duration": 3.68
+    },
+    {
+        "text": "one we're adding four to it so you can",
+        "start": 356.56,
+        "duration": 2.079
+    },
+    {
+        "text": "take",
+        "start": 358.319,
+        "duration": 3.041
+    },
+    {
+        "text": "a one and change it to a five by taking",
+        "start": 358.639,
+        "duration": 3.361
+    },
+    {
+        "text": "that bit",
+        "start": 361.36,
+        "duration": 3.76
+    },
+    {
+        "text": "so similarly when we get to four",
+        "start": 362.0,
+        "duration": 5.6
+    },
+    {
+        "text": "we know that yes we're gonna have one",
+        "start": 365.12,
+        "duration": 3.6
+    },
+    {
+        "text": "extra one",
+        "start": 367.6,
+        "duration": 3.28
+    },
+    {
+        "text": "in this position right because we just",
+        "start": 368.72,
+        "duration": 5.12
+    },
+    {
+        "text": "got this one this one represents a four",
+        "start": 370.88,
+        "duration": 6.08
+    },
+    {
+        "text": "this is the most significant bit so far",
+        "start": 373.84,
+        "duration": 5.68
+    },
+    {
+        "text": "but for the remaining ones all we have",
+        "start": 376.96,
+        "duration": 3.04
+    },
+    {
+        "text": "to do",
+        "start": 379.52,
+        "duration": 3.84
+    },
+    {
+        "text": "is take this offset it by four",
+        "start": 380.0,
+        "duration": 5.199
+    },
+    {
+        "text": "and get here and count how many ones",
+        "start": 383.36,
+        "duration": 3.839
+    },
+    {
+        "text": "were over here so when we're calculating",
+        "start": 385.199,
+        "duration": 2.801
+    },
+    {
+        "text": "how many ones",
+        "start": 387.199,
+        "duration": 4.56
+    },
+    {
+        "text": "for four we're just saying it's one plus",
+        "start": 388.0,
+        "duration": 6.88
+    },
+    {
+        "text": "the number of bits at position",
+        "start": 391.759,
+        "duration": 5.921
+    },
+    {
+        "text": "zero how many bits how many ones were in",
+        "start": 394.88,
+        "duration": 5.039
+    },
+    {
+        "text": "position zero that's our dp so you can",
+        "start": 397.68,
+        "duration": 4.16
+    },
+    {
+        "text": "see this is a dynamic programming",
+        "start": 399.919,
+        "duration": 3.84
+    },
+    {
+        "text": "problem because we're using the previous",
+        "start": 401.84,
+        "duration": 3.52
+    },
+    {
+        "text": "results that we calculated",
+        "start": 403.759,
+        "duration": 4.0
+    },
+    {
+        "text": "to compute the new results in other",
+        "start": 405.36,
+        "duration": 3.6
+    },
+    {
+        "text": "words this is going to be 1",
+        "start": 407.759,
+        "duration": 4.56
+    },
+    {
+        "text": "plus dp of n minus",
+        "start": 408.96,
+        "duration": 6.48
+    },
+    {
+        "text": "4 and actually when you look at this 5",
+        "start": 412.319,
+        "duration": 6.481
+    },
+    {
+        "text": "we're also offsetting it by 4 to get",
+        "start": 415.44,
+        "duration": 5.68
+    },
+    {
+        "text": "these two right because that's what's",
+        "start": 418.8,
+        "duration": 3.28
+    },
+    {
+        "text": "going to match up with",
+        "start": 421.12,
+        "duration": 2.799
+    },
+    {
+        "text": "this which is going to tell us how many",
+        "start": 422.08,
+        "duration": 3.519
+    },
+    {
+        "text": "ones are going to go here right so and",
+        "start": 423.919,
+        "duration": 2.241
+    },
+    {
+        "text": "clearly",
+        "start": 425.599,
+        "duration": 2.561
+    },
+    {
+        "text": "we see that that's a 1. so here we're",
+        "start": 426.16,
+        "duration": 3.039
+    },
+    {
+        "text": "going to compute",
+        "start": 428.16,
+        "duration": 4.159
+    },
+    {
+        "text": "1 plus again dp of n",
+        "start": 429.199,
+        "duration": 6.081
+    },
+    {
+        "text": "minus 4. and similarly for here we would",
+        "start": 432.319,
+        "duration": 3.361
+    },
+    {
+        "text": "say",
+        "start": 435.28,
+        "duration": 2.56
+    },
+    {
+        "text": "one which is coming from here plus the",
+        "start": 435.68,
+        "duration": 3.04
+    },
+    {
+        "text": "number of ones",
+        "start": 437.84,
+        "duration": 2.799
+    },
+    {
+        "text": "in this binary representation which we",
+        "start": 438.72,
+        "duration": 3.52
+    },
+    {
+        "text": "know we already computed",
+        "start": 440.639,
+        "duration": 4.0
+    },
+    {
+        "text": "up over here and the answer to that was",
+        "start": 442.24,
+        "duration": 3.679
+    },
+    {
+        "text": "one so in this position",
+        "start": 444.639,
+        "duration": 4.4
+    },
+    {
+        "text": "really there's going to be two ones in",
+        "start": 445.919,
+        "duration": 4.961
+    },
+    {
+        "text": "this binary representation now over here",
+        "start": 449.039,
+        "duration": 2.56
+    },
+    {
+        "text": "once again",
+        "start": 450.88,
+        "duration": 2.24
+    },
+    {
+        "text": "we know that there's at least one from",
+        "start": 451.599,
+        "duration": 3.521
+    },
+    {
+        "text": "here plus how many were in this binary",
+        "start": 453.12,
+        "duration": 4.0
+    },
+    {
+        "text": "representation we computed that",
+        "start": 455.12,
+        "duration": 4.479
+    },
+    {
+        "text": "at position three which again is offset",
+        "start": 457.12,
+        "duration": 3.44
+    },
+    {
+        "text": "by four",
+        "start": 459.599,
+        "duration": 2.641
+    },
+    {
+        "text": "so this is going to be one plus two",
+        "start": 460.56,
+        "duration": 3.12
+    },
+    {
+        "text": "which is going to be 3.",
+        "start": 462.24,
+        "duration": 4.239
+    },
+    {
+        "text": "now you get over here so now we have an",
+        "start": 463.68,
+        "duration": 4.959
+    },
+    {
+        "text": "even more significant bit last time the",
+        "start": 466.479,
+        "duration": 3.12
+    },
+    {
+        "text": "most significant",
+        "start": 468.639,
+        "duration": 2.801
+    },
+    {
+        "text": "bit was in this position and we know",
+        "start": 469.599,
+        "duration": 3.681
+    },
+    {
+        "text": "that represents the integer",
+        "start": 471.44,
+        "duration": 5.199
+    },
+    {
+        "text": "4. now we got an even more significant",
+        "start": 473.28,
+        "duration": 3.759
+    },
+    {
+        "text": "bit",
+        "start": 476.639,
+        "duration": 4.161
+    },
+    {
+        "text": "which represents the integer a so",
+        "start": 477.039,
+        "duration": 5.041
+    },
+    {
+        "text": "we know that this is going to have at",
+        "start": 480.8,
+        "duration": 3.519
+    },
+    {
+        "text": "least one occurrence of one and then we",
+        "start": 482.08,
+        "duration": 3.44
+    },
+    {
+        "text": "want to know how many",
+        "start": 484.319,
+        "duration": 4.081
+    },
+    {
+        "text": "ones are in this binary representation",
+        "start": 485.52,
+        "duration": 3.359
+    },
+    {
+        "text": "now",
+        "start": 488.4,
+        "duration": 2.479
+    },
+    {
+        "text": "how are we going to get that in this",
+        "start": 488.879,
+        "duration": 3.121
+    },
+    {
+        "text": "case you can tell",
+        "start": 490.879,
+        "duration": 3.841
+    },
+    {
+        "text": "the the offset is no longer four because",
+        "start": 492.0,
+        "duration": 4.72
+    },
+    {
+        "text": "if we do an offset of four we get to the",
+        "start": 494.72,
+        "duration": 3.36
+    },
+    {
+        "text": "integer four that's not what we're",
+        "start": 496.72,
+        "duration": 2.319
+    },
+    {
+        "text": "trying to do",
+        "start": 498.08,
+        "duration": 3.28
+    },
+    {
+        "text": "this binary representation represents",
+        "start": 499.039,
+        "duration": 4.641
+    },
+    {
+        "text": "the integer zero so in reality",
+        "start": 501.36,
+        "duration": 5.279
+    },
+    {
+        "text": "we want to take eight offset it by 8",
+        "start": 503.68,
+        "duration": 4.48
+    },
+    {
+        "text": "which is going to get us all the way",
+        "start": 506.639,
+        "duration": 2.4
+    },
+    {
+        "text": "over here",
+        "start": 508.16,
+        "duration": 3.039
+    },
+    {
+        "text": "and once you do that that's when you",
+        "start": 509.039,
+        "duration": 4.081
+    },
+    {
+        "text": "actually notice the pattern since this",
+        "start": 511.199,
+        "duration": 2.72
+    },
+    {
+        "text": "is going to be",
+        "start": 513.12,
+        "duration": 3.839
+    },
+    {
+        "text": "1 plus dp of n minus",
+        "start": 513.919,
+        "duration": 6.24
+    },
+    {
+        "text": "8 you can tell that for each value",
+        "start": 516.959,
+        "duration": 5.041
+    },
+    {
+        "text": "this is going to be the equation 1 plus",
+        "start": 520.159,
+        "duration": 4.721
+    },
+    {
+        "text": "dp of n minus a particular integer",
+        "start": 522.0,
+        "duration": 4.959
+    },
+    {
+        "text": "and that integer is going to be called",
+        "start": 524.88,
+        "duration": 3.2
+    },
+    {
+        "text": "the offset",
+        "start": 526.959,
+        "duration": 4.0
+    },
+    {
+        "text": "and the offset is going to be the most",
+        "start": 528.08,
+        "duration": 3.92
+    },
+    {
+        "text": "significant",
+        "start": 530.959,
+        "duration": 4.32
+    },
+    {
+        "text": "bit that we have reached so far and what",
+        "start": 532.0,
+        "duration": 5.6
+    },
+    {
+        "text": "are the most significant bits well the",
+        "start": 535.279,
+        "duration": 4.0
+    },
+    {
+        "text": "first one is going to be a one",
+        "start": 537.6,
+        "duration": 3.12
+    },
+    {
+        "text": "the next one is going to be a two the",
+        "start": 539.279,
+        "duration": 3.441
+    },
+    {
+        "text": "next is going to be a 4 8",
+        "start": 540.72,
+        "duration": 4.08
+    },
+    {
+        "text": "16. so basically they're doubling in",
+        "start": 542.72,
+        "duration": 4.16
+    },
+    {
+        "text": "size every time because we know a bit is",
+        "start": 544.8,
+        "duration": 2.64
+    },
+    {
+        "text": "just a",
+        "start": 546.88,
+        "duration": 2.48
+    },
+    {
+        "text": "power of two right that's what binary",
+        "start": 547.44,
+        "duration": 4.56
+    },
+    {
+        "text": "represents so let's clean this up just a",
+        "start": 549.36,
+        "duration": 3.76
+    },
+    {
+        "text": "tiny bit",
+        "start": 552.0,
+        "duration": 2.8
+    },
+    {
+        "text": "so we know that this is kind of our base",
+        "start": 553.12,
+        "duration": 3.6
+    },
+    {
+        "text": "case zero is going to have zero ones in",
+        "start": 554.8,
+        "duration": 2.32
+    },
+    {
+        "text": "it",
+        "start": 556.72,
+        "duration": 2.799
+    },
+    {
+        "text": "now in the next position what's the most",
+        "start": 557.12,
+        "duration": 4.32
+    },
+    {
+        "text": "significant bit we've reached so far",
+        "start": 559.519,
+        "duration": 3.76
+    },
+    {
+        "text": "it's in the ones place right so",
+        "start": 561.44,
+        "duration": 3.28
+    },
+    {
+        "text": "therefore it's going to be a 1. so when",
+        "start": 563.279,
+        "duration": 2.321
+    },
+    {
+        "text": "we're computing",
+        "start": 564.72,
+        "duration": 4.72
+    },
+    {
+        "text": "this we're going to compute 1 plus dp",
+        "start": 565.6,
+        "duration": 6.32
+    },
+    {
+        "text": "of n n is always going to be the value",
+        "start": 569.44,
+        "duration": 3.68
+    },
+    {
+        "text": "we're computing right now so that's",
+        "start": 571.92,
+        "duration": 2.4
+    },
+    {
+        "text": "going to be a 1",
+        "start": 573.12,
+        "duration": 4.159
+    },
+    {
+        "text": "minus 1 because 1 is the most",
+        "start": 574.32,
+        "duration": 4.72
+    },
+    {
+        "text": "significant bit we've reached so far",
+        "start": 577.279,
+        "duration": 4.0
+    },
+    {
+        "text": "down here we reached a new significant",
+        "start": 579.04,
+        "duration": 3.84
+    },
+    {
+        "text": "bit of 2",
+        "start": 581.279,
+        "duration": 3.361
+    },
+    {
+        "text": "right because we've gotten to the value",
+        "start": 582.88,
+        "duration": 3.6
+    },
+    {
+        "text": "2 so far so",
+        "start": 584.64,
+        "duration": 4.639
+    },
+    {
+        "text": "for here we're going to say 1 plus dp of",
+        "start": 586.48,
+        "duration": 4.24
+    },
+    {
+        "text": "n minus",
+        "start": 589.279,
+        "duration": 3.841
+    },
+    {
+        "text": "two now in this next position again the",
+        "start": 590.72,
+        "duration": 3.6
+    },
+    {
+        "text": "most significant bit is",
+        "start": 593.12,
+        "duration": 3.52
+    },
+    {
+        "text": "two right we we know that two is a",
+        "start": 594.32,
+        "duration": 3.199
+    },
+    {
+        "text": "significant bit",
+        "start": 596.64,
+        "duration": 2.72
+    },
+    {
+        "text": "the next significant bit is going to be",
+        "start": 597.519,
+        "duration": 3.841
+    },
+    {
+        "text": "four because that's another power of two",
+        "start": 599.36,
+        "duration": 2.32
+    },
+    {
+        "text": "so",
+        "start": 601.36,
+        "duration": 2.719
+    },
+    {
+        "text": "three is not a it's still going to use",
+        "start": 601.68,
+        "duration": 3.839
+    },
+    {
+        "text": "the previous value",
+        "start": 604.079,
+        "duration": 4.161
+    },
+    {
+        "text": "so from here we're going to compute 1",
+        "start": 605.519,
+        "duration": 4.081
+    },
+    {
+        "text": "plus again dp",
+        "start": 608.24,
+        "duration": 4.719
+    },
+    {
+        "text": "of n minus 2. now once you get here",
+        "start": 609.6,
+        "duration": 5.919
+    },
+    {
+        "text": "we see that we've reached a new power of",
+        "start": 612.959,
+        "duration": 3.361
+    },
+    {
+        "text": "2.",
+        "start": 615.519,
+        "duration": 3.121
+    },
+    {
+        "text": "so then we're gonna be modifying this to",
+        "start": 616.32,
+        "duration": 3.6
+    },
+    {
+        "text": "one plus dp",
+        "start": 618.64,
+        "duration": 4.72
+    },
+    {
+        "text": "of n minus four and then of course when",
+        "start": 619.92,
+        "duration": 4.08
+    },
+    {
+        "text": "we got to",
+        "start": 623.36,
+        "duration": 2.56
+    },
+    {
+        "text": "eight we know we reached a new power of",
+        "start": 624.0,
+        "duration": 4.48
+    },
+    {
+        "text": "two so we were gonna do one plus dp of n",
+        "start": 625.92,
+        "duration": 3.28
+    },
+    {
+        "text": "minus eight",
+        "start": 628.48,
+        "duration": 2.96
+    },
+    {
+        "text": "how do you know if you reach a new power",
+        "start": 629.2,
+        "duration": 4.56
+    },
+    {
+        "text": "of two well you can take the previous",
+        "start": 631.44,
+        "duration": 4.16
+    },
+    {
+        "text": "power of two for example it was two",
+        "start": 633.76,
+        "duration": 2.24
+    },
+    {
+        "text": "right",
+        "start": 635.6,
+        "duration": 2.479
+    },
+    {
+        "text": "let's say the current power of two is",
+        "start": 636.0,
+        "duration": 4.24
+    },
+    {
+        "text": "two let's say we multiply it",
+        "start": 638.079,
+        "duration": 5.281
+    },
+    {
+        "text": "by two does that equal the current uh",
+        "start": 640.24,
+        "duration": 5.76
+    },
+    {
+        "text": "value where if we got to three n equals",
+        "start": 643.36,
+        "duration": 3.12
+    },
+    {
+        "text": "three",
+        "start": 646.0,
+        "duration": 2.72
+    },
+    {
+        "text": "we would check does two times two equal",
+        "start": 646.48,
+        "duration": 4.16
+    },
+    {
+        "text": "three no it does not so we did not reach",
+        "start": 648.72,
+        "duration": 3.119
+    },
+    {
+        "text": "a new power of two",
+        "start": 650.64,
+        "duration": 3.52
+    },
+    {
+        "text": "if we if we got to four two times four",
+        "start": 651.839,
+        "duration": 3.44
+    },
+    {
+        "text": "that does equal",
+        "start": 654.16,
+        "duration": 3.28
+    },
+    {
+        "text": "four so now we reached a new power of",
+        "start": 655.279,
+        "duration": 3.12
+    },
+    {
+        "text": "two and then",
+        "start": 657.44,
+        "duration": 2.48
+    },
+    {
+        "text": "from four we would do the same thing so",
+        "start": 658.399,
+        "duration": 3.281
+    },
+    {
+        "text": "four multiplied by two",
+        "start": 659.92,
+        "duration": 3.76
+    },
+    {
+        "text": "does that equal to seven right let's say",
+        "start": 661.68,
+        "duration": 3.279
+    },
+    {
+        "text": "we got to seven and we were trying to",
+        "start": 663.68,
+        "duration": 1.599
+    },
+    {
+        "text": "see",
+        "start": 664.959,
+        "duration": 3.12
+    },
+    {
+        "text": "is this a power of two no this does not",
+        "start": 665.279,
+        "duration": 4.56
+    },
+    {
+        "text": "equal seven but once we get to",
+        "start": 668.079,
+        "duration": 4.32
+    },
+    {
+        "text": "eight then four times two yes that",
+        "start": 669.839,
+        "duration": 4.481
+    },
+    {
+        "text": "equals eight right so we did reach a new",
+        "start": 672.399,
+        "duration": 3.44
+    },
+    {
+        "text": "power of 2 and we'd do the exact same",
+        "start": 674.32,
+        "duration": 1.84
+    },
+    {
+        "text": "thing",
+        "start": 675.839,
+        "duration": 1.841
+    },
+    {
+        "text": "so the next time we would reach a new",
+        "start": 676.16,
+        "duration": 4.16
+    },
+    {
+        "text": "power of 2 is would be 8 times 2",
+        "start": 677.68,
+        "duration": 5.2
+    },
+    {
+        "text": "equals 16. so next time we reach a 16",
+        "start": 680.32,
+        "duration": 4.639
+    },
+    {
+        "text": "that's going to be a new power of 2",
+        "start": 682.88,
+        "duration": 5.36
+    },
+    {
+        "text": "and 16 times 2 is 32 etc etc so that's",
+        "start": 684.959,
+        "duration": 4.241
+    },
+    {
+        "text": "how it's going to work",
+        "start": 688.24,
+        "duration": 3.039
+    },
+    {
+        "text": "and once you know this idea it's not",
+        "start": 689.2,
+        "duration": 3.6
+    },
+    {
+        "text": "super intuitive until you actually kind",
+        "start": 691.279,
+        "duration": 2.401
+    },
+    {
+        "text": "of draw it out",
+        "start": 692.8,
+        "duration": 2.719
+    },
+    {
+        "text": "but once you do the code is actually",
+        "start": 693.68,
+        "duration": 4.08
+    },
+    {
+        "text": "pretty easy to write let me show you how",
+        "start": 695.519,
+        "duration": 3.921
+    },
+    {
+        "text": "so our dp array is going to be",
+        "start": 697.76,
+        "duration": 3.6
+    },
+    {
+        "text": "initialized to all zeros and it's going",
+        "start": 699.44,
+        "duration": 2.72
+    },
+    {
+        "text": "to be length",
+        "start": 701.36,
+        "duration": 2.8
+    },
+    {
+        "text": "n plus 1 because that's how many we're",
+        "start": 702.16,
+        "duration": 3.359
+    },
+    {
+        "text": "trying to compute and we're also going",
+        "start": 704.16,
+        "duration": 2.32
+    },
+    {
+        "text": "to have an answer",
+        "start": 705.519,
+        "duration": 2.801
+    },
+    {
+        "text": "array which is initially just going to",
+        "start": 706.48,
+        "duration": 4.08
+    },
+    {
+        "text": "have a single zero in it because we know",
+        "start": 708.32,
+        "duration": 5.12
+    },
+    {
+        "text": "n is going to be at least zero and then",
+        "start": 710.56,
+        "duration": 4.24
+    },
+    {
+        "text": "we're going to go through for i",
+        "start": 713.44,
+        "duration": 4.88
+    },
+    {
+        "text": "in range all the way from one up until n",
+        "start": 714.8,
+        "duration": 5.599
+    },
+    {
+        "text": "so n plus one this is non-inclusive in",
+        "start": 718.32,
+        "duration": 3.28
+    },
+    {
+        "text": "python so we're actually going to be",
+        "start": 720.399,
+        "duration": 3.12
+    },
+    {
+        "text": "stopping when we go from one all the way",
+        "start": 721.6,
+        "duration": 3.2
+    },
+    {
+        "text": "up until n",
+        "start": 723.519,
+        "duration": 2.481
+    },
+    {
+        "text": "and we're going to be keeping track of",
+        "start": 724.8,
+        "duration": 3.68
+    },
+    {
+        "text": "one more variable the offset aka the",
+        "start": 726.0,
+        "duration": 4.72
+    },
+    {
+        "text": "highest power of two so far so initially",
+        "start": 728.48,
+        "duration": 3.44
+    },
+    {
+        "text": "that's gonna be",
+        "start": 730.72,
+        "duration": 4.239
+    },
+    {
+        "text": "one so before we actually compute the dp",
+        "start": 731.92,
+        "duration": 4.8
+    },
+    {
+        "text": "or the number of bits in this",
+        "start": 734.959,
+        "duration": 3.921
+    },
+    {
+        "text": "integer i's binary representation first",
+        "start": 736.72,
+        "duration": 3.04
+    },
+    {
+        "text": "we're going to check how",
+        "start": 738.88,
+        "duration": 2.639
+    },
+    {
+        "text": "can we double our offset we're going to",
+        "start": 739.76,
+        "duration": 3.079
+    },
+    {
+        "text": "check if",
+        "start": 741.519,
+        "duration": 4.961
+    },
+    {
+        "text": "offset multiplied by two is equal",
+        "start": 742.839,
+        "duration": 5.56
+    },
+    {
+        "text": "to i the current end that we have just",
+        "start": 746.48,
+        "duration": 3.76
+    },
+    {
+        "text": "reached if it is then we can set",
+        "start": 748.399,
+        "duration": 4.321
+    },
+    {
+        "text": "offset equal to i otherwise offset is",
+        "start": 750.24,
+        "duration": 3.68
+    },
+    {
+        "text": "going to stay the same",
+        "start": 752.72,
+        "duration": 2.799
+    },
+    {
+        "text": "and then we can actually compute the dp",
+        "start": 753.92,
+        "duration": 3.28
+    },
+    {
+        "text": "so we're trying to compute dp of i",
+        "start": 755.519,
+        "duration": 3.521
+    },
+    {
+        "text": "which is basically the number of bits",
+        "start": 757.2,
+        "duration": 3.68
+    },
+    {
+        "text": "the number of ones in i's binary",
+        "start": 759.04,
+        "duration": 3.2
+    },
+    {
+        "text": "representation we know that's going to",
+        "start": 760.88,
+        "duration": 2.079
+    },
+    {
+        "text": "be at least",
+        "start": 762.24,
+        "duration": 4.24
+    },
+    {
+        "text": "1 plus dp of i",
+        "start": 762.959,
+        "duration": 6.481
+    },
+    {
+        "text": "minus the offset and actually one thing",
+        "start": 766.48,
+        "duration": 3.919
+    },
+    {
+        "text": "i just realized",
+        "start": 769.44,
+        "duration": 3.04
+    },
+    {
+        "text": "is the dp and the answer array are",
+        "start": 770.399,
+        "duration": 3.68
+    },
+    {
+        "text": "actually the exact same i don't know why",
+        "start": 772.48,
+        "duration": 3.44
+    },
+    {
+        "text": "i even created an answer array we can",
+        "start": 774.079,
+        "duration": 4.161
+    },
+    {
+        "text": "get rid of that so this dp is basically",
+        "start": 775.92,
+        "duration": 4.24
+    },
+    {
+        "text": "our answer array it's going to give us",
+        "start": 778.24,
+        "duration": 4.0
+    },
+    {
+        "text": "the number of bits the number of one",
+        "start": 780.16,
+        "duration": 4.32
+    },
+    {
+        "text": "bits in each integer's binary",
+        "start": 782.24,
+        "duration": 3.68
+    },
+    {
+        "text": "representation so once",
+        "start": 784.48,
+        "duration": 2.64
+    },
+    {
+        "text": "once we're done with that we can go",
+        "start": 785.92,
+        "duration": 3.599
+    },
+    {
+        "text": "ahead and just return this dp array",
+        "start": 787.12,
+        "duration": 3.76
+    },
+    {
+        "text": "so as you can see this is a pretty",
+        "start": 789.519,
+        "duration": 3.44
+    },
+    {
+        "text": "efficient solution this is the linear",
+        "start": 790.88,
+        "duration": 3.28
+    },
+    {
+        "text": "time big o of n",
+        "start": 792.959,
+        "duration": 3.281
+    },
+    {
+        "text": "time and space solution i hope this was",
+        "start": 794.16,
+        "duration": 3.919
+    },
+    {
+        "text": "helpful if it was please like and",
+        "start": 796.24,
+        "duration": 3.92
+    },
+    {
+        "text": "subscribe it supports the channel a lot",
+        "start": 798.079,
+        "duration": 4.32
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 800.16,
+        "duration": 5.119
+    },
+    {
+        "text": "thanks for watching",
+        "start": 802.399,
+        "duration": 2.88
+    }
+]

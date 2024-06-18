@@ -1,0 +1,777 @@
+[
+    {
+        "text": "hey what's up guys think white here do",
+        "start": 0.03,
+        "duration": 3.72
+    },
+    {
+        "text": "technocratic stuff on Twitch on YouTube",
+        "start": 2.129,
+        "duration": 4.261
+    },
+    {
+        "text": "this is called valid phone numbers and",
+        "start": 3.75,
+        "duration": 4.109
+    },
+    {
+        "text": "it is a little bit off the beaten path",
+        "start": 6.39,
+        "duration": 2.85
+    },
+    {
+        "text": "not really data structures and",
+        "start": 7.859,
+        "duration": 4.081
+    },
+    {
+        "text": "algorithms but good to know a lot of",
+        "start": 9.24,
+        "duration": 4.559
+    },
+    {
+        "text": "dislikes I don't know what dislikes on",
+        "start": 11.94,
+        "duration": 4.02
+    },
+    {
+        "text": "this site it's free so what's what they",
+        "start": 13.799,
+        "duration": 3.81
+    },
+    {
+        "text": "hate you know why is everyone disliking",
+        "start": 15.96,
+        "duration": 4.02
+    },
+    {
+        "text": "everything given a text file filed out",
+        "start": 17.609,
+        "duration": 3.84
+    },
+    {
+        "text": "text that contains a list of phone",
+        "start": 19.98,
+        "duration": 3.66
+    },
+    {
+        "text": "numbers one per line write a one-liner",
+        "start": 21.449,
+        "duration": 4.65
+    },
+    {
+        "text": "bash script to print all valid phone",
+        "start": 23.64,
+        "duration": 6.68
+    },
+    {
+        "text": "numbers so bash it means command line",
+        "start": 26.099,
+        "duration": 9.48
+    },
+    {
+        "text": "just command line command so we're gonna",
+        "start": 30.32,
+        "duration": 6.759
+    },
+    {
+        "text": "have a file dot text it's gonna have a",
+        "start": 35.579,
+        "duration": 2.82
+    },
+    {
+        "text": "bunch of phone numbers it might look",
+        "start": 37.079,
+        "duration": 3.511
+    },
+    {
+        "text": "like this so assume file dot txt has the",
+        "start": 38.399,
+        "duration": 4.171
+    },
+    {
+        "text": "following content you know here's the",
+        "start": 40.59,
+        "duration": 3.78
+    },
+    {
+        "text": "phone numbers it might just one phone",
+        "start": 42.57,
+        "duration": 5.88
+    },
+    {
+        "text": "number four line you may assume that the",
+        "start": 44.37,
+        "duration": 6.84
+    },
+    {
+        "text": "valid phone number must appear in one of",
+        "start": 48.45,
+        "duration": 5.73
+    },
+    {
+        "text": "the following two formats so it's either",
+        "start": 51.21,
+        "duration": 10.11
+    },
+    {
+        "text": "a parentheses a space and then three",
+        "start": 54.18,
+        "duration": 9.96
+    },
+    {
+        "text": "numbers - four numbers or three numbers",
+        "start": 61.32,
+        "duration": 5.339
+    },
+    {
+        "text": "- for three numbers - four numbers these",
+        "start": 64.14,
+        "duration": 4.229
+    },
+    {
+        "text": "are the only two formats it can be or",
+        "start": 66.659,
+        "duration": 3.991
+    },
+    {
+        "text": "doesn't work now what we want to do is",
+        "start": 68.369,
+        "duration": 5.25
+    },
+    {
+        "text": "we want to write a one-liner to print",
+        "start": 70.65,
+        "duration": 6.0
+    },
+    {
+        "text": "only things that match these formats so",
+        "start": 73.619,
+        "duration": 5.43
+    },
+    {
+        "text": "we would print out of these see these",
+        "start": 76.65,
+        "duration": 4.59
+    },
+    {
+        "text": "this matches the format because it's two",
+        "start": 79.049,
+        "duration": 4.531
+    },
+    {
+        "text": "dashes this matches the format because",
+        "start": 81.24,
+        "duration": 4.53
+    },
+    {
+        "text": "it's three three numbers and a",
+        "start": 83.58,
+        "duration": 3.81
+    },
+    {
+        "text": "parenthesis of space and then the phone",
+        "start": 85.77,
+        "duration": 5.13
+    },
+    {
+        "text": "number or and this one doesn't so we",
+        "start": 87.39,
+        "duration": 7.14
+    },
+    {
+        "text": "only output these two right this one",
+        "start": 90.9,
+        "duration": 4.859
+    },
+    {
+        "text": "doesn't get outputted it would either",
+        "start": 94.53,
+        "duration": 5.67
+    },
+    {
+        "text": "need to have a two dashes here or it",
+        "start": 95.759,
+        "duration": 6.031
+    },
+    {
+        "text": "would need parentheses around these",
+        "start": 100.2,
+        "duration": 3.629
+    },
+    {
+        "text": "first three numbers so regular",
+        "start": 101.79,
+        "duration": 4.23
+    },
+    {
+        "text": "expression will just help us match which",
+        "start": 103.829,
+        "duration": 5.25
+    },
+    {
+        "text": "numbers we want that's just what it is",
+        "start": 106.02,
+        "duration": 5.099
+    },
+    {
+        "text": "some programming reg X regular",
+        "start": 109.079,
+        "duration": 5.04
+    },
+    {
+        "text": "expressions look it up but we can use",
+        "start": 111.119,
+        "duration": 8.131
+    },
+    {
+        "text": "this command line tool grep grep is a",
+        "start": 114.119,
+        "duration": 7.651
+    },
+    {
+        "text": "command-line utility for searching plain",
+        "start": 119.25,
+        "duration": 6.06
+    },
+    {
+        "text": "text data sets for lines that match",
+        "start": 121.77,
+        "duration": 5.52
+    },
+    {
+        "text": "right regular expressions and there's a",
+        "start": 125.31,
+        "duration": 3.929
+    },
+    {
+        "text": "few of these grep is just a really",
+        "start": 127.29,
+        "duration": 3.9
+    },
+    {
+        "text": "common one I that's the one I use I do",
+        "start": 129.239,
+        "duration": 4.08
+    },
+    {
+        "text": "like grep - are when I'm",
+        "start": 131.19,
+        "duration": 4.439
+    },
+    {
+        "text": "terminal and stuff like that there's a",
+        "start": 133.319,
+        "duration": 3.601
+    },
+    {
+        "text": "few other ones but this the one we're",
+        "start": 135.629,
+        "duration": 4.44
+    },
+    {
+        "text": "gonna do this is how you do some pattern",
+        "start": 136.92,
+        "duration": 4.649
+    },
+    {
+        "text": "matching regular expressions have a",
+        "start": 140.069,
+        "duration": 3.03
+    },
+    {
+        "text": "bunch of rules I would recommend look",
+        "start": 141.569,
+        "duration": 3.39
+    },
+    {
+        "text": "them up if you're not familiar it takes",
+        "start": 143.099,
+        "duration": 3.39
+    },
+    {
+        "text": "about a day or two if you want to just",
+        "start": 144.959,
+        "duration": 3.571
+    },
+    {
+        "text": "learn them all I don't remember I don't",
+        "start": 146.489,
+        "duration": 3.84
+    },
+    {
+        "text": "have everything memorized I can look",
+        "start": 148.53,
+        "duration": 4.409
+    },
+    {
+        "text": "them up but I did it in awhile ago and I",
+        "start": 150.329,
+        "duration": 6.24
+    },
+    {
+        "text": "have a few of them down and I look up",
+        "start": 152.939,
+        "duration": 5.791
+    },
+    {
+        "text": "what I need to look up to do it",
+        "start": 156.569,
+        "duration": 5.82
+    },
+    {
+        "text": "so carat means at the beginning dollar",
+        "start": 158.73,
+        "duration": 5.879
+    },
+    {
+        "text": "sign means at the part this part of it",
+        "start": 162.389,
+        "duration": 4.02
+    },
+    {
+        "text": "has to be at the end backslashes to",
+        "start": 164.609,
+        "duration": 5.91
+    },
+    {
+        "text": "escape special characters a bunch of",
+        "start": 166.409,
+        "duration": 5.67
+    },
+    {
+        "text": "different stuff you usually do zero",
+        "start": 170.519,
+        "duration": 4.2
+    },
+    {
+        "text": "through nine to match digits or you can",
+        "start": 172.079,
+        "duration": 5.821
+    },
+    {
+        "text": "do slash D we're using we're gonna use",
+        "start": 174.719,
+        "duration": 5.91
+    },
+    {
+        "text": "this - P command for Pearl because it'll",
+        "start": 177.9,
+        "duration": 4.89
+    },
+    {
+        "text": "make it a lot faster just because the",
+        "start": 180.629,
+        "duration": 3.69
+    },
+    {
+        "text": "regular expressions are easier and pearl",
+        "start": 182.79,
+        "duration": 3.839
+    },
+    {
+        "text": "so what you do is if you were in",
+        "start": 184.319,
+        "duration": 4.051
+    },
+    {
+        "text": "terminal and you had this text file with",
+        "start": 186.629,
+        "duration": 2.911
+    },
+    {
+        "text": "the phone numbers and you wanted to",
+        "start": 188.37,
+        "duration": 2.849
+    },
+    {
+        "text": "match against these formats you would",
+        "start": 189.54,
+        "duration": 6.419
+    },
+    {
+        "text": "type grep - P for Pearl and then you",
+        "start": 191.219,
+        "duration": 7.621
+    },
+    {
+        "text": "would do the regular expression so you",
+        "start": 195.959,
+        "duration": 4.17
+    },
+    {
+        "text": "have the string for the regular",
+        "start": 198.84,
+        "duration": 2.97
+    },
+    {
+        "text": "expression first thing we want to do is",
+        "start": 200.129,
+        "duration": 3.961
+    },
+    {
+        "text": "the caret for this means this has to",
+        "start": 201.81,
+        "duration": 3.599
+    },
+    {
+        "text": "come at the beginning and you put",
+        "start": 204.09,
+        "duration": 5.039
+    },
+    {
+        "text": "parentheses - like algebra to show that",
+        "start": 205.409,
+        "duration": 5.491
+    },
+    {
+        "text": "within these parentheses is what has to",
+        "start": 209.129,
+        "duration": 4.021
+    },
+    {
+        "text": "come at the beginning of the regular",
+        "start": 210.9,
+        "duration": 4.019
+    },
+    {
+        "text": "expression so whatever's in here has to",
+        "start": 213.15,
+        "duration": 4.35
+    },
+    {
+        "text": "be come in the beginning so what do we",
+        "start": 214.919,
+        "duration": 5.04
+    },
+    {
+        "text": "want we want either three numbers in",
+        "start": 217.5,
+        "duration": 3.87
+    },
+    {
+        "text": "parenthesis or three numbers not in",
+        "start": 219.959,
+        "duration": 3.27
+    },
+    {
+        "text": "parentheses and then a dash so we're",
+        "start": 221.37,
+        "duration": 4.47
+    },
+    {
+        "text": "gonna do the - one first so three",
+        "start": 223.229,
+        "duration": 5.311
+    },
+    {
+        "text": "numbers this means digit backslash D",
+        "start": 225.84,
+        "duration": 5.22
+    },
+    {
+        "text": "digit and then three of them have to",
+        "start": 228.54,
+        "duration": 5.909
+    },
+    {
+        "text": "become and then a dash or though this",
+        "start": 231.06,
+        "duration": 7.169
+    },
+    {
+        "text": "upper line means or we want these",
+        "start": 234.449,
+        "duration": 7.171
+    },
+    {
+        "text": "parentheses are actual matching now",
+        "start": 238.229,
+        "duration": 5.521
+    },
+    {
+        "text": "these aren't like algebra container",
+        "start": 241.62,
+        "duration": 3.899
+    },
+    {
+        "text": "parentheses so we need to backslash",
+        "start": 243.75,
+        "duration": 4.859
+    },
+    {
+        "text": "because they're special characters we",
+        "start": 245.519,
+        "duration": 5.49
+    },
+    {
+        "text": "want digit another we want three digits",
+        "start": 248.609,
+        "duration": 5.13
+    },
+    {
+        "text": "in parenthesis special character",
+        "start": 251.009,
+        "duration": 4.801
+    },
+    {
+        "text": "parentheses so we need backslash see the",
+        "start": 253.739,
+        "duration": 3.691
+    },
+    {
+        "text": "difference back slashes before the",
+        "start": 255.81,
+        "duration": 4.799
+    },
+    {
+        "text": "parentheses and then the outer ones that",
+        "start": 257.43,
+        "duration": 4.799
+    },
+    {
+        "text": "are just containers here don't need the",
+        "start": 260.609,
+        "duration": 4.74
+    },
+    {
+        "text": "back slashes or we want three digits",
+        "start": 262.229,
+        "duration": 4.841
+    },
+    {
+        "text": "within parentheses right",
+        "start": 265.349,
+        "duration": 7.661
+    },
+    {
+        "text": "here this or these this or this so three",
+        "start": 267.07,
+        "duration": 7.65
+    },
+    {
+        "text": "digits in parentheses and then a space",
+        "start": 273.01,
+        "duration": 4.29
+    },
+    {
+        "text": "those that's the beginning of it then",
+        "start": 274.72,
+        "duration": 6.29
+    },
+    {
+        "text": "after that we just need three digits -",
+        "start": 277.3,
+        "duration": 6.3
+    },
+    {
+        "text": "four digits and then this comes at the",
+        "start": 281.01,
+        "duration": 5.14
+    },
+    {
+        "text": "end so you put the dollar sign and that",
+        "start": 283.6,
+        "duration": 4.62
+    },
+    {
+        "text": "is the whole regular expression right",
+        "start": 286.15,
+        "duration": 3.96
+    },
+    {
+        "text": "there now you just need to specify the",
+        "start": 288.22,
+        "duration": 4.29
+    },
+    {
+        "text": "file name so in this case it's file dot",
+        "start": 290.11,
+        "duration": 4.74
+    },
+    {
+        "text": "txt so that would be the command you",
+        "start": 292.51,
+        "duration": 5.88
+    },
+    {
+        "text": "enter there you go success this this",
+        "start": 294.85,
+        "duration": 6.48
+    },
+    {
+        "text": "argument requires you to put - capital P",
+        "start": 298.39,
+        "duration": 6.0
+    },
+    {
+        "text": "not all computers or operating systems",
+        "start": 301.33,
+        "duration": 6.09
+    },
+    {
+        "text": "have support for that apparently and",
+        "start": 304.39,
+        "duration": 6.42
+    },
+    {
+        "text": "here's some other tools I saw I've never",
+        "start": 307.42,
+        "duration": 7.65
+    },
+    {
+        "text": "used these seda W K I use grep but",
+        "start": 310.81,
+        "duration": 7.85
+    },
+    {
+        "text": "here's without - P it looks like so",
+        "start": 315.07,
+        "duration": 7.65
+    },
+    {
+        "text": "right here it's just a lot longer as you",
+        "start": 318.66,
+        "duration": 5.32
+    },
+    {
+        "text": "could see I could have typed this out",
+        "start": 322.72,
+        "duration": 3.44
+    },
+    {
+        "text": "but um might have taken a lot longer",
+        "start": 323.98,
+        "duration": 5.43
+    },
+    {
+        "text": "with all these back slashes 0 through 9",
+        "start": 326.16,
+        "duration": 6.67
+    },
+    {
+        "text": "instead of - D and yeah that's pretty",
+        "start": 329.41,
+        "duration": 4.62
+    },
+    {
+        "text": "much the only different is just a",
+        "start": 332.83,
+        "duration": 2.76
+    },
+    {
+        "text": "million back slashes so there you go",
+        "start": 334.03,
+        "duration": 3.18
+    },
+    {
+        "text": "maybe look into that lookup regular",
+        "start": 335.59,
+        "duration": 3.3
+    },
+    {
+        "text": "expressions if you're unfamiliar let me",
+        "start": 337.21,
+        "duration": 3.96
+    },
+    {
+        "text": "know what you guys think I'm not a reg X",
+        "start": 338.89,
+        "duration": 4.5
+    },
+    {
+        "text": "whiz I don't think it's that important",
+        "start": 341.17,
+        "duration": 3.69
+    },
+    {
+        "text": "if I want to look up phone number or",
+        "start": 343.39,
+        "duration": 3.78
+    },
+    {
+        "text": "email matching I just look up reg X",
+        "start": 344.86,
+        "duration": 4.47
+    },
+    {
+        "text": "email match on Google and then I paste",
+        "start": 347.17,
+        "duration": 3.96
+    },
+    {
+        "text": "it into my JavaScript code or whatever",
+        "start": 349.33,
+        "duration": 4.65
+    },
+    {
+        "text": "so let me know if you do do advanced reg",
+        "start": 351.13,
+        "duration": 5.73
+    },
+    {
+        "text": "X and if you want to you know maybe do a",
+        "start": 353.98,
+        "duration": 4.86
+    },
+    {
+        "text": "video chat with me I'll put that on my",
+        "start": 356.86,
+        "duration": 3.42
+    },
+    {
+        "text": "channel or something that sounds cool to",
+        "start": 358.84,
+        "duration": 3.39
+    },
+    {
+        "text": "me teach me do a lesson with me or",
+        "start": 360.28,
+        "duration": 4.14
+    },
+    {
+        "text": "something I'd like to talk to a reg X",
+        "start": 362.23,
+        "duration": 3.78
+    },
+    {
+        "text": "whiz I used to know one kid in college",
+        "start": 364.42,
+        "duration": 3.09
+    },
+    {
+        "text": "that was pretty good but I've never met",
+        "start": 366.01,
+        "duration": 4.14
+    },
+    {
+        "text": "any like someone that's like super",
+        "start": 367.51,
+        "duration": 4.98
+    },
+    {
+        "text": "obsessed with them so let me know you",
+        "start": 370.15,
+        "duration": 4.62
+    },
+    {
+        "text": "guys think check out my patreon I'm",
+        "start": 372.49,
+        "duration": 3.72
+    },
+    {
+        "text": "doing the Premium League codes on there",
+        "start": 374.77,
+        "duration": 3.65
+    },
+    {
+        "text": "you know post one right after this so",
+        "start": 376.21,
+        "duration": 6.98
+    },
+    {
+        "text": "thanks and see you guys in",
+        "start": 378.42,
+        "duration": 4.77
+    }
+]

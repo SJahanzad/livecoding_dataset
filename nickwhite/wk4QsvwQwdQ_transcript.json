@@ -1,0 +1,1207 @@
+[
+    {
+        "text": "how's it going guys sorry if I hurt your",
+        "start": 1.7,
+        "duration": 4.96
+    },
+    {
+        "text": "ears there I got a new mic recently but",
+        "start": 4.44,
+        "duration": 5.31
+    },
+    {
+        "text": "yeah we're just gonna be doing another",
+        "start": 6.66,
+        "duration": 5.01
+    },
+    {
+        "text": "thing if you don't know who I am check",
+        "start": 9.75,
+        "duration": 4.23
+    },
+    {
+        "text": "the description I do tech encoding stuff",
+        "start": 11.67,
+        "duration": 4.02
+    },
+    {
+        "text": "on twitch and YouTube and I've been",
+        "start": 13.98,
+        "duration": 3.24
+    },
+    {
+        "text": "doing all these leak code problems and",
+        "start": 15.69,
+        "duration": 3.57
+    },
+    {
+        "text": "kind of explaining them so we already",
+        "start": 17.22,
+        "duration": 5.069
+    },
+    {
+        "text": "did a palindrome integer or something",
+        "start": 19.26,
+        "duration": 5.429
+    },
+    {
+        "text": "like that or reverse integer something",
+        "start": 22.289,
+        "duration": 5.4
+    },
+    {
+        "text": "like that so right now we're gonna do is",
+        "start": 24.689,
+        "duration": 5.281
+    },
+    {
+        "text": "a penalty it's called palindrome linked",
+        "start": 27.689,
+        "duration": 4.111
+    },
+    {
+        "text": "list that's what this problem is called",
+        "start": 29.97,
+        "duration": 3.089
+    },
+    {
+        "text": "and I'll leave the link in the",
+        "start": 31.8,
+        "duration": 3.12
+    },
+    {
+        "text": "description it says given a singly",
+        "start": 33.059,
+        "duration": 3.66
+    },
+    {
+        "text": "linked list determine if it is a",
+        "start": 34.92,
+        "duration": 4.62
+    },
+    {
+        "text": "palindrome right so one two is false you",
+        "start": 36.719,
+        "duration": 4.491
+    },
+    {
+        "text": "know what a palindrome is it's like",
+        "start": 39.54,
+        "duration": 4.56
+    },
+    {
+        "text": "racecar spelled forward and backwards is",
+        "start": 41.21,
+        "duration": 5.8
+    },
+    {
+        "text": "racecar so that's a palindrome and you",
+        "start": 44.1,
+        "duration": 5.389
+    },
+    {
+        "text": "can see one two two one is a palindrome",
+        "start": 47.01,
+        "duration": 5.1
+    },
+    {
+        "text": "you know it's just the same forward as",
+        "start": 49.489,
+        "duration": 5.951
+    },
+    {
+        "text": "it is backwards so the algorithm to do",
+        "start": 52.11,
+        "duration": 5.85
+    },
+    {
+        "text": "this is kind of the same as how we would",
+        "start": 55.44,
+        "duration": 4.59
+    },
+    {
+        "text": "do it and you know another palindrome",
+        "start": 57.96,
+        "duration": 5.16
+    },
+    {
+        "text": "problem basically what we're gonna do",
+        "start": 60.03,
+        "duration": 5.309
+    },
+    {
+        "text": "but yeah basically what we're gonna do",
+        "start": 63.12,
+        "duration": 4.859
+    },
+    {
+        "text": "is we're gonna have two pointers at the",
+        "start": 65.339,
+        "duration": 4.741
+    },
+    {
+        "text": "head at the beginning one of them is",
+        "start": 67.979,
+        "duration": 3.901
+    },
+    {
+        "text": "gonna be moving faster than the other so",
+        "start": 70.08,
+        "duration": 3.45
+    },
+    {
+        "text": "one of them is gonna get to the end by",
+        "start": 71.88,
+        "duration": 3.9
+    },
+    {
+        "text": "it's gonna be the fast one the fast one",
+        "start": 73.53,
+        "duration": 3.479
+    },
+    {
+        "text": "is gonna get to the end of the list by",
+        "start": 75.78,
+        "duration": 2.82
+    },
+    {
+        "text": "the time the slow one gets the middle of",
+        "start": 77.009,
+        "duration": 4.801
+    },
+    {
+        "text": "the list and then we're basically gonna",
+        "start": 78.6,
+        "duration": 6.379
+    },
+    {
+        "text": "reverse one half of the list the the",
+        "start": 81.81,
+        "duration": 7.41
+    },
+    {
+        "text": "right side of the list and then you know",
+        "start": 84.979,
+        "duration": 7.241
+    },
+    {
+        "text": "iterate at you know then we're gonna",
+        "start": 89.22,
+        "duration": 4.68
+    },
+    {
+        "text": "iterate at the end and make sure they're",
+        "start": 92.22,
+        "duration": 3.03
+    },
+    {
+        "text": "exactly the same I guess I'll explain a",
+        "start": 93.9,
+        "duration": 2.789
+    },
+    {
+        "text": "little bit better after we write it so",
+        "start": 95.25,
+        "duration": 2.759
+    },
+    {
+        "text": "I'm gonna write it really quick all",
+        "start": 96.689,
+        "duration": 3.031
+    },
+    {
+        "text": "right so like I said we're gonna have",
+        "start": 98.009,
+        "duration": 3.9
+    },
+    {
+        "text": "these we're gonna have these pointers",
+        "start": 99.72,
+        "duration": 3.6
+    },
+    {
+        "text": "these initial pointers one's gonna be",
+        "start": 101.909,
+        "duration": 3.661
+    },
+    {
+        "text": "call fast one's gonna be called slow we",
+        "start": 103.32,
+        "duration": 4.079
+    },
+    {
+        "text": "can call we're gonna do slow first right",
+        "start": 105.57,
+        "duration": 3.93
+    },
+    {
+        "text": "so let's note slow equals head and let's",
+        "start": 107.399,
+        "duration": 5.341
+    },
+    {
+        "text": "note fast equals head and then one's",
+        "start": 109.5,
+        "duration": 4.53
+    },
+    {
+        "text": "gonna be going faster than the other",
+        "start": 112.74,
+        "duration": 3.479
+    },
+    {
+        "text": "right so faster is gonna reach the end",
+        "start": 114.03,
+        "duration": 5.189
+    },
+    {
+        "text": "of the list first so whenever you're not",
+        "start": 116.219,
+        "duration": 5.161
+    },
+    {
+        "text": "traversing but you know iterating",
+        "start": 119.219,
+        "duration": 5.281
+    },
+    {
+        "text": "through or going through a linked list",
+        "start": 121.38,
+        "duration": 5.82
+    },
+    {
+        "text": "you're gonna want to have you know the",
+        "start": 124.5,
+        "duration": 5.58
+    },
+    {
+        "text": "the current node the whatever node is",
+        "start": 127.2,
+        "duration": 4.38
+    },
+    {
+        "text": "gonna hit the end first you're usually",
+        "start": 130.08,
+        "duration": 2.73
+    },
+    {
+        "text": "going to want to have that and",
+        "start": 131.58,
+        "duration": 2.489
+    },
+    {
+        "text": "your loop that's gonna be your break",
+        "start": 132.81,
+        "duration": 3.42
+    },
+    {
+        "text": "condition basically so while fast is not",
+        "start": 134.069,
+        "duration": 9.361
+    },
+    {
+        "text": "equal to null or and fast dot next is",
+        "start": 136.23,
+        "duration": 9.3
+    },
+    {
+        "text": "not equal to null",
+        "start": 143.43,
+        "duration": 4.5
+    },
+    {
+        "text": "this is gonna be condition to you know",
+        "start": 145.53,
+        "duration": 5.16
+    },
+    {
+        "text": "tell us when to stop fast equals fast",
+        "start": 147.93,
+        "duration": 5.22
+    },
+    {
+        "text": "dot next dot next right because this",
+        "start": 150.69,
+        "duration": 3.75
+    },
+    {
+        "text": "one's gonna be going double the speed",
+        "start": 153.15,
+        "duration": 3.869
+    },
+    {
+        "text": "and slow is just gonna be going one at a",
+        "start": 154.44,
+        "duration": 5.43
+    },
+    {
+        "text": "time right so slow is slow at this the",
+        "start": 157.019,
+        "duration": 4.861
+    },
+    {
+        "text": "slow pointer is moving one note at a",
+        "start": 159.87,
+        "duration": 3.66
+    },
+    {
+        "text": "time as we go through the list and",
+        "start": 161.88,
+        "duration": 3.93
+    },
+    {
+        "text": "linked lists and fast is going to nodes",
+        "start": 163.53,
+        "duration": 4.83
+    },
+    {
+        "text": "at a time right so you know kind of just",
+        "start": 165.81,
+        "duration": 4.86
+    },
+    {
+        "text": "to show representation of that if we",
+        "start": 168.36,
+        "duration": 3.57
+    },
+    {
+        "text": "have you know this is our linked list",
+        "start": 170.67,
+        "duration": 3.84
+    },
+    {
+        "text": "right these are the nodes 1 2 2 1",
+        "start": 171.93,
+        "duration": 5.61
+    },
+    {
+        "text": "well the node values slow and head both",
+        "start": 174.51,
+        "duration": 4.949
+    },
+    {
+        "text": "start at 1 but slow is gonna be going to",
+        "start": 177.54,
+        "duration": 5.19
+    },
+    {
+        "text": "to head would be going to this second to",
+        "start": 179.459,
+        "duration": 5.761
+    },
+    {
+        "text": "when at the you know first iteration and",
+        "start": 182.73,
+        "duration": 4.35
+    },
+    {
+        "text": "then the you know with the final",
+        "start": 185.22,
+        "duration": 3.96
+    },
+    {
+        "text": "iteration slow would end up at the",
+        "start": 187.08,
+        "duration": 4.65
+    },
+    {
+        "text": "second two and you know fast would be",
+        "start": 189.18,
+        "duration": 4.559
+    },
+    {
+        "text": "null because it would go over 1 and it",
+        "start": 191.73,
+        "duration": 3.75
+    },
+    {
+        "text": "would end up being off and that would",
+        "start": 193.739,
+        "duration": 4.681
+    },
+    {
+        "text": "break our loop there so that's pretty",
+        "start": 195.48,
+        "duration": 4.53
+    },
+    {
+        "text": "much it and then what we're gonna do is",
+        "start": 198.42,
+        "duration": 3.21
+    },
+    {
+        "text": "we're just going to call this method",
+        "start": 200.01,
+        "duration": 3.74
+    },
+    {
+        "text": "we're gonna right afterwards called",
+        "start": 201.63,
+        "duration": 4.859
+    },
+    {
+        "text": "reversed so slow is going to be equal to",
+        "start": 203.75,
+        "duration": 5.23
+    },
+    {
+        "text": "slow reverse we're gonna set back fast",
+        "start": 206.489,
+        "duration": 4.771
+    },
+    {
+        "text": "to head so ahead fast really doesn't",
+        "start": 208.98,
+        "duration": 4.2
+    },
+    {
+        "text": "even need to get to the end because",
+        "start": 211.26,
+        "duration": 3.15
+    },
+    {
+        "text": "we're just setting it right back to the",
+        "start": 213.18,
+        "duration": 3.69
+    },
+    {
+        "text": "beginning what slow is gonna do slow is",
+        "start": 214.41,
+        "duration": 4.079
+    },
+    {
+        "text": "at the middle note of our list by the",
+        "start": 216.87,
+        "duration": 4.709
+    },
+    {
+        "text": "end of this loop and what slow is gonna",
+        "start": 218.489,
+        "duration": 4.741
+    },
+    {
+        "text": "do is we're gonna pass in a node and",
+        "start": 221.579,
+        "duration": 3.601
+    },
+    {
+        "text": "we're gonna reverse all of the notes",
+        "start": 223.23,
+        "duration": 5.97
+    },
+    {
+        "text": "from halfway to the end of the list so",
+        "start": 225.18,
+        "duration": 5.97
+    },
+    {
+        "text": "it'll be in reversed order so if you",
+        "start": 229.2,
+        "duration": 3.83
+    },
+    {
+        "text": "know if the right half of the list was",
+        "start": 231.15,
+        "duration": 4.489
+    },
+    {
+        "text": "so let's say the list is three to one",
+        "start": 233.03,
+        "duration": 5.26
+    },
+    {
+        "text": "you know three to one",
+        "start": 235.639,
+        "duration": 6.581
+    },
+    {
+        "text": "one two three right slow would be at one",
+        "start": 238.29,
+        "duration": 6.27
+    },
+    {
+        "text": "right and we would pass it in and it",
+        "start": 242.22,
+        "duration": 4.019
+    },
+    {
+        "text": "would reverse it so it would be now",
+        "start": 244.56,
+        "duration": 4.23
+    },
+    {
+        "text": "three two one",
+        "start": 246.239,
+        "duration": 5.491
+    },
+    {
+        "text": "so it's just reversing it and then slow",
+        "start": 248.79,
+        "duration": 5.55
+    },
+    {
+        "text": "is gonna be at three and fast will be at",
+        "start": 251.73,
+        "duration": 5.52
+    },
+    {
+        "text": "three here and we're gonna iterate we're",
+        "start": 254.34,
+        "duration": 5.61
+    },
+    {
+        "text": "gonna loop down both of these basically",
+        "start": 257.25,
+        "duration": 4.56
+    },
+    {
+        "text": "they're basically like sub lists at this",
+        "start": 259.95,
+        "duration": 4.14
+    },
+    {
+        "text": "point even though they're not but we're",
+        "start": 261.81,
+        "duration": 4.169
+    },
+    {
+        "text": "gonna we're gonna iterate until slow",
+        "start": 264.09,
+        "duration": 2.58
+    },
+    {
+        "text": "gets to the",
+        "start": 265.979,
+        "duration": 2.521
+    },
+    {
+        "text": "here which would get you know fast to",
+        "start": 266.67,
+        "duration": 2.94
+    },
+    {
+        "text": "halfway and then we're gonna make sure",
+        "start": 268.5,
+        "duration": 4.29
+    },
+    {
+        "text": "that you know as fast goes three two one",
+        "start": 269.61,
+        "duration": 4.98
+    },
+    {
+        "text": "slow also goes three two one and if",
+        "start": 272.79,
+        "duration": 3.6
+    },
+    {
+        "text": "there's any difference in the elements",
+        "start": 274.59,
+        "duration": 3.69
+    },
+    {
+        "text": "then we know it's not a palindrome so",
+        "start": 276.39,
+        "duration": 3.06
+    },
+    {
+        "text": "hopefully that makes sense to you guys",
+        "start": 278.28,
+        "duration": 2.67
+    },
+    {
+        "text": "I'm trying to get better at explaining",
+        "start": 279.45,
+        "duration": 4.08
+    },
+    {
+        "text": "these as I do more and more but you know",
+        "start": 280.95,
+        "duration": 4.53
+    },
+    {
+        "text": "I mean this is only like the tenth one",
+        "start": 283.53,
+        "duration": 6.66
+    },
+    {
+        "text": "we're doing so maybe but I feel like",
+        "start": 285.48,
+        "duration": 6.57
+    },
+    {
+        "text": "that makes pretty good sense if you",
+        "start": 290.19,
+        "duration": 4.41
+    },
+    {
+        "text": "think about what I'm saying here so now",
+        "start": 292.05,
+        "duration": 5.82
+    },
+    {
+        "text": "that we have the reversed slow so the",
+        "start": 294.6,
+        "duration": 5.07
+    },
+    {
+        "text": "verse the reversed right half and the",
+        "start": 297.87,
+        "duration": 4.2
+    },
+    {
+        "text": "regular front half all we're gonna have",
+        "start": 299.67,
+        "duration": 4.59
+    },
+    {
+        "text": "to do is do well slow is not equal null",
+        "start": 302.07,
+        "duration": 4.86
+    },
+    {
+        "text": "cuz slow is already at halfway so we",
+        "start": 304.26,
+        "duration": 5.67
+    },
+    {
+        "text": "just got to make sure that it they both",
+        "start": 306.93,
+        "duration": 7.71
+    },
+    {
+        "text": "go so slow slow equals slow down next",
+        "start": 309.93,
+        "duration": 7.35
+    },
+    {
+        "text": "you know just moving along here like we",
+        "start": 314.64,
+        "duration": 4.53
+    },
+    {
+        "text": "were doing before now fast is only going",
+        "start": 317.28,
+        "duration": 3.9
+    },
+    {
+        "text": "one at a time slowest but going one at a",
+        "start": 319.17,
+        "duration": 3.6
+    },
+    {
+        "text": "time and if there's a difference like I",
+        "start": 321.18,
+        "duration": 6.3
+    },
+    {
+        "text": "said then it's false and that's the only",
+        "start": 322.77,
+        "duration": 6.36
+    },
+    {
+        "text": "case where it would be false and if we",
+        "start": 327.48,
+        "duration": 3.48
+    },
+    {
+        "text": "make it through all of this then it's",
+        "start": 329.13,
+        "duration": 3.36
+    },
+    {
+        "text": "true it's a palindrome",
+        "start": 330.96,
+        "duration": 4.47
+    },
+    {
+        "text": "should be obvious at this point why now",
+        "start": 332.49,
+        "duration": 5.6
+    },
+    {
+        "text": "all we have to do is do public list node",
+        "start": 335.43,
+        "duration": 6.66
+    },
+    {
+        "text": "reversed it takes in our list node slow",
+        "start": 338.09,
+        "duration": 5.38
+    },
+    {
+        "text": "right this is where we call reversed",
+        "start": 342.09,
+        "duration": 3.75
+    },
+    {
+        "text": "with the slow and this will be called",
+        "start": 343.47,
+        "duration": 5.91
+    },
+    {
+        "text": "you know and then all we have to do is",
+        "start": 345.84,
+        "duration": 6.24
+    },
+    {
+        "text": "declare a previous node this is you know",
+        "start": 349.38,
+        "duration": 4.26
+    },
+    {
+        "text": "this is the more important method to",
+        "start": 352.08,
+        "duration": 4.29
+    },
+    {
+        "text": "kind of figure out here so we're gonna",
+        "start": 353.64,
+        "duration": 4.98
+    },
+    {
+        "text": "use a previous node in this case to",
+        "start": 356.37,
+        "duration": 4.08
+    },
+    {
+        "text": "reverse the right half of our linked",
+        "start": 358.62,
+        "duration": 4.89
+    },
+    {
+        "text": "list and all we have to do now is do",
+        "start": 360.45,
+        "duration": 5.25
+    },
+    {
+        "text": "make a condition while head is not equal",
+        "start": 363.51,
+        "duration": 5.13
+    },
+    {
+        "text": "null and traverse and traverse because",
+        "start": 365.7,
+        "duration": 4.11
+    },
+    {
+        "text": "I've been doing a lot of true problems",
+        "start": 368.64,
+        "duration": 4.05
+    },
+    {
+        "text": "but I think in listen linked lists all",
+        "start": 369.81,
+        "duration": 5.13
+    },
+    {
+        "text": "it's just called like going through or",
+        "start": 372.69,
+        "duration": 4.53
+    },
+    {
+        "text": "just iterating through the nodes in the",
+        "start": 374.94,
+        "duration": 5.52
+    },
+    {
+        "text": "list or something but I guess you could",
+        "start": 377.22,
+        "duration": 5.94
+    },
+    {
+        "text": "say traverse honestly but so while ahead",
+        "start": 380.46,
+        "duration": 4.17
+    },
+    {
+        "text": "is not equal now we're just going to be",
+        "start": 383.16,
+        "duration": 2.66
+    },
+    {
+        "text": "doing",
+        "start": 384.63,
+        "duration": 3.71
+    },
+    {
+        "text": "have the next node so head dot next in",
+        "start": 385.82,
+        "duration": 4.59
+    },
+    {
+        "text": "so let's say we pass in three two one",
+        "start": 388.34,
+        "duration": 4.29
+    },
+    {
+        "text": "like a my example before three would be",
+        "start": 390.41,
+        "duration": 5.43
+    },
+    {
+        "text": "the head previous would be null and next",
+        "start": 392.63,
+        "duration": 5.22
+    },
+    {
+        "text": "is our node that we're making is gonna",
+        "start": 395.84,
+        "duration": 3.93
+    },
+    {
+        "text": "be head dot next so next is going to be",
+        "start": 397.85,
+        "duration": 5.67
+    },
+    {
+        "text": "two and then we're gonna do head dot",
+        "start": 399.77,
+        "duration": 7.32
+    },
+    {
+        "text": "next is set to prove so head is three",
+        "start": 403.52,
+        "duration": 5.85
+    },
+    {
+        "text": "we're gonna set next to null",
+        "start": 407.09,
+        "duration": 4.53
+    },
+    {
+        "text": "right so it's that's how we're reversing",
+        "start": 409.37,
+        "duration": 4.29
+    },
+    {
+        "text": "it basically and then all we have to do",
+        "start": 411.62,
+        "duration": 3.98
+    },
+    {
+        "text": "with then is update preview head and",
+        "start": 413.66,
+        "duration": 7.68
+    },
+    {
+        "text": "update head to next yeah right and then",
+        "start": 415.6,
+        "duration": 7.63
+    },
+    {
+        "text": "all we have to do after that is returned",
+        "start": 421.34,
+        "duration": 3.39
+    },
+    {
+        "text": "priva",
+        "start": 423.23,
+        "duration": 3.78
+    },
+    {
+        "text": "pre by the end of it is just gonna be",
+        "start": 424.73,
+        "duration": 7.53
+    },
+    {
+        "text": "the head of the reversed list so yeah I",
+        "start": 427.01,
+        "duration": 7.05
+    },
+    {
+        "text": "mean that's that's pretty much it this",
+        "start": 432.26,
+        "duration": 5.1
+    },
+    {
+        "text": "should uh you know submit fine be false",
+        "start": 434.06,
+        "duration": 7.62
+    },
+    {
+        "text": "what's wrong should submit fine not a",
+        "start": 437.36,
+        "duration": 6.96
+    },
+    {
+        "text": "statement out return false sir you know",
+        "start": 441.68,
+        "duration": 5.01
+    },
+    {
+        "text": "always have a little bit of uh never",
+        "start": 444.32,
+        "duration": 4.32
+    },
+    {
+        "text": "good anything first try okay there we go",
+        "start": 446.69,
+        "duration": 3.99
+    },
+    {
+        "text": "fifty eight point seven six percent all",
+        "start": 448.64,
+        "duration": 4.49
+    },
+    {
+        "text": "right two milliseconds there you go",
+        "start": 450.68,
+        "duration": 4.71
+    },
+    {
+        "text": "see ya like I said you have a linked",
+        "start": 453.13,
+        "duration": 7.03
+    },
+    {
+        "text": "list if it's one two three three two one",
+        "start": 455.39,
+        "duration": 6.75
+    },
+    {
+        "text": "that's a palindrome right because I kind",
+        "start": 460.16,
+        "duration": 4.05
+    },
+    {
+        "text": "of explained it it's like how race car",
+        "start": 462.14,
+        "duration": 4.62
+    },
+    {
+        "text": "backwards is race car you know if you",
+        "start": 464.21,
+        "duration": 7.62
+    },
+    {
+        "text": "look RAC e CA are one two three one two",
+        "start": 466.76,
+        "duration": 7.41
+    },
+    {
+        "text": "three you know I mean it's the same",
+        "start": 471.83,
+        "duration": 6.21
+    },
+    {
+        "text": "thing so you have the head and fast",
+        "start": 474.17,
+        "duration": 7.38
+    },
+    {
+        "text": "initially at one fast goes double so it",
+        "start": 478.04,
+        "duration": 5.1
+    },
+    {
+        "text": "gets to the end first and by the time it",
+        "start": 481.55,
+        "duration": 3.51
+    },
+    {
+        "text": "gets to the end slow is at the middle",
+        "start": 483.14,
+        "duration": 4.17
+    },
+    {
+        "text": "and then you pass slow into this",
+        "start": 485.06,
+        "duration": 4.95
+    },
+    {
+        "text": "reversed method it reverses the right",
+        "start": 487.31,
+        "duration": 5.04
+    },
+    {
+        "text": "half of the linked list and then you",
+        "start": 490.01,
+        "duration": 4.08
+    },
+    {
+        "text": "just iterate from the beginning in the",
+        "start": 492.35,
+        "duration": 3.48
+    },
+    {
+        "text": "middle to the end and they should be the",
+        "start": 494.09,
+        "duration": 4.47
+    },
+    {
+        "text": "same list so hopefully that makes sense",
+        "start": 495.83,
+        "duration": 4.53
+    },
+    {
+        "text": "to you this is the reverse method maybe",
+        "start": 498.56,
+        "duration": 3.57
+    },
+    {
+        "text": "look into that a little bit more you",
+        "start": 500.36,
+        "duration": 3.33
+    },
+    {
+        "text": "know if you really dive into it and go",
+        "start": 502.13,
+        "duration": 3.96
+    },
+    {
+        "text": "step by step you can see so if it's one",
+        "start": 503.69,
+        "duration": 4.23
+    },
+    {
+        "text": "two three it should be three two one in",
+        "start": 506.09,
+        "duration": 3.99
+    },
+    {
+        "text": "the end so you pass in one it's gonna",
+        "start": 507.92,
+        "duration": 4.86
+    },
+    {
+        "text": "set one's next to null but one's next",
+        "start": 510.08,
+        "duration": 4.8
+    },
+    {
+        "text": "right now is two so setting it to null",
+        "start": 512.78,
+        "duration": 4.08
+    },
+    {
+        "text": "makes sense right because it's you know",
+        "start": 514.88,
+        "duration": 4.3
+    },
+    {
+        "text": "no it would be one then",
+        "start": 516.86,
+        "duration": 6.16
+    },
+    {
+        "text": "null because you know before that is",
+        "start": 519.18,
+        "duration": 7.29
+    },
+    {
+        "text": "gonna be too and then it's gonna be",
+        "start": 523.02,
+        "duration": 5.31
+    },
+    {
+        "text": "three if you go through the rest of it",
+        "start": 526.47,
+        "duration": 4.56
+    },
+    {
+        "text": "right you know because as you loop",
+        "start": 528.33,
+        "duration": 3.9
+    },
+    {
+        "text": "through it",
+        "start": 531.03,
+        "duration": 3.6
+    },
+    {
+        "text": "previous keeps getting set to head so",
+        "start": 532.23,
+        "duration": 4.71
+    },
+    {
+        "text": "and head necks keeps getting set to",
+        "start": 534.63,
+        "duration": 4.44
+    },
+    {
+        "text": "previous right that's where the changes",
+        "start": 536.94,
+        "duration": 4.92
+    },
+    {
+        "text": "are taking place so you know two dot",
+        "start": 539.07,
+        "duration": 4.59
+    },
+    {
+        "text": "next is getting set to one and then",
+        "start": 541.86,
+        "duration": 3.9
+    },
+    {
+        "text": "three dot next is getting set to two",
+        "start": 543.66,
+        "duration": 4.53
+    },
+    {
+        "text": "right cuz previous keeps getting updated",
+        "start": 545.76,
+        "duration": 4.61
+    },
+    {
+        "text": "ahead look into that a little bit more",
+        "start": 548.19,
+        "duration": 4.11
+    },
+    {
+        "text": "let me know what you think of my",
+        "start": 550.37,
+        "duration": 4.24
+    },
+    {
+        "text": "explaining in the comments below I'm",
+        "start": 552.3,
+        "duration": 3.57
+    },
+    {
+        "text": "really trying to explain these good",
+        "start": 554.61,
+        "duration": 2.91
+    },
+    {
+        "text": "maybe I could do some white boarding",
+        "start": 555.87,
+        "duration": 3.72
+    },
+    {
+        "text": "stuff in the future but yeah check me",
+        "start": 557.52,
+        "duration": 3.9
+    },
+    {
+        "text": "out on Twitter subscribe on YouTube and",
+        "start": 559.59,
+        "duration": 3.99
+    },
+    {
+        "text": "thank you guys very much you know maybe",
+        "start": 561.42,
+        "duration": 4.44
+    },
+    {
+        "text": "I'll redo them and I'll have some more",
+        "start": 563.58,
+        "duration": 4.53
+    },
+    {
+        "text": "videos more leak code the I have all the",
+        "start": 565.86,
+        "duration": 4.59
+    },
+    {
+        "text": "leak code stuff so you know check it out",
+        "start": 568.11,
+        "duration": 6.83
+    },
+    {
+        "text": "in the future thank you and see you",
+        "start": 570.45,
+        "duration": 4.49
+    }
+]

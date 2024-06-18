@@ -1,0 +1,2282 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.16,
+        "duration": 2.88
+    },
+    {
+        "text": "some more neat code today",
+        "start": 1.76,
+        "duration": 3.84
+    },
+    {
+        "text": "we're given an n by n matrix so this",
+        "start": 3.04,
+        "duration": 4.96
+    },
+    {
+        "text": "time it's a square matrix for sure",
+        "start": 5.6,
+        "duration": 4.8
+    },
+    {
+        "text": "representing some image and we want to",
+        "start": 8.0,
+        "duration": 3.12
+    },
+    {
+        "text": "rotate",
+        "start": 10.4,
+        "duration": 4.0
+    },
+    {
+        "text": "that image by 90 degrees clockwise",
+        "start": 11.12,
+        "duration": 5.999
+    },
+    {
+        "text": "and we are required to do this in place",
+        "start": 14.4,
+        "duration": 3.28
+    },
+    {
+        "text": "so we",
+        "start": 17.119,
+        "duration": 3.441
+    },
+    {
+        "text": "cannot allocate more memory we can't",
+        "start": 17.68,
+        "duration": 4.72
+    },
+    {
+        "text": "just make a copy of the matrix",
+        "start": 20.56,
+        "duration": 5.039
+    },
+    {
+        "text": "and rotate it like that so the challenge",
+        "start": 22.4,
+        "duration": 5.28
+    },
+    {
+        "text": "here is definitely doing it in place you",
+        "start": 25.599,
+        "duration": 3.68
+    },
+    {
+        "text": "can see that they had",
+        "start": 27.68,
+        "duration": 4.08
+    },
+    {
+        "text": "a original matrix like this what they",
+        "start": 29.279,
+        "duration": 3.841
+    },
+    {
+        "text": "did is they took",
+        "start": 31.76,
+        "duration": 4.479
+    },
+    {
+        "text": "the one and put it over here",
+        "start": 33.12,
+        "duration": 5.84
+    },
+    {
+        "text": "so 90 degrees basically what they did is",
+        "start": 36.239,
+        "duration": 4.32
+    },
+    {
+        "text": "took this entire first",
+        "start": 38.96,
+        "duration": 5.119
+    },
+    {
+        "text": "row and moved it into the rightmost",
+        "start": 40.559,
+        "duration": 6.0
+    },
+    {
+        "text": "column right and so they did that by",
+        "start": 44.079,
+        "duration": 3.681
+    },
+    {
+        "text": "moving this",
+        "start": 46.559,
+        "duration": 4.561
+    },
+    {
+        "text": "over here moving this 2 over",
+        "start": 47.76,
+        "duration": 6.72
+    },
+    {
+        "text": "here moving the 3 over here",
+        "start": 51.12,
+        "duration": 5.2
+    },
+    {
+        "text": "and so the problem is when you're moving",
+        "start": 54.48,
+        "duration": 3.759
+    },
+    {
+        "text": "this one over here you have to",
+        "start": 56.32,
+        "duration": 4.8
+    },
+    {
+        "text": "save the three temporarily right so you",
+        "start": 58.239,
+        "duration": 4.16
+    },
+    {
+        "text": "just save the three",
+        "start": 61.12,
+        "duration": 3.999
+    },
+    {
+        "text": "or once you move this one over here you",
+        "start": 62.399,
+        "duration": 4.321
+    },
+    {
+        "text": "can take the three",
+        "start": 65.119,
+        "duration": 4.801
+    },
+    {
+        "text": "save it and move it over here and we",
+        "start": 66.72,
+        "duration": 4.0
+    },
+    {
+        "text": "know that",
+        "start": 69.92,
+        "duration": 3.6
+    },
+    {
+        "text": "this entire right column is going to",
+        "start": 70.72,
+        "duration": 3.52
+    },
+    {
+        "text": "actually be",
+        "start": 73.52,
+        "duration": 4.0
+    },
+    {
+        "text": "put in the bottom row so what is",
+        "start": 74.24,
+        "duration": 4.4
+    },
+    {
+        "text": "actually going on",
+        "start": 77.52,
+        "duration": 4.4
+    },
+    {
+        "text": "is this 9 is actually being moved",
+        "start": 78.64,
+        "duration": 6.0
+    },
+    {
+        "text": "over here right that's where it ended up",
+        "start": 81.92,
+        "duration": 3.6
+    },
+    {
+        "text": "in the result",
+        "start": 84.64,
+        "duration": 4.479
+    },
+    {
+        "text": "and then this seven is being rotated",
+        "start": 85.52,
+        "duration": 6.4
+    },
+    {
+        "text": "over here so that's where the seven ends",
+        "start": 89.119,
+        "duration": 3.121
+    },
+    {
+        "text": "up",
+        "start": 91.92,
+        "duration": 3.04
+    },
+    {
+        "text": "the one ends up over here the three ends",
+        "start": 92.24,
+        "duration": 3.68
+    },
+    {
+        "text": "up over here",
+        "start": 94.96,
+        "duration": 3.119
+    },
+    {
+        "text": "the nine ended up over here so these",
+        "start": 95.92,
+        "duration": 4.159
+    },
+    {
+        "text": "four let's say have been rotated so",
+        "start": 98.079,
+        "duration": 4.08
+    },
+    {
+        "text": "far so now we don't have to touch them",
+        "start": 100.079,
+        "duration": 3.04
+    },
+    {
+        "text": "but you can see",
+        "start": 102.159,
+        "duration": 3.201
+    },
+    {
+        "text": "there's a little bit left in the outer",
+        "start": 103.119,
+        "duration": 4.32
+    },
+    {
+        "text": "layer so let's just worry about the",
+        "start": 105.36,
+        "duration": 3.84
+    },
+    {
+        "text": "outer layer so far we don't have to",
+        "start": 107.439,
+        "duration": 3.601
+    },
+    {
+        "text": "worry about the 5 but",
+        "start": 109.2,
+        "duration": 3.599
+    },
+    {
+        "text": "in the result we know the 5 actually",
+        "start": 111.04,
+        "duration": 3.759
+    },
+    {
+        "text": "doesn't move you know you rotate it",
+        "start": 112.799,
+        "duration": 4.401
+    },
+    {
+        "text": "but what about this four now it's",
+        "start": 114.799,
+        "duration": 3.841
+    },
+    {
+        "text": "basically the same",
+        "start": 117.2,
+        "duration": 4.239
+    },
+    {
+        "text": "thing that we did over here right we are",
+        "start": 118.64,
+        "duration": 4.0
+    },
+    {
+        "text": "rotating this",
+        "start": 121.439,
+        "duration": 3.601
+    },
+    {
+        "text": "so basically we can think of it as being",
+        "start": 122.64,
+        "duration": 3.92
+    },
+    {
+        "text": "in the top left right",
+        "start": 125.04,
+        "duration": 3.279
+    },
+    {
+        "text": "let's the original square we were",
+        "start": 126.56,
+        "duration": 3.6
+    },
+    {
+        "text": "rotating was like this",
+        "start": 128.319,
+        "duration": 4.721
+    },
+    {
+        "text": "now the square we're rotating is like",
+        "start": 130.16,
+        "duration": 5.2
+    },
+    {
+        "text": "this it's still technically a square",
+        "start": 133.04,
+        "duration": 4.08
+    },
+    {
+        "text": "you know if you turn your head a little",
+        "start": 135.36,
+        "duration": 3.44
+    },
+    {
+        "text": "bit but this is what we're doing we're",
+        "start": 137.12,
+        "duration": 2.88
+    },
+    {
+        "text": "rotating this",
+        "start": 138.8,
+        "duration": 4.64
+    },
+    {
+        "text": "so this 4 is of course going to be moved",
+        "start": 140.0,
+        "duration": 6.56
+    },
+    {
+        "text": "over here to this two and then and",
+        "start": 143.44,
+        "duration": 4.96
+    },
+    {
+        "text": "before we get rid of the two we want to",
+        "start": 146.56,
+        "duration": 2.48
+    },
+    {
+        "text": "save it",
+        "start": 148.4,
+        "duration": 4.0
+    },
+    {
+        "text": "and move it over here to the six",
+        "start": 149.04,
+        "duration": 5.919
+    },
+    {
+        "text": "and so in the original we have a two",
+        "start": 152.4,
+        "duration": 3.76
+    },
+    {
+        "text": "over here but we know",
+        "start": 154.959,
+        "duration": 3.521
+    },
+    {
+        "text": "that 2 is going to be rotated right",
+        "start": 156.16,
+        "duration": 4.799
+    },
+    {
+        "text": "because this is the rotation we're doing",
+        "start": 158.48,
+        "duration": 4.399
+    },
+    {
+        "text": "and before we get rid of the 6 we want",
+        "start": 160.959,
+        "duration": 3.121
+    },
+    {
+        "text": "to save it",
+        "start": 162.879,
+        "duration": 4.321
+    },
+    {
+        "text": "in a temporary variable and move it over",
+        "start": 164.08,
+        "duration": 6.4
+    },
+    {
+        "text": "here replacing the 8 but we don't want",
+        "start": 167.2,
+        "duration": 5.679
+    },
+    {
+        "text": "to lose the 8 yet because it needs to be",
+        "start": 170.48,
+        "duration": 3.68
+    },
+    {
+        "text": "rotated as well",
+        "start": 172.879,
+        "duration": 3.36
+    },
+    {
+        "text": "it's going to be rotated over here to",
+        "start": 174.16,
+        "duration": 3.2
+    },
+    {
+        "text": "this 4",
+        "start": 176.239,
+        "duration": 2.961
+    },
+    {
+        "text": "and since we rotated the 2 we know",
+        "start": 177.36,
+        "duration": 3.44
+    },
+    {
+        "text": "there's going to be an empty spot over",
+        "start": 179.2,
+        "duration": 2.0
+    },
+    {
+        "text": "here",
+        "start": 180.8,
+        "duration": 3.519
+    },
+    {
+        "text": "for the 4 to",
+        "start": 181.2,
+        "duration": 5.44
+    },
+    {
+        "text": "be placed in and that's what you have",
+        "start": 184.319,
+        "duration": 3.601
+    },
+    {
+        "text": "over here the four",
+        "start": 186.64,
+        "duration": 4.16
+    },
+    {
+        "text": "the two got moved over here the six got",
+        "start": 187.92,
+        "duration": 4.48
+    },
+    {
+        "text": "moved over here",
+        "start": 190.8,
+        "duration": 4.0
+    },
+    {
+        "text": "and the eight got moved over here so",
+        "start": 192.4,
+        "duration": 3.04
+    },
+    {
+        "text": "this is",
+        "start": 194.8,
+        "duration": 3.519
+    },
+    {
+        "text": "still a rotation and lastly we just have",
+        "start": 195.44,
+        "duration": 4.159
+    },
+    {
+        "text": "a one by one",
+        "start": 198.319,
+        "duration": 3.521
+    },
+    {
+        "text": "we know that you know it can't really",
+        "start": 199.599,
+        "duration": 3.92
+    },
+    {
+        "text": "rotating it will just",
+        "start": 201.84,
+        "duration": 4.16
+    },
+    {
+        "text": "be the exact same so let me show you the",
+        "start": 203.519,
+        "duration": 4.72
+    },
+    {
+        "text": "general algorithm to solve this problem",
+        "start": 206.0,
+        "duration": 3.68
+    },
+    {
+        "text": "we're going to do this in",
+        "start": 208.239,
+        "duration": 3.761
+    },
+    {
+        "text": "n square time meaning we only have to",
+        "start": 209.68,
+        "duration": 3.919
+    },
+    {
+        "text": "look at each cell",
+        "start": 212.0,
+        "duration": 3.599
+    },
+    {
+        "text": "in the matrix once remember the",
+        "start": 213.599,
+        "duration": 3.36
+    },
+    {
+        "text": "dimensions are n by",
+        "start": 215.599,
+        "duration": 4.0
+    },
+    {
+        "text": "n and we don't need any extra memory so",
+        "start": 216.959,
+        "duration": 4.161
+    },
+    {
+        "text": "the memory complexity is going to be",
+        "start": 219.599,
+        "duration": 2.64
+    },
+    {
+        "text": "constant we're doing this",
+        "start": 221.12,
+        "duration": 4.399
+    },
+    {
+        "text": "in place in our given matrix so i like",
+        "start": 222.239,
+        "duration": 3.761
+    },
+    {
+        "text": "to",
+        "start": 225.519,
+        "duration": 2.961
+    },
+    {
+        "text": "set some boundaries so we know that this",
+        "start": 226.0,
+        "duration": 4.08
+    },
+    {
+        "text": "is our left boundary",
+        "start": 228.48,
+        "duration": 4.64
+    },
+    {
+        "text": "and this is our right boundary",
+        "start": 230.08,
+        "duration": 5.2
+    },
+    {
+        "text": "initially because we're going to rotate",
+        "start": 233.12,
+        "duration": 3.52
+    },
+    {
+        "text": "the outermost",
+        "start": 235.28,
+        "duration": 4.879
+    },
+    {
+        "text": "layer first right the outermost square",
+        "start": 236.64,
+        "duration": 5.12
+    },
+    {
+        "text": "and then we're going to move inward",
+        "start": 240.159,
+        "duration": 3.681
+    },
+    {
+        "text": "right we're going to do the inside",
+        "start": 241.76,
+        "duration": 5.119
+    },
+    {
+        "text": "of the matrix and the top boundary i'm",
+        "start": 243.84,
+        "duration": 4.0
+    },
+    {
+        "text": "going to place",
+        "start": 246.879,
+        "duration": 3.601
+    },
+    {
+        "text": "over here because that's the top",
+        "start": 247.84,
+        "duration": 3.2
+    },
+    {
+        "text": "remember",
+        "start": 250.48,
+        "duration": 3.36
+    },
+    {
+        "text": "the origin over here is zero by zero",
+        "start": 251.04,
+        "duration": 3.759
+    },
+    {
+        "text": "this position",
+        "start": 253.84,
+        "duration": 4.399
+    },
+    {
+        "text": "is three to three it goes like this",
+        "start": 254.799,
+        "duration": 6.72
+    },
+    {
+        "text": "and as you go down it increases and the",
+        "start": 258.239,
+        "duration": 4.321
+    },
+    {
+        "text": "bottom boundary",
+        "start": 261.519,
+        "duration": 4.721
+    },
+    {
+        "text": "is going to be down here so immediately",
+        "start": 262.56,
+        "duration": 5.44
+    },
+    {
+        "text": "we're gonna start the rotation now how",
+        "start": 266.24,
+        "duration": 3.84
+    },
+    {
+        "text": "is the rotation gonna go well let's",
+        "start": 268.0,
+        "duration": 3.919
+    },
+    {
+        "text": "start at the top left because it's the",
+        "start": 270.08,
+        "duration": 2.96
+    },
+    {
+        "text": "easiest right",
+        "start": 271.919,
+        "duration": 4.081
+    },
+    {
+        "text": "we know that this is the general",
+        "start": 273.04,
+        "duration": 3.92
+    },
+    {
+        "text": "rotation",
+        "start": 276.0,
+        "duration": 2.96
+    },
+    {
+        "text": "that's gonna take place right because",
+        "start": 276.96,
+        "duration": 4.0
+    },
+    {
+        "text": "we're going clockwise",
+        "start": 278.96,
+        "duration": 3.76
+    },
+    {
+        "text": "and then we're going to do that right",
+        "start": 280.96,
+        "duration": 3.28
+    },
+    {
+        "text": "and we know we're going to keep",
+        "start": 282.72,
+        "duration": 3.52
+    },
+    {
+        "text": "doing that with every element in the top",
+        "start": 284.24,
+        "duration": 4.0
+    },
+    {
+        "text": "row so we did the first element in the",
+        "start": 286.24,
+        "duration": 3.679
+    },
+    {
+        "text": "top row then we're going to rotate",
+        "start": 288.24,
+        "duration": 3.76
+    },
+    {
+        "text": "the second element in the top row and",
+        "start": 289.919,
+        "duration": 3.761
+    },
+    {
+        "text": "how is that going to look well",
+        "start": 292.0,
+        "duration": 3.919
+    },
+    {
+        "text": "it's going to be pretty similar so since",
+        "start": 293.68,
+        "duration": 3.76
+    },
+    {
+        "text": "this was the second position",
+        "start": 295.919,
+        "duration": 3.28
+    },
+    {
+        "text": "in the top row we're going to move it to",
+        "start": 297.44,
+        "duration": 3.28
+    },
+    {
+        "text": "the second position",
+        "start": 299.199,
+        "duration": 4.321
+    },
+    {
+        "text": "in the last column right so in this",
+        "start": 300.72,
+        "duration": 3.36
+    },
+    {
+        "text": "column",
+        "start": 303.52,
+        "duration": 3.679
+    },
+    {
+        "text": "we're going to rotate this one to this",
+        "start": 304.08,
+        "duration": 3.839
+    },
+    {
+        "text": "position",
+        "start": 307.199,
+        "duration": 3.921
+    },
+    {
+        "text": "so the second to last position in the",
+        "start": 307.919,
+        "duration": 4.241
+    },
+    {
+        "text": "bottom row",
+        "start": 311.12,
+        "duration": 2.56
+    },
+    {
+        "text": "the main thing to notice though is that",
+        "start": 312.16,
+        "duration": 3.52
+    },
+    {
+        "text": "this is offset by one",
+        "start": 313.68,
+        "duration": 4.88
+    },
+    {
+        "text": "this is offset by one from the top this",
+        "start": 315.68,
+        "duration": 4.72
+    },
+    {
+        "text": "is offset by one to the",
+        "start": 318.56,
+        "duration": 4.16
+    },
+    {
+        "text": "from the right and so the position that",
+        "start": 320.4,
+        "duration": 3.12
+    },
+    {
+        "text": "it's moved",
+        "start": 322.72,
+        "duration": 3.919
+    },
+    {
+        "text": "to is also going to be offset by one",
+        "start": 323.52,
+        "duration": 5.84
+    },
+    {
+        "text": "from the bottom which is where the last",
+        "start": 326.639,
+        "duration": 4.161
+    },
+    {
+        "text": "rotation took place",
+        "start": 329.36,
+        "duration": 4.399
+    },
+    {
+        "text": "and then this is going to be moved over",
+        "start": 330.8,
+        "duration": 3.52
+    },
+    {
+        "text": "here",
+        "start": 333.759,
+        "duration": 3.44
+    },
+    {
+        "text": "and so as you can see we have one last",
+        "start": 334.32,
+        "duration": 3.84
+    },
+    {
+        "text": "rotation to",
+        "start": 337.199,
+        "duration": 4.161
+    },
+    {
+        "text": "make right with these four",
+        "start": 338.16,
+        "duration": 5.92
+    },
+    {
+        "text": "elements and they actually do form a",
+        "start": 341.36,
+        "duration": 3.279
+    },
+    {
+        "text": "square",
+        "start": 344.08,
+        "duration": 3.119
+    },
+    {
+        "text": "if you tilt your head enough this is a",
+        "start": 344.639,
+        "duration": 4.961
+    },
+    {
+        "text": "square rotation a matrix rotation",
+        "start": 347.199,
+        "duration": 5.921
+    },
+    {
+        "text": "but notice how since we already rotated",
+        "start": 349.6,
+        "duration": 4.159
+    },
+    {
+        "text": "this one",
+        "start": 353.12,
+        "duration": 3.199
+    },
+    {
+        "text": "we're actually not doing four rotations",
+        "start": 353.759,
+        "duration": 4.401
+    },
+    {
+        "text": "for the outermost layer we're doing",
+        "start": 356.319,
+        "duration": 4.241
+    },
+    {
+        "text": "four minus one rotations we're doing",
+        "start": 358.16,
+        "duration": 4.0
+    },
+    {
+        "text": "three rotations",
+        "start": 360.56,
+        "duration": 4.16
+    },
+    {
+        "text": "right so even though the outermost layer",
+        "start": 362.16,
+        "duration": 4.479
+    },
+    {
+        "text": "was n by n we actually",
+        "start": 364.72,
+        "duration": 5.52
+    },
+    {
+        "text": "did n minus 1 rotations right so we did",
+        "start": 366.639,
+        "duration": 6.881
+    },
+    {
+        "text": "three rotations and let's say after we",
+        "start": 370.24,
+        "duration": 4.079
+    },
+    {
+        "text": "complete",
+        "start": 373.52,
+        "duration": 2.56
+    },
+    {
+        "text": "the outermost layer right let's say",
+        "start": 374.319,
+        "duration": 3.521
+    },
+    {
+        "text": "we've completely rotated that",
+        "start": 376.08,
+        "duration": 3.6
+    },
+    {
+        "text": "you know we had to rotate this part this",
+        "start": 377.84,
+        "duration": 4.0
+    },
+    {
+        "text": "part and this part so once we do that",
+        "start": 379.68,
+        "duration": 4.56
+    },
+    {
+        "text": "then we know that we actually have an",
+        "start": 381.84,
+        "duration": 3.52
+    },
+    {
+        "text": "inner matrix",
+        "start": 384.24,
+        "duration": 2.56
+    },
+    {
+        "text": "that we have to do so we did the",
+        "start": 385.36,
+        "duration": 3.92
+    },
+    {
+        "text": "outermost layer but now we have to do",
+        "start": 386.8,
+        "duration": 2.8
+    },
+    {
+        "text": "the",
+        "start": 389.28,
+        "duration": 2.72
+    },
+    {
+        "text": "inside how am i going to handle that",
+        "start": 389.6,
+        "duration": 3.76
+    },
+    {
+        "text": "well it can actually just be",
+        "start": 392.0,
+        "duration": 3.44
+    },
+    {
+        "text": "treated as a sub problem because we know",
+        "start": 393.36,
+        "duration": 3.92
+    },
+    {
+        "text": "no matter what it's going to be",
+        "start": 395.44,
+        "duration": 4.56
+    },
+    {
+        "text": "a square matrix so all we really have to",
+        "start": 397.28,
+        "duration": 4.56
+    },
+    {
+        "text": "do is take our pointers and then",
+        "start": 400.0,
+        "duration": 4.319
+    },
+    {
+        "text": "shift all of them by one so our left",
+        "start": 401.84,
+        "duration": 3.919
+    },
+    {
+        "text": "pointer will be shifted",
+        "start": 404.319,
+        "duration": 3.521
+    },
+    {
+        "text": "here our right pointer will be shifted",
+        "start": 405.759,
+        "duration": 3.761
+    },
+    {
+        "text": "here our top pointer",
+        "start": 407.84,
+        "duration": 3.759
+    },
+    {
+        "text": "will be shifted here and our bottom",
+        "start": 409.52,
+        "duration": 3.36
+    },
+    {
+        "text": "pointer will be shifted",
+        "start": 411.599,
+        "duration": 5.121
+    },
+    {
+        "text": "here and so now the the last rotation",
+        "start": 412.88,
+        "duration": 5.84
+    },
+    {
+        "text": "seems pretty obvious right it's so it's",
+        "start": 416.72,
+        "duration": 3.36
+    },
+    {
+        "text": "going to be one rotation",
+        "start": 418.72,
+        "duration": 3.919
+    },
+    {
+        "text": "it's going to include four elements and",
+        "start": 420.08,
+        "duration": 4.32
+    },
+    {
+        "text": "then we will have our result",
+        "start": 422.639,
+        "duration": 4.641
+    },
+    {
+        "text": "now one last thing i wanna show you and",
+        "start": 424.4,
+        "duration": 5.04
+    },
+    {
+        "text": "then after that rotation has taken place",
+        "start": 427.28,
+        "duration": 4.08
+    },
+    {
+        "text": "we know we can update our pointers",
+        "start": 429.44,
+        "duration": 4.319
+    },
+    {
+        "text": "one more time but at this point what",
+        "start": 431.36,
+        "duration": 3.839
+    },
+    {
+        "text": "we'll notice is our left",
+        "start": 433.759,
+        "duration": 3.28
+    },
+    {
+        "text": "pointer is over here and our right",
+        "start": 435.199,
+        "duration": 3.761
+    },
+    {
+        "text": "pointer is here we know that left should",
+        "start": 437.039,
+        "duration": 3.6
+    },
+    {
+        "text": "always be less than right and",
+        "start": 438.96,
+        "duration": 3.6
+    },
+    {
+        "text": "since these pointers have crossed each",
+        "start": 440.639,
+        "duration": 3.12
+    },
+    {
+        "text": "other we know",
+        "start": 442.56,
+        "duration": 3.12
+    },
+    {
+        "text": "that we can stop the algorithm right we",
+        "start": 443.759,
+        "duration": 3.761
+    },
+    {
+        "text": "don't really have a matrix left",
+        "start": 445.68,
+        "duration": 4.0
+    },
+    {
+        "text": "to rotate one last thing i want to show",
+        "start": 447.52,
+        "duration": 3.84
+    },
+    {
+        "text": "you about the rotation is",
+        "start": 449.68,
+        "duration": 4.88
+    },
+    {
+        "text": "we know that the five the top left is",
+        "start": 451.36,
+        "duration": 4.16
+    },
+    {
+        "text": "going to be",
+        "start": 454.56,
+        "duration": 3.44
+    },
+    {
+        "text": "put in this position right the 11 so",
+        "start": 455.52,
+        "duration": 3.92
+    },
+    {
+        "text": "we're going to cross that out",
+        "start": 458.0,
+        "duration": 3.52
+    },
+    {
+        "text": "so we're going to really replace this",
+        "start": 459.44,
+        "duration": 3.12
+    },
+    {
+        "text": "with a",
+        "start": 461.52,
+        "duration": 4.0
+    },
+    {
+        "text": "5 but then what happens to the original",
+        "start": 462.56,
+        "duration": 4.88
+    },
+    {
+        "text": "11 that was placed here well what we can",
+        "start": 465.52,
+        "duration": 4.079
+    },
+    {
+        "text": "say is oh let's move the 11",
+        "start": 467.44,
+        "duration": 4.8
+    },
+    {
+        "text": "to a temporary variable and now let's",
+        "start": 469.599,
+        "duration": 3.921
+    },
+    {
+        "text": "put the 11",
+        "start": 472.24,
+        "duration": 4.0
+    },
+    {
+        "text": "over here so we're putting an 11 over",
+        "start": 473.52,
+        "duration": 4.799
+    },
+    {
+        "text": "here now but what happened to the 16",
+        "start": 476.24,
+        "duration": 3.12
+    },
+    {
+        "text": "that was over here",
+        "start": 478.319,
+        "duration": 2.801
+    },
+    {
+        "text": "well we have to put that in a temporary",
+        "start": 479.36,
+        "duration": 3.279
+    },
+    {
+        "text": "variable a 16",
+        "start": 481.12,
+        "duration": 4.079
+    },
+    {
+        "text": "and then move that 16 over here so let's",
+        "start": 482.639,
+        "duration": 4.321
+    },
+    {
+        "text": "replace this with a 16",
+        "start": 485.199,
+        "duration": 4.4
+    },
+    {
+        "text": "but what happened with the 15 that was",
+        "start": 486.96,
+        "duration": 3.679
+    },
+    {
+        "text": "over here well",
+        "start": 489.599,
+        "duration": 3.361
+    },
+    {
+        "text": "we move that to a temporary variable and",
+        "start": 490.639,
+        "duration": 4.081
+    },
+    {
+        "text": "now that temporary variable",
+        "start": 492.96,
+        "duration": 5.04
+    },
+    {
+        "text": "15 is going to be placed over here",
+        "start": 494.72,
+        "duration": 6.0
+    },
+    {
+        "text": "so the 15 is here and we don't have to",
+        "start": 498.0,
+        "duration": 4.8
+    },
+    {
+        "text": "move the 5 to a temporary variable",
+        "start": 500.72,
+        "duration": 4.159
+    },
+    {
+        "text": "because look we already put it over here",
+        "start": 502.8,
+        "duration": 3.2
+    },
+    {
+        "text": "so we're needing a lot",
+        "start": 504.879,
+        "duration": 3.6
+    },
+    {
+        "text": "of temporary variables i can show you a",
+        "start": 506.0,
+        "duration": 3.28
+    },
+    {
+        "text": "slight",
+        "start": 508.479,
+        "duration": 3.361
+    },
+    {
+        "text": "improvement to this which isn't required",
+        "start": 509.28,
+        "duration": 3.92
+    },
+    {
+        "text": "or anything but i think it makes",
+        "start": 511.84,
+        "duration": 3.439
+    },
+    {
+        "text": "writing the code easier so we know that",
+        "start": 513.2,
+        "duration": 4.079
+    },
+    {
+        "text": "this 5 is going to be rotated",
+        "start": 515.279,
+        "duration": 4.801
+    },
+    {
+        "text": "but let's do this let's do the rotation",
+        "start": 517.279,
+        "duration": 3.12
+    },
+    {
+        "text": "in",
+        "start": 520.08,
+        "duration": 3.12
+    },
+    {
+        "text": "reverse order so instead of removing the",
+        "start": 520.399,
+        "duration": 3.681
+    },
+    {
+        "text": "5 over here",
+        "start": 523.2,
+        "duration": 3.44
+    },
+    {
+        "text": "first i'm gonna take the 15 which we",
+        "start": 524.08,
+        "duration": 3.52
+    },
+    {
+        "text": "know is going to be",
+        "start": 526.64,
+        "duration": 2.56
+    },
+    {
+        "text": "placed over here and i'm going to put",
+        "start": 527.6,
+        "duration": 3.44
+    },
+    {
+        "text": "the 15 over here",
+        "start": 529.2,
+        "duration": 4.56
+    },
+    {
+        "text": "and i'm going to move the 5 to a",
+        "start": 531.04,
+        "duration": 4.16
+    },
+    {
+        "text": "temporary variable",
+        "start": 533.76,
+        "duration": 3.04
+    },
+    {
+        "text": "okay so are we going to move the five",
+        "start": 535.2,
+        "duration": 3.36
+    },
+    {
+        "text": "over here now nope that's not what we're",
+        "start": 536.8,
+        "duration": 2.96
+    },
+    {
+        "text": "going to do we're going to do this in",
+        "start": 538.56,
+        "duration": 2.16
+    },
+    {
+        "text": "reverse order",
+        "start": 539.76,
+        "duration": 3.6
+    },
+    {
+        "text": "so since the 15 has already been moved",
+        "start": 540.72,
+        "duration": 3.28
+    },
+    {
+        "text": "let's take",
+        "start": 543.36,
+        "duration": 3.68
+    },
+    {
+        "text": "this 16 and move it over here",
+        "start": 544.0,
+        "duration": 6.72
+    },
+    {
+        "text": "so now let's replace this 15 with a 16.",
+        "start": 547.04,
+        "duration": 7.2
+    },
+    {
+        "text": "and now we know that we need to make a",
+        "start": 550.72,
+        "duration": 4.799
+    },
+    {
+        "text": "rotation from",
+        "start": 554.24,
+        "duration": 4.56
+    },
+    {
+        "text": "11 to here so let's put an 11",
+        "start": 555.519,
+        "duration": 6.561
+    },
+    {
+        "text": "over here and last but not least we know",
+        "start": 558.8,
+        "duration": 5.44
+    },
+    {
+        "text": "that the original five had to be put",
+        "start": 562.08,
+        "duration": 3.04
+    },
+    {
+        "text": "over here",
+        "start": 564.24,
+        "duration": 3.039
+    },
+    {
+        "text": "and we stored that five in a temporary",
+        "start": 565.12,
+        "duration": 4.0
+    },
+    {
+        "text": "variable so now let's move",
+        "start": 567.279,
+        "duration": 4.881
+    },
+    {
+        "text": "that five over here and so we did the",
+        "start": 569.12,
+        "duration": 4.56
+    },
+    {
+        "text": "exact same rotation",
+        "start": 572.16,
+        "duration": 3.44
+    },
+    {
+        "text": "but do you notice how we did it in",
+        "start": 573.68,
+        "duration": 4.2
+    },
+    {
+        "text": "reverse order right we went",
+        "start": 575.6,
+        "duration": 5.359
+    },
+    {
+        "text": "counterclockwise and the thing that that",
+        "start": 577.88,
+        "duration": 4.92
+    },
+    {
+        "text": "the reason that was helpful is we only",
+        "start": 580.959,
+        "duration": 4.081
+    },
+    {
+        "text": "needed one temporary variable",
+        "start": 582.8,
+        "duration": 4.64
+    },
+    {
+        "text": "which will make the code a little bit",
+        "start": 585.04,
+        "duration": 4.32
+    },
+    {
+        "text": "easier for us but it's not actually",
+        "start": 587.44,
+        "duration": 2.8
+    },
+    {
+        "text": "required",
+        "start": 589.36,
+        "duration": 3.599
+    },
+    {
+        "text": "the overall complexity is still the same",
+        "start": 590.24,
+        "duration": 4.48
+    },
+    {
+        "text": "the memory and the time complexity is",
+        "start": 592.959,
+        "duration": 2.641
+    },
+    {
+        "text": "still the same",
+        "start": 594.72,
+        "duration": 3.28
+    },
+    {
+        "text": "so now let's get into the code so the",
+        "start": 595.6,
+        "duration": 4.16
+    },
+    {
+        "text": "first thing i'm going to do is set our",
+        "start": 598.0,
+        "duration": 3.519
+    },
+    {
+        "text": "left and right boundaries so",
+        "start": 599.76,
+        "duration": 3.759
+    },
+    {
+        "text": "left is zero right is going to be the",
+        "start": 601.519,
+        "duration": 3.201
+    },
+    {
+        "text": "length number of",
+        "start": 603.519,
+        "duration": 4.481
+    },
+    {
+        "text": "columns minus one but we know that the",
+        "start": 604.72,
+        "duration": 5.04
+    },
+    {
+        "text": "number of columns is the same as the",
+        "start": 608.0,
+        "duration": 3.519
+    },
+    {
+        "text": "number of rows so we actually don't need",
+        "start": 609.76,
+        "duration": 2.24
+    },
+    {
+        "text": "this",
+        "start": 611.519,
+        "duration": 3.681
+    },
+    {
+        "text": "and i'm gonna run our rotation while",
+        "start": 612.0,
+        "duration": 6.48
+    },
+    {
+        "text": "left is less than right and i'm going to",
+        "start": 615.2,
+        "duration": 3.68
+    },
+    {
+        "text": "go",
+        "start": 618.48,
+        "duration": 2.4
+    },
+    {
+        "text": "from index so let's say we're in our top",
+        "start": 618.88,
+        "duration": 3.76
+    },
+    {
+        "text": "row i'm going to iterate",
+        "start": 620.88,
+        "duration": 4.8
+    },
+    {
+        "text": "through the entire row except",
+        "start": 622.64,
+        "duration": 5.52
+    },
+    {
+        "text": "last element so how many rotations is",
+        "start": 625.68,
+        "duration": 4.48
+    },
+    {
+        "text": "that going to be that's going to be from",
+        "start": 628.16,
+        "duration": 5.359
+    },
+    {
+        "text": "left to right minus one or in",
+        "start": 630.16,
+        "duration": 6.56
+    },
+    {
+        "text": "other words we can say from in range",
+        "start": 633.519,
+        "duration": 6.081
+    },
+    {
+        "text": "right minus left so this is the number",
+        "start": 636.72,
+        "duration": 4.64
+    },
+    {
+        "text": "that we're gonna do so if",
+        "start": 639.6,
+        "duration": 3.919
+    },
+    {
+        "text": "left was zero right was three we would",
+        "start": 641.36,
+        "duration": 4.64
+    },
+    {
+        "text": "do three minus zero which is going to be",
+        "start": 643.519,
+        "duration": 5.44
+    },
+    {
+        "text": "three iterations even though we have",
+        "start": 646.0,
+        "duration": 3.92
+    },
+    {
+        "text": "four",
+        "start": 648.959,
+        "duration": 4.0
+    },
+    {
+        "text": "uh values in our first row so i also",
+        "start": 649.92,
+        "duration": 5.28
+    },
+    {
+        "text": "wanna have some top and bottom pointers",
+        "start": 652.959,
+        "duration": 4.081
+    },
+    {
+        "text": "and these are actually gonna be the same",
+        "start": 655.2,
+        "duration": 3.28
+    },
+    {
+        "text": "as left and right so top",
+        "start": 657.04,
+        "duration": 4.08
+    },
+    {
+        "text": "is gonna be the same as left and bottom",
+        "start": 658.48,
+        "duration": 4.4
+    },
+    {
+        "text": "is going to be the same as right because",
+        "start": 661.12,
+        "duration": 3.839
+    },
+    {
+        "text": "we do have a square matrix",
+        "start": 662.88,
+        "duration": 4.16
+    },
+    {
+        "text": "it's not just a generic rectangle it's",
+        "start": 664.959,
+        "duration": 3.281
+    },
+    {
+        "text": "definitely a square",
+        "start": 667.04,
+        "duration": 3.919
+    },
+    {
+        "text": "and the first thing i want to do is save",
+        "start": 668.24,
+        "duration": 3.76
+    },
+    {
+        "text": "the top",
+        "start": 670.959,
+        "duration": 3.12
+    },
+    {
+        "text": "left value right because the way i",
+        "start": 672.0,
+        "duration": 3.76
+    },
+    {
+        "text": "showed you the rotation we only need to",
+        "start": 674.079,
+        "duration": 2.161
+    },
+    {
+        "text": "save",
+        "start": 675.76,
+        "duration": 3.199
+    },
+    {
+        "text": "one variable so it's the top left i'm",
+        "start": 676.24,
+        "duration": 3.12
+    },
+    {
+        "text": "going to",
+        "start": 678.959,
+        "duration": 3.521
+    },
+    {
+        "text": "get that from our matrix so matrix of",
+        "start": 679.36,
+        "duration": 6.0
+    },
+    {
+        "text": "top left and just like in the drawing",
+        "start": 682.48,
+        "duration": 4.32
+    },
+    {
+        "text": "what i'm going to do is move",
+        "start": 685.36,
+        "duration": 5.12
+    },
+    {
+        "text": "the bottom left into the top left",
+        "start": 686.8,
+        "duration": 7.44
+    },
+    {
+        "text": "so in the position of the top left top",
+        "start": 690.48,
+        "duration": 6.799
+    },
+    {
+        "text": "left i'm going to move the bottom left",
+        "start": 694.24,
+        "duration": 6.719
+    },
+    {
+        "text": "into that spot the next thing i'm going",
+        "start": 697.279,
+        "duration": 5.281
+    },
+    {
+        "text": "to do just like in our drawing i'm going",
+        "start": 700.959,
+        "duration": 3.761
+    },
+    {
+        "text": "to move the bottom right",
+        "start": 702.56,
+        "duration": 5.519
+    },
+    {
+        "text": "into the bottom left",
+        "start": 704.72,
+        "duration": 5.359
+    },
+    {
+        "text": "we are doing this in reverse order",
+        "start": 708.079,
+        "duration": 4.161
+    },
+    {
+        "text": "basically even though the rotation",
+        "start": 710.079,
+        "duration": 5.041
+    },
+    {
+        "text": "is clockwise the direction we're going",
+        "start": 712.24,
+        "duration": 4.56
+    },
+    {
+        "text": "is counterclockwise",
+        "start": 715.12,
+        "duration": 5.12
+    },
+    {
+        "text": "so the bottom right is going to be moved",
+        "start": 716.8,
+        "duration": 6.24
+    },
+    {
+        "text": "into the bottom left we also want to",
+        "start": 720.24,
+        "duration": 3.68
+    },
+    {
+        "text": "move",
+        "start": 723.04,
+        "duration": 4.96
+    },
+    {
+        "text": "the top right into the bottom",
+        "start": 723.92,
+        "duration": 8.24
+    },
+    {
+        "text": "right so in the bottom right position",
+        "start": 728.0,
+        "duration": 7.279
+    },
+    {
+        "text": "we're going to replace it with the top",
+        "start": 732.16,
+        "duration": 6.64
+    },
+    {
+        "text": "right and the last thing we have to do",
+        "start": 735.279,
+        "duration": 6.641
+    },
+    {
+        "text": "is move the top left into",
+        "start": 738.8,
+        "duration": 6.88
+    },
+    {
+        "text": "the top right but remember we overwrote",
+        "start": 741.92,
+        "duration": 5.52
+    },
+    {
+        "text": "the top left position but",
+        "start": 745.68,
+        "duration": 4.0
+    },
+    {
+        "text": "good thing for us we saved it in a",
+        "start": 747.44,
+        "duration": 3.68
+    },
+    {
+        "text": "temporary variable",
+        "start": 749.68,
+        "duration": 4.399
+    },
+    {
+        "text": "in the top right we're gonna replace it",
+        "start": 751.12,
+        "duration": 3.519
+    },
+    {
+        "text": "with",
+        "start": 754.079,
+        "duration": 3.921
+    },
+    {
+        "text": "the top left there's just one thing we",
+        "start": 754.639,
+        "duration": 4.721
+    },
+    {
+        "text": "forgot to use",
+        "start": 758.0,
+        "duration": 4.72
+    },
+    {
+        "text": "so we forgot to use our i variable",
+        "start": 759.36,
+        "duration": 5.919
+    },
+    {
+        "text": "so you remember how this was the first",
+        "start": 762.72,
+        "duration": 4.64
+    },
+    {
+        "text": "rotation that we make",
+        "start": 765.279,
+        "duration": 5.201
+    },
+    {
+        "text": "right and then we move from our top left",
+        "start": 767.36,
+        "duration": 4.32
+    },
+    {
+        "text": "position we move",
+        "start": 770.48,
+        "duration": 4.24
+    },
+    {
+        "text": "one spot to the right from our top",
+        "start": 771.68,
+        "duration": 6.32
+    },
+    {
+        "text": "right position we move one spot down",
+        "start": 774.72,
+        "duration": 5.359
+    },
+    {
+        "text": "from our bottom right position we move",
+        "start": 778.0,
+        "duration": 3.36
+    },
+    {
+        "text": "one spot to the",
+        "start": 780.079,
+        "duration": 4.32
+    },
+    {
+        "text": "left and from our bottom left position",
+        "start": 781.36,
+        "duration": 3.76
+    },
+    {
+        "text": "we move",
+        "start": 784.399,
+        "duration": 4.721
+    },
+    {
+        "text": "one spot up and then we do a rotation",
+        "start": 785.12,
+        "duration": 7.04
+    },
+    {
+        "text": "from here right and then we're not done",
+        "start": 789.12,
+        "duration": 6.159
+    },
+    {
+        "text": "yet from there on we move another",
+        "start": 792.16,
+        "duration": 4.64
+    },
+    {
+        "text": "position to the right",
+        "start": 795.279,
+        "duration": 4.56
+    },
+    {
+        "text": "another position down another position",
+        "start": 796.8,
+        "duration": 4.08
+    },
+    {
+        "text": "to the left",
+        "start": 799.839,
+        "duration": 4.24
+    },
+    {
+        "text": "and another position up and then we do a",
+        "start": 800.88,
+        "duration": 4.32
+    },
+    {
+        "text": "rotation",
+        "start": 804.079,
+        "duration": 4.241
+    },
+    {
+        "text": "from these values so",
+        "start": 805.2,
+        "duration": 4.8
+    },
+    {
+        "text": "we can actually handle this pretty",
+        "start": 808.32,
+        "duration": 3.12
+    },
+    {
+        "text": "easily in our code",
+        "start": 810.0,
+        "duration": 4.399
+    },
+    {
+        "text": "we can use this i variable to handle",
+        "start": 811.44,
+        "duration": 3.36
+    },
+    {
+        "text": "that",
+        "start": 814.399,
+        "duration": 3.921
+    },
+    {
+        "text": "for us so we can add the i",
+        "start": 814.8,
+        "duration": 5.76
+    },
+    {
+        "text": "value to the left index which will shift",
+        "start": 818.32,
+        "duration": 3.519
+    },
+    {
+        "text": "us one",
+        "start": 820.56,
+        "duration": 3.44
+    },
+    {
+        "text": "position to the right and this is also",
+        "start": 821.839,
+        "duration": 3.761
+    },
+    {
+        "text": "the top left position so we're going to",
+        "start": 824.0,
+        "duration": 2.0
+    },
+    {
+        "text": "add",
+        "start": 825.6,
+        "duration": 3.84
+    },
+    {
+        "text": "i to this as well this is the",
+        "start": 826.0,
+        "duration": 7.04
+    },
+    {
+        "text": "bottom left position and we know that",
+        "start": 829.44,
+        "duration": 6.24
+    },
+    {
+        "text": "we can subtract i from the bottom which",
+        "start": 833.04,
+        "duration": 3.68
+    },
+    {
+        "text": "will shift us",
+        "start": 835.68,
+        "duration": 4.48
+    },
+    {
+        "text": "up by one and this is that same value so",
+        "start": 836.72,
+        "duration": 4.72
+    },
+    {
+        "text": "we're gonna subtract",
+        "start": 840.16,
+        "duration": 3.679
+    },
+    {
+        "text": "an i from that as well this is the",
+        "start": 841.44,
+        "duration": 3.44
+    },
+    {
+        "text": "bottom right",
+        "start": 843.839,
+        "duration": 3.281
+    },
+    {
+        "text": "and to shift that to the left we can",
+        "start": 844.88,
+        "duration": 3.04
+    },
+    {
+        "text": "subtract",
+        "start": 847.12,
+        "duration": 3.92
+    },
+    {
+        "text": "i from the right index and this is",
+        "start": 847.92,
+        "duration": 4.0
+    },
+    {
+        "text": "actually this",
+        "start": 851.04,
+        "duration": 4.159
+    },
+    {
+        "text": "this is also the bottom right so",
+        "start": 851.92,
+        "duration": 5.84
+    },
+    {
+        "text": "we're going to subtract i from that as",
+        "start": 855.199,
+        "duration": 4.161
+    },
+    {
+        "text": "well",
+        "start": 857.76,
+        "duration": 4.56
+    },
+    {
+        "text": "this is the top right and as we uh",
+        "start": 859.36,
+        "duration": 3.919
+    },
+    {
+        "text": "continue doing",
+        "start": 862.32,
+        "duration": 3.44
+    },
+    {
+        "text": "rotations we're going to add we're going",
+        "start": 863.279,
+        "duration": 3.441
+    },
+    {
+        "text": "to move down",
+        "start": 865.76,
+        "duration": 3.36
+    },
+    {
+        "text": "in this column so we're going to add i",
+        "start": 866.72,
+        "duration": 3.28
+    },
+    {
+        "text": "to the top",
+        "start": 869.12,
+        "duration": 3.92
+    },
+    {
+        "text": "index and this is the same top right so",
+        "start": 870.0,
+        "duration": 3.92
+    },
+    {
+        "text": "we're going to add an",
+        "start": 873.04,
+        "duration": 3.919
+    },
+    {
+        "text": "i to this index as well so basically as",
+        "start": 873.92,
+        "duration": 5.919
+    },
+    {
+        "text": "i is incremented it's going to be",
+        "start": 876.959,
+        "duration": 4.961
+    },
+    {
+        "text": "handling more and more rotations it's",
+        "start": 879.839,
+        "duration": 3.041
+    },
+    {
+        "text": "going to shift",
+        "start": 881.92,
+        "duration": 3.52
+    },
+    {
+        "text": "these cells that we want to rotate",
+        "start": 882.88,
+        "duration": 3.84
+    },
+    {
+        "text": "accordingly",
+        "start": 885.44,
+        "duration": 4.959
+    },
+    {
+        "text": "and so this will basically perform",
+        "start": 886.72,
+        "duration": 6.16
+    },
+    {
+        "text": "a layer of rotation so after we've",
+        "start": 890.399,
+        "duration": 4.0
+    },
+    {
+        "text": "completed an entire",
+        "start": 892.88,
+        "duration": 3.28
+    },
+    {
+        "text": "layer what are we going to do we",
+        "start": 894.399,
+        "duration": 3.841
+    },
+    {
+        "text": "actually need to do one last computation",
+        "start": 896.16,
+        "duration": 3.919
+    },
+    {
+        "text": "we need to update our pointers right",
+        "start": 898.24,
+        "duration": 3.12
+    },
+    {
+        "text": "because now we're going to do the sub",
+        "start": 900.079,
+        "duration": 2.0
+    },
+    {
+        "text": "matrix",
+        "start": 901.36,
+        "duration": 2.88
+    },
+    {
+        "text": "so our right pointer can be decremented",
+        "start": 902.079,
+        "duration": 4.56
+    },
+    {
+        "text": "by one our left pointer can be",
+        "start": 904.24,
+        "duration": 4.719
+    },
+    {
+        "text": "incremented by one and that is the",
+        "start": 906.639,
+        "duration": 3.76
+    },
+    {
+        "text": "entire code so",
+        "start": 908.959,
+        "duration": 3.201
+    },
+    {
+        "text": "it's going to complete every single",
+        "start": 910.399,
+        "duration": 3.521
+    },
+    {
+        "text": "layer once every layer has been",
+        "start": 912.16,
+        "duration": 2.479
+    },
+    {
+        "text": "completed",
+        "start": 913.92,
+        "duration": 3.039
+    },
+    {
+        "text": "our loop will stop and we are not",
+        "start": 914.639,
+        "duration": 3.921
+    },
+    {
+        "text": "required to return anything",
+        "start": 916.959,
+        "duration": 3.68
+    },
+    {
+        "text": "like it just says over here we're doing",
+        "start": 918.56,
+        "duration": 3.36
+    },
+    {
+        "text": "this in place",
+        "start": 920.639,
+        "duration": 3.521
+    },
+    {
+        "text": "inside of our matrix so we don't return",
+        "start": 921.92,
+        "duration": 3.599
+    },
+    {
+        "text": "anything this code",
+        "start": 924.16,
+        "duration": 3.84
+    },
+    {
+        "text": "is good to go and as you can see it's",
+        "start": 925.519,
+        "duration": 3.521
+    },
+    {
+        "text": "pretty efficient",
+        "start": 928.0,
+        "duration": 2.8
+    },
+    {
+        "text": "about as efficient as you can get for",
+        "start": 929.04,
+        "duration": 4.32
+    },
+    {
+        "text": "this problem and i hope this was helpful",
+        "start": 930.8,
+        "duration": 5.36
+    },
+    {
+        "text": "i hope it showed you a relatively easy",
+        "start": 933.36,
+        "duration": 4.64
+    },
+    {
+        "text": "way to write this code but you also",
+        "start": 936.16,
+        "duration": 4.0
+    },
+    {
+        "text": "understand what's going on if this was",
+        "start": 938.0,
+        "duration": 4.0
+    },
+    {
+        "text": "helpful please like and subscribe it",
+        "start": 940.16,
+        "duration": 3.679
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 942.0,
+        "duration": 2.48
+    },
+    {
+        "text": "hopefully",
+        "start": 943.839,
+        "duration": 3.761
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 944.48,
+        "duration": 3.12
+    }
+]

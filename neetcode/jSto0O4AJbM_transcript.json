@@ -1,0 +1,3777 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.6
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.599,
+        "duration": 2.801
+    },
+    {
+        "text": "let's solve",
+        "start": 3.6,
+        "duration": 3.44
+    },
+    {
+        "text": "minimum window substring we're given two",
+        "start": 4.4,
+        "duration": 3.439
+    },
+    {
+        "text": "strings",
+        "start": 7.04,
+        "duration": 3.679
+    },
+    {
+        "text": "s and t and we want to return the",
+        "start": 7.839,
+        "duration": 3.521
+    },
+    {
+        "text": "minimum",
+        "start": 10.719,
+        "duration": 4.88
+    },
+    {
+        "text": "window in the string s which contains",
+        "start": 11.36,
+        "duration": 7.28
+    },
+    {
+        "text": "every single character present in",
+        "start": 15.599,
+        "duration": 5.68
+    },
+    {
+        "text": "string t and it's possible that that",
+        "start": 18.64,
+        "duration": 4.0
+    },
+    {
+        "text": "might not even exist",
+        "start": 21.279,
+        "duration": 4.0
+    },
+    {
+        "text": "in which case we can return an empty",
+        "start": 22.64,
+        "duration": 3.2
+    },
+    {
+        "text": "string",
+        "start": 25.279,
+        "duration": 3.281
+    },
+    {
+        "text": "so in this case our string s is this big",
+        "start": 25.84,
+        "duration": 3.679
+    },
+    {
+        "text": "long string",
+        "start": 28.56,
+        "duration": 4.32
+    },
+    {
+        "text": "and our string t is this a b",
+        "start": 29.519,
+        "duration": 5.921
+    },
+    {
+        "text": "and c so we just need we don't need to",
+        "start": 32.88,
+        "duration": 3.04
+    },
+    {
+        "text": "find",
+        "start": 35.44,
+        "duration": 3.68
+    },
+    {
+        "text": "a b c in here we just need to find",
+        "start": 35.92,
+        "duration": 6.4
+    },
+    {
+        "text": "a substring of s that contains",
+        "start": 39.12,
+        "duration": 5.439
+    },
+    {
+        "text": "all these characters and we want to find",
+        "start": 42.32,
+        "duration": 4.16
+    },
+    {
+        "text": "the minimum string that contains all",
+        "start": 44.559,
+        "duration": 2.961
+    },
+    {
+        "text": "these characters",
+        "start": 46.48,
+        "duration": 4.16
+    },
+    {
+        "text": "so one possible string is",
+        "start": 47.52,
+        "duration": 6.24
+    },
+    {
+        "text": "this right it has a d o b",
+        "start": 50.64,
+        "duration": 6.48
+    },
+    {
+        "text": "e c so it has a b and c",
+        "start": 53.76,
+        "duration": 6.0
+    },
+    {
+        "text": "but there happens to be a shorter string",
+        "start": 57.12,
+        "duration": 3.279
+    },
+    {
+        "text": "that has",
+        "start": 59.76,
+        "duration": 4.0
+    },
+    {
+        "text": "all of those as well this string b a",
+        "start": 60.399,
+        "duration": 6.561
+    },
+    {
+        "text": "and c so they are out of order so b",
+        "start": 63.76,
+        "duration": 5.84
+    },
+    {
+        "text": "a c and there's an n in there as well",
+        "start": 66.96,
+        "duration": 5.04
+    },
+    {
+        "text": "but this happens to be the shortest one",
+        "start": 69.6,
+        "duration": 5.12
+    },
+    {
+        "text": "it's length four and so that's the",
+        "start": 72.0,
+        "duration": 4.56
+    },
+    {
+        "text": "result that we're going to output",
+        "start": 74.72,
+        "duration": 4.64
+    },
+    {
+        "text": "so what's even a brute force way to",
+        "start": 76.56,
+        "duration": 4.239
+    },
+    {
+        "text": "solve this so we're given",
+        "start": 79.36,
+        "duration": 4.399
+    },
+    {
+        "text": "s and t right and we want like if we're",
+        "start": 80.799,
+        "duration": 3.521
+    },
+    {
+        "text": "checking",
+        "start": 83.759,
+        "duration": 2.881
+    },
+    {
+        "text": "a substring right like this substring",
+        "start": 84.32,
+        "duration": 4.159
+    },
+    {
+        "text": "maybe this is our solution right",
+        "start": 86.64,
+        "duration": 4.159
+    },
+    {
+        "text": "how do we even determine that well let's",
+        "start": 88.479,
+        "duration": 3.921
+    },
+    {
+        "text": "use some hash maps",
+        "start": 90.799,
+        "duration": 3.761
+    },
+    {
+        "text": "so these two are our hash maps you can",
+        "start": 92.4,
+        "duration": 4.24
+    },
+    {
+        "text": "see i have one for t",
+        "start": 94.56,
+        "duration": 4.08
+    },
+    {
+        "text": "what does this hash map represent well",
+        "start": 96.64,
+        "duration": 3.76
+    },
+    {
+        "text": "you look at t right",
+        "start": 98.64,
+        "duration": 4.159
+    },
+    {
+        "text": "because for each of these substrings we",
+        "start": 100.4,
+        "duration": 3.52
+    },
+    {
+        "text": "just want to make sure",
+        "start": 102.799,
+        "duration": 4.481
+    },
+    {
+        "text": "that it has at least one a right",
+        "start": 103.92,
+        "duration": 6.479
+    },
+    {
+        "text": "one a has at least one b",
+        "start": 107.28,
+        "duration": 6.64
+    },
+    {
+        "text": "and it has at least one c because that's",
+        "start": 110.399,
+        "duration": 5.441
+    },
+    {
+        "text": "what we have over here we just want to",
+        "start": 113.92,
+        "duration": 2.72
+    },
+    {
+        "text": "make sure",
+        "start": 115.84,
+        "duration": 4.239
+    },
+    {
+        "text": "that we find the minimum substring in",
+        "start": 116.64,
+        "duration": 7.28
+    },
+    {
+        "text": "s that satisfies this condition",
+        "start": 120.079,
+        "duration": 5.761
+    },
+    {
+        "text": "so for every possible window that we",
+        "start": 123.92,
+        "duration": 3.839
+    },
+    {
+        "text": "check in s like maybe we check",
+        "start": 125.84,
+        "duration": 4.96
+    },
+    {
+        "text": "this window we are gonna want to have a",
+        "start": 127.759,
+        "duration": 5.041
+    },
+    {
+        "text": "hash map for the window and we're gonna",
+        "start": 130.8,
+        "duration": 4.64
+    },
+    {
+        "text": "count how many a's do we have initially",
+        "start": 132.8,
+        "duration": 4.159
+    },
+    {
+        "text": "we're gonna start with zero right",
+        "start": 135.44,
+        "duration": 2.159
+    },
+    {
+        "text": "because",
+        "start": 136.959,
+        "duration": 2.481
+    },
+    {
+        "text": "because initially our window is gonna be",
+        "start": 137.599,
+        "duration": 3.441
+    },
+    {
+        "text": "just empty or whatever",
+        "start": 139.44,
+        "duration": 4.0
+    },
+    {
+        "text": "we're gonna start with zero b's and zero",
+        "start": 141.04,
+        "duration": 3.76
+    },
+    {
+        "text": "c's but for this",
+        "start": 143.44,
+        "duration": 5.28
+    },
+    {
+        "text": "current window you can see we have one a",
+        "start": 144.8,
+        "duration": 7.68
+    },
+    {
+        "text": "one b and one c right so",
+        "start": 148.72,
+        "duration": 7.44
+    },
+    {
+        "text": "we have one a one b and one c so",
+        "start": 152.48,
+        "duration": 6.64
+    },
+    {
+        "text": "as we compare right we compare how many",
+        "start": 156.16,
+        "duration": 5.2
+    },
+    {
+        "text": "a's do we have versus how many do we",
+        "start": 159.12,
+        "duration": 5.28
+    },
+    {
+        "text": "need right this is how many we need and",
+        "start": 161.36,
+        "duration": 5.28
+    },
+    {
+        "text": "this is how many we have in our current",
+        "start": 164.4,
+        "duration": 2.88
+    },
+    {
+        "text": "window",
+        "start": 166.64,
+        "duration": 3.599
+    },
+    {
+        "text": "you can see we need one and we have one",
+        "start": 167.28,
+        "duration": 3.52
+    },
+    {
+        "text": "right",
+        "start": 170.239,
+        "duration": 3.761
+    },
+    {
+        "text": "so the relationship we're looking for is",
+        "start": 170.8,
+        "duration": 6.079
+    },
+    {
+        "text": "greater than or equal right we want the",
+        "start": 174.0,
+        "duration": 3.44
+    },
+    {
+        "text": "counts",
+        "start": 176.879,
+        "duration": 3.201
+    },
+    {
+        "text": "all to be greater than or equal but one",
+        "start": 177.44,
+        "duration": 5.36
+    },
+    {
+        "text": "thing you can see is brute forcing",
+        "start": 180.08,
+        "duration": 4.64
+    },
+    {
+        "text": "is gonna be difficult right so let's say",
+        "start": 182.8,
+        "duration": 3.28
+    },
+    {
+        "text": "we initially start with",
+        "start": 184.72,
+        "duration": 4.08
+    },
+    {
+        "text": "this window right we see we just added",
+        "start": 186.08,
+        "duration": 4.4
+    },
+    {
+        "text": "an a so what are we gonna do we're gonna",
+        "start": 188.8,
+        "duration": 3.6
+    },
+    {
+        "text": "update this now let's just check is our",
+        "start": 190.48,
+        "duration": 3.039
+    },
+    {
+        "text": "window valid",
+        "start": 192.4,
+        "duration": 3.839
+    },
+    {
+        "text": "well we have at least one a and so",
+        "start": 193.519,
+        "duration": 4.561
+    },
+    {
+        "text": "remembering that this is how many we",
+        "start": 196.239,
+        "duration": 3.521
+    },
+    {
+        "text": "have in our current window and this is",
+        "start": 198.08,
+        "duration": 3.68
+    },
+    {
+        "text": "how many we need to satisfy the",
+        "start": 199.76,
+        "duration": 2.64
+    },
+    {
+        "text": "condition",
+        "start": 201.76,
+        "duration": 2.88
+    },
+    {
+        "text": "so initially let's start with this",
+        "start": 202.4,
+        "duration": 3.28
+    },
+    {
+        "text": "window just",
+        "start": 204.64,
+        "duration": 3.599
+    },
+    {
+        "text": "one a so then we can update our count",
+        "start": 205.68,
+        "duration": 3.919
+    },
+    {
+        "text": "for this window right add",
+        "start": 208.239,
+        "duration": 4.64
+    },
+    {
+        "text": "a single a so now my question is have we",
+        "start": 209.599,
+        "duration": 5.2
+    },
+    {
+        "text": "satisfied the condition do we have",
+        "start": 212.879,
+        "duration": 3.041
+    },
+    {
+        "text": "everything we need",
+        "start": 214.799,
+        "duration": 3.52
+    },
+    {
+        "text": "well how are we going to check that well",
+        "start": 215.92,
+        "duration": 3.36
+    },
+    {
+        "text": "we have to check",
+        "start": 218.319,
+        "duration": 4.961
+    },
+    {
+        "text": "all of these right so is the have count",
+        "start": 219.28,
+        "duration": 6.239
+    },
+    {
+        "text": "greater than or equal to the need yes it",
+        "start": 223.28,
+        "duration": 3.44
+    },
+    {
+        "text": "is what about",
+        "start": 225.519,
+        "duration": 4.321
+    },
+    {
+        "text": "this is the beat count uh greater than",
+        "start": 226.72,
+        "duration": 4.079
+    },
+    {
+        "text": "or equal to",
+        "start": 229.84,
+        "duration": 4.08
+    },
+    {
+        "text": "how many we need the answer is no right",
+        "start": 230.799,
+        "duration": 6.08
+    },
+    {
+        "text": "so therefore we don't have how many we",
+        "start": 233.92,
+        "duration": 3.599
+    },
+    {
+        "text": "need",
+        "start": 236.879,
+        "duration": 3.041
+    },
+    {
+        "text": "so therefore we have to actually expand",
+        "start": 237.519,
+        "duration": 4.241
+    },
+    {
+        "text": "our window right we have to add another",
+        "start": 239.92,
+        "duration": 2.64
+    },
+    {
+        "text": "character",
+        "start": 241.76,
+        "duration": 2.8
+    },
+    {
+        "text": "this d right but that's not actually",
+        "start": 242.56,
+        "duration": 3.12
+    },
+    {
+        "text": "going to update",
+        "start": 244.56,
+        "duration": 4.319
+    },
+    {
+        "text": "our window because we don't need any",
+        "start": 245.68,
+        "duration": 4.559
+    },
+    {
+        "text": "characters other than a b",
+        "start": 248.879,
+        "duration": 3.44
+    },
+    {
+        "text": "or c so we don't really care about the d",
+        "start": 250.239,
+        "duration": 4.241
+    },
+    {
+        "text": "the same thing is true for the o",
+        "start": 252.319,
+        "duration": 4.64
+    },
+    {
+        "text": "but now we have a b right that's good",
+        "start": 254.48,
+        "duration": 4.159
+    },
+    {
+        "text": "because we do need a b",
+        "start": 256.959,
+        "duration": 3.921
+    },
+    {
+        "text": "so we add a b so now we're gonna have to",
+        "start": 258.639,
+        "duration": 4.321
+    },
+    {
+        "text": "run the same operation do we have",
+        "start": 260.88,
+        "duration": 4.319
+    },
+    {
+        "text": "everything that we need so we're gonna",
+        "start": 262.96,
+        "duration": 4.0
+    },
+    {
+        "text": "be doing some repeated work do you",
+        "start": 265.199,
+        "duration": 3.921
+    },
+    {
+        "text": "notice this repeated work we're doing",
+        "start": 266.96,
+        "duration": 4.88
+    },
+    {
+        "text": "we have to check if we have enough a's",
+        "start": 269.12,
+        "duration": 4.96
+    },
+    {
+        "text": "which we know we do because we already",
+        "start": 271.84,
+        "duration": 4.32
+    },
+    {
+        "text": "checked that when we first added this",
+        "start": 274.08,
+        "duration": 4.559
+    },
+    {
+        "text": "element so we notice we do have enough",
+        "start": 276.16,
+        "duration": 3.2
+    },
+    {
+        "text": "a's",
+        "start": 278.639,
+        "duration": 3.681
+    },
+    {
+        "text": "do we have enough b's well this time we",
+        "start": 279.36,
+        "duration": 5.04
+    },
+    {
+        "text": "actually do because we just added a new",
+        "start": 282.32,
+        "duration": 2.4
+    },
+    {
+        "text": "b",
+        "start": 284.4,
+        "duration": 1.68
+    },
+    {
+        "text": "right that's the most recent character",
+        "start": 284.72,
+        "duration": 4.0
+    },
+    {
+        "text": "we added great so we know we have enough",
+        "start": 286.08,
+        "duration": 3.28
+    },
+    {
+        "text": "b's",
+        "start": 288.72,
+        "duration": 3.36
+    },
+    {
+        "text": "do we have enough c's we do not have any",
+        "start": 289.36,
+        "duration": 3.2
+    },
+    {
+        "text": "c's",
+        "start": 292.08,
+        "duration": 3.04
+    },
+    {
+        "text": "in our string the count is zero",
+        "start": 292.56,
+        "duration": 4.8
+    },
+    {
+        "text": "therefore this condition is not",
+        "start": 295.12,
+        "duration": 5.359
+    },
+    {
+        "text": "met so we do not have our result yet we",
+        "start": 297.36,
+        "duration": 4.559
+    },
+    {
+        "text": "have an a and we have a b",
+        "start": 300.479,
+        "duration": 3.761
+    },
+    {
+        "text": "but we need to add more so now we're",
+        "start": 301.919,
+        "duration": 3.041
+    },
+    {
+        "text": "gonna add an",
+        "start": 304.24,
+        "duration": 2.48
+    },
+    {
+        "text": "e which we don't really care about we're",
+        "start": 304.96,
+        "duration": 3.44
+    },
+    {
+        "text": "gonna add a c",
+        "start": 306.72,
+        "duration": 5.199
+    },
+    {
+        "text": "so finally we have so finally we can see",
+        "start": 308.4,
+        "duration": 4.4
+    },
+    {
+        "text": "that we met",
+        "start": 311.919,
+        "duration": 4.241
+    },
+    {
+        "text": "our condition right but we with our",
+        "start": 312.8,
+        "duration": 5.44
+    },
+    {
+        "text": "current algorithm our brute force way we",
+        "start": 316.16,
+        "duration": 3.92
+    },
+    {
+        "text": "have to repeatedly check",
+        "start": 318.24,
+        "duration": 4.239
+    },
+    {
+        "text": "every one of these even if we already",
+        "start": 320.08,
+        "duration": 3.36
+    },
+    {
+        "text": "know the count is",
+        "start": 322.479,
+        "duration": 2.72
+    },
+    {
+        "text": "met so this is basically where our",
+        "start": 323.44,
+        "duration": 3.039
+    },
+    {
+        "text": "repeated work this is what i'm going to",
+        "start": 325.199,
+        "duration": 2.961
+    },
+    {
+        "text": "show you how to eliminate but",
+        "start": 326.479,
+        "duration": 4.16
+    },
+    {
+        "text": "as you can see we have enough a's we",
+        "start": 328.16,
+        "duration": 3.12
+    },
+    {
+        "text": "have enough",
+        "start": 330.639,
+        "duration": 3.84
+    },
+    {
+        "text": "b's we have enough c's so therefore this",
+        "start": 331.28,
+        "duration": 3.68
+    },
+    {
+        "text": "is a",
+        "start": 334.479,
+        "duration": 2.801
+    },
+    {
+        "text": "possible result it might not be the",
+        "start": 334.96,
+        "duration": 4.72
+    },
+    {
+        "text": "minimum but it's a possible result and",
+        "start": 337.28,
+        "duration": 4.32
+    },
+    {
+        "text": "what's the length of this",
+        "start": 339.68,
+        "duration": 5.6
+    },
+    {
+        "text": "it is 6. so we can say for now",
+        "start": 341.6,
+        "duration": 6.96
+    },
+    {
+        "text": "that our result is length 6 and it goes",
+        "start": 345.28,
+        "duration": 4.56
+    },
+    {
+        "text": "from index",
+        "start": 348.56,
+        "duration": 4.639
+    },
+    {
+        "text": "0 all the way to index five",
+        "start": 349.84,
+        "duration": 6.079
+    },
+    {
+        "text": "so i'll put zero five that's our current",
+        "start": 353.199,
+        "duration": 3.28
+    },
+    {
+        "text": "result",
+        "start": 355.919,
+        "duration": 2.4
+    },
+    {
+        "text": "so one thing we noticed is we're having",
+        "start": 356.479,
+        "duration": 3.681
+    },
+    {
+        "text": "to do a lot of repeated work",
+        "start": 358.319,
+        "duration": 4.241
+    },
+    {
+        "text": "to check that we have everything that we",
+        "start": 360.16,
+        "duration": 3.44
+    },
+    {
+        "text": "need we have to check",
+        "start": 362.56,
+        "duration": 3.52
+    },
+    {
+        "text": "every single one of these characters",
+        "start": 363.6,
+        "duration": 3.12
+    },
+    {
+        "text": "right",
+        "start": 366.08,
+        "duration": 2.559
+    },
+    {
+        "text": "but we don't we know we don't always",
+        "start": 366.72,
+        "duration": 3.44
+    },
+    {
+        "text": "have to do that so let me show you how",
+        "start": 368.639,
+        "duration": 3.68
+    },
+    {
+        "text": "to do it without repeating all of that",
+        "start": 370.16,
+        "duration": 2.72
+    },
+    {
+        "text": "work",
+        "start": 372.319,
+        "duration": 2.16
+    },
+    {
+        "text": "we're going to start out the same way so",
+        "start": 372.88,
+        "duration": 3.68
+    },
+    {
+        "text": "we're going to add an a right that's our",
+        "start": 374.479,
+        "duration": 3.28
+    },
+    {
+        "text": "first character",
+        "start": 376.56,
+        "duration": 2.88
+    },
+    {
+        "text": "so now we're going to check so now what",
+        "start": 377.759,
+        "duration": 3.28
+    },
+    {
+        "text": "we're going to say is a count",
+        "start": 379.44,
+        "duration": 5.44
+    },
+    {
+        "text": "is 1 right so now my question is do we",
+        "start": 381.039,
+        "duration": 5.041
+    },
+    {
+        "text": "have to check",
+        "start": 384.88,
+        "duration": 3.759
+    },
+    {
+        "text": "every single one of the halves because",
+        "start": 386.08,
+        "duration": 3.52
+    },
+    {
+        "text": "initially we",
+        "start": 388.639,
+        "duration": 3.201
+    },
+    {
+        "text": "know that none of the conditions have",
+        "start": 389.6,
+        "duration": 3.68
+    },
+    {
+        "text": "been met right",
+        "start": 391.84,
+        "duration": 4.4
+    },
+    {
+        "text": "initially we start with all zeros we",
+        "start": 393.28,
+        "duration": 3.52
+    },
+    {
+        "text": "also",
+        "start": 396.24,
+        "duration": 2.88
+    },
+    {
+        "text": "know that the number of characters that",
+        "start": 396.8,
+        "duration": 3.44
+    },
+    {
+        "text": "we need",
+        "start": 399.12,
+        "duration": 4.32
+    },
+    {
+        "text": "is gonna be three right meaning",
+        "start": 400.24,
+        "duration": 5.679
+    },
+    {
+        "text": "we need to satisfy the count condition",
+        "start": 403.44,
+        "duration": 3.52
+    },
+    {
+        "text": "for three",
+        "start": 405.919,
+        "duration": 4.081
+    },
+    {
+        "text": "unique characters right and we know that",
+        "start": 406.96,
+        "duration": 3.359
+    },
+    {
+        "text": "we",
+        "start": 410.0,
+        "duration": 3.759
+    },
+    {
+        "text": "start out with a have value of zero",
+        "start": 410.319,
+        "duration": 5.761
+    },
+    {
+        "text": "because we know for each of those three",
+        "start": 413.759,
+        "duration": 3.28
+    },
+    {
+        "text": "characters",
+        "start": 416.08,
+        "duration": 3.44
+    },
+    {
+        "text": "we have met the condition for none of",
+        "start": 417.039,
+        "duration": 4.241
+    },
+    {
+        "text": "them right initially we met the",
+        "start": 419.52,
+        "duration": 3.28
+    },
+    {
+        "text": "condition for none of them because we",
+        "start": 421.28,
+        "duration": 2.56
+    },
+    {
+        "text": "start out with all",
+        "start": 422.8,
+        "duration": 4.08
+    },
+    {
+        "text": "zeros but now you can see we just added",
+        "start": 423.84,
+        "duration": 3.28
+    },
+    {
+        "text": "an",
+        "start": 426.88,
+        "duration": 3.52
+    },
+    {
+        "text": "a so let's check just for this one",
+        "start": 427.12,
+        "duration": 4.16
+    },
+    {
+        "text": "character",
+        "start": 430.4,
+        "duration": 3.04
+    },
+    {
+        "text": "have we met the condition is the count",
+        "start": 431.28,
+        "duration": 3.44
+    },
+    {
+        "text": "greater than or equal",
+        "start": 433.44,
+        "duration": 4.0
+    },
+    {
+        "text": "than one yes it is we have one and we",
+        "start": 434.72,
+        "duration": 3.12
+    },
+    {
+        "text": "only",
+        "start": 437.44,
+        "duration": 2.64
+    },
+    {
+        "text": "needed one so we met the condition so",
+        "start": 437.84,
+        "duration": 3.28
+    },
+    {
+        "text": "what does that mean",
+        "start": 440.08,
+        "duration": 4.08
+    },
+    {
+        "text": "we can take our have value and update it",
+        "start": 441.12,
+        "duration": 4.639
+    },
+    {
+        "text": "so initially it was zero",
+        "start": 444.16,
+        "duration": 4.72
+    },
+    {
+        "text": "now we can change it to one so now we",
+        "start": 445.759,
+        "duration": 4.641
+    },
+    {
+        "text": "have one but my question",
+        "start": 448.88,
+        "duration": 4.64
+    },
+    {
+        "text": "now is have we met the condition well we",
+        "start": 450.4,
+        "duration": 6.16
+    },
+    {
+        "text": "need three but we only have one so we",
+        "start": 453.52,
+        "duration": 4.32
+    },
+    {
+        "text": "haven't met the condition",
+        "start": 456.56,
+        "duration": 3.12
+    },
+    {
+        "text": "you can see what i'm doing here right",
+        "start": 457.84,
+        "duration": 4.24
+    },
+    {
+        "text": "before we needed to check the condition",
+        "start": 459.68,
+        "duration": 2.72
+    },
+    {
+        "text": "for",
+        "start": 462.08,
+        "duration": 3.6
+    },
+    {
+        "text": "all three of these each time now we only",
+        "start": 462.4,
+        "duration": 4.56
+    },
+    {
+        "text": "have to check the condition",
+        "start": 465.68,
+        "duration": 4.079
+    },
+    {
+        "text": "for one we have one value that tells us",
+        "start": 466.96,
+        "duration": 3.84
+    },
+    {
+        "text": "how many we have",
+        "start": 469.759,
+        "duration": 3.041
+    },
+    {
+        "text": "we have one value that tells us how many",
+        "start": 470.8,
+        "duration": 4.32
+    },
+    {
+        "text": "we need so before we were",
+        "start": 472.8,
+        "duration": 4.72
+    },
+    {
+        "text": "we had to continue running an operation",
+        "start": 475.12,
+        "duration": 3.44
+    },
+    {
+        "text": "of length",
+        "start": 477.52,
+        "duration": 3.92
+    },
+    {
+        "text": "t which is in this case 3 but who knows",
+        "start": 478.56,
+        "duration": 3.919
+    },
+    {
+        "text": "it could have been bigger",
+        "start": 481.44,
+        "duration": 2.56
+    },
+    {
+        "text": "t could have been 10 it could have been",
+        "start": 482.479,
+        "duration": 3.361
+    },
+    {
+        "text": "100 it could have been anything",
+        "start": 484.0,
+        "duration": 3.919
+    },
+    {
+        "text": "and we would be bounded by that but in",
+        "start": 485.84,
+        "duration": 4.0
+    },
+    {
+        "text": "this case we only have to do",
+        "start": 487.919,
+        "duration": 4.881
+    },
+    {
+        "text": "one operation for comparing these",
+        "start": 489.84,
+        "duration": 3.6
+    },
+    {
+        "text": "integers",
+        "start": 492.8,
+        "duration": 3.36
+    },
+    {
+        "text": "and one operation for comparing the",
+        "start": 493.44,
+        "duration": 4.319
+    },
+    {
+        "text": "integers of the character",
+        "start": 496.16,
+        "duration": 4.319
+    },
+    {
+        "text": "that we just added so for each character",
+        "start": 497.759,
+        "duration": 3.601
+    },
+    {
+        "text": "that we add",
+        "start": 500.479,
+        "duration": 4.081
+    },
+    {
+        "text": "we only have to do an o of one operation",
+        "start": 501.36,
+        "duration": 5.36
+    },
+    {
+        "text": "so now let's add another character let's",
+        "start": 504.56,
+        "duration": 3.84
+    },
+    {
+        "text": "add the d we know that doesn't really do",
+        "start": 506.72,
+        "duration": 2.319
+    },
+    {
+        "text": "anything",
+        "start": 508.4,
+        "duration": 2.639
+    },
+    {
+        "text": "we add the o that doesn't do anything we",
+        "start": 509.039,
+        "duration": 3.761
+    },
+    {
+        "text": "add a b this is good so",
+        "start": 511.039,
+        "duration": 3.281
+    },
+    {
+        "text": "how am i going to do things differently",
+        "start": 512.8,
+        "duration": 3.76
+    },
+    {
+        "text": "this time well like usual",
+        "start": 514.32,
+        "duration": 4.399
+    },
+    {
+        "text": "i'm going to change this one this zero",
+        "start": 516.56,
+        "duration": 3.52
+    },
+    {
+        "text": "to a one we know we have",
+        "start": 518.719,
+        "duration": 4.32
+    },
+    {
+        "text": "one b so now i'm going to check has this",
+        "start": 520.08,
+        "duration": 4.079
+    },
+    {
+        "text": "condition",
+        "start": 523.039,
+        "duration": 4.641
+    },
+    {
+        "text": "been met or is it equal",
+        "start": 524.159,
+        "duration": 5.041
+    },
+    {
+        "text": "i know last time i showed you greater",
+        "start": 527.68,
+        "duration": 3.12
+    },
+    {
+        "text": "than or equal but really what we're",
+        "start": 529.2,
+        "duration": 2.72
+    },
+    {
+        "text": "looking for is",
+        "start": 530.8,
+        "duration": 3.68
+    },
+    {
+        "text": "are they exactly equal because that's",
+        "start": 531.92,
+        "duration": 4.56
+    },
+    {
+        "text": "when we know the condition has been met",
+        "start": 534.48,
+        "duration": 5.12
+    },
+    {
+        "text": "so if these are exactly equal which they",
+        "start": 536.48,
+        "duration": 5.84
+    },
+    {
+        "text": "are in this case one equals one so what",
+        "start": 539.6,
+        "duration": 3.52
+    },
+    {
+        "text": "that means",
+        "start": 542.32,
+        "duration": 4.32
+    },
+    {
+        "text": "is we can increment our have value by",
+        "start": 543.12,
+        "duration": 6.8
+    },
+    {
+        "text": "one before it was it was one now we're",
+        "start": 546.64,
+        "duration": 4.56
+    },
+    {
+        "text": "going to actually change it",
+        "start": 549.92,
+        "duration": 4.4
+    },
+    {
+        "text": "to two and now let's check are these",
+        "start": 551.2,
+        "duration": 6.0
+    },
+    {
+        "text": "equal now have we me do we have what we",
+        "start": 554.32,
+        "duration": 3.68
+    },
+    {
+        "text": "need",
+        "start": 557.2,
+        "duration": 4.56
+    },
+    {
+        "text": "it's not because two is less than three",
+        "start": 558.0,
+        "duration": 5.68
+    },
+    {
+        "text": "so we haven't met the condition yet so",
+        "start": 561.76,
+        "duration": 3.759
+    },
+    {
+        "text": "we have to continue but notice how that",
+        "start": 563.68,
+        "duration": 2.32
+    },
+    {
+        "text": "was an",
+        "start": 565.519,
+        "duration": 2.641
+    },
+    {
+        "text": "o of one operation we just had to make",
+        "start": 566.0,
+        "duration": 3.519
+    },
+    {
+        "text": "one comparison here",
+        "start": 568.16,
+        "duration": 3.119
+    },
+    {
+        "text": "and then one comparison here we didn't",
+        "start": 569.519,
+        "duration": 4.081
+    },
+    {
+        "text": "have to go through the entire list",
+        "start": 571.279,
+        "duration": 4.321
+    },
+    {
+        "text": "so now we're gonna add an e which we",
+        "start": 573.6,
+        "duration": 3.44
+    },
+    {
+        "text": "don't really care about",
+        "start": 575.6,
+        "duration": 4.64
+    },
+    {
+        "text": "now we're going to add a c which we do",
+        "start": 577.04,
+        "duration": 5.52
+    },
+    {
+        "text": "care about so let's update the length",
+        "start": 580.24,
+        "duration": 6.0
+    },
+    {
+        "text": "of this now are these exactly equal",
+        "start": 582.56,
+        "duration": 5.76
+    },
+    {
+        "text": "we know we just met the condition for",
+        "start": 586.24,
+        "duration": 3.279
+    },
+    {
+        "text": "these last two",
+        "start": 588.32,
+        "duration": 3.68
+    },
+    {
+        "text": "now have we finally met our last",
+        "start": 589.519,
+        "duration": 3.361
+    },
+    {
+        "text": "condition",
+        "start": 592.0,
+        "duration": 3.68
+    },
+    {
+        "text": "and yes they're both one so we can take",
+        "start": 592.88,
+        "duration": 3.28
+    },
+    {
+        "text": "this",
+        "start": 595.68,
+        "duration": 2.719
+    },
+    {
+        "text": "through this two and replace it it's",
+        "start": 596.16,
+        "duration": 3.679
+    },
+    {
+        "text": "getting a little messy",
+        "start": 598.399,
+        "duration": 3.601
+    },
+    {
+        "text": "but i hope you can see it so we have a",
+        "start": 599.839,
+        "duration": 4.321
+    },
+    {
+        "text": "three here so now let's make the",
+        "start": 602.0,
+        "duration": 2.959
+    },
+    {
+        "text": "comparison",
+        "start": 604.16,
+        "duration": 4.16
+    },
+    {
+        "text": "between these two and yes they are",
+        "start": 604.959,
+        "duration": 5.841
+    },
+    {
+        "text": "exactly equal so what that tells us",
+        "start": 608.32,
+        "duration": 6.4
+    },
+    {
+        "text": "is this string contains we have exactly",
+        "start": 610.8,
+        "duration": 5.039
+    },
+    {
+        "text": "what we need",
+        "start": 614.72,
+        "duration": 3.28
+    },
+    {
+        "text": "right so we met the condition this is a",
+        "start": 615.839,
+        "duration": 3.521
+    },
+    {
+        "text": "possible result",
+        "start": 618.0,
+        "duration": 2.88
+    },
+    {
+        "text": "and i'm just going to take the two",
+        "start": 619.36,
+        "duration": 3.599
+    },
+    {
+        "text": "indices the start and",
+        "start": 620.88,
+        "duration": 4.959
+    },
+    {
+        "text": "the ending of it which is 0 and 5 and",
+        "start": 622.959,
+        "duration": 4.401
+    },
+    {
+        "text": "i'm going to put that as our current",
+        "start": 625.839,
+        "duration": 2.24
+    },
+    {
+        "text": "result",
+        "start": 627.36,
+        "duration": 4.159
+    },
+    {
+        "text": "so our current result is from 0 to 5.",
+        "start": 628.079,
+        "duration": 6.161
+    },
+    {
+        "text": "and the length of that result happens to",
+        "start": 631.519,
+        "duration": 3.681
+    },
+    {
+        "text": "be",
+        "start": 634.24,
+        "duration": 3.599
+    },
+    {
+        "text": "six right so now what are we gonna do",
+        "start": 635.2,
+        "duration": 4.56
+    },
+    {
+        "text": "are we just gonna keep adding elements",
+        "start": 637.839,
+        "duration": 3.041
+    },
+    {
+        "text": "again and again",
+        "start": 639.76,
+        "duration": 3.12
+    },
+    {
+        "text": "well we wanna find the minimum so let's",
+        "start": 640.88,
+        "duration": 3.68
+    },
+    {
+        "text": "at least try to find",
+        "start": 642.88,
+        "duration": 4.399
+    },
+    {
+        "text": "a string that's less than six so what",
+        "start": 644.56,
+        "duration": 3.92
+    },
+    {
+        "text": "are we gonna do let's",
+        "start": 647.279,
+        "duration": 4.56
+    },
+    {
+        "text": "remove the leftmost character and",
+        "start": 648.48,
+        "duration": 6.16
+    },
+    {
+        "text": "keep doing that until this condition is",
+        "start": 651.839,
+        "duration": 4.481
+    },
+    {
+        "text": "no longer valid until we",
+        "start": 654.64,
+        "duration": 3.92
+    },
+    {
+        "text": "don't have what we need anymore so we",
+        "start": 656.32,
+        "duration": 4.16
+    },
+    {
+        "text": "can try to at least find",
+        "start": 658.56,
+        "duration": 4.48
+    },
+    {
+        "text": "a smaller result because ultimately",
+        "start": 660.48,
+        "duration": 4.72
+    },
+    {
+        "text": "we're looking for the minimum string",
+        "start": 663.04,
+        "duration": 4.239
+    },
+    {
+        "text": "so i'm going to take this character and",
+        "start": 665.2,
+        "duration": 3.36
+    },
+    {
+        "text": "remove it from",
+        "start": 667.279,
+        "duration": 4.401
+    },
+    {
+        "text": "our current window and so we're removing",
+        "start": 668.56,
+        "duration": 3.36
+    },
+    {
+        "text": "an",
+        "start": 671.68,
+        "duration": 2.08
+    },
+    {
+        "text": "a so what that means is we have to",
+        "start": 671.92,
+        "duration": 3.359
+    },
+    {
+        "text": "update this",
+        "start": 673.76,
+        "duration": 4.4
+    },
+    {
+        "text": "so it's no longer one we actually have a",
+        "start": 675.279,
+        "duration": 4.081
+    },
+    {
+        "text": "zero for count",
+        "start": 678.16,
+        "duration": 3.44
+    },
+    {
+        "text": "a now and now we know that this",
+        "start": 679.36,
+        "duration": 3.039
+    },
+    {
+        "text": "condition",
+        "start": 681.6,
+        "duration": 3.84
+    },
+    {
+        "text": "is this is less than what we need it to",
+        "start": 682.399,
+        "duration": 5.521
+    },
+    {
+        "text": "be so this condition is no longer valid",
+        "start": 685.44,
+        "duration": 2.88
+    },
+    {
+        "text": "so",
+        "start": 687.92,
+        "duration": 2.72
+    },
+    {
+        "text": "that also means we have to update this",
+        "start": 688.32,
+        "duration": 3.12
+    },
+    {
+        "text": "value",
+        "start": 690.64,
+        "duration": 3.92
+    },
+    {
+        "text": "so before we had a three but now we have",
+        "start": 691.44,
+        "duration": 5.68
+    },
+    {
+        "text": "to put a two we only have",
+        "start": 694.56,
+        "duration": 5.2
+    },
+    {
+        "text": "two of these conditions matt write these",
+        "start": 697.12,
+        "duration": 3.52
+    },
+    {
+        "text": "two characters b",
+        "start": 699.76,
+        "duration": 3.12
+    },
+    {
+        "text": "and c so now we're actually just going",
+        "start": 700.64,
+        "duration": 3.84
+    },
+    {
+        "text": "to keep adding characters we're going to",
+        "start": 702.88,
+        "duration": 2.079
+    },
+    {
+        "text": "keep",
+        "start": 704.48,
+        "duration": 3.28
+    },
+    {
+        "text": "looking for the minimum so we add an o",
+        "start": 704.959,
+        "duration": 4.401
+    },
+    {
+        "text": "but we know we don't care about that we",
+        "start": 707.76,
+        "duration": 2.48
+    },
+    {
+        "text": "add a d",
+        "start": 709.36,
+        "duration": 2.56
+    },
+    {
+        "text": "we don't really care about that we add",
+        "start": 710.24,
+        "duration": 3.599
+    },
+    {
+        "text": "an e we don't care about that",
+        "start": 711.92,
+        "duration": 4.96
+    },
+    {
+        "text": "we add a b over here right we do care",
+        "start": 713.839,
+        "duration": 3.601
+    },
+    {
+        "text": "about b",
+        "start": 716.88,
+        "duration": 2.72
+    },
+    {
+        "text": "so what are we gonna do we're gonna take",
+        "start": 717.44,
+        "duration": 3.199
+    },
+    {
+        "text": "the b count",
+        "start": 719.6,
+        "duration": 4.239
+    },
+    {
+        "text": "it's one currently now we have two",
+        "start": 720.639,
+        "duration": 5.521
+    },
+    {
+        "text": "now that's great because we actually",
+        "start": 723.839,
+        "duration": 4.401
+    },
+    {
+        "text": "have more than what we need right we",
+        "start": 726.16,
+        "duration": 5.359
+    },
+    {
+        "text": "we need one but we have two so am i",
+        "start": 728.24,
+        "duration": 4.24
+    },
+    {
+        "text": "gonna take this",
+        "start": 731.519,
+        "duration": 3.841
+    },
+    {
+        "text": "and update it no because they're not",
+        "start": 732.48,
+        "duration": 3.44
+    },
+    {
+        "text": "equal",
+        "start": 735.36,
+        "duration": 2.64
+    },
+    {
+        "text": "what that means is we added an",
+        "start": 735.92,
+        "duration": 4.88
+    },
+    {
+        "text": "unnecessary character it's okay",
+        "start": 738.0,
+        "duration": 5.04
+    },
+    {
+        "text": "but it didn't help satisfy the condition",
+        "start": 740.8,
+        "duration": 3.2
+    },
+    {
+        "text": "we already know",
+        "start": 743.04,
+        "duration": 3.28
+    },
+    {
+        "text": "this and this were satisfied this is the",
+        "start": 744.0,
+        "duration": 4.16
+    },
+    {
+        "text": "one that needed to be satisfied",
+        "start": 746.32,
+        "duration": 5.04
+    },
+    {
+        "text": "so since it's not exactly equal we're",
+        "start": 748.16,
+        "duration": 4.08
+    },
+    {
+        "text": "not going to",
+        "start": 751.36,
+        "duration": 4.159
+    },
+    {
+        "text": "increment our have count so now let's",
+        "start": 752.24,
+        "duration": 4.719
+    },
+    {
+        "text": "add another character",
+        "start": 755.519,
+        "duration": 4.56
+    },
+    {
+        "text": "the a that we wanted so badly so",
+        "start": 756.959,
+        "duration": 5.44
+    },
+    {
+        "text": "we added an a we update the count of a",
+        "start": 760.079,
+        "duration": 3.681
+    },
+    {
+        "text": "we add one",
+        "start": 762.399,
+        "duration": 4.081
+    },
+    {
+        "text": "so now this is one we're gonna check are",
+        "start": 763.76,
+        "duration": 3.12
+    },
+    {
+        "text": "they",
+        "start": 766.48,
+        "duration": 3.52
+    },
+    {
+        "text": "exactly equal have we met the condition",
+        "start": 766.88,
+        "duration": 3.6
+    },
+    {
+        "text": "now",
+        "start": 770.0,
+        "duration": 2.72
+    },
+    {
+        "text": "by adding a character did we make these",
+        "start": 770.48,
+        "duration": 3.919
+    },
+    {
+        "text": "exactly equal",
+        "start": 772.72,
+        "duration": 4.08
+    },
+    {
+        "text": "and we did so what does that mean well",
+        "start": 774.399,
+        "duration": 4.481
+    },
+    {
+        "text": "we met one more condition",
+        "start": 776.8,
+        "duration": 4.88
+    },
+    {
+        "text": "so we update our have count it's now",
+        "start": 778.88,
+        "duration": 3.92
+    },
+    {
+        "text": "going to be set",
+        "start": 781.68,
+        "duration": 3.92
+    },
+    {
+        "text": "to three and now these are actually",
+        "start": 782.8,
+        "duration": 3.52
+    },
+    {
+        "text": "equal",
+        "start": 785.6,
+        "duration": 3.84
+    },
+    {
+        "text": "so we actually met the we have exactly",
+        "start": 786.32,
+        "duration": 4.959
+    },
+    {
+        "text": "what we need so we potentially",
+        "start": 789.44,
+        "duration": 4.639
+    },
+    {
+        "text": "found a result now the only problem is",
+        "start": 791.279,
+        "duration": 3.281
+    },
+    {
+        "text": "this",
+        "start": 794.079,
+        "duration": 3.601
+    },
+    {
+        "text": "result goes from index 1 all the way to",
+        "start": 794.56,
+        "duration": 3.68
+    },
+    {
+        "text": "roughly",
+        "start": 797.68,
+        "duration": 2.88
+    },
+    {
+        "text": "index 10 so it's actually bigger than",
+        "start": 798.24,
+        "duration": 3.76
+    },
+    {
+        "text": "our current result which",
+        "start": 800.56,
+        "duration": 3.92
+    },
+    {
+        "text": "is a problem so we don't update our",
+        "start": 802.0,
+        "duration": 3.44
+    },
+    {
+        "text": "result yet",
+        "start": 804.48,
+        "duration": 3.28
+    },
+    {
+        "text": "but now we want to try to find an even",
+        "start": 805.44,
+        "duration": 4.079
+    },
+    {
+        "text": "smaller substring than this so let's",
+        "start": 807.76,
+        "duration": 3.68
+    },
+    {
+        "text": "start popping characters from the left",
+        "start": 809.519,
+        "duration": 3.281
+    },
+    {
+        "text": "so we pop a d",
+        "start": 811.44,
+        "duration": 3.36
+    },
+    {
+        "text": "but d's we don't care about so we don't",
+        "start": 812.8,
+        "duration": 3.2
+    },
+    {
+        "text": "update our window",
+        "start": 814.8,
+        "duration": 4.64
+    },
+    {
+        "text": "and let's just keep popping values until",
+        "start": 816.0,
+        "duration": 6.639
+    },
+    {
+        "text": "this condition is no longer met so",
+        "start": 819.44,
+        "duration": 6.56
+    },
+    {
+        "text": "now let's pop a b so let's",
+        "start": 822.639,
+        "duration": 6.0
+    },
+    {
+        "text": "now we have to update our value of b so",
+        "start": 826.0,
+        "duration": 4.32
+    },
+    {
+        "text": "this was originally two now it's going",
+        "start": 828.639,
+        "duration": 2.961
+    },
+    {
+        "text": "to be set to one",
+        "start": 830.32,
+        "duration": 4.72
+    },
+    {
+        "text": "so now it's set to one so did we or",
+        "start": 831.6,
+        "duration": 5.76
+    },
+    {
+        "text": "did we undo this condition is this",
+        "start": 835.04,
+        "duration": 4.08
+    },
+    {
+        "text": "condition no longer valid nope",
+        "start": 837.36,
+        "duration": 3.68
+    },
+    {
+        "text": "because this is still greater than or",
+        "start": 839.12,
+        "duration": 3.6
+    },
+    {
+        "text": "equal to the count that we needed",
+        "start": 841.04,
+        "duration": 3.76
+    },
+    {
+        "text": "so the condition is still valid we don't",
+        "start": 842.72,
+        "duration": 4.16
+    },
+    {
+        "text": "have to update our have count yet",
+        "start": 844.8,
+        "duration": 5.12
+    },
+    {
+        "text": "so actually this string is",
+        "start": 846.88,
+        "duration": 6.72
+    },
+    {
+        "text": "still a possible result but notice",
+        "start": 849.92,
+        "duration": 5.84
+    },
+    {
+        "text": "this string goes from index 4 all the",
+        "start": 853.6,
+        "duration": 4.0
+    },
+    {
+        "text": "way to index 10 so it's actually",
+        "start": 855.76,
+        "duration": 5.84
+    },
+    {
+        "text": "length 7 and that's still greater than",
+        "start": 857.6,
+        "duration": 5.919
+    },
+    {
+        "text": "this string so we cannot count this as a",
+        "start": 861.6,
+        "duration": 4.239
+    },
+    {
+        "text": "result yet so now we remove",
+        "start": 863.519,
+        "duration": 5.841
+    },
+    {
+        "text": "the e and then we remove the c",
+        "start": 865.839,
+        "duration": 5.68
+    },
+    {
+        "text": "so we have to actually update our count",
+        "start": 869.36,
+        "duration": 4.0
+    },
+    {
+        "text": "again so this was originally",
+        "start": 871.519,
+        "duration": 4.88
+    },
+    {
+        "text": "one now it's going to be zero",
+        "start": 873.36,
+        "duration": 5.279
+    },
+    {
+        "text": "and now you can see that this condition",
+        "start": 876.399,
+        "duration": 4.161
+    },
+    {
+        "text": "is actually no longer valid",
+        "start": 878.639,
+        "duration": 5.921
+    },
+    {
+        "text": "so even though these two are still valid",
+        "start": 880.56,
+        "duration": 6.16
+    },
+    {
+        "text": "this one is not valid we have to update",
+        "start": 884.56,
+        "duration": 3.519
+    },
+    {
+        "text": "our have count",
+        "start": 886.72,
+        "duration": 4.479
+    },
+    {
+        "text": "so our have count was three but now we",
+        "start": 888.079,
+        "duration": 5.12
+    },
+    {
+        "text": "removed one so it's going to be",
+        "start": 891.199,
+        "duration": 5.521
+    },
+    {
+        "text": "two so now it's no longer equal so our",
+        "start": 893.199,
+        "duration": 5.521
+    },
+    {
+        "text": "string is no longer valid",
+        "start": 896.72,
+        "duration": 5.04
+    },
+    {
+        "text": "it's length five but it doesn't have",
+        "start": 898.72,
+        "duration": 5.28
+    },
+    {
+        "text": "a c we have a b we have an a but we",
+        "start": 901.76,
+        "duration": 3.68
+    },
+    {
+        "text": "don't have a c",
+        "start": 904.0,
+        "duration": 4.32
+    },
+    {
+        "text": "so we can't update our result so let's",
+        "start": 905.44,
+        "duration": 3.28
+    },
+    {
+        "text": "keep",
+        "start": 908.32,
+        "duration": 2.72
+    },
+    {
+        "text": "adding characters now maybe we'll find",
+        "start": 908.72,
+        "duration": 4.239
+    },
+    {
+        "text": "another valid string so we add an",
+        "start": 911.04,
+        "duration": 4.88
+    },
+    {
+        "text": "n but we don't care about ends we add",
+        "start": 912.959,
+        "duration": 3.68
+    },
+    {
+        "text": "the c",
+        "start": 915.92,
+        "duration": 3.2
+    },
+    {
+        "text": "that we want so we added a c so we",
+        "start": 916.639,
+        "duration": 3.361
+    },
+    {
+        "text": "update our c",
+        "start": 919.12,
+        "duration": 3.76
+    },
+    {
+        "text": "count now it's set to one these are once",
+        "start": 920.0,
+        "duration": 3.6
+    },
+    {
+        "text": "again",
+        "start": 922.88,
+        "duration": 3.519
+    },
+    {
+        "text": "equal so since they're exactly equal",
+        "start": 923.6,
+        "duration": 3.52
+    },
+    {
+        "text": "that means we",
+        "start": 926.399,
+        "duration": 2.961
+    },
+    {
+        "text": "just now have met the condition so we",
+        "start": 927.12,
+        "duration": 3.92
+    },
+    {
+        "text": "met one more condition",
+        "start": 929.36,
+        "duration": 4.719
+    },
+    {
+        "text": "so we can update our have count now to",
+        "start": 931.04,
+        "duration": 5.28
+    },
+    {
+        "text": "three that means it's exactly equal to",
+        "start": 934.079,
+        "duration": 3.601
+    },
+    {
+        "text": "what it needs to be",
+        "start": 936.32,
+        "duration": 3.84
+    },
+    {
+        "text": "that means this is a valid string so",
+        "start": 937.68,
+        "duration": 3.599
+    },
+    {
+        "text": "this goes",
+        "start": 940.16,
+        "duration": 3.599
+    },
+    {
+        "text": "this goes from index 6 all the way to",
+        "start": 941.279,
+        "duration": 3.68
+    },
+    {
+        "text": "index 12",
+        "start": 943.759,
+        "duration": 3.681
+    },
+    {
+        "text": "that's a length of 7 which is not",
+        "start": 944.959,
+        "duration": 4.161
+    },
+    {
+        "text": "smaller than our current result",
+        "start": 947.44,
+        "duration": 3.759
+    },
+    {
+        "text": "but that doesn't mean we can't shrink",
+        "start": 949.12,
+        "duration": 3.36
+    },
+    {
+        "text": "this right so let's",
+        "start": 951.199,
+        "duration": 3.521
+    },
+    {
+        "text": "start from the left and keep popping and",
+        "start": 952.48,
+        "duration": 3.359
+    },
+    {
+        "text": "making it smaller",
+        "start": 954.72,
+        "duration": 4.239
+    },
+    {
+        "text": "but also keep going until it's no longer",
+        "start": 955.839,
+        "duration": 4.24
+    },
+    {
+        "text": "valid anymore",
+        "start": 958.959,
+        "duration": 4.24
+    },
+    {
+        "text": "so we pop in oh let's remove a",
+        "start": 960.079,
+        "duration": 5.281
+    },
+    {
+        "text": "d but we're still valid right we didn't",
+        "start": 963.199,
+        "duration": 3.361
+    },
+    {
+        "text": "update any of these",
+        "start": 965.36,
+        "duration": 4.0
+    },
+    {
+        "text": "and now you see we have a string of",
+        "start": 966.56,
+        "duration": 3.44
+    },
+    {
+        "text": "length",
+        "start": 969.36,
+        "duration": 3.2
+    },
+    {
+        "text": "five so we can actually update our",
+        "start": 970.0,
+        "duration": 3.199
+    },
+    {
+        "text": "result",
+        "start": 972.56,
+        "duration": 3.68
+    },
+    {
+        "text": "so now we're going from index 8 to index",
+        "start": 973.199,
+        "duration": 3.681
+    },
+    {
+        "text": "12",
+        "start": 976.24,
+        "duration": 4.159
+    },
+    {
+        "text": "and that leaves us with a length of 5",
+        "start": 976.88,
+        "duration": 6.56
+    },
+    {
+        "text": "but we're not done yet we have an e we",
+        "start": 980.399,
+        "duration": 4.081
+    },
+    {
+        "text": "can remove that",
+        "start": 983.44,
+        "duration": 3.759
+    },
+    {
+        "text": "e as well now you notice we're still",
+        "start": 984.48,
+        "duration": 4.0
+    },
+    {
+        "text": "valid we have a b",
+        "start": 987.199,
+        "duration": 4.32
+    },
+    {
+        "text": "we have an a and we have a c",
+        "start": 988.48,
+        "duration": 5.2
+    },
+    {
+        "text": "we didn't have to update our map our",
+        "start": 991.519,
+        "duration": 5.041
+    },
+    {
+        "text": "have count is exactly equal to the need",
+        "start": 993.68,
+        "duration": 5.599
+    },
+    {
+        "text": "so now we can update our result one more",
+        "start": 996.56,
+        "duration": 3.44
+    },
+    {
+        "text": "time",
+        "start": 999.279,
+        "duration": 3.441
+    },
+    {
+        "text": "and it's gonna go from index nine all",
+        "start": 1000.0,
+        "duration": 3.92
+    },
+    {
+        "text": "the way to index",
+        "start": 1002.72,
+        "duration": 4.08
+    },
+    {
+        "text": "twelve that's the string the length of",
+        "start": 1003.92,
+        "duration": 3.2
+    },
+    {
+        "text": "it",
+        "start": 1006.8,
+        "duration": 3.44
+    },
+    {
+        "text": "is four and lastly we are going to",
+        "start": 1007.12,
+        "duration": 3.839
+    },
+    {
+        "text": "remove",
+        "start": 1010.24,
+        "duration": 3.2
+    },
+    {
+        "text": "this b character from it as well and",
+        "start": 1010.959,
+        "duration": 3.921
+    },
+    {
+        "text": "once we remove the b",
+        "start": 1013.44,
+        "duration": 3.759
+    },
+    {
+        "text": "you can see okay we removed this one now",
+        "start": 1014.88,
+        "duration": 4.24
+    },
+    {
+        "text": "we have zero b's remaining",
+        "start": 1017.199,
+        "duration": 3.76
+    },
+    {
+        "text": "uh that's less than how many we need so",
+        "start": 1019.12,
+        "duration": 4.159
+    },
+    {
+        "text": "we have to update the have count so we",
+        "start": 1020.959,
+        "duration": 3.041
+    },
+    {
+        "text": "set it to",
+        "start": 1023.279,
+        "duration": 4.241
+    },
+    {
+        "text": "2 the condition is no longer valid",
+        "start": 1024.0,
+        "duration": 5.199
+    },
+    {
+        "text": "and so are we going to continue our",
+        "start": 1027.52,
+        "duration": 3.919
+    },
+    {
+        "text": "algorithm well we have no more",
+        "start": 1029.199,
+        "duration": 2.88
+    },
+    {
+        "text": "characters",
+        "start": 1031.439,
+        "duration": 2.721
+    },
+    {
+        "text": "left to add we reach the end of the",
+        "start": 1032.079,
+        "duration": 3.36
+    },
+    {
+        "text": "string so",
+        "start": 1034.16,
+        "duration": 3.84
+    },
+    {
+        "text": "since this is our current minimum and",
+        "start": 1035.439,
+        "duration": 4.4
+    },
+    {
+        "text": "our current result this is what we're",
+        "start": 1038.0,
+        "duration": 3.12
+    },
+    {
+        "text": "going to end up returning",
+        "start": 1039.839,
+        "duration": 3.84
+    },
+    {
+        "text": "and by the way we just solved this",
+        "start": 1041.12,
+        "duration": 3.12
+    },
+    {
+        "text": "problem",
+        "start": 1043.679,
+        "duration": 4.481
+    },
+    {
+        "text": "in big o of n time because you see we",
+        "start": 1044.24,
+        "duration": 5.92
+    },
+    {
+        "text": "added each character",
+        "start": 1048.16,
+        "duration": 4.879
+    },
+    {
+        "text": "once that's an o of one we removed each",
+        "start": 1050.16,
+        "duration": 4.16
+    },
+    {
+        "text": "character once",
+        "start": 1053.039,
+        "duration": 3.281
+    },
+    {
+        "text": "every time we added or removed a",
+        "start": 1054.32,
+        "duration": 4.0
+    },
+    {
+        "text": "character we did at most",
+        "start": 1056.32,
+        "duration": 5.04
+    },
+    {
+        "text": "two operations right we had to update",
+        "start": 1058.32,
+        "duration": 5.2
+    },
+    {
+        "text": "one spot in our map and we had to",
+        "start": 1061.36,
+        "duration": 3.679
+    },
+    {
+        "text": "potentially update",
+        "start": 1063.52,
+        "duration": 4.0
+    },
+    {
+        "text": "this right okay so now let's finally get",
+        "start": 1065.039,
+        "duration": 4.081
+    },
+    {
+        "text": "into the code the first thing i'm going",
+        "start": 1067.52,
+        "duration": 2.0
+    },
+    {
+        "text": "to do",
+        "start": 1069.12,
+        "duration": 4.32
+    },
+    {
+        "text": "is actually handle a edge case so if",
+        "start": 1069.52,
+        "duration": 6.96
+    },
+    {
+        "text": "the input string t which is you know our",
+        "start": 1073.44,
+        "duration": 4.96
+    },
+    {
+        "text": "string is like the substring that we're",
+        "start": 1076.48,
+        "duration": 3.68
+    },
+    {
+        "text": "looking for if it's empty then what i'm",
+        "start": 1078.4,
+        "duration": 2.399
+    },
+    {
+        "text": "going to do",
+        "start": 1080.16,
+        "duration": 2.96
+    },
+    {
+        "text": "is return an empty string because that's",
+        "start": 1080.799,
+        "duration": 4.321
+    },
+    {
+        "text": "just how they want us to handle it in",
+        "start": 1083.12,
+        "duration": 2.88
+    },
+    {
+        "text": "this problem",
+        "start": 1085.12,
+        "duration": 3.12
+    },
+    {
+        "text": "and i'm going to have two windows that i",
+        "start": 1086.0,
+        "duration": 4.08
+    },
+    {
+        "text": "showed previously so",
+        "start": 1088.24,
+        "duration": 5.04
+    },
+    {
+        "text": "count of t and just the current window",
+        "start": 1090.08,
+        "duration": 4.479
+    },
+    {
+        "text": "that we have they're both initially",
+        "start": 1093.28,
+        "duration": 2.639
+    },
+    {
+        "text": "going to be hash maps they're both",
+        "start": 1094.559,
+        "duration": 2.801
+    },
+    {
+        "text": "initially going to be empty",
+        "start": 1095.919,
+        "duration": 3.521
+    },
+    {
+        "text": "and the first thing i want to do is",
+        "start": 1097.36,
+        "duration": 3.439
+    },
+    {
+        "text": "initialize",
+        "start": 1099.44,
+        "duration": 3.68
+    },
+    {
+        "text": "our count t map because we know this map",
+        "start": 1100.799,
+        "duration": 4.401
+    },
+    {
+        "text": "actually isn't going to change at all",
+        "start": 1103.12,
+        "duration": 5.36
+    },
+    {
+        "text": "so for every character in string t i'm",
+        "start": 1105.2,
+        "duration": 4.32
+    },
+    {
+        "text": "going to",
+        "start": 1108.48,
+        "duration": 4.319
+    },
+    {
+        "text": "add one to it but the",
+        "start": 1109.52,
+        "duration": 5.279
+    },
+    {
+        "text": "value i'm going to get i can't just do",
+        "start": 1112.799,
+        "duration": 3.841
+    },
+    {
+        "text": "this because it's possible that",
+        "start": 1114.799,
+        "duration": 3.841
+    },
+    {
+        "text": "c hasn't even been added to count t yet",
+        "start": 1116.64,
+        "duration": 3.76
+    },
+    {
+        "text": "so i'm going to do some python stuff",
+        "start": 1118.64,
+        "duration": 3.76
+    },
+    {
+        "text": "i'm going to use the function get which",
+        "start": 1120.4,
+        "duration": 4.72
+    },
+    {
+        "text": "is good for this so i'm going to get c",
+        "start": 1122.4,
+        "duration": 5.36
+    },
+    {
+        "text": "i'm going to get the count of c so if c",
+        "start": 1125.12,
+        "duration": 3.28
+    },
+    {
+        "text": "exists",
+        "start": 1127.76,
+        "duration": 2.48
+    },
+    {
+        "text": "in our map it will give me the value",
+        "start": 1128.4,
+        "duration": 3.2
+    },
+    {
+        "text": "that's stored in here",
+        "start": 1130.24,
+        "duration": 3.679
+    },
+    {
+        "text": "if it doesn't exist i can put a default",
+        "start": 1131.6,
+        "duration": 4.0
+    },
+    {
+        "text": "value which is going gonna be",
+        "start": 1133.919,
+        "duration": 4.321
+    },
+    {
+        "text": "zero so if it doesn't exist this",
+        "start": 1135.6,
+        "duration": 4.24
+    },
+    {
+        "text": "function will return",
+        "start": 1138.24,
+        "duration": 5.04
+    },
+    {
+        "text": "zero so that's just a way that i like to",
+        "start": 1139.84,
+        "duration": 4.0
+    },
+    {
+        "text": "handle",
+        "start": 1143.28,
+        "duration": 2.72
+    },
+    {
+        "text": "this case so now that we've initialized",
+        "start": 1143.84,
+        "duration": 3.28
+    },
+    {
+        "text": "the count of t",
+        "start": 1146.0,
+        "duration": 4.559
+    },
+    {
+        "text": "we can have our variables have and",
+        "start": 1147.12,
+        "duration": 6.0
+    },
+    {
+        "text": "need so we know have initially is going",
+        "start": 1150.559,
+        "duration": 3.041
+    },
+    {
+        "text": "to be",
+        "start": 1153.12,
+        "duration": 2.08
+    },
+    {
+        "text": "zero because we have zero of the",
+        "start": 1153.6,
+        "duration": 3.439
+    },
+    {
+        "text": "characters we need and",
+        "start": 1155.2,
+        "duration": 3.92
+    },
+    {
+        "text": "need is going to be initialized to the",
+        "start": 1157.039,
+        "duration": 3.041
+    },
+    {
+        "text": "length of",
+        "start": 1159.12,
+        "duration": 3.919
+    },
+    {
+        "text": "count t because that length of count t",
+        "start": 1160.08,
+        "duration": 4.24
+    },
+    {
+        "text": "gives us the unique",
+        "start": 1163.039,
+        "duration": 4.321
+    },
+    {
+        "text": "characters in the string t and then i'm",
+        "start": 1164.32,
+        "duration": 3.84
+    },
+    {
+        "text": "just going to start",
+        "start": 1167.36,
+        "duration": 4.16
+    },
+    {
+        "text": "iterating through every character in",
+        "start": 1168.16,
+        "duration": 6.48
+    },
+    {
+        "text": "s so i'm going to use a right pointer",
+        "start": 1171.52,
+        "duration": 4.96
+    },
+    {
+        "text": "for that the r is going to tell us the",
+        "start": 1174.64,
+        "duration": 3.68
+    },
+    {
+        "text": "right boundary of our current",
+        "start": 1176.48,
+        "duration": 4.079
+    },
+    {
+        "text": "window so i'm going to get the character",
+        "start": 1178.32,
+        "duration": 3.2
+    },
+    {
+        "text": "that we just",
+        "start": 1180.559,
+        "duration": 4.081
+    },
+    {
+        "text": "reached which is s at index r so i'm",
+        "start": 1181.52,
+        "duration": 5.039
+    },
+    {
+        "text": "just going to put it in a variable c",
+        "start": 1184.64,
+        "duration": 4.32
+    },
+    {
+        "text": "so with c we know we can update our",
+        "start": 1186.559,
+        "duration": 4.561
+    },
+    {
+        "text": "current window so i'm going to do",
+        "start": 1188.96,
+        "duration": 5.68
+    },
+    {
+        "text": "window of c and add one to it",
+        "start": 1191.12,
+        "duration": 5.679
+    },
+    {
+        "text": "for the character that we just reached",
+        "start": 1194.64,
+        "duration": 4.48
+    },
+    {
+        "text": "and here i'm basically doing what i did",
+        "start": 1196.799,
+        "duration": 4.88
+    },
+    {
+        "text": "above if c has never been added to",
+        "start": 1199.12,
+        "duration": 4.4
+    },
+    {
+        "text": "window we're just gonna",
+        "start": 1201.679,
+        "duration": 4.0
+    },
+    {
+        "text": "return zero with this function so 1 plus",
+        "start": 1203.52,
+        "duration": 4.24
+    },
+    {
+        "text": "0 we'll put a 1 here",
+        "start": 1205.679,
+        "duration": 3.921
+    },
+    {
+        "text": "if it does already exist this function",
+        "start": 1207.76,
+        "duration": 3.76
+    },
+    {
+        "text": "will get us the count that was",
+        "start": 1209.6,
+        "duration": 4.0
+    },
+    {
+        "text": "stored in here so we're updating our",
+        "start": 1211.52,
+        "duration": 4.159
+    },
+    {
+        "text": "window we're adding the count to it",
+        "start": 1213.6,
+        "duration": 5.76
+    },
+    {
+        "text": "now we want to know does this count",
+        "start": 1215.679,
+        "duration": 5.841
+    },
+    {
+        "text": "completely satisfy what we were looking",
+        "start": 1219.36,
+        "duration": 3.36
+    },
+    {
+        "text": "for does",
+        "start": 1221.52,
+        "duration": 4.88
+    },
+    {
+        "text": "window of c equal exactly",
+        "start": 1222.72,
+        "duration": 6.64
+    },
+    {
+        "text": "count of t that means we just satisfied",
+        "start": 1226.4,
+        "duration": 4.96
+    },
+    {
+        "text": "a condition for the first time",
+        "start": 1229.36,
+        "duration": 3.6
+    },
+    {
+        "text": "but one thing i also want to check",
+        "start": 1231.36,
+        "duration": 3.28
+    },
+    {
+        "text": "before i check this",
+        "start": 1232.96,
+        "duration": 4.88
+    },
+    {
+        "text": "is that c is even a character in count",
+        "start": 1234.64,
+        "duration": 6.64
+    },
+    {
+        "text": "d count t so if c is in",
+        "start": 1237.84,
+        "duration": 5.92
+    },
+    {
+        "text": "count t and this is true because we know",
+        "start": 1241.28,
+        "duration": 3.92
+    },
+    {
+        "text": "we don't actually care about the",
+        "start": 1243.76,
+        "duration": 2.96
+    },
+    {
+        "text": "characters that aren't even",
+        "start": 1245.2,
+        "duration": 4.479
+    },
+    {
+        "text": "in the string t to begin with and we",
+        "start": 1246.72,
+        "duration": 4.72
+    },
+    {
+        "text": "know if this is true we can",
+        "start": 1249.679,
+        "duration": 3.521
+    },
+    {
+        "text": "update our have count so we can",
+        "start": 1251.44,
+        "duration": 3.119
+    },
+    {
+        "text": "increment it by one",
+        "start": 1253.2,
+        "duration": 4.24
+    },
+    {
+        "text": "this means we just satisfied a condition",
+        "start": 1254.559,
+        "duration": 4.881
+    },
+    {
+        "text": "so now what we want to know does",
+        "start": 1257.44,
+        "duration": 5.44
+    },
+    {
+        "text": "have equal need exactly so are they",
+        "start": 1259.44,
+        "duration": 4.0
+    },
+    {
+        "text": "actually",
+        "start": 1262.88,
+        "duration": 2.72
+    },
+    {
+        "text": "equal if that's true i'm going to run a",
+        "start": 1263.44,
+        "duration": 3.52
+    },
+    {
+        "text": "loop and i'm going to show you why it",
+        "start": 1265.6,
+        "duration": 2.559
+    },
+    {
+        "text": "needs to be a loop",
+        "start": 1266.96,
+        "duration": 4.0
+    },
+    {
+        "text": "so we actually met the condition let's",
+        "start": 1268.159,
+        "duration": 3.76
+    },
+    {
+        "text": "one",
+        "start": 1270.96,
+        "duration": 3.839
+    },
+    {
+        "text": "update our result potentially right so",
+        "start": 1271.919,
+        "duration": 5.361
+    },
+    {
+        "text": "if we found a new minimum result let's",
+        "start": 1274.799,
+        "duration": 4.641
+    },
+    {
+        "text": "update so this actually reminds me that",
+        "start": 1277.28,
+        "duration": 4.399
+    },
+    {
+        "text": "i didn't even set a result so let's set",
+        "start": 1279.44,
+        "duration": 3.04
+    },
+    {
+        "text": "our result",
+        "start": 1281.679,
+        "duration": 3.201
+    },
+    {
+        "text": "and our result length so initially we",
+        "start": 1282.48,
+        "duration": 4.16
+    },
+    {
+        "text": "know our result is going to be a pointer",
+        "start": 1284.88,
+        "duration": 3.44
+    },
+    {
+        "text": "like a left and right pointer so i'm",
+        "start": 1286.64,
+        "duration": 3.519
+    },
+    {
+        "text": "just going to give it a default value of",
+        "start": 1288.32,
+        "duration": 3.52
+    },
+    {
+        "text": "negative 1 negative 1.",
+        "start": 1290.159,
+        "duration": 3.201
+    },
+    {
+        "text": "and for the result length i'm going to",
+        "start": 1291.84,
+        "duration": 3.839
+    },
+    {
+        "text": "put float infinity",
+        "start": 1293.36,
+        "duration": 4.72
+    },
+    {
+        "text": "because that's a good default value in",
+        "start": 1295.679,
+        "duration": 4.24
+    },
+    {
+        "text": "this case because we are looking for the",
+        "start": 1298.08,
+        "duration": 4.32
+    },
+    {
+        "text": "minimum string so any value will",
+        "start": 1299.919,
+        "duration": 4.401
+    },
+    {
+        "text": "obviously be less than infinity",
+        "start": 1302.4,
+        "duration": 4.88
+    },
+    {
+        "text": "and i'm also going to initialize a left",
+        "start": 1304.32,
+        "duration": 3.839
+    },
+    {
+        "text": "pointer",
+        "start": 1307.28,
+        "duration": 2.639
+    },
+    {
+        "text": "because we know r tells us the right",
+        "start": 1308.159,
+        "duration": 3.361
+    },
+    {
+        "text": "pointer left pointer will initially be",
+        "start": 1309.919,
+        "duration": 2.64
+    },
+    {
+        "text": "set to zero",
+        "start": 1311.52,
+        "duration": 3.36
+    },
+    {
+        "text": "but so now we can actually update our",
+        "start": 1312.559,
+        "duration": 4.24
+    },
+    {
+        "text": "result we know the condition has been",
+        "start": 1314.88,
+        "duration": 2.4
+    },
+    {
+        "text": "met",
+        "start": 1316.799,
+        "duration": 3.76
+    },
+    {
+        "text": "so if the current length of our string",
+        "start": 1317.28,
+        "duration": 4.16
+    },
+    {
+        "text": "which is going to be",
+        "start": 1320.559,
+        "duration": 4.721
+    },
+    {
+        "text": "r minus left plus 1 this is how you just",
+        "start": 1321.44,
+        "duration": 4.8
+    },
+    {
+        "text": "calculate",
+        "start": 1325.28,
+        "duration": 3.68
+    },
+    {
+        "text": "the size of our current window if it",
+        "start": 1326.24,
+        "duration": 4.0
+    },
+    {
+        "text": "happens to be",
+        "start": 1328.96,
+        "duration": 4.24
+    },
+    {
+        "text": "less than the current result length",
+        "start": 1330.24,
+        "duration": 3.36
+    },
+    {
+        "text": "which",
+        "start": 1333.2,
+        "duration": 2.4
+    },
+    {
+        "text": "initially starts at infinity so this",
+        "start": 1333.6,
+        "duration": 4.079
+    },
+    {
+        "text": "will definitely execute at least",
+        "start": 1335.6,
+        "duration": 5.439
+    },
+    {
+        "text": "once if this is true we can update our",
+        "start": 1337.679,
+        "duration": 5.841
+    },
+    {
+        "text": "result which is stored over here so we",
+        "start": 1341.039,
+        "duration": 3.201
+    },
+    {
+        "text": "can",
+        "start": 1343.52,
+        "duration": 4.399
+    },
+    {
+        "text": "set our result to left and right this is",
+        "start": 1344.24,
+        "duration": 4.72
+    },
+    {
+        "text": "the window",
+        "start": 1347.919,
+        "duration": 3.601
+    },
+    {
+        "text": "and we can set our result length equal",
+        "start": 1348.96,
+        "duration": 4.4
+    },
+    {
+        "text": "to the size of this window which we just",
+        "start": 1351.52,
+        "duration": 3.68
+    },
+    {
+        "text": "computed above but let's compute it",
+        "start": 1353.36,
+        "duration": 2.64
+    },
+    {
+        "text": "again",
+        "start": 1355.2,
+        "duration": 3.2
+    },
+    {
+        "text": "this is the size of the window and just",
+        "start": 1356.0,
+        "duration": 4.159
+    },
+    {
+        "text": "like i showed you in the drawing",
+        "start": 1358.4,
+        "duration": 4.08
+    },
+    {
+        "text": "while the condition is met we want to",
+        "start": 1360.159,
+        "duration": 4.481
+    },
+    {
+        "text": "keep shrinking from the left we want to",
+        "start": 1362.48,
+        "duration": 3.36
+    },
+    {
+        "text": "make this string as",
+        "start": 1364.64,
+        "duration": 4.32
+    },
+    {
+        "text": "small as it can possibly be so let's",
+        "start": 1365.84,
+        "duration": 6.4
+    },
+    {
+        "text": "pop from the left of our",
+        "start": 1368.96,
+        "duration": 6.4
+    },
+    {
+        "text": "window right let's try to minimize it so",
+        "start": 1372.24,
+        "duration": 5.28
+    },
+    {
+        "text": "i'm going to remove the leftmost",
+        "start": 1375.36,
+        "duration": 4.48
+    },
+    {
+        "text": "character from our window map so the",
+        "start": 1377.52,
+        "duration": 4.08
+    },
+    {
+        "text": "leftmost character is",
+        "start": 1379.84,
+        "duration": 5.52
+    },
+    {
+        "text": "is the string at index left right",
+        "start": 1381.6,
+        "duration": 6.16
+    },
+    {
+        "text": "and from this i'm going to decrement it",
+        "start": 1385.36,
+        "duration": 3.199
+    },
+    {
+        "text": "by",
+        "start": 1387.76,
+        "duration": 4.159
+    },
+    {
+        "text": "1. so now since we removed a character",
+        "start": 1388.559,
+        "duration": 5.521
+    },
+    {
+        "text": "it's possible that our have and need",
+        "start": 1391.919,
+        "duration": 4.0
+    },
+    {
+        "text": "condition is no longer met so i'm going",
+        "start": 1394.08,
+        "duration": 2.56
+    },
+    {
+        "text": "to do something",
+        "start": 1395.919,
+        "duration": 2.801
+    },
+    {
+        "text": "similar to what we did up here i'm going",
+        "start": 1396.64,
+        "duration": 3.279
+    },
+    {
+        "text": "to check",
+        "start": 1398.72,
+        "duration": 4.88
+    },
+    {
+        "text": "if this character s of l was in",
+        "start": 1399.919,
+        "duration": 5.201
+    },
+    {
+        "text": "count t meaning it's one of the",
+        "start": 1403.6,
+        "duration": 3.52
+    },
+    {
+        "text": "characters that we need to satisfy our",
+        "start": 1405.12,
+        "duration": 2.72
+    },
+    {
+        "text": "condition",
+        "start": 1407.12,
+        "duration": 4.32
+    },
+    {
+        "text": "and if somehow right now for the first",
+        "start": 1407.84,
+        "duration": 4.64
+    },
+    {
+        "text": "time",
+        "start": 1411.44,
+        "duration": 3.28
+    },
+    {
+        "text": "that we took this character from our",
+        "start": 1412.48,
+        "duration": 3.12
+    },
+    {
+        "text": "window and",
+        "start": 1414.72,
+        "duration": 3.04
+    },
+    {
+        "text": "now the count is actually less than the",
+        "start": 1415.6,
+        "duration": 3.199
+    },
+    {
+        "text": "count that we",
+        "start": 1417.76,
+        "duration": 4.159
+    },
+    {
+        "text": "need which is present in count t so now",
+        "start": 1418.799,
+        "duration": 3.841
+    },
+    {
+        "text": "if it's",
+        "start": 1421.919,
+        "duration": 3.041
+    },
+    {
+        "text": "if the if by removing a character we",
+        "start": 1422.64,
+        "duration": 3.279
+    },
+    {
+        "text": "just made it",
+        "start": 1424.96,
+        "duration": 3.52
+    },
+    {
+        "text": "less than what it needed to be what we",
+        "start": 1425.919,
+        "duration": 4.481
+    },
+    {
+        "text": "did is we just took our halve",
+        "start": 1428.48,
+        "duration": 4.799
+    },
+    {
+        "text": "and then decremented it by one right so",
+        "start": 1430.4,
+        "duration": 3.2
+    },
+    {
+        "text": "this",
+        "start": 1433.279,
+        "duration": 2.561
+    },
+    {
+        "text": "is just a part of removing a character",
+        "start": 1433.6,
+        "duration": 4.24
+    },
+    {
+        "text": "from the left we update our map",
+        "start": 1435.84,
+        "duration": 4.4
+    },
+    {
+        "text": "we update our have count if we need to",
+        "start": 1437.84,
+        "duration": 5.04
+    },
+    {
+        "text": "and lastly we take our left pointer and",
+        "start": 1440.24,
+        "duration": 4.72
+    },
+    {
+        "text": "increment it by one because of course we",
+        "start": 1442.88,
+        "duration": 3.52
+    },
+    {
+        "text": "have to shift this by one",
+        "start": 1444.96,
+        "duration": 3.199
+    },
+    {
+        "text": "if we're removing a character from the",
+        "start": 1446.4,
+        "duration": 3.2
+    },
+    {
+        "text": "left of our window",
+        "start": 1448.159,
+        "duration": 3.76
+    },
+    {
+        "text": "so now after we do this we're going to",
+        "start": 1449.6,
+        "duration": 4.16
+    },
+    {
+        "text": "potentially check the have and need",
+        "start": 1451.919,
+        "duration": 2.401
+    },
+    {
+        "text": "condition",
+        "start": 1453.76,
+        "duration": 2.399
+    },
+    {
+        "text": "and it might be true it might not be",
+        "start": 1454.32,
+        "duration": 3.68
+    },
+    {
+        "text": "true and whatever it is the",
+        "start": 1456.159,
+        "duration": 4.321
+    },
+    {
+        "text": "loop is going to execute when it needs",
+        "start": 1458.0,
+        "duration": 3.12
+    },
+    {
+        "text": "to",
+        "start": 1460.48,
+        "duration": 2.64
+    },
+    {
+        "text": "so this is all we're doing we're taking",
+        "start": 1461.12,
+        "duration": 4.4
+    },
+    {
+        "text": "characters adding it to our window map",
+        "start": 1463.12,
+        "duration": 4.4
+    },
+    {
+        "text": "checking if the condition has been met",
+        "start": 1465.52,
+        "duration": 3.92
+    },
+    {
+        "text": "updating the window accordingly",
+        "start": 1467.52,
+        "duration": 3.92
+    },
+    {
+        "text": "that's all we need to do by the end the",
+        "start": 1469.44,
+        "duration": 3.68
+    },
+    {
+        "text": "result if it exists",
+        "start": 1471.44,
+        "duration": 4.32
+    },
+    {
+        "text": "will be stored in our result variable so",
+        "start": 1473.12,
+        "duration": 4.0
+    },
+    {
+        "text": "our result pointer",
+        "start": 1475.76,
+        "duration": 3.919
+    },
+    {
+        "text": "we can put it in uh left and right we",
+        "start": 1477.12,
+        "duration": 3.36
+    },
+    {
+        "text": "can take",
+        "start": 1479.679,
+        "duration": 3.041
+    },
+    {
+        "text": "result and extract it into left and",
+        "start": 1480.48,
+        "duration": 4.319
+    },
+    {
+        "text": "right these these pointers in this case",
+        "start": 1482.72,
+        "duration": 3.6
+    },
+    {
+        "text": "these new left and rights will tell us",
+        "start": 1484.799,
+        "duration": 3.12
+    },
+    {
+        "text": "the result so what we can do is",
+        "start": 1486.32,
+        "duration": 5.2
+    },
+    {
+        "text": "say return from string s going from",
+        "start": 1487.919,
+        "duration": 5.441
+    },
+    {
+        "text": "pointer left all the way to pointer",
+        "start": 1491.52,
+        "duration": 3.6
+    },
+    {
+        "text": "right but we need to add one",
+        "start": 1493.36,
+        "duration": 4.24
+    },
+    {
+        "text": "for the off by one error and we're only",
+        "start": 1495.12,
+        "duration": 3.6
+    },
+    {
+        "text": "gonna do this",
+        "start": 1497.6,
+        "duration": 4.24
+    },
+    {
+        "text": "if the result length has",
+        "start": 1498.72,
+        "duration": 5.28
+    },
+    {
+        "text": "not has been changed meaning it's no",
+        "start": 1501.84,
+        "duration": 4.4
+    },
+    {
+        "text": "longer infinity because we know",
+        "start": 1504.0,
+        "duration": 4.96
+    },
+    {
+        "text": "it's actually possible that a result",
+        "start": 1506.24,
+        "duration": 4.72
+    },
+    {
+        "text": "does not even exist",
+        "start": 1508.96,
+        "duration": 4.079
+    },
+    {
+        "text": "if that's not true if a result doesn't",
+        "start": 1510.96,
+        "duration": 4.16
+    },
+    {
+        "text": "exist we know we have to return",
+        "start": 1513.039,
+        "duration": 5.041
+    },
+    {
+        "text": "an empty string so there it is this is",
+        "start": 1515.12,
+        "duration": 5.2
+    },
+    {
+        "text": "the entire code i'll probably have to",
+        "start": 1518.08,
+        "duration": 3.599
+    },
+    {
+        "text": "link this in the description because",
+        "start": 1520.32,
+        "duration": 3.92
+    },
+    {
+        "text": "it's pretty long and even kind of messy",
+        "start": 1521.679,
+        "duration": 4.801
+    },
+    {
+        "text": "and you can see it is definitely very",
+        "start": 1524.24,
+        "duration": 4.0
+    },
+    {
+        "text": "efficient this is a linear",
+        "start": 1526.48,
+        "duration": 4.16
+    },
+    {
+        "text": "time algorithm so i really hope that",
+        "start": 1528.24,
+        "duration": 3.36
+    },
+    {
+        "text": "this was helpful",
+        "start": 1530.64,
+        "duration": 3.12
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 1531.6,
+        "duration": 3.28
+    },
+    {
+        "text": "supports the channel",
+        "start": 1533.76,
+        "duration": 5.519
+    },
+    {
+        "text": "a lot and hopefully i'll see you pretty",
+        "start": 1534.88,
+        "duration": 4.399
+    },
+    {
+        "text": "soon",
+        "start": 1539.48,
+        "duration": 3.0
+    }
+]

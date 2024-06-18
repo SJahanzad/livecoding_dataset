@@ -1,0 +1,1537 @@
+[
+    {
+        "text": "okay let's solve leak code 33 search and",
+        "start": 0.03,
+        "duration": 4.499
+    },
+    {
+        "text": "rotated sorted array",
+        "start": 3.03,
+        "duration": 3.269
+    },
+    {
+        "text": "so we're basically given an array that",
+        "start": 4.529,
+        "duration": 4.441
+    },
+    {
+        "text": "was originally sorted like this one but",
+        "start": 6.299,
+        "duration": 5.161
+    },
+    {
+        "text": "it then it became rotated like this one",
+        "start": 8.97,
+        "duration": 4.77
+    },
+    {
+        "text": "and by rotated they mean that they took",
+        "start": 11.46,
+        "duration": 5.28
+    },
+    {
+        "text": "a certain pivot or index of the array",
+        "start": 13.74,
+        "duration": 5.4
+    },
+    {
+        "text": "like right over here and then they cut",
+        "start": 16.74,
+        "duration": 3.72
+    },
+    {
+        "text": "it in half and then swap through the",
+        "start": 19.14,
+        "duration": 2.729
+    },
+    {
+        "text": "portions right so you can basically",
+        "start": 20.46,
+        "duration": 4.47
+    },
+    {
+        "text": "think of this right-hand portion being",
+        "start": 21.869,
+        "duration": 5.791
+    },
+    {
+        "text": "swapped over to the left side over here",
+        "start": 24.93,
+        "duration": 4.89
+    },
+    {
+        "text": "right that's what happened as you can",
+        "start": 27.66,
+        "duration": 7.14
+    },
+    {
+        "text": "see here right these two halves were put",
+        "start": 29.82,
+        "duration": 6.96
+    },
+    {
+        "text": "in the opposites position and we're also",
+        "start": 34.8,
+        "duration": 4.05
+    },
+    {
+        "text": "given a target value in this example",
+        "start": 36.78,
+        "duration": 5.119
+    },
+    {
+        "text": "target zero and we want to check if our",
+        "start": 38.85,
+        "duration": 6.779
+    },
+    {
+        "text": "array contains this value if it does we",
+        "start": 41.899,
+        "duration": 6.881
+    },
+    {
+        "text": "return the index if it doesn't we return",
+        "start": 45.629,
+        "duration": 5.52
+    },
+    {
+        "text": "negative one the most straightforward",
+        "start": 48.78,
+        "duration": 4.14
+    },
+    {
+        "text": "way to approach this problem is",
+        "start": 51.149,
+        "duration": 3.75
+    },
+    {
+        "text": "literally just check every single value",
+        "start": 52.92,
+        "duration": 4.29
+    },
+    {
+        "text": "is this our target is this our target",
+        "start": 54.899,
+        "duration": 4.471
+    },
+    {
+        "text": "and eventually we get here this is our",
+        "start": 57.21,
+        "duration": 4.169
+    },
+    {
+        "text": "target and then we return the index for",
+        "start": 59.37,
+        "duration": 4.14
+    },
+    {
+        "text": "now this is just too trivial of a",
+        "start": 61.379,
+        "duration": 4.74
+    },
+    {
+        "text": "solution right the time complexity isn't",
+        "start": 63.51,
+        "duration": 6.42
+    },
+    {
+        "text": "bad it's o of n but can we do better in",
+        "start": 66.119,
+        "duration": 5.731
+    },
+    {
+        "text": "this problem they literally tell us to",
+        "start": 69.93,
+        "duration": 4.41
+    },
+    {
+        "text": "find a solution and that's of log n so",
+        "start": 71.85,
+        "duration": 5.01
+    },
+    {
+        "text": "obviously we can and basically anytime",
+        "start": 74.34,
+        "duration": 4.65
+    },
+    {
+        "text": "you're looking for a solution that's log",
+        "start": 76.86,
+        "duration": 4.77
+    },
+    {
+        "text": "N or better than linear almost every",
+        "start": 78.99,
+        "duration": 3.989
+    },
+    {
+        "text": "time you're going to be looking for a",
+        "start": 81.63,
+        "duration": 4.08
+    },
+    {
+        "text": "binary search type solution so since",
+        "start": 82.979,
+        "duration": 5.191
+    },
+    {
+        "text": "this array was originally rotated can we",
+        "start": 85.71,
+        "duration": 4.799
+    },
+    {
+        "text": "use that to our advantage to potentially",
+        "start": 88.17,
+        "duration": 4.92
+    },
+    {
+        "text": "find a binary search type solution for",
+        "start": 90.509,
+        "duration": 4.621
+    },
+    {
+        "text": "this problem let's try to analyze it and",
+        "start": 93.09,
+        "duration": 4.349
+    },
+    {
+        "text": "see what we can find so given that the",
+        "start": 95.13,
+        "duration": 4.23
+    },
+    {
+        "text": "original array was sorted if we wanted",
+        "start": 97.439,
+        "duration": 3.961
+    },
+    {
+        "text": "to represent that as a graph we would",
+        "start": 99.36,
+        "duration": 5.13
+    },
+    {
+        "text": "basically have a continuously increasing",
+        "start": 101.4,
+        "duration": 5.16
+    },
+    {
+        "text": "line it might not necessarily be linear",
+        "start": 104.49,
+        "duration": 3.87
+    },
+    {
+        "text": "but it would always be increasing right",
+        "start": 106.56,
+        "duration": 4.23
+    },
+    {
+        "text": "and then we took some pivot like over",
+        "start": 108.36,
+        "duration": 5.13
+    },
+    {
+        "text": "here and then swapped these halves",
+        "start": 110.79,
+        "duration": 5.009
+    },
+    {
+        "text": "around right so let's draw what that",
+        "start": 113.49,
+        "duration": 6.21
+    },
+    {
+        "text": "would look like so let's say the left",
+        "start": 115.799,
+        "duration": 6.541
+    },
+    {
+        "text": "side was exclusively greater than the",
+        "start": 119.7,
+        "duration": 4.44
+    },
+    {
+        "text": "right side because that's what it means",
+        "start": 122.34,
+        "duration": 6.08
+    },
+    {
+        "text": "by rotating the array right",
+        "start": 124.14,
+        "duration": 4.28
+    },
+    {
+        "text": "so I think this is a pretty good way to",
+        "start": 131.97,
+        "duration": 3.79
+    },
+    {
+        "text": "visualize the problem to kind of",
+        "start": 134.26,
+        "duration": 4.199
+    },
+    {
+        "text": "understand what it would look like and",
+        "start": 135.76,
+        "duration": 4.35
+    },
+    {
+        "text": "you can use this to your advantage to",
+        "start": 138.459,
+        "duration": 4.291
+    },
+    {
+        "text": "find potential patterns that can help us",
+        "start": 140.11,
+        "duration": 5.04
+    },
+    {
+        "text": "find a binary search solution so with a",
+        "start": 142.75,
+        "duration": 3.93
+    },
+    {
+        "text": "problem like this you really have to",
+        "start": 145.15,
+        "duration": 3.99
+    },
+    {
+        "text": "break it down into discrete cases and",
+        "start": 146.68,
+        "duration": 4.8
+    },
+    {
+        "text": "then use those cases to form a solution",
+        "start": 149.14,
+        "duration": 5.52
+    },
+    {
+        "text": "so the most obvious thing is that there",
+        "start": 151.48,
+        "duration": 4.92
+    },
+    {
+        "text": "are two portions of the array right",
+        "start": 154.66,
+        "duration": 4.2
+    },
+    {
+        "text": "there's a left portion and a right",
+        "start": 156.4,
+        "duration": 6.089
+    },
+    {
+        "text": "portion both independently are sorted",
+        "start": 158.86,
+        "duration": 5.159
+    },
+    {
+        "text": "right so it's like we have two halves",
+        "start": 162.489,
+        "duration": 3.78
+    },
+    {
+        "text": "that are sorted and so we know that a",
+        "start": 164.019,
+        "duration": 5.101
+    },
+    {
+        "text": "binary search usually has three pointers",
+        "start": 166.269,
+        "duration": 7.56
+    },
+    {
+        "text": "a left pointer a middle pointer and a",
+        "start": 169.12,
+        "duration": 9.57
+    },
+    {
+        "text": "right pointer the left is always going",
+        "start": 173.829,
+        "duration": 7.851
+    },
+    {
+        "text": "to be less than or equal to the right",
+        "start": 178.69,
+        "duration": 5.49
+    },
+    {
+        "text": "this is just something you kind of know",
+        "start": 181.68,
+        "duration": 4.779
+    },
+    {
+        "text": "from binary search so let's say our",
+        "start": 184.18,
+        "duration": 5.46
+    },
+    {
+        "text": "middle value was six at some point right",
+        "start": 186.459,
+        "duration": 5.731
+    },
+    {
+        "text": "this means that we're in the left sorted",
+        "start": 189.64,
+        "duration": 4.8
+    },
+    {
+        "text": "portion of the array so can we use that",
+        "start": 192.19,
+        "duration": 5.16
+    },
+    {
+        "text": "to our advantage so let's say our target",
+        "start": 194.44,
+        "duration": 6.72
+    },
+    {
+        "text": "was greater than six in that case we",
+        "start": 197.35,
+        "duration": 6.03
+    },
+    {
+        "text": "know for sure since we're in the left",
+        "start": 201.16,
+        "duration": 4.38
+    },
+    {
+        "text": "sorted portion of the array none of",
+        "start": 203.38,
+        "duration": 6.06
+    },
+    {
+        "text": "these values are greater than six so we",
+        "start": 205.54,
+        "duration": 6.3
+    },
+    {
+        "text": "can basically say these are eliminated",
+        "start": 209.44,
+        "duration": 5.31
+    },
+    {
+        "text": "let's run binary search on this portion",
+        "start": 211.84,
+        "duration": 5.13
+    },
+    {
+        "text": "now right so that's pretty easy if we",
+        "start": 214.75,
+        "duration": 3.69
+    },
+    {
+        "text": "know that we're in the left sorted",
+        "start": 216.97,
+        "duration": 3.69
+    },
+    {
+        "text": "portion and our target is greater than",
+        "start": 218.44,
+        "duration": 4.109
+    },
+    {
+        "text": "the middle this is what we can do",
+        "start": 220.66,
+        "duration": 4.949
+    },
+    {
+        "text": "what if our target is less than the",
+        "start": 222.549,
+        "duration": 5.401
+    },
+    {
+        "text": "middle value so what if our target was",
+        "start": 225.609,
+        "duration": 4.891
+    },
+    {
+        "text": "less than six well these two numbers are",
+        "start": 227.95,
+        "duration": 5.25
+    },
+    {
+        "text": "less than six and these three numbers",
+        "start": 230.5,
+        "duration": 4.56
+    },
+    {
+        "text": "are less than six so how do we know",
+        "start": 233.2,
+        "duration": 3.84
+    },
+    {
+        "text": "which way to go do we go left or do we",
+        "start": 235.06,
+        "duration": 3.72
+    },
+    {
+        "text": "go right because we can't go both",
+        "start": 237.04,
+        "duration": 4.8
+    },
+    {
+        "text": "directions in a binary search the key is",
+        "start": 238.78,
+        "duration": 5.4
+    },
+    {
+        "text": "to see that in our left sorted portion",
+        "start": 241.84,
+        "duration": 5.489
+    },
+    {
+        "text": "the smallest value is right here right",
+        "start": 244.18,
+        "duration": 5.61
+    },
+    {
+        "text": "or on our graph it's right here",
+        "start": 247.329,
+        "duration": 6.06
+    },
+    {
+        "text": "so if our target is even smaller than",
+        "start": 249.79,
+        "duration": 8.099
+    },
+    {
+        "text": "this left value for in that case we know",
+        "start": 253.389,
+        "duration": 7.08
+    },
+    {
+        "text": "that we don't have to search for we",
+        "start": 257.889,
+        "duration": 4.231
+    },
+    {
+        "text": "don't have to search five we don't have",
+        "start": 260.469,
+        "duration": 3.001
+    },
+    {
+        "text": "to search six week",
+        "start": 262.12,
+        "duration": 9.36
+    },
+    {
+        "text": "binarysearch over here but if our value",
+        "start": 263.47,
+        "duration": 11.28
+    },
+    {
+        "text": "is greater than or equal to four then",
+        "start": 271.48,
+        "duration": 5.16
+    },
+    {
+        "text": "that means we're gonna run binary search",
+        "start": 274.75,
+        "duration": 4.74
+    },
+    {
+        "text": "on this on these two values right it's",
+        "start": 276.64,
+        "duration": 5.19
+    },
+    {
+        "text": "less than six but it's greater than or",
+        "start": 279.49,
+        "duration": 4.8
+    },
+    {
+        "text": "equal to four so we can run binary",
+        "start": 281.83,
+        "duration": 4.47
+    },
+    {
+        "text": "search on these two values we can",
+        "start": 284.29,
+        "duration": 3.96
+    },
+    {
+        "text": "eliminate all of these from",
+        "start": 286.3,
+        "duration": 7.41
+    },
+    {
+        "text": "consideration so all of that is if we",
+        "start": 288.25,
+        "duration": 7.02
+    },
+    {
+        "text": "were in the left sorted portion of the",
+        "start": 293.71,
+        "duration": 3.69
+    },
+    {
+        "text": "array right now what happens if we're in",
+        "start": 295.27,
+        "duration": 3.96
+    },
+    {
+        "text": "the right sorted portion of the array",
+        "start": 297.4,
+        "duration": 7.38
+    },
+    {
+        "text": "let's say our middle was one and let's",
+        "start": 299.23,
+        "duration": 7.89
+    },
+    {
+        "text": "say we knew somehow that we were in the",
+        "start": 304.78,
+        "duration": 4.71
+    },
+    {
+        "text": "right sorted portion of the array what",
+        "start": 307.12,
+        "duration": 4.89
+    },
+    {
+        "text": "if our target was less than one well",
+        "start": 309.49,
+        "duration": 6.15
+    },
+    {
+        "text": "then we know we have to search the left",
+        "start": 312.01,
+        "duration": 5.58
+    },
+    {
+        "text": "the only value less than one is right",
+        "start": 315.64,
+        "duration": 4.68
+    },
+    {
+        "text": "here so we're gonna search the left",
+        "start": 317.59,
+        "duration": 6.54
+    },
+    {
+        "text": "portion of this array we're not gonna",
+        "start": 320.32,
+        "duration": 6.15
+    },
+    {
+        "text": "look at one we're not gonna look at two",
+        "start": 324.13,
+        "duration": 4.41
+    },
+    {
+        "text": "anymore any value to the right of one is",
+        "start": 326.47,
+        "duration": 3.51
+    },
+    {
+        "text": "greater than one so we don't have to",
+        "start": 328.54,
+        "duration": 3.45
+    },
+    {
+        "text": "look at them we're just gonna run binary",
+        "start": 329.98,
+        "duration": 4.53
+    },
+    {
+        "text": "search on these elements we don't",
+        "start": 331.99,
+        "duration": 4.23
+    },
+    {
+        "text": "necessarily have to know where the pivot",
+        "start": 334.51,
+        "duration": 4.04
+    },
+    {
+        "text": "even is we just know we have to go left",
+        "start": 336.22,
+        "duration": 5.16
+    },
+    {
+        "text": "but what if our target was greater than",
+        "start": 338.55,
+        "duration": 4.3
+    },
+    {
+        "text": "one well then our solution could",
+        "start": 341.38,
+        "duration": 4.47
+    },
+    {
+        "text": "possibly be two it could also be any of",
+        "start": 342.85,
+        "duration": 6.27
+    },
+    {
+        "text": "these four values so then where do we go",
+        "start": 345.85,
+        "duration": 7.35
+    },
+    {
+        "text": "again we can use this rightmost value or",
+        "start": 349.12,
+        "duration": 6.96
+    },
+    {
+        "text": "the edge basically of our right to our",
+        "start": 353.2,
+        "duration": 3.63
+    },
+    {
+        "text": "advantage",
+        "start": 356.08,
+        "duration": 4.26
+    },
+    {
+        "text": "so if our target is greater than one and",
+        "start": 356.83,
+        "duration": 6.839
+    },
+    {
+        "text": "it's also greater than two that means we",
+        "start": 360.34,
+        "duration": 6.12
+    },
+    {
+        "text": "can again search this left portion we",
+        "start": 363.669,
+        "duration": 4.171
+    },
+    {
+        "text": "can eliminate these two from",
+        "start": 366.46,
+        "duration": 4.68
+    },
+    {
+        "text": "consideration but what if the opposite",
+        "start": 367.84,
+        "duration": 3.75
+    },
+    {
+        "text": "is true",
+        "start": 371.14,
+        "duration": 2.58
+    },
+    {
+        "text": "what if our target is greater than one",
+        "start": 371.59,
+        "duration": 4.8
+    },
+    {
+        "text": "but it's less than or equal to two in",
+        "start": 373.72,
+        "duration": 5.46
+    },
+    {
+        "text": "that case we only have to run binary",
+        "start": 376.39,
+        "duration": 5.7
+    },
+    {
+        "text": "search on the right portion of one every",
+        "start": 379.18,
+        "duration": 4.799
+    },
+    {
+        "text": "value to the right of one meaning we can",
+        "start": 382.09,
+        "duration": 3.75
+    },
+    {
+        "text": "eliminate all of these from",
+        "start": 383.979,
+        "duration": 6.511
+    },
+    {
+        "text": "consideration so that was a lot of",
+        "start": 385.84,
+        "duration": 6.81
+    },
+    {
+        "text": "discrete cases and it might be confusing",
+        "start": 390.49,
+        "duration": 3.81
+    },
+    {
+        "text": "I think it'll be a little easier to",
+        "start": 392.65,
+        "duration": 3.18
+    },
+    {
+        "text": "understand once we actually write the",
+        "start": 394.3,
+        "duration": 2.89
+    },
+    {
+        "text": "code but I think it's also",
+        "start": 395.83,
+        "duration": 3.43
+    },
+    {
+        "text": "important to visualize it and actually",
+        "start": 397.19,
+        "duration": 3.84
+    },
+    {
+        "text": "understand what's going on before you",
+        "start": 399.26,
+        "duration": 3.86
+    },
+    {
+        "text": "even write a single line of code and",
+        "start": 401.03,
+        "duration": 4.26
+    },
+    {
+        "text": "knowing what we just learned let's just",
+        "start": 403.12,
+        "duration": 5.11
+    },
+    {
+        "text": "go through this example of the target",
+        "start": 405.29,
+        "duration": 6.15
+    },
+    {
+        "text": "equal to zero and given this input array",
+        "start": 408.23,
+        "duration": 6.48
+    },
+    {
+        "text": "so initially our left pointer would be",
+        "start": 411.44,
+        "duration": 5.61
+    },
+    {
+        "text": "here our right pointer would be here our",
+        "start": 414.71,
+        "duration": 5.7
+    },
+    {
+        "text": "middle would be here so how do we even",
+        "start": 417.05,
+        "duration": 5.34
+    },
+    {
+        "text": "know if we're in the left sorted portion",
+        "start": 420.41,
+        "duration": 3.81
+    },
+    {
+        "text": "or the right sorted portion",
+        "start": 422.39,
+        "duration": 5.58
+    },
+    {
+        "text": "well the way I check is just if our",
+        "start": 424.22,
+        "duration": 8.82
+    },
+    {
+        "text": "middle value is greater than or equal to",
+        "start": 427.97,
+        "duration": 7.71
+    },
+    {
+        "text": "our left the actual value at that index",
+        "start": 433.04,
+        "duration": 4.98
+    },
+    {
+        "text": "if this is true then that means our",
+        "start": 435.68,
+        "duration": 5.19
+    },
+    {
+        "text": "middle value belongs to the left sorted",
+        "start": 438.02,
+        "duration": 5.43
+    },
+    {
+        "text": "portion if this wasn't true that means",
+        "start": 440.87,
+        "duration": 4.53
+    },
+    {
+        "text": "our middle values in the right sorted",
+        "start": 443.45,
+        "duration": 3.45
+    },
+    {
+        "text": "portion and we would write our if",
+        "start": 445.4,
+        "duration": 3.99
+    },
+    {
+        "text": "statements accordingly but knowing that",
+        "start": 446.9,
+        "duration": 4.85
+    },
+    {
+        "text": "we are in this left sorted portion right",
+        "start": 449.39,
+        "duration": 4.74
+    },
+    {
+        "text": "let's run through it so our target is",
+        "start": 451.75,
+        "duration": 6.19
+    },
+    {
+        "text": "zero that means our target is less than",
+        "start": 454.13,
+        "duration": 6.33
+    },
+    {
+        "text": "seven so our target is less than seven",
+        "start": 457.94,
+        "duration": 4.05
+    },
+    {
+        "text": "that means we could be looking here or",
+        "start": 460.46,
+        "duration": 3.209
+    },
+    {
+        "text": "we could be looking here so let's",
+        "start": 461.99,
+        "duration": 3.48
+    },
+    {
+        "text": "compare it to four now is our target",
+        "start": 463.669,
+        "duration": 4.441
+    },
+    {
+        "text": "less than the leftmost value well zero",
+        "start": 465.47,
+        "duration": 5.18
+    },
+    {
+        "text": "is less than four okay so that means",
+        "start": 468.11,
+        "duration": 4.98
+    },
+    {
+        "text": "we're all good we just have to search",
+        "start": 470.65,
+        "duration": 4.72
+    },
+    {
+        "text": "every value to the right of our middle",
+        "start": 473.09,
+        "duration": 6.74
+    },
+    {
+        "text": "value so we can eliminate all of these",
+        "start": 475.37,
+        "duration": 7.89
+    },
+    {
+        "text": "we can cross out our middle and left our",
+        "start": 479.83,
+        "duration": 5.8
+    },
+    {
+        "text": "new left is going to be here and our new",
+        "start": 483.26,
+        "duration": 5.46
+    },
+    {
+        "text": "middle is going to be here now in this",
+        "start": 485.63,
+        "duration": 5.64
+    },
+    {
+        "text": "case are we in the left sorted portion",
+        "start": 488.72,
+        "duration": 5.34
+    },
+    {
+        "text": "or the right sorted portion well among",
+        "start": 491.27,
+        "duration": 4.77
+    },
+    {
+        "text": "these three values the entire array is",
+        "start": 494.06,
+        "duration": 4.38
+    },
+    {
+        "text": "pretty much sorted so according to our",
+        "start": 496.04,
+        "duration": 4.98
+    },
+    {
+        "text": "thing according to our if statements",
+        "start": 498.44,
+        "duration": 4.17
+    },
+    {
+        "text": "were basically going to say that middle",
+        "start": 501.02,
+        "duration": 3.21
+    },
+    {
+        "text": "belongs to the left sorted portion",
+        "start": 502.61,
+        "duration": 3.809
+    },
+    {
+        "text": "because the entire thing is sorted so",
+        "start": 504.23,
+        "duration": 5.01
+    },
+    {
+        "text": "now we compare middle to target well our",
+        "start": 506.419,
+        "duration": 5.281
+    },
+    {
+        "text": "target is less than one so now we have",
+        "start": 509.24,
+        "duration": 4.53
+    },
+    {
+        "text": "to go left and if we compared it to the",
+        "start": 511.7,
+        "duration": 3.57
+    },
+    {
+        "text": "leftmost value zero",
+        "start": 513.77,
+        "duration": 3.54
+    },
+    {
+        "text": "our target is greater than or equal to",
+        "start": 515.27,
+        "duration": 3.81
+    },
+    {
+        "text": "not so we don't have to check anywhere",
+        "start": 517.31,
+        "duration": 4.2
+    },
+    {
+        "text": "else we only have to go left so we can",
+        "start": 519.08,
+        "duration": 4.68
+    },
+    {
+        "text": "eliminate these two from consideration",
+        "start": 521.51,
+        "duration": 5.73
+    },
+    {
+        "text": "and we're left with one value over here",
+        "start": 523.76,
+        "duration": 6.09
+    },
+    {
+        "text": "and that's our solution so",
+        "start": 527.24,
+        "duration": 5.099
+    },
+    {
+        "text": "this is kind of a visualization for it",
+        "start": 529.85,
+        "duration": 4.349
+    },
+    {
+        "text": "now let's actually look at the code to",
+        "start": 532.339,
+        "duration": 3.781
+    },
+    {
+        "text": "better understand what these cases are",
+        "start": 534.199,
+        "duration": 4.14
+    },
+    {
+        "text": "going to look like okay so when you're",
+        "start": 536.12,
+        "duration": 3.959
+    },
+    {
+        "text": "doing binary search first thing you do",
+        "start": 538.339,
+        "duration": 3.271
+    },
+    {
+        "text": "is initialize your pointer so we have a",
+        "start": 540.079,
+        "duration": 4.471
+    },
+    {
+        "text": "left and we have a right left is going",
+        "start": 541.61,
+        "duration": 4.8
+    },
+    {
+        "text": "to be 0 right is going to be the length",
+        "start": 544.55,
+        "duration": 6.06
+    },
+    {
+        "text": "of the array minus 1 our condition is",
+        "start": 546.41,
+        "duration": 6.479
+    },
+    {
+        "text": "while left is less than or equal to",
+        "start": 550.61,
+        "duration": 4.32
+    },
+    {
+        "text": "right because imagine we're given an",
+        "start": 552.889,
+        "duration": 5.581
+    },
+    {
+        "text": "array like this with just one value",
+        "start": 554.93,
+        "duration": 5.339
+    },
+    {
+        "text": "let's say it had one left and right",
+        "start": 558.47,
+        "duration": 3.929
+    },
+    {
+        "text": "would be equal in that case and we still",
+        "start": 560.269,
+        "duration": 4.56
+    },
+    {
+        "text": "have to check that one value so now we",
+        "start": 562.399,
+        "duration": 5.101
+    },
+    {
+        "text": "can compute the middle value middle is",
+        "start": 564.829,
+        "duration": 5.401
+    },
+    {
+        "text": "just going to be left + right / to the",
+        "start": 567.5,
+        "duration": 7.29
+    },
+    {
+        "text": "average of them and it's possible to the",
+        "start": 570.23,
+        "duration": 6.539
+    },
+    {
+        "text": "middle value could be the target if it",
+        "start": 574.79,
+        "duration": 9.75
+    },
+    {
+        "text": "is we simply return the index if that's",
+        "start": 576.769,
+        "duration": 10.471
+    },
+    {
+        "text": "not the case then we need to check which",
+        "start": 584.54,
+        "duration": 4.859
+    },
+    {
+        "text": "portion of the array are we in are we in",
+        "start": 587.24,
+        "duration": 6.3
+    },
+    {
+        "text": "the left sorted portion and like I",
+        "start": 589.399,
+        "duration": 6.591
+    },
+    {
+        "text": "mentioned before we can check that if",
+        "start": 593.54,
+        "duration": 8.76
+    },
+    {
+        "text": "the middle value is greater than the",
+        "start": 595.99,
+        "duration": 9.55
+    },
+    {
+        "text": "left value well greater than or equal",
+        "start": 602.3,
+        "duration": 5.279
+    },
+    {
+        "text": "right because it's possible that the",
+        "start": 605.54,
+        "duration": 3.539
+    },
+    {
+        "text": "middle value in the left value could be",
+        "start": 607.579,
+        "duration": 4.291
+    },
+    {
+        "text": "the same value the else condition would",
+        "start": 609.079,
+        "duration": 4.051
+    },
+    {
+        "text": "be that we're in the right sorted",
+        "start": 611.87,
+        "duration": 3.36
+    },
+    {
+        "text": "portion so the simplest case is that our",
+        "start": 613.13,
+        "duration": 5.449
+    },
+    {
+        "text": "target is greater than the middle value",
+        "start": 615.23,
+        "duration": 7.049
+    },
+    {
+        "text": "in that case we're going to search right",
+        "start": 618.579,
+        "duration": 6.461
+    },
+    {
+        "text": "so we can say our left pointer is now",
+        "start": 622.279,
+        "duration": 6.87
+    },
+    {
+        "text": "going to be mid plus 1 so if the target",
+        "start": 625.04,
+        "duration": 6.479
+    },
+    {
+        "text": "is actually less than the middle then we",
+        "start": 629.149,
+        "duration": 4.56
+    },
+    {
+        "text": "need to do something else so if the",
+        "start": 631.519,
+        "duration": 4.26
+    },
+    {
+        "text": "target is less than the middle but it's",
+        "start": 633.709,
+        "duration": 4.86
+    },
+    {
+        "text": "also less than the left most value in",
+        "start": 635.779,
+        "duration": 7.98
+    },
+    {
+        "text": "nums then we also have to search the",
+        "start": 638.569,
+        "duration": 7.26
+    },
+    {
+        "text": "right portion so we're gonna do left is",
+        "start": 643.759,
+        "duration": 4.801
+    },
+    {
+        "text": "mid plus 1 now notice how these two",
+        "start": 645.829,
+        "duration": 5.041
+    },
+    {
+        "text": "cases are evaluating to the same thing",
+        "start": 648.56,
+        "duration": 4.769
+    },
+    {
+        "text": "that means we can condense them we can",
+        "start": 650.87,
+        "duration": 6.12
+    },
+    {
+        "text": "get rid of this and say instead if the",
+        "start": 653.329,
+        "duration": 6.151
+    },
+    {
+        "text": "top if target is greater than the middle",
+        "start": 656.99,
+        "duration": 4.86
+    },
+    {
+        "text": "or",
+        "start": 659.48,
+        "duration": 5.52
+    },
+    {
+        "text": "if the target is less than the left-most",
+        "start": 661.85,
+        "duration": 6.24
+    },
+    {
+        "text": "value then we have to search the right",
+        "start": 665.0,
+        "duration": 8.01
+    },
+    {
+        "text": "portion so we can get rid of this and if",
+        "start": 668.09,
+        "duration": 8.97
+    },
+    {
+        "text": "this isn't true that means the target is",
+        "start": 673.01,
+        "duration": 6.51
+    },
+    {
+        "text": "less than the middle but it's greater",
+        "start": 677.06,
+        "duration": 4.86
+    },
+    {
+        "text": "than the left that means we search the",
+        "start": 679.52,
+        "duration": 4.47
+    },
+    {
+        "text": "left portions so we can update our right",
+        "start": 681.92,
+        "duration": 2.7
+    },
+    {
+        "text": "pointer",
+        "start": 683.99,
+        "duration": 5.43
+    },
+    {
+        "text": "I had a typo over here we don't we're",
+        "start": 684.62,
+        "duration": 6.24
+    },
+    {
+        "text": "not calling it left we're just calling",
+        "start": 689.42,
+        "duration": 4.86
+    },
+    {
+        "text": "it L for short and so this is if we were",
+        "start": 690.86,
+        "duration": 5.16
+    },
+    {
+        "text": "in the right sorted portion of the array",
+        "start": 694.28,
+        "duration": 7.32
+    },
+    {
+        "text": "the easy thing is if target is less than",
+        "start": 696.02,
+        "duration": 9.24
+    },
+    {
+        "text": "the middle that means we go left so we",
+        "start": 701.6,
+        "duration": 5.49
+    },
+    {
+        "text": "can update our right pointer to mid",
+        "start": 705.26,
+        "duration": 6.3
+    },
+    {
+        "text": "minus one so if this isn't true meaning",
+        "start": 707.09,
+        "duration": 7.29
+    },
+    {
+        "text": "target is greater than middle and the",
+        "start": 711.56,
+        "duration": 5.91
+    },
+    {
+        "text": "target is greater than the rightmost",
+        "start": 714.38,
+        "duration": 11.91
+    },
+    {
+        "text": "value that means we have to go left as",
+        "start": 717.47,
+        "duration": 11.94
+    },
+    {
+        "text": "well so write equals mid minus one",
+        "start": 726.29,
+        "duration": 5.61
+    },
+    {
+        "text": "notice again how these two are doing the",
+        "start": 729.41,
+        "duration": 4.71
+    },
+    {
+        "text": "exact same thing so we can condense them",
+        "start": 731.9,
+        "duration": 4.44
+    },
+    {
+        "text": "we can say at the top if the target is",
+        "start": 734.12,
+        "duration": 4.86
+    },
+    {
+        "text": "less than the middle or if target is",
+        "start": 736.34,
+        "duration": 5.94
+    },
+    {
+        "text": "greater than the rightmost value then",
+        "start": 738.98,
+        "duration": 5.01
+    },
+    {
+        "text": "we're going to search the left portion",
+        "start": 742.28,
+        "duration": 3.57
+    },
+    {
+        "text": "so we update our right pointer so we get",
+        "start": 743.99,
+        "duration": 5.6
+    },
+    {
+        "text": "rid of this and the else condition is",
+        "start": 745.85,
+        "duration": 7.35
+    },
+    {
+        "text": "that the target is greater than the",
+        "start": 749.59,
+        "duration": 6.61
+    },
+    {
+        "text": "middle value and the target is less than",
+        "start": 753.2,
+        "duration": 5.16
+    },
+    {
+        "text": "the right value in that case we only",
+        "start": 756.2,
+        "duration": 4.08
+    },
+    {
+        "text": "have to search the right portion of the",
+        "start": 758.36,
+        "duration": 4.23
+    },
+    {
+        "text": "array so we update our left pointer to",
+        "start": 760.28,
+        "duration": 5.28
+    },
+    {
+        "text": "mid plus one these are all of the cases",
+        "start": 762.59,
+        "duration": 5.31
+    },
+    {
+        "text": "right so if we find our result we're",
+        "start": 765.56,
+        "duration": 4.44
+    },
+    {
+        "text": "going to return it up here but if we",
+        "start": 767.9,
+        "duration": 3.96
+    },
+    {
+        "text": "don't find it we'll exit the loop and",
+        "start": 770.0,
+        "duration": 5.67
+    },
+    {
+        "text": "we'll return negative one and just as I",
+        "start": 771.86,
+        "duration": 5.37
+    },
+    {
+        "text": "expected because I just finished this",
+        "start": 775.67,
+        "duration": 3.27
+    },
+    {
+        "text": "problem like a half hour ago it worked",
+        "start": 777.23,
+        "duration": 4.23
+    },
+    {
+        "text": "perfectly so this is not an easy problem",
+        "start": 778.94,
+        "duration": 4.47
+    },
+    {
+        "text": "the code looks pretty easy but you",
+        "start": 781.46,
+        "duration": 4.11
+    },
+    {
+        "text": "really have to understand the discrete",
+        "start": 783.41,
+        "duration": 4.23
+    },
+    {
+        "text": "cases like are we in the left sorted",
+        "start": 785.57,
+        "duration": 3.93
+    },
+    {
+        "text": "portion or the right sorted portion and",
+        "start": 787.64,
+        "duration": 3.51
+    },
+    {
+        "text": "then what's going to happen as a result",
+        "start": 789.5,
+        "duration": 3.39
+    },
+    {
+        "text": "which part of the array do we have to",
+        "start": 791.15,
+        "duration": 3.989
+    },
+    {
+        "text": "check based on the",
+        "start": 792.89,
+        "duration": 4.049
+    },
+    {
+        "text": "Harrison conditions you really want to",
+        "start": 795.139,
+        "duration": 4.021
+    },
+    {
+        "text": "dry it out and kind of look at the",
+        "start": 796.939,
+        "duration": 4.26
+    },
+    {
+        "text": "picture before you write the code I hope",
+        "start": 799.16,
+        "duration": 4.38
+    },
+    {
+        "text": "this was helpful if it was leave a like",
+        "start": 801.199,
+        "duration": 5.841
+    },
+    {
+        "text": "and subscribe and thank you for watching",
+        "start": 803.54,
+        "duration": 3.5
+    }
+]

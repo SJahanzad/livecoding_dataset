@@ -1,0 +1,877 @@
+[
+    {
+        "text": "hey guys it's me again and let's solve",
+        "start": 0.08,
+        "duration": 3.76
+    },
+    {
+        "text": "another leak code problem",
+        "start": 2.399,
+        "duration": 3.681
+    },
+    {
+        "text": "merge two sorted lists so this is an",
+        "start": 3.84,
+        "duration": 3.519
+    },
+    {
+        "text": "easy problem",
+        "start": 6.08,
+        "duration": 3.28
+    },
+    {
+        "text": "it's a mainly fundamental problem",
+        "start": 7.359,
+        "duration": 3.921
+    },
+    {
+        "text": "there's nothing crazy about it but it's",
+        "start": 9.36,
+        "duration": 3.6
+    },
+    {
+        "text": "a pretty good problem to understand some",
+        "start": 11.28,
+        "duration": 3.12
+    },
+    {
+        "text": "basic stuff so",
+        "start": 12.96,
+        "duration": 3.52
+    },
+    {
+        "text": "we're given two linked lists right so",
+        "start": 14.4,
+        "duration": 3.52
+    },
+    {
+        "text": "this is the first one",
+        "start": 16.48,
+        "duration": 3.84
+    },
+    {
+        "text": "this is the second one both of them are",
+        "start": 17.92,
+        "duration": 4.56
+    },
+    {
+        "text": "already sorted and we just want to merge",
+        "start": 20.32,
+        "duration": 2.56
+    },
+    {
+        "text": "them",
+        "start": 22.48,
+        "duration": 3.28
+    },
+    {
+        "text": "into an output linked list the only",
+        "start": 22.88,
+        "duration": 3.36
+    },
+    {
+        "text": "catch",
+        "start": 25.76,
+        "duration": 3.679
+    },
+    {
+        "text": "is that we have to use the original",
+        "start": 26.24,
+        "duration": 5.439
+    },
+    {
+        "text": "nodes right like we can't create copies",
+        "start": 29.439,
+        "duration": 4.161
+    },
+    {
+        "text": "of the nodes so let's say we have",
+        "start": 31.679,
+        "duration": 5.441
+    },
+    {
+        "text": "list one and we have list two i'm just",
+        "start": 33.6,
+        "duration": 5.119
+    },
+    {
+        "text": "going to take them exactly from the",
+        "start": 37.12,
+        "duration": 2.959
+    },
+    {
+        "text": "example that they gave us",
+        "start": 38.719,
+        "duration": 3.84
+    },
+    {
+        "text": "so we can actually focus on the general",
+        "start": 40.079,
+        "duration": 4.0
+    },
+    {
+        "text": "algorithm itself",
+        "start": 42.559,
+        "duration": 3.52
+    },
+    {
+        "text": "so your intuition will probably solve",
+        "start": 44.079,
+        "duration": 3.521
+    },
+    {
+        "text": "this problem for you so",
+        "start": 46.079,
+        "duration": 3.041
+    },
+    {
+        "text": "it's basically since the lists are",
+        "start": 47.6,
+        "duration": 3.36
+    },
+    {
+        "text": "sorted we start at the beginning of both",
+        "start": 49.12,
+        "duration": 2.8
+    },
+    {
+        "text": "of them right",
+        "start": 50.96,
+        "duration": 3.68
+    },
+    {
+        "text": "now we can just compare the values so",
+        "start": 51.92,
+        "duration": 3.36
+    },
+    {
+        "text": "they're both",
+        "start": 54.64,
+        "duration": 2.64
+    },
+    {
+        "text": "one so it doesn't really matter which",
+        "start": 55.28,
+        "duration": 3.04
+    },
+    {
+        "text": "one we pick",
+        "start": 57.28,
+        "duration": 4.4
+    },
+    {
+        "text": "so we can just take uh i'll say list one",
+        "start": 58.32,
+        "duration": 4.399
+    },
+    {
+        "text": "right so we'll take",
+        "start": 61.68,
+        "duration": 3.119
+    },
+    {
+        "text": "this one and insert it in our output and",
+        "start": 62.719,
+        "duration": 4.881
+    },
+    {
+        "text": "then move to the next one",
+        "start": 64.799,
+        "duration": 4.881
+    },
+    {
+        "text": "and then just continue the algorithm the",
+        "start": 67.6,
+        "duration": 3.839
+    },
+    {
+        "text": "only catch here is that right now our",
+        "start": 69.68,
+        "duration": 2.799
+    },
+    {
+        "text": "output list",
+        "start": 71.439,
+        "duration": 4.72
+    },
+    {
+        "text": "is empty right so this kind of gives us",
+        "start": 72.479,
+        "duration": 6.481
+    },
+    {
+        "text": "an edge case because our we don't even",
+        "start": 76.159,
+        "duration": 4.561
+    },
+    {
+        "text": "have a list itself yet so",
+        "start": 78.96,
+        "duration": 3.44
+    },
+    {
+        "text": "what i like to do is just create like a",
+        "start": 80.72,
+        "duration": 3.759
+    },
+    {
+        "text": "dummy node so",
+        "start": 82.4,
+        "duration": 4.399
+    },
+    {
+        "text": "this is a pretty common technique and",
+        "start": 84.479,
+        "duration": 3.201
+    },
+    {
+        "text": "you avoid",
+        "start": 86.799,
+        "duration": 3.921
+    },
+    {
+        "text": "any edge cases you avoid the edge case",
+        "start": 87.68,
+        "duration": 4.72
+    },
+    {
+        "text": "of the initial empty list",
+        "start": 90.72,
+        "duration": 4.56
+    },
+    {
+        "text": "so let's say we start out with a list",
+        "start": 92.4,
+        "duration": 4.16
+    },
+    {
+        "text": "right this is a dummy node it can have",
+        "start": 95.28,
+        "duration": 2.799
+    },
+    {
+        "text": "any possible value so now we're going to",
+        "start": 96.56,
+        "duration": 2.32
+    },
+    {
+        "text": "insert one",
+        "start": 98.079,
+        "duration": 3.601
+    },
+    {
+        "text": "into our list now we're going to compare",
+        "start": 98.88,
+        "duration": 3.919
+    },
+    {
+        "text": "two values",
+        "start": 101.68,
+        "duration": 4.479
+    },
+    {
+        "text": "of two and one in this case the value",
+        "start": 102.799,
+        "duration": 5.28
+    },
+    {
+        "text": "from list two is smaller so we're gonna",
+        "start": 106.159,
+        "duration": 2.481
+    },
+    {
+        "text": "take it",
+        "start": 108.079,
+        "duration": 3.841
+    },
+    {
+        "text": "insert it into our output list one now",
+        "start": 108.64,
+        "duration": 5.439
+    },
+    {
+        "text": "we're gonna be comparing these two",
+        "start": 111.92,
+        "duration": 5.44
+    },
+    {
+        "text": "so two and three the value from list one",
+        "start": 114.079,
+        "duration": 4.0
+    },
+    {
+        "text": "is smaller",
+        "start": 117.36,
+        "duration": 4.64
+    },
+    {
+        "text": "we take it and insert it into our output",
+        "start": 118.079,
+        "duration": 6.0
+    },
+    {
+        "text": "two and then of course we can move to",
+        "start": 122.0,
+        "duration": 4.32
+    },
+    {
+        "text": "the last value in list one so now we're",
+        "start": 124.079,
+        "duration": 2.64
+    },
+    {
+        "text": "at",
+        "start": 126.32,
+        "duration": 2.96
+    },
+    {
+        "text": "four and three which one of them is",
+        "start": 126.719,
+        "duration": 3.121
+    },
+    {
+        "text": "smaller",
+        "start": 129.28,
+        "duration": 3.36
+    },
+    {
+        "text": "of course three which is the value in",
+        "start": 129.84,
+        "duration": 3.28
+    },
+    {
+        "text": "list",
+        "start": 132.64,
+        "duration": 3.84
+    },
+    {
+        "text": "two i'm running out of space",
+        "start": 133.12,
+        "duration": 5.199
+    },
+    {
+        "text": "but i think you get the idea at this",
+        "start": 136.48,
+        "duration": 4.32
+    },
+    {
+        "text": "point so now we're at the two last",
+        "start": 138.319,
+        "duration": 5.041
+    },
+    {
+        "text": "values from each list",
+        "start": 140.8,
+        "duration": 4.799
+    },
+    {
+        "text": "we'll just take the value from list one",
+        "start": 143.36,
+        "duration": 3.28
+    },
+    {
+        "text": "and add it",
+        "start": 145.599,
+        "duration": 2.64
+    },
+    {
+        "text": "which is four they're both the same so",
+        "start": 146.64,
+        "duration": 3.44
+    },
+    {
+        "text": "it doesn't matter now this is the last",
+        "start": 148.239,
+        "duration": 3.441
+    },
+    {
+        "text": "edge case that we have to worry about so",
+        "start": 150.08,
+        "duration": 2.72
+    },
+    {
+        "text": "now",
+        "start": 151.68,
+        "duration": 2.48
+    },
+    {
+        "text": "for list one there aren't any more",
+        "start": 152.8,
+        "duration": 4.0
+    },
+    {
+        "text": "values left right so we can't really",
+        "start": 154.16,
+        "duration": 4.96
+    },
+    {
+        "text": "continue our algorithm lucky for us",
+        "start": 156.8,
+        "duration": 4.64
+    },
+    {
+        "text": "there's only one value left in list two",
+        "start": 159.12,
+        "duration": 3.28
+    },
+    {
+        "text": "but it's not",
+        "start": 161.44,
+        "duration": 2.64
+    },
+    {
+        "text": "always going to be the case right maybe",
+        "start": 162.4,
+        "duration": 3.839
+    },
+    {
+        "text": "there could be a bunch of other values",
+        "start": 164.08,
+        "duration": 5.36
+    },
+    {
+        "text": "right four five six there could be other",
+        "start": 166.239,
+        "duration": 3.841
+    },
+    {
+        "text": "values",
+        "start": 169.44,
+        "duration": 2.48
+    },
+    {
+        "text": "in list 2. now what would we do in this",
+        "start": 170.08,
+        "duration": 3.68
+    },
+    {
+        "text": "case well we can",
+        "start": 171.92,
+        "duration": 4.08
+    },
+    {
+        "text": "do a really easy thing which is just",
+        "start": 173.76,
+        "duration": 3.6
+    },
+    {
+        "text": "take the remaining",
+        "start": 176.0,
+        "duration": 4.8
+    },
+    {
+        "text": "portion of the list so if we",
+        "start": 177.36,
+        "duration": 6.32
+    },
+    {
+        "text": "run out so if one of the lists is empty",
+        "start": 180.8,
+        "duration": 3.92
+    },
+    {
+        "text": "of course",
+        "start": 183.68,
+        "duration": 3.6
+    },
+    {
+        "text": "the the list two in this case is still",
+        "start": 184.72,
+        "duration": 4.32
+    },
+    {
+        "text": "sorted so we can literally just take",
+        "start": 187.28,
+        "duration": 2.879
+    },
+    {
+        "text": "that list",
+        "start": 189.04,
+        "duration": 3.919
+    },
+    {
+        "text": "insert it into the end of our result",
+        "start": 190.159,
+        "duration": 3.921
+    },
+    {
+        "text": "right",
+        "start": 192.959,
+        "duration": 3.521
+    },
+    {
+        "text": "so that's basically the idea okay now",
+        "start": 194.08,
+        "duration": 4.0
+    },
+    {
+        "text": "let's write the code so remember",
+        "start": 196.48,
+        "duration": 4.64
+    },
+    {
+        "text": "i like and most people like to use this",
+        "start": 198.08,
+        "duration": 5.519
+    },
+    {
+        "text": "technique of creating a dummy node",
+        "start": 201.12,
+        "duration": 4.0
+    },
+    {
+        "text": "so you don't have to worry about the",
+        "start": 203.599,
+        "duration": 4.321
+    },
+    {
+        "text": "edge case of inserting into an empty",
+        "start": 205.12,
+        "duration": 4.399
+    },
+    {
+        "text": "list",
+        "start": 207.92,
+        "duration": 4.959
+    },
+    {
+        "text": "the tail of our list is initially",
+        "start": 209.519,
+        "duration": 5.681
+    },
+    {
+        "text": "i'm just going to say you know the dummy",
+        "start": 212.879,
+        "duration": 4.0
+    },
+    {
+        "text": "so",
+        "start": 215.2,
+        "duration": 3.36
+    },
+    {
+        "text": "now we're going to keep going we're",
+        "start": 216.879,
+        "duration": 3.681
+    },
+    {
+        "text": "going to iterate through these two lists",
+        "start": 218.56,
+        "duration": 3.599
+    },
+    {
+        "text": "what's the condition that we're going to",
+        "start": 220.56,
+        "duration": 3.52
+    },
+    {
+        "text": "do that basically",
+        "start": 222.159,
+        "duration": 4.241
+    },
+    {
+        "text": "if both of them are non-empty right",
+        "start": 224.08,
+        "duration": 3.04
+    },
+    {
+        "text": "because that's",
+        "start": 226.4,
+        "duration": 2.559
+    },
+    {
+        "text": "when we can actually compare the two",
+        "start": 227.12,
+        "duration": 4.0
+    },
+    {
+        "text": "values so while list one and",
+        "start": 228.959,
+        "duration": 4.961
+    },
+    {
+        "text": "list two are non-null so now we can do",
+        "start": 231.12,
+        "duration": 4.0
+    },
+    {
+        "text": "our comparison",
+        "start": 233.92,
+        "duration": 5.44
+    },
+    {
+        "text": "so if the value of list one",
+        "start": 235.12,
+        "duration": 8.24
+    },
+    {
+        "text": "is less than the value of list2",
+        "start": 239.36,
+        "duration": 4.0
+    },
+    {
+        "text": "then of course we're going to take the",
+        "start": 243.439,
+        "duration": 4.481
+    },
+    {
+        "text": "list1 value and insert it into",
+        "start": 245.439,
+        "duration": 5.681
+    },
+    {
+        "text": "our tail so tail dot",
+        "start": 247.92,
+        "duration": 6.64
+    },
+    {
+        "text": "next is going to be the node itself",
+        "start": 251.12,
+        "duration": 5.679
+    },
+    {
+        "text": "right list one node",
+        "start": 254.56,
+        "duration": 5.6
+    },
+    {
+        "text": "and then we can of course update our",
+        "start": 256.799,
+        "duration": 6.321
+    },
+    {
+        "text": "list one pointer",
+        "start": 260.16,
+        "duration": 2.96
+    },
+    {
+        "text": "now the else case is if list two",
+        "start": 264.56,
+        "duration": 5.68
+    },
+    {
+        "text": "is less than or equal right so if they",
+        "start": 268.08,
+        "duration": 4.559
+    },
+    {
+        "text": "were equal the else condition would",
+        "start": 270.24,
+        "duration": 4.399
+    },
+    {
+        "text": "evaluate so we're going to do the exact",
+        "start": 272.639,
+        "duration": 3.601
+    },
+    {
+        "text": "same thing except",
+        "start": 274.639,
+        "duration": 9.201
+    },
+    {
+        "text": "list two is going to be inserted",
+        "start": 276.24,
+        "duration": 7.6
+    },
+    {
+        "text": "and don't forget we do have to update",
+        "start": 287.52,
+        "duration": 3.84
+    },
+    {
+        "text": "our tail pointer but the tail pointer is",
+        "start": 289.44,
+        "duration": 4.0
+    },
+    {
+        "text": "going to be updated regardless of which",
+        "start": 291.36,
+        "duration": 3.92
+    },
+    {
+        "text": "node we insert into our list so that's",
+        "start": 293.44,
+        "duration": 3.6
+    },
+    {
+        "text": "why i'm not putting it in either of the",
+        "start": 295.28,
+        "duration": 4.479
+    },
+    {
+        "text": "conditionals",
+        "start": 297.04,
+        "duration": 2.719
+    },
+    {
+        "text": "and you might be tempted to just say",
+        "start": 301.199,
+        "duration": 3.72
+    },
+    {
+        "text": "return",
+        "start": 303.36,
+        "duration": 4.24
+    },
+    {
+        "text": "dummy.next return the list but",
+        "start": 304.919,
+        "duration": 5.481
+    },
+    {
+        "text": "don't forget our condition was list one",
+        "start": 307.6,
+        "duration": 4.72
+    },
+    {
+        "text": "and list two are non-null what if one of",
+        "start": 310.4,
+        "duration": 2.639
+    },
+    {
+        "text": "them",
+        "start": 312.32,
+        "duration": 3.2
+    },
+    {
+        "text": "is empty but the other one isn't right",
+        "start": 313.039,
+        "duration": 4.641
+    },
+    {
+        "text": "now well in that case we want to find",
+        "start": 315.52,
+        "duration": 3.92
+    },
+    {
+        "text": "the non-empty list",
+        "start": 317.68,
+        "duration": 4.16
+    },
+    {
+        "text": "and then insert it at the end of our",
+        "start": 319.44,
+        "duration": 3.199
+    },
+    {
+        "text": "result so if",
+        "start": 321.84,
+        "duration": 4.079
+    },
+    {
+        "text": "l1 is not null then we'll say tail",
+        "start": 322.639,
+        "duration": 6.801
+    },
+    {
+        "text": "dot next is equal to l1 so we're just",
+        "start": 325.919,
+        "duration": 5.761
+    },
+    {
+        "text": "taking that remaining portion of l1",
+        "start": 329.44,
+        "duration": 4.0
+    },
+    {
+        "text": "and inserting it into the end of the",
+        "start": 331.68,
+        "duration": 3.359
+    },
+    {
+        "text": "list",
+        "start": 333.44,
+        "duration": 4.72
+    },
+    {
+        "text": "else if l2 is non-null we would do the",
+        "start": 335.039,
+        "duration": 4.321
+    },
+    {
+        "text": "exact same thing",
+        "start": 338.16,
+        "duration": 4.879
+    },
+    {
+        "text": "with l2 uh only one of them can be",
+        "start": 339.36,
+        "duration": 6.64
+    },
+    {
+        "text": "non-null so let me just run it to prove",
+        "start": 343.039,
+        "duration": 5.521
+    },
+    {
+        "text": "to myself that it still works",
+        "start": 346.0,
+        "duration": 5.919
+    },
+    {
+        "text": "and yep it does and some random",
+        "start": 348.56,
+        "duration": 5.28
+    },
+    {
+        "text": "percentages that always seem to change",
+        "start": 351.919,
+        "duration": 3.28
+    },
+    {
+        "text": "right now it's 65",
+        "start": 353.84,
+        "duration": 3.12
+    },
+    {
+        "text": "but i'm sure if i submit it again it",
+        "start": 355.199,
+        "duration": 4.401
+    },
+    {
+        "text": "could be 10 it could be 99",
+        "start": 356.96,
+        "duration": 4.16
+    },
+    {
+        "text": "i don't know why leak code is so",
+        "start": 359.6,
+        "duration": 3.2
+    },
+    {
+        "text": "inconsistent with this",
+        "start": 361.12,
+        "duration": 4.16
+    },
+    {
+        "text": "but that's besides the point if this was",
+        "start": 362.8,
+        "duration": 4.0
+    },
+    {
+        "text": "helpful please leave a like and",
+        "start": 365.28,
+        "duration": 2.24
+    },
+    {
+        "text": "subscribe",
+        "start": 366.8,
+        "duration": 2.64
+    },
+    {
+        "text": "and thank you for watching and feel free",
+        "start": 367.52,
+        "duration": 3.679
+    },
+    {
+        "text": "to suggest any other problems that you",
+        "start": 369.44,
+        "duration": 8.24
+    },
+    {
+        "text": "would like to see solved",
+        "start": 371.199,
+        "duration": 6.481
+    }
+]

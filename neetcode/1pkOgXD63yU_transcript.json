@@ -1,0 +1,1137 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.199
+    },
+    {
+        "text": "write some more neat code today",
+        "start": 1.68,
+        "duration": 3.04
+    },
+    {
+        "text": "and don't forget to hit the like button",
+        "start": 3.199,
+        "duration": 3.6
+    },
+    {
+        "text": "it supports the channel a lot so today",
+        "start": 4.72,
+        "duration": 4.32
+    },
+    {
+        "text": "let's look at leak code 121",
+        "start": 6.799,
+        "duration": 4.88
+    },
+    {
+        "text": "best time to buy and sell a stock so if",
+        "start": 9.04,
+        "duration": 4.4
+    },
+    {
+        "text": "you know a little about the stock market",
+        "start": 11.679,
+        "duration": 5.281
+    },
+    {
+        "text": "the saying is usually buy low",
+        "start": 13.44,
+        "duration": 6.72
+    },
+    {
+        "text": "and sell high so in this case",
+        "start": 16.96,
+        "duration": 5.76
+    },
+    {
+        "text": "we're given an input array now each",
+        "start": 20.16,
+        "duration": 3.199
+    },
+    {
+        "text": "value",
+        "start": 22.72,
+        "duration": 3.84
+    },
+    {
+        "text": "represents the price of the of a stock",
+        "start": 23.359,
+        "duration": 6.721
+    },
+    {
+        "text": "at a particular day and we we",
+        "start": 26.56,
+        "duration": 6.24
+    },
+    {
+        "text": "are given one transaction meaning we can",
+        "start": 30.08,
+        "duration": 3.2
+    },
+    {
+        "text": "buy",
+        "start": 32.8,
+        "duration": 3.52
+    },
+    {
+        "text": "on one of these days and then sell on",
+        "start": 33.28,
+        "duration": 4.24
+    },
+    {
+        "text": "another day",
+        "start": 36.32,
+        "duration": 4.399
+    },
+    {
+        "text": "and we want a transaction that maximizes",
+        "start": 37.52,
+        "duration": 5.28
+    },
+    {
+        "text": "our profit and then we want to return",
+        "start": 40.719,
+        "duration": 3.281
+    },
+    {
+        "text": "that profit in this",
+        "start": 42.8,
+        "duration": 4.16
+    },
+    {
+        "text": "case if we buy on day two when the price",
+        "start": 44.0,
+        "duration": 3.2
+    },
+    {
+        "text": "is",
+        "start": 46.96,
+        "duration": 3.2
+    },
+    {
+        "text": "one and sell day five when the price is",
+        "start": 47.2,
+        "duration": 3.44
+    },
+    {
+        "text": "six",
+        "start": 50.16,
+        "duration": 1.919
+    },
+    {
+        "text": "that's what's going to maximize the",
+        "start": 50.64,
+        "duration": 3.84
+    },
+    {
+        "text": "profit for us so as always",
+        "start": 52.079,
+        "duration": 3.921
+    },
+    {
+        "text": "i'm going to draw a picture and show you",
+        "start": 54.48,
+        "duration": 3.2
+    },
+    {
+        "text": "that this problem is actually not too",
+        "start": 56.0,
+        "duration": 2.079
+    },
+    {
+        "text": "bad",
+        "start": 57.68,
+        "duration": 3.84
+    },
+    {
+        "text": "even the optimal solution so on day one",
+        "start": 58.079,
+        "duration": 6.961
+    },
+    {
+        "text": "it was at price seven and then it went",
+        "start": 61.52,
+        "duration": 6.88
+    },
+    {
+        "text": "down all the way to price one",
+        "start": 65.04,
+        "duration": 6.16
+    },
+    {
+        "text": "the next day it went from price one all",
+        "start": 68.4,
+        "duration": 4.0
+    },
+    {
+        "text": "the way up to price",
+        "start": 71.2,
+        "duration": 3.12
+    },
+    {
+        "text": "five and we could just keep going with",
+        "start": 72.4,
+        "duration": 3.2
+    },
+    {
+        "text": "this right so",
+        "start": 74.32,
+        "duration": 3.68
+    },
+    {
+        "text": "next day went down and the next day it",
+        "start": 75.6,
+        "duration": 3.44
+    },
+    {
+        "text": "went up",
+        "start": 78.0,
+        "duration": 4.24
+    },
+    {
+        "text": "and the last day it went down again",
+        "start": 79.04,
+        "duration": 5.04
+    },
+    {
+        "text": "so looking at the picture it's pretty",
+        "start": 82.24,
+        "duration": 3.12
+    },
+    {
+        "text": "clear that",
+        "start": 84.08,
+        "duration": 4.88
+    },
+    {
+        "text": "the max profit we can get is simply by",
+        "start": 85.36,
+        "duration": 4.799
+    },
+    {
+        "text": "taking",
+        "start": 88.96,
+        "duration": 4.64
+    },
+    {
+        "text": "the minimum here and the max",
+        "start": 90.159,
+        "duration": 6.401
+    },
+    {
+        "text": "here and if we look at the actual values",
+        "start": 93.6,
+        "duration": 3.68
+    },
+    {
+        "text": "for that",
+        "start": 96.56,
+        "duration": 4.08
+    },
+    {
+        "text": "we see that this is one this",
+        "start": 97.28,
+        "duration": 6.879
+    },
+    {
+        "text": "is six so the profit is gonna be",
+        "start": 100.64,
+        "duration": 6.88
+    },
+    {
+        "text": "six minus one which is",
+        "start": 104.159,
+        "duration": 6.801
+    },
+    {
+        "text": "five but notice how we there's actually",
+        "start": 107.52,
+        "duration": 4.72
+    },
+    {
+        "text": "a greater",
+        "start": 110.96,
+        "duration": 3.28
+    },
+    {
+        "text": "maximum than this one right like this is",
+        "start": 112.24,
+        "duration": 3.28
+    },
+    {
+        "text": "six but this is",
+        "start": 114.24,
+        "duration": 4.64
+    },
+    {
+        "text": "seven so why can't we just do this",
+        "start": 115.52,
+        "duration": 6.4
+    },
+    {
+        "text": "because then we get seven minus one",
+        "start": 118.88,
+        "duration": 4.64
+    },
+    {
+        "text": "which is six which is",
+        "start": 121.92,
+        "duration": 4.72
+    },
+    {
+        "text": "even bigger than five well it turns out",
+        "start": 123.52,
+        "duration": 4.959
+    },
+    {
+        "text": "we know that time",
+        "start": 126.64,
+        "duration": 5.12
+    },
+    {
+        "text": "moves in one direction right we can't go",
+        "start": 128.479,
+        "duration": 8.561
+    },
+    {
+        "text": "back in time to sell at this price",
+        "start": 131.76,
+        "duration": 6.88
+    },
+    {
+        "text": "so how are we going to solve that",
+        "start": 137.04,
+        "duration": 4.16
+    },
+    {
+        "text": "problem well there's a pretty common",
+        "start": 138.64,
+        "duration": 5.36
+    },
+    {
+        "text": "programming technique two pointers so",
+        "start": 141.2,
+        "duration": 4.56
+    },
+    {
+        "text": "we're gonna initialize",
+        "start": 144.0,
+        "duration": 4.8
+    },
+    {
+        "text": "a left pointer on day one",
+        "start": 145.76,
+        "duration": 6.16
+    },
+    {
+        "text": "and our right pointer on day two which",
+        "start": 148.8,
+        "duration": 4.159
+    },
+    {
+        "text": "makes sense",
+        "start": 151.92,
+        "duration": 4.0
+    },
+    {
+        "text": "right is gonna be to the right of left",
+        "start": 152.959,
+        "duration": 4.0
+    },
+    {
+        "text": "and so we're going to see",
+        "start": 155.92,
+        "duration": 3.52
+    },
+    {
+        "text": "what's the current profit right now from",
+        "start": 156.959,
+        "duration": 3.201
+    },
+    {
+        "text": "here",
+        "start": 159.44,
+        "duration": 3.439
+    },
+    {
+        "text": "to here well it's going down right",
+        "start": 160.16,
+        "duration": 5.28
+    },
+    {
+        "text": "that's not good it's negative",
+        "start": 162.879,
+        "duration": 5.921
+    },
+    {
+        "text": "and in this case left is going to be the",
+        "start": 165.44,
+        "duration": 4.799
+    },
+    {
+        "text": "day that we buy",
+        "start": 168.8,
+        "duration": 4.24
+    },
+    {
+        "text": "and write is gonna be the day that we",
+        "start": 170.239,
+        "duration": 3.841
+    },
+    {
+        "text": "sell",
+        "start": 173.04,
+        "duration": 2.479
+    },
+    {
+        "text": "so the first thing you're gonna notice",
+        "start": 174.08,
+        "duration": 3.68
+    },
+    {
+        "text": "is it's down right it's negative",
+        "start": 175.519,
+        "duration": 4.0
+    },
+    {
+        "text": "this is not good we don't want a",
+        "start": 177.76,
+        "duration": 3.839
+    },
+    {
+        "text": "negative profit why would we",
+        "start": 179.519,
+        "duration": 5.281
+    },
+    {
+        "text": "buy left when we can buy right right",
+        "start": 181.599,
+        "duration": 7.041
+    },
+    {
+        "text": "is less than left why would i pay",
+        "start": 184.8,
+        "duration": 6.719
+    },
+    {
+        "text": "seven when i could wait one day and pay",
+        "start": 188.64,
+        "duration": 4.48
+    },
+    {
+        "text": "one",
+        "start": 191.519,
+        "duration": 3.44
+    },
+    {
+        "text": "so that's basically how the algorithm",
+        "start": 193.12,
+        "duration": 3.039
+    },
+    {
+        "text": "works since",
+        "start": 194.959,
+        "duration": 4.241
+    },
+    {
+        "text": "our right value is less than left we're",
+        "start": 196.159,
+        "duration": 4.72
+    },
+    {
+        "text": "gonna update our pointer",
+        "start": 199.2,
+        "duration": 4.959
+    },
+    {
+        "text": "left so left is now gonna be",
+        "start": 200.879,
+        "duration": 6.801
+    },
+    {
+        "text": "on day two and right is gonna be on",
+        "start": 204.159,
+        "duration": 6.64
+    },
+    {
+        "text": "day three so now we see",
+        "start": 207.68,
+        "duration": 6.08
+    },
+    {
+        "text": "that the right value is actually greater",
+        "start": 210.799,
+        "duration": 4.08
+    },
+    {
+        "text": "than the left value",
+        "start": 213.76,
+        "duration": 4.24
+    },
+    {
+        "text": "but what's the profit",
+        "start": 214.879,
+        "duration": 3.121
+    },
+    {
+        "text": "the profit in this case is going to be 5",
+        "start": 218.4,
+        "duration": 3.6
+    },
+    {
+        "text": "minus",
+        "start": 221.2,
+        "duration": 4.319
+    },
+    {
+        "text": "1 which we know equals 4",
+        "start": 222.0,
+        "duration": 7.44
+    },
+    {
+        "text": "which is so far our current max profit",
+        "start": 225.519,
+        "duration": 6.161
+    },
+    {
+        "text": "so for the current max i'm going to put",
+        "start": 229.44,
+        "duration": 4.079
+    },
+    {
+        "text": "a 4.",
+        "start": 231.68,
+        "duration": 4.479
+    },
+    {
+        "text": "and in this case since our left pointer",
+        "start": 233.519,
+        "duration": 4.64
+    },
+    {
+        "text": "is less than our right pointer",
+        "start": 236.159,
+        "duration": 4.481
+    },
+    {
+        "text": "since we're buying low and selling high",
+        "start": 238.159,
+        "duration": 3.681
+    },
+    {
+        "text": "that means we can leave",
+        "start": 240.64,
+        "duration": 3.04
+    },
+    {
+        "text": "our left pointer over here and we only",
+        "start": 241.84,
+        "duration": 4.319
+    },
+    {
+        "text": "have to update our right pointer",
+        "start": 243.68,
+        "duration": 4.96
+    },
+    {
+        "text": "now let's compare our left and right so",
+        "start": 246.159,
+        "duration": 4.961
+    },
+    {
+        "text": "we're buying here we're selling here",
+        "start": 248.64,
+        "duration": 6.08
+    },
+    {
+        "text": "in that case the profit is going to be 3",
+        "start": 251.12,
+        "duration": 6.639
+    },
+    {
+        "text": "minus 1 which is only",
+        "start": 254.72,
+        "duration": 5.68
+    },
+    {
+        "text": "2. so if you take a look at our current",
+        "start": 257.759,
+        "duration": 4.961
+    },
+    {
+        "text": "max it's 4 so we're not going to update",
+        "start": 260.4,
+        "duration": 3.92
+    },
+    {
+        "text": "our max profit",
+        "start": 262.72,
+        "duration": 3.6
+    },
+    {
+        "text": "and we notice that our left pointer",
+        "start": 264.32,
+        "duration": 3.68
+    },
+    {
+        "text": "we're buying low and we're still",
+        "start": 266.32,
+        "duration": 3.84
+    },
+    {
+        "text": "selling high it's not as high as this",
+        "start": 268.0,
+        "duration": 3.28
+    },
+    {
+        "text": "but we still",
+        "start": 270.16,
+        "duration": 3.84
+    },
+    {
+        "text": "don't need to update the left pointer",
+        "start": 271.28,
+        "duration": 3.6
+    },
+    {
+        "text": "and so now",
+        "start": 274.0,
+        "duration": 3.84
+    },
+    {
+        "text": "we get to the actual uh result case that",
+        "start": 274.88,
+        "duration": 4.4
+    },
+    {
+        "text": "we already know about but",
+        "start": 277.84,
+        "duration": 5.44
+    },
+    {
+        "text": "let's compute it so this is at six",
+        "start": 279.28,
+        "duration": 7.199
+    },
+    {
+        "text": "this is at one so we found",
+        "start": 283.28,
+        "duration": 6.32
+    },
+    {
+        "text": "a new max profit six minus one",
+        "start": 286.479,
+        "duration": 7.521
+    },
+    {
+        "text": "is five so let's update our max",
+        "start": 289.6,
+        "duration": 4.4
+    },
+    {
+        "text": "so our algorithm is gonna keep going",
+        "start": 295.6,
+        "duration": 3.84
+    },
+    {
+        "text": "even though we can tell by the picture",
+        "start": 297.84,
+        "duration": 3.52
+    },
+    {
+        "text": "that we did find the mac so it's gonna",
+        "start": 299.44,
+        "duration": 4.319
+    },
+    {
+        "text": "end up checking this last case",
+        "start": 301.36,
+        "duration": 5.279
+    },
+    {
+        "text": "which left we're buying one and we're",
+        "start": 303.759,
+        "duration": 4.481
+    },
+    {
+        "text": "selling at i think this is",
+        "start": 306.639,
+        "duration": 5.361
+    },
+    {
+        "text": "four so we know four minus one is three",
+        "start": 308.24,
+        "duration": 6.16
+    },
+    {
+        "text": "not greater than five so our algorithm",
+        "start": 312.0,
+        "duration": 3.44
+    },
+    {
+        "text": "is complete we",
+        "start": 314.4,
+        "duration": 4.32
+    },
+    {
+        "text": "found our max profit of",
+        "start": 315.44,
+        "duration": 7.599
+    },
+    {
+        "text": "five and if we wanna know the memory",
+        "start": 318.72,
+        "duration": 6.56
+    },
+    {
+        "text": "and extra space we used we know we",
+        "start": 323.039,
+        "duration": 4.321
+    },
+    {
+        "text": "didn't really use extra memory we used a",
+        "start": 325.28,
+        "duration": 4.0
+    },
+    {
+        "text": "couple pointers but no array so",
+        "start": 327.36,
+        "duration": 5.279
+    },
+    {
+        "text": "extra memory is 01 time is going to be",
+        "start": 329.28,
+        "duration": 5.12
+    },
+    {
+        "text": "linear because this is a two pointer",
+        "start": 332.639,
+        "duration": 2.721
+    },
+    {
+        "text": "solution",
+        "start": 334.4,
+        "duration": 3.28
+    },
+    {
+        "text": "we're not doing any brute force stuff",
+        "start": 335.36,
+        "duration": 3.279
+    },
+    {
+        "text": "this is going to be",
+        "start": 337.68,
+        "duration": 3.2
+    },
+    {
+        "text": "big o of and we only have to scan",
+        "start": 338.639,
+        "duration": 3.601
+    },
+    {
+        "text": "through the array",
+        "start": 340.88,
+        "duration": 3.44
+    },
+    {
+        "text": "uh one time even though we have two",
+        "start": 342.24,
+        "duration": 3.2
+    },
+    {
+        "text": "pointers",
+        "start": 344.32,
+        "duration": 4.08
+    },
+    {
+        "text": "okay now let's code it up so we do have",
+        "start": 345.44,
+        "duration": 5.52
+    },
+    {
+        "text": "a left and right pointer",
+        "start": 348.4,
+        "duration": 5.04
+    },
+    {
+        "text": "left is going to be initialized to 0 and",
+        "start": 350.96,
+        "duration": 4.64
+    },
+    {
+        "text": "right is going to be initialized to 1",
+        "start": 353.44,
+        "duration": 5.44
+    },
+    {
+        "text": "just like in our picture we know left",
+        "start": 355.6,
+        "duration": 6.4
+    },
+    {
+        "text": "is buying right",
+        "start": 358.88,
+        "duration": 6.64
+    },
+    {
+        "text": "is selling we can initialize our max",
+        "start": 362.0,
+        "duration": 4.08
+    },
+    {
+        "text": "profit",
+        "start": 365.52,
+        "duration": 3.36
+    },
+    {
+        "text": "to zero as like the default case and",
+        "start": 366.08,
+        "duration": 3.44
+    },
+    {
+        "text": "we're gonna",
+        "start": 368.88,
+        "duration": 3.52
+    },
+    {
+        "text": "keep iterating through prices while our",
+        "start": 369.52,
+        "duration": 4.48
+    },
+    {
+        "text": "right pointer",
+        "start": 372.4,
+        "duration": 5.84
+    },
+    {
+        "text": "has not uh passed the end of prices",
+        "start": 374.0,
+        "duration": 7.36
+    },
+    {
+        "text": "now we wanna check is this a profitable",
+        "start": 378.24,
+        "duration": 5.84
+    },
+    {
+        "text": "transaction and how do we check that",
+        "start": 381.36,
+        "duration": 3.119
+    },
+    {
+        "text": "well",
+        "start": 384.08,
+        "duration": 4.0
+    },
+    {
+        "text": "if prices of left",
+        "start": 384.479,
+        "duration": 7.521
+    },
+    {
+        "text": "is less than prices of right",
+        "start": 388.08,
+        "duration": 5.6
+    },
+    {
+        "text": "now if this is profitable let's",
+        "start": 392.0,
+        "duration": 3.199
+    },
+    {
+        "text": "calculate that profit",
+        "start": 393.68,
+        "duration": 4.32
+    },
+    {
+        "text": "which is going to be",
+        "start": 395.199,
+        "duration": 2.801
+    },
+    {
+        "text": "so this is just the math right price is",
+        "start": 402.56,
+        "duration": 3.759
+    },
+    {
+        "text": "a right minus left",
+        "start": 404.8,
+        "duration": 4.32
+    },
+    {
+        "text": "and now we can potentially update our",
+        "start": 406.319,
+        "duration": 4.961
+    },
+    {
+        "text": "max profit but we don't know for sure so",
+        "start": 409.12,
+        "duration": 3.6
+    },
+    {
+        "text": "we're going to check",
+        "start": 411.28,
+        "duration": 4.56
+    },
+    {
+        "text": "the maximum of the current max profit",
+        "start": 412.72,
+        "duration": 5.44
+    },
+    {
+        "text": "as well as the profit that we just",
+        "start": 415.84,
+        "duration": 4.639
+    },
+    {
+        "text": "computed so whatever the max is is going",
+        "start": 418.16,
+        "duration": 3.28
+    },
+    {
+        "text": "to be assigned",
+        "start": 420.479,
+        "duration": 4.16
+    },
+    {
+        "text": "to the new max profit but it might",
+        "start": 421.44,
+        "duration": 6.4
+    },
+    {
+        "text": "not be a profitable transaction which in",
+        "start": 424.639,
+        "duration": 4.081
+    },
+    {
+        "text": "that case",
+        "start": 427.84,
+        "duration": 4.56
+    },
+    {
+        "text": "we can update our left pointer",
+        "start": 428.72,
+        "duration": 7.52
+    },
+    {
+        "text": "now regardless of the conditions we want",
+        "start": 432.4,
+        "duration": 4.16
+    },
+    {
+        "text": "to",
+        "start": 436.24,
+        "duration": 3.359
+    },
+    {
+        "text": "update our right pointer and so this is",
+        "start": 436.56,
+        "duration": 4.56
+    },
+    {
+        "text": "obviously going to keep going",
+        "start": 439.599,
+        "duration": 4.16
+    },
+    {
+        "text": "until our right pointer is out of bounds",
+        "start": 441.12,
+        "duration": 4.4
+    },
+    {
+        "text": "in which case we've gone through",
+        "start": 443.759,
+        "duration": 5.44
+    },
+    {
+        "text": "all of the values and we know that max p",
+        "start": 445.52,
+        "duration": 6.0
+    },
+    {
+        "text": "has the result that we want to return so",
+        "start": 449.199,
+        "duration": 3.681
+    },
+    {
+        "text": "i actually had a small",
+        "start": 451.52,
+        "duration": 3.519
+    },
+    {
+        "text": "bug over here instead of incrementing",
+        "start": 452.88,
+        "duration": 3.52
+    },
+    {
+        "text": "left by one",
+        "start": 455.039,
+        "duration": 4.801
+    },
+    {
+        "text": "if the left price is not less than the",
+        "start": 456.4,
+        "duration": 5.6
+    },
+    {
+        "text": "right price we don't just want to shift",
+        "start": 459.84,
+        "duration": 4.079
+    },
+    {
+        "text": "our left pointer by one we want to shift",
+        "start": 462.0,
+        "duration": 2.319
+    },
+    {
+        "text": "it",
+        "start": 463.919,
+        "duration": 2.801
+    },
+    {
+        "text": "all the way to the right because we",
+        "start": 464.319,
+        "duration": 3.041
+    },
+    {
+        "text": "found",
+        "start": 466.72,
+        "duration": 3.44
+    },
+    {
+        "text": "a really low price we found the lowest",
+        "start": 467.36,
+        "duration": 3.36
+    },
+    {
+        "text": "price",
+        "start": 470.16,
+        "duration": 3.039
+    },
+    {
+        "text": "that we could pretty much we basically",
+        "start": 470.72,
+        "duration": 3.919
+    },
+    {
+        "text": "want our left pointer to be",
+        "start": 473.199,
+        "duration": 3.921
+    },
+    {
+        "text": "at the minimum and you can tell from",
+        "start": 474.639,
+        "duration": 3.68
+    },
+    {
+        "text": "this picture",
+        "start": 477.12,
+        "duration": 4.079
+    },
+    {
+        "text": "that if our left was here and our right",
+        "start": 478.319,
+        "duration": 4.481
+    },
+    {
+        "text": "was over here",
+        "start": 481.199,
+        "duration": 3.68
+    },
+    {
+        "text": "we don't just want to shift our left",
+        "start": 482.8,
+        "duration": 4.56
+    },
+    {
+        "text": "pointer by one because then it's up here",
+        "start": 484.879,
+        "duration": 5.04
+    },
+    {
+        "text": "we want the left pointer to be low right",
+        "start": 487.36,
+        "duration": 3.36
+    },
+    {
+        "text": "we want to buy",
+        "start": 489.919,
+        "duration": 4.56
+    },
+    {
+        "text": "low sell high so we would shift our left",
+        "start": 490.72,
+        "duration": 4.72
+    },
+    {
+        "text": "pointer",
+        "start": 494.479,
+        "duration": 4.56
+    },
+    {
+        "text": "all the way over here",
+        "start": 495.44,
+        "duration": 5.84
+    },
+    {
+        "text": "so we'd cross this out put the left here",
+        "start": 499.039,
+        "duration": 4.16
+    },
+    {
+        "text": "and then the right pointer would be over",
+        "start": 501.28,
+        "duration": 3.039
+    },
+    {
+        "text": "here",
+        "start": 503.199,
+        "duration": 2.961
+    },
+    {
+        "text": "and we can see that this would be a",
+        "start": 504.319,
+        "duration": 3.921
+    },
+    {
+        "text": "super good profit for us",
+        "start": 506.16,
+        "duration": 5.039
+    },
+    {
+        "text": "and now we can submit our solution and",
+        "start": 508.24,
+        "duration": 3.44
+    },
+    {
+        "text": "it's",
+        "start": 511.199,
+        "duration": 4.32
+    },
+    {
+        "text": "over 90 so we're in the clear we found a",
+        "start": 511.68,
+        "duration": 5.919
+    },
+    {
+        "text": "very optimal solution for this problem",
+        "start": 515.519,
+        "duration": 4.32
+    },
+    {
+        "text": "i hope it was helpful please like and",
+        "start": 517.599,
+        "duration": 4.0
+    },
+    {
+        "text": "subscribe to support the channel",
+        "start": 519.839,
+        "duration": 7.201
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 521.599,
+        "duration": 5.441
+    }
+]

@@ -1,0 +1,1202 @@
+[
+    {
+        "text": "hey what's up guys Nick white here I do",
+        "start": 0.23,
+        "duration": 5.379
+    },
+    {
+        "text": "tecnico ting stuff on Twitch in YouTube",
+        "start": 4.14,
+        "duration": 4.8
+    },
+    {
+        "text": "join the discord follow me on github and",
+        "start": 5.609,
+        "duration": 5.011
+    },
+    {
+        "text": "if you can support me on patreon I",
+        "start": 8.94,
+        "duration": 3.09
+    },
+    {
+        "text": "really appreciate that I put premium",
+        "start": 10.62,
+        "duration": 2.45
+    },
+    {
+        "text": "problems up there",
+        "start": 12.03,
+        "duration": 3.18
+    },
+    {
+        "text": "this is the letter combinations of a",
+        "start": 13.07,
+        "duration": 3.309
+    },
+    {
+        "text": "phone number given a string containing",
+        "start": 15.21,
+        "duration": 3.06
+    },
+    {
+        "text": "digits from two to nine inclusive return",
+        "start": 16.379,
+        "duration": 3.66
+    },
+    {
+        "text": "all possible letter combinations that",
+        "start": 18.27,
+        "duration": 5.19
+    },
+    {
+        "text": "the number could represent a mapping of",
+        "start": 20.039,
+        "duration": 5.461
+    },
+    {
+        "text": "digits to letters just like telephone",
+        "start": 23.46,
+        "duration": 3.63
+    },
+    {
+        "text": "buttons is given below note that one",
+        "start": 25.5,
+        "duration": 3.48
+    },
+    {
+        "text": "does not map to any letters okay",
+        "start": 27.09,
+        "duration": 3.929
+    },
+    {
+        "text": "so zero and one we're not dealing with",
+        "start": 28.98,
+        "duration": 4.079
+    },
+    {
+        "text": "and the star and the hash tag we're not",
+        "start": 31.019,
+        "duration": 4.021
+    },
+    {
+        "text": "dealing with the string only contains",
+        "start": 33.059,
+        "duration": 3.66
+    },
+    {
+        "text": "numbers from two to nine so the string",
+        "start": 35.04,
+        "duration": 4.289
+    },
+    {
+        "text": "might look like 23 or it might look like",
+        "start": 36.719,
+        "duration": 4.801
+    },
+    {
+        "text": "two three whatever it can only have",
+        "start": 39.329,
+        "duration": 4.621
+    },
+    {
+        "text": "numbers that are between two and nine",
+        "start": 41.52,
+        "duration": 6.75
+    },
+    {
+        "text": "and that's it okay we what we want to do",
+        "start": 43.95,
+        "duration": 7.129
+    },
+    {
+        "text": "is we want to generate a list of all",
+        "start": 48.27,
+        "duration": 5.94
+    },
+    {
+        "text": "possible combinations of letters that",
+        "start": 51.079,
+        "duration": 5.651
+    },
+    {
+        "text": "these numbers could represent so for",
+        "start": 54.21,
+        "duration": 6.18
+    },
+    {
+        "text": "example in the 23 example 2 could",
+        "start": 56.73,
+        "duration": 6.87
+    },
+    {
+        "text": "represent a B or C 3 could represent de",
+        "start": 60.39,
+        "duration": 9.089
+    },
+    {
+        "text": "or F so 23 could represent a d AE a f BD",
+        "start": 63.6,
+        "duration": 9.57
+    },
+    {
+        "text": "b eb f c d c ec f it could it could",
+        "start": 69.479,
+        "duration": 6.811
+    },
+    {
+        "text": "represent any of those so that's what we",
+        "start": 73.17,
+        "duration": 5.39
+    },
+    {
+        "text": "want to generate with this string and",
+        "start": 76.29,
+        "duration": 5.34
+    },
+    {
+        "text": "unluckily this is I don't know if you",
+        "start": 78.56,
+        "duration": 4.239
+    },
+    {
+        "text": "guys are familiar with generating",
+        "start": 81.63,
+        "duration": 3.54
+    },
+    {
+        "text": "permutations but this is exactly what",
+        "start": 82.799,
+        "duration": 4.231
+    },
+    {
+        "text": "that is and those algorithms are very",
+        "start": 85.17,
+        "duration": 3.9
+    },
+    {
+        "text": "slow so unfortunately this algorithms",
+        "start": 87.03,
+        "duration": 4.26
+    },
+    {
+        "text": "gonna be really slow we'll go over the",
+        "start": 89.07,
+        "duration": 3.839
+    },
+    {
+        "text": "runtime at the end it's in the solution",
+        "start": 91.29,
+        "duration": 2.789
+    },
+    {
+        "text": "and they have an explanation so I'll",
+        "start": 92.909,
+        "duration": 2.341
+    },
+    {
+        "text": "show you guys that",
+        "start": 94.079,
+        "duration": 2.461
+    },
+    {
+        "text": "but basically what you're gonna do is",
+        "start": 95.25,
+        "duration": 2.7
+    },
+    {
+        "text": "you're just gonna have a list and you're",
+        "start": 96.54,
+        "duration": 3.329
+    },
+    {
+        "text": "gonna generate all the permutations put",
+        "start": 97.95,
+        "duration": 3.18
+    },
+    {
+        "text": "them in a list and there's no way around",
+        "start": 99.869,
+        "duration": 3.03
+    },
+    {
+        "text": "it that's what you have to do so let's",
+        "start": 101.13,
+        "duration": 4.32
+    },
+    {
+        "text": "just create our list really quick we're",
+        "start": 102.899,
+        "duration": 4.141
+    },
+    {
+        "text": "gonna do a linked list we call its",
+        "start": 105.45,
+        "duration": 4.459
+    },
+    {
+        "text": "output array is equal to new linked list",
+        "start": 107.04,
+        "duration": 6.57
+    },
+    {
+        "text": "this is gonna essentially act as a queue",
+        "start": 109.909,
+        "duration": 7.451
+    },
+    {
+        "text": "as well which is kind of cool first",
+        "start": 113.61,
+        "duration": 5.219
+    },
+    {
+        "text": "thing we'll do is we'll say okay if",
+        "start": 117.36,
+        "duration": 3.84
+    },
+    {
+        "text": "digits dot length is equal to 0 we'll",
+        "start": 118.829,
+        "duration": 4.231
+    },
+    {
+        "text": "just return the output array right away",
+        "start": 121.2,
+        "duration": 3.36
+    },
+    {
+        "text": "because it'll be empty there's not going",
+        "start": 123.06,
+        "duration": 3.269
+    },
+    {
+        "text": "to be permutations if it's an empty",
+        "start": 124.56,
+        "duration": 6.0
+    },
+    {
+        "text": "string that we're giving right ok now if",
+        "start": 126.329,
+        "duration": 6.181
+    },
+    {
+        "text": "it's not 0 then we'll continue right so",
+        "start": 130.56,
+        "duration": 3.27
+    },
+    {
+        "text": "the first thing we're going to do is we",
+        "start": 132.51,
+        "duration": 4.29
+    },
+    {
+        "text": "gonna add output array to add this and",
+        "start": 133.83,
+        "duration": 5.43
+    },
+    {
+        "text": "this is gonna be straight empty string",
+        "start": 136.8,
+        "duration": 5.25
+    },
+    {
+        "text": "and that's just gonna help us set up",
+        "start": 139.26,
+        "duration": 4.65
+    },
+    {
+        "text": "with our cue now what we're going to",
+        "start": 142.05,
+        "duration": 3.0
+    },
+    {
+        "text": "want to do is we're also going to want",
+        "start": 143.91,
+        "duration": 3.42
+    },
+    {
+        "text": "to have a string array we'll call it",
+        "start": 145.05,
+        "duration": 4.92
+    },
+    {
+        "text": "char map is equal to new string array",
+        "start": 147.33,
+        "duration": 5.97
+    },
+    {
+        "text": "and this is going to be a mapping of all",
+        "start": 149.97,
+        "duration": 7.2
+    },
+    {
+        "text": "of the numbers two characters so it",
+        "start": 153.3,
+        "duration": 6.6
+    },
+    {
+        "text": "index 0 we'll put 1 0 and index 1 with 1",
+        "start": 157.17,
+        "duration": 6.95
+    },
+    {
+        "text": "but for index 2 it's going to map to ABC",
+        "start": 159.9,
+        "duration": 8.82
+    },
+    {
+        "text": "index 3 is going to map to de F index 4",
+        "start": 164.12,
+        "duration": 6.01
+    },
+    {
+        "text": "and this is so that when we have our",
+        "start": 168.72,
+        "duration": 3.96
+    },
+    {
+        "text": "index while we loop through the number",
+        "start": 170.13,
+        "duration": 4.829
+    },
+    {
+        "text": "we can access the letters that they",
+        "start": 172.68,
+        "duration": 4.35
+    },
+    {
+        "text": "represent by their indexes so when we",
+        "start": 174.959,
+        "duration": 4.411
+    },
+    {
+        "text": "loop through 2 we know that you know",
+        "start": 177.03,
+        "duration": 4.53
+    },
+    {
+        "text": "this array of 2 is going to be ABC when",
+        "start": 179.37,
+        "duration": 4.14
+    },
+    {
+        "text": "we loop through 3 this array of 3 is",
+        "start": 181.56,
+        "duration": 4.89
+    },
+    {
+        "text": "gonna be de F right ok so that's just",
+        "start": 183.51,
+        "duration": 5.34
+    },
+    {
+        "text": "the idea here it sucks that you have to",
+        "start": 186.45,
+        "duration": 7.56
+    },
+    {
+        "text": "type it all out but whatever j KL g h i",
+        "start": 188.85,
+        "duration": 13.32
+    },
+    {
+        "text": "j k l m n o m n o p q r s in the time",
+        "start": 194.01,
+        "duration": 9.63
+    },
+    {
+        "text": "complexity is going to be pretty slow",
+        "start": 202.17,
+        "duration": 6.9
+    },
+    {
+        "text": "for this algorithm sorry about this this",
+        "start": 203.64,
+        "duration": 6.78
+    },
+    {
+        "text": "is the worst part of my videos when i",
+        "start": 209.07,
+        "duration": 5.57
+    },
+    {
+        "text": "have to do something like this TUV i",
+        "start": 210.42,
+        "duration": 5.789
+    },
+    {
+        "text": "suck at this",
+        "start": 214.64,
+        "duration": 9.31
+    },
+    {
+        "text": "TV WXYZ ok there we go so hopefully",
+        "start": 216.209,
+        "duration": 9.481
+    },
+    {
+        "text": "that's fine what we're gonna do now is",
+        "start": 223.95,
+        "duration": 4.319
+    },
+    {
+        "text": "here's the idea you put things into a",
+        "start": 225.69,
+        "duration": 6.45
+    },
+    {
+        "text": "queue we're put we're gonna go we're",
+        "start": 228.269,
+        "duration": 5.371
+    },
+    {
+        "text": "gonna go through letter but we're gonna",
+        "start": 232.14,
+        "duration": 3.27
+    },
+    {
+        "text": "go through digit by digit so first of",
+        "start": 233.64,
+        "duration": 2.97
+    },
+    {
+        "text": "all we're gonna loop through the digits",
+        "start": 235.41,
+        "duration": 5.85
+    },
+    {
+        "text": "i less than digits length i plus plus in",
+        "start": 236.61,
+        "duration": 6.81
+    },
+    {
+        "text": "these are numbers right these are these",
+        "start": 241.26,
+        "duration": 4.29
+    },
+    {
+        "text": "are going to act as indices to get to",
+        "start": 243.42,
+        "duration": 3.87
+    },
+    {
+        "text": "these letters that we want so we're",
+        "start": 245.55,
+        "duration": 4.14
+    },
+    {
+        "text": "gonna say ok int index is equal to",
+        "start": 247.29,
+        "duration": 7.38
+    },
+    {
+        "text": "digits or we're gonna do character dot",
+        "start": 249.69,
+        "duration": 7.229
+    },
+    {
+        "text": "get numeric value that's going to give",
+        "start": 254.67,
+        "duration": 4.86
+    },
+    {
+        "text": "us the integer value of the current",
+        "start": 256.919,
+        "duration": 7.111
+    },
+    {
+        "text": "character of digits da char at i so we",
+        "start": 259.53,
+        "duration": 6.0
+    },
+    {
+        "text": "get the current digit that we're at as",
+        "start": 264.03,
+        "duration": 3.63
+    },
+    {
+        "text": "we loop through the string of numbers",
+        "start": 265.53,
+        "duration": 4.2
+    },
+    {
+        "text": "and we're gonna get the numeric value to",
+        "start": 267.66,
+        "duration": 4.44
+    },
+    {
+        "text": "get the index to access the letters that",
+        "start": 269.73,
+        "duration": 5.76
+    },
+    {
+        "text": "we want right once we have the letters",
+        "start": 272.1,
+        "duration": 4.77
+    },
+    {
+        "text": "that we want that's gonna come in handy",
+        "start": 275.49,
+        "duration": 3.15
+    },
+    {
+        "text": "what we're gonna do is we're gonna say",
+        "start": 276.87,
+        "duration": 3.15
+    },
+    {
+        "text": "okay Wow",
+        "start": 278.64,
+        "duration": 3.27
+    },
+    {
+        "text": "output array this is the only hard part",
+        "start": 280.02,
+        "duration": 5.61
+    },
+    {
+        "text": "of it well I'll put a rate up peak dot",
+        "start": 281.91,
+        "duration": 5.4
+    },
+    {
+        "text": "length so the only thing an output",
+        "start": 285.63,
+        "duration": 5.66
+    },
+    {
+        "text": "arrays this empty string is equal to I",
+        "start": 287.31,
+        "duration": 7.26
+    },
+    {
+        "text": "then we do what we need to do and that",
+        "start": 291.29,
+        "duration": 6.4
+    },
+    {
+        "text": "is we're going to say string current",
+        "start": 294.57,
+        "duration": 4.71
+    },
+    {
+        "text": "permutation so you could call it",
+        "start": 297.69,
+        "duration": 3.24
+    },
+    {
+        "text": "permutation or whatever you want to call",
+        "start": 299.28,
+        "duration": 6.54
+    },
+    {
+        "text": "it is equal to output array dot remove",
+        "start": 300.93,
+        "duration": 7.17
+    },
+    {
+        "text": "so this is like a queue BFS problem",
+        "start": 305.82,
+        "duration": 5.04
+    },
+    {
+        "text": "we're putting things onto the queue and",
+        "start": 308.1,
+        "duration": 4.44
+    },
+    {
+        "text": "we're popping them off so right now",
+        "start": 310.86,
+        "duration": 4.35
+    },
+    {
+        "text": "we're saying okay if the length is equal",
+        "start": 312.54,
+        "duration": 6.54
+    },
+    {
+        "text": "to zero which it is the string that's in",
+        "start": 315.21,
+        "duration": 5.55
+    },
+    {
+        "text": "there the only thing in there we're",
+        "start": 319.08,
+        "duration": 3.96
+    },
+    {
+        "text": "gonna just pull that out of the queue",
+        "start": 320.76,
+        "duration": 4.92
+    },
+    {
+        "text": "and we're gonna change it because we are",
+        "start": 323.04,
+        "duration": 5.28
+    },
+    {
+        "text": "now adding characters on to it we see a",
+        "start": 325.68,
+        "duration": 5.16
+    },
+    {
+        "text": "new number we've now found a number and",
+        "start": 328.32,
+        "duration": 4.5
+    },
+    {
+        "text": "we're gonna have to add on to this",
+        "start": 330.84,
+        "duration": 5.07
+    },
+    {
+        "text": "output array so all we have to do to do",
+        "start": 332.82,
+        "duration": 9.81
+    },
+    {
+        "text": "that is for char C in the permutations",
+        "start": 335.91,
+        "duration": 13.5
+    },
+    {
+        "text": "the the char map of index to char array",
+        "start": 342.63,
+        "duration": 8.79
+    },
+    {
+        "text": "so we're looping through the characters",
+        "start": 349.41,
+        "duration": 4.62
+    },
+    {
+        "text": "that the index represents so we see we",
+        "start": 351.42,
+        "duration": 5.7
+    },
+    {
+        "text": "see two and then we get the index of it",
+        "start": 354.03,
+        "duration": 6.24
+    },
+    {
+        "text": "we so that would be ABC so the",
+        "start": 357.12,
+        "duration": 4.98
+    },
+    {
+        "text": "permutation is an empty string right now",
+        "start": 360.27,
+        "duration": 5.94
+    },
+    {
+        "text": "we loop through now ABC and we generate",
+        "start": 362.1,
+        "duration": 6.96
+    },
+    {
+        "text": "all possible permutations for two and we",
+        "start": 366.21,
+        "duration": 5.19
+    },
+    {
+        "text": "add those on to the output array so like",
+        "start": 369.06,
+        "duration": 5.34
+    },
+    {
+        "text": "a queue we go okay output array dot add",
+        "start": 371.4,
+        "duration": 7.86
+    },
+    {
+        "text": "and then we just do permutation plus C",
+        "start": 374.4,
+        "duration": 7.56
+    },
+    {
+        "text": "so we have this current permutation",
+        "start": 379.26,
+        "duration": 5.79
+    },
+    {
+        "text": "which is an empty string and we add onto",
+        "start": 381.96,
+        "duration": 5.4
+    },
+    {
+        "text": "the output array now empty string plus a",
+        "start": 385.05,
+        "duration": 4.38
+    },
+    {
+        "text": "empty string plus B empty string plus C",
+        "start": 387.36,
+        "duration": 4.23
+    },
+    {
+        "text": "so now the output array has three things",
+        "start": 389.43,
+        "duration": 4.83
+    },
+    {
+        "text": "when we saw two ABC and that would be",
+        "start": 391.59,
+        "duration": 4.77
+    },
+    {
+        "text": "right if the string was just the number",
+        "start": 394.26,
+        "duration": 4.74
+    },
+    {
+        "text": "two it would be ABC or the possibilities",
+        "start": 396.36,
+        "duration": 5.04
+    },
+    {
+        "text": "right now it loops around again one",
+        "start": 399.0,
+        "duration": 6.419
+    },
+    {
+        "text": "these three it gets d EF and it says",
+        "start": 401.4,
+        "duration": 6.299
+    },
+    {
+        "text": "okay is the length of the output array",
+        "start": 405.419,
+        "duration": 5.011
+    },
+    {
+        "text": "equal to one oh the string in the output",
+        "start": 407.699,
+        "duration": 3.511
+    },
+    {
+        "text": "array equal to one",
+        "start": 410.43,
+        "duration": 2.579
+    },
+    {
+        "text": "yes everything is equal to one and they",
+        "start": 411.21,
+        "duration": 3.269
+    },
+    {
+        "text": "should all be equal to two because we've",
+        "start": 413.009,
+        "duration": 3.75
+    },
+    {
+        "text": "seen a two number now so we pull the",
+        "start": 414.479,
+        "duration": 6.621
+    },
+    {
+        "text": "permutations off and we see we say okay",
+        "start": 416.759,
+        "duration": 7.321
+    },
+    {
+        "text": "so for a would be the first permutation",
+        "start": 421.1,
+        "duration": 6.909
+    },
+    {
+        "text": "we pull off and we say okay is we loop",
+        "start": 424.08,
+        "duration": 7.619
+    },
+    {
+        "text": "third d EF and we do a plus d a plus C a",
+        "start": 428.009,
+        "duration": 6.66
+    },
+    {
+        "text": "plus F then we pull be off and then we",
+        "start": 431.699,
+        "duration": 6.571
+    },
+    {
+        "text": "say B plus C D P plus C P plus F and we",
+        "start": 434.669,
+        "duration": 5.761
+    },
+    {
+        "text": "generate all the permutations this is",
+        "start": 438.27,
+        "duration": 3.959
+    },
+    {
+        "text": "the main condition that makes sure that",
+        "start": 440.43,
+        "duration": 4.41
+    },
+    {
+        "text": "the permutations in the end are coming",
+        "start": 442.229,
+        "duration": 5.401
+    },
+    {
+        "text": "out to be the same length as the string",
+        "start": 444.84,
+        "duration": 4.35
+    },
+    {
+        "text": "that we're giving as input you know",
+        "start": 447.63,
+        "duration": 4.05
+    },
+    {
+        "text": "because a string of input length two is",
+        "start": 449.19,
+        "duration": 4.14
+    },
+    {
+        "text": "gonna generate all permutations of",
+        "start": 451.68,
+        "duration": 3.63
+    },
+    {
+        "text": "length two and it's just a Q kind of",
+        "start": 453.33,
+        "duration": 4.68
+    },
+    {
+        "text": "thing that's it you just do all that and",
+        "start": 455.31,
+        "duration": 5.669
+    },
+    {
+        "text": "you you know you return you're not the",
+        "start": 458.01,
+        "duration": 4.65
+    },
+    {
+        "text": "charm app and you know you return the",
+        "start": 460.979,
+        "duration": 3.66
+    },
+    {
+        "text": "output array at the end and that's it",
+        "start": 462.66,
+        "duration": 3.45
+    },
+    {
+        "text": "you generate all the possible",
+        "start": 464.639,
+        "duration": 4.141
+    },
+    {
+        "text": "permutations you know array it's pretty",
+        "start": 466.11,
+        "duration": 6.39
+    },
+    {
+        "text": "slow I'll show you the time complexity",
+        "start": 468.78,
+        "duration": 5.04
+    },
+    {
+        "text": "and then I'll show you some code that",
+        "start": 472.5,
+        "duration": 3.27
+    },
+    {
+        "text": "will show you how the time complexity",
+        "start": 473.82,
+        "duration": 4.62
+    },
+    {
+        "text": "work so here's time complexity it's to",
+        "start": 475.77,
+        "duration": 6.269
+    },
+    {
+        "text": "the 3n times four M where n is the",
+        "start": 478.44,
+        "duration": 6.63
+    },
+    {
+        "text": "number of digits in like a three",
+        "start": 482.039,
+        "duration": 6.481
+    },
+    {
+        "text": "character mapping so like ABCDEF and",
+        "start": 485.07,
+        "duration": 8.25
+    },
+    {
+        "text": "then the M for to the M counts for any",
+        "start": 488.52,
+        "duration": 6.66
+    },
+    {
+        "text": "of them that are mapping to four",
+        "start": 493.32,
+        "duration": 4.44
+    },
+    {
+        "text": "different characters so space complexity",
+        "start": 495.18,
+        "duration": 3.84
+    },
+    {
+        "text": "is the same because we have to we",
+        "start": 497.76,
+        "duration": 2.61
+    },
+    {
+        "text": "generate all the permutations which",
+        "start": 499.02,
+        "duration": 2.85
+    },
+    {
+        "text": "takes that much time and then we have to",
+        "start": 500.37,
+        "duration": 5.039
+    },
+    {
+        "text": "also store them too so same thing let me",
+        "start": 501.87,
+        "duration": 6.0
+    },
+    {
+        "text": "show you this running I have this code",
+        "start": 505.409,
+        "duration": 6.331
+    },
+    {
+        "text": "right here that will actually show you",
+        "start": 507.87,
+        "duration": 5.49
+    },
+    {
+        "text": "what's kind of happening behind the",
+        "start": 511.74,
+        "duration": 5.099
+    },
+    {
+        "text": "scenes so for the input to three we see",
+        "start": 513.36,
+        "duration": 6.27
+    },
+    {
+        "text": "zero right index zero I'm printing the",
+        "start": 516.839,
+        "duration": 5.58
+    },
+    {
+        "text": "index as we loop through the string or",
+        "start": 519.63,
+        "duration": 6.0
+    },
+    {
+        "text": "the digits string so as we loop through",
+        "start": 522.419,
+        "duration": 5.67
+    },
+    {
+        "text": "two three we're seeing there's index",
+        "start": 525.63,
+        "duration": 5.459
+    },
+    {
+        "text": "zero and there's index 1 so 0 1 right so",
+        "start": 528.089,
+        "duration": 5.671
+    },
+    {
+        "text": "it end X 0 what we're doing is we're",
+        "start": 531.089,
+        "duration": 3.511
+    },
+    {
+        "text": "saying",
+        "start": 533.76,
+        "duration": 3.09
+    },
+    {
+        "text": "okay we get the characters for index",
+        "start": 534.6,
+        "duration": 5.88
+    },
+    {
+        "text": "zero it's ABC we get we remove the",
+        "start": 536.85,
+        "duration": 5.37
+    },
+    {
+        "text": "current thing then we remove the current",
+        "start": 540.48,
+        "duration": 3.659
+    },
+    {
+        "text": "string which is an empty string and then",
+        "start": 542.22,
+        "duration": 4.41
+    },
+    {
+        "text": "we add we loop through ABC and we add",
+        "start": 544.139,
+        "duration": 5.01
+    },
+    {
+        "text": "those on so we add ABC and then the",
+        "start": 546.63,
+        "duration": 5.1
+    },
+    {
+        "text": "output array is filled with ABC index",
+        "start": 549.149,
+        "duration": 8.221
+    },
+    {
+        "text": "one we pop off a we add a Dae a F we pop",
+        "start": 551.73,
+        "duration": 8.039
+    },
+    {
+        "text": "off be this is where you're popping off",
+        "start": 557.37,
+        "duration": 5.94
+    },
+    {
+        "text": "so T is representing what you're popping",
+        "start": 559.769,
+        "duration": 7.01
+    },
+    {
+        "text": "off of the queue and then T plus s is",
+        "start": 563.31,
+        "duration": 7.649
+    },
+    {
+        "text": "what's the being popped off added with",
+        "start": 566.779,
+        "duration": 8.29
+    },
+    {
+        "text": "you know whatever you're you know the",
+        "start": 570.959,
+        "duration": 6.81
+    },
+    {
+        "text": "threes mapping de F so it's adding all",
+        "start": 575.069,
+        "duration": 3.841
+    },
+    {
+        "text": "those generating all the permutations",
+        "start": 577.769,
+        "duration": 2.55
+    },
+    {
+        "text": "adding them I don't think it's too",
+        "start": 578.91,
+        "duration": 2.669
+    },
+    {
+        "text": "difficult it's kind of a basic",
+        "start": 580.319,
+        "duration": 4.861
+    },
+    {
+        "text": "permutation problem but yeah and I don't",
+        "start": 581.579,
+        "duration": 5.101
+    },
+    {
+        "text": "know why the solution says backtracking",
+        "start": 585.18,
+        "duration": 3.36
+    },
+    {
+        "text": "you know it's more like BFS I don't",
+        "start": 586.68,
+        "duration": 3.839
+    },
+    {
+        "text": "really see it as backtracking at all but",
+        "start": 588.54,
+        "duration": 4.02
+    },
+    {
+        "text": "um thank you guys for watching let me",
+        "start": 590.519,
+        "duration": 3.24
+    },
+    {
+        "text": "know if you have any questions let me",
+        "start": 592.56,
+        "duration": 2.55
+    },
+    {
+        "text": "know if I'm wrong about the backtracking",
+        "start": 593.759,
+        "duration": 3.091
+    },
+    {
+        "text": "this doesn't look like backtracking to",
+        "start": 595.11,
+        "duration": 3.33
+    },
+    {
+        "text": "me it's kind of like a cute kind of",
+        "start": 596.85,
+        "duration": 5.609
+    },
+    {
+        "text": "thing to me but I thought I explained it",
+        "start": 598.44,
+        "duration": 6.12
+    },
+    {
+        "text": "decently but you know some people might",
+        "start": 602.459,
+        "duration": 3.661
+    },
+    {
+        "text": "get confused so you can reach out to me",
+        "start": 604.56,
+        "duration": 4.019
+    },
+    {
+        "text": "personally on discord ID or a patreon I",
+        "start": 606.12,
+        "duration": 4.68
+    },
+    {
+        "text": "usually I answer those like pretty much",
+        "start": 608.579,
+        "duration": 4.591
+    },
+    {
+        "text": "every time so and I'll try to answer the",
+        "start": 610.8,
+        "duration": 3.839
+    },
+    {
+        "text": "YouTube comments most the time too",
+        "start": 613.17,
+        "duration": 2.49
+    },
+    {
+        "text": "so thank you guys for watching",
+        "start": 614.639,
+        "duration": 4.081
+    },
+    {
+        "text": "appreciate it and you know see you guys",
+        "start": 615.66,
+        "duration": 5.63
+    },
+    {
+        "text": "on the next one",
+        "start": 618.72,
+        "duration": 2.57
+    }
+]

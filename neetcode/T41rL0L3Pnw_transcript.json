@@ -1,0 +1,2472 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.28
+    },
+    {
+        "text": "write some more neat code today",
+        "start": 1.599,
+        "duration": 5.601
+    },
+    {
+        "text": "so today let's look at set matrix zeros",
+        "start": 3.28,
+        "duration": 7.359
+    },
+    {
+        "text": "we are given an m by n matrix",
+        "start": 7.2,
+        "duration": 6.72
+    },
+    {
+        "text": "and we want to go through every element",
+        "start": 10.639,
+        "duration": 5.601
+    },
+    {
+        "text": "if we see that an element is zero we're",
+        "start": 13.92,
+        "duration": 4.4
+    },
+    {
+        "text": "gonna set the entire row",
+        "start": 16.24,
+        "duration": 5.44
+    },
+    {
+        "text": "and the entire column to zero so for",
+        "start": 18.32,
+        "duration": 4.879
+    },
+    {
+        "text": "example we're given",
+        "start": 21.68,
+        "duration": 3.919
+    },
+    {
+        "text": "a grid there's only one zero so what are",
+        "start": 23.199,
+        "duration": 4.0
+    },
+    {
+        "text": "we gonna do we're gonna set everything",
+        "start": 25.599,
+        "duration": 3.52
+    },
+    {
+        "text": "in the column to zero we're gonna set",
+        "start": 27.199,
+        "duration": 2.881
+    },
+    {
+        "text": "everything",
+        "start": 29.119,
+        "duration": 4.161
+    },
+    {
+        "text": "in the row to zero and then we see",
+        "start": 30.08,
+        "duration": 5.84
+    },
+    {
+        "text": "the output is exactly that right we got",
+        "start": 33.28,
+        "duration": 3.36
+    },
+    {
+        "text": "some",
+        "start": 35.92,
+        "duration": 3.28
+    },
+    {
+        "text": "zeros and then this is going to be our",
+        "start": 36.64,
+        "duration": 3.28
+    },
+    {
+        "text": "output",
+        "start": 39.2,
+        "duration": 3.359
+    },
+    {
+        "text": "and as you can see there's a bunch of",
+        "start": 39.92,
+        "duration": 4.08
+    },
+    {
+        "text": "ways to solve this problem",
+        "start": 42.559,
+        "duration": 4.241
+    },
+    {
+        "text": "with better and better complexities so",
+        "start": 44.0,
+        "duration": 3.36
+    },
+    {
+        "text": "i'm gonna",
+        "start": 46.8,
+        "duration": 3.599
+    },
+    {
+        "text": "show you the like bad solutions and then",
+        "start": 47.36,
+        "duration": 5.28
+    },
+    {
+        "text": "show you how you can use that to get the",
+        "start": 50.399,
+        "duration": 3.361
+    },
+    {
+        "text": "best solution",
+        "start": 52.64,
+        "duration": 3.36
+    },
+    {
+        "text": "because it's actually pretty intuitive",
+        "start": 53.76,
+        "duration": 3.119
+    },
+    {
+        "text": "so first",
+        "start": 56.0,
+        "duration": 3.76
+    },
+    {
+        "text": "let's say that this is our input array",
+        "start": 56.879,
+        "duration": 3.36
+    },
+    {
+        "text": "and",
+        "start": 59.76,
+        "duration": 4.24
+    },
+    {
+        "text": "we declare a copy of that array",
+        "start": 60.239,
+        "duration": 6.801
+    },
+    {
+        "text": "a copy of that matrix right so",
+        "start": 64.0,
+        "duration": 5.76
+    },
+    {
+        "text": "then we can what we can do is go through",
+        "start": 67.04,
+        "duration": 4.16
+    },
+    {
+        "text": "every position right so",
+        "start": 69.76,
+        "duration": 3.359
+    },
+    {
+        "text": "the first one is a one so we don't have",
+        "start": 71.2,
+        "duration": 3.52
+    },
+    {
+        "text": "to do anything then",
+        "start": 73.119,
+        "duration": 4.081
+    },
+    {
+        "text": "we get a zero what does that tell us",
+        "start": 74.72,
+        "duration": 3.28
+    },
+    {
+        "text": "that tells us",
+        "start": 77.2,
+        "duration": 3.68
+    },
+    {
+        "text": "that the entire column is going to be",
+        "start": 78.0,
+        "duration": 4.32
+    },
+    {
+        "text": "set to zero",
+        "start": 80.88,
+        "duration": 5.44
+    },
+    {
+        "text": "and the row is going to be set to zero",
+        "start": 82.32,
+        "duration": 6.479
+    },
+    {
+        "text": "so why can't we just do that in place",
+        "start": 86.32,
+        "duration": 4.479
+    },
+    {
+        "text": "like why can't i just put a zero here",
+        "start": 88.799,
+        "duration": 4.881
+    },
+    {
+        "text": "and then a zero here and now a zero here",
+        "start": 90.799,
+        "duration": 3.36
+    },
+    {
+        "text": "right",
+        "start": 93.68,
+        "duration": 2.72
+    },
+    {
+        "text": "because because there there's actually a",
+        "start": 94.159,
+        "duration": 3.441
+    },
+    {
+        "text": "good reason because",
+        "start": 96.4,
+        "duration": 4.24
+    },
+    {
+        "text": "so far we've checked off these spots we",
+        "start": 97.6,
+        "duration": 3.68
+    },
+    {
+        "text": "checked off",
+        "start": 100.64,
+        "duration": 2.64
+    },
+    {
+        "text": "this spot now we're over here right but",
+        "start": 101.28,
+        "duration": 3.76
+    },
+    {
+        "text": "we replaced that",
+        "start": 103.28,
+        "duration": 3.92
+    },
+    {
+        "text": "one with a zero now so now we're going",
+        "start": 105.04,
+        "duration": 3.28
+    },
+    {
+        "text": "to end up",
+        "start": 107.2,
+        "duration": 3.919
+    },
+    {
+        "text": "making this a zero and this is zero but",
+        "start": 108.32,
+        "duration": 3.52
+    },
+    {
+        "text": "that's not",
+        "start": 111.119,
+        "duration": 3.841
+    },
+    {
+        "text": "really what we want to do and that's the",
+        "start": 111.84,
+        "duration": 5.76
+    },
+    {
+        "text": "reason why we start off with a copy",
+        "start": 114.96,
+        "duration": 4.56
+    },
+    {
+        "text": "so when we make changes we're going to",
+        "start": 117.6,
+        "duration": 3.199
+    },
+    {
+        "text": "make changes to",
+        "start": 119.52,
+        "duration": 5.04
+    },
+    {
+        "text": "our copy and when we read the values",
+        "start": 120.799,
+        "duration": 6.801
+    },
+    {
+        "text": "we're going to read from our input so",
+        "start": 124.56,
+        "duration": 3.6
+    },
+    {
+        "text": "remember",
+        "start": 127.6,
+        "duration": 3.76
+    },
+    {
+        "text": "we did see a zero over here so",
+        "start": 128.16,
+        "duration": 6.48
+    },
+    {
+        "text": "in the copy we are gonna update",
+        "start": 131.36,
+        "duration": 6.08
+    },
+    {
+        "text": "the entire row so this is gonna be a",
+        "start": 134.64,
+        "duration": 3.679
+    },
+    {
+        "text": "zero",
+        "start": 137.44,
+        "duration": 3.519
+    },
+    {
+        "text": "this is gonna be a zero so every value",
+        "start": 138.319,
+        "duration": 4.56
+    },
+    {
+        "text": "in the row but we also have to do the",
+        "start": 140.959,
+        "duration": 2.64
+    },
+    {
+        "text": "column",
+        "start": 142.879,
+        "duration": 4.401
+    },
+    {
+        "text": "we see this is already a zero but this",
+        "start": 143.599,
+        "duration": 6.64
+    },
+    {
+        "text": "is gonna be changed so now we made",
+        "start": 147.28,
+        "duration": 5.28
+    },
+    {
+        "text": "changes to the copy so this is a zero",
+        "start": 150.239,
+        "duration": 3.921
+    },
+    {
+        "text": "but we see that this is still",
+        "start": 152.56,
+        "duration": 5.2
+    },
+    {
+        "text": "a one right because because now when we",
+        "start": 154.16,
+        "duration": 6.4
+    },
+    {
+        "text": "go to the next position which is this we",
+        "start": 157.76,
+        "duration": 3.839
+    },
+    {
+        "text": "see it's a one",
+        "start": 160.56,
+        "duration": 4.08
+    },
+    {
+        "text": "so we don't actually have to modify",
+        "start": 161.599,
+        "duration": 6.081
+    },
+    {
+        "text": "this column and this road",
+        "start": 164.64,
+        "duration": 5.36
+    },
+    {
+        "text": "right because we haven't even read this",
+        "start": 167.68,
+        "duration": 3.36
+    },
+    {
+        "text": "value yet",
+        "start": 170.0,
+        "duration": 2.959
+    },
+    {
+        "text": "and now we're just gonna continue so",
+        "start": 171.04,
+        "duration": 3.6
+    },
+    {
+        "text": "this is the next position",
+        "start": 172.959,
+        "duration": 3.761
+    },
+    {
+        "text": "in our matrix it's a one so we don't",
+        "start": 174.64,
+        "duration": 3.76
+    },
+    {
+        "text": "have to do anything",
+        "start": 176.72,
+        "duration": 4.159
+    },
+    {
+        "text": "and this is the next one it's a zero so",
+        "start": 178.4,
+        "duration": 4.0
+    },
+    {
+        "text": "it's time to",
+        "start": 180.879,
+        "duration": 4.64
+    },
+    {
+        "text": "set the entire column to zero and set",
+        "start": 182.4,
+        "duration": 4.24
+    },
+    {
+        "text": "the entire",
+        "start": 185.519,
+        "duration": 4.321
+    },
+    {
+        "text": "row to zero so in our copy we",
+        "start": 186.64,
+        "duration": 5.92
+    },
+    {
+        "text": "see that we actually already did this",
+        "start": 189.84,
+        "duration": 3.44
+    },
+    {
+        "text": "column so",
+        "start": 192.56,
+        "duration": 3.52
+    },
+    {
+        "text": "this is kind of an example of the",
+        "start": 193.28,
+        "duration": 4.8
+    },
+    {
+        "text": "repeated work that we're having to do",
+        "start": 196.08,
+        "duration": 4.64
+    },
+    {
+        "text": "right it kind of shows you that maybe",
+        "start": 198.08,
+        "duration": 3.84
+    },
+    {
+        "text": "having a copy",
+        "start": 200.72,
+        "duration": 4.239
+    },
+    {
+        "text": "is not the best solution but we still",
+        "start": 201.92,
+        "duration": 5.92
+    },
+    {
+        "text": "need to update the row so we're gonna",
+        "start": 204.959,
+        "duration": 4.321
+    },
+    {
+        "text": "change this to a zero",
+        "start": 207.84,
+        "duration": 4.56
+    },
+    {
+        "text": "and we're gonna change this to a zero so",
+        "start": 209.28,
+        "duration": 4.4
+    },
+    {
+        "text": "next we go to",
+        "start": 212.4,
+        "duration": 3.44
+    },
+    {
+        "text": "this position it's a one we don't have",
+        "start": 213.68,
+        "duration": 3.199
+    },
+    {
+        "text": "to do anything",
+        "start": 215.84,
+        "duration": 3.679
+    },
+    {
+        "text": "and then we go to the next position this",
+        "start": 216.879,
+        "duration": 4.561
+    },
+    {
+        "text": "is a zero so it's time to make some",
+        "start": 219.519,
+        "duration": 2.561
+    },
+    {
+        "text": "changes",
+        "start": 221.44,
+        "duration": 2.96
+    },
+    {
+        "text": "we're gonna set the entire column to",
+        "start": 222.08,
+        "duration": 4.48
+    },
+    {
+        "text": "zero and we're gonna set the entire",
+        "start": 224.4,
+        "duration": 5.6
+    },
+    {
+        "text": "row to zero in our copy so we see that",
+        "start": 226.56,
+        "duration": 6.399
+    },
+    {
+        "text": "this is already a zero so this is the",
+        "start": 230.0,
+        "duration": 4.4
+    },
+    {
+        "text": "only other value",
+        "start": 232.959,
+        "duration": 3.84
+    },
+    {
+        "text": "in the output that needs to be changed",
+        "start": 234.4,
+        "duration": 3.119
+    },
+    {
+        "text": "to zero",
+        "start": 236.799,
+        "duration": 3.921
+    },
+    {
+        "text": "and we see that the column has already",
+        "start": 237.519,
+        "duration": 6.401
+    },
+    {
+        "text": "been set to zero so clearly having a",
+        "start": 240.72,
+        "duration": 3.76
+    },
+    {
+        "text": "copy",
+        "start": 243.92,
+        "duration": 3.84
+    },
+    {
+        "text": "of the input array takes m by n memory",
+        "start": 244.48,
+        "duration": 6.0
+    },
+    {
+        "text": "and it's also not the most time",
+        "start": 247.76,
+        "duration": 4.08
+    },
+    {
+        "text": "efficient algorithm",
+        "start": 250.48,
+        "duration": 3.839
+    },
+    {
+        "text": "either so how can we do better we're",
+        "start": 251.84,
+        "duration": 3.44
+    },
+    {
+        "text": "noticing for",
+        "start": 254.319,
+        "duration": 4.401
+    },
+    {
+        "text": "every single cell in our input we're",
+        "start": 255.28,
+        "duration": 5.28
+    },
+    {
+        "text": "potentially having to update an",
+        "start": 258.72,
+        "duration": 5.12
+    },
+    {
+        "text": "entire row and an entire column",
+        "start": 260.56,
+        "duration": 5.919
+    },
+    {
+        "text": "can we prevent this repeated work yes",
+        "start": 263.84,
+        "duration": 4.16
+    },
+    {
+        "text": "i'm going to show you how so",
+        "start": 266.479,
+        "duration": 4.241
+    },
+    {
+        "text": "we see that we actually have a fixed",
+        "start": 268.0,
+        "duration": 3.52
+    },
+    {
+        "text": "amount of",
+        "start": 270.72,
+        "duration": 3.68
+    },
+    {
+        "text": "rows right let's call that m we have a",
+        "start": 271.52,
+        "duration": 3.92
+    },
+    {
+        "text": "fixed amount",
+        "start": 274.4,
+        "duration": 4.72
+    },
+    {
+        "text": "of columns n so worst case scenario",
+        "start": 275.44,
+        "duration": 5.52
+    },
+    {
+        "text": "all we're gonna have to do is make sure",
+        "start": 279.12,
+        "duration": 3.44
+    },
+    {
+        "text": "that every",
+        "start": 280.96,
+        "duration": 5.04
+    },
+    {
+        "text": "row is set to zero and then every column",
+        "start": 282.56,
+        "duration": 6.96
+    },
+    {
+        "text": "is set to zero so as we iterate",
+        "start": 286.0,
+        "duration": 6.56
+    },
+    {
+        "text": "through every single value in our input",
+        "start": 289.52,
+        "duration": 6.16
+    },
+    {
+        "text": "let's not update the copy we",
+        "start": 292.56,
+        "duration": 6.16
+    },
+    {
+        "text": "actually don't need the copy",
+        "start": 295.68,
+        "duration": 5.92
+    },
+    {
+        "text": "we need less memory we can have one",
+        "start": 298.72,
+        "duration": 4.24
+    },
+    {
+        "text": "array for the number",
+        "start": 301.6,
+        "duration": 5.28
+    },
+    {
+        "text": "of columns and one array for the number",
+        "start": 302.96,
+        "duration": 4.64
+    },
+    {
+        "text": "of",
+        "start": 306.88,
+        "duration": 3.68
+    },
+    {
+        "text": "rows and then we can mark these whether",
+        "start": 307.6,
+        "duration": 3.76
+    },
+    {
+        "text": "we want to",
+        "start": 310.56,
+        "duration": 4.32
+    },
+    {
+        "text": "fill in zeros or not and then at the",
+        "start": 311.36,
+        "duration": 7.119
+    },
+    {
+        "text": "end we can actually fill in the zeros",
+        "start": 314.88,
+        "duration": 7.039
+    },
+    {
+        "text": "in our input array without even needing",
+        "start": 318.479,
+        "duration": 4.401
+    },
+    {
+        "text": "a copy",
+        "start": 321.919,
+        "duration": 2.801
+    },
+    {
+        "text": "so let me show you this algorithm so we",
+        "start": 322.88,
+        "duration": 3.039
+    },
+    {
+        "text": "have a one",
+        "start": 324.72,
+        "duration": 4.319
+    },
+    {
+        "text": "so we don't have to do anything so this",
+        "start": 325.919,
+        "duration": 6.081
+    },
+    {
+        "text": "empty indicates that we don't have to uh",
+        "start": 329.039,
+        "duration": 5.121
+    },
+    {
+        "text": "zero the row or the column",
+        "start": 332.0,
+        "duration": 4.24
+    },
+    {
+        "text": "next we see a zero so what are we going",
+        "start": 334.16,
+        "duration": 3.2
+    },
+    {
+        "text": "to do well we're gonna",
+        "start": 336.24,
+        "duration": 4.56
+    },
+    {
+        "text": "say okay in this column we're gonna fill",
+        "start": 337.36,
+        "duration": 4.0
+    },
+    {
+        "text": "it",
+        "start": 340.8,
+        "duration": 3.44
+    },
+    {
+        "text": "we're gonna fill it with zero so this is",
+        "start": 341.36,
+        "duration": 5.119
+    },
+    {
+        "text": "some work that we have to do",
+        "start": 344.24,
+        "duration": 5.28
+    },
+    {
+        "text": "in this row we are going to fill it with",
+        "start": 346.479,
+        "duration": 4.881
+    },
+    {
+        "text": "zeros but we're not gonna do it yet",
+        "start": 349.52,
+        "duration": 3.119
+    },
+    {
+        "text": "because we don't want to",
+        "start": 351.36,
+        "duration": 3.279
+    },
+    {
+        "text": "overwrite this value that we haven't",
+        "start": 352.639,
+        "duration": 4.081
+    },
+    {
+        "text": "even visited yet and we definitely don't",
+        "start": 354.639,
+        "duration": 3.68
+    },
+    {
+        "text": "want to overwrite this value",
+        "start": 356.72,
+        "duration": 4.24
+    },
+    {
+        "text": "yet which we haven't visited yet next we",
+        "start": 358.319,
+        "duration": 5.041
+    },
+    {
+        "text": "go to this position it's a 1 so we don't",
+        "start": 360.96,
+        "duration": 3.6
+    },
+    {
+        "text": "have to do anything",
+        "start": 363.36,
+        "duration": 4.399
+    },
+    {
+        "text": "this is also a one this is a zero so",
+        "start": 364.56,
+        "duration": 5.199
+    },
+    {
+        "text": "technically we have to mark this spot",
+        "start": 367.759,
+        "duration": 4.081
+    },
+    {
+        "text": "but we already did that we already know",
+        "start": 369.759,
+        "duration": 4.16
+    },
+    {
+        "text": "this column is going to be set to zero",
+        "start": 371.84,
+        "duration": 4.88
+    },
+    {
+        "text": "but we want to say that this row needs",
+        "start": 373.919,
+        "duration": 4.081
+    },
+    {
+        "text": "to be set to zero",
+        "start": 376.72,
+        "duration": 3.28
+    },
+    {
+        "text": "we're not going to fill the zeros yet",
+        "start": 378.0,
+        "duration": 4.0
+    },
+    {
+        "text": "but we're definitely gonna mark it",
+        "start": 380.0,
+        "duration": 3.759
+    },
+    {
+        "text": "so this is a one we don't do anything",
+        "start": 382.0,
+        "duration": 3.28
+    },
+    {
+        "text": "this is a zero",
+        "start": 383.759,
+        "duration": 4.241
+    },
+    {
+        "text": "we know that this column has to be set",
+        "start": 385.28,
+        "duration": 3.759
+    },
+    {
+        "text": "to zero",
+        "start": 388.0,
+        "duration": 4.24
+    },
+    {
+        "text": "and this row has to be set",
+        "start": 389.039,
+        "duration": 5.681
+    },
+    {
+        "text": "to zero now technically we see that",
+        "start": 392.24,
+        "duration": 4.72
+    },
+    {
+        "text": "every row is gonna be set to zero so",
+        "start": 394.72,
+        "duration": 4.0
+    },
+    {
+        "text": "so therefore like the entire matrix is",
+        "start": 396.96,
+        "duration": 3.2
+    },
+    {
+        "text": "just gonna be zero but",
+        "start": 398.72,
+        "duration": 3.52
+    },
+    {
+        "text": "we're still gonna continue our algorithm",
+        "start": 400.16,
+        "duration": 3.68
+    },
+    {
+        "text": "so this is a one we don't have to do",
+        "start": 402.24,
+        "duration": 2.32
+    },
+    {
+        "text": "anything",
+        "start": 403.84,
+        "duration": 2.32
+    },
+    {
+        "text": "this is a one we don't have to do",
+        "start": 404.56,
+        "duration": 3.919
+    },
+    {
+        "text": "anything so now what we're gonna do",
+        "start": 406.16,
+        "duration": 4.4
+    },
+    {
+        "text": "is we're gonna look at this memory and",
+        "start": 408.479,
+        "duration": 4.0
+    },
+    {
+        "text": "it's gonna tell us which columns need to",
+        "start": 410.56,
+        "duration": 3.68
+    },
+    {
+        "text": "be set to zero so we see the first",
+        "start": 412.479,
+        "duration": 4.0
+    },
+    {
+        "text": "column does need to be set to zero",
+        "start": 414.24,
+        "duration": 4.32
+    },
+    {
+        "text": "we're gonna do that the second column",
+        "start": 416.479,
+        "duration": 3.681
+    },
+    {
+        "text": "needs to be set to zero",
+        "start": 418.56,
+        "duration": 4.32
+    },
+    {
+        "text": "we're gonna do that the third column",
+        "start": 420.16,
+        "duration": 4.72
+    },
+    {
+        "text": "does not need to be set to zero",
+        "start": 422.88,
+        "duration": 4.879
+    },
+    {
+        "text": "next we look at the rows the first row",
+        "start": 424.88,
+        "duration": 4.719
+    },
+    {
+        "text": "needs to be set to zero we mostly",
+        "start": 427.759,
+        "duration": 3.521
+    },
+    {
+        "text": "already did that but",
+        "start": 429.599,
+        "duration": 4.241
+    },
+    {
+        "text": "don't forget about this one the second",
+        "start": 431.28,
+        "duration": 6.08
+    },
+    {
+        "text": "row is going to be set to zero",
+        "start": 433.84,
+        "duration": 7.6
+    },
+    {
+        "text": "the third row is going to be set to zero",
+        "start": 437.36,
+        "duration": 6.399
+    },
+    {
+        "text": "and obviously the entire matrix is now",
+        "start": 441.44,
+        "duration": 3.68
+    },
+    {
+        "text": "zero but",
+        "start": 443.759,
+        "duration": 4.56
+    },
+    {
+        "text": "the advantage of this is the memory we",
+        "start": 445.12,
+        "duration": 3.919
+    },
+    {
+        "text": "used",
+        "start": 448.319,
+        "duration": 3.121
+    },
+    {
+        "text": "we didn't need to create an entire copy",
+        "start": 449.039,
+        "duration": 3.28
+    },
+    {
+        "text": "we just needed",
+        "start": 451.44,
+        "duration": 4.0
+    },
+    {
+        "text": "two arrays so the memory complexity is",
+        "start": 452.319,
+        "duration": 3.761
+    },
+    {
+        "text": "actually",
+        "start": 455.44,
+        "duration": 3.84
+    },
+    {
+        "text": "big o m plus n where these are the",
+        "start": 456.08,
+        "duration": 4.239
+    },
+    {
+        "text": "dimensions",
+        "start": 459.28,
+        "duration": 4.16
+    },
+    {
+        "text": "the time complexity is m",
+        "start": 460.319,
+        "duration": 6.0
+    },
+    {
+        "text": "by n because we're really just iterating",
+        "start": 463.44,
+        "duration": 4.4
+    },
+    {
+        "text": "over the entire matrix",
+        "start": 466.319,
+        "duration": 5.361
+    },
+    {
+        "text": "at most three times one where we iterate",
+        "start": 467.84,
+        "duration": 5.199
+    },
+    {
+        "text": "through every position",
+        "start": 471.68,
+        "duration": 3.919
+    },
+    {
+        "text": "one where we fill in the columns and",
+        "start": 473.039,
+        "duration": 5.84
+    },
+    {
+        "text": "another time where we fill in the rows",
+        "start": 475.599,
+        "duration": 4.641
+    },
+    {
+        "text": "and i didn't tell you the time",
+        "start": 478.879,
+        "duration": 3.921
+    },
+    {
+        "text": "complexity of this one but it is",
+        "start": 480.24,
+        "duration": 4.88
+    },
+    {
+        "text": "actually greater than the time",
+        "start": 482.8,
+        "duration": 3.44
+    },
+    {
+        "text": "complexity",
+        "start": 485.12,
+        "duration": 4.0
+    },
+    {
+        "text": "of this so this is actually a better",
+        "start": 486.24,
+        "duration": 3.6
+    },
+    {
+        "text": "time",
+        "start": 489.12,
+        "duration": 3.44
+    },
+    {
+        "text": "solution and a better memory solution",
+        "start": 489.84,
+        "duration": 3.68
+    },
+    {
+        "text": "now my only",
+        "start": 492.56,
+        "duration": 4.0
+    },
+    {
+        "text": "question is can we get a o of",
+        "start": 493.52,
+        "duration": 6.16
+    },
+    {
+        "text": "one memory solution we know the time",
+        "start": 496.56,
+        "duration": 5.12
+    },
+    {
+        "text": "the best time complexity we can do is m",
+        "start": 499.68,
+        "duration": 3.44
+    },
+    {
+        "text": "by n because we do",
+        "start": 501.68,
+        "duration": 3.199
+    },
+    {
+        "text": "have to iterate through every single",
+        "start": 503.12,
+        "duration": 3.04
+    },
+    {
+        "text": "position in",
+        "start": 504.879,
+        "duration": 4.401
+    },
+    {
+        "text": "the matrix but we can save some space",
+        "start": 506.16,
+        "duration": 5.68
+    },
+    {
+        "text": "is it possible yes i'm going to show you",
+        "start": 509.28,
+        "duration": 3.119
+    },
+    {
+        "text": "how",
+        "start": 511.84,
+        "duration": 3.199
+    },
+    {
+        "text": "is there a way where we can take this",
+        "start": 512.399,
+        "duration": 3.361
+    },
+    {
+        "text": "array",
+        "start": 515.039,
+        "duration": 3.761
+    },
+    {
+        "text": "and put it into the matrix so we're we",
+        "start": 515.76,
+        "duration": 4.24
+    },
+    {
+        "text": "can do this in",
+        "start": 518.8,
+        "duration": 4.64
+    },
+    {
+        "text": "place is that possible if i put that",
+        "start": 520.0,
+        "duration": 6.8
+    },
+    {
+        "text": "over here is it possible for",
+        "start": 523.44,
+        "duration": 6.959
+    },
+    {
+        "text": "us to take this uh array",
+        "start": 526.8,
+        "duration": 7.36
+    },
+    {
+        "text": "and put it in to",
+        "start": 530.399,
+        "duration": 7.361
+    },
+    {
+        "text": "our matrix the answer is yes we can take",
+        "start": 534.16,
+        "duration": 6.4
+    },
+    {
+        "text": "these two arrays that we have and put",
+        "start": 537.76,
+        "duration": 3.199
+    },
+    {
+        "text": "them",
+        "start": 540.56,
+        "duration": 3.2
+    },
+    {
+        "text": "in our matrix so we do this in place",
+        "start": 540.959,
+        "duration": 3.361
+    },
+    {
+        "text": "with",
+        "start": 543.76,
+        "duration": 3.759
+    },
+    {
+        "text": "o of one memory but you see just one",
+        "start": 544.32,
+        "duration": 3.68
+    },
+    {
+        "text": "problem",
+        "start": 547.519,
+        "duration": 3.76
+    },
+    {
+        "text": "right just one little problem notice",
+        "start": 548.0,
+        "duration": 7.68
+    },
+    {
+        "text": "how this position is overlapping the two",
+        "start": 551.279,
+        "duration": 7.201
+    },
+    {
+        "text": "arrays are overlapping in this position",
+        "start": 555.68,
+        "duration": 3.52
+    },
+    {
+        "text": "so we",
+        "start": 558.48,
+        "duration": 3.76
+    },
+    {
+        "text": "we do need a tiny bit more memory we",
+        "start": 559.2,
+        "duration": 3.759
+    },
+    {
+        "text": "just need",
+        "start": 562.24,
+        "duration": 4.24
+    },
+    {
+        "text": "one more uh cell right we just need one",
+        "start": 562.959,
+        "duration": 4.401
+    },
+    {
+        "text": "more",
+        "start": 566.48,
+        "duration": 3.2
+    },
+    {
+        "text": "variable but we know that that's still",
+        "start": 567.36,
+        "duration": 3.12
+    },
+    {
+        "text": "big o",
+        "start": 569.68,
+        "duration": 3.44
+    },
+    {
+        "text": "of one so i'm actually for the purple",
+        "start": 570.48,
+        "duration": 4.88
+    },
+    {
+        "text": "one which tells us which rows we need to",
+        "start": 573.12,
+        "duration": 4.24
+    },
+    {
+        "text": "zero i'm going to",
+        "start": 575.36,
+        "duration": 4.8
+    },
+    {
+        "text": "have it be one less we don't want them",
+        "start": 577.36,
+        "duration": 4.159
+    },
+    {
+        "text": "to overlap",
+        "start": 580.16,
+        "duration": 3.359
+    },
+    {
+        "text": "so we can get rid of this we don't",
+        "start": 581.519,
+        "duration": 4.0
+    },
+    {
+        "text": "actually need the extra memory",
+        "start": 583.519,
+        "duration": 5.281
+    },
+    {
+        "text": "from these input arrays we don't need",
+        "start": 585.519,
+        "duration": 6.081
+    },
+    {
+        "text": "this extra memory but we do need this",
+        "start": 588.8,
+        "duration": 3.599
+    },
+    {
+        "text": "one",
+        "start": 591.6,
+        "duration": 3.2
+    },
+    {
+        "text": "single last cell because we see that",
+        "start": 592.399,
+        "duration": 4.161
+    },
+    {
+        "text": "there's no room for it over here the",
+        "start": 594.8,
+        "duration": 2.56
+    },
+    {
+        "text": "green one",
+        "start": 596.56,
+        "duration": 3.279
+    },
+    {
+        "text": "took that from us so you can see this is",
+        "start": 597.36,
+        "duration": 3.039
+    },
+    {
+        "text": "big o",
+        "start": 599.839,
+        "duration": 2.801
+    },
+    {
+        "text": "of one memory right we're just using one",
+        "start": 600.399,
+        "duration": 4.641
+    },
+    {
+        "text": "extra cell that's constant memory",
+        "start": 602.64,
+        "duration": 5.12
+    },
+    {
+        "text": "and so this is going to tell us whether",
+        "start": 605.04,
+        "duration": 4.88
+    },
+    {
+        "text": "we need to zero out the first",
+        "start": 607.76,
+        "duration": 4.56
+    },
+    {
+        "text": "row or not so now we're just going to",
+        "start": 609.92,
+        "duration": 3.039
+    },
+    {
+        "text": "run through",
+        "start": 612.32,
+        "duration": 2.959
+    },
+    {
+        "text": "the matrix for the third and last time",
+        "start": 612.959,
+        "duration": 4.0
+    },
+    {
+        "text": "so this is a one we don't have to do",
+        "start": 615.279,
+        "duration": 2.481
+    },
+    {
+        "text": "anything",
+        "start": 616.959,
+        "duration": 2.961
+    },
+    {
+        "text": "this is a zero so what are we gonna do",
+        "start": 617.76,
+        "duration": 3.199
+    },
+    {
+        "text": "we're gonna mark",
+        "start": 619.92,
+        "duration": 4.0
+    },
+    {
+        "text": "this cell and how are we gonna mark it",
+        "start": 620.959,
+        "duration": 4.641
+    },
+    {
+        "text": "well we're gonna set",
+        "start": 623.92,
+        "duration": 4.72
+    },
+    {
+        "text": "this to zero which it already is right",
+        "start": 625.6,
+        "duration": 5.76
+    },
+    {
+        "text": "and we're gonna set this to zero",
+        "start": 628.64,
+        "duration": 4.48
+    },
+    {
+        "text": "indicating that this",
+        "start": 631.36,
+        "duration": 5.12
+    },
+    {
+        "text": "row needs to be zeroed out this",
+        "start": 633.12,
+        "duration": 6.399
+    },
+    {
+        "text": "zero tells us that this column needs to",
+        "start": 636.48,
+        "duration": 4.4
+    },
+    {
+        "text": "be zeroed out",
+        "start": 639.519,
+        "duration": 3.841
+    },
+    {
+        "text": "next we go to this cell it's a one great",
+        "start": 640.88,
+        "duration": 4.079
+    },
+    {
+        "text": "we don't have to do anything",
+        "start": 643.36,
+        "duration": 3.84
+    },
+    {
+        "text": "this is a one great we don't have to do",
+        "start": 644.959,
+        "duration": 4.161
+    },
+    {
+        "text": "anything this is a zero",
+        "start": 647.2,
+        "duration": 4.879
+    },
+    {
+        "text": "so what are we gonna do well we're gonna",
+        "start": 649.12,
+        "duration": 3.76
+    },
+    {
+        "text": "set",
+        "start": 652.079,
+        "duration": 4.561
+    },
+    {
+        "text": "this cell to zero to indicate that this",
+        "start": 652.88,
+        "duration": 5.76
+    },
+    {
+        "text": "column needs to be zeroed out but it's",
+        "start": 656.64,
+        "duration": 3.439
+    },
+    {
+        "text": "already zero good for",
+        "start": 658.64,
+        "duration": 5.04
+    },
+    {
+        "text": "us but we also need to set",
+        "start": 660.079,
+        "duration": 6.961
+    },
+    {
+        "text": "this to zero to tell us that this",
+        "start": 663.68,
+        "duration": 7.04
+    },
+    {
+        "text": "row needs to be zeroed out and you see",
+        "start": 667.04,
+        "duration": 5.76
+    },
+    {
+        "text": "why this solution works right so now",
+        "start": 670.72,
+        "duration": 3.84
+    },
+    {
+        "text": "we're gonna set this to zero",
+        "start": 672.8,
+        "duration": 4.159
+    },
+    {
+        "text": "and that's okay for us because we",
+        "start": 674.56,
+        "duration": 3.12
+    },
+    {
+        "text": "already",
+        "start": 676.959,
+        "duration": 3.521
+    },
+    {
+        "text": "visited that cell we already saw that it",
+        "start": 677.68,
+        "duration": 4.399
+    },
+    {
+        "text": "initially had a one",
+        "start": 680.48,
+        "duration": 3.919
+    },
+    {
+        "text": "so we can overwrite it we're allowed to",
+        "start": 682.079,
+        "duration": 3.041
+    },
+    {
+        "text": "do that",
+        "start": 684.399,
+        "duration": 3.68
+    },
+    {
+        "text": "the reason this works is we start at the",
+        "start": 685.12,
+        "duration": 3.44
+    },
+    {
+        "text": "top",
+        "start": 688.079,
+        "duration": 3.2
+    },
+    {
+        "text": "left over here and then work our way",
+        "start": 688.56,
+        "duration": 4.32
+    },
+    {
+        "text": "down right we start here",
+        "start": 691.279,
+        "duration": 4.961
+    },
+    {
+        "text": "and work our way top to bottom left",
+        "start": 692.88,
+        "duration": 6.639
+    },
+    {
+        "text": "to right so now we visit this cell it's",
+        "start": 696.24,
+        "duration": 3.839
+    },
+    {
+        "text": "a one",
+        "start": 699.519,
+        "duration": 3.681
+    },
+    {
+        "text": "nothing to do we visit this zero so we",
+        "start": 700.079,
+        "duration": 3.44
+    },
+    {
+        "text": "got",
+        "start": 703.2,
+        "duration": 3.36
+    },
+    {
+        "text": "we got some work to do we need to set",
+        "start": 703.519,
+        "duration": 6.081
+    },
+    {
+        "text": "this top value to zero to indicate that",
+        "start": 706.56,
+        "duration": 5.36
+    },
+    {
+        "text": "this column needs to be zeroed out",
+        "start": 709.6,
+        "duration": 5.76
+    },
+    {
+        "text": "and we need to set this position to zero",
+        "start": 711.92,
+        "duration": 5.68
+    },
+    {
+        "text": "to indicate that the row needs to be",
+        "start": 715.36,
+        "duration": 4.24
+    },
+    {
+        "text": "zeroed out but it's already zero",
+        "start": 717.6,
+        "duration": 5.2
+    },
+    {
+        "text": "which is good for us so now we get a one",
+        "start": 719.6,
+        "duration": 6.0
+    },
+    {
+        "text": "nothing to do we get another one nothing",
+        "start": 722.8,
+        "duration": 3.68
+    },
+    {
+        "text": "to do",
+        "start": 725.6,
+        "duration": 3.84
+    },
+    {
+        "text": "okay so now that we know we know which",
+        "start": 726.48,
+        "duration": 3.599
+    },
+    {
+        "text": "rows",
+        "start": 729.44,
+        "duration": 2.959
+    },
+    {
+        "text": "we need to zero out and we know which",
+        "start": 730.079,
+        "duration": 3.921
+    },
+    {
+        "text": "columns we have to zero out so all we",
+        "start": 732.399,
+        "duration": 3.761
+    },
+    {
+        "text": "have to do is fill in those zeros",
+        "start": 734.0,
+        "duration": 4.959
+    },
+    {
+        "text": "so we start we start here we know this",
+        "start": 736.16,
+        "duration": 3.6
+    },
+    {
+        "text": "entire",
+        "start": 738.959,
+        "duration": 2.961
+    },
+    {
+        "text": "column needs to be zero it already is we",
+        "start": 739.76,
+        "duration": 4.319
+    },
+    {
+        "text": "know this column needs to be zero it",
+        "start": 741.92,
+        "duration": 4.32
+    },
+    {
+        "text": "mostly is we just have to change this",
+        "start": 744.079,
+        "duration": 3.521
+    },
+    {
+        "text": "last value",
+        "start": 746.24,
+        "duration": 3.92
+    },
+    {
+        "text": "this is a one so we don't have to zero",
+        "start": 747.6,
+        "duration": 3.84
+    },
+    {
+        "text": "out this column",
+        "start": 750.16,
+        "duration": 5.119
+    },
+    {
+        "text": "next let's go through the rows so this",
+        "start": 751.44,
+        "duration": 7.12
+    },
+    {
+        "text": "row needs to be zeroed out so we can",
+        "start": 755.279,
+        "duration": 4.081
+    },
+    {
+        "text": "change this",
+        "start": 758.56,
+        "duration": 4.64
+    },
+    {
+        "text": "to a zero this row needs to be zeroed",
+        "start": 759.36,
+        "duration": 4.159
+    },
+    {
+        "text": "out",
+        "start": 763.2,
+        "duration": 3.439
+    },
+    {
+        "text": "so we can change this to a zero the",
+        "start": 763.519,
+        "duration": 4.0
+    },
+    {
+        "text": "third row",
+        "start": 766.639,
+        "duration": 3.361
+    },
+    {
+        "text": "also needs to be zeroed out so we can",
+        "start": 767.519,
+        "duration": 3.12
+    },
+    {
+        "text": "change",
+        "start": 770.0,
+        "duration": 3.04
+    },
+    {
+        "text": "this to a zero now the entire thing is",
+        "start": 770.639,
+        "duration": 4.241
+    },
+    {
+        "text": "zero which is the result that we",
+        "start": 773.04,
+        "duration": 2.96
+    },
+    {
+        "text": "expected",
+        "start": 774.88,
+        "duration": 3.759
+    },
+    {
+        "text": "but the good thing about the solution is",
+        "start": 776.0,
+        "duration": 3.36
+    },
+    {
+        "text": "we did it",
+        "start": 778.639,
+        "duration": 3.841
+    },
+    {
+        "text": "in place all we really needed was one",
+        "start": 779.36,
+        "duration": 6.0
+    },
+    {
+        "text": "extra variable so with all that being",
+        "start": 782.48,
+        "duration": 3.52
+    },
+    {
+        "text": "said let's",
+        "start": 785.36,
+        "duration": 3.76
+    },
+    {
+        "text": "finally write the big o of",
+        "start": 786.0,
+        "duration": 5.839
+    },
+    {
+        "text": "one memory solution so the first thing",
+        "start": 789.12,
+        "duration": 4.0
+    },
+    {
+        "text": "i'm just gonna do is",
+        "start": 791.839,
+        "duration": 3.521
+    },
+    {
+        "text": "get the number of rows and columns and",
+        "start": 793.12,
+        "duration": 4.0
+    },
+    {
+        "text": "put them in some variables so we don't",
+        "start": 795.36,
+        "duration": 2.159
+    },
+    {
+        "text": "have to",
+        "start": 797.12,
+        "duration": 2.24
+    },
+    {
+        "text": "keep computing that we can get the",
+        "start": 797.519,
+        "duration": 3.921
+    },
+    {
+        "text": "length of the matrix and get the length",
+        "start": 799.36,
+        "duration": 2.8
+    },
+    {
+        "text": "of the first",
+        "start": 801.44,
+        "duration": 2.399
+    },
+    {
+        "text": "row of the matrix which tells us the",
+        "start": 802.16,
+        "duration": 3.04
+    },
+    {
+        "text": "number of columns",
+        "start": 803.839,
+        "duration": 3.921
+    },
+    {
+        "text": "remember we don't need extra arrays but",
+        "start": 805.2,
+        "duration": 3.28
+    },
+    {
+        "text": "we just",
+        "start": 807.76,
+        "duration": 3.44
+    },
+    {
+        "text": "need one extra variable to tell us if",
+        "start": 808.48,
+        "duration": 4.32
+    },
+    {
+        "text": "the first row is",
+        "start": 811.2,
+        "duration": 4.24
+    },
+    {
+        "text": "zero or not so initially i'm going to",
+        "start": 812.8,
+        "duration": 3.36
+    },
+    {
+        "text": "set this",
+        "start": 815.44,
+        "duration": 3.36
+    },
+    {
+        "text": "to false to say that the first row is",
+        "start": 816.16,
+        "duration": 3.679
+    },
+    {
+        "text": "not zero but we'll",
+        "start": 818.8,
+        "duration": 3.599
+    },
+    {
+        "text": "update it to true if we need to so",
+        "start": 819.839,
+        "duration": 4.481
+    },
+    {
+        "text": "remember that the first thing we want to",
+        "start": 822.399,
+        "duration": 2.641
+    },
+    {
+        "text": "know is",
+        "start": 824.32,
+        "duration": 4.079
+    },
+    {
+        "text": "determine which rows and columns",
+        "start": 825.04,
+        "duration": 6.64
+    },
+    {
+        "text": "need to be zeroed so we can",
+        "start": 828.399,
+        "duration": 6.161
+    },
+    {
+        "text": "iterate through every position in our",
+        "start": 831.68,
+        "duration": 3.36
+    },
+    {
+        "text": "cell",
+        "start": 834.56,
+        "duration": 2.88
+    },
+    {
+        "text": "so we're gonna go through every row and",
+        "start": 835.04,
+        "duration": 3.44
+    },
+    {
+        "text": "we're gonna go through",
+        "start": 837.44,
+        "duration": 5.12
+    },
+    {
+        "text": "every column if we ever find a",
+        "start": 838.48,
+        "duration": 7.84
+    },
+    {
+        "text": "value that is zeros in this case",
+        "start": 842.56,
+        "duration": 5.839
+    },
+    {
+        "text": "what we so if we find a zero what are we",
+        "start": 846.32,
+        "duration": 3.04
+    },
+    {
+        "text": "gonna do we're gonna",
+        "start": 848.399,
+        "duration": 4.321
+    },
+    {
+        "text": "set the first row so row",
+        "start": 849.36,
+        "duration": 6.56
+    },
+    {
+        "text": "zero in this column we're going to set",
+        "start": 852.72,
+        "duration": 4.239
+    },
+    {
+        "text": "that value",
+        "start": 855.92,
+        "duration": 4.64
+    },
+    {
+        "text": "to zero what we also want to do is",
+        "start": 856.959,
+        "duration": 6.641
+    },
+    {
+        "text": "in the first column so",
+        "start": 860.56,
+        "duration": 6.079
+    },
+    {
+        "text": "column is zero we want to set that",
+        "start": 863.6,
+        "duration": 6.4
+    },
+    {
+        "text": "row position to zero as well",
+        "start": 866.639,
+        "duration": 7.121
+    },
+    {
+        "text": "but just one catch we cannot set that",
+        "start": 870.0,
+        "duration": 7.04
+    },
+    {
+        "text": "for the top leftmost position so",
+        "start": 873.76,
+        "duration": 6.72
+    },
+    {
+        "text": "only we're only gonna do this if row",
+        "start": 877.04,
+        "duration": 5.919
+    },
+    {
+        "text": "is greater than zero because remember",
+        "start": 880.48,
+        "duration": 3.84
+    },
+    {
+        "text": "for row 0 we",
+        "start": 882.959,
+        "duration": 4.481
+    },
+    {
+        "text": "actually have a dedicated value so",
+        "start": 884.32,
+        "duration": 5.68
+    },
+    {
+        "text": "if rho 0 is greater than 0 then we do",
+        "start": 887.44,
+        "duration": 3.28
+    },
+    {
+        "text": "this",
+        "start": 890.0,
+        "duration": 3.76
+    },
+    {
+        "text": "but otherwise we're going to actually",
+        "start": 890.72,
+        "duration": 3.679
+    },
+    {
+        "text": "update",
+        "start": 893.76,
+        "duration": 3.759
+    },
+    {
+        "text": "this value our boolean so",
+        "start": 894.399,
+        "duration": 5.921
+    },
+    {
+        "text": "we're going to set that to true and so",
+        "start": 897.519,
+        "duration": 3.281
+    },
+    {
+        "text": "that's",
+        "start": 900.32,
+        "duration": 2.8
+    },
+    {
+        "text": "it we're just marking which rows and",
+        "start": 900.8,
+        "duration": 3.68
+    },
+    {
+        "text": "columns to zero",
+        "start": 903.12,
+        "duration": 3.92
+    },
+    {
+        "text": "out so now the way i'm actually going to",
+        "start": 904.48,
+        "duration": 4.159
+    },
+    {
+        "text": "zero them out is going to be a little",
+        "start": 907.04,
+        "duration": 3.2
+    },
+    {
+        "text": "bit different than how i showed in the",
+        "start": 908.639,
+        "duration": 3.281
+    },
+    {
+        "text": "picture i'm actually gonna go through",
+        "start": 910.24,
+        "duration": 3.44
+    },
+    {
+        "text": "every position one more time",
+        "start": 911.92,
+        "duration": 4.479
+    },
+    {
+        "text": "so every uh row column pair and i'm",
+        "start": 913.68,
+        "duration": 3.68
+    },
+    {
+        "text": "gonna check",
+        "start": 916.399,
+        "duration": 3.281
+    },
+    {
+        "text": "for each position so for this row column",
+        "start": 917.36,
+        "duration": 3.2
+    },
+    {
+        "text": "pair is",
+        "start": 919.68,
+        "duration": 3.92
+    },
+    {
+        "text": "the do we need to zero it out and how do",
+        "start": 920.56,
+        "duration": 4.56
+    },
+    {
+        "text": "we know if we're gonna zero it out",
+        "start": 923.6,
+        "duration": 4.72
+    },
+    {
+        "text": "well see up here we would set the first",
+        "start": 925.12,
+        "duration": 4.88
+    },
+    {
+        "text": "row to zero so if",
+        "start": 928.32,
+        "duration": 5.759
+    },
+    {
+        "text": "the first row value is zero that means",
+        "start": 930.0,
+        "duration": 6.24
+    },
+    {
+        "text": "that we're going to zero this out but",
+        "start": 934.079,
+        "duration": 3.041
+    },
+    {
+        "text": "also",
+        "start": 936.24,
+        "duration": 5.2
+    },
+    {
+        "text": "if the column is zero so if",
+        "start": 937.12,
+        "duration": 7.76
+    },
+    {
+        "text": "matrix of the first column",
+        "start": 941.44,
+        "duration": 6.72
+    },
+    {
+        "text": "of this row is equal to zero",
+        "start": 944.88,
+        "duration": 6.959
+    },
+    {
+        "text": "then in either of these cases we wanna",
+        "start": 948.16,
+        "duration": 4.32
+    },
+    {
+        "text": "set",
+        "start": 951.839,
+        "duration": 3.281
+    },
+    {
+        "text": "the current position that we're at to",
+        "start": 952.48,
+        "duration": 3.52
+    },
+    {
+        "text": "zero",
+        "start": 955.12,
+        "duration": 3.76
+    },
+    {
+        "text": "and so we cannot actually just do this",
+        "start": 956.0,
+        "duration": 5.12
+    },
+    {
+        "text": "by iterating through every row column",
+        "start": 958.88,
+        "duration": 6.0
+    },
+    {
+        "text": "we have to actually skip the first row",
+        "start": 961.12,
+        "duration": 6.88
+    },
+    {
+        "text": "and we have to skip the first column",
+        "start": 964.88,
+        "duration": 5.84
+    },
+    {
+        "text": "because we're gonna handle that after so",
+        "start": 968.0,
+        "duration": 4.32
+    },
+    {
+        "text": "now that we zeroed out",
+        "start": 970.72,
+        "duration": 4.32
+    },
+    {
+        "text": "the main part of our matrix we can",
+        "start": 972.32,
+        "duration": 3.84
+    },
+    {
+        "text": "potentially",
+        "start": 975.04,
+        "duration": 3.359
+    },
+    {
+        "text": "zero out the first row and the first",
+        "start": 976.16,
+        "duration": 4.479
+    },
+    {
+        "text": "column if we need to so",
+        "start": 978.399,
+        "duration": 5.44
+    },
+    {
+        "text": "for we're gonna check if the",
+        "start": 980.639,
+        "duration": 6.32
+    },
+    {
+        "text": "origin of our matrix is zero",
+        "start": 983.839,
+        "duration": 5.92
+    },
+    {
+        "text": "so remember the first row of the matrix",
+        "start": 986.959,
+        "duration": 3.44
+    },
+    {
+        "text": "tells us",
+        "start": 989.759,
+        "duration": 3.041
+    },
+    {
+        "text": "which columns we can zero out so if this",
+        "start": 990.399,
+        "duration": 5.44
+    },
+    {
+        "text": "is equal to zero that means we can set",
+        "start": 992.8,
+        "duration": 3.68
+    },
+    {
+        "text": "every",
+        "start": 995.839,
+        "duration": 4.24
+    },
+    {
+        "text": "value we can set every value",
+        "start": 996.48,
+        "duration": 6.96
+    },
+    {
+        "text": "in our matrix in the first column",
+        "start": 1000.079,
+        "duration": 6.401
+    },
+    {
+        "text": "so i'm gonna say column is zero",
+        "start": 1003.44,
+        "duration": 6.24
+    },
+    {
+        "text": "so if the first column in the first row",
+        "start": 1006.48,
+        "duration": 3.599
+    },
+    {
+        "text": "is zero",
+        "start": 1009.68,
+        "duration": 4.159
+    },
+    {
+        "text": "then every value so what we're doing",
+        "start": 1010.079,
+        "duration": 6.961
+    },
+    {
+        "text": "here is basically zeroing out the first",
+        "start": 1013.839,
+        "duration": 6.641
+    },
+    {
+        "text": "column of our matrix and",
+        "start": 1017.04,
+        "duration": 5.76
+    },
+    {
+        "text": "last but not least we have to take a",
+        "start": 1020.48,
+        "duration": 3.2
+    },
+    {
+        "text": "look at",
+        "start": 1022.8,
+        "duration": 4.8
+    },
+    {
+        "text": "our last uh variable that we declared so",
+        "start": 1023.68,
+        "duration": 5.84
+    },
+    {
+        "text": "row zero this tells us if we're going to",
+        "start": 1027.6,
+        "duration": 3.439
+    },
+    {
+        "text": "zero out the first",
+        "start": 1029.52,
+        "duration": 4.72
+    },
+    {
+        "text": "row so if row zero is true",
+        "start": 1031.039,
+        "duration": 5.121
+    },
+    {
+        "text": "meaning we have to zero out the first",
+        "start": 1034.24,
+        "duration": 4.719
+    },
+    {
+        "text": "row we're gonna go through every",
+        "start": 1036.16,
+        "duration": 5.919
+    },
+    {
+        "text": "value in the first row",
+        "start": 1038.959,
+        "duration": 6.96
+    },
+    {
+        "text": "and zero it out so matrix of the first",
+        "start": 1042.079,
+        "duration": 4.48
+    },
+    {
+        "text": "row",
+        "start": 1045.919,
+        "duration": 3.76
+    },
+    {
+        "text": "row index zero and every position in",
+        "start": 1046.559,
+        "duration": 3.841
+    },
+    {
+        "text": "that row",
+        "start": 1049.679,
+        "duration": 3.281
+    },
+    {
+        "text": "we're gonna zero it out so that's the",
+        "start": 1050.4,
+        "duration": 3.279
+    },
+    {
+        "text": "algorithm",
+        "start": 1052.96,
+        "duration": 2.959
+    },
+    {
+        "text": "first we've determined which rows and",
+        "start": 1053.679,
+        "duration": 3.681
+    },
+    {
+        "text": "columns to zero out",
+        "start": 1055.919,
+        "duration": 4.961
+    },
+    {
+        "text": "then we zero out most of them",
+        "start": 1057.36,
+        "duration": 6.72
+    },
+    {
+        "text": "then we zero out the first column",
+        "start": 1060.88,
+        "duration": 6.4
+    },
+    {
+        "text": "if we need to and lastly we zero out the",
+        "start": 1064.08,
+        "duration": 3.839
+    },
+    {
+        "text": "first",
+        "start": 1067.28,
+        "duration": 3.2
+    },
+    {
+        "text": "row if we need to and we don't have to",
+        "start": 1067.919,
+        "duration": 3.521
+    },
+    {
+        "text": "return anything",
+        "start": 1070.48,
+        "duration": 2.88
+    },
+    {
+        "text": "because we did this in place which is",
+        "start": 1071.44,
+        "duration": 4.32
+    },
+    {
+        "text": "what the problem wanted us to do",
+        "start": 1073.36,
+        "duration": 4.559
+    },
+    {
+        "text": "okay i'm so dumb i don't know why i",
+        "start": 1075.76,
+        "duration": 4.24
+    },
+    {
+        "text": "didn't finish this line of code don't",
+        "start": 1077.919,
+        "duration": 3.041
+    },
+    {
+        "text": "forget to",
+        "start": 1080.0,
+        "duration": 6.72
+    },
+    {
+        "text": "put this to zero",
+        "start": 1080.96,
+        "duration": 5.76
+    }
+]

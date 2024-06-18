@@ -1,0 +1,967 @@
+[
+    {
+        "text": "hey everyone welcome back let's write",
+        "start": 0.0,
+        "duration": 3.76
+    },
+    {
+        "text": "some more neat code today today let's",
+        "start": 1.76,
+        "duration": 5.28
+    },
+    {
+        "text": "solve remove nth node from the end of a",
+        "start": 3.76,
+        "duration": 3.92
+    },
+    {
+        "text": "list",
+        "start": 7.04,
+        "duration": 3.679
+    },
+    {
+        "text": "so we're given a linked list and all we",
+        "start": 7.68,
+        "duration": 3.68
+    },
+    {
+        "text": "need to do",
+        "start": 10.719,
+        "duration": 3.601
+    },
+    {
+        "text": "is remove the nth node from the end of",
+        "start": 11.36,
+        "duration": 3.68
+    },
+    {
+        "text": "the list",
+        "start": 14.32,
+        "duration": 2.959
+    },
+    {
+        "text": "and then return the new list so that's",
+        "start": 15.04,
+        "duration": 4.239
+    },
+    {
+        "text": "pretty straightforward right so in this",
+        "start": 17.279,
+        "duration": 4.08
+    },
+    {
+        "text": "case we got five nodes",
+        "start": 19.279,
+        "duration": 5.521
+    },
+    {
+        "text": "we just want to remove the n equals two",
+        "start": 21.359,
+        "duration": 5.76
+    },
+    {
+        "text": "so meaning the second node from the end",
+        "start": 24.8,
+        "duration": 4.16
+    },
+    {
+        "text": "of the list right so this is the first",
+        "start": 27.119,
+        "duration": 3.361
+    },
+    {
+        "text": "from the end of the list this is the",
+        "start": 28.96,
+        "duration": 2.239
+    },
+    {
+        "text": "second",
+        "start": 30.48,
+        "duration": 4.16
+    },
+    {
+        "text": "so we remove this and then we return",
+        "start": 31.199,
+        "duration": 6.001
+    },
+    {
+        "text": "this list which now has four elements",
+        "start": 34.64,
+        "duration": 3.439
+    },
+    {
+        "text": "remaining",
+        "start": 37.2,
+        "duration": 3.12
+    },
+    {
+        "text": "so what's the easiest way to solve this",
+        "start": 38.079,
+        "duration": 4.241
+    },
+    {
+        "text": "well they say from the",
+        "start": 40.32,
+        "duration": 4.399
+    },
+    {
+        "text": "end of the list that's inconvenient if",
+        "start": 42.32,
+        "duration": 3.919
+    },
+    {
+        "text": "it was from the beginning of the list",
+        "start": 44.719,
+        "duration": 2.0
+    },
+    {
+        "text": "it'd be",
+        "start": 46.239,
+        "duration": 2.64
+    },
+    {
+        "text": "super straightforward right n equals 2",
+        "start": 46.719,
+        "duration": 3.441
+    },
+    {
+        "text": "remove this node",
+        "start": 48.879,
+        "duration": 3.441
+    },
+    {
+        "text": "how can we make that even easier i mean",
+        "start": 50.16,
+        "duration": 4.399
+    },
+    {
+        "text": "what if these pointers were reversed",
+        "start": 52.32,
+        "duration": 5.04
+    },
+    {
+        "text": "can't we just reverse this linked list",
+        "start": 54.559,
+        "duration": 3.52
+    },
+    {
+        "text": "start from",
+        "start": 57.36,
+        "duration": 3.92
+    },
+    {
+        "text": "here and then remove the second node",
+        "start": 58.079,
+        "duration": 5.28
+    },
+    {
+        "text": "and then we're done that's definitely a",
+        "start": 61.28,
+        "duration": 4.239
+    },
+    {
+        "text": "possible solution but it requires",
+        "start": 63.359,
+        "duration": 4.481
+    },
+    {
+        "text": "reversing the linked list which we don't",
+        "start": 65.519,
+        "duration": 2.96
+    },
+    {
+        "text": "actually",
+        "start": 67.84,
+        "duration": 2.88
+    },
+    {
+        "text": "have to do and i'm going to show you the",
+        "start": 68.479,
+        "duration": 3.521
+    },
+    {
+        "text": "easier way to do it",
+        "start": 70.72,
+        "duration": 4.399
+    },
+    {
+        "text": "so let's say n equals 2 again",
+        "start": 72.0,
+        "duration": 6.0
+    },
+    {
+        "text": "so we want to remove this node so how",
+        "start": 75.119,
+        "duration": 3.441
+    },
+    {
+        "text": "can we",
+        "start": 78.0,
+        "duration": 3.52
+    },
+    {
+        "text": "identify that this is the second node",
+        "start": 78.56,
+        "duration": 4.96
+    },
+    {
+        "text": "from the end of the list",
+        "start": 81.52,
+        "duration": 3.919
+    },
+    {
+        "text": "like a lot of linked list questions we",
+        "start": 83.52,
+        "duration": 3.52
+    },
+    {
+        "text": "can use two pointers",
+        "start": 85.439,
+        "duration": 4.0
+    },
+    {
+        "text": "but how are we gonna make use of our two",
+        "start": 87.04,
+        "duration": 3.119
+    },
+    {
+        "text": "pointers",
+        "start": 89.439,
+        "duration": 3.121
+    },
+    {
+        "text": "so what if i had two pointers right a",
+        "start": 90.159,
+        "duration": 5.041
+    },
+    {
+        "text": "left pointer and a right pointer",
+        "start": 92.56,
+        "duration": 4.48
+    },
+    {
+        "text": "the left pointer is at the beginning of",
+        "start": 95.2,
+        "duration": 4.239
+    },
+    {
+        "text": "the list and the right pointer",
+        "start": 97.04,
+        "duration": 6.079
+    },
+    {
+        "text": "is shifted by n equals two so",
+        "start": 99.439,
+        "duration": 5.281
+    },
+    {
+        "text": "our right pointer is gonna be shifted",
+        "start": 103.119,
+        "duration": 3.921
+    },
+    {
+        "text": "one and then it's gonna be shifted again",
+        "start": 104.72,
+        "duration": 4.16
+    },
+    {
+        "text": "and our right pointer is gonna be over",
+        "start": 107.04,
+        "duration": 3.2
+    },
+    {
+        "text": "here so",
+        "start": 108.88,
+        "duration": 3.519
+    },
+    {
+        "text": "now we're just gonna keep shifting our",
+        "start": 110.24,
+        "duration": 3.919
+    },
+    {
+        "text": "pointers until this",
+        "start": 112.399,
+        "duration": 4.641
+    },
+    {
+        "text": "right pointer is at the end of the list",
+        "start": 114.159,
+        "duration": 4.481
+    },
+    {
+        "text": "and watch what happens",
+        "start": 117.04,
+        "duration": 4.079
+    },
+    {
+        "text": "when we do that so we're just going to",
+        "start": 118.64,
+        "duration": 3.28
+    },
+    {
+        "text": "be shifting",
+        "start": 121.119,
+        "duration": 3.761
+    },
+    {
+        "text": "each pointer by one and this is going to",
+        "start": 121.92,
+        "duration": 3.839
+    },
+    {
+        "text": "make sure",
+        "start": 124.88,
+        "duration": 3.76
+    },
+    {
+        "text": "that the space between these pointers is",
+        "start": 125.759,
+        "duration": 3.681
+    },
+    {
+        "text": "exactly",
+        "start": 128.64,
+        "duration": 3.84
+    },
+    {
+        "text": "equal to n which is two right",
+        "start": 129.44,
+        "duration": 5.12
+    },
+    {
+        "text": "so now we're going to shift by one again",
+        "start": 132.48,
+        "duration": 4.16
+    },
+    {
+        "text": "making sure that the gap between them is",
+        "start": 134.56,
+        "duration": 2.96
+    },
+    {
+        "text": "still two",
+        "start": 136.64,
+        "duration": 3.92
+    },
+    {
+        "text": "now we're going to shift one last time",
+        "start": 137.52,
+        "duration": 5.439
+    },
+    {
+        "text": "because right is almost at the end so",
+        "start": 140.56,
+        "duration": 3.12
+    },
+    {
+        "text": "now our",
+        "start": 142.959,
+        "duration": 3.441
+    },
+    {
+        "text": "right pointer is at null right it's at",
+        "start": 143.68,
+        "duration": 3.04
+    },
+    {
+        "text": "the",
+        "start": 146.4,
+        "duration": 3.04
+    },
+    {
+        "text": "end of the list it can't go any farther",
+        "start": 146.72,
+        "duration": 4.32
+    },
+    {
+        "text": "and our left pointer",
+        "start": 149.44,
+        "duration": 5.519
+    },
+    {
+        "text": "is exactly at the node that we want to",
+        "start": 151.04,
+        "duration": 4.96
+    },
+    {
+        "text": "delete",
+        "start": 154.959,
+        "duration": 3.841
+    },
+    {
+        "text": "and the reason is because remember the",
+        "start": 156.0,
+        "duration": 4.48
+    },
+    {
+        "text": "offset between these two",
+        "start": 158.8,
+        "duration": 4.799
+    },
+    {
+        "text": "is n making sure that we have the node",
+        "start": 160.48,
+        "duration": 4.399
+    },
+    {
+        "text": "we want to delete",
+        "start": 163.599,
+        "duration": 3.28
+    },
+    {
+        "text": "now there's only one problem we have",
+        "start": 164.879,
+        "duration": 3.601
+    },
+    {
+        "text": "access to the node that we want to",
+        "start": 166.879,
+        "duration": 3.681
+    },
+    {
+        "text": "delete but we want to delete it",
+        "start": 168.48,
+        "duration": 4.32
+    },
+    {
+        "text": "how do we delete it the only thing we",
+        "start": 170.56,
+        "duration": 5.6
+    },
+    {
+        "text": "have to do is take this pointer",
+        "start": 172.8,
+        "duration": 6.88
+    },
+    {
+        "text": "cross it out and then reassign it",
+        "start": 176.16,
+        "duration": 6.56
+    },
+    {
+        "text": "over here right once we've done that",
+        "start": 179.68,
+        "duration": 3.68
+    },
+    {
+        "text": "we've gotten",
+        "start": 182.72,
+        "duration": 3.84
+    },
+    {
+        "text": "rid of this node so the problem is",
+        "start": 183.36,
+        "duration": 6.159
+    },
+    {
+        "text": "we're at this node when really we want",
+        "start": 186.56,
+        "duration": 3.36
+    },
+    {
+        "text": "to be",
+        "start": 189.519,
+        "duration": 3.201
+    },
+    {
+        "text": "at this node if we want to delete this",
+        "start": 189.92,
+        "duration": 3.599
+    },
+    {
+        "text": "node",
+        "start": 192.72,
+        "duration": 3.519
+    },
+    {
+        "text": "and this can actually be solved by",
+        "start": 193.519,
+        "duration": 3.681
+    },
+    {
+        "text": "another",
+        "start": 196.239,
+        "duration": 2.881
+    },
+    {
+        "text": "pretty common technique the dummy node",
+        "start": 197.2,
+        "duration": 3.84
+    },
+    {
+        "text": "right so we're going to actually have",
+        "start": 199.12,
+        "duration": 2.88
+    },
+    {
+        "text": "another",
+        "start": 201.04,
+        "duration": 3.919
+    },
+    {
+        "text": "node that we insert at the beginning of",
+        "start": 202.0,
+        "duration": 4.72
+    },
+    {
+        "text": "this list that we don't really",
+        "start": 204.959,
+        "duration": 3.92
+    },
+    {
+        "text": "use and the main thing that's going to",
+        "start": 206.72,
+        "duration": 4.56
+    },
+    {
+        "text": "happen is happen is instead of our",
+        "start": 208.879,
+        "duration": 5.36
+    },
+    {
+        "text": "left pointer instead of our left pointer",
+        "start": 211.28,
+        "duration": 4.48
+    },
+    {
+        "text": "being initialized here",
+        "start": 214.239,
+        "duration": 3.681
+    },
+    {
+        "text": "we're actually going to initialize it at",
+        "start": 215.76,
+        "duration": 3.759
+    },
+    {
+        "text": "the dummy node",
+        "start": 217.92,
+        "duration": 3.52
+    },
+    {
+        "text": "so left is really going to be",
+        "start": 219.519,
+        "duration": 3.521
+    },
+    {
+        "text": "initialized here",
+        "start": 221.44,
+        "duration": 3.6
+    },
+    {
+        "text": "and our right pointer though is still",
+        "start": 223.04,
+        "duration": 4.8
+    },
+    {
+        "text": "going to be initialized over here",
+        "start": 225.04,
+        "duration": 5.44
+    },
+    {
+        "text": "so in reality when our right pointer",
+        "start": 227.84,
+        "duration": 4.479
+    },
+    {
+        "text": "reaches the end of the list",
+        "start": 230.48,
+        "duration": 6.24
+    },
+    {
+        "text": "we will have a left pointer at 3",
+        "start": 232.319,
+        "duration": 8.161
+    },
+    {
+        "text": "and then we can update its pointer",
+        "start": 236.72,
+        "duration": 6.079
+    },
+    {
+        "text": "removing this node that we want to",
+        "start": 240.48,
+        "duration": 3.52
+    },
+    {
+        "text": "remove",
+        "start": 242.799,
+        "duration": 4.401
+    },
+    {
+        "text": "and to return the new linked list",
+        "start": 244.0,
+        "duration": 5.68
+    },
+    {
+        "text": "all we have to do is take our dummy",
+        "start": 247.2,
+        "duration": 3.36
+    },
+    {
+        "text": "pointer",
+        "start": 249.68,
+        "duration": 4.96
+    },
+    {
+        "text": "and say return dummy dot next",
+        "start": 250.56,
+        "duration": 7.12
+    },
+    {
+        "text": "which is going to be this node and since",
+        "start": 254.64,
+        "duration": 5.119
+    },
+    {
+        "text": "this is a 2.0 technique",
+        "start": 257.68,
+        "duration": 4.16
+    },
+    {
+        "text": "the time complexity is going to be big o",
+        "start": 259.759,
+        "duration": 3.44
+    },
+    {
+        "text": "of n",
+        "start": 261.84,
+        "duration": 3.359
+    },
+    {
+        "text": "so just like in the drawing the first",
+        "start": 263.199,
+        "duration": 4.161
+    },
+    {
+        "text": "thing we really want to do is create a",
+        "start": 265.199,
+        "duration": 3.521
+    },
+    {
+        "text": "dummy node",
+        "start": 267.36,
+        "duration": 3.839
+    },
+    {
+        "text": "we don't really care what the value of",
+        "start": 268.72,
+        "duration": 4.24
+    },
+    {
+        "text": "this node is but i'll just say",
+        "start": 271.199,
+        "duration": 4.321
+    },
+    {
+        "text": "zero but we want to make sure that the",
+        "start": 272.96,
+        "duration": 3.04
+    },
+    {
+        "text": "next",
+        "start": 275.52,
+        "duration": 4.239
+    },
+    {
+        "text": "pointer of this node is set to the head",
+        "start": 276.0,
+        "duration": 6.0
+    },
+    {
+        "text": "of the list because we're inserting it",
+        "start": 279.759,
+        "duration": 3.841
+    },
+    {
+        "text": "at the beginning",
+        "start": 282.0,
+        "duration": 4.72
+    },
+    {
+        "text": "next we can initialize our left",
+        "start": 283.6,
+        "duration": 6.72
+    },
+    {
+        "text": "pointer to dummy",
+        "start": 286.72,
+        "duration": 7.52
+    },
+    {
+        "text": "and we want our right pointer to be",
+        "start": 290.32,
+        "duration": 7.2
+    },
+    {
+        "text": "head plus two right or",
+        "start": 294.24,
+        "duration": 6.799
+    },
+    {
+        "text": "head plus n whatever n happens to be",
+        "start": 297.52,
+        "duration": 5.84
+    },
+    {
+        "text": "so we need a loop to do that right we",
+        "start": 301.039,
+        "duration": 3.841
+    },
+    {
+        "text": "can't just do that",
+        "start": 303.36,
+        "duration": 4.24
+    },
+    {
+        "text": "with a calculation so we can initially",
+        "start": 304.88,
+        "duration": 3.52
+    },
+    {
+        "text": "say",
+        "start": 307.6,
+        "duration": 4.48
+    },
+    {
+        "text": "right is equal to head and while",
+        "start": 308.4,
+        "duration": 6.96
+    },
+    {
+        "text": "n is greater than zero and",
+        "start": 312.08,
+        "duration": 6.16
+    },
+    {
+        "text": "right is not null we want to keep",
+        "start": 315.36,
+        "duration": 5.2
+    },
+    {
+        "text": "shifting right",
+        "start": 318.24,
+        "duration": 5.84
+    },
+    {
+        "text": "so shift right by one",
+        "start": 320.56,
+        "duration": 6.56
+    },
+    {
+        "text": "and decrement n by one",
+        "start": 324.08,
+        "duration": 5.6
+    },
+    {
+        "text": "because once n equals zero that means",
+        "start": 327.12,
+        "duration": 4.4
+    },
+    {
+        "text": "we've shifted by the amount that we",
+        "start": 329.68,
+        "duration": 3.28
+    },
+    {
+        "text": "wanted to shift by",
+        "start": 331.52,
+        "duration": 4.64
+    },
+    {
+        "text": "and the last thing we want to do is keep",
+        "start": 332.96,
+        "duration": 3.92
+    },
+    {
+        "text": "shifting",
+        "start": 336.16,
+        "duration": 2.64
+    },
+    {
+        "text": "both of our pointers now now we're",
+        "start": 336.88,
+        "duration": 3.759
+    },
+    {
+        "text": "shifting left and right and we're going",
+        "start": 338.8,
+        "duration": 2.48
+    },
+    {
+        "text": "to keep",
+        "start": 340.639,
+        "duration": 4.0
+    },
+    {
+        "text": "going until right equals until",
+        "start": 341.28,
+        "duration": 6.56
+    },
+    {
+        "text": "right reaches the end of the list",
+        "start": 344.639,
+        "duration": 7.041
+    },
+    {
+        "text": "so we can shift our left pointer",
+        "start": 347.84,
+        "duration": 7.68
+    },
+    {
+        "text": "and we can shift our right pointer",
+        "start": 351.68,
+        "duration": 6.239
+    },
+    {
+        "text": "now last but not least we actually want",
+        "start": 355.52,
+        "duration": 5.04
+    },
+    {
+        "text": "to delete the node and remember",
+        "start": 357.919,
+        "duration": 6.161
+    },
+    {
+        "text": "all we need to do to delete is update",
+        "start": 360.56,
+        "duration": 6.8
+    },
+    {
+        "text": "the left node's next pointer",
+        "start": 364.08,
+        "duration": 6.559
+    },
+    {
+        "text": "and it's going to basically be shifted",
+        "start": 367.36,
+        "duration": 6.48
+    },
+    {
+        "text": "by one so left dot next is going to",
+        "start": 370.639,
+        "duration": 3.761
+    },
+    {
+        "text": "equal",
+        "start": 373.84,
+        "duration": 3.68
+    },
+    {
+        "text": "left dot next dot next",
+        "start": 374.4,
+        "duration": 6.48
+    },
+    {
+        "text": "so for example if my left node was at",
+        "start": 377.52,
+        "duration": 5.84
+    },
+    {
+        "text": "my left pointer was at this node its",
+        "start": 380.88,
+        "duration": 5.039
+    },
+    {
+        "text": "next pointer is at 2 but i want to set",
+        "start": 383.36,
+        "duration": 3.839
+    },
+    {
+        "text": "its next pointer",
+        "start": 385.919,
+        "duration": 5.201
+    },
+    {
+        "text": "to 2's next pointer so",
+        "start": 387.199,
+        "duration": 6.641
+    },
+    {
+        "text": "basically what i'm doing is this and we",
+        "start": 391.12,
+        "duration": 4.04
+    },
+    {
+        "text": "know that",
+        "start": 393.84,
+        "duration": 4.079
+    },
+    {
+        "text": "dummy.next is at the head of our list",
+        "start": 395.16,
+        "duration": 4.68
+    },
+    {
+        "text": "which is what we want to return we want",
+        "start": 397.919,
+        "duration": 2.72
+    },
+    {
+        "text": "to return the",
+        "start": 399.84,
+        "duration": 4.44
+    },
+    {
+        "text": "updated list so we can just return",
+        "start": 400.639,
+        "duration": 6.4
+    },
+    {
+        "text": "dummy.next we don't want to include",
+        "start": 404.28,
+        "duration": 4.84
+    },
+    {
+        "text": "our dummy node in the output we never",
+        "start": 407.039,
+        "duration": 4.321
+    },
+    {
+        "text": "wanted to add a node to the list we just",
+        "start": 409.12,
+        "duration": 3.919
+    },
+    {
+        "text": "wanted to remove a node",
+        "start": 411.36,
+        "duration": 4.32
+    },
+    {
+        "text": "so our solution works beautifully we",
+        "start": 413.039,
+        "duration": 4.56
+    },
+    {
+        "text": "could have just reversed the list",
+        "start": 415.68,
+        "duration": 3.84
+    },
+    {
+        "text": "but we definitely did not need to do",
+        "start": 417.599,
+        "duration": 3.681
+    },
+    {
+        "text": "that i hope this was helpful",
+        "start": 419.52,
+        "duration": 3.519
+    },
+    {
+        "text": "don't forget to like and subscribe it",
+        "start": 421.28,
+        "duration": 3.52
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 423.039,
+        "duration": 7.44
+    },
+    {
+        "text": "hopefully see you pretty soon",
+        "start": 424.8,
+        "duration": 5.679
+    }
+]

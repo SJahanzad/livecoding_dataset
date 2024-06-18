@@ -1,0 +1,1022 @@
+[
+    {
+        "text": "hey what's up guys Nick Boyd here are",
+        "start": 0.56,
+        "duration": 4.06
+    },
+    {
+        "text": "you talking coding stuff on Twitch in",
+        "start": 3.3,
+        "duration": 2.85
+    },
+    {
+        "text": "YouTube check the description for all my",
+        "start": 4.62,
+        "duration": 4.2
+    },
+    {
+        "text": "information and I do all the lis code",
+        "start": 6.15,
+        "duration": 4.17
+    },
+    {
+        "text": "hacker rank solutions so you can check",
+        "start": 8.82,
+        "duration": 4.56
+    },
+    {
+        "text": "playlists of those on my channel I've",
+        "start": 10.32,
+        "duration": 5.58
+    },
+    {
+        "text": "been slacking on these videos I haven't",
+        "start": 13.38,
+        "duration": 4.29
+    },
+    {
+        "text": "made any in five days and I was on a",
+        "start": 15.9,
+        "duration": 3.57
+    },
+    {
+        "text": "long streak but I'm gonna hopefully get",
+        "start": 17.67,
+        "duration": 5.099
+    },
+    {
+        "text": "back into it right here I want to know",
+        "start": 19.47,
+        "duration": 5.21
+    },
+    {
+        "text": "why because I've been doing leak code",
+        "start": 22.769,
+        "duration": 4.401
+    },
+    {
+        "text": "I've been trying to understand these",
+        "start": 24.68,
+        "duration": 4.929
+    },
+    {
+        "text": "dynamic programming problems when they",
+        "start": 27.17,
+        "duration": 4.48
+    },
+    {
+        "text": "get hard like medium and hard ones like",
+        "start": 29.609,
+        "duration": 3.54
+    },
+    {
+        "text": "some of them give pretty hard so I've",
+        "start": 31.65,
+        "duration": 2.85
+    },
+    {
+        "text": "been really trying to understand them",
+        "start": 33.149,
+        "duration": 4.561
+    },
+    {
+        "text": "I've been watching this MIT intro to",
+        "start": 34.5,
+        "duration": 5.07
+    },
+    {
+        "text": "algorithms course this guy's awesome",
+        "start": 37.71,
+        "duration": 4.77
+    },
+    {
+        "text": "Eric Jermaine I think is his name he's a",
+        "start": 39.57,
+        "duration": 6.719
+    },
+    {
+        "text": "really cool really smart dude and the",
+        "start": 42.48,
+        "duration": 6.3
+    },
+    {
+        "text": "other guy too but I think he's easier to",
+        "start": 46.289,
+        "duration": 5.25
+    },
+    {
+        "text": "understand but anyway this is minimum",
+        "start": 48.78,
+        "duration": 5.79
+    },
+    {
+        "text": "size of subarray some minimum size",
+        "start": 51.539,
+        "duration": 4.59
+    },
+    {
+        "text": "somewhere some so given n positive",
+        "start": 54.57,
+        "duration": 6.03
+    },
+    {
+        "text": "integers and a positive integer s find",
+        "start": 56.129,
+        "duration": 6.691
+    },
+    {
+        "text": "the minimal length of a contiguous sub",
+        "start": 60.6,
+        "duration": 5.4
+    },
+    {
+        "text": "array which this sum is greater than or",
+        "start": 62.82,
+        "duration": 4.95
+    },
+    {
+        "text": "equal to s if there isn't one return 0",
+        "start": 66.0,
+        "duration": 6.24
+    },
+    {
+        "text": "instead ok so what they want us to do is",
+        "start": 67.77,
+        "duration": 6.36
+    },
+    {
+        "text": "we're given this array right it's",
+        "start": 72.24,
+        "duration": 5.1
+    },
+    {
+        "text": "positive integer so we we see 2 3 1 2 4",
+        "start": 74.13,
+        "duration": 7.98
+    },
+    {
+        "text": "3 we want the minimum size sub array so",
+        "start": 77.34,
+        "duration": 6.959
+    },
+    {
+        "text": "maybe two and three or three and one",
+        "start": 82.11,
+        "duration": 5.61
+    },
+    {
+        "text": "that the sum of the whole all the",
+        "start": 84.299,
+        "duration": 5.761
+    },
+    {
+        "text": "elements of the sub array adds up to be",
+        "start": 87.72,
+        "duration": 4.829
+    },
+    {
+        "text": "equal or greater than this s that we're",
+        "start": 90.06,
+        "duration": 4.86
+    },
+    {
+        "text": "given which is 7 in this case so right",
+        "start": 92.549,
+        "duration": 8.011
+    },
+    {
+        "text": "like we have 2 3 1 2 that adds up to 5 6",
+        "start": 94.92,
+        "duration": 9.18
+    },
+    {
+        "text": "7 8 right and it has to be contiguous so",
+        "start": 100.56,
+        "duration": 6.449
+    },
+    {
+        "text": "we can't if we did this it would be 6",
+        "start": 104.1,
+        "duration": 5.339
+    },
+    {
+        "text": "right but we would need to keep going an",
+        "start": 107.009,
+        "duration": 4.261
+    },
+    {
+        "text": "extra element then we have 8 so it is",
+        "start": 109.439,
+        "duration": 3.72
+    },
+    {
+        "text": "greater than or equal but it's 4 now",
+        "start": 111.27,
+        "duration": 4.05
+    },
+    {
+        "text": "here is the optimal answer right 4 & 3",
+        "start": 113.159,
+        "duration": 3.96
+    },
+    {
+        "text": "because that adds up to 7 that's the",
+        "start": 115.32,
+        "duration": 4.799
+    },
+    {
+        "text": "minimum sub array so how do we do this",
+        "start": 117.119,
+        "duration": 4.71
+    },
+    {
+        "text": "if you figured out the linear solution",
+        "start": 120.119,
+        "duration": 4.471
+    },
+    {
+        "text": "try coding another solution",
+        "start": 121.829,
+        "duration": 6.001
+    },
+    {
+        "text": "okay that's fine so we're gonna go over",
+        "start": 124.59,
+        "duration": 4.529
+    },
+    {
+        "text": "the solution right here so what we're",
+        "start": 127.83,
+        "duration": 7.08
+    },
+    {
+        "text": "gonna do is we're going to the the way",
+        "start": 129.119,
+        "duration": 7.231
+    },
+    {
+        "text": "that you solve this problem it's kind of",
+        "start": 134.91,
+        "duration": 4.73
+    },
+    {
+        "text": "a trick problem it's pretty cool though",
+        "start": 136.35,
+        "duration": 6.54
+    },
+    {
+        "text": "it's not really dynamic programming it",
+        "start": 139.64,
+        "duration": 7.5
+    },
+    {
+        "text": "has like that kind of vibe to it but",
+        "start": 142.89,
+        "duration": 6.99
+    },
+    {
+        "text": "there's it's gonna be constant space and",
+        "start": 147.14,
+        "duration": 3.46
+    },
+    {
+        "text": "what you're gonna do is you're gonna",
+        "start": 149.88,
+        "duration": 2.16
+    },
+    {
+        "text": "have two pointers it's kind of more of",
+        "start": 150.6,
+        "duration": 2.73
+    },
+    {
+        "text": "two pointer",
+        "start": 152.04,
+        "duration": 3.21
+    },
+    {
+        "text": "you set a pointer to the two pointers to",
+        "start": 153.33,
+        "duration": 3.69
+    },
+    {
+        "text": "the beginning - it's not from the end in",
+        "start": 155.25,
+        "duration": 5.19
+    },
+    {
+        "text": "the beginning you have one that holds",
+        "start": 157.02,
+        "duration": 5.46
+    },
+    {
+        "text": "the left boundary of the sub-array",
+        "start": 160.44,
+        "duration": 3.63
+    },
+    {
+        "text": "you're gonna grab and one that holds the",
+        "start": 162.48,
+        "duration": 2.97
+    },
+    {
+        "text": "right boundary of the sub-array that",
+        "start": 164.07,
+        "duration": 3.99
+    },
+    {
+        "text": "you're gonna grab and you're gonna just",
+        "start": 165.45,
+        "duration": 5.07
+    },
+    {
+        "text": "loop through your left gonna be set - so",
+        "start": 168.06,
+        "duration": 4.17
+    },
+    {
+        "text": "let's say our left is set to zero and",
+        "start": 170.52,
+        "duration": 4.56
+    },
+    {
+        "text": "let's just initialize a results for us",
+        "start": 172.23,
+        "duration": 9.21
+    },
+    {
+        "text": "so let's get results is equal to max",
+        "start": 175.08,
+        "duration": 9.51
+    },
+    {
+        "text": "value right we'll set it to max we're",
+        "start": 181.44,
+        "duration": 4.59
+    },
+    {
+        "text": "gonna have this left we're gonna also",
+        "start": 184.59,
+        "duration": 6.3
+    },
+    {
+        "text": "have a int called sum we're gonna need a",
+        "start": 186.03,
+        "duration": 9.179
+    },
+    {
+        "text": "running sum for this problem to you know",
+        "start": 190.89,
+        "duration": 6.87
+    },
+    {
+        "text": "account for the sum yeah add each sub",
+        "start": 195.209,
+        "duration": 3.81
+    },
+    {
+        "text": "array so we can make sure that it's",
+        "start": 197.76,
+        "duration": 4.41
+    },
+    {
+        "text": "greater than or equal to s so this might",
+        "start": 199.019,
+        "duration": 6.211
+    },
+    {
+        "text": "be all we need honestly yeah I think so",
+        "start": 202.17,
+        "duration": 4.62
+    },
+    {
+        "text": "so we're gonna do a loop through the",
+        "start": 205.23,
+        "duration": 9.3
+    },
+    {
+        "text": "array I'll explain this at the end we're",
+        "start": 206.79,
+        "duration": 8.91
+    },
+    {
+        "text": "gonna do a loop through the array we",
+        "start": 214.53,
+        "duration": 4.38
+    },
+    {
+        "text": "ever left we have a sum and we're going",
+        "start": 215.7,
+        "duration": 5.009
+    },
+    {
+        "text": "to just be incrementing our valve sum",
+        "start": 218.91,
+        "duration": 3.87
+    },
+    {
+        "text": "each time so plus C equals gnomes of I",
+        "start": 220.709,
+        "duration": 3.601
+    },
+    {
+        "text": "right so as we look through the Ray",
+        "start": 222.78,
+        "duration": 2.91
+    },
+    {
+        "text": "we're just going to increment our sum so",
+        "start": 224.31,
+        "duration": 3.36
+    },
+    {
+        "text": "we'd have 2 then we have 5 then we'd",
+        "start": 225.69,
+        "duration": 5.25
+    },
+    {
+        "text": "have 6 and now once we get over the sum",
+        "start": 227.67,
+        "duration": 5.879
+    },
+    {
+        "text": "that we want we're going to do while Val",
+        "start": 230.94,
+        "duration": 4.98
+    },
+    {
+        "text": "sum is greater than or equal to s that's",
+        "start": 233.549,
+        "duration": 4.731
+    },
+    {
+        "text": "the condition they're looking for right",
+        "start": 235.92,
+        "duration": 4.92
+    },
+    {
+        "text": "so once it's greater than or equal to 7",
+        "start": 238.28,
+        "duration": 4.959
+    },
+    {
+        "text": "so we get to this 8 point now our sum is",
+        "start": 240.84,
+        "duration": 5.16
+    },
+    {
+        "text": "8 and we're here and our left is at 0",
+        "start": 243.239,
+        "duration": 7.981
+    },
+    {
+        "text": "and our I value is at 0 1 2 3 4 then we",
+        "start": 246.0,
+        "duration": 7.26
+    },
+    {
+        "text": "know from 0 to 4 adds up to 8 it's",
+        "start": 251.22,
+        "duration": 4.2
+    },
+    {
+        "text": "greater than or equal to 7 so we're",
+        "start": 253.26,
+        "duration": 4.409
+    },
+    {
+        "text": "gonna have our result hold that answer",
+        "start": 255.42,
+        "duration": 4.589
+    },
+    {
+        "text": "so results is going to be we initialize",
+        "start": 257.669,
+        "duration": 5.611
+    },
+    {
+        "text": "it to a max value because we're looking",
+        "start": 260.009,
+        "duration": 4.47
+    },
+    {
+        "text": "for the mins here so we're gonna",
+        "start": 263.28,
+        "duration": 2.999
+    },
+    {
+        "text": "calculate them in every time and the min",
+        "start": 264.479,
+        "duration": 3.66
+    },
+    {
+        "text": "is going to be the men between results",
+        "start": 266.279,
+        "duration": 10.051
+    },
+    {
+        "text": "and I plus 1 minus left or no no I know",
+        "start": 268.139,
+        "duration": 9.721
+    },
+    {
+        "text": "I post 1 minus left actually works",
+        "start": 276.33,
+        "duration": 3.959
+    },
+    {
+        "text": "because the only problem is we're",
+        "start": 277.86,
+        "duration": 6.54
+    },
+    {
+        "text": "starting at a zero based index so we",
+        "start": 280.289,
+        "duration": 6.66
+    },
+    {
+        "text": "just when we're accounting for the",
+        "start": 284.4,
+        "duration": 3.87
+    },
+    {
+        "text": "length of the sub-array we have to",
+        "start": 286.949,
+        "duration": 2.97
+    },
+    {
+        "text": "pretend like we're at one so we just do",
+        "start": 288.27,
+        "duration": 4.29
+    },
+    {
+        "text": "I plus 1 minus the left boundary the",
+        "start": 289.919,
+        "duration": 4.56
+    },
+    {
+        "text": "left boundary would be 0 in the first",
+        "start": 292.56,
+        "duration": 7.829
+    },
+    {
+        "text": "case I would be 0 1 2 3 3 so we just",
+        "start": 294.479,
+        "duration": 9.69
+    },
+    {
+        "text": "turn and we do I plus 1 that's 4 minus 0",
+        "start": 300.389,
+        "duration": 6.3
+    },
+    {
+        "text": "is 4 and that is the length right so",
+        "start": 304.169,
+        "duration": 4.411
+    },
+    {
+        "text": "just that the plus 1 don't worry about",
+        "start": 306.689,
+        "duration": 4.29
+    },
+    {
+        "text": "it it's just to do with lengths index to",
+        "start": 308.58,
+        "duration": 5.269
+    },
+    {
+        "text": "length is always a plus 1 or minus 1",
+        "start": 310.979,
+        "duration": 4.68
+    },
+    {
+        "text": "annoying thing you have to add to your",
+        "start": 313.849,
+        "duration": 4.961
+    },
+    {
+        "text": "problems so right this works right we're",
+        "start": 315.659,
+        "duration": 4.891
+    },
+    {
+        "text": "going through and when we see that the",
+        "start": 318.81,
+        "duration": 4.319
+    },
+    {
+        "text": "sum is greater then okay there we go so",
+        "start": 320.55,
+        "duration": 5.1
+    },
+    {
+        "text": "we found a we found an answer right we",
+        "start": 323.129,
+        "duration": 4.41
+    },
+    {
+        "text": "found this is the answer that we have",
+        "start": 325.65,
+        "duration": 4.379
+    },
+    {
+        "text": "right now and our result right so now",
+        "start": 327.539,
+        "duration": 4.261
+    },
+    {
+        "text": "what do we do do we want to set our sum",
+        "start": 330.029,
+        "duration": 3.931
+    },
+    {
+        "text": "to 0 and then do this again and again",
+        "start": 331.8,
+        "duration": 4.679
+    },
+    {
+        "text": "and again no what we're going to do is",
+        "start": 333.96,
+        "duration": 4.799
+    },
+    {
+        "text": "we're going to decrement our song so",
+        "start": 336.479,
+        "duration": 7.56
+    },
+    {
+        "text": "we're gonna do D Cremant nums of left",
+        "start": 338.759,
+        "duration": 10.08
+    },
+    {
+        "text": "and we're going to do left plus plus now",
+        "start": 344.039,
+        "duration": 8.34
+    },
+    {
+        "text": "let me explain how this works we are we",
+        "start": 348.839,
+        "duration": 5.221
+    },
+    {
+        "text": "are we currently have a sum of 8 right",
+        "start": 352.379,
+        "duration": 3.96
+    },
+    {
+        "text": "here right and we're greater than it so",
+        "start": 354.06,
+        "duration": 4.379
+    },
+    {
+        "text": "now what we're gonna do is we're going",
+        "start": 356.339,
+        "duration": 5.13
+    },
+    {
+        "text": "to decrement our sum of 8 by the left",
+        "start": 358.439,
+        "duration": 5.641
+    },
+    {
+        "text": "value so 8 minus 2 is 6 and now our",
+        "start": 361.469,
+        "duration": 5.1
+    },
+    {
+        "text": "raise this because we increment left so",
+        "start": 364.08,
+        "duration": 5.519
+    },
+    {
+        "text": "it's 3 1 2 our raise 6 so we're not",
+        "start": 366.569,
+        "duration": 5.1
+    },
+    {
+        "text": "we're we haven't gotten to greater than",
+        "start": 369.599,
+        "duration": 4.41
+    },
+    {
+        "text": "or equal to 7 yet right so this loop",
+        "start": 371.669,
+        "duration": 5.641
+    },
+    {
+        "text": "breaks out we keep going we add back to",
+        "start": 374.009,
+        "duration": 5.4
+    },
+    {
+        "text": "the Val some the Val sum gets the next",
+        "start": 377.31,
+        "duration": 4.44
+    },
+    {
+        "text": "number now right the next number is 4",
+        "start": 379.409,
+        "duration": 4.68
+    },
+    {
+        "text": "right so next numbers for that dad's to",
+        "start": 381.75,
+        "duration": 4.469
+    },
+    {
+        "text": "6 now we have 10 right 10 is greater",
+        "start": 384.089,
+        "duration": 3.901
+    },
+    {
+        "text": "than or equal to 7 but the length of",
+        "start": 386.219,
+        "duration": 3.63
+    },
+    {
+        "text": "this is still 4 so when we recalculate",
+        "start": 387.99,
+        "duration": 3.179
+    },
+    {
+        "text": "our result we're going",
+        "start": 389.849,
+        "duration": 4.111
+    },
+    {
+        "text": "the men between results and I plus one -",
+        "start": 391.169,
+        "duration": 4.86
+    },
+    {
+        "text": "left is gonna be four again and what",
+        "start": 393.96,
+        "duration": 3.41
+    },
+    {
+        "text": "you're doing is you're kind of",
+        "start": 396.029,
+        "duration": 4.021
+    },
+    {
+        "text": "incrementing your left you're kind of",
+        "start": 397.37,
+        "duration": 5.259
+    },
+    {
+        "text": "popping elements off of the front of",
+        "start": 400.05,
+        "duration": 4.859
+    },
+    {
+        "text": "your sub array and adding them on to the",
+        "start": 402.629,
+        "duration": 4.5
+    },
+    {
+        "text": "end of your subway sub array as you loop",
+        "start": 404.909,
+        "duration": 4.41
+    },
+    {
+        "text": "through and trying to find a smaller sub",
+        "start": 407.129,
+        "duration": 4.56
+    },
+    {
+        "text": "array where the sum is greater than or",
+        "start": 409.319,
+        "duration": 4.891
+    },
+    {
+        "text": "equal to seven and this is it that's",
+        "start": 411.689,
+        "duration": 4.831
+    },
+    {
+        "text": "pretty much straightforward how it goes",
+        "start": 414.21,
+        "duration": 3.9
+    },
+    {
+        "text": "and you know you always want to make",
+        "start": 416.52,
+        "duration": 3.239
+    },
+    {
+        "text": "sure that your result actually got",
+        "start": 418.11,
+        "duration": 3.089
+    },
+    {
+        "text": "changed so we're gonna have some kind of",
+        "start": 419.759,
+        "duration": 3.601
+    },
+    {
+        "text": "condition down here you can do a ternary",
+        "start": 421.199,
+        "duration": 5.701
+    },
+    {
+        "text": "condition so we'll do return results not",
+        "start": 423.36,
+        "duration": 7.529
+    },
+    {
+        "text": "equal to integer table max value so if",
+        "start": 426.9,
+        "duration": 6.569
+    },
+    {
+        "text": "it's if it's not equal to the max value",
+        "start": 430.889,
+        "duration": 4.95
+    },
+    {
+        "text": "we will return the result otherwise zero",
+        "start": 433.469,
+        "duration": 3.48
+    },
+    {
+        "text": "because that's what they wanted they",
+        "start": 435.839,
+        "duration": 3.241
+    },
+    {
+        "text": "said return zero instead so in a ternary",
+        "start": 436.949,
+        "duration": 4.201
+    },
+    {
+        "text": "condition I like to put the condition in",
+        "start": 439.08,
+        "duration": 5.16
+    },
+    {
+        "text": "parentheses and we can see if this will",
+        "start": 441.15,
+        "duration": 7.099
+    },
+    {
+        "text": "work and it works okay so there you go",
+        "start": 444.24,
+        "duration": 6.359
+    },
+    {
+        "text": "that was a long video but it's my first",
+        "start": 448.249,
+        "duration": 4.0
+    },
+    {
+        "text": "one back hopefully understand it you're",
+        "start": 450.599,
+        "duration": 3.301
+    },
+    {
+        "text": "kind of going through the array you're",
+        "start": 452.249,
+        "duration": 3.931
+    },
+    {
+        "text": "popping you know you have this initial",
+        "start": 453.9,
+        "duration": 4.499
+    },
+    {
+        "text": "sum of greater than or equal to seven",
+        "start": 456.18,
+        "duration": 4.65
+    },
+    {
+        "text": "when you hit that point of being greater",
+        "start": 458.399,
+        "duration": 3.871
+    },
+    {
+        "text": "than what we're looking for we're gonna",
+        "start": 460.83,
+        "duration": 5.819
+    },
+    {
+        "text": "pop this value off that - sorry we're",
+        "start": 462.27,
+        "duration": 10.199
+    },
+    {
+        "text": "going to actually pop the pop this value",
+        "start": 466.649,
+        "duration": 7.621
+    },
+    {
+        "text": "off pop the - off I hopefully I",
+        "start": 472.469,
+        "duration": 3.361
+    },
+    {
+        "text": "explained that correctly the first time",
+        "start": 474.27,
+        "duration": 3.09
+    },
+    {
+        "text": "you're actually popping off the left and",
+        "start": 475.83,
+        "duration": 2.79
+    },
+    {
+        "text": "adding to the right I don't know if I",
+        "start": 477.36,
+        "duration": 2.669
+    },
+    {
+        "text": "said that right I just didn't think",
+        "start": 478.62,
+        "duration": 1.859
+    },
+    {
+        "text": "about it",
+        "start": 480.029,
+        "duration": 2.461
+    },
+    {
+        "text": "- three one - you're popping off the",
+        "start": 480.479,
+        "duration": 4.17
+    },
+    {
+        "text": "left right weirdy commenting our Sun by",
+        "start": 482.49,
+        "duration": 3.449
+    },
+    {
+        "text": "the left then we're incrementing the",
+        "start": 484.649,
+        "duration": 3.661
+    },
+    {
+        "text": "left so this boundary is gone and this",
+        "start": 485.939,
+        "duration": 3.931
+    },
+    {
+        "text": "is the rest of it and then we added that",
+        "start": 488.31,
+        "duration": 3.359
+    },
+    {
+        "text": "four and then we keep doing that and we",
+        "start": 489.87,
+        "duration": 4.44
+    },
+    {
+        "text": "have one two four three and then we keep",
+        "start": 491.669,
+        "duration": 4.441
+    },
+    {
+        "text": "popping one and two off at the end",
+        "start": 494.31,
+        "duration": 5.659
+    },
+    {
+        "text": "because the sum would be you know keep",
+        "start": 496.11,
+        "duration": 6.539
+    },
+    {
+        "text": "hopefully that makes sense let me know",
+        "start": 499.969,
+        "duration": 4.18
+    },
+    {
+        "text": "in the comments if I didn't do that good",
+        "start": 502.649,
+        "duration": 3.39
+    },
+    {
+        "text": "but I did take a break so I'm a little",
+        "start": 504.149,
+        "duration": 3.931
+    },
+    {
+        "text": "rusty maybe in the next few problems",
+        "start": 506.039,
+        "duration": 3.78
+    },
+    {
+        "text": "I'll get back you can do it so thanks",
+        "start": 508.08,
+        "duration": 3.509
+    },
+    {
+        "text": "for watching and please like and",
+        "start": 509.819,
+        "duration": 5.0
+    },
+    {
+        "text": "subscribe thanks",
+        "start": 511.589,
+        "duration": 3.23
+    }
+]

@@ -1,0 +1,867 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white I do",
+        "start": 0.03,
+        "duration": 4.559
+    },
+    {
+        "text": "tech and coding stuff on twitch and",
+        "start": 2.909,
+        "duration": 5.581
+    },
+    {
+        "text": "YouTube and I do all the Waco problems",
+        "start": 4.589,
+        "duration": 5.01
+    },
+    {
+        "text": "if you want to see stuff check the",
+        "start": 8.49,
+        "duration": 2.819
+    },
+    {
+        "text": "description I have everything about me",
+        "start": 9.599,
+        "duration": 4.2
+    },
+    {
+        "text": "and I'm doing all these problems I have",
+        "start": 11.309,
+        "duration": 3.901
+    },
+    {
+        "text": "a ton of them on the page so check them",
+        "start": 13.799,
+        "duration": 4.351
+    },
+    {
+        "text": "out these are really good any you",
+        "start": 15.21,
+        "duration": 4.409
+    },
+    {
+        "text": "probably would know this if you're doing",
+        "start": 18.15,
+        "duration": 3.719
+    },
+    {
+        "text": "leak code but it's basically how you get",
+        "start": 19.619,
+        "duration": 4.351
+    },
+    {
+        "text": "a job or internship some of the top tech",
+        "start": 21.869,
+        "duration": 3.931
+    },
+    {
+        "text": "companies so this one's called range",
+        "start": 23.97,
+        "duration": 4.319
+    },
+    {
+        "text": "some of a binary search tree given root",
+        "start": 25.8,
+        "duration": 4.2
+    },
+    {
+        "text": "node of a binary search tree return the",
+        "start": 28.289,
+        "duration": 3.421
+    },
+    {
+        "text": "sum of all values of all nodes between",
+        "start": 30.0,
+        "duration": 3.84
+    },
+    {
+        "text": "with the value between L&R so we're",
+        "start": 31.71,
+        "duration": 4.32
+    },
+    {
+        "text": "given these Ellen R variables these",
+        "start": 33.84,
+        "duration": 4.02
+    },
+    {
+        "text": "integers and our method and we're given",
+        "start": 36.03,
+        "duration": 4.32
+    },
+    {
+        "text": "the route to a binary search tree and we",
+        "start": 37.86,
+        "duration": 5.43
+    },
+    {
+        "text": "want to traverse the tree so we want to",
+        "start": 40.35,
+        "duration": 4.38
+    },
+    {
+        "text": "go through all the nodes in the tree and",
+        "start": 43.29,
+        "duration": 3.81
+    },
+    {
+        "text": "if the current value these the node",
+        "start": 44.73,
+        "duration": 4.259
+    },
+    {
+        "text": "values are all integers you can see up",
+        "start": 47.1,
+        "duration": 4.889
+    },
+    {
+        "text": "here in the class if the value lies",
+        "start": 48.989,
+        "duration": 4.651
+    },
+    {
+        "text": "between our range we're going to add it",
+        "start": 51.989,
+        "duration": 3.271
+    },
+    {
+        "text": "to our range some variable right so",
+        "start": 53.64,
+        "duration": 2.79
+    },
+    {
+        "text": "we're gonna have this range some",
+        "start": 55.26,
+        "duration": 3.93
+    },
+    {
+        "text": "variable set to 0 at the beginning we're",
+        "start": 56.43,
+        "duration": 4.8
+    },
+    {
+        "text": "gonna traverse the whole tree and if the",
+        "start": 59.19,
+        "duration": 3.93
+    },
+    {
+        "text": "value of the current node that we're",
+        "start": 61.23,
+        "duration": 4.86
+    },
+    {
+        "text": "traversing lies between our range so if",
+        "start": 63.12,
+        "duration": 4.289
+    },
+    {
+        "text": "the value is greater than the left",
+        "start": 66.09,
+        "duration": 2.55
+    },
+    {
+        "text": "boundary and less than the right",
+        "start": 67.409,
+        "duration": 2.851
+    },
+    {
+        "text": "boundary of greater than or equal to and",
+        "start": 68.64,
+        "duration": 3.42
+    },
+    {
+        "text": "less than or equal to we added to",
+        "start": 70.26,
+        "duration": 2.94
+    },
+    {
+        "text": "arrange them and then we just return the",
+        "start": 72.06,
+        "duration": 2.43
+    },
+    {
+        "text": "range up pretty easy so there's an",
+        "start": 73.2,
+        "duration": 3.599
+    },
+    {
+        "text": "iterative solution and recursive",
+        "start": 74.49,
+        "duration": 3.419
+    },
+    {
+        "text": "solution like all these other true",
+        "start": 76.799,
+        "duration": 2.371
+    },
+    {
+        "text": "problems I'll just do them both for you",
+        "start": 77.909,
+        "duration": 3.0
+    },
+    {
+        "text": "really quick so in the iterative",
+        "start": 79.17,
+        "duration": 3.72
+    },
+    {
+        "text": "solution that we're doing first you just",
+        "start": 80.909,
+        "duration": 5.971
+    },
+    {
+        "text": "have a stack roll the new stack you add",
+        "start": 82.89,
+        "duration": 6.119
+    },
+    {
+        "text": "the route to the stack it's basically",
+        "start": 86.88,
+        "duration": 5.489
+    },
+    {
+        "text": "the same you can put two stacked-up push",
+        "start": 89.009,
+        "duration": 6.661
+    },
+    {
+        "text": "or stack to add root so which push root",
+        "start": 92.369,
+        "duration": 6.811
+    },
+    {
+        "text": "under the stack and then while stack is",
+        "start": 95.67,
+        "duration": 5.93
+    },
+    {
+        "text": "not empty just like all the other ones",
+        "start": 99.18,
+        "duration": 5.64
+    },
+    {
+        "text": "we just you can do this you can do a",
+        "start": 101.6,
+        "duration": 5.47
+    },
+    {
+        "text": "check here if node is not equal you can",
+        "start": 104.82,
+        "duration": 4.049
+    },
+    {
+        "text": "well we pop the current node off the",
+        "start": 107.07,
+        "duration": 5.04
+    },
+    {
+        "text": "stack first of all so we'll just pop",
+        "start": 108.869,
+        "duration": 5.311
+    },
+    {
+        "text": "that and then you can do if node not",
+        "start": 112.11,
+        "duration": 4.34
+    },
+    {
+        "text": "equal to null you can do that check here",
+        "start": 114.18,
+        "duration": 6.96
+    },
+    {
+        "text": "then all we have to do is do our check",
+        "start": 116.45,
+        "duration": 6.04
+    },
+    {
+        "text": "that I was talking about earlier if note",
+        "start": 121.14,
+        "duration": 4.11
+    },
+    {
+        "text": "val is lies between our boundary so if",
+        "start": 122.49,
+        "duration": 5.07
+    },
+    {
+        "text": "it's greater than or equal to l and you",
+        "start": 125.25,
+        "duration": 4.89
+    },
+    {
+        "text": "have to do and not val is less than or",
+        "start": 127.56,
+        "duration": 4.259
+    },
+    {
+        "text": "equal to R so the lies between our",
+        "start": 130.14,
+        "duration": 3.6
+    },
+    {
+        "text": "boundary we just added to our rain",
+        "start": 131.819,
+        "duration": 5.581
+    },
+    {
+        "text": "some not one sorry no doubt thou gets",
+        "start": 133.74,
+        "duration": 5.67
+    },
+    {
+        "text": "added to our range some and then here's",
+        "start": 137.4,
+        "duration": 4.05
+    },
+    {
+        "text": "the only tricky part I guess it's not",
+        "start": 139.41,
+        "duration": 4.32
+    },
+    {
+        "text": "even that tricky you have to do these",
+        "start": 141.45,
+        "duration": 6.06
+    },
+    {
+        "text": "two calls afterwards to not calls but",
+        "start": 143.73,
+        "duration": 6.72
+    },
+    {
+        "text": "you have to if you a binary search tree",
+        "start": 147.51,
+        "duration": 5.19
+    },
+    {
+        "text": "how it works is the left children are",
+        "start": 150.45,
+        "duration": 3.87
+    },
+    {
+        "text": "gonna be smaller values and the right",
+        "start": 152.7,
+        "duration": 3.81
+    },
+    {
+        "text": "children will be greater so if the if",
+        "start": 154.32,
+        "duration": 3.87
+    },
+    {
+        "text": "our value of our current know that we're",
+        "start": 156.51,
+        "duration": 3.84
+    },
+    {
+        "text": "traversing is greater than the left",
+        "start": 158.19,
+        "duration": 5.19
+    },
+    {
+        "text": "boundary that means we still can check",
+        "start": 160.35,
+        "duration": 6.36
+    },
+    {
+        "text": "the left child notes so we just have to",
+        "start": 163.38,
+        "duration": 5.43
+    },
+    {
+        "text": "do this check if the node value is",
+        "start": 166.71,
+        "duration": 4.02
+    },
+    {
+        "text": "greater than our left boundary we can",
+        "start": 168.81,
+        "duration": 5.19
+    },
+    {
+        "text": "add the node dot left child onto the",
+        "start": 170.73,
+        "duration": 6.06
+    },
+    {
+        "text": "stack because we're gonna be traversing",
+        "start": 174.0,
+        "duration": 5.97
+    },
+    {
+        "text": "all the nodes in the stack and yeah we",
+        "start": 176.79,
+        "duration": 4.86
+    },
+    {
+        "text": "just keep doing that check each time and",
+        "start": 179.97,
+        "duration": 4.35
+    },
+    {
+        "text": "if it's greater than I mean if it's less",
+        "start": 181.65,
+        "duration": 5.46
+    },
+    {
+        "text": "than right then we could add the right",
+        "start": 184.32,
+        "duration": 5.73
+    },
+    {
+        "text": "child to the stack because it means that",
+        "start": 187.11,
+        "duration": 7.77
+    },
+    {
+        "text": "since it's still less than right then we",
+        "start": 190.05,
+        "duration": 6.9
+    },
+    {
+        "text": "can keep searching on the right children",
+        "start": 194.88,
+        "duration": 3.33
+    },
+    {
+        "text": "because they're gonna be greater in",
+        "start": 196.95,
+        "duration": 3.69
+    },
+    {
+        "text": "value until we get to the right boundary",
+        "start": 198.21,
+        "duration": 3.42
+    },
+    {
+        "text": "then we're not gonna look at those",
+        "start": 200.64,
+        "duration": 3.09
+    },
+    {
+        "text": "children anymore and that's pretty much",
+        "start": 201.63,
+        "duration": 4.58
+    },
+    {
+        "text": "it and then all you have to do is return",
+        "start": 203.73,
+        "duration": 4.92
+    },
+    {
+        "text": "range some after this this is the",
+        "start": 206.21,
+        "duration": 8.74
+    },
+    {
+        "text": "iterative solution tree node sorry",
+        "start": 208.65,
+        "duration": 8.28
+    },
+    {
+        "text": "these are tree nodes always gonna",
+        "start": 214.95,
+        "duration": 6.12
+    },
+    {
+        "text": "remember syntax when you do these stack",
+        "start": 216.93,
+        "duration": 5.16
+    },
+    {
+        "text": "sorry",
+        "start": 221.07,
+        "duration": 4.65
+    },
+    {
+        "text": "stack up push push onto the stack yeah",
+        "start": 222.09,
+        "duration": 7.35
+    },
+    {
+        "text": "everyone makes mistakes guys sorry there",
+        "start": 225.72,
+        "duration": 5.61
+    },
+    {
+        "text": "we go solutions perfect if you didn't",
+        "start": 229.44,
+        "duration": 3.57
+    },
+    {
+        "text": "want to do the node not equal null check",
+        "start": 231.33,
+        "duration": 4.53
+    },
+    {
+        "text": "here you could obviously just do and in",
+        "start": 233.01,
+        "duration": 6.69
+    },
+    {
+        "text": "node left not equal to null here and",
+        "start": 235.86,
+        "duration": 6.78
+    },
+    {
+        "text": "then no doubt right not equal to null",
+        "start": 239.7,
+        "duration": 4.53
+    },
+    {
+        "text": "here just so we don't throw null pointer",
+        "start": 242.64,
+        "duration": 3.51
+    },
+    {
+        "text": "exceptions and then you could kind of",
+        "start": 244.23,
+        "duration": 5.28
+    },
+    {
+        "text": "just not have this check right there and",
+        "start": 246.15,
+        "duration": 5.75
+    },
+    {
+        "text": "I'm pretty sure this would work still",
+        "start": 249.51,
+        "duration": 4.65
+    },
+    {
+        "text": "yeah so that still works you just got to",
+        "start": 251.9,
+        "duration": 4.66
+    },
+    {
+        "text": "make sure to do like make sure there's",
+        "start": 254.16,
+        "duration": 4.23
+    },
+    {
+        "text": "no null pointer thing through all right",
+        "start": 256.56,
+        "duration": 5.88
+    },
+    {
+        "text": "let me show you the the DFS solution",
+        "start": 258.39,
+        "duration": 6.32
+    },
+    {
+        "text": "recursive solution really quick here to",
+        "start": 262.44,
+        "duration": 5.27
+    },
+    {
+        "text": "soul of this public void",
+        "start": 264.71,
+        "duration": 5.97
+    },
+    {
+        "text": "get range some method where we take in",
+        "start": 267.71,
+        "duration": 5.88
+    },
+    {
+        "text": "tree node root this is the same solution",
+        "start": 270.68,
+        "duration": 6.39
+    },
+    {
+        "text": "that we just did it's just going to be a",
+        "start": 273.59,
+        "duration": 5.37
+    },
+    {
+        "text": "recursive solution and recursion uses",
+        "start": 277.07,
+        "duration": 3.84
+    },
+    {
+        "text": "stack space and we use just a stack in",
+        "start": 278.96,
+        "duration": 3.66
+    },
+    {
+        "text": "the iterative solution anyway so it",
+        "start": 280.91,
+        "duration": 3.08
+    },
+    {
+        "text": "doesn't really matter which one you do",
+        "start": 282.62,
+        "duration": 4.169
+    },
+    {
+        "text": "if you're used to the tree problems a",
+        "start": 283.99,
+        "duration": 4.33
+    },
+    {
+        "text": "lot of them you stack so I would do the",
+        "start": 286.789,
+        "duration": 3.241
+    },
+    {
+        "text": "iterative one but sometimes the",
+        "start": 288.32,
+        "duration": 3.629
+    },
+    {
+        "text": "recursive solutions can be a lot easier",
+        "start": 290.03,
+        "duration": 4.35
+    },
+    {
+        "text": "and simpler especially lines of code",
+        "start": 291.949,
+        "duration": 4.771
+    },
+    {
+        "text": "wise so we'll just have our in train",
+        "start": 294.38,
+        "duration": 4.44
+    },
+    {
+        "text": "some declare it up here so that we can",
+        "start": 296.72,
+        "duration": 4.02
+    },
+    {
+        "text": "access it down in this method below",
+        "start": 298.82,
+        "duration": 5.43
+    },
+    {
+        "text": "we'll initialize it to zero and then",
+        "start": 300.74,
+        "duration": 5.67
+    },
+    {
+        "text": "we'll do this call right here rain get",
+        "start": 304.25,
+        "duration": 7.5
+    },
+    {
+        "text": "range sum of root L and R and then we'll",
+        "start": 306.41,
+        "duration": 8.52
+    },
+    {
+        "text": "just do return range sum because",
+        "start": 311.75,
+        "duration": 5.28
+    },
+    {
+        "text": "basically we just do this call here",
+        "start": 314.93,
+        "duration": 3.87
+    },
+    {
+        "text": "it'll handle everything it'll update",
+        "start": 317.03,
+        "duration": 5.58
+    },
+    {
+        "text": "this range sum at the top and then yeah",
+        "start": 318.8,
+        "duration": 5.31
+    },
+    {
+        "text": "that'll be at the ranch um we'll be",
+        "start": 322.61,
+        "duration": 3.27
+    },
+    {
+        "text": "ready to return because it'll be on an",
+        "start": 324.11,
+        "duration": 5.76
+    },
+    {
+        "text": "updated down below so if root is not",
+        "start": 325.88,
+        "duration": 9.69
+    },
+    {
+        "text": "equal to no then we can do our recursive",
+        "start": 329.87,
+        "duration": 9.96
+    },
+    {
+        "text": "calls get range some on and we want to",
+        "start": 335.57,
+        "duration": 7.83
+    },
+    {
+        "text": "also do if Rubel so we can do our",
+        "start": 339.83,
+        "duration": 5.01
+    },
+    {
+        "text": "boundary check right here is greater",
+        "start": 343.4,
+        "duration": 6.239
+    },
+    {
+        "text": "than L and it's the same stuff as the",
+        "start": 344.84,
+        "duration": 6.54
+    },
+    {
+        "text": "iterative solution rooftop al is less",
+        "start": 349.639,
+        "duration": 6.0
+    },
+    {
+        "text": "than or equal to R then we do range sum",
+        "start": 351.38,
+        "duration": 8.46
+    },
+    {
+        "text": "plus equals root dot val and that's the",
+        "start": 355.639,
+        "duration": 6.511
+    },
+    {
+        "text": "same literally the same stuff",
+        "start": 359.84,
+        "duration": 4.859
+    },
+    {
+        "text": "if root val is greater than L that means",
+        "start": 362.15,
+        "duration": 6.359
+    },
+    {
+        "text": "we can do our recursive call on the left",
+        "start": 364.699,
+        "duration": 5.491
+    },
+    {
+        "text": "children because it's still greater than",
+        "start": 368.509,
+        "duration": 4.011
+    },
+    {
+        "text": "the left boundary so the left children",
+        "start": 370.19,
+        "duration": 5.039
+    },
+    {
+        "text": "are still fine to search get range sum",
+        "start": 372.52,
+        "duration": 7.35
+    },
+    {
+        "text": "over top left L and then the same call",
+        "start": 375.229,
+        "duration": 18.151
+    },
+    {
+        "text": "as less than our right hopefully this",
+        "start": 379.87,
+        "duration": 15.22
+    },
+    {
+        "text": "makes sense hopefully it works first try",
+        "start": 393.38,
+        "duration": 3.77
+    },
+    {
+        "text": "to",
+        "start": 395.09,
+        "duration": 2.06
+    },
+    {
+        "text": "yep works first try alright great that's",
+        "start": 399.08,
+        "duration": 3.6
+    },
+    {
+        "text": "the iterative and recursive solution for",
+        "start": 400.939,
+        "duration": 3.871
+    },
+    {
+        "text": "both you for you guys this is kind of a",
+        "start": 402.68,
+        "duration": 5.31
+    },
+    {
+        "text": "DFS recursive solution or you can use a",
+        "start": 404.81,
+        "duration": 4.8
+    },
+    {
+        "text": "stack whatever way you want to do it is",
+        "start": 407.99,
+        "duration": 3.57
+    },
+    {
+        "text": "they're both pretty similar in my",
+        "start": 409.61,
+        "duration": 4.26
+    },
+    {
+        "text": "opinion they're almost the same stuff so",
+        "start": 411.56,
+        "duration": 5.31
+    },
+    {
+        "text": "just I don't know trying both out see",
+        "start": 413.87,
+        "duration": 4.199
+    },
+    {
+        "text": "which ones you kind of like better",
+        "start": 416.87,
+        "duration": 3.449
+    },
+    {
+        "text": "there's a it's kind of a choice you have",
+        "start": 418.069,
+        "duration": 4.261
+    },
+    {
+        "text": "for all these tree problems but yeah",
+        "start": 420.319,
+        "duration": 6.15
+    },
+    {
+        "text": "that was give range some of BST a pretty",
+        "start": 422.33,
+        "duration": 5.489
+    },
+    {
+        "text": "cool problem check out all the other",
+        "start": 426.469,
+        "duration": 2.73
+    },
+    {
+        "text": "ones I think I've done almost all the",
+        "start": 427.819,
+        "duration": 3.451
+    },
+    {
+        "text": "true problems I'm leave code so let me",
+        "start": 429.199,
+        "duration": 2.731
+    },
+    {
+        "text": "know what you guys think in the",
+        "start": 431.27,
+        "duration": 2.549
+    },
+    {
+        "text": "explanation below and thank you guys for",
+        "start": 431.93,
+        "duration": 4.729
+    },
+    {
+        "text": "watching see ya",
+        "start": 433.819,
+        "duration": 2.84
+    }
+]

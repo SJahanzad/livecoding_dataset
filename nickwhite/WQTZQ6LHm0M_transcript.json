@@ -1,0 +1,827 @@
+[
+    {
+        "text": "what's up guys is Nick white here idea",
+        "start": 0.829,
+        "duration": 3.911
+    },
+    {
+        "text": "Tecna coding stuff on Twitch in YouTube",
+        "start": 3.21,
+        "duration": 2.609
+    },
+    {
+        "text": "check the description for all my",
+        "start": 4.74,
+        "duration": 2.309
+    },
+    {
+        "text": "information I do all the hacker and",
+        "start": 5.819,
+        "duration": 2.7
+    },
+    {
+        "text": "Kenley code solutions I play this on my",
+        "start": 7.049,
+        "duration": 3.811
+    },
+    {
+        "text": "channel I almost didn't make a video",
+        "start": 8.519,
+        "duration": 5.601
+    },
+    {
+        "text": "today it's 11:42 p.m. I've been grinding",
+        "start": 10.86,
+        "duration": 5.7
+    },
+    {
+        "text": "interview prep and mock interviews but",
+        "start": 14.12,
+        "duration": 4.48
+    },
+    {
+        "text": "I'm making this video because I want to",
+        "start": 16.56,
+        "duration": 3.51
+    },
+    {
+        "text": "keep on my streak it's been a long time",
+        "start": 18.6,
+        "duration": 3.3
+    },
+    {
+        "text": "since I haven't made a video so we're",
+        "start": 20.07,
+        "duration": 3.719
+    },
+    {
+        "text": "doing valid palindrome - we already did",
+        "start": 21.9,
+        "duration": 5.699
+    },
+    {
+        "text": "valentown valid - palindrome 1 and let",
+        "start": 23.789,
+        "duration": 5.941
+    },
+    {
+        "text": "me just explain what a palindrome is so",
+        "start": 27.599,
+        "duration": 4.35
+    },
+    {
+        "text": "a palindrome is a word that's spelled",
+        "start": 29.73,
+        "duration": 4.41
+    },
+    {
+        "text": "the same way forward as backwards it",
+        "start": 31.949,
+        "duration": 5.331
+    },
+    {
+        "text": "could also be multiple words usually and",
+        "start": 34.14,
+        "duration": 5.55
+    },
+    {
+        "text": "you know but usually we're just gonna do",
+        "start": 37.28,
+        "duration": 3.67
+    },
+    {
+        "text": "it on words so we're gonna be giving a",
+        "start": 39.69,
+        "duration": 5.45
+    },
+    {
+        "text": "word here a non empty string actually so",
+        "start": 40.95,
+        "duration": 6.9
+    },
+    {
+        "text": "as you can see racecars it's the same",
+        "start": 45.14,
+        "duration": 4.36
+    },
+    {
+        "text": "way forward as backward so we have our",
+        "start": 47.85,
+        "duration": 6.209
+    },
+    {
+        "text": "AC e a god I'm so sorry I spelled that",
+        "start": 49.5,
+        "duration": 6.6
+    },
+    {
+        "text": "wrong that's embarrassing are we reading",
+        "start": 54.059,
+        "duration": 7.441
+    },
+    {
+        "text": "it ra c c AR r AC e CA r right so how do",
+        "start": 56.1,
+        "duration": 7.98
+    },
+    {
+        "text": "we how did we do it the first time well",
+        "start": 61.5,
+        "duration": 5.52
+    },
+    {
+        "text": "we we basically set a pointer so we're",
+        "start": 64.08,
+        "duration": 5.76
+    },
+    {
+        "text": "gonna have an int a pointer is equal to",
+        "start": 67.02,
+        "duration": 7.19
+    },
+    {
+        "text": "0 into B pointer is equal to s dot lain",
+        "start": 69.84,
+        "duration": 7.2
+    },
+    {
+        "text": "minus 1 so we have a pointer at the",
+        "start": 74.21,
+        "duration": 4.18
+    },
+    {
+        "text": "beginning and a pointer at the end and",
+        "start": 77.04,
+        "duration": 3.84
+    },
+    {
+        "text": "we move inwards so we check our reverse",
+        "start": 78.39,
+        "duration": 5.79
+    },
+    {
+        "text": "our aver say Seaver C and then we get to",
+        "start": 80.88,
+        "duration": 5.37
+    },
+    {
+        "text": "eat at the end and then we break if we",
+        "start": 84.18,
+        "duration": 4.649
+    },
+    {
+        "text": "make it through while we loop through if",
+        "start": 86.25,
+        "duration": 4.439
+    },
+    {
+        "text": "there's a difference in characters then",
+        "start": 88.829,
+        "duration": 3.391
+    },
+    {
+        "text": "it's not a palindrome right because if",
+        "start": 90.689,
+        "duration": 3.421
+    },
+    {
+        "text": "there's a difference between our D",
+        "start": 92.22,
+        "duration": 3.39
+    },
+    {
+        "text": "that's not palindrome you can't spell",
+        "start": 94.11,
+        "duration": 3.869
+    },
+    {
+        "text": "out same way forwards backwards so that",
+        "start": 95.61,
+        "duration": 4.95
+    },
+    {
+        "text": "was the first way we did it so we did",
+        "start": 97.979,
+        "duration": 4.411
+    },
+    {
+        "text": "while a pointer is less than or equal to",
+        "start": 100.56,
+        "duration": 6.839
+    },
+    {
+        "text": "B pointer and then we you know we did if",
+        "start": 102.39,
+        "duration": 12.299
+    },
+    {
+        "text": "s car at a pointer is not equal to s dot",
+        "start": 107.399,
+        "duration": 13.29
+    },
+    {
+        "text": "char at B pointer then in that last one",
+        "start": 114.689,
+        "duration": 7.921
+    },
+    {
+        "text": "we would just return false and we just",
+        "start": 120.689,
+        "duration": 3.93
+    },
+    {
+        "text": "incremented our a pointer because this",
+        "start": 122.61,
+        "duration": 3.45
+    },
+    {
+        "text": "one start at the beginning and goes to",
+        "start": 124.619,
+        "duration": 4.53
+    },
+    {
+        "text": "the end and we decrement our B pointer",
+        "start": 126.06,
+        "duration": 4.979
+    },
+    {
+        "text": "and then if we made it through the whole",
+        "start": 129.149,
+        "duration": 3.271
+    },
+    {
+        "text": "thing and we didn't have any problems we",
+        "start": 131.039,
+        "duration": 2.581
+    },
+    {
+        "text": "would just return yet",
+        "start": 132.42,
+        "duration": 3.87
+    },
+    {
+        "text": "Kandra now how do we what is this one",
+        "start": 133.62,
+        "duration": 4.29
+    },
+    {
+        "text": "this is given an onyx ring you can",
+        "start": 136.29,
+        "duration": 5.55
+    },
+    {
+        "text": "delete a character so in this case we",
+        "start": 137.91,
+        "duration": 6.09
+    },
+    {
+        "text": "have we would be going a a okay that's",
+        "start": 141.84,
+        "duration": 2.55
+    },
+    {
+        "text": "fine",
+        "start": 144.0,
+        "duration": 3.09
+    },
+    {
+        "text": "bc in our old version we'd say no this",
+        "start": 144.39,
+        "duration": 4.679
+    },
+    {
+        "text": "isn't a palindrome and it's not but if",
+        "start": 147.09,
+        "duration": 3.66
+    },
+    {
+        "text": "we can delete a character we have to",
+        "start": 149.069,
+        "duration": 3.78
+    },
+    {
+        "text": "account for that now so how do we do",
+        "start": 150.75,
+        "duration": 5.31
+    },
+    {
+        "text": "that well we're just gonna use a helper",
+        "start": 152.849,
+        "duration": 5.97
+    },
+    {
+        "text": "method and we're gonna call it with two",
+        "start": 156.06,
+        "duration": 5.489
+    },
+    {
+        "text": "versions of the string right when we run",
+        "start": 158.819,
+        "duration": 5.911
+    },
+    {
+        "text": "into a problem so for example ABC a",
+        "start": 161.549,
+        "duration": 5.16
+    },
+    {
+        "text": "we're gonna see we're gonna do the",
+        "start": 164.73,
+        "duration": 4.17
+    },
+    {
+        "text": "regular loop here and we're going to",
+        "start": 166.709,
+        "duration": 8.581
+    },
+    {
+        "text": "recall we're going to call call not",
+        "start": 168.9,
+        "duration": 7.74
+    },
+    {
+        "text": "recursive method I don't know if I said",
+        "start": 175.29,
+        "duration": 2.789
+    },
+    {
+        "text": "that or not but it's not recursive",
+        "start": 176.64,
+        "duration": 6.42
+    },
+    {
+        "text": "method call helper method on two",
+        "start": 178.079,
+        "duration": 9.841
+    },
+    {
+        "text": "different sub strings and basically what",
+        "start": 183.06,
+        "duration": 7.319
+    },
+    {
+        "text": "this method is going to do is it gonna",
+        "start": 187.92,
+        "duration": 4.92
+    },
+    {
+        "text": "it's gonna take the word from where we",
+        "start": 190.379,
+        "duration": 4.231
+    },
+    {
+        "text": "have the disagreement so it would forget",
+        "start": 192.84,
+        "duration": 4.769
+    },
+    {
+        "text": "about the a and we'd we would split off",
+        "start": 194.61,
+        "duration": 6.39
+    },
+    {
+        "text": "the letter of we try splitting off each",
+        "start": 197.609,
+        "duration": 6.75
+    },
+    {
+        "text": "different letter and we're and do the",
+        "start": 201.0,
+        "duration": 5.16
+    },
+    {
+        "text": "rest of the problem on those substrings",
+        "start": 204.359,
+        "duration": 3.361
+    },
+    {
+        "text": "so wouldn't work that below in an",
+        "start": 206.16,
+        "duration": 3.27
+    },
+    {
+        "text": "example like this but if we had an",
+        "start": 207.72,
+        "duration": 6.96
+    },
+    {
+        "text": "example like this right we would you",
+        "start": 209.43,
+        "duration": 10.23
+    },
+    {
+        "text": "know I don't know what kind of okay so",
+        "start": 214.68,
+        "duration": 7.44
+    },
+    {
+        "text": "something like this maybe we'd get to",
+        "start": 219.66,
+        "duration": 4.169
+    },
+    {
+        "text": "everything would be fine we get to the B",
+        "start": 222.12,
+        "duration": 4.5
+    },
+    {
+        "text": "and the C and we would split off from",
+        "start": 223.829,
+        "duration": 5.641
+    },
+    {
+        "text": "here passed this into our new method and",
+        "start": 226.62,
+        "duration": 6.899
+    },
+    {
+        "text": "we'd try looping through this one and",
+        "start": 229.47,
+        "duration": 6.21
+    },
+    {
+        "text": "which are looking through this one you",
+        "start": 233.519,
+        "duration": 3.75
+    },
+    {
+        "text": "know hopefully this makes sense once I",
+        "start": 235.68,
+        "duration": 3.029
+    },
+    {
+        "text": "implement it but let me just dimple out",
+        "start": 237.269,
+        "duration": 4.59
+    },
+    {
+        "text": "the helper method Hubbard method is",
+        "start": 238.709,
+        "duration": 6.271
+    },
+    {
+        "text": "gonna take a string s it's gonna take",
+        "start": 241.859,
+        "duration": 6.481
+    },
+    {
+        "text": "into I and Inc J right and it's going to",
+        "start": 244.98,
+        "duration": 8.97
+    },
+    {
+        "text": "do literally the same thing so it's",
+        "start": 248.34,
+        "duration": 7.86
+    },
+    {
+        "text": "gonna check the rest of the string rest",
+        "start": 253.95,
+        "duration": 3.569
+    },
+    {
+        "text": "of the string with two different",
+        "start": 256.2,
+        "duration": 2.55
+    },
+    {
+        "text": "versions of the string and if that",
+        "start": 257.519,
+        "duration": 3.541
+    },
+    {
+        "text": "doesn't work we're on a deletion so it's",
+        "start": 258.75,
+        "duration": 4.169
+    },
+    {
+        "text": "automatically false so that's why this",
+        "start": 261.06,
+        "duration": 3.9
+    },
+    {
+        "text": "will work I don't know if I'm explaining",
+        "start": 262.919,
+        "duration": 3.81
+    },
+    {
+        "text": "this well I'll explain one more time at",
+        "start": 264.96,
+        "duration": 2.52
+    },
+    {
+        "text": "the end so we",
+        "start": 266.729,
+        "duration": 7.201
+    },
+    {
+        "text": "Alber method on s at a pointer plus one",
+        "start": 267.48,
+        "duration": 17.09
+    },
+    {
+        "text": "with B pointer and or helper method with",
+        "start": 273.93,
+        "duration": 12.84
+    },
+    {
+        "text": "and we're going to return this this will",
+        "start": 284.57,
+        "duration": 3.15
+    },
+    {
+        "text": "be our final answer",
+        "start": 286.77,
+        "duration": 4.2
+    },
+    {
+        "text": "because I'll explain it in a second yes",
+        "start": 287.72,
+        "duration": 7.84
+    },
+    {
+        "text": "a pointer the pointer minus one right so",
+        "start": 290.97,
+        "duration": 6.84
+    },
+    {
+        "text": "we basically chop off the characters",
+        "start": 295.56,
+        "duration": 4.92
+    },
+    {
+        "text": "that we have a disagreement with we drop",
+        "start": 297.81,
+        "duration": 5.1
+    },
+    {
+        "text": "off each one and we pass a different",
+        "start": 300.48,
+        "duration": 4.89
+    },
+    {
+        "text": "version of a substring in and it loops",
+        "start": 302.91,
+        "duration": 3.93
+    },
+    {
+        "text": "through the rest of that substring if",
+        "start": 305.37,
+        "duration": 3.54
+    },
+    {
+        "text": "that substring the rest of the substring",
+        "start": 306.84,
+        "duration": 4.14
+    },
+    {
+        "text": "is a palindrome after just deleting one",
+        "start": 308.91,
+        "duration": 4.86
+    },
+    {
+        "text": "character we're fine so we just do pass",
+        "start": 310.98,
+        "duration": 4.41
+    },
+    {
+        "text": "in the two different versions",
+        "start": 313.77,
+        "duration": 4.56
+    },
+    {
+        "text": "we tried deleting each letter and we",
+        "start": 315.39,
+        "duration": 4.83
+    },
+    {
+        "text": "pass in two different sub strings and if",
+        "start": 318.33,
+        "duration": 3.69
+    },
+    {
+        "text": "the sub strings fine then the rest of",
+        "start": 320.22,
+        "duration": 3.57
+    },
+    {
+        "text": "the string was fine if not then it was",
+        "start": 322.02,
+        "duration": 4.35
+    },
+    {
+        "text": "false that's the solution I mean I know",
+        "start": 323.79,
+        "duration": 4.47
+    },
+    {
+        "text": "this was a long video and I wasn't very",
+        "start": 326.37,
+        "duration": 4.53
+    },
+    {
+        "text": "good at explaining but I mean at least",
+        "start": 328.26,
+        "duration": 6.39
+    },
+    {
+        "text": "we failed the submission so I mean",
+        "start": 330.9,
+        "duration": 5.13
+    },
+    {
+        "text": "that's something that we can look",
+        "start": 334.65,
+        "duration": 3.54
+    },
+    {
+        "text": "forward to right so why would we fail",
+        "start": 336.03,
+        "duration": 5.1
+    },
+    {
+        "text": "this oh because we have to just re we",
+        "start": 338.19,
+        "duration": 5.79
+    },
+    {
+        "text": "actually have to return false here so",
+        "start": 341.13,
+        "duration": 5.13
+    },
+    {
+        "text": "really falling apart this was a very bad",
+        "start": 343.98,
+        "duration": 4.08
+    },
+    {
+        "text": "video but you know what I'm uploading it",
+        "start": 346.26,
+        "duration": 3.57
+    },
+    {
+        "text": "because like I said it's 11:48 and I",
+        "start": 348.06,
+        "duration": 3.15
+    },
+    {
+        "text": "don't want to miss a day I don't know",
+        "start": 349.83,
+        "duration": 3.63
+    },
+    {
+        "text": "how you YouTube dog we're really having",
+        "start": 351.21,
+        "duration": 4.74
+    },
+    {
+        "text": "a tough time guys a pointer is actually",
+        "start": 353.46,
+        "duration": 4.77
+    },
+    {
+        "text": "gonna be set to I and B pointer is gonna",
+        "start": 355.95,
+        "duration": 3.74
+    },
+    {
+        "text": "be such a J and that's how it works",
+        "start": 358.23,
+        "duration": 3.96
+    },
+    {
+        "text": "really bad but you guess what I have to",
+        "start": 359.69,
+        "duration": 5.08
+    },
+    {
+        "text": "upload it and umm you know what I have",
+        "start": 362.19,
+        "duration": 3.99
+    },
+    {
+        "text": "ten minutes so I'm gonna explain this",
+        "start": 364.77,
+        "duration": 3.15
+    },
+    {
+        "text": "one more time it's very long video so I",
+        "start": 366.18,
+        "duration": 3.45
+    },
+    {
+        "text": "also want to keep it short we have the",
+        "start": 367.92,
+        "duration": 3.06
+    },
+    {
+        "text": "eight pointer in the B point are going",
+        "start": 369.63,
+        "duration": 3.3
+    },
+    {
+        "text": "characters in words we check if they're",
+        "start": 370.98,
+        "duration": 4.08
+    },
+    {
+        "text": "the same if they're different we chop",
+        "start": 372.93,
+        "duration": 5.34
+    },
+    {
+        "text": "off a letter and eat at the right side",
+        "start": 375.06,
+        "duration": 5.37
+    },
+    {
+        "text": "and we pass in the new substring with",
+        "start": 378.27,
+        "duration": 3.81
+    },
+    {
+        "text": "the left character still there if that",
+        "start": 380.43,
+        "duration": 6.09
+    },
+    {
+        "text": "works that's good we're true or if we",
+        "start": 382.08,
+        "duration": 5.85
+    },
+    {
+        "text": "chop off the other character and that",
+        "start": 386.52,
+        "duration": 3.09
+    },
+    {
+        "text": "side worked that's good",
+        "start": 387.93,
+        "duration": 3.84
+    },
+    {
+        "text": "that's true we're good so we try",
+        "start": 389.61,
+        "duration": 4.53
+    },
+    {
+        "text": "deleting a character and we pass in the",
+        "start": 391.77,
+        "duration": 4.23
+    },
+    {
+        "text": "two different options of the substrings",
+        "start": 394.14,
+        "duration": 3.81
+    },
+    {
+        "text": "if one of them is good then we're good",
+        "start": 396.0,
+        "duration": 3.45
+    },
+    {
+        "text": "to go in the red that's a valid",
+        "start": 397.95,
+        "duration": 3.63
+    },
+    {
+        "text": "substring with one deletion if",
+        "start": 399.45,
+        "duration": 4.38
+    },
+    {
+        "text": "we don't have anymore deletions so we",
+        "start": 401.58,
+        "duration": 4.32
+    },
+    {
+        "text": "lose and that's it thank you guys for",
+        "start": 403.83,
+        "duration": 4.41
+    },
+    {
+        "text": "watching that's my video for the day let",
+        "start": 405.9,
+        "duration": 4.25
+    },
+    {
+        "text": "me know if you have any questions please",
+        "start": 408.24,
+        "duration": 3.87
+    },
+    {
+        "text": "criticize me all you want because I know",
+        "start": 410.15,
+        "duration": 4.03
+    },
+    {
+        "text": "this is a really bad video alright see",
+        "start": 412.11,
+        "duration": 4.85
+    },
+    {
+        "text": "you guys Thanks",
+        "start": 414.18,
+        "duration": 2.78
+    }
+]

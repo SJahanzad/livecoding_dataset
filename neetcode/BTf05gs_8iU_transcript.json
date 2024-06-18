@@ -1,0 +1,3167 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 4.08
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.92,
+        "duration": 2.879
+    },
+    {
+        "text": "let's solve",
+        "start": 4.08,
+        "duration": 3.839
+    },
+    {
+        "text": "design add and search words data",
+        "start": 4.799,
+        "duration": 3.921
+    },
+    {
+        "text": "structure",
+        "start": 7.919,
+        "duration": 3.041
+    },
+    {
+        "text": "so this is another problem from the",
+        "start": 8.72,
+        "duration": 3.6
+    },
+    {
+        "text": "blind 75",
+        "start": 10.96,
+        "duration": 3.92
+    },
+    {
+        "text": "leak code problems list so this is the",
+        "start": 12.32,
+        "duration": 4.24
+    },
+    {
+        "text": "spreadsheet i've been using to track",
+        "start": 14.88,
+        "duration": 2.08
+    },
+    {
+        "text": "which",
+        "start": 16.56,
+        "duration": 2.879
+    },
+    {
+        "text": "uh videos we've uploaded for those 75",
+        "start": 16.96,
+        "duration": 4.64
+    },
+    {
+        "text": "problems you can see that most of the",
+        "start": 19.439,
+        "duration": 4.321
+    },
+    {
+        "text": "solutions have already been updated and",
+        "start": 21.6,
+        "duration": 4.16
+    },
+    {
+        "text": "today we are working on this problem a",
+        "start": 23.76,
+        "duration": 2.88
+    },
+    {
+        "text": "tree problem",
+        "start": 25.76,
+        "duration": 3.359
+    },
+    {
+        "text": "add and search word so basically another",
+        "start": 26.64,
+        "duration": 4.399
+    },
+    {
+        "text": "day another problem from the sleep code",
+        "start": 29.119,
+        "duration": 3.841
+    },
+    {
+        "text": "blind 75 list the link",
+        "start": 31.039,
+        "duration": 3.761
+    },
+    {
+        "text": "to this sheet will be in the description",
+        "start": 32.96,
+        "duration": 3.279
+    },
+    {
+        "text": "if you do want to take a look",
+        "start": 34.8,
+        "duration": 3.439
+    },
+    {
+        "text": "so basically we're designing a data",
+        "start": 36.239,
+        "duration": 3.761
+    },
+    {
+        "text": "structure to efficiently solve this",
+        "start": 38.239,
+        "duration": 2.48
+    },
+    {
+        "text": "problem",
+        "start": 40.0,
+        "duration": 3.28
+    },
+    {
+        "text": "of basically adding words we're taking",
+        "start": 40.719,
+        "duration": 3.281
+    },
+    {
+        "text": "new words",
+        "start": 43.28,
+        "duration": 2.48
+    },
+    {
+        "text": "adding them to the data structure and",
+        "start": 44.0,
+        "duration": 4.32
+    },
+    {
+        "text": "also we're being given words and we want",
+        "start": 45.76,
+        "duration": 4.639
+    },
+    {
+        "text": "to search to see if those words",
+        "start": 48.32,
+        "duration": 5.6
+    },
+    {
+        "text": "match any previously added words to our",
+        "start": 50.399,
+        "duration": 4.561
+    },
+    {
+        "text": "data structure",
+        "start": 53.92,
+        "duration": 2.799
+    },
+    {
+        "text": "so we only need to support three",
+        "start": 54.96,
+        "duration": 3.919
+    },
+    {
+        "text": "functions for this data structure one is",
+        "start": 56.719,
+        "duration": 3.601
+    },
+    {
+        "text": "just gonna be the constructor that's",
+        "start": 58.879,
+        "duration": 3.281
+    },
+    {
+        "text": "gonna initialize the object one is gonna",
+        "start": 60.32,
+        "duration": 4.32
+    },
+    {
+        "text": "be adding a word and that one is pretty",
+        "start": 62.16,
+        "duration": 4.4
+    },
+    {
+        "text": "self-explanatory so we're just given a",
+        "start": 64.64,
+        "duration": 3.6
+    },
+    {
+        "text": "string a word",
+        "start": 66.56,
+        "duration": 3.2
+    },
+    {
+        "text": "and then we're adding it to the data",
+        "start": 68.24,
+        "duration": 3.28
+    },
+    {
+        "text": "structure now this word could only",
+        "start": 69.76,
+        "duration": 2.24
+    },
+    {
+        "text": "consist",
+        "start": 71.52,
+        "duration": 3.36
+    },
+    {
+        "text": "of lowercase characters from lowercase a",
+        "start": 72.0,
+        "duration": 4.32
+    },
+    {
+        "text": "to lowercase z",
+        "start": 74.88,
+        "duration": 3.04
+    },
+    {
+        "text": "and the third one is going to be the one",
+        "start": 76.32,
+        "duration": 3.76
+    },
+    {
+        "text": "where the bulk of the algorithm is going",
+        "start": 77.92,
+        "duration": 3.68
+    },
+    {
+        "text": "to be contained so this is going to be",
+        "start": 80.08,
+        "duration": 2.399
+    },
+    {
+        "text": "the searching",
+        "start": 81.6,
+        "duration": 3.6
+    },
+    {
+        "text": "words so we're searching a word and the",
+        "start": 82.479,
+        "duration": 3.761
+    },
+    {
+        "text": "word can contain",
+        "start": 85.2,
+        "duration": 2.64
+    },
+    {
+        "text": "any character from lowercase a to",
+        "start": 86.24,
+        "duration": 3.199
+    },
+    {
+        "text": "lowercase c but there's",
+        "start": 87.84,
+        "duration": 3.279
+    },
+    {
+        "text": "one additional character it could",
+        "start": 89.439,
+        "duration": 3.281
+    },
+    {
+        "text": "contain a dot",
+        "start": 91.119,
+        "duration": 3.841
+    },
+    {
+        "text": "character and what we're told is that",
+        "start": 92.72,
+        "duration": 4.079
+    },
+    {
+        "text": "the dot character is actually like a",
+        "start": 94.96,
+        "duration": 3.76
+    },
+    {
+        "text": "wild card it can basically match",
+        "start": 96.799,
+        "duration": 4.401
+    },
+    {
+        "text": "any character in the string so for",
+        "start": 98.72,
+        "duration": 4.24
+    },
+    {
+        "text": "example let's say in our word",
+        "start": 101.2,
+        "duration": 4.08
+    },
+    {
+        "text": "list so far let's say we had just a",
+        "start": 102.96,
+        "duration": 3.36
+    },
+    {
+        "text": "string a",
+        "start": 105.28,
+        "duration": 3.36
+    },
+    {
+        "text": "b right so this is what we have so far",
+        "start": 106.32,
+        "duration": 3.92
+    },
+    {
+        "text": "and we're trying to search",
+        "start": 108.64,
+        "duration": 4.799
+    },
+    {
+        "text": "dot b so basically would this search",
+        "start": 110.24,
+        "duration": 5.68
+    },
+    {
+        "text": "match any words that contain so far in",
+        "start": 113.439,
+        "duration": 4.401
+    },
+    {
+        "text": "our data structure the answer is yes",
+        "start": 115.92,
+        "duration": 4.879
+    },
+    {
+        "text": "because the dot would match any first",
+        "start": 117.84,
+        "duration": 4.48
+    },
+    {
+        "text": "character right so this",
+        "start": 120.799,
+        "duration": 4.0
+    },
+    {
+        "text": "that we basically match this lowercase a",
+        "start": 122.32,
+        "duration": 3.04
+    },
+    {
+        "text": "and then",
+        "start": 124.799,
+        "duration": 2.96
+    },
+    {
+        "text": "we do have an additional b which matches",
+        "start": 125.36,
+        "duration": 3.519
+    },
+    {
+        "text": "the second character",
+        "start": 127.759,
+        "duration": 3.681
+    },
+    {
+        "text": "in the string so a dot matches any",
+        "start": 128.879,
+        "duration": 3.841
+    },
+    {
+        "text": "character that's what's going to be",
+        "start": 131.44,
+        "duration": 2.48
+    },
+    {
+        "text": "tricky for us",
+        "start": 132.72,
+        "duration": 3.84
+    },
+    {
+        "text": "to implement now the brew force way to",
+        "start": 133.92,
+        "duration": 4.399
+    },
+    {
+        "text": "solve this problem is pretty simple",
+        "start": 136.56,
+        "duration": 3.28
+    },
+    {
+        "text": "right we would basically",
+        "start": 138.319,
+        "duration": 4.56
+    },
+    {
+        "text": "have a list of words and then just",
+        "start": 139.84,
+        "duration": 5.28
+    },
+    {
+        "text": "for every search we would just say okay",
+        "start": 142.879,
+        "duration": 3.761
+    },
+    {
+        "text": "does this search match",
+        "start": 145.12,
+        "duration": 3.44
+    },
+    {
+        "text": "any of the words in the input list now",
+        "start": 146.64,
+        "duration": 3.599
+    },
+    {
+        "text": "that's not going to be super efficient",
+        "start": 148.56,
+        "duration": 3.36
+    },
+    {
+        "text": "a more efficient solution is going to",
+        "start": 150.239,
+        "duration": 4.161
+    },
+    {
+        "text": "require a try data structure",
+        "start": 151.92,
+        "duration": 5.679
+    },
+    {
+        "text": "aka a prefix tree so this is what we're",
+        "start": 154.4,
+        "duration": 4.72
+    },
+    {
+        "text": "going to be using to solve this problem",
+        "start": 157.599,
+        "duration": 3.681
+    },
+    {
+        "text": "efficiently i will say if you've never",
+        "start": 159.12,
+        "duration": 3.68
+    },
+    {
+        "text": "heard of this data structure",
+        "start": 161.28,
+        "duration": 3.44
+    },
+    {
+        "text": "or you've never implemented it before",
+        "start": 162.8,
+        "duration": 3.84
+    },
+    {
+        "text": "you basically don't have a chance of",
+        "start": 164.72,
+        "duration": 3.84
+    },
+    {
+        "text": "solving this problem efficiently",
+        "start": 166.64,
+        "duration": 3.679
+    },
+    {
+        "text": "but if you have heard of this data",
+        "start": 168.56,
+        "duration": 3.759
+    },
+    {
+        "text": "structure it's pretty intuitive",
+        "start": 170.319,
+        "duration": 4.881
+    },
+    {
+        "text": "why this data structure is used in this",
+        "start": 172.319,
+        "duration": 4.0
+    },
+    {
+        "text": "problem basically",
+        "start": 175.2,
+        "duration": 3.2
+    },
+    {
+        "text": "you know a prefix tree right so for",
+        "start": 176.319,
+        "duration": 3.92
+    },
+    {
+        "text": "example if we were searching b",
+        "start": 178.4,
+        "duration": 4.8
+    },
+    {
+        "text": "dot dot we would want to first find all",
+        "start": 180.239,
+        "duration": 4.881
+    },
+    {
+        "text": "all words that start with the character",
+        "start": 183.2,
+        "duration": 2.24
+    },
+    {
+        "text": "b",
+        "start": 185.12,
+        "duration": 2.72
+    },
+    {
+        "text": "and then check you know are any of them",
+        "start": 185.44,
+        "duration": 3.04
+    },
+    {
+        "text": "of length",
+        "start": 187.84,
+        "duration": 2.479
+    },
+    {
+        "text": "two because the remaining portion of",
+        "start": 188.48,
+        "duration": 4.64
+    },
+    {
+        "text": "this can match any string of length two",
+        "start": 190.319,
+        "duration": 5.521
+    },
+    {
+        "text": "so a try is basically a tree that has",
+        "start": 193.12,
+        "duration": 3.44
+    },
+    {
+        "text": "some kind of",
+        "start": 195.84,
+        "duration": 4.56
+    },
+    {
+        "text": "root node and each node can have up to",
+        "start": 196.56,
+        "duration": 6.64
+    },
+    {
+        "text": "26 children in this example because we",
+        "start": 200.4,
+        "duration": 4.96
+    },
+    {
+        "text": "have lowercase characters from a",
+        "start": 203.2,
+        "duration": 5.2
+    },
+    {
+        "text": "to z so basically each node is going to",
+        "start": 205.36,
+        "duration": 4.799
+    },
+    {
+        "text": "represent a single character right and",
+        "start": 208.4,
+        "duration": 2.8
+    },
+    {
+        "text": "then each node could have",
+        "start": 210.159,
+        "duration": 4.241
+    },
+    {
+        "text": "up to 26 additional uh children",
+        "start": 211.2,
+        "duration": 5.759
+    },
+    {
+        "text": "and basically a word in this case for",
+        "start": 214.4,
+        "duration": 3.6
+    },
+    {
+        "text": "example you know this is",
+        "start": 216.959,
+        "duration": 5.601
+    },
+    {
+        "text": "a if i had a b here and then another c",
+        "start": 218.0,
+        "duration": 7.68
+    },
+    {
+        "text": "this is going to be a single word right",
+        "start": 222.56,
+        "duration": 3.679
+    },
+    {
+        "text": "and",
+        "start": 225.68,
+        "duration": 2.639
+    },
+    {
+        "text": "and so if we inserted the word let's say",
+        "start": 226.239,
+        "duration": 3.201
+    },
+    {
+        "text": "we added the word",
+        "start": 228.319,
+        "duration": 4.241
+    },
+    {
+        "text": "abc into our try this",
+        "start": 229.44,
+        "duration": 5.359
+    },
+    {
+        "text": "is basically how it would look like now",
+        "start": 232.56,
+        "duration": 3.92
+    },
+    {
+        "text": "one additional thing we have to say is",
+        "start": 234.799,
+        "duration": 4.0
+    },
+    {
+        "text": "for a particular node such as c we have",
+        "start": 236.48,
+        "duration": 2.72
+    },
+    {
+        "text": "to say",
+        "start": 238.799,
+        "duration": 2.881
+    },
+    {
+        "text": "this is the end of the word right",
+        "start": 239.2,
+        "duration": 4.08
+    },
+    {
+        "text": "because what we're trying to say is we",
+        "start": 241.68,
+        "duration": 3.279
+    },
+    {
+        "text": "did not add the word",
+        "start": 243.28,
+        "duration": 4.959
+    },
+    {
+        "text": "a we did not add the word a b we've only",
+        "start": 244.959,
+        "duration": 5.041
+    },
+    {
+        "text": "added the word abc so we have to",
+        "start": 248.239,
+        "duration": 3.2
+    },
+    {
+        "text": "designate that this is the last",
+        "start": 250.0,
+        "duration": 2.799
+    },
+    {
+        "text": "character now if we added",
+        "start": 251.439,
+        "duration": 4.561
+    },
+    {
+        "text": "another word for example a b what we're",
+        "start": 252.799,
+        "duration": 3.84
+    },
+    {
+        "text": "going to do",
+        "start": 256.0,
+        "duration": 1.919
+    },
+    {
+        "text": "we're not just going to repeat that",
+        "start": 256.639,
+        "duration": 2.32
+    },
+    {
+        "text": "we're not just going to say okay now",
+        "start": 257.919,
+        "duration": 2.641
+    },
+    {
+        "text": "there's going to be a lowercase a here",
+        "start": 258.959,
+        "duration": 3.361
+    },
+    {
+        "text": "then there's going to be a lowercase b",
+        "start": 260.56,
+        "duration": 3.52
+    },
+    {
+        "text": "notice how we already have those",
+        "start": 262.32,
+        "duration": 3.28
+    },
+    {
+        "text": "characters available to us",
+        "start": 264.08,
+        "duration": 4.24
+    },
+    {
+        "text": "we're going to reuse these characters so",
+        "start": 265.6,
+        "duration": 4.879
+    },
+    {
+        "text": "instead what we would do adding",
+        "start": 268.32,
+        "duration": 4.319
+    },
+    {
+        "text": "this word we would say okay let's add an",
+        "start": 270.479,
+        "duration": 4.321
+    },
+    {
+        "text": "a so let's start at the root add an a we",
+        "start": 272.639,
+        "duration": 4.241
+    },
+    {
+        "text": "see there's already an a that exists",
+        "start": 274.8,
+        "duration": 4.0
+    },
+    {
+        "text": "then we'd say okay from here let's add a",
+        "start": 276.88,
+        "duration": 3.44
+    },
+    {
+        "text": "b we see that a b",
+        "start": 278.8,
+        "duration": 4.8
+    },
+    {
+        "text": "already exists so once we get",
+        "start": 280.32,
+        "duration": 4.72
+    },
+    {
+        "text": "to the end of the word right that was",
+        "start": 283.6,
+        "duration": 3.2
+    },
+    {
+        "text": "the last character then we just say okay",
+        "start": 285.04,
+        "duration": 2.4
+    },
+    {
+        "text": "designate",
+        "start": 286.8,
+        "duration": 3.119
+    },
+    {
+        "text": "this as an additional end of the word so",
+        "start": 287.44,
+        "duration": 3.84
+    },
+    {
+        "text": "now we have two words",
+        "start": 289.919,
+        "duration": 4.401
+    },
+    {
+        "text": "along this path we have one word a b we",
+        "start": 291.28,
+        "duration": 5.04
+    },
+    {
+        "text": "have another word abc",
+        "start": 294.32,
+        "duration": 5.12
+    },
+    {
+        "text": "notice how all words starting with an a",
+        "start": 296.32,
+        "duration": 4.4
+    },
+    {
+        "text": "are going to be here right we could have",
+        "start": 299.44,
+        "duration": 2.479
+    },
+    {
+        "text": "other words a",
+        "start": 300.72,
+        "duration": 3.919
+    },
+    {
+        "text": "maybe a t or something right and other",
+        "start": 301.919,
+        "duration": 4.0
+    },
+    {
+        "text": "words as well right",
+        "start": 304.639,
+        "duration": 3.601
+    },
+    {
+        "text": "basically all words that start with a",
+        "start": 305.919,
+        "duration": 3.601
+    },
+    {
+        "text": "are going to be here that's what makes",
+        "start": 308.24,
+        "duration": 1.6
+    },
+    {
+        "text": "this",
+        "start": 309.52,
+        "duration": 2.0
+    },
+    {
+        "text": "efficient that's why this is called a",
+        "start": 309.84,
+        "duration": 3.359
+    },
+    {
+        "text": "prefix tree because",
+        "start": 311.52,
+        "duration": 4.08
+    },
+    {
+        "text": "let's say we wanted all words starting",
+        "start": 313.199,
+        "duration": 3.28
+    },
+    {
+        "text": "with",
+        "start": 315.6,
+        "duration": 2.4
+    },
+    {
+        "text": "let's say we were searching something",
+        "start": 316.479,
+        "duration": 4.0
+    },
+    {
+        "text": "like this right we're searching",
+        "start": 318.0,
+        "duration": 6.08
+    },
+    {
+        "text": "a b dot dot so we want all words",
+        "start": 320.479,
+        "duration": 6.881
+    },
+    {
+        "text": "for example or even one word of length",
+        "start": 324.08,
+        "duration": 3.76
+    },
+    {
+        "text": "five",
+        "start": 327.36,
+        "duration": 2.72
+    },
+    {
+        "text": "that starts with a b then we'd go okay",
+        "start": 327.84,
+        "duration": 3.199
+    },
+    {
+        "text": "let's find a",
+        "start": 330.08,
+        "duration": 3.2
+    },
+    {
+        "text": "then find b right here and then we'd go",
+        "start": 331.039,
+        "duration": 4.401
+    },
+    {
+        "text": "through all possible children",
+        "start": 333.28,
+        "duration": 4.08
+    },
+    {
+        "text": "that it has right in the tree we would",
+        "start": 335.44,
+        "duration": 3.84
+    },
+    {
+        "text": "do a brute force depth first search",
+        "start": 337.36,
+        "duration": 3.679
+    },
+    {
+        "text": "backtracking type approach",
+        "start": 339.28,
+        "duration": 3.84
+    },
+    {
+        "text": "and then we'd get a word we would try to",
+        "start": 341.039,
+        "duration": 3.6
+    },
+    {
+        "text": "find a word like this one",
+        "start": 343.12,
+        "duration": 3.12
+    },
+    {
+        "text": "so with that being said let's run",
+        "start": 344.639,
+        "duration": 3.361
+    },
+    {
+        "text": "through the example you can see at the",
+        "start": 346.24,
+        "duration": 3.44
+    },
+    {
+        "text": "above the first word that we're going to",
+        "start": 348.0,
+        "duration": 3.039
+    },
+    {
+        "text": "be adding is bad",
+        "start": 349.68,
+        "duration": 4.799
+    },
+    {
+        "text": "so let's add a character for b",
+        "start": 351.039,
+        "duration": 6.321
+    },
+    {
+        "text": "let's add a child for this a let's add a",
+        "start": 354.479,
+        "duration": 3.761
+    },
+    {
+        "text": "child for it",
+        "start": 357.36,
+        "duration": 4.16
+    },
+    {
+        "text": "d so now we've inserted the word bad",
+        "start": 358.24,
+        "duration": 5.36
+    },
+    {
+        "text": "we do want to designate this as the end",
+        "start": 361.52,
+        "duration": 4.0
+    },
+    {
+        "text": "of a word so i'll just mark it blue but",
+        "start": 363.6,
+        "duration": 3.439
+    },
+    {
+        "text": "in our code obviously we're going to do",
+        "start": 365.52,
+        "duration": 2.64
+    },
+    {
+        "text": "something different",
+        "start": 367.039,
+        "duration": 4.641
+    },
+    {
+        "text": "next we're adding another word dad so",
+        "start": 368.16,
+        "duration": 5.28
+    },
+    {
+        "text": "we have to start along a different path",
+        "start": 371.68,
+        "duration": 3.28
+    },
+    {
+        "text": "because these two words have a different",
+        "start": 373.44,
+        "duration": 3.12
+    },
+    {
+        "text": "prefix one starts with a b",
+        "start": 374.96,
+        "duration": 3.679
+    },
+    {
+        "text": "one starts with a d so let's",
+        "start": 376.56,
+        "duration": 4.16
+    },
+    {
+        "text": "additionally add a",
+        "start": 378.639,
+        "duration": 4.641
+    },
+    {
+        "text": "and additionally add d once again",
+        "start": 380.72,
+        "duration": 4.64
+    },
+    {
+        "text": "designating this as the end of a word",
+        "start": 383.28,
+        "duration": 4.08
+    },
+    {
+        "text": "we're going to add one last word before",
+        "start": 385.36,
+        "duration": 3.44
+    },
+    {
+        "text": "we start searching this one's going to",
+        "start": 387.36,
+        "duration": 2.08
+    },
+    {
+        "text": "be mad",
+        "start": 388.8,
+        "duration": 2.959
+    },
+    {
+        "text": "so we don't already have an m so we do",
+        "start": 389.44,
+        "duration": 3.599
+    },
+    {
+        "text": "have to insert that and then we have to",
+        "start": 391.759,
+        "duration": 2.481
+    },
+    {
+        "text": "insert a",
+        "start": 393.039,
+        "duration": 3.28
+    },
+    {
+        "text": "and then d of course this is going to be",
+        "start": 394.24,
+        "duration": 3.679
+    },
+    {
+        "text": "the end of a word so so far we have",
+        "start": 396.319,
+        "duration": 3.681
+    },
+    {
+        "text": "three words all of them end with a d",
+        "start": 397.919,
+        "duration": 3.681
+    },
+    {
+        "text": "but they all all three of them have",
+        "start": 400.0,
+        "duration": 3.44
+    },
+    {
+        "text": "different prefixes that's why they're",
+        "start": 401.6,
+        "duration": 3.439
+    },
+    {
+        "text": "along different paths",
+        "start": 403.44,
+        "duration": 3.36
+    },
+    {
+        "text": "now let's get to the searching part the",
+        "start": 405.039,
+        "duration": 3.201
+    },
+    {
+        "text": "interesting part so we're going to",
+        "start": 406.8,
+        "duration": 5.28
+    },
+    {
+        "text": "search for a word pad now so what we're",
+        "start": 408.24,
+        "duration": 5.12
+    },
+    {
+        "text": "going to do is we're going to start at",
+        "start": 412.08,
+        "duration": 2.239
+    },
+    {
+        "text": "the beginning right",
+        "start": 413.36,
+        "duration": 3.839
+    },
+    {
+        "text": "are there any words pad in this so first",
+        "start": 414.319,
+        "duration": 3.761
+    },
+    {
+        "text": "we're going to try",
+        "start": 417.199,
+        "duration": 2.72
+    },
+    {
+        "text": "are there any p's we're going to look is",
+        "start": 418.08,
+        "duration": 4.16
+    },
+    {
+        "text": "there a p we don't see any right",
+        "start": 419.919,
+        "duration": 5.361
+    },
+    {
+        "text": "we only have b d and m so we don't have",
+        "start": 422.24,
+        "duration": 4.48
+    },
+    {
+        "text": "any words starting with a p",
+        "start": 425.28,
+        "duration": 4.8
+    },
+    {
+        "text": "that means immediately we know false pad",
+        "start": 426.72,
+        "duration": 5.84
+    },
+    {
+        "text": "does not exist in our input that's why",
+        "start": 430.08,
+        "duration": 4.399
+    },
+    {
+        "text": "in the output over here you can see",
+        "start": 432.56,
+        "duration": 4.479
+    },
+    {
+        "text": "false is what's returned next we're",
+        "start": 434.479,
+        "duration": 4.56
+    },
+    {
+        "text": "searching another word that word is",
+        "start": 437.039,
+        "duration": 2.641
+    },
+    {
+        "text": "going to be",
+        "start": 439.039,
+        "duration": 2.88
+    },
+    {
+        "text": "bad so we're going to start at the root",
+        "start": 439.68,
+        "duration": 4.0
+    },
+    {
+        "text": "and see are there any b's",
+        "start": 441.919,
+        "duration": 4.081
+    },
+    {
+        "text": "we're going to see that yes we do have a",
+        "start": 443.68,
+        "duration": 3.76
+    },
+    {
+        "text": "b over here",
+        "start": 446.0,
+        "duration": 4.08
+    },
+    {
+        "text": "the next character in the string is a so",
+        "start": 447.44,
+        "duration": 4.24
+    },
+    {
+        "text": "does this b have a child",
+        "start": 450.08,
+        "duration": 4.559
+    },
+    {
+        "text": "a yes it does it has an a over here the",
+        "start": 451.68,
+        "duration": 4.16
+    },
+    {
+        "text": "last character is a d",
+        "start": 454.639,
+        "duration": 4.081
+    },
+    {
+        "text": "does this a have a child d yes it does",
+        "start": 455.84,
+        "duration": 3.759
+    },
+    {
+        "text": "it's over here",
+        "start": 458.72,
+        "duration": 3.039
+    },
+    {
+        "text": "now we yes we found the characters we",
+        "start": 459.599,
+        "duration": 3.521
+    },
+    {
+        "text": "needed but now",
+        "start": 461.759,
+        "duration": 3.12
+    },
+    {
+        "text": "lastly we have to say okay the last",
+        "start": 463.12,
+        "duration": 3.359
+    },
+    {
+        "text": "character that in the",
+        "start": 464.879,
+        "duration": 5.04
+    },
+    {
+        "text": "searching word is d is this in our try",
+        "start": 466.479,
+        "duration": 5.761
+    },
+    {
+        "text": "is this designated as the end of a word",
+        "start": 469.919,
+        "duration": 3.761
+    },
+    {
+        "text": "since it's marked blue",
+        "start": 472.24,
+        "duration": 3.519
+    },
+    {
+        "text": "it is therefore we're going to return",
+        "start": 473.68,
+        "duration": 3.359
+    },
+    {
+        "text": "true for this",
+        "start": 475.759,
+        "duration": 4.081
+    },
+    {
+        "text": "uh input searching word and you can see",
+        "start": 477.039,
+        "duration": 3.921
+    },
+    {
+        "text": "that's what's",
+        "start": 479.84,
+        "duration": 4.16
+    },
+    {
+        "text": "written in the output this returns true",
+        "start": 480.96,
+        "duration": 4.88
+    },
+    {
+        "text": "let's go through the last two search",
+        "start": 484.0,
+        "duration": 3.84
+    },
+    {
+        "text": "examples so in this example we have",
+        "start": 485.84,
+        "duration": 5.44
+    },
+    {
+        "text": "dot a d so what does that mean remember",
+        "start": 487.84,
+        "duration": 5.44
+    },
+    {
+        "text": "the dot character means we can match",
+        "start": 491.28,
+        "duration": 3.44
+    },
+    {
+        "text": "any character so we're going to start at",
+        "start": 493.28,
+        "duration": 3.359
+    },
+    {
+        "text": "the root and we're going to go down",
+        "start": 494.72,
+        "duration": 4.96
+    },
+    {
+        "text": "all three paths or or literally",
+        "start": 496.639,
+        "duration": 5.521
+    },
+    {
+        "text": "any of the paths and to do that we're",
+        "start": 499.68,
+        "duration": 3.359
+    },
+    {
+        "text": "going to have to use",
+        "start": 502.16,
+        "duration": 2.319
+    },
+    {
+        "text": "depth first search or basically a",
+        "start": 503.039,
+        "duration": 3.201
+    },
+    {
+        "text": "backtracking approach right",
+        "start": 504.479,
+        "duration": 4.321
+    },
+    {
+        "text": "and remember we're only looking for one",
+        "start": 506.24,
+        "duration": 4.399
+    },
+    {
+        "text": "word that matches this right so let's",
+        "start": 508.8,
+        "duration": 4.159
+    },
+    {
+        "text": "say the first path we decide to go down",
+        "start": 510.639,
+        "duration": 5.601
+    },
+    {
+        "text": "is this one right so this is a b",
+        "start": 512.959,
+        "duration": 5.121
+    },
+    {
+        "text": "and we're allowed to use a b because the",
+        "start": 516.24,
+        "duration": 4.0
+    },
+    {
+        "text": "dot matches any character so",
+        "start": 518.08,
+        "duration": 4.24
+    },
+    {
+        "text": "this matches so far right next we're at",
+        "start": 520.24,
+        "duration": 3.039
+    },
+    {
+        "text": "the next character",
+        "start": 522.32,
+        "duration": 4.079
+    },
+    {
+        "text": "a does this path have a child a yes it",
+        "start": 523.279,
+        "duration": 3.761
+    },
+    {
+        "text": "does",
+        "start": 526.399,
+        "duration": 2.721
+    },
+    {
+        "text": "so we found another match next we're",
+        "start": 527.04,
+        "duration": 3.04
+    },
+    {
+        "text": "looking for a d",
+        "start": 529.12,
+        "duration": 3.92
+    },
+    {
+        "text": "does this have a child d yes it does and",
+        "start": 530.08,
+        "duration": 5.04
+    },
+    {
+        "text": "it's designated as the end of a word so",
+        "start": 533.04,
+        "duration": 2.799
+    },
+    {
+        "text": "in this case",
+        "start": 535.12,
+        "duration": 3.2
+    },
+    {
+        "text": "we found one word that matches this and",
+        "start": 535.839,
+        "duration": 4.721
+    },
+    {
+        "text": "that's all we need we just need one word",
+        "start": 538.32,
+        "duration": 3.92
+    },
+    {
+        "text": "so we are going to return true",
+        "start": 540.56,
+        "duration": 4.24
+    },
+    {
+        "text": "and you can see that up above now if",
+        "start": 542.24,
+        "duration": 4.56
+    },
+    {
+        "text": "this one did not match for example if",
+        "start": 544.8,
+        "duration": 2.32
+    },
+    {
+        "text": "this",
+        "start": 546.8,
+        "duration": 2.159
+    },
+    {
+        "text": "wasn't designated as the end of a word",
+        "start": 547.12,
+        "duration": 3.36
+    },
+    {
+        "text": "or maybe this was instead an",
+        "start": 548.959,
+        "duration": 4.0
+    },
+    {
+        "text": "x character we would say okay we didn't",
+        "start": 550.48,
+        "duration": 4.72
+    },
+    {
+        "text": "find a match down this path",
+        "start": 552.959,
+        "duration": 4.481
+    },
+    {
+        "text": "but it doesn't matter because remember",
+        "start": 555.2,
+        "duration": 4.319
+    },
+    {
+        "text": "the dot matches any character so",
+        "start": 557.44,
+        "duration": 3.76
+    },
+    {
+        "text": "we don't have to go down this path let's",
+        "start": 559.519,
+        "duration": 3.681
+    },
+    {
+        "text": "try going down this path right and we",
+        "start": 561.2,
+        "duration": 3.84
+    },
+    {
+        "text": "would do the same thing we'd say okay we",
+        "start": 563.2,
+        "duration": 2.16
+    },
+    {
+        "text": "have an",
+        "start": 565.04,
+        "duration": 2.4
+    },
+    {
+        "text": "a we have a d that means we found a",
+        "start": 565.36,
+        "duration": 3.76
+    },
+    {
+        "text": "match that means we can return",
+        "start": 567.44,
+        "duration": 4.32
+    },
+    {
+        "text": "true and you can see that this is not",
+        "start": 569.12,
+        "duration": 3.2
+    },
+    {
+        "text": "going to be",
+        "start": 571.76,
+        "duration": 2.72
+    },
+    {
+        "text": "super efficient right we possibly we",
+        "start": 572.32,
+        "duration": 3.6
+    },
+    {
+        "text": "would have to go through every single",
+        "start": 574.48,
+        "duration": 2.479
+    },
+    {
+        "text": "character that's in",
+        "start": 575.92,
+        "duration": 3.68
+    },
+    {
+        "text": "our try decision tree but it's still",
+        "start": 576.959,
+        "duration": 4.081
+    },
+    {
+        "text": "more efficient than our brute force",
+        "start": 579.6,
+        "duration": 2.16
+    },
+    {
+        "text": "approach",
+        "start": 581.04,
+        "duration": 3.52
+    },
+    {
+        "text": "especially for this next last example so",
+        "start": 581.76,
+        "duration": 3.36
+    },
+    {
+        "text": "we're doing",
+        "start": 584.56,
+        "duration": 2.64
+    },
+    {
+        "text": "one last search and in this search we",
+        "start": 585.12,
+        "duration": 3.6
+    },
+    {
+        "text": "have we start with a b",
+        "start": 587.2,
+        "duration": 3.68
+    },
+    {
+        "text": "but then we have two dot characters and",
+        "start": 588.72,
+        "duration": 4.4
+    },
+    {
+        "text": "the reason this is more efficient with a",
+        "start": 590.88,
+        "duration": 2.72
+    },
+    {
+        "text": "try",
+        "start": 593.12,
+        "duration": 2.32
+    },
+    {
+        "text": "rather than just brute forcing every",
+        "start": 593.6,
+        "duration": 3.04
+    },
+    {
+        "text": "list because this",
+        "start": 595.44,
+        "duration": 3.28
+    },
+    {
+        "text": "at least tells us okay we're starting",
+        "start": 596.64,
+        "duration": 4.4
+    },
+    {
+        "text": "with a b so what we're gonna do in our",
+        "start": 598.72,
+        "duration": 4.239
+    },
+    {
+        "text": "try decision trees we're gonna say okay",
+        "start": 601.04,
+        "duration": 4.0
+    },
+    {
+        "text": "every other word that starts with",
+        "start": 602.959,
+        "duration": 4.56
+    },
+    {
+        "text": "any other character than a b we're not",
+        "start": 605.04,
+        "duration": 4.239
+    },
+    {
+        "text": "going to consider them and we have a",
+        "start": 607.519,
+        "duration": 2.801
+    },
+    {
+        "text": "pretty small",
+        "start": 609.279,
+        "duration": 3.041
+    },
+    {
+        "text": "try right now but it's possible we could",
+        "start": 610.32,
+        "duration": 3.92
+    },
+    {
+        "text": "have a really big one right",
+        "start": 612.32,
+        "duration": 3.68
+    },
+    {
+        "text": "so what this does for us is it",
+        "start": 614.24,
+        "duration": 4.0
+    },
+    {
+        "text": "eliminates a lot of the possibilities",
+        "start": 616.0,
+        "duration": 4.399
+    },
+    {
+        "text": "we say okay at least we know we're",
+        "start": 618.24,
+        "duration": 3.2
+    },
+    {
+        "text": "starting with a b",
+        "start": 620.399,
+        "duration": 4.321
+    },
+    {
+        "text": "and yes we did find a matching b so",
+        "start": 621.44,
+        "duration": 5.6
+    },
+    {
+        "text": "we can go down this path now we get to",
+        "start": 624.72,
+        "duration": 3.679
+    },
+    {
+        "text": "the brute force portion",
+        "start": 627.04,
+        "duration": 3.68
+    },
+    {
+        "text": "where we have a dot right so basically",
+        "start": 628.399,
+        "duration": 3.601
+    },
+    {
+        "text": "in this case it's simple because",
+        "start": 630.72,
+        "duration": 3.04
+    },
+    {
+        "text": "we only have one child but maybe we'd",
+        "start": 632.0,
+        "duration": 3.6
+    },
+    {
+        "text": "have multiple and then we'd have to go",
+        "start": 633.76,
+        "duration": 2.24
+    },
+    {
+        "text": "down",
+        "start": 635.6,
+        "duration": 2.239
+    },
+    {
+        "text": "all of those paths but in this case it's",
+        "start": 636.0,
+        "duration": 3.68
+    },
+    {
+        "text": "simple right let's just check do we have",
+        "start": 637.839,
+        "duration": 2.321
+    },
+    {
+        "text": "any",
+        "start": 639.68,
+        "duration": 2.399
+    },
+    {
+        "text": "characters that go below it yes any",
+        "start": 640.16,
+        "duration": 3.52
+    },
+    {
+        "text": "character will match this first dot now",
+        "start": 642.079,
+        "duration": 2.401
+    },
+    {
+        "text": "we're looking for",
+        "start": 643.68,
+        "duration": 2.56
+    },
+    {
+        "text": "another second dot do we have any",
+        "start": 644.48,
+        "duration": 3.359
+    },
+    {
+        "text": "characters that match it yes",
+        "start": 646.24,
+        "duration": 4.0
+    },
+    {
+        "text": "we have a d and it's the end of a word",
+        "start": 647.839,
+        "duration": 3.921
+    },
+    {
+        "text": "so yes in this case",
+        "start": 650.24,
+        "duration": 3.68
+    },
+    {
+        "text": "we also found a match so we can return",
+        "start": 651.76,
+        "duration": 4.24
+    },
+    {
+        "text": "true just like we have up above",
+        "start": 653.92,
+        "duration": 4.159
+    },
+    {
+        "text": "so once you can kind of understand this",
+        "start": 656.0,
+        "duration": 3.04
+    },
+    {
+        "text": "visual example",
+        "start": 658.079,
+        "duration": 3.601
+    },
+    {
+        "text": "it's not super hard now it's time to",
+        "start": 659.04,
+        "duration": 4.16
+    },
+    {
+        "text": "actually implement the code and i'll",
+        "start": 661.68,
+        "duration": 3.52
+    },
+    {
+        "text": "admit that it's actually a little tricky",
+        "start": 663.2,
+        "duration": 3.52
+    },
+    {
+        "text": "but i'll go i'll try to guide you",
+        "start": 665.2,
+        "duration": 2.319
+    },
+    {
+        "text": "through it",
+        "start": 666.72,
+        "duration": 2.96
+    },
+    {
+        "text": "so one thing i like to do for try",
+        "start": 667.519,
+        "duration": 3.76
+    },
+    {
+        "text": "problems is just define",
+        "start": 669.68,
+        "duration": 4.08
+    },
+    {
+        "text": "a try node because it's going to have a",
+        "start": 671.279,
+        "duration": 3.281
+    },
+    {
+        "text": "couple",
+        "start": 673.76,
+        "duration": 3.759
+    },
+    {
+        "text": "uh variables so in the constructor we're",
+        "start": 674.56,
+        "duration": 4.48
+    },
+    {
+        "text": "basically going to initialize",
+        "start": 677.519,
+        "duration": 4.481
+    },
+    {
+        "text": "two fields so for this tri node we are",
+        "start": 679.04,
+        "duration": 3.68
+    },
+    {
+        "text": "going to have",
+        "start": 682.0,
+        "duration": 2.64
+    },
+    {
+        "text": "a list of children now i'm going to use",
+        "start": 682.72,
+        "duration": 3.44
+    },
+    {
+        "text": "a hashmap for that",
+        "start": 684.64,
+        "duration": 2.96
+    },
+    {
+        "text": "so basically what i'm going to say is",
+        "start": 686.16,
+        "duration": 3.44
+    },
+    {
+        "text": "for each character we're going to say",
+        "start": 687.6,
+        "duration": 3.2
+    },
+    {
+        "text": "something like you know a",
+        "start": 689.6,
+        "duration": 4.32
+    },
+    {
+        "text": "is mapped to a tri node",
+        "start": 690.8,
+        "duration": 4.8
+    },
+    {
+        "text": "and we could possibly do that for every",
+        "start": 693.92,
+        "duration": 3.919
+    },
+    {
+        "text": "lowercase character from a to z",
+        "start": 695.6,
+        "duration": 4.0
+    },
+    {
+        "text": "and for every character we also need to",
+        "start": 697.839,
+        "duration": 3.521
+    },
+    {
+        "text": "designate if it's the end of a word so",
+        "start": 699.6,
+        "duration": 3.359
+    },
+    {
+        "text": "i'm just going to use a boolean for that",
+        "start": 701.36,
+        "duration": 3.68
+    },
+    {
+        "text": "call it word and initially we'll set it",
+        "start": 702.959,
+        "duration": 2.56
+    },
+    {
+        "text": "to",
+        "start": 705.04,
+        "duration": 2.96
+    },
+    {
+        "text": "false and so basically the only thing we",
+        "start": 705.519,
+        "duration": 4.241
+    },
+    {
+        "text": "need to do for the constructor for the",
+        "start": 708.0,
+        "duration": 3.44
+    },
+    {
+        "text": "constructor of the word dictionary is",
+        "start": 709.76,
+        "duration": 3.36
+    },
+    {
+        "text": "just define a root so",
+        "start": 711.44,
+        "duration": 3.199
+    },
+    {
+        "text": "let's call it root and it'll just be a",
+        "start": 713.12,
+        "duration": 3.44
+    },
+    {
+        "text": "try note so initially you can see that",
+        "start": 714.639,
+        "duration": 3.76
+    },
+    {
+        "text": "we don't have any characters",
+        "start": 716.56,
+        "duration": 3.839
+    },
+    {
+        "text": "inserted right we just have an initial",
+        "start": 718.399,
+        "duration": 3.12
+    },
+    {
+        "text": "empty try node",
+        "start": 720.399,
+        "duration": 3.281
+    },
+    {
+        "text": "it doesn't have any children so no",
+        "start": 721.519,
+        "duration": 3.681
+    },
+    {
+        "text": "characters are inserted",
+        "start": 723.68,
+        "duration": 3.44
+    },
+    {
+        "text": "next we are going to do the add word",
+        "start": 725.2,
+        "duration": 3.92
+    },
+    {
+        "text": "portion this portion isn't too difficult",
+        "start": 727.12,
+        "duration": 3.12
+    },
+    {
+        "text": "so what we're gonna do",
+        "start": 729.12,
+        "duration": 3.839
+    },
+    {
+        "text": "is we'll set current equal to what our",
+        "start": 730.24,
+        "duration": 5.039
+    },
+    {
+        "text": "root is so self.root is",
+        "start": 732.959,
+        "duration": 3.921
+    },
+    {
+        "text": "where we're gonna start and what we're",
+        "start": 735.279,
+        "duration": 3.36
+    },
+    {
+        "text": "gonna do is basically go through every",
+        "start": 736.88,
+        "duration": 2.639
+    },
+    {
+        "text": "single character",
+        "start": 738.639,
+        "duration": 3.281
+    },
+    {
+        "text": "in the word and what we're gonna do is",
+        "start": 739.519,
+        "duration": 3.281
+    },
+    {
+        "text": "we're gonna check",
+        "start": 741.92,
+        "duration": 3.2
+    },
+    {
+        "text": "if this character is not already",
+        "start": 742.8,
+        "duration": 3.92
+    },
+    {
+        "text": "inserted because it's possible this",
+        "start": 745.12,
+        "duration": 2.159
+    },
+    {
+        "text": "character",
+        "start": 746.72,
+        "duration": 2.799
+    },
+    {
+        "text": "could already be inserted in the try so",
+        "start": 747.279,
+        "duration": 3.201
+    },
+    {
+        "text": "we're going to check if",
+        "start": 749.519,
+        "duration": 4.401
+    },
+    {
+        "text": "if c is not in current",
+        "start": 750.48,
+        "duration": 5.84
+    },
+    {
+        "text": "dot children because of the current",
+        "start": 753.92,
+        "duration": 4.32
+    },
+    {
+        "text": "nodes children if c is not",
+        "start": 756.32,
+        "duration": 4.319
+    },
+    {
+        "text": "in there then we we need to obviously",
+        "start": 758.24,
+        "duration": 4.08
+    },
+    {
+        "text": "insert it right so what we would do is",
+        "start": 760.639,
+        "duration": 3.601
+    },
+    {
+        "text": "say current.children",
+        "start": 762.32,
+        "duration": 5.92
+    },
+    {
+        "text": "of c is going to be a new trinode",
+        "start": 764.24,
+        "duration": 5.68
+    },
+    {
+        "text": "where we inserted a trinode",
+        "start": 768.24,
+        "duration": 3.92
+    },
+    {
+        "text": "corresponding to the character c",
+        "start": 769.92,
+        "duration": 3.44
+    },
+    {
+        "text": "and then of course what we're going to",
+        "start": 772.16,
+        "duration": 2.88
+    },
+    {
+        "text": "do is we're going to update our current",
+        "start": 773.36,
+        "duration": 2.4
+    },
+    {
+        "text": "pointer",
+        "start": 775.04,
+        "duration": 4.479
+    },
+    {
+        "text": "to this uh new try node",
+        "start": 775.76,
+        "duration": 5.759
+    },
+    {
+        "text": "if it didn't already exist that means we",
+        "start": 779.519,
+        "duration": 4.401
+    },
+    {
+        "text": "just created it if it did already exist",
+        "start": 781.519,
+        "duration": 3.12
+    },
+    {
+        "text": "then we just",
+        "start": 783.92,
+        "duration": 2.56
+    },
+    {
+        "text": "shifted over to it right what we're",
+        "start": 784.639,
+        "duration": 3.681
+    },
+    {
+        "text": "ultimately trying to do is insert",
+        "start": 786.48,
+        "duration": 3.919
+    },
+    {
+        "text": "every character from this word into our",
+        "start": 788.32,
+        "duration": 3.44
+    },
+    {
+        "text": "try and once",
+        "start": 790.399,
+        "duration": 3.361
+    },
+    {
+        "text": "that's been completed what we're going",
+        "start": 791.76,
+        "duration": 3.12
+    },
+    {
+        "text": "to do at the end",
+        "start": 793.76,
+        "duration": 4.079
+    },
+    {
+        "text": "is say okay current dot word is now",
+        "start": 794.88,
+        "duration": 4.32
+    },
+    {
+        "text": "going to be set to true",
+        "start": 797.839,
+        "duration": 3.361
+    },
+    {
+        "text": "so we have created the characters and",
+        "start": 799.2,
+        "duration": 3.36
+    },
+    {
+        "text": "designated this as",
+        "start": 801.2,
+        "duration": 3.92
+    },
+    {
+        "text": "a word okay now for the actual meat and",
+        "start": 802.56,
+        "duration": 4.56
+    },
+    {
+        "text": "potatoes of this problem",
+        "start": 805.12,
+        "duration": 3.76
+    },
+    {
+        "text": "and this part is actually going to be",
+        "start": 807.12,
+        "duration": 3.68
+    },
+    {
+        "text": "recursive and let me show you",
+        "start": 808.88,
+        "duration": 3.759
+    },
+    {
+        "text": "why before we actually start doing the",
+        "start": 810.8,
+        "duration": 3.36
+    },
+    {
+        "text": "recursive portion",
+        "start": 812.639,
+        "duration": 3.281
+    },
+    {
+        "text": "so this is going to start similar to",
+        "start": 814.16,
+        "duration": 3.6
+    },
+    {
+        "text": "what we had before right so current is",
+        "start": 815.92,
+        "duration": 3.279
+    },
+    {
+        "text": "going to be initially set to",
+        "start": 817.76,
+        "duration": 4.16
+    },
+    {
+        "text": "let's say self.root right and then what",
+        "start": 819.199,
+        "duration": 4.161
+    },
+    {
+        "text": "we would want to do",
+        "start": 821.92,
+        "duration": 3.599
+    },
+    {
+        "text": "is go through every single character in",
+        "start": 823.36,
+        "duration": 3.76
+    },
+    {
+        "text": "the word in this case i'm actually going",
+        "start": 825.519,
+        "duration": 2.0
+    },
+    {
+        "text": "to",
+        "start": 827.12,
+        "duration": 2.24
+    },
+    {
+        "text": "use the index of the word and you'll see",
+        "start": 827.519,
+        "duration": 3.601
+    },
+    {
+        "text": "why in a moment so",
+        "start": 829.36,
+        "duration": 5.2
+    },
+    {
+        "text": "for i in range length of the word",
+        "start": 831.12,
+        "duration": 4.48
+    },
+    {
+        "text": "and then we're going to get the",
+        "start": 834.56,
+        "duration": 3.44
+    },
+    {
+        "text": "character at position i so word",
+        "start": 835.6,
+        "duration": 5.679
+    },
+    {
+        "text": "of i and so remember this character",
+        "start": 838.0,
+        "duration": 3.76
+    },
+    {
+        "text": "could be",
+        "start": 841.279,
+        "duration": 3.041
+    },
+    {
+        "text": "any character from a to z in which case",
+        "start": 841.76,
+        "duration": 4.4
+    },
+    {
+        "text": "the problem would be straightforward",
+        "start": 844.32,
+        "duration": 3.759
+    },
+    {
+        "text": "right we would just search our try and",
+        "start": 846.16,
+        "duration": 3.76
+    },
+    {
+        "text": "see does this character already exist",
+        "start": 848.079,
+        "duration": 3.44
+    },
+    {
+        "text": "and then we'd continue if it doesn't",
+        "start": 849.92,
+        "duration": 3.84
+    },
+    {
+        "text": "already exist then we would return false",
+        "start": 851.519,
+        "duration": 3.601
+    },
+    {
+        "text": "but we know this character could",
+        "start": 853.76,
+        "duration": 3.68
+    },
+    {
+        "text": "actually be a dot character that's",
+        "start": 855.12,
+        "duration": 4.32
+    },
+    {
+        "text": "what's going to make this tricky so if c",
+        "start": 857.44,
+        "duration": 4.56
+    },
+    {
+        "text": "equals a dot character the else",
+        "start": 859.44,
+        "duration": 4.48
+    },
+    {
+        "text": "condition is if it is a regular",
+        "start": 862.0,
+        "duration": 2.72
+    },
+    {
+        "text": "character",
+        "start": 863.92,
+        "duration": 2.479
+    },
+    {
+        "text": "now let's start with the else case",
+        "start": 864.72,
+        "duration": 3.679
+    },
+    {
+        "text": "because it's a little more simple so if",
+        "start": 866.399,
+        "duration": 2.401
+    },
+    {
+        "text": "c",
+        "start": 868.399,
+        "duration": 2.321
+    },
+    {
+        "text": "is just a regular character what are we",
+        "start": 868.8,
+        "duration": 3.2
+    },
+    {
+        "text": "gonna do we're gonna check",
+        "start": 870.72,
+        "duration": 5.52
+    },
+    {
+        "text": "if c is not in current.children that",
+        "start": 872.0,
+        "duration": 6.32
+    },
+    {
+        "text": "means this character does not exist we",
+        "start": 876.24,
+        "duration": 3.92
+    },
+    {
+        "text": "needed this character to exist we're",
+        "start": 878.32,
+        "duration": 3.44
+    },
+    {
+        "text": "searching for this word but this",
+        "start": 880.16,
+        "duration": 2.96
+    },
+    {
+        "text": "character does not exist",
+        "start": 881.76,
+        "duration": 3.519
+    },
+    {
+        "text": "so what do we do then well simply we can",
+        "start": 883.12,
+        "duration": 4.0
+    },
+    {
+        "text": "just return false that means we know for",
+        "start": 885.279,
+        "duration": 3.761
+    },
+    {
+        "text": "sure this word does not exist",
+        "start": 887.12,
+        "duration": 4.32
+    },
+    {
+        "text": "if it does exist then obviously we're",
+        "start": 889.04,
+        "duration": 4.08
+    },
+    {
+        "text": "going to shift our current pointer",
+        "start": 891.44,
+        "duration": 3.24
+    },
+    {
+        "text": "to that node so we're going to go to",
+        "start": 893.12,
+        "duration": 3.2
+    },
+    {
+        "text": "current.children",
+        "start": 894.68,
+        "duration": 4.44
+    },
+    {
+        "text": "at character c and then we would just",
+        "start": 896.32,
+        "duration": 4.639
+    },
+    {
+        "text": "continue our algorithm right",
+        "start": 899.12,
+        "duration": 3.44
+    },
+    {
+        "text": "but this case is going to be a little",
+        "start": 900.959,
+        "duration": 3.361
+    },
+    {
+        "text": "bit more tricky because remember if the",
+        "start": 902.56,
+        "duration": 3.2
+    },
+    {
+        "text": "character is a dot that means",
+        "start": 904.32,
+        "duration": 2.879
+    },
+    {
+        "text": "potentially we're going down",
+        "start": 905.76,
+        "duration": 4.24
+    },
+    {
+        "text": "26 different paths because this dot",
+        "start": 907.199,
+        "duration": 3.44
+    },
+    {
+        "text": "could match",
+        "start": 910.0,
+        "duration": 3.279
+    },
+    {
+        "text": "any of the 26 characters and we can't",
+        "start": 910.639,
+        "duration": 3.521
+    },
+    {
+        "text": "really do that",
+        "start": 913.279,
+        "duration": 3.12
+    },
+    {
+        "text": "iteratively very easily right we are",
+        "start": 914.16,
+        "duration": 5.039
+    },
+    {
+        "text": "gonna use backtracking or recursion",
+        "start": 916.399,
+        "duration": 5.361
+    },
+    {
+        "text": "to help us do that so for example let's",
+        "start": 919.199,
+        "duration": 3.681
+    },
+    {
+        "text": "say we had a string like",
+        "start": 921.76,
+        "duration": 4.079
+    },
+    {
+        "text": "dot a b what we would want to do then is",
+        "start": 922.88,
+        "duration": 3.68
+    },
+    {
+        "text": "say okay",
+        "start": 925.839,
+        "duration": 3.281
+    },
+    {
+        "text": "dot it could match any of the possible",
+        "start": 926.56,
+        "duration": 4.24
+    },
+    {
+        "text": "characters so what we would say then is",
+        "start": 929.12,
+        "duration": 4.719
+    },
+    {
+        "text": "we would go through for every",
+        "start": 930.8,
+        "duration": 7.2
+    },
+    {
+        "text": "child in current dot children",
+        "start": 933.839,
+        "duration": 6.321
+    },
+    {
+        "text": "dot values because remember for",
+        "start": 938.0,
+        "duration": 4.0
+    },
+    {
+        "text": "current.children that's a hashmap",
+        "start": 940.16,
+        "duration": 3.679
+    },
+    {
+        "text": "and then we want only the values because",
+        "start": 942.0,
+        "duration": 3.199
+    },
+    {
+        "text": "those are going to be the actual",
+        "start": 943.839,
+        "duration": 2.0
+    },
+    {
+        "text": "children",
+        "start": 945.199,
+        "duration": 2.721
+    },
+    {
+        "text": "so because we know that dot could match",
+        "start": 945.839,
+        "duration": 4.161
+    },
+    {
+        "text": "any character so for this",
+        "start": 947.92,
+        "duration": 4.0
+    },
+    {
+        "text": "dot we would basically match every",
+        "start": 950.0,
+        "duration": 3.839
+    },
+    {
+        "text": "single character and then we'd say okay",
+        "start": 951.92,
+        "duration": 2.96
+    },
+    {
+        "text": "for each of these",
+        "start": 953.839,
+        "duration": 3.841
+    },
+    {
+        "text": "we want to do the recursion on it so we",
+        "start": 954.88,
+        "duration": 3.519
+    },
+    {
+        "text": "want to do",
+        "start": 957.68,
+        "duration": 3.68
+    },
+    {
+        "text": "the depth first search on this and when",
+        "start": 958.399,
+        "duration": 4.401
+    },
+    {
+        "text": "we're actually doing that depth for",
+        "start": 961.36,
+        "duration": 1.919
+    },
+    {
+        "text": "search",
+        "start": 962.8,
+        "duration": 2.32
+    },
+    {
+        "text": "it could just be an iterative matching",
+        "start": 963.279,
+        "duration": 3.441
+    },
+    {
+        "text": "so what we're trying to what i'm trying",
+        "start": 965.12,
+        "duration": 3.839
+    },
+    {
+        "text": "to get at is that this entire thing that",
+        "start": 966.72,
+        "duration": 3.359
+    },
+    {
+        "text": "we just wrote",
+        "start": 968.959,
+        "duration": 3.601
+    },
+    {
+        "text": "is the recursive function this is the",
+        "start": 970.079,
+        "duration": 3.601
+    },
+    {
+        "text": "depth first search",
+        "start": 972.56,
+        "duration": 3.36
+    },
+    {
+        "text": "right we have the iterative portion here",
+        "start": 973.68,
+        "duration": 4.0
+    },
+    {
+        "text": "where we don't have a dot and we have",
+        "start": 975.92,
+        "duration": 3.839
+    },
+    {
+        "text": "the recursive portion over here",
+        "start": 977.68,
+        "duration": 4.399
+    },
+    {
+        "text": "where we do have a dot so let's wrap",
+        "start": 979.759,
+        "duration": 3.841
+    },
+    {
+        "text": "this entire thing",
+        "start": 982.079,
+        "duration": 4.401
+    },
+    {
+        "text": "inside of a depth first search function",
+        "start": 983.6,
+        "duration": 4.799
+    },
+    {
+        "text": "depth first search dfs",
+        "start": 986.48,
+        "duration": 4.4
+    },
+    {
+        "text": "and so let's just tab it over so now",
+        "start": 988.399,
+        "duration": 3.521
+    },
+    {
+        "text": "let's think about it",
+        "start": 990.88,
+        "duration": 3.199
+    },
+    {
+        "text": "when we're doing our depth first search",
+        "start": 991.92,
+        "duration": 3.44
+    },
+    {
+        "text": "what are we going to pass",
+        "start": 994.079,
+        "duration": 3.44
+    },
+    {
+        "text": "in well we want to know what's the",
+        "start": 995.36,
+        "duration": 4.159
+    },
+    {
+        "text": "remaining portion of the word that we",
+        "start": 997.519,
+        "duration": 3.76
+    },
+    {
+        "text": "are trying to match right so we would",
+        "start": 999.519,
+        "duration": 2.801
+    },
+    {
+        "text": "want to pass in the",
+        "start": 1001.279,
+        "duration": 3.92
+    },
+    {
+        "text": "index so let's call that j we're passing",
+        "start": 1002.32,
+        "duration": 4.639
+    },
+    {
+        "text": "in the starting index",
+        "start": 1005.199,
+        "duration": 3.921
+    },
+    {
+        "text": "j right and the other thing we're",
+        "start": 1006.959,
+        "duration": 3.921
+    },
+    {
+        "text": "passing is what's the current",
+        "start": 1009.12,
+        "duration": 3.92
+    },
+    {
+        "text": "route that or the current node in our",
+        "start": 1010.88,
+        "duration": 3.68
+    },
+    {
+        "text": "try that we're at so",
+        "start": 1013.04,
+        "duration": 3.76
+    },
+    {
+        "text": "in this case if so depending on which",
+        "start": 1014.56,
+        "duration": 3.519
+    },
+    {
+        "text": "one of these we're iterating through",
+        "start": 1016.8,
+        "duration": 3.279
+    },
+    {
+        "text": "we're gonna pass in that child node",
+        "start": 1018.079,
+        "duration": 2.641
+    },
+    {
+        "text": "right so",
+        "start": 1020.079,
+        "duration": 2.88
+    },
+    {
+        "text": "so that's what the the node that we're",
+        "start": 1020.72,
+        "duration": 3.839
+    },
+    {
+        "text": "going to be passing in whatever child",
+        "start": 1022.959,
+        "duration": 2.401
+    },
+    {
+        "text": "that is",
+        "start": 1024.559,
+        "duration": 2.4
+    },
+    {
+        "text": "so that's how we're going to call dfs so",
+        "start": 1025.36,
+        "duration": 3.52
+    },
+    {
+        "text": "let's define that up above so j",
+        "start": 1026.959,
+        "duration": 5.441
+    },
+    {
+        "text": "is going to be uh the index parameter",
+        "start": 1028.88,
+        "duration": 6.959
+    },
+    {
+        "text": "and let's call root what the",
+        "start": 1032.4,
+        "duration": 5.519
+    },
+    {
+        "text": "node that we're passing in is so okay so",
+        "start": 1035.839,
+        "duration": 3.281
+    },
+    {
+        "text": "current is",
+        "start": 1037.919,
+        "duration": 3.04
+    },
+    {
+        "text": "instead of being called self.root it's",
+        "start": 1039.12,
+        "duration": 3.439
+    },
+    {
+        "text": "actually going to be initialized to the",
+        "start": 1040.959,
+        "duration": 3.36
+    },
+    {
+        "text": "root that we end up passing in",
+        "start": 1042.559,
+        "duration": 4.721
+    },
+    {
+        "text": "and okay so here i passed in j but we",
+        "start": 1044.319,
+        "duration": 3.36
+    },
+    {
+        "text": "would",
+        "start": 1047.28,
+        "duration": 1.84
+    },
+    {
+        "text": "what we would actually pass in is going",
+        "start": 1047.679,
+        "duration": 3.761
+    },
+    {
+        "text": "to be i actually not just i",
+        "start": 1049.12,
+        "duration": 4.96
+    },
+    {
+        "text": "i plus 1 because we're going down a",
+        "start": 1051.44,
+        "duration": 3.2
+    },
+    {
+        "text": "child",
+        "start": 1054.08,
+        "duration": 3.599
+    },
+    {
+        "text": "so we're going to pass in i plus 1",
+        "start": 1054.64,
+        "duration": 5.919
+    },
+    {
+        "text": "as the index of the character that we're",
+        "start": 1057.679,
+        "duration": 3.521
+    },
+    {
+        "text": "looking for",
+        "start": 1060.559,
+        "duration": 2.48
+    },
+    {
+        "text": "right because because what we're saying",
+        "start": 1061.2,
+        "duration": 3.44
+    },
+    {
+        "text": "is we're skipping the dot so we're going",
+        "start": 1063.039,
+        "duration": 2.961
+    },
+    {
+        "text": "to have to increment i plus",
+        "start": 1064.64,
+        "duration": 3.6
+    },
+    {
+        "text": "one and this function is going to return",
+        "start": 1066.0,
+        "duration": 3.76
+    },
+    {
+        "text": "a boolean so if this function",
+        "start": 1068.24,
+        "duration": 3.439
+    },
+    {
+        "text": "ends up returning true that means we",
+        "start": 1069.76,
+        "duration": 4.0
+    },
+    {
+        "text": "found one path that matches and remember",
+        "start": 1071.679,
+        "duration": 4.161
+    },
+    {
+        "text": "if we find a path that matches we return",
+        "start": 1073.76,
+        "duration": 2.48
+    },
+    {
+        "text": "true",
+        "start": 1075.84,
+        "duration": 2.079
+    },
+    {
+        "text": "immediately we're done we don't have to",
+        "start": 1076.24,
+        "duration": 3.92
+    },
+    {
+        "text": "do anything else if we don't find a path",
+        "start": 1077.919,
+        "duration": 4.081
+    },
+    {
+        "text": "we're going to keep going down all",
+        "start": 1080.16,
+        "duration": 3.04
+    },
+    {
+        "text": "possible paths",
+        "start": 1082.0,
+        "duration": 3.919
+    },
+    {
+        "text": "until we do if we never find a true if",
+        "start": 1083.2,
+        "duration": 4.24
+    },
+    {
+        "text": "we never find a match then we're going",
+        "start": 1085.919,
+        "duration": 2.081
+    },
+    {
+        "text": "to return",
+        "start": 1087.44,
+        "duration": 3.92
+    },
+    {
+        "text": "false oh and one more thing so initially",
+        "start": 1088.0,
+        "duration": 4.32
+    },
+    {
+        "text": "up above we said",
+        "start": 1091.36,
+        "duration": 2.72
+    },
+    {
+        "text": "i is going to go through range of the",
+        "start": 1092.32,
+        "duration": 3.599
+    },
+    {
+        "text": "length of the word but we know we could",
+        "start": 1094.08,
+        "duration": 3.599
+    },
+    {
+        "text": "be starting at a different position here",
+        "start": 1095.919,
+        "duration": 3.281
+    },
+    {
+        "text": "we're always going to start at zero we",
+        "start": 1097.679,
+        "duration": 2.961
+    },
+    {
+        "text": "don't want to do that we always want to",
+        "start": 1099.2,
+        "duration": 4.24
+    },
+    {
+        "text": "start at j whatever it happens to be",
+        "start": 1100.64,
+        "duration": 6.08
+    },
+    {
+        "text": "so that is the main recursive portion",
+        "start": 1103.44,
+        "duration": 6.08
+    },
+    {
+        "text": "and the last thing is let's say we were",
+        "start": 1106.72,
+        "duration": 5.52
+    },
+    {
+        "text": "given a word abc and let's say we found",
+        "start": 1109.52,
+        "duration": 4.96
+    },
+    {
+        "text": "a match right we didn't have any dots in",
+        "start": 1112.24,
+        "duration": 3.36
+    },
+    {
+        "text": "here what would that do",
+        "start": 1114.48,
+        "duration": 2.96
+    },
+    {
+        "text": "well we'd go through the for loop we'd",
+        "start": 1115.6,
+        "duration": 3.6
+    },
+    {
+        "text": "always execute the else condition",
+        "start": 1117.44,
+        "duration": 3.84
+    },
+    {
+        "text": "and we would always find the current",
+        "start": 1119.2,
+        "duration": 4.0
+    },
+    {
+        "text": "node and then the entire loop would be",
+        "start": 1121.28,
+        "duration": 3.279
+    },
+    {
+        "text": "finished then what would we want to",
+        "start": 1123.2,
+        "duration": 2.8
+    },
+    {
+        "text": "return out here",
+        "start": 1124.559,
+        "duration": 3.521
+    },
+    {
+        "text": "well we would want to return whatever",
+        "start": 1126.0,
+        "duration": 3.6
+    },
+    {
+        "text": "current happens to be",
+        "start": 1128.08,
+        "duration": 4.8
+    },
+    {
+        "text": "so if current dot word is true",
+        "start": 1129.6,
+        "duration": 4.88
+    },
+    {
+        "text": "then we would return true if",
+        "start": 1132.88,
+        "duration": 3.12
+    },
+    {
+        "text": "current.word was false",
+        "start": 1134.48,
+        "duration": 3.52
+    },
+    {
+        "text": "then we would return false so we can",
+        "start": 1136.0,
+        "duration": 3.039
+    },
+    {
+        "text": "just leave this",
+        "start": 1138.0,
+        "duration": 4.24
+    },
+    {
+        "text": "as it is so that's the main portion of",
+        "start": 1139.039,
+        "duration": 5.361
+    },
+    {
+        "text": "this algorithm the last thing that we",
+        "start": 1142.24,
+        "duration": 2.88
+    },
+    {
+        "text": "want to do",
+        "start": 1144.4,
+        "duration": 2.96
+    },
+    {
+        "text": "is actually call this step for search",
+        "start": 1145.12,
+        "duration": 4.0
+    },
+    {
+        "text": "function right so what are the",
+        "start": 1147.36,
+        "duration": 3.12
+    },
+    {
+        "text": "parameters that we're going to give it",
+        "start": 1149.12,
+        "duration": 2.799
+    },
+    {
+        "text": "well we're always going to start at",
+        "start": 1150.48,
+        "duration": 2.88
+    },
+    {
+        "text": "index 0 because we're going to start at",
+        "start": 1151.919,
+        "duration": 3.041
+    },
+    {
+        "text": "the beginning of the word so we can pass",
+        "start": 1153.36,
+        "duration": 3.199
+    },
+    {
+        "text": "in 0 for j",
+        "start": 1154.96,
+        "duration": 3.28
+    },
+    {
+        "text": "and we're always going to start at the",
+        "start": 1156.559,
+        "duration": 3.721
+    },
+    {
+        "text": "root node of our try so we can pass in",
+        "start": 1158.24,
+        "duration": 3.36
+    },
+    {
+        "text": "self.root",
+        "start": 1160.28,
+        "duration": 3.32
+    },
+    {
+        "text": "as the root node and then we would just",
+        "start": 1161.6,
+        "duration": 4.4
+    },
+    {
+        "text": "want to return the result that this dfs",
+        "start": 1163.6,
+        "duration": 3.68
+    },
+    {
+        "text": "function returns",
+        "start": 1166.0,
+        "duration": 3.679
+    },
+    {
+        "text": "so as you can see this function did work",
+        "start": 1167.28,
+        "duration": 4.8
+    },
+    {
+        "text": "and it does work pretty efficiently",
+        "start": 1169.679,
+        "duration": 4.481
+    },
+    {
+        "text": "so if you didn't already know what a try",
+        "start": 1172.08,
+        "duration": 4.08
+    },
+    {
+        "text": "was i hope that you learned that today",
+        "start": 1174.16,
+        "duration": 2.56
+    },
+    {
+        "text": "so this",
+        "start": 1176.16,
+        "duration": 2.8
+    },
+    {
+        "text": "is the entire code and if you did",
+        "start": 1176.72,
+        "duration": 4.0
+    },
+    {
+        "text": "already know what a try was i hope that",
+        "start": 1178.96,
+        "duration": 3.36
+    },
+    {
+        "text": "you learned a new application of it so i",
+        "start": 1180.72,
+        "duration": 2.56
+    },
+    {
+        "text": "hope this was helpful",
+        "start": 1182.32,
+        "duration": 2.96
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 1183.28,
+        "duration": 3.759
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 1185.28,
+        "duration": 2.32
+    },
+    {
+        "text": "hopefully",
+        "start": 1187.039,
+        "duration": 4.721
+    },
+    {
+        "text": "see you pretty soon thanks for watching",
+        "start": 1187.6,
+        "duration": 4.16
+    }
+]

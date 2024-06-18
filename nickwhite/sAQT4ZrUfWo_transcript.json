@@ -1,0 +1,787 @@
+[
+    {
+        "text": "all right I think we're recording so hey",
+        "start": 0.06,
+        "duration": 6.87
+    },
+    {
+        "text": "how's it going guys",
+        "start": 5.759,
+        "duration": 3.51
+    },
+    {
+        "text": "Nick white here I do tech and coding",
+        "start": 6.93,
+        "duration": 3.749
+    },
+    {
+        "text": "stuff on Twitch on YouTube you want to",
+        "start": 9.269,
+        "duration": 3.0
+    },
+    {
+        "text": "see you to check the description right",
+        "start": 10.679,
+        "duration": 3.151
+    },
+    {
+        "text": "now I'm doing elite code series where I",
+        "start": 12.269,
+        "duration": 3.211
+    },
+    {
+        "text": "just solve and explain all of the",
+        "start": 13.83,
+        "duration": 3.99
+    },
+    {
+        "text": "problems and YouTube videos so if you",
+        "start": 15.48,
+        "duration": 3.57
+    },
+    {
+        "text": "want to check out any other problems",
+        "start": 17.82,
+        "duration": 2.549
+    },
+    {
+        "text": "just go ahead so right now we're doing",
+        "start": 19.05,
+        "duration": 5.13
+    },
+    {
+        "text": "to some to the input array is sorted so",
+        "start": 20.369,
+        "duration": 5.851
+    },
+    {
+        "text": "I already did a video on to someone you",
+        "start": 24.18,
+        "duration": 3.45
+    },
+    {
+        "text": "can go check that out but basically what",
+        "start": 26.22,
+        "duration": 3.569
+    },
+    {
+        "text": "it is is we're given an array of numbers",
+        "start": 27.63,
+        "duration": 5.37
+    },
+    {
+        "text": "you can read this if you want to and we",
+        "start": 29.789,
+        "duration": 5.641
+    },
+    {
+        "text": "have a target so in this target it would",
+        "start": 33.0,
+        "duration": 4.5
+    },
+    {
+        "text": "be 9 and we want to find two numbers in",
+        "start": 35.43,
+        "duration": 4.53
+    },
+    {
+        "text": "the array that add up to 9 so right we",
+        "start": 37.5,
+        "duration": 5.489
+    },
+    {
+        "text": "have 2 and 7 so we return the index of",
+        "start": 39.96,
+        "duration": 6.119
+    },
+    {
+        "text": "indices of 2 and 7 right",
+        "start": 42.989,
+        "duration": 8.371
+    },
+    {
+        "text": "not exactly indices but we're we're",
+        "start": 46.079,
+        "duration": 7.261
+    },
+    {
+        "text": "taking the let we're doing it by lanes",
+        "start": 51.36,
+        "duration": 3.75
+    },
+    {
+        "text": "because you know indices this would be 0",
+        "start": 53.34,
+        "duration": 4.59
+    },
+    {
+        "text": "1 2 3 we're doing it kind of by length",
+        "start": 55.11,
+        "duration": 4.469
+    },
+    {
+        "text": "so we do the first element in the second",
+        "start": 57.93,
+        "duration": 2.699
+    },
+    {
+        "text": "element I don't know why they did that",
+        "start": 59.579,
+        "duration": 3.12
+    },
+    {
+        "text": "but they wanted it that way for some",
+        "start": 60.629,
+        "duration": 6.42
+    },
+    {
+        "text": "reason but so in the first twosome the",
+        "start": 62.699,
+        "duration": 6.121
+    },
+    {
+        "text": "array was not sorted so you could see",
+        "start": 67.049,
+        "duration": 3.451
+    },
+    {
+        "text": "these numbers are sorted 2 7 11 15",
+        "start": 68.82,
+        "duration": 3.51
+    },
+    {
+        "text": "they're increasing sorted in ascending",
+        "start": 70.5,
+        "duration": 4.049
+    },
+    {
+        "text": "order you could see right there in the",
+        "start": 72.33,
+        "duration": 3.99
+    },
+    {
+        "text": "first problem they weren't sorted at all",
+        "start": 74.549,
+        "duration": 4.021
+    },
+    {
+        "text": "so it could've been 7 to 15 11 right",
+        "start": 76.32,
+        "duration": 4.02
+    },
+    {
+        "text": "that's not sorted and it would say to",
+        "start": 78.57,
+        "duration": 3.93
+    },
+    {
+        "text": "find nine and what we did is we'd have a",
+        "start": 80.34,
+        "duration": 4.44
+    },
+    {
+        "text": "hash map and we would distort the",
+        "start": 82.5,
+        "duration": 4.86
+    },
+    {
+        "text": "difference from the sum in the current",
+        "start": 84.78,
+        "duration": 4.379
+    },
+    {
+        "text": "element and then you know look for it in",
+        "start": 87.36,
+        "duration": 4.68
+    },
+    {
+        "text": "the array in this one we don't even have",
+        "start": 89.159,
+        "duration": 3.871
+    },
+    {
+        "text": "to do that this one's going to be a",
+        "start": 92.04,
+        "duration": 2.34
+    },
+    {
+        "text": "better solution because if the input",
+        "start": 93.03,
+        "duration": 3.03
+    },
+    {
+        "text": "array is sorted we can do a kind of a",
+        "start": 94.38,
+        "duration": 4.05
+    },
+    {
+        "text": "trickier solution this is a really",
+        "start": 96.06,
+        "duration": 4.32
+    },
+    {
+        "text": "popular method of solving algorithms",
+        "start": 98.43,
+        "duration": 4.14
+    },
+    {
+        "text": "it's called using pointers right so",
+        "start": 100.38,
+        "duration": 3.9
+    },
+    {
+        "text": "we're gonna be using an a pointer we're",
+        "start": 102.57,
+        "duration": 3.15
+    },
+    {
+        "text": "gonna be using a B pointer to solve this",
+        "start": 104.28,
+        "duration": 3.51
+    },
+    {
+        "text": "problem and a pointer is gonna be struck",
+        "start": 105.72,
+        "duration": 4.02
+    },
+    {
+        "text": "set to the beginning of the list which",
+        "start": 107.79,
+        "duration": 3.39
+    },
+    {
+        "text": "will be the smallest element in the",
+        "start": 109.74,
+        "duration": 3.48
+    },
+    {
+        "text": "array keep that in mind and the B",
+        "start": 111.18,
+        "duration": 4.53
+    },
+    {
+        "text": "pointer is gonna be set to the end right",
+        "start": 113.22,
+        "duration": 6.03
+    },
+    {
+        "text": "so numbers of length minus 1 right so",
+        "start": 115.71,
+        "duration": 4.86
+    },
+    {
+        "text": "basically we're gonna want to do is",
+        "start": 119.25,
+        "duration": 4.979
+    },
+    {
+        "text": "iterate while a pointer is less than or",
+        "start": 120.57,
+        "duration": 5.82
+    },
+    {
+        "text": "equal to B pointer because we're gonna",
+        "start": 124.229,
+        "duration": 4.441
+    },
+    {
+        "text": "be axe accessing the indices of the",
+        "start": 126.39,
+        "duration": 4.53
+    },
+    {
+        "text": "array or list using these eight pointer",
+        "start": 128.67,
+        "duration": 3.69
+    },
+    {
+        "text": "b pointers",
+        "start": 130.92,
+        "duration": 3.66
+    },
+    {
+        "text": "and if they meet that means they're at",
+        "start": 132.36,
+        "duration": 3.87
+    },
+    {
+        "text": "the same element we didn't even find a",
+        "start": 134.58,
+        "duration": 3.09
+    },
+    {
+        "text": "match or whatever so we're gonna",
+        "start": 136.23,
+        "duration": 4.589
+    },
+    {
+        "text": "calculate the sum of numbers of a",
+        "start": 137.67,
+        "duration": 11.179
+    },
+    {
+        "text": "pointer plus numbers of B pointer right",
+        "start": 140.819,
+        "duration": 8.03
+    },
+    {
+        "text": "and then we're gonna check if the sum is",
+        "start": 150.26,
+        "duration": 6.22
+    },
+    {
+        "text": "greater than target we're gonna do a",
+        "start": 153.66,
+        "duration": 7.37
+    },
+    {
+        "text": "check if the sum is less than the target",
+        "start": 156.48,
+        "duration": 7.65
+    },
+    {
+        "text": "and then we're gonna do a check well if",
+        "start": 161.03,
+        "duration": 4.69
+    },
+    {
+        "text": "the sum is equal to the target we're",
+        "start": 164.13,
+        "duration": 3.03
+    },
+    {
+        "text": "going to return our answer right we're",
+        "start": 165.72,
+        "duration": 5.489
+    },
+    {
+        "text": "gonna return new int of the indices",
+        "start": 167.16,
+        "duration": 6.12
+    },
+    {
+        "text": "which we're gonna do it is the B's are",
+        "start": 171.209,
+        "duration": 3.901
+    },
+    {
+        "text": "the indices a pointer B poner are the",
+        "start": 173.28,
+        "duration": 3.45
+    },
+    {
+        "text": "indices we're gonna have to do a pointer",
+        "start": 175.11,
+        "duration": 3.27
+    },
+    {
+        "text": "plus one and B pointer plus one because",
+        "start": 176.73,
+        "duration": 3.36
+    },
+    {
+        "text": "we're doing it by length for some reason",
+        "start": 178.38,
+        "duration": 4.02
+    },
+    {
+        "text": "like I said earlier and outside of it",
+        "start": 180.09,
+        "duration": 4.47
+    },
+    {
+        "text": "after this loop is over the final loop",
+        "start": 182.4,
+        "duration": 5.43
+    },
+    {
+        "text": "might access one of these conditions so",
+        "start": 184.56,
+        "duration": 7.38
+    },
+    {
+        "text": "we might have to return our array we're",
+        "start": 187.83,
+        "duration": 6.03
+    },
+    {
+        "text": "still probably enough to return array",
+        "start": 191.94,
+        "duration": 3.629
+    },
+    {
+        "text": "right and you know when you return an",
+        "start": 193.86,
+        "duration": 2.939
+    },
+    {
+        "text": "array in Java it's actually these",
+        "start": 195.569,
+        "duration": 3.961
+    },
+    {
+        "text": "brackets so I have to fix that too so",
+        "start": 196.799,
+        "duration": 4.53
+    },
+    {
+        "text": "I'll explain this in one second sorry",
+        "start": 199.53,
+        "duration": 6.329
+    },
+    {
+        "text": "it's taken a little bit type here there",
+        "start": 201.329,
+        "duration": 7.53
+    },
+    {
+        "text": "we go so we're gonna loop through we",
+        "start": 205.859,
+        "duration": 4.141
+    },
+    {
+        "text": "have the pointer at the beginning and",
+        "start": 208.859,
+        "duration": 2.401
+    },
+    {
+        "text": "the pointer at the end so the pointer is",
+        "start": 210.0,
+        "duration": 3.63
+    },
+    {
+        "text": "gonna move it's gonna check so it would",
+        "start": 211.26,
+        "duration": 4.38
+    },
+    {
+        "text": "check we're looking for nine right and",
+        "start": 213.63,
+        "duration": 4.139
+    },
+    {
+        "text": "it would check the sum of two and 15",
+        "start": 215.64,
+        "duration": 4.89
+    },
+    {
+        "text": "which is 17 right so 17 is gonna be",
+        "start": 217.769,
+        "duration": 4.291
+    },
+    {
+        "text": "greater than target so how are we gonna",
+        "start": 220.53,
+        "duration": 3.12
+    },
+    {
+        "text": "get our sum to be smaller right",
+        "start": 222.06,
+        "duration": 3.39
+    },
+    {
+        "text": "something's gonna be 17 sum is greater",
+        "start": 223.65,
+        "duration": 3.959
+    },
+    {
+        "text": "than target we're looking for 9 well",
+        "start": 225.45,
+        "duration": 4.02
+    },
+    {
+        "text": "we're not going to increase the a",
+        "start": 227.609,
+        "duration": 3.421
+    },
+    {
+        "text": "pointer because if we increase the a",
+        "start": 229.47,
+        "duration": 3.15
+    },
+    {
+        "text": "pointer it's gonna take the element at",
+        "start": 231.03,
+        "duration": 3.0
+    },
+    {
+        "text": "the beginning it's gonna a pointer is",
+        "start": 232.62,
+        "duration": 3.989
+    },
+    {
+        "text": "gonna become 7 and 7 plus 15 is greater",
+        "start": 234.03,
+        "duration": 4.89
+    },
+    {
+        "text": "than 17 we're trying to decrease 17",
+        "start": 236.609,
+        "duration": 3.871
+    },
+    {
+        "text": "right so we're actually gonna move the B",
+        "start": 238.92,
+        "duration": 4.23
+    },
+    {
+        "text": "pointer down closer to 2 so as we",
+        "start": 240.48,
+        "duration": 4.8
+    },
+    {
+        "text": "decrease B pointer we're gonna make our",
+        "start": 243.15,
+        "duration": 4.35
+    },
+    {
+        "text": "some smaller and more equal to the",
+        "start": 245.28,
+        "duration": 4.17
+    },
+    {
+        "text": "target so if the sum is greater than",
+        "start": 247.5,
+        "duration": 3.15
+    },
+    {
+        "text": "target all we're gonna have to do is do",
+        "start": 249.45,
+        "duration": 3.99
+    },
+    {
+        "text": "B pointer minus equal 1 we're gonna move",
+        "start": 250.65,
+        "duration": 4.35
+    },
+    {
+        "text": "one element down the array and if it's",
+        "start": 253.44,
+        "duration": 3.66
+    },
+    {
+        "text": "less than target well then we want to",
+        "start": 255.0,
+        "duration": 4.26
+    },
+    {
+        "text": "move one up the array to increase our",
+        "start": 257.1,
+        "duration": 4.109
+    },
+    {
+        "text": "sum so hopefully that makes sense I mean",
+        "start": 259.26,
+        "duration": 3.45
+    },
+    {
+        "text": "that's pretty much the gist of this",
+        "start": 261.209,
+        "duration": 4.111
+    },
+    {
+        "text": "algorithm is just moving to a pointer",
+        "start": 262.71,
+        "duration": 4.17
+    },
+    {
+        "text": "up1 if you want your sum to be bigger",
+        "start": 265.32,
+        "duration": 4.05
+    },
+    {
+        "text": "and closer to the target and be pointer",
+        "start": 266.88,
+        "duration": 3.87
+    },
+    {
+        "text": "down what if you want to decrease it and",
+        "start": 269.37,
+        "duration": 3.42
+    },
+    {
+        "text": "if we run this I think it might actually",
+        "start": 270.75,
+        "duration": 6.84
+    },
+    {
+        "text": "just work here hopefully new int yeah we",
+        "start": 272.79,
+        "duration": 6.21
+    },
+    {
+        "text": "need these like brackets or whatever",
+        "start": 277.59,
+        "duration": 2.54
+    },
+    {
+        "text": "sorry about that",
+        "start": 279.0,
+        "duration": 4.02
+    },
+    {
+        "text": "Java I'm used to Python but we're doing",
+        "start": 280.13,
+        "duration": 4.03
+    },
+    {
+        "text": "all these in Java right we have the",
+        "start": 283.02,
+        "duration": 3.42
+    },
+    {
+        "text": "expected output 1 2 1 2 and then we",
+        "start": 284.16,
+        "duration": 4.11
+    },
+    {
+        "text": "submit this and it should work first try",
+        "start": 286.44,
+        "duration": 5.4
+    },
+    {
+        "text": "but yeah pointers are a really common",
+        "start": 288.27,
+        "duration": 5.94
+    },
+    {
+        "text": "way to do algorithms especially I",
+        "start": 291.84,
+        "duration": 5.22
+    },
+    {
+        "text": "learned in sorted when you have a sorted",
+        "start": 294.21,
+        "duration": 4.8
+    },
+    {
+        "text": "array always think about using pointers",
+        "start": 297.06,
+        "duration": 3.63
+    },
+    {
+        "text": "that's when we use them the most I'd say",
+        "start": 299.01,
+        "duration": 4.56
+    },
+    {
+        "text": "so you know you have that because",
+        "start": 300.69,
+        "duration": 5.28
+    },
+    {
+        "text": "because we if we're sorted we know we",
+        "start": 303.57,
+        "duration": 4.14
+    },
+    {
+        "text": "have a lot of information to go off so",
+        "start": 305.97,
+        "duration": 3.06
+    },
+    {
+        "text": "if we sorted the beginning of the Rays",
+        "start": 307.71,
+        "duration": 3.03
+    },
+    {
+        "text": "the smaller element smaller valued",
+        "start": 309.03,
+        "duration": 4.59
+    },
+    {
+        "text": "elements the higher end of the array is",
+        "start": 310.74,
+        "duration": 4.5
+    },
+    {
+        "text": "the larger value dot element so",
+        "start": 313.62,
+        "duration": 3.18
+    },
+    {
+        "text": "hopefully this makes sense when we sum",
+        "start": 315.24,
+        "duration": 3.18
+    },
+    {
+        "text": "up the small element with the large",
+        "start": 316.8,
+        "duration": 3.9
+    },
+    {
+        "text": "element if we want the sum to be smaller",
+        "start": 318.42,
+        "duration": 4.5
+    },
+    {
+        "text": "we're gonna you know want our elements",
+        "start": 320.7,
+        "duration": 4.26
+    },
+    {
+        "text": "to be smaller so we decrease B pointer",
+        "start": 322.92,
+        "duration": 5.25
+    },
+    {
+        "text": "and likewise if we want the elements to",
+        "start": 324.96,
+        "duration": 6.51
+    },
+    {
+        "text": "be bigger we increase a pointer so thank",
+        "start": 328.17,
+        "duration": 4.77
+    },
+    {
+        "text": "you guys for watching hopefully I",
+        "start": 331.47,
+        "duration": 2.67
+    },
+    {
+        "text": "explained that trying to get better at",
+        "start": 332.94,
+        "duration": 3.24
+    },
+    {
+        "text": "these you could check out other ones if",
+        "start": 334.14,
+        "duration": 3.57
+    },
+    {
+        "text": "you want to you know better explanation",
+        "start": 336.18,
+        "duration": 3.15
+    },
+    {
+        "text": "here maybe I could you know go through",
+        "start": 337.71,
+        "duration": 3.45
+    },
+    {
+        "text": "some more examples and stuff like that",
+        "start": 339.33,
+        "duration": 4.53
+    },
+    {
+        "text": "but you know hopefully you got this",
+        "start": 341.16,
+        "duration": 4.08
+    },
+    {
+        "text": "please subscribe please follow me on",
+        "start": 343.86,
+        "duration": 3.17
+    },
+    {
+        "text": "Twitch if you want to see these live and",
+        "start": 345.24,
+        "duration": 5.78
+    },
+    {
+        "text": "thanks for watching see ya",
+        "start": 347.03,
+        "duration": 3.99
+    }
+]

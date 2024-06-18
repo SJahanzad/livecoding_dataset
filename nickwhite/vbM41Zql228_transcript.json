@@ -1,0 +1,1362 @@
+[
+    {
+        "text": "hey what's up guys",
+        "start": 2.12,
+        "duration": 6.97
+    },
+    {
+        "text": "so Nick why idea Tecna coding stuff on",
+        "start": 5.39,
+        "duration": 5.47
+    },
+    {
+        "text": "Twitch in YouTube I haven't done a video",
+        "start": 9.09,
+        "duration": 3.54
+    },
+    {
+        "text": "in a while cuz I actually passed my",
+        "start": 10.86,
+        "duration": 3.779
+    },
+    {
+        "text": "technicals already but people have been",
+        "start": 12.63,
+        "duration": 3.15
+    },
+    {
+        "text": "saying they like them so I'm just gonna",
+        "start": 14.639,
+        "duration": 2.64
+    },
+    {
+        "text": "keep going with them and I think it's",
+        "start": 15.78,
+        "duration": 3.87
+    },
+    {
+        "text": "interesting anyway so I found this",
+        "start": 17.279,
+        "duration": 3.991
+    },
+    {
+        "text": "problem removed k digits hopefully I",
+        "start": 19.65,
+        "duration": 4.11
+    },
+    {
+        "text": "didn't do it before it looks pretty cool",
+        "start": 21.27,
+        "duration": 4.38
+    },
+    {
+        "text": "giving a non-negative integer no I'm",
+        "start": 23.76,
+        "duration": 3.33
+    },
+    {
+        "text": "representing it as a string so we have a",
+        "start": 25.65,
+        "duration": 3.869
+    },
+    {
+        "text": "number as a string remove K digits so",
+        "start": 27.09,
+        "duration": 5.099
+    },
+    {
+        "text": "that the number a new number is as small",
+        "start": 29.519,
+        "duration": 4.281
+    },
+    {
+        "text": "as possible right so here's our example",
+        "start": 32.189,
+        "duration": 6.241
+    },
+    {
+        "text": "let's just make a little comment here so",
+        "start": 33.8,
+        "duration": 7.0
+    },
+    {
+        "text": "our input is this and then we have case",
+        "start": 38.43,
+        "duration": 4.44
+    },
+    {
+        "text": "3 so we want to remove 3 digits from",
+        "start": 40.8,
+        "duration": 3.96
+    },
+    {
+        "text": "this number so that this number becomes",
+        "start": 42.87,
+        "duration": 4.56
+    },
+    {
+        "text": "as small as possible so we'd remove 4 3",
+        "start": 44.76,
+        "duration": 5.16
+    },
+    {
+        "text": "& 2 and it would be 12 19 those are",
+        "start": 47.43,
+        "duration": 3.809
+    },
+    {
+        "text": "that's the smallest possible number we",
+        "start": 49.92,
+        "duration": 4.049
+    },
+    {
+        "text": "can get from ruling any three digits so",
+        "start": 51.239,
+        "duration": 5.011
+    },
+    {
+        "text": "how do we do this well the answer is a",
+        "start": 53.969,
+        "duration": 5.91
+    },
+    {
+        "text": "greedy algorithm I don't think I've done",
+        "start": 56.25,
+        "duration": 5.789
+    },
+    {
+        "text": "too many greedy problems but basically",
+        "start": 59.879,
+        "duration": 4.17
+    },
+    {
+        "text": "what happens is we're gonna make the",
+        "start": 62.039,
+        "duration": 4.08
+    },
+    {
+        "text": "best possible decision at each step",
+        "start": 64.049,
+        "duration": 4.5
+    },
+    {
+        "text": "we're gonna loop through the number kind",
+        "start": 66.119,
+        "duration": 4.741
+    },
+    {
+        "text": "of and at each step we're gonna make the",
+        "start": 68.549,
+        "duration": 4.32
+    },
+    {
+        "text": "best possible decision of what if we",
+        "start": 70.86,
+        "duration": 3.9
+    },
+    {
+        "text": "want to keep the number current number",
+        "start": 72.869,
+        "duration": 4.711
+    },
+    {
+        "text": "or if we want to delete it and go with a",
+        "start": 74.76,
+        "duration": 5.49
+    },
+    {
+        "text": "different number so you know it's kind",
+        "start": 77.58,
+        "duration": 7.49
+    },
+    {
+        "text": "of like short-term payoff why okay so",
+        "start": 80.25,
+        "duration": 7.92
+    },
+    {
+        "text": "let's just get into it ok so I don't",
+        "start": 85.07,
+        "duration": 4.299
+    },
+    {
+        "text": "think I'm good at explaining I haven't",
+        "start": 88.17,
+        "duration": 2.67
+    },
+    {
+        "text": "watched a greedy algorithm explanation a",
+        "start": 89.369,
+        "duration": 4.561
+    },
+    {
+        "text": "while okay so in size is equal to num",
+        "start": 90.84,
+        "duration": 5.669
+    },
+    {
+        "text": "docs Lane right and they do annoying",
+        "start": 93.93,
+        "duration": 4.17
+    },
+    {
+        "text": "string stuff with the numbers which I",
+        "start": 96.509,
+        "duration": 7.351
+    },
+    {
+        "text": "don't like so if I don't know that's",
+        "start": 98.1,
+        "duration": 7.71
+    },
+    {
+        "text": "fine we're gonna return zero right",
+        "start": 103.86,
+        "duration": 5.009
+    },
+    {
+        "text": "because if K is equal size we can return",
+        "start": 105.81,
+        "duration": 5.339
+    },
+    {
+        "text": "the we can delete every character in the",
+        "start": 108.869,
+        "duration": 4.621
+    },
+    {
+        "text": "number so that would be zero right",
+        "start": 111.149,
+        "duration": 5.07
+    },
+    {
+        "text": "easy okay now we're gonna have a stack",
+        "start": 113.49,
+        "duration": 5.489
+    },
+    {
+        "text": "right so here's the algorithm it's a",
+        "start": 116.219,
+        "duration": 4.021
+    },
+    {
+        "text": "greedy algorithm we're gonna have a",
+        "start": 118.979,
+        "duration": 3.03
+    },
+    {
+        "text": "stack and we're gonna save numbers onto",
+        "start": 120.24,
+        "duration": 3.12
+    },
+    {
+        "text": "the stack right so every we're just",
+        "start": 122.009,
+        "duration": 2.46
+    },
+    {
+        "text": "going to loop through and out everything",
+        "start": 123.36,
+        "duration": 2.399
+    },
+    {
+        "text": "on the stack so the stack would look",
+        "start": 124.469,
+        "duration": 2.341
+    },
+    {
+        "text": "like this at the end we're gonna do",
+        "start": 125.759,
+        "duration": 3.511
+    },
+    {
+        "text": "stack is equal to 1 then we're gonna",
+        "start": 126.81,
+        "duration": 4.53
+    },
+    {
+        "text": "have 4 then we're gonna have 3 then",
+        "start": 129.27,
+        "duration": 2.89
+    },
+    {
+        "text": "we're gonna have two",
+        "start": 131.34,
+        "duration": 2.44
+    },
+    {
+        "text": "we're gonna have two and we have one",
+        "start": 132.16,
+        "duration": 3.06
+    },
+    {
+        "text": "then we're gonna nine so how do we",
+        "start": 133.78,
+        "duration": 3.33
+    },
+    {
+        "text": "actually handle the deletions you know",
+        "start": 135.22,
+        "duration": 3.48
+    },
+    {
+        "text": "this is just putting things on to a",
+        "start": 137.11,
+        "duration": 3.66
+    },
+    {
+        "text": "stack right and then what then what then",
+        "start": 138.7,
+        "duration": 3.93
+    },
+    {
+        "text": "we're gonna take what's in the stack",
+        "start": 140.77,
+        "duration": 3.92
+    },
+    {
+        "text": "we're gonna have a stringbuilder",
+        "start": 142.63,
+        "duration": 6.42
+    },
+    {
+        "text": "and we're going to can pop off the stack",
+        "start": 144.69,
+        "duration": 6.91
+    },
+    {
+        "text": "put the numbers on to the stringbuilder",
+        "start": 149.05,
+        "duration": 4.68
+    },
+    {
+        "text": "and then we're gonna reverse it right",
+        "start": 151.6,
+        "duration": 3.3
+    },
+    {
+        "text": "because you have to we have to do like",
+        "start": 153.73,
+        "duration": 2.91
+    },
+    {
+        "text": "some kind of loop after we have our",
+        "start": 154.9,
+        "duration": 4.08
+    },
+    {
+        "text": "stack we're gonna do stack while stack",
+        "start": 156.64,
+        "duration": 6.48
+    },
+    {
+        "text": "is not empty let's just get the annoying",
+        "start": 158.98,
+        "duration": 5.97
+    },
+    {
+        "text": "string stuff out of the way we're gonna",
+        "start": 163.12,
+        "duration": 5.61
+    },
+    {
+        "text": "do yeah let's do this here stack stack",
+        "start": 164.95,
+        "duration": 6.12
+    },
+    {
+        "text": "is equal to new stack right it's a stack",
+        "start": 168.73,
+        "duration": 7.41
+    },
+    {
+        "text": "of characters because this is annoying",
+        "start": 171.07,
+        "duration": 7.14
+    },
+    {
+        "text": "they do characters instead of numbers",
+        "start": 176.14,
+        "duration": 2.58
+    },
+    {
+        "text": "okay",
+        "start": 178.21,
+        "duration": 2.58
+    },
+    {
+        "text": "so at the end we're good we're gonna do",
+        "start": 178.72,
+        "duration": 5.16
+    },
+    {
+        "text": "some stuff here do stuff with putting",
+        "start": 180.79,
+        "duration": 6.51
+    },
+    {
+        "text": "gnomes on stack okay let's just do it",
+        "start": 183.88,
+        "duration": 5.31
+    },
+    {
+        "text": "okay I haven't really I haven't made a",
+        "start": 187.3,
+        "duration": 3.56
+    },
+    {
+        "text": "video in like two weeks or something",
+        "start": 189.19,
+        "duration": 3.96
+    },
+    {
+        "text": "okay we're gonna have a counter will do",
+        "start": 190.86,
+        "duration": 4.9
+    },
+    {
+        "text": "wall counter is less than length right",
+        "start": 193.15,
+        "duration": 5.309
+    },
+    {
+        "text": "or less than size weird to have this so",
+        "start": 195.76,
+        "duration": 4.59
+    },
+    {
+        "text": "wall counters less than size we'll just",
+        "start": 198.459,
+        "duration": 3.331
+    },
+    {
+        "text": "put our numbers onto the stack for now",
+        "start": 200.35,
+        "duration": 6.03
+    },
+    {
+        "text": "so new stack dot push nom char at",
+        "start": 201.79,
+        "duration": 7.41
+    },
+    {
+        "text": "counter so each time we'll just put the",
+        "start": 206.38,
+        "duration": 4.92
+    },
+    {
+        "text": "current character on to the stack I'll",
+        "start": 209.2,
+        "duration": 3.93
+    },
+    {
+        "text": "do this so this is just putting digits",
+        "start": 211.3,
+        "duration": 2.97
+    },
+    {
+        "text": "out of the stack like we did down here",
+        "start": 213.13,
+        "duration": 3.42
+    },
+    {
+        "text": "right stack one fourth to give right we",
+        "start": 214.27,
+        "duration": 5.34
+    },
+    {
+        "text": "go through this number you can delete",
+        "start": 216.55,
+        "duration": 4.62
+    },
+    {
+        "text": "this and we're just putting the we're",
+        "start": 219.61,
+        "duration": 2.849
+    },
+    {
+        "text": "looping through and we're putting each",
+        "start": 221.17,
+        "duration": 4.23
+    },
+    {
+        "text": "digit onto the stack right okay good now",
+        "start": 222.459,
+        "duration": 4.561
+    },
+    {
+        "text": "the stack has our number that we're",
+        "start": 225.4,
+        "duration": 2.67
+    },
+    {
+        "text": "gonna return so we're gonna have a",
+        "start": 227.02,
+        "duration": 4.8
+    },
+    {
+        "text": "stringbuilder SB is equal the new string",
+        "start": 228.07,
+        "duration": 8.31
+    },
+    {
+        "text": "builder and then we're gonna do while",
+        "start": 231.82,
+        "duration": 7.65
+    },
+    {
+        "text": "stack is not empty because the stack has",
+        "start": 236.38,
+        "duration": 5.34
+    },
+    {
+        "text": "all the digits we want we'll do char",
+        "start": 239.47,
+        "duration": 7.64
+    },
+    {
+        "text": "current char is equal to stack dot pop",
+        "start": 241.72,
+        "duration": 8.58
+    },
+    {
+        "text": "so we get the current the most recent",
+        "start": 247.11,
+        "duration": 4.42
+    },
+    {
+        "text": "one up so we're gonna go in reverse",
+        "start": 250.3,
+        "duration": 2.58
+    },
+    {
+        "text": "order basically because that's how a",
+        "start": 251.53,
+        "duration": 3.9
+    },
+    {
+        "text": "stack works nine is on top then one then",
+        "start": 252.88,
+        "duration": 4.47
+    },
+    {
+        "text": "two so we're gonna this is going to be",
+        "start": 255.43,
+        "duration": 4.98
+    },
+    {
+        "text": "nine then it's gonna be 1 2 2 right 9 1",
+        "start": 257.35,
+        "duration": 5.16
+    },
+    {
+        "text": "2 2 and we're going to append them to",
+        "start": 260.41,
+        "duration": 5.06
+    },
+    {
+        "text": "the stringbuilder right SB dot append",
+        "start": 262.51,
+        "duration": 6.629
+    },
+    {
+        "text": "current charm right the only problem is",
+        "start": 265.47,
+        "duration": 5.949
+    },
+    {
+        "text": "now when we return ask what we're gonna",
+        "start": 269.139,
+        "duration": 4.141
+    },
+    {
+        "text": "do is we're gonna return we're using the",
+        "start": 271.419,
+        "duration": 3.12
+    },
+    {
+        "text": "stringbuilder because of this annoying",
+        "start": 273.28,
+        "duration": 5.43
+    },
+    {
+        "text": "character string numbers thing so we're",
+        "start": 274.539,
+        "duration": 6.66
+    },
+    {
+        "text": "gonna return sp2 string at the end but",
+        "start": 278.71,
+        "duration": 4.26
+    },
+    {
+        "text": "this is gonna be in a reverse order so",
+        "start": 281.199,
+        "duration": 3.69
+    },
+    {
+        "text": "we just have to call SB dot reverse okay",
+        "start": 282.97,
+        "duration": 2.819
+    },
+    {
+        "text": "there we go",
+        "start": 284.889,
+        "duration": 3.391
+    },
+    {
+        "text": "also for formatting purposes if we have",
+        "start": 285.789,
+        "duration": 5.19
+    },
+    {
+        "text": "any leet leading zeros we don't want to",
+        "start": 288.28,
+        "duration": 4.44
+    },
+    {
+        "text": "return this if this is the number that",
+        "start": 290.979,
+        "duration": 4.741
+    },
+    {
+        "text": "we have we just we want to delete all",
+        "start": 292.72,
+        "duration": 4.979
+    },
+    {
+        "text": "the zeros right because we this number",
+        "start": 295.72,
+        "duration": 4.71
+    },
+    {
+        "text": "there's no no one wants leading zeros",
+        "start": 297.699,
+        "duration": 4.381
+    },
+    {
+        "text": "that's dumb so there we go",
+        "start": 300.43,
+        "duration": 4.709
+    },
+    {
+        "text": "we're going to just do okay also while",
+        "start": 302.08,
+        "duration": 8.79
+    },
+    {
+        "text": "SB dot length is greater than 1 and SB",
+        "start": 305.139,
+        "duration": 13.111
+    },
+    {
+        "text": "char at 0 is equal to 0 SB dot delete it",
+        "start": 310.87,
+        "duration": 9.799
+    },
+    {
+        "text": "has a built-in method delete charge 0",
+        "start": 318.25,
+        "duration": 4.349
+    },
+    {
+        "text": "there we go we're done",
+        "start": 320.669,
+        "duration": 3.37
+    },
+    {
+        "text": "ok there we go we're done with all the",
+        "start": 322.599,
+        "duration": 3.031
+    },
+    {
+        "text": "annoying string stuff now for the actual",
+        "start": 324.039,
+        "duration": 3.451
+    },
+    {
+        "text": "algorithm so that's that's so annoying",
+        "start": 325.63,
+        "duration": 4.2
+    },
+    {
+        "text": "that we had to do that you know but",
+        "start": 327.49,
+        "duration": 4.53
+    },
+    {
+        "text": "that's fine here's the algorithm this is",
+        "start": 329.83,
+        "duration": 4.32
+    },
+    {
+        "text": "why it's greedy notice that the numbers",
+        "start": 332.02,
+        "duration": 5.73
+    },
+    {
+        "text": "that we're deleting are 4 3 & 2 so if we",
+        "start": 334.15,
+        "duration": 6.329
+    },
+    {
+        "text": "look at the difference between 1 & 4 so",
+        "start": 337.75,
+        "duration": 4.83
+    },
+    {
+        "text": "let's say we put 1 we have a stack right",
+        "start": 340.479,
+        "duration": 3.961
+    },
+    {
+        "text": "we put one on the stack that's fine",
+        "start": 342.58,
+        "duration": 2.88
+    },
+    {
+        "text": "right now",
+        "start": 344.44,
+        "duration": 2.64
+    },
+    {
+        "text": "every time we find a number that's",
+        "start": 345.46,
+        "duration": 3.75
+    },
+    {
+        "text": "smaller than 1 we're gonna want to get",
+        "start": 347.08,
+        "duration": 4.05
+    },
+    {
+        "text": "rid of yeah I'll explain this ok so we",
+        "start": 349.21,
+        "duration": 4.11
+    },
+    {
+        "text": "have a stack and then we in the next",
+        "start": 351.13,
+        "duration": 5.849
+    },
+    {
+        "text": "numbers for right so from 1 to 4 that's",
+        "start": 353.32,
+        "duration": 8.159
+    },
+    {
+        "text": "plus 3 so that's fine that's fine okay",
+        "start": 356.979,
+        "duration": 8.881
+    },
+    {
+        "text": "but 4 to 3 that's minus 1 okay so when",
+        "start": 361.479,
+        "duration": 6.271
+    },
+    {
+        "text": "we find a decrease we're gonna want to",
+        "start": 365.86,
+        "duration": 4.44
+    },
+    {
+        "text": "put that on the stack so our stack is",
+        "start": 367.75,
+        "duration": 4.44
+    },
+    {
+        "text": "gonna have 1 and then four and then",
+        "start": 370.3,
+        "duration": 3.839
+    },
+    {
+        "text": "we're gonna see a 3 and we're gonna be",
+        "start": 372.19,
+        "duration": 4.229
+    },
+    {
+        "text": "like okay well 14 is the number we'd",
+        "start": 374.139,
+        "duration": 5.37
+    },
+    {
+        "text": "have right now well 3 is less than 4 and",
+        "start": 376.419,
+        "duration": 5.521
+    },
+    {
+        "text": "so whenever we find a number less than",
+        "start": 379.509,
+        "duration": 4.65
+    },
+    {
+        "text": "the peak of the stack we're gonna be",
+        "start": 381.94,
+        "duration": 3.96
+    },
+    {
+        "text": "like ok 3 is less than 4 so I could I",
+        "start": 384.159,
+        "duration": 4.411
+    },
+    {
+        "text": "could have 13 or I could have 14 and I'm",
+        "start": 385.9,
+        "duration": 5.519
+    },
+    {
+        "text": "greedy so obviously we have I'm 1:13",
+        "start": 388.57,
+        "duration": 5.58
+    },
+    {
+        "text": "instead of 14 right and then when I see",
+        "start": 391.419,
+        "duration": 5.851
+    },
+    {
+        "text": "2 after that the stack is gonna have 1 &",
+        "start": 394.15,
+        "duration": 4.78
+    },
+    {
+        "text": "3 now because it's 13",
+        "start": 397.27,
+        "duration": 3.85
+    },
+    {
+        "text": "I got rid of that for so I popped the",
+        "start": 398.93,
+        "duration": 3.69
+    },
+    {
+        "text": "four off and I put a three there cuz",
+        "start": 401.12,
+        "duration": 3.75
+    },
+    {
+        "text": "that's smaller now I see a two",
+        "start": 402.62,
+        "duration": 3.63
+    },
+    {
+        "text": "well I'm just gonna be like okay now I",
+        "start": 404.87,
+        "duration": 4.5
+    },
+    {
+        "text": "found a - okay two is better than three",
+        "start": 406.25,
+        "duration": 5.19
+    },
+    {
+        "text": "that's a twelve and I get rid of the",
+        "start": 409.37,
+        "duration": 4.41
+    },
+    {
+        "text": "three I put the two on there and that's",
+        "start": 411.44,
+        "duration": 3.93
+    },
+    {
+        "text": "the whole algorithm that's literally it",
+        "start": 413.78,
+        "duration": 3.87
+    },
+    {
+        "text": "so all you have to do is while K is",
+        "start": 415.37,
+        "duration": 5.94
+    },
+    {
+        "text": "greater than zero and stacks not empty",
+        "start": 417.65,
+        "duration": 4.829
+    },
+    {
+        "text": "because we're popping things off the",
+        "start": 421.31,
+        "duration": 5.1
+    },
+    {
+        "text": "stack hopefully that makes sense to you",
+        "start": 422.479,
+        "duration": 6.831
+    },
+    {
+        "text": "guys it's really intuitive to me and",
+        "start": 426.41,
+        "duration": 6.78
+    },
+    {
+        "text": "espied I mean sorry stack dot P is",
+        "start": 429.31,
+        "duration": 9.88
+    },
+    {
+        "text": "greater than stack dots or num char at",
+        "start": 433.19,
+        "duration": 8.67
+    },
+    {
+        "text": "the counter so if the next character is",
+        "start": 439.19,
+        "duration": 4.17
+    },
+    {
+        "text": "greater than what's left on the stack",
+        "start": 441.86,
+        "duration": 8.79
+    },
+    {
+        "text": "will just decrease our",
+        "start": 443.36,
+        "duration": 9.089
+    },
+    {
+        "text": "and we're greedy so we want the better",
+        "start": 450.65,
+        "duration": 4.59
+    },
+    {
+        "text": "option the only case the edge case we",
+        "start": 452.449,
+        "duration": 4.891
+    },
+    {
+        "text": "have to handle is 1 1 1 1 or any",
+        "start": 455.24,
+        "duration": 4.649
+    },
+    {
+        "text": "repeating digits because literally this",
+        "start": 457.34,
+        "duration": 4.47
+    },
+    {
+        "text": "loop will just put all of those numbers",
+        "start": 459.889,
+        "duration": 3.691
+    },
+    {
+        "text": "on the stack because it won't find",
+        "start": 461.81,
+        "duration": 4.5
+    },
+    {
+        "text": "anything any decrease anywhere because",
+        "start": 463.58,
+        "duration": 4.23
+    },
+    {
+        "text": "they're all the same so but it doesn't",
+        "start": 466.31,
+        "duration": 3.359
+    },
+    {
+        "text": "matter which numbers we decrease so you",
+        "start": 467.81,
+        "duration": 3.419
+    },
+    {
+        "text": "can delete any of the ones it's gonna be",
+        "start": 469.669,
+        "duration": 3.211
+    },
+    {
+        "text": "the same number at the end so literally",
+        "start": 471.229,
+        "duration": 5.37
+    },
+    {
+        "text": "all I have to do is stack up pop and so",
+        "start": 472.88,
+        "duration": 5.43
+    },
+    {
+        "text": "you're just if you find a number that's",
+        "start": 476.599,
+        "duration": 3.961
+    },
+    {
+        "text": "less than the previous one on the stack",
+        "start": 478.31,
+        "duration": 4.38
+    },
+    {
+        "text": "you just delete what's on the stack and",
+        "start": 480.56,
+        "duration": 3.72
+    },
+    {
+        "text": "you put that you find a better option",
+        "start": 482.69,
+        "duration": 4.289
+    },
+    {
+        "text": "you take it you're greedy you know if I",
+        "start": 484.28,
+        "duration": 5.069
+    },
+    {
+        "text": "you know if I if my options are",
+        "start": 486.979,
+        "duration": 5.481
+    },
+    {
+        "text": "eat candy now for immediate pleasure and",
+        "start": 489.349,
+        "duration": 5.461
+    },
+    {
+        "text": "feel sick tomorrow I'm gonna eat the",
+        "start": 492.46,
+        "duration": 4.57
+    },
+    {
+        "text": "candy now cuz I'm greedy and I'm like I",
+        "start": 494.81,
+        "duration": 3.57
+    },
+    {
+        "text": "don't care how I feel tomorrow I just",
+        "start": 497.03,
+        "duration": 4.009
+    },
+    {
+        "text": "want to eat candy and have fun you know",
+        "start": 498.38,
+        "duration": 4.74
+    },
+    {
+        "text": "but you know that's obviously a bad",
+        "start": 501.039,
+        "duration": 3.94
+    },
+    {
+        "text": "decision sometimes but you know that's",
+        "start": 503.12,
+        "duration": 3.75
+    },
+    {
+        "text": "how greedy algorithms work but don't",
+        "start": 504.979,
+        "duration": 3.511
+    },
+    {
+        "text": "quote me on that because that people",
+        "start": 506.87,
+        "duration": 3.96
+    },
+    {
+        "text": "might get mad in the comments but that's",
+        "start": 508.49,
+        "duration": 4.08
+    },
+    {
+        "text": "kind of like greedy algorithms right I",
+        "start": 510.83,
+        "duration": 5.91
+    },
+    {
+        "text": "mean there you go ok so that's how you",
+        "start": 512.57,
+        "duration": 5.849
+    },
+    {
+        "text": "do it if we submit this I haven't even",
+        "start": 516.74,
+        "duration": 4.049
+    },
+    {
+        "text": "submitted it to make sure it works there",
+        "start": 518.419,
+        "duration": 4.081
+    },
+    {
+        "text": "we go it works so ok there we go so",
+        "start": 520.789,
+        "duration": 4.651
+    },
+    {
+        "text": "that's that's the video time complexity",
+        "start": 522.5,
+        "duration": 5.61
+    },
+    {
+        "text": "looks like we're looping through at",
+        "start": 525.44,
+        "duration": 6.0
+    },
+    {
+        "text": "least the whole string once so that's a",
+        "start": 528.11,
+        "duration": 4.68
+    },
+    {
+        "text": "linear scan right there",
+        "start": 531.44,
+        "duration": 7.98
+    },
+    {
+        "text": "que deletions but the que deletions are",
+        "start": 532.79,
+        "duration": 10.47
+    },
+    {
+        "text": "kind of occurring let's say we're",
+        "start": 539.42,
+        "duration": 8.04
+    },
+    {
+        "text": "deleting we're deleting no more than two",
+        "start": 543.26,
+        "duration": 10.89
+    },
+    {
+        "text": "times the length of the string so it's",
+        "start": 547.46,
+        "duration": 8.07
+    },
+    {
+        "text": "it's happening with that it's just a",
+        "start": 554.15,
+        "duration": 2.73
+    },
+    {
+        "text": "linear scan right because it just",
+        "start": 555.53,
+        "duration": 2.67
+    },
+    {
+        "text": "happened this loop is just happening",
+        "start": 556.88,
+        "duration": 4.83
+    },
+    {
+        "text": "within the counting loop you know it's",
+        "start": 558.2,
+        "duration": 12.6
+    },
+    {
+        "text": "literally just kind of conditional and -",
+        "start": 561.71,
+        "duration": 12.39
+    },
+    {
+        "text": "I think I think - 2n is like the max",
+        "start": 570.8,
+        "duration": 8.19
+    },
+    {
+        "text": "right okay and so then we have wal K is",
+        "start": 574.1,
+        "duration": 8.73
+    },
+    {
+        "text": "greater than zero because you there's",
+        "start": 578.99,
+        "duration": 6.12
+    },
+    {
+        "text": "not gonna be more than K and then - all",
+        "start": 582.83,
+        "duration": 3.48
+    },
+    {
+        "text": "right I'm taking too long I haven't done",
+        "start": 585.11,
+        "duration": 2.7
+    },
+    {
+        "text": "a video in a while I'm sorry dude I'm",
+        "start": 586.31,
+        "duration": 4.44
+    },
+    {
+        "text": "having a bad time okay space complexity",
+        "start": 587.81,
+        "duration": 5.85
+    },
+    {
+        "text": "is o of n linear as well and then you",
+        "start": 590.75,
+        "duration": 4.65
+    },
+    {
+        "text": "have this down here still linear though",
+        "start": 593.66,
+        "duration": 3.36
+    },
+    {
+        "text": "it's only just the length of the string",
+        "start": 595.4,
+        "duration": 3.15
+    },
+    {
+        "text": "that's it okay",
+        "start": 597.02,
+        "duration": 4.17
+    },
+    {
+        "text": "thanks for watching sorry I'm trying to",
+        "start": 598.55,
+        "duration": 4.23
+    },
+    {
+        "text": "get back into it but I'm gonna try and",
+        "start": 601.19,
+        "duration": 3.9
+    },
+    {
+        "text": "post more so that's it's a good",
+        "start": 602.78,
+        "duration": 4.31
+    },
+    {
+        "text": "algorithm hopefully guys understand that",
+        "start": 605.09,
+        "duration": 4.86
+    },
+    {
+        "text": "and you you know I don't know if I",
+        "start": 607.09,
+        "duration": 4.03
+    },
+    {
+        "text": "explained this but you don't delete the",
+        "start": 609.95,
+        "duration": 3.95
+    },
+    {
+        "text": "nine at the end you're like okay well",
+        "start": 611.12,
+        "duration": 5.55
+    },
+    {
+        "text": "you know you might want to work why",
+        "start": 613.9,
+        "duration": 4.9
+    },
+    {
+        "text": "don't we do it later or whatever well",
+        "start": 616.67,
+        "duration": 4.2
+    },
+    {
+        "text": "there is no later but okay you're doing",
+        "start": 618.8,
+        "duration": 4.4
+    },
+    {
+        "text": "you're doing the immediate deletions of",
+        "start": 620.87,
+        "duration": 4.68
+    },
+    {
+        "text": "whenever you find a small or viable",
+        "start": 623.2,
+        "duration": 4.45
+    },
+    {
+        "text": "candidate you're immediately replacing",
+        "start": 625.55,
+        "duration": 3.18
+    },
+    {
+        "text": "the bigger number with the smaller",
+        "start": 627.65,
+        "duration": 2.64
+    },
+    {
+        "text": "number to get the smaller number because",
+        "start": 628.73,
+        "duration": 3.48
+    },
+    {
+        "text": "these you're doing it immediately",
+        "start": 630.29,
+        "duration": 4.02
+    },
+    {
+        "text": "because the first numbers are the best",
+        "start": 632.21,
+        "duration": 5.73
+    },
+    {
+        "text": "ones to get optimized for the smallest",
+        "start": 634.31,
+        "duration": 5.7
+    },
+    {
+        "text": "value because they are worth the most",
+        "start": 637.94,
+        "duration": 3.81
+    },
+    {
+        "text": "right you want to get rid of this for",
+        "start": 640.01,
+        "duration": 4.5
+    },
+    {
+        "text": "you want to turn this for to a 3 instead",
+        "start": 641.75,
+        "duration": 5.13
+    },
+    {
+        "text": "of this 9 to it - all right you know",
+        "start": 644.51,
+        "duration": 2.73
+    },
+    {
+        "text": "what",
+        "start": 646.88,
+        "duration": 2.52
+    },
+    {
+        "text": "you don't want to delete the 9 and make",
+        "start": 647.24,
+        "duration": 4.47
+    },
+    {
+        "text": "it too right you wanna I mean whatever",
+        "start": 649.4,
+        "duration": 4.53
+    },
+    {
+        "text": "dude but I don't know I might be digging",
+        "start": 651.71,
+        "duration": 4.17
+    },
+    {
+        "text": "myself a hole here I I'm really out of",
+        "start": 653.93,
+        "duration": 3.66
+    },
+    {
+        "text": "the algorithm game I'm just noticing in",
+        "start": 655.88,
+        "duration": 3.09
+    },
+    {
+        "text": "this video is way too long",
+        "start": 657.59,
+        "duration": 3.57
+    },
+    {
+        "text": "thank you for watching I'm gonna do",
+        "start": 658.97,
+        "duration": 4.44
+    },
+    {
+        "text": "better one next time hopefully alright",
+        "start": 661.16,
+        "duration": 4.73
+    },
+    {
+        "text": "see ya",
+        "start": 663.41,
+        "duration": 2.48
+    }
+]

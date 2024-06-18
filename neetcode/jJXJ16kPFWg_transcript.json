@@ -1,0 +1,2092 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.52
+    },
+    {
+        "text": "write some more new code today so today",
+        "start": 1.68,
+        "duration": 4.24
+    },
+    {
+        "text": "let's solve the problem valid palindrome",
+        "start": 3.52,
+        "duration": 3.68
+    },
+    {
+        "text": "i'm actually going to be solving this",
+        "start": 5.92,
+        "duration": 3.04
+    },
+    {
+        "text": "two different ways and i think both ways",
+        "start": 7.2,
+        "duration": 3.439
+    },
+    {
+        "text": "are definitely going to be helpful to",
+        "start": 8.96,
+        "duration": 4.24
+    },
+    {
+        "text": "know in an interview setting before we",
+        "start": 10.639,
+        "duration": 4.401
+    },
+    {
+        "text": "start i just want to quickly mention",
+        "start": 13.2,
+        "duration": 3.999
+    },
+    {
+        "text": "that this problem is actually a part of",
+        "start": 15.04,
+        "duration": 5.6
+    },
+    {
+        "text": "the blind 75 list of questions and",
+        "start": 17.199,
+        "duration": 5.84
+    },
+    {
+        "text": "luckily we have actually solved the vast",
+        "start": 20.64,
+        "duration": 4.639
+    },
+    {
+        "text": "majority of the blind 75 questions i",
+        "start": 23.039,
+        "duration": 4.08
+    },
+    {
+        "text": "even have a playlist of all of these",
+        "start": 25.279,
+        "duration": 3.681
+    },
+    {
+        "text": "questions in the description if you want",
+        "start": 27.119,
+        "duration": 3.841
+    },
+    {
+        "text": "to take a look and of course we will be",
+        "start": 28.96,
+        "duration": 4.16
+    },
+    {
+        "text": "finishing one more today getting one",
+        "start": 30.96,
+        "duration": 4.96
+    },
+    {
+        "text": "step closer to 100 completion of blind",
+        "start": 33.12,
+        "duration": 6.16
+    },
+    {
+        "text": "75 so we are given a string s all we",
+        "start": 35.92,
+        "duration": 5.12
+    },
+    {
+        "text": "want to do is determine if it's a",
+        "start": 39.28,
+        "duration": 4.08
+    },
+    {
+        "text": "palindrome uh if it is we can return",
+        "start": 41.04,
+        "duration": 5.12
+    },
+    {
+        "text": "true if it's not we return false uh only",
+        "start": 43.36,
+        "duration": 5.199
+    },
+    {
+        "text": "one catch is that we are only",
+        "start": 46.16,
+        "duration": 6.32
+    },
+    {
+        "text": "considering alphanumeric characters in",
+        "start": 48.559,
+        "duration": 8.32
+    },
+    {
+        "text": "the list and we are ignoring cases by",
+        "start": 52.48,
+        "duration": 6.48
+    },
+    {
+        "text": "ignoring cases they mean upper and lower",
+        "start": 56.879,
+        "duration": 4.721
+    },
+    {
+        "text": "case so in the input string you can see",
+        "start": 58.96,
+        "duration": 5.04
+    },
+    {
+        "text": "the leftmost character is capital a the",
+        "start": 61.6,
+        "duration": 4.72
+    },
+    {
+        "text": "rightmost character is lowercase a both",
+        "start": 64.0,
+        "duration": 4.32
+    },
+    {
+        "text": "of these characters are considered the",
+        "start": 66.32,
+        "duration": 4.56
+    },
+    {
+        "text": "same so if we had a string an input",
+        "start": 68.32,
+        "duration": 5.04
+    },
+    {
+        "text": "string like big a lower a this string",
+        "start": 70.88,
+        "duration": 5.2
+    },
+    {
+        "text": "itself is a palindrome so we do return",
+        "start": 73.36,
+        "duration": 4.399
+    },
+    {
+        "text": "true even though one is uppercase and",
+        "start": 76.08,
+        "duration": 4.079
+    },
+    {
+        "text": "one is lowercase we are ignoring the",
+        "start": 77.759,
+        "duration": 4.881
+    },
+    {
+        "text": "cases of the characters uh and also when",
+        "start": 80.159,
+        "duration": 4.081
+    },
+    {
+        "text": "they say we're only considering",
+        "start": 82.64,
+        "duration": 3.839
+    },
+    {
+        "text": "alphanumeric characters basically it",
+        "start": 84.24,
+        "duration": 4.4
+    },
+    {
+        "text": "means we can ignore everything that's",
+        "start": 86.479,
+        "duration": 4.32
+    },
+    {
+        "text": "not an alphanumeric character what is",
+        "start": 88.64,
+        "duration": 4.24
+    },
+    {
+        "text": "alphanumeric basically everything from",
+        "start": 90.799,
+        "duration": 4.801
+    },
+    {
+        "text": "uppercase a to uppercase z everything",
+        "start": 92.88,
+        "duration": 4.879
+    },
+    {
+        "text": "from lowercase a to lowercase c and",
+        "start": 95.6,
+        "duration": 5.839
+    },
+    {
+        "text": "everything from zero all the way to nine",
+        "start": 97.759,
+        "duration": 7.04
+    },
+    {
+        "text": "right every character and every digit so",
+        "start": 101.439,
+        "duration": 5.841
+    },
+    {
+        "text": "basically in this input string it might",
+        "start": 104.799,
+        "duration": 4.96
+    },
+    {
+        "text": "not look like a palindrome initially but",
+        "start": 107.28,
+        "duration": 4.479
+    },
+    {
+        "text": "the answer is yes true it is a",
+        "start": 109.759,
+        "duration": 4.0
+    },
+    {
+        "text": "palindrome because and actually before",
+        "start": 111.759,
+        "duration": 3.601
+    },
+    {
+        "text": "we even get into that what is a",
+        "start": 113.759,
+        "duration": 3.521
+    },
+    {
+        "text": "palindrome if you don't remember well",
+        "start": 115.36,
+        "duration": 3.759
+    },
+    {
+        "text": "basically the easiest way to check if a",
+        "start": 117.28,
+        "duration": 4.64
+    },
+    {
+        "text": "string is a palindrome is basically if",
+        "start": 119.119,
+        "duration": 6.161
+    },
+    {
+        "text": "it reads uh the same way as it does when",
+        "start": 121.92,
+        "duration": 5.92
+    },
+    {
+        "text": "it is reversed meaning if the string is",
+        "start": 125.28,
+        "duration": 4.479
+    },
+    {
+        "text": "the exact same even after it's been",
+        "start": 127.84,
+        "duration": 5.36
+    },
+    {
+        "text": "reversed so for example a b a if we",
+        "start": 129.759,
+        "duration": 6.48
+    },
+    {
+        "text": "reverse this string it's still a b a so",
+        "start": 133.2,
+        "duration": 5.92
+    },
+    {
+        "text": "it is a palindrome right so and let's",
+        "start": 136.239,
+        "duration": 4.881
+    },
+    {
+        "text": "take this string if we reverse it is it",
+        "start": 139.12,
+        "duration": 3.6
+    },
+    {
+        "text": "still the exact same basically if we",
+        "start": 141.12,
+        "duration": 3.68
+    },
+    {
+        "text": "read it in reverse order and the answer",
+        "start": 142.72,
+        "duration": 4.159
+    },
+    {
+        "text": "is yes let's just compare a few",
+        "start": 144.8,
+        "duration": 3.28
+    },
+    {
+        "text": "characters initially let's start at the",
+        "start": 146.879,
+        "duration": 3.921
+    },
+    {
+        "text": "beginning right a uh and remember we're",
+        "start": 148.08,
+        "duration": 4.64
+    },
+    {
+        "text": "ignoring case so when i say ignoring",
+        "start": 150.8,
+        "duration": 3.519
+    },
+    {
+        "text": "case i'm just going to basically convert",
+        "start": 152.72,
+        "duration": 3.28
+    },
+    {
+        "text": "it to lowercase so everything is just",
+        "start": 154.319,
+        "duration": 3.2
+    },
+    {
+        "text": "going to be lower okay so we have an a",
+        "start": 156.0,
+        "duration": 4.08
+    },
+    {
+        "text": "okay next character is a space character",
+        "start": 157.519,
+        "duration": 4.481
+    },
+    {
+        "text": "but remember we're only considering",
+        "start": 160.08,
+        "duration": 3.6
+    },
+    {
+        "text": "alphanumeric so we don't even consider",
+        "start": 162.0,
+        "duration": 3.84
+    },
+    {
+        "text": "the space we want to skip that space so",
+        "start": 163.68,
+        "duration": 3.76
+    },
+    {
+        "text": "just delete it right",
+        "start": 165.84,
+        "duration": 3.119
+    },
+    {
+        "text": "next character m",
+        "start": 167.44,
+        "duration": 3.76
+    },
+    {
+        "text": "and then next character a next character",
+        "start": 168.959,
+        "duration": 3.521
+    },
+    {
+        "text": "n so we just took this from the",
+        "start": 171.2,
+        "duration": 3.2
+    },
+    {
+        "text": "beginning of the string a man right so",
+        "start": 172.48,
+        "duration": 4.08
+    },
+    {
+        "text": "let's start at the end of the string uh",
+        "start": 174.4,
+        "duration": 4.559
+    },
+    {
+        "text": "we have a lowercase a right and then we",
+        "start": 176.56,
+        "duration": 4.399
+    },
+    {
+        "text": "have a lowercase m then we have a",
+        "start": 178.959,
+        "duration": 3.92
+    },
+    {
+        "text": "lowercase a then we have lowercase n so",
+        "start": 180.959,
+        "duration": 3.441
+    },
+    {
+        "text": "even starting at the end of the string",
+        "start": 182.879,
+        "duration": 3.521
+    },
+    {
+        "text": "it looks like it's the same as the",
+        "start": 184.4,
+        "duration": 4.16
+    },
+    {
+        "text": "beginning when we read it in reverse and",
+        "start": 186.4,
+        "duration": 4.32
+    },
+    {
+        "text": "it turns out that if we you know take",
+        "start": 188.56,
+        "duration": 4.88
+    },
+    {
+        "text": "this string and remove",
+        "start": 190.72,
+        "duration": 4.64
+    },
+    {
+        "text": "all the spaces all the special",
+        "start": 193.44,
+        "duration": 3.84
+    },
+    {
+        "text": "characters and then convert everything",
+        "start": 195.36,
+        "duration": 4.08
+    },
+    {
+        "text": "else to lowercase and then we reverse it",
+        "start": 197.28,
+        "duration": 4.48
+    },
+    {
+        "text": "it will be the exact same string and",
+        "start": 199.44,
+        "duration": 3.6
+    },
+    {
+        "text": "that's the approach i'm going to be",
+        "start": 201.76,
+        "duration": 2.88
+    },
+    {
+        "text": "taking i'm just going to be removing i'm",
+        "start": 203.04,
+        "duration": 3.279
+    },
+    {
+        "text": "going to be filtering all the useless",
+        "start": 204.64,
+        "duration": 3.36
+    },
+    {
+        "text": "characters from this keeping the",
+        "start": 206.319,
+        "duration": 3.121
+    },
+    {
+        "text": "characters that we want and then",
+        "start": 208.0,
+        "duration": 3.12
+    },
+    {
+        "text": "converting them to lowercase then",
+        "start": 209.44,
+        "duration": 3.359
+    },
+    {
+        "text": "reversing the string and then checking",
+        "start": 211.12,
+        "duration": 3.92
+    },
+    {
+        "text": "if it's still equal so now let's get",
+        "start": 212.799,
+        "duration": 4.08
+    },
+    {
+        "text": "into the coding solution at least the",
+        "start": 215.04,
+        "duration": 4.08
+    },
+    {
+        "text": "first coding solution okay so now let's",
+        "start": 216.879,
+        "duration": 3.92
+    },
+    {
+        "text": "code it up and remember we're going to",
+        "start": 219.12,
+        "duration": 4.16
+    },
+    {
+        "text": "be building the new string which is just",
+        "start": 220.799,
+        "duration": 4.44
+    },
+    {
+        "text": "going to be removing all the",
+        "start": 223.28,
+        "duration": 4.56
+    },
+    {
+        "text": "non-alphanumeric characters from the",
+        "start": 225.239,
+        "duration": 4.441
+    },
+    {
+        "text": "input string so this solution is kind of",
+        "start": 227.84,
+        "duration": 3.28
+    },
+    {
+        "text": "the cheating solution where i'm going to",
+        "start": 229.68,
+        "duration": 4.16
+    },
+    {
+        "text": "be using a lot of built-in functions and",
+        "start": 231.12,
+        "duration": 4.319
+    },
+    {
+        "text": "extra memory as well so we're going to",
+        "start": 233.84,
+        "duration": 2.959
+    },
+    {
+        "text": "just iterate through every single",
+        "start": 235.439,
+        "duration": 3.681
+    },
+    {
+        "text": "character in the string s if that",
+        "start": 236.799,
+        "duration": 5.36
+    },
+    {
+        "text": "character is alphanumerical and the good",
+        "start": 239.12,
+        "duration": 4.56
+    },
+    {
+        "text": "thing is python and actually i think",
+        "start": 242.159,
+        "duration": 4.241
+    },
+    {
+        "text": "most uh libraries most languages like",
+        "start": 243.68,
+        "duration": 5.199
+    },
+    {
+        "text": "java have a built-in function to check",
+        "start": 246.4,
+        "duration": 4.479
+    },
+    {
+        "text": "if a character or a string is",
+        "start": 248.879,
+        "duration": 4.481
+    },
+    {
+        "text": "alphanumerical python at least does so",
+        "start": 250.879,
+        "duration": 3.761
+    },
+    {
+        "text": "we're checking if this character is",
+        "start": 253.36,
+        "duration": 3.999
+    },
+    {
+        "text": "alphanumerical if it is we want to",
+        "start": 254.64,
+        "duration": 4.8
+    },
+    {
+        "text": "include it in the new string so we're",
+        "start": 257.359,
+        "duration": 3.201
+    },
+    {
+        "text": "going to go ahead and take that",
+        "start": 259.44,
+        "duration": 3.759
+    },
+    {
+        "text": "character and add it to the new string",
+        "start": 260.56,
+        "duration": 4.639
+    },
+    {
+        "text": "but one thing you don't want to forget",
+        "start": 263.199,
+        "duration": 3.28
+    },
+    {
+        "text": "is we want to make sure that every",
+        "start": 265.199,
+        "duration": 3.28
+    },
+    {
+        "text": "character is lowercase so before we add",
+        "start": 266.479,
+        "duration": 3.44
+    },
+    {
+        "text": "it to the new string we want to make",
+        "start": 268.479,
+        "duration": 4.241
+    },
+    {
+        "text": "sure that it is lowercase so we'll",
+        "start": 269.919,
+        "duration": 4.641
+    },
+    {
+        "text": "convert it to lowercase and then we're",
+        "start": 272.72,
+        "duration": 3.36
+    },
+    {
+        "text": "done with that we have the new string we",
+        "start": 274.56,
+        "duration": 3.199
+    },
+    {
+        "text": "removed all the other characters from it",
+        "start": 276.08,
+        "duration": 3.28
+    },
+    {
+        "text": "now we just want to check if it is the",
+        "start": 277.759,
+        "duration": 4.72
+    },
+    {
+        "text": "exact same when it has been reversed",
+        "start": 279.36,
+        "duration": 4.64
+    },
+    {
+        "text": "so we're just going to take this new",
+        "start": 282.479,
+        "duration": 3.921
+    },
+    {
+        "text": "string compare it to the reversed string",
+        "start": 284.0,
+        "duration": 5.199
+    },
+    {
+        "text": "which in python you can do like this",
+        "start": 286.4,
+        "duration": 4.64
+    },
+    {
+        "text": "by you know this is the syntax for",
+        "start": 289.199,
+        "duration": 4.72
+    },
+    {
+        "text": "reversing a string so if they are equal",
+        "start": 291.04,
+        "duration": 4.64
+    },
+    {
+        "text": "then we can return true if they're not",
+        "start": 293.919,
+        "duration": 4.161
+    },
+    {
+        "text": "equal this will return false which is",
+        "start": 295.68,
+        "duration": 4.0
+    },
+    {
+        "text": "what we want to do to determine if it's",
+        "start": 298.08,
+        "duration": 3.92
+    },
+    {
+        "text": "a palindrome so now let's run the code",
+        "start": 299.68,
+        "duration": 4.16
+    },
+    {
+        "text": "and make sure that it works as you can",
+        "start": 302.0,
+        "duration": 4.56
+    },
+    {
+        "text": "see on the left yes it does work but",
+        "start": 303.84,
+        "duration": 4.4
+    },
+    {
+        "text": "there are some deficiencies with the",
+        "start": 306.56,
+        "duration": 4.16
+    },
+    {
+        "text": "solution that maybe your interviewer",
+        "start": 308.24,
+        "duration": 4.48
+    },
+    {
+        "text": "won't want you to use maybe they won't",
+        "start": 310.72,
+        "duration": 4.0
+    },
+    {
+        "text": "want you to use this alphanumerical",
+        "start": 312.72,
+        "duration": 3.68
+    },
+    {
+        "text": "function and they want you to implement",
+        "start": 314.72,
+        "duration": 3.84
+    },
+    {
+        "text": "it yourself and maybe they don't want",
+        "start": 316.4,
+        "duration": 4.56
+    },
+    {
+        "text": "you to use extra memory clearly we use",
+        "start": 318.56,
+        "duration": 4.88
+    },
+    {
+        "text": "extra memory by building the new string",
+        "start": 320.96,
+        "duration": 4.16
+    },
+    {
+        "text": "and we actually used extra memory over",
+        "start": 323.44,
+        "duration": 3.759
+    },
+    {
+        "text": "here when we reversed the string we",
+        "start": 325.12,
+        "duration": 3.519
+    },
+    {
+        "text": "created a new string that was the",
+        "start": 327.199,
+        "duration": 3.761
+    },
+    {
+        "text": "reversal of the original so let's see",
+        "start": 328.639,
+        "duration": 3.761
+    },
+    {
+        "text": "how we can actually improve this",
+        "start": 330.96,
+        "duration": 4.16
+    },
+    {
+        "text": "solution okay so now let's see how we",
+        "start": 332.4,
+        "duration": 4.4
+    },
+    {
+        "text": "can actually solve this problem with",
+        "start": 335.12,
+        "duration": 4.4
+    },
+    {
+        "text": "constant extra memory without using",
+        "start": 336.8,
+        "duration": 4.72
+    },
+    {
+        "text": "extra memory without creating a new",
+        "start": 339.52,
+        "duration": 4.32
+    },
+    {
+        "text": "version of this string and the main way",
+        "start": 341.52,
+        "duration": 4.08
+    },
+    {
+        "text": "is going to be by using pointers so",
+        "start": 343.84,
+        "duration": 3.28
+    },
+    {
+        "text": "we're going to have two pointers a left",
+        "start": 345.6,
+        "duration": 3.92
+    },
+    {
+        "text": "pointer and a right pointer because",
+        "start": 347.12,
+        "duration": 4.32
+    },
+    {
+        "text": "remember there are multiple ways to",
+        "start": 349.52,
+        "duration": 3.6
+    },
+    {
+        "text": "check if a string is a palindrome we",
+        "start": 351.44,
+        "duration": 4.0
+    },
+    {
+        "text": "don't have to reverse it we can just",
+        "start": 353.12,
+        "duration": 4.24
+    },
+    {
+        "text": "compare the left character and the",
+        "start": 355.44,
+        "duration": 3.84
+    },
+    {
+        "text": "rightmost character if they're equal",
+        "start": 357.36,
+        "duration": 4.0
+    },
+    {
+        "text": "then we shift the pointers in the left",
+        "start": 359.28,
+        "duration": 3.68
+    },
+    {
+        "text": "pointer comes here and the right pointer",
+        "start": 361.36,
+        "duration": 3.679
+    },
+    {
+        "text": "goes here and then we can continue to",
+        "start": 362.96,
+        "duration": 3.84
+    },
+    {
+        "text": "check to make sure that the characters",
+        "start": 365.039,
+        "duration": 4.241
+    },
+    {
+        "text": "are equal if they're not equal then we",
+        "start": 366.8,
+        "duration": 4.72
+    },
+    {
+        "text": "return but how do we know when to stop",
+        "start": 369.28,
+        "duration": 3.919
+    },
+    {
+        "text": "well we're going to keep incrementing",
+        "start": 371.52,
+        "duration": 3.04
+    },
+    {
+        "text": "the left pointer and we're going to keep",
+        "start": 373.199,
+        "duration": 3.44
+    },
+    {
+        "text": "decrementing the right pointer until",
+        "start": 374.56,
+        "duration": 4.479
+    },
+    {
+        "text": "eventually they meet in the middle or",
+        "start": 376.639,
+        "duration": 4.641
+    },
+    {
+        "text": "the left pointer you know passes the",
+        "start": 379.039,
+        "duration": 3.521
+    },
+    {
+        "text": "right pointer right the left pointer",
+        "start": 381.28,
+        "duration": 2.479
+    },
+    {
+        "text": "becomes here and the right pointer is",
+        "start": 382.56,
+        "duration": 2.88
+    },
+    {
+        "text": "over here that's how we know when we can",
+        "start": 383.759,
+        "duration": 4.641
+    },
+    {
+        "text": "stop or maybe they will meet",
+        "start": 385.44,
+        "duration": 5.199
+    },
+    {
+        "text": "exactly at the same character if the",
+        "start": 388.4,
+        "duration": 4.16
+    },
+    {
+        "text": "length of the string happens to be odd",
+        "start": 390.639,
+        "duration": 4.161
+    },
+    {
+        "text": "okay so that's actually pretty simple",
+        "start": 392.56,
+        "duration": 4.8
+    },
+    {
+        "text": "not too bad so what are we gonna do okay",
+        "start": 394.8,
+        "duration": 4.16
+    },
+    {
+        "text": "left is here right is here this is",
+        "start": 397.36,
+        "duration": 3.04
+    },
+    {
+        "text": "capital a but of course we're gonna",
+        "start": 398.96,
+        "duration": 2.799
+    },
+    {
+        "text": "convert it to lowercase this is",
+        "start": 400.4,
+        "duration": 3.76
+    },
+    {
+        "text": "lowercase a so they're equal right okay",
+        "start": 401.759,
+        "duration": 4.56
+    },
+    {
+        "text": "so then right pointer is gonna be",
+        "start": 404.16,
+        "duration": 4.479
+    },
+    {
+        "text": "decremented by one so the right pointer",
+        "start": 406.319,
+        "duration": 4.16
+    },
+    {
+        "text": "is going to be over here at the m",
+        "start": 408.639,
+        "duration": 3.041
+    },
+    {
+        "text": "character left corner is going to be",
+        "start": 410.479,
+        "duration": 2.641
+    },
+    {
+        "text": "incremented by one and it's going to be",
+        "start": 411.68,
+        "duration": 4.0
+    },
+    {
+        "text": "here well we're at the space character",
+        "start": 413.12,
+        "duration": 5.04
+    },
+    {
+        "text": "but remember we want to ignore spaces we",
+        "start": 415.68,
+        "duration": 4.4
+    },
+    {
+        "text": "want to ignore everything except for",
+        "start": 418.16,
+        "duration": 4.319
+    },
+    {
+        "text": "alphanumerical characters and can we try",
+        "start": 420.08,
+        "duration": 4.72
+    },
+    {
+        "text": "to do this without using a built-in",
+        "start": 422.479,
+        "duration": 4.961
+    },
+    {
+        "text": "function well let me show you how we can",
+        "start": 424.8,
+        "duration": 4.48
+    },
+    {
+        "text": "kind of do that basically i did some",
+        "start": 427.44,
+        "duration": 3.599
+    },
+    {
+        "text": "quick googling and we're actually going",
+        "start": 429.28,
+        "duration": 5.28
+    },
+    {
+        "text": "to use ascii values to determine if a",
+        "start": 431.039,
+        "duration": 5.841
+    },
+    {
+        "text": "character is alphanumerical basically",
+        "start": 434.56,
+        "duration": 4.16
+    },
+    {
+        "text": "what you need to know is that each",
+        "start": 436.88,
+        "duration": 3.28
+    },
+    {
+        "text": "symbol",
+        "start": 438.72,
+        "duration": 4.08
+    },
+    {
+        "text": "you know ascii symbols is 128 of them",
+        "start": 440.16,
+        "duration": 4.879
+    },
+    {
+        "text": "and lowercase and uppercase english",
+        "start": 442.8,
+        "duration": 4.48
+    },
+    {
+        "text": "characters happen to have an ascii value",
+        "start": 445.039,
+        "duration": 3.521
+    },
+    {
+        "text": "associated with them you can see the",
+        "start": 447.28,
+        "duration": 4.08
+    },
+    {
+        "text": "integer 0 has an ascii value associated",
+        "start": 448.56,
+        "duration": 7.199
+    },
+    {
+        "text": "48 uh integer 1 has 49 integer 2 has 50",
+        "start": 451.36,
+        "duration": 6.399
+    },
+    {
+        "text": "so they are contiguous all the way down",
+        "start": 455.759,
+        "duration": 5.041
+    },
+    {
+        "text": "to integer 9 which is at 57. so that's",
+        "start": 457.759,
+        "duration": 5.921
+    },
+    {
+        "text": "important and we also have uppercase a",
+        "start": 460.8,
+        "duration": 5.679
+    },
+    {
+        "text": "starting at 65 going all the way down",
+        "start": 463.68,
+        "duration": 4.88
+    },
+    {
+        "text": "to 90. they are contiguous as well and",
+        "start": 466.479,
+        "duration": 4.241
+    },
+    {
+        "text": "then eventually we can get to lowercase",
+        "start": 468.56,
+        "duration": 4.56
+    },
+    {
+        "text": "starting at 97 going all the way down to",
+        "start": 470.72,
+        "duration": 4.8
+    },
+    {
+        "text": "122. these are contiguous as well using",
+        "start": 473.12,
+        "duration": 4.479
+    },
+    {
+        "text": "this information in pretty much every",
+        "start": 475.52,
+        "duration": 3.84
+    },
+    {
+        "text": "language you can write your own",
+        "start": 477.599,
+        "duration": 4.401
+    },
+    {
+        "text": "alphanumerical character detecting",
+        "start": 479.36,
+        "duration": 4.239
+    },
+    {
+        "text": "function and i'll show you how to do",
+        "start": 482.0,
+        "duration": 4.0
+    },
+    {
+        "text": "that in a few minutes but for now just",
+        "start": 483.599,
+        "duration": 4.081
+    },
+    {
+        "text": "assume that we do have our own",
+        "start": 486.0,
+        "duration": 3.759
+    },
+    {
+        "text": "alphanumerical function and our left",
+        "start": 487.68,
+        "duration": 3.84
+    },
+    {
+        "text": "pointer is over here what do we want to",
+        "start": 489.759,
+        "duration": 4.0
+    },
+    {
+        "text": "do we don't really want to compare this",
+        "start": 491.52,
+        "duration": 4.56
+    },
+    {
+        "text": "character with the character m on the",
+        "start": 493.759,
+        "duration": 4.56
+    },
+    {
+        "text": "right side do we because we want to skip",
+        "start": 496.08,
+        "duration": 4.0
+    },
+    {
+        "text": "this character so how do we skip it well",
+        "start": 498.319,
+        "duration": 4.32
+    },
+    {
+        "text": "we can create a while loop",
+        "start": 500.08,
+        "duration": 5.799
+    },
+    {
+        "text": "so while our left pointer is not",
+        "start": 502.639,
+        "duration": 5.28
+    },
+    {
+        "text": "alphanumerical then we're gonna",
+        "start": 505.879,
+        "duration": 3.961
+    },
+    {
+        "text": "increment left right we're gonna do left",
+        "start": 507.919,
+        "duration": 3.84
+    },
+    {
+        "text": "plus plus we're gonna keep incrementing",
+        "start": 509.84,
+        "duration": 4.4
+    },
+    {
+        "text": "left while it is not a alphanumerical",
+        "start": 511.759,
+        "duration": 5.041
+    },
+    {
+        "text": "character because we want to ignore uh",
+        "start": 514.24,
+        "duration": 4.4
+    },
+    {
+        "text": "characters that are not alphanumeric so",
+        "start": 516.8,
+        "duration": 3.84
+    },
+    {
+        "text": "we're gonna increment left one more time",
+        "start": 518.64,
+        "duration": 4.959
+    },
+    {
+        "text": "now luckily it is a alphanumerical",
+        "start": 520.64,
+        "duration": 4.8
+    },
+    {
+        "text": "character it's the character m so we",
+        "start": 523.599,
+        "duration": 3.92
+    },
+    {
+        "text": "compare left and right they're exactly",
+        "start": 525.44,
+        "duration": 3.839
+    },
+    {
+        "text": "the same so we continue with our",
+        "start": 527.519,
+        "duration": 4.801
+    },
+    {
+        "text": "algorithm we uh decrement r over here",
+        "start": 529.279,
+        "duration": 5.041
+    },
+    {
+        "text": "increment left over here right now",
+        "start": 532.32,
+        "duration": 3.92
+    },
+    {
+        "text": "they're both at the same character and",
+        "start": 534.32,
+        "duration": 3.36
+    },
+    {
+        "text": "we're going to continue the algorithm so",
+        "start": 536.24,
+        "duration": 3.52
+    },
+    {
+        "text": "that's the main idea i won't run through",
+        "start": 537.68,
+        "duration": 3.76
+    },
+    {
+        "text": "this entire string because it's pretty",
+        "start": 539.76,
+        "duration": 4.56
+    },
+    {
+        "text": "long but eventually the strings will",
+        "start": 541.44,
+        "duration": 5.12
+    },
+    {
+        "text": "meet in the middle for example over here",
+        "start": 544.32,
+        "duration": 4.16
+    },
+    {
+        "text": "somewhere maybe at that point we'll see",
+        "start": 546.56,
+        "duration": 3.52
+    },
+    {
+        "text": "okay they're at the same character and",
+        "start": 548.48,
+        "duration": 3.76
+    },
+    {
+        "text": "then we'll say we can stop our algorithm",
+        "start": 550.08,
+        "duration": 3.92
+    },
+    {
+        "text": "we've determined it is a palindrome and",
+        "start": 552.24,
+        "duration": 3.52
+    },
+    {
+        "text": "then we can return true so now let me",
+        "start": 554.0,
+        "duration": 3.519
+    },
+    {
+        "text": "show you how to code it up the benefit",
+        "start": 555.76,
+        "duration": 3.68
+    },
+    {
+        "text": "of this solution it is still a linear",
+        "start": 557.519,
+        "duration": 3.841
+    },
+    {
+        "text": "time algorithm it's still big o of n",
+        "start": 559.44,
+        "duration": 3.04
+    },
+    {
+        "text": "because we have to iterate through the",
+        "start": 561.36,
+        "duration": 3.28
+    },
+    {
+        "text": "entire string but the memory complexity",
+        "start": 562.48,
+        "duration": 4.4
+    },
+    {
+        "text": "is big o of one because we're not using",
+        "start": 564.64,
+        "duration": 4.639
+    },
+    {
+        "text": "any extra memory in this case okay so",
+        "start": 566.88,
+        "duration": 4.0
+    },
+    {
+        "text": "now let's get into the code first thing",
+        "start": 569.279,
+        "duration": 3.68
+    },
+    {
+        "text": "i'm going to do is write our alpha",
+        "start": 570.88,
+        "duration": 4.24
+    },
+    {
+        "text": "numerical function so",
+        "start": 572.959,
+        "duration": 4.0
+    },
+    {
+        "text": "it's going to take in a single parameter",
+        "start": 575.12,
+        "duration": 3.839
+    },
+    {
+        "text": "just going to take in a character and",
+        "start": 576.959,
+        "duration": 3.601
+    },
+    {
+        "text": "then we're going to determine if that",
+        "start": 578.959,
+        "duration": 4.56
+    },
+    {
+        "text": "character is alphanumeric or not how can",
+        "start": 580.56,
+        "duration": 5.04
+    },
+    {
+        "text": "we determine that well i was using the",
+        "start": 583.519,
+        "duration": 5.121
+    },
+    {
+        "text": "ascii values a moment ago right i was",
+        "start": 585.6,
+        "duration": 5.44
+    },
+    {
+        "text": "talking about them so in python you can",
+        "start": 588.64,
+        "duration": 5.199
+    },
+    {
+        "text": "get the ascii value of a character uh",
+        "start": 591.04,
+        "duration": 5.28
+    },
+    {
+        "text": "using the ord function we just want to",
+        "start": 593.839,
+        "duration": 4.081
+    },
+    {
+        "text": "know that the ascii value of this",
+        "start": 596.32,
+        "duration": 3.92
+    },
+    {
+        "text": "character if it is an uppercase",
+        "start": 597.92,
+        "duration": 4.479
+    },
+    {
+        "text": "character how can we check that well as",
+        "start": 600.24,
+        "duration": 4.8
+    },
+    {
+        "text": "i showed you a moment ago ascii values",
+        "start": 602.399,
+        "duration": 5.041
+    },
+    {
+        "text": "are contiguous for uppercase characters",
+        "start": 605.04,
+        "duration": 6.239
+    },
+    {
+        "text": "right so from uppercase a to uppercase z",
+        "start": 607.44,
+        "duration": 6.72
+    },
+    {
+        "text": "uh they're contiguous so if the ascii",
+        "start": 611.279,
+        "duration": 4.961
+    },
+    {
+        "text": "value of the c character of whatever",
+        "start": 614.16,
+        "duration": 4.96
+    },
+    {
+        "text": "this character happens to be is between",
+        "start": 616.24,
+        "duration": 5.12
+    },
+    {
+        "text": "the ascii value of uppercase a and",
+        "start": 619.12,
+        "duration": 5.04
+    },
+    {
+        "text": "uppercase z that means it's an uppercase",
+        "start": 621.36,
+        "duration": 5.36
+    },
+    {
+        "text": "character so that's good good so far",
+        "start": 624.16,
+        "duration": 4.56
+    },
+    {
+        "text": "right that's progress for now we can",
+        "start": 626.72,
+        "duration": 3.679
+    },
+    {
+        "text": "check that this is an uppercase",
+        "start": 628.72,
+        "duration": 3.119
+    },
+    {
+        "text": "character but we want to check if it's",
+        "start": 630.399,
+        "duration": 4.0
+    },
+    {
+        "text": "alphanumeric so we have to extend this",
+        "start": 631.839,
+        "duration": 5.44
+    },
+    {
+        "text": "idea so how about we say okay that or",
+        "start": 634.399,
+        "duration": 4.801
+    },
+    {
+        "text": "second condition i'm actually just going",
+        "start": 637.279,
+        "duration": 3.201
+    },
+    {
+        "text": "to copy and paste this because it's",
+        "start": 639.2,
+        "duration": 3.04
+    },
+    {
+        "text": "going to be similar we want to check if",
+        "start": 640.48,
+        "duration": 3.52
+    },
+    {
+        "text": "it's a lowercase character right because",
+        "start": 642.24,
+        "duration": 4.96
+    },
+    {
+        "text": "that's the next thing is it uppercase or",
+        "start": 644.0,
+        "duration": 5.839
+    },
+    {
+        "text": "is it lowercase we can do that by taking",
+        "start": 647.2,
+        "duration": 4.879
+    },
+    {
+        "text": "the ascii values of the lowercase a and",
+        "start": 649.839,
+        "duration": 5.201
+    },
+    {
+        "text": "lowercase z and last it could be a digit",
+        "start": 652.079,
+        "duration": 6.161
+    },
+    {
+        "text": "from zero to one or zero to nine",
+        "start": 655.04,
+        "duration": 5.2
+    },
+    {
+        "text": "actually so let's do that same thing",
+        "start": 658.24,
+        "duration": 4.24
+    },
+    {
+        "text": "right starting at zero is in between",
+        "start": 660.24,
+        "duration": 5.44
+    },
+    {
+        "text": "zero or uh the integer nine if any of",
+        "start": 662.48,
+        "duration": 5.599
+    },
+    {
+        "text": "these is true this will be true so",
+        "start": 665.68,
+        "duration": 4.56
+    },
+    {
+        "text": "basically we've determined if it's an",
+        "start": 668.079,
+        "duration": 3.921
+    },
+    {
+        "text": "alphanumeric or not that will that's",
+        "start": 670.24,
+        "duration": 3.76
+    },
+    {
+        "text": "what this condition will be so we can go",
+        "start": 672.0,
+        "duration": 4.24
+    },
+    {
+        "text": "ahead and return this so if it is",
+        "start": 674.0,
+        "duration": 4.399
+    },
+    {
+        "text": "alphanumeric of course this will return",
+        "start": 676.24,
+        "duration": 4.32
+    },
+    {
+        "text": "true if it's not alphanumeric this will",
+        "start": 678.399,
+        "duration": 4.401
+    },
+    {
+        "text": "return false okay so we got our helper",
+        "start": 680.56,
+        "duration": 3.76
+    },
+    {
+        "text": "function out of the way now let's",
+        "start": 682.8,
+        "duration": 3.36
+    },
+    {
+        "text": "actually write the algorithm as i showed",
+        "start": 684.32,
+        "duration": 2.959
+    },
+    {
+        "text": "in the drawing we're going to have two",
+        "start": 686.16,
+        "duration": 2.56
+    },
+    {
+        "text": "pointers left and right left is gonna",
+        "start": 687.279,
+        "duration": 3.761
+    },
+    {
+        "text": "initially be at zero right is initially",
+        "start": 688.72,
+        "duration": 3.76
+    },
+    {
+        "text": "going to be all the way at the right",
+        "start": 691.04,
+        "duration": 4.08
+    },
+    {
+        "text": "side so the length of the string minus",
+        "start": 692.48,
+        "duration": 5.599
+    },
+    {
+        "text": "one and remember we want to continue the",
+        "start": 695.12,
+        "duration": 4.64
+    },
+    {
+        "text": "algorithm we want to check if it's a",
+        "start": 698.079,
+        "duration": 4.401
+    },
+    {
+        "text": "paundrome while the left pointer is less",
+        "start": 699.76,
+        "duration": 4.56
+    },
+    {
+        "text": "than the right point the pointers have",
+        "start": 702.48,
+        "duration": 4.72
+    },
+    {
+        "text": "not met each other yet or crossed each",
+        "start": 704.32,
+        "duration": 4.48
+    },
+    {
+        "text": "other and so now we get to the point",
+        "start": 707.2,
+        "duration": 3.04
+    },
+    {
+        "text": "where we actually want to compare the",
+        "start": 708.8,
+        "duration": 3.76
+    },
+    {
+        "text": "characters so we want to take the",
+        "start": 710.24,
+        "duration": 4.719
+    },
+    {
+        "text": "character at position left and the",
+        "start": 712.56,
+        "duration": 5.04
+    },
+    {
+        "text": "character at position right and if",
+        "start": 714.959,
+        "duration": 5.68
+    },
+    {
+        "text": "they're not equal we want to return",
+        "start": 717.6,
+        "duration": 4.96
+    },
+    {
+        "text": "immediately right because if we find a",
+        "start": 720.639,
+        "duration": 3.76
+    },
+    {
+        "text": "single pair that's not equal then we",
+        "start": 722.56,
+        "duration": 3.519
+    },
+    {
+        "text": "know it's not a palindrome so we can",
+        "start": 724.399,
+        "duration": 4.161
+    },
+    {
+        "text": "return false immediately",
+        "start": 726.079,
+        "duration": 4.081
+    },
+    {
+        "text": "but did we forget about anything well",
+        "start": 728.56,
+        "duration": 3.04
+    },
+    {
+        "text": "the first thing we forgot about is we",
+        "start": 730.16,
+        "duration": 3.6
+    },
+    {
+        "text": "want to make sure to only compare the",
+        "start": 731.6,
+        "duration": 4.88
+    },
+    {
+        "text": "lowercase versions of each character so",
+        "start": 733.76,
+        "duration": 5.199
+    },
+    {
+        "text": "let's convert this to lower and convert",
+        "start": 736.48,
+        "duration": 4.08
+    },
+    {
+        "text": "this to lower",
+        "start": 738.959,
+        "duration": 4.0
+    },
+    {
+        "text": "so that's good we're so if one of these",
+        "start": 740.56,
+        "duration": 4.079
+    },
+    {
+        "text": "is upper case one of them is lowercase",
+        "start": 742.959,
+        "duration": 4.0
+    },
+    {
+        "text": "we're still good but did we forget about",
+        "start": 744.639,
+        "duration": 4.481
+    },
+    {
+        "text": "anything else well we never called our",
+        "start": 746.959,
+        "duration": 4.56
+    },
+    {
+        "text": "alphanumeric function right what if one",
+        "start": 749.12,
+        "duration": 4.719
+    },
+    {
+        "text": "of these is not an alphanumeric",
+        "start": 751.519,
+        "duration": 4.801
+    },
+    {
+        "text": "character well we can't have that right",
+        "start": 753.839,
+        "duration": 4.721
+    },
+    {
+        "text": "we shouldn't allow that to happen so",
+        "start": 756.32,
+        "duration": 4.48
+    },
+    {
+        "text": "before we even execute this if statement",
+        "start": 758.56,
+        "duration": 5.36
+    },
+    {
+        "text": "let's make sure both characters at left",
+        "start": 760.8,
+        "duration": 6.64
+    },
+    {
+        "text": "and right are alphanumeric so while it's",
+        "start": 763.92,
+        "duration": 6.32
+    },
+    {
+        "text": "not alphanumeric so for example while",
+        "start": 767.44,
+        "duration": 6.0
+    },
+    {
+        "text": "the character at position left is not",
+        "start": 770.24,
+        "duration": 5.12
+    },
+    {
+        "text": "alphanumeric what do we want to do well",
+        "start": 773.44,
+        "duration": 3.76
+    },
+    {
+        "text": "we want to increment that left pointer",
+        "start": 775.36,
+        "duration": 4.96
+    },
+    {
+        "text": "right so we can uh plus 1 to this but",
+        "start": 777.2,
+        "duration": 4.16
+    },
+    {
+        "text": "one thing we want to make sure is that",
+        "start": 780.32,
+        "duration": 2.8
+    },
+    {
+        "text": "the pointer never goes out of bounds so",
+        "start": 781.36,
+        "duration": 3.919
+    },
+    {
+        "text": "let's just add a checks to make sure",
+        "start": 783.12,
+        "duration": 4.64
+    },
+    {
+        "text": "left is less than right for example this",
+        "start": 785.279,
+        "duration": 4.481
+    },
+    {
+        "text": "will make sure that of course it never",
+        "start": 787.76,
+        "duration": 4.72
+    },
+    {
+        "text": "passes the other pointer and it'll also",
+        "start": 789.76,
+        "duration": 4.079
+    },
+    {
+        "text": "make sure that the pointer doesn't go",
+        "start": 792.48,
+        "duration": 3.2
+    },
+    {
+        "text": "out of bounds and we want to make sure",
+        "start": 793.839,
+        "duration": 3.761
+    },
+    {
+        "text": "to do the exact same thing",
+        "start": 795.68,
+        "duration": 4.159
+    },
+    {
+        "text": "for the other position as well for the",
+        "start": 797.6,
+        "duration": 3.679
+    },
+    {
+        "text": "right pointer so",
+        "start": 799.839,
+        "duration": 4.161
+    },
+    {
+        "text": "make sure that right is greater than",
+        "start": 801.279,
+        "duration": 4.481
+    },
+    {
+        "text": "left and",
+        "start": 804.0,
+        "duration": 4.399
+    },
+    {
+        "text": "the character at the position right is",
+        "start": 805.76,
+        "duration": 4.96
+    },
+    {
+        "text": "if it's not alphanumeric then what do we",
+        "start": 808.399,
+        "duration": 4.481
+    },
+    {
+        "text": "want to do we want to decrement the",
+        "start": 810.72,
+        "duration": 3.919
+    },
+    {
+        "text": "right pointer by one instead of",
+        "start": 812.88,
+        "duration": 4.32
+    },
+    {
+        "text": "incrementing but but both of these while",
+        "start": 814.639,
+        "duration": 3.921
+    },
+    {
+        "text": "loops will make sure that both",
+        "start": 817.2,
+        "duration": 3.28
+    },
+    {
+        "text": "characters are alphanumeric before we do",
+        "start": 818.56,
+        "duration": 3.76
+    },
+    {
+        "text": "the comparison which is what we wanted",
+        "start": 820.48,
+        "duration": 4.08
+    },
+    {
+        "text": "to achieve so",
+        "start": 822.32,
+        "duration": 4.24
+    },
+    {
+        "text": "then this will return false if it's not",
+        "start": 824.56,
+        "duration": 4.32
+    },
+    {
+        "text": "a palindrome if the entire loop finishes",
+        "start": 826.56,
+        "duration": 4.8
+    },
+    {
+        "text": "that must mean that the string is a",
+        "start": 828.88,
+        "duration": 4.399
+    },
+    {
+        "text": "palindrome so then we can just go ahead",
+        "start": 831.36,
+        "duration": 3.52
+    },
+    {
+        "text": "and return",
+        "start": 833.279,
+        "duration": 3.521
+    },
+    {
+        "text": "true oh and actually one more thing",
+        "start": 834.88,
+        "duration": 3.28
+    },
+    {
+        "text": "before i forget",
+        "start": 836.8,
+        "duration": 3.839
+    },
+    {
+        "text": "after we do do the comparison we want to",
+        "start": 838.16,
+        "duration": 4.239
+    },
+    {
+        "text": "update our left and right pointers right",
+        "start": 840.639,
+        "duration": 4.401
+    },
+    {
+        "text": "we want to compare the next position so",
+        "start": 842.399,
+        "duration": 3.921
+    },
+    {
+        "text": "to the left pointer we're going to",
+        "start": 845.04,
+        "duration": 3.28
+    },
+    {
+        "text": "increment it by one to the right pointer",
+        "start": 846.32,
+        "duration": 3.92
+    },
+    {
+        "text": "we're going to decrement it by one so",
+        "start": 848.32,
+        "duration": 3.759
+    },
+    {
+        "text": "just moving to the next position to do",
+        "start": 850.24,
+        "duration": 4.24
+    },
+    {
+        "text": "the next comparison on the next",
+        "start": 852.079,
+        "duration": 5.041
+    },
+    {
+        "text": "iteration of the while loop so now this",
+        "start": 854.48,
+        "duration": 5.52
+    },
+    {
+        "text": "is the entire code so let's just run it",
+        "start": 857.12,
+        "duration": 4.64
+    },
+    {
+        "text": "to make sure that it works okay i was",
+        "start": 860.0,
+        "duration": 3.44
+    },
+    {
+        "text": "dumb in python if you want to call",
+        "start": 861.76,
+        "duration": 4.24
+    },
+    {
+        "text": "another function inside of an object you",
+        "start": 863.44,
+        "duration": 5.759
+    },
+    {
+        "text": "have to use the self keyword so let's",
+        "start": 866.0,
+        "duration": 5.199
+    },
+    {
+        "text": "try that one more time and as you can",
+        "start": 869.199,
+        "duration": 3.76
+    },
+    {
+        "text": "see on the left yes it does work but",
+        "start": 871.199,
+        "duration": 3.521
+    },
+    {
+        "text": "it's actually slightly less efficient",
+        "start": 872.959,
+        "duration": 3.44
+    },
+    {
+        "text": "than the other solution even though the",
+        "start": 874.72,
+        "duration": 5.04
+    },
+    {
+        "text": "big o time complexity is the exact same",
+        "start": 876.399,
+        "duration": 4.8
+    },
+    {
+        "text": "and the memory complexity of the",
+        "start": 879.76,
+        "duration": 3.04
+    },
+    {
+        "text": "solution is actually better than the",
+        "start": 881.199,
+        "duration": 4.241
+    },
+    {
+        "text": "other one this is no extra memory needed",
+        "start": 882.8,
+        "duration": 4.399
+    },
+    {
+        "text": "as you can see so i really hope that",
+        "start": 885.44,
+        "duration": 3.839
+    },
+    {
+        "text": "this was helpful if it was please like",
+        "start": 887.199,
+        "duration": 3.601
+    },
+    {
+        "text": "and subscribe it really supports the",
+        "start": 889.279,
+        "duration": 3.36
+    },
+    {
+        "text": "channel a lot consider checking out my",
+        "start": 890.8,
+        "duration": 3.36
+    },
+    {
+        "text": "patreon where you can further support",
+        "start": 892.639,
+        "duration": 3.281
+    },
+    {
+        "text": "the channel and hopefully i'll see you",
+        "start": 894.16,
+        "duration": 5.44
+    },
+    {
+        "text": "pretty soon thanks for watching",
+        "start": 895.92,
+        "duration": 3.68
+    }
+]

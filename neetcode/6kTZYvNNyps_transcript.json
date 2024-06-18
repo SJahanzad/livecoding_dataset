@@ -1,0 +1,3557 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.76
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.76,
+        "duration": 4.24
+    },
+    {
+        "text": "let's solve the problem alien dictionary",
+        "start": 3.76,
+        "duration": 4.079
+    },
+    {
+        "text": "and yes this is another problem from the",
+        "start": 6.0,
+        "duration": 3.28
+    },
+    {
+        "text": "blind 75 list",
+        "start": 7.839,
+        "duration": 4.641
+    },
+    {
+        "text": "this is the problem 32 a graph problem",
+        "start": 9.28,
+        "duration": 4.96
+    },
+    {
+        "text": "alien dictionary i've been wanting to do",
+        "start": 12.48,
+        "duration": 3.68
+    },
+    {
+        "text": "this problem for so long now and we're",
+        "start": 14.24,
+        "duration": 3.68
+    },
+    {
+        "text": "finally doing it because now we actually",
+        "start": 16.16,
+        "duration": 3.119
+    },
+    {
+        "text": "have lee code premium",
+        "start": 17.92,
+        "duration": 3.119
+    },
+    {
+        "text": "and again thank you for all my patreon",
+        "start": 19.279,
+        "duration": 3.601
+    },
+    {
+        "text": "supporters for making that possible so",
+        "start": 21.039,
+        "duration": 3.521
+    },
+    {
+        "text": "let's get into the problem now",
+        "start": 22.88,
+        "duration": 3.2
+    },
+    {
+        "text": "and by the way the the link to this",
+        "start": 24.56,
+        "duration": 3.039
+    },
+    {
+        "text": "spreadsheet will be in the description",
+        "start": 26.08,
+        "duration": 3.279
+    },
+    {
+        "text": "if you want to take a look so this is a",
+        "start": 27.599,
+        "duration": 2.481
+    },
+    {
+        "text": "pretty hard",
+        "start": 29.359,
+        "duration": 2.961
+    },
+    {
+        "text": "problem i will admit it's a hard graph",
+        "start": 30.08,
+        "duration": 3.68
+    },
+    {
+        "text": "problem so this problem",
+        "start": 32.32,
+        "duration": 4.2
+    },
+    {
+        "text": "is going to involve the algorithm",
+        "start": 33.76,
+        "duration": 3.92
+    },
+    {
+        "text": "topological",
+        "start": 36.52,
+        "duration": 3.879
+    },
+    {
+        "text": "sort that you may or may not have used",
+        "start": 37.68,
+        "duration": 4.48
+    },
+    {
+        "text": "before you may not have even heard of",
+        "start": 40.399,
+        "duration": 2.48
+    },
+    {
+        "text": "this before",
+        "start": 42.16,
+        "duration": 3.84
+    },
+    {
+        "text": "topological sort involves a d a g a",
+        "start": 42.879,
+        "duration": 4.081
+    },
+    {
+        "text": "directed",
+        "start": 46.0,
+        "duration": 3.6
+    },
+    {
+        "text": "a cyclical graph a graph that has",
+        "start": 46.96,
+        "duration": 4.0
+    },
+    {
+        "text": "directed edges but",
+        "start": 49.6,
+        "duration": 4.479
+    },
+    {
+        "text": "no cycles so the premise is we're given",
+        "start": 50.96,
+        "duration": 5.279
+    },
+    {
+        "text": "a new alien language that uses",
+        "start": 54.079,
+        "duration": 4.16
+    },
+    {
+        "text": "english alphabet letter so it's going to",
+        "start": 56.239,
+        "duration": 4.32
+    },
+    {
+        "text": "be basically lowercase a to lowercase",
+        "start": 58.239,
+        "duration": 5.041
+    },
+    {
+        "text": "z but the ordering of these characters",
+        "start": 60.559,
+        "duration": 5.041
+    },
+    {
+        "text": "is unknown to us now we know in regular",
+        "start": 63.28,
+        "duration": 2.8
+    },
+    {
+        "text": "english",
+        "start": 65.6,
+        "duration": 3.199
+    },
+    {
+        "text": "the ordering is basically a b c all the",
+        "start": 66.08,
+        "duration": 3.76
+    },
+    {
+        "text": "way to z",
+        "start": 68.799,
+        "duration": 2.721
+    },
+    {
+        "text": "right this is the order there's 26",
+        "start": 69.84,
+        "duration": 3.36
+    },
+    {
+        "text": "characters but basically they're saying",
+        "start": 71.52,
+        "duration": 3.76
+    },
+    {
+        "text": "that now we have a different ordering of",
+        "start": 73.2,
+        "duration": 3.52
+    },
+    {
+        "text": "these characters and where",
+        "start": 75.28,
+        "duration": 3.76
+    },
+    {
+        "text": "and the goal for us is to try to figure",
+        "start": 76.72,
+        "duration": 3.12
+    },
+    {
+        "text": "it out",
+        "start": 79.04,
+        "duration": 3.04
+    },
+    {
+        "text": "and what we're given to figure it out is",
+        "start": 79.84,
+        "duration": 3.2
+    },
+    {
+        "text": "basically a",
+        "start": 82.08,
+        "duration": 4.32
+    },
+    {
+        "text": "list of words which happen to be given",
+        "start": 83.04,
+        "duration": 3.92
+    },
+    {
+        "text": "to us",
+        "start": 86.4,
+        "duration": 3.6
+    },
+    {
+        "text": "in sorted order they say lexographically",
+        "start": 86.96,
+        "duration": 4.88
+    },
+    {
+        "text": "sorted that's basically just sorted",
+        "start": 90.0,
+        "duration": 3.04
+    },
+    {
+        "text": "based on",
+        "start": 91.84,
+        "duration": 4.16
+    },
+    {
+        "text": "how regular sorting of words works so",
+        "start": 93.04,
+        "duration": 4.56
+    },
+    {
+        "text": "our goal is to return",
+        "start": 96.0,
+        "duration": 4.079
+    },
+    {
+        "text": "a string of the unique characters that",
+        "start": 97.6,
+        "duration": 3.199
+    },
+    {
+        "text": "were given",
+        "start": 100.079,
+        "duration": 3.121
+    },
+    {
+        "text": "in this new alien language based on the",
+        "start": 100.799,
+        "duration": 3.921
+    },
+    {
+        "text": "words that were given",
+        "start": 103.2,
+        "duration": 3.599
+    },
+    {
+        "text": "and we're going to return this in sorted",
+        "start": 104.72,
+        "duration": 4.32
+    },
+    {
+        "text": "order in increasing order",
+        "start": 106.799,
+        "duration": 4.721
+    },
+    {
+        "text": "based on the new language's rules now if",
+        "start": 109.04,
+        "duration": 3.119
+    },
+    {
+        "text": "there is",
+        "start": 111.52,
+        "duration": 3.2
+    },
+    {
+        "text": "no solution we're returning an empty",
+        "start": 112.159,
+        "duration": 4.081
+    },
+    {
+        "text": "string so we have to figure out what",
+        "start": 114.72,
+        "duration": 2.16
+    },
+    {
+        "text": "that even",
+        "start": 116.24,
+        "duration": 2.64
+    },
+    {
+        "text": "means what does it mean for there to be",
+        "start": 116.88,
+        "duration": 3.279
+    },
+    {
+        "text": "no solution",
+        "start": 118.88,
+        "duration": 3.199
+    },
+    {
+        "text": "and also there could possibly be",
+        "start": 120.159,
+        "duration": 4.081
+    },
+    {
+        "text": "multiple solutions and if there are",
+        "start": 122.079,
+        "duration": 4.4
+    },
+    {
+        "text": "luckily for us we're allowed to return",
+        "start": 124.24,
+        "duration": 4.56
+    },
+    {
+        "text": "any of the valid solutions",
+        "start": 126.479,
+        "duration": 5.521
+    },
+    {
+        "text": "now they tell us that two strings s and",
+        "start": 128.8,
+        "duration": 3.92
+    },
+    {
+        "text": "t",
+        "start": 132.0,
+        "duration": 3.76
+    },
+    {
+        "text": "s is going to be smaller than t if",
+        "start": 132.72,
+        "duration": 6.0
+    },
+    {
+        "text": "at the first letter where they differ",
+        "start": 135.76,
+        "duration": 4.08
+    },
+    {
+        "text": "the letter in",
+        "start": 138.72,
+        "duration": 4.239
+    },
+    {
+        "text": "s comes before the letter in t in the",
+        "start": 139.84,
+        "duration": 4.72
+    },
+    {
+        "text": "alien language and this is pretty",
+        "start": 142.959,
+        "duration": 2.481
+    },
+    {
+        "text": "intuitive like",
+        "start": 144.56,
+        "duration": 3.679
+    },
+    {
+        "text": "if we know if we were given two words",
+        "start": 145.44,
+        "duration": 4.24
+    },
+    {
+        "text": "such as",
+        "start": 148.239,
+        "duration": 4.64
+    },
+    {
+        "text": "apple and banana how are we gonna",
+        "start": 149.68,
+        "duration": 5.04
+    },
+    {
+        "text": "sort these two words well we're gonna",
+        "start": 152.879,
+        "duration": 4.0
+    },
+    {
+        "text": "look at the first character right we see",
+        "start": 154.72,
+        "duration": 3.84
+    },
+    {
+        "text": "okay the first characters are",
+        "start": 156.879,
+        "duration": 5.041
+    },
+    {
+        "text": "different and a we know a is less than b",
+        "start": 158.56,
+        "duration": 5.2
+    },
+    {
+        "text": "right that's how the ordering works in",
+        "start": 161.92,
+        "duration": 3.36
+    },
+    {
+        "text": "english so we're going to check",
+        "start": 163.76,
+        "duration": 4.479
+    },
+    {
+        "text": "just the first differing character since",
+        "start": 165.28,
+        "duration": 4.4
+    },
+    {
+        "text": "a is less than b",
+        "start": 168.239,
+        "duration": 4.08
+    },
+    {
+        "text": "that means a comes first in the ordering",
+        "start": 169.68,
+        "duration": 4.559
+    },
+    {
+        "text": "so how would we order these words",
+        "start": 172.319,
+        "duration": 4.161
+    },
+    {
+        "text": "basically how they're listed right now a",
+        "start": 174.239,
+        "duration": 4.561
+    },
+    {
+        "text": "apple comes before banana what if we",
+        "start": 176.48,
+        "duration": 3.839
+    },
+    {
+        "text": "were given a different word",
+        "start": 178.8,
+        "duration": 5.439
+    },
+    {
+        "text": "such as apple and ape well in that case",
+        "start": 180.319,
+        "duration": 5.441
+    },
+    {
+        "text": "we look at the first characters okay",
+        "start": 184.239,
+        "duration": 3.28
+    },
+    {
+        "text": "they're the exact same so we still don't",
+        "start": 185.76,
+        "duration": 3.28
+    },
+    {
+        "text": "know how to sort them yet right we look",
+        "start": 187.519,
+        "duration": 2.72
+    },
+    {
+        "text": "at the second characters",
+        "start": 189.04,
+        "duration": 3.44
+    },
+    {
+        "text": "p p they're the exact same we look at",
+        "start": 190.239,
+        "duration": 3.601
+    },
+    {
+        "text": "the third characters",
+        "start": 192.48,
+        "duration": 4.88
+    },
+    {
+        "text": "p and e and we know in english",
+        "start": 193.84,
+        "duration": 7.039
+    },
+    {
+        "text": "the letter e comes before p right so",
+        "start": 197.36,
+        "duration": 5.44
+    },
+    {
+        "text": "the correct ordering of these words is",
+        "start": 200.879,
+        "duration": 3.201
+    },
+    {
+        "text": "going to be the opposite it's going to",
+        "start": 202.8,
+        "duration": 2.079
+    },
+    {
+        "text": "be ape",
+        "start": 204.08,
+        "duration": 3.439
+    },
+    {
+        "text": "and then apple right so that's how we",
+        "start": 204.879,
+        "duration": 3.92
+    },
+    {
+        "text": "would sort these words now",
+        "start": 207.519,
+        "duration": 3.44
+    },
+    {
+        "text": "the difference in this problem is that",
+        "start": 208.799,
+        "duration": 3.921
+    },
+    {
+        "text": "the input that we're given",
+        "start": 210.959,
+        "duration": 4.481
+    },
+    {
+        "text": "is already sorted right so these words",
+        "start": 212.72,
+        "duration": 3.04
+    },
+    {
+        "text": "are",
+        "start": 215.44,
+        "duration": 2.48
+    },
+    {
+        "text": "already sorted so we're going to use",
+        "start": 215.76,
+        "duration": 3.92
+    },
+    {
+        "text": "that to our advantage to basically",
+        "start": 217.92,
+        "duration": 4.16
+    },
+    {
+        "text": "figure out the ordering of the",
+        "start": 219.68,
+        "duration": 4.559
+    },
+    {
+        "text": "characters character by character",
+        "start": 222.08,
+        "duration": 3.84
+    },
+    {
+        "text": "and there's just one edge case we have",
+        "start": 224.239,
+        "duration": 3.201
+    },
+    {
+        "text": "to worry about so if",
+        "start": 225.92,
+        "duration": 3.679
+    },
+    {
+        "text": "we're given two words where they have",
+        "start": 227.44,
+        "duration": 3.12
+    },
+    {
+        "text": "the exact",
+        "start": 229.599,
+        "duration": 4.56
+    },
+    {
+        "text": "same prefix right where basically the",
+        "start": 230.56,
+        "duration": 4.72
+    },
+    {
+        "text": "shorter word",
+        "start": 234.159,
+        "duration": 3.841
+    },
+    {
+        "text": "is a prefix of the longer word if that's",
+        "start": 235.28,
+        "duration": 3.519
+    },
+    {
+        "text": "the case",
+        "start": 238.0,
+        "duration": 3.2
+    },
+    {
+        "text": "that means the smaller word is always",
+        "start": 238.799,
+        "duration": 3.36
+    },
+    {
+        "text": "going to become",
+        "start": 241.2,
+        "duration": 3.52
+    },
+    {
+        "text": "first in the ordering so for example if",
+        "start": 242.159,
+        "duration": 3.681
+    },
+    {
+        "text": "we had one word",
+        "start": 244.72,
+        "duration": 4.4
+    },
+    {
+        "text": "ape and another word apes no matter",
+        "start": 245.84,
+        "duration": 6.16
+    },
+    {
+        "text": "what since see since these words since",
+        "start": 249.12,
+        "duration": 4.72
+    },
+    {
+        "text": "this word is basically a prefix of the",
+        "start": 252.0,
+        "duration": 2.72
+    },
+    {
+        "text": "second word",
+        "start": 253.84,
+        "duration": 3.519
+    },
+    {
+        "text": "they match right so whatever the longer",
+        "start": 254.72,
+        "duration": 4.96
+    },
+    {
+        "text": "word is gonna be is always going to come",
+        "start": 257.359,
+        "duration": 5.361
+    },
+    {
+        "text": "after the shorter word and if that was",
+        "start": 259.68,
+        "duration": 5.28
+    },
+    {
+        "text": "not the case what if we were given a",
+        "start": 262.72,
+        "duration": 4.08
+    },
+    {
+        "text": "list of words where that was not the",
+        "start": 264.96,
+        "duration": 3.12
+    },
+    {
+        "text": "case what if we were given",
+        "start": 266.8,
+        "duration": 4.16
+    },
+    {
+        "text": "apes and then we were given ape well",
+        "start": 268.08,
+        "duration": 5.2
+    },
+    {
+        "text": "based on what they just told us that's",
+        "start": 270.96,
+        "duration": 5.12
+    },
+    {
+        "text": "invalid right they say the opposite must",
+        "start": 273.28,
+        "duration": 4.96
+    },
+    {
+        "text": "be true so what we can say is if we ever",
+        "start": 276.08,
+        "duration": 2.48
+    },
+    {
+        "text": "see",
+        "start": 278.24,
+        "duration": 2.959
+    },
+    {
+        "text": "something like this in our list of words",
+        "start": 278.56,
+        "duration": 4.56
+    },
+    {
+        "text": "then we know there's no solution and",
+        "start": 281.199,
+        "duration": 2.641
+    },
+    {
+        "text": "that's going to be",
+        "start": 283.12,
+        "duration": 3.519
+    },
+    {
+        "text": "one case where we return an empty string",
+        "start": 283.84,
+        "duration": 5.04
+    },
+    {
+        "text": "so they tell us that this input list of",
+        "start": 286.639,
+        "duration": 2.801
+    },
+    {
+        "text": "words",
+        "start": 288.88,
+        "duration": 2.96
+    },
+    {
+        "text": "is supposed to be in sorted order so",
+        "start": 289.44,
+        "duration": 4.4
+    },
+    {
+        "text": "we're going to use that to our advantage",
+        "start": 291.84,
+        "duration": 4.4
+    },
+    {
+        "text": "and so remember if these two words are",
+        "start": 293.84,
+        "duration": 4.56
+    },
+    {
+        "text": "in sorted order how was it determined",
+        "start": 296.24,
+        "duration": 4.0
+    },
+    {
+        "text": "that they're in sorted order how was it",
+        "start": 298.4,
+        "duration": 3.359
+    },
+    {
+        "text": "determined that this word",
+        "start": 300.24,
+        "duration": 4.399
+    },
+    {
+        "text": "must come after this word well it must",
+        "start": 301.759,
+        "duration": 4.16
+    },
+    {
+        "text": "be based on the first",
+        "start": 304.639,
+        "duration": 2.84
+    },
+    {
+        "text": "differing character right that's what",
+        "start": 305.919,
+        "duration": 3.201
+    },
+    {
+        "text": "lexographically ordered",
+        "start": 307.479,
+        "duration": 4.841
+    },
+    {
+        "text": "means so let's just go for every pair of",
+        "start": 309.12,
+        "duration": 3.84
+    },
+    {
+        "text": "words",
+        "start": 312.32,
+        "duration": 3.2
+    },
+    {
+        "text": "let's go character by character and find",
+        "start": 312.96,
+        "duration": 3.519
+    },
+    {
+        "text": "the first",
+        "start": 315.52,
+        "duration": 3.04
+    },
+    {
+        "text": "differing character and see what kind of",
+        "start": 316.479,
+        "duration": 3.44
+    },
+    {
+        "text": "information that gives",
+        "start": 318.56,
+        "duration": 3.52
+    },
+    {
+        "text": "us so let's look at the first characters",
+        "start": 319.919,
+        "duration": 3.601
+    },
+    {
+        "text": "well they're the exact same",
+        "start": 322.08,
+        "duration": 3.04
+    },
+    {
+        "text": "let's look at the second characters",
+        "start": 323.52,
+        "duration": 3.519
+    },
+    {
+        "text": "they're the exact same let's look at the",
+        "start": 325.12,
+        "duration": 2.88
+    },
+    {
+        "text": "third characters",
+        "start": 327.039,
+        "duration": 3.281
+    },
+    {
+        "text": "they're different we have a t that comes",
+        "start": 328.0,
+        "duration": 3.039
+    },
+    {
+        "text": "before an",
+        "start": 330.32,
+        "duration": 3.36
+    },
+    {
+        "text": "f so that must mean in the alien",
+        "start": 331.039,
+        "duration": 3.681
+    },
+    {
+        "text": "alphabet",
+        "start": 333.68,
+        "duration": 4.4
+    },
+    {
+        "text": "t comes before f so",
+        "start": 334.72,
+        "duration": 5.36
+    },
+    {
+        "text": "this is not in regular english this",
+        "start": 338.08,
+        "duration": 3.839
+    },
+    {
+        "text": "isn't true but in our alien language",
+        "start": 340.08,
+        "duration": 3.2
+    },
+    {
+        "text": "this seems to be the case",
+        "start": 341.919,
+        "duration": 3.041
+    },
+    {
+        "text": "so let's just keep track of that let's",
+        "start": 343.28,
+        "duration": 3.12
+    },
+    {
+        "text": "just remember okay",
+        "start": 344.96,
+        "duration": 4.799
+    },
+    {
+        "text": "t comes before f",
+        "start": 346.4,
+        "duration": 5.519
+    },
+    {
+        "text": "next let's look at the next two words so",
+        "start": 349.759,
+        "duration": 3.44
+    },
+    {
+        "text": "we're going to look at the first two",
+        "start": 351.919,
+        "duration": 2.961
+    },
+    {
+        "text": "characters and immediately they're",
+        "start": 353.199,
+        "duration": 3.12
+    },
+    {
+        "text": "different so we know that these two",
+        "start": 354.88,
+        "duration": 3.28
+    },
+    {
+        "text": "words were sorted based on this first",
+        "start": 356.319,
+        "duration": 2.481
+    },
+    {
+        "text": "character",
+        "start": 358.16,
+        "duration": 3.36
+    },
+    {
+        "text": "and we know that e comes after w because",
+        "start": 358.8,
+        "duration": 4.32
+    },
+    {
+        "text": "they're in that order we have a",
+        "start": 361.52,
+        "duration": 3.519
+    },
+    {
+        "text": "character w and we know for sure",
+        "start": 363.12,
+        "duration": 4.56
+    },
+    {
+        "text": "e is going to come after that w now who",
+        "start": 365.039,
+        "duration": 4.481
+    },
+    {
+        "text": "knows maybe there are some characters in",
+        "start": 367.68,
+        "duration": 3.359
+    },
+    {
+        "text": "between here right maybe",
+        "start": 369.52,
+        "duration": 4.56
+    },
+    {
+        "text": "it's actually going to be w f",
+        "start": 371.039,
+        "duration": 5.841
+    },
+    {
+        "text": "e something like that right but we don't",
+        "start": 374.08,
+        "duration": 4.0
+    },
+    {
+        "text": "really know that for sure",
+        "start": 376.88,
+        "duration": 3.36
+    },
+    {
+        "text": "all we know so far is this is true and",
+        "start": 378.08,
+        "duration": 4.0
+    },
+    {
+        "text": "this is true that's all we can assume",
+        "start": 380.24,
+        "duration": 3.92
+    },
+    {
+        "text": "from this ordering right we know that",
+        "start": 382.08,
+        "duration": 4.16
+    },
+    {
+        "text": "these first two characters",
+        "start": 384.16,
+        "duration": 4.479
+    },
+    {
+        "text": "are in that order but the remainder of",
+        "start": 386.24,
+        "duration": 4.16
+    },
+    {
+        "text": "the characters might be in any order",
+        "start": 388.639,
+        "duration": 2.4
+    },
+    {
+        "text": "right because",
+        "start": 390.4,
+        "duration": 2.239
+    },
+    {
+        "text": "when words are sorted they're only",
+        "start": 391.039,
+        "duration": 3.041
+    },
+    {
+        "text": "sorted on the most significant",
+        "start": 392.639,
+        "duration": 3.361
+    },
+    {
+        "text": "differing character so now let's look at",
+        "start": 394.08,
+        "duration": 3.119
+    },
+    {
+        "text": "the next two words",
+        "start": 396.0,
+        "duration": 3.12
+    },
+    {
+        "text": "look at comparing each first character",
+        "start": 397.199,
+        "duration": 3.361
+    },
+    {
+        "text": "they're the exact same let's go to the",
+        "start": 399.12,
+        "duration": 2.32
+    },
+    {
+        "text": "next character",
+        "start": 400.56,
+        "duration": 3.52
+    },
+    {
+        "text": "r and t now they're different so now we",
+        "start": 401.44,
+        "duration": 3.759
+    },
+    {
+        "text": "know for sure",
+        "start": 404.08,
+        "duration": 4.239
+    },
+    {
+        "text": "r comes before t so let's go ahead and",
+        "start": 405.199,
+        "duration": 3.681
+    },
+    {
+        "text": "do that",
+        "start": 408.319,
+        "duration": 3.6
+    },
+    {
+        "text": "in our drawing right r comes before t",
+        "start": 408.88,
+        "duration": 5.599
+    },
+    {
+        "text": "now we see that we already have a t in",
+        "start": 411.919,
+        "duration": 3.521
+    },
+    {
+        "text": "our graph right",
+        "start": 414.479,
+        "duration": 2.481
+    },
+    {
+        "text": "and actually i haven't actually",
+        "start": 415.44,
+        "duration": 3.28
+    },
+    {
+        "text": "mentioned that this is a graph but it's",
+        "start": 416.96,
+        "duration": 3.519
+    },
+    {
+        "text": "starting to get intuitive why we would",
+        "start": 418.72,
+        "duration": 3.84
+    },
+    {
+        "text": "want to represent these relationships as",
+        "start": 420.479,
+        "duration": 3.12
+    },
+    {
+        "text": "a graph now right",
+        "start": 422.56,
+        "duration": 4.079
+    },
+    {
+        "text": "we could separately say r t but why not",
+        "start": 423.599,
+        "duration": 4.641
+    },
+    {
+        "text": "include this node that we already have",
+        "start": 426.639,
+        "duration": 2.321
+    },
+    {
+        "text": "so we know",
+        "start": 428.24,
+        "duration": 4.399
+    },
+    {
+        "text": "r comes before t we know this for sure",
+        "start": 428.96,
+        "duration": 5.84
+    },
+    {
+        "text": "now time to finally look at the last two",
+        "start": 432.639,
+        "duration": 3.84
+    },
+    {
+        "text": "pair of words",
+        "start": 434.8,
+        "duration": 4.16
+    },
+    {
+        "text": "look at the first two characters e and r",
+        "start": 436.479,
+        "duration": 4.241
+    },
+    {
+        "text": "so that's the first differing",
+        "start": 438.96,
+        "duration": 5.679
+    },
+    {
+        "text": "pair so we know that e comes before",
+        "start": 440.72,
+        "duration": 6.479
+    },
+    {
+        "text": "r and we know that r is actually already",
+        "start": 444.639,
+        "duration": 4.96
+    },
+    {
+        "text": "in our graph so then we can say okay",
+        "start": 447.199,
+        "duration": 2.961
+    },
+    {
+        "text": "let's",
+        "start": 449.599,
+        "duration": 2.641
+    },
+    {
+        "text": "take this edge and then hook it up over",
+        "start": 450.16,
+        "duration": 4.4
+    },
+    {
+        "text": "here so once you recognize that you can",
+        "start": 452.24,
+        "duration": 4.72
+    },
+    {
+        "text": "use those relationships of characters",
+        "start": 454.56,
+        "duration": 3.919
+    },
+    {
+        "text": "and the relative order of those",
+        "start": 456.96,
+        "duration": 3.679
+    },
+    {
+        "text": "characters to build a graph this problem",
+        "start": 458.479,
+        "duration": 2.801
+    },
+    {
+        "text": "becomes",
+        "start": 460.639,
+        "duration": 2.96
+    },
+    {
+        "text": "doable right then all we need to do is",
+        "start": 461.28,
+        "duration": 3.84
+    },
+    {
+        "text": "now traverse this graph now",
+        "start": 463.599,
+        "duration": 2.801
+    },
+    {
+        "text": "in this example it's pretty",
+        "start": 465.12,
+        "duration": 3.44
+    },
+    {
+        "text": "straightforward right clearly we see",
+        "start": 466.4,
+        "duration": 4.4
+    },
+    {
+        "text": "that the order is non-ambiguous right",
+        "start": 468.56,
+        "duration": 3.759
+    },
+    {
+        "text": "we're going to start with a w",
+        "start": 470.8,
+        "duration": 5.2
+    },
+    {
+        "text": "then e then r then t then f",
+        "start": 472.319,
+        "duration": 5.121
+    },
+    {
+        "text": "and that's you know going to be the",
+        "start": 476.0,
+        "duration": 3.84
+    },
+    {
+        "text": "entire order and you can see",
+        "start": 477.44,
+        "duration": 4.879
+    },
+    {
+        "text": "that this order is also in the output",
+        "start": 479.84,
+        "duration": 3.6
+    },
+    {
+        "text": "that they gave us",
+        "start": 482.319,
+        "duration": 3.44
+    },
+    {
+        "text": "in this example so this matches up",
+        "start": 483.44,
+        "duration": 3.84
+    },
+    {
+        "text": "pretty easily so you'd think okay at",
+        "start": 485.759,
+        "duration": 2.961
+    },
+    {
+        "text": "this point the problem is easy but",
+        "start": 487.28,
+        "duration": 3.44
+    },
+    {
+        "text": "actually there's a lot of different ways",
+        "start": 488.72,
+        "duration": 3.759
+    },
+    {
+        "text": "this graph can be represented",
+        "start": 490.72,
+        "duration": 4.4
+    },
+    {
+        "text": "and traversing the graph itself is not",
+        "start": 492.479,
+        "duration": 4.16
+    },
+    {
+        "text": "super intuitive",
+        "start": 495.12,
+        "duration": 3.6
+    },
+    {
+        "text": "and there are multiple ways to do it you",
+        "start": 496.639,
+        "duration": 4.481
+    },
+    {
+        "text": "can do a bfs solution a breadth first",
+        "start": 498.72,
+        "duration": 3.68
+    },
+    {
+        "text": "search solution",
+        "start": 501.12,
+        "duration": 3.199
+    },
+    {
+        "text": "or you can do a depth first search",
+        "start": 502.4,
+        "duration": 3.12
+    },
+    {
+        "text": "solution and i",
+        "start": 504.319,
+        "duration": 3.521
+    },
+    {
+        "text": "much prefer the dfs solution there's so",
+        "start": 505.52,
+        "duration": 4.239
+    },
+    {
+        "text": "many more like bookkeeping things you",
+        "start": 507.84,
+        "duration": 4.24
+    },
+    {
+        "text": "need to do with the bfs solution",
+        "start": 509.759,
+        "duration": 4.16
+    },
+    {
+        "text": "that i don't really think it's worth",
+        "start": 512.08,
+        "duration": 3.68
+    },
+    {
+        "text": "doing i think the dfs solution even",
+        "start": 513.919,
+        "duration": 3.521
+    },
+    {
+        "text": "though it's recursive is just so much",
+        "start": 515.76,
+        "duration": 2.8
+    },
+    {
+        "text": "better so that's what i'm going to be",
+        "start": 517.44,
+        "duration": 2.24
+    },
+    {
+        "text": "focusing on",
+        "start": 518.56,
+        "duration": 3.2
+    },
+    {
+        "text": "so let's change this problem slightly",
+        "start": 519.68,
+        "duration": 3.2
+    },
+    {
+        "text": "let's say that this",
+        "start": 521.76,
+        "duration": 4.32
+    },
+    {
+        "text": "f actually pointed at the w",
+        "start": 522.88,
+        "duration": 6.24
+    },
+    {
+        "text": "so now if we were traversing this graph",
+        "start": 526.08,
+        "duration": 5.04
+    },
+    {
+        "text": "what the heck would the relative order",
+        "start": 529.12,
+        "duration": 4.48
+    },
+    {
+        "text": "be we could start at any node we could",
+        "start": 531.12,
+        "duration": 3.04
+    },
+    {
+        "text": "start at",
+        "start": 533.6,
+        "duration": 3.76
+    },
+    {
+        "text": "r and then say okay t f w e and then we",
+        "start": 534.16,
+        "duration": 5.119
+    },
+    {
+        "text": "say okay we got back to r so we already",
+        "start": 537.36,
+        "duration": 4.24
+    },
+    {
+        "text": "visited that but is that a valid order",
+        "start": 539.279,
+        "duration": 3.12
+    },
+    {
+        "text": "like this is",
+        "start": 541.6,
+        "duration": 3.44
+    },
+    {
+        "text": "very ambiguous it's not that this has",
+        "start": 542.399,
+        "duration": 4.88
+    },
+    {
+        "text": "multiple solutions it's that this is",
+        "start": 545.04,
+        "duration": 4.88
+    },
+    {
+        "text": "invalid there's a contradiction right",
+        "start": 547.279,
+        "duration": 4.481
+    },
+    {
+        "text": "what if we had a shorter cycle what if",
+        "start": 549.92,
+        "duration": 3.28
+    },
+    {
+        "text": "we had okay w",
+        "start": 551.76,
+        "duration": 4.0
+    },
+    {
+        "text": "and then e comes after w and then w",
+        "start": 553.2,
+        "duration": 4.56
+    },
+    {
+        "text": "comes after e do you see how that's a",
+        "start": 555.76,
+        "duration": 3.12
+    },
+    {
+        "text": "contradiction",
+        "start": 557.76,
+        "duration": 4.16
+    },
+    {
+        "text": "we can't have opposite rules right it's",
+        "start": 558.88,
+        "duration": 4.959
+    },
+    {
+        "text": "basically like if we had an input list",
+        "start": 561.92,
+        "duration": 2.64
+    },
+    {
+        "text": "of words",
+        "start": 563.839,
+        "duration": 3.761
+    },
+    {
+        "text": "that was something like this we had w e",
+        "start": 564.56,
+        "duration": 5.36
+    },
+    {
+        "text": "and then e e so clearly we have a",
+        "start": 567.6,
+        "duration": 4.0
+    },
+    {
+        "text": "different character here meaning e",
+        "start": 569.92,
+        "duration": 4.4
+    },
+    {
+        "text": "comes after w like this but then maybe",
+        "start": 571.6,
+        "duration": 4.88
+    },
+    {
+        "text": "we got that same word w-e",
+        "start": 574.32,
+        "duration": 4.0
+    },
+    {
+        "text": "so how can we say that this list of",
+        "start": 576.48,
+        "duration": 3.2
+    },
+    {
+        "text": "words is sorted",
+        "start": 578.32,
+        "duration": 3.68
+    },
+    {
+        "text": "when you know the same word is in both",
+        "start": 579.68,
+        "duration": 4.0
+    },
+    {
+        "text": "positions and then there's another word",
+        "start": 582.0,
+        "duration": 2.72
+    },
+    {
+        "text": "in between that",
+        "start": 583.68,
+        "duration": 3.279
+    },
+    {
+        "text": "that doesn't make sense basically that's",
+        "start": 584.72,
+        "duration": 3.36
+    },
+    {
+        "text": "how you know that there's a",
+        "start": 586.959,
+        "duration": 3.041
+    },
+    {
+        "text": "contradiction in that case we return the",
+        "start": 588.08,
+        "duration": 4.16
+    },
+    {
+        "text": "empty string there's no real solution",
+        "start": 590.0,
+        "duration": 4.64
+    },
+    {
+        "text": "and we know that because there exists a",
+        "start": 592.24,
+        "duration": 5.84
+    },
+    {
+        "text": "cycle in our graph now what if this last",
+        "start": 594.64,
+        "duration": 5.92
+    },
+    {
+        "text": "word in our input actually didn't exist",
+        "start": 598.08,
+        "duration": 3.68
+    },
+    {
+        "text": "what if we cross it out",
+        "start": 600.56,
+        "duration": 3.04
+    },
+    {
+        "text": "in that case we would never get this",
+        "start": 601.76,
+        "duration": 3.12
+    },
+    {
+        "text": "connection where e",
+        "start": 603.6,
+        "duration": 4.4
+    },
+    {
+        "text": "hooks up to r we have two separate",
+        "start": 604.88,
+        "duration": 4.399
+    },
+    {
+        "text": "graphs right but there's no",
+        "start": 608.0,
+        "duration": 3.519
+    },
+    {
+        "text": "contradiction here it's just that now we",
+        "start": 609.279,
+        "duration": 4.481
+    },
+    {
+        "text": "have multiple solutions so we could say",
+        "start": 611.519,
+        "duration": 3.681
+    },
+    {
+        "text": "okay the relative order",
+        "start": 613.76,
+        "duration": 5.04
+    },
+    {
+        "text": "is either we are tf right basically",
+        "start": 615.2,
+        "duration": 4.4
+    },
+    {
+        "text": "going through this",
+        "start": 618.8,
+        "duration": 2.88
+    },
+    {
+        "text": "and then doing this one right or we",
+        "start": 619.6,
+        "duration": 4.359
+    },
+    {
+        "text": "could even do it in the opposite order",
+        "start": 621.68,
+        "duration": 5.279
+    },
+    {
+        "text": "rtf we right",
+        "start": 623.959,
+        "duration": 4.44
+    },
+    {
+        "text": "that's one way or we could even do a",
+        "start": 626.959,
+        "duration": 3.041
+    },
+    {
+        "text": "breath first search approach right put",
+        "start": 628.399,
+        "duration": 4.88
+    },
+    {
+        "text": "these two first wr then put these two",
+        "start": 630.0,
+        "duration": 6.079
+    },
+    {
+        "text": "e t and then put f right all that really",
+        "start": 633.279,
+        "duration": 4.0
+    },
+    {
+        "text": "matters is that",
+        "start": 636.079,
+        "duration": 3.521
+    },
+    {
+        "text": "this like if there's a connection if",
+        "start": 637.279,
+        "duration": 4.321
+    },
+    {
+        "text": "there's a directed edge from this node",
+        "start": 639.6,
+        "duration": 3.84
+    },
+    {
+        "text": "to this node all that matters is when we",
+        "start": 641.6,
+        "duration": 3.52
+    },
+    {
+        "text": "return the output string",
+        "start": 643.44,
+        "duration": 5.12
+    },
+    {
+        "text": "this character shows up before this one",
+        "start": 645.12,
+        "duration": 5.52
+    },
+    {
+        "text": "and similarly this character shows up",
+        "start": 648.56,
+        "duration": 3.12
+    },
+    {
+        "text": "before this one",
+        "start": 650.64,
+        "duration": 2.72
+    },
+    {
+        "text": "and this character shows up before this",
+        "start": 651.68,
+        "duration": 3.599
+    },
+    {
+        "text": "one etc etc",
+        "start": 653.36,
+        "duration": 3.68
+    },
+    {
+        "text": "we really need to guarantee that that's",
+        "start": 655.279,
+        "duration": 3.68
+    },
+    {
+        "text": "the case so at this point you might",
+        "start": 657.04,
+        "duration": 2.96
+    },
+    {
+        "text": "think okay let's just start",
+        "start": 658.959,
+        "duration": 2.481
+    },
+    {
+        "text": "at the beginning of each of these",
+        "start": 660.0,
+        "duration": 3.12
+    },
+    {
+        "text": "components and then just go through it",
+        "start": 661.44,
+        "duration": 2.959
+    },
+    {
+        "text": "right like say okay w",
+        "start": 663.12,
+        "duration": 4.64
+    },
+    {
+        "text": "e r t f and then just build the output",
+        "start": 664.399,
+        "duration": 4.481
+    },
+    {
+        "text": "string like that",
+        "start": 667.76,
+        "duration": 3.199
+    },
+    {
+        "text": "and i'll show you one reason why that's",
+        "start": 668.88,
+        "duration": 4.079
+    },
+    {
+        "text": "actually not gonna work",
+        "start": 670.959,
+        "duration": 4.56
+    },
+    {
+        "text": "if we were given an input list of words",
+        "start": 672.959,
+        "duration": 3.201
+    },
+    {
+        "text": "like this",
+        "start": 675.519,
+        "duration": 2.401
+    },
+    {
+        "text": "what we would we would end up getting is",
+        "start": 676.16,
+        "duration": 3.76
+    },
+    {
+        "text": "basically a graph that looks like this",
+        "start": 677.92,
+        "duration": 3.84
+    },
+    {
+        "text": "and this is a perfectly valid graph",
+        "start": 679.92,
+        "duration": 2.24
+    },
+    {
+        "text": "right",
+        "start": 681.76,
+        "duration": 2.48
+    },
+    {
+        "text": "what's one valid ordering of this well",
+        "start": 682.16,
+        "duration": 3.04
+    },
+    {
+        "text": "basically",
+        "start": 684.24,
+        "duration": 3.599
+    },
+    {
+        "text": "abc right that's one valid ordering but",
+        "start": 685.2,
+        "duration": 4.079
+    },
+    {
+        "text": "let's say we did a dfs",
+        "start": 687.839,
+        "duration": 3.68
+    },
+    {
+        "text": "search on this let's say we started our",
+        "start": 689.279,
+        "duration": 3.281
+    },
+    {
+        "text": "dfs here",
+        "start": 691.519,
+        "duration": 3.201
+    },
+    {
+        "text": "so we got an a in our output then let's",
+        "start": 692.56,
+        "duration": 4.16
+    },
+    {
+        "text": "say we went to this node first",
+        "start": 694.72,
+        "duration": 5.04
+    },
+    {
+        "text": "then we got a c in our output then",
+        "start": 696.72,
+        "duration": 5.28
+    },
+    {
+        "text": "fro from our dfs then from a you know we",
+        "start": 699.76,
+        "duration": 4.079
+    },
+    {
+        "text": "see this is the base case from then we",
+        "start": 702.0,
+        "duration": 3.839
+    },
+    {
+        "text": "go back up to a we say okay now let's go",
+        "start": 703.839,
+        "duration": 2.881
+    },
+    {
+        "text": "to b",
+        "start": 705.839,
+        "duration": 4.0
+    },
+    {
+        "text": "in our dfs so then we got a solution a c",
+        "start": 706.72,
+        "duration": 5.44
+    },
+    {
+        "text": "b now from our b what we're going to end",
+        "start": 709.839,
+        "duration": 3.921
+    },
+    {
+        "text": "up doing is going to c",
+        "start": 712.16,
+        "duration": 4.799
+    },
+    {
+        "text": "so in reality c should come after b",
+        "start": 713.76,
+        "duration": 6.24
+    },
+    {
+        "text": "but we see in our input it came before b",
+        "start": 716.959,
+        "duration": 5.601
+    },
+    {
+        "text": "so basically from our dfs we got an",
+        "start": 720.0,
+        "duration": 3.92
+    },
+    {
+        "text": "invalid ordering",
+        "start": 722.56,
+        "duration": 3.279
+    },
+    {
+        "text": "of this graph so you know if we're doing",
+        "start": 723.92,
+        "duration": 3.44
+    },
+    {
+        "text": "a dfs from the beginning",
+        "start": 725.839,
+        "duration": 3.361
+    },
+    {
+        "text": "how do we know that we should be going",
+        "start": 727.36,
+        "duration": 3.12
+    },
+    {
+        "text": "down this path",
+        "start": 729.2,
+        "duration": 4.079
+    },
+    {
+        "text": "down to the b before we go down the c",
+        "start": 730.48,
+        "duration": 3.599
+    },
+    {
+        "text": "path",
+        "start": 733.279,
+        "duration": 2.641
+    },
+    {
+        "text": "well the answer is we don't really have",
+        "start": 734.079,
+        "duration": 3.281
+    },
+    {
+        "text": "a good way of knowing if we're doing",
+        "start": 735.92,
+        "duration": 3.039
+    },
+    {
+        "text": "this with dfs",
+        "start": 737.36,
+        "duration": 4.159
+    },
+    {
+        "text": "but there is a workaround solution to",
+        "start": 738.959,
+        "duration": 3.281
+    },
+    {
+        "text": "that",
+        "start": 741.519,
+        "duration": 2.801
+    },
+    {
+        "text": "and the solution to that is going to be",
+        "start": 742.24,
+        "duration": 3.44
+    },
+    {
+        "text": "doing a post",
+        "start": 744.32,
+        "duration": 4.639
+    },
+    {
+        "text": "order dfs so in reality",
+        "start": 745.68,
+        "duration": 5.279
+    },
+    {
+        "text": "yes we're going to be starting at this",
+        "start": 748.959,
+        "duration": 3.44
+    },
+    {
+        "text": "node but we're not going to be",
+        "start": 750.959,
+        "duration": 3.601
+    },
+    {
+        "text": "adding it to our output yet we're going",
+        "start": 752.399,
+        "duration": 4.161
+    },
+    {
+        "text": "to be adding this to our output",
+        "start": 754.56,
+        "duration": 5.12
+    },
+    {
+        "text": "last so okay we're here so now we're",
+        "start": 756.56,
+        "duration": 4.56
+    },
+    {
+        "text": "gonna get to c",
+        "start": 759.68,
+        "duration": 3.44
+    },
+    {
+        "text": "right now we're at c now we're gonna go",
+        "start": 761.12,
+        "duration": 3.92
+    },
+    {
+        "text": "farther down see we see c does not have",
+        "start": 763.12,
+        "duration": 3.12
+    },
+    {
+        "text": "any children right",
+        "start": 765.04,
+        "duration": 3.52
+    },
+    {
+        "text": "so that's our base case so now since",
+        "start": 766.24,
+        "duration": 3.839
+    },
+    {
+        "text": "this is post order",
+        "start": 768.56,
+        "duration": 3.44
+    },
+    {
+        "text": "now we're gonna actually add c to the",
+        "start": 770.079,
+        "duration": 3.521
+    },
+    {
+        "text": "output so now we're going to end up",
+        "start": 772.0,
+        "duration": 3.2
+    },
+    {
+        "text": "popping back to a",
+        "start": 773.6,
+        "duration": 3.44
+    },
+    {
+        "text": "right so we're now back at a so we're",
+        "start": 775.2,
+        "duration": 3.759
+    },
+    {
+        "text": "going to continue the dfs this is post",
+        "start": 777.04,
+        "duration": 4.0
+    },
+    {
+        "text": "order let's do all of our descendants",
+        "start": 778.959,
+        "duration": 5.041
+    },
+    {
+        "text": "before we process a so let's go to b",
+        "start": 781.04,
+        "duration": 3.84
+    },
+    {
+        "text": "okay b",
+        "start": 784.0,
+        "duration": 3.2
+    },
+    {
+        "text": "that's and b has some neighbors down to",
+        "start": 784.88,
+        "duration": 3.36
+    },
+    {
+        "text": "c okay we see c",
+        "start": 787.2,
+        "duration": 2.96
+    },
+    {
+        "text": "has already been processed no need to do",
+        "start": 788.24,
+        "duration": 3.12
+    },
+    {
+        "text": "that again so b",
+        "start": 790.16,
+        "duration": 3.119
+    },
+    {
+        "text": "does not have any more descendants so",
+        "start": 791.36,
+        "duration": 3.12
+    },
+    {
+        "text": "now we can process",
+        "start": 793.279,
+        "duration": 3.68
+    },
+    {
+        "text": "b let's add b to the output and now",
+        "start": 794.48,
+        "duration": 4.0
+    },
+    {
+        "text": "finally we can process",
+        "start": 796.959,
+        "duration": 4.961
+    },
+    {
+        "text": "a right so what you see is that the way",
+        "start": 798.48,
+        "duration": 4.56
+    },
+    {
+        "text": "we did it now",
+        "start": 801.92,
+        "duration": 3.68
+    },
+    {
+        "text": "was not ambiguous right we didn't end up",
+        "start": 803.04,
+        "duration": 4.239
+    },
+    {
+        "text": "we made sure we ended up doing",
+        "start": 805.6,
+        "duration": 4.0
+    },
+    {
+        "text": "all the leaf nodes right the last nodes",
+        "start": 807.279,
+        "duration": 4.481
+    },
+    {
+        "text": "of first and then these nodes",
+        "start": 809.6,
+        "duration": 5.2
+    },
+    {
+        "text": "and then we finally did a last so what",
+        "start": 811.76,
+        "duration": 3.759
+    },
+    {
+        "text": "you can see",
+        "start": 814.8,
+        "duration": 3.2
+    },
+    {
+        "text": "is that we actually built our result in",
+        "start": 815.519,
+        "duration": 3.201
+    },
+    {
+        "text": "reverse",
+        "start": 818.0,
+        "duration": 3.36
+    },
+    {
+        "text": "order which isn't bad because easily we",
+        "start": 818.72,
+        "duration": 4.559
+    },
+    {
+        "text": "can take this and reverse it right so we",
+        "start": 821.36,
+        "duration": 2.719
+    },
+    {
+        "text": "can",
+        "start": 823.279,
+        "duration": 2.321
+    },
+    {
+        "text": "when we get the output of this we're",
+        "start": 824.079,
+        "duration": 3.361
+    },
+    {
+        "text": "going to make sure to reverse it before",
+        "start": 825.6,
+        "duration": 2.479
+    },
+    {
+        "text": "we return",
+        "start": 827.44,
+        "duration": 2.959
+    },
+    {
+        "text": "it so we're going to return abc so",
+        "start": 828.079,
+        "duration": 4.081
+    },
+    {
+        "text": "that's the main idea of what i'm going",
+        "start": 830.399,
+        "duration": 3.12
+    },
+    {
+        "text": "to be doing when we're actually writing",
+        "start": 832.16,
+        "duration": 3.2
+    },
+    {
+        "text": "the code that's kind of how topological",
+        "start": 833.519,
+        "duration": 2.481
+    },
+    {
+        "text": "sort is",
+        "start": 835.36,
+        "duration": 2.719
+    },
+    {
+        "text": "done that's how i was taught to do it in",
+        "start": 836.0,
+        "duration": 4.24
+    },
+    {
+        "text": "school so it's just a dfs",
+        "start": 838.079,
+        "duration": 3.921
+    },
+    {
+        "text": "except we're building the result in",
+        "start": 840.24,
+        "duration": 3.2
+    },
+    {
+        "text": "reverse order",
+        "start": 842.0,
+        "duration": 2.88
+    },
+    {
+        "text": "and there's one last thing we're going",
+        "start": 843.44,
+        "duration": 2.8
+    },
+    {
+        "text": "to have to keep track of what we're",
+        "start": 844.88,
+        "duration": 2.319
+    },
+    {
+        "text": "going to be doing for",
+        "start": 846.24,
+        "duration": 2.719
+    },
+    {
+        "text": "loop detection and really what we're",
+        "start": 847.199,
+        "duration": 3.121
+    },
+    {
+        "text": "going to be keeping track of is two",
+        "start": 848.959,
+        "duration": 1.761
+    },
+    {
+        "text": "things",
+        "start": 850.32,
+        "duration": 1.92
+    },
+    {
+        "text": "similar to how i did it in the picture",
+        "start": 850.72,
+        "duration": 3.6
+    },
+    {
+        "text": "we're going to be marking if a node has",
+        "start": 852.24,
+        "duration": 3.52
+    },
+    {
+        "text": "already been visited meaning it's",
+        "start": 854.32,
+        "duration": 2.56
+    },
+    {
+        "text": "already been let's say",
+        "start": 855.76,
+        "duration": 3.04
+    },
+    {
+        "text": "processed or whatever and in this case",
+        "start": 856.88,
+        "duration": 3.44
+    },
+    {
+        "text": "we know that there weren't any loops",
+        "start": 858.8,
+        "duration": 3.2
+    },
+    {
+        "text": "well actually one thing i want to say is",
+        "start": 860.32,
+        "duration": 3.6
+    },
+    {
+        "text": "first we saw that c was processed right",
+        "start": 862.0,
+        "duration": 3.6
+    },
+    {
+        "text": "then we went back to a and then we went",
+        "start": 863.92,
+        "duration": 2.08
+    },
+    {
+        "text": "to b",
+        "start": 865.6,
+        "duration": 3.28
+    },
+    {
+        "text": "right when we went from b to c we saw",
+        "start": 866.0,
+        "duration": 3.36
+    },
+    {
+        "text": "that c",
+        "start": 868.88,
+        "duration": 2.079
+    },
+    {
+        "text": "was already processed but that doesn't",
+        "start": 869.36,
+        "duration": 4.32
+    },
+    {
+        "text": "necessarily mean that we have a cycle",
+        "start": 870.959,
+        "duration": 5.521
+    },
+    {
+        "text": "in our graph because yes this was",
+        "start": 873.68,
+        "duration": 4.24
+    },
+    {
+        "text": "processed but it wasn't",
+        "start": 876.48,
+        "duration": 4.24
+    },
+    {
+        "text": "currently being visited if we went to c",
+        "start": 877.92,
+        "duration": 3.44
+    },
+    {
+        "text": "and then",
+        "start": 880.72,
+        "duration": 3.119
+    },
+    {
+        "text": "c went back to b right and then we got",
+        "start": 881.36,
+        "duration": 3.68
+    },
+    {
+        "text": "to b and then we tried to go",
+        "start": 883.839,
+        "duration": 3.521
+    },
+    {
+        "text": "to c again that would indicate a cycle",
+        "start": 885.04,
+        "duration": 3.44
+    },
+    {
+        "text": "basically if this was",
+        "start": 887.36,
+        "duration": 3.839
+    },
+    {
+        "text": "currently being visited but once we once",
+        "start": 888.48,
+        "duration": 3.919
+    },
+    {
+        "text": "we go from here",
+        "start": 891.199,
+        "duration": 3.521
+    },
+    {
+        "text": "see it's a base case and then pop back",
+        "start": 892.399,
+        "duration": 3.041
+    },
+    {
+        "text": "to a",
+        "start": 894.72,
+        "duration": 2.64
+    },
+    {
+        "text": "then we're saying this is no longer",
+        "start": 895.44,
+        "duration": 3.68
+    },
+    {
+        "text": "being visited so what we're going to be",
+        "start": 897.36,
+        "duration": 3.839
+    },
+    {
+        "text": "keeping track of is two things",
+        "start": 899.12,
+        "duration": 4.56
+    },
+    {
+        "text": "we want to know if a node has already",
+        "start": 901.199,
+        "duration": 3.76
+    },
+    {
+        "text": "been visited meaning it's you know",
+        "start": 903.68,
+        "duration": 2.88
+    },
+    {
+        "text": "already been processed pretty much",
+        "start": 904.959,
+        "duration": 4.161
+    },
+    {
+        "text": "and we also want to know if a node is in",
+        "start": 906.56,
+        "duration": 3.6
+    },
+    {
+        "text": "our current",
+        "start": 909.12,
+        "duration": 3.04
+    },
+    {
+        "text": "path so we're gonna be doing that with a",
+        "start": 910.16,
+        "duration": 3.359
+    },
+    {
+        "text": "dictionary and",
+        "start": 912.16,
+        "duration": 4.4
+    },
+    {
+        "text": "if uh so every time we visit a node",
+        "start": 913.519,
+        "duration": 5.12
+    },
+    {
+        "text": "we're gonna say it's added to the",
+        "start": 916.56,
+        "duration": 3.44
+    },
+    {
+        "text": "dictionary but we're gonna give it a",
+        "start": 918.639,
+        "duration": 3.921
+    },
+    {
+        "text": "false value in the dictionary and once",
+        "start": 920.0,
+        "duration": 5.199
+    },
+    {
+        "text": "it's it's actually in the current path",
+        "start": 922.56,
+        "duration": 3.44
+    },
+    {
+        "text": "that we're traversing",
+        "start": 925.199,
+        "duration": 2.32
+    },
+    {
+        "text": "then we're going to give it a value of",
+        "start": 926.0,
+        "duration": 3.04
+    },
+    {
+        "text": "true in the dictionary",
+        "start": 927.519,
+        "duration": 3.041
+    },
+    {
+        "text": "with that being said we can now jump",
+        "start": 929.04,
+        "duration": 2.719
+    },
+    {
+        "text": "into the code the overall time",
+        "start": 930.56,
+        "duration": 2.32
+    },
+    {
+        "text": "complexity is just going to be the",
+        "start": 931.759,
+        "duration": 2.801
+    },
+    {
+        "text": "number of characters that were given",
+        "start": 932.88,
+        "duration": 3.28
+    },
+    {
+        "text": "in the input because that's basically",
+        "start": 934.56,
+        "duration": 3.68
+    },
+    {
+        "text": "going to determine how big our graph can",
+        "start": 936.16,
+        "duration": 3.2
+    },
+    {
+        "text": "be and of course we're going to have to",
+        "start": 938.24,
+        "duration": 2.8
+    },
+    {
+        "text": "traverse the entire graph",
+        "start": 939.36,
+        "duration": 4.24
+    },
+    {
+        "text": "so it's the the time complexity is just",
+        "start": 941.04,
+        "duration": 3.76
+    },
+    {
+        "text": "going to depend on the number of",
+        "start": 943.6,
+        "duration": 1.919
+    },
+    {
+        "text": "characters",
+        "start": 944.8,
+        "duration": 2.56
+    },
+    {
+        "text": "so this is going to be a long one about",
+        "start": 945.519,
+        "duration": 3.44
+    },
+    {
+        "text": "30 lines of code so the first thing",
+        "start": 947.36,
+        "duration": 2.64
+    },
+    {
+        "text": "we're going to want to do",
+        "start": 948.959,
+        "duration": 3.361
+    },
+    {
+        "text": "is going to create that adjacency list",
+        "start": 950.0,
+        "duration": 4.16
+    },
+    {
+        "text": "right basically based on the ordering of",
+        "start": 952.32,
+        "duration": 2.879
+    },
+    {
+        "text": "the characters",
+        "start": 954.16,
+        "duration": 2.72
+    },
+    {
+        "text": "so for every single character in our",
+        "start": 955.199,
+        "duration": 3.76
+    },
+    {
+        "text": "entire list of words what we want to do",
+        "start": 956.88,
+        "duration": 3.199
+    },
+    {
+        "text": "is map it to",
+        "start": 958.959,
+        "duration": 3.841
+    },
+    {
+        "text": "let's say a set we could do a list but a",
+        "start": 960.079,
+        "duration": 3.281
+    },
+    {
+        "text": "set",
+        "start": 962.8,
+        "duration": 2.0
+    },
+    {
+        "text": "is gonna make sure that we don't have",
+        "start": 963.36,
+        "duration": 3.12
+    },
+    {
+        "text": "duplicates so we're gonna go through",
+        "start": 964.8,
+        "duration": 2.24
+    },
+    {
+        "text": "four",
+        "start": 966.48,
+        "duration": 3.2
+    },
+    {
+        "text": "every word in our list of words and then",
+        "start": 967.04,
+        "duration": 4.08
+    },
+    {
+        "text": "for every character",
+        "start": 969.68,
+        "duration": 4.32
+    },
+    {
+        "text": "in each word we want every character to",
+        "start": 971.12,
+        "duration": 3.519
+    },
+    {
+        "text": "be mapped",
+        "start": 974.0,
+        "duration": 3.12
+    },
+    {
+        "text": "to a set and then we want to go through",
+        "start": 974.639,
+        "duration": 4.32
+    },
+    {
+        "text": "every pair of words so for i",
+        "start": 977.12,
+        "duration": 4.079
+    },
+    {
+        "text": "in range the number of words that were",
+        "start": 978.959,
+        "duration": 3.601
+    },
+    {
+        "text": "given minus",
+        "start": 981.199,
+        "duration": 2.721
+    },
+    {
+        "text": "one so that we would go through every",
+        "start": 982.56,
+        "duration": 3.36
+    },
+    {
+        "text": "single pair let's get",
+        "start": 983.92,
+        "duration": 5.12
+    },
+    {
+        "text": "each pair so word one and word two",
+        "start": 985.92,
+        "duration": 6.719
+    },
+    {
+        "text": "word one is going to be the word index i",
+        "start": 989.04,
+        "duration": 7.28
+    },
+    {
+        "text": "word two is gonna be the word at index",
+        "start": 992.639,
+        "duration": 6.801
+    },
+    {
+        "text": "i plus one so let's get the minimum",
+        "start": 996.32,
+        "duration": 6.24
+    },
+    {
+        "text": "length of both of these two words so",
+        "start": 999.44,
+        "duration": 4.8
+    },
+    {
+        "text": "let's get the minimum of the length of",
+        "start": 1002.56,
+        "duration": 2.48
+    },
+    {
+        "text": "each of them",
+        "start": 1004.24,
+        "duration": 2.159
+    },
+    {
+        "text": "and the first thing i'm going to check",
+        "start": 1005.04,
+        "duration": 3.359
+    },
+    {
+        "text": "is basically that base case that edge",
+        "start": 1006.399,
+        "duration": 4.0
+    },
+    {
+        "text": "case that we first mentioned so",
+        "start": 1008.399,
+        "duration": 4.481
+    },
+    {
+        "text": "mainly if the minimum length of each",
+        "start": 1010.399,
+        "duration": 3.201
+    },
+    {
+        "text": "word",
+        "start": 1012.88,
+        "duration": 2.959
+    },
+    {
+        "text": "is the exact same right meaning the",
+        "start": 1013.6,
+        "duration": 4.64
+    },
+    {
+        "text": "prefix of the words is the exact same",
+        "start": 1015.839,
+        "duration": 5.201
+    },
+    {
+        "text": "but the first word is longer than the",
+        "start": 1018.24,
+        "duration": 4.48
+    },
+    {
+        "text": "second word in which case we know that",
+        "start": 1021.04,
+        "duration": 2.239
+    },
+    {
+        "text": "we have an",
+        "start": 1022.72,
+        "duration": 2.4
+    },
+    {
+        "text": "invalid ordering right that's kind of",
+        "start": 1023.279,
+        "duration": 3.28
+    },
+    {
+        "text": "the edge case that they sp",
+        "start": 1025.12,
+        "duration": 3.52
+    },
+    {
+        "text": "explicitly mentioned so the length of",
+        "start": 1026.559,
+        "duration": 3.12
+    },
+    {
+        "text": "word one",
+        "start": 1028.64,
+        "duration": 3.84
+    },
+    {
+        "text": "is greater than the length of word two",
+        "start": 1029.679,
+        "duration": 4.88
+    },
+    {
+        "text": "they have the exact same prefix meaning",
+        "start": 1032.48,
+        "duration": 4.16
+    },
+    {
+        "text": "that it's an invalid ordering basically",
+        "start": 1034.559,
+        "duration": 3.441
+    },
+    {
+        "text": "so in that case we would have to just",
+        "start": 1036.64,
+        "duration": 2.96
+    },
+    {
+        "text": "return an empty string",
+        "start": 1038.0,
+        "duration": 3.12
+    },
+    {
+        "text": "if that's not the case we want to go",
+        "start": 1039.6,
+        "duration": 3.359
+    },
+    {
+        "text": "through every single character",
+        "start": 1041.12,
+        "duration": 4.48
+    },
+    {
+        "text": "uh between these words so basically in",
+        "start": 1042.959,
+        "duration": 3.281
+    },
+    {
+        "text": "range",
+        "start": 1045.6,
+        "duration": 3.439
+    },
+    {
+        "text": "min length and our goal is to find the",
+        "start": 1046.24,
+        "duration": 3.6
+    },
+    {
+        "text": "first",
+        "start": 1049.039,
+        "duration": 2.801
+    },
+    {
+        "text": "uh differing character right so if the",
+        "start": 1049.84,
+        "duration": 3.36
+    },
+    {
+        "text": "characters are the same we're not going",
+        "start": 1051.84,
+        "duration": 2.959
+    },
+    {
+        "text": "to do anything but if the characters are",
+        "start": 1053.2,
+        "duration": 2.719
+    },
+    {
+        "text": "different so",
+        "start": 1054.799,
+        "duration": 3.281
+    },
+    {
+        "text": "the character at position j in word one",
+        "start": 1055.919,
+        "duration": 3.361
+    },
+    {
+        "text": "is different from the character at",
+        "start": 1058.08,
+        "duration": 2.24
+    },
+    {
+        "text": "position j",
+        "start": 1059.28,
+        "duration": 4.16
+    },
+    {
+        "text": "in word two other they're different not",
+        "start": 1060.32,
+        "duration": 5.92
+    },
+    {
+        "text": "equal then we're gonna break but before",
+        "start": 1063.44,
+        "duration": 3.92
+    },
+    {
+        "text": "we break",
+        "start": 1066.24,
+        "duration": 2.72
+    },
+    {
+        "text": "we're breaking because we only want the",
+        "start": 1067.36,
+        "duration": 3.04
+    },
+    {
+        "text": "first differing character so we don't",
+        "start": 1068.96,
+        "duration": 2.8
+    },
+    {
+        "text": "want to look at any subsequent",
+        "start": 1070.4,
+        "duration": 2.32
+    },
+    {
+        "text": "characters but",
+        "start": 1071.76,
+        "duration": 3.36
+    },
+    {
+        "text": "before we break we want to add this to",
+        "start": 1072.72,
+        "duration": 4.56
+    },
+    {
+        "text": "our adjacency list so we want to say",
+        "start": 1075.12,
+        "duration": 4.24
+    },
+    {
+        "text": "that the character in word two comes",
+        "start": 1077.28,
+        "duration": 4.0
+    },
+    {
+        "text": "after the character in word one so we're",
+        "start": 1079.36,
+        "duration": 3.36
+    },
+    {
+        "text": "going to indicate that by saying okay",
+        "start": 1081.28,
+        "duration": 2.48
+    },
+    {
+        "text": "word one",
+        "start": 1082.72,
+        "duration": 4.319
+    },
+    {
+        "text": "is the key at index j and to that we're",
+        "start": 1083.76,
+        "duration": 4.88
+    },
+    {
+        "text": "going to be adding",
+        "start": 1087.039,
+        "duration": 4.0
+    },
+    {
+        "text": "word to so that's our adjacency list is",
+        "start": 1088.64,
+        "duration": 3.44
+    },
+    {
+        "text": "going to work out",
+        "start": 1091.039,
+        "duration": 3.121
+    },
+    {
+        "text": "so once we do this we can actually start",
+        "start": 1092.08,
+        "duration": 4.32
+    },
+    {
+        "text": "doing our dfs and remember for our dfs",
+        "start": 1094.16,
+        "duration": 3.6
+    },
+    {
+        "text": "we're going to be making sure to keep",
+        "start": 1096.4,
+        "duration": 2.8
+    },
+    {
+        "text": "track of visited nodes",
+        "start": 1097.76,
+        "duration": 2.88
+    },
+    {
+        "text": "so we're going to use a hash map or",
+        "start": 1099.2,
+        "duration": 3.2
+    },
+    {
+        "text": "dictionary and for each",
+        "start": 1100.64,
+        "duration": 3.919
+    },
+    {
+        "text": "node or each character we're going to be",
+        "start": 1102.4,
+        "duration": 3.519
+    },
+    {
+        "text": "mapping it to two values",
+        "start": 1104.559,
+        "duration": 3.761
+    },
+    {
+        "text": "false basically means that the character",
+        "start": 1105.919,
+        "duration": 3.841
+    },
+    {
+        "text": "has been visited",
+        "start": 1108.32,
+        "duration": 4.719
+    },
+    {
+        "text": "true means visited and",
+        "start": 1109.76,
+        "duration": 6.0
+    },
+    {
+        "text": "it's been it's in the current path right",
+        "start": 1113.039,
+        "duration": 3.281
+    },
+    {
+        "text": "so",
+        "start": 1115.76,
+        "duration": 2.159
+    },
+    {
+        "text": "clearly if it's in the current path that",
+        "start": 1116.32,
+        "duration": 3.2
+    },
+    {
+        "text": "means it's been visited right so",
+        "start": 1117.919,
+        "duration": 3.041
+    },
+    {
+        "text": "saying it's visited is basically",
+        "start": 1119.52,
+        "duration": 3.039
+    },
+    {
+        "text": "redundant but true",
+        "start": 1120.96,
+        "duration": 3.44
+    },
+    {
+        "text": "indicates that it's in the current path",
+        "start": 1122.559,
+        "duration": 3.521
+    },
+    {
+        "text": "if it's not added to the visit",
+        "start": 1124.4,
+        "duration": 3.519
+    },
+    {
+        "text": "dictionary at all that means it hasn't",
+        "start": 1126.08,
+        "duration": 3.44
+    },
+    {
+        "text": "been visited at all",
+        "start": 1127.919,
+        "duration": 3.361
+    },
+    {
+        "text": "we also want to maintain a result and",
+        "start": 1129.52,
+        "duration": 3.039
+    },
+    {
+        "text": "remember we're going to be building this",
+        "start": 1131.28,
+        "duration": 2.639
+    },
+    {
+        "text": "in reverse order so i'm actually going",
+        "start": 1132.559,
+        "duration": 2.881
+    },
+    {
+        "text": "to make it a list",
+        "start": 1133.919,
+        "duration": 3.12
+    },
+    {
+        "text": "initially and then we're gonna join the",
+        "start": 1135.44,
+        "duration": 3.599
+    },
+    {
+        "text": "characters in that list at the end",
+        "start": 1137.039,
+        "duration": 4.321
+    },
+    {
+        "text": "in reverse order so we can define our",
+        "start": 1139.039,
+        "duration": 4.241
+    },
+    {
+        "text": "dfs function all we need to do is pass",
+        "start": 1141.36,
+        "duration": 3.679
+    },
+    {
+        "text": "in the current character or node that",
+        "start": 1143.28,
+        "duration": 2.639
+    },
+    {
+        "text": "we're visiting",
+        "start": 1145.039,
+        "duration": 3.681
+    },
+    {
+        "text": "now if character is already in visit",
+        "start": 1145.919,
+        "duration": 4.081
+    },
+    {
+        "text": "then we're just going to return",
+        "start": 1148.72,
+        "duration": 2.64
+    },
+    {
+        "text": "now what are we going to return we're",
+        "start": 1150.0,
+        "duration": 2.96
+    },
+    {
+        "text": "going to return the value that's stored",
+        "start": 1151.36,
+        "duration": 2.64
+    },
+    {
+        "text": "in visit so",
+        "start": 1152.96,
+        "duration": 3.12
+    },
+    {
+        "text": "if it's already been visited then we're",
+        "start": 1154.0,
+        "duration": 3.52
+    },
+    {
+        "text": "just going to return false if it's",
+        "start": 1156.08,
+        "duration": 3.68
+    },
+    {
+        "text": "if it's in the current path then we're",
+        "start": 1157.52,
+        "duration": 4.32
+    },
+    {
+        "text": "going to return true now if this dfs",
+        "start": 1159.76,
+        "duration": 5.279
+    },
+    {
+        "text": "ever returns true that means we saw a a",
+        "start": 1161.84,
+        "duration": 4.0
+    },
+    {
+        "text": "character or",
+        "start": 1165.039,
+        "duration": 3.041
+    },
+    {
+        "text": "node that was already in this in the",
+        "start": 1165.84,
+        "duration": 3.12
+    },
+    {
+        "text": "current path",
+        "start": 1168.08,
+        "duration": 3.2
+    },
+    {
+        "text": "and we saw it twice that means we",
+        "start": 1168.96,
+        "duration": 5.12
+    },
+    {
+        "text": "detected a loop so if this returns true",
+        "start": 1171.28,
+        "duration": 5.44
+    },
+    {
+        "text": "that's how you know we detected a loop",
+        "start": 1174.08,
+        "duration": 3.44
+    },
+    {
+        "text": "if this",
+        "start": 1176.72,
+        "duration": 2.64
+    },
+    {
+        "text": "if this is not the case then what we're",
+        "start": 1177.52,
+        "duration": 3.44
+    },
+    {
+        "text": "going to say is okay visit",
+        "start": 1179.36,
+        "duration": 3.439
+    },
+    {
+        "text": "to to visit at this character we're",
+        "start": 1180.96,
+        "duration": 4.0
+    },
+    {
+        "text": "going to be adding true because not only",
+        "start": 1182.799,
+        "duration": 3.361
+    },
+    {
+        "text": "has it been visited",
+        "start": 1184.96,
+        "duration": 3.599
+    },
+    {
+        "text": "it's also in the current path and then",
+        "start": 1186.16,
+        "duration": 3.28
+    },
+    {
+        "text": "at the end",
+        "start": 1188.559,
+        "duration": 2.961
+    },
+    {
+        "text": "before we return we're going to say okay",
+        "start": 1189.44,
+        "duration": 3.44
+    },
+    {
+        "text": "visit of c is now",
+        "start": 1191.52,
+        "duration": 3.84
+    },
+    {
+        "text": "false meaning it's still been visited",
+        "start": 1192.88,
+        "duration": 4.48
+    },
+    {
+        "text": "but now it's false because it's no",
+        "start": 1195.36,
+        "duration": 3.6
+    },
+    {
+        "text": "longer in the current path that's what",
+        "start": 1197.36,
+        "duration": 3.28
+    },
+    {
+        "text": "we're gonna do right before we return",
+        "start": 1198.96,
+        "duration": 2.24
+    },
+    {
+        "text": "but",
+        "start": 1200.64,
+        "duration": 2.88
+    },
+    {
+        "text": "before we do that we're gonna go through",
+        "start": 1201.2,
+        "duration": 3.92
+    },
+    {
+        "text": "a loop we're gonna go through every",
+        "start": 1203.52,
+        "duration": 3.279
+    },
+    {
+        "text": "neighbor or descendant or",
+        "start": 1205.12,
+        "duration": 3.28
+    },
+    {
+        "text": "character that comes after this",
+        "start": 1206.799,
+        "duration": 2.801
+    },
+    {
+        "text": "character so basically from our",
+        "start": 1208.4,
+        "duration": 3.279
+    },
+    {
+        "text": "adjacency list that we built earlier",
+        "start": 1209.6,
+        "duration": 2.959
+    },
+    {
+        "text": "we're going to go through every",
+        "start": 1211.679,
+        "duration": 3.041
+    },
+    {
+        "text": "character that's a neighbor of c",
+        "start": 1212.559,
+        "duration": 4.081
+    },
+    {
+        "text": "and we're going to run dfs on that",
+        "start": 1214.72,
+        "duration": 4.72
+    },
+    {
+        "text": "neighbor now if this returns false so if",
+        "start": 1216.64,
+        "duration": 4.24
+    },
+    {
+        "text": "or rather if this returns",
+        "start": 1219.44,
+        "duration": 3.52
+    },
+    {
+        "text": "true that's how you know that we have a",
+        "start": 1220.88,
+        "duration": 3.919
+    },
+    {
+        "text": "loop so if this returns true then we are",
+        "start": 1222.96,
+        "duration": 2.8
+    },
+    {
+        "text": "going to return true",
+        "start": 1224.799,
+        "duration": 3.201
+    },
+    {
+        "text": "immediately telling you know the",
+        "start": 1225.76,
+        "duration": 4.72
+    },
+    {
+        "text": "recursive call that we basically",
+        "start": 1228.0,
+        "duration": 4.32
+    },
+    {
+        "text": "detected a loop and we can return",
+        "start": 1230.48,
+        "duration": 4.0
+    },
+    {
+        "text": "immediately okay so that's pretty much",
+        "start": 1232.32,
+        "duration": 3.92
+    },
+    {
+        "text": "all for our dfs but don't forget this",
+        "start": 1234.48,
+        "duration": 4.4
+    },
+    {
+        "text": "was a post order dfs so mainly",
+        "start": 1236.24,
+        "duration": 4.799
+    },
+    {
+        "text": "after we've done the recursive call",
+        "start": 1238.88,
+        "duration": 4.48
+    },
+    {
+        "text": "that's when we're finally gonna say okay",
+        "start": 1241.039,
+        "duration": 2.64
+    },
+    {
+        "text": "to",
+        "start": 1243.36,
+        "duration": 3.36
+    },
+    {
+        "text": "our result we can finally append this",
+        "start": 1243.679,
+        "duration": 4.48
+    },
+    {
+        "text": "character remember we're actually",
+        "start": 1246.72,
+        "duration": 3.199
+    },
+    {
+        "text": "building this in reverse order",
+        "start": 1248.159,
+        "duration": 3.841
+    },
+    {
+        "text": "so once we've done the entire dfs we're",
+        "start": 1249.919,
+        "duration": 3.681
+    },
+    {
+        "text": "gonna have to return the result in",
+        "start": 1252.0,
+        "duration": 2.32
+    },
+    {
+        "text": "reverse",
+        "start": 1253.6,
+        "duration": 3.439
+    },
+    {
+        "text": "order so now we defined our dfs so now",
+        "start": 1254.32,
+        "duration": 3.839
+    },
+    {
+        "text": "let's actually",
+        "start": 1257.039,
+        "duration": 3.201
+    },
+    {
+        "text": "call the dfs so for every single",
+        "start": 1258.159,
+        "duration": 4.161
+    },
+    {
+        "text": "character and we don't really need to",
+        "start": 1260.24,
+        "duration": 2.64
+    },
+    {
+        "text": "actually",
+        "start": 1262.32,
+        "duration": 2.96
+    },
+    {
+        "text": "start at the beginning character of the",
+        "start": 1262.88,
+        "duration": 4.08
+    },
+    {
+        "text": "graphs we can actually start at any",
+        "start": 1265.28,
+        "duration": 3.36
+    },
+    {
+        "text": "single character and it'll still",
+        "start": 1266.96,
+        "duration": 4.24
+    },
+    {
+        "text": "work out the same the reason being is",
+        "start": 1268.64,
+        "duration": 4.24
+    },
+    {
+        "text": "because we're doing it in reverse order",
+        "start": 1271.2,
+        "duration": 3.2
+    },
+    {
+        "text": "and if you don't believe me you can try",
+        "start": 1272.88,
+        "duration": 3.039
+    },
+    {
+        "text": "drawing out the picture and seeing what",
+        "start": 1274.4,
+        "duration": 3.2
+    },
+    {
+        "text": "would happen if we started it in the",
+        "start": 1275.919,
+        "duration": 3.521
+    },
+    {
+        "text": "middle of the graph somewhere",
+        "start": 1277.6,
+        "duration": 3.68
+    },
+    {
+        "text": "and it actually does surprisingly work",
+        "start": 1279.44,
+        "duration": 4.08
+    },
+    {
+        "text": "out as long as you do mark the",
+        "start": 1281.28,
+        "duration": 4.16
+    },
+    {
+        "text": "characters as visited once you actually",
+        "start": 1283.52,
+        "duration": 3.68
+    },
+    {
+        "text": "visit them so we go through every single",
+        "start": 1285.44,
+        "duration": 3.52
+    },
+    {
+        "text": "character in our adjacency list and then",
+        "start": 1287.2,
+        "duration": 2.8
+    },
+    {
+        "text": "we call dfs",
+        "start": 1288.96,
+        "duration": 3.44
+    },
+    {
+        "text": "on that character and if this returns",
+        "start": 1290.0,
+        "duration": 3.12
+    },
+    {
+        "text": "true",
+        "start": 1292.4,
+        "duration": 2.639
+    },
+    {
+        "text": "then we are also going to return then",
+        "start": 1293.12,
+        "duration": 3.28
+    },
+    {
+        "text": "immediately we're going to turn the",
+        "start": 1295.039,
+        "duration": 3.12
+    },
+    {
+        "text": "empty string meaning we detected a loop",
+        "start": 1296.4,
+        "duration": 3.279
+    },
+    {
+        "text": "now if that's not the case",
+        "start": 1298.159,
+        "duration": 2.64
+    },
+    {
+        "text": "that's when we're actually going to",
+        "start": 1299.679,
+        "duration": 2.88
+    },
+    {
+        "text": "return the result but remember the",
+        "start": 1300.799,
+        "duration": 3.36
+    },
+    {
+        "text": "result is a list so what we're going to",
+        "start": 1302.559,
+        "duration": 1.921
+    },
+    {
+        "text": "do",
+        "start": 1304.159,
+        "duration": 3.281
+    },
+    {
+        "text": "is actually join every single character",
+        "start": 1304.48,
+        "duration": 3.6
+    },
+    {
+        "text": "in",
+        "start": 1307.44,
+        "duration": 3.119
+    },
+    {
+        "text": "that list in result but before we do",
+        "start": 1308.08,
+        "duration": 4.479
+    },
+    {
+        "text": "that we want to make sure we reverse",
+        "start": 1310.559,
+        "duration": 5.041
+    },
+    {
+        "text": "the result and then we perform that join",
+        "start": 1312.559,
+        "duration": 3.921
+    },
+    {
+        "text": "and return",
+        "start": 1315.6,
+        "duration": 2.88
+    },
+    {
+        "text": "so i hope this was helpful if it was",
+        "start": 1316.48,
+        "duration": 3.76
+    },
+    {
+        "text": "please like and subscribe it supports",
+        "start": 1318.48,
+        "duration": 3.84
+    },
+    {
+        "text": "the channel a lot and i'll hopefully see",
+        "start": 1320.24,
+        "duration": 3.12
+    },
+    {
+        "text": "you pretty soon",
+        "start": 1322.32,
+        "duration": 4.16
+    },
+    {
+        "text": "thanks for watching",
+        "start": 1323.36,
+        "duration": 3.12
+    }
+]

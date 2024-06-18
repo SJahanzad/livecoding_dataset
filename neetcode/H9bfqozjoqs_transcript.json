@@ -1,0 +1,2662 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.28
+    },
+    {
+        "text": "write some more neat code today today",
+        "start": 1.52,
+        "duration": 2.88
+    },
+    {
+        "text": "let's solve another",
+        "start": 3.28,
+        "duration": 3.999
+    },
+    {
+        "text": "classic dynamic programming problem coin",
+        "start": 4.4,
+        "duration": 3.359
+    },
+    {
+        "text": "change",
+        "start": 7.279,
+        "duration": 2.24
+    },
+    {
+        "text": "and we get a pretty simple uh",
+        "start": 7.759,
+        "duration": 4.161
+    },
+    {
+        "text": "description so we're given a list of",
+        "start": 9.519,
+        "duration": 3.04
+    },
+    {
+        "text": "coins",
+        "start": 11.92,
+        "duration": 3.28
+    },
+    {
+        "text": "of different values and we're also given",
+        "start": 12.559,
+        "duration": 4.001
+    },
+    {
+        "text": "a total amount",
+        "start": 15.2,
+        "duration": 3.999
+    },
+    {
+        "text": "of money that we want to sum up to but",
+        "start": 16.56,
+        "duration": 3.04
+    },
+    {
+        "text": "we",
+        "start": 19.199,
+        "duration": 3.681
+    },
+    {
+        "text": "want to use the fewest number of coins",
+        "start": 19.6,
+        "duration": 6.8
+    },
+    {
+        "text": "possible to make up or to sum up to that",
+        "start": 22.88,
+        "duration": 4.08
+    },
+    {
+        "text": "amount",
+        "start": 26.4,
+        "duration": 2.799
+    },
+    {
+        "text": "and it's possible that that amount of",
+        "start": 26.96,
+        "duration": 4.079
+    },
+    {
+        "text": "money cannot be made up",
+        "start": 29.199,
+        "duration": 4.081
+    },
+    {
+        "text": "with any combination of the coins that",
+        "start": 31.039,
+        "duration": 3.04
+    },
+    {
+        "text": "we have",
+        "start": 33.28,
+        "duration": 3.2
+    },
+    {
+        "text": "and then we want to return negative one",
+        "start": 34.079,
+        "duration": 3.761
+    },
+    {
+        "text": "if that's the case and",
+        "start": 36.48,
+        "duration": 3.599
+    },
+    {
+        "text": "luckily for us we're actually given an",
+        "start": 37.84,
+        "duration": 4.32
+    },
+    {
+        "text": "infinite number of each coin so",
+        "start": 40.079,
+        "duration": 4.32
+    },
+    {
+        "text": "in the first example we have coins of",
+        "start": 42.16,
+        "duration": 3.28
+    },
+    {
+        "text": "value 1",
+        "start": 44.399,
+        "duration": 4.32
+    },
+    {
+        "text": "2 and 5 and we have infinite quantities",
+        "start": 45.44,
+        "duration": 5.36
+    },
+    {
+        "text": "of these coins the amount that we want",
+        "start": 48.719,
+        "duration": 3.041
+    },
+    {
+        "text": "to sum up to",
+        "start": 50.8,
+        "duration": 3.759
+    },
+    {
+        "text": "is 11 and basically you know just look",
+        "start": 51.76,
+        "duration": 3.279
+    },
+    {
+        "text": "at this",
+        "start": 54.559,
+        "duration": 2.32
+    },
+    {
+        "text": "what's the fewest number of coins we",
+        "start": 55.039,
+        "duration": 3.04
+    },
+    {
+        "text": "could do well",
+        "start": 56.879,
+        "duration": 2.801
+    },
+    {
+        "text": "of course we want to use a five because",
+        "start": 58.079,
+        "duration": 4.0
+    },
+    {
+        "text": "it's the biggest one we can use another",
+        "start": 59.68,
+        "duration": 3.039
+    },
+    {
+        "text": "five",
+        "start": 62.079,
+        "duration": 3.281
+    },
+    {
+        "text": "and then we just need a one left if we",
+        "start": 62.719,
+        "duration": 4.08
+    },
+    {
+        "text": "want to sum up to 11.",
+        "start": 65.36,
+        "duration": 3.28
+    },
+    {
+        "text": "so in this case you can see we only",
+        "start": 66.799,
+        "duration": 3.441
+    },
+    {
+        "text": "needed three coins",
+        "start": 68.64,
+        "duration": 3.839
+    },
+    {
+        "text": "these this is the fewest number of coins",
+        "start": 70.24,
+        "duration": 4.239
+    },
+    {
+        "text": "we needed so we can return",
+        "start": 72.479,
+        "duration": 5.041
+    },
+    {
+        "text": "three in the second example we have a",
+        "start": 74.479,
+        "duration": 4.241
+    },
+    {
+        "text": "coin of value two",
+        "start": 77.52,
+        "duration": 3.04
+    },
+    {
+        "text": "but we want to sum up to three we can",
+        "start": 78.72,
+        "duration": 3.84
+    },
+    {
+        "text": "try two plus two but we know that's",
+        "start": 80.56,
+        "duration": 4.72
+    },
+    {
+        "text": "four so we went over three so there's no",
+        "start": 82.56,
+        "duration": 3.68
+    },
+    {
+        "text": "way to",
+        "start": 85.28,
+        "duration": 3.92
+    },
+    {
+        "text": "possibly sum up to three so we return",
+        "start": 86.24,
+        "duration": 4.48
+    },
+    {
+        "text": "negative one there's no possible",
+        "start": 89.2,
+        "duration": 2.16
+    },
+    {
+        "text": "solution",
+        "start": 90.72,
+        "duration": 3.68
+    },
+    {
+        "text": "so your first idea might be can we just",
+        "start": 91.36,
+        "duration": 3.36
+    },
+    {
+        "text": "be",
+        "start": 94.4,
+        "duration": 3.2
+    },
+    {
+        "text": "greedy is the problem that easy can we",
+        "start": 94.72,
+        "duration": 3.28
+    },
+    {
+        "text": "just",
+        "start": 97.6,
+        "duration": 2.559
+    },
+    {
+        "text": "be greedy and let's look at this example",
+        "start": 98.0,
+        "duration": 4.24
+    },
+    {
+        "text": "so let's say these are our coins one",
+        "start": 100.159,
+        "duration": 2.481
+    },
+    {
+        "text": "three",
+        "start": 102.24,
+        "duration": 3.76
+    },
+    {
+        "text": "four five and we want to sum up to seven",
+        "start": 102.64,
+        "duration": 6.0
+    },
+    {
+        "text": "so when i say greedy i mean okay we",
+        "start": 106.0,
+        "duration": 4.56
+    },
+    {
+        "text": "wanna sum up to seven let's just start",
+        "start": 108.64,
+        "duration": 4.08
+    },
+    {
+        "text": "at the biggest coin we have",
+        "start": 110.56,
+        "duration": 5.44
+    },
+    {
+        "text": "so let's start at five so now let's look",
+        "start": 112.72,
+        "duration": 4.48
+    },
+    {
+        "text": "at the biggest coin again",
+        "start": 116.0,
+        "duration": 3.68
+    },
+    {
+        "text": "five if we add a five here we know we're",
+        "start": 117.2,
+        "duration": 3.519
+    },
+    {
+        "text": "going over",
+        "start": 119.68,
+        "duration": 3.119
+    },
+    {
+        "text": "we're going over the total amount seven",
+        "start": 120.719,
+        "duration": 4.321
+    },
+    {
+        "text": "right so we don't add another five",
+        "start": 122.799,
+        "duration": 4.081
+    },
+    {
+        "text": "well let's look at the four well we know",
+        "start": 125.04,
+        "duration": 3.12
+    },
+    {
+        "text": "five plus 4 is",
+        "start": 126.88,
+        "duration": 4.32
+    },
+    {
+        "text": "also going to be more than 7 5 plus",
+        "start": 128.16,
+        "duration": 5.6
+    },
+    {
+        "text": "3 is going to be more than 7. okay but",
+        "start": 131.2,
+        "duration": 4.72
+    },
+    {
+        "text": "we found a 1. luckily we have a 1. so",
+        "start": 133.76,
+        "duration": 4.24
+    },
+    {
+        "text": "let's add 1 to it now we're at",
+        "start": 135.92,
+        "duration": 5.36
+    },
+    {
+        "text": "6. so let's add a second one",
+        "start": 138.0,
+        "duration": 6.319
+    },
+    {
+        "text": "now we got to the sum seven so we",
+        "start": 141.28,
+        "duration": 4.56
+    },
+    {
+        "text": "basically went down",
+        "start": 144.319,
+        "duration": 4.161
+    },
+    {
+        "text": "from the biggest smallest coin values",
+        "start": 145.84,
+        "duration": 4.08
+    },
+    {
+        "text": "right that's what i mean when i say",
+        "start": 148.48,
+        "duration": 3.36
+    },
+    {
+        "text": "greedy let's pick the biggest one",
+        "start": 149.92,
+        "duration": 2.64
+    },
+    {
+        "text": "possible",
+        "start": 151.84,
+        "duration": 4.32
+    },
+    {
+        "text": "first so notice that this took us",
+        "start": 152.56,
+        "duration": 6.959
+    },
+    {
+        "text": "three coin values right so our result in",
+        "start": 156.16,
+        "duration": 4.96
+    },
+    {
+        "text": "this case would be three but",
+        "start": 159.519,
+        "duration": 4.8
+    },
+    {
+        "text": "is that the minimum amount of coins the",
+        "start": 161.12,
+        "duration": 4.32
+    },
+    {
+        "text": "answer is",
+        "start": 164.319,
+        "duration": 4.081
+    },
+    {
+        "text": "no because you know just looking at it",
+        "start": 165.44,
+        "duration": 3.84
+    },
+    {
+        "text": "we can tell",
+        "start": 168.4,
+        "duration": 4.08
+    },
+    {
+        "text": "we got a three and we have a",
+        "start": 169.28,
+        "duration": 6.72
+    },
+    {
+        "text": "four three plus four is seven",
+        "start": 172.48,
+        "duration": 5.92
+    },
+    {
+        "text": "that means the minimum amount of coins",
+        "start": 176.0,
+        "duration": 3.28
+    },
+    {
+        "text": "is actually",
+        "start": 178.4,
+        "duration": 3.759
+    },
+    {
+        "text": "two so this is a counter example we",
+        "start": 179.28,
+        "duration": 4.0
+    },
+    {
+        "text": "cannot be",
+        "start": 182.159,
+        "duration": 3.601
+    },
+    {
+        "text": "greedy if we want to solve it so the",
+        "start": 183.28,
+        "duration": 4.72
+    },
+    {
+        "text": "next thing you might try is like a brute",
+        "start": 185.76,
+        "duration": 4.559
+    },
+    {
+        "text": "force solution right so to do the brute",
+        "start": 188.0,
+        "duration": 4.239
+    },
+    {
+        "text": "force solution we need to implement",
+        "start": 190.319,
+        "duration": 4.241
+    },
+    {
+        "text": "some kind of depth first search or",
+        "start": 192.239,
+        "duration": 3.841
+    },
+    {
+        "text": "backtracking solution",
+        "start": 194.56,
+        "duration": 3.92
+    },
+    {
+        "text": "right so let's look at the same example",
+        "start": 196.08,
+        "duration": 3.36
+    },
+    {
+        "text": "one three four",
+        "start": 198.48,
+        "duration": 3.839
+    },
+    {
+        "text": "five and amount sum to seven so what",
+        "start": 199.44,
+        "duration": 4.879
+    },
+    {
+        "text": "would a backtracking solution",
+        "start": 202.319,
+        "duration": 4.321
+    },
+    {
+        "text": "even look like for this problem well",
+        "start": 204.319,
+        "duration": 4.401
+    },
+    {
+        "text": "it's gonna be brute force right so",
+        "start": 206.64,
+        "duration": 4.64
+    },
+    {
+        "text": "so we have four coin values so that",
+        "start": 208.72,
+        "duration": 4.96
+    },
+    {
+        "text": "means in our decision tree we have four",
+        "start": 211.28,
+        "duration": 3.84
+    },
+    {
+        "text": "possible choices",
+        "start": 213.68,
+        "duration": 4.08
+    },
+    {
+        "text": "we can choose a one we can choose a",
+        "start": 215.12,
+        "duration": 3.36
+    },
+    {
+        "text": "three",
+        "start": 217.76,
+        "duration": 3.92
+    },
+    {
+        "text": "we can choose a four or we can choose a",
+        "start": 218.48,
+        "duration": 3.839
+    },
+    {
+        "text": "five",
+        "start": 221.68,
+        "duration": 3.52
+    },
+    {
+        "text": "in this case the remaining amount would",
+        "start": 222.319,
+        "duration": 4.321
+    },
+    {
+        "text": "be six",
+        "start": 225.2,
+        "duration": 4.399
+    },
+    {
+        "text": "because seven minus one is six in this",
+        "start": 226.64,
+        "duration": 4.72
+    },
+    {
+        "text": "case the remaining amount that we have",
+        "start": 229.599,
+        "duration": 2.72
+    },
+    {
+        "text": "to compute",
+        "start": 231.36,
+        "duration": 4.32
+    },
+    {
+        "text": "would be four because we're taking seven",
+        "start": 232.319,
+        "duration": 6.48
+    },
+    {
+        "text": "minus three which is the coin that we",
+        "start": 235.68,
+        "duration": 3.919
+    },
+    {
+        "text": "chose",
+        "start": 238.799,
+        "duration": 3.36
+    },
+    {
+        "text": "so we get four as the remaining amount",
+        "start": 239.599,
+        "duration": 3.2
+    },
+    {
+        "text": "right",
+        "start": 242.159,
+        "duration": 3.44
+    },
+    {
+        "text": "in this case we would have a three and",
+        "start": 242.799,
+        "duration": 4.8
+    },
+    {
+        "text": "in this case we would have a remaining",
+        "start": 245.599,
+        "duration": 2.72
+    },
+    {
+        "text": "amount of",
+        "start": 247.599,
+        "duration": 4.161
+    },
+    {
+        "text": "two so since none of these are zero",
+        "start": 248.319,
+        "duration": 6.081
+    },
+    {
+        "text": "once we get to zero we know that that",
+        "start": 251.76,
+        "duration": 3.759
+    },
+    {
+        "text": "we've computed",
+        "start": 254.4,
+        "duration": 3.76
+    },
+    {
+        "text": "the total amount that we want but right",
+        "start": 255.519,
+        "duration": 4.72
+    },
+    {
+        "text": "now we have to continue going right we",
+        "start": 258.16,
+        "duration": 3.68
+    },
+    {
+        "text": "have to continue doing the brute force",
+        "start": 260.239,
+        "duration": 2.24
+    },
+    {
+        "text": "approach",
+        "start": 261.84,
+        "duration": 3.76
+    },
+    {
+        "text": "let's start at this side right now so we",
+        "start": 262.479,
+        "duration": 3.761
+    },
+    {
+        "text": "still have",
+        "start": 265.6,
+        "duration": 2.4
+    },
+    {
+        "text": "four coins right we have unlimited",
+        "start": 266.24,
+        "duration": 3.28
+    },
+    {
+        "text": "quantity so we can choose",
+        "start": 268.0,
+        "duration": 3.759
+    },
+    {
+        "text": "the coin one we can choose a three we",
+        "start": 269.52,
+        "duration": 3.28
+    },
+    {
+        "text": "can choose a four",
+        "start": 271.759,
+        "duration": 3.681
+    },
+    {
+        "text": "or we can choose a five if we choose a",
+        "start": 272.8,
+        "duration": 4.72
+    },
+    {
+        "text": "one we'll have a remaining amount of",
+        "start": 275.44,
+        "duration": 4.96
+    },
+    {
+        "text": "one if we choose a three we're going to",
+        "start": 277.52,
+        "duration": 3.679
+    },
+    {
+        "text": "get a",
+        "start": 280.4,
+        "duration": 4.079
+    },
+    {
+        "text": "negative one what does that tell us that",
+        "start": 281.199,
+        "duration": 4.081
+    },
+    {
+        "text": "tells us",
+        "start": 284.479,
+        "duration": 4.72
+    },
+    {
+        "text": "if we chose a five coin and we chose a",
+        "start": 285.28,
+        "duration": 4.88
+    },
+    {
+        "text": "three coin",
+        "start": 289.199,
+        "duration": 3.681
+    },
+    {
+        "text": "then we get to a negative value that",
+        "start": 290.16,
+        "duration": 3.36
+    },
+    {
+        "text": "means",
+        "start": 292.88,
+        "duration": 4.08
+    },
+    {
+        "text": "five plus three cannot be the amount",
+        "start": 293.52,
+        "duration": 5.84
+    },
+    {
+        "text": "so we don't have to keep searching here",
+        "start": 296.96,
+        "duration": 4.48
+    },
+    {
+        "text": "we can stop right we got to a negative",
+        "start": 299.36,
+        "duration": 2.88
+    },
+    {
+        "text": "value",
+        "start": 301.44,
+        "duration": 3.039
+    },
+    {
+        "text": "if we keep adding values to it it's just",
+        "start": 302.24,
+        "duration": 3.76
+    },
+    {
+        "text": "going to become more and more",
+        "start": 304.479,
+        "duration": 3.601
+    },
+    {
+        "text": "negative right and you can probably",
+        "start": 306.0,
+        "duration": 3.039
+    },
+    {
+        "text": "notice that",
+        "start": 308.08,
+        "duration": 3.6
+    },
+    {
+        "text": "since these values are even greater 2",
+        "start": 309.039,
+        "duration": 4.401
+    },
+    {
+        "text": "minus 4 is going to be negative 2",
+        "start": 311.68,
+        "duration": 5.04
+    },
+    {
+        "text": "2 minus 5 is going to be negative 3. so",
+        "start": 313.44,
+        "duration": 6.08
+    },
+    {
+        "text": "we can't go down these paths either we",
+        "start": 316.72,
+        "duration": 3.52
+    },
+    {
+        "text": "don't have to",
+        "start": 319.52,
+        "duration": 3.679
+    },
+    {
+        "text": "search them anymore and so now here",
+        "start": 320.24,
+        "duration": 4.0
+    },
+    {
+        "text": "we're gonna see",
+        "start": 323.199,
+        "duration": 4.321
+    },
+    {
+        "text": "okay we can choose a one coin of course",
+        "start": 324.24,
+        "duration": 4.16
+    },
+    {
+        "text": "we can choose a",
+        "start": 327.52,
+        "duration": 4.0
+    },
+    {
+        "text": "three four and five but we can see from",
+        "start": 328.4,
+        "duration": 3.519
+    },
+    {
+        "text": "here",
+        "start": 331.52,
+        "duration": 2.399
+    },
+    {
+        "text": "that that's not gonna work that's gonna",
+        "start": 331.919,
+        "duration": 3.441
+    },
+    {
+        "text": "lead us to a negative",
+        "start": 333.919,
+        "duration": 4.481
+    },
+    {
+        "text": "value anyway if we choose a one",
+        "start": 335.36,
+        "duration": 5.44
+    },
+    {
+        "text": "over here then we know we're going to",
+        "start": 338.4,
+        "duration": 4.32
+    },
+    {
+        "text": "finally get to a zero",
+        "start": 340.8,
+        "duration": 4.56
+    },
+    {
+        "text": "so this is what we want right we took a",
+        "start": 342.72,
+        "duration": 3.28
+    },
+    {
+        "text": "five",
+        "start": 345.36,
+        "duration": 3.44
+    },
+    {
+        "text": "from up here we took a one from over",
+        "start": 346.0,
+        "duration": 3.199
+    },
+    {
+        "text": "here",
+        "start": 348.8,
+        "duration": 3.28
+    },
+    {
+        "text": "and we took a third one right so then if",
+        "start": 349.199,
+        "duration": 3.361
+    },
+    {
+        "text": "we",
+        "start": 352.08,
+        "duration": 3.6
+    },
+    {
+        "text": "count how many coins we chose",
+        "start": 352.56,
+        "duration": 6.8
+    },
+    {
+        "text": "down this path we know we get three",
+        "start": 355.68,
+        "duration": 4.72
+    },
+    {
+        "text": "coins right",
+        "start": 359.36,
+        "duration": 3.279
+    },
+    {
+        "text": "and we get to a zero so of course we",
+        "start": 360.4,
+        "duration": 4.239
+    },
+    {
+        "text": "don't have to keep searching anymore",
+        "start": 362.639,
+        "duration": 4.881
+    },
+    {
+        "text": "so we found one possible way where we",
+        "start": 364.639,
+        "duration": 3.28
+    },
+    {
+        "text": "can",
+        "start": 367.52,
+        "duration": 2.959
+    },
+    {
+        "text": "sum up to the amount seven we know it",
+        "start": 367.919,
+        "duration": 4.0
+    },
+    {
+        "text": "has three coins which",
+        "start": 370.479,
+        "duration": 3.28
+    },
+    {
+        "text": "you know from the previous example we",
+        "start": 371.919,
+        "duration": 4.0
+    },
+    {
+        "text": "know that that's not the minimum amount",
+        "start": 373.759,
+        "duration": 3.041
+    },
+    {
+        "text": "of coins",
+        "start": 375.919,
+        "duration": 3.361
+    },
+    {
+        "text": "but we found an algorithm that at least",
+        "start": 376.8,
+        "duration": 3.44
+    },
+    {
+        "text": "tells us",
+        "start": 379.28,
+        "duration": 3.759
+    },
+    {
+        "text": "a possible solution so we can kind of",
+        "start": 380.24,
+        "duration": 5.28
+    },
+    {
+        "text": "keep track of that the minimum coins",
+        "start": 383.039,
+        "duration": 6.481
+    },
+    {
+        "text": "we can set to three so now i'm gonna",
+        "start": 385.52,
+        "duration": 6.0
+    },
+    {
+        "text": "show you what happens when we go down",
+        "start": 389.52,
+        "duration": 3.28
+    },
+    {
+        "text": "this tree path",
+        "start": 391.52,
+        "duration": 3.2
+    },
+    {
+        "text": "even though we know that the solution is",
+        "start": 392.8,
+        "duration": 4.0
+    },
+    {
+        "text": "actually three plus four which is two",
+        "start": 394.72,
+        "duration": 2.64
+    },
+    {
+        "text": "coins",
+        "start": 396.8,
+        "duration": 3.36
+    },
+    {
+        "text": "which either of these is gonna get us to",
+        "start": 397.36,
+        "duration": 4.24
+    },
+    {
+        "text": "the correct solution i'm gonna show you",
+        "start": 400.16,
+        "duration": 3.28
+    },
+    {
+        "text": "what happens when we go down",
+        "start": 401.6,
+        "duration": 5.2
+    },
+    {
+        "text": "this one anyway so we can choose a coin",
+        "start": 403.44,
+        "duration": 4.08
+    },
+    {
+        "text": "one",
+        "start": 406.8,
+        "duration": 4.56
+    },
+    {
+        "text": "three four or five so if we go down this",
+        "start": 407.52,
+        "duration": 4.48
+    },
+    {
+        "text": "path",
+        "start": 411.36,
+        "duration": 3.679
+    },
+    {
+        "text": "we will have a remaining amount of five",
+        "start": 412.0,
+        "duration": 5.52
+    },
+    {
+        "text": "here we'll have a remaining amount of",
+        "start": 415.039,
+        "duration": 3.201
+    },
+    {
+        "text": "three",
+        "start": 417.52,
+        "duration": 2.239
+    },
+    {
+        "text": "here we'll have a remaining amount of",
+        "start": 418.24,
+        "duration": 4.239
+    },
+    {
+        "text": "two here we'll have a remaining amount",
+        "start": 419.759,
+        "duration": 5.44
+    },
+    {
+        "text": "of 1. do you kind of see how we're",
+        "start": 422.479,
+        "duration": 3.521
+    },
+    {
+        "text": "taking",
+        "start": 425.199,
+        "duration": 4.0
+    },
+    {
+        "text": "the original problem which is 7",
+        "start": 426.0,
+        "duration": 6.0
+    },
+    {
+        "text": "and then breaking it down into sub",
+        "start": 429.199,
+        "duration": 3.601
+    },
+    {
+        "text": "problems",
+        "start": 432.0,
+        "duration": 4.24
+    },
+    {
+        "text": "like 6 and then breaking it down even",
+        "start": 432.8,
+        "duration": 7.519
+    },
+    {
+        "text": "further into five and not only that we",
+        "start": 436.24,
+        "duration": 6.16
+    },
+    {
+        "text": "have sub problems yes",
+        "start": 440.319,
+        "duration": 5.44
+    },
+    {
+        "text": "but do you also see that these sub",
+        "start": 442.4,
+        "duration": 6.4
+    },
+    {
+        "text": "problems are repeating themselves here",
+        "start": 445.759,
+        "duration": 4.88
+    },
+    {
+        "text": "we have a remaining amount of",
+        "start": 448.8,
+        "duration": 5.2
+    },
+    {
+        "text": "one here we also have a remaining amount",
+        "start": 450.639,
+        "duration": 4.081
+    },
+    {
+        "text": "of one",
+        "start": 454.0,
+        "duration": 4.639
+    },
+    {
+        "text": "so do we even have to compute this path",
+        "start": 454.72,
+        "duration": 6.56
+    },
+    {
+        "text": "because we already know if we have an",
+        "start": 458.639,
+        "duration": 3.921
+    },
+    {
+        "text": "amount one",
+        "start": 461.28,
+        "duration": 4.639
+    },
+    {
+        "text": "it takes only a single coin",
+        "start": 462.56,
+        "duration": 6.56
+    },
+    {
+        "text": "for us to be able to reduce it to the",
+        "start": 465.919,
+        "duration": 3.921
+    },
+    {
+        "text": "amount",
+        "start": 469.12,
+        "duration": 3.44
+    },
+    {
+        "text": "zero which is what we're looking for so",
+        "start": 469.84,
+        "duration": 3.12
+    },
+    {
+        "text": "since",
+        "start": 472.56,
+        "duration": 3.12
+    },
+    {
+        "text": "this sub problem repeats i don't have to",
+        "start": 472.96,
+        "duration": 3.84
+    },
+    {
+        "text": "compute it",
+        "start": 475.68,
+        "duration": 4.16
+    },
+    {
+        "text": "i can just borrow from over here",
+        "start": 476.8,
+        "duration": 5.679
+    },
+    {
+        "text": "so in that case we see the same thing",
+        "start": 479.84,
+        "duration": 3.6
+    },
+    {
+        "text": "happened though",
+        "start": 482.479,
+        "duration": 4.081
+    },
+    {
+        "text": "we use a coin one and we get zero and we",
+        "start": 483.44,
+        "duration": 4.64
+    },
+    {
+        "text": "see that okay it took",
+        "start": 486.56,
+        "duration": 4.639
+    },
+    {
+        "text": "three coins for us to get to zero right",
+        "start": 488.08,
+        "duration": 4.399
+    },
+    {
+        "text": "we took a one",
+        "start": 491.199,
+        "duration": 4.881
+    },
+    {
+        "text": "a five and another one from over here so",
+        "start": 492.479,
+        "duration": 5.601
+    },
+    {
+        "text": "basically we got the same thing that",
+        "start": 496.08,
+        "duration": 2.72
+    },
+    {
+        "text": "happened",
+        "start": 498.08,
+        "duration": 3.76
+    },
+    {
+        "text": "over here just in a different order and",
+        "start": 498.8,
+        "duration": 4.64
+    },
+    {
+        "text": "just to make this a little less messy",
+        "start": 501.84,
+        "duration": 3.28
+    },
+    {
+        "text": "i'm just gonna tell you that none of",
+        "start": 503.44,
+        "duration": 3.199
+    },
+    {
+        "text": "these are going to lead us to the",
+        "start": 505.12,
+        "duration": 2.96
+    },
+    {
+        "text": "optimal solution",
+        "start": 506.639,
+        "duration": 4.081
+    },
+    {
+        "text": "so now let's look at this case we have a",
+        "start": 508.08,
+        "duration": 4.079
+    },
+    {
+        "text": "remaining amount of four",
+        "start": 510.72,
+        "duration": 4.72
+    },
+    {
+        "text": "how many coins does it take for us to",
+        "start": 512.159,
+        "duration": 6.0
+    },
+    {
+        "text": "get an amount for well let's brute force",
+        "start": 515.44,
+        "duration": 3.519
+    },
+    {
+        "text": "it let's check",
+        "start": 518.159,
+        "duration": 3.36
+    },
+    {
+        "text": "every possible combination here we'll",
+        "start": 518.959,
+        "duration": 3.361
+    },
+    {
+        "text": "get a",
+        "start": 521.519,
+        "duration": 3.041
+    },
+    {
+        "text": "one here we'll get the value we're",
+        "start": 522.32,
+        "duration": 4.24
+    },
+    {
+        "text": "looking for zero that's great but let's",
+        "start": 524.56,
+        "duration": 3.279
+    },
+    {
+        "text": "just look at this last one",
+        "start": 526.56,
+        "duration": 3.839
+    },
+    {
+        "text": "with five we'll get a negative one",
+        "start": 527.839,
+        "duration": 3.761
+    },
+    {
+        "text": "meaning we can stop",
+        "start": 530.399,
+        "duration": 4.321
+    },
+    {
+        "text": "searching so this is awesome we got a",
+        "start": 531.6,
+        "duration": 5.679
+    },
+    {
+        "text": "zero and let's count how many coins did",
+        "start": 534.72,
+        "duration": 3.6
+    },
+    {
+        "text": "it take us to",
+        "start": 537.279,
+        "duration": 4.24
+    },
+    {
+        "text": "get to this zero we took one four and we",
+        "start": 538.32,
+        "duration": 3.68
+    },
+    {
+        "text": "took a",
+        "start": 541.519,
+        "duration": 3.601
+    },
+    {
+        "text": "three so this path is only",
+        "start": 542.0,
+        "duration": 6.72
+    },
+    {
+        "text": "two coins long we see our minimum is",
+        "start": 545.12,
+        "duration": 4.24
+    },
+    {
+        "text": "currently",
+        "start": 548.72,
+        "duration": 2.88
+    },
+    {
+        "text": "three but we can actually replace this",
+        "start": 549.36,
+        "duration": 3.2
+    },
+    {
+        "text": "now with a",
+        "start": 551.6,
+        "duration": 3.919
+    },
+    {
+        "text": "two because two is the minimum number of",
+        "start": 552.56,
+        "duration": 3.76
+    },
+    {
+        "text": "coins",
+        "start": 555.519,
+        "duration": 4.0
+    },
+    {
+        "text": "needed to total to amount seven",
+        "start": 556.32,
+        "duration": 5.04
+    },
+    {
+        "text": "so we know this is the correct answer",
+        "start": 559.519,
+        "duration": 3.44
+    },
+    {
+        "text": "but let's just see what happens with the",
+        "start": 561.36,
+        "duration": 2.64
+    },
+    {
+        "text": "remaining stuff",
+        "start": 562.959,
+        "duration": 3.601
+    },
+    {
+        "text": "so first let me just look at this one we",
+        "start": 564.0,
+        "duration": 3.44
+    },
+    {
+        "text": "see we actually",
+        "start": 566.56,
+        "duration": 3.44
+    },
+    {
+        "text": "already solved this sub problem over",
+        "start": 567.44,
+        "duration": 3.12
+    },
+    {
+        "text": "here",
+        "start": 570.0,
+        "duration": 2.72
+    },
+    {
+        "text": "so we don't really need to solve it",
+        "start": 570.56,
+        "duration": 3.6
+    },
+    {
+        "text": "again we know it takes",
+        "start": 572.72,
+        "duration": 4.96
+    },
+    {
+        "text": "one coin for us to go from one to zero",
+        "start": 574.16,
+        "duration": 5.92
+    },
+    {
+        "text": "and what about this three okay well we",
+        "start": 577.68,
+        "duration": 3.04
+    },
+    {
+        "text": "can do",
+        "start": 580.08,
+        "duration": 4.16
+    },
+    {
+        "text": "the same thing right one three four",
+        "start": 580.72,
+        "duration": 6.32
+    },
+    {
+        "text": "five and i'll just tell you from here",
+        "start": 584.24,
+        "duration": 4.56
+    },
+    {
+        "text": "we're not going to find the optimal",
+        "start": 587.04,
+        "duration": 3.28
+    },
+    {
+        "text": "solution going from",
+        "start": 588.8,
+        "duration": 4.159
+    },
+    {
+        "text": "four to three and more that's going to",
+        "start": 590.32,
+        "duration": 4.16
+    },
+    {
+        "text": "obviously be more",
+        "start": 592.959,
+        "duration": 3.44
+    },
+    {
+        "text": "than the current minimum of coins that",
+        "start": 594.48,
+        "duration": 3.76
+    },
+    {
+        "text": "we have which is two right now",
+        "start": 596.399,
+        "duration": 4.0
+    },
+    {
+        "text": "so this is not going to lead us to the",
+        "start": 598.24,
+        "duration": 3.599
+    },
+    {
+        "text": "correct solution",
+        "start": 600.399,
+        "duration": 4.481
+    },
+    {
+        "text": "but you see that once we compute",
+        "start": 601.839,
+        "duration": 6.481
+    },
+    {
+        "text": "this stuff then we have one last",
+        "start": 604.88,
+        "duration": 6.399
+    },
+    {
+        "text": "subtree over here right this original",
+        "start": 608.32,
+        "duration": 3.44
+    },
+    {
+        "text": "three",
+        "start": 611.279,
+        "duration": 2.881
+    },
+    {
+        "text": "but once we already solved the sub",
+        "start": 611.76,
+        "duration": 3.44
+    },
+    {
+        "text": "problems of this",
+        "start": 614.16,
+        "duration": 4.0
+    },
+    {
+        "text": "do we really have to solve the sub",
+        "start": 615.2,
+        "duration": 3.759
+    },
+    {
+        "text": "problems here",
+        "start": 618.16,
+        "duration": 4.32
+    },
+    {
+        "text": "no if we store it in memory if we have",
+        "start": 618.959,
+        "duration": 4.88
+    },
+    {
+        "text": "like a cache",
+        "start": 622.48,
+        "duration": 4.64
+    },
+    {
+        "text": "or you can call it dp we do not have to",
+        "start": 623.839,
+        "duration": 4.481
+    },
+    {
+        "text": "repeat these sub",
+        "start": 627.12,
+        "duration": 4.48
+    },
+    {
+        "text": "problems so the way i just solved this",
+        "start": 628.32,
+        "duration": 6.959
+    },
+    {
+        "text": "was called top down or top down",
+        "start": 631.6,
+        "duration": 5.04
+    },
+    {
+        "text": "memoization",
+        "start": 635.279,
+        "duration": 3.201
+    },
+    {
+        "text": "because we're doing it recursively but",
+        "start": 636.64,
+        "duration": 3.68
+    },
+    {
+        "text": "you can actually solve this",
+        "start": 638.48,
+        "duration": 4.64
+    },
+    {
+        "text": "with a true dynamic programming solution",
+        "start": 640.32,
+        "duration": 3.199
+    },
+    {
+        "text": "which",
+        "start": 643.12,
+        "duration": 3.839
+    },
+    {
+        "text": "is bottom up and it means exactly what",
+        "start": 643.519,
+        "duration": 4.32
+    },
+    {
+        "text": "it says so",
+        "start": 646.959,
+        "duration": 4.081
+    },
+    {
+        "text": "bottom up basically instead of",
+        "start": 647.839,
+        "duration": 5.281
+    },
+    {
+        "text": "solving the original problem where the",
+        "start": 651.04,
+        "duration": 3.76
+    },
+    {
+        "text": "amount is seven we",
+        "start": 653.12,
+        "duration": 4.08
+    },
+    {
+        "text": "solve it in reverse order we start at",
+        "start": 654.8,
+        "duration": 4.159
+    },
+    {
+        "text": "the smallest one which is",
+        "start": 657.2,
+        "duration": 5.12
+    },
+    {
+        "text": "zero right this zero over here so we",
+        "start": 658.959,
+        "duration": 6.641
+    },
+    {
+        "text": "wanna know what's the minimum number of",
+        "start": 662.32,
+        "duration": 3.92
+    },
+    {
+        "text": "coins",
+        "start": 665.6,
+        "duration": 4.0
+    },
+    {
+        "text": "we can call it dp of zero so",
+        "start": 666.24,
+        "duration": 5.36
+    },
+    {
+        "text": "for amount equals zero what's the",
+        "start": 669.6,
+        "duration": 3.52
+    },
+    {
+        "text": "minimum number of coins",
+        "start": 671.6,
+        "duration": 4.56
+    },
+    {
+        "text": "for us to sum to zero",
+        "start": 673.12,
+        "duration": 5.68
+    },
+    {
+        "text": "well we know it just takes zero coins",
+        "start": 676.16,
+        "duration": 3.2
+    },
+    {
+        "text": "right",
+        "start": 678.8,
+        "duration": 2.479
+    },
+    {
+        "text": "what about if we wanna know what's the",
+        "start": 679.36,
+        "duration": 3.599
+    },
+    {
+        "text": "minimum number of coins",
+        "start": 681.279,
+        "duration": 4.881
+    },
+    {
+        "text": "for summing to one well we can",
+        "start": 682.959,
+        "duration": 6.32
+    },
+    {
+        "text": "look at our coins we got a one a three a",
+        "start": 686.16,
+        "duration": 4.48
+    },
+    {
+        "text": "four and a five",
+        "start": 689.279,
+        "duration": 3.761
+    },
+    {
+        "text": "these will all cause it to be greater",
+        "start": 690.64,
+        "duration": 4.08
+    },
+    {
+        "text": "than one but we just want a",
+        "start": 693.04,
+        "duration": 5.039
+    },
+    {
+        "text": "one so we can take just this meaning it",
+        "start": 694.72,
+        "duration": 4.64
+    },
+    {
+        "text": "only takes us",
+        "start": 698.079,
+        "duration": 4.401
+    },
+    {
+        "text": "one coin to sum to 1. and then we can",
+        "start": 699.36,
+        "duration": 5.84
+    },
+    {
+        "text": "just repeat that process right so for",
+        "start": 702.48,
+        "duration": 6.0
+    },
+    {
+        "text": "a dp of 2 so we want how many coins",
+        "start": 705.2,
+        "duration": 6.319
+    },
+    {
+        "text": "does it take for us to sum to 2 well",
+        "start": 708.48,
+        "duration": 6.32
+    },
+    {
+        "text": "we got 4 coins right these 3 will cause",
+        "start": 711.519,
+        "duration": 5.12
+    },
+    {
+        "text": "it to be greater than two so we don't",
+        "start": 714.8,
+        "duration": 2.8
+    },
+    {
+        "text": "use those",
+        "start": 716.639,
+        "duration": 3.681
+    },
+    {
+        "text": "but what about this one okay we get a",
+        "start": 717.6,
+        "duration": 3.2
+    },
+    {
+        "text": "one",
+        "start": 720.32,
+        "duration": 3.36
+    },
+    {
+        "text": "so it takes one coin to sum to one but",
+        "start": 720.8,
+        "duration": 4.4
+    },
+    {
+        "text": "that's something we already",
+        "start": 723.68,
+        "duration": 5.04
+    },
+    {
+        "text": "knew so if we want to compute dp",
+        "start": 725.2,
+        "duration": 6.879
+    },
+    {
+        "text": "of two we can take one",
+        "start": 728.72,
+        "duration": 7.6
+    },
+    {
+        "text": "plus dp of one",
+        "start": 732.079,
+        "duration": 6.641
+    },
+    {
+        "text": "because we know these three coins are",
+        "start": 736.32,
+        "duration": 3.44
+    },
+    {
+        "text": "going to be too",
+        "start": 738.72,
+        "duration": 4.4
+    },
+    {
+        "text": "big but we have a one over here",
+        "start": 739.76,
+        "duration": 6.879
+    },
+    {
+        "text": "that's value one and we also know",
+        "start": 743.12,
+        "duration": 6.159
+    },
+    {
+        "text": "that that's not enough right two minus",
+        "start": 746.639,
+        "duration": 3.281
+    },
+    {
+        "text": "one",
+        "start": 749.279,
+        "duration": 2.721
+    },
+    {
+        "text": "still leaves us with a remaining amount",
+        "start": 749.92,
+        "duration": 4.88
+    },
+    {
+        "text": "of one but we just computed that",
+        "start": 752.0,
+        "duration": 6.16
+    },
+    {
+        "text": "up here we know for us to get the",
+        "start": 754.8,
+        "duration": 5.12
+    },
+    {
+        "text": "minimum number of coins",
+        "start": 758.16,
+        "duration": 4.799
+    },
+    {
+        "text": "to get a value one it only takes",
+        "start": 759.92,
+        "duration": 6.64
+    },
+    {
+        "text": "one coin so that means that if we want",
+        "start": 762.959,
+        "duration": 6.401
+    },
+    {
+        "text": "to get amount two it takes at least two",
+        "start": 766.56,
+        "duration": 3.6
+    },
+    {
+        "text": "coins",
+        "start": 769.36,
+        "duration": 4.159
+    },
+    {
+        "text": "and let's say we repeat this process for",
+        "start": 770.16,
+        "duration": 6.96
+    },
+    {
+        "text": "all values for all amounts from",
+        "start": 773.519,
+        "duration": 6.241
+    },
+    {
+        "text": "from all the way starting at zero all",
+        "start": 777.12,
+        "duration": 3.44
+    },
+    {
+        "text": "the way",
+        "start": 779.76,
+        "duration": 4.879
+    },
+    {
+        "text": "to seven over here so i computed it from",
+        "start": 780.56,
+        "duration": 6.719
+    },
+    {
+        "text": "all the way from zero to six but the",
+        "start": 784.639,
+        "duration": 4.32
+    },
+    {
+        "text": "last one we really",
+        "start": 787.279,
+        "duration": 3.68
+    },
+    {
+        "text": "really want is amount equals seven so",
+        "start": 788.959,
+        "duration": 3.041
+    },
+    {
+        "text": "let's compute that",
+        "start": 790.959,
+        "duration": 5.12
+    },
+    {
+        "text": "dp of seven how do we get it",
+        "start": 792.0,
+        "duration": 6.8
+    },
+    {
+        "text": "well we still kind of have to check",
+        "start": 796.079,
+        "duration": 3.921
+    },
+    {
+        "text": "every single coin so",
+        "start": 798.8,
+        "duration": 4.479
+    },
+    {
+        "text": "what happens if we get coin one",
+        "start": 800.0,
+        "duration": 6.56
+    },
+    {
+        "text": "then we are com then we take the result",
+        "start": 803.279,
+        "duration": 5.68
+    },
+    {
+        "text": "of one meaning that's how many coins we",
+        "start": 806.56,
+        "duration": 4.24
+    },
+    {
+        "text": "use not the value one",
+        "start": 808.959,
+        "duration": 4.081
+    },
+    {
+        "text": "because we needed one coin with a value",
+        "start": 810.8,
+        "duration": 4.56
+    },
+    {
+        "text": "one and now we have a remaining amount",
+        "start": 813.04,
+        "duration": 2.799
+    },
+    {
+        "text": "of",
+        "start": 815.36,
+        "duration": 3.44
+    },
+    {
+        "text": "six right dp of six so how many coins",
+        "start": 815.839,
+        "duration": 3.68
+    },
+    {
+        "text": "did it take",
+        "start": 818.8,
+        "duration": 3.599
+    },
+    {
+        "text": "for us to compute dp of six well we",
+        "start": 819.519,
+        "duration": 4.56
+    },
+    {
+        "text": "already computed that it took",
+        "start": 822.399,
+        "duration": 4.721
+    },
+    {
+        "text": "two so we get one plus two",
+        "start": 824.079,
+        "duration": 6.801
+    },
+    {
+        "text": "equals three so that's one possible",
+        "start": 827.12,
+        "duration": 7.12
+    },
+    {
+        "text": "solution but is it the minimal solution",
+        "start": 830.88,
+        "duration": 6.639
+    },
+    {
+        "text": "well let's look at if we use the coin",
+        "start": 834.24,
+        "duration": 6.88
+    },
+    {
+        "text": "value three over here well it takes us",
+        "start": 837.519,
+        "duration": 7.361
+    },
+    {
+        "text": "one coin so we take one plus",
+        "start": 841.12,
+        "duration": 7.12
+    },
+    {
+        "text": "dp of four because that's the remaining",
+        "start": 844.88,
+        "duration": 4.8
+    },
+    {
+        "text": "amount we have to use",
+        "start": 848.24,
+        "duration": 4.719
+    },
+    {
+        "text": "if we take a coin value of three and",
+        "start": 849.68,
+        "duration": 6.32
+    },
+    {
+        "text": "lucky luckily we already computed dp",
+        "start": 852.959,
+        "duration": 6.961
+    },
+    {
+        "text": "of four it is one so then we get one",
+        "start": 856.0,
+        "duration": 4.399
+    },
+    {
+        "text": "plus",
+        "start": 859.92,
+        "duration": 3.68
+    },
+    {
+        "text": "one equals two and we know that",
+        "start": 860.399,
+        "duration": 6.641
+    },
+    {
+        "text": "this is the real result that we want",
+        "start": 863.6,
+        "duration": 6.08
+    },
+    {
+        "text": "but even before we know that we would",
+        "start": 867.04,
+        "duration": 3.52
+    },
+    {
+        "text": "repeat this",
+        "start": 869.68,
+        "duration": 3.92
+    },
+    {
+        "text": "process so technically if we do the",
+        "start": 870.56,
+        "duration": 3.76
+    },
+    {
+        "text": "bottom-up",
+        "start": 873.6,
+        "duration": 2.64
+    },
+    {
+        "text": "dynamic programming solution we are",
+        "start": 874.32,
+        "duration": 3.68
+    },
+    {
+        "text": "going to repeat this for the remaining",
+        "start": 876.24,
+        "duration": 4.24
+    },
+    {
+        "text": "two coins so for four we would get one",
+        "start": 878.0,
+        "duration": 5.279
+    },
+    {
+        "text": "so we'd have one plus dp of three",
+        "start": 880.48,
+        "duration": 3.599
+    },
+    {
+        "text": "because four",
+        "start": 883.279,
+        "duration": 3.521
+    },
+    {
+        "text": "minor because seven minus four would",
+        "start": 884.079,
+        "duration": 4.32
+    },
+    {
+        "text": "leave us with a remaining amount of",
+        "start": 886.8,
+        "duration": 2.8
+    },
+    {
+        "text": "three",
+        "start": 888.399,
+        "duration": 4.24
+    },
+    {
+        "text": "and in that case we know dp of three is",
+        "start": 889.6,
+        "duration": 6.96
+    },
+    {
+        "text": "one so we would have the total of two",
+        "start": 892.639,
+        "duration": 5.76
+    },
+    {
+        "text": "again so we see that there are actually",
+        "start": 896.56,
+        "duration": 4.0
+    },
+    {
+        "text": "two solutions",
+        "start": 898.399,
+        "duration": 4.401
+    },
+    {
+        "text": "and we know we have one last coin that",
+        "start": 900.56,
+        "duration": 3.92
+    },
+    {
+        "text": "we technically have to check",
+        "start": 902.8,
+        "duration": 5.36
+    },
+    {
+        "text": "coin five so we'd use one coin for value",
+        "start": 904.48,
+        "duration": 4.32
+    },
+    {
+        "text": "five",
+        "start": 908.16,
+        "duration": 2.799
+    },
+    {
+        "text": "and then the remaining amount we'd wanna",
+        "start": 908.8,
+        "duration": 4.88
+    },
+    {
+        "text": "compute is dp of 2",
+        "start": 910.959,
+        "duration": 6.32
+    },
+    {
+        "text": "and we know that dp of 2 is value 2 so",
+        "start": 913.68,
+        "duration": 4.959
+    },
+    {
+        "text": "this would result in a",
+        "start": 917.279,
+        "duration": 4.481
+    },
+    {
+        "text": "3 which is not what we want right so",
+        "start": 918.639,
+        "duration": 7.681
+    },
+    {
+        "text": "from these 4 values that we computed",
+        "start": 921.76,
+        "duration": 6.319
+    },
+    {
+        "text": "we want to take the minimum which we",
+        "start": 926.32,
+        "duration": 3.04
+    },
+    {
+        "text": "know is 2",
+        "start": 928.079,
+        "duration": 4.56
+    },
+    {
+        "text": "so we can return 2 in this case",
+        "start": 929.36,
+        "duration": 5.44
+    },
+    {
+        "text": "so that took us forever but luckily the",
+        "start": 932.639,
+        "duration": 4.961
+    },
+    {
+        "text": "code is a lot shorter so just like we",
+        "start": 934.8,
+        "duration": 5.92
+    },
+    {
+        "text": "showed i'm gonna have a dp array and",
+        "start": 937.6,
+        "duration": 6.4
+    },
+    {
+        "text": "i'm gonna initialize this to be",
+        "start": 940.72,
+        "duration": 6.559
+    },
+    {
+        "text": "length of amount plus one because",
+        "start": 944.0,
+        "duration": 6.32
+    },
+    {
+        "text": "we are going from zero",
+        "start": 947.279,
+        "duration": 6.881
+    },
+    {
+        "text": "all the way to amount and the default",
+        "start": 950.32,
+        "duration": 6.8
+    },
+    {
+        "text": "value i'm gonna give each uh element in",
+        "start": 954.16,
+        "duration": 4.64
+    },
+    {
+        "text": "this array is amount",
+        "start": 957.12,
+        "duration": 4.719
+    },
+    {
+        "text": "plus one or you can do like",
+        "start": 958.8,
+        "duration": 6.68
+    },
+    {
+        "text": "infinity or whatever the max in is like",
+        "start": 961.839,
+        "duration": 5.92
+    },
+    {
+        "text": "math.max integer or whatever",
+        "start": 965.48,
+        "duration": 5.4
+    },
+    {
+        "text": "in your language but amount plus one is",
+        "start": 967.759,
+        "duration": 5.041
+    },
+    {
+        "text": "basically a max value",
+        "start": 970.88,
+        "duration": 4.879
+    },
+    {
+        "text": "anyway and we know that the base case",
+        "start": 972.8,
+        "duration": 3.839
+    },
+    {
+        "text": "for this",
+        "start": 975.759,
+        "duration": 3.921
+    },
+    {
+        "text": "is a dp of zero meaning if we want to",
+        "start": 976.639,
+        "duration": 3.521
+    },
+    {
+        "text": "compute",
+        "start": 979.68,
+        "duration": 3.36
+    },
+    {
+        "text": "amount zero that it only takes zero",
+        "start": 980.16,
+        "duration": 3.84
+    },
+    {
+        "text": "coins",
+        "start": 983.04,
+        "duration": 3.12
+    },
+    {
+        "text": "and now we're going to start computing",
+        "start": 984.0,
+        "duration": 4.399
+    },
+    {
+        "text": "every value in dp",
+        "start": 986.16,
+        "duration": 5.679
+    },
+    {
+        "text": "so for every amount a in",
+        "start": 988.399,
+        "duration": 5.201
+    },
+    {
+        "text": "range and we're going to do this in",
+        "start": 991.839,
+        "duration": 3.68
+    },
+    {
+        "text": "reverse order not",
+        "start": 993.6,
+        "duration": 4.239
+    },
+    {
+        "text": "or rather bottom up so we're gonna go",
+        "start": 995.519,
+        "duration": 3.44
+    },
+    {
+        "text": "from one",
+        "start": 997.839,
+        "duration": 3.44
+    },
+    {
+        "text": "all the way to the amount and we",
+        "start": 998.959,
+        "duration": 3.041
+    },
+    {
+        "text": "technically",
+        "start": 1001.279,
+        "duration": 3.601
+    },
+    {
+        "text": "are still doing it in a brute force way",
+        "start": 1002.0,
+        "duration": 3.44
+    },
+    {
+        "text": "so we",
+        "start": 1004.88,
+        "duration": 3.199
+    },
+    {
+        "text": "are gonna go through every coin so for",
+        "start": 1005.44,
+        "duration": 3.44
+    },
+    {
+        "text": "coin",
+        "start": 1008.079,
+        "duration": 4.241
+    },
+    {
+        "text": "in our list of coins so we're trying to",
+        "start": 1008.88,
+        "duration": 4.0
+    },
+    {
+        "text": "compute",
+        "start": 1012.32,
+        "duration": 3.68
+    },
+    {
+        "text": "this a amount so we're gonna take",
+        "start": 1012.88,
+        "duration": 5.6
+    },
+    {
+        "text": "a and subtract the current coin that",
+        "start": 1016.0,
+        "duration": 3.44
+    },
+    {
+        "text": "we're looking at",
+        "start": 1018.48,
+        "duration": 4.479
+    },
+    {
+        "text": "if this is non-negative",
+        "start": 1019.44,
+        "duration": 5.759
+    },
+    {
+        "text": "so if it's greater than or equal to zero",
+        "start": 1022.959,
+        "duration": 3.281
+    },
+    {
+        "text": "that means we can",
+        "start": 1025.199,
+        "duration": 3.921
+    },
+    {
+        "text": "kind of continue searching right so this",
+        "start": 1026.24,
+        "duration": 3.52
+    },
+    {
+        "text": "means",
+        "start": 1029.12,
+        "duration": 4.48
+    },
+    {
+        "text": "we possibly found a solution for our dp",
+        "start": 1029.76,
+        "duration": 6.96
+    },
+    {
+        "text": "so for this amount a we're going to set",
+        "start": 1033.6,
+        "duration": 4.719
+    },
+    {
+        "text": "it to the minimum",
+        "start": 1036.72,
+        "duration": 4.88
+    },
+    {
+        "text": "of itself and 1",
+        "start": 1038.319,
+        "duration": 6.64
+    },
+    {
+        "text": "plus dp of a",
+        "start": 1041.6,
+        "duration": 6.719
+    },
+    {
+        "text": "minus c so this 1 comes",
+        "start": 1044.959,
+        "duration": 5.681
+    },
+    {
+        "text": "from this current coin that we're using",
+        "start": 1048.319,
+        "duration": 4.081
+    },
+    {
+        "text": "c and dp of",
+        "start": 1050.64,
+        "duration": 5.12
+    },
+    {
+        "text": "a minus c comes from for example",
+        "start": 1052.4,
+        "duration": 6.639
+    },
+    {
+        "text": "let's say our coin value was four",
+        "start": 1055.76,
+        "duration": 5.36
+    },
+    {
+        "text": "and our amount that we're trying to",
+        "start": 1059.039,
+        "duration": 3.361
+    },
+    {
+        "text": "compute a is",
+        "start": 1061.12,
+        "duration": 4.48
+    },
+    {
+        "text": "seven basically we're saying dp of",
+        "start": 1062.4,
+        "duration": 6.639
+    },
+    {
+        "text": "seven is equal to one",
+        "start": 1065.6,
+        "duration": 6.88
+    },
+    {
+        "text": "plus dp of",
+        "start": 1069.039,
+        "duration": 7.121
+    },
+    {
+        "text": "three because seven minus four",
+        "start": 1072.48,
+        "duration": 6.64
+    },
+    {
+        "text": "is three so we're saying that this is a",
+        "start": 1076.16,
+        "duration": 4.639
+    },
+    {
+        "text": "possible solution",
+        "start": 1079.12,
+        "duration": 4.48
+    },
+    {
+        "text": "and actually that's the only thing that",
+        "start": 1080.799,
+        "duration": 3.76
+    },
+    {
+        "text": "we have to do",
+        "start": 1083.6,
+        "duration": 3.6
+    },
+    {
+        "text": "this is basically it this is like what's",
+        "start": 1084.559,
+        "duration": 4.401
+    },
+    {
+        "text": "called the recurrence relation",
+        "start": 1087.2,
+        "duration": 4.16
+    },
+    {
+        "text": "and so now the only thing we have to do",
+        "start": 1088.96,
+        "duration": 5.12
+    },
+    {
+        "text": "is return what we're looking for so dp",
+        "start": 1091.36,
+        "duration": 4.8
+    },
+    {
+        "text": "of amount so this is what we have to",
+        "start": 1094.08,
+        "duration": 3.2
+    },
+    {
+        "text": "return but",
+        "start": 1096.16,
+        "duration": 4.24
+    },
+    {
+        "text": "we remember one last edge case if we",
+        "start": 1097.28,
+        "duration": 5.12
+    },
+    {
+        "text": "could not compute the amount",
+        "start": 1100.4,
+        "duration": 5.6
+    },
+    {
+        "text": "meaning if so we can only return this",
+        "start": 1102.4,
+        "duration": 6.8
+    },
+    {
+        "text": "if if the value that's stored",
+        "start": 1106.0,
+        "duration": 6.72
+    },
+    {
+        "text": "is not the default value so if it's",
+        "start": 1109.2,
+        "duration": 7.12
+    },
+    {
+        "text": "not equal to amount plus one right which",
+        "start": 1112.72,
+        "duration": 5.52
+    },
+    {
+        "text": "was the default value that we",
+        "start": 1116.32,
+        "duration": 4.8
+    },
+    {
+        "text": "gave it so we'll return this if it's not",
+        "start": 1118.24,
+        "duration": 4.08
+    },
+    {
+        "text": "the default value",
+        "start": 1121.12,
+        "duration": 3.52
+    },
+    {
+        "text": "otherwise we're gonna have to return",
+        "start": 1122.32,
+        "duration": 4.719
+    },
+    {
+        "text": "negative one meaning we could not",
+        "start": 1124.64,
+        "duration": 5.52
+    },
+    {
+        "text": "compute this amount with the given coins",
+        "start": 1127.039,
+        "duration": 5.76
+    },
+    {
+        "text": "so this solution does work and even",
+        "start": 1130.16,
+        "duration": 3.12
+    },
+    {
+        "text": "though",
+        "start": 1132.799,
+        "duration": 2.561
+    },
+    {
+        "text": "it's pretty efficient the time",
+        "start": 1133.28,
+        "duration": 3.84
+    },
+    {
+        "text": "complexity is actually",
+        "start": 1135.36,
+        "duration": 4.4
+    },
+    {
+        "text": "big o the amount that we're given",
+        "start": 1137.12,
+        "duration": 4.48
+    },
+    {
+        "text": "multiplied the number of",
+        "start": 1139.76,
+        "duration": 4.4
+    },
+    {
+        "text": "coins that we're given and the memory",
+        "start": 1141.6,
+        "duration": 3.6
+    },
+    {
+        "text": "complexity is",
+        "start": 1144.16,
+        "duration": 5.36
+    },
+    {
+        "text": "big o amount because we see we have a dp",
+        "start": 1145.2,
+        "duration": 6.96
+    },
+    {
+        "text": "array that we're having a potential",
+        "start": 1149.52,
+        "duration": 4.72
+    },
+    {
+        "text": "value for every single",
+        "start": 1152.16,
+        "duration": 4.8
+    },
+    {
+        "text": "amount so i hope this was helpful if you",
+        "start": 1154.24,
+        "duration": 3.439
+    },
+    {
+        "text": "enjoyed",
+        "start": 1156.96,
+        "duration": 2.56
+    },
+    {
+        "text": "please like and subscribe it supports",
+        "start": 1157.679,
+        "duration": 3.921
+    },
+    {
+        "text": "the channel a lot and i'll hopefully",
+        "start": 1159.52,
+        "duration": 5.279
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 1161.6,
+        "duration": 3.199
+    }
+]

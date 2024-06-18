@@ -1,0 +1,942 @@
+[
+    {
+        "text": "hey what's up you guys back at it Nick",
+        "start": 0.03,
+        "duration": 5.13
+    },
+    {
+        "text": "white here Tecna coding on Twitch in",
+        "start": 3.6,
+        "duration": 3.0
+    },
+    {
+        "text": "YouTube please subscribe check out my",
+        "start": 5.16,
+        "duration": 3.269
+    },
+    {
+        "text": "patreon please for me whatever blah blah",
+        "start": 6.6,
+        "duration": 3.959
+    },
+    {
+        "text": "blah doing all the eco problems and",
+        "start": 8.429,
+        "duration": 3.871
+    },
+    {
+        "text": "we're onto another one this one's called",
+        "start": 10.559,
+        "duration": 3.601
+    },
+    {
+        "text": "island perimeter very similar to all the",
+        "start": 12.3,
+        "duration": 3.539
+    },
+    {
+        "text": "other island problems have you seen any",
+        "start": 14.16,
+        "duration": 3.959
+    },
+    {
+        "text": "of those this what time we're not gonna",
+        "start": 15.839,
+        "duration": 3.6
+    },
+    {
+        "text": "be getting the area we're not gonna be",
+        "start": 18.119,
+        "duration": 2.371
+    },
+    {
+        "text": "getting the number of islands we're",
+        "start": 19.439,
+        "duration": 3.151
+    },
+    {
+        "text": "gonna be getting the perimeter of one",
+        "start": 20.49,
+        "duration": 4.83
+    },
+    {
+        "text": "island okay so you're given a map in a",
+        "start": 22.59,
+        "duration": 4.59
+    },
+    {
+        "text": "two-dimensional integer grid where one",
+        "start": 25.32,
+        "duration": 3.629
+    },
+    {
+        "text": "is land zeros water same as the other",
+        "start": 27.18,
+        "duration": 3.839
+    },
+    {
+        "text": "ones right so we have a 2d array with a",
+        "start": 28.949,
+        "duration": 4.441
+    },
+    {
+        "text": "bunch of ones and zeros right one counts",
+        "start": 31.019,
+        "duration": 4.771
+    },
+    {
+        "text": "as land zero counts as water so if you",
+        "start": 33.39,
+        "duration": 4.02
+    },
+    {
+        "text": "look at this visualization down here",
+        "start": 35.79,
+        "duration": 4.35
+    },
+    {
+        "text": "this brown is the land the blue is the",
+        "start": 37.41,
+        "duration": 4.469
+    },
+    {
+        "text": "water and that's how the ones are",
+        "start": 40.14,
+        "duration": 3.45
+    },
+    {
+        "text": "represented see the shape right here of",
+        "start": 41.879,
+        "duration": 4.371
+    },
+    {
+        "text": "ones that's all the brown right here so",
+        "start": 43.59,
+        "duration": 4.949
+    },
+    {
+        "text": "grid cells are connected horizontally",
+        "start": 46.25,
+        "duration": 4.329
+    },
+    {
+        "text": "and vertically but not diagonally so the",
+        "start": 48.539,
+        "duration": 6.93
+    },
+    {
+        "text": "land I mean the okay that doesn't really",
+        "start": 50.579,
+        "duration": 6.361
+    },
+    {
+        "text": "matter that much in this problem anyway",
+        "start": 55.469,
+        "duration": 4.5
+    },
+    {
+        "text": "the because there's only one island so",
+        "start": 56.94,
+        "duration": 5.459
+    },
+    {
+        "text": "it really doesn't matter the there's",
+        "start": 59.969,
+        "duration": 4.8
+    },
+    {
+        "text": "exactly one island the island doesn't",
+        "start": 62.399,
+        "duration": 5.251
+    },
+    {
+        "text": "have lakes so there's no water that",
+        "start": 64.769,
+        "duration": 4.471
+    },
+    {
+        "text": "isn't connected to the water in the",
+        "start": 67.65,
+        "duration": 4.829
+    },
+    {
+        "text": "island okay one cell is a square with a",
+        "start": 69.24,
+        "duration": 5.94
+    },
+    {
+        "text": "length of side what size one so we could",
+        "start": 72.479,
+        "duration": 5.581
+    },
+    {
+        "text": "visualize each cell as 0 or 1 as this",
+        "start": 75.18,
+        "duration": 4.86
+    },
+    {
+        "text": "would be a zero cell this would be a one",
+        "start": 78.06,
+        "duration": 4.65
+    },
+    {
+        "text": "cell and they have sides right see it",
+        "start": 80.04,
+        "duration": 5.7
+    },
+    {
+        "text": "has one side with length one so this is",
+        "start": 82.71,
+        "duration": 4.62
+    },
+    {
+        "text": "a side length one side with length one",
+        "start": 85.74,
+        "duration": 3.68
+    },
+    {
+        "text": "so I will and one side of length one and",
+        "start": 87.33,
+        "duration": 4.56
+    },
+    {
+        "text": "individually if this was just one cell",
+        "start": 89.42,
+        "duration": 4.839
+    },
+    {
+        "text": "it would have a perimeter of four so",
+        "start": 91.89,
+        "duration": 6.18
+    },
+    {
+        "text": "let's see grid is rectangular width and",
+        "start": 94.259,
+        "duration": 5.22
+    },
+    {
+        "text": "height doesn't exceed honored let's",
+        "start": 98.07,
+        "duration": 3.03
+    },
+    {
+        "text": "determine the perimeter so how do we",
+        "start": 99.479,
+        "duration": 3.151
+    },
+    {
+        "text": "find the perimeter I thought about this",
+        "start": 101.1,
+        "duration": 2.46
+    },
+    {
+        "text": "a little bit and it was a little",
+        "start": 102.63,
+        "duration": 4.59
+    },
+    {
+        "text": "confusing but I mean I you know this is",
+        "start": 103.56,
+        "duration": 5.01
+    },
+    {
+        "text": "the way that we're gonna have to do it",
+        "start": 107.22,
+        "duration": 3.45
+    },
+    {
+        "text": "right it's pretty straightforward",
+        "start": 108.57,
+        "duration": 3.72
+    },
+    {
+        "text": "actually once you think about a little",
+        "start": 110.67,
+        "duration": 4.14
+    },
+    {
+        "text": "bit you just go through you loop through",
+        "start": 112.29,
+        "duration": 5.039
+    },
+    {
+        "text": "doing o of M times n complexity rows",
+        "start": 114.81,
+        "duration": 4.5
+    },
+    {
+        "text": "times columns to go through the 2d array",
+        "start": 117.329,
+        "duration": 5.25
+    },
+    {
+        "text": "and which is pretty good you can think",
+        "start": 119.31,
+        "duration": 5.04
+    },
+    {
+        "text": "of it as linear a number of elements but",
+        "start": 122.579,
+        "duration": 3.54
+    },
+    {
+        "text": "you just loop through so you're gonna",
+        "start": 124.35,
+        "duration": 3.299
+    },
+    {
+        "text": "loop through each number like this boom",
+        "start": 126.119,
+        "duration": 4.2
+    },
+    {
+        "text": "boom boom boom boom boom boom boom boom",
+        "start": 127.649,
+        "duration": 5.831
+    },
+    {
+        "text": "boom but right just traverse the 2d",
+        "start": 130.319,
+        "duration": 5.741
+    },
+    {
+        "text": "right so as we're traversing when we see",
+        "start": 133.48,
+        "duration": 4.319
+    },
+    {
+        "text": "a land we're gonna do a check so we'll",
+        "start": 136.06,
+        "duration": 4.44
+    },
+    {
+        "text": "say okay if if it's a one so when we see",
+        "start": 137.799,
+        "duration": 4.77
+    },
+    {
+        "text": "a land we're just gonna assume the best",
+        "start": 140.5,
+        "duration": 4.409
+    },
+    {
+        "text": "case and add four to the perimeter so",
+        "start": 142.569,
+        "duration": 3.961
+    },
+    {
+        "text": "we'll have this perimeter variable we'll",
+        "start": 144.909,
+        "duration": 3.66
+    },
+    {
+        "text": "set it to zero at first and when we see",
+        "start": 146.53,
+        "duration": 4.14
+    },
+    {
+        "text": "a land because let's say we only saw one",
+        "start": 148.569,
+        "duration": 3.931
+    },
+    {
+        "text": "land and it was right here well though",
+        "start": 150.67,
+        "duration": 3.899
+    },
+    {
+        "text": "just before we'd return that right so",
+        "start": 152.5,
+        "duration": 4.11
+    },
+    {
+        "text": "we're just gonna add for every single",
+        "start": 154.569,
+        "duration": 4.5
+    },
+    {
+        "text": "time right now that's not going to give",
+        "start": 156.61,
+        "duration": 3.719
+    },
+    {
+        "text": "us the right answer if we just added",
+        "start": 159.069,
+        "duration": 2.581
+    },
+    {
+        "text": "four to the perimeter every time we'd",
+        "start": 160.329,
+        "duration": 7.231
+    },
+    {
+        "text": "get well 4 8 12 16 20 24 28 so that's",
+        "start": 161.65,
+        "duration": 7.89
+    },
+    {
+        "text": "not the right answer the answer 16 right",
+        "start": 167.56,
+        "duration": 4.44
+    },
+    {
+        "text": "the answer 16 because the perimeter of",
+        "start": 169.54,
+        "duration": 5.91
+    },
+    {
+        "text": "an island is in in math you should know",
+        "start": 172.0,
+        "duration": 5.64
+    },
+    {
+        "text": "this the perimeter is just the outside",
+        "start": 175.45,
+        "duration": 6.78
+    },
+    {
+        "text": "the outside of the object so the outside",
+        "start": 177.64,
+        "duration": 9.0
+    },
+    {
+        "text": "of this object is just 1 2 3 4 5 6 7 8 9",
+        "start": 182.23,
+        "duration": 8.099
+    },
+    {
+        "text": "10 11 12 13 14 15 16 right and that is",
+        "start": 186.64,
+        "duration": 6.03
+    },
+    {
+        "text": "the answer and we don't want to count",
+        "start": 190.329,
+        "duration": 4.41
+    },
+    {
+        "text": "these inner ones that connect those",
+        "start": 192.67,
+        "duration": 4.08
+    },
+    {
+        "text": "aren't on the outside right so if we",
+        "start": 194.739,
+        "duration": 3.9
+    },
+    {
+        "text": "added for every time we'd get the wrong",
+        "start": 196.75,
+        "duration": 3.359
+    },
+    {
+        "text": "answer would be way too high because",
+        "start": 198.639,
+        "duration": 3.57
+    },
+    {
+        "text": "some of them connect so here's how you",
+        "start": 200.109,
+        "duration": 4.831
+    },
+    {
+        "text": "do it if they connect if they connect",
+        "start": 202.209,
+        "duration": 5.34
+    },
+    {
+        "text": "we're gonna say okay let's add four but",
+        "start": 204.94,
+        "duration": 4.71
+    },
+    {
+        "text": "if there's a if there's a neighbor to",
+        "start": 207.549,
+        "duration": 4.201
+    },
+    {
+        "text": "the left or above meaning the previous",
+        "start": 209.65,
+        "duration": 3.989
+    },
+    {
+        "text": "row or the previous column we're gonna",
+        "start": 211.75,
+        "duration": 4.23
+    },
+    {
+        "text": "subtract two and that is because of this",
+        "start": 213.639,
+        "duration": 4.801
+    },
+    {
+        "text": "so we'll add four here we'll add four",
+        "start": 215.98,
+        "duration": 4.319
+    },
+    {
+        "text": "here now we get here and we see a",
+        "start": 218.44,
+        "duration": 4.949
+    },
+    {
+        "text": "neighbor above and to the left but now",
+        "start": 220.299,
+        "duration": 6.481
+    },
+    {
+        "text": "we know that they are sharing of they're",
+        "start": 223.389,
+        "duration": 6.841
+    },
+    {
+        "text": "both sharing borders that will not be",
+        "start": 226.78,
+        "duration": 6.69
+    },
+    {
+        "text": "used they're sharing a length of one",
+        "start": 230.23,
+        "duration": 5.52
+    },
+    {
+        "text": "that will not be used each of them so we",
+        "start": 233.47,
+        "duration": 4.139
+    },
+    {
+        "text": "subtract two each time that there's a",
+        "start": 235.75,
+        "duration": 4.859
+    },
+    {
+        "text": "neighbor to the left or above so if",
+        "start": 237.609,
+        "duration": 4.801
+    },
+    {
+        "text": "there's a neighbor to the left we add 4",
+        "start": 240.609,
+        "duration": 3.391
+    },
+    {
+        "text": "or initially for this object when we get",
+        "start": 242.41,
+        "duration": 3.84
+    },
+    {
+        "text": "to it for this one and then we subtract",
+        "start": 244.0,
+        "duration": 4.169
+    },
+    {
+        "text": "we see a neighbor to the left so we",
+        "start": 246.25,
+        "duration": 3.959
+    },
+    {
+        "text": "subtract 2 because we're not using the",
+        "start": 248.169,
+        "duration": 3.391
+    },
+    {
+        "text": "left of this square and we're not using",
+        "start": 250.209,
+        "duration": 3.691
+    },
+    {
+        "text": "the right of this square anymore and if",
+        "start": 251.56,
+        "duration": 4.59
+    },
+    {
+        "text": "we see one above we're not using the",
+        "start": 253.9,
+        "duration": 3.66
+    },
+    {
+        "text": "bottom of this score and when I using",
+        "start": 256.15,
+        "duration": 3.63
+    },
+    {
+        "text": "the top of this square so we okay let's",
+        "start": 257.56,
+        "duration": 4.019
+    },
+    {
+        "text": "go through the whole example now so we",
+        "start": 259.78,
+        "duration": 3.36
+    },
+    {
+        "text": "Traverse right we're just Traverse in",
+        "start": 261.579,
+        "duration": 3.601
+    },
+    {
+        "text": "which reverse here which reverse here we",
+        "start": 263.14,
+        "duration": 3.749
+    },
+    {
+        "text": "see a 1 so we had 4",
+        "start": 265.18,
+        "duration": 3.93
+    },
+    {
+        "text": "next next in the our answers for right",
+        "start": 266.889,
+        "duration": 5.131
+    },
+    {
+        "text": "now another for no neighbors still so",
+        "start": 269.11,
+        "duration": 5.369
+    },
+    {
+        "text": "that's eight is the answer and we see",
+        "start": 272.02,
+        "duration": 4.739
+    },
+    {
+        "text": "another one that's 12 so far but we do",
+        "start": 274.479,
+        "duration": 4.56
+    },
+    {
+        "text": "see two neighbors now that means we",
+        "start": 276.759,
+        "duration": 4.801
+    },
+    {
+        "text": "subtract two we subtract two so right",
+        "start": 279.039,
+        "duration": 4.771
+    },
+    {
+        "text": "back to eight now we add four again and",
+        "start": 281.56,
+        "duration": 4.71
+    },
+    {
+        "text": "we're at 12 again but we see a neighbor",
+        "start": 283.81,
+        "duration": 5.34
+    },
+    {
+        "text": "here so we go about down to 10 then we",
+        "start": 286.27,
+        "duration": 5.429
+    },
+    {
+        "text": "go down to here 14 but we see a neighbor",
+        "start": 289.15,
+        "duration": 6.15
+    },
+    {
+        "text": "here so we go to 12 we add 4 again here",
+        "start": 291.699,
+        "duration": 5.37
+    },
+    {
+        "text": "no neighbors",
+        "start": 295.3,
+        "duration": 5.16
+    },
+    {
+        "text": "so we're at 16 then we had 4 here 2",
+        "start": 297.069,
+        "duration": 6.301
+    },
+    {
+        "text": "neighbors minus 2 minus 2 and we get",
+        "start": 300.46,
+        "duration": 5.16
+    },
+    {
+        "text": "back to 16 and basically discounts it if",
+        "start": 303.37,
+        "duration": 3.449
+    },
+    {
+        "text": "there's two neighbors the whole",
+        "start": 305.62,
+        "duration": 3.87
+    },
+    {
+        "text": "perimeter is gone basically so there you",
+        "start": 306.819,
+        "duration": 4.111
+    },
+    {
+        "text": "go that's the whole thing that was the",
+        "start": 309.49,
+        "duration": 3.0
+    },
+    {
+        "text": "whole example let's coded out right now",
+        "start": 310.93,
+        "duration": 3.449
+    },
+    {
+        "text": "is pretty easy you could do some",
+        "start": 312.49,
+        "duration": 3.75
+    },
+    {
+        "text": "boundary checks if you want to like if",
+        "start": 314.379,
+        "duration": 7.951
+    },
+    {
+        "text": "grid dot length is equal to 0 or grid of",
+        "start": 316.24,
+        "duration": 12.449
+    },
+    {
+        "text": "0 dot length is equal to 0 we can return",
+        "start": 322.33,
+        "duration": 9.66
+    },
+    {
+        "text": "0 that's just protocol whatever check or",
+        "start": 328.689,
+        "duration": 7.801
+    },
+    {
+        "text": "whatever you can even do like if grid is",
+        "start": 331.99,
+        "duration": 8.07
+    },
+    {
+        "text": "equal to null that's a good one too so",
+        "start": 336.49,
+        "duration": 5.459
+    },
+    {
+        "text": "whatever any of those will have a",
+        "start": 340.06,
+        "duration": 4.169
+    },
+    {
+        "text": "variable for our result or perimeter or",
+        "start": 341.949,
+        "duration": 3.45
+    },
+    {
+        "text": "whatever you want to call it and then we",
+        "start": 344.229,
+        "duration": 2.701
+    },
+    {
+        "text": "just have to do our Traverse all right",
+        "start": 345.399,
+        "duration": 6.211
+    },
+    {
+        "text": "so I less than grid length I plus plus",
+        "start": 346.93,
+        "duration": 7.62
+    },
+    {
+        "text": "and then that's the rows now we got to",
+        "start": 351.61,
+        "duration": 4.619
+    },
+    {
+        "text": "go through the columns so we're gonna",
+        "start": 354.55,
+        "duration": 8.97
+    },
+    {
+        "text": "use J here J less than grid of hi J plus",
+        "start": 356.229,
+        "duration": 10.62
+    },
+    {
+        "text": "plus and here's the condition if grid of",
+        "start": 363.52,
+        "duration": 5.97
+    },
+    {
+        "text": "I J if the current cell is land right",
+        "start": 366.849,
+        "duration": 4.41
+    },
+    {
+        "text": "then we're going to want to do all the",
+        "start": 369.49,
+        "duration": 3.539
+    },
+    {
+        "text": "rest of our calculations in here because",
+        "start": 371.259,
+        "duration": 4.62
+    },
+    {
+        "text": "this is where we first thing you're",
+        "start": 373.029,
+        "duration": 4.29
+    },
+    {
+        "text": "gonna want to assume the best case and",
+        "start": 375.879,
+        "duration": 6.15
+    },
+    {
+        "text": "add 4 so now 4 4 4 4 4 4 everyone we see",
+        "start": 377.319,
+        "duration": 6.75
+    },
+    {
+        "text": "we add 4 but we also need to do these",
+        "start": 382.029,
+        "duration": 4.26
+    },
+    {
+        "text": "conditions to remove 2 each time if",
+        "start": 384.069,
+        "duration": 4.59
+    },
+    {
+        "text": "there's neighbors so if I is greater",
+        "start": 386.289,
+        "duration": 4.38
+    },
+    {
+        "text": "than 0 because we have to make sure",
+        "start": 388.659,
+        "duration": 8.04
+    },
+    {
+        "text": "we're in bounds and rid of I minus 1 J",
+        "start": 390.669,
+        "duration": 9.24
+    },
+    {
+        "text": "is also land well then we just subtract",
+        "start": 396.699,
+        "duration": 3.97
+    },
+    {
+        "text": "2",
+        "start": 399.909,
+        "duration": 2.32
+    },
+    {
+        "text": "this is a pretty easy problem let me",
+        "start": 400.669,
+        "duration": 2.791
+    },
+    {
+        "text": "know in the comments below if you have",
+        "start": 402.229,
+        "duration": 2.881
+    },
+    {
+        "text": "any questions about this I think it's",
+        "start": 403.46,
+        "duration": 3.359
+    },
+    {
+        "text": "pretty straightforward and way easier",
+        "start": 405.11,
+        "duration": 4.29
+    },
+    {
+        "text": "than the other island problems but I",
+        "start": 406.819,
+        "duration": 4.41
+    },
+    {
+        "text": "could see where you could struggle with",
+        "start": 409.4,
+        "duration": 4.019
+    },
+    {
+        "text": "this if you're a beginner that's pretty",
+        "start": 411.229,
+        "duration": 4.62
+    },
+    {
+        "text": "much it I mean that's up it sorry for",
+        "start": 413.419,
+        "duration": 4.201
+    },
+    {
+        "text": "the long explanation I want to do go",
+        "start": 415.849,
+        "duration": 3.361
+    },
+    {
+        "text": "through a little bit of an example and",
+        "start": 417.62,
+        "duration": 4.71
+    },
+    {
+        "text": "solidify yeah I keep saying solidify the",
+        "start": 419.21,
+        "duration": 6.29
+    },
+    {
+        "text": "understanding now but we're gonna submit",
+        "start": 422.33,
+        "duration": 5.79
+    },
+    {
+        "text": "hopefully goes well there we go 100% of",
+        "start": 425.5,
+        "duration": 4.419
+    },
+    {
+        "text": "solutions let me know if you guys have",
+        "start": 428.12,
+        "duration": 3.66
+    },
+    {
+        "text": "any questions I thought I explained it",
+        "start": 429.919,
+        "duration": 5.31
+    },
+    {
+        "text": "pretty well but maybe I didn't look up",
+        "start": 431.78,
+        "duration": 5.31
+    },
+    {
+        "text": "perimeter it's the outside of an object",
+        "start": 435.229,
+        "duration": 3.451
+    },
+    {
+        "text": "everyone seems to like this problem I",
+        "start": 437.09,
+        "duration": 2.729
+    },
+    {
+        "text": "think it's a good one too",
+        "start": 438.68,
+        "duration": 3.359
+    },
+    {
+        "text": "very good beginner one let me know if",
+        "start": 439.819,
+        "duration": 3.81
+    },
+    {
+        "text": "you have any questions thank you guys",
+        "start": 442.039,
+        "duration": 3.421
+    },
+    {
+        "text": "for watching you know see you guys in",
+        "start": 443.629,
+        "duration": 5.421
+    },
+    {
+        "text": "the next one I do am also",
+        "start": 445.46,
+        "duration": 3.59
+    }
+]

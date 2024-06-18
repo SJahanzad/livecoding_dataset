@@ -1,0 +1,1097 @@
+[
+    {
+        "text": "welcome one welcome all to my video on",
+        "start": 0.62,
+        "duration": 8.47
+    },
+    {
+        "text": "fruit into baskets this is a problem",
+        "start": 6.569,
+        "duration": 6.211
+    },
+    {
+        "text": "that is a medium level problem and it",
+        "start": 9.09,
+        "duration": 6.209
+    },
+    {
+        "text": "has a bad description but I saw some",
+        "start": 12.78,
+        "duration": 7.32
+    },
+    {
+        "text": "dude doing it on on YouTube and his",
+        "start": 15.299,
+        "duration": 8.041
+    },
+    {
+        "text": "solution was using extra space using a",
+        "start": 20.1,
+        "duration": 4.589
+    },
+    {
+        "text": "hash map and you actually don't need a",
+        "start": 23.34,
+        "duration": 2.79
+    },
+    {
+        "text": "hash map for this it's a sliding window",
+        "start": 24.689,
+        "duration": 5.131
+    },
+    {
+        "text": "problem so you know it's this other dude",
+        "start": 26.13,
+        "duration": 5.1
+    },
+    {
+        "text": "that does leak code I'm not gonna give",
+        "start": 29.82,
+        "duration": 3.989
+    },
+    {
+        "text": "him any credit he's a a head of me but",
+        "start": 31.23,
+        "duration": 5.04
+    },
+    {
+        "text": "he did it worse cuz you can get this",
+        "start": 33.809,
+        "duration": 5.611
+    },
+    {
+        "text": "down he used linear runtime linear space",
+        "start": 36.27,
+        "duration": 4.859
+    },
+    {
+        "text": "you can get this down to linear runtime",
+        "start": 39.42,
+        "duration": 5.61
+    },
+    {
+        "text": "no space so you know you guys know who",
+        "start": 41.129,
+        "duration": 6.541
+    },
+    {
+        "text": "I'm talking about but it's all good I'm",
+        "start": 45.03,
+        "duration": 4.38
+    },
+    {
+        "text": "not I'm sorry beef in this coding",
+        "start": 47.67,
+        "duration": 3.63
+    },
+    {
+        "text": "community so you know I'm the best I'm",
+        "start": 49.41,
+        "duration": 3.96
+    },
+    {
+        "text": "the best here I'm the smartest I'm gonna",
+        "start": 51.3,
+        "duration": 4.919
+    },
+    {
+        "text": "take this thing over so this is called",
+        "start": 53.37,
+        "duration": 5.73
+    },
+    {
+        "text": "fruit into baskets in a row of trees the",
+        "start": 56.219,
+        "duration": 5.971
+    },
+    {
+        "text": "if-- tree produces a fruit tree of i",
+        "start": 59.1,
+        "duration": 7.29
+    },
+    {
+        "text": "okay so we have an array of trees okay",
+        "start": 62.19,
+        "duration": 6.39
+    },
+    {
+        "text": "except it's called tree even though it",
+        "start": 66.39,
+        "duration": 5.31
+    },
+    {
+        "text": "should be called trees I guess you",
+        "start": 68.58,
+        "duration": 4.32
+    },
+    {
+        "text": "started any tree of your choice you",
+        "start": 71.7,
+        "duration": 3.06
+    },
+    {
+        "text": "repeatedly formed the following steps",
+        "start": 72.9,
+        "duration": 5.399
+    },
+    {
+        "text": "perform the following steps you have two",
+        "start": 74.76,
+        "duration": 4.41
+    },
+    {
+        "text": "baskets",
+        "start": 78.299,
+        "duration": 2.941
+    },
+    {
+        "text": "apparently so this description is hard",
+        "start": 79.17,
+        "duration": 3.18
+    },
+    {
+        "text": "to understand so I'm going to break this",
+        "start": 81.24,
+        "duration": 3.269
+    },
+    {
+        "text": "down you have two baskets and there's a",
+        "start": 82.35,
+        "duration": 5.46
+    },
+    {
+        "text": "bunch of trees and you can add one piece",
+        "start": 84.509,
+        "duration": 5.281
+    },
+    {
+        "text": "of fruit from each tree into your basket",
+        "start": 87.81,
+        "duration": 4.65
+    },
+    {
+        "text": "so you can it's like a row of trees and",
+        "start": 89.79,
+        "duration": 4.41
+    },
+    {
+        "text": "you can go you can only go to the right",
+        "start": 92.46,
+        "duration": 4.199
+    },
+    {
+        "text": "so we have this array of trees you know",
+        "start": 94.2,
+        "duration": 4.23
+    },
+    {
+        "text": "let's get along right here like here",
+        "start": 96.659,
+        "duration": 4.591
+    },
+    {
+        "text": "this these are all the trees each of",
+        "start": 98.43,
+        "duration": 5.969
+    },
+    {
+        "text": "these numbers is a tree and each number",
+        "start": 101.25,
+        "duration": 5.04
+    },
+    {
+        "text": "that's different means a different type",
+        "start": 104.399,
+        "duration": 3.75
+    },
+    {
+        "text": "of fruit so you know you could say 3 is",
+        "start": 106.29,
+        "duration": 5.85
+    },
+    {
+        "text": "apples one is oranges 2 is bananas 4 is",
+        "start": 108.149,
+        "duration": 6.0
+    },
+    {
+        "text": "cucumbers I know cucumbers aren't a",
+        "start": 112.14,
+        "duration": 3.96
+    },
+    {
+        "text": "fruit but I like them and they don't",
+        "start": 114.149,
+        "duration": 3.9
+    },
+    {
+        "text": "grow on trees I like them they're gonna",
+        "start": 116.1,
+        "duration": 6.659
+    },
+    {
+        "text": "be tree stuff today ok now we can only",
+        "start": 118.049,
+        "duration": 6.691
+    },
+    {
+        "text": "go to the right so we can start anywhere",
+        "start": 122.759,
+        "duration": 4.531
+    },
+    {
+        "text": "and we can only go to the right and we",
+        "start": 124.74,
+        "duration": 5.28
+    },
+    {
+        "text": "can what we're being told here is we",
+        "start": 127.29,
+        "duration": 4.98
+    },
+    {
+        "text": "have two baskets and each basket can",
+        "start": 130.02,
+        "duration": 3.21
+    },
+    {
+        "text": "only have one",
+        "start": 132.27,
+        "duration": 3.54
+    },
+    {
+        "text": "of fruit so one basket could have all",
+        "start": 133.23,
+        "duration": 5.28
+    },
+    {
+        "text": "apples or all oranges or all cucumbers",
+        "start": 135.81,
+        "duration": 6.0
+    },
+    {
+        "text": "or whatever but it cannot have apples",
+        "start": 138.51,
+        "duration": 5.309
+    },
+    {
+        "text": "and bananas it cannot have apples and",
+        "start": 141.81,
+        "duration": 4.2
+    },
+    {
+        "text": "oranges it can only have one fruit so we",
+        "start": 143.819,
+        "duration": 4.651
+    },
+    {
+        "text": "can only have two types of fruits so the",
+        "start": 146.01,
+        "duration": 5.4
+    },
+    {
+        "text": "question is you know what is the most",
+        "start": 148.47,
+        "duration": 6.81
+    },
+    {
+        "text": "amount of fruit that we can carry in our",
+        "start": 151.41,
+        "duration": 6.06
+    },
+    {
+        "text": "two baskets all together so in two",
+        "start": 155.28,
+        "duration": 5.91
+    },
+    {
+        "text": "baskets and with two only two types of",
+        "start": 157.47,
+        "duration": 5.67
+    },
+    {
+        "text": "fruit so when you break it down the",
+        "start": 161.19,
+        "duration": 4.379
+    },
+    {
+        "text": "problems really saying the longest",
+        "start": 163.14,
+        "duration": 4.97
+    },
+    {
+        "text": "contiguous sub array of only two numbers",
+        "start": 165.569,
+        "duration": 5.461
+    },
+    {
+        "text": "so you know what I mean so this is only",
+        "start": 168.11,
+        "duration": 4.51
+    },
+    {
+        "text": "two numbers but once you get to here",
+        "start": 171.03,
+        "duration": 3.51
+    },
+    {
+        "text": "that's three numbers so you would",
+        "start": 172.62,
+        "duration": 4.53
+    },
+    {
+        "text": "eliminate the three and then this is two",
+        "start": 174.54,
+        "duration": 5.16
+    },
+    {
+        "text": "numbers this is two numbers this is",
+        "start": 177.15,
+        "duration": 3.899
+    },
+    {
+        "text": "still two numbers so there you go you're",
+        "start": 179.7,
+        "duration": 3.48
+    },
+    {
+        "text": "at five now but we're at three numbers",
+        "start": 181.049,
+        "duration": 4.141
+    },
+    {
+        "text": "here so you can't do that anymore so you",
+        "start": 183.18,
+        "duration": 3.48
+    },
+    {
+        "text": "got to eliminate it so you gotta go to",
+        "start": 185.19,
+        "duration": 3.84
+    },
+    {
+        "text": "right here you know what I mean so in",
+        "start": 186.66,
+        "duration": 6.12
+    },
+    {
+        "text": "that case it was five okay so how do we",
+        "start": 189.03,
+        "duration": 5.459
+    },
+    {
+        "text": "do this well you can use a sliding",
+        "start": 192.78,
+        "duration": 4.17
+    },
+    {
+        "text": "window and you just use maximals",
+        "start": 194.489,
+        "duration": 4.711
+    },
+    {
+        "text": "minimums some people use a hash map and",
+        "start": 196.95,
+        "duration": 4.439
+    },
+    {
+        "text": "they keep it size 2 and the hash map",
+        "start": 199.2,
+        "duration": 4.83
+    },
+    {
+        "text": "just kind of holds the quantities and",
+        "start": 201.389,
+        "duration": 3.96
+    },
+    {
+        "text": "stuff like that and you'll remove and",
+        "start": 204.03,
+        "duration": 2.97
+    },
+    {
+        "text": "add things to the hash map no let me",
+        "start": 205.349,
+        "duration": 3.871
+    },
+    {
+        "text": "explain this you are just gonna keep",
+        "start": 207.0,
+        "duration": 4.41
+    },
+    {
+        "text": "track of a couple of things so we're",
+        "start": 209.22,
+        "duration": 4.379
+    },
+    {
+        "text": "gonna keep track of the last fruit in",
+        "start": 211.41,
+        "duration": 4.59
+    },
+    {
+        "text": "the second-last fruit so we'll say last",
+        "start": 213.599,
+        "duration": 3.871
+    },
+    {
+        "text": "fruit is equal to negative one at first",
+        "start": 216.0,
+        "duration": 4.68
+    },
+    {
+        "text": "because there is no last fruit second",
+        "start": 217.47,
+        "duration": 6.269
+    },
+    {
+        "text": "last fruit is equal to negative one as",
+        "start": 220.68,
+        "duration": 4.95
+    },
+    {
+        "text": "well and then we're gonna keep track of",
+        "start": 223.739,
+        "duration": 5.731
+    },
+    {
+        "text": "last fruit count is equal to zero and",
+        "start": 225.63,
+        "duration": 6.479
+    },
+    {
+        "text": "then we're gonna keep track of a current",
+        "start": 229.47,
+        "duration": 6.12
+    },
+    {
+        "text": "Max and the max okay",
+        "start": 232.109,
+        "duration": 5.581
+    },
+    {
+        "text": "there we go so what we're gonna do now",
+        "start": 235.59,
+        "duration": 3.929
+    },
+    {
+        "text": "is we're gonna loop through each of the",
+        "start": 237.69,
+        "duration": 4.049
+    },
+    {
+        "text": "fruits and the trees so we're gonna say",
+        "start": 239.519,
+        "duration": 4.62
+    },
+    {
+        "text": "for fruit and tree even though it's",
+        "start": 241.739,
+        "duration": 6.421
+    },
+    {
+        "text": "trees we're gonna say what we're gonna",
+        "start": 244.139,
+        "duration": 6.0
+    },
+    {
+        "text": "do is we're gonna loop through all of",
+        "start": 248.16,
+        "duration": 4.439
+    },
+    {
+        "text": "these trees and we're gonna see the",
+        "start": 250.139,
+        "duration": 4.41
+    },
+    {
+        "text": "different types of fruits and we're",
+        "start": 252.599,
+        "duration": 4.32
+    },
+    {
+        "text": "gonna keep a current maximum we're gonna",
+        "start": 254.549,
+        "duration": 5.97
+    },
+    {
+        "text": "increase our current maximum whenever we",
+        "start": 256.919,
+        "duration": 5.731
+    },
+    {
+        "text": "only see two fruits right so when it's",
+        "start": 260.519,
+        "duration": 4.02
+    },
+    {
+        "text": "the same two fruits we're going to keep",
+        "start": 262.65,
+        "duration": 3.84
+    },
+    {
+        "text": "updating the current maximum in two",
+        "start": 264.539,
+        "duration": 4.171
+    },
+    {
+        "text": "we see a new fruit and then we're gonna",
+        "start": 266.49,
+        "duration": 5.79
+    },
+    {
+        "text": "do mint the current maximum because we",
+        "start": 268.71,
+        "duration": 8.989
+    },
+    {
+        "text": "have to and you'll see how we do that D",
+        "start": 272.28,
+        "duration": 5.419
+    },
+    {
+        "text": "criminal occur max represents the",
+        "start": 278.21,
+        "duration": 6.01
+    },
+    {
+        "text": "longest the current the current max",
+        "start": 280.919,
+        "duration": 5.661
+    },
+    {
+        "text": "represents the current you know",
+        "start": 284.22,
+        "duration": 6.419
+    },
+    {
+        "text": "contiguous o sub array of two types of",
+        "start": 286.58,
+        "duration": 7.78
+    },
+    {
+        "text": "fruit once we get to a new once we see",
+        "start": 290.639,
+        "duration": 5.611
+    },
+    {
+        "text": "three types of fruit we're gonna have to",
+        "start": 294.36,
+        "duration": 3.929
+    },
+    {
+        "text": "change it like we did in my when I was",
+        "start": 296.25,
+        "duration": 3.81
+    },
+    {
+        "text": "going over the example we're gonna have",
+        "start": 298.289,
+        "duration": 3.931
+    },
+    {
+        "text": "to change it so the current max would",
+        "start": 300.06,
+        "duration": 5.25
+    },
+    {
+        "text": "you know it'd be okay to be one then two",
+        "start": 302.22,
+        "duration": 7.02
+    },
+    {
+        "text": "it's only one type of fruit still 3/4 in",
+        "start": 305.31,
+        "duration": 5.94
+    },
+    {
+        "text": "the maximum gets updated every time two",
+        "start": 309.24,
+        "duration": 4.14
+    },
+    {
+        "text": "so the maximum is 4 and then we see a",
+        "start": 311.25,
+        "duration": 3.63
+    },
+    {
+        "text": "new fruit okay",
+        "start": 313.38,
+        "duration": 3.779
+    },
+    {
+        "text": "the maximum stays for but the current",
+        "start": 314.88,
+        "duration": 4.02
+    },
+    {
+        "text": "maximum has got to go we gotta get rid",
+        "start": 317.159,
+        "duration": 3.031
+    },
+    {
+        "text": "of these threes so the current maximum",
+        "start": 318.9,
+        "duration": 5.22
+    },
+    {
+        "text": "goes down to two three four five the",
+        "start": 320.19,
+        "duration": 6.539
+    },
+    {
+        "text": "maximum gets updated to five okay now we",
+        "start": 324.12,
+        "duration": 4.65
+    },
+    {
+        "text": "see a new number all right we're back to",
+        "start": 326.729,
+        "duration": 5.791
+    },
+    {
+        "text": "this one two three see a new number back",
+        "start": 328.77,
+        "duration": 5.85
+    },
+    {
+        "text": "to this one two three so yeah and then",
+        "start": 332.52,
+        "duration": 3.66
+    },
+    {
+        "text": "you just have the max at the end I think",
+        "start": 334.62,
+        "duration": 2.91
+    },
+    {
+        "text": "that makes sense I think that's pretty",
+        "start": 336.18,
+        "duration": 1.919
+    },
+    {
+        "text": "straightforward",
+        "start": 337.53,
+        "duration": 3.33
+    },
+    {
+        "text": "so let's just what we're going to be",
+        "start": 338.099,
+        "duration": 5.011
+    },
+    {
+        "text": "doing at each iteration is always",
+        "start": 340.86,
+        "duration": 4.35
+    },
+    {
+        "text": "updating the max so we say and that's",
+        "start": 343.11,
+        "duration": 3.72
+    },
+    {
+        "text": "how most maximum problems work you",
+        "start": 345.21,
+        "duration": 4.019
+    },
+    {
+        "text": "usually always update them max equals",
+        "start": 346.83,
+        "duration": 8.459
+    },
+    {
+        "text": "math max of current max and the max boom",
+        "start": 349.229,
+        "duration": 9.0
+    },
+    {
+        "text": "and you know then we just have some",
+        "start": 355.289,
+        "duration": 4.921
+    },
+    {
+        "text": "conditions okay so if the current fruit",
+        "start": 358.229,
+        "duration": 7.081
+    },
+    {
+        "text": "is equal to last fruit or the current",
+        "start": 360.21,
+        "duration": 8.82
+    },
+    {
+        "text": "fruit is equal to second last fruit well",
+        "start": 365.31,
+        "duration": 5.34
+    },
+    {
+        "text": "that's fine that means it's still the",
+        "start": 369.03,
+        "duration": 3.629
+    },
+    {
+        "text": "same two types of fruit right if the",
+        "start": 370.65,
+        "duration": 4.259
+    },
+    {
+        "text": "current fruit is three then we only saw",
+        "start": 372.659,
+        "duration": 4.41
+    },
+    {
+        "text": "threes that's fine if the current fruit",
+        "start": 374.909,
+        "duration": 4.23
+    },
+    {
+        "text": "is one okay we only saw threes and ones",
+        "start": 377.069,
+        "duration": 3.72
+    },
+    {
+        "text": "but once it's two then we got to do",
+        "start": 379.139,
+        "duration": 3.33
+    },
+    {
+        "text": "something so we just update the current",
+        "start": 380.789,
+        "duration": 4.111
+    },
+    {
+        "text": "max whenever things are going according",
+        "start": 382.469,
+        "duration": 5.991
+    },
+    {
+        "text": "to plan otherwise well that's bad",
+        "start": 384.9,
+        "duration": 6.63
+    },
+    {
+        "text": "otherwise we need this last fruit count",
+        "start": 388.46,
+        "duration": 4.9
+    },
+    {
+        "text": "and that keeps track of the count of the",
+        "start": 391.53,
+        "duration": 5.52
+    },
+    {
+        "text": "last number that we saw if we find a new",
+        "start": 393.36,
+        "duration": 7.11
+    },
+    {
+        "text": "last fruit so if we find a new last root",
+        "start": 397.05,
+        "duration": 5.76
+    },
+    {
+        "text": "then we're gonna set that this means we",
+        "start": 400.47,
+        "duration": 4.29
+    },
+    {
+        "text": "saw a new number else because it's not",
+        "start": 402.81,
+        "duration": 3.93
+    },
+    {
+        "text": "the last for the second less route and",
+        "start": 404.76,
+        "duration": 5.31
+    },
+    {
+        "text": "we just set current max is equal to the",
+        "start": 406.74,
+        "duration": 5.01
+    },
+    {
+        "text": "last four recount because you get rid of",
+        "start": 410.07,
+        "duration": 3.63
+    },
+    {
+        "text": "the first one right because you know we",
+        "start": 411.75,
+        "duration": 3.9
+    },
+    {
+        "text": "see three three three one and then we",
+        "start": 413.7,
+        "duration": 4.98
+    },
+    {
+        "text": "see a 2 you get rid of the threes so it",
+        "start": 415.65,
+        "duration": 6.84
+    },
+    {
+        "text": "becomes last fruit plus one last four",
+        "start": 418.68,
+        "duration": 6.09
+    },
+    {
+        "text": "count plus one boom pretty",
+        "start": 422.49,
+        "duration": 5.67
+    },
+    {
+        "text": "straightforward I think ok now we do",
+        "start": 424.77,
+        "duration": 6.36
+    },
+    {
+        "text": "just a couple other things okay well we",
+        "start": 428.16,
+        "duration": 5.22
+    },
+    {
+        "text": "have to increment the last fruit count",
+        "start": 431.13,
+        "duration": 4.44
+    },
+    {
+        "text": "obviously so if fruit is equal to last",
+        "start": 433.38,
+        "duration": 6.75
+    },
+    {
+        "text": "fruit well then obviously that means",
+        "start": 435.57,
+        "duration": 6.39
+    },
+    {
+        "text": "that we're seeing the last more than the",
+        "start": 440.13,
+        "duration": 5.73
+    },
+    {
+        "text": "last food so just boom okay otherwise if",
+        "start": 441.96,
+        "duration": 6.0
+    },
+    {
+        "text": "it's not equal to the last fruit well",
+        "start": 445.86,
+        "duration": 4.05
+    },
+    {
+        "text": "then last fruit count is gonna be equal",
+        "start": 447.96,
+        "duration": 3.84
+    },
+    {
+        "text": "to one because we're seeing a new last",
+        "start": 449.91,
+        "duration": 3.24
+    },
+    {
+        "text": "fruit that means it's all getting",
+        "start": 451.8,
+        "duration": 4.11
+    },
+    {
+        "text": "updated let's do this easier we're",
+        "start": 453.15,
+        "duration": 5.25
+    },
+    {
+        "text": "seeing a new fruit if fruits not last",
+        "start": 455.91,
+        "duration": 4.77
+    },
+    {
+        "text": "fruit count then we see a new fruit then",
+        "start": 458.4,
+        "duration": 3.84
+    },
+    {
+        "text": "obviously it just goes to one because we",
+        "start": 460.68,
+        "duration": 3.27
+    },
+    {
+        "text": "only saw one of the new fruit which will",
+        "start": 462.24,
+        "duration": 3.83
+    },
+    {
+        "text": "be the last fruit and then you just do",
+        "start": 463.95,
+        "duration": 4.56
+    },
+    {
+        "text": "while the fruit is not equal to last",
+        "start": 466.07,
+        "duration": 6.55
+    },
+    {
+        "text": "fruit we have to update the fruits so we",
+        "start": 468.51,
+        "duration": 7.29
+    },
+    {
+        "text": "say second last fruit is equal the last",
+        "start": 472.62,
+        "duration": 5.85
+    },
+    {
+        "text": "fruit just like a maximum you know",
+        "start": 475.8,
+        "duration": 6.119
+    },
+    {
+        "text": "second max updated to the max before you",
+        "start": 478.47,
+        "duration": 5.37
+    },
+    {
+        "text": "update max to the current it's just like",
+        "start": 481.919,
+        "duration": 3.511
+    },
+    {
+        "text": "all those problems that's pretty easy",
+        "start": 483.84,
+        "duration": 4.74
+    },
+    {
+        "text": "honestly and then last fruit just",
+        "start": 485.43,
+        "duration": 7.11
+    },
+    {
+        "text": "becomes current firt boom that's it",
+        "start": 488.58,
+        "duration": 5.58
+    },
+    {
+        "text": "that's the whole problem you submit and",
+        "start": 492.54,
+        "duration": 4.5
+    },
+    {
+        "text": "they'll be good if we return to anything",
+        "start": 494.16,
+        "duration": 4.62
+    },
+    {
+        "text": "and then you return the maximum of all",
+        "start": 497.04,
+        "duration": 3.78
+    },
+    {
+        "text": "of that I think this is a good job and I",
+        "start": 498.78,
+        "duration": 4.98
+    },
+    {
+        "text": "think you know you're wrong dude who did",
+        "start": 500.82,
+        "duration": 4.65
+    },
+    {
+        "text": "this with a hashmap on YouTube who's not",
+        "start": 503.76,
+        "duration": 3.93
+    },
+    {
+        "text": "I'm not gonna be named cuz you know I",
+        "start": 505.47,
+        "duration": 3.81
+    },
+    {
+        "text": "might call you out in a later video if I",
+        "start": 507.69,
+        "duration": 3.87
+    },
+    {
+        "text": "see any more trash going on with you but",
+        "start": 509.28,
+        "duration": 4.35
+    },
+    {
+        "text": "for now it's gonna be fine",
+        "start": 511.56,
+        "duration": 4.109
+    },
+    {
+        "text": "I'll let this one slide but get your",
+        "start": 513.63,
+        "duration": 3.15
+    },
+    {
+        "text": "space down bro",
+        "start": 515.669,
+        "duration": 3.81
+    },
+    {
+        "text": "I'm sorry but you gotta do that now",
+        "start": 516.78,
+        "duration": 6.36
+    },
+    {
+        "text": "that's pretty much it pretty easy I",
+        "start": 519.479,
+        "duration": 7.591
+    },
+    {
+        "text": "think you don't need a hashmap and yeah",
+        "start": 523.14,
+        "duration": 4.83
+    },
+    {
+        "text": "that's it let me know what you guys",
+        "start": 527.07,
+        "duration": 3.57
+    },
+    {
+        "text": "think check out my patreon I'm doing the",
+        "start": 527.97,
+        "duration": 6.21
+    },
+    {
+        "text": "order of the explore page Google you",
+        "start": 530.64,
+        "duration": 3.66
+    },
+    {
+        "text": "know",
+        "start": 534.18,
+        "duration": 3.27
+    },
+    {
+        "text": "all these big companies names so love no",
+        "start": 534.3,
+        "duration": 4.26
+    },
+    {
+        "text": "guests thank let me know if you have any",
+        "start": 537.45,
+        "duration": 3.18
+    },
+    {
+        "text": "questions about this I think it's pretty",
+        "start": 538.56,
+        "duration": 5.459
+    },
+    {
+        "text": "straight forward so there you go and I",
+        "start": 540.63,
+        "duration": 5.43
+    },
+    {
+        "text": "will see you guys next time alright see",
+        "start": 544.019,
+        "duration": 4.13
+    },
+    {
+        "text": "ya",
+        "start": 546.06,
+        "duration": 2.089
+    }
+]

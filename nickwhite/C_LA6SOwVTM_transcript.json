@@ -1,0 +1,582 @@
+[
+    {
+        "text": "hey what's up guys it's a nick white",
+        "start": 2.09,
+        "duration": 5.05
+    },
+    {
+        "text": "here doing another leak code video I do",
+        "start": 4.77,
+        "duration": 4.26
+    },
+    {
+        "text": "all the leak code problems so check them",
+        "start": 7.14,
+        "duration": 4.52
+    },
+    {
+        "text": "out if you get the chance",
+        "start": 9.03,
+        "duration": 2.63
+    },
+    {
+        "text": "this one's medium it's called odd-even",
+        "start": 11.84,
+        "duration": 5.08
+    },
+    {
+        "text": "linked list so it's a linked list",
+        "start": 14.73,
+        "duration": 3.0
+    },
+    {
+        "text": "problem",
+        "start": 16.92,
+        "duration": 3.81
+    },
+    {
+        "text": "I would go check out linked lists if you",
+        "start": 17.73,
+        "duration": 4.17
+    },
+    {
+        "text": "don't know what those are and then come",
+        "start": 20.73,
+        "duration": 3.66
+    },
+    {
+        "text": "back give it a singly linked list group",
+        "start": 21.9,
+        "duration": 5.07
+    },
+    {
+        "text": "all odd notes together followed by even",
+        "start": 24.39,
+        "duration": 4.44
+    },
+    {
+        "text": "notes please note that we're talking",
+        "start": 26.97,
+        "duration": 4.469
+    },
+    {
+        "text": "about no number and not the value of the",
+        "start": 28.83,
+        "duration": 4.95
+    },
+    {
+        "text": "note so you should try and do it in",
+        "start": 31.439,
+        "duration": 4.501
+    },
+    {
+        "text": "place the program should run into oh of",
+        "start": 33.78,
+        "duration": 5.189
+    },
+    {
+        "text": "one space you know of notes time right",
+        "start": 35.94,
+        "duration": 7.56
+    },
+    {
+        "text": "so he wants to group by basically like a",
+        "start": 38.969,
+        "duration": 8.491
+    },
+    {
+        "text": "index of array the number note comes you",
+        "start": 43.5,
+        "duration": 7.23
+    },
+    {
+        "text": "know so you know 1 2 3 4 5 we would want",
+        "start": 47.46,
+        "duration": 9.57
+    },
+    {
+        "text": "1 3 & 5 so 1 2 3 and 5 and then 2 & 4 to",
+        "start": 50.73,
+        "duration": 8.25
+    },
+    {
+        "text": "come after because of because of the",
+        "start": 57.03,
+        "duration": 7.47
+    },
+    {
+        "text": "place not because of the values so yeah",
+        "start": 58.98,
+        "duration": 6.149
+    },
+    {
+        "text": "you know",
+        "start": 64.5,
+        "duration": 5.28
+    },
+    {
+        "text": "same thing here like this would be 1 3 5",
+        "start": 65.129,
+        "duration": 9.261
+    },
+    {
+        "text": "7 like kind of like that in index wise",
+        "start": 69.78,
+        "duration": 11.46
+    },
+    {
+        "text": "so 2 3 6 you know 2 3 6 because it's the",
+        "start": 74.39,
+        "duration": 9.369
+    },
+    {
+        "text": "odd ones this is the first and then",
+        "start": 81.24,
+        "duration": 7.559
+    },
+    {
+        "text": "third this is the second so it's even in",
+        "start": 83.759,
+        "duration": 9.29
+    },
+    {
+        "text": "the even ones come after in the before",
+        "start": 88.799,
+        "duration": 4.25
+    },
+    {
+        "text": "it's not that bad just a little tricky",
+        "start": 95.36,
+        "duration": 6.399
+    },
+    {
+        "text": "with the next pointers and stuff but",
+        "start": 99.57,
+        "duration": 6.089
+    },
+    {
+        "text": "really not too hard so first of all do I",
+        "start": 101.759,
+        "duration": 7.89
+    },
+    {
+        "text": "just always do the initial checks if",
+        "start": 105.659,
+        "duration": 9.56
+    },
+    {
+        "text": "that is no it's just an empty list",
+        "start": 109.649,
+        "duration": 10.43
+    },
+    {
+        "text": "otherwise we're gonna do list node ahead",
+        "start": 115.219,
+        "duration": 8.26
+    },
+    {
+        "text": "list node we're actually going to the",
+        "start": 120.079,
+        "duration": 6.491
+    },
+    {
+        "text": "strategy for this is separating them",
+        "start": 123.479,
+        "duration": 5.28
+    },
+    {
+        "text": "into two separate linked lists right so",
+        "start": 126.57,
+        "duration": 3.57
+    },
+    {
+        "text": "we're gonna have a head for the even",
+        "start": 128.759,
+        "duration": 3.601
+    },
+    {
+        "text": "linked list and then we're gonna have a",
+        "start": 130.14,
+        "duration": 3.63
+    },
+    {
+        "text": "separate head for the",
+        "start": 132.36,
+        "duration": 4.92
+    },
+    {
+        "text": "odd length list and we're gonna return",
+        "start": 133.77,
+        "duration": 6.03
+    },
+    {
+        "text": "the one for the odd one so basically",
+        "start": 137.28,
+        "duration": 5.13
+    },
+    {
+        "text": "what we do is we build our even linked",
+        "start": 139.8,
+        "duration": 4.05
+    },
+    {
+        "text": "list and we build our odd linked list",
+        "start": 142.41,
+        "duration": 3.57
+    },
+    {
+        "text": "and then right at the end we connect our",
+        "start": 143.85,
+        "duration": 4.2
+    },
+    {
+        "text": "odd one to our even one because that's",
+        "start": 145.98,
+        "duration": 4.05
+    },
+    {
+        "text": "what we do we we have all the odd ones",
+        "start": 148.05,
+        "duration": 5.34
+    },
+    {
+        "text": "and then we just connect the even ones",
+        "start": 150.03,
+        "duration": 5.61
+    },
+    {
+        "text": "at that because the even even ones come",
+        "start": 153.39,
+        "duration": 30.36
+    },
+    {
+        "text": "after all those so so all we have to do",
+        "start": 155.64,
+        "duration": 35.73
+    },
+    {
+        "text": "after this is well even and this is",
+        "start": 183.75,
+        "duration": 11.34
+    },
+    {
+        "text": "because evens the end of the list so",
+        "start": 191.37,
+        "duration": 7.53
+    },
+    {
+        "text": "we're going to be reaching the end we'll",
+        "start": 195.09,
+        "duration": 6.66
+    },
+    {
+        "text": "do odd dot next is equal to even dot",
+        "start": 198.9,
+        "duration": 6.2
+    },
+    {
+        "text": "next which makes sense",
+        "start": 201.75,
+        "duration": 3.35
+    },
+    {
+        "text": "[Music]",
+        "start": 207.58,
+        "duration": 6.2
+    },
+    {
+        "text": "odd equals odd next because we have to",
+        "start": 210.59,
+        "duration": 5.26
+    },
+    {
+        "text": "every time we loop through we have to",
+        "start": 213.78,
+        "duration": 6.0
+    },
+    {
+        "text": "keep going to a new node and then we do",
+        "start": 215.85,
+        "duration": 8.13
+    },
+    {
+        "text": "even even not next it's just the same",
+        "start": 219.78,
+        "duration": 13.68
+    },
+    {
+        "text": "thing so now this builds our separate",
+        "start": 223.98,
+        "duration": 12.98
+    },
+    {
+        "text": "lists and now we have our separate lists",
+        "start": 233.46,
+        "duration": 8.04
+    },
+    {
+        "text": "we have one list with odd odd values in",
+        "start": 236.96,
+        "duration": 7.69
+    },
+    {
+        "text": "one list with even values because odd",
+        "start": 241.5,
+        "duration": 5.64
+    },
+    {
+        "text": "was the pointer for all the odd nodes",
+        "start": 244.65,
+        "duration": 5.04
+    },
+    {
+        "text": "and even has been updating with all the",
+        "start": 247.14,
+        "duration": 5.04
+    },
+    {
+        "text": "even nodes and now all we have to do is",
+        "start": 249.69,
+        "duration": 5.49
+    },
+    {
+        "text": "since the even head is still pointed at",
+        "start": 252.18,
+        "duration": 5.97
+    },
+    {
+        "text": "the head of the even list and odd is now",
+        "start": 255.18,
+        "duration": 5.19
+    },
+    {
+        "text": "at the end of the odd list all we can do",
+        "start": 258.15,
+        "duration": 6.57
+    },
+    {
+        "text": "is odd next equals even head it's a",
+        "start": 260.37,
+        "duration": 6.18
+    },
+    {
+        "text": "little tricky with the wording like how",
+        "start": 264.72,
+        "duration": 3.06
+    },
+    {
+        "text": "people feel you guys are",
+        "start": 266.55,
+        "duration": 6.9
+    },
+    {
+        "text": "and he just returned the head you just",
+        "start": 267.78,
+        "duration": 7.17
+    },
+    {
+        "text": "returned hat because that's still at the",
+        "start": 273.45,
+        "duration": 4.23
+    },
+    {
+        "text": "beginning of the odd list so head by the",
+        "start": 274.95,
+        "duration": 5.46
+    },
+    {
+        "text": "end of this the initial head pointer",
+        "start": 277.68,
+        "duration": 6.0
+    },
+    {
+        "text": "stays the initial head pointer even head",
+        "start": 280.41,
+        "duration": 6.33
+    },
+    {
+        "text": "is the pointer for the beginning of the",
+        "start": 283.68,
+        "duration": 6.81
+    },
+    {
+        "text": "even list alright let me just explain it",
+        "start": 286.74,
+        "duration": 6.87
+    },
+    {
+        "text": "one more time really clearly we separate",
+        "start": 290.49,
+        "duration": 6.12
+    },
+    {
+        "text": "we have one list at the beginning then",
+        "start": 293.61,
+        "duration": 5.01
+    },
+    {
+        "text": "what we do is we separate all the",
+        "start": 296.61,
+        "duration": 3.78
+    },
+    {
+        "text": "odd-numbered notes in all of the",
+        "start": 298.62,
+        "duration": 5.34
+    },
+    {
+        "text": "even-numbered notes this head is the",
+        "start": 300.39,
+        "duration": 6.93
+    },
+    {
+        "text": "head of all of those together the even",
+        "start": 303.96,
+        "duration": 6.9
+    },
+    {
+        "text": "head is just a head of the even ones the",
+        "start": 307.32,
+        "duration": 5.64
+    },
+    {
+        "text": "odd pointer at the end of this is going",
+        "start": 310.86,
+        "duration": 4.05
+    },
+    {
+        "text": "to be at the very end of the odd list",
+        "start": 312.96,
+        "duration": 6.6
+    },
+    {
+        "text": "and then the even this even one is going",
+        "start": 314.91,
+        "duration": 6.27
+    },
+    {
+        "text": "to be at the very end of the email list",
+        "start": 319.56,
+        "duration": 4.77
+    },
+    {
+        "text": "and what we do is we just take the odd",
+        "start": 321.18,
+        "duration": 6.239
+    },
+    {
+        "text": "list and we do since this is at the end",
+        "start": 324.33,
+        "duration": 3.63
+    },
+    {
+        "text": "already",
+        "start": 327.419,
+        "duration": 2.761
+    },
+    {
+        "text": "we just did odd dot next is equal to",
+        "start": 327.96,
+        "duration": 3.33
+    },
+    {
+        "text": "even head because that's at the",
+        "start": 330.18,
+        "duration": 3.299
+    },
+    {
+        "text": "beginning of the evens so it's just like",
+        "start": 331.29,
+        "duration": 4.71
+    },
+    {
+        "text": "the connection is between odd and even",
+        "start": 333.479,
+        "duration": 4.561
+    },
+    {
+        "text": "add it connects those two lists puts",
+        "start": 336.0,
+        "duration": 4.08
+    },
+    {
+        "text": "them back together and just restructure",
+        "start": 338.04,
+        "duration": 4.74
+    },
+    {
+        "text": "them and makes it so that it went hard",
+        "start": 340.08,
+        "duration": 5.58
+    },
+    {
+        "text": "even and it reconstructed the whole list",
+        "start": 342.78,
+        "duration": 4.889
+    },
+    {
+        "text": "and then we return the head because",
+        "start": 345.66,
+        "duration": 3.45
+    },
+    {
+        "text": "remember that's still at the very",
+        "start": 347.669,
+        "duration": 3.921
+    },
+    {
+        "text": "beginning of all of them together and",
+        "start": 349.11,
+        "duration": 5.01
+    },
+    {
+        "text": "yeah that's it and hopefully this works",
+        "start": 351.59,
+        "duration": 8.17
+    },
+    {
+        "text": "first try yeah it does so thank you guys",
+        "start": 354.12,
+        "duration": 7.799
+    },
+    {
+        "text": "for watching this video check out other",
+        "start": 359.76,
+        "duration": 3.719
+    },
+    {
+        "text": "ones this one was a little hard to",
+        "start": 361.919,
+        "duration": 3.661
+    },
+    {
+        "text": "explain just with all these little just",
+        "start": 363.479,
+        "duration": 3.901
+    },
+    {
+        "text": "kind of the wording is kind of you know",
+        "start": 365.58,
+        "duration": 3.81
+    },
+    {
+        "text": "odd next because he just all the evens",
+        "start": 367.38,
+        "duration": 5.07
+    },
+    {
+        "text": "and odds words but check out the other",
+        "start": 369.39,
+        "duration": 5.52
+    },
+    {
+        "text": "videos thank you guys for watching and",
+        "start": 372.45,
+        "duration": 5.36
+    },
+    {
+        "text": "I'll see you later",
+        "start": 374.91,
+        "duration": 2.9
+    }
+]

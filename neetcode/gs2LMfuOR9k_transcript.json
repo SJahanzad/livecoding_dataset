@@ -1,0 +1,1112 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.6
+    },
+    {
+        "text": "write some more neat code today so",
+        "start": 1.76,
+        "duration": 3.92
+    },
+    {
+        "text": "today we're gonna solve lowest common",
+        "start": 3.6,
+        "duration": 4.239
+    },
+    {
+        "text": "ancestor of a binary search tree",
+        "start": 5.68,
+        "duration": 4.4
+    },
+    {
+        "text": "and if you recall a while ago in a video",
+        "start": 7.839,
+        "duration": 3.76
+    },
+    {
+        "text": "i showed you guys this",
+        "start": 10.08,
+        "duration": 4.4
+    },
+    {
+        "text": "sheet of the 75 blind problems that have",
+        "start": 11.599,
+        "duration": 4.881
+    },
+    {
+        "text": "become pretty popular and so this is",
+        "start": 14.48,
+        "duration": 3.92
+    },
+    {
+        "text": "basically a spreadsheet that i showed",
+        "start": 16.48,
+        "duration": 3.92
+    },
+    {
+        "text": "with an entire list of those problems",
+        "start": 18.4,
+        "duration": 3.76
+    },
+    {
+        "text": "and i've actually ended up making videos",
+        "start": 20.4,
+        "duration": 3.68
+    },
+    {
+        "text": "for most of these problems so far",
+        "start": 22.16,
+        "duration": 3.92
+    },
+    {
+        "text": "the video that we're doing today is",
+        "start": 24.08,
+        "duration": 3.359
+    },
+    {
+        "text": "actually going to be lowest common",
+        "start": 26.08,
+        "duration": 2.88
+    },
+    {
+        "text": "ancestor one of the few problems that i",
+        "start": 27.439,
+        "duration": 2.961
+    },
+    {
+        "text": "haven't done yet so",
+        "start": 28.96,
+        "duration": 3.119
+    },
+    {
+        "text": "i will be linking this sheet in the",
+        "start": 30.4,
+        "duration": 3.04
+    },
+    {
+        "text": "description if you do want to take a",
+        "start": 32.079,
+        "duration": 3.201
+    },
+    {
+        "text": "look and i'll probably be trying to wrap",
+        "start": 33.44,
+        "duration": 3.84
+    },
+    {
+        "text": "up most of the problems in this list i",
+        "start": 35.28,
+        "duration": 3.04
+    },
+    {
+        "text": "think one of the",
+        "start": 37.28,
+        "duration": 2.4
+    },
+    {
+        "text": "next ones that i'm going to be doing is",
+        "start": 38.32,
+        "duration": 2.96
+    },
+    {
+        "text": "alien dictionary because i really like",
+        "start": 39.68,
+        "duration": 2.64
+    },
+    {
+        "text": "that problem",
+        "start": 41.28,
+        "duration": 3.119
+    },
+    {
+        "text": "and once i've gotten this entire sheet",
+        "start": 42.32,
+        "duration": 3.919
+    },
+    {
+        "text": "of problems done i'll probably be making",
+        "start": 44.399,
+        "duration": 3.201
+    },
+    {
+        "text": "a playlist for it",
+        "start": 46.239,
+        "duration": 3.601
+    },
+    {
+        "text": "but for now you can watch the videos",
+        "start": 47.6,
+        "duration": 4.24
+    },
+    {
+        "text": "that are currently available for this",
+        "start": 49.84,
+        "duration": 3.359
+    },
+    {
+        "text": "list of problems",
+        "start": 51.84,
+        "duration": 3.28
+    },
+    {
+        "text": "so in this problem we're given a binary",
+        "start": 53.199,
+        "duration": 3.601
+    },
+    {
+        "text": "search tree and we're and we're supposed",
+        "start": 55.12,
+        "duration": 3.84
+    },
+    {
+        "text": "to find the lowest common ancestor of",
+        "start": 56.8,
+        "duration": 2.559
+    },
+    {
+        "text": "two",
+        "start": 58.96,
+        "duration": 2.96
+    },
+    {
+        "text": "given input nodes in the binary search",
+        "start": 59.359,
+        "duration": 3.121
+    },
+    {
+        "text": "tree",
+        "start": 61.92,
+        "duration": 2.48
+    },
+    {
+        "text": "and so the lowest common ancestor is",
+        "start": 62.48,
+        "duration": 4.319
+    },
+    {
+        "text": "basically defined as being the lowest",
+        "start": 64.4,
+        "duration": 5.68
+    },
+    {
+        "text": "node in the tree such that p",
+        "start": 66.799,
+        "duration": 6.481
+    },
+    {
+        "text": "and q are descendants of this",
+        "start": 70.08,
+        "duration": 6.56
+    },
+    {
+        "text": "node or p or q happens to be equal to",
+        "start": 73.28,
+        "duration": 4.32
+    },
+    {
+        "text": "this node",
+        "start": 76.64,
+        "duration": 3.68
+    },
+    {
+        "text": "so basically what we're saying is six",
+        "start": 77.6,
+        "duration": 4.72
+    },
+    {
+        "text": "can technically be a descendant of",
+        "start": 80.32,
+        "duration": 2.88
+    },
+    {
+        "text": "itself",
+        "start": 82.32,
+        "duration": 2.72
+    },
+    {
+        "text": "so for example in this problem in this",
+        "start": 83.2,
+        "duration": 3.919
+    },
+    {
+        "text": "example we're given p equals two q",
+        "start": 85.04,
+        "duration": 4.64
+    },
+    {
+        "text": "equals eight so we're going to start at",
+        "start": 87.119,
+        "duration": 3.36
+    },
+    {
+        "text": "the root",
+        "start": 89.68,
+        "duration": 3.6
+    },
+    {
+        "text": "because the root is always going to be a",
+        "start": 90.479,
+        "duration": 4.241
+    },
+    {
+        "text": "common ancestor of",
+        "start": 93.28,
+        "duration": 3.68
+    },
+    {
+        "text": "every single node in the tree right",
+        "start": 94.72,
+        "duration": 3.28
+    },
+    {
+        "text": "that's just",
+        "start": 96.96,
+        "duration": 2.96
+    },
+    {
+        "text": "kind of basic right for you know this",
+        "start": 98.0,
+        "duration": 3.52
+    },
+    {
+        "text": "node in this node of course",
+        "start": 99.92,
+        "duration": 3.36
+    },
+    {
+        "text": "this is going to be a common ancestor",
+        "start": 101.52,
+        "duration": 4.16
+    },
+    {
+        "text": "it's not necessarily the lowest common",
+        "start": 103.28,
+        "duration": 3.119
+    },
+    {
+        "text": "ancestor",
+        "start": 105.68,
+        "duration": 3.84
+    },
+    {
+        "text": "but it is a common ancestor so",
+        "start": 106.399,
+        "duration": 6.321
+    },
+    {
+        "text": "what we're gonna see is p is less than",
+        "start": 109.52,
+        "duration": 4.879
+    },
+    {
+        "text": "six therefore it's going to be in the",
+        "start": 112.72,
+        "duration": 3.359
+    },
+    {
+        "text": "left subtree and it actually happens to",
+        "start": 114.399,
+        "duration": 2.641
+    },
+    {
+        "text": "be a direct",
+        "start": 116.079,
+        "duration": 4.32
+    },
+    {
+        "text": "child of six eight happens to be greater",
+        "start": 117.04,
+        "duration": 5.6
+    },
+    {
+        "text": "than six so it's gonna go in the right",
+        "start": 120.399,
+        "duration": 2.961
+    },
+    {
+        "text": "subtree",
+        "start": 122.64,
+        "duration": 2.56
+    },
+    {
+        "text": "so basically if we went in the left sub",
+        "start": 123.36,
+        "duration": 3.2
+    },
+    {
+        "text": "tree two is two",
+        "start": 125.2,
+        "duration": 4.399
+    },
+    {
+        "text": "going to be a ancestor of",
+        "start": 126.56,
+        "duration": 5.84
+    },
+    {
+        "text": "two and eight of course not right two",
+        "start": 129.599,
+        "duration": 4.801
+    },
+    {
+        "text": "can't be an ancestor of the node eight",
+        "start": 132.4,
+        "duration": 3.919
+    },
+    {
+        "text": "if it's in a different subtree",
+        "start": 134.4,
+        "duration": 3.76
+    },
+    {
+        "text": "similarly eight is not going to be a",
+        "start": 136.319,
+        "duration": 3.361
+    },
+    {
+        "text": "common ancestor of two",
+        "start": 138.16,
+        "duration": 3.84
+    },
+    {
+        "text": "so basically if we look at this level or",
+        "start": 139.68,
+        "duration": 3.6
+    },
+    {
+        "text": "if we keep going down",
+        "start": 142.0,
+        "duration": 3.28
+    },
+    {
+        "text": "we're never gonna find a common ancestor",
+        "start": 143.28,
+        "duration": 4.16
+    },
+    {
+        "text": "between two and eight so the lowest one",
+        "start": 145.28,
+        "duration": 3.12
+    },
+    {
+        "text": "that we found",
+        "start": 147.44,
+        "duration": 3.12
+    },
+    {
+        "text": "ended up being six so we notice if",
+        "start": 148.4,
+        "duration": 3.28
+    },
+    {
+        "text": "there's a split",
+        "start": 150.56,
+        "duration": 4.16
+    },
+    {
+        "text": "between the nodes that p and q",
+        "start": 151.68,
+        "duration": 4.24
+    },
+    {
+        "text": "are going at if they're going in",
+        "start": 154.72,
+        "duration": 3.36
+    },
+    {
+        "text": "separate sub trees where that split",
+        "start": 155.92,
+        "duration": 4.48
+    },
+    {
+        "text": "occurs is going to be the lowest common",
+        "start": 158.08,
+        "duration": 3.2
+    },
+    {
+        "text": "ancestor",
+        "start": 160.4,
+        "duration": 3.28
+    },
+    {
+        "text": "so if i change this problem slightly and",
+        "start": 161.28,
+        "duration": 3.36
+    },
+    {
+        "text": "i gave",
+        "start": 163.68,
+        "duration": 4.559
+    },
+    {
+        "text": "p as 7 and q as 9 we would once again",
+        "start": 164.64,
+        "duration": 5.04
+    },
+    {
+        "text": "start at the root because we know this",
+        "start": 168.239,
+        "duration": 3.121
+    },
+    {
+        "text": "is going to be a common ancestor of",
+        "start": 169.68,
+        "duration": 2.639
+    },
+    {
+        "text": "these two nodes",
+        "start": 171.36,
+        "duration": 2.959
+    },
+    {
+        "text": "and so now we're going to check okay 7",
+        "start": 172.319,
+        "duration": 3.2
+    },
+    {
+        "text": "is greater",
+        "start": 174.319,
+        "duration": 4.481
+    },
+    {
+        "text": "than 6 right and 9 is",
+        "start": 175.519,
+        "duration": 5.521
+    },
+    {
+        "text": "also greater than 6. so therefore we",
+        "start": 178.8,
+        "duration": 3.519
+    },
+    {
+        "text": "don't need to search in separate",
+        "start": 181.04,
+        "duration": 3.04
+    },
+    {
+        "text": "subtrees we can just go to the right",
+        "start": 182.319,
+        "duration": 4.401
+    },
+    {
+        "text": "subtree to look for both of these values",
+        "start": 184.08,
+        "duration": 4.4
+    },
+    {
+        "text": "we know that this is not going to be the",
+        "start": 186.72,
+        "duration": 3.519
+    },
+    {
+        "text": "lowest common ancestor this could",
+        "start": 188.48,
+        "duration": 3.039
+    },
+    {
+        "text": "potentially though",
+        "start": 190.239,
+        "duration": 3.441
+    },
+    {
+        "text": "be the lowest common ancestor so now",
+        "start": 191.519,
+        "duration": 3.44
+    },
+    {
+        "text": "once again we're going to repeat that",
+        "start": 193.68,
+        "duration": 2.479
+    },
+    {
+        "text": "we're going to say 7",
+        "start": 194.959,
+        "duration": 3.041
+    },
+    {
+        "text": "that's going to be less than eight so",
+        "start": 196.159,
+        "duration": 3.201
+    },
+    {
+        "text": "for a seven we're gonna have to look in",
+        "start": 198.0,
+        "duration": 2.64
+    },
+    {
+        "text": "the left subtree",
+        "start": 199.36,
+        "duration": 3.44
+    },
+    {
+        "text": "nine is greater than eight so for that",
+        "start": 200.64,
+        "duration": 3.519
+    },
+    {
+        "text": "we're gonna have to look in the right",
+        "start": 202.8,
+        "duration": 2.24
+    },
+    {
+        "text": "subtree so",
+        "start": 204.159,
+        "duration": 3.36
+    },
+    {
+        "text": "since this is where the split occurred",
+        "start": 205.04,
+        "duration": 4.16
+    },
+    {
+        "text": "that means this is going to be the",
+        "start": 207.519,
+        "duration": 3.761
+    },
+    {
+        "text": "lowest common ancestor for this",
+        "start": 209.2,
+        "duration": 4.319
+    },
+    {
+        "text": "input so we would return this node as",
+        "start": 211.28,
+        "duration": 3.84
+    },
+    {
+        "text": "the lowest common ancestor",
+        "start": 213.519,
+        "duration": 4.961
+    },
+    {
+        "text": "so one last case is if we changed q",
+        "start": 215.12,
+        "duration": 6.16
+    },
+    {
+        "text": "to be a six so once again we would start",
+        "start": 218.48,
+        "duration": 4.479
+    },
+    {
+        "text": "at the root right before we were",
+        "start": 221.28,
+        "duration": 2.64
+    },
+    {
+        "text": "checking if p",
+        "start": 222.959,
+        "duration": 3.441
+    },
+    {
+        "text": "and q were both greater than six then we",
+        "start": 223.92,
+        "duration": 3.76
+    },
+    {
+        "text": "look in the right subtree",
+        "start": 226.4,
+        "duration": 3.36
+    },
+    {
+        "text": "if they're both less than six then we",
+        "start": 227.68,
+        "duration": 3.52
+    },
+    {
+        "text": "look in the left sub tree",
+        "start": 229.76,
+        "duration": 3.119
+    },
+    {
+        "text": "if they're if one of them is in the",
+        "start": 231.2,
+        "duration": 3.119
+    },
+    {
+        "text": "right sub tree and one of them is",
+        "start": 232.879,
+        "duration": 3.28
+    },
+    {
+        "text": "in the left sub tree that's how we know",
+        "start": 234.319,
+        "duration": 3.441
+    },
+    {
+        "text": "this is the lowest common ancestor but",
+        "start": 236.159,
+        "duration": 3.44
+    },
+    {
+        "text": "what about the last edge case",
+        "start": 237.76,
+        "duration": 3.92
+    },
+    {
+        "text": "where one of these nodes happens to be",
+        "start": 239.599,
+        "duration": 4.161
+    },
+    {
+        "text": "equal to the root node",
+        "start": 241.68,
+        "duration": 4.24
+    },
+    {
+        "text": "in that case this is potentially the",
+        "start": 243.76,
+        "duration": 3.44
+    },
+    {
+        "text": "lowest common ancestor",
+        "start": 245.92,
+        "duration": 2.959
+    },
+    {
+        "text": "it's definitely a common ancestor of",
+        "start": 247.2,
+        "duration": 3.52
+    },
+    {
+        "text": "both of these but now if we go",
+        "start": 248.879,
+        "duration": 4.72
+    },
+    {
+        "text": "lower for sure none of the descendants",
+        "start": 250.72,
+        "duration": 3.439
+    },
+    {
+        "text": "of this",
+        "start": 253.599,
+        "duration": 2.801
+    },
+    {
+        "text": "node nothing in the left subtree or in",
+        "start": 254.159,
+        "duration": 3.76
+    },
+    {
+        "text": "the right subtree is going to be a",
+        "start": 256.4,
+        "duration": 4.16
+    },
+    {
+        "text": "ancestor of this node itself right so",
+        "start": 257.919,
+        "duration": 3.361
+    },
+    {
+        "text": "basically",
+        "start": 260.56,
+        "duration": 3.12
+    },
+    {
+        "text": "if we ever reach the node itself for",
+        "start": 261.28,
+        "duration": 3.359
+    },
+    {
+        "text": "example six",
+        "start": 263.68,
+        "duration": 2.799
+    },
+    {
+        "text": "then that's going to be the lowest",
+        "start": 264.639,
+        "duration": 3.361
+    },
+    {
+        "text": "common ancestor so it's",
+        "start": 266.479,
+        "duration": 4.0
+    },
+    {
+        "text": "an ancestor of itself and it's also an",
+        "start": 268.0,
+        "duration": 3.44
+    },
+    {
+        "text": "ancestor of",
+        "start": 270.479,
+        "duration": 4.561
+    },
+    {
+        "text": "seven which can be found down here right",
+        "start": 271.44,
+        "duration": 5.68
+    },
+    {
+        "text": "so this problem isn't too difficult once",
+        "start": 275.04,
+        "duration": 3.599
+    },
+    {
+        "text": "you can kind of understand that if",
+        "start": 277.12,
+        "duration": 1.92
+    },
+    {
+        "text": "there's",
+        "start": 278.639,
+        "duration": 3.601
+    },
+    {
+        "text": "a split between these two nodes then",
+        "start": 279.04,
+        "duration": 5.04
+    },
+    {
+        "text": "that's going to be the lca the",
+        "start": 282.24,
+        "duration": 4.32
+    },
+    {
+        "text": "lowest common ancestor and since we're",
+        "start": 284.08,
+        "duration": 4.559
+    },
+    {
+        "text": "doing it this way we don't have to visit",
+        "start": 286.56,
+        "duration": 4.48
+    },
+    {
+        "text": "every single node in the entire tree so",
+        "start": 288.639,
+        "duration": 3.761
+    },
+    {
+        "text": "the time complexity is not going to be",
+        "start": 291.04,
+        "duration": 2.879
+    },
+    {
+        "text": "big o of n it's going to be",
+        "start": 292.4,
+        "duration": 3.28
+    },
+    {
+        "text": "log n because we're only going to have",
+        "start": 293.919,
+        "duration": 3.201
+    },
+    {
+        "text": "to visit one",
+        "start": 295.68,
+        "duration": 4.32
+    },
+    {
+        "text": "node for every single level in the tree",
+        "start": 297.12,
+        "duration": 4.639
+    },
+    {
+        "text": "so basically the time complexity is the",
+        "start": 300.0,
+        "duration": 3.6
+    },
+    {
+        "text": "height of the tree which is usually",
+        "start": 301.759,
+        "duration": 3.041
+    },
+    {
+        "text": "going to be log n",
+        "start": 303.6,
+        "duration": 2.64
+    },
+    {
+        "text": "and the memory complexity is just going",
+        "start": 304.8,
+        "duration": 3.119
+    },
+    {
+        "text": "to be big o of 1 because we're not",
+        "start": 306.24,
+        "duration": 3.28
+    },
+    {
+        "text": "really needing any data structures or",
+        "start": 307.919,
+        "duration": 2.081
+    },
+    {
+        "text": "anything like",
+        "start": 309.52,
+        "duration": 2.72
+    },
+    {
+        "text": "that that being said let's jump into the",
+        "start": 310.0,
+        "duration": 4.4
+    },
+    {
+        "text": "code now so as i mentioned we are going",
+        "start": 312.24,
+        "duration": 2.799
+    },
+    {
+        "text": "to start",
+        "start": 314.4,
+        "duration": 3.04
+    },
+    {
+        "text": "ourselves at the root node and we're",
+        "start": 315.039,
+        "duration": 3.921
+    },
+    {
+        "text": "basically going to continue until we",
+        "start": 317.44,
+        "duration": 2.56
+    },
+    {
+        "text": "find our result",
+        "start": 318.96,
+        "duration": 3.44
+    },
+    {
+        "text": "so we're guaranteed to find a result p",
+        "start": 320.0,
+        "duration": 4.08
+    },
+    {
+        "text": "and q are guaranteed to exist",
+        "start": 322.4,
+        "duration": 3.68
+    },
+    {
+        "text": "in the input tree so what we're just",
+        "start": 324.08,
+        "duration": 3.6
+    },
+    {
+        "text": "going to say is while current is not",
+        "start": 326.08,
+        "duration": 3.04
+    },
+    {
+        "text": "null now it's never going to be null",
+        "start": 327.68,
+        "duration": 2.88
+    },
+    {
+        "text": "because we are going to find a result",
+        "start": 329.12,
+        "duration": 2.88
+    },
+    {
+        "text": "but this is just a way to get it to",
+        "start": 330.56,
+        "duration": 3.359
+    },
+    {
+        "text": "execute forever until we find that",
+        "start": 332.0,
+        "duration": 2.639
+    },
+    {
+        "text": "result",
+        "start": 333.919,
+        "duration": 3.761
+    },
+    {
+        "text": "so one case would be if the p-value and",
+        "start": 334.639,
+        "duration": 3.521
+    },
+    {
+        "text": "the q",
+        "start": 337.68,
+        "duration": 3.04
+    },
+    {
+        "text": "value were both greater than the root",
+        "start": 338.16,
+        "duration": 4.08
+    },
+    {
+        "text": "value or the current value that we're",
+        "start": 340.72,
+        "duration": 2.24
+    },
+    {
+        "text": "visiting",
+        "start": 342.24,
+        "duration": 2.0
+    },
+    {
+        "text": "and in that case we would have to go",
+        "start": 342.96,
+        "duration": 3.76
+    },
+    {
+        "text": "down the right subtree",
+        "start": 344.24,
+        "duration": 3.6
+    },
+    {
+        "text": "so since we're going down the right",
+        "start": 346.72,
+        "duration": 3.039
+    },
+    {
+        "text": "subtree we can update our current",
+        "start": 347.84,
+        "duration": 3.359
+    },
+    {
+        "text": "pointer to current dot",
+        "start": 349.759,
+        "duration": 3.921
+    },
+    {
+        "text": "right now the else case is basically",
+        "start": 351.199,
+        "duration": 4.56
+    },
+    {
+        "text": "going to be the opposite of this",
+        "start": 353.68,
+        "duration": 3.92
+    },
+    {
+        "text": "so i'm just going to copy and paste that",
+        "start": 355.759,
+        "duration": 4.241
+    },
+    {
+        "text": "basically if both of the values happen",
+        "start": 357.6,
+        "duration": 2.879
+    },
+    {
+        "text": "to be",
+        "start": 360.0,
+        "duration": 2.16
+    },
+    {
+        "text": "less than the current node that we're",
+        "start": 360.479,
+        "duration": 2.961
+    },
+    {
+        "text": "visiting in that case we would want to",
+        "start": 362.16,
+        "duration": 3.039
+    },
+    {
+        "text": "go down the left subtree",
+        "start": 363.44,
+        "duration": 3.68
+    },
+    {
+        "text": "so in that case we can update current",
+        "start": 365.199,
+        "duration": 3.921
+    },
+    {
+        "text": "and set it equal to current dot",
+        "start": 367.12,
+        "duration": 5.04
+    },
+    {
+        "text": "left now the last case is basically if",
+        "start": 369.12,
+        "duration": 4.96
+    },
+    {
+        "text": "our split occurs or if we end up",
+        "start": 372.16,
+        "duration": 2.4
+    },
+    {
+        "text": "actually",
+        "start": 374.08,
+        "duration": 2.48
+    },
+    {
+        "text": "finding basically finding one of the",
+        "start": 374.56,
+        "duration": 3.199
+    },
+    {
+        "text": "values p or",
+        "start": 376.56,
+        "duration": 3.68
+    },
+    {
+        "text": "q and in that case it basically means we",
+        "start": 377.759,
+        "duration": 4.641
+    },
+    {
+        "text": "have found our result either way so we",
+        "start": 380.24,
+        "duration": 3.44
+    },
+    {
+        "text": "would just be able to return",
+        "start": 382.4,
+        "duration": 3.44
+    },
+    {
+        "text": "current itself now we don't have to put",
+        "start": 383.68,
+        "duration": 3.84
+    },
+    {
+        "text": "any return statement outside of the loop",
+        "start": 385.84,
+        "duration": 2.96
+    },
+    {
+        "text": "because we're guaranteed that this is",
+        "start": 387.52,
+        "duration": 3.28
+    },
+    {
+        "text": "going to execute at some point",
+        "start": 388.8,
+        "duration": 3.92
+    },
+    {
+        "text": "so as you can see this is a pretty",
+        "start": 390.8,
+        "duration": 3.28
+    },
+    {
+        "text": "efficient solution",
+        "start": 392.72,
+        "duration": 3.199
+    },
+    {
+        "text": "so i hope that this was helpful if it",
+        "start": 394.08,
+        "duration": 3.679
+    },
+    {
+        "text": "was please like and subscribe it",
+        "start": 395.919,
+        "duration": 3.681
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 397.759,
+        "duration": 2.481
+    },
+    {
+        "text": "hopefully",
+        "start": 399.6,
+        "duration": 4.879
+    },
+    {
+        "text": "see you pretty soon thanks for watching",
+        "start": 400.24,
+        "duration": 4.239
+    }
+]

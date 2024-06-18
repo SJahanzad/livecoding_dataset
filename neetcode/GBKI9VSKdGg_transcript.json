@@ -1,0 +1,2467 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.6
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.76,
+        "duration": 3.84
+    },
+    {
+        "text": "let's solve combination sum",
+        "start": 3.6,
+        "duration": 3.759
+    },
+    {
+        "text": "and this is another problem from that",
+        "start": 5.6,
+        "duration": 3.76
+    },
+    {
+        "text": "blind 75 list the link will be in the",
+        "start": 7.359,
+        "duration": 4.081
+    },
+    {
+        "text": "description so we are doing one more",
+        "start": 9.36,
+        "duration": 2.8
+    },
+    {
+        "text": "problem",
+        "start": 11.44,
+        "duration": 2.48
+    },
+    {
+        "text": "and have very few problems from this",
+        "start": 12.16,
+        "duration": 3.04
+    },
+    {
+        "text": "list remaining",
+        "start": 13.92,
+        "duration": 3.84
+    },
+    {
+        "text": "so we're given an array of distinct",
+        "start": 15.2,
+        "duration": 3.6
+    },
+    {
+        "text": "integers called",
+        "start": 17.76,
+        "duration": 3.359
+    },
+    {
+        "text": "candidates and we're given a target",
+        "start": 18.8,
+        "duration": 3.12
+    },
+    {
+        "text": "integer called",
+        "start": 21.119,
+        "duration": 3.92
+    },
+    {
+        "text": "target and we just want to return a",
+        "start": 21.92,
+        "duration": 6.48
+    },
+    {
+        "text": "list of all the unique combinations of",
+        "start": 25.039,
+        "duration": 5.921
+    },
+    {
+        "text": "candidates where all those numbers end",
+        "start": 28.4,
+        "duration": 3.999
+    },
+    {
+        "text": "up summing to the",
+        "start": 30.96,
+        "duration": 3.84
+    },
+    {
+        "text": "target value and we're allowed to return",
+        "start": 32.399,
+        "duration": 4.481
+    },
+    {
+        "text": "those combinations in any order",
+        "start": 34.8,
+        "duration": 4.72
+    },
+    {
+        "text": "and we're also allowed to use the same",
+        "start": 36.88,
+        "duration": 3.92
+    },
+    {
+        "text": "number from candidates",
+        "start": 39.52,
+        "duration": 4.32
+    },
+    {
+        "text": "multiple times but we don't want to have",
+        "start": 40.8,
+        "duration": 3.84
+    },
+    {
+        "text": "duplicate",
+        "start": 43.84,
+        "duration": 4.64
+    },
+    {
+        "text": "combinations for example if 2 2",
+        "start": 44.64,
+        "duration": 7.439
+    },
+    {
+        "text": "3 sums up to 7 right that means",
+        "start": 48.48,
+        "duration": 7.28
+    },
+    {
+        "text": "3 2 2 these are the exact same values",
+        "start": 52.079,
+        "duration": 4.0
+    },
+    {
+        "text": "right",
+        "start": 55.76,
+        "duration": 2.56
+    },
+    {
+        "text": "just in a different order these sum to",
+        "start": 56.079,
+        "duration": 4.081
+    },
+    {
+        "text": "seven as well so we don't want to add",
+        "start": 58.32,
+        "duration": 4.96
+    },
+    {
+        "text": "both of these combinations to the result",
+        "start": 60.16,
+        "duration": 4.88
+    },
+    {
+        "text": "because they're the exact same",
+        "start": 63.28,
+        "duration": 3.12
+    },
+    {
+        "text": "so what we're saying is we want",
+        "start": 65.04,
+        "duration": 3.92
+    },
+    {
+        "text": "combinations we don't want permutations",
+        "start": 66.4,
+        "duration": 3.84
+    },
+    {
+        "text": "that end up summing",
+        "start": 68.96,
+        "duration": 3.68
+    },
+    {
+        "text": "to the target value so in this example",
+        "start": 70.24,
+        "duration": 3.44
+    },
+    {
+        "text": "you can see",
+        "start": 72.64,
+        "duration": 3.2
+    },
+    {
+        "text": "that we are given these candidates and a",
+        "start": 73.68,
+        "duration": 3.92
+    },
+    {
+        "text": "target of seven and we have two",
+        "start": 75.84,
+        "duration": 3.52
+    },
+    {
+        "text": "different ways that we can sum up to",
+        "start": 77.6,
+        "duration": 3.92
+    },
+    {
+        "text": "seven of course seven by itself",
+        "start": 79.36,
+        "duration": 5.28
+    },
+    {
+        "text": "does sum up to the target and two",
+        "start": 81.52,
+        "duration": 5.919
+    },
+    {
+        "text": "occurrences of the two value and one",
+        "start": 84.64,
+        "duration": 4.64
+    },
+    {
+        "text": "occurrence of the three value added",
+        "start": 87.439,
+        "duration": 2.64
+    },
+    {
+        "text": "together",
+        "start": 89.28,
+        "duration": 3.36
+    },
+    {
+        "text": "are gonna lead to seven as well so then",
+        "start": 90.079,
+        "duration": 4.561
+    },
+    {
+        "text": "we return these two combinations",
+        "start": 92.64,
+        "duration": 4.24
+    },
+    {
+        "text": "as our result so i would say the",
+        "start": 94.64,
+        "duration": 3.92
+    },
+    {
+        "text": "difficult part about this problem is",
+        "start": 96.88,
+        "duration": 3.199
+    },
+    {
+        "text": "trying to figure out how to",
+        "start": 98.56,
+        "duration": 3.76
+    },
+    {
+        "text": "eliminate duplicate combinations right",
+        "start": 100.079,
+        "duration": 4.0
+    },
+    {
+        "text": "for example if we just brute force it",
+        "start": 102.32,
+        "duration": 3.52
+    },
+    {
+        "text": "like a decision tree so we have four",
+        "start": 104.079,
+        "duration": 3.281
+    },
+    {
+        "text": "different values we can choose we can",
+        "start": 105.84,
+        "duration": 2.4
+    },
+    {
+        "text": "choose each of them",
+        "start": 107.36,
+        "duration": 3.119
+    },
+    {
+        "text": "an unlimited number of times what we can",
+        "start": 108.24,
+        "duration": 3.919
+    },
+    {
+        "text": "do is have four decisions in our",
+        "start": 110.479,
+        "duration": 3.121
+    },
+    {
+        "text": "decision tree right like that might be",
+        "start": 112.159,
+        "duration": 3.6
+    },
+    {
+        "text": "the naive thing that you start with",
+        "start": 113.6,
+        "duration": 5.199
+    },
+    {
+        "text": "so we would get two three",
+        "start": 115.759,
+        "duration": 5.201
+    },
+    {
+        "text": "six and seven and then we'd basically",
+        "start": 118.799,
+        "duration": 3.201
+    },
+    {
+        "text": "continue that right",
+        "start": 120.96,
+        "duration": 2.96
+    },
+    {
+        "text": "on one path over here we would find okay",
+        "start": 122.0,
+        "duration": 3.2
+    },
+    {
+        "text": "we found the seven",
+        "start": 123.92,
+        "duration": 3.36
+    },
+    {
+        "text": "so we found the target right so we found",
+        "start": 125.2,
+        "duration": 3.919
+    },
+    {
+        "text": "one way that we can reach the target",
+        "start": 127.28,
+        "duration": 3.36
+    },
+    {
+        "text": "so therefore we don't need to continue",
+        "start": 129.119,
+        "duration": 3.76
+    },
+    {
+        "text": "down here because as we add more numbers",
+        "start": 130.64,
+        "duration": 3.599
+    },
+    {
+        "text": "all of these values are going to be",
+        "start": 132.879,
+        "duration": 3.601
+    },
+    {
+        "text": "positive so as we add more numbers",
+        "start": 134.239,
+        "duration": 3.681
+    },
+    {
+        "text": "we're only going to get a sum larger",
+        "start": 136.48,
+        "duration": 3.2
+    },
+    {
+        "text": "than the target so you know",
+        "start": 137.92,
+        "duration": 3.039
+    },
+    {
+        "text": "i think it's kind of obvious why we",
+        "start": 139.68,
+        "duration": 3.36
+    },
+    {
+        "text": "don't continue down this path right",
+        "start": 140.959,
+        "duration": 4.161
+    },
+    {
+        "text": "but down here from the six let's try to",
+        "start": 143.04,
+        "duration": 4.0
+    },
+    {
+        "text": "continue right we can add a two so we'd",
+        "start": 145.12,
+        "duration": 2.24
+    },
+    {
+        "text": "get",
+        "start": 147.04,
+        "duration": 2.96
+    },
+    {
+        "text": "six two we could add a three so we get a",
+        "start": 147.36,
+        "duration": 3.68
+    },
+    {
+        "text": "six three",
+        "start": 150.0,
+        "duration": 4.08
+    },
+    {
+        "text": "we could add another six so we'd get six",
+        "start": 151.04,
+        "duration": 5.04
+    },
+    {
+        "text": "six and we could add a seven where we'd",
+        "start": 154.08,
+        "duration": 3.439
+    },
+    {
+        "text": "get six seven",
+        "start": 156.08,
+        "duration": 4.0
+    },
+    {
+        "text": "so notice how all of these are gonna sum",
+        "start": 157.519,
+        "duration": 3.521
+    },
+    {
+        "text": "to a value",
+        "start": 160.08,
+        "duration": 3.28
+    },
+    {
+        "text": "greater than the target so down this",
+        "start": 161.04,
+        "duration": 3.04
+    },
+    {
+        "text": "path we",
+        "start": 163.36,
+        "duration": 2.64
+    },
+    {
+        "text": "never ended up reaching the target we",
+        "start": 164.08,
+        "duration": 4.0
+    },
+    {
+        "text": "only went over the target so we don't",
+        "start": 166.0,
+        "duration": 4.08
+    },
+    {
+        "text": "continue down any of these paths",
+        "start": 168.08,
+        "duration": 4.4
+    },
+    {
+        "text": "right but now let's continue down this",
+        "start": 170.08,
+        "duration": 3.68
+    },
+    {
+        "text": "path so here",
+        "start": 172.48,
+        "duration": 3.92
+    },
+    {
+        "text": "we'll get we can get another 2 we can",
+        "start": 173.76,
+        "duration": 3.199
+    },
+    {
+        "text": "get",
+        "start": 176.4,
+        "duration": 4.24
+    },
+    {
+        "text": "a 3 we could get a 2 6 but in that case",
+        "start": 176.959,
+        "duration": 5.36
+    },
+    {
+        "text": "we would get 8 which goes over our",
+        "start": 180.64,
+        "duration": 4.4
+    },
+    {
+        "text": "target we could also get a 727",
+        "start": 182.319,
+        "duration": 5.361
+    },
+    {
+        "text": "but that also goes over our target now",
+        "start": 185.04,
+        "duration": 4.32
+    },
+    {
+        "text": "here's the part where we're going to end",
+        "start": 187.68,
+        "duration": 3.36
+    },
+    {
+        "text": "up getting duplicates so i'm going to",
+        "start": 189.36,
+        "duration": 2.48
+    },
+    {
+        "text": "show you why",
+        "start": 191.04,
+        "duration": 3.76
+    },
+    {
+        "text": "this type of decision tree does not work",
+        "start": 191.84,
+        "duration": 4.399
+    },
+    {
+        "text": "so here we could get",
+        "start": 194.8,
+        "duration": 3.84
+    },
+    {
+        "text": "a 3 for example right so we'd get two",
+        "start": 196.239,
+        "duration": 3.121
+    },
+    {
+        "text": "two",
+        "start": 198.64,
+        "duration": 3.04
+    },
+    {
+        "text": "three now that sums to the target down",
+        "start": 199.36,
+        "duration": 4.32
+    },
+    {
+        "text": "this path we could choose a two so we'd",
+        "start": 201.68,
+        "duration": 2.96
+    },
+    {
+        "text": "get two",
+        "start": 203.68,
+        "duration": 4.479
+    },
+    {
+        "text": "three two notice how both of these",
+        "start": 204.64,
+        "duration": 5.76
+    },
+    {
+        "text": "end up summing to seven but they're the",
+        "start": 208.159,
+        "duration": 4.08
+    },
+    {
+        "text": "exact same they're just in a different",
+        "start": 210.4,
+        "duration": 3.839
+    },
+    {
+        "text": "order we have two twos and a three",
+        "start": 212.239,
+        "duration": 4.241
+    },
+    {
+        "text": "here we also have two twos and a three",
+        "start": 214.239,
+        "duration": 3.761
+    },
+    {
+        "text": "so we ended up getting the same",
+        "start": 216.48,
+        "duration": 4.399
+    },
+    {
+        "text": "one twice so this works in finding the",
+        "start": 218.0,
+        "duration": 4.56
+    },
+    {
+        "text": "combinations but we end up getting",
+        "start": 220.879,
+        "duration": 3.681
+    },
+    {
+        "text": "duplicate combinations so what kind of",
+        "start": 222.56,
+        "duration": 3.599
+    },
+    {
+        "text": "decision tree can we try",
+        "start": 224.56,
+        "duration": 4.64
+    },
+    {
+        "text": "that gets us the result that we want but",
+        "start": 226.159,
+        "duration": 5.36
+    },
+    {
+        "text": "does not have these duplicates let me",
+        "start": 229.2,
+        "duration": 4.08
+    },
+    {
+        "text": "show you how we're gonna do that",
+        "start": 231.519,
+        "duration": 4.321
+    },
+    {
+        "text": "let's logically think about this we know",
+        "start": 233.28,
+        "duration": 4.319
+    },
+    {
+        "text": "that we have one value in our",
+        "start": 235.84,
+        "duration": 4.959
+    },
+    {
+        "text": "candidates two right so we can try to",
+        "start": 237.599,
+        "duration": 3.601
+    },
+    {
+        "text": "get",
+        "start": 240.799,
+        "duration": 3.681
+    },
+    {
+        "text": "all combinations that include this",
+        "start": 241.2,
+        "duration": 6.759
+    },
+    {
+        "text": "2 value right and see if any of those",
+        "start": 244.48,
+        "duration": 6.16
+    },
+    {
+        "text": "combinations leads us to the target",
+        "start": 247.959,
+        "duration": 3.241
+    },
+    {
+        "text": "value",
+        "start": 250.64,
+        "duration": 3.679
+    },
+    {
+        "text": "7. now we could also so then",
+        "start": 251.2,
+        "duration": 5.279
+    },
+    {
+        "text": "if we make a second decision over here",
+        "start": 254.319,
+        "duration": 3.92
+    },
+    {
+        "text": "right in this decision we're definitely",
+        "start": 256.479,
+        "duration": 2.88
+    },
+    {
+        "text": "including at least",
+        "start": 258.239,
+        "duration": 4.001
+    },
+    {
+        "text": "one two now if we go down this path we",
+        "start": 259.359,
+        "duration": 4.4
+    },
+    {
+        "text": "want to make sure that",
+        "start": 262.24,
+        "duration": 3.84
+    },
+    {
+        "text": "none of the combinations down this path",
+        "start": 263.759,
+        "duration": 4.961
+    },
+    {
+        "text": "ever match the combinations down this",
+        "start": 266.08,
+        "duration": 3.119
+    },
+    {
+        "text": "path",
+        "start": 268.72,
+        "duration": 3.12
+    },
+    {
+        "text": "how can we guarantee that well in this",
+        "start": 269.199,
+        "duration": 4.72
+    },
+    {
+        "text": "side we said we're definitely including",
+        "start": 271.84,
+        "duration": 3.2
+    },
+    {
+        "text": "at least one two",
+        "start": 273.919,
+        "duration": 4.081
+    },
+    {
+        "text": "how about in this side we don't include",
+        "start": 275.04,
+        "duration": 3.76
+    },
+    {
+        "text": "even a",
+        "start": 278.0,
+        "duration": 4.24
+    },
+    {
+        "text": "single two so basically we skip",
+        "start": 278.8,
+        "duration": 5.04
+    },
+    {
+        "text": "two so here we're gonna have an empty",
+        "start": 282.24,
+        "duration": 3.36
+    },
+    {
+        "text": "array because we skipped the two right",
+        "start": 283.84,
+        "duration": 4.16
+    },
+    {
+        "text": "all we said is we were able to start",
+        "start": 285.6,
+        "duration": 4.0
+    },
+    {
+        "text": "from here but we said no we're just not",
+        "start": 288.0,
+        "duration": 2.96
+    },
+    {
+        "text": "including a two we're just gonna do",
+        "start": 289.6,
+        "duration": 4.319
+    },
+    {
+        "text": "combinations with these three values",
+        "start": 290.96,
+        "duration": 4.959
+    },
+    {
+        "text": "that's gonna guarantee that none of the",
+        "start": 293.919,
+        "duration": 4.161
+    },
+    {
+        "text": "combinations on both sides are gonna be",
+        "start": 295.919,
+        "duration": 2.881
+    },
+    {
+        "text": "matching",
+        "start": 298.08,
+        "duration": 2.64
+    },
+    {
+        "text": "and that's basically the logic that",
+        "start": 298.8,
+        "duration": 3.2
+    },
+    {
+        "text": "we're gonna follow",
+        "start": 300.72,
+        "duration": 3.759
+    },
+    {
+        "text": "so from here remember we can include",
+        "start": 302.0,
+        "duration": 4.88
+    },
+    {
+        "text": "multiple twos if we want to right so one",
+        "start": 304.479,
+        "duration": 4.401
+    },
+    {
+        "text": "decision here could be including a",
+        "start": 306.88,
+        "duration": 5.44
+    },
+    {
+        "text": "second two so we get two two now",
+        "start": 308.88,
+        "duration": 5.68
+    },
+    {
+        "text": "this is this path is going to include",
+        "start": 312.32,
+        "duration": 4.319
+    },
+    {
+        "text": "all combinations that include",
+        "start": 314.56,
+        "duration": 5.52
+    },
+    {
+        "text": "at least two twos right and but remember",
+        "start": 316.639,
+        "duration": 5.601
+    },
+    {
+        "text": "our definition for this decision tree",
+        "start": 320.08,
+        "duration": 3.6
+    },
+    {
+        "text": "needs to be recursive right because we",
+        "start": 322.24,
+        "duration": 1.76
+    },
+    {
+        "text": "don't",
+        "start": 323.68,
+        "duration": 2.56
+    },
+    {
+        "text": "want any of the combinations down this",
+        "start": 324.0,
+        "duration": 4.08
+    },
+    {
+        "text": "path to be the same as any of the",
+        "start": 326.24,
+        "duration": 3.679
+    },
+    {
+        "text": "combinations down this path so what we",
+        "start": 328.08,
+        "duration": 2.559
+    },
+    {
+        "text": "said here is",
+        "start": 329.919,
+        "duration": 2.801
+    },
+    {
+        "text": "we're going to include two twos how",
+        "start": 330.639,
+        "duration": 3.601
+    },
+    {
+        "text": "about down this path",
+        "start": 332.72,
+        "duration": 4.479
+    },
+    {
+        "text": "we say that we're we're not including",
+        "start": 334.24,
+        "duration": 3.76
+    },
+    {
+        "text": "any more",
+        "start": 337.199,
+        "duration": 2.801
+    },
+    {
+        "text": "twos now what we're saying is we had one",
+        "start": 338.0,
+        "duration": 3.759
+    },
+    {
+        "text": "two but now we're done we're skipping",
+        "start": 340.0,
+        "duration": 3.44
+    },
+    {
+        "text": "twos now we're only going to use values",
+        "start": 341.759,
+        "duration": 2.401
+    },
+    {
+        "text": "from here",
+        "start": 343.44,
+        "duration": 2.72
+    },
+    {
+        "text": "so that's the recursive thing right",
+        "start": 344.16,
+        "duration": 4.0
+    },
+    {
+        "text": "we're basically doing the same decision",
+        "start": 346.16,
+        "duration": 4.16
+    },
+    {
+        "text": "down here as we did up here so here",
+        "start": 348.16,
+        "duration": 3.52
+    },
+    {
+        "text": "we're going to say we ended up",
+        "start": 350.32,
+        "duration": 4.0
+    },
+    {
+        "text": "skipping the two and we're we still only",
+        "start": 351.68,
+        "duration": 4.239
+    },
+    {
+        "text": "have one single two",
+        "start": 354.32,
+        "duration": 3.2
+    },
+    {
+        "text": "and so let's just continue to repeat",
+        "start": 355.919,
+        "duration": 3.441
+    },
+    {
+        "text": "that so over here we're gonna add",
+        "start": 357.52,
+        "duration": 3.119
+    },
+    {
+        "text": "another two so we'll have",
+        "start": 359.36,
+        "duration": 5.36
+    },
+    {
+        "text": "two two two and over here we'll say okay",
+        "start": 360.639,
+        "duration": 4.56
+    },
+    {
+        "text": "we're",
+        "start": 364.72,
+        "duration": 1.84
+    },
+    {
+        "text": "now we're done with twos right where",
+        "start": 365.199,
+        "duration": 3.921
+    },
+    {
+        "text": "we're gonna keep ourselves at a limit of",
+        "start": 366.56,
+        "duration": 4.72
+    },
+    {
+        "text": "two occurrences of two and we're",
+        "start": 369.12,
+        "duration": 3.76
+    },
+    {
+        "text": "basically going to continue this logic",
+        "start": 371.28,
+        "duration": 3.44
+    },
+    {
+        "text": "until we get to our base case so over",
+        "start": 372.88,
+        "duration": 3.28
+    },
+    {
+        "text": "here we're gonna see if we ended up",
+        "start": 374.72,
+        "duration": 2.16
+    },
+    {
+        "text": "having four",
+        "start": 376.16,
+        "duration": 2.24
+    },
+    {
+        "text": "twos we'll get a target of eight so",
+        "start": 376.88,
+        "duration": 3.12
+    },
+    {
+        "text": "therefore we went over",
+        "start": 378.4,
+        "duration": 4.079
+    },
+    {
+        "text": "our target value so we're going to stop",
+        "start": 380.0,
+        "duration": 4.56
+    },
+    {
+        "text": "but down here right this was up our path",
+        "start": 382.479,
+        "duration": 3.201
+    },
+    {
+        "text": "where we said okay we're not going to",
+        "start": 384.56,
+        "duration": 1.6
+    },
+    {
+        "text": "include",
+        "start": 385.68,
+        "duration": 2.639
+    },
+    {
+        "text": "any more twos in this path so here we",
+        "start": 386.16,
+        "duration": 4.319
+    },
+    {
+        "text": "can make a decision we can add a three",
+        "start": 388.319,
+        "duration": 5.921
+    },
+    {
+        "text": "so then we'd get two two three so we're",
+        "start": 390.479,
+        "duration": 6.16
+    },
+    {
+        "text": "continuing that recursive definition",
+        "start": 394.24,
+        "duration": 4.959
+    },
+    {
+        "text": "and so notice how we have two two three",
+        "start": 396.639,
+        "duration": 4.321
+    },
+    {
+        "text": "that's seven so we did find at least",
+        "start": 399.199,
+        "duration": 4.321
+    },
+    {
+        "text": "one combination but remember down now",
+        "start": 400.96,
+        "duration": 4.239
+    },
+    {
+        "text": "for if we make our decision to the right",
+        "start": 403.52,
+        "duration": 3.119
+    },
+    {
+        "text": "we wanna make sure we don't have any",
+        "start": 405.199,
+        "duration": 2.881
+    },
+    {
+        "text": "duplicates from here so in this",
+        "start": 406.639,
+        "duration": 4.241
+    },
+    {
+        "text": "side we decided to add one three how",
+        "start": 408.08,
+        "duration": 4.959
+    },
+    {
+        "text": "about down this path we say we're done",
+        "start": 410.88,
+        "duration": 3.52
+    },
+    {
+        "text": "adding threes we're not even going to",
+        "start": 413.039,
+        "duration": 3.761
+    },
+    {
+        "text": "add a single extra three so",
+        "start": 414.4,
+        "duration": 5.76
+    },
+    {
+        "text": "this is going to remain as two two",
+        "start": 416.8,
+        "duration": 4.72
+    },
+    {
+        "text": "now i think it's pretty obvious that",
+        "start": 420.16,
+        "duration": 2.879
+    },
+    {
+        "text": "down here since we're only allowed to",
+        "start": 421.52,
+        "duration": 3.44
+    },
+    {
+        "text": "add values six and seven neither of",
+        "start": 423.039,
+        "duration": 3.521
+    },
+    {
+        "text": "these is gonna end up leading to the",
+        "start": 424.96,
+        "duration": 2.88
+    },
+    {
+        "text": "target if we add a six",
+        "start": 426.56,
+        "duration": 3.359
+    },
+    {
+        "text": "we'll get a total of of ten if we add a",
+        "start": 427.84,
+        "duration": 4.0
+    },
+    {
+        "text": "seven we'll get a total of eleven",
+        "start": 429.919,
+        "duration": 2.801
+    },
+    {
+        "text": "neither of these",
+        "start": 431.84,
+        "duration": 2.32
+    },
+    {
+        "text": "you know both of these go over our",
+        "start": 432.72,
+        "duration": 3.52
+    },
+    {
+        "text": "target so let's quickly run through the",
+        "start": 434.16,
+        "duration": 4.24
+    },
+    {
+        "text": "rest of the decision tree so over here",
+        "start": 436.24,
+        "duration": 3.84
+    },
+    {
+        "text": "over here we said we added a second two",
+        "start": 438.4,
+        "duration": 2.799
+    },
+    {
+        "text": "so over here we're not going to be",
+        "start": 440.08,
+        "duration": 3.44
+    },
+    {
+        "text": "adding any more to so here we can add a",
+        "start": 441.199,
+        "duration": 3.761
+    },
+    {
+        "text": "three so we'd get",
+        "start": 443.52,
+        "duration": 5.679
+    },
+    {
+        "text": "two three and over here we would skip",
+        "start": 444.96,
+        "duration": 6.32
+    },
+    {
+        "text": "adding threes right so we're gonna we're",
+        "start": 449.199,
+        "duration": 3.521
+    },
+    {
+        "text": "not gonna add any more threes this is",
+        "start": 451.28,
+        "duration": 2.24
+    },
+    {
+        "text": "gonna remain",
+        "start": 452.72,
+        "duration": 4.08
+    },
+    {
+        "text": "as two now down this path at this point",
+        "start": 453.52,
+        "duration": 5.2
+    },
+    {
+        "text": "we have a total of five so we're only",
+        "start": 456.8,
+        "duration": 3.839
+    },
+    {
+        "text": "allowed to add values three",
+        "start": 458.72,
+        "duration": 4.0
+    },
+    {
+        "text": "six or seven all of those are going to",
+        "start": 460.639,
+        "duration": 3.921
+    },
+    {
+        "text": "end up leading to",
+        "start": 462.72,
+        "duration": 4.0
+    },
+    {
+        "text": "a total of greater than seven so we",
+        "start": 464.56,
+        "duration": 3.84
+    },
+    {
+        "text": "can't we won't be able to find any",
+        "start": 466.72,
+        "duration": 3.28
+    },
+    {
+        "text": "solutions down this path",
+        "start": 468.4,
+        "duration": 3.199
+    },
+    {
+        "text": "i'm just skipping and drawing it out",
+        "start": 470.0,
+        "duration": 2.72
+    },
+    {
+        "text": "because we're kind of running out of",
+        "start": 471.599,
+        "duration": 1.681
+    },
+    {
+        "text": "room",
+        "start": 472.72,
+        "duration": 3.36
+    },
+    {
+        "text": "now over here what we said is we skipped",
+        "start": 473.28,
+        "duration": 3.28
+    },
+    {
+        "text": "two",
+        "start": 476.08,
+        "duration": 2.48
+    },
+    {
+        "text": "and we and since this path includes the",
+        "start": 476.56,
+        "duration": 4.0
+    },
+    {
+        "text": "one where we added a three so here we're",
+        "start": 478.56,
+        "duration": 3.44
+    },
+    {
+        "text": "not going to add any threes",
+        "start": 480.56,
+        "duration": 3.28
+    },
+    {
+        "text": "and so we're only allowed to choose six",
+        "start": 482.0,
+        "duration": 3.68
+    },
+    {
+        "text": "and seven that's going to end up leading",
+        "start": 483.84,
+        "duration": 2.479
+    },
+    {
+        "text": "to",
+        "start": 485.68,
+        "duration": 2.72
+    },
+    {
+        "text": "uh totals of greater than it's going to",
+        "start": 486.319,
+        "duration": 3.28
+    },
+    {
+        "text": "lead to either eight",
+        "start": 488.4,
+        "duration": 4.16
+    },
+    {
+        "text": "or nine those are both greater than our",
+        "start": 489.599,
+        "duration": 4.16
+    },
+    {
+        "text": "target value",
+        "start": 492.56,
+        "duration": 3.759
+    },
+    {
+        "text": "so here we're not allowed to add any",
+        "start": 493.759,
+        "duration": 4.241
+    },
+    {
+        "text": "twos because that's what this path was",
+        "start": 496.319,
+        "duration": 3.361
+    },
+    {
+        "text": "so we can add a three",
+        "start": 498.0,
+        "duration": 5.199
+    },
+    {
+        "text": "or we can choose to skip three",
+        "start": 499.68,
+        "duration": 7.199
+    },
+    {
+        "text": "and have add nothing so here since we're",
+        "start": 503.199,
+        "duration": 5.68
+    },
+    {
+        "text": "we're not see we're we're skipping three",
+        "start": 506.879,
+        "duration": 4.0
+    },
+    {
+        "text": "so we're only allowed to add sixes or",
+        "start": 508.879,
+        "duration": 5.28
+    },
+    {
+        "text": "seven so here we can say okay get a six",
+        "start": 510.879,
+        "duration": 5.52
+    },
+    {
+        "text": "this path we skip six so we're not",
+        "start": 514.159,
+        "duration": 4.401
+    },
+    {
+        "text": "allowed to add any sixes over here",
+        "start": 516.399,
+        "duration": 4.721
+    },
+    {
+        "text": "and from over here we'll say okay we can",
+        "start": 518.56,
+        "duration": 3.279
+    },
+    {
+        "text": "add a",
+        "start": 521.12,
+        "duration": 3.52
+    },
+    {
+        "text": "seven which will give us the total seven",
+        "start": 521.839,
+        "duration": 3.201
+    },
+    {
+        "text": "right",
+        "start": 524.64,
+        "duration": 1.759
+    },
+    {
+        "text": "that's the target that we're looking for",
+        "start": 525.04,
+        "duration": 3.2
+    },
+    {
+        "text": "so we did end up finding that",
+        "start": 526.399,
+        "duration": 3.841
+    },
+    {
+        "text": "so that's our second solution that we",
+        "start": 528.24,
+        "duration": 3.44
+    },
+    {
+        "text": "found now since this",
+        "start": 530.24,
+        "duration": 2.88
+    },
+    {
+        "text": "this path is going to lead to",
+        "start": 531.68,
+        "duration": 3.12
+    },
+    {
+        "text": "combinations that do include a seven",
+        "start": 533.12,
+        "duration": 2.32
+    },
+    {
+        "text": "this path",
+        "start": 534.8,
+        "duration": 2.719
+    },
+    {
+        "text": "cannot include a seven but you notice",
+        "start": 535.44,
+        "duration": 3.12
+    },
+    {
+        "text": "how as",
+        "start": 537.519,
+        "duration": 3.76
+    },
+    {
+        "text": "we are continuing to go down right paths",
+        "start": 538.56,
+        "duration": 4.0
+    },
+    {
+        "text": "what we're saying is okay",
+        "start": 541.279,
+        "duration": 2.881
+    },
+    {
+        "text": "we're we're basically removing the",
+        "start": 542.56,
+        "duration": 3.04
+    },
+    {
+        "text": "number of elements we can choose from",
+        "start": 544.16,
+        "duration": 3.119
+    },
+    {
+        "text": "right we're popping two initially over",
+        "start": 545.6,
+        "duration": 3.76
+    },
+    {
+        "text": "here then when we go down here",
+        "start": 547.279,
+        "duration": 3.601
+    },
+    {
+        "text": "we're we're not allowing ourselves to",
+        "start": 549.36,
+        "duration": 3.599
+    },
+    {
+        "text": "choose three over here we can't choose",
+        "start": 550.88,
+        "duration": 2.639
+    },
+    {
+        "text": "six",
+        "start": 552.959,
+        "duration": 2.241
+    },
+    {
+        "text": "then when we finally go down all the way",
+        "start": 553.519,
+        "duration": 3.121
+    },
+    {
+        "text": "over here we're not even allowed to",
+        "start": 555.2,
+        "duration": 2.96
+    },
+    {
+        "text": "choose seven so therefore we have no",
+        "start": 556.64,
+        "duration": 3.44
+    },
+    {
+        "text": "choices left so this is also going to be",
+        "start": 558.16,
+        "duration": 2.72
+    },
+    {
+        "text": "a base case",
+        "start": 560.08,
+        "duration": 2.64
+    },
+    {
+        "text": "because we ran out of elements and the",
+        "start": 560.88,
+        "duration": 3.28
+    },
+    {
+        "text": "way we're going to be tracking",
+        "start": 562.72,
+        "duration": 2.88
+    },
+    {
+        "text": "which elements we can choose from is",
+        "start": 564.16,
+        "duration": 2.88
+    },
+    {
+        "text": "we're going to have a pointer let's call",
+        "start": 565.6,
+        "duration": 2.4
+    },
+    {
+        "text": "it i",
+        "start": 567.04,
+        "duration": 2.32
+    },
+    {
+        "text": "and so initially it's going to be here",
+        "start": 568.0,
+        "duration": 2.88
+    },
+    {
+        "text": "which means we can choose any of these",
+        "start": 569.36,
+        "duration": 2.08
+    },
+    {
+        "text": "elements",
+        "start": 570.88,
+        "duration": 3.04
+    },
+    {
+        "text": "as we pop an element like this one we'd",
+        "start": 571.44,
+        "duration": 4.16
+    },
+    {
+        "text": "end up taking our i pointer and shifting",
+        "start": 573.92,
+        "duration": 2.08
+    },
+    {
+        "text": "it over",
+        "start": 575.6,
+        "duration": 1.919
+    },
+    {
+        "text": "here which tells us okay we can only",
+        "start": 576.0,
+        "duration": 3.92
+    },
+    {
+        "text": "choose these elements now",
+        "start": 577.519,
+        "duration": 4.161
+    },
+    {
+        "text": "so that's the main idea this is going to",
+        "start": 579.92,
+        "duration": 3.84
+    },
+    {
+        "text": "be a recursion tree each",
+        "start": 581.68,
+        "duration": 4.64
+    },
+    {
+        "text": "recursion step we can make two decisions",
+        "start": 583.76,
+        "duration": 4.639
+    },
+    {
+        "text": "and it's pretty easy to code up once you",
+        "start": 586.32,
+        "duration": 4.0
+    },
+    {
+        "text": "can kind of understand this logic let me",
+        "start": 588.399,
+        "duration": 3.12
+    },
+    {
+        "text": "show you how to do that",
+        "start": 590.32,
+        "duration": 2.959
+    },
+    {
+        "text": "by the way the time complexity of this",
+        "start": 591.519,
+        "duration": 3.681
+    },
+    {
+        "text": "you can see that our decision tree",
+        "start": 593.279,
+        "duration": 4.321
+    },
+    {
+        "text": "we're making two decisions each time so",
+        "start": 595.2,
+        "duration": 4.16
+    },
+    {
+        "text": "it's going to be 2 to the power",
+        "start": 597.6,
+        "duration": 3.2
+    },
+    {
+        "text": "what's the height of our decision tree",
+        "start": 599.36,
+        "duration": 3.52
+    },
+    {
+        "text": "going to be well each value in",
+        "start": 600.8,
+        "duration": 3.36
+    },
+    {
+        "text": "this is going to be positive it's going",
+        "start": 602.88,
+        "duration": 3.44
+    },
+    {
+        "text": "to be at least one so the height of this",
+        "start": 604.16,
+        "duration": 3.919
+    },
+    {
+        "text": "decision tree can be at most whatever",
+        "start": 606.32,
+        "duration": 2.639
+    },
+    {
+        "text": "the target",
+        "start": 608.079,
+        "duration": 3.121
+    },
+    {
+        "text": "value we're trying to make it so t so",
+        "start": 608.959,
+        "duration": 3.361
+    },
+    {
+        "text": "two to the power of t",
+        "start": 611.2,
+        "duration": 3.52
+    },
+    {
+        "text": "where t is the target value that's going",
+        "start": 612.32,
+        "duration": 3.28
+    },
+    {
+        "text": "to be the big o",
+        "start": 614.72,
+        "duration": 2.96
+    },
+    {
+        "text": "and uh big o time complexity of this",
+        "start": 615.6,
+        "duration": 3.84
+    },
+    {
+        "text": "problem so we are going to do this",
+        "start": 617.68,
+        "duration": 3.76
+    },
+    {
+        "text": "recursively but let's have our result",
+        "start": 619.44,
+        "duration": 3.6
+    },
+    {
+        "text": "variable which is basically going to be",
+        "start": 621.44,
+        "duration": 3.839
+    },
+    {
+        "text": "global for the scope of this problems",
+        "start": 623.04,
+        "duration": 3.359
+    },
+    {
+        "text": "because i'm going to define",
+        "start": 625.279,
+        "duration": 2.8
+    },
+    {
+        "text": "a depth for search function inside of",
+        "start": 626.399,
+        "duration": 3.281
+    },
+    {
+        "text": "our outer function",
+        "start": 628.079,
+        "duration": 3.2
+    },
+    {
+        "text": "so a few variables we're going to pass",
+        "start": 629.68,
+        "duration": 3.36
+    },
+    {
+        "text": "into here we do want to maintain",
+        "start": 631.279,
+        "duration": 3.441
+    },
+    {
+        "text": "which of the candidates we're still",
+        "start": 633.04,
+        "duration": 3.44
+    },
+    {
+        "text": "allowed to choose so like i said we're",
+        "start": 634.72,
+        "duration": 3.2
+    },
+    {
+        "text": "going to have a pointer i that's going",
+        "start": 636.48,
+        "duration": 2.64
+    },
+    {
+        "text": "to determine that",
+        "start": 637.92,
+        "duration": 2.96
+    },
+    {
+        "text": "we're also going to have a current",
+        "start": 639.12,
+        "duration": 3.52
+    },
+    {
+        "text": "variable we're only going to have a",
+        "start": 640.88,
+        "duration": 3.199
+    },
+    {
+        "text": "single occurrence of this it's just",
+        "start": 642.64,
+        "duration": 3.04
+    },
+    {
+        "text": "going to be a list that tells us",
+        "start": 644.079,
+        "duration": 4.081
+    },
+    {
+        "text": "what values we have added so far to the",
+        "start": 645.68,
+        "duration": 4.56
+    },
+    {
+        "text": "current combination for example like we",
+        "start": 648.16,
+        "duration": 2.88
+    },
+    {
+        "text": "could have two",
+        "start": 650.24,
+        "duration": 2.4
+    },
+    {
+        "text": "we could have two two right two two",
+        "start": 651.04,
+        "duration": 3.44
+    },
+    {
+        "text": "three etcetera etcetera",
+        "start": 652.64,
+        "duration": 4.879
+    },
+    {
+        "text": "and for the values in our current",
+        "start": 654.48,
+        "duration": 5.76
+    },
+    {
+        "text": "combination we do wanna have a total so",
+        "start": 657.519,
+        "duration": 4.161
+    },
+    {
+        "text": "we want to be maintaining what's the",
+        "start": 660.24,
+        "duration": 3.44
+    },
+    {
+        "text": "total sum of those because if it ever",
+        "start": 661.68,
+        "duration": 2.64
+    },
+    {
+        "text": "reaches",
+        "start": 663.68,
+        "duration": 2.88
+    },
+    {
+        "text": "our target sum then we know we have",
+        "start": 664.32,
+        "duration": 3.84
+    },
+    {
+        "text": "found a solution if we ever go",
+        "start": 666.56,
+        "duration": 3.6
+    },
+    {
+        "text": "over our target sum that means we've",
+        "start": 668.16,
+        "duration": 3.44
+    },
+    {
+        "text": "reached the base case and we can't",
+        "start": 670.16,
+        "duration": 2.72
+    },
+    {
+        "text": "continue anymore",
+        "start": 671.6,
+        "duration": 3.28
+    },
+    {
+        "text": "so in our dfs function let's go ahead",
+        "start": 672.88,
+        "duration": 3.76
+    },
+    {
+        "text": "and define those base cases we know the",
+        "start": 674.88,
+        "duration": 3.6
+    },
+    {
+        "text": "base cases if total ever ends up",
+        "start": 676.64,
+        "duration": 3.92
+    },
+    {
+        "text": "reaching target that means we found the",
+        "start": 678.48,
+        "duration": 3.2
+    },
+    {
+        "text": "result so what we're going to do is",
+        "start": 680.56,
+        "duration": 1.839
+    },
+    {
+        "text": "result dot",
+        "start": 681.68,
+        "duration": 3.04
+    },
+    {
+        "text": "append we want to append the actual",
+        "start": 682.399,
+        "duration": 3.601
+    },
+    {
+        "text": "combination so we're going to append",
+        "start": 684.72,
+        "duration": 1.84
+    },
+    {
+        "text": "current",
+        "start": 686.0,
+        "duration": 2.56
+    },
+    {
+        "text": "and we're since we're only maintaining a",
+        "start": 686.56,
+        "duration": 3.2
+    },
+    {
+        "text": "single uh",
+        "start": 688.56,
+        "duration": 3.68
+    },
+    {
+        "text": "variable list for current we don't want",
+        "start": 689.76,
+        "duration": 4.16
+    },
+    {
+        "text": "to actually append current itself we",
+        "start": 692.24,
+        "duration": 3.599
+    },
+    {
+        "text": "want to create a copy of it because",
+        "start": 693.92,
+        "duration": 3.599
+    },
+    {
+        "text": "we're going to continue to use this",
+        "start": 695.839,
+        "duration": 2.641
+    },
+    {
+        "text": "current variable",
+        "start": 697.519,
+        "duration": 2.88
+    },
+    {
+        "text": "when we're doing the other combinations",
+        "start": 698.48,
+        "duration": 3.68
+    },
+    {
+        "text": "recursively so we don't",
+        "start": 700.399,
+        "duration": 3.761
+    },
+    {
+        "text": "because then we're going to be modifying",
+        "start": 702.16,
+        "duration": 4.08
+    },
+    {
+        "text": "it so we just want to create a single",
+        "start": 704.16,
+        "duration": 2.799
+    },
+    {
+        "text": "copy",
+        "start": 706.24,
+        "duration": 2.88
+    },
+    {
+        "text": "before we actually add it to the result",
+        "start": 706.959,
+        "duration": 3.521
+    },
+    {
+        "text": "and after we're done with that we don't",
+        "start": 709.12,
+        "duration": 2.48
+    },
+    {
+        "text": "want to continue the rest of this",
+        "start": 710.48,
+        "duration": 2.4
+    },
+    {
+        "text": "function so we're just going to go ahead",
+        "start": 711.6,
+        "duration": 3.28
+    },
+    {
+        "text": "and break out of it by returning",
+        "start": 712.88,
+        "duration": 3.84
+    },
+    {
+        "text": "so that's the base case where we succeed",
+        "start": 714.88,
+        "duration": 3.199
+    },
+    {
+        "text": "what's the base cases",
+        "start": 716.72,
+        "duration": 4.72
+    },
+    {
+        "text": "if we end up uh being impossible to find",
+        "start": 718.079,
+        "duration": 5.601
+    },
+    {
+        "text": "a combination well one is going to be if",
+        "start": 721.44,
+        "duration": 4.399
+    },
+    {
+        "text": "i is out of bounds meaning we can't",
+        "start": 723.68,
+        "duration": 4.0
+    },
+    {
+        "text": "choose any more candidates so if i",
+        "start": 725.839,
+        "duration": 4.321
+    },
+    {
+        "text": "is greater than or equal to candidates",
+        "start": 727.68,
+        "duration": 4.959
+    },
+    {
+        "text": "or our total ended up going over the",
+        "start": 730.16,
+        "duration": 4.479
+    },
+    {
+        "text": "target that we're trying to reach",
+        "start": 732.639,
+        "duration": 3.681
+    },
+    {
+        "text": "that's a base case where we have to",
+        "start": 734.639,
+        "duration": 3.281
+    },
+    {
+        "text": "return immediately because we cannot",
+        "start": 736.32,
+        "duration": 3.12
+    },
+    {
+        "text": "find a combination done",
+        "start": 737.92,
+        "duration": 3.2
+    },
+    {
+        "text": "now for the actual recursive step",
+        "start": 739.44,
+        "duration": 3.68
+    },
+    {
+        "text": "remember we have two decisions to make",
+        "start": 741.12,
+        "duration": 3.839
+    },
+    {
+        "text": "we can choose to include",
+        "start": 743.12,
+        "duration": 5.04
+    },
+    {
+        "text": "the value at candidates of i right we",
+        "start": 744.959,
+        "duration": 5.12
+    },
+    {
+        "text": "can choose to include this value",
+        "start": 748.16,
+        "duration": 3.52
+    },
+    {
+        "text": "what so what are we going to do if we're",
+        "start": 750.079,
+        "duration": 2.961
+    },
+    {
+        "text": "including this value well first of all",
+        "start": 751.68,
+        "duration": 2.719
+    },
+    {
+        "text": "we're going to take our current",
+        "start": 753.04,
+        "duration": 3.2
+    },
+    {
+        "text": "uh values that are in our combination",
+        "start": 754.399,
+        "duration": 3.361
+    },
+    {
+        "text": "we're going to take",
+        "start": 756.24,
+        "duration": 3.839
+    },
+    {
+        "text": "that candidate and go ahead and append",
+        "start": 757.76,
+        "duration": 3.84
+    },
+    {
+        "text": "it to our current",
+        "start": 760.079,
+        "duration": 3.841
+    },
+    {
+        "text": "combination right we're going to do that",
+        "start": 761.6,
+        "duration": 4.08
+    },
+    {
+        "text": "before we end up actually calling our",
+        "start": 763.92,
+        "duration": 4.32
+    },
+    {
+        "text": "dfs function so we're going to call dfs",
+        "start": 765.68,
+        "duration": 4.159
+    },
+    {
+        "text": "and what are we going to pass in well",
+        "start": 768.24,
+        "duration": 3.68
+    },
+    {
+        "text": "we're including this candidate so we can",
+        "start": 769.839,
+        "duration": 2.881
+    },
+    {
+        "text": "potentially",
+        "start": 771.92,
+        "duration": 2.719
+    },
+    {
+        "text": "continue to include it right so what",
+        "start": 772.72,
+        "duration": 3.52
+    },
+    {
+        "text": "we're going to say for our index i that",
+        "start": 774.639,
+        "duration": 3.841
+    },
+    {
+        "text": "we're passing is i stays the same right",
+        "start": 776.24,
+        "duration": 4.32
+    },
+    {
+        "text": "we're not restricting which candidates",
+        "start": 778.48,
+        "duration": 4.159
+    },
+    {
+        "text": "we're allowed to choose from just yet",
+        "start": 780.56,
+        "duration": 5.44
+    },
+    {
+        "text": "so i stays the same we pass in current",
+        "start": 782.639,
+        "duration": 5.041
+    },
+    {
+        "text": "because we just updated it right now so",
+        "start": 786.0,
+        "duration": 3.04
+    },
+    {
+        "text": "we can go ahead and pass it in",
+        "start": 787.68,
+        "duration": 3.839
+    },
+    {
+        "text": "and the total did end up changing so we",
+        "start": 789.04,
+        "duration": 4.0
+    },
+    {
+        "text": "took our current total and",
+        "start": 791.519,
+        "duration": 4.641
+    },
+    {
+        "text": "added this candidate to it right",
+        "start": 793.04,
+        "duration": 4.799
+    },
+    {
+        "text": "so we can go ahead and pass in total",
+        "start": 796.16,
+        "duration": 3.119
+    },
+    {
+        "text": "plus candidates of i",
+        "start": 797.839,
+        "duration": 3.281
+    },
+    {
+        "text": "so let me delete this line because we're",
+        "start": 799.279,
+        "duration": 3.441
+    },
+    {
+        "text": "not doing anything with it",
+        "start": 801.12,
+        "duration": 3.519
+    },
+    {
+        "text": "but yeah so this is going to be that",
+        "start": 802.72,
+        "duration": 4.16
+    },
+    {
+        "text": "first decision where we do include the",
+        "start": 804.639,
+        "duration": 2.801
+    },
+    {
+        "text": "candidate",
+        "start": 806.88,
+        "duration": 2.72
+    },
+    {
+        "text": "now the next decision is going to be",
+        "start": 807.44,
+        "duration": 3.519
+    },
+    {
+        "text": "where we can't include it",
+        "start": 809.6,
+        "duration": 3.359
+    },
+    {
+        "text": "but but after we call this function we",
+        "start": 810.959,
+        "duration": 3.68
+    },
+    {
+        "text": "want to clean up a little bit we ended",
+        "start": 812.959,
+        "duration": 2.56
+    },
+    {
+        "text": "up adding",
+        "start": 814.639,
+        "duration": 3.281
+    },
+    {
+        "text": "uh this value to our current candidates",
+        "start": 815.519,
+        "duration": 3.921
+    },
+    {
+        "text": "our current combination so we want to go",
+        "start": 817.92,
+        "duration": 3.52
+    },
+    {
+        "text": "ahead and pop that before we go down the",
+        "start": 819.44,
+        "duration": 3.199
+    },
+    {
+        "text": "other decision",
+        "start": 821.44,
+        "duration": 3.68
+    },
+    {
+        "text": "and bef so once we pop that we can go",
+        "start": 822.639,
+        "duration": 4.161
+    },
+    {
+        "text": "down the other decision that's if we're",
+        "start": 825.12,
+        "duration": 2.159
+    },
+    {
+        "text": "not",
+        "start": 826.8,
+        "duration": 2.64
+    },
+    {
+        "text": "ever going to include this candidate so",
+        "start": 827.279,
+        "duration": 3.841
+    },
+    {
+        "text": "for the index we're going to pass an i",
+        "start": 829.44,
+        "duration": 2.48
+    },
+    {
+        "text": "plus 1",
+        "start": 831.12,
+        "duration": 3.839
+    },
+    {
+        "text": "indicating that we can't include any any",
+        "start": 831.92,
+        "duration": 5.359
+    },
+    {
+        "text": "occurrences of i and for current we can",
+        "start": 834.959,
+        "duration": 3.521
+    },
+    {
+        "text": "just go ahead and pass in",
+        "start": 837.279,
+        "duration": 3.36
+    },
+    {
+        "text": "our current combination and total is",
+        "start": 838.48,
+        "duration": 4.159
+    },
+    {
+        "text": "going to stay the same because we didn't",
+        "start": 840.639,
+        "duration": 4.081
+    },
+    {
+        "text": "end up adding any value to it right we",
+        "start": 842.639,
+        "duration": 2.401
+    },
+    {
+        "text": "we",
+        "start": 844.72,
+        "duration": 3.04
+    },
+    {
+        "text": "left our current uh combination as the",
+        "start": 845.04,
+        "duration": 4.4
+    },
+    {
+        "text": "same as it was before when we actually",
+        "start": 847.76,
+        "duration": 3.199
+    },
+    {
+        "text": "called this function",
+        "start": 849.44,
+        "duration": 4.079
+    },
+    {
+        "text": "and once that's done we've we basically",
+        "start": 850.959,
+        "duration": 4.24
+    },
+    {
+        "text": "made our two decisions right can you see",
+        "start": 853.519,
+        "duration": 2.961
+    },
+    {
+        "text": "what's going on can you see that we",
+        "start": 855.199,
+        "duration": 2.481
+    },
+    {
+        "text": "called that for search",
+        "start": 856.48,
+        "duration": 3.039
+    },
+    {
+        "text": "once and then we called it a second time",
+        "start": 857.68,
+        "duration": 3.92
+    },
+    {
+        "text": "so we did create that two branch",
+        "start": 859.519,
+        "duration": 2.88
+    },
+    {
+        "text": "decision",
+        "start": 861.6,
+        "duration": 2.239
+    },
+    {
+        "text": "and after we're done with that we can go",
+        "start": 862.399,
+        "duration": 3.12
+    },
+    {
+        "text": "ahead and return and in this case we",
+        "start": 863.839,
+        "duration": 3.201
+    },
+    {
+        "text": "actually don't need to return",
+        "start": 865.519,
+        "duration": 3.921
+    },
+    {
+        "text": "so that is the entire dfs function last",
+        "start": 867.04,
+        "duration": 3.039
+    },
+    {
+        "text": "but not least",
+        "start": 869.44,
+        "duration": 2.32
+    },
+    {
+        "text": "what we want to do is actually call it",
+        "start": 870.079,
+        "duration": 2.88
+    },
+    {
+        "text": "out here so we're going to call it",
+        "start": 871.76,
+        "duration": 3.36
+    },
+    {
+        "text": "passing in 0 as the beginning index",
+        "start": 872.959,
+        "duration": 4.32
+    },
+    {
+        "text": "passing in an empty array as the current",
+        "start": 875.12,
+        "duration": 3.279
+    },
+    {
+        "text": "combination",
+        "start": 877.279,
+        "duration": 4.0
+    },
+    {
+        "text": "and passing in 0 as the current total",
+        "start": 878.399,
+        "duration": 4.401
+    },
+    {
+        "text": "and then once that is done",
+        "start": 881.279,
+        "duration": 3.68
+    },
+    {
+        "text": "we will have updated our result which we",
+        "start": 882.8,
+        "duration": 3.44
+    },
+    {
+        "text": "declared up here",
+        "start": 884.959,
+        "duration": 3.041
+    },
+    {
+        "text": "and then we can simply go ahead and",
+        "start": 886.24,
+        "duration": 3.68
+    },
+    {
+        "text": "return that result it should contain",
+        "start": 888.0,
+        "duration": 4.0
+    },
+    {
+        "text": "all the combinations that end up",
+        "start": 889.92,
+        "duration": 4.0
+    },
+    {
+        "text": "totaling to the target",
+        "start": 892.0,
+        "duration": 3.44
+    },
+    {
+        "text": "so you can see this problem isn't too",
+        "start": 893.92,
+        "duration": 3.599
+    },
+    {
+        "text": "bad to code this backtracking approach",
+        "start": 895.44,
+        "duration": 3.28
+    },
+    {
+        "text": "isn't too bad once you kind of",
+        "start": 897.519,
+        "duration": 2.88
+    },
+    {
+        "text": "understand the two decisions that we're",
+        "start": 898.72,
+        "duration": 2.799
+    },
+    {
+        "text": "actually making",
+        "start": 900.399,
+        "duration": 2.961
+    },
+    {
+        "text": "so i hope that this was helpful if it",
+        "start": 901.519,
+        "duration": 3.601
+    },
+    {
+        "text": "was please like and subscribe it",
+        "start": 903.36,
+        "duration": 3.279
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 905.12,
+        "duration": 3.6
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 906.639,
+        "duration": 4.961
+    },
+    {
+        "text": "thanks for watching",
+        "start": 908.72,
+        "duration": 2.88
+    }
+]

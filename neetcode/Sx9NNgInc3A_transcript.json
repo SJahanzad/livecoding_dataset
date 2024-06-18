@@ -1,0 +1,2507 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.6
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.68,
+        "duration": 3.2
+    },
+    {
+        "text": "let's solve the problem",
+        "start": 3.6,
+        "duration": 3.759
+    },
+    {
+        "text": "word break so we're given an input",
+        "start": 4.88,
+        "duration": 3.039
+    },
+    {
+        "text": "string",
+        "start": 7.359,
+        "duration": 2.961
+    },
+    {
+        "text": "and a dictionary of strings called word",
+        "start": 7.919,
+        "duration": 4.401
+    },
+    {
+        "text": "dict and we want to return true",
+        "start": 10.32,
+        "duration": 5.04
+    },
+    {
+        "text": "if and only if s can be broken",
+        "start": 12.32,
+        "duration": 6.32
+    },
+    {
+        "text": "up into separate strings such that every",
+        "start": 15.36,
+        "duration": 6.32
+    },
+    {
+        "text": "separate string in s is also",
+        "start": 18.64,
+        "duration": 6.639
+    },
+    {
+        "text": "found inside of our word dict and we",
+        "start": 21.68,
+        "duration": 6.88
+    },
+    {
+        "text": "are allowed to use words from the word",
+        "start": 25.279,
+        "duration": 5.041
+    },
+    {
+        "text": "dict multiple times",
+        "start": 28.56,
+        "duration": 3.6
+    },
+    {
+        "text": "so for example let's say we're given an",
+        "start": 30.32,
+        "duration": 3.36
+    },
+    {
+        "text": "input string leak code",
+        "start": 32.16,
+        "duration": 3.919
+    },
+    {
+        "text": "and we're given a word dictionary of",
+        "start": 33.68,
+        "duration": 3.52
+    },
+    {
+        "text": "words called",
+        "start": 36.079,
+        "duration": 5.041
+    },
+    {
+        "text": "leat and code so obviously in this case",
+        "start": 37.2,
+        "duration": 5.92
+    },
+    {
+        "text": "we could split this string right into",
+        "start": 41.12,
+        "duration": 3.2
+    },
+    {
+        "text": "separate strings lee",
+        "start": 43.12,
+        "duration": 3.04
+    },
+    {
+        "text": "right break it down in this middle",
+        "start": 44.32,
+        "duration": 3.44
+    },
+    {
+        "text": "position and then the sep",
+        "start": 46.16,
+        "duration": 3.919
+    },
+    {
+        "text": "the second string would be code right so",
+        "start": 47.76,
+        "duration": 5.04
+    },
+    {
+        "text": "clearly this can be broken up into words",
+        "start": 50.079,
+        "duration": 4.561
+    },
+    {
+        "text": "that are found in the word dictionary so",
+        "start": 52.8,
+        "duration": 4.0
+    },
+    {
+        "text": "therefore we are going to return true",
+        "start": 54.64,
+        "duration": 4.559
+    },
+    {
+        "text": "now what if we took code outside of our",
+        "start": 56.8,
+        "duration": 3.279
+    },
+    {
+        "text": "word dictionary",
+        "start": 59.199,
+        "duration": 4.241
+    },
+    {
+        "text": "well then in that case this portion is a",
+        "start": 60.079,
+        "duration": 5.36
+    },
+    {
+        "text": "word right but we have no matching word",
+        "start": 63.44,
+        "duration": 3.999
+    },
+    {
+        "text": "in our dictionary for the remainder code",
+        "start": 65.439,
+        "duration": 3.601
+    },
+    {
+        "text": "so in that case we would have to return",
+        "start": 67.439,
+        "duration": 3.68
+    },
+    {
+        "text": "false and you know let's say we had an",
+        "start": 69.04,
+        "duration": 3.04
+    },
+    {
+        "text": "input string instead",
+        "start": 71.119,
+        "duration": 3.521
+    },
+    {
+        "text": "called lea and li again right so two",
+        "start": 72.08,
+        "duration": 3.6
+    },
+    {
+        "text": "leads in a row would",
+        "start": 74.64,
+        "duration": 2.88
+    },
+    {
+        "text": "would we return true yes because we're",
+        "start": 75.68,
+        "duration": 3.52
+    },
+    {
+        "text": "allowed to use this word from our",
+        "start": 77.52,
+        "duration": 3.44
+    },
+    {
+        "text": "dictionary multiple times right clearly",
+        "start": 79.2,
+        "duration": 2.72
+    },
+    {
+        "text": "it matches this",
+        "start": 80.96,
+        "duration": 3.68
+    },
+    {
+        "text": "and it also matches the first portion",
+        "start": 81.92,
+        "duration": 4.64
+    },
+    {
+        "text": "now let's start off with the brute force",
+        "start": 84.64,
+        "duration": 2.479
+    },
+    {
+        "text": "approach",
+        "start": 86.56,
+        "duration": 2.4
+    },
+    {
+        "text": "how would we even structure a brute",
+        "start": 87.119,
+        "duration": 3.601
+    },
+    {
+        "text": "force solution well there's actually",
+        "start": 88.96,
+        "duration": 3.68
+    },
+    {
+        "text": "two ways to do it but one of them",
+        "start": 90.72,
+        "duration": 3.6
+    },
+    {
+        "text": "happens to be more efficient and i'll",
+        "start": 92.64,
+        "duration": 2.72
+    },
+    {
+        "text": "tell you why",
+        "start": 94.32,
+        "duration": 3.04
+    },
+    {
+        "text": "so one thing we could try for an input",
+        "start": 95.36,
+        "duration": 3.68
+    },
+    {
+        "text": "string like this one we could check okay",
+        "start": 97.36,
+        "duration": 2.719
+    },
+    {
+        "text": "the first character",
+        "start": 99.04,
+        "duration": 3.28
+    },
+    {
+        "text": "right basically the first prefix of the",
+        "start": 100.079,
+        "duration": 3.281
+    },
+    {
+        "text": "string l",
+        "start": 102.32,
+        "duration": 3.36
+    },
+    {
+        "text": "by itself right is this a word that's",
+        "start": 103.36,
+        "duration": 4.16
+    },
+    {
+        "text": "found in our word dictionary it's not",
+        "start": 105.68,
+        "duration": 2.24
+    },
+    {
+        "text": "right",
+        "start": 107.52,
+        "duration": 2.08
+    },
+    {
+        "text": "so let's try maybe the first two",
+        "start": 107.92,
+        "duration": 3.36
+    },
+    {
+        "text": "characters together are a word right",
+        "start": 109.6,
+        "duration": 2.879
+    },
+    {
+        "text": "that's not it either",
+        "start": 111.28,
+        "duration": 2.64
+    },
+    {
+        "text": "we would try the first three right",
+        "start": 112.479,
+        "duration": 3.441
+    },
+    {
+        "text": "basically we would try every single",
+        "start": 113.92,
+        "duration": 4.239
+    },
+    {
+        "text": "portion from the beginning until we",
+        "start": 115.92,
+        "duration": 3.28
+    },
+    {
+        "text": "found a",
+        "start": 118.159,
+        "duration": 3.681
+    },
+    {
+        "text": "matching word that does exist in our",
+        "start": 119.2,
+        "duration": 3.84
+    },
+    {
+        "text": "word dictionary",
+        "start": 121.84,
+        "duration": 3.44
+    },
+    {
+        "text": "and we know that we are gonna find one",
+        "start": 123.04,
+        "duration": 4.0
+    },
+    {
+        "text": "like this right the first",
+        "start": 125.28,
+        "duration": 4.88
+    },
+    {
+        "text": "four characters of the string are",
+        "start": 127.04,
+        "duration": 6.24
+    },
+    {
+        "text": "a word right so once we found that what",
+        "start": 130.16,
+        "duration": 4.0
+    },
+    {
+        "text": "are we gonna do",
+        "start": 133.28,
+        "duration": 2.88
+    },
+    {
+        "text": "clearly we have a sub problem right we",
+        "start": 134.16,
+        "duration": 3.92
+    },
+    {
+        "text": "found a matching word for this portion",
+        "start": 136.16,
+        "duration": 3.84
+    },
+    {
+        "text": "but now we want to know can we break up",
+        "start": 138.08,
+        "duration": 3.44
+    },
+    {
+        "text": "the rest of this string",
+        "start": 140.0,
+        "duration": 3.44
+    },
+    {
+        "text": "with words from our dictionary so that's",
+        "start": 141.52,
+        "duration": 3.6
+    },
+    {
+        "text": "kind of how uh we're going to",
+        "start": 143.44,
+        "duration": 3.04
+    },
+    {
+        "text": "do it right that's what's going to be",
+        "start": 145.12,
+        "duration": 3.6
+    },
+    {
+        "text": "the sub problem basically so instead of",
+        "start": 146.48,
+        "duration": 4.0
+    },
+    {
+        "text": "starting from the first position in the",
+        "start": 148.72,
+        "duration": 2.56
+    },
+    {
+        "text": "string we would start",
+        "start": 150.48,
+        "duration": 2.479
+    },
+    {
+        "text": "at this position in the string and try",
+        "start": 151.28,
+        "duration": 3.2
+    },
+    {
+        "text": "to word break it",
+        "start": 152.959,
+        "duration": 3.441
+    },
+    {
+        "text": "now in this approach what we're going to",
+        "start": 154.48,
+        "duration": 3.68
+    },
+    {
+        "text": "basically be doing potentially is from",
+        "start": 156.4,
+        "duration": 3.119
+    },
+    {
+        "text": "every single starting position right",
+        "start": 158.16,
+        "duration": 2.96
+    },
+    {
+        "text": "we're going to check every prefix right",
+        "start": 159.519,
+        "duration": 2.08
+    },
+    {
+        "text": "so",
+        "start": 161.12,
+        "duration": 1.839
+    },
+    {
+        "text": "from the first starting position we",
+        "start": 161.599,
+        "duration": 3.761
+    },
+    {
+        "text": "might also get if you know this happened",
+        "start": 162.959,
+        "duration": 3.681
+    },
+    {
+        "text": "to be a word then we would",
+        "start": 165.36,
+        "duration": 2.8
+    },
+    {
+        "text": "start at this position and then do the",
+        "start": 166.64,
+        "duration": 3.36
+    },
+    {
+        "text": "same thing for this right every",
+        "start": 168.16,
+        "duration": 4.24
+    },
+    {
+        "text": "word starting here so basically we're",
+        "start": 170.0,
+        "duration": 4.08
+    },
+    {
+        "text": "going to try every word how many",
+        "start": 172.4,
+        "duration": 3.119
+    },
+    {
+        "text": "different words are we going to end up",
+        "start": 174.08,
+        "duration": 2.64
+    },
+    {
+        "text": "trying we're going to try",
+        "start": 175.519,
+        "duration": 4.321
+    },
+    {
+        "text": "let's say n is the size of our string n",
+        "start": 176.72,
+        "duration": 4.4
+    },
+    {
+        "text": "and we're going to try basically from",
+        "start": 179.84,
+        "duration": 2.96
+    },
+    {
+        "text": "every single starting position to the",
+        "start": 181.12,
+        "duration": 2.32
+    },
+    {
+        "text": "end",
+        "start": 182.8,
+        "duration": 2.56
+    },
+    {
+        "text": "so that's going to basically be n times",
+        "start": 183.44,
+        "duration": 3.04
+    },
+    {
+        "text": "n now",
+        "start": 185.36,
+        "duration": 3.36
+    },
+    {
+        "text": "we could also do it a different way",
+        "start": 186.48,
+        "duration": 3.6
+    },
+    {
+        "text": "instead of trying",
+        "start": 188.72,
+        "duration": 4.159
+    },
+    {
+        "text": "every single possible you know prefix",
+        "start": 190.08,
+        "duration": 3.2
+    },
+    {
+        "text": "let's",
+        "start": 192.879,
+        "duration": 3.041
+    },
+    {
+        "text": "just check every word in our word",
+        "start": 193.28,
+        "duration": 5.12
+    },
+    {
+        "text": "dictionary and see if that matches",
+        "start": 195.92,
+        "duration": 5.28
+    },
+    {
+        "text": "for example this first word is four",
+        "start": 198.4,
+        "duration": 3.6
+    },
+    {
+        "text": "characters",
+        "start": 201.2,
+        "duration": 2.399
+    },
+    {
+        "text": "long right so what we're going to do is",
+        "start": 202.0,
+        "duration": 3.04
+    },
+    {
+        "text": "we're going to check the first",
+        "start": 203.599,
+        "duration": 4.64
+    },
+    {
+        "text": "four characters in our string does this",
+        "start": 205.04,
+        "duration": 6.559
+    },
+    {
+        "text": "match this word clearly it does right",
+        "start": 208.239,
+        "duration": 5.841
+    },
+    {
+        "text": "so what does that tell us that tells us",
+        "start": 211.599,
+        "duration": 4.401
+    },
+    {
+        "text": "now you know we have the same sub",
+        "start": 214.08,
+        "duration": 3.04
+    },
+    {
+        "text": "problem as before",
+        "start": 216.0,
+        "duration": 2.879
+    },
+    {
+        "text": "we're going to start from these this",
+        "start": 217.12,
+        "duration": 3.44
+    },
+    {
+        "text": "next position now right and check",
+        "start": 218.879,
+        "duration": 3.121
+    },
+    {
+        "text": "and from here we're basically going to",
+        "start": 220.56,
+        "duration": 2.72
+    },
+    {
+        "text": "be doing the same thing right so we're",
+        "start": 222.0,
+        "duration": 2.0
+    },
+    {
+        "text": "going to check",
+        "start": 223.28,
+        "duration": 2.72
+    },
+    {
+        "text": "is elite basically you know the first",
+        "start": 224.0,
+        "duration": 4.159
+    },
+    {
+        "text": "four characters does that match lee",
+        "start": 226.0,
+        "duration": 4.159
+    },
+    {
+        "text": "this does not match lee right so now",
+        "start": 228.159,
+        "duration": 4.241
+    },
+    {
+        "text": "let's check the next word in our word",
+        "start": 230.159,
+        "duration": 4.241
+    },
+    {
+        "text": "dictionary and check does that match",
+        "start": 232.4,
+        "duration": 4.32
+    },
+    {
+        "text": "uh the characters over here it does",
+        "start": 234.4,
+        "duration": 3.199
+    },
+    {
+        "text": "right we found",
+        "start": 236.72,
+        "duration": 3.36
+    },
+    {
+        "text": "code so this is basically another way to",
+        "start": 237.599,
+        "duration": 4.161
+    },
+    {
+        "text": "do this problem instead of checking",
+        "start": 240.08,
+        "duration": 3.68
+    },
+    {
+        "text": "every single possible prefix right of",
+        "start": 241.76,
+        "duration": 3.52
+    },
+    {
+        "text": "any length what we're going to be doing",
+        "start": 243.76,
+        "duration": 2.64
+    },
+    {
+        "text": "is we're going to be checking every",
+        "start": 245.28,
+        "duration": 2.48
+    },
+    {
+        "text": "single word in our word",
+        "start": 246.4,
+        "duration": 4.559
+    },
+    {
+        "text": "dictionary as the prefix so instead of",
+        "start": 247.76,
+        "duration": 3.839
+    },
+    {
+        "text": "being",
+        "start": 250.959,
+        "duration": 3.521
+    },
+    {
+        "text": "o of n times n we're going to be doing o",
+        "start": 251.599,
+        "duration": 3.28
+    },
+    {
+        "text": "of n",
+        "start": 254.48,
+        "duration": 1.92
+    },
+    {
+        "text": "because potentially we are going to be",
+        "start": 254.879,
+        "duration": 2.961
+    },
+    {
+        "text": "going through every single starting",
+        "start": 256.4,
+        "duration": 2.799
+    },
+    {
+        "text": "position but we're going to be",
+        "start": 257.84,
+        "duration": 2.239
+    },
+    {
+        "text": "multiplying",
+        "start": 259.199,
+        "duration": 4.161
+    },
+    {
+        "text": "by the number of words in our word",
+        "start": 260.079,
+        "duration": 5.12
+    },
+    {
+        "text": "dictionary which is let's call it",
+        "start": 263.36,
+        "duration": 4.32
+    },
+    {
+        "text": "m and the reason why we're going to be",
+        "start": 265.199,
+        "duration": 3.841
+    },
+    {
+        "text": "doing this approach",
+        "start": 267.68,
+        "duration": 2.72
+    },
+    {
+        "text": "is because it's going to be a little bit",
+        "start": 269.04,
+        "duration": 3.04
+    },
+    {
+        "text": "more efficient and the reason is they",
+        "start": 270.4,
+        "duration": 3.359
+    },
+    {
+        "text": "they tell us below in the problem",
+        "start": 272.08,
+        "duration": 3.76
+    },
+    {
+        "text": "statement that the max size of word",
+        "start": 273.759,
+        "duration": 2.801
+    },
+    {
+        "text": "dictionary",
+        "start": 275.84,
+        "duration": 3.52
+    },
+    {
+        "text": "is going to be smaller than the max size",
+        "start": 276.56,
+        "duration": 4.8
+    },
+    {
+        "text": "of the string so this is overall",
+        "start": 279.36,
+        "duration": 3.92
+    },
+    {
+        "text": "probably going to be more efficient",
+        "start": 281.36,
+        "duration": 3.6
+    },
+    {
+        "text": "now this isn't going to be the overall",
+        "start": 283.28,
+        "duration": 3.12
+    },
+    {
+        "text": "time complexity we are actually going to",
+        "start": 284.96,
+        "duration": 3.12
+    },
+    {
+        "text": "multiply it by another",
+        "start": 286.4,
+        "duration": 3.519
+    },
+    {
+        "text": "n because when we're checking for",
+        "start": 288.08,
+        "duration": 3.28
+    },
+    {
+        "text": "example you know this brief",
+        "start": 289.919,
+        "duration": 3.121
+    },
+    {
+        "text": "this string when we're checking does",
+        "start": 291.36,
+        "duration": 3.36
+    },
+    {
+        "text": "that match the first four characters",
+        "start": 293.04,
+        "duration": 2.08
+    },
+    {
+        "text": "here",
+        "start": 294.72,
+        "duration": 3.6
+    },
+    {
+        "text": "that's also a end time operation because",
+        "start": 295.12,
+        "duration": 4.48
+    },
+    {
+        "text": "it could you know potentially be the",
+        "start": 298.32,
+        "duration": 3.04
+    },
+    {
+        "text": "size of the input string s",
+        "start": 299.6,
+        "duration": 3.52
+    },
+    {
+        "text": "so this is basically going to be the",
+        "start": 301.36,
+        "duration": 3.76
+    },
+    {
+        "text": "overall time complexity n squared",
+        "start": 303.12,
+        "duration": 4.24
+    },
+    {
+        "text": "multiplied by m so i'm just going to",
+        "start": 305.12,
+        "duration": 4.16
+    },
+    {
+        "text": "basically show you the same formula that",
+        "start": 307.36,
+        "duration": 3.36
+    },
+    {
+        "text": "i usually do i'm going to give you a",
+        "start": 309.28,
+        "duration": 3.359
+    },
+    {
+        "text": "quick illustration of what the decision",
+        "start": 310.72,
+        "duration": 3.52
+    },
+    {
+        "text": "tree would look like then we're going to",
+        "start": 312.639,
+        "duration": 2.801
+    },
+    {
+        "text": "understand how we could",
+        "start": 314.24,
+        "duration": 4.239
+    },
+    {
+        "text": "cache that to eliminate repeated work",
+        "start": 315.44,
+        "duration": 4.56
+    },
+    {
+        "text": "and then by understanding that we're",
+        "start": 318.479,
+        "duration": 3.361
+    },
+    {
+        "text": "going to go to the optimal",
+        "start": 320.0,
+        "duration": 4.08
+    },
+    {
+        "text": "dynamic programming solution the bottom",
+        "start": 321.84,
+        "duration": 3.919
+    },
+    {
+        "text": "up approach and then we're going to code",
+        "start": 324.08,
+        "duration": 3.76
+    },
+    {
+        "text": "that up usually the dp solution",
+        "start": 325.759,
+        "duration": 5.201
+    },
+    {
+        "text": "is a lot less code than caching so we're",
+        "start": 327.84,
+        "duration": 4.88
+    },
+    {
+        "text": "going to be looking at our input string",
+        "start": 330.96,
+        "duration": 2.64
+    },
+    {
+        "text": "neat code",
+        "start": 332.72,
+        "duration": 2.16
+    },
+    {
+        "text": "so i think that's a little bit better",
+        "start": 333.6,
+        "duration": 3.439
+    },
+    {
+        "text": "than neat code wouldn't you say so",
+        "start": 334.88,
+        "duration": 4.24
+    },
+    {
+        "text": "what the decision tree is gonna be is",
+        "start": 337.039,
+        "duration": 3.681
+    },
+    {
+        "text": "we're gonna start at the first position",
+        "start": 339.12,
+        "duration": 2.88
+    },
+    {
+        "text": "right for example i",
+        "start": 340.72,
+        "duration": 3.28
+    },
+    {
+        "text": "equals zero we're gonna be keeping track",
+        "start": 342.0,
+        "duration": 3.68
+    },
+    {
+        "text": "of whatever index we're at right because",
+        "start": 344.0,
+        "duration": 3.68
+    },
+    {
+        "text": "we know that if we can find a word",
+        "start": 345.68,
+        "duration": 3.92
+    },
+    {
+        "text": "you know that matches neat for example",
+        "start": 347.68,
+        "duration": 3.76
+    },
+    {
+        "text": "then the sub problem is gonna be",
+        "start": 349.6,
+        "duration": 4.08
+    },
+    {
+        "text": "you know finding words that can match",
+        "start": 351.44,
+        "duration": 3.92
+    },
+    {
+        "text": "the remainder of the string for example",
+        "start": 353.68,
+        "duration": 2.48
+    },
+    {
+        "text": "if we did that",
+        "start": 355.36,
+        "duration": 2.88
+    },
+    {
+        "text": "our i instead of starting at index zero",
+        "start": 356.16,
+        "duration": 3.44
+    },
+    {
+        "text": "would basically be starting at",
+        "start": 358.24,
+        "duration": 3.6
+    },
+    {
+        "text": "index four right so that's kind of what",
+        "start": 359.6,
+        "duration": 4.0
+    },
+    {
+        "text": "this that's what the sub problem is",
+        "start": 361.84,
+        "duration": 2.56
+    },
+    {
+        "text": "going to be",
+        "start": 363.6,
+        "duration": 2.56
+    },
+    {
+        "text": "so really we're only going to have one",
+        "start": 364.4,
+        "duration": 3.6
+    },
+    {
+        "text": "variable that we're keeping track of",
+        "start": 366.16,
+        "duration": 4.4
+    },
+    {
+        "text": "in this backtracking solution and so",
+        "start": 368.0,
+        "duration": 3.919
+    },
+    {
+        "text": "remember we mentioned",
+        "start": 370.56,
+        "duration": 3.04
+    },
+    {
+        "text": "we're not going to be doing it like this",
+        "start": 371.919,
+        "duration": 2.961
+    },
+    {
+        "text": "we're not going to check every single",
+        "start": 373.6,
+        "duration": 2.0
+    },
+    {
+        "text": "prefix",
+        "start": 374.88,
+        "duration": 2.319
+    },
+    {
+        "text": "we're going to have decisions in our",
+        "start": 375.6,
+        "duration": 3.599
+    },
+    {
+        "text": "decision tree based on the number of",
+        "start": 377.199,
+        "duration": 4.161
+    },
+    {
+        "text": "words that are in the word dictionary so",
+        "start": 379.199,
+        "duration": 5.28
+    },
+    {
+        "text": "we're going to have a decision for neat",
+        "start": 381.36,
+        "duration": 5.44
+    },
+    {
+        "text": "we're going to have a decision for elite",
+        "start": 384.479,
+        "duration": 4.0
+    },
+    {
+        "text": "and we're going to have a decision for",
+        "start": 386.8,
+        "duration": 3.92
+    },
+    {
+        "text": "code now what we're going to notice is",
+        "start": 388.479,
+        "duration": 3.761
+    },
+    {
+        "text": "when we try elite on here",
+        "start": 390.72,
+        "duration": 3.599
+    },
+    {
+        "text": "right basically is four characters",
+        "start": 392.24,
+        "duration": 3.519
+    },
+    {
+        "text": "therefore we're going to check the first",
+        "start": 394.319,
+        "duration": 2.561
+    },
+    {
+        "text": "four characters of here",
+        "start": 395.759,
+        "duration": 3.121
+    },
+    {
+        "text": "compare it does that match lee it does",
+        "start": 396.88,
+        "duration": 3.759
+    },
+    {
+        "text": "not right we're just one character off",
+        "start": 398.88,
+        "duration": 4.4
+    },
+    {
+        "text": "that first one so basically that means",
+        "start": 400.639,
+        "duration": 4.0
+    },
+    {
+        "text": "we're not going to continue down this",
+        "start": 403.28,
+        "duration": 3.359
+    },
+    {
+        "text": "path now let's try code does code match",
+        "start": 404.639,
+        "duration": 3.761
+    },
+    {
+        "text": "the first four characters definitely not",
+        "start": 406.639,
+        "duration": 2.801
+    },
+    {
+        "text": "so we're not even gonna",
+        "start": 408.4,
+        "duration": 3.28
+    },
+    {
+        "text": "continue down this path either of course",
+        "start": 409.44,
+        "duration": 3.039
+    },
+    {
+        "text": "neat",
+        "start": 411.68,
+        "duration": 3.6
+    },
+    {
+        "text": "does match this so we are gonna continue",
+        "start": 412.479,
+        "duration": 3.521
+    },
+    {
+        "text": "down here",
+        "start": 415.28,
+        "duration": 3.12
+    },
+    {
+        "text": "we're gonna do three more decisions",
+        "start": 416.0,
+        "duration": 3.52
+    },
+    {
+        "text": "basically one for",
+        "start": 418.4,
+        "duration": 3.359
+    },
+    {
+        "text": "every single word in our word dictionary",
+        "start": 419.52,
+        "duration": 3.36
+    },
+    {
+        "text": "now one thing though",
+        "start": 421.759,
+        "duration": 3.201
+    },
+    {
+        "text": "is when we are starting here we know we",
+        "start": 422.88,
+        "duration": 4.159
+    },
+    {
+        "text": "match the first four characters so by",
+        "start": 424.96,
+        "duration": 3.84
+    },
+    {
+        "text": "this point we are now going to be",
+        "start": 427.039,
+        "duration": 3.681
+    },
+    {
+        "text": "at i equals four meaning we're going to",
+        "start": 428.8,
+        "duration": 3.28
+    },
+    {
+        "text": "be looking at this",
+        "start": 430.72,
+        "duration": 4.08
+    },
+    {
+        "text": "part of the string so as we can see",
+        "start": 432.08,
+        "duration": 4.399
+    },
+    {
+        "text": "checking neat that's four characters",
+        "start": 434.8,
+        "duration": 2.959
+    },
+    {
+        "text": "long so let's check",
+        "start": 436.479,
+        "duration": 3.681
+    },
+    {
+        "text": "four characters starting from here",
+        "start": 437.759,
+        "duration": 4.081
+    },
+    {
+        "text": "that's not matching of course so then",
+        "start": 440.16,
+        "duration": 3.039
+    },
+    {
+        "text": "we're not going to continue here lee",
+        "start": 441.84,
+        "duration": 2.96
+    },
+    {
+        "text": "does that match over here nope we're not",
+        "start": 443.199,
+        "duration": 3.201
+    },
+    {
+        "text": "continue down this path",
+        "start": 444.8,
+        "duration": 4.239
+    },
+    {
+        "text": "code does code match this portion yes it",
+        "start": 446.4,
+        "duration": 3.76
+    },
+    {
+        "text": "exactly matches",
+        "start": 449.039,
+        "duration": 3.28
+    },
+    {
+        "text": "so therefore we are going to update our",
+        "start": 450.16,
+        "duration": 4.319
+    },
+    {
+        "text": "i pointer again since we matched four",
+        "start": 452.319,
+        "duration": 3.121
+    },
+    {
+        "text": "more characters",
+        "start": 454.479,
+        "duration": 3.601
+    },
+    {
+        "text": "we're just gonna take i and add four to",
+        "start": 455.44,
+        "duration": 3.52
+    },
+    {
+        "text": "it now",
+        "start": 458.08,
+        "duration": 4.239
+    },
+    {
+        "text": "so now i is going to be at eight",
+        "start": 458.96,
+        "duration": 6.32
+    },
+    {
+        "text": "and eight happens to be that exact",
+        "start": 462.319,
+        "duration": 4.081
+    },
+    {
+        "text": "position",
+        "start": 465.28,
+        "duration": 3.12
+    },
+    {
+        "text": "right after the end of the string right",
+        "start": 466.4,
+        "duration": 3.44
+    },
+    {
+        "text": "this is where index",
+        "start": 468.4,
+        "duration": 4.0
+    },
+    {
+        "text": "8 is therefore we basically know that we",
+        "start": 469.84,
+        "duration": 3.52
+    },
+    {
+        "text": "were able to",
+        "start": 472.4,
+        "duration": 3.28
+    },
+    {
+        "text": "match the entire string therefore we",
+        "start": 473.36,
+        "duration": 4.16
+    },
+    {
+        "text": "know we can return true right once we",
+        "start": 475.68,
+        "duration": 3.28
+    },
+    {
+        "text": "find a single true",
+        "start": 477.52,
+        "duration": 3.84
+    },
+    {
+        "text": "that means we just terminate we end the",
+        "start": 478.96,
+        "duration": 3.76
+    },
+    {
+        "text": "function we can just call",
+        "start": 481.36,
+        "duration": 3.04
+    },
+    {
+        "text": "we can just return true and the function",
+        "start": 482.72,
+        "duration": 3.919
+    },
+    {
+        "text": "is done now from this example it might",
+        "start": 484.4,
+        "duration": 4.32
+    },
+    {
+        "text": "not be super intuitive why we would use",
+        "start": 486.639,
+        "duration": 4.24
+    },
+    {
+        "text": "a cache but let's say we had another",
+        "start": 488.72,
+        "duration": 4.24
+    },
+    {
+        "text": "path in our decision tree that led us to",
+        "start": 490.879,
+        "duration": 3.04
+    },
+    {
+        "text": "for example",
+        "start": 492.96,
+        "duration": 3.2
+    },
+    {
+        "text": "index i equals five right and let's say",
+        "start": 493.919,
+        "duration": 4.4
+    },
+    {
+        "text": "we had we used all three decisions",
+        "start": 496.16,
+        "duration": 4.64
+    },
+    {
+        "text": "in that path and let's say none of them",
+        "start": 498.319,
+        "duration": 3.121
+    },
+    {
+        "text": "yielded",
+        "start": 500.8,
+        "duration": 2.48
+    },
+    {
+        "text": "the correct result meaning we were not",
+        "start": 501.44,
+        "duration": 4.08
+    },
+    {
+        "text": "able to word break this string",
+        "start": 503.28,
+        "duration": 4.319
+    },
+    {
+        "text": "from starting at index five so then we",
+        "start": 505.52,
+        "duration": 4.0
+    },
+    {
+        "text": "would return false from this",
+        "start": 507.599,
+        "duration": 3.681
+    },
+    {
+        "text": "path right and we would want to cache",
+        "start": 509.52,
+        "duration": 3.68
+    },
+    {
+        "text": "that we would want to say",
+        "start": 511.28,
+        "duration": 4.96
+    },
+    {
+        "text": "that let's say dp of index five right we",
+        "start": 513.2,
+        "duration": 4.399
+    },
+    {
+        "text": "would want to set that to",
+        "start": 516.24,
+        "duration": 3.679
+    },
+    {
+        "text": "false basically what we're saying is if",
+        "start": 517.599,
+        "duration": 3.12
+    },
+    {
+        "text": "we ever",
+        "start": 519.919,
+        "duration": 2.8
+    },
+    {
+        "text": "reached this same function call if we",
+        "start": 520.719,
+        "duration": 3.841
+    },
+    {
+        "text": "ever tried it again maybe you know this",
+        "start": 522.719,
+        "duration": 3.521
+    },
+    {
+        "text": "decision tree could be really big maybe",
+        "start": 524.56,
+        "duration": 2.959
+    },
+    {
+        "text": "there would be another path",
+        "start": 526.24,
+        "duration": 3.12
+    },
+    {
+        "text": "from you know somewhere over here where",
+        "start": 527.519,
+        "duration": 4.161
+    },
+    {
+        "text": "we tried index i equals 5 again",
+        "start": 529.36,
+        "duration": 3.919
+    },
+    {
+        "text": "in that case we would want to return",
+        "start": 531.68,
+        "duration": 3.76
+    },
+    {
+        "text": "false immediately because we saw",
+        "start": 533.279,
+        "duration": 4.0
+    },
+    {
+        "text": "from here there was no possible way to",
+        "start": 535.44,
+        "duration": 3.6
+    },
+    {
+        "text": "break it down therefore we don't need to",
+        "start": 537.279,
+        "duration": 2.401
+    },
+    {
+        "text": "redo",
+        "start": 539.04,
+        "duration": 3.28
+    },
+    {
+        "text": "all of that work if we you know try the",
+        "start": 539.68,
+        "duration": 3.76
+    },
+    {
+        "text": "same exact thing",
+        "start": 542.32,
+        "duration": 3.12
+    },
+    {
+        "text": "so we discovered that our base case is",
+        "start": 543.44,
+        "duration": 3.12
+    },
+    {
+        "text": "going to be dp",
+        "start": 545.44,
+        "duration": 3.44
+    },
+    {
+        "text": "of 8 because a is the length of the",
+        "start": 546.56,
+        "duration": 4.08
+    },
+    {
+        "text": "string basically is going to be",
+        "start": 548.88,
+        "duration": 3.76
+    },
+    {
+        "text": "true right if we can ever get to that",
+        "start": 550.64,
+        "duration": 4.08
+    },
+    {
+        "text": "last index we're going to return true",
+        "start": 552.64,
+        "duration": 4.16
+    },
+    {
+        "text": "so what we're going to do is now do the",
+        "start": 554.72,
+        "duration": 3.6
+    },
+    {
+        "text": "bottom up approach right we're going to",
+        "start": 556.8,
+        "duration": 2.719
+    },
+    {
+        "text": "go through every single",
+        "start": 558.32,
+        "duration": 3.04
+    },
+    {
+        "text": "index in reverse order right so we would",
+        "start": 559.519,
+        "duration": 3.76
+    },
+    {
+        "text": "start at the last character which is",
+        "start": 561.36,
+        "duration": 2.64
+    },
+    {
+        "text": "position",
+        "start": 563.279,
+        "duration": 3.281
+    },
+    {
+        "text": "seven right and see can we word break",
+        "start": 564.0,
+        "duration": 3.44
+    },
+    {
+        "text": "the remainder",
+        "start": 566.56,
+        "duration": 3.68
+    },
+    {
+        "text": "of this string you know and we would try",
+        "start": 567.44,
+        "duration": 4.8
+    },
+    {
+        "text": "every single word right like neat does",
+        "start": 570.24,
+        "duration": 4.48
+    },
+    {
+        "text": "neat match this string well they're not",
+        "start": 572.24,
+        "duration": 4.64
+    },
+    {
+        "text": "even the same size right if we tried to",
+        "start": 574.72,
+        "duration": 2.64
+    },
+    {
+        "text": "match",
+        "start": 576.88,
+        "duration": 2.959
+    },
+    {
+        "text": "neat on four characters starting from",
+        "start": 577.36,
+        "duration": 3.44
+    },
+    {
+        "text": "here we would go",
+        "start": 579.839,
+        "duration": 3.361
+    },
+    {
+        "text": "out of bounds of this string right",
+        "start": 580.8,
+        "duration": 3.76
+    },
+    {
+        "text": "there's not enough character so of",
+        "start": 583.2,
+        "duration": 2.72
+    },
+    {
+        "text": "course this is going to be",
+        "start": 584.56,
+        "duration": 3.44
+    },
+    {
+        "text": "false right it wouldn't match neat it",
+        "start": 585.92,
+        "duration": 4.16
+    },
+    {
+        "text": "wouldn't match the other two",
+        "start": 588.0,
+        "duration": 3.519
+    },
+    {
+        "text": "words in our dictionary either and",
+        "start": 590.08,
+        "duration": 3.52
+    },
+    {
+        "text": "that's obviously going to be true for dp",
+        "start": 591.519,
+        "duration": 3.201
+    },
+    {
+        "text": "of 6",
+        "start": 593.6,
+        "duration": 4.96
+    },
+    {
+        "text": "dp of 5 as well so both of these are",
+        "start": 594.72,
+        "duration": 4.72
+    },
+    {
+        "text": "also going to be",
+        "start": 598.56,
+        "duration": 3.2
+    },
+    {
+        "text": "false right basically if we started from",
+        "start": 599.44,
+        "duration": 4.639
+    },
+    {
+        "text": "6 or if we started from 5",
+        "start": 601.76,
+        "duration": 4.24
+    },
+    {
+        "text": "we would not be able to match any of the",
+        "start": 604.079,
+        "duration": 3.44
+    },
+    {
+        "text": "words in our dictionary",
+        "start": 606.0,
+        "duration": 4.88
+    },
+    {
+        "text": "but now if we start here index 4 so",
+        "start": 607.519,
+        "duration": 5.361
+    },
+    {
+        "text": "we're now trying to figure out dp of 4",
+        "start": 610.88,
+        "duration": 3.199
+    },
+    {
+        "text": "is that true",
+        "start": 612.88,
+        "duration": 2.959
+    },
+    {
+        "text": "well yes it is right it doesn't match",
+        "start": 614.079,
+        "duration": 3.601
+    },
+    {
+        "text": "neat it doesn't match elite but it does",
+        "start": 615.839,
+        "duration": 2.24
+    },
+    {
+        "text": "match",
+        "start": 617.68,
+        "duration": 2.56
+    },
+    {
+        "text": "code so we are going to set dp of 4",
+        "start": 618.079,
+        "duration": 3.44
+    },
+    {
+        "text": "equal to true",
+        "start": 620.24,
+        "duration": 3.2
+    },
+    {
+        "text": "so now let's keep doing it until we get",
+        "start": 621.519,
+        "duration": 3.281
+    },
+    {
+        "text": "to the first character so now we're",
+        "start": 623.44,
+        "duration": 3.12
+    },
+    {
+        "text": "going to be trying from dp",
+        "start": 624.8,
+        "duration": 5.68
+    },
+    {
+        "text": "of 3 right so starting from this",
+        "start": 626.56,
+        "duration": 5.92
+    },
+    {
+        "text": "character are we going to be able to",
+        "start": 630.48,
+        "duration": 3.599
+    },
+    {
+        "text": "match any of these well none of these",
+        "start": 632.48,
+        "duration": 3.44
+    },
+    {
+        "text": "words even start with a t",
+        "start": 634.079,
+        "duration": 3.121
+    },
+    {
+        "text": "so of course we're not going to be able",
+        "start": 635.92,
+        "duration": 3.84
+    },
+    {
+        "text": "to match so dp of 3 is going to be false",
+        "start": 637.2,
+        "duration": 5.12
+    },
+    {
+        "text": "what's dp of 2 gonna be it's also going",
+        "start": 639.76,
+        "duration": 3.759
+    },
+    {
+        "text": "to be false because",
+        "start": 642.32,
+        "duration": 3.28
+    },
+    {
+        "text": "if we were to start at this character",
+        "start": 643.519,
+        "duration": 3.041
+    },
+    {
+        "text": "this e",
+        "start": 645.6,
+        "duration": 2.96
+    },
+    {
+        "text": "would we be able to match any of the",
+        "start": 646.56,
+        "duration": 3.68
+    },
+    {
+        "text": "words in our word dictionary of course",
+        "start": 648.56,
+        "duration": 2.64
+    },
+    {
+        "text": "we would not and",
+        "start": 650.24,
+        "duration": 2.719
+    },
+    {
+        "text": "what about this position if we started",
+        "start": 651.2,
+        "duration": 3.44
+    },
+    {
+        "text": "here would we be able to match any of",
+        "start": 652.959,
+        "duration": 2.32
+    },
+    {
+        "text": "the words",
+        "start": 654.64,
+        "duration": 3.439
+    },
+    {
+        "text": "in our word dictionary again not so dpf3",
+        "start": 655.279,
+        "duration": 3.601
+    },
+    {
+        "text": "dpf2",
+        "start": 658.079,
+        "duration": 4.161
+    },
+    {
+        "text": "and dp of 1 are going to be false",
+        "start": 658.88,
+        "duration": 6.56
+    },
+    {
+        "text": "meaning we cannot word break this string",
+        "start": 662.24,
+        "duration": 5.92
+    },
+    {
+        "text": "if we start at any of these first any of",
+        "start": 665.44,
+        "duration": 4.56
+    },
+    {
+        "text": "these three positions basically",
+        "start": 668.16,
+        "duration": 4.16
+    },
+    {
+        "text": "now we're finally at the result that we",
+        "start": 670.0,
+        "duration": 3.6
+    },
+    {
+        "text": "were looking for dp",
+        "start": 672.32,
+        "duration": 4.32
+    },
+    {
+        "text": "of zero is dp of zero gonna be true",
+        "start": 673.6,
+        "duration": 5.919
+    },
+    {
+        "text": "well let's take a look so we're starting",
+        "start": 676.64,
+        "duration": 3.199
+    },
+    {
+        "text": "at",
+        "start": 679.519,
+        "duration": 2.32
+    },
+    {
+        "text": "the first character in the string can we",
+        "start": 679.839,
+        "duration": 3.761
+    },
+    {
+        "text": "match any of the strings we can't match",
+        "start": 681.839,
+        "duration": 3.281
+    },
+    {
+        "text": "lead we can't match code but",
+        "start": 683.6,
+        "duration": 4.72
+    },
+    {
+        "text": "neat it does match this portion of the",
+        "start": 685.12,
+        "duration": 3.68
+    },
+    {
+        "text": "string",
+        "start": 688.32,
+        "duration": 3.36
+    },
+    {
+        "text": "starting at index zero so then the",
+        "start": 688.8,
+        "duration": 4.4
+    },
+    {
+        "text": "question becomes",
+        "start": 691.68,
+        "duration": 3.839
+    },
+    {
+        "text": "we're asking can we break the entire",
+        "start": 693.2,
+        "duration": 3.68
+    },
+    {
+        "text": "string starting at",
+        "start": 695.519,
+        "duration": 4.481
+    },
+    {
+        "text": "index zero so now since we did match the",
+        "start": 696.88,
+        "duration": 3.68
+    },
+    {
+        "text": "first",
+        "start": 700.0,
+        "duration": 3.839
+    },
+    {
+        "text": "four characters we want to know were we",
+        "start": 700.56,
+        "duration": 5.839
+    },
+    {
+        "text": "able to match the remainder of the",
+        "start": 703.839,
+        "duration": 3.921
+    },
+    {
+        "text": "string right so we want to know",
+        "start": 706.399,
+        "duration": 4.481
+    },
+    {
+        "text": "starting from here were we able to match",
+        "start": 707.76,
+        "duration": 4.879
+    },
+    {
+        "text": "this string to words in our word",
+        "start": 710.88,
+        "duration": 3.759
+    },
+    {
+        "text": "dictionary now this is why we computed",
+        "start": 712.639,
+        "duration": 3.76
+    },
+    {
+        "text": "this bottom up right because",
+        "start": 714.639,
+        "duration": 4.721
+    },
+    {
+        "text": "this is index 4 right notice how we",
+        "start": 716.399,
+        "duration": 4.481
+    },
+    {
+        "text": "already computed",
+        "start": 719.36,
+        "duration": 3.919
+    },
+    {
+        "text": "index 4 over here right it's the one",
+        "start": 720.88,
+        "duration": 4.0
+    },
+    {
+        "text": "that's highlighted in green",
+        "start": 723.279,
+        "duration": 4.081
+    },
+    {
+        "text": "because it was true we were able to do",
+        "start": 724.88,
+        "duration": 3.28
+    },
+    {
+        "text": "it so",
+        "start": 727.36,
+        "duration": 2.64
+    },
+    {
+        "text": "basically the equation that we would use",
+        "start": 728.16,
+        "duration": 3.359
+    },
+    {
+        "text": "for this is going to be",
+        "start": 730.0,
+        "duration": 4.639
+    },
+    {
+        "text": "dp of 0 plus",
+        "start": 731.519,
+        "duration": 5.521
+    },
+    {
+        "text": "the length of the word that we were able",
+        "start": 734.639,
+        "duration": 3.44
+    },
+    {
+        "text": "to match with",
+        "start": 737.04,
+        "duration": 3.12
+    },
+    {
+        "text": "and we know the length of the word",
+        "start": 738.079,
+        "duration": 3.041
+    },
+    {
+        "text": "length of the word",
+        "start": 740.16,
+        "duration": 3.52
+    },
+    {
+        "text": "neat is going to be 4 so basically we",
+        "start": 741.12,
+        "duration": 4.48
+    },
+    {
+        "text": "can replace this length of the word with",
+        "start": 743.68,
+        "duration": 4.159
+    },
+    {
+        "text": "four so zero plus four is just dp of",
+        "start": 745.6,
+        "duration": 4.08
+    },
+    {
+        "text": "four we know that was true",
+        "start": 747.839,
+        "duration": 5.68
+    },
+    {
+        "text": "so we can set dp of zero equal to true",
+        "start": 749.68,
+        "duration": 7.12
+    },
+    {
+        "text": "so this is basically uh the result right",
+        "start": 753.519,
+        "duration": 4.481
+    },
+    {
+        "text": "this is how we're going to compute",
+        "start": 756.8,
+        "duration": 2.64
+    },
+    {
+        "text": "it and this is what we're going to",
+        "start": 758.0,
+        "duration": 3.68
+    },
+    {
+        "text": "assign dp of 0 to and once we've done",
+        "start": 759.44,
+        "duration": 3.68
+    },
+    {
+        "text": "that we've computed the result",
+        "start": 761.68,
+        "duration": 3.599
+    },
+    {
+        "text": "we know we can return true for the",
+        "start": 763.12,
+        "duration": 3.279
+    },
+    {
+        "text": "overall function",
+        "start": 765.279,
+        "duration": 3.041
+    },
+    {
+        "text": "so with that being said let's jump into",
+        "start": 766.399,
+        "duration": 4.721
+    },
+    {
+        "text": "the code so our cache is going to be",
+        "start": 768.32,
+        "duration": 5.199
+    },
+    {
+        "text": "let's say a one-dimensional array right",
+        "start": 771.12,
+        "duration": 4.24
+    },
+    {
+        "text": "because for every position i",
+        "start": 773.519,
+        "duration": 5.041
+    },
+    {
+        "text": "in the string s we are going to have a",
+        "start": 775.36,
+        "duration": 4.719
+    },
+    {
+        "text": "value so we're going to initialize this",
+        "start": 778.56,
+        "duration": 3.12
+    },
+    {
+        "text": "to false it's going to be the length of",
+        "start": 780.079,
+        "duration": 2.641
+    },
+    {
+        "text": "the string s",
+        "start": 781.68,
+        "duration": 3.92
+    },
+    {
+        "text": "plus 1 for our base case and we are",
+        "start": 782.72,
+        "duration": 4.559
+    },
+    {
+        "text": "going to initialize our base case we",
+        "start": 785.6,
+        "duration": 3.44
+    },
+    {
+        "text": "know that it's the last position",
+        "start": 787.279,
+        "duration": 2.8
+    },
+    {
+        "text": "basically the position",
+        "start": 789.04,
+        "duration": 3.2
+    },
+    {
+        "text": "the position out of bounds of the string",
+        "start": 790.079,
+        "duration": 3.44
+    },
+    {
+        "text": "so the length of",
+        "start": 792.24,
+        "duration": 3.36
+    },
+    {
+        "text": "s and we know that's going to be set to",
+        "start": 793.519,
+        "duration": 3.921
+    },
+    {
+        "text": "true that's our base case",
+        "start": 795.6,
+        "duration": 3.039
+    },
+    {
+        "text": "so now we're going to go through every",
+        "start": 797.44,
+        "duration": 3.04
+    },
+    {
+        "text": "position i in",
+        "start": 798.639,
+        "duration": 4.88
+    },
+    {
+        "text": "the length of the string starting at the",
+        "start": 800.48,
+        "duration": 4.96
+    },
+    {
+        "text": "last index and working our way to the",
+        "start": 803.519,
+        "duration": 3.601
+    },
+    {
+        "text": "beginning so that's why i'm using the",
+        "start": 805.44,
+        "duration": 3.519
+    },
+    {
+        "text": "decrementer of negative one",
+        "start": 807.12,
+        "duration": 3.44
+    },
+    {
+        "text": "and we're going to go up until the",
+        "start": 808.959,
+        "duration": 3.281
+    },
+    {
+        "text": "beginning of the string",
+        "start": 810.56,
+        "duration": 5.279
+    },
+    {
+        "text": "and for each position i we want to try",
+        "start": 812.24,
+        "duration": 5.92
+    },
+    {
+        "text": "every single word in our word dictionary",
+        "start": 815.839,
+        "duration": 4.0
+    },
+    {
+        "text": "and see if the word",
+        "start": 818.16,
+        "duration": 4.32
+    },
+    {
+        "text": "matches this portion so first we have to",
+        "start": 819.839,
+        "duration": 3.281
+    },
+    {
+        "text": "see if",
+        "start": 822.48,
+        "duration": 3.68
+    },
+    {
+        "text": "starting at position i the string s even",
+        "start": 823.12,
+        "duration": 3.76
+    },
+    {
+        "text": "has enough",
+        "start": 826.16,
+        "duration": 3.52
+    },
+    {
+        "text": "characters for w to be compared to it so",
+        "start": 826.88,
+        "duration": 3.92
+    },
+    {
+        "text": "what we're going to do is we're going to",
+        "start": 829.68,
+        "duration": 1.519
+    },
+    {
+        "text": "check",
+        "start": 830.8,
+        "duration": 3.76
+    },
+    {
+        "text": "i plus the length of w and we want to",
+        "start": 831.199,
+        "duration": 4.721
+    },
+    {
+        "text": "know is it less than or",
+        "start": 834.56,
+        "duration": 4.639
+    },
+    {
+        "text": "equal to the length of s if that's the",
+        "start": 835.92,
+        "duration": 3.919
+    },
+    {
+        "text": "case",
+        "start": 839.199,
+        "duration": 2.801
+    },
+    {
+        "text": "then that means there are enough",
+        "start": 839.839,
+        "duration": 3.12
+    },
+    {
+        "text": "characters in",
+        "start": 842.0,
+        "duration": 2.72
+    },
+    {
+        "text": "s for us to compare them so that's what",
+        "start": 842.959,
+        "duration": 2.721
+    },
+    {
+        "text": "exactly what we're going to do we're",
+        "start": 844.72,
+        "duration": 1.359
+    },
+    {
+        "text": "going",
+        "start": 845.68,
+        "duration": 2.48
+    },
+    {
+        "text": "if this is true then let's compare so we",
+        "start": 846.079,
+        "duration": 3.2
+    },
+    {
+        "text": "want to know if that's true",
+        "start": 848.16,
+        "duration": 4.799
+    },
+    {
+        "text": "and if s starting at index i",
+        "start": 849.279,
+        "duration": 6.721
+    },
+    {
+        "text": "going up until i plus the length",
+        "start": 852.959,
+        "duration": 6.24
+    },
+    {
+        "text": "of w so basically let's say",
+        "start": 856.0,
+        "duration": 5.519
+    },
+    {
+        "text": "w was three characters then we want to",
+        "start": 859.199,
+        "duration": 4.08
+    },
+    {
+        "text": "know the first three characters in",
+        "start": 861.519,
+        "duration": 4.401
+    },
+    {
+        "text": "s starting at index i are they exactly",
+        "start": 863.279,
+        "duration": 3.12
+    },
+    {
+        "text": "equal",
+        "start": 865.92,
+        "duration": 2.88
+    },
+    {
+        "text": "if they are equal then we wanna know",
+        "start": 866.399,
+        "duration": 3.841
+    },
+    {
+        "text": "okay so dp of",
+        "start": 868.8,
+        "duration": 4.88
+    },
+    {
+        "text": "i is going to be set to dp",
+        "start": 870.24,
+        "duration": 6.719
+    },
+    {
+        "text": "of i plus the length of w right that was",
+        "start": 873.68,
+        "duration": 4.64
+    },
+    {
+        "text": "the relationship we got",
+        "start": 876.959,
+        "duration": 4.88
+    },
+    {
+        "text": "i plus the length of whatever the word",
+        "start": 878.32,
+        "duration": 4.639
+    },
+    {
+        "text": "happens to be",
+        "start": 881.839,
+        "duration": 4.641
+    },
+    {
+        "text": "now if we got a single a way to word",
+        "start": 882.959,
+        "duration": 4.081
+    },
+    {
+        "text": "break this",
+        "start": 886.48,
+        "duration": 2.799
+    },
+    {
+        "text": "starting at index i that means we can",
+        "start": 887.04,
+        "duration": 4.0
+    },
+    {
+        "text": "basically stop this loop right we don't",
+        "start": 889.279,
+        "duration": 3.281
+    },
+    {
+        "text": "have to look at every single word in the",
+        "start": 891.04,
+        "duration": 2.88
+    },
+    {
+        "text": "dictionary if we found at least",
+        "start": 892.56,
+        "duration": 3.12
+    },
+    {
+        "text": "one way we were able to word break it",
+        "start": 893.92,
+        "duration": 3.68
+    },
+    {
+        "text": "then we're gonna stop so basically if dp",
+        "start": 895.68,
+        "duration": 2.8
+    },
+    {
+        "text": "of i",
+        "start": 897.6,
+        "duration": 3.52
+    },
+    {
+        "text": "is true then we can break out of this",
+        "start": 898.48,
+        "duration": 5.12
+    },
+    {
+        "text": "for loop and then move on to the next",
+        "start": 901.12,
+        "duration": 4.64
+    },
+    {
+        "text": "index so we're going to start basically",
+        "start": 903.6,
+        "duration": 3.2
+    },
+    {
+        "text": "at the last index",
+        "start": 905.76,
+        "duration": 3.36
+    },
+    {
+        "text": "keep going until we've gotten to index 0",
+        "start": 906.8,
+        "duration": 3.839
+    },
+    {
+        "text": "and then once we've done that we know we",
+        "start": 909.12,
+        "duration": 2.959
+    },
+    {
+        "text": "can actually return that",
+        "start": 910.639,
+        "duration": 3.521
+    },
+    {
+        "text": "and that's going to be stored in dp of",
+        "start": 912.079,
+        "duration": 3.921
+    },
+    {
+        "text": "zero so believe it or not",
+        "start": 914.16,
+        "duration": 4.64
+    },
+    {
+        "text": "that is the entire code about 10 lines i",
+        "start": 916.0,
+        "duration": 3.44
+    },
+    {
+        "text": "think and",
+        "start": 918.8,
+        "duration": 2.719
+    },
+    {
+        "text": "this is a pretty efficient solution as",
+        "start": 919.44,
+        "duration": 3.759
+    },
+    {
+        "text": "you can see so i hope that this was",
+        "start": 921.519,
+        "duration": 2.241
+    },
+    {
+        "text": "helpful",
+        "start": 923.199,
+        "duration": 2.64
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 923.76,
+        "duration": 3.68
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 925.839,
+        "duration": 3.761
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 927.44,
+        "duration": 8.639
+    },
+    {
+        "text": "thanks for watching",
+        "start": 929.6,
+        "duration": 6.479
+    }
+]

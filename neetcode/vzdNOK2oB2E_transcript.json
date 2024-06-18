@@ -1,0 +1,1097 @@
+[
+    {
+        "text": "hey everyone welcome back now let's",
+        "start": 0.0,
+        "duration": 3.36
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.52,
+        "duration": 2.96
+    },
+    {
+        "text": "let's look at a good",
+        "start": 3.36,
+        "duration": 3.28
+    },
+    {
+        "text": "question to practice the fundamentals",
+        "start": 4.48,
+        "duration": 3.68
+    },
+    {
+        "text": "group anagrams",
+        "start": 6.64,
+        "duration": 4.48
+    },
+    {
+        "text": "so we're given just a list of strings",
+        "start": 8.16,
+        "duration": 4.399
+    },
+    {
+        "text": "and we want to group",
+        "start": 11.12,
+        "duration": 4.559
+    },
+    {
+        "text": "all anagrams together so for example we",
+        "start": 12.559,
+        "duration": 4.001
+    },
+    {
+        "text": "have tan",
+        "start": 15.679,
+        "duration": 3.44
+    },
+    {
+        "text": "and we have nat and they are anagrams",
+        "start": 16.56,
+        "duration": 3.04
+    },
+    {
+        "text": "together",
+        "start": 19.119,
+        "duration": 3.521
+    },
+    {
+        "text": "so in the output we're gonna group them",
+        "start": 19.6,
+        "duration": 3.599
+    },
+    {
+        "text": "together",
+        "start": 22.64,
+        "duration": 3.6
+    },
+    {
+        "text": "into one sub-list and how do we",
+        "start": 23.199,
+        "duration": 5.361
+    },
+    {
+        "text": "know these two are anagrams of each",
+        "start": 26.24,
+        "duration": 3.76
+    },
+    {
+        "text": "other the first one",
+        "start": 28.56,
+        "duration": 4.96
+    },
+    {
+        "text": "is tan the second one is na",
+        "start": 30.0,
+        "duration": 7.12
+    },
+    {
+        "text": "and you see if we swap the n and the t",
+        "start": 33.52,
+        "duration": 7.12
+    },
+    {
+        "text": "then we get we get tan right",
+        "start": 37.12,
+        "duration": 5.92
+    },
+    {
+        "text": "and that's the same as this so by",
+        "start": 40.64,
+        "duration": 3.36
+    },
+    {
+        "text": "rearranging",
+        "start": 43.04,
+        "duration": 3.199
+    },
+    {
+        "text": "the characters we can get equivalent",
+        "start": 44.0,
+        "duration": 4.399
+    },
+    {
+        "text": "strings so these two are equal",
+        "start": 46.239,
+        "duration": 4.881
+    },
+    {
+        "text": "so another way of looking at it is two",
+        "start": 48.399,
+        "duration": 3.521
+    },
+    {
+        "text": "strings",
+        "start": 51.12,
+        "duration": 4.4
+    },
+    {
+        "text": "are anagrams of each other if we take",
+        "start": 51.92,
+        "duration": 6.24
+    },
+    {
+        "text": "each of them and sort them right so if",
+        "start": 55.52,
+        "duration": 4.4
+    },
+    {
+        "text": "we sort both of these",
+        "start": 58.16,
+        "duration": 4.719
+    },
+    {
+        "text": "we're gonna get ant right for both of",
+        "start": 59.92,
+        "duration": 3.36
+    },
+    {
+        "text": "them",
+        "start": 62.879,
+        "duration": 2.32
+    },
+    {
+        "text": "because that's the sorted version so if",
+        "start": 63.28,
+        "duration": 3.76
+    },
+    {
+        "text": "they're anagrams of each other",
+        "start": 65.199,
+        "duration": 3.841
+    },
+    {
+        "text": "when they are sorted they should be",
+        "start": 67.04,
+        "duration": 3.439
+    },
+    {
+        "text": "equal right so",
+        "start": 69.04,
+        "duration": 4.079
+    },
+    {
+        "text": "so one way to group anagrams together",
+        "start": 70.479,
+        "duration": 3.761
+    },
+    {
+        "text": "would be to take",
+        "start": 73.119,
+        "duration": 3.601
+    },
+    {
+        "text": "each one of these strings in the input",
+        "start": 74.24,
+        "duration": 3.84
+    },
+    {
+        "text": "and then sort them",
+        "start": 76.72,
+        "duration": 4.16
+    },
+    {
+        "text": "but the time complexity of that is going",
+        "start": 78.08,
+        "duration": 3.92
+    },
+    {
+        "text": "to be",
+        "start": 80.88,
+        "duration": 4.559
+    },
+    {
+        "text": "n log n where let's just say n",
+        "start": 82.0,
+        "duration": 5.84
+    },
+    {
+        "text": "is the average length of each of the",
+        "start": 85.439,
+        "duration": 3.281
+    },
+    {
+        "text": "input strings",
+        "start": 87.84,
+        "duration": 3.599
+    },
+    {
+        "text": "so that's how much it takes to sort each",
+        "start": 88.72,
+        "duration": 3.6
+    },
+    {
+        "text": "of the strings",
+        "start": 91.439,
+        "duration": 3.601
+    },
+    {
+        "text": "and we have to do that m times where",
+        "start": 92.32,
+        "duration": 3.28
+    },
+    {
+        "text": "let's say",
+        "start": 95.04,
+        "duration": 4.079
+    },
+    {
+        "text": "m is the length of",
+        "start": 95.6,
+        "duration": 5.519
+    },
+    {
+        "text": "how many like basically how many input",
+        "start": 99.119,
+        "duration": 4.081
+    },
+    {
+        "text": "strings were given in the first place",
+        "start": 101.119,
+        "duration": 4.32
+    },
+    {
+        "text": "so you can see that this is going to be",
+        "start": 103.2,
+        "duration": 4.4
+    },
+    {
+        "text": "the overall time complexity",
+        "start": 105.439,
+        "duration": 5.04
+    },
+    {
+        "text": "so my question is can we do better than",
+        "start": 107.6,
+        "duration": 4.4
+    },
+    {
+        "text": "this and actually",
+        "start": 110.479,
+        "duration": 4.161
+    },
+    {
+        "text": "the simple solution in this case happens",
+        "start": 112.0,
+        "duration": 4.56
+    },
+    {
+        "text": "to be more efficient and let me show you",
+        "start": 114.64,
+        "duration": 4.72
+    },
+    {
+        "text": "that solution right now so one also",
+        "start": 116.56,
+        "duration": 4.0
+    },
+    {
+        "text": "condition that we're given",
+        "start": 119.36,
+        "duration": 3.039
+    },
+    {
+        "text": "is that each character is going to be",
+        "start": 120.56,
+        "duration": 3.44
+    },
+    {
+        "text": "from lowercase a",
+        "start": 122.399,
+        "duration": 5.761
+    },
+    {
+        "text": "to lowercase z so at most we have 26",
+        "start": 124.0,
+        "duration": 6.959
+    },
+    {
+        "text": "unique characters right so let's just",
+        "start": 128.16,
+        "duration": 3.28
+    },
+    {
+        "text": "have",
+        "start": 130.959,
+        "duration": 3.681
+    },
+    {
+        "text": "an array called count so for",
+        "start": 131.44,
+        "duration": 5.76
+    },
+    {
+        "text": "each one of these strings we want to",
+        "start": 134.64,
+        "duration": 3.36
+    },
+    {
+        "text": "count",
+        "start": 137.2,
+        "duration": 4.32
+    },
+    {
+        "text": "the characters from a to z",
+        "start": 138.0,
+        "duration": 6.16
+    },
+    {
+        "text": "right how many does it have of each so",
+        "start": 141.52,
+        "duration": 4.0
+    },
+    {
+        "text": "we know it has",
+        "start": 144.16,
+        "duration": 4.48
+    },
+    {
+        "text": "one e one a and it has",
+        "start": 145.52,
+        "duration": 6.719
+    },
+    {
+        "text": "one t and for this one",
+        "start": 148.64,
+        "duration": 5.2
+    },
+    {
+        "text": "we would see that the exact same thing",
+        "start": 152.239,
+        "duration": 4.561
+    },
+    {
+        "text": "is true it has one e one a",
+        "start": 153.84,
+        "duration": 6.24
+    },
+    {
+        "text": "and one t so if we use a data structure",
+        "start": 156.8,
+        "duration": 5.76
+    },
+    {
+        "text": "called a hash map in this case and in",
+        "start": 160.08,
+        "duration": 3.12
+    },
+    {
+        "text": "this case",
+        "start": 162.56,
+        "duration": 3.679
+    },
+    {
+        "text": "our key is going to be",
+        "start": 163.2,
+        "duration": 6.319
+    },
+    {
+        "text": "this over here so this is what we can",
+        "start": 166.239,
+        "duration": 3.761
+    },
+    {
+        "text": "use to",
+        "start": 169.519,
+        "duration": 3.281
+    },
+    {
+        "text": "identify anagrams and then our value is",
+        "start": 170.0,
+        "duration": 4.08
+    },
+    {
+        "text": "going to be the list",
+        "start": 172.8,
+        "duration": 4.32
+    },
+    {
+        "text": "of anagrams so in this case how many",
+        "start": 174.08,
+        "duration": 5.12
+    },
+    {
+        "text": "strings or which strings have",
+        "start": 177.12,
+        "duration": 5.119
+    },
+    {
+        "text": "this pattern of count one e",
+        "start": 179.2,
+        "duration": 6.8
+    },
+    {
+        "text": "one a and one t well we see there's one",
+        "start": 182.239,
+        "duration": 7.761
+    },
+    {
+        "text": "each there's one t and there's one last",
+        "start": 186.0,
+        "duration": 4.879
+    },
+    {
+        "text": "one",
+        "start": 190.0,
+        "duration": 4.08
+    },
+    {
+        "text": "a so those are gonna be the values we'll",
+        "start": 190.879,
+        "duration": 4.72
+    },
+    {
+        "text": "have a list of them",
+        "start": 194.08,
+        "duration": 5.12
+    },
+    {
+        "text": "e t and then a right so we'll have three",
+        "start": 195.599,
+        "duration": 4.481
+    },
+    {
+        "text": "strings",
+        "start": 199.2,
+        "duration": 3.44
+    },
+    {
+        "text": "and as you can see in the output it's a",
+        "start": 200.08,
+        "duration": 4.32
+    },
+    {
+        "text": "little messy but that's what we have",
+        "start": 202.64,
+        "duration": 3.12
+    },
+    {
+        "text": "here right so these three",
+        "start": 204.4,
+        "duration": 2.72
+    },
+    {
+        "text": "are grouped together so we're going to",
+        "start": 205.76,
+        "duration": 3.039
+    },
+    {
+        "text": "use a hash map",
+        "start": 207.12,
+        "duration": 4.16
+    },
+    {
+        "text": "to group them together since all we're",
+        "start": 208.799,
+        "duration": 4.561
+    },
+    {
+        "text": "and since we're using a hash map and all",
+        "start": 211.28,
+        "duration": 3.44
+    },
+    {
+        "text": "we're doing is counting",
+        "start": 213.36,
+        "duration": 4.4
+    },
+    {
+        "text": "the characters of each and",
+        "start": 214.72,
+        "duration": 5.84
+    },
+    {
+        "text": "we know that we have a limit of 26",
+        "start": 217.76,
+        "duration": 4.24
+    },
+    {
+        "text": "lowercase characters",
+        "start": 220.56,
+        "duration": 4.239
+    },
+    {
+        "text": "the overall time complexity is gonna be",
+        "start": 222.0,
+        "duration": 3.44
+    },
+    {
+        "text": "big",
+        "start": 224.799,
+        "duration": 4.16
+    },
+    {
+        "text": "o of m where m",
+        "start": 225.44,
+        "duration": 7.2
+    },
+    {
+        "text": "is the total number of input strings",
+        "start": 228.959,
+        "duration": 4.881
+    },
+    {
+        "text": "that we're given",
+        "start": 232.64,
+        "duration": 4.48
+    },
+    {
+        "text": "times n where n is the",
+        "start": 233.84,
+        "duration": 6.72
+    },
+    {
+        "text": "average length of a string because we",
+        "start": 237.12,
+        "duration": 3.839
+    },
+    {
+        "text": "have to",
+        "start": 240.56,
+        "duration": 2.879
+    },
+    {
+        "text": "count how many of each character it has",
+        "start": 240.959,
+        "duration": 3.681
+    },
+    {
+        "text": "so we're gonna have to go through",
+        "start": 243.439,
+        "duration": 3.921
+    },
+    {
+        "text": "every single character in a string and",
+        "start": 244.64,
+        "duration": 3.36
+    },
+    {
+        "text": "since we",
+        "start": 247.36,
+        "duration": 4.64
+    },
+    {
+        "text": "are using count right or this array",
+        "start": 248.0,
+        "duration": 7.04
+    },
+    {
+        "text": "in our hash map we're using it as a key",
+        "start": 252.0,
+        "duration": 5.04
+    },
+    {
+        "text": "in our hash map we kind of also have to",
+        "start": 255.04,
+        "duration": 4.159
+    },
+    {
+        "text": "multiply this by 26",
+        "start": 257.04,
+        "duration": 3.599
+    },
+    {
+        "text": "because that's what's going to be the",
+        "start": 259.199,
+        "duration": 3.601
+    },
+    {
+        "text": "length of our count array",
+        "start": 260.639,
+        "duration": 5.12
+    },
+    {
+        "text": "but you know that this reduces anyway so",
+        "start": 262.8,
+        "duration": 5.2
+    },
+    {
+        "text": "the actual time complexity is big",
+        "start": 265.759,
+        "duration": 6.16
+    },
+    {
+        "text": "o m times n",
+        "start": 268.0,
+        "duration": 6.0
+    },
+    {
+        "text": "so now let's code it up as you can see",
+        "start": 271.919,
+        "duration": 3.681
+    },
+    {
+        "text": "though this is basically one of those",
+        "start": 274.0,
+        "duration": 3.52
+    },
+    {
+        "text": "problems that can be solved",
+        "start": 275.6,
+        "duration": 4.72
+    },
+    {
+        "text": "with a hash map very efficiently so",
+        "start": 277.52,
+        "duration": 4.959
+    },
+    {
+        "text": "let's create our hashmap we'll call it",
+        "start": 280.32,
+        "duration": 4.56
+    },
+    {
+        "text": "result and so remember what we're doing",
+        "start": 282.479,
+        "duration": 3.921
+    },
+    {
+        "text": "is we're mapping",
+        "start": 284.88,
+        "duration": 4.879
+    },
+    {
+        "text": "the character count of each string",
+        "start": 286.4,
+        "duration": 6.96
+    },
+    {
+        "text": "and we're mapping that to the list",
+        "start": 289.759,
+        "duration": 7.041
+    },
+    {
+        "text": "of anagrams so to do that we of course",
+        "start": 293.36,
+        "duration": 5.44
+    },
+    {
+        "text": "have to go through every string that",
+        "start": 296.8,
+        "duration": 3.92
+    },
+    {
+        "text": "we're given in the input",
+        "start": 298.8,
+        "duration": 4.16
+    },
+    {
+        "text": "and we want to count how many of each",
+        "start": 300.72,
+        "duration": 3.919
+    },
+    {
+        "text": "character it has so we'll have",
+        "start": 302.96,
+        "duration": 5.04
+    },
+    {
+        "text": "initially a array so it's we're going to",
+        "start": 304.639,
+        "duration": 3.601
+    },
+    {
+        "text": "have",
+        "start": 308.0,
+        "duration": 3.44
+    },
+    {
+        "text": "0 in it we're going to have 26 zeros",
+        "start": 308.24,
+        "duration": 4.48
+    },
+    {
+        "text": "right because",
+        "start": 311.44,
+        "duration": 3.68
+    },
+    {
+        "text": "one for each character so from lowercase",
+        "start": 312.72,
+        "duration": 3.12
+    },
+    {
+        "text": "a",
+        "start": 315.12,
+        "duration": 3.76
+    },
+    {
+        "text": "all the way to lowercase z",
+        "start": 315.84,
+        "duration": 5.44
+    },
+    {
+        "text": "and now we want to go through every",
+        "start": 318.88,
+        "duration": 3.759
+    },
+    {
+        "text": "single character",
+        "start": 321.28,
+        "duration": 4.16
+    },
+    {
+        "text": "in each string and we want to count how",
+        "start": 322.639,
+        "duration": 5.441
+    },
+    {
+        "text": "many of each character so we want to map",
+        "start": 325.44,
+        "duration": 6.0
+    },
+    {
+        "text": "in this case a to index 0",
+        "start": 328.08,
+        "duration": 6.559
+    },
+    {
+        "text": "and we want to map z to index 25 so how",
+        "start": 331.44,
+        "duration": 4.88
+    },
+    {
+        "text": "can we do that well we can",
+        "start": 334.639,
+        "duration": 4.4
+    },
+    {
+        "text": "one way at least is just take the ascii",
+        "start": 336.32,
+        "duration": 4.879
+    },
+    {
+        "text": "value of the current character we're at",
+        "start": 339.039,
+        "duration": 5.201
+    },
+    {
+        "text": "c and then subtract the ascii",
+        "start": 341.199,
+        "duration": 6.321
+    },
+    {
+        "text": "value of lowercase character",
+        "start": 344.24,
+        "duration": 6.56
+    },
+    {
+        "text": "a so as you can see lowercase a",
+        "start": 347.52,
+        "duration": 6.72
+    },
+    {
+        "text": "minus lowercase a is going to be 0 z",
+        "start": 350.8,
+        "duration": 6.399
+    },
+    {
+        "text": "lowercase z minus lowercase a is going",
+        "start": 354.24,
+        "duration": 4.88
+    },
+    {
+        "text": "to be 25 so",
+        "start": 357.199,
+        "duration": 4.321
+    },
+    {
+        "text": "we do have it correctly because for",
+        "start": 359.12,
+        "duration": 3.519
+    },
+    {
+        "text": "example let's just say",
+        "start": 361.52,
+        "duration": 4.239
+    },
+    {
+        "text": "a is ascii value 80 and i don't know if",
+        "start": 362.639,
+        "duration": 4.641
+    },
+    {
+        "text": "this is actually correct but it's just a",
+        "start": 365.759,
+        "duration": 2.56
+    },
+    {
+        "text": "random value then",
+        "start": 367.28,
+        "duration": 4.56
+    },
+    {
+        "text": "b is going to be ascii value 81 and so",
+        "start": 368.319,
+        "duration": 4.32
+    },
+    {
+        "text": "on",
+        "start": 371.84,
+        "duration": 4.079
+    },
+    {
+        "text": "but if we want to map this to zero",
+        "start": 372.639,
+        "duration": 6.161
+    },
+    {
+        "text": "we know one way to do that is take 80",
+        "start": 375.919,
+        "duration": 4.081
+    },
+    {
+        "text": "minus 80.",
+        "start": 378.8,
+        "duration": 4.64
+    },
+    {
+        "text": "if we want to map lowercase b to 1",
+        "start": 380.0,
+        "duration": 7.039
+    },
+    {
+        "text": "we can take 81 minus 80 right",
+        "start": 383.44,
+        "duration": 5.759
+    },
+    {
+        "text": "so that's basically what i'm doing here",
+        "start": 387.039,
+        "duration": 3.921
+    },
+    {
+        "text": "in case you haven't seen something like",
+        "start": 389.199,
+        "duration": 2.56
+    },
+    {
+        "text": "this before",
+        "start": 390.96,
+        "duration": 2.64
+    },
+    {
+        "text": "and so we're just going to increment",
+        "start": 391.759,
+        "duration": 3.201
+    },
+    {
+        "text": "this by one",
+        "start": 393.6,
+        "duration": 2.8
+    },
+    {
+        "text": "we're just counting how many of each",
+        "start": 394.96,
+        "duration": 3.2
+    },
+    {
+        "text": "character we have and now",
+        "start": 396.4,
+        "duration": 5.44
+    },
+    {
+        "text": "in our result we want to",
+        "start": 398.16,
+        "duration": 6.72
+    },
+    {
+        "text": "add so for this particular count",
+        "start": 401.84,
+        "duration": 7.359
+    },
+    {
+        "text": "we want to add we want to append",
+        "start": 404.88,
+        "duration": 7.52
+    },
+    {
+        "text": "we're going to append this string s",
+        "start": 409.199,
+        "duration": 5.28
+    },
+    {
+        "text": "so we want to group all anagrams with",
+        "start": 412.4,
+        "duration": 3.04
+    },
+    {
+        "text": "this particular",
+        "start": 414.479,
+        "duration": 4.081
+    },
+    {
+        "text": "count together now what if this count",
+        "start": 415.44,
+        "duration": 4.0
+    },
+    {
+        "text": "does not exist",
+        "start": 418.56,
+        "duration": 2.56
+    },
+    {
+        "text": "yet well i'm actually going to change",
+        "start": 419.44,
+        "duration": 3.039
+    },
+    {
+        "text": "this dictionary to",
+        "start": 421.12,
+        "duration": 4.24
+    },
+    {
+        "text": "a default dictionary or a default",
+        "start": 422.479,
+        "duration": 3.681
+    },
+    {
+        "text": "hashmap",
+        "start": 425.36,
+        "duration": 2.959
+    },
+    {
+        "text": "where the default value is a list so we",
+        "start": 426.16,
+        "duration": 4.479
+    },
+    {
+        "text": "don't have to deal with one edge case",
+        "start": 428.319,
+        "duration": 5.841
+    },
+    {
+        "text": "and also right now our count is a list",
+        "start": 430.639,
+        "duration": 6.56
+    },
+    {
+        "text": "but we know in python lists cannot be",
+        "start": 434.16,
+        "duration": 4.8
+    },
+    {
+        "text": "keys so we're actually just going to",
+        "start": 437.199,
+        "duration": 3.84
+    },
+    {
+        "text": "change this to a tuple",
+        "start": 438.96,
+        "duration": 5.2
+    },
+    {
+        "text": "because tuples are non-mutable",
+        "start": 441.039,
+        "duration": 4.961
+    },
+    {
+        "text": "but mainly this is python stuff you",
+        "start": 444.16,
+        "duration": 3.36
+    },
+    {
+        "text": "might not have to worry about this",
+        "start": 446.0,
+        "duration": 3.759
+    },
+    {
+        "text": "in other languages and so that's",
+        "start": 447.52,
+        "duration": 3.519
+    },
+    {
+        "text": "actually it",
+        "start": 449.759,
+        "duration": 4.88
+    },
+    {
+        "text": "so now in our dictionary we have grouped",
+        "start": 451.039,
+        "duration": 6.56
+    },
+    {
+        "text": "the anagrams together so we just can",
+        "start": 454.639,
+        "duration": 3.96
+    },
+    {
+        "text": "take",
+        "start": 457.599,
+        "duration": 3.281
+    },
+    {
+        "text": "result.values we don't want the keys",
+        "start": 458.599,
+        "duration": 4.201
+    },
+    {
+        "text": "anymore we just want to return",
+        "start": 460.88,
+        "duration": 4.159
+    },
+    {
+        "text": "the values the anagrams grouped together",
+        "start": 462.8,
+        "duration": 3.2
+    },
+    {
+        "text": "so we can",
+        "start": 465.039,
+        "duration": 3.6
+    },
+    {
+        "text": "return that and we're actually finished",
+        "start": 466.0,
+        "duration": 3.199
+    },
+    {
+        "text": "so this",
+        "start": 468.639,
+        "duration": 4.081
+    },
+    {
+        "text": "is the optimal m times n solution",
+        "start": 469.199,
+        "duration": 6.321
+    },
+    {
+        "text": "where m is the number of strings we're",
+        "start": 472.72,
+        "duration": 3.599
+    },
+    {
+        "text": "given and",
+        "start": 475.52,
+        "duration": 4.0
+    },
+    {
+        "text": "n is the average length of each string",
+        "start": 476.319,
+        "duration": 4.88
+    },
+    {
+        "text": "how many characters are",
+        "start": 479.52,
+        "duration": 3.679
+    },
+    {
+        "text": "in each string so i hope this was",
+        "start": 481.199,
+        "duration": 4.0
+    },
+    {
+        "text": "helpful if it was please like and",
+        "start": 483.199,
+        "duration": 4.321
+    },
+    {
+        "text": "subscribe it supports the channel a lot",
+        "start": 485.199,
+        "duration": 7.761
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 487.52,
+        "duration": 5.44
+    }
+]

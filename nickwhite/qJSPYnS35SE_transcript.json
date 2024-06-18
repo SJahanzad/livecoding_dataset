@@ -1,0 +1,1227 @@
+[
+    {
+        "text": "alright guys what's up Nick white here",
+        "start": 0.06,
+        "duration": 4.68
+    },
+    {
+        "text": "talking coding stuff on Twitch in",
+        "start": 3.449,
+        "duration": 7.02
+    },
+    {
+        "text": "YouTube as ya usual we did to some a",
+        "start": 4.74,
+        "duration": 7.92
+    },
+    {
+        "text": "long time ago I think we did to some -",
+        "start": 10.469,
+        "duration": 4.29
+    },
+    {
+        "text": "there's all these like to some problems",
+        "start": 12.66,
+        "duration": 4.31
+    },
+    {
+        "text": "on here I think we did all of those",
+        "start": 14.759,
+        "duration": 5.641
+    },
+    {
+        "text": "those were medium I think I we did",
+        "start": 16.97,
+        "duration": 6.13
+    },
+    {
+        "text": "threesome closest but I just noticed we",
+        "start": 20.4,
+        "duration": 5.33
+    },
+    {
+        "text": "skipped over this one called threesome",
+        "start": 23.1,
+        "duration": 5.82
+    },
+    {
+        "text": "so threesome is similar to two twosomes",
+        "start": 25.73,
+        "duration": 4.99
+    },
+    {
+        "text": "just two numbers adding up to a certain",
+        "start": 28.92,
+        "duration": 4.229
+    },
+    {
+        "text": "sum or something like that",
+        "start": 30.72,
+        "duration": 3.929
+    },
+    {
+        "text": "this one is we're at we have to find",
+        "start": 33.149,
+        "duration": 5.101
+    },
+    {
+        "text": "three numbers that add up to zero so we",
+        "start": 34.649,
+        "duration": 5.25
+    },
+    {
+        "text": "just have to go through the array find",
+        "start": 38.25,
+        "duration": 3.42
+    },
+    {
+        "text": "three numbers that add up to zero and",
+        "start": 39.899,
+        "duration": 4.261
+    },
+    {
+        "text": "return them as a list of lists of",
+        "start": 41.67,
+        "duration": 6.63
+    },
+    {
+        "text": "integers so oh no no all sets of three",
+        "start": 44.16,
+        "duration": 8.94
+    },
+    {
+        "text": "three that add up to zero okay so if",
+        "start": 48.3,
+        "duration": 9.3
+    },
+    {
+        "text": "there's more than one triplet group of",
+        "start": 53.1,
+        "duration": 6.509
+    },
+    {
+        "text": "numbers that add up to zero we have to",
+        "start": 57.6,
+        "duration": 4.349
+    },
+    {
+        "text": "return all of them so it is a little bit",
+        "start": 59.609,
+        "duration": 6.091
+    },
+    {
+        "text": "difficult so we find all unique and they",
+        "start": 61.949,
+        "duration": 5.341
+    },
+    {
+        "text": "have to be unique okay so this one's",
+        "start": 65.7,
+        "duration": 3.12
+    },
+    {
+        "text": "pretty hard there's they can't be",
+        "start": 67.29,
+        "duration": 3.869
+    },
+    {
+        "text": "duplicates okay so we can't have if we",
+        "start": 68.82,
+        "duration": 5.339
+    },
+    {
+        "text": "find negative one zero one at the",
+        "start": 71.159,
+        "duration": 4.53
+    },
+    {
+        "text": "beginning and then it was at the end -",
+        "start": 74.159,
+        "duration": 3.271
+    },
+    {
+        "text": "we would only return it once so that",
+        "start": 75.689,
+        "duration": 3.061
+    },
+    {
+        "text": "makes it a little more challenging",
+        "start": 77.43,
+        "duration": 3.24
+    },
+    {
+        "text": "okay so here's how we're gonna do it",
+        "start": 78.75,
+        "duration": 3.93
+    },
+    {
+        "text": "we're just gonna loop through this array",
+        "start": 80.67,
+        "duration": 5.37
+    },
+    {
+        "text": "number by number so just you know this",
+        "start": 82.68,
+        "duration": 6.119
+    },
+    {
+        "text": "this this this this and then we're just",
+        "start": 86.04,
+        "duration": 6.0
+    },
+    {
+        "text": "going to recreate to sum on the rest of",
+        "start": 88.799,
+        "duration": 6.21
+    },
+    {
+        "text": "this to sum is finding a pair that add",
+        "start": 92.04,
+        "duration": 5.67
+    },
+    {
+        "text": "up to a specific sum so what we do is we",
+        "start": 95.009,
+        "duration": 5.61
+    },
+    {
+        "text": "just go to this element we say okay what",
+        "start": 97.71,
+        "duration": 4.89
+    },
+    {
+        "text": "do we need to get to zero we need one",
+        "start": 100.619,
+        "duration": 4.261
+    },
+    {
+        "text": "because we have negative one if we're on",
+        "start": 102.6,
+        "duration": 3.809
+    },
+    {
+        "text": "this element we have negative one right",
+        "start": 104.88,
+        "duration": 3.84
+    },
+    {
+        "text": "now okay well we need one so let's find",
+        "start": 106.409,
+        "duration": 4.5
+    },
+    {
+        "text": "a pair that add up to one okay",
+        "start": 108.72,
+        "duration": 5.49
+    },
+    {
+        "text": "zero one add up to one okay we found it",
+        "start": 110.909,
+        "duration": 5.431
+    },
+    {
+        "text": "so then we can return all three and what",
+        "start": 114.21,
+        "duration": 4.949
+    },
+    {
+        "text": "we're gonna do is when we find the same",
+        "start": 116.34,
+        "duration": 5.129
+    },
+    {
+        "text": "number in the array we're just gonna",
+        "start": 119.159,
+        "duration": 6.21
+    },
+    {
+        "text": "skip over it and when we find just",
+        "start": 121.469,
+        "duration": 5.61
+    },
+    {
+        "text": "duplicates we just give over duplicates",
+        "start": 125.369,
+        "duration": 4.771
+    },
+    {
+        "text": "so there's no solution duplicates",
+        "start": 127.079,
+        "duration": 4.77
+    },
+    {
+        "text": "because there's not allowed to be so",
+        "start": 130.14,
+        "duration": 3.0
+    },
+    {
+        "text": "that's pretty much it I mean you'll",
+        "start": 131.849,
+        "duration": 2.161
+    },
+    {
+        "text": "probably see how it works",
+        "start": 133.14,
+        "duration": 2.34
+    },
+    {
+        "text": "we go first thing we're gonna actually",
+        "start": 134.01,
+        "duration": 3.179
+    },
+    {
+        "text": "have to do is sort I forgot about that",
+        "start": 135.48,
+        "duration": 3.24
+    },
+    {
+        "text": "because the twosome",
+        "start": 137.189,
+        "duration": 3.931
+    },
+    {
+        "text": "two-pointer method requires the pointers",
+        "start": 138.72,
+        "duration": 5.01
+    },
+    {
+        "text": "to go inwards and you know that does not",
+        "start": 141.12,
+        "duration": 5.49
+    },
+    {
+        "text": "gonna work unless it's sorted okay so",
+        "start": 143.73,
+        "duration": 5.759
+    },
+    {
+        "text": "arrays dot sort just using a built-in",
+        "start": 146.61,
+        "duration": 5.37
+    },
+    {
+        "text": "sort on nums fastest this goes is N",
+        "start": 149.489,
+        "duration": 3.78
+    },
+    {
+        "text": "squared and you know that's not bad",
+        "start": 151.98,
+        "duration": 3.33
+    },
+    {
+        "text": "since it's you know we're finding three",
+        "start": 153.269,
+        "duration": 4.8
+    },
+    {
+        "text": "numbers but you know it sucks the it's",
+        "start": 155.31,
+        "duration": 4.799
+    },
+    {
+        "text": "kind of a slow thing but nothing you can",
+        "start": 158.069,
+        "duration": 3.75
+    },
+    {
+        "text": "do about it we're gonna declare our",
+        "start": 160.109,
+        "duration": 4.591
+    },
+    {
+        "text": "response array so it's a list of lists",
+        "start": 161.819,
+        "duration": 6.241
+    },
+    {
+        "text": "of integers we'll call it you know",
+        "start": 164.7,
+        "duration": 6.27
+    },
+    {
+        "text": "output array that should be fine we're",
+        "start": 168.06,
+        "duration": 6.539
+    },
+    {
+        "text": "gonna do and Link the list then we do",
+        "start": 170.97,
+        "duration": 6.84
+    },
+    {
+        "text": "our main loop here and we're looking for",
+        "start": 174.599,
+        "duration": 5.73
+    },
+    {
+        "text": "triplet numbers so it's gonna be less",
+        "start": 177.81,
+        "duration": 6.149
+    },
+    {
+        "text": "than num style length minus two cuz",
+        "start": 180.329,
+        "duration": 6.66
+    },
+    {
+        "text": "we're looking after the current element",
+        "start": 183.959,
+        "duration": 3.991
+    },
+    {
+        "text": "we're going through the current element",
+        "start": 186.989,
+        "duration": 2.881
+    },
+    {
+        "text": "and then we're finding a pair afterwards",
+        "start": 187.95,
+        "duration": 4.649
+    },
+    {
+        "text": "so for here we got to stop less than",
+        "start": 189.87,
+        "duration": 4.769
+    },
+    {
+        "text": "nums dot length minus two so that you",
+        "start": 192.599,
+        "duration": 3.39
+    },
+    {
+        "text": "know we have a chance to look at the",
+        "start": 194.639,
+        "duration": 3.27
+    },
+    {
+        "text": "last two after it doesn't go out of",
+        "start": 195.989,
+        "duration": 6.03
+    },
+    {
+        "text": "bounds you know okay if i is equal to",
+        "start": 197.909,
+        "duration": 8.521
+    },
+    {
+        "text": "zero or i is greater than zero you know",
+        "start": 202.019,
+        "duration": 6.661
+    },
+    {
+        "text": "those are the two options basically and",
+        "start": 206.43,
+        "duration": 5.309
+    },
+    {
+        "text": "put this condition to this handles the",
+        "start": 208.68,
+        "duration": 3.839
+    },
+    {
+        "text": "duplicates",
+        "start": 211.739,
+        "duration": 3.72
+    },
+    {
+        "text": "nomes dot length is not equal to na I",
+        "start": 212.519,
+        "duration": 4.171
+    },
+    {
+        "text": "mean numbers of I is not equal to",
+        "start": 215.459,
+        "duration": 5.071
+    },
+    {
+        "text": "numbers of I minus one so if this if",
+        "start": 216.69,
+        "duration": 6.06
+    },
+    {
+        "text": "this isn't true if we found a duplicate",
+        "start": 220.53,
+        "duration": 3.269
+    },
+    {
+        "text": "if we're going over the same number",
+        "start": 222.75,
+        "duration": 3.359
+    },
+    {
+        "text": "we're just going to skip so you could",
+        "start": 223.799,
+        "duration": 3.511
+    },
+    {
+        "text": "write this however you want you could",
+        "start": 226.109,
+        "duration": 3.481
+    },
+    {
+        "text": "say if they are equal then continue to",
+        "start": 227.31,
+        "duration": 4.35
+    },
+    {
+        "text": "the next loop or whatever but I'm just",
+        "start": 229.59,
+        "duration": 4.019
+    },
+    {
+        "text": "writing it like this you know another",
+        "start": 231.66,
+        "duration": 3.419
+    },
+    {
+        "text": "way to write it would be like you know",
+        "start": 233.609,
+        "duration": 3.871
+    },
+    {
+        "text": "if they're equal then content",
+        "start": 235.079,
+        "duration": 4.05
+    },
+    {
+        "text": "you know write the word continue but",
+        "start": 237.48,
+        "duration": 2.909
+    },
+    {
+        "text": "we're not going to do that we're just",
+        "start": 239.129,
+        "duration": 3.631
+    },
+    {
+        "text": "going to do if they're not equal then",
+        "start": 240.389,
+        "duration": 3.72
+    },
+    {
+        "text": "we're gonna write what we're gonna do in",
+        "start": 242.76,
+        "duration": 4.14
+    },
+    {
+        "text": "here okay so this means we've found a",
+        "start": 244.109,
+        "duration": 4.651
+    },
+    {
+        "text": "good element and we can start looking",
+        "start": 246.9,
+        "duration": 3.78
+    },
+    {
+        "text": "for a pair right we have the current",
+        "start": 248.76,
+        "duration": 3.509
+    },
+    {
+        "text": "element we're just looping through and",
+        "start": 250.68,
+        "duration": 3.449
+    },
+    {
+        "text": "now we want to find a pair of numbers",
+        "start": 252.269,
+        "duration": 4.53
+    },
+    {
+        "text": "okay so if we're at this element where",
+        "start": 254.129,
+        "duration": 4.26
+    },
+    {
+        "text": "do we want to start to find our pair",
+        "start": 256.799,
+        "duration": 3.18
+    },
+    {
+        "text": "we're not going to include this element",
+        "start": 258.389,
+        "duration": 4.321
+    },
+    {
+        "text": "within the pair this is one of the",
+        "start": 259.979,
+        "duration": 4.44
+    },
+    {
+        "text": "triplets so we're going to start our",
+        "start": 262.71,
+        "duration": 3.78
+    },
+    {
+        "text": "lower boundary here and we're going to",
+        "start": 264.419,
+        "duration": 3.001
+    },
+    {
+        "text": "start our upper",
+        "start": 266.49,
+        "duration": 3.36
+    },
+    {
+        "text": "boundary here and then since it's sorted",
+        "start": 267.42,
+        "duration": 4.26
+    },
+    {
+        "text": "it'll work out so that we can just move",
+        "start": 269.85,
+        "duration": 3.69
+    },
+    {
+        "text": "that both of the boundaries inwards",
+        "start": 271.68,
+        "duration": 3.9
+    },
+    {
+        "text": "until we find a perfect match",
+        "start": 273.54,
+        "duration": 3.75
+    },
+    {
+        "text": "that's exactly how to some works I'd",
+        "start": 275.58,
+        "duration": 3.12
+    },
+    {
+        "text": "recommend checking that out if you don't",
+        "start": 277.29,
+        "duration": 3.84
+    },
+    {
+        "text": "understand it fully okay so we're just",
+        "start": 278.7,
+        "duration": 5.19
+    },
+    {
+        "text": "going to set up our boundaries so the",
+        "start": 281.13,
+        "duration": 6.21
+    },
+    {
+        "text": "lower boundary is going to be equal to I",
+        "start": 283.89,
+        "duration": 6.42
+    },
+    {
+        "text": "plus 1 the current in the next index and",
+        "start": 287.34,
+        "duration": 5.19
+    },
+    {
+        "text": "the higher boundary is going to be equal",
+        "start": 290.31,
+        "duration": 4.47
+    },
+    {
+        "text": "to the second though no the last element",
+        "start": 292.53,
+        "duration": 5.4
+    },
+    {
+        "text": "of the array so there we go and then the",
+        "start": 294.78,
+        "duration": 5.07
+    },
+    {
+        "text": "sum that we're going to be looking for",
+        "start": 297.93,
+        "duration": 5.75
+    },
+    {
+        "text": "within this pair is going to be equal to",
+        "start": 299.85,
+        "duration": 7.11
+    },
+    {
+        "text": "0 because we're looking for 0 the three",
+        "start": 303.68,
+        "duration": 5.29
+    },
+    {
+        "text": "numbers have to add up to zero so at the",
+        "start": 306.96,
+        "duration": 4.95
+    },
+    {
+        "text": "current element we do zero minus the",
+        "start": 308.97,
+        "duration": 5.22
+    },
+    {
+        "text": "current number and then that's going to",
+        "start": 311.91,
+        "duration": 3.9
+    },
+    {
+        "text": "be what we're looking for you know so",
+        "start": 314.19,
+        "duration": 5.76
+    },
+    {
+        "text": "zero minus negative one is one when",
+        "start": 315.81,
+        "duration": 6.24
+    },
+    {
+        "text": "we're on this thing so we're going to be",
+        "start": 319.95,
+        "duration": 3.66
+    },
+    {
+        "text": "looking for two numbers that add up to",
+        "start": 322.05,
+        "duration": 2.37
+    },
+    {
+        "text": "one now",
+        "start": 323.61,
+        "duration": 3.33
+    },
+    {
+        "text": "so now let's you know use our boundaries",
+        "start": 324.42,
+        "duration": 5.31
+    },
+    {
+        "text": "while low is less than high we're just",
+        "start": 326.94,
+        "duration": 5.34
+    },
+    {
+        "text": "going to do some basic conditions well",
+        "start": 329.73,
+        "duration": 5.52
+    },
+    {
+        "text": "first of all if nums are below plus this",
+        "start": 332.28,
+        "duration": 5.37
+    },
+    {
+        "text": "is just straight out of two some plus",
+        "start": 335.25,
+        "duration": 5.07
+    },
+    {
+        "text": "nums of high is equal to sum' well then",
+        "start": 337.65,
+        "duration": 4.53
+    },
+    {
+        "text": "we found our sum so we can just add that",
+        "start": 340.32,
+        "duration": 3.39
+    },
+    {
+        "text": "to our output array we can be like an",
+        "start": 342.18,
+        "duration": 4.2
+    },
+    {
+        "text": "output array dot pad and then there's",
+        "start": 343.71,
+        "duration": 5.85
+    },
+    {
+        "text": "the sweep method a raised dot has lists",
+        "start": 346.38,
+        "duration": 4.68
+    },
+    {
+        "text": "where you can just pass in these aren't",
+        "start": 349.56,
+        "duration": 3.57
+    },
+    {
+        "text": "the numbers as arguments so we've",
+        "start": 351.06,
+        "duration": 5.19
+    },
+    {
+        "text": "numbers of I numbers of low in numbers",
+        "start": 353.13,
+        "duration": 4.92
+    },
+    {
+        "text": "of high and then that'll just append the",
+        "start": 356.25,
+        "duration": 3.51
+    },
+    {
+        "text": "list to our output array there we go we",
+        "start": 358.05,
+        "duration": 3.42
+    },
+    {
+        "text": "found a perfect one because these two",
+        "start": 359.76,
+        "duration": 4.64
+    },
+    {
+        "text": "numbers add up to the sum which is the",
+        "start": 361.47,
+        "duration": 5.31
+    },
+    {
+        "text": "zero minus the current number so it's",
+        "start": 364.4,
+        "duration": 5.14
+    },
+    {
+        "text": "exactly what we're looking for now we",
+        "start": 366.78,
+        "duration": 4.86
+    },
+    {
+        "text": "don't want we want to keep going in this",
+        "start": 369.54,
+        "duration": 4.68
+    },
+    {
+        "text": "loop but we don't want to have",
+        "start": 371.64,
+        "duration": 5.16
+    },
+    {
+        "text": "duplicates if there's like zero zero if",
+        "start": 374.22,
+        "duration": 4.32
+    },
+    {
+        "text": "there's a bunch of duplicates we want to",
+        "start": 376.8,
+        "duration": 3.72
+    },
+    {
+        "text": "avoid those so while low is less than",
+        "start": 378.54,
+        "duration": 7.86
+    },
+    {
+        "text": "high and nums of low is equal to numbers",
+        "start": 380.52,
+        "duration": 8.37
+    },
+    {
+        "text": "of low plus one then that's just a",
+        "start": 386.4,
+        "duration": 4.35
+    },
+    {
+        "text": "duplicate and we can't have those in our",
+        "start": 388.89,
+        "duration": 3.09
+    },
+    {
+        "text": "things so we're just going to increment",
+        "start": 390.75,
+        "duration": 4.83
+    },
+    {
+        "text": "low and the same goes for high we don't",
+        "start": 391.98,
+        "duration": 5.79
+    },
+    {
+        "text": "want to duplicate high values either",
+        "start": 395.58,
+        "duration": 3.18
+    },
+    {
+        "text": "because we're just going to append the",
+        "start": 397.77,
+        "duration": 2.85
+    },
+    {
+        "text": "same array we'll just find the same",
+        "start": 398.76,
+        "duration": 2.31
+    },
+    {
+        "text": "selmak",
+        "start": 400.62,
+        "duration": 2.1
+    },
+    {
+        "text": "animal upon the array so that would be",
+        "start": 401.07,
+        "duration": 4.83
+    },
+    {
+        "text": "stupid so we're just gonna do skip over",
+        "start": 402.72,
+        "duration": 6.24
+    },
+    {
+        "text": "these duplicates if nums of hi is equal",
+        "start": 405.9,
+        "duration": 5.43
+    },
+    {
+        "text": "to hi minus one because hi goes",
+        "start": 408.96,
+        "duration": 6.12
+    },
+    {
+        "text": "backwards we just skip over them and",
+        "start": 411.33,
+        "duration": 5.31
+    },
+    {
+        "text": "once we get to the right spot we just do",
+        "start": 415.08,
+        "duration": 5.1
+    },
+    {
+        "text": "that one increment you know we increment",
+        "start": 416.64,
+        "duration": 5.22
+    },
+    {
+        "text": "by one on both of them once we're at the",
+        "start": 420.18,
+        "duration": 2.85
+    },
+    {
+        "text": "right spot and we have no more",
+        "start": 421.86,
+        "duration": 3.45
+    },
+    {
+        "text": "duplicates great that's pretty much all",
+        "start": 423.03,
+        "duration": 4.77
+    },
+    {
+        "text": "of the problem right there all it is now",
+        "start": 425.31,
+        "duration": 5.16
+    },
+    {
+        "text": "is just adjusting the boundaries so else",
+        "start": 427.8,
+        "duration": 7.2
+    },
+    {
+        "text": "if okay if numbers of low plus numbers",
+        "start": 430.47,
+        "duration": 8.64
+    },
+    {
+        "text": "of high is greater than the sum so that",
+        "start": 435.0,
+        "duration": 6.63
+    },
+    {
+        "text": "means that we want to make the higher",
+        "start": 439.11,
+        "duration": 4.95
+    },
+    {
+        "text": "boundary go down just like into some the",
+        "start": 441.63,
+        "duration": 3.96
+    },
+    {
+        "text": "high around you should go down so the",
+        "start": 444.06,
+        "duration": 4.29
+    },
+    {
+        "text": "number that were numbers of low plus",
+        "start": 445.59,
+        "duration": 4.53
+    },
+    {
+        "text": "numbers of high will be smaller since",
+        "start": 448.35,
+        "duration": 5.18
+    },
+    {
+        "text": "it's sorted if we make high go down",
+        "start": 450.12,
+        "duration": 5.82
+    },
+    {
+        "text": "otherwise we want it to be bigger to",
+        "start": 453.53,
+        "duration": 4.18
+    },
+    {
+        "text": "equal the sum so we just say low plus",
+        "start": 455.94,
+        "duration": 4.41
+    },
+    {
+        "text": "plus for bigger numbers you know and",
+        "start": 457.71,
+        "duration": 6.03
+    },
+    {
+        "text": "then that is pretty much it if I",
+        "start": 460.35,
+        "duration": 5.37
+    },
+    {
+        "text": "remember correctly I mean that seems",
+        "start": 463.74,
+        "duration": 4.62
+    },
+    {
+        "text": "good to me so we can just return our",
+        "start": 465.72,
+        "duration": 7.41
+    },
+    {
+        "text": "output array and run this and hopefully",
+        "start": 468.36,
+        "duration": 7.2
+    },
+    {
+        "text": "it is good it looks like we have a",
+        "start": 473.13,
+        "duration": 3.63
+    },
+    {
+        "text": "negative one negative one negative one",
+        "start": 475.56,
+        "duration": 3.54
+    },
+    {
+        "text": "negative one zero what are we doing",
+        "start": 476.76,
+        "duration": 8.04
+    },
+    {
+        "text": "wrong here I'm an idiot it is right here",
+        "start": 479.1,
+        "duration": 9.06
+    },
+    {
+        "text": "it is just high instead of I you don't",
+        "start": 484.8,
+        "duration": 6.48
+    },
+    {
+        "text": "why would we okay whatever I always have",
+        "start": 488.16,
+        "duration": 4.53
+    },
+    {
+        "text": "I can never do it perfectly",
+        "start": 491.28,
+        "duration": 3.72
+    },
+    {
+        "text": "you know Curtis yeah you have to add the",
+        "start": 492.69,
+        "duration": 4.5
+    },
+    {
+        "text": "triplet the correct Richter plet these",
+        "start": 495.0,
+        "duration": 3.66
+    },
+    {
+        "text": "this is the pair you're looking to match",
+        "start": 497.19,
+        "duration": 3.51
+    },
+    {
+        "text": "at the sum and then this is the current",
+        "start": 498.66,
+        "duration": 4.41
+    },
+    {
+        "text": "element so hopefully this makes sense to",
+        "start": 500.7,
+        "duration": 4.59
+    },
+    {
+        "text": "you guys you sort the array so in this",
+        "start": 503.07,
+        "duration": 4.23
+    },
+    {
+        "text": "case let me just go over it one more",
+        "start": 505.29,
+        "duration": 5.64
+    },
+    {
+        "text": "time sorted array would be what negative",
+        "start": 507.3,
+        "duration": 12.14
+    },
+    {
+        "text": "1 negative 1 negative 4 as well sorry",
+        "start": 510.93,
+        "duration": 11.46
+    },
+    {
+        "text": "negative 4 negative 1 negative 1 0 1 2",
+        "start": 519.44,
+        "duration": 5.02
+    },
+    {
+        "text": "right so you look at the first element",
+        "start": 522.39,
+        "duration": 3.48
+    },
+    {
+        "text": "you see negative 4",
+        "start": 524.46,
+        "duration": 4.74
+    },
+    {
+        "text": "you do 0 minus negative 4 that's 4 so",
+        "start": 525.87,
+        "duration": 4.95
+    },
+    {
+        "text": "now you're looking for 3 you're looking",
+        "start": 529.2,
+        "duration": 3.63
+    },
+    {
+        "text": "for a pair of elements that add up to 4",
+        "start": 530.82,
+        "duration": 3.98
+    },
+    {
+        "text": "that you can return with",
+        "start": 532.83,
+        "duration": 4.61
+    },
+    {
+        "text": "negative for so are there a pair of",
+        "start": 534.8,
+        "duration": 4.77
+    },
+    {
+        "text": "elements that add up to four No",
+        "start": 537.44,
+        "duration": 4.56
+    },
+    {
+        "text": "so then you keep going negative one and",
+        "start": 539.57,
+        "duration": 3.27
+    },
+    {
+        "text": "now you're looking for a pair of",
+        "start": 542.0,
+        "duration": 3.36
+    },
+    {
+        "text": "elements that add up to one okay you got",
+        "start": 542.84,
+        "duration": 4.41
+    },
+    {
+        "text": "some right here so negative one zero one",
+        "start": 545.36,
+        "duration": 3.9
+    },
+    {
+        "text": "is a pair of elements that have two one",
+        "start": 547.25,
+        "duration": 4.5
+    },
+    {
+        "text": "and then since this is the same exact",
+        "start": 549.26,
+        "duration": 3.99
+    },
+    {
+        "text": "number you don't want to duplicate that",
+        "start": 551.75,
+        "duration": 3.57
+    },
+    {
+        "text": "so that's why we skip it if nums of i is",
+        "start": 553.25,
+        "duration": 5.25
+    },
+    {
+        "text": "equal to num shevai minus one we do not",
+        "start": 555.32,
+        "duration": 6.03
+    },
+    {
+        "text": "execute any of this code only if they're",
+        "start": 558.5,
+        "duration": 5.22
+    },
+    {
+        "text": "different so it's almost like we see",
+        "start": 561.35,
+        "duration": 3.96
+    },
+    {
+        "text": "this one we return negative one zero",
+        "start": 563.72,
+        "duration": 3.75
+    },
+    {
+        "text": "negative one that's a good pair that",
+        "start": 565.31,
+        "duration": 4.32
+    },
+    {
+        "text": "adds up to zero we skip this one and we",
+        "start": 567.47,
+        "duration": 4.32
+    },
+    {
+        "text": "go right to zero two numbers that add up",
+        "start": 569.63,
+        "duration": 5.99
+    },
+    {
+        "text": "to zero no that's the whole example so",
+        "start": 571.79,
+        "duration": 6.81
+    },
+    {
+        "text": "thanks for watching check out my patreon",
+        "start": 575.62,
+        "duration": 5.29
+    },
+    {
+        "text": "let me know we guess think let me know",
+        "start": 578.6,
+        "duration": 5.22
+    },
+    {
+        "text": "if you have questions and comment below",
+        "start": 580.91,
+        "duration": 5.25
+    },
+    {
+        "text": "anything else I mean how was your day",
+        "start": 583.82,
+        "duration": 4.71
+    },
+    {
+        "text": "how are you guys doing that's it see you",
+        "start": 586.16,
+        "duration": 6.12
+    },
+    {
+        "text": "guys later my dudes I forgot to show",
+        "start": 588.53,
+        "duration": 12.23
+    },
+    {
+        "text": "myself running the code there you go",
+        "start": 592.28,
+        "duration": 8.48
+    }
+]

@@ -1,0 +1,1712 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.679
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.76,
+        "duration": 2.559
+    },
+    {
+        "text": "let's solve",
+        "start": 3.679,
+        "duration": 2.961
+    },
+    {
+        "text": "linked list cycle i know that we solved",
+        "start": 4.319,
+        "duration": 4.001
+    },
+    {
+        "text": "a problem that's pretty much a harder",
+        "start": 6.64,
+        "duration": 3.36
+    },
+    {
+        "text": "version of this exact problem",
+        "start": 8.32,
+        "duration": 3.68
+    },
+    {
+        "text": "but in this explanation i'm going to",
+        "start": 10.0,
+        "duration": 4.639
+    },
+    {
+        "text": "explain why the tortoise and hair",
+        "start": 12.0,
+        "duration": 4.32
+    },
+    {
+        "text": "algorithm on a linkedlist cycle",
+        "start": 14.639,
+        "duration": 4.881
+    },
+    {
+        "text": "why exactly it works and why exactly",
+        "start": 16.32,
+        "duration": 6.24
+    },
+    {
+        "text": "we know for sure that it's a linear time",
+        "start": 19.52,
+        "duration": 4.56
+    },
+    {
+        "text": "algorithm because i think most people",
+        "start": 22.56,
+        "duration": 3.52
+    },
+    {
+        "text": "just kind of glance over why exactly",
+        "start": 24.08,
+        "duration": 3.76
+    },
+    {
+        "text": "this is true so i'm going to go over",
+        "start": 26.08,
+        "duration": 2.48
+    },
+    {
+        "text": "that today",
+        "start": 27.84,
+        "duration": 2.4
+    },
+    {
+        "text": "and you can see that this linked list",
+        "start": 28.56,
+        "duration": 3.6
+    },
+    {
+        "text": "problem is another problem from the",
+        "start": 30.24,
+        "duration": 4.88
+    },
+    {
+        "text": "blind 75 list a list of 75 problems",
+        "start": 32.16,
+        "duration": 4.48
+    },
+    {
+        "text": "we've been working through and tracking",
+        "start": 35.12,
+        "duration": 2.72
+    },
+    {
+        "text": "on the spreadsheet the link to the",
+        "start": 36.64,
+        "duration": 2.64
+    },
+    {
+        "text": "spreadsheet will be in the description",
+        "start": 37.84,
+        "duration": 2.879
+    },
+    {
+        "text": "if you want to take a look",
+        "start": 39.28,
+        "duration": 3.36
+    },
+    {
+        "text": "we are not quite done with this sheet",
+        "start": 40.719,
+        "duration": 3.52
+    },
+    {
+        "text": "yet even though we have done all",
+        "start": 42.64,
+        "duration": 3.439
+    },
+    {
+        "text": "pretty much most of the difficult medium",
+        "start": 44.239,
+        "duration": 3.521
+    },
+    {
+        "text": "and hard problems on this list",
+        "start": 46.079,
+        "duration": 3.921
+    },
+    {
+        "text": "so basically we're given the head of a",
+        "start": 47.76,
+        "duration": 3.119
+    },
+    {
+        "text": "linked list",
+        "start": 50.0,
+        "duration": 2.719
+    },
+    {
+        "text": "and we just want to determine if there",
+        "start": 50.879,
+        "duration": 4.16
+    },
+    {
+        "text": "exists a cycle in this linked list or",
+        "start": 52.719,
+        "duration": 2.881
+    },
+    {
+        "text": "not",
+        "start": 55.039,
+        "duration": 2.321
+    },
+    {
+        "text": "and basically the definition of a cycle",
+        "start": 55.6,
+        "duration": 3.92
+    },
+    {
+        "text": "is if at some point you know you get",
+        "start": 57.36,
+        "duration": 3.679
+    },
+    {
+        "text": "to a node and you keep following the",
+        "start": 59.52,
+        "duration": 3.44
+    },
+    {
+        "text": "pointers along that node eventually",
+        "start": 61.039,
+        "duration": 3.84
+    },
+    {
+        "text": "you'll get back to the same node and if",
+        "start": 62.96,
+        "duration": 3.44
+    },
+    {
+        "text": "we get back to the same node",
+        "start": 64.879,
+        "duration": 3.841
+    },
+    {
+        "text": "we'll be able to do it again and again",
+        "start": 66.4,
+        "duration": 4.56
+    },
+    {
+        "text": "and again basically an infinite loop",
+        "start": 68.72,
+        "duration": 4.16
+    },
+    {
+        "text": "so we return true if there's a cycle we",
+        "start": 70.96,
+        "duration": 3.68
+    },
+    {
+        "text": "return false if there's no cycle now the",
+        "start": 72.88,
+        "duration": 3.279
+    },
+    {
+        "text": "first idea you might have is just start",
+        "start": 74.64,
+        "duration": 2.479
+    },
+    {
+        "text": "at the beginning",
+        "start": 76.159,
+        "duration": 3.361
+    },
+    {
+        "text": "keep going to the end keep going keep",
+        "start": 77.119,
+        "duration": 4.081
+    },
+    {
+        "text": "going and eventually let's say that this",
+        "start": 79.52,
+        "duration": 3.52
+    },
+    {
+        "text": "of this negative four actually pointed",
+        "start": 81.2,
+        "duration": 3.36
+    },
+    {
+        "text": "to null in that case",
+        "start": 83.04,
+        "duration": 3.04
+    },
+    {
+        "text": "we know okay we got to the end of a",
+        "start": 84.56,
+        "duration": 3.36
+    },
+    {
+        "text": "linked list right so in that case we",
+        "start": 86.08,
+        "duration": 2.32
+    },
+    {
+        "text": "return",
+        "start": 87.92,
+        "duration": 3.36
+    },
+    {
+        "text": "false no cycle and that's always going",
+        "start": 88.4,
+        "duration": 4.24
+    },
+    {
+        "text": "to be the case so if there's no cycle",
+        "start": 91.28,
+        "duration": 3.199
+    },
+    {
+        "text": "it's really easy to detect that there's",
+        "start": 92.64,
+        "duration": 3.519
+    },
+    {
+        "text": "no cycle because eventually we reach",
+        "start": 94.479,
+        "duration": 3.841
+    },
+    {
+        "text": "null but if we don't reach null",
+        "start": 96.159,
+        "duration": 4.32
+    },
+    {
+        "text": "right we we go along this node and we",
+        "start": 98.32,
+        "duration": 4.0
+    },
+    {
+        "text": "get to we get back to the same node we",
+        "start": 100.479,
+        "duration": 3.6
+    },
+    {
+        "text": "already visited but for some reason we",
+        "start": 102.32,
+        "duration": 3.36
+    },
+    {
+        "text": "can't detect that so then we go to the",
+        "start": 104.079,
+        "duration": 2.32
+    },
+    {
+        "text": "next node",
+        "start": 105.68,
+        "duration": 2.719
+    },
+    {
+        "text": "the next node and keep doing that and",
+        "start": 106.399,
+        "duration": 3.521
+    },
+    {
+        "text": "from our perspective we're just going to",
+        "start": 108.399,
+        "duration": 3.121
+    },
+    {
+        "text": "say okay it's just a really",
+        "start": 109.92,
+        "duration": 3.12
+    },
+    {
+        "text": "long linked list eventually we're going",
+        "start": 111.52,
+        "duration": 3.36
+    },
+    {
+        "text": "to get to null right but that's not",
+        "start": 113.04,
+        "duration": 3.359
+    },
+    {
+        "text": "going to be the case if there's a cycle",
+        "start": 114.88,
+        "duration": 3.44
+    },
+    {
+        "text": "we never get to null we'll never break",
+        "start": 116.399,
+        "duration": 3.76
+    },
+    {
+        "text": "out of this loop so we really have to",
+        "start": 118.32,
+        "duration": 2.88
+    },
+    {
+        "text": "determine a way",
+        "start": 120.159,
+        "duration": 3.28
+    },
+    {
+        "text": "to detect that we're visiting the same",
+        "start": 121.2,
+        "duration": 3.68
+    },
+    {
+        "text": "node twice",
+        "start": 123.439,
+        "duration": 2.96
+    },
+    {
+        "text": "so how can we determine if we're",
+        "start": 124.88,
+        "duration": 3.28
+    },
+    {
+        "text": "visiting the same node twice well we",
+        "start": 126.399,
+        "duration": 3.761
+    },
+    {
+        "text": "start at the beginning like usual and we",
+        "start": 128.16,
+        "duration": 2.879
+    },
+    {
+        "text": "maintain",
+        "start": 130.16,
+        "duration": 4.32
+    },
+    {
+        "text": "a hash map or a hash set in this case",
+        "start": 131.039,
+        "duration": 5.521
+    },
+    {
+        "text": "where basically we take every single",
+        "start": 134.48,
+        "duration": 3.759
+    },
+    {
+        "text": "node and we take the",
+        "start": 136.56,
+        "duration": 4.88
+    },
+    {
+        "text": "node itself and add it to the hash set",
+        "start": 138.239,
+        "duration": 5.761
+    },
+    {
+        "text": "after we have visited this node we don't",
+        "start": 141.44,
+        "duration": 4.159
+    },
+    {
+        "text": "add the value because i think in this",
+        "start": 144.0,
+        "duration": 3.36
+    },
+    {
+        "text": "problem there could be duplicates",
+        "start": 145.599,
+        "duration": 3.681
+    },
+    {
+        "text": "right like the same value could show up",
+        "start": 147.36,
+        "duration": 3.84
+    },
+    {
+        "text": "multiple times in multiple nodes",
+        "start": 149.28,
+        "duration": 3.52
+    },
+    {
+        "text": "so we don't want to detect a loop that",
+        "start": 151.2,
+        "duration": 3.44
+    },
+    {
+        "text": "way but we'll take the node itself",
+        "start": 152.8,
+        "duration": 3.92
+    },
+    {
+        "text": "and then add it to the hash set and i",
+        "start": 154.64,
+        "duration": 3.84
+    },
+    {
+        "text": "think you can do that in most languages",
+        "start": 156.72,
+        "duration": 3.44
+    },
+    {
+        "text": "you definitely can in python",
+        "start": 158.48,
+        "duration": 3.28
+    },
+    {
+        "text": "because the node itself is just an",
+        "start": 160.16,
+        "duration": 3.6
+    },
+    {
+        "text": "object and you usually can hash an",
+        "start": 161.76,
+        "duration": 3.44
+    },
+    {
+        "text": "object and so in that case we're going",
+        "start": 163.76,
+        "duration": 2.08
+    },
+    {
+        "text": "to take this",
+        "start": 165.2,
+        "duration": 2.64
+    },
+    {
+        "text": "visit it take this visit it take this",
+        "start": 165.84,
+        "duration": 3.44
+    },
+    {
+        "text": "visit it take this visit and then",
+        "start": 167.84,
+        "duration": 2.32
+    },
+    {
+        "text": "eventually we'll get",
+        "start": 169.28,
+        "duration": 3.92
+    },
+    {
+        "text": "back to a node if we notice that a node",
+        "start": 170.16,
+        "duration": 3.359
+    },
+    {
+        "text": "has",
+        "start": 173.2,
+        "duration": 2.399
+    },
+    {
+        "text": "already been visited and now we're",
+        "start": 173.519,
+        "duration": 3.601
+    },
+    {
+        "text": "visiting it twice",
+        "start": 175.599,
+        "duration": 3.761
+    },
+    {
+        "text": "that obviously means that there must be",
+        "start": 177.12,
+        "duration": 3.52
+    },
+    {
+        "text": "a cycle right",
+        "start": 179.36,
+        "duration": 3.2
+    },
+    {
+        "text": "we can't visit the same node twice so",
+        "start": 180.64,
+        "duration": 3.679
+    },
+    {
+        "text": "that means there's a cycle we detect",
+        "start": 182.56,
+        "duration": 3.92
+    },
+    {
+        "text": "that and then we can return true a cycle",
+        "start": 184.319,
+        "duration": 2.881
+    },
+    {
+        "text": "exists",
+        "start": 186.48,
+        "duration": 2.24
+    },
+    {
+        "text": "now in this case we're only having to",
+        "start": 187.2,
+        "duration": 3.36
+    },
+    {
+        "text": "visit each node about once",
+        "start": 188.72,
+        "duration": 3.439
+    },
+    {
+        "text": "so the time complexity is going to be",
+        "start": 190.56,
+        "duration": 4.399
+    },
+    {
+        "text": "big o of n the memory complexity is also",
+        "start": 192.159,
+        "duration": 4.72
+    },
+    {
+        "text": "going to be big o of n because every",
+        "start": 194.959,
+        "duration": 4.881
+    },
+    {
+        "text": "node potentially is going to be stored",
+        "start": 196.879,
+        "duration": 4.481
+    },
+    {
+        "text": "in the hash set",
+        "start": 199.84,
+        "duration": 3.119
+    },
+    {
+        "text": "but there's actually a way that we can",
+        "start": 201.36,
+        "duration": 4.239
+    },
+    {
+        "text": "do this without using a hash set we can",
+        "start": 202.959,
+        "duration": 5.121
+    },
+    {
+        "text": "do this in o of one memory and that's",
+        "start": 205.599,
+        "duration": 2.801
+    },
+    {
+        "text": "the",
+        "start": 208.08,
+        "duration": 2.079
+    },
+    {
+        "text": "slightly complicated algorithm i'm going",
+        "start": 208.4,
+        "duration": 3.199
+    },
+    {
+        "text": "to show you that algorithm and i'm going",
+        "start": 210.159,
+        "duration": 1.921
+    },
+    {
+        "text": "to show you",
+        "start": 211.599,
+        "duration": 4.0
+    },
+    {
+        "text": "exactly why it works so the idea is",
+        "start": 212.08,
+        "duration": 5.36
+    },
+    {
+        "text": "simple we're going to start at the",
+        "start": 215.599,
+        "duration": 3.2
+    },
+    {
+        "text": "beginning of the linked list but we're",
+        "start": 217.44,
+        "duration": 3.28
+    },
+    {
+        "text": "going to have two pointers this time",
+        "start": 218.799,
+        "duration": 4.481
+    },
+    {
+        "text": "we're going to have a slow pointer s and",
+        "start": 220.72,
+        "duration": 4.48
+    },
+    {
+        "text": "we're going to have a fast pointer",
+        "start": 223.28,
+        "duration": 4.08
+    },
+    {
+        "text": "f and you may have seen this algorithm",
+        "start": 225.2,
+        "duration": 3.84
+    },
+    {
+        "text": "before it's a pretty simple algorithm",
+        "start": 227.36,
+        "duration": 3.36
+    },
+    {
+        "text": "once you know it but i'm gonna again",
+        "start": 229.04,
+        "duration": 4.0
+    },
+    {
+        "text": "show you why exactly it works so the",
+        "start": 230.72,
+        "duration": 3.439
+    },
+    {
+        "text": "slow pointer",
+        "start": 233.04,
+        "duration": 3.839
+    },
+    {
+        "text": "each time is just gonna be shifted by",
+        "start": 234.159,
+        "duration": 3.36
+    },
+    {
+        "text": "one",
+        "start": 236.879,
+        "duration": 3.28
+    },
+    {
+        "text": "the fast pointer is going to be shifted",
+        "start": 237.519,
+        "duration": 3.121
+    },
+    {
+        "text": "by",
+        "start": 240.159,
+        "duration": 3.521
+    },
+    {
+        "text": "two so it's going to be here and",
+        "start": 240.64,
+        "duration": 5.679
+    },
+    {
+        "text": "so originally they do start at the same",
+        "start": 243.68,
+        "duration": 4.8
+    },
+    {
+        "text": "position but we're gonna look at every",
+        "start": 246.319,
+        "duration": 3.12
+    },
+    {
+        "text": "position",
+        "start": 248.48,
+        "duration": 3.039
+    },
+    {
+        "text": "after we've shifted it and so what's",
+        "start": 249.439,
+        "duration": 3.36
+    },
+    {
+        "text": "either going to happen",
+        "start": 251.519,
+        "duration": 2.881
+    },
+    {
+        "text": "obviously the fast pointer is faster",
+        "start": 252.799,
+        "duration": 3.68
+    },
+    {
+        "text": "than the slow pointer so the if there is",
+        "start": 254.4,
+        "duration": 3.679
+    },
+    {
+        "text": "the end of a linked list right like for",
+        "start": 256.479,
+        "duration": 2.401
+    },
+    {
+        "text": "example",
+        "start": 258.079,
+        "duration": 2.961
+    },
+    {
+        "text": "this points at null the fast pointer is",
+        "start": 258.88,
+        "duration": 3.12
+    },
+    {
+        "text": "of course gonna",
+        "start": 261.04,
+        "duration": 2.96
+    },
+    {
+        "text": "gonna reach the end of the linked list",
+        "start": 262.0,
+        "duration": 4.16
+    },
+    {
+        "text": "first so if we do that",
+        "start": 264.0,
+        "duration": 4.56
+    },
+    {
+        "text": "then we can return false no link no",
+        "start": 266.16,
+        "duration": 4.319
+    },
+    {
+        "text": "cycle exists in the linked list but if",
+        "start": 268.56,
+        "duration": 2.32
+    },
+    {
+        "text": "there",
+        "start": 270.479,
+        "duration": 3.841
+    },
+    {
+        "text": "is a cycle do you see that this fast",
+        "start": 270.88,
+        "duration": 5.28
+    },
+    {
+        "text": "pointer and this slow pointer are",
+        "start": 274.32,
+        "duration": 4.64
+    },
+    {
+        "text": "going to meet again they're going to",
+        "start": 276.16,
+        "duration": 4.24
+    },
+    {
+        "text": "meet at the exact",
+        "start": 278.96,
+        "duration": 4.239
+    },
+    {
+        "text": "same position and if they meet at the",
+        "start": 280.4,
+        "duration": 4.88
+    },
+    {
+        "text": "exact same position that must mean that",
+        "start": 283.199,
+        "duration": 2.801
+    },
+    {
+        "text": "a cycle",
+        "start": 285.28,
+        "duration": 2.56
+    },
+    {
+        "text": "exists so i'm just going to run the",
+        "start": 286.0,
+        "duration": 3.04
+    },
+    {
+        "text": "simulation and then i'm going to show",
+        "start": 287.84,
+        "duration": 3.04
+    },
+    {
+        "text": "you why it's always going to be the case",
+        "start": 289.04,
+        "duration": 3.439
+    },
+    {
+        "text": "that these two are going to meet",
+        "start": 290.88,
+        "duration": 4.319
+    },
+    {
+        "text": "if they ever reach a cycle so we just",
+        "start": 292.479,
+        "duration": 4.561
+    },
+    {
+        "text": "take one more step with s right we're",
+        "start": 295.199,
+        "duration": 3.361
+    },
+    {
+        "text": "only shifting it by one",
+        "start": 297.04,
+        "duration": 4.159
+    },
+    {
+        "text": "f is gonna be shifted by two so first",
+        "start": 298.56,
+        "duration": 3.919
+    },
+    {
+        "text": "we're gonna go to four",
+        "start": 301.199,
+        "duration": 3.361
+    },
+    {
+        "text": "and then we're gonna follow the link and",
+        "start": 302.479,
+        "duration": 3.28
+    },
+    {
+        "text": "reach back",
+        "start": 304.56,
+        "duration": 4.16
+    },
+    {
+        "text": "to this position right the two position",
+        "start": 305.759,
+        "duration": 3.841
+    },
+    {
+        "text": "so",
+        "start": 308.72,
+        "duration": 3.68
+    },
+    {
+        "text": "clearly f made a loop f has gone through",
+        "start": 309.6,
+        "duration": 3.68
+    },
+    {
+        "text": "the cycle",
+        "start": 312.4,
+        "duration": 2.56
+    },
+    {
+        "text": "and so far we've shifted each of the",
+        "start": 313.28,
+        "duration": 3.52
+    },
+    {
+        "text": "pointers twice",
+        "start": 314.96,
+        "duration": 4.0
+    },
+    {
+        "text": "and so we're going to do one last shift",
+        "start": 316.8,
+        "duration": 3.44
+    },
+    {
+        "text": "s is going to reach",
+        "start": 318.96,
+        "duration": 5.28
+    },
+    {
+        "text": "the 4 and our f from over here is gonna",
+        "start": 320.24,
+        "duration": 5.76
+    },
+    {
+        "text": "be shifted twice again",
+        "start": 324.24,
+        "duration": 4.64
+    },
+    {
+        "text": "and it's gonna reach the four as well so",
+        "start": 326.0,
+        "duration": 4.08
+    },
+    {
+        "text": "at this point",
+        "start": 328.88,
+        "duration": 3.759
+    },
+    {
+        "text": "we're gonna just we're gonna see yes the",
+        "start": 330.08,
+        "duration": 4.399
+    },
+    {
+        "text": "slow pointer and the fast pointer have",
+        "start": 332.639,
+        "duration": 4.0
+    },
+    {
+        "text": "met each other how could it be possible",
+        "start": 334.479,
+        "duration": 3.521
+    },
+    {
+        "text": "that they met each other if the",
+        "start": 336.639,
+        "duration": 3.681
+    },
+    {
+        "text": "fast pointer was going twice as fast",
+        "start": 338.0,
+        "duration": 3.039
+    },
+    {
+        "text": "because",
+        "start": 340.32,
+        "duration": 4.0
+    },
+    {
+        "text": "they were in a cycle and eventually the",
+        "start": 341.039,
+        "duration": 5.6
+    },
+    {
+        "text": "fast pointer no matter where they start",
+        "start": 344.32,
+        "duration": 3.92
+    },
+    {
+        "text": "slow is here fast as you're eventually",
+        "start": 346.639,
+        "duration": 3.521
+    },
+    {
+        "text": "the fast pointer is going to catch",
+        "start": 348.24,
+        "duration": 3.84
+    },
+    {
+        "text": "up to the slow pointer let me show you",
+        "start": 350.16,
+        "duration": 4.319
+    },
+    {
+        "text": "why that's always going to be the case",
+        "start": 352.08,
+        "duration": 5.44
+    },
+    {
+        "text": "and why it's going to happen in linear",
+        "start": 354.479,
+        "duration": 3.761
+    },
+    {
+        "text": "time",
+        "start": 357.52,
+        "duration": 2.799
+    },
+    {
+        "text": "so let's say this is our cycle and i'm",
+        "start": 358.24,
+        "duration": 3.6
+    },
+    {
+        "text": "not drawing it as a linked list it's",
+        "start": 360.319,
+        "duration": 3.121
+    },
+    {
+        "text": "some kind of circle right and it's a",
+        "start": 361.84,
+        "duration": 2.4
+    },
+    {
+        "text": "cycle",
+        "start": 363.44,
+        "duration": 2.96
+    },
+    {
+        "text": "and let's say we're moving clockwise in",
+        "start": 364.24,
+        "duration": 3.36
+    },
+    {
+        "text": "this cycle",
+        "start": 366.4,
+        "duration": 3.519
+    },
+    {
+        "text": "first thing to notice is do you know",
+        "start": 367.6,
+        "duration": 4.159
+    },
+    {
+        "text": "that every gap so let's say you know the",
+        "start": 369.919,
+        "duration": 3.84
+    },
+    {
+        "text": "distance between slow and fast",
+        "start": 371.759,
+        "duration": 3.921
+    },
+    {
+        "text": "that's going to be some integer value",
+        "start": 373.759,
+        "duration": 3.201
+    },
+    {
+        "text": "right it's not going to be a decimal",
+        "start": 375.68,
+        "duration": 3.04
+    },
+    {
+        "text": "it's going to be an integer value",
+        "start": 376.96,
+        "duration": 4.48
+    },
+    {
+        "text": "and this portion is also going to be an",
+        "start": 378.72,
+        "duration": 3.599
+    },
+    {
+        "text": "integer value",
+        "start": 381.44,
+        "duration": 4.08
+    },
+    {
+        "text": "because the entire length of the cycle",
+        "start": 382.319,
+        "duration": 4.88
+    },
+    {
+        "text": "is going to be an integer value because",
+        "start": 385.52,
+        "duration": 2.72
+    },
+    {
+        "text": "you know linked list",
+        "start": 387.199,
+        "duration": 3.28
+    },
+    {
+        "text": "lengths are integer values right this is",
+        "start": 388.24,
+        "duration": 4.799
+    },
+    {
+        "text": "an integer one this is an integer two",
+        "start": 390.479,
+        "duration": 4.881
+    },
+    {
+        "text": "uh also one so the entire list is length",
+        "start": 393.039,
+        "duration": 3.761
+    },
+    {
+        "text": "two right so we're dealing with",
+        "start": 395.36,
+        "duration": 4.0
+    },
+    {
+        "text": "integers here not decimals so we're",
+        "start": 396.8,
+        "duration": 4.64
+    },
+    {
+        "text": "looking at the case where at with a slow",
+        "start": 399.36,
+        "duration": 3.36
+    },
+    {
+        "text": "and fast pointer are at different",
+        "start": 401.44,
+        "duration": 2.8
+    },
+    {
+        "text": "positions because obviously if they were",
+        "start": 402.72,
+        "duration": 2.96
+    },
+    {
+        "text": "already at the same position",
+        "start": 404.24,
+        "duration": 2.72
+    },
+    {
+        "text": "we're inside the cycle they're at the",
+        "start": 405.68,
+        "duration": 2.56
+    },
+    {
+        "text": "same position then of course we know",
+        "start": 406.96,
+        "duration": 2.799
+    },
+    {
+        "text": "we're going to return true but it could",
+        "start": 408.24,
+        "duration": 2.88
+    },
+    {
+        "text": "be possible that they're at different",
+        "start": 409.759,
+        "duration": 1.921
+    },
+    {
+        "text": "positions",
+        "start": 411.12,
+        "duration": 2.96
+    },
+    {
+        "text": "any arbitrary position is what i'm",
+        "start": 411.68,
+        "duration": 3.6
+    },
+    {
+        "text": "choosing here",
+        "start": 414.08,
+        "duration": 3.6
+    },
+    {
+        "text": "and we know that the slope pointer on",
+        "start": 415.28,
+        "duration": 4.24
+    },
+    {
+        "text": "one iteration is going to make",
+        "start": 417.68,
+        "duration": 4.0
+    },
+    {
+        "text": "one jump right the distance it's gonna",
+        "start": 419.52,
+        "duration": 4.239
+    },
+    {
+        "text": "do it's gonna move is one we know that",
+        "start": 421.68,
+        "duration": 3.44
+    },
+    {
+        "text": "the fast pointer",
+        "start": 423.759,
+        "duration": 4.641
+    },
+    {
+        "text": "is gonna move a distance of two",
+        "start": 425.12,
+        "duration": 6.72
+    },
+    {
+        "text": "right so clearly in our simulation",
+        "start": 428.4,
+        "duration": 7.12
+    },
+    {
+        "text": "eventually the fast pointer is going to",
+        "start": 431.84,
+        "duration": 7.199
+    },
+    {
+        "text": "reach and surpass the slow pointer",
+        "start": 435.52,
+        "duration": 5.2
+    },
+    {
+        "text": "but why is it true that they are going",
+        "start": 439.039,
+        "duration": 3.681
+    },
+    {
+        "text": "to meet each other at the exact same",
+        "start": 440.72,
+        "duration": 2.64
+    },
+    {
+        "text": "spot",
+        "start": 442.72,
+        "duration": 3.52
+    },
+    {
+        "text": "well let's just give this distance an",
+        "start": 443.36,
+        "duration": 4.08
+    },
+    {
+        "text": "arbitrary",
+        "start": 446.24,
+        "duration": 3.28
+    },
+    {
+        "text": "value we know that the fast pointer will",
+        "start": 447.44,
+        "duration": 4.0
+    },
+    {
+        "text": "catch up to the slow pointer and this is",
+        "start": 449.52,
+        "duration": 3.36
+    },
+    {
+        "text": "the distance that it's going to have to",
+        "start": 451.44,
+        "duration": 2.08
+    },
+    {
+        "text": "travel",
+        "start": 452.88,
+        "duration": 3.439
+    },
+    {
+        "text": "in order to do so this is our gap that",
+        "start": 453.52,
+        "duration": 3.84
+    },
+    {
+        "text": "we have to close",
+        "start": 456.319,
+        "duration": 3.681
+    },
+    {
+        "text": "so let's say the the length of this gap",
+        "start": 457.36,
+        "duration": 3.6
+    },
+    {
+        "text": "is 10.",
+        "start": 460.0,
+        "duration": 4.479
+    },
+    {
+        "text": "if we move the slow pointer by one",
+        "start": 460.96,
+        "duration": 6.4
+    },
+    {
+        "text": "we're taking the gap and increasing it",
+        "start": 464.479,
+        "duration": 3.921
+    },
+    {
+        "text": "by one right",
+        "start": 467.36,
+        "duration": 3.36
+    },
+    {
+        "text": "if the slow pointer gets shifted by one",
+        "start": 468.4,
+        "duration": 3.76
+    },
+    {
+        "text": "we increased the gap",
+        "start": 470.72,
+        "duration": 3.28
+    },
+    {
+        "text": "but then the fast pointer is not going",
+        "start": 472.16,
+        "duration": 4.56
+    },
+    {
+        "text": "to quit it's gonna move by two as well",
+        "start": 474.0,
+        "duration": 5.039
+    },
+    {
+        "text": "so when we move the fast pointer we're",
+        "start": 476.72,
+        "duration": 3.44
+    },
+    {
+        "text": "taking the gap",
+        "start": 479.039,
+        "duration": 3.84
+    },
+    {
+        "text": "and closing it by two so we're saying",
+        "start": 480.16,
+        "duration": 3.2
+    },
+    {
+        "text": "plus",
+        "start": 482.879,
+        "duration": 4.0
+    },
+    {
+        "text": "one minus two right do you see how",
+        "start": 483.36,
+        "duration": 7.119
+    },
+    {
+        "text": "this evaluates to ten minus",
+        "start": 486.879,
+        "duration": 6.16
+    },
+    {
+        "text": "one which is going to be nine so on a",
+        "start": 490.479,
+        "duration": 3.201
+    },
+    {
+        "text": "single",
+        "start": 493.039,
+        "duration": 2.88
+    },
+    {
+        "text": "iteration of the loop the distance",
+        "start": 493.68,
+        "duration": 3.519
+    },
+    {
+        "text": "between the pointers",
+        "start": 495.919,
+        "duration": 4.801
+    },
+    {
+        "text": "is being closed by one so then",
+        "start": 497.199,
+        "duration": 5.68
+    },
+    {
+        "text": "how many iterations is it going to take",
+        "start": 500.72,
+        "duration": 4.0
+    },
+    {
+        "text": "for the fast pointer to reach the slope",
+        "start": 502.879,
+        "duration": 3.921
+    },
+    {
+        "text": "pointer well of course whatever this",
+        "start": 504.72,
+        "duration": 4.4
+    },
+    {
+        "text": "length happens to be right whatever that",
+        "start": 506.8,
+        "duration": 4.16
+    },
+    {
+        "text": "closing distance happens to be whatever",
+        "start": 509.12,
+        "duration": 2.24
+    },
+    {
+        "text": "that",
+        "start": 510.96,
+        "duration": 4.319
+    },
+    {
+        "text": "gap happens to be how big could this gap",
+        "start": 511.36,
+        "duration": 8.0
+    },
+    {
+        "text": "possibly be it could only be the entire",
+        "start": 515.279,
+        "duration": 6.88
+    },
+    {
+        "text": "length of the list so you know let's say",
+        "start": 519.36,
+        "duration": 4.559
+    },
+    {
+        "text": "uh the fast pointer is over here where",
+        "start": 522.159,
+        "duration": 2.161
+    },
+    {
+        "text": "this",
+        "start": 523.919,
+        "duration": 3.281
+    },
+    {
+        "text": "distance is one so then the remaining",
+        "start": 524.32,
+        "duration": 4.16
+    },
+    {
+        "text": "distance is gonna be",
+        "start": 527.2,
+        "duration": 3.28
+    },
+    {
+        "text": "the entire length of the list let's call",
+        "start": 528.48,
+        "duration": 3.039
+    },
+    {
+        "text": "that n",
+        "start": 530.48,
+        "duration": 3.6
+    },
+    {
+        "text": "minus one so then how many iterations is",
+        "start": 531.519,
+        "duration": 4.241
+    },
+    {
+        "text": "it gonna take to get this to equal to",
+        "start": 534.08,
+        "duration": 2.08
+    },
+    {
+        "text": "zero",
+        "start": 535.76,
+        "duration": 2.88
+    },
+    {
+        "text": "of course roughly n so that's why the",
+        "start": 536.16,
+        "duration": 3.84
+    },
+    {
+        "text": "overall time complexity is",
+        "start": 538.64,
+        "duration": 4.08
+    },
+    {
+        "text": "n where the length is the distance where",
+        "start": 540.0,
+        "duration": 4.88
+    },
+    {
+        "text": "n is the length of the cycle which could",
+        "start": 542.72,
+        "duration": 3.92
+    },
+    {
+        "text": "be the entire linked list right",
+        "start": 544.88,
+        "duration": 4.56
+    },
+    {
+        "text": "so that's why it's always going to work",
+        "start": 546.64,
+        "duration": 3.52
+    },
+    {
+        "text": "and",
+        "start": 549.44,
+        "duration": 3.12
+    },
+    {
+        "text": "it's going to run in linear time and",
+        "start": 550.16,
+        "duration": 4.0
+    },
+    {
+        "text": "maybe you didn't even care about why",
+        "start": 552.56,
+        "duration": 3.279
+    },
+    {
+        "text": "exactly it works but that's okay because",
+        "start": 554.16,
+        "duration": 3.52
+    },
+    {
+        "text": "once you know the fast and slow pointer",
+        "start": 555.839,
+        "duration": 2.401
+    },
+    {
+        "text": "technique",
+        "start": 557.68,
+        "duration": 2.48
+    },
+    {
+        "text": "the code is usually pretty easy to write",
+        "start": 558.24,
+        "duration": 4.48
+    },
+    {
+        "text": "let's get into that now so like i said",
+        "start": 560.16,
+        "duration": 4.16
+    },
+    {
+        "text": "we're going to start our slow and fast",
+        "start": 562.72,
+        "duration": 3.44
+    },
+    {
+        "text": "pointer at the same position",
+        "start": 564.32,
+        "duration": 4.16
+    },
+    {
+        "text": "and the next time that they meet each",
+        "start": 566.16,
+        "duration": 4.0
+    },
+    {
+        "text": "other is how we know we've detected a",
+        "start": 568.48,
+        "duration": 3.12
+    },
+    {
+        "text": "loop so obviously they're at the same",
+        "start": 570.16,
+        "duration": 3.84
+    },
+    {
+        "text": "position now so we don't want to",
+        "start": 571.6,
+        "duration": 4.16
+    },
+    {
+        "text": "say that there already exists a loop",
+        "start": 574.0,
+        "duration": 3.2
+    },
+    {
+        "text": "because we don't know that for sure",
+        "start": 575.76,
+        "duration": 3.12
+    },
+    {
+        "text": "and we're going to be shifting our fast",
+        "start": 577.2,
+        "duration": 3.44
+    },
+    {
+        "text": "and slow pointers while",
+        "start": 578.88,
+        "duration": 4.959
+    },
+    {
+        "text": "fast and fast dot next is not",
+        "start": 580.64,
+        "duration": 4.8
+    },
+    {
+        "text": "null because we need to make sure that",
+        "start": 583.839,
+        "duration": 3.281
+    },
+    {
+        "text": "fast dot next is not null",
+        "start": 585.44,
+        "duration": 3.76
+    },
+    {
+        "text": "because remember we're shifting fast by",
+        "start": 587.12,
+        "duration": 3.2
+    },
+    {
+        "text": "two on each",
+        "start": 589.2,
+        "duration": 3.199
+    },
+    {
+        "text": "iteration and of course fast is going to",
+        "start": 590.32,
+        "duration": 3.68
+    },
+    {
+        "text": "reach the end of the linked list",
+        "start": 592.399,
+        "duration": 4.641
+    },
+    {
+        "text": "before slow does so if it does that then",
+        "start": 594.0,
+        "duration": 5.36
+    },
+    {
+        "text": "outside of the loop we can return false",
+        "start": 597.04,
+        "duration": 3.52
+    },
+    {
+        "text": "meaning that there does",
+        "start": 599.36,
+        "duration": 3.919
+    },
+    {
+        "text": "not exist a cycle but on the inside",
+        "start": 600.56,
+        "duration": 4.24
+    },
+    {
+        "text": "we're gonna check if there is a cycle so",
+        "start": 603.279,
+        "duration": 2.961
+    },
+    {
+        "text": "we're gonna take our slow pointer",
+        "start": 604.8,
+        "duration": 4.56
+    },
+    {
+        "text": "shift it by one slow dot next take our",
+        "start": 606.24,
+        "duration": 4.8
+    },
+    {
+        "text": "fast pointer shift it by two",
+        "start": 609.36,
+        "duration": 5.039
+    },
+    {
+        "text": "fast dot next dot next again",
+        "start": 611.04,
+        "duration": 6.56
+    },
+    {
+        "text": "and now if we if they meet each other",
+        "start": 614.399,
+        "duration": 6.241
+    },
+    {
+        "text": "we can say if slow ever reaches fast",
+        "start": 617.6,
+        "duration": 5.359
+    },
+    {
+        "text": "then we can return true there does exist",
+        "start": 620.64,
+        "duration": 4.08
+    },
+    {
+        "text": "a cycle and you could pretty much write",
+        "start": 622.959,
+        "duration": 3.841
+    },
+    {
+        "text": "this loop as a do while loop in a lot of",
+        "start": 624.72,
+        "duration": 4.0
+    },
+    {
+        "text": "other languages but i don't think python",
+        "start": 626.8,
+        "duration": 3.12
+    },
+    {
+        "text": "supports that",
+        "start": 628.72,
+        "duration": 3.2
+    },
+    {
+        "text": "so the solution is really as simple as",
+        "start": 629.92,
+        "duration": 3.039
+    },
+    {
+        "text": "that linear time",
+        "start": 631.92,
+        "duration": 2.56
+    },
+    {
+        "text": "constant space you can see that the",
+        "start": 632.959,
+        "duration": 3.201
+    },
+    {
+        "text": "solution works and is efficient so i",
+        "start": 634.48,
+        "duration": 2.72
+    },
+    {
+        "text": "hope this was helpful",
+        "start": 636.16,
+        "duration": 3.28
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 637.2,
+        "duration": 4.16
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 639.44,
+        "duration": 5.6
+    },
+    {
+        "text": "hopefully see you pretty soon",
+        "start": 641.36,
+        "duration": 3.68
+    }
+]

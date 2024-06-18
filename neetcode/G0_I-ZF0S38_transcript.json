@@ -1,0 +1,1417 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.199
+    },
+    {
+        "text": "write some more neat code today it's",
+        "start": 1.76,
+        "duration": 3.28
+    },
+    {
+        "text": "actually raining outside right now",
+        "start": 3.199,
+        "duration": 3.521
+    },
+    {
+        "text": "pretty hard so hopefully you can't hear",
+        "start": 5.04,
+        "duration": 4.4
+    },
+    {
+        "text": "it too well so today let's solve an easy",
+        "start": 6.72,
+        "duration": 4.959
+    },
+    {
+        "text": "question reverse a linked list and this",
+        "start": 9.44,
+        "duration": 4.159
+    },
+    {
+        "text": "question is actually like a sub problem",
+        "start": 11.679,
+        "duration": 3.521
+    },
+    {
+        "text": "that's needed in a lot of other",
+        "start": 13.599,
+        "duration": 3.281
+    },
+    {
+        "text": "questions like linked list related",
+        "start": 15.2,
+        "duration": 2.88
+    },
+    {
+        "text": "questions so it's definitely",
+        "start": 16.88,
+        "duration": 3.92
+    },
+    {
+        "text": "good to understand so just like the",
+        "start": 18.08,
+        "duration": 4.959
+    },
+    {
+        "text": "problem says we have a linked list",
+        "start": 20.8,
+        "duration": 5.52
+    },
+    {
+        "text": "we've got some nodes and and we just",
+        "start": 23.039,
+        "duration": 4.0
+    },
+    {
+        "text": "want to take",
+        "start": 26.32,
+        "duration": 4.64
+    },
+    {
+        "text": "each of these links reverse them",
+        "start": 27.039,
+        "duration": 7.36
+    },
+    {
+        "text": "keep doing that with everything and then",
+        "start": 30.96,
+        "duration": 6.88
+    },
+    {
+        "text": "this is going to be the new head",
+        "start": 34.399,
+        "duration": 6.641
+    },
+    {
+        "text": "and then we're going to return that",
+        "start": 37.84,
+        "duration": 4.96
+    },
+    {
+        "text": "and they tell us that this can be done",
+        "start": 41.04,
+        "duration": 4.16
+    },
+    {
+        "text": "two ways iteratively meaning with just",
+        "start": 42.8,
+        "duration": 3.36
+    },
+    {
+        "text": "pointers",
+        "start": 45.2,
+        "duration": 4.0
+    },
+    {
+        "text": "and also recursively and i'll show you",
+        "start": 46.16,
+        "duration": 5.039
+    },
+    {
+        "text": "how to do it both ways",
+        "start": 49.2,
+        "duration": 4.16
+    },
+    {
+        "text": "so we can do this with two pointers",
+        "start": 51.199,
+        "duration": 4.241
+    },
+    {
+        "text": "because we want to reverse it so like",
+        "start": 53.36,
+        "duration": 3.679
+    },
+    {
+        "text": "from the perspective of this node",
+        "start": 55.44,
+        "duration": 2.639
+    },
+    {
+        "text": "instead of",
+        "start": 57.039,
+        "duration": 4.081
+    },
+    {
+        "text": "the next pointer pointing at three we",
+        "start": 58.079,
+        "duration": 5.361
+    },
+    {
+        "text": "want it to point at the previous",
+        "start": 61.12,
+        "duration": 5.6
+    },
+    {
+        "text": "node one so if we want to do this",
+        "start": 63.44,
+        "duration": 6.48
+    },
+    {
+        "text": "iteratively we can use two",
+        "start": 66.72,
+        "duration": 6.399
+    },
+    {
+        "text": "pointers like many problems",
+        "start": 69.92,
+        "duration": 4.72
+    },
+    {
+        "text": "now what are the two pointers going to",
+        "start": 73.119,
+        "duration": 3.68
+    },
+    {
+        "text": "be we can have initially",
+        "start": 74.64,
+        "duration": 4.72
+    },
+    {
+        "text": "a current pointer so we can initialize",
+        "start": 76.799,
+        "duration": 4.161
+    },
+    {
+        "text": "current to the first node",
+        "start": 79.36,
+        "duration": 4.64
+    },
+    {
+        "text": "which is our head and we can also",
+        "start": 80.96,
+        "duration": 4.0
+    },
+    {
+        "text": "maintain",
+        "start": 84.0,
+        "duration": 4.08
+    },
+    {
+        "text": "a previous pointer which initially",
+        "start": 84.96,
+        "duration": 7.119
+    },
+    {
+        "text": "is going to be set to null",
+        "start": 88.08,
+        "duration": 6.8
+    },
+    {
+        "text": "so for the first node 1 we're going to",
+        "start": 92.079,
+        "duration": 3.921
+    },
+    {
+        "text": "take",
+        "start": 94.88,
+        "duration": 4.48
+    },
+    {
+        "text": "the next pointer and reverse it so now",
+        "start": 96.0,
+        "duration": 4.0
+    },
+    {
+        "text": "the next",
+        "start": 99.36,
+        "duration": 3.36
+    },
+    {
+        "text": "pointer is going to be pointing at null",
+        "start": 100.0,
+        "duration": 5.119
+    },
+    {
+        "text": "so this is now going to be the last",
+        "start": 102.72,
+        "duration": 5.28
+    },
+    {
+        "text": "element in our new reversed linked list",
+        "start": 105.119,
+        "duration": 4.881
+    },
+    {
+        "text": "so now we can shift our pointers",
+        "start": 108.0,
+        "duration": 3.68
+    },
+    {
+        "text": "so we're going to take the previous",
+        "start": 110.0,
+        "duration": 4.0
+    },
+    {
+        "text": "pointer and then shift it to current",
+        "start": 111.68,
+        "duration": 4.079
+    },
+    {
+        "text": "and we're going to take the current",
+        "start": 114.0,
+        "duration": 3.2
+    },
+    {
+        "text": "pointer and shift it",
+        "start": 115.759,
+        "duration": 4.801
+    },
+    {
+        "text": "to the next node now since we broke this",
+        "start": 117.2,
+        "duration": 7.04
+    },
+    {
+        "text": "link we have to save this somewhere",
+        "start": 120.56,
+        "duration": 6.239
+    },
+    {
+        "text": "before we end up breaking this link and",
+        "start": 124.24,
+        "duration": 3.84
+    },
+    {
+        "text": "i'm going to show you how to do that",
+        "start": 126.799,
+        "duration": 4.8
+    },
+    {
+        "text": "in the code so now our current is 2",
+        "start": 128.08,
+        "duration": 6.799
+    },
+    {
+        "text": "we want to take the next pointer",
+        "start": 131.599,
+        "duration": 6.64
+    },
+    {
+        "text": "and reverse it so the next is now going",
+        "start": 134.879,
+        "duration": 4.241
+    },
+    {
+        "text": "to be",
+        "start": 138.239,
+        "duration": 3.281
+    },
+    {
+        "text": "like this so it's going to point at",
+        "start": 139.12,
+        "duration": 3.28
+    },
+    {
+        "text": "previous",
+        "start": 141.52,
+        "duration": 3.359
+    },
+    {
+        "text": "so we can reverse the next pointer and",
+        "start": 142.4,
+        "duration": 4.24
+    },
+    {
+        "text": "set it to previous",
+        "start": 144.879,
+        "duration": 3.681
+    },
+    {
+        "text": "and once again we're going to shift our",
+        "start": 146.64,
+        "duration": 3.76
+    },
+    {
+        "text": "previous pointer to current and our",
+        "start": 148.56,
+        "duration": 3.36
+    },
+    {
+        "text": "current pointer is going to be shifted",
+        "start": 150.4,
+        "duration": 2.72
+    },
+    {
+        "text": "to next",
+        "start": 151.92,
+        "duration": 4.0
+    },
+    {
+        "text": "now we're finally at the last node we",
+        "start": 153.12,
+        "duration": 4.56
+    },
+    {
+        "text": "can once again",
+        "start": 155.92,
+        "duration": 3.84
+    },
+    {
+        "text": "update the next pointer of this current",
+        "start": 157.68,
+        "duration": 3.36
+    },
+    {
+        "text": "node and so",
+        "start": 159.76,
+        "duration": 4.0
+    },
+    {
+        "text": "now when we update our pointers previous",
+        "start": 161.04,
+        "duration": 3.68
+    },
+    {
+        "text": "will be here",
+        "start": 163.76,
+        "duration": 4.16
+    },
+    {
+        "text": "and current is going to be at",
+        "start": 164.72,
+        "duration": 6.64
+    },
+    {
+        "text": "null we've reached the end of our list",
+        "start": 167.92,
+        "duration": 5.52
+    },
+    {
+        "text": "now we want to return the head",
+        "start": 171.36,
+        "duration": 4.879
+    },
+    {
+        "text": "how do we return the head lucky for us",
+        "start": 173.44,
+        "duration": 4.719
+    },
+    {
+        "text": "the previous pointer",
+        "start": 176.239,
+        "duration": 4.961
+    },
+    {
+        "text": "is equal to the new head right so this",
+        "start": 178.159,
+        "duration": 6.8
+    },
+    {
+        "text": "is going to be our result",
+        "start": 181.2,
+        "duration": 5.759
+    },
+    {
+        "text": "just like in the drawing we can",
+        "start": 184.959,
+        "duration": 3.841
+    },
+    {
+        "text": "initialize our pointers first",
+        "start": 186.959,
+        "duration": 4.64
+    },
+    {
+        "text": "previous will initially be null current",
+        "start": 188.8,
+        "duration": 3.519
+    },
+    {
+        "text": "will start",
+        "start": 191.599,
+        "duration": 3.92
+    },
+    {
+        "text": "at the head and we want to keep going",
+        "start": 192.319,
+        "duration": 4.321
+    },
+    {
+        "text": "until we reach",
+        "start": 195.519,
+        "duration": 3.521
+    },
+    {
+        "text": "the end of the list so while current is",
+        "start": 196.64,
+        "duration": 3.84
+    },
+    {
+        "text": "not null",
+        "start": 199.04,
+        "duration": 4.479
+    },
+    {
+        "text": "we're going to reverse the pointers so",
+        "start": 200.48,
+        "duration": 3.839
+    },
+    {
+        "text": "we want",
+        "start": 203.519,
+        "duration": 4.161
+    },
+    {
+        "text": "current dot next to be set to",
+        "start": 204.319,
+        "duration": 5.601
+    },
+    {
+        "text": "previous and then we can shift our",
+        "start": 207.68,
+        "duration": 4.88
+    },
+    {
+        "text": "pointers right so we can update previous",
+        "start": 209.92,
+        "duration": 6.399
+    },
+    {
+        "text": "set it to cur and",
+        "start": 212.56,
+        "duration": 7.679
+    },
+    {
+        "text": "cur is going to be equal to current.next",
+        "start": 216.319,
+        "duration": 7.28
+    },
+    {
+        "text": "but notice how we set current.next",
+        "start": 220.239,
+        "duration": 6.401
+    },
+    {
+        "text": "to previous before so when we do this",
+        "start": 223.599,
+        "duration": 5.121
+    },
+    {
+        "text": "we actually are going to have a",
+        "start": 226.64,
+        "duration": 4.48
+    },
+    {
+        "text": "temporary variable",
+        "start": 228.72,
+        "duration": 5.92
+    },
+    {
+        "text": "called next which i will do at the",
+        "start": 231.12,
+        "duration": 6.56
+    },
+    {
+        "text": "first line when we start our loop so we",
+        "start": 234.64,
+        "duration": 4.4
+    },
+    {
+        "text": "can save that in next",
+        "start": 237.68,
+        "duration": 4.88
+    },
+    {
+        "text": "so then when we update current.next",
+        "start": 239.04,
+        "duration": 7.44
+    },
+    {
+        "text": "you know we still have that next pointer",
+        "start": 242.56,
+        "duration": 6.8
+    },
+    {
+        "text": "and lastly we return the result which we",
+        "start": 246.48,
+        "duration": 3.2
+    },
+    {
+        "text": "know",
+        "start": 249.36,
+        "duration": 2.72
+    },
+    {
+        "text": "is stored in previous when this loop",
+        "start": 249.68,
+        "duration": 4.32
+    },
+    {
+        "text": "stops executing",
+        "start": 252.08,
+        "duration": 4.159
+    },
+    {
+        "text": "so it works and this is actually the",
+        "start": 254.0,
+        "duration": 4.32
+    },
+    {
+        "text": "most optimal solution the time",
+        "start": 256.239,
+        "duration": 6.801
+    },
+    {
+        "text": "complexity is big o of n",
+        "start": 258.32,
+        "duration": 4.72
+    },
+    {
+        "text": "and the memory complexity is big o of 1",
+        "start": 263.36,
+        "duration": 5.6
+    },
+    {
+        "text": "because we're just using pointers right",
+        "start": 266.479,
+        "duration": 3.44
+    },
+    {
+        "text": "no",
+        "start": 268.96,
+        "duration": 4.239
+    },
+    {
+        "text": "data structures or anything but if we",
+        "start": 269.919,
+        "duration": 6.0
+    },
+    {
+        "text": "want to do the recursive solution",
+        "start": 273.199,
+        "duration": 5.44
+    },
+    {
+        "text": "then the time complexity is also going",
+        "start": 275.919,
+        "duration": 4.0
+    },
+    {
+        "text": "to remain",
+        "start": 278.639,
+        "duration": 3.441
+    },
+    {
+        "text": "linear but the memory complexity is",
+        "start": 279.919,
+        "duration": 3.28
+    },
+    {
+        "text": "going to be",
+        "start": 282.08,
+        "duration": 2.72
+    },
+    {
+        "text": "linear as well so we're going to need",
+        "start": 283.199,
+        "duration": 3.761
+    },
+    {
+        "text": "extra memory so it's not the best",
+        "start": 284.8,
+        "duration": 3.679
+    },
+    {
+        "text": "solution but i'll still show you how to",
+        "start": 286.96,
+        "duration": 2.48
+    },
+    {
+        "text": "do it",
+        "start": 288.479,
+        "duration": 3.121
+    },
+    {
+        "text": "so usually the best way to think about",
+        "start": 289.44,
+        "duration": 3.52
+    },
+    {
+        "text": "recursive problems",
+        "start": 291.6,
+        "duration": 3.84
+    },
+    {
+        "text": "is to break it down into a sub problem",
+        "start": 292.96,
+        "duration": 3.28
+    },
+    {
+        "text": "right so",
+        "start": 295.44,
+        "duration": 4.319
+    },
+    {
+        "text": "if our initial head is one",
+        "start": 296.24,
+        "duration": 6.239
+    },
+    {
+        "text": "we start at one and this is our linked",
+        "start": 299.759,
+        "duration": 4.321
+    },
+    {
+        "text": "list right",
+        "start": 302.479,
+        "duration": 4.081
+    },
+    {
+        "text": "but let's say i want to do a recursive",
+        "start": 304.08,
+        "duration": 3.28
+    },
+    {
+        "text": "call",
+        "start": 306.56,
+        "duration": 3.199
+    },
+    {
+        "text": "instead of reversing the entire linked",
+        "start": 307.36,
+        "duration": 3.04
+    },
+    {
+        "text": "list",
+        "start": 309.759,
+        "duration": 3.761
+    },
+    {
+        "text": "i'm gonna reverse the remainder of the",
+        "start": 310.4,
+        "duration": 4.16
+    },
+    {
+        "text": "linked list",
+        "start": 313.52,
+        "duration": 4.56
+    },
+    {
+        "text": "so everything except this one",
+        "start": 314.56,
+        "duration": 6.0
+    },
+    {
+        "text": "so now i have a sub problem right now i",
+        "start": 318.08,
+        "duration": 3.2
+    },
+    {
+        "text": "only have",
+        "start": 320.56,
+        "duration": 4.32
+    },
+    {
+        "text": "two nodes to deal with but let's take it",
+        "start": 321.28,
+        "duration": 4.32
+    },
+    {
+        "text": "one step",
+        "start": 324.88,
+        "duration": 4.08
+    },
+    {
+        "text": "further this is now my new head right",
+        "start": 325.6,
+        "duration": 5.12
+    },
+    {
+        "text": "and i'm gonna break it down even more",
+        "start": 328.96,
+        "duration": 3.6
+    },
+    {
+        "text": "i'm gonna say reverse",
+        "start": 330.72,
+        "duration": 4.8
+    },
+    {
+        "text": "this portion reverse the sub problem",
+        "start": 332.56,
+        "duration": 4.0
+    },
+    {
+        "text": "reverse only",
+        "start": 335.52,
+        "duration": 4.72
+    },
+    {
+        "text": "one node so then if we try to break it",
+        "start": 336.56,
+        "duration": 5.359
+    },
+    {
+        "text": "down even more then we're going to get",
+        "start": 340.24,
+        "duration": 3.519
+    },
+    {
+        "text": "this is our sub list right but this is",
+        "start": 341.919,
+        "duration": 2.241
+    },
+    {
+        "text": "just",
+        "start": 343.759,
+        "duration": 2.321
+    },
+    {
+        "text": "null so we can't really reverse that",
+        "start": 344.16,
+        "duration": 3.759
+    },
+    {
+        "text": "that's the base case",
+        "start": 346.08,
+        "duration": 4.48
+    },
+    {
+        "text": "so now we're at this we only have one",
+        "start": 347.919,
+        "duration": 4.081
+    },
+    {
+        "text": "node and we want to reverse",
+        "start": 350.56,
+        "duration": 3.68
+    },
+    {
+        "text": "it how do we do that well the next",
+        "start": 352.0,
+        "duration": 3.52
+    },
+    {
+        "text": "pointer is pointing at",
+        "start": 354.24,
+        "duration": 4.64
+    },
+    {
+        "text": "null instead of that we can take the",
+        "start": 355.52,
+        "duration": 4.56
+    },
+    {
+        "text": "next pointer",
+        "start": 358.88,
+        "duration": 4.08
+    },
+    {
+        "text": "and set it to previous not really",
+        "start": 360.08,
+        "duration": 4.72
+    },
+    {
+        "text": "because this is recursive",
+        "start": 362.96,
+        "duration": 3.84
+    },
+    {
+        "text": "and at least the way i'm gonna do it i'm",
+        "start": 364.8,
+        "duration": 3.119
+    },
+    {
+        "text": "gonna set",
+        "start": 366.8,
+        "duration": 4.48
+    },
+    {
+        "text": "i'm gonna keep the pointer pointing at",
+        "start": 367.919,
+        "duration": 6.641
+    },
+    {
+        "text": "null so we technically reversed this",
+        "start": 371.28,
+        "duration": 5.12
+    },
+    {
+        "text": "portion which is",
+        "start": 374.56,
+        "duration": 3.84
+    },
+    {
+        "text": "just this right it's just a link list of",
+        "start": 376.4,
+        "duration": 3.76
+    },
+    {
+        "text": "one so now we're going to pop",
+        "start": 378.4,
+        "duration": 5.76
+    },
+    {
+        "text": "back up out of our recursive call",
+        "start": 380.16,
+        "duration": 8.08
+    },
+    {
+        "text": "and now our job is to reverse these two",
+        "start": 384.16,
+        "duration": 7.2
+    },
+    {
+        "text": "nodes so since we're at",
+        "start": 388.24,
+        "duration": 6.32
+    },
+    {
+        "text": "2 we can access three",
+        "start": 391.36,
+        "duration": 5.839
+    },
+    {
+        "text": "so what i'm gonna do is say okay the",
+        "start": 394.56,
+        "duration": 4.24
+    },
+    {
+        "text": "next pointer of this",
+        "start": 397.199,
+        "duration": 4.881
+    },
+    {
+        "text": "is actually gonna be set to me to",
+        "start": 398.8,
+        "duration": 5.519
+    },
+    {
+        "text": "is gonna be set to two where i'm at",
+        "start": 402.08,
+        "duration": 3.44
+    },
+    {
+        "text": "right now",
+        "start": 404.319,
+        "duration": 5.041
+    },
+    {
+        "text": "but my next pointer two's next pointer",
+        "start": 405.52,
+        "duration": 7.36
+    },
+    {
+        "text": "is gonna be set to null",
+        "start": 409.36,
+        "duration": 6.72
+    },
+    {
+        "text": "so notice that so far we have",
+        "start": 412.88,
+        "duration": 6.719
+    },
+    {
+        "text": "done our job we reversed a linked list",
+        "start": 416.08,
+        "duration": 7.04
+    },
+    {
+        "text": "of size two right this is going to be",
+        "start": 419.599,
+        "duration": 6.241
+    },
+    {
+        "text": "the new head and this is the tail this",
+        "start": 423.12,
+        "duration": 4.479
+    },
+    {
+        "text": "is the end of the list",
+        "start": 425.84,
+        "duration": 4.4
+    },
+    {
+        "text": "so we did our job of reversing it",
+        "start": 427.599,
+        "duration": 4.481
+    },
+    {
+        "text": "reversing these two nodes but we still",
+        "start": 430.24,
+        "duration": 3.84
+    },
+    {
+        "text": "have one more node so we're going to",
+        "start": 432.08,
+        "duration": 5.36
+    },
+    {
+        "text": "pop back up out of our recursive call",
+        "start": 434.08,
+        "duration": 6.559
+    },
+    {
+        "text": "okay so now we're finally at the last",
+        "start": 437.44,
+        "duration": 6.24
+    },
+    {
+        "text": "call so our sub problem",
+        "start": 440.639,
+        "duration": 6.4
+    },
+    {
+        "text": "is to reverse these three nodes and we",
+        "start": 443.68,
+        "duration": 5.28
+    },
+    {
+        "text": "can repeat the same thing we did over",
+        "start": 447.039,
+        "duration": 2.321
+    },
+    {
+        "text": "here",
+        "start": 448.96,
+        "duration": 3.519
+    },
+    {
+        "text": "we're gonna for one ins since one has",
+        "start": 449.36,
+        "duration": 5.52
+    },
+    {
+        "text": "access to two",
+        "start": 452.479,
+        "duration": 5.84
+    },
+    {
+        "text": "we're going to set two's next pointer",
+        "start": 454.88,
+        "duration": 4.8
+    },
+    {
+        "text": "over here instead of",
+        "start": 458.319,
+        "duration": 4.521
+    },
+    {
+        "text": "null we're going to set it to",
+        "start": 459.68,
+        "duration": 6.079
+    },
+    {
+        "text": "one and the next pointer",
+        "start": 462.84,
+        "duration": 7.079
+    },
+    {
+        "text": "of one is now going to be",
+        "start": 465.759,
+        "duration": 7.921
+    },
+    {
+        "text": "null because we've reached the end",
+        "start": 469.919,
+        "duration": 5.921
+    },
+    {
+        "text": "this is going to be the new end of our",
+        "start": 473.68,
+        "duration": 3.519
+    },
+    {
+        "text": "linked list",
+        "start": 475.84,
+        "duration": 4.639
+    },
+    {
+        "text": "so we've done our job we recursively",
+        "start": 477.199,
+        "duration": 6.881
+    },
+    {
+        "text": "took our linked list and reversed it",
+        "start": 480.479,
+        "duration": 5.921
+    },
+    {
+        "text": "the only problem is that we are doing",
+        "start": 484.08,
+        "duration": 4.239
+    },
+    {
+        "text": "this recursively so",
+        "start": 486.4,
+        "duration": 4.72
+    },
+    {
+        "text": "we have to in our code we're gonna have",
+        "start": 488.319,
+        "duration": 4.241
+    },
+    {
+        "text": "to maintain",
+        "start": 491.12,
+        "duration": 6.799
+    },
+    {
+        "text": "the last node as the new head",
+        "start": 492.56,
+        "duration": 5.359
+    },
+    {
+        "text": "so now let's code it up as with most",
+        "start": 498.479,
+        "duration": 4.16
+    },
+    {
+        "text": "recursive functions",
+        "start": 501.199,
+        "duration": 4.481
+    },
+    {
+        "text": "you want to do the base case first so if",
+        "start": 502.639,
+        "duration": 3.84
+    },
+    {
+        "text": "the head is",
+        "start": 505.68,
+        "duration": 4.0
+    },
+    {
+        "text": "null we can return",
+        "start": 506.479,
+        "duration": 6.321
+    },
+    {
+        "text": "null and i'm going to make a variable",
+        "start": 509.68,
+        "duration": 5.279
+    },
+    {
+        "text": "to maintain the new head which i'm going",
+        "start": 512.8,
+        "duration": 4.719
+    },
+    {
+        "text": "to initially set to head",
+        "start": 514.959,
+        "duration": 4.88
+    },
+    {
+        "text": "head is the current node that we're at",
+        "start": 517.519,
+        "duration": 4.08
+    },
+    {
+        "text": "in our recursive call so",
+        "start": 519.839,
+        "duration": 5.201
+    },
+    {
+        "text": "if head dot next",
+        "start": 521.599,
+        "duration": 5.761
+    },
+    {
+        "text": "is not null if there's still a sub",
+        "start": 525.04,
+        "duration": 3.919
+    },
+    {
+        "text": "problem if we can keep",
+        "start": 527.36,
+        "duration": 4.88
+    },
+    {
+        "text": "uh reversing then we're gonna have our",
+        "start": 528.959,
+        "duration": 5.681
+    },
+    {
+        "text": "recursive call so",
+        "start": 532.24,
+        "duration": 5.76
+    },
+    {
+        "text": "reverse the list",
+        "start": 534.64,
+        "duration": 6.879
+    },
+    {
+        "text": "pass in head dot next and",
+        "start": 538.0,
+        "duration": 6.08
+    },
+    {
+        "text": "the return value of this we are going to",
+        "start": 541.519,
+        "duration": 4.721
+    },
+    {
+        "text": "have as the new head",
+        "start": 544.08,
+        "duration": 5.36
+    },
+    {
+        "text": "so if this returns something",
+        "start": 546.24,
+        "duration": 5.68
+    },
+    {
+        "text": "so we're going to set the result of that",
+        "start": 549.44,
+        "duration": 3.04
+    },
+    {
+        "text": "to",
+        "start": 551.92,
+        "duration": 4.24
+    },
+    {
+        "text": "new head and since head dot next",
+        "start": 552.48,
+        "duration": 6.32
+    },
+    {
+        "text": "is the next node of head we want to",
+        "start": 556.16,
+        "duration": 5.2
+    },
+    {
+        "text": "reverse that link so what we can do",
+        "start": 558.8,
+        "duration": 6.0
+    },
+    {
+        "text": "is get the double",
+        "start": 561.36,
+        "duration": 6.96
+    },
+    {
+        "text": "so head dot next dot next",
+        "start": 564.8,
+        "duration": 5.84
+    },
+    {
+        "text": "is going to be set to head what this is",
+        "start": 568.32,
+        "duration": 3.44
+    },
+    {
+        "text": "doing is just",
+        "start": 570.64,
+        "duration": 4.0
+    },
+    {
+        "text": "reversing the link between the next node",
+        "start": 571.76,
+        "duration": 4.32
+    },
+    {
+        "text": "and head",
+        "start": 574.64,
+        "duration": 4.48
+    },
+    {
+        "text": "and lastly we can say head dot",
+        "start": 576.08,
+        "duration": 6.64
+    },
+    {
+        "text": "next is going to be equal to null so if",
+        "start": 579.12,
+        "duration": 6.32
+    },
+    {
+        "text": "head happens to be the first node in the",
+        "start": 582.72,
+        "duration": 3.28
+    },
+    {
+        "text": "list",
+        "start": 585.44,
+        "duration": 3.519
+    },
+    {
+        "text": "we're setting the next pointer to null",
+        "start": 586.0,
+        "duration": 3.279
+    },
+    {
+        "text": "and",
+        "start": 588.959,
+        "duration": 2.161
+    },
+    {
+        "text": "of course this function wants us to",
+        "start": 589.279,
+        "duration": 4.161
+    },
+    {
+        "text": "reverse the list and return the new head",
+        "start": 591.12,
+        "duration": 2.719
+    },
+    {
+        "text": "so",
+        "start": 593.44,
+        "duration": 3.519
+    },
+    {
+        "text": "we're gonna return the new head",
+        "start": 593.839,
+        "duration": 6.321
+    },
+    {
+        "text": "so i think so this works and i think it",
+        "start": 596.959,
+        "duration": 5.12
+    },
+    {
+        "text": "might be a little confusing the way i",
+        "start": 600.16,
+        "duration": 4.799
+    },
+    {
+        "text": "wrote it because we have head.next.next",
+        "start": 602.079,
+        "duration": 5.601
+    },
+    {
+        "text": "but if you want to understand it a",
+        "start": 604.959,
+        "duration": 3.361
+    },
+    {
+        "text": "little more",
+        "start": 607.68,
+        "duration": 3.68
+    },
+    {
+        "text": "i would try to like mentally",
+        "start": 608.32,
+        "duration": 5.519
+    },
+    {
+        "text": "run through a couple test cases for",
+        "start": 611.36,
+        "duration": 4.32
+    },
+    {
+        "text": "example if you were just given one node",
+        "start": 613.839,
+        "duration": 3.361
+    },
+    {
+        "text": "like",
+        "start": 615.68,
+        "duration": 3.12
+    },
+    {
+        "text": "if you were just given a linked list of",
+        "start": 617.2,
+        "duration": 3.759
+    },
+    {
+        "text": "this try to run through the code",
+        "start": 618.8,
+        "duration": 5.279
+    },
+    {
+        "text": "see what the code does see what the",
+        "start": 620.959,
+        "duration": 6.641
+    },
+    {
+        "text": "function returns see which like this",
+        "start": 624.079,
+        "duration": 5.841
+    },
+    {
+        "text": "statement would not ever execute if we",
+        "start": 627.6,
+        "duration": 3.44
+    },
+    {
+        "text": "were given",
+        "start": 629.92,
+        "duration": 4.56
+    },
+    {
+        "text": "a link list of size one this is not",
+        "start": 631.04,
+        "duration": 4.64
+    },
+    {
+        "text": "going to execute",
+        "start": 634.48,
+        "duration": 3.599
+    },
+    {
+        "text": "so just kind of like try that out see",
+        "start": 635.68,
+        "duration": 3.599
+    },
+    {
+        "text": "what happens if",
+        "start": 638.079,
+        "duration": 4.801
+    },
+    {
+        "text": "you had a linked list of size two",
+        "start": 639.279,
+        "duration": 6.081
+    },
+    {
+        "text": "like this and use pen and paper draw a",
+        "start": 642.88,
+        "duration": 3.76
+    },
+    {
+        "text": "picture",
+        "start": 645.36,
+        "duration": 4.479
+    },
+    {
+        "text": "and lastly the reason why the memory is",
+        "start": 646.64,
+        "duration": 5.92
+    },
+    {
+        "text": "linear is because if we were given a",
+        "start": 649.839,
+        "duration": 3.44
+    },
+    {
+        "text": "linked list",
+        "start": 652.56,
+        "duration": 4.08
+    },
+    {
+        "text": "of size two our recursive call",
+        "start": 653.279,
+        "duration": 6.24
+    },
+    {
+        "text": "is gonna be size two but i hope this was",
+        "start": 656.64,
+        "duration": 3.68
+    },
+    {
+        "text": "helpful",
+        "start": 659.519,
+        "duration": 2.801
+    },
+    {
+        "text": "please leave a like and subscribe thank",
+        "start": 660.32,
+        "duration": 3.92
+    },
+    {
+        "text": "you and thank you so much for watching",
+        "start": 662.32,
+        "duration": 6.079
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 664.24,
+        "duration": 4.159
+    }
+]

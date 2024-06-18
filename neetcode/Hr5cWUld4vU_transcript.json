@@ -1,0 +1,2512 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.679
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.839,
+        "duration": 3.52
+    },
+    {
+        "text": "let's solve binary tree",
+        "start": 3.679,
+        "duration": 4.88
+    },
+    {
+        "text": "maximum path sum and yes this is another",
+        "start": 5.359,
+        "duration": 6.001
+    },
+    {
+        "text": "problem from the blind 75 leak code list",
+        "start": 8.559,
+        "duration": 5.681
+    },
+    {
+        "text": "so this is a list of 75 common leak code",
+        "start": 11.36,
+        "duration": 4.239
+    },
+    {
+        "text": "questions and today we're going to be",
+        "start": 14.24,
+        "duration": 2.879
+    },
+    {
+        "text": "solving this tree question",
+        "start": 15.599,
+        "duration": 3.921
+    },
+    {
+        "text": "binary tree maximum pathsome the link to",
+        "start": 17.119,
+        "duration": 3.601
+    },
+    {
+        "text": "this spreadsheet will be in the",
+        "start": 19.52,
+        "duration": 2.64
+    },
+    {
+        "text": "description if you do want to take a",
+        "start": 20.72,
+        "duration": 1.92
+    },
+    {
+        "text": "look",
+        "start": 22.16,
+        "duration": 2.32
+    },
+    {
+        "text": "and i think i've almost done all the",
+        "start": 22.64,
+        "duration": 3.52
+    },
+    {
+        "text": "problems that i wanted to do from this",
+        "start": 24.48,
+        "duration": 3.6
+    },
+    {
+        "text": "list nearly all of them so far",
+        "start": 26.16,
+        "duration": 4.64
+    },
+    {
+        "text": "so a path is defined in a binary tree as",
+        "start": 28.08,
+        "duration": 4.639
+    },
+    {
+        "text": "being a sequence of nodes where",
+        "start": 30.8,
+        "duration": 4.16
+    },
+    {
+        "text": "each pair of adjacent nodes in the",
+        "start": 32.719,
+        "duration": 3.281
+    },
+    {
+        "text": "sequence",
+        "start": 34.96,
+        "duration": 4.16
+    },
+    {
+        "text": "has a can as a edge connecting them and",
+        "start": 36.0,
+        "duration": 5.76
+    },
+    {
+        "text": "a node can only appear in the sequence",
+        "start": 39.12,
+        "duration": 5.919
+    },
+    {
+        "text": "at most once and the path sum of that",
+        "start": 41.76,
+        "duration": 5.68
+    },
+    {
+        "text": "path is defined as being the sum of all",
+        "start": 45.039,
+        "duration": 4.561
+    },
+    {
+        "text": "the nodes values in that path",
+        "start": 47.44,
+        "duration": 4.4
+    },
+    {
+        "text": "so for example in this example we're",
+        "start": 49.6,
+        "duration": 3.279
+    },
+    {
+        "text": "given a tree",
+        "start": 51.84,
+        "duration": 4.64
+    },
+    {
+        "text": "and the path is basically going like",
+        "start": 52.879,
+        "duration": 6.641
+    },
+    {
+        "text": "this right you see how you know we have",
+        "start": 56.48,
+        "duration": 4.64
+    },
+    {
+        "text": "a node we go here",
+        "start": 59.52,
+        "duration": 3.28
+    },
+    {
+        "text": "and then we go here right it's it this",
+        "start": 61.12,
+        "duration": 3.28
+    },
+    {
+        "text": "is this counts as a path",
+        "start": 62.8,
+        "duration": 4.4
+    },
+    {
+        "text": "right even though it's even though from",
+        "start": 64.4,
+        "duration": 3.92
+    },
+    {
+        "text": "here we're technically",
+        "start": 67.2,
+        "duration": 3.44
+    },
+    {
+        "text": "splitting we're going left and right",
+        "start": 68.32,
+        "duration": 4.56
+    },
+    {
+        "text": "this is still a you know a sequence of",
+        "start": 70.64,
+        "duration": 4.08
+    },
+    {
+        "text": "nodes right it could be read like",
+        "start": 72.88,
+        "duration": 3.52
+    },
+    {
+        "text": "in any direction but it's it's still",
+        "start": 74.72,
+        "duration": 3.84
+    },
+    {
+        "text": "like a sequence and then when you take",
+        "start": 76.4,
+        "duration": 4.56
+    },
+    {
+        "text": "that path you basically get one plus two",
+        "start": 78.56,
+        "duration": 3.84
+    },
+    {
+        "text": "plus three so that's going to be the",
+        "start": 80.96,
+        "duration": 2.4
+    },
+    {
+        "text": "output",
+        "start": 82.4,
+        "duration": 2.88
+    },
+    {
+        "text": "now of course in this problem we can",
+        "start": 83.36,
+        "duration": 3.759
+    },
+    {
+        "text": "actually have negative values so for",
+        "start": 85.28,
+        "duration": 2.64
+    },
+    {
+        "text": "example this",
+        "start": 87.119,
+        "duration": 3.201
+    },
+    {
+        "text": "2 could be negative 2. so then what",
+        "start": 87.92,
+        "duration": 4.48
+    },
+    {
+        "text": "would be the maximum path sum then well",
+        "start": 90.32,
+        "duration": 3.6
+    },
+    {
+        "text": "we don't want to add negative values",
+        "start": 92.4,
+        "duration": 3.679
+    },
+    {
+        "text": "that won't increase our total so",
+        "start": 93.92,
+        "duration": 3.76
+    },
+    {
+        "text": "in this case we're going to go from here",
+        "start": 96.079,
+        "duration": 3.04
+    },
+    {
+        "text": "to here right this is going to be our",
+        "start": 97.68,
+        "duration": 2.32
+    },
+    {
+        "text": "path 1 plus",
+        "start": 99.119,
+        "duration": 2.96
+    },
+    {
+        "text": "3 and then we would return 4. now what",
+        "start": 100.0,
+        "duration": 3.759
+    },
+    {
+        "text": "happens if this negative",
+        "start": 102.079,
+        "duration": 4.481
+    },
+    {
+        "text": "1 this value was a negative 1 instead",
+        "start": 103.759,
+        "duration": 3.36
+    },
+    {
+        "text": "right",
+        "start": 106.56,
+        "duration": 3.36
+    },
+    {
+        "text": "now we could just take 3 by itself that",
+        "start": 107.119,
+        "duration": 3.761
+    },
+    {
+        "text": "counts as a path",
+        "start": 109.92,
+        "duration": 3.12
+    },
+    {
+        "text": "or we could take 2 by itself that counts",
+        "start": 110.88,
+        "duration": 3.12
+    },
+    {
+        "text": "as a path or we could",
+        "start": 113.04,
+        "duration": 3.2
+    },
+    {
+        "text": "still take that same path which would",
+        "start": 114.0,
+        "duration": 4.88
+    },
+    {
+        "text": "give us 2 minus 1 plus 3 which gives us",
+        "start": 116.24,
+        "duration": 5.12
+    },
+    {
+        "text": "4 and that is actually the max once",
+        "start": 118.88,
+        "duration": 3.199
+    },
+    {
+        "text": "again",
+        "start": 121.36,
+        "duration": 2.88
+    },
+    {
+        "text": "so it's possible that negative values",
+        "start": 122.079,
+        "duration": 3.921
+    },
+    {
+        "text": "could still be included",
+        "start": 124.24,
+        "duration": 3.999
+    },
+    {
+        "text": "in the output so you might think well",
+        "start": 126.0,
+        "duration": 3.44
+    },
+    {
+        "text": "what if we have a tree of",
+        "start": 128.239,
+        "duration": 3.521
+    },
+    {
+        "text": "all positive values like this one can we",
+        "start": 129.44,
+        "duration": 3.2
+    },
+    {
+        "text": "just take",
+        "start": 131.76,
+        "duration": 3.6
+    },
+    {
+        "text": "every single node like basically like",
+        "start": 132.64,
+        "duration": 3.52
+    },
+    {
+        "text": "this",
+        "start": 135.36,
+        "duration": 3.68
+    },
+    {
+        "text": "and call it a path and just add every",
+        "start": 136.16,
+        "duration": 3.92
+    },
+    {
+        "text": "value together well",
+        "start": 139.04,
+        "duration": 4.08
+    },
+    {
+        "text": "no and the reason is because some if",
+        "start": 140.08,
+        "duration": 5.92
+    },
+    {
+        "text": "we had this structure right this isn't",
+        "start": 143.12,
+        "duration": 4.16
+    },
+    {
+        "text": "really a path",
+        "start": 146.0,
+        "duration": 3.04
+    },
+    {
+        "text": "because how would you traverse it right",
+        "start": 147.28,
+        "duration": 3.2
+    },
+    {
+        "text": "we could start here then",
+        "start": 149.04,
+        "duration": 4.479
+    },
+    {
+        "text": "you know go go this way then go down",
+        "start": 150.48,
+        "duration": 5.6
+    },
+    {
+        "text": "but then here we have to make a split we",
+        "start": 153.519,
+        "duration": 5.041
+    },
+    {
+        "text": "can't go in two directions at once that",
+        "start": 156.08,
+        "duration": 3.84
+    },
+    {
+        "text": "doesn't count as a path",
+        "start": 158.56,
+        "duration": 4.56
+    },
+    {
+        "text": "so basically what we realize is as we",
+        "start": 159.92,
+        "duration": 4.72
+    },
+    {
+        "text": "look at this example is that",
+        "start": 163.12,
+        "duration": 5.119
+    },
+    {
+        "text": "if we're starting at a node we can only",
+        "start": 164.64,
+        "duration": 5.92
+    },
+    {
+        "text": "split once right like if we're here we",
+        "start": 168.239,
+        "duration": 3.28
+    },
+    {
+        "text": "can split",
+        "start": 170.56,
+        "duration": 3.2
+    },
+    {
+        "text": "in two directions right we can include a",
+        "start": 171.519,
+        "duration": 3.921
+    },
+    {
+        "text": "path from here from the left side and",
+        "start": 173.76,
+        "duration": 3.04
+    },
+    {
+        "text": "then we can also go here right",
+        "start": 175.44,
+        "duration": 4.079
+    },
+    {
+        "text": "and if we get to this portion right we",
+        "start": 176.8,
+        "duration": 5.2
+    },
+    {
+        "text": "already had a split up above",
+        "start": 179.519,
+        "duration": 4.961
+    },
+    {
+        "text": "so we can't split twice right because",
+        "start": 182.0,
+        "duration": 4.319
+    },
+    {
+        "text": "then it's no longer a path so",
+        "start": 184.48,
+        "duration": 4.56
+    },
+    {
+        "text": "we can only choose one of these nodes we",
+        "start": 186.319,
+        "duration": 4.321
+    },
+    {
+        "text": "would obviously choose the bigger one",
+        "start": 189.04,
+        "duration": 2.8
+    },
+    {
+        "text": "that's a five",
+        "start": 190.64,
+        "duration": 3.519
+    },
+    {
+        "text": "right so take a look what would the sum",
+        "start": 191.84,
+        "duration": 4.479
+    },
+    {
+        "text": "be if we ended up splitting from here",
+        "start": 194.159,
+        "duration": 3.601
+    },
+    {
+        "text": "this is obviously the max we could",
+        "start": 196.319,
+        "duration": 3.361
+    },
+    {
+        "text": "create what is the total it's",
+        "start": 197.76,
+        "duration": 4.479
+    },
+    {
+        "text": "it's 1 plus 2 plus 3 plus 5 which is",
+        "start": 199.68,
+        "duration": 3.76
+    },
+    {
+        "text": "going to be 11.",
+        "start": 202.239,
+        "duration": 3.201
+    },
+    {
+        "text": "now we can we're going to try it",
+        "start": 203.44,
+        "duration": 3.28
+    },
+    {
+        "text": "multiple ways right",
+        "start": 205.44,
+        "duration": 2.799
+    },
+    {
+        "text": "it's possible maybe there could be a",
+        "start": 206.72,
+        "duration": 2.96
+    },
+    {
+        "text": "split over here of course this doesn't",
+        "start": 208.239,
+        "duration": 3.041
+    },
+    {
+        "text": "have any children so the most we could",
+        "start": 209.68,
+        "duration": 2.08
+    },
+    {
+        "text": "get",
+        "start": 211.28,
+        "duration": 2.4
+    },
+    {
+        "text": "doing that would just be a two but what",
+        "start": 211.76,
+        "duration": 3.759
+    },
+    {
+        "text": "about over here what if we ended up",
+        "start": 213.68,
+        "duration": 3.76
+    },
+    {
+        "text": "splitting from here so we",
+        "start": 215.519,
+        "duration": 4.0
+    },
+    {
+        "text": "took the left and the right from here",
+        "start": 217.44,
+        "duration": 3.12
+    },
+    {
+        "text": "we'd get a four",
+        "start": 219.519,
+        "duration": 2.881
+    },
+    {
+        "text": "and we'd get a five now if we did do",
+        "start": 220.56,
+        "duration": 3.679
+    },
+    {
+        "text": "that notice how this is going to be the",
+        "start": 222.4,
+        "duration": 3.6
+    },
+    {
+        "text": "top most node so whenever we",
+        "start": 224.239,
+        "duration": 3.92
+    },
+    {
+        "text": "split from a node we can't really get",
+        "start": 226.0,
+        "duration": 4.48
+    },
+    {
+        "text": "any of its parents or anything like that",
+        "start": 228.159,
+        "duration": 4.8
+    },
+    {
+        "text": "so in this case what is the sum of this",
+        "start": 230.48,
+        "duration": 3.119
+    },
+    {
+        "text": "path well",
+        "start": 232.959,
+        "duration": 2.721
+    },
+    {
+        "text": "it's going to be 4 plus 3 plus 5 which",
+        "start": 233.599,
+        "duration": 3.36
+    },
+    {
+        "text": "is going to give us 12.",
+        "start": 235.68,
+        "duration": 3.36
+    },
+    {
+        "text": "12 is greater than the 11 that we had",
+        "start": 236.959,
+        "duration": 3.041
+    },
+    {
+        "text": "previously so this",
+        "start": 239.04,
+        "duration": 3.6
+    },
+    {
+        "text": "is going to be the max path sum so you",
+        "start": 240.0,
+        "duration": 4.959
+    },
+    {
+        "text": "can tell that a brute force approach",
+        "start": 242.64,
+        "duration": 5.679
+    },
+    {
+        "text": "would be for every single node",
+        "start": 244.959,
+        "duration": 5.121
+    },
+    {
+        "text": "every single node consider it being the",
+        "start": 248.319,
+        "duration": 3.601
+    },
+    {
+        "text": "topmost node and then from the left",
+        "start": 250.08,
+        "duration": 3.28
+    },
+    {
+        "text": "subtree basically find what's the",
+        "start": 251.92,
+        "duration": 2.08
+    },
+    {
+        "text": "maximum",
+        "start": 253.36,
+        "duration": 2.56
+    },
+    {
+        "text": "path we could create in the left subtree",
+        "start": 254.0,
+        "duration": 4.079
+    },
+    {
+        "text": "if we never split so we can't include",
+        "start": 255.92,
+        "duration": 2.559
+    },
+    {
+        "text": "both",
+        "start": 258.079,
+        "duration": 2.321
+    },
+    {
+        "text": "left and right and then do the same for",
+        "start": 258.479,
+        "duration": 3.681
+    },
+    {
+        "text": "the right side right",
+        "start": 260.4,
+        "duration": 3.84
+    },
+    {
+        "text": "and if we sort of do it recursively we",
+        "start": 262.16,
+        "duration": 4.24
+    },
+    {
+        "text": "can eliminate repeated work",
+        "start": 264.24,
+        "duration": 4.399
+    },
+    {
+        "text": "so suppose we're given that same tree we",
+        "start": 266.4,
+        "duration": 3.76
+    },
+    {
+        "text": "want to we're going to start at the root",
+        "start": 268.639,
+        "duration": 3.361
+    },
+    {
+        "text": "not like normal right so from here we",
+        "start": 270.16,
+        "duration": 3.52
+    },
+    {
+        "text": "want to know what's the max path sum we",
+        "start": 272.0,
+        "duration": 3.68
+    },
+    {
+        "text": "could do from here if we split",
+        "start": 273.68,
+        "duration": 3.6
+    },
+    {
+        "text": "from this position right going left and",
+        "start": 275.68,
+        "duration": 4.239
+    },
+    {
+        "text": "right now why start at the root when we",
+        "start": 277.28,
+        "duration": 3.52
+    },
+    {
+        "text": "could solve the",
+        "start": 279.919,
+        "duration": 3.521
+    },
+    {
+        "text": "sub problem first and possibly use that",
+        "start": 280.8,
+        "duration": 4.8
+    },
+    {
+        "text": "sub problem in the result at the root",
+        "start": 283.44,
+        "duration": 2.72
+    },
+    {
+        "text": "position",
+        "start": 285.6,
+        "duration": 2.319
+    },
+    {
+        "text": "so we're going to leverage that idea a",
+        "start": 286.16,
+        "duration": 3.28
+    },
+    {
+        "text": "depth first search",
+        "start": 287.919,
+        "duration": 4.161
+    },
+    {
+        "text": "idea just like usual with tree problems",
+        "start": 289.44,
+        "duration": 3.92
+    },
+    {
+        "text": "and using that we're going to end up",
+        "start": 292.08,
+        "duration": 3.28
+    },
+    {
+        "text": "getting a linear time solution",
+        "start": 293.36,
+        "duration": 3.68
+    },
+    {
+        "text": "and it's just going to depend on the",
+        "start": 295.36,
+        "duration": 3.2
+    },
+    {
+        "text": "return value of",
+        "start": 297.04,
+        "duration": 3.76
+    },
+    {
+        "text": "our recursive function so we're going to",
+        "start": 298.56,
+        "duration": 3.6
+    },
+    {
+        "text": "start at the root",
+        "start": 300.8,
+        "duration": 3.28
+    },
+    {
+        "text": "and now we're going to go left right we",
+        "start": 302.16,
+        "duration": 4.16
+    },
+    {
+        "text": "want to know what's the maximum",
+        "start": 304.08,
+        "duration": 4.8
+    },
+    {
+        "text": "path we can get from the left subtree if",
+        "start": 306.32,
+        "duration": 3.439
+    },
+    {
+        "text": "we never",
+        "start": 308.88,
+        "duration": 3.84
+    },
+    {
+        "text": "end up splitting so in this case it's",
+        "start": 309.759,
+        "duration": 3.44
+    },
+    {
+        "text": "pretty",
+        "start": 312.72,
+        "duration": 2.24
+    },
+    {
+        "text": "simple because it doesn't have a left",
+        "start": 313.199,
+        "duration": 3.44
+    },
+    {
+        "text": "child or a right child right so we don't",
+        "start": 314.96,
+        "duration": 3.6
+    },
+    {
+        "text": "even end up having to split and we get a",
+        "start": 316.639,
+        "duration": 2.56
+    },
+    {
+        "text": "sum of",
+        "start": 318.56,
+        "duration": 4.32
+    },
+    {
+        "text": "two from this spot right and even",
+        "start": 319.199,
+        "duration": 5.601
+    },
+    {
+        "text": "even if we were splitting from here we",
+        "start": 322.88,
+        "duration": 3.599
+    },
+    {
+        "text": "would get a total of two so far so what",
+        "start": 324.8,
+        "duration": 2.399
+    },
+    {
+        "text": "we'll say",
+        "start": 326.479,
+        "duration": 3.28
+    },
+    {
+        "text": "is so far the max path we've gotten so",
+        "start": 327.199,
+        "duration": 3.921
+    },
+    {
+        "text": "far is two right",
+        "start": 329.759,
+        "duration": 3.041
+    },
+    {
+        "text": "now we still want to know what's the max",
+        "start": 331.12,
+        "duration": 3.519
+    },
+    {
+        "text": "we can get from this position so what",
+        "start": 332.8,
+        "duration": 2.88
+    },
+    {
+        "text": "we're gonna do",
+        "start": 334.639,
+        "duration": 2.961
+    },
+    {
+        "text": "is now go to the right tree so",
+        "start": 335.68,
+        "duration": 3.68
+    },
+    {
+        "text": "recursively now we're gonna ask the",
+        "start": 337.6,
+        "duration": 3.68
+    },
+    {
+        "text": "question down here what's the max path",
+        "start": 339.36,
+        "duration": 3.36
+    },
+    {
+        "text": "sum we can get if we ran",
+        "start": 341.28,
+        "duration": 3.52
+    },
+    {
+        "text": "it through this position and we ended up",
+        "start": 342.72,
+        "duration": 3.6
+    },
+    {
+        "text": "splitting left and right",
+        "start": 344.8,
+        "duration": 3.52
+    },
+    {
+        "text": "and by the way our result so far is",
+        "start": 346.32,
+        "duration": 3.92
+    },
+    {
+        "text": "going to be two that's the maximum path",
+        "start": 348.32,
+        "duration": 3.36
+    },
+    {
+        "text": "so far that we've gotten",
+        "start": 350.24,
+        "duration": 3.84
+    },
+    {
+        "text": "so from here we're gonna since we're",
+        "start": 351.68,
+        "duration": 4.0
+    },
+    {
+        "text": "trying to again find what's the max we",
+        "start": 354.08,
+        "duration": 2.16
+    },
+    {
+        "text": "can get",
+        "start": 355.68,
+        "duration": 2.32
+    },
+    {
+        "text": "splitting from here we're gonna go",
+        "start": 356.24,
+        "duration": 3.12
+    },
+    {
+        "text": "recursive and we're gonna do that for",
+        "start": 358.0,
+        "duration": 3.039
+    },
+    {
+        "text": "the left sub tree and the right subtree",
+        "start": 359.36,
+        "duration": 2.0
+    },
+    {
+        "text": "so",
+        "start": 361.039,
+        "duration": 2.16
+    },
+    {
+        "text": "we're getting that same base case here",
+        "start": 361.36,
+        "duration": 3.44
+    },
+    {
+        "text": "right with this left sub tree if we",
+        "start": 363.199,
+        "duration": 2.801
+    },
+    {
+        "text": "tried to split from",
+        "start": 364.8,
+        "duration": 3.44
+    },
+    {
+        "text": "here the max path we'd get is four",
+        "start": 366.0,
+        "duration": 3.6
+    },
+    {
+        "text": "because it doesn't even have any",
+        "start": 368.24,
+        "duration": 3.12
+    },
+    {
+        "text": "children right so let's keep track of",
+        "start": 369.6,
+        "duration": 2.96
+    },
+    {
+        "text": "that the max",
+        "start": 371.36,
+        "duration": 3.44
+    },
+    {
+        "text": "path we could get from here is four now",
+        "start": 372.56,
+        "duration": 4.4
+    },
+    {
+        "text": "if we didn't split here we'd also get",
+        "start": 374.8,
+        "duration": 3.92
+    },
+    {
+        "text": "that same value of four and that's what",
+        "start": 376.96,
+        "duration": 3.6
+    },
+    {
+        "text": "i'm marking here next to each note i'm",
+        "start": 378.72,
+        "duration": 3.599
+    },
+    {
+        "text": "marking what's the max we could have",
+        "start": 380.56,
+        "duration": 2.479
+    },
+    {
+        "text": "gotten",
+        "start": 382.319,
+        "duration": 3.361
+    },
+    {
+        "text": "if we did not split i know it's a little",
+        "start": 383.039,
+        "duration": 4.321
+    },
+    {
+        "text": "confusing and it'll make more sense when",
+        "start": 385.68,
+        "duration": 3.359
+    },
+    {
+        "text": "once i actually finish the rest of this",
+        "start": 387.36,
+        "duration": 3.279
+    },
+    {
+        "text": "example and so",
+        "start": 389.039,
+        "duration": 3.361
+    },
+    {
+        "text": "from over here now we do have what's the",
+        "start": 390.639,
+        "duration": 3.68
+    },
+    {
+        "text": "max we'd get from the left path",
+        "start": 392.4,
+        "duration": 3.519
+    },
+    {
+        "text": "without splitting it's four but now we",
+        "start": 394.319,
+        "duration": 2.641
+    },
+    {
+        "text": "just want to do that for the right side",
+        "start": 395.919,
+        "duration": 2.641
+    },
+    {
+        "text": "once again it's that same base case",
+        "start": 396.96,
+        "duration": 2.959
+    },
+    {
+        "text": "right so what's the max we could get",
+        "start": 398.56,
+        "duration": 3.199
+    },
+    {
+        "text": "running through here if we never split",
+        "start": 399.919,
+        "duration": 2.72
+    },
+    {
+        "text": "it would be five",
+        "start": 401.759,
+        "duration": 2.081
+    },
+    {
+        "text": "it doesn't have any children so we",
+        "start": 402.639,
+        "duration": 3.521
+    },
+    {
+        "text": "couldn't split even if we wanted to",
+        "start": 403.84,
+        "duration": 5.28
+    },
+    {
+        "text": "so now we're at this node once again we",
+        "start": 406.16,
+        "duration": 4.319
+    },
+    {
+        "text": "have computed the left",
+        "start": 409.12,
+        "duration": 4.4
+    },
+    {
+        "text": "and right sub problems now from this",
+        "start": 410.479,
+        "duration": 5.681
+    },
+    {
+        "text": "node we're going to be computing two",
+        "start": 413.52,
+        "duration": 3.2
+    },
+    {
+        "text": "different",
+        "start": 416.16,
+        "duration": 2.479
+    },
+    {
+        "text": "values by the way our result right now",
+        "start": 416.72,
+        "duration": 3.68
+    },
+    {
+        "text": "would actually be 5 because that's what",
+        "start": 418.639,
+        "duration": 3.68
+    },
+    {
+        "text": "we've gotten so far so",
+        "start": 420.4,
+        "duration": 4.079
+    },
+    {
+        "text": "from this position i'm computing two",
+        "start": 422.319,
+        "duration": 3.761
+    },
+    {
+        "text": "values i want to know",
+        "start": 424.479,
+        "duration": 4.241
+    },
+    {
+        "text": "what's the maximum sum we could get with",
+        "start": 426.08,
+        "duration": 3.36
+    },
+    {
+        "text": "a path",
+        "start": 428.72,
+        "duration": 3.84
+    },
+    {
+        "text": "running from here if we are allowed to",
+        "start": 429.44,
+        "duration": 4.879
+    },
+    {
+        "text": "split so we are allowed to go",
+        "start": 432.56,
+        "duration": 4.8
+    },
+    {
+        "text": "right and we are allowed to go left so",
+        "start": 434.319,
+        "duration": 4.961
+    },
+    {
+        "text": "what would the total of that be well of",
+        "start": 437.36,
+        "duration": 3.52
+    },
+    {
+        "text": "course we would just take okay what's",
+        "start": 439.28,
+        "duration": 2.0
+    },
+    {
+        "text": "the",
+        "start": 440.88,
+        "duration": 2.159
+    },
+    {
+        "text": "max we could get from the left subtree",
+        "start": 441.28,
+        "duration": 3.68
+    },
+    {
+        "text": "without splitting right because we can't",
+        "start": 443.039,
+        "duration": 3.921
+    },
+    {
+        "text": "split again if we already split up here",
+        "start": 444.96,
+        "duration": 3.12
+    },
+    {
+        "text": "we don't want to split again",
+        "start": 446.96,
+        "duration": 3.679
+    },
+    {
+        "text": "here so what's the max we could get from",
+        "start": 448.08,
+        "duration": 4.399
+    },
+    {
+        "text": "here if we never split well",
+        "start": 450.639,
+        "duration": 4.081
+    },
+    {
+        "text": "it would be four right and once again",
+        "start": 452.479,
+        "duration": 3.84
+    },
+    {
+        "text": "what's the max we would get from here if",
+        "start": 454.72,
+        "duration": 3.759
+    },
+    {
+        "text": "we never split it would be five",
+        "start": 456.319,
+        "duration": 5.201
+    },
+    {
+        "text": "so up here i'm going to take three",
+        "start": 458.479,
+        "duration": 6.961
+    },
+    {
+        "text": "plus four plus 5 and say this is the max",
+        "start": 461.52,
+        "duration": 4.399
+    },
+    {
+        "text": "path",
+        "start": 465.44,
+        "duration": 2.8
+    },
+    {
+        "text": "running through here if we are allowed",
+        "start": 465.919,
+        "duration": 3.28
+    },
+    {
+        "text": "to split",
+        "start": 468.24,
+        "duration": 3.28
+    },
+    {
+        "text": "now this isn't the value that i'm going",
+        "start": 469.199,
+        "duration": 3.761
+    },
+    {
+        "text": "to return to the parent",
+        "start": 471.52,
+        "duration": 3.84
+    },
+    {
+        "text": "the reason i computed this value is so i",
+        "start": 472.96,
+        "duration": 4.639
+    },
+    {
+        "text": "can potentially update the result right",
+        "start": 475.36,
+        "duration": 2.64
+    },
+    {
+        "text": "and we",
+        "start": 477.599,
+        "duration": 1.921
+    },
+    {
+        "text": "are going to update the result because",
+        "start": 478.0,
+        "duration": 4.4
+    },
+    {
+        "text": "this is 12 so far our result is five",
+        "start": 479.52,
+        "duration": 5.04
+    },
+    {
+        "text": "so we can say that our new result now is",
+        "start": 482.4,
+        "duration": 3.359
+    },
+    {
+        "text": "going to be",
+        "start": 484.56,
+        "duration": 4.079
+    },
+    {
+        "text": "12. now what's the value i want to",
+        "start": 485.759,
+        "duration": 3.44
+    },
+    {
+        "text": "return",
+        "start": 488.639,
+        "duration": 3.361
+    },
+    {
+        "text": "up to my parent remember what this guy",
+        "start": 489.199,
+        "duration": 4.881
+    },
+    {
+        "text": "wanted to compute was what's the max",
+        "start": 492.0,
+        "duration": 4.24
+    },
+    {
+        "text": "it could have if it was allowed to split",
+        "start": 494.08,
+        "duration": 4.0
+    },
+    {
+        "text": "to the left and it was allowed to split",
+        "start": 496.24,
+        "duration": 2.48
+    },
+    {
+        "text": "to the right",
+        "start": 498.08,
+        "duration": 3.6
+    },
+    {
+        "text": "so from here on we don't want to split",
+        "start": 498.72,
+        "duration": 3.52
+    },
+    {
+        "text": "twice",
+        "start": 501.68,
+        "duration": 3.359
+    },
+    {
+        "text": "so the question of i have for this node",
+        "start": 502.24,
+        "duration": 4.56
+    },
+    {
+        "text": "when we're returning up to our parent",
+        "start": 505.039,
+        "duration": 4.0
+    },
+    {
+        "text": "is what's the max i could get running",
+        "start": 506.8,
+        "duration": 3.519
+    },
+    {
+        "text": "through here if we are",
+        "start": 509.039,
+        "duration": 3.36
+    },
+    {
+        "text": "not allowed to split so how am i going",
+        "start": 510.319,
+        "duration": 3.2
+    },
+    {
+        "text": "to get that well",
+        "start": 512.399,
+        "duration": 3.921
+    },
+    {
+        "text": "i can take this 3 and add it but then i",
+        "start": 513.519,
+        "duration": 4.721
+    },
+    {
+        "text": "have to look at my left subtree",
+        "start": 516.32,
+        "duration": 5.519
+    },
+    {
+        "text": "and my right subtree and take the max of",
+        "start": 518.24,
+        "duration": 5.679
+    },
+    {
+        "text": "both of these right i have to take the",
+        "start": 521.839,
+        "duration": 3.68
+    },
+    {
+        "text": "max of them i can't choose",
+        "start": 523.919,
+        "duration": 3.841
+    },
+    {
+        "text": "both so i have to choose one of them i'm",
+        "start": 525.519,
+        "duration": 3.921
+    },
+    {
+        "text": "going to take the maximum which is going",
+        "start": 527.76,
+        "duration": 2.079
+    },
+    {
+        "text": "to be",
+        "start": 529.44,
+        "duration": 3.519
+    },
+    {
+        "text": "5 so i'm going to say 3 plus 8",
+        "start": 529.839,
+        "duration": 5.361
+    },
+    {
+        "text": "that's going to be the value that we",
+        "start": 532.959,
+        "duration": 4.56
+    },
+    {
+        "text": "return so notice how for each node i'm",
+        "start": 535.2,
+        "duration": 4.24
+    },
+    {
+        "text": "marking what's the return value from",
+        "start": 537.519,
+        "duration": 3.201
+    },
+    {
+        "text": "that node going to be",
+        "start": 539.44,
+        "duration": 3.519
+    },
+    {
+        "text": "so it's going to be 8 in this case so",
+        "start": 540.72,
+        "duration": 4.32
+    },
+    {
+        "text": "then when i return back up to the root",
+        "start": 542.959,
+        "duration": 3.601
+    },
+    {
+        "text": "i'm going to say okay from here what's",
+        "start": 545.04,
+        "duration": 2.88
+    },
+    {
+        "text": "the max path we could get well i'm going",
+        "start": 546.56,
+        "duration": 2.64
+    },
+    {
+        "text": "to take the note itself",
+        "start": 547.92,
+        "duration": 4.56
+    },
+    {
+        "text": "1 take the left which is 2 and take the",
+        "start": 549.2,
+        "duration": 5.68
+    },
+    {
+        "text": "right which is this path right notice",
+        "start": 552.48,
+        "duration": 4.24
+    },
+    {
+        "text": "how we don't split",
+        "start": 554.88,
+        "duration": 3.84
+    },
+    {
+        "text": "it's going to be an 8 which is going to",
+        "start": 556.72,
+        "duration": 3.92
+    },
+    {
+        "text": "give us 11. now that's not bigger than",
+        "start": 558.72,
+        "duration": 3.44
+    },
+    {
+        "text": "our result right so we actually",
+        "start": 560.64,
+        "duration": 4.08
+    },
+    {
+        "text": "don't update the result in this case and",
+        "start": 562.16,
+        "duration": 4.32
+    },
+    {
+        "text": "of course this is the root node so it's",
+        "start": 564.72,
+        "duration": 3.36
+    },
+    {
+        "text": "not going to end up returning to its",
+        "start": 566.48,
+        "duration": 3.359
+    },
+    {
+        "text": "parent but what if it did have a parent",
+        "start": 568.08,
+        "duration": 3.6
+    },
+    {
+        "text": "what would it return well we could only",
+        "start": 569.839,
+        "duration": 3.601
+    },
+    {
+        "text": "we would take one and then add it to the",
+        "start": 571.68,
+        "duration": 3.68
+    },
+    {
+        "text": "max of the left or the right",
+        "start": 573.44,
+        "duration": 4.24
+    },
+    {
+        "text": "of course the right is an eight this is",
+        "start": 575.36,
+        "duration": 4.56
+    },
+    {
+        "text": "the path so we'd say one plus",
+        "start": 577.68,
+        "duration": 4.32
+    },
+    {
+        "text": "a is going to be nine nine is what we",
+        "start": 579.92,
+        "duration": 3.599
+    },
+    {
+        "text": "would return to our parent that's the",
+        "start": 582.0,
+        "duration": 3.68
+    },
+    {
+        "text": "max path we can get from here without",
+        "start": 583.519,
+        "duration": 2.801
+    },
+    {
+        "text": "splitting",
+        "start": 585.68,
+        "duration": 2.159
+    },
+    {
+        "text": "what would that path look like well of",
+        "start": 586.32,
+        "duration": 2.88
+    },
+    {
+        "text": "course it would just be this right",
+        "start": 587.839,
+        "duration": 2.801
+    },
+    {
+        "text": "notice how this is a path",
+        "start": 589.2,
+        "duration": 4.56
+    },
+    {
+        "text": "it never splits so that is the main",
+        "start": 590.64,
+        "duration": 5.92
+    },
+    {
+        "text": "idea for this problem there's one last",
+        "start": 593.76,
+        "duration": 4.48
+    },
+    {
+        "text": "quick thing i want to go over",
+        "start": 596.56,
+        "duration": 3.279
+    },
+    {
+        "text": "so the return value of course is going",
+        "start": 598.24,
+        "duration": 3.36
+    },
+    {
+        "text": "to be for every node what's the max path",
+        "start": 599.839,
+        "duration": 3.12
+    },
+    {
+        "text": "without splitting and",
+        "start": 601.6,
+        "duration": 2.799
+    },
+    {
+        "text": "we are going to still calculate what's",
+        "start": 602.959,
+        "duration": 3.521
+    },
+    {
+        "text": "the max path with splitting and use that",
+        "start": 604.399,
+        "duration": 3.601
+    },
+    {
+        "text": "to actually update our result we're",
+        "start": 606.48,
+        "duration": 3.44
+    },
+    {
+        "text": "going to keep this as a global variable",
+        "start": 608.0,
+        "duration": 3.68
+    },
+    {
+        "text": "because it just makes the code easier",
+        "start": 609.92,
+        "duration": 3.359
+    },
+    {
+        "text": "but it's actually it is possible to",
+        "start": 611.68,
+        "duration": 3.44
+    },
+    {
+        "text": "solve this problem without using this",
+        "start": 613.279,
+        "duration": 3.601
+    },
+    {
+        "text": "global variable and by the way if you've",
+        "start": 615.12,
+        "duration": 3.279
+    },
+    {
+        "text": "been noticing we're only going to be",
+        "start": 616.88,
+        "duration": 3.12
+    },
+    {
+        "text": "looking at each node once so that's",
+        "start": 618.399,
+        "duration": 3.201
+    },
+    {
+        "text": "going to be a time complexity of big o",
+        "start": 620.0,
+        "duration": 1.92
+    },
+    {
+        "text": "of",
+        "start": 621.6,
+        "duration": 2.08
+    },
+    {
+        "text": "n the memory complexity of course is",
+        "start": 621.92,
+        "duration": 3.12
+    },
+    {
+        "text": "going to be the height of the tree which",
+        "start": 623.68,
+        "duration": 2.0
+    },
+    {
+        "text": "is usually",
+        "start": 625.04,
+        "duration": 2.96
+    },
+    {
+        "text": "log n if it's a balanced tree but one",
+        "start": 625.68,
+        "duration": 3.04
+    },
+    {
+        "text": "last case",
+        "start": 628.0,
+        "duration": 2.48
+    },
+    {
+        "text": "remember this tree could have negative",
+        "start": 628.72,
+        "duration": 3.119
+    },
+    {
+        "text": "numbers so for example let's say this",
+        "start": 630.48,
+        "duration": 2.64
+    },
+    {
+        "text": "was a negative four",
+        "start": 631.839,
+        "duration": 3.44
+    },
+    {
+        "text": "and this was a negative five so then",
+        "start": 633.12,
+        "duration": 3.92
+    },
+    {
+        "text": "from this left subtree we would return a",
+        "start": 635.279,
+        "duration": 3.521
+    },
+    {
+        "text": "negative four and from this we return a",
+        "start": 637.04,
+        "duration": 3.2
+    },
+    {
+        "text": "negative five so then",
+        "start": 638.8,
+        "duration": 2.96
+    },
+    {
+        "text": "you know when we're actually computing",
+        "start": 640.24,
+        "duration": 3.599
+    },
+    {
+        "text": "okay what's the max path that could run",
+        "start": 641.76,
+        "duration": 2.96
+    },
+    {
+        "text": "through here",
+        "start": 643.839,
+        "duration": 2.481
+    },
+    {
+        "text": "and let's say we're doing it for the one",
+        "start": 644.72,
+        "duration": 3.04
+    },
+    {
+        "text": "that we can't split",
+        "start": 646.32,
+        "duration": 3.12
+    },
+    {
+        "text": "right where we don't split so we either",
+        "start": 647.76,
+        "duration": 3.44
+    },
+    {
+        "text": "choose the left or the right",
+        "start": 649.44,
+        "duration": 4.0
+    },
+    {
+        "text": "and as i mentioned how we're doing it is",
+        "start": 651.2,
+        "duration": 4.16
+    },
+    {
+        "text": "we're just taking the max of the two",
+        "start": 653.44,
+        "duration": 3.2
+    },
+    {
+        "text": "right so in this case we would take the",
+        "start": 655.36,
+        "duration": 2.56
+    },
+    {
+        "text": "max of negative four",
+        "start": 656.64,
+        "duration": 3.439
+    },
+    {
+        "text": "and the max of negative five right and",
+        "start": 657.92,
+        "duration": 3.919
+    },
+    {
+        "text": "of course we'd say the max is negative",
+        "start": 660.079,
+        "duration": 2.481
+    },
+    {
+        "text": "four so then",
+        "start": 661.839,
+        "duration": 2.321
+    },
+    {
+        "text": "when we're up here what we would end up",
+        "start": 662.56,
+        "duration": 3.6
+    },
+    {
+        "text": "computing is three plus negative four",
+        "start": 664.16,
+        "duration": 3.2
+    },
+    {
+        "text": "which is going to give us",
+        "start": 666.16,
+        "duration": 4.08
+    },
+    {
+        "text": "negative one right negative one so what",
+        "start": 667.36,
+        "duration": 4.4
+    },
+    {
+        "text": "we would say is okay the max we could",
+        "start": 670.24,
+        "duration": 1.839
+    },
+    {
+        "text": "get",
+        "start": 671.76,
+        "duration": 1.68
+    },
+    {
+        "text": "here without splitting is going to be",
+        "start": 672.079,
+        "duration": 3.521
+    },
+    {
+        "text": "negative 1 but that's not actually the",
+        "start": 673.44,
+        "duration": 3.04
+    },
+    {
+        "text": "case right",
+        "start": 675.6,
+        "duration": 3.76
+    },
+    {
+        "text": "because th to get the maximum pat some",
+        "start": 676.48,
+        "duration": 4.799
+    },
+    {
+        "text": "from here where we're not allowed to",
+        "start": 679.36,
+        "duration": 2.8
+    },
+    {
+        "text": "split",
+        "start": 681.279,
+        "duration": 3.521
+    },
+    {
+        "text": "it doesn't necessarily mean we have to",
+        "start": 682.16,
+        "duration": 4.239
+    },
+    {
+        "text": "include the children right they're",
+        "start": 684.8,
+        "duration": 3.92
+    },
+    {
+        "text": "optional we could actually choose to not",
+        "start": 686.399,
+        "duration": 3.68
+    },
+    {
+        "text": "include either of these",
+        "start": 688.72,
+        "duration": 3.44
+    },
+    {
+        "text": "and that's what we would want to do",
+        "start": 690.079,
+        "duration": 3.521
+    },
+    {
+        "text": "because they're both negative",
+        "start": 692.16,
+        "duration": 3.359
+    },
+    {
+        "text": "anyway why would we want to include some",
+        "start": 693.6,
+        "duration": 3.76
+    },
+    {
+        "text": "negative numbers so when we're actually",
+        "start": 695.519,
+        "duration": 3.201
+    },
+    {
+        "text": "taking the max of the two",
+        "start": 697.36,
+        "duration": 2.88
+    },
+    {
+        "text": "we're actually going to take the max of",
+        "start": 698.72,
+        "duration": 3.04
+    },
+    {
+        "text": "three values we're going to take the max",
+        "start": 700.24,
+        "duration": 2.719
+    },
+    {
+        "text": "of the left right",
+        "start": 701.76,
+        "duration": 3.92
+    },
+    {
+        "text": "and potentially zero because if we just",
+        "start": 702.959,
+        "duration": 3.841
+    },
+    {
+        "text": "add zero to it",
+        "start": 705.68,
+        "duration": 3.279
+    },
+    {
+        "text": "this will stay the same so those are the",
+        "start": 706.8,
+        "duration": 4.24
+    },
+    {
+        "text": "key ideas i wanted to go over",
+        "start": 708.959,
+        "duration": 4.161
+    },
+    {
+        "text": "i think that is enough for us to dive",
+        "start": 711.04,
+        "duration": 4.72
+    },
+    {
+        "text": "into the code to solve this optimally",
+        "start": 713.12,
+        "duration": 4.08
+    },
+    {
+        "text": "so like i said we're going to have a",
+        "start": 715.76,
+        "duration": 3.6
+    },
+    {
+        "text": "global variable for the result",
+        "start": 717.2,
+        "duration": 4.0
+    },
+    {
+        "text": "and initially we're just going to set",
+        "start": 719.36,
+        "duration": 3.599
+    },
+    {
+        "text": "that to the val whatever value happens",
+        "start": 721.2,
+        "duration": 3.36
+    },
+    {
+        "text": "to be at the root so the reason i'm",
+        "start": 722.959,
+        "duration": 3.361
+    },
+    {
+        "text": "making it a list is because that'll make",
+        "start": 724.56,
+        "duration": 2.24
+    },
+    {
+        "text": "it for",
+        "start": 726.32,
+        "duration": 2.16
+    },
+    {
+        "text": "that'll make it so that we can modify it",
+        "start": 726.8,
+        "duration": 3.36
+    },
+    {
+        "text": "within the recursive function",
+        "start": 728.48,
+        "duration": 3.2
+    },
+    {
+        "text": "a little bit easier so we're going to",
+        "start": 730.16,
+        "duration": 3.2
+    },
+    {
+        "text": "have a recursive dfs",
+        "start": 731.68,
+        "duration": 3.599
+    },
+    {
+        "text": "we're going to pass in whatever root",
+        "start": 733.36,
+        "duration": 3.599
+    },
+    {
+        "text": "node we're traversing and that's really",
+        "start": 735.279,
+        "duration": 2.56
+    },
+    {
+        "text": "all we have to pass",
+        "start": 736.959,
+        "duration": 3.761
+    },
+    {
+        "text": "in so now the base case is that if we",
+        "start": 737.839,
+        "duration": 3.68
+    },
+    {
+        "text": "don't have",
+        "start": 740.72,
+        "duration": 3.119
+    },
+    {
+        "text": "a root like if the node is null in that",
+        "start": 741.519,
+        "duration": 3.921
+    },
+    {
+        "text": "case what we're going to return is just",
+        "start": 743.839,
+        "duration": 3.601
+    },
+    {
+        "text": "0 that means we're not going to be",
+        "start": 745.44,
+        "duration": 3.12
+    },
+    {
+        "text": "adding anything",
+        "start": 747.44,
+        "duration": 2.56
+    },
+    {
+        "text": "and so we're going to be returning i",
+        "start": 748.56,
+        "duration": 2.56
+    },
+    {
+        "text": "just added a comment we're going to",
+        "start": 750.0,
+        "duration": 3.04
+    },
+    {
+        "text": "return from this function the max path",
+        "start": 751.12,
+        "duration": 3.76
+    },
+    {
+        "text": "sum without splitting",
+        "start": 753.04,
+        "duration": 4.479
+    },
+    {
+        "text": "so we want to get the max path sum so of",
+        "start": 754.88,
+        "duration": 4.32
+    },
+    {
+        "text": "course we have to do this recursively so",
+        "start": 757.519,
+        "duration": 3.361
+    },
+    {
+        "text": "let's get the left max",
+        "start": 759.2,
+        "duration": 3.92
+    },
+    {
+        "text": "and we can do that recursively just pass",
+        "start": 760.88,
+        "duration": 3.6
+    },
+    {
+        "text": "in root.left if it's",
+        "start": 763.12,
+        "duration": 2.64
+    },
+    {
+        "text": "null of course that's just going to",
+        "start": 764.48,
+        "duration": 3.44
+    },
+    {
+        "text": "return zero we're also going to get the",
+        "start": 765.76,
+        "duration": 3.12
+    },
+    {
+        "text": "right max",
+        "start": 767.92,
+        "duration": 4.479
+    },
+    {
+        "text": "passing in root.right so the first thing",
+        "start": 768.88,
+        "duration": 5.36
+    },
+    {
+        "text": "i'm going to do is compute",
+        "start": 772.399,
+        "duration": 4.88
+    },
+    {
+        "text": "the max path sum with a split",
+        "start": 774.24,
+        "duration": 4.88
+    },
+    {
+        "text": "from this root node so basically what",
+        "start": 777.279,
+        "duration": 3.521
+    },
+    {
+        "text": "i'm going to do is i'm going to take the",
+        "start": 779.12,
+        "duration": 3.68
+    },
+    {
+        "text": "root dot value",
+        "start": 780.8,
+        "duration": 5.279
+    },
+    {
+        "text": "and add it with the left max",
+        "start": 782.8,
+        "duration": 5.76
+    },
+    {
+        "text": "and the right max right because we are",
+        "start": 786.079,
+        "duration": 4.401
+    },
+    {
+        "text": "splitting from this root node now of",
+        "start": 788.56,
+        "duration": 3.839
+    },
+    {
+        "text": "course these left and right maxes could",
+        "start": 790.48,
+        "duration": 2.24
+    },
+    {
+        "text": "be",
+        "start": 792.399,
+        "duration": 1.68
+    },
+    {
+        "text": "negative so what i'm actually going to",
+        "start": 792.72,
+        "duration": 3.919
+    },
+    {
+        "text": "do before that is update them so",
+        "start": 794.079,
+        "duration": 5.44
+    },
+    {
+        "text": "we're going to set left max equal to the",
+        "start": 796.639,
+        "duration": 4.241
+    },
+    {
+        "text": "max of itself",
+        "start": 799.519,
+        "duration": 4.161
+    },
+    {
+        "text": "and 0 and do the exact same thing with",
+        "start": 800.88,
+        "duration": 4.399
+    },
+    {
+        "text": "the right max so it's going to be set to",
+        "start": 803.68,
+        "duration": 3.04
+    },
+    {
+        "text": "the max of itself",
+        "start": 805.279,
+        "duration": 4.161
+    },
+    {
+        "text": "plus 0. so here we're going to be",
+        "start": 806.72,
+        "duration": 4.08
+    },
+    {
+        "text": "computing the max path",
+        "start": 809.44,
+        "duration": 2.48
+    },
+    {
+        "text": "running through here so we're going to",
+        "start": 810.8,
+        "duration": 3.68
+    },
+    {
+        "text": "take the root value the left max and",
+        "start": 811.92,
+        "duration": 5.359
+    },
+    {
+        "text": "the right max add them together now this",
+        "start": 814.48,
+        "duration": 4.96
+    },
+    {
+        "text": "could potentially be our new result so",
+        "start": 817.279,
+        "duration": 3.441
+    },
+    {
+        "text": "let's see if it actually",
+        "start": 819.44,
+        "duration": 3.839
+    },
+    {
+        "text": "is so result at position 0 is going to",
+        "start": 820.72,
+        "duration": 3.84
+    },
+    {
+        "text": "be set to the max",
+        "start": 823.279,
+        "duration": 4.161
+    },
+    {
+        "text": "of itself or this value that we just",
+        "start": 824.56,
+        "duration": 3.839
+    },
+    {
+        "text": "computed",
+        "start": 827.44,
+        "duration": 2.48
+    },
+    {
+        "text": "so this is the part where we're actually",
+        "start": 828.399,
+        "duration": 3.361
+    },
+    {
+        "text": "computing what could actually be the",
+        "start": 829.92,
+        "duration": 4.24
+    },
+    {
+        "text": "updated result now what the return value",
+        "start": 831.76,
+        "duration": 4.0
+    },
+    {
+        "text": "remember of this function is not going",
+        "start": 834.16,
+        "duration": 3.76
+    },
+    {
+        "text": "to be the same as this the return value",
+        "start": 835.76,
+        "duration": 2.8
+    },
+    {
+        "text": "is going to be",
+        "start": 837.92,
+        "duration": 3.84
+    },
+    {
+        "text": "what we compute without splitting so the",
+        "start": 838.56,
+        "duration": 5.04
+    },
+    {
+        "text": "return value is going to be",
+        "start": 841.76,
+        "duration": 5.28
+    },
+    {
+        "text": "return root dot val plus whatever the",
+        "start": 843.6,
+        "duration": 3.919
+    },
+    {
+        "text": "max",
+        "start": 847.04,
+        "duration": 3.2
+    },
+    {
+        "text": "of the left max and right max is right",
+        "start": 847.519,
+        "duration": 4.0
+    },
+    {
+        "text": "because we can't choose",
+        "start": 850.24,
+        "duration": 3.039
+    },
+    {
+        "text": "both because if we choose both that",
+        "start": 851.519,
+        "duration": 3.281
+    },
+    {
+        "text": "means that we're splitting",
+        "start": 853.279,
+        "duration": 3.521
+    },
+    {
+        "text": "and so that's actually the entire",
+        "start": 854.8,
+        "duration": 3.44
+    },
+    {
+        "text": "function right you can see",
+        "start": 856.8,
+        "duration": 3.68
+    },
+    {
+        "text": "when we handle the recursive case well",
+        "start": 858.24,
+        "duration": 3.599
+    },
+    {
+        "text": "and we take the max of it",
+        "start": 860.48,
+        "duration": 3.359
+    },
+    {
+        "text": "and zero then we really just have two",
+        "start": 861.839,
+        "duration": 3.68
+    },
+    {
+        "text": "main computations we're doing right",
+        "start": 863.839,
+        "duration": 3.521
+    },
+    {
+        "text": "the max path sum with a split and the",
+        "start": 865.519,
+        "duration": 3.521
+    },
+    {
+        "text": "max path sum without a split",
+        "start": 867.36,
+        "duration": 3.039
+    },
+    {
+        "text": "of course this one is going to be the",
+        "start": 869.04,
+        "duration": 3.12
+    },
+    {
+        "text": "return value and after we're done with",
+        "start": 870.399,
+        "duration": 3.44
+    },
+    {
+        "text": "that all we do is call our dfs",
+        "start": 872.16,
+        "duration": 3.52
+    },
+    {
+        "text": "passing in the root and then that will",
+        "start": 873.839,
+        "duration": 3.68
+    },
+    {
+        "text": "update our global variable up above",
+        "start": 875.68,
+        "duration": 2.8
+    },
+    {
+        "text": "which is the",
+        "start": 877.519,
+        "duration": 2.641
+    },
+    {
+        "text": "which is the result then we can go ahead",
+        "start": 878.48,
+        "duration": 3.599
+    },
+    {
+        "text": "and return that result and that is the",
+        "start": 880.16,
+        "duration": 2.799
+    },
+    {
+        "text": "entire function",
+        "start": 882.079,
+        "duration": 2.801
+    },
+    {
+        "text": "i'll run it and you can see that it does",
+        "start": 882.959,
+        "duration": 3.601
+    },
+    {
+        "text": "work now you might think it's a little",
+        "start": 884.88,
+        "duration": 3.44
+    },
+    {
+        "text": "bit cheating to even have a global",
+        "start": 886.56,
+        "duration": 3.519
+    },
+    {
+        "text": "variable like this and it's actually",
+        "start": 888.32,
+        "duration": 3.6
+    },
+    {
+        "text": "possible to solve this problem pretty",
+        "start": 890.079,
+        "duration": 3.841
+    },
+    {
+        "text": "easily without a global variable 2. i",
+        "start": 891.92,
+        "duration": 3.359
+    },
+    {
+        "text": "just didn't show it",
+        "start": 893.92,
+        "duration": 3.2
+    },
+    {
+        "text": "the main way you would do it is instead",
+        "start": 895.279,
+        "duration": 4.081
+    },
+    {
+        "text": "of you know computing this and updating",
+        "start": 897.12,
+        "duration": 4.079
+    },
+    {
+        "text": "a global variable what we could do",
+        "start": 899.36,
+        "duration": 4.4
+    },
+    {
+        "text": "is take we could basically return two",
+        "start": 901.199,
+        "duration": 4.0
+    },
+    {
+        "text": "values from this function so we would",
+        "start": 903.76,
+        "duration": 3.6
+    },
+    {
+        "text": "return the max path sum with the split",
+        "start": 905.199,
+        "duration": 4.64
+    },
+    {
+        "text": "and the max path sum without a split so",
+        "start": 907.36,
+        "duration": 3.919
+    },
+    {
+        "text": "i hope that this was helpful",
+        "start": 909.839,
+        "duration": 3.601
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 911.279,
+        "duration": 3.761
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 913.44,
+        "duration": 3.68
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 915.04,
+        "duration": 5.039
+    },
+    {
+        "text": "thanks for watching",
+        "start": 917.12,
+        "duration": 2.959
+    }
+]

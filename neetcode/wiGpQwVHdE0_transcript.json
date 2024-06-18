@@ -1,0 +1,817 @@
+[
+    {
+        "text": "what solve leak code 3 longest substring",
+        "start": 0.0,
+        "duration": 4.62
+    },
+    {
+        "text": "without repeating characters or back to",
+        "start": 2.58,
+        "duration": 4.35
+    },
+    {
+        "text": "a classic leak code problem the third",
+        "start": 4.62,
+        "duration": 4.47
+    },
+    {
+        "text": "one so this one's pretty simple we're",
+        "start": 6.93,
+        "duration": 4.289
+    },
+    {
+        "text": "just given a string and we want to find",
+        "start": 9.09,
+        "duration": 4.41
+    },
+    {
+        "text": "the longest sub screen without any",
+        "start": 11.219,
+        "duration": 4.561
+    },
+    {
+        "text": "repeating characters right like how",
+        "start": 13.5,
+        "duration": 4.56
+    },
+    {
+        "text": "these three don't have any duplicate",
+        "start": 15.78,
+        "duration": 6.96
+    },
+    {
+        "text": "characters ABC this one has two A's so",
+        "start": 18.06,
+        "duration": 7.35
+    },
+    {
+        "text": "this would not count as a substring",
+        "start": 22.74,
+        "duration": 4.32
+    },
+    {
+        "text": "without repeating characters and we only",
+        "start": 25.41,
+        "duration": 3.18
+    },
+    {
+        "text": "need to return the length of this",
+        "start": 27.06,
+        "duration": 4.35
+    },
+    {
+        "text": "substring so the first idea that comes",
+        "start": 28.59,
+        "duration": 5.1
+    },
+    {
+        "text": "to my mind at least is so just check",
+        "start": 31.41,
+        "duration": 4.53
+    },
+    {
+        "text": "every single substring check if it has",
+        "start": 33.69,
+        "duration": 4.17
+    },
+    {
+        "text": "any duplicates if it doesn't then it",
+        "start": 35.94,
+        "duration": 3.09
+    },
+    {
+        "text": "then we're just going to take the",
+        "start": 37.86,
+        "duration": 3.24
+    },
+    {
+        "text": "longest one of those strings and return",
+        "start": 39.03,
+        "duration": 4.32
+    },
+    {
+        "text": "the length so how would that algorithm",
+        "start": 41.1,
+        "duration": 4.38
+    },
+    {
+        "text": "run okay first we'd start at a we want",
+        "start": 43.35,
+        "duration": 4.5
+    },
+    {
+        "text": "to get every substring starting at a so",
+        "start": 45.48,
+        "duration": 4.11
+    },
+    {
+        "text": "just this one a well that doesn't have",
+        "start": 47.85,
+        "duration": 3.959
+    },
+    {
+        "text": "any duplicates a B that doesn't have any",
+        "start": 49.59,
+        "duration": 4.71
+    },
+    {
+        "text": "duplicates a C that doesn't have any",
+        "start": 51.809,
+        "duration": 4.651
+    },
+    {
+        "text": "duplicates either and then we get to",
+        "start": 54.3,
+        "duration": 4.68
+    },
+    {
+        "text": "this first duplicate a we have two A's",
+        "start": 56.46,
+        "duration": 4.47
+    },
+    {
+        "text": "now but remember we're checking every",
+        "start": 58.98,
+        "duration": 5.069
+    },
+    {
+        "text": "single sub screen starting at this first",
+        "start": 60.93,
+        "duration": 5.28
+    },
+    {
+        "text": "a so we're gonna keep this algorithm",
+        "start": 64.049,
+        "duration": 4.471
+    },
+    {
+        "text": "going even though we don't have to every",
+        "start": 66.21,
+        "duration": 5.729
+    },
+    {
+        "text": "substring we get after that like see how",
+        "start": 68.52,
+        "duration": 5.13
+    },
+    {
+        "text": "we're doing it every single substring",
+        "start": 71.939,
+        "duration": 4.68
+    },
+    {
+        "text": "after is also gonna have duplicates so",
+        "start": 73.65,
+        "duration": 5.96
+    },
+    {
+        "text": "do we even need to check all of these",
+        "start": 76.619,
+        "duration": 6.481
+    },
+    {
+        "text": "starting at value a this is the repeated",
+        "start": 79.61,
+        "duration": 5.14
+    },
+    {
+        "text": "work that we're gonna eliminate with our",
+        "start": 83.1,
+        "duration": 4.5
+    },
+    {
+        "text": "very fundamental technique the sliding",
+        "start": 84.75,
+        "duration": 6.24
+    },
+    {
+        "text": "window so we want to only check sub",
+        "start": 87.6,
+        "duration": 5.22
+    },
+    {
+        "text": "strings without any repeated characters",
+        "start": 90.99,
+        "duration": 3.75
+    },
+    {
+        "text": "so let's actually just do that let's",
+        "start": 92.82,
+        "duration": 4.83
+    },
+    {
+        "text": "make sure that our window right our sub",
+        "start": 94.74,
+        "duration": 6.269
+    },
+    {
+        "text": "array our substring is always not",
+        "start": 97.65,
+        "duration": 6.96
+    },
+    {
+        "text": "containing any duplicates so once we get",
+        "start": 101.009,
+        "duration": 6.54
+    },
+    {
+        "text": "to this next a we're gonna say well now",
+        "start": 104.61,
+        "duration": 4.799
+    },
+    {
+        "text": "we have to a so we need to start",
+        "start": 107.549,
+        "duration": 4.32
+    },
+    {
+        "text": "removing from the left wing to start",
+        "start": 109.409,
+        "duration": 6.061
+    },
+    {
+        "text": "shrinking our sliding window until we no",
+        "start": 111.869,
+        "duration": 6.151
+    },
+    {
+        "text": "longer have duplicates so I'm gonna say",
+        "start": 115.47,
+        "duration": 7.02
+    },
+    {
+        "text": "remove this one from our substring now",
+        "start": 118.02,
+        "duration": 7.709
+    },
+    {
+        "text": "our substring runs from here from the B",
+        "start": 122.49,
+        "duration": 6.18
+    },
+    {
+        "text": "all the way to the a now it's perfectly",
+        "start": 125.729,
+        "duration": 5.31
+    },
+    {
+        "text": "valid so now we can keep going it's",
+        "start": 128.67,
+        "duration": 4.62
+    },
+    {
+        "text": "still only length three though so now",
+        "start": 131.039,
+        "duration": 4.471
+    },
+    {
+        "text": "so we're gonna add this bead but wait a",
+        "start": 133.29,
+        "duration": 4.649
+    },
+    {
+        "text": "minute now we have two bees but my",
+        "start": 135.51,
+        "duration": 4.41
+    },
+    {
+        "text": "question is how would we even know",
+        "start": 137.939,
+        "duration": 4.711
+    },
+    {
+        "text": "instantly whether we had a duplicate or",
+        "start": 139.92,
+        "duration": 5.879
+    },
+    {
+        "text": "not well we can use a set for that sets",
+        "start": 142.65,
+        "duration": 5.49
+    },
+    {
+        "text": "will only contain one of each character",
+        "start": 145.799,
+        "duration": 4.321
+    },
+    {
+        "text": "so we'll automatically know if we have a",
+        "start": 148.14,
+        "duration": 5.04
+    },
+    {
+        "text": "duplicate we can check it instantly so",
+        "start": 150.12,
+        "duration": 4.38
+    },
+    {
+        "text": "we're going to check that we have two",
+        "start": 153.18,
+        "duration": 3.69
+    },
+    {
+        "text": "bees so now we're going to keep popping",
+        "start": 154.5,
+        "duration": 3.689
+    },
+    {
+        "text": "from the left we're going to keep",
+        "start": 156.87,
+        "duration": 3.479
+    },
+    {
+        "text": "shrinking our window from the left until",
+        "start": 158.189,
+        "duration": 5.22
+    },
+    {
+        "text": "we don't have until we remove a bee and",
+        "start": 160.349,
+        "duration": 4.89
+    },
+    {
+        "text": "we're gonna see that the first one we",
+        "start": 163.409,
+        "duration": 3.48
+    },
+    {
+        "text": "remove is the Beast and now we're done",
+        "start": 165.239,
+        "duration": 4.5
+    },
+    {
+        "text": "so now our substring runs from this C",
+        "start": 166.889,
+        "duration": 5.641
+    },
+    {
+        "text": "all the way to this D now we're gonna",
+        "start": 169.739,
+        "duration": 5.731
+    },
+    {
+        "text": "add another character once again we have",
+        "start": 172.53,
+        "duration": 5.31
+    },
+    {
+        "text": "a duplicate and once again we can",
+        "start": 175.47,
+        "duration": 4.5
+    },
+    {
+        "text": "literally just remove the farthest left",
+        "start": 177.84,
+        "duration": 4.53
+    },
+    {
+        "text": "character and now we're valid again no",
+        "start": 179.97,
+        "duration": 3.96
+    },
+    {
+        "text": "more duplicates we're running all the",
+        "start": 182.37,
+        "duration": 7.049
+    },
+    {
+        "text": "way from A to C next we add a B the",
+        "start": 183.93,
+        "duration": 8.369
+    },
+    {
+        "text": "interesting thing about this is that now",
+        "start": 189.419,
+        "duration": 4.921
+    },
+    {
+        "text": "we have to remove this a because we have",
+        "start": 192.299,
+        "duration": 3.901
+    },
+    {
+        "text": "to shrink our window our sub string has",
+        "start": 194.34,
+        "duration": 3.78
+    },
+    {
+        "text": "to be contiguous so we have to remove",
+        "start": 196.2,
+        "duration": 4.89
+    },
+    {
+        "text": "this a but notice we still have two bees",
+        "start": 198.12,
+        "duration": 4.799
+    },
+    {
+        "text": "in our substring so we got to remove",
+        "start": 201.09,
+        "duration": 4.229
+    },
+    {
+        "text": "another character we have to remove this",
+        "start": 202.919,
+        "duration": 5.521
+    },
+    {
+        "text": "B so now our substring runs from C to B",
+        "start": 205.319,
+        "duration": 5.25
+    },
+    {
+        "text": "so we are valid again but now our",
+        "start": 208.44,
+        "duration": 4.859
+    },
+    {
+        "text": "substring is only length two next we'll",
+        "start": 210.569,
+        "duration": 5.191
+    },
+    {
+        "text": "get to the last B last character we're",
+        "start": 213.299,
+        "duration": 5.041
+    },
+    {
+        "text": "adding and C yep it's a duplicate again",
+        "start": 215.76,
+        "duration": 5.039
+    },
+    {
+        "text": "and don't forget that as we're removing",
+        "start": 218.34,
+        "duration": 4.2
+    },
+    {
+        "text": "these characters from the left we're",
+        "start": 220.799,
+        "duration": 3.961
+    },
+    {
+        "text": "removing a C we're not just removing it",
+        "start": 222.54,
+        "duration": 3.96
+    },
+    {
+        "text": "from our window but we also have to",
+        "start": 224.76,
+        "duration": 3.869
+    },
+    {
+        "text": "remove it from our set because our set",
+        "start": 226.5,
+        "duration": 3.78
+    },
+    {
+        "text": "is going to correspond to all the",
+        "start": 228.629,
+        "duration": 3.631
+    },
+    {
+        "text": "characters inside of our substring that",
+        "start": 230.28,
+        "duration": 3.9
+    },
+    {
+        "text": "we're at so we have to remove our see",
+        "start": 232.26,
+        "duration": 3.839
+    },
+    {
+        "text": "from the window and move it from the set",
+        "start": 234.18,
+        "duration": 4.529
+    },
+    {
+        "text": "we have to take this B and do the same",
+        "start": 236.099,
+        "duration": 5.61
+    },
+    {
+        "text": "thing and now we have no more characters",
+        "start": 238.709,
+        "duration": 5.131
+    },
+    {
+        "text": "to add with this sliding window",
+        "start": 241.709,
+        "duration": 3.48
+    },
+    {
+        "text": "technique which is a very fundamental",
+        "start": 243.84,
+        "duration": 3.329
+    },
+    {
+        "text": "technique that you'll probably see a lot",
+        "start": 245.189,
+        "duration": 4.11
+    },
+    {
+        "text": "more in a lot of different problems we",
+        "start": 247.169,
+        "duration": 4.47
+    },
+    {
+        "text": "can cut the time complexity down to Big",
+        "start": 249.299,
+        "duration": 5.071
+    },
+    {
+        "text": "O of n we just have to go through the",
+        "start": 251.639,
+        "duration": 4.62
+    },
+    {
+        "text": "entire list well we might have to add",
+        "start": 254.37,
+        "duration": 3.989
+    },
+    {
+        "text": "and remove values from our set but",
+        "start": 256.259,
+        "duration": 4.801
+    },
+    {
+        "text": "that's a very quick operation the memory",
+        "start": 258.359,
+        "duration": 5.43
+    },
+    {
+        "text": "complexity because of our set is also",
+        "start": 261.06,
+        "duration": 5.84
+    },
+    {
+        "text": "going to be Big O of n because potential",
+        "start": 263.789,
+        "duration": 4.761
+    },
+    {
+        "text": "every character and the string could be",
+        "start": 266.9,
+        "duration": 3.54
+    },
+    {
+        "text": "unique and will add all of them to our",
+        "start": 268.55,
+        "duration": 4.83
+    },
+    {
+        "text": "set and I didn't really show it while we",
+        "start": 270.44,
+        "duration": 4.319
+    },
+    {
+        "text": "were going through the problem but we",
+        "start": 273.38,
+        "duration": 2.73
+    },
+    {
+        "text": "would want to maintain what's the",
+        "start": 274.759,
+        "duration": 3.811
+    },
+    {
+        "text": "longest substring we found in our case",
+        "start": 276.11,
+        "duration": 4.35
+    },
+    {
+        "text": "it was obvious that the long as we found",
+        "start": 278.57,
+        "duration": 4.469
+    },
+    {
+        "text": "was of length three so I remember the",
+        "start": 280.46,
+        "duration": 4.35
+    },
+    {
+        "text": "first thing we need to do is get a set",
+        "start": 283.039,
+        "duration": 4.41
+    },
+    {
+        "text": "to make sure we have all the characters",
+        "start": 284.81,
+        "duration": 4.32
+    },
+    {
+        "text": "in our window so I'll call it character",
+        "start": 287.449,
+        "duration": 5.461
+    },
+    {
+        "text": "set and we're going to do a sliding",
+        "start": 289.13,
+        "duration": 5.43
+    },
+    {
+        "text": "window so any week so we need two",
+        "start": 292.91,
+        "duration": 3.539
+    },
+    {
+        "text": "pointers a left pointer and a right",
+        "start": 294.56,
+        "duration": 3.69
+    },
+    {
+        "text": "pointer to determine our sliding window",
+        "start": 296.449,
+        "duration": 4.771
+    },
+    {
+        "text": "our left will be initialized to zero and",
+        "start": 298.25,
+        "duration": 4.8
+    },
+    {
+        "text": "our right pointer is going to",
+        "start": 301.22,
+        "duration": 3.78
+    },
+    {
+        "text": "continuously be changing as we visit",
+        "start": 303.05,
+        "duration": 4.83
+    },
+    {
+        "text": "every character so I can just use it in",
+        "start": 305.0,
+        "duration": 8.31
+    },
+    {
+        "text": "this for loop so the right pointer is",
+        "start": 307.88,
+        "duration": 6.69
+    },
+    {
+        "text": "going to go through every single",
+        "start": 313.31,
+        "duration": 3.66
+    },
+    {
+        "text": "character now remember if we get to a",
+        "start": 314.57,
+        "duration": 4.2
+    },
+    {
+        "text": "duplicate character that means we have",
+        "start": 316.97,
+        "duration": 4.53
+    },
+    {
+        "text": "to update our window and our set so",
+        "start": 318.77,
+        "duration": 5.82
+    },
+    {
+        "text": "while this character that we just visit",
+        "start": 321.5,
+        "duration": 6.84
+    },
+    {
+        "text": "at the right pointer s of R is equal is",
+        "start": 324.59,
+        "duration": 6.72
+    },
+    {
+        "text": "already inside our character set meaning",
+        "start": 328.34,
+        "duration": 5.49
+    },
+    {
+        "text": "it's a duplicate then we got to update",
+        "start": 331.31,
+        "duration": 5.4
+    },
+    {
+        "text": "our window so we have to take the left",
+        "start": 333.83,
+        "duration": 5.22
+    },
+    {
+        "text": "character and remove it from our set so",
+        "start": 336.71,
+        "duration": 6.239
+    },
+    {
+        "text": "character set dot remove the leftmost",
+        "start": 339.05,
+        "duration": 6.51
+    },
+    {
+        "text": "character and then of course we have to",
+        "start": 342.949,
+        "duration": 4.891
+    },
+    {
+        "text": "update that left pointer incremented by",
+        "start": 345.56,
+        "duration": 5.07
+    },
+    {
+        "text": "1 and we're going to keep doing this",
+        "start": 347.84,
+        "duration": 5.22
+    },
+    {
+        "text": "while that duplicate remains in the",
+        "start": 350.63,
+        "duration": 4.98
+    },
+    {
+        "text": "character set after we've removed all",
+        "start": 353.06,
+        "duration": 4.74
+    },
+    {
+        "text": "duplicates then we can just add this",
+        "start": 355.61,
+        "duration": 8.549
+    },
+    {
+        "text": "rightmost character to our set and since",
+        "start": 357.8,
+        "duration": 8.58
+    },
+    {
+        "text": "at this point we know for sure that our",
+        "start": 364.159,
+        "duration": 4.201
+    },
+    {
+        "text": "substring doesn't have any duplicates we",
+        "start": 366.38,
+        "duration": 4.56
+    },
+    {
+        "text": "can potentially update ours our result",
+        "start": 368.36,
+        "duration": 4.38
+    },
+    {
+        "text": "variable which I never declared so let",
+        "start": 370.94,
+        "duration": 3.719
+    },
+    {
+        "text": "me declare it up here result is",
+        "start": 372.74,
+        "duration": 4.5
+    },
+    {
+        "text": "initially going to be 0 and now we can",
+        "start": 374.659,
+        "duration": 4.551
+    },
+    {
+        "text": "update our results so we can potentially",
+        "start": 377.24,
+        "duration": 6.66
+    },
+    {
+        "text": "make it larger than it is if the current",
+        "start": 379.21,
+        "duration": 6.699
+    },
+    {
+        "text": "window size is greater than what it is",
+        "start": 383.9,
+        "duration": 4.44
+    },
+    {
+        "text": "right now which we can compute by right",
+        "start": 385.909,
+        "duration": 7.32
+    },
+    {
+        "text": "minus left plus 1 and then at the end",
+        "start": 388.34,
+        "duration": 7.28
+    },
+    {
+        "text": "once we've gone through the entire or",
+        "start": 393.229,
+        "duration": 5.31
+    },
+    {
+        "text": "substring we can return the result if",
+        "start": 395.62,
+        "duration": 5.17
+    },
+    {
+        "text": "this was helpful leave a like in",
+        "start": 398.539,
+        "duration": 5.811
+    },
+    {
+        "text": "subscribe and thank you for watching",
+        "start": 400.79,
+        "duration": 3.56
+    }
+]

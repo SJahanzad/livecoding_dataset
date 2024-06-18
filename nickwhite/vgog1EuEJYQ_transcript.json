@@ -1,0 +1,847 @@
+[
+    {
+        "text": "hey what's up guys it's Nick white here",
+        "start": 0.0,
+        "duration": 5.339
+    },
+    {
+        "text": "I do tech encoding stuff on Twitch in",
+        "start": 2.31,
+        "duration": 5.04
+    },
+    {
+        "text": "YouTube and I do all the leak oh",
+        "start": 5.339,
+        "duration": 3.541
+    },
+    {
+        "text": "problems if you want to see something",
+        "start": 7.35,
+        "duration": 3.93
+    },
+    {
+        "text": "explained or just see how it works check",
+        "start": 8.88,
+        "duration": 2.96
+    },
+    {
+        "text": "them out",
+        "start": 11.28,
+        "duration": 3.12
+    },
+    {
+        "text": "this one is called backspace string",
+        "start": 11.84,
+        "duration": 5.08
+    },
+    {
+        "text": "compare it's classified as a two pointer",
+        "start": 14.4,
+        "duration": 5.639
+    },
+    {
+        "text": "problem on leak code I guess it kind of",
+        "start": 16.92,
+        "duration": 6.21
+    },
+    {
+        "text": "is so let's just do a given two strings",
+        "start": 20.039,
+        "duration": 6.121
+    },
+    {
+        "text": "s and T return if they're equal when",
+        "start": 23.13,
+        "duration": 4.77
+    },
+    {
+        "text": "they're both typed into empty text",
+        "start": 26.16,
+        "duration": 5.76
+    },
+    {
+        "text": "editors a hash symbol means a backspace",
+        "start": 27.9,
+        "duration": 6.51
+    },
+    {
+        "text": "character so if we see a hash symbol",
+        "start": 31.92,
+        "duration": 4.56
+    },
+    {
+        "text": "we're deleting the character right",
+        "start": 34.41,
+        "duration": 5.73
+    },
+    {
+        "text": "before so we see here a B hash symbol C",
+        "start": 36.48,
+        "duration": 6.81
+    },
+    {
+        "text": "or a d hash symbol C so we delete the D",
+        "start": 40.14,
+        "duration": 5.669
+    },
+    {
+        "text": "we would delete the B we'd have AC AC",
+        "start": 43.29,
+        "duration": 5.76
+    },
+    {
+        "text": "they're the same that's true",
+        "start": 45.809,
+        "duration": 5.791
+    },
+    {
+        "text": "both of this is two hash symbols there's",
+        "start": 49.05,
+        "duration": 4.47
+    },
+    {
+        "text": "two letters we delete them both same",
+        "start": 51.6,
+        "duration": 2.34
+    },
+    {
+        "text": "here",
+        "start": 53.52,
+        "duration": 2.58
+    },
+    {
+        "text": "they both are empty strings same thing",
+        "start": 53.94,
+        "duration": 4.23
+    },
+    {
+        "text": "you kind of get it think about it a",
+        "start": 56.1,
+        "duration": 3.799
+    },
+    {
+        "text": "little more if you go it's pretty easy",
+        "start": 58.17,
+        "duration": 5.189
+    },
+    {
+        "text": "so the method here is basically we set a",
+        "start": 59.899,
+        "duration": 6.04
+    },
+    {
+        "text": "pointer to the ends of both of these",
+        "start": 63.359,
+        "duration": 4.861
+    },
+    {
+        "text": "strings and we loop through backwards",
+        "start": 65.939,
+        "duration": 4.201
+    },
+    {
+        "text": "through both of the strings letter by",
+        "start": 68.22,
+        "duration": 4.68
+    },
+    {
+        "text": "letter and if we see a hash symbol will",
+        "start": 70.14,
+        "duration": 5.729
+    },
+    {
+        "text": "keep track of that using a hat like a",
+        "start": 72.9,
+        "duration": 5.609
+    },
+    {
+        "text": "deletion variable so we'll have a will",
+        "start": 75.869,
+        "duration": 5.551
+    },
+    {
+        "text": "have like a skip variable will increment",
+        "start": 78.509,
+        "duration": 4.921
+    },
+    {
+        "text": "the Skip variable and then if we see",
+        "start": 81.42,
+        "duration": 3.57
+    },
+    {
+        "text": "something that isn't a hash symbol and",
+        "start": 83.43,
+        "duration": 3.979
+    },
+    {
+        "text": "the Skip variable is greater than zero",
+        "start": 84.99,
+        "duration": 5.04
+    },
+    {
+        "text": "we'll just skip that letter and then",
+        "start": 87.409,
+        "duration": 4.481
+    },
+    {
+        "text": "once we get to the end of all that crap",
+        "start": 90.03,
+        "duration": 3.39
+    },
+    {
+        "text": "we'll just make sure whatever is left",
+        "start": 91.89,
+        "duration": 4.56
+    },
+    {
+        "text": "over is the same so it's kind of a long",
+        "start": 93.42,
+        "duration": 4.83
+    },
+    {
+        "text": "problem so let's just get started here",
+        "start": 96.45,
+        "duration": 4.95
+    },
+    {
+        "text": "so you could have you got to have the",
+        "start": 98.25,
+        "duration": 6.81
+    },
+    {
+        "text": "pointers so s pointer and T pointer",
+        "start": 101.4,
+        "duration": 6.06
+    },
+    {
+        "text": "we'll call them so s pointer will be set",
+        "start": 105.06,
+        "duration": 4.83
+    },
+    {
+        "text": "to s dot lead - one to the end of the",
+        "start": 107.46,
+        "duration": 5.43
+    },
+    {
+        "text": "string and T pointer will be set to the",
+        "start": 109.89,
+        "duration": 8.04
+    },
+    {
+        "text": "end of the T string and then we'll have",
+        "start": 112.89,
+        "duration": 7.86
+    },
+    {
+        "text": "our skip variables so s skips will be",
+        "start": 117.93,
+        "duration": 5.67
+    },
+    {
+        "text": "set to 0 and then key skips here as well",
+        "start": 120.75,
+        "duration": 5.07
+    },
+    {
+        "text": "and then we'll have our loop condition",
+        "start": 123.6,
+        "duration": 4.409
+    },
+    {
+        "text": "so this is a loop condition so we're",
+        "start": 125.82,
+        "duration": 3.749
+    },
+    {
+        "text": "gonna make sure that s pointer",
+        "start": 128.009,
+        "duration": 5.281
+    },
+    {
+        "text": "greater than or equal to 0 or T is",
+        "start": 129.569,
+        "duration": 5.04
+    },
+    {
+        "text": "greater than or equal to 0",
+        "start": 133.29,
+        "duration": 3.419
+    },
+    {
+        "text": "two-pointer is greater than or equal to",
+        "start": 134.609,
+        "duration": 5.55
+    },
+    {
+        "text": "0 because this is the loop 8 we're",
+        "start": 136.709,
+        "duration": 5.191
+    },
+    {
+        "text": "looping backwards for both of them want",
+        "start": 140.159,
+        "duration": 2.851
+    },
+    {
+        "text": "to make sure that we're getting to the",
+        "start": 141.9,
+        "duration": 2.22
+    },
+    {
+        "text": "end of both of them",
+        "start": 143.01,
+        "duration": 2.459
+    },
+    {
+        "text": "and then we're gonna have these little",
+        "start": 144.12,
+        "duration": 3.72
+    },
+    {
+        "text": "sub loops LS pointers greater than or",
+        "start": 145.469,
+        "duration": 7.05
+    },
+    {
+        "text": "equal to 0 we're going to our first",
+        "start": 147.84,
+        "duration": 9.09
+    },
+    {
+        "text": "check if s jar at s pointer so if the",
+        "start": 152.519,
+        "duration": 6.571
+    },
+    {
+        "text": "last character I'll be our first check",
+        "start": 156.93,
+        "duration": 8.729
+    },
+    {
+        "text": "here sorry is equal to the hash",
+        "start": 159.09,
+        "duration": 8.519
+    },
+    {
+        "text": "character and you gotta make sure you",
+        "start": 165.659,
+        "duration": 3.601
+    },
+    {
+        "text": "have single quotes here for a character",
+        "start": 167.609,
+        "duration": 6.481
+    },
+    {
+        "text": "in Java then we see the hash character",
+        "start": 169.26,
+        "duration": 7.92
+    },
+    {
+        "text": "we increment our skips variable so our s",
+        "start": 174.09,
+        "duration": 5.009
+    },
+    {
+        "text": "skips variable gets incremented this we",
+        "start": 177.18,
+        "duration": 3.839
+    },
+    {
+        "text": "can have to skip the next letter and",
+        "start": 179.099,
+        "duration": 3.961
+    },
+    {
+        "text": "then we decrement our s pointer to go to",
+        "start": 181.019,
+        "duration": 5.821
+    },
+    {
+        "text": "the next letter before you know just add",
+        "start": 183.06,
+        "duration": 6.929
+    },
+    {
+        "text": "increment and loop thing else that means",
+        "start": 186.84,
+        "duration": 5.34
+    },
+    {
+        "text": "else if that means we don't see the hash",
+        "start": 189.989,
+        "duration": 5.25
+    },
+    {
+        "text": "symbol anymore but if we don't if we see",
+        "start": 192.18,
+        "duration": 5.94
+    },
+    {
+        "text": "an actual letter now but we have if our",
+        "start": 195.239,
+        "duration": 6.15
+    },
+    {
+        "text": "skips variable is greater than 1 so but",
+        "start": 198.12,
+        "duration": 6.569
+    },
+    {
+        "text": "if we see an actual letter but our skips",
+        "start": 201.389,
+        "duration": 5.581
+    },
+    {
+        "text": "variable is greater than 0 then we will",
+        "start": 204.689,
+        "duration": 4.651
+    },
+    {
+        "text": "just skip the letter screw of the ladder",
+        "start": 206.97,
+        "duration": 4.019
+    },
+    {
+        "text": "screw the letter we got to delete it",
+        "start": 209.34,
+        "duration": 4.769
+    },
+    {
+        "text": "basically so we just deeper munch our",
+        "start": 210.989,
+        "duration": 6.36
+    },
+    {
+        "text": "pointer and then we can determine our",
+        "start": 214.109,
+        "duration": 6.3
+    },
+    {
+        "text": "skips variable now because we used that",
+        "start": 217.349,
+        "duration": 7.2
+    },
+    {
+        "text": "skip otherwise we're just break and this",
+        "start": 220.409,
+        "duration": 6.78
+    },
+    {
+        "text": "is the exact same loop for the T stuff",
+        "start": 224.549,
+        "duration": 4.89
+    },
+    {
+        "text": "it's kind of a long solution here so I",
+        "start": 227.189,
+        "duration": 4.741
+    },
+    {
+        "text": "don't want to waste everyone's time so",
+        "start": 229.439,
+        "duration": 4.5
+    },
+    {
+        "text": "we're just got to change the T pointer",
+        "start": 231.93,
+        "duration": 4.32
+    },
+    {
+        "text": "is greater than or equal to 0 while th",
+        "start": 233.939,
+        "duration": 5.28
+    },
+    {
+        "text": "are at T pointer is equal to hash symbol",
+        "start": 236.25,
+        "duration": 6.84
+    },
+    {
+        "text": "T skips plus equals whines - winner -",
+        "start": 239.219,
+        "duration": 8.781
+    },
+    {
+        "text": "equals 1 he skips is greater than 0",
+        "start": 243.09,
+        "duration": 4.91
+    },
+    {
+        "text": "skips same stuff and then we just have",
+        "start": 248.75,
+        "duration": 6.34
+    },
+    {
+        "text": "now once we get through both of these",
+        "start": 253.079,
+        "duration": 4.02
+    },
+    {
+        "text": "loops we've gone through both of those",
+        "start": 255.09,
+        "duration": 3.66
+    },
+    {
+        "text": "strings and we've skipped all the",
+        "start": 257.099,
+        "duration": 3.63
+    },
+    {
+        "text": "letters we needed to skip we did these",
+        "start": 258.75,
+        "duration": 3.22
+    },
+    {
+        "text": "little backspace thing",
+        "start": 260.729,
+        "duration": 3.641
+    },
+    {
+        "text": "and now we have the meat and potatoes we",
+        "start": 261.97,
+        "duration": 5.04
+    },
+    {
+        "text": "got whatever we actually need left so if",
+        "start": 264.37,
+        "duration": 5.04
+    },
+    {
+        "text": "s skips is greater than or equal to zero",
+        "start": 267.01,
+        "duration": 7.95
+    },
+    {
+        "text": "and we'll make sure that T skips is also",
+        "start": 269.41,
+        "duration": 12.3
+    },
+    {
+        "text": "greater than or equal zero and s s car",
+        "start": 274.96,
+        "duration": 14.37
+    },
+    {
+        "text": "at s pointer is not equal to t dot char",
+        "start": 281.71,
+        "duration": 13.08
+    },
+    {
+        "text": "at t pointer then we return false so",
+        "start": 289.33,
+        "duration": 7.62
+    },
+    {
+        "text": "this basically is when we have whatever",
+        "start": 294.79,
+        "duration": 4.38
+    },
+    {
+        "text": "is left so in this case we'd have a Cu",
+        "start": 296.95,
+        "duration": 4.71
+    },
+    {
+        "text": "left on both of them so now we have AC",
+        "start": 299.17,
+        "duration": 4.41
+    },
+    {
+        "text": "left and we're still looping backwards",
+        "start": 301.66,
+        "duration": 3.87
+    },
+    {
+        "text": "but we want to make sure that the",
+        "start": 303.58,
+        "duration": 3.96
+    },
+    {
+        "text": "characters are the same so if we had a C",
+        "start": 305.53,
+        "duration": 4.2
+    },
+    {
+        "text": "and a B we would want to give it a false",
+        "start": 307.54,
+        "duration": 4.23
+    },
+    {
+        "text": "because the B and the C have to be the",
+        "start": 309.73,
+        "duration": 5.04
+    },
+    {
+        "text": "same so AC and AC we see the C and the C",
+        "start": 311.77,
+        "duration": 5.25
+    },
+    {
+        "text": "keep going the a and the A and then",
+        "start": 314.77,
+        "duration": 4.83
+    },
+    {
+        "text": "we're gonna be good if we make it after",
+        "start": 317.02,
+        "duration": 5.19
+    },
+    {
+        "text": "that if we make it after all that then",
+        "start": 319.6,
+        "duration": 7.11
+    },
+    {
+        "text": "we can return true we're gonna keep",
+        "start": 322.21,
+        "duration": 6.95
+    },
+    {
+        "text": "decrementing our pointers here obviously",
+        "start": 326.71,
+        "duration": 5.13
+    },
+    {
+        "text": "backwards because we made it to the we",
+        "start": 329.16,
+        "duration": 4.36
+    },
+    {
+        "text": "made it past everything we just got to",
+        "start": 331.84,
+        "duration": 3.15
+    },
+    {
+        "text": "keep decrementing well throughout all",
+        "start": 333.52,
+        "duration": 3.99
+    },
+    {
+        "text": "these loops and then there's one last",
+        "start": 334.99,
+        "duration": 5.07
+    },
+    {
+        "text": "check that we got to do is the kind of",
+        "start": 337.51,
+        "duration": 4.77
+    },
+    {
+        "text": "like the length so let's say one of",
+        "start": 340.06,
+        "duration": 4.14
+    },
+    {
+        "text": "these was AC and one of them was just a",
+        "start": 342.28,
+        "duration": 5.22
+    },
+    {
+        "text": "we got to check the lengths which so all",
+        "start": 344.2,
+        "duration": 7.26
+    },
+    {
+        "text": "we have to do to do that is if s pointer",
+        "start": 347.5,
+        "duration": 10.11
+    },
+    {
+        "text": "is greater than or equal to 0 is not",
+        "start": 351.46,
+        "duration": 12.0
+    },
+    {
+        "text": "equal to T pointer is greater than or",
+        "start": 357.61,
+        "duration": 10.65
+    },
+    {
+        "text": "equal to 0 return false this was our",
+        "start": 363.46,
+        "duration": 7.709
+    },
+    {
+        "text": "last final track here because this would",
+        "start": 368.26,
+        "duration": 5.94
+    },
+    {
+        "text": "do as we go through everything if one of",
+        "start": 371.169,
+        "duration": 4.681
+    },
+    {
+        "text": "the pointers hits zero before the other",
+        "start": 374.2,
+        "duration": 3.18
+    },
+    {
+        "text": "one that means the lengths are different",
+        "start": 375.85,
+        "duration": 4.11
+    },
+    {
+        "text": "at the ends of at the end of this loop",
+        "start": 377.38,
+        "duration": 4.62
+    },
+    {
+        "text": "thing and if the lines are different",
+        "start": 379.96,
+        "duration": 4.62
+    },
+    {
+        "text": "they're obviously not the same because",
+        "start": 382.0,
+        "duration": 4.77
+    },
+    {
+        "text": "you know s pointer if s pointer is",
+        "start": 384.58,
+        "duration": 5.01
+    },
+    {
+        "text": "greater than or equal to 0 still and T",
+        "start": 386.77,
+        "duration": 4.56
+    },
+    {
+        "text": "pointer is not so this would be true and",
+        "start": 389.59,
+        "duration": 3.57
+    },
+    {
+        "text": "this would be false and we would have to",
+        "start": 391.33,
+        "duration": 3.57
+    },
+    {
+        "text": "return false because if the lengths are",
+        "start": 393.16,
+        "duration": 2.49
+    },
+    {
+        "text": "different",
+        "start": 394.9,
+        "duration": 2.7
+    },
+    {
+        "text": "obviously not going to be the same",
+        "start": 395.65,
+        "duration": 4.59
+    },
+    {
+        "text": "strength so this is actually a longer",
+        "start": 397.6,
+        "duration": 5.25
+    },
+    {
+        "text": "one hopefully this works first try I was",
+        "start": 400.24,
+        "duration": 4.799
+    },
+    {
+        "text": "messing up a little bit here earlier",
+        "start": 402.85,
+        "duration": 7.8
+    },
+    {
+        "text": "because it is longer oh my gosh suspense",
+        "start": 405.039,
+        "duration": 10.47
+    },
+    {
+        "text": "guys suspenseful oh no string index out",
+        "start": 410.65,
+        "duration": 7.19
+    },
+    {
+        "text": "of range what did I do",
+        "start": 415.509,
+        "duration": 7.291
+    },
+    {
+        "text": "chief when I start best corners T touch",
+        "start": 417.84,
+        "duration": 10.75
+    },
+    {
+        "text": "RT pointer s skips oh sorry s pointer",
+        "start": 422.8,
+        "duration": 7.89
+    },
+    {
+        "text": "greater than right yeah see it's kind of",
+        "start": 428.59,
+        "duration": 4.91
+    },
+    {
+        "text": "longer so you do make syntax errors here",
+        "start": 430.69,
+        "duration": 4.86
+    },
+    {
+        "text": "once and well there we go we got the",
+        "start": 433.5,
+        "duration": 5.47
+    },
+    {
+        "text": "success so that's pretty much it",
+        "start": 435.55,
+        "duration": 5.339
+    },
+    {
+        "text": "hopefully you guys understand that it's",
+        "start": 438.97,
+        "duration": 3.69
+    },
+    {
+        "text": "a long one so it was a little harder to",
+        "start": 440.889,
+        "duration": 3.601
+    },
+    {
+        "text": "explain basically you're going backwards",
+        "start": 442.66,
+        "duration": 3.84
+    },
+    {
+        "text": "you're doing all the skips and you're",
+        "start": 444.49,
+        "duration": 3.87
+    },
+    {
+        "text": "comparing at the end you got all these",
+        "start": 446.5,
+        "duration": 5.43
+    },
+    {
+        "text": "loops going on but yeah it's a I think",
+        "start": 448.36,
+        "duration": 5.04
+    },
+    {
+        "text": "it's a really cool problem I like it a",
+        "start": 451.93,
+        "duration": 4.169
+    },
+    {
+        "text": "lot so thank you guys for watching check",
+        "start": 453.4,
+        "duration": 5.489
+    },
+    {
+        "text": "out all the other videos and do them all",
+        "start": 456.099,
+        "duration": 6.051
+    },
+    {
+        "text": "so see you guys",
+        "start": 458.889,
+        "duration": 3.261
+    }
+]

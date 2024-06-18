@@ -1,0 +1,1332 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 4.0
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.92,
+        "duration": 4.72
+    },
+    {
+        "text": "let's solve the problem reverse bits and",
+        "start": 4.0,
+        "duration": 4.8
+    },
+    {
+        "text": "this happens to be another problem from",
+        "start": 6.64,
+        "duration": 5.039
+    },
+    {
+        "text": "the blind 75 list or list of common leak",
+        "start": 8.8,
+        "duration": 4.4
+    },
+    {
+        "text": "code problems that we've been tracking",
+        "start": 11.679,
+        "duration": 3.201
+    },
+    {
+        "text": "in this spreadsheet we have a solution",
+        "start": 13.2,
+        "duration": 3.28
+    },
+    {
+        "text": "for the vast majority of them and i'll",
+        "start": 14.88,
+        "duration": 3.52
+    },
+    {
+        "text": "be doing a few more of the binary",
+        "start": 16.48,
+        "duration": 4.08
+    },
+    {
+        "text": "questions the one today we'll be doing",
+        "start": 18.4,
+        "duration": 4.4
+    },
+    {
+        "text": "is this one reverse bits so this is a",
+        "start": 20.56,
+        "duration": 4.32
+    },
+    {
+        "text": "good problem to kind of go over and",
+        "start": 22.8,
+        "duration": 4.479
+    },
+    {
+        "text": "learn or refresh yourself on the bit",
+        "start": 24.88,
+        "duration": 5.68
+    },
+    {
+        "text": "manipulation operations so we're given a",
+        "start": 27.279,
+        "duration": 6.401
+    },
+    {
+        "text": "32-bit unsigned integer and basically we",
+        "start": 30.56,
+        "duration": 5.679
+    },
+    {
+        "text": "want to reverse all of the bits of this",
+        "start": 33.68,
+        "duration": 5.28
+    },
+    {
+        "text": "integer so like in this example this is",
+        "start": 36.239,
+        "duration": 4.801
+    },
+    {
+        "text": "the integer represented in binary of",
+        "start": 38.96,
+        "duration": 4.0
+    },
+    {
+        "text": "course we might not be given the integer",
+        "start": 41.04,
+        "duration": 3.76
+    },
+    {
+        "text": "in binary you know that we might be",
+        "start": 42.96,
+        "duration": 4.24
+    },
+    {
+        "text": "given the integer 4 which in binary we",
+        "start": 44.8,
+        "duration": 4.96
+    },
+    {
+        "text": "know it looks like this and then we'd",
+        "start": 47.2,
+        "duration": 4.08
+    },
+    {
+        "text": "want to reverse",
+        "start": 49.76,
+        "duration": 4.08
+    },
+    {
+        "text": "all of the bits for it so basically",
+        "start": 51.28,
+        "duration": 5.04
+    },
+    {
+        "text": "we would you know the reversal is going",
+        "start": 53.84,
+        "duration": 4.64
+    },
+    {
+        "text": "to look something like this",
+        "start": 56.32,
+        "duration": 3.6
+    },
+    {
+        "text": "right and then we want to return that",
+        "start": 58.48,
+        "duration": 3.52
+    },
+    {
+        "text": "reversed integer of course we'll be",
+        "start": 59.92,
+        "duration": 4.8
+    },
+    {
+        "text": "returning a one value so let's say this",
+        "start": 62.0,
+        "duration": 4.56
+    },
+    {
+        "text": "is the 32-bit integer and let's just say",
+        "start": 64.72,
+        "duration": 3.759
+    },
+    {
+        "text": "it's four just because we don't want to",
+        "start": 66.56,
+        "duration": 4.8
+    },
+    {
+        "text": "do a super long binary integer like this",
+        "start": 68.479,
+        "duration": 4.801
+    },
+    {
+        "text": "there are many ways to kind of do this",
+        "start": 71.36,
+        "duration": 4.64
+    },
+    {
+        "text": "problem right suppose we declare an",
+        "start": 73.28,
+        "duration": 4.96
+    },
+    {
+        "text": "output variable for result and this is",
+        "start": 76.0,
+        "duration": 5.36
+    },
+    {
+        "text": "where we put the last bit the",
+        "start": 78.24,
+        "duration": 5.36
+    },
+    {
+        "text": "31st bit and then over here is where we",
+        "start": 81.36,
+        "duration": 4.0
+    },
+    {
+        "text": "put the zeroth bit right so we have 32",
+        "start": 83.6,
+        "duration": 4.32
+    },
+    {
+        "text": "bits in the output initially we'll just",
+        "start": 85.36,
+        "duration": 4.56
+    },
+    {
+        "text": "set all of these to",
+        "start": 87.92,
+        "duration": 3.6
+    },
+    {
+        "text": "zero right",
+        "start": 89.92,
+        "duration": 5.28
+    },
+    {
+        "text": "so we want to go bit by bit in the input",
+        "start": 91.52,
+        "duration": 6.239
+    },
+    {
+        "text": "right we'll start at the ones bit we",
+        "start": 95.2,
+        "duration": 4.72
+    },
+    {
+        "text": "want to get what is over here if it's a",
+        "start": 97.759,
+        "duration": 4.561
+    },
+    {
+        "text": "zero or if it's a one and then we want",
+        "start": 99.92,
+        "duration": 4.159
+    },
+    {
+        "text": "to take it and then put it over here in",
+        "start": 102.32,
+        "duration": 3.04
+    },
+    {
+        "text": "this case it's a zero so we're just",
+        "start": 104.079,
+        "duration": 3.36
+    },
+    {
+        "text": "going to put a zero over here right",
+        "start": 105.36,
+        "duration": 3.439
+    },
+    {
+        "text": "basically we're reversing right we're",
+        "start": 107.439,
+        "duration": 3.921
+    },
+    {
+        "text": "taking the bit from here putting it in",
+        "start": 108.799,
+        "duration": 5.28
+    },
+    {
+        "text": "this spot right just in reverse order",
+        "start": 111.36,
+        "duration": 4.399
+    },
+    {
+        "text": "pretty much like we would do with",
+        "start": 114.079,
+        "duration": 4.08
+    },
+    {
+        "text": "reversing a string next we're gonna go",
+        "start": 115.759,
+        "duration": 5.121
+    },
+    {
+        "text": "to this one put it in the next spot so",
+        "start": 118.159,
+        "duration": 4.721
+    },
+    {
+        "text": "we'll have another zero here and then",
+        "start": 120.88,
+        "duration": 4.559
+    },
+    {
+        "text": "we'll take a look at this one put it in",
+        "start": 122.88,
+        "duration": 4.559
+    },
+    {
+        "text": "the next spot so we'll have a one here",
+        "start": 125.439,
+        "duration": 4.001
+    },
+    {
+        "text": "and then since the remaining of all of",
+        "start": 127.439,
+        "duration": 3.6
+    },
+    {
+        "text": "these are zeros then we're just gonna",
+        "start": 129.44,
+        "duration": 4.96
+    },
+    {
+        "text": "have zero zero zero uh in the entirety",
+        "start": 131.039,
+        "duration": 6.161
+    },
+    {
+        "text": "of this so uh obviously before when i",
+        "start": 134.4,
+        "duration": 4.8
+    },
+    {
+        "text": "showed us just reversing these four we",
+        "start": 137.2,
+        "duration": 3.92
+    },
+    {
+        "text": "ended up getting an output of one but",
+        "start": 139.2,
+        "duration": 3.44
+    },
+    {
+        "text": "you can see when we actually do it with",
+        "start": 141.12,
+        "duration": 4.24
+    },
+    {
+        "text": "32 bits the result changes right so and",
+        "start": 142.64,
+        "duration": 4.72
+    },
+    {
+        "text": "they specifically tell us this is just a",
+        "start": 145.36,
+        "duration": 4.56
+    },
+    {
+        "text": "32-bit integer so this is going to be a",
+        "start": 147.36,
+        "duration": 5.12
+    },
+    {
+        "text": "pretty large integer and we're this is",
+        "start": 149.92,
+        "duration": 4.0
+    },
+    {
+        "text": "what we're going to end up returning",
+        "start": 152.48,
+        "duration": 3.68
+    },
+    {
+        "text": "right so it's pretty straightforward to",
+        "start": 153.92,
+        "duration": 3.76
+    },
+    {
+        "text": "understand what exactly we're doing at",
+        "start": 156.16,
+        "duration": 3.12
+    },
+    {
+        "text": "least with the solution that i'm showing",
+        "start": 157.68,
+        "duration": 3.52
+    },
+    {
+        "text": "you now the question is how can we",
+        "start": 159.28,
+        "duration": 4.72
+    },
+    {
+        "text": "actually do these operations for example",
+        "start": 161.2,
+        "duration": 5.759
+    },
+    {
+        "text": "how can we go bit by bit get the first",
+        "start": 164.0,
+        "duration": 5.28
+    },
+    {
+        "text": "bit get the next bit get the next bit",
+        "start": 166.959,
+        "duration": 4.0
+    },
+    {
+        "text": "all the way until we get to the end",
+        "start": 169.28,
+        "duration": 4.56
+    },
+    {
+        "text": "right how can we go and get each bit",
+        "start": 170.959,
+        "duration": 6.161
+    },
+    {
+        "text": "well one way in binary is to just take",
+        "start": 173.84,
+        "duration": 7.759
+    },
+    {
+        "text": "uh this bit right and it with a one the",
+        "start": 177.12,
+        "duration": 8.08
+    },
+    {
+        "text": "and operation right logic and what we're",
+        "start": 181.599,
+        "duration": 5.601
+    },
+    {
+        "text": "saying is if",
+        "start": 185.2,
+        "duration": 4.64
+    },
+    {
+        "text": "since this is a zero right if we take",
+        "start": 187.2,
+        "duration": 3.759
+    },
+    {
+        "text": "zero",
+        "start": 189.84,
+        "duration": 4.88
+    },
+    {
+        "text": "and it with one we get the output to",
+        "start": 190.959,
+        "duration": 5.601
+    },
+    {
+        "text": "that is going to be zero right which",
+        "start": 194.72,
+        "duration": 3.28
+    },
+    {
+        "text": "makes sense because we want to know if",
+        "start": 196.56,
+        "duration": 4.16
+    },
+    {
+        "text": "this is a zero or a one so if we end it",
+        "start": 198.0,
+        "duration": 5.2
+    },
+    {
+        "text": "with a one we'll get zero if this value",
+        "start": 200.72,
+        "duration": 4.56
+    },
+    {
+        "text": "is a zero that's exactly what we want if",
+        "start": 203.2,
+        "duration": 5.36
+    },
+    {
+        "text": "this value is a one and we end it with a",
+        "start": 205.28,
+        "duration": 6.72
+    },
+    {
+        "text": "one then we get one right which which is",
+        "start": 208.56,
+        "duration": 5.12
+    },
+    {
+        "text": "good because if this is a one then we",
+        "start": 212.0,
+        "duration": 3.519
+    },
+    {
+        "text": "want to get a one in the output so",
+        "start": 213.68,
+        "duration": 3.44
+    },
+    {
+        "text": "that's the operation we're going to do",
+        "start": 215.519,
+        "duration": 4.64
+    },
+    {
+        "text": "logic and to figure out what the bit is",
+        "start": 217.12,
+        "duration": 5.679
+    },
+    {
+        "text": "now that's easy in the case we're just",
+        "start": 220.159,
+        "duration": 5.281
+    },
+    {
+        "text": "looking at the ones place over here but",
+        "start": 222.799,
+        "duration": 4.961
+    },
+    {
+        "text": "what if we want to look at this next",
+        "start": 225.44,
+        "duration": 4.24
+    },
+    {
+        "text": "spot we want to look at the",
+        "start": 227.76,
+        "duration": 3.92
+    },
+    {
+        "text": "uh two's place right and then what if we",
+        "start": 229.68,
+        "duration": 4.639
+    },
+    {
+        "text": "want to look in this spot etc etc how",
+        "start": 231.68,
+        "duration": 4.72
+    },
+    {
+        "text": "are we going to do that well instead of",
+        "start": 234.319,
+        "duration": 4.0
+    },
+    {
+        "text": "taking this input value and then ending",
+        "start": 236.4,
+        "duration": 4.08
+    },
+    {
+        "text": "it with a one we're going to end it with",
+        "start": 238.319,
+        "duration": 3.2
+    },
+    {
+        "text": "a one",
+        "start": 240.48,
+        "duration": 4.959
+    },
+    {
+        "text": "shifted to the left each time we you",
+        "start": 241.519,
+        "duration": 6.881
+    },
+    {
+        "text": "know move a different spot in the input",
+        "start": 245.439,
+        "duration": 5.601
+    },
+    {
+        "text": "right how can we shift a one to the left",
+        "start": 248.4,
+        "duration": 5.28
+    },
+    {
+        "text": "that's also another binary operation so",
+        "start": 251.04,
+        "duration": 3.839
+    },
+    {
+        "text": "for example if we had something like",
+        "start": 253.68,
+        "duration": 4.399
+    },
+    {
+        "text": "zero one and then we do the shift",
+        "start": 254.879,
+        "duration": 6.08
+    },
+    {
+        "text": "operation to the left this is a bit",
+        "start": 258.079,
+        "duration": 4.641
+    },
+    {
+        "text": "shift operation if we shift it to the",
+        "start": 260.959,
+        "duration": 3.68
+    },
+    {
+        "text": "left all what it does is it shifts all",
+        "start": 262.72,
+        "duration": 4.56
+    },
+    {
+        "text": "of the bits to the left by one and it",
+        "start": 264.639,
+        "duration": 6.081
+    },
+    {
+        "text": "replaces the one spot with a zero so in",
+        "start": 267.28,
+        "duration": 5.52
+    },
+    {
+        "text": "the output we'll get this when we shift",
+        "start": 270.72,
+        "duration": 4.4
+    },
+    {
+        "text": "this by one we'll get this we'll have",
+        "start": 272.8,
+        "duration": 4.959
+    },
+    {
+        "text": "shifted the bit to the left by one and",
+        "start": 275.12,
+        "duration": 4.72
+    },
+    {
+        "text": "notice how if we have a one over here",
+        "start": 277.759,
+        "duration": 3.44
+    },
+    {
+        "text": "and then a zero over here and then we",
+        "start": 279.84,
+        "duration": 3.68
+    },
+    {
+        "text": "have zeros all the way for the remaining",
+        "start": 281.199,
+        "duration": 5.121
+    },
+    {
+        "text": "of it when we get the output value it's",
+        "start": 283.52,
+        "duration": 6.08
+    },
+    {
+        "text": "also going to be a 32-bit integer right",
+        "start": 286.32,
+        "duration": 5.28
+    },
+    {
+        "text": "but this is the only spot we're gonna",
+        "start": 289.6,
+        "duration": 4.48
+    },
+    {
+        "text": "care about because the rest of the spots",
+        "start": 291.6,
+        "duration": 5.039
+    },
+    {
+        "text": "are gonna be zero by default because if",
+        "start": 294.08,
+        "duration": 5.28
+    },
+    {
+        "text": "we and zero with anything else we're",
+        "start": 296.639,
+        "duration": 4.481
+    },
+    {
+        "text": "gonna get a zero in the output whether",
+        "start": 299.36,
+        "duration": 4.559
+    },
+    {
+        "text": "you know we have a one over here or not",
+        "start": 301.12,
+        "duration": 4.16
+    },
+    {
+        "text": "if we and these together we're gonna get",
+        "start": 303.919,
+        "duration": 4.161
+    },
+    {
+        "text": "a zero in the output okay so that covers",
+        "start": 305.28,
+        "duration": 4.88
+    },
+    {
+        "text": "how we're gonna get each of these bits",
+        "start": 308.08,
+        "duration": 4.959
+    },
+    {
+        "text": "now how are we going to put them in the",
+        "start": 310.16,
+        "duration": 6.56
+    },
+    {
+        "text": "output remember how initially we had a a",
+        "start": 313.039,
+        "duration": 7.281
+    },
+    {
+        "text": "result that was just filled with zeros",
+        "start": 316.72,
+        "duration": 5.28
+    },
+    {
+        "text": "right and we're going to start at the",
+        "start": 320.32,
+        "duration": 4.24
+    },
+    {
+        "text": "beginning take every you know if we have",
+        "start": 322.0,
+        "duration": 4.639
+    },
+    {
+        "text": "a one here we want to insert this one",
+        "start": 324.56,
+        "duration": 4.32
+    },
+    {
+        "text": "over here if it's a zero over here then",
+        "start": 326.639,
+        "duration": 4.081
+    },
+    {
+        "text": "we just want to leave the output as a",
+        "start": 328.88,
+        "duration": 3.68
+    },
+    {
+        "text": "zero and then we want to move to the",
+        "start": 330.72,
+        "duration": 4.4
+    },
+    {
+        "text": "next spot to the right and do the exact",
+        "start": 332.56,
+        "duration": 4.24
+    },
+    {
+        "text": "same thing so we're going to follow a",
+        "start": 335.12,
+        "duration": 4.56
+    },
+    {
+        "text": "similar pattern here if we had a 1 we",
+        "start": 336.8,
+        "duration": 5.6
+    },
+    {
+        "text": "would take the 1 shift it to the left by",
+        "start": 339.68,
+        "duration": 4.799
+    },
+    {
+        "text": "31 right because that's going to be the",
+        "start": 342.4,
+        "duration": 3.6
+    },
+    {
+        "text": "spot all the way to the left we're going",
+        "start": 344.479,
+        "duration": 3.921
+    },
+    {
+        "text": "to take this shift it to the left by 31",
+        "start": 346.0,
+        "duration": 4.16
+    },
+    {
+        "text": "so then we'll have a suppose a 1 here",
+        "start": 348.4,
+        "duration": 4.079
+    },
+    {
+        "text": "and then 0 0 0 what we want to do in",
+        "start": 350.16,
+        "duration": 4.8
+    },
+    {
+        "text": "this case is not logic and but we want",
+        "start": 352.479,
+        "duration": 4.881
+    },
+    {
+        "text": "to do logic or when we're trying to",
+        "start": 354.96,
+        "duration": 4.64
+    },
+    {
+        "text": "figure out what to replace it with so",
+        "start": 357.36,
+        "duration": 3.76
+    },
+    {
+        "text": "for example if we had a 0 here we would",
+        "start": 359.6,
+        "duration": 3.599
+    },
+    {
+        "text": "want to replace this with a 1. it works",
+        "start": 361.12,
+        "duration": 4.72
+    },
+    {
+        "text": "because we take 0 or it logic or it with",
+        "start": 363.199,
+        "duration": 5.601
+    },
+    {
+        "text": "1 we get a 1. if we take 0 logic or it",
+        "start": 365.84,
+        "duration": 5.84
+    },
+    {
+        "text": "with a 0 we get a 0. so if we had",
+        "start": 368.8,
+        "duration": 4.64
+    },
+    {
+        "text": "instead of having a 1 here if we just",
+        "start": 371.68,
+        "duration": 3.519
+    },
+    {
+        "text": "had a 0 here we wouldn't want to replace",
+        "start": 373.44,
+        "duration": 3.68
+    },
+    {
+        "text": "this we won't want to leave it as a 0.",
+        "start": 375.199,
+        "duration": 4.161
+    },
+    {
+        "text": "so that's what logic or can accomplish",
+        "start": 377.12,
+        "duration": 4.16
+    },
+    {
+        "text": "for us and similar to the previous",
+        "start": 379.36,
+        "duration": 4.08
+    },
+    {
+        "text": "example if we had something like this",
+        "start": 381.28,
+        "duration": 4.0
+    },
+    {
+        "text": "and we were trying to logic or this",
+        "start": 383.44,
+        "duration": 3.599
+    },
+    {
+        "text": "right we would want to put this one in",
+        "start": 385.28,
+        "duration": 3.919
+    },
+    {
+        "text": "this spot we don't want to get rid of",
+        "start": 387.039,
+        "duration": 4.16
+    },
+    {
+        "text": "this one right suppose we had already",
+        "start": 389.199,
+        "duration": 3.681
+    },
+    {
+        "text": "put a 1 over here we don't want to get",
+        "start": 391.199,
+        "duration": 4.481
+    },
+    {
+        "text": "rid of it so notice how if we if we if",
+        "start": 392.88,
+        "duration": 6.319
+    },
+    {
+        "text": "we take this logic or it with this we",
+        "start": 395.68,
+        "duration": 5.76
+    },
+    {
+        "text": "will end up changing this bit this will",
+        "start": 399.199,
+        "duration": 5.12
+    },
+    {
+        "text": "be changed to a one but this bit will",
+        "start": 401.44,
+        "duration": 4.319
+    },
+    {
+        "text": "stay the same which is what we want to",
+        "start": 404.319,
+        "duration": 2.88
+    },
+    {
+        "text": "do because if we're gonna have a zero",
+        "start": 405.759,
+        "duration": 2.961
+    },
+    {
+        "text": "here and we're gonna have zeros in every",
+        "start": 407.199,
+        "duration": 3.84
+    },
+    {
+        "text": "other position the other remaining bits",
+        "start": 408.72,
+        "duration": 4.08
+    },
+    {
+        "text": "are not going to end up getting changed",
+        "start": 411.039,
+        "duration": 3.6
+    },
+    {
+        "text": "if they are ones they're gonna remain as",
+        "start": 412.8,
+        "duration": 3.839
+    },
+    {
+        "text": "ones if they're zeros they're gonna",
+        "start": 414.639,
+        "duration": 4.721
+    },
+    {
+        "text": "remain as zeros so those are some kind",
+        "start": 416.639,
+        "duration": 5.441
+    },
+    {
+        "text": "of basics about bit operations logic and",
+        "start": 419.36,
+        "duration": 4.0
+    },
+    {
+        "text": "logic or",
+        "start": 422.08,
+        "duration": 3.6
+    },
+    {
+        "text": "bit shifting and that's kind of all you",
+        "start": 423.36,
+        "duration": 4.08
+    },
+    {
+        "text": "need to be able to solve this problem in",
+        "start": 425.68,
+        "duration": 3.919
+    },
+    {
+        "text": "the simplest way so now i think we are",
+        "start": 427.44,
+        "duration": 3.759
+    },
+    {
+        "text": "ready to dive into the code and it's",
+        "start": 429.599,
+        "duration": 2.801
+    },
+    {
+        "text": "going to be a little bit shorter than",
+        "start": 431.199,
+        "duration": 3.201
+    },
+    {
+        "text": "you might expect let's declare that",
+        "start": 432.4,
+        "duration": 4.239
+    },
+    {
+        "text": "result variable that i said so it's",
+        "start": 434.4,
+        "duration": 4.639
+    },
+    {
+        "text": "going to be a 0 meaning all 32 bits of",
+        "start": 436.639,
+        "duration": 4.56
+    },
+    {
+        "text": "it are going to be initialized as 0 and",
+        "start": 439.039,
+        "duration": 3.761
+    },
+    {
+        "text": "we're going to go through every single",
+        "start": 441.199,
+        "duration": 4.321
+    },
+    {
+        "text": "bit in the input end so i'm going to say",
+        "start": 442.8,
+        "duration": 5.519
+    },
+    {
+        "text": "for i in range 32 because we know it's",
+        "start": 445.52,
+        "duration": 5.2
+    },
+    {
+        "text": "going to be up to 32. i think we could",
+        "start": 448.319,
+        "duration": 6.32
+    },
+    {
+        "text": "change the logic of this while n is",
+        "start": 450.72,
+        "duration": 5.68
+    },
+    {
+        "text": "you know non-zero and we could",
+        "start": 454.639,
+        "duration": 4.321
+    },
+    {
+        "text": "continuously update n i'm just going to",
+        "start": 456.4,
+        "duration": 4.639
+    },
+    {
+        "text": "do it this kind of simple way so",
+        "start": 458.96,
+        "duration": 3.6
+    },
+    {
+        "text": "remember the first thing we want to do",
+        "start": 461.039,
+        "duration": 4.88
+    },
+    {
+        "text": "is we want to get the i th bit of n so",
+        "start": 462.56,
+        "duration": 5.759
+    },
+    {
+        "text": "how can we do that well remember we were",
+        "start": 465.919,
+        "duration": 3.601
+    },
+    {
+        "text": "going to take n",
+        "start": 468.319,
+        "duration": 4.801
+    },
+    {
+        "text": "and it with 1 to get the i bit but if we",
+        "start": 469.52,
+        "duration": 6.32
+    },
+    {
+        "text": "just end it with 1 every single time",
+        "start": 473.12,
+        "duration": 6.079
+    },
+    {
+        "text": "we're only going to get the first bit",
+        "start": 475.84,
+        "duration": 5.039
+    },
+    {
+        "text": "right we want to get the i bit so",
+        "start": 479.199,
+        "duration": 3.761
+    },
+    {
+        "text": "instead of ending it with one well we",
+        "start": 480.879,
+        "duration": 6.0
+    },
+    {
+        "text": "can take n shift it to the right by i i",
+        "start": 482.96,
+        "duration": 5.04
+    },
+    {
+        "text": "don't think that's what i said in the",
+        "start": 486.879,
+        "duration": 2.641
+    },
+    {
+        "text": "drawing picture i thought i think i said",
+        "start": 488.0,
+        "duration": 3.599
+    },
+    {
+        "text": "we're gonna take the ones a bit and then",
+        "start": 489.52,
+        "duration": 4.0
+    },
+    {
+        "text": "shift it to the left but if we actually",
+        "start": 491.599,
+        "duration": 4.88
+    },
+    {
+        "text": "take n shift it all the way to the right",
+        "start": 493.52,
+        "duration": 6.239
+    },
+    {
+        "text": "then in n we will have the the target",
+        "start": 496.479,
+        "duration": 4.801
+    },
+    {
+        "text": "bit that we're looking for and it will",
+        "start": 499.759,
+        "duration": 4.081
+    },
+    {
+        "text": "be in the one spot so then we can just",
+        "start": 501.28,
+        "duration": 6.0
+    },
+    {
+        "text": "take this and end it with one and then",
+        "start": 503.84,
+        "duration": 5.039
+    },
+    {
+        "text": "we'll get the result bit that we're",
+        "start": 507.28,
+        "duration": 5.04
+    },
+    {
+        "text": "looking for in the ones spot so this bit",
+        "start": 508.879,
+        "duration": 6.881
+    },
+    {
+        "text": "will be either one or it will be zero",
+        "start": 512.32,
+        "duration": 6.399
+    },
+    {
+        "text": "and then we want to logic or it with the",
+        "start": 515.76,
+        "duration": 5.44
+    },
+    {
+        "text": "output to put that bit in the output how",
+        "start": 518.719,
+        "duration": 4.32
+    },
+    {
+        "text": "can we do that is it going to be enough",
+        "start": 521.2,
+        "duration": 5.04
+    },
+    {
+        "text": "to just say result logic or the bit no",
+        "start": 523.039,
+        "duration": 4.8
+    },
+    {
+        "text": "because if we do it like this we're only",
+        "start": 526.24,
+        "duration": 3.84
+    },
+    {
+        "text": "going to be updating the one spot of",
+        "start": 527.839,
+        "duration": 4.081
+    },
+    {
+        "text": "this result but we want to be updating",
+        "start": 530.08,
+        "duration": 4.08
+    },
+    {
+        "text": "it in the reverse order we want to start",
+        "start": 531.92,
+        "duration": 4.32
+    },
+    {
+        "text": "at the largest bit and then work our way",
+        "start": 534.16,
+        "duration": 3.84
+    },
+    {
+        "text": "down how can we do that well we have",
+        "start": 536.24,
+        "duration": 3.68
+    },
+    {
+        "text": "this i variable right it's going to go",
+        "start": 538.0,
+        "duration": 5.279
+    },
+    {
+        "text": "from 0 to 31. so how about we do this we",
+        "start": 539.92,
+        "duration": 9.359
+    },
+    {
+        "text": "shift our bit to the right by 31 minus i",
+        "start": 543.279,
+        "duration": 7.921
+    },
+    {
+        "text": "so on the first iteration of the loop we",
+        "start": 549.279,
+        "duration": 4.801
+    },
+    {
+        "text": "will be getting the first bit from n and",
+        "start": 551.2,
+        "duration": 6.319
+    },
+    {
+        "text": "putting it in the 31 spot of the result",
+        "start": 554.08,
+        "duration": 5.36
+    },
+    {
+        "text": "and the next iteration will be doing the",
+        "start": 557.519,
+        "duration": 4.081
+    },
+    {
+        "text": "opposite will be getting the bit in",
+        "start": 559.44,
+        "duration": 5.44
+    },
+    {
+        "text": "index 1 from n and putting it in index",
+        "start": 561.6,
+        "duration": 5.52
+    },
+    {
+        "text": "30 in the output so then we're going to",
+        "start": 564.88,
+        "duration": 4.88
+    },
+    {
+        "text": "keep doing that and",
+        "start": 567.12,
+        "duration": 4.159
+    },
+    {
+        "text": "this is the operation we're doing and we",
+        "start": 569.76,
+        "duration": 3.199
+    },
+    {
+        "text": "want to set the result equal to the",
+        "start": 571.279,
+        "duration": 4.56
+    },
+    {
+        "text": "result of this logic or operation and",
+        "start": 572.959,
+        "duration": 4.801
+    },
+    {
+        "text": "that is the entire code once we're done",
+        "start": 575.839,
+        "duration": 3.68
+    },
+    {
+        "text": "with that we can go ahead and return the",
+        "start": 577.76,
+        "duration": 4.32
+    },
+    {
+        "text": "result so this is the simplest way to do",
+        "start": 579.519,
+        "duration": 5.361
+    },
+    {
+        "text": "it it is constant time big o of one",
+        "start": 582.08,
+        "duration": 4.0
+    },
+    {
+        "text": "because we're guaranteed that there's",
+        "start": 584.88,
+        "duration": 3.68
+    },
+    {
+        "text": "going to be 32 bits so",
+        "start": 586.08,
+        "duration": 4.48
+    },
+    {
+        "text": "the solution is not going to scale",
+        "start": 588.56,
+        "duration": 4.24
+    },
+    {
+        "text": "regardless of whatever the input n is as",
+        "start": 590.56,
+        "duration": 4.399
+    },
+    {
+        "text": "long as it's 32 bits and where you know",
+        "start": 592.8,
+        "duration": 3.92
+    },
+    {
+        "text": "the memory we're using as well is just a",
+        "start": 594.959,
+        "duration": 4.32
+    },
+    {
+        "text": "single variable right so this is just an",
+        "start": 596.72,
+        "duration": 4.72
+    },
+    {
+        "text": "o of one time and space solution so i",
+        "start": 599.279,
+        "duration": 3.601
+    },
+    {
+        "text": "hope that this was helpful i hope it",
+        "start": 601.44,
+        "duration": 2.959
+    },
+    {
+        "text": "taught you a little bit about binary",
+        "start": 602.88,
+        "duration": 4.0
+    },
+    {
+        "text": "operations if it was please like and",
+        "start": 604.399,
+        "duration": 4.801
+    },
+    {
+        "text": "subscribe it supports the channel a lot",
+        "start": 606.88,
+        "duration": 4.56
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 609.2,
+        "duration": 5.12
+    },
+    {
+        "text": "thanks for watching",
+        "start": 611.44,
+        "duration": 2.88
+    }
+]

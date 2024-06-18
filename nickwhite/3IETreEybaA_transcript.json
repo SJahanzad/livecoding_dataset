@@ -1,0 +1,1067 @@
+[
+    {
+        "text": "alright hey what's up guys they're quite",
+        "start": 0.35,
+        "duration": 5.529
+    },
+    {
+        "text": "here to tech encoding stuff on twitch",
+        "start": 2.879,
+        "duration": 5.64
+    },
+    {
+        "text": "and YouTube and yeah that's cool right",
+        "start": 5.879,
+        "duration": 7.05
+    },
+    {
+        "text": "yep very cool right this is the longest",
+        "start": 8.519,
+        "duration": 6.721
+    },
+    {
+        "text": "substring without repeating characters",
+        "start": 12.929,
+        "duration": 4.02
+    },
+    {
+        "text": "so this is given a string find the",
+        "start": 15.24,
+        "duration": 3.69
+    },
+    {
+        "text": "length of the longest substring",
+        "start": 16.949,
+        "duration": 3.961
+    },
+    {
+        "text": "substring meaning part of the string",
+        "start": 18.93,
+        "duration": 4.019
+    },
+    {
+        "text": "that doesn't have repeating characters",
+        "start": 20.91,
+        "duration": 4.56
+    },
+    {
+        "text": "so in this case you know this is a",
+        "start": 22.949,
+        "duration": 6.601
+    },
+    {
+        "text": "substring any this is a substring this",
+        "start": 25.47,
+        "duration": 7.199
+    },
+    {
+        "text": "is a substring and as long as it doesn't",
+        "start": 29.55,
+        "duration": 4.77
+    },
+    {
+        "text": "have repeating characters we want the",
+        "start": 32.669,
+        "duration": 3.361
+    },
+    {
+        "text": "longest version that doesn't have",
+        "start": 34.32,
+        "duration": 4.62
+    },
+    {
+        "text": "repeating characters right so you know",
+        "start": 36.03,
+        "duration": 4.38
+    },
+    {
+        "text": "this doesn't have repeating characters",
+        "start": 38.94,
+        "duration": 4.35
+    },
+    {
+        "text": "in its length too but this does have",
+        "start": 40.41,
+        "duration": 4.29
+    },
+    {
+        "text": "repeating characters so that doesn't",
+        "start": 43.29,
+        "duration": 3.39
+    },
+    {
+        "text": "count you know anything with repeating",
+        "start": 44.7,
+        "duration": 5.94
+    },
+    {
+        "text": "characters you know doesn't count so",
+        "start": 46.68,
+        "duration": 6.33
+    },
+    {
+        "text": "right here this is the longest one in",
+        "start": 50.64,
+        "duration": 4.98
+    },
+    {
+        "text": "this case B is only one cuz it's just",
+        "start": 53.01,
+        "duration": 4.59
+    },
+    {
+        "text": "one character is the longest one because",
+        "start": 55.62,
+        "duration": 4.86
+    },
+    {
+        "text": "all of them are B's and then we have you",
+        "start": 57.6,
+        "duration": 5.459
+    },
+    {
+        "text": "know PW is the longest I'm seeing here",
+        "start": 60.48,
+        "duration": 7.44
+    },
+    {
+        "text": "and then we see ok wke right there so",
+        "start": 63.059,
+        "duration": 7.111
+    },
+    {
+        "text": "yeah pretty easy it's literally just a",
+        "start": 67.92,
+        "duration": 6.12
+    },
+    {
+        "text": "sliding window problem like we just did",
+        "start": 70.17,
+        "duration": 5.46
+    },
+    {
+        "text": "I just did want a couple minutes ago so",
+        "start": 74.04,
+        "duration": 4.41
+    },
+    {
+        "text": "it's very familiar to me um basically",
+        "start": 75.63,
+        "duration": 3.779
+    },
+    {
+        "text": "what you're gonna have is you're gonna",
+        "start": 78.45,
+        "duration": 3.239
+    },
+    {
+        "text": "have two pointers and you're going to",
+        "start": 79.409,
+        "duration": 3.931
+    },
+    {
+        "text": "set them both to the beginning and",
+        "start": 81.689,
+        "duration": 4.261
+    },
+    {
+        "text": "you're gonna have one pointer keep going",
+        "start": 83.34,
+        "duration": 3.959
+    },
+    {
+        "text": "one pointer is gonna stay at the",
+        "start": 85.95,
+        "duration": 3.059
+    },
+    {
+        "text": "beginning and one pointer is gonna move",
+        "start": 87.299,
+        "duration": 5.341
+    },
+    {
+        "text": "the wind you know expand the window and",
+        "start": 89.009,
+        "duration": 6.301
+    },
+    {
+        "text": "go and make sure that none of the",
+        "start": 92.64,
+        "duration": 5.1
+    },
+    {
+        "text": "characters are the same right so one of",
+        "start": 95.31,
+        "duration": 4.8
+    },
+    {
+        "text": "them's gonna be sitting that a and then",
+        "start": 97.74,
+        "duration": 4.589
+    },
+    {
+        "text": "one of them is gonna go okay a is new B",
+        "start": 100.11,
+        "duration": 4.5
+    },
+    {
+        "text": "is new C is new and we're gonna add",
+        "start": 102.329,
+        "duration": 4.231
+    },
+    {
+        "text": "these to a hash hash that's good for",
+        "start": 104.61,
+        "duration": 3.57
+    },
+    {
+        "text": "this cuz hash cuts keep track of unique",
+        "start": 106.56,
+        "duration": 3.989
+    },
+    {
+        "text": "things and then once we see another a",
+        "start": 108.18,
+        "duration": 5.28
+    },
+    {
+        "text": "we're gonna say up we already saw a and",
+        "start": 110.549,
+        "duration": 4.68
+    },
+    {
+        "text": "then you have that other pointer at the",
+        "start": 113.46,
+        "duration": 3.57
+    },
+    {
+        "text": "beginning and you're like okay get rid",
+        "start": 115.229,
+        "duration": 3.57
+    },
+    {
+        "text": "of that a and we'll just keep a maximum",
+        "start": 117.03,
+        "duration": 3.18
+    },
+    {
+        "text": "throughout the whole thing",
+        "start": 118.799,
+        "duration": 3.841
+    },
+    {
+        "text": "so whenever the window we're expanding",
+        "start": 120.21,
+        "duration": 4.259
+    },
+    {
+        "text": "the window with our two pointers and",
+        "start": 122.64,
+        "duration": 4.2
+    },
+    {
+        "text": "we're gonna keep a maximum to keep track",
+        "start": 124.469,
+        "duration": 4.081
+    },
+    {
+        "text": "of when the window is the biggest",
+        "start": 126.84,
+        "duration": 3.389
+    },
+    {
+        "text": "meaning the longest subs",
+        "start": 128.55,
+        "duration": 5.159
+    },
+    {
+        "text": "with unique characters okay that's it so",
+        "start": 130.229,
+        "duration": 5.311
+    },
+    {
+        "text": "pretty easy so you could call your",
+        "start": 133.709,
+        "duration": 3.931
+    },
+    {
+        "text": "pointers whatever you want we can do I",
+        "start": 135.54,
+        "duration": 5.58
+    },
+    {
+        "text": "and J we can do a point or B pointer I'm",
+        "start": 137.64,
+        "duration": 5.22
+    },
+    {
+        "text": "gonna do I and J just because I wrote it",
+        "start": 141.12,
+        "duration": 3.3
+    },
+    {
+        "text": "with a point or B point or a second ago",
+        "start": 142.86,
+        "duration": 4.02
+    },
+    {
+        "text": "I got a little bit messy so we have",
+        "start": 144.42,
+        "duration": 4.53
+    },
+    {
+        "text": "these are pointers this is gonna sit at",
+        "start": 146.88,
+        "duration": 3.329
+    },
+    {
+        "text": "the beginning this is going to go out",
+        "start": 148.95,
+        "duration": 2.82
+    },
+    {
+        "text": "and make sure that everything's distinct",
+        "start": 150.209,
+        "duration": 4.021
+    },
+    {
+        "text": "and then we're gonna have our max okay",
+        "start": 151.77,
+        "duration": 3.75
+    },
+    {
+        "text": "and then we need a hash set of",
+        "start": 154.23,
+        "duration": 6.509
+    },
+    {
+        "text": "characters this will only hold up to a",
+        "start": 155.52,
+        "duration": 7.14
+    },
+    {
+        "text": "certain number of characters I mean how",
+        "start": 160.739,
+        "duration": 3.541
+    },
+    {
+        "text": "many distinct characters are there if",
+        "start": 162.66,
+        "duration": 4.14
+    },
+    {
+        "text": "we're counting if it's alphanumeric",
+        "start": 164.28,
+        "duration": 3.81
+    },
+    {
+        "text": "that's a little bit more but if we're",
+        "start": 166.8,
+        "duration": 2.73
+    },
+    {
+        "text": "just counting letters of the alphabet in",
+        "start": 168.09,
+        "duration": 4.26
+    },
+    {
+        "text": "lowercase or uppercase it's really not",
+        "start": 169.53,
+        "duration": 7.44
+    },
+    {
+        "text": "that big 26 or you know that's that's or",
+        "start": 172.35,
+        "duration": 6.449
+    },
+    {
+        "text": "depending on what the character set is",
+        "start": 176.97,
+        "duration": 4.89
+    },
+    {
+        "text": "that we're using but um it's not gonna",
+        "start": 178.799,
+        "duration": 5.52
+    },
+    {
+        "text": "be scaling with the data you know it's",
+        "start": 181.86,
+        "duration": 4.62
+    },
+    {
+        "text": "unique characters so it's it's the",
+        "start": 184.319,
+        "duration": 3.601
+    },
+    {
+        "text": "biggest it's ever gonna get is whatever",
+        "start": 186.48,
+        "duration": 3.81
+    },
+    {
+        "text": "our restrictions are so it's not",
+        "start": 187.92,
+        "duration": 5.039
+    },
+    {
+        "text": "anything we have to worry about it so",
+        "start": 190.29,
+        "duration": 4.5
+    },
+    {
+        "text": "you can technically count in this",
+        "start": 192.959,
+        "duration": 3.271
+    },
+    {
+        "text": "constant it's not going to go up to a",
+        "start": 194.79,
+        "duration": 3.63
+    },
+    {
+        "text": "million or anything like that so then",
+        "start": 196.23,
+        "duration": 5.729
+    },
+    {
+        "text": "we're gonna be looping here we'll use a",
+        "start": 198.42,
+        "duration": 7.26
+    },
+    {
+        "text": "while loop so the J the second pointer",
+        "start": 201.959,
+        "duration": 5.34
+    },
+    {
+        "text": "that's going out and making sure that",
+        "start": 205.68,
+        "duration": 3.24
+    },
+    {
+        "text": "we're finding to have all distinct",
+        "start": 207.299,
+        "duration": 3.72
+    },
+    {
+        "text": "characters this is gonna get to the end",
+        "start": 208.92,
+        "duration": 3.9
+    },
+    {
+        "text": "the one that's expanding the window is",
+        "start": 211.019,
+        "duration": 4.44
+    },
+    {
+        "text": "gonna get to the end before the one that",
+        "start": 212.82,
+        "duration": 5.07
+    },
+    {
+        "text": "sits at the beginning so we're gonna do",
+        "start": 215.459,
+        "duration": 5.31
+    },
+    {
+        "text": "a check to say okay while J is less than",
+        "start": 217.89,
+        "duration": 7.17
+    },
+    {
+        "text": "s dot length okay so what we're gonna do",
+        "start": 220.769,
+        "duration": 9.78
+    },
+    {
+        "text": "is we're gonna say okay if the hash set",
+        "start": 225.06,
+        "duration": 15.87
+    },
+    {
+        "text": "if hash set dot contains STR at I to our",
+        "start": 230.549,
+        "duration": 14.551
+    },
+    {
+        "text": "beat I mean J because J is our second",
+        "start": 240.93,
+        "duration": 7.589
+    },
+    {
+        "text": "pointer that's going out and moving",
+        "start": 245.1,
+        "duration": 7.199
+    },
+    {
+        "text": "along here if the hash so I star J first",
+        "start": 248.519,
+        "duration": 6.84
+    },
+    {
+        "text": "is a right they're both at a a I and J",
+        "start": 252.299,
+        "duration": 5.551
+    },
+    {
+        "text": "are pointers I think it's a little bit",
+        "start": 255.359,
+        "duration": 3.961
+    },
+    {
+        "text": "easier to do this actually now I'm",
+        "start": 257.85,
+        "duration": 1.97
+    },
+    {
+        "text": "thinking",
+        "start": 259.32,
+        "duration": 3.28
+    },
+    {
+        "text": "you know the were you gonna use pointers",
+        "start": 259.82,
+        "duration": 5.58
+    },
+    {
+        "text": "a pointer B pointer a pointer is gonna",
+        "start": 262.6,
+        "duration": 4.24
+    },
+    {
+        "text": "sit at the beginning B pointers gonna go",
+        "start": 265.4,
+        "duration": 2.61
+    },
+    {
+        "text": "out and expand the window",
+        "start": 266.84,
+        "duration": 4.32
+    },
+    {
+        "text": "so if our character at our B pointer",
+        "start": 268.01,
+        "duration": 4.56
+    },
+    {
+        "text": "that's going to expand the window there",
+        "start": 271.16,
+        "duration": 3.18
+    },
+    {
+        "text": "both of the first character right now if",
+        "start": 272.57,
+        "duration": 4.23
+    },
+    {
+        "text": "the character of the string if the first",
+        "start": 274.34,
+        "duration": 4.05
+    },
+    {
+        "text": "character of the string is not in the",
+        "start": 276.8,
+        "duration": 2.25
+    },
+    {
+        "text": "hash set",
+        "start": 278.39,
+        "duration": 2.19
+    },
+    {
+        "text": "okay well let's add it to the hash set",
+        "start": 279.05,
+        "duration": 3.09
+    },
+    {
+        "text": "we said we found a new character",
+        "start": 280.58,
+        "duration": 5.43
+    },
+    {
+        "text": "so we'll say okay hashset add and we'll",
+        "start": 282.14,
+        "duration": 7.44
+    },
+    {
+        "text": "add our new character here see the only",
+        "start": 286.01,
+        "duration": 4.86
+    },
+    {
+        "text": "point I didn't want to do it's because",
+        "start": 289.58,
+        "duration": 3.36
+    },
+    {
+        "text": "of all the parentheses okay there we go",
+        "start": 290.87,
+        "duration": 4.35
+    },
+    {
+        "text": "so we added to our character and then we",
+        "start": 292.94,
+        "duration": 4.7
+    },
+    {
+        "text": "increment it we only increment the",
+        "start": 295.22,
+        "duration": 5.1
+    },
+    {
+        "text": "second pointer to keep going out in it",
+        "start": 297.64,
+        "duration": 6.76
+    },
+    {
+        "text": "expanding the window and yeah that's it",
+        "start": 300.32,
+        "duration": 6.33
+    },
+    {
+        "text": "and then each time we see a new",
+        "start": 304.4,
+        "duration": 4.17
+    },
+    {
+        "text": "character and this is the case where we",
+        "start": 306.65,
+        "duration": 3.39
+    },
+    {
+        "text": "see a new character because the hash",
+        "start": 308.57,
+        "duration": 3.33
+    },
+    {
+        "text": "that doesn't contain it yet we're also",
+        "start": 310.04,
+        "duration": 3.87
+    },
+    {
+        "text": "gonna update the max so we're gonna say",
+        "start": 311.9,
+        "duration": 7.2
+    },
+    {
+        "text": "okay max is equal to math max of you",
+        "start": 313.91,
+        "duration": 9.15
+    },
+    {
+        "text": "know whatever the hash set sizes because",
+        "start": 319.1,
+        "duration": 5.4
+    },
+    {
+        "text": "this is how many unique characters we",
+        "start": 323.06,
+        "duration": 4.41
+    },
+    {
+        "text": "have against the current max so we",
+        "start": 324.5,
+        "duration": 5.58
+    },
+    {
+        "text": "update the maximum each iteration when",
+        "start": 327.47,
+        "duration": 5.76
+    },
+    {
+        "text": "we find a new unique character with the",
+        "start": 330.08,
+        "duration": 5.04
+    },
+    {
+        "text": "hash set size because that's the size of",
+        "start": 333.23,
+        "duration": 3.75
+    },
+    {
+        "text": "all the unique characters we have okay",
+        "start": 335.12,
+        "duration": 4.14
+    },
+    {
+        "text": "we're on a roll here now and the only",
+        "start": 336.98,
+        "duration": 3.78
+    },
+    {
+        "text": "other cases okay",
+        "start": 339.26,
+        "duration": 3.27
+    },
+    {
+        "text": "this character is already in the hash",
+        "start": 340.76,
+        "duration": 3.36
+    },
+    {
+        "text": "set so if the character is already in",
+        "start": 342.53,
+        "duration": 3.57
+    },
+    {
+        "text": "the hash set meaning we find a duplicate",
+        "start": 344.12,
+        "duration": 3.48
+    },
+    {
+        "text": "so B's already in the hash set and we",
+        "start": 346.1,
+        "duration": 3.87
+    },
+    {
+        "text": "find a new B we're gonna have to remove",
+        "start": 347.6,
+        "duration": 5.64
+    },
+    {
+        "text": "from the beginning we're gonna remove an",
+        "start": 349.97,
+        "duration": 5.28
+    },
+    {
+        "text": "old character and all you have to do to",
+        "start": 353.24,
+        "duration": 5.07
+    },
+    {
+        "text": "do that is you do hash set remove s",
+        "start": 355.25,
+        "duration": 6.21
+    },
+    {
+        "text": "touch are a pointer and that's because a",
+        "start": 358.31,
+        "duration": 7.41
+    },
+    {
+        "text": "pointer is the preview though you know",
+        "start": 361.46,
+        "duration": 7.86
+    },
+    {
+        "text": "the last character that we saw so and at",
+        "start": 365.72,
+        "duration": 5.61
+    },
+    {
+        "text": "that point we're just gonna increment a",
+        "start": 369.32,
+        "duration": 4.86
+    },
+    {
+        "text": "character the index of the first pointer",
+        "start": 371.33,
+        "duration": 5.25
+    },
+    {
+        "text": "so it's a sliding window you know they",
+        "start": 374.18,
+        "duration": 5.49
+    },
+    {
+        "text": "both start here B the B pointer goes out",
+        "start": 376.58,
+        "duration": 4.86
+    },
+    {
+        "text": "the second pointer goes out and expands",
+        "start": 379.67,
+        "duration": 4.11
+    },
+    {
+        "text": "the window and we see three and we're",
+        "start": 381.44,
+        "duration": 4.53
+    },
+    {
+        "text": "updating this max so it goes one two",
+        "start": 383.78,
+        "duration": 6.0
+    },
+    {
+        "text": "okay one two three we found three unique",
+        "start": 385.97,
+        "duration": 5.22
+    },
+    {
+        "text": "characters they're all in the hash set",
+        "start": 389.78,
+        "duration": 3.69
+    },
+    {
+        "text": "we keep we update the Mac",
+        "start": 391.19,
+        "duration": 3.81
+    },
+    {
+        "text": "two three because that's the hash set",
+        "start": 393.47,
+        "duration": 4.17
+    },
+    {
+        "text": "sighs then we see a oh it's already in",
+        "start": 395.0,
+        "duration": 4.74
+    },
+    {
+        "text": "the half set okay well we have that",
+        "start": 397.64,
+        "duration": 3.78
+    },
+    {
+        "text": "other pointer at the beginning we pop it",
+        "start": 399.74,
+        "duration": 3.96
+    },
+    {
+        "text": "out of the hash set so now it's BCA we",
+        "start": 401.42,
+        "duration": 4.14
+    },
+    {
+        "text": "keep checking against the max nothing's",
+        "start": 403.7,
+        "duration": 3.54
+    },
+    {
+        "text": "going on though you know because it's",
+        "start": 405.56,
+        "duration": 4.41
+    },
+    {
+        "text": "still three and then we see B up that's",
+        "start": 407.24,
+        "duration": 4.53
+    },
+    {
+        "text": "already in we pop it out you know and",
+        "start": 409.97,
+        "duration": 3.3
+    },
+    {
+        "text": "you just move along it's like a little",
+        "start": 411.77,
+        "duration": 4.5
+    },
+    {
+        "text": "sliding window that's the whole problem",
+        "start": 413.27,
+        "duration": 4.77
+    },
+    {
+        "text": "hopefully I made that clear let me know",
+        "start": 416.27,
+        "duration": 3.06
+    },
+    {
+        "text": "if you guys have any questions I'm",
+        "start": 418.04,
+        "duration": 4.56
+    },
+    {
+        "text": "trying to do these pretty well but you",
+        "start": 419.33,
+        "duration": 5.67
+    },
+    {
+        "text": "know obviously you know it's been a",
+        "start": 422.6,
+        "duration": 3.87
+    },
+    {
+        "text": "while since I did it all the weight",
+        "start": 425.0,
+        "duration": 3.54
+    },
+    {
+        "text": "codes so let me know if you guys have",
+        "start": 426.47,
+        "duration": 3.42
+    },
+    {
+        "text": "any advice for me to make this better",
+        "start": 428.54,
+        "duration": 2.64
+    },
+    {
+        "text": "I've been playing with the microphone",
+        "start": 429.89,
+        "duration": 3.36
+    },
+    {
+        "text": "levels non-stop and I'm having a",
+        "start": 431.18,
+        "duration": 3.84
+    },
+    {
+        "text": "difficult time so I'm sorry if you're",
+        "start": 433.25,
+        "duration": 5.94
+    },
+    {
+        "text": "unhappy with the microphone levels while",
+        "start": 435.02,
+        "duration": 7.89
+    },
+    {
+        "text": "Jay is less than at Wii Fit we remove",
+        "start": 439.19,
+        "duration": 5.91
+    },
+    {
+        "text": "Jay sorry for switching up on you guys",
+        "start": 442.91,
+        "duration": 5.91
+    },
+    {
+        "text": "in the middle of that as well s top",
+        "start": 445.1,
+        "duration": 4.17
+    },
+    {
+        "text": "length",
+        "start": 448.82,
+        "duration": 4.23
+    },
+    {
+        "text": "it's lowercase s sorry for the errors as",
+        "start": 449.27,
+        "duration": 8.34
+    },
+    {
+        "text": "well you know not the best oh my gosh",
+        "start": 453.05,
+        "duration": 9.27
+    },
+    {
+        "text": "guys I'm an idiot okay",
+        "start": 457.61,
+        "duration": 9.9
+    },
+    {
+        "text": "bear with me there we go success finally",
+        "start": 462.32,
+        "duration": 7.29
+    },
+    {
+        "text": "yeah you know I'm not that good I guess",
+        "start": 467.51,
+        "duration": 4.53
+    },
+    {
+        "text": "apparently but that's this is a good",
+        "start": 469.61,
+        "duration": 3.93
+    },
+    {
+        "text": "solution because the hash that is only",
+        "start": 472.04,
+        "duration": 2.85
+    },
+    {
+        "text": "gonna hold a certain amount of unique",
+        "start": 473.54,
+        "duration": 3.27
+    },
+    {
+        "text": "characters there's not we're not dealing",
+        "start": 474.89,
+        "duration": 4.14
+    },
+    {
+        "text": "with what are the restrictions every",
+        "start": 476.81,
+        "duration": 4.14
+    },
+    {
+        "text": "alphabet in the world including Chinese",
+        "start": 479.03,
+        "duration": 3.87
+    },
+    {
+        "text": "characters then it might scale up a",
+        "start": 480.95,
+        "duration": 4.23
+    },
+    {
+        "text": "little bit more but like it's pretty",
+        "start": 482.9,
+        "duration": 3.78
+    },
+    {
+        "text": "much constant we're not gonna get up to",
+        "start": 485.18,
+        "duration": 3.33
+    },
+    {
+        "text": "billions of you know different",
+        "start": 486.68,
+        "duration": 5.489
+    },
+    {
+        "text": "characters it's a hash sad so in this",
+        "start": 488.51,
+        "duration": 5.52
+    },
+    {
+        "text": "case it's pretty good and it's linear",
+        "start": 492.169,
+        "duration": 4.081
+    },
+    {
+        "text": "runtime and linear if it what worst case",
+        "start": 494.03,
+        "duration": 4.98
+    },
+    {
+        "text": "it would be like you know linear space 2",
+        "start": 496.25,
+        "duration": 6.36
+    },
+    {
+        "text": "or not even it would be em you know oven",
+        "start": 499.01,
+        "duration": 7.14
+    },
+    {
+        "text": "runtime o of M 4 M will call the",
+        "start": 502.61,
+        "duration": 5.16
+    },
+    {
+        "text": "character set so if there's a million",
+        "start": 506.15,
+        "duration": 4.11
+    },
+    {
+        "text": "alphabets or whatever then you know that",
+        "start": 507.77,
+        "duration": 5.55
+    },
+    {
+        "text": "would be all right let me know you guys",
+        "start": 510.26,
+        "duration": 5.31
+    },
+    {
+        "text": "think comment blue check out the patreon",
+        "start": 513.32,
+        "duration": 5.099
+    },
+    {
+        "text": "and subscribe and like and all that",
+        "start": 515.57,
+        "duration": 6.17
+    },
+    {
+        "text": "stuff and see",
+        "start": 518.419,
+        "duration": 3.321
+    }
+]

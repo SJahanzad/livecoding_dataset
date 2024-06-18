@@ -1,0 +1,487 @@
+[
+    {
+        "text": "all right hey what's up guys",
+        "start": 0.03,
+        "duration": 5.039
+    },
+    {
+        "text": "Nick white here at detected coding",
+        "start": 3.629,
+        "duration": 2.611
+    },
+    {
+        "text": "someone's watching YouTube I have all",
+        "start": 5.069,
+        "duration": 2.73
+    },
+    {
+        "text": "the leaked code and a current solutions",
+        "start": 6.24,
+        "duration": 2.58
+    },
+    {
+        "text": "and playlist on my channel if you want",
+        "start": 7.799,
+        "duration": 2.521
+    },
+    {
+        "text": "to check those out also everything else",
+        "start": 8.82,
+        "duration": 2.91
+    },
+    {
+        "text": "in the description this problem is",
+        "start": 10.32,
+        "duration": 4.109
+    },
+    {
+        "text": "called transpose matrix given a matrix a",
+        "start": 11.73,
+        "duration": 4.35
+    },
+    {
+        "text": "return the transpose of it",
+        "start": 14.429,
+        "duration": 3.6
+    },
+    {
+        "text": "what is transpose mean I looked it up on",
+        "start": 16.08,
+        "duration": 3.529
+    },
+    {
+        "text": "Google I'll show you what it means",
+        "start": 18.029,
+        "duration": 5.0
+    },
+    {
+        "text": "actually I didn't define transposing",
+        "start": 19.609,
+        "duration": 6.67
+    },
+    {
+        "text": "actually we need transpose transpose is",
+        "start": 23.029,
+        "duration": 4.691
+    },
+    {
+        "text": "caused two or more things to change",
+        "start": 26.279,
+        "duration": 3.601
+    },
+    {
+        "text": "place with each other well that means",
+        "start": 27.72,
+        "duration": 4.379
+    },
+    {
+        "text": "the transpose of matrix is flipped over",
+        "start": 29.88,
+        "duration": 3.87
+    },
+    {
+        "text": "the main diagonal switching the row and",
+        "start": 32.099,
+        "duration": 3.031
+    },
+    {
+        "text": "column indices so we're going to be",
+        "start": 33.75,
+        "duration": 3.51
+    },
+    {
+        "text": "switching row and column indices two or",
+        "start": 35.13,
+        "duration": 5.01
+    },
+    {
+        "text": "more things swapping places okay so as",
+        "start": 37.26,
+        "duration": 5.13
+    },
+    {
+        "text": "you can see here I took the examples and",
+        "start": 40.14,
+        "duration": 4.14
+    },
+    {
+        "text": "I just commented them right here so as",
+        "start": 42.39,
+        "duration": 3.27
+    },
+    {
+        "text": "you can see the rows are becoming",
+        "start": 44.28,
+        "duration": 2.849
+    },
+    {
+        "text": "columns the columns are becoming the",
+        "start": 45.66,
+        "duration": 3.39
+    },
+    {
+        "text": "rows so one two three is gonna be a",
+        "start": 47.129,
+        "duration": 3.721
+    },
+    {
+        "text": "column four five six you'll be a column",
+        "start": 49.05,
+        "duration": 3.75
+    },
+    {
+        "text": "seven x can be calm and down here you",
+        "start": 50.85,
+        "duration": 3.66
+    },
+    {
+        "text": "can see that one two three becoming a",
+        "start": 52.8,
+        "duration": 3.27
+    },
+    {
+        "text": "column is actually going to modify the",
+        "start": 54.51,
+        "duration": 3.09
+    },
+    {
+        "text": "number of rows and columns that are new",
+        "start": 56.07,
+        "duration": 3.96
+    },
+    {
+        "text": "array four five six four by six so what",
+        "start": 57.6,
+        "duration": 4.2
+    },
+    {
+        "text": "are we gonna do we're gonna grab the",
+        "start": 60.03,
+        "duration": 3.84
+    },
+    {
+        "text": "number of rows Y dot length we're gonna",
+        "start": 61.8,
+        "duration": 4.109
+    },
+    {
+        "text": "grab the number of columns if 0 dot",
+        "start": 63.87,
+        "duration": 4.59
+    },
+    {
+        "text": "length sorry about the noise it is I'm",
+        "start": 65.909,
+        "duration": 7.351
+    },
+    {
+        "text": "at school right now so we have int new",
+        "start": 68.46,
+        "duration": 6.99
+    },
+    {
+        "text": "matrix we're gonna define our new matrix",
+        "start": 73.26,
+        "duration": 5.42
+    },
+    {
+        "text": "it's gonna be empty at first and",
+        "start": 75.45,
+        "duration": 5.88
+    },
+    {
+        "text": "obviously some cases we have to swap the",
+        "start": 78.68,
+        "duration": 4.63
+    },
+    {
+        "text": "dimensions this doesn't actually swap",
+        "start": 81.33,
+        "duration": 3.719
+    },
+    {
+        "text": "dimensions because it's a square matrix",
+        "start": 83.31,
+        "duration": 3.78
+    },
+    {
+        "text": "so that's gonna work the best case but",
+        "start": 85.049,
+        "duration": 3.631
+    },
+    {
+        "text": "sometimes we're going to be swapping",
+        "start": 87.09,
+        "duration": 2.88
+    },
+    {
+        "text": "dimension so we just have to account for",
+        "start": 88.68,
+        "duration": 5.04
+    },
+    {
+        "text": "that swapping places right here so when",
+        "start": 89.97,
+        "duration": 6.66
+    },
+    {
+        "text": "we declare this a would be of rows and",
+        "start": 93.72,
+        "duration": 4.77
+    },
+    {
+        "text": "columns but actually we're gonna have a",
+        "start": 96.63,
+        "duration": 3.84
+    },
+    {
+        "text": "different amount of columns and rows if",
+        "start": 98.49,
+        "duration": 3.78
+    },
+    {
+        "text": "it's not a square matrix right so we",
+        "start": 100.47,
+        "duration": 3.329
+    },
+    {
+        "text": "just swap those valleys then it's just a",
+        "start": 102.27,
+        "duration": 3.57
+    },
+    {
+        "text": "simple walk through the original array",
+        "start": 103.799,
+        "duration": 7.311
+    },
+    {
+        "text": "while I is less than rows I plus plus",
+        "start": 105.84,
+        "duration": 7.95
+    },
+    {
+        "text": "four you can do this two super separate",
+        "start": 111.11,
+        "duration": 4.329
+    },
+    {
+        "text": "ways but we're doing it this way we're",
+        "start": 113.79,
+        "duration": 3.81
+    },
+    {
+        "text": "walking through the original array J is",
+        "start": 115.439,
+        "duration": 6.441
+    },
+    {
+        "text": "equal to 0 while J is less than columns",
+        "start": 117.6,
+        "duration": 4.28
+    },
+    {
+        "text": "increment J a little keyboard trouble",
+        "start": 121.939,
+        "duration": 5.921
+    },
+    {
+        "text": "here and then this is the final part",
+        "start": 125.759,
+        "duration": 3.631
+    },
+    {
+        "text": "obviously we're gonna be returning our",
+        "start": 127.86,
+        "duration": 4.11
+    },
+    {
+        "text": "new matrix at the end of this all we",
+        "start": 129.39,
+        "duration": 4.62
+    },
+    {
+        "text": "have to do here now is just",
+        "start": 131.97,
+        "duration": 4.5
+    },
+    {
+        "text": "add values to our new matrix that we're",
+        "start": 134.01,
+        "duration": 4.14
+    },
+    {
+        "text": "going to return at the end so what are",
+        "start": 136.47,
+        "duration": 2.67
+    },
+    {
+        "text": "the values we're going to want to ant",
+        "start": 138.15,
+        "duration": 3.059
+    },
+    {
+        "text": "add if we want to turn the rows into",
+        "start": 139.14,
+        "duration": 3.929
+    },
+    {
+        "text": "columns well if we're looping through a",
+        "start": 141.209,
+        "duration": 3.511
+    },
+    {
+        "text": "you can either loop there air you can",
+        "start": 143.069,
+        "duration": 3.45
+    },
+    {
+        "text": "look through this new matrix but we're",
+        "start": 144.72,
+        "duration": 3.54
+    },
+    {
+        "text": "looping through A's rows and columns",
+        "start": 146.519,
+        "duration": 4.981
+    },
+    {
+        "text": "then we're gonna iterate through a you",
+        "start": 148.26,
+        "duration": 6.72
+    },
+    {
+        "text": "know normally so a of I of J so that",
+        "start": 151.5,
+        "duration": 5.19
+    },
+    {
+        "text": "would be a normal walk through a and",
+        "start": 154.98,
+        "duration": 4.35
+    },
+    {
+        "text": "then we're just going to do a swap here",
+        "start": 156.69,
+        "duration": 4.62
+    },
+    {
+        "text": "to swap all the values right and this",
+        "start": 159.33,
+        "duration": 3.9
+    },
+    {
+        "text": "should be pretty intuitive if we run",
+        "start": 161.31,
+        "duration": 4.92
+    },
+    {
+        "text": "this pretty straightforward here submit",
+        "start": 163.23,
+        "duration": 4.979
+    },
+    {
+        "text": "perfect solution there we go first try",
+        "start": 166.23,
+        "duration": 4.38
+    },
+    {
+        "text": "so there we go",
+        "start": 168.209,
+        "duration": 4.741
+    },
+    {
+        "text": "as you could just to explain it a is",
+        "start": 170.61,
+        "duration": 4.23
+    },
+    {
+        "text": "this is just a for loop through a so",
+        "start": 172.95,
+        "duration": 4.05
+    },
+    {
+        "text": "imagine we were printing these values in",
+        "start": 174.84,
+        "duration": 3.959
+    },
+    {
+        "text": "this example it just got one two three",
+        "start": 177.0,
+        "duration": 4.079
+    },
+    {
+        "text": "four five six seven eight nine new",
+        "start": 178.799,
+        "duration": 4.581
+    },
+    {
+        "text": "matrix J of I is actually going to be",
+        "start": 181.079,
+        "duration": 5.19
+    },
+    {
+        "text": "incrementing J so J is being incremented",
+        "start": 183.38,
+        "duration": 6.579
+    },
+    {
+        "text": "o premier the one four and seven what's",
+        "start": 186.269,
+        "duration": 5.461
+    },
+    {
+        "text": "going to be increment in obviously this",
+        "start": 189.959,
+        "duration": 3.451
+    },
+    {
+        "text": "is an empty array the columns are going",
+        "start": 191.73,
+        "duration": 3.42
+    },
+    {
+        "text": "to be incremented while these rows are",
+        "start": 193.41,
+        "duration": 4.109
+    },
+    {
+        "text": "being incremented so the rows values get",
+        "start": 195.15,
+        "duration": 4.32
+    },
+    {
+        "text": "put into the column values we loop",
+        "start": 197.519,
+        "duration": 3.87
+    },
+    {
+        "text": "through everything that's pretty much it",
+        "start": 199.47,
+        "duration": 3.989
+    },
+    {
+        "text": "thank you guys for watching hopefully",
+        "start": 201.389,
+        "duration": 3.391
+    },
+    {
+        "text": "you understood that let me know if you",
+        "start": 203.459,
+        "duration": 2.821
+    },
+    {
+        "text": "don't understand that or if you have a",
+        "start": 204.78,
+        "duration": 3.39
+    },
+    {
+        "text": "better solution comments below and thank",
+        "start": 206.28,
+        "duration": 4.789
+    },
+    {
+        "text": "you guys and I'll see you guys",
+        "start": 208.17,
+        "duration": 2.899
+    }
+]

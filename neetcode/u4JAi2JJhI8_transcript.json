@@ -1,0 +1,2287 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.6
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.76,
+        "duration": 2.559
+    },
+    {
+        "text": "let's solve",
+        "start": 3.6,
+        "duration": 4.319
+    },
+    {
+        "text": "serialize and deserialize a binary tree",
+        "start": 4.319,
+        "duration": 5.121
+    },
+    {
+        "text": "basically what we're trying to do is",
+        "start": 7.919,
+        "duration": 3.441
+    },
+    {
+        "text": "we're given a binary tree right and we",
+        "start": 9.44,
+        "duration": 3.6
+    },
+    {
+        "text": "want to write two functions for it",
+        "start": 11.36,
+        "duration": 4.239
+    },
+    {
+        "text": "serializing it and then deserializing it",
+        "start": 13.04,
+        "duration": 4.88
+    },
+    {
+        "text": "when we serialize we're taking an object",
+        "start": 15.599,
+        "duration": 3.361
+    },
+    {
+        "text": "right and this object",
+        "start": 17.92,
+        "duration": 2.56
+    },
+    {
+        "text": "in memory it could be anything right",
+        "start": 18.96,
+        "duration": 3.12
+    },
+    {
+        "text": "like you don't know where this node",
+        "start": 20.48,
+        "duration": 2.16
+    },
+    {
+        "text": "could be",
+        "start": 22.08,
+        "duration": 2.16
+    },
+    {
+        "text": "in memory you don't know where this node",
+        "start": 22.64,
+        "duration": 3.04
+    },
+    {
+        "text": "could be we know that there's some links",
+        "start": 24.24,
+        "duration": 2.959
+    },
+    {
+        "text": "and stuff connecting them all together",
+        "start": 25.68,
+        "duration": 1.919
+    },
+    {
+        "text": "but",
+        "start": 27.199,
+        "duration": 2.4
+    },
+    {
+        "text": "what we want to do is take this and put",
+        "start": 27.599,
+        "duration": 4.241
+    },
+    {
+        "text": "it into a very easy to read",
+        "start": 29.599,
+        "duration": 4.401
+    },
+    {
+        "text": "string that could be passed around",
+        "start": 31.84,
+        "duration": 3.76
+    },
+    {
+        "text": "easily right so basically",
+        "start": 34.0,
+        "duration": 4.16
+    },
+    {
+        "text": "for example we could convert basically",
+        "start": 35.6,
+        "duration": 3.68
+    },
+    {
+        "text": "we could convert",
+        "start": 38.16,
+        "duration": 3.36
+    },
+    {
+        "text": "this entire tree into a string something",
+        "start": 39.28,
+        "duration": 3.119
+    },
+    {
+        "text": "like this right",
+        "start": 41.52,
+        "duration": 2.64
+    },
+    {
+        "text": "one is the root node then there's a two",
+        "start": 42.399,
+        "duration": 2.961
+    },
+    {
+        "text": "then there's a three then there's a",
+        "start": 44.16,
+        "duration": 3.12
+    },
+    {
+        "text": "couple nulls because two doesn't have",
+        "start": 45.36,
+        "duration": 2.719
+    },
+    {
+        "text": "any children",
+        "start": 47.28,
+        "duration": 2.56
+    },
+    {
+        "text": "and then there's the other nodes four",
+        "start": 48.079,
+        "duration": 3.12
+    },
+    {
+        "text": "and five right basically",
+        "start": 49.84,
+        "duration": 3.76
+    },
+    {
+        "text": "this is something that's easy to use and",
+        "start": 51.199,
+        "duration": 3.601
+    },
+    {
+        "text": "pass around right",
+        "start": 53.6,
+        "duration": 3.599
+    },
+    {
+        "text": "and we also wanna be able to take a",
+        "start": 54.8,
+        "duration": 4.32
+    },
+    {
+        "text": "string like this and then turn it",
+        "start": 57.199,
+        "duration": 5.281
+    },
+    {
+        "text": "back into a tree so we have to keep that",
+        "start": 59.12,
+        "duration": 5.039
+    },
+    {
+        "text": "in mind it's something that could be",
+        "start": 62.48,
+        "duration": 3.52
+    },
+    {
+        "text": "you know taken back and forth easily",
+        "start": 64.159,
+        "duration": 4.0
+    },
+    {
+        "text": "reversed so there's a lot of different",
+        "start": 66.0,
+        "duration": 3.68
+    },
+    {
+        "text": "ways to solve this problem",
+        "start": 68.159,
+        "duration": 3.681
+    },
+    {
+        "text": "i'm gonna show you a pretty easy and",
+        "start": 69.68,
+        "duration": 3.68
+    },
+    {
+        "text": "straightforward way to do it",
+        "start": 71.84,
+        "duration": 3.52
+    },
+    {
+        "text": "you could use breadth first search",
+        "start": 73.36,
+        "duration": 3.84
+    },
+    {
+        "text": "basically taking the tree and then",
+        "start": 75.36,
+        "duration": 3.84
+    },
+    {
+        "text": "serializing it level by level",
+        "start": 77.2,
+        "duration": 3.84
+    },
+    {
+        "text": "and then you know reading through the",
+        "start": 79.2,
+        "duration": 3.2
+    },
+    {
+        "text": "input level by level",
+        "start": 81.04,
+        "duration": 4.399
+    },
+    {
+        "text": "etc but there's also a way to do it with",
+        "start": 82.4,
+        "duration": 4.48
+    },
+    {
+        "text": "depth first search using",
+        "start": 85.439,
+        "duration": 4.0
+    },
+    {
+        "text": "pre-order traversal and i'll show you",
+        "start": 86.88,
+        "duration": 4.239
+    },
+    {
+        "text": "this way because it requires a little",
+        "start": 89.439,
+        "duration": 2.961
+    },
+    {
+        "text": "bit less code",
+        "start": 91.119,
+        "duration": 2.721
+    },
+    {
+        "text": "so like i mentioned we're going to be",
+        "start": 92.4,
+        "duration": 3.359
+    },
+    {
+        "text": "doing this with pre-order traversal so",
+        "start": 93.84,
+        "duration": 3.12
+    },
+    {
+        "text": "let's just see",
+        "start": 95.759,
+        "duration": 3.121
+    },
+    {
+        "text": "what would a tree like this if we",
+        "start": 96.96,
+        "duration": 3.76
+    },
+    {
+        "text": "converted it into pre-order traversal",
+        "start": 98.88,
+        "duration": 3.84
+    },
+    {
+        "text": "into the form of a string what would it",
+        "start": 100.72,
+        "duration": 3.84
+    },
+    {
+        "text": "look like well obviously the first",
+        "start": 102.72,
+        "duration": 4.24
+    },
+    {
+        "text": "value is one so we're gonna say okay the",
+        "start": 104.56,
+        "duration": 3.839
+    },
+    {
+        "text": "root note is one right that's what",
+        "start": 106.96,
+        "duration": 2.96
+    },
+    {
+        "text": "pre-order means we're gonna do the first",
+        "start": 108.399,
+        "duration": 2.0
+    },
+    {
+        "text": "node",
+        "start": 109.92,
+        "duration": 2.96
+    },
+    {
+        "text": "then we're gonna recursively do the left",
+        "start": 110.399,
+        "duration": 3.68
+    },
+    {
+        "text": "subtree with pre-order",
+        "start": 112.88,
+        "duration": 3.519
+    },
+    {
+        "text": "traversal and then similarly after that",
+        "start": 114.079,
+        "duration": 4.0
+    },
+    {
+        "text": "we're going to do the right subtree in",
+        "start": 116.399,
+        "duration": 2.881
+    },
+    {
+        "text": "pre-order traversal",
+        "start": 118.079,
+        "duration": 3.441
+    },
+    {
+        "text": "now obviously we want to be able to",
+        "start": 119.28,
+        "duration": 3.68
+    },
+    {
+        "text": "separate values",
+        "start": 121.52,
+        "duration": 3.12
+    },
+    {
+        "text": "so we're going to use a comma as a",
+        "start": 122.96,
+        "duration": 3.6
+    },
+    {
+        "text": "delimiter but you could use a space if",
+        "start": 124.64,
+        "duration": 2.88
+    },
+    {
+        "text": "you really wanted to",
+        "start": 126.56,
+        "duration": 2.8
+    },
+    {
+        "text": "or use something else but i'll just use",
+        "start": 127.52,
+        "duration": 4.16
+    },
+    {
+        "text": "a comma so now let's recursively do the",
+        "start": 129.36,
+        "duration": 3.92
+    },
+    {
+        "text": "same thing for the left subtree so",
+        "start": 131.68,
+        "duration": 2.8
+    },
+    {
+        "text": "obviously we have a two",
+        "start": 133.28,
+        "duration": 2.64
+    },
+    {
+        "text": "let's add that too because we're doing",
+        "start": 134.48,
+        "duration": 4.08
+    },
+    {
+        "text": "pre-order and now let's do the left and",
+        "start": 135.92,
+        "duration": 4.64
+    },
+    {
+        "text": "right subtree of two so first let's go",
+        "start": 138.56,
+        "duration": 3.2
+    },
+    {
+        "text": "to the left subtree",
+        "start": 140.56,
+        "duration": 3.679
+    },
+    {
+        "text": "now we're gonna see null right this is",
+        "start": 141.76,
+        "duration": 4.479
+    },
+    {
+        "text": "null it's empty there's nothing there",
+        "start": 144.239,
+        "duration": 5.201
+    },
+    {
+        "text": "but we are gonna add that to our string",
+        "start": 146.239,
+        "duration": 5.28
+    },
+    {
+        "text": "just to indicate to us that this",
+        "start": 149.44,
+        "duration": 4.96
+    },
+    {
+        "text": "left portion of the subtree cannot be",
+        "start": 151.519,
+        "duration": 4.08
+    },
+    {
+        "text": "continued right and",
+        "start": 154.4,
+        "duration": 2.96
+    },
+    {
+        "text": "you could add the word null but i'm just",
+        "start": 155.599,
+        "duration": 3.441
+    },
+    {
+        "text": "going to use a capital letter n to",
+        "start": 157.36,
+        "duration": 3.12
+    },
+    {
+        "text": "indicate that so that's going to be our",
+        "start": 159.04,
+        "duration": 3.279
+    },
+    {
+        "text": "special value that indicates an",
+        "start": 160.48,
+        "duration": 5.119
+    },
+    {
+        "text": "empty no node or empty tree since we",
+        "start": 162.319,
+        "duration": 5.441
+    },
+    {
+        "text": "finished the entire left subtree and we",
+        "start": 165.599,
+        "duration": 4.081
+    },
+    {
+        "text": "know that it was a null right so that's",
+        "start": 167.76,
+        "duration": 3.52
+    },
+    {
+        "text": "basically our base case that tells us we",
+        "start": 169.68,
+        "duration": 3.6
+    },
+    {
+        "text": "can't go any farther here so now what's",
+        "start": 171.28,
+        "duration": 4.48
+    },
+    {
+        "text": "our right subtree for two it's also",
+        "start": 173.28,
+        "duration": 5.039
+    },
+    {
+        "text": "null so we're going to add another null",
+        "start": 175.76,
+        "duration": 4.559
+    },
+    {
+        "text": "and see how we've done the entire left",
+        "start": 178.319,
+        "duration": 3.121
+    },
+    {
+        "text": "subtree here",
+        "start": 180.319,
+        "duration": 3.761
+    },
+    {
+        "text": "so now we can start going down the right",
+        "start": 181.44,
+        "duration": 3.6
+    },
+    {
+        "text": "subtree",
+        "start": 184.08,
+        "duration": 3.2
+    },
+    {
+        "text": "so of course the first value is a three",
+        "start": 185.04,
+        "duration": 4.0
+    },
+    {
+        "text": "so let's go ahead and add that",
+        "start": 187.28,
+        "duration": 3.2
+    },
+    {
+        "text": "and similarly we're going to do",
+        "start": 189.04,
+        "duration": 3.119
+    },
+    {
+        "text": "pre-order traversal on the left subtree",
+        "start": 190.48,
+        "duration": 2.88
+    },
+    {
+        "text": "now you can basically see",
+        "start": 192.159,
+        "duration": 3.601
+    },
+    {
+        "text": "this is the exact same thing that we did",
+        "start": 193.36,
+        "duration": 3.2
+    },
+    {
+        "text": "up here right",
+        "start": 195.76,
+        "duration": 4.16
+    },
+    {
+        "text": "2 was a node and two had no children so",
+        "start": 196.56,
+        "duration": 5.12
+    },
+    {
+        "text": "left and right child of two were null",
+        "start": 199.92,
+        "duration": 3.2
+    },
+    {
+        "text": "that's the same that's true for this",
+        "start": 201.68,
+        "duration": 2.639
+    },
+    {
+        "text": "four node so we're gonna add",
+        "start": 203.12,
+        "duration": 3.119
+    },
+    {
+        "text": "four and then we're gonna add the two",
+        "start": 204.319,
+        "duration": 4.081
+    },
+    {
+        "text": "null nodes basically indicating that",
+        "start": 206.239,
+        "duration": 2.64
+    },
+    {
+        "text": "four",
+        "start": 208.4,
+        "duration": 3.6
+    },
+    {
+        "text": "does not have any children n",
+        "start": 208.879,
+        "duration": 5.841
+    },
+    {
+        "text": "n so now let's go do the right subtree",
+        "start": 212.0,
+        "duration": 3.519
+    },
+    {
+        "text": "basically you",
+        "start": 214.72,
+        "duration": 2.0
+    },
+    {
+        "text": "can probably tell what i'm going to do",
+        "start": 215.519,
+        "duration": 2.64
+    },
+    {
+        "text": "here so i'm running out of space so",
+        "start": 216.72,
+        "duration": 3.04
+    },
+    {
+        "text": "let's put the five down here",
+        "start": 218.159,
+        "duration": 5.44
+    },
+    {
+        "text": "comma and then a couple empty null nodes",
+        "start": 219.76,
+        "duration": 5.6
+    },
+    {
+        "text": "and now we're done right that was the",
+        "start": 223.599,
+        "duration": 3.041
+    },
+    {
+        "text": "entire string",
+        "start": 225.36,
+        "duration": 3.68
+    },
+    {
+        "text": "so now i'm going to get rid of this tree",
+        "start": 226.64,
+        "duration": 3.28
+    },
+    {
+        "text": "and we're going to see",
+        "start": 229.04,
+        "duration": 3.36
+    },
+    {
+        "text": "is it even possible for us to be able to",
+        "start": 229.92,
+        "duration": 3.84
+    },
+    {
+        "text": "take a string like this",
+        "start": 232.4,
+        "duration": 3.28
+    },
+    {
+        "text": "and know exactly which one is going to",
+        "start": 233.76,
+        "duration": 3.119
+    },
+    {
+        "text": "be the left node and which is going to",
+        "start": 235.68,
+        "duration": 3.279
+    },
+    {
+        "text": "be the right etc etc right well we're",
+        "start": 236.879,
+        "duration": 3.201
+    },
+    {
+        "text": "obviously going to use",
+        "start": 238.959,
+        "duration": 3.601
+    },
+    {
+        "text": "pre-order traversal on this string",
+        "start": 240.08,
+        "duration": 3.28
+    },
+    {
+        "text": "basically",
+        "start": 242.56,
+        "duration": 3.679
+    },
+    {
+        "text": "to create a new tree and i'm going to",
+        "start": 243.36,
+        "duration": 4.159
+    },
+    {
+        "text": "show you that it is",
+        "start": 246.239,
+        "duration": 3.28
+    },
+    {
+        "text": "possible that this string is actually",
+        "start": 247.519,
+        "duration": 3.201
+    },
+    {
+        "text": "not ambiguous",
+        "start": 249.519,
+        "duration": 2.8
+    },
+    {
+        "text": "because clearly you can see okay one is",
+        "start": 250.72,
+        "duration": 3.28
+    },
+    {
+        "text": "going to be the root note then the next",
+        "start": 252.319,
+        "duration": 4.32
+    },
+    {
+        "text": "value must be the left if this were a",
+        "start": 254.0,
+        "duration": 3.12
+    },
+    {
+        "text": "null",
+        "start": 256.639,
+        "duration": 2.481
+    },
+    {
+        "text": "that would mean that one has no left",
+        "start": 257.12,
+        "duration": 3.839
+    },
+    {
+        "text": "subtree right so we could just put",
+        "start": 259.12,
+        "duration": 3.76
+    },
+    {
+        "text": "null for its left subtree but clearly",
+        "start": 260.959,
+        "duration": 3.281
+    },
+    {
+        "text": "this is not null",
+        "start": 262.88,
+        "duration": 4.08
+    },
+    {
+        "text": "so that means two is the left child of",
+        "start": 264.24,
+        "duration": 3.36
+    },
+    {
+        "text": "one",
+        "start": 266.96,
+        "duration": 3.519
+    },
+    {
+        "text": "next we see okay let's create the",
+        "start": 267.6,
+        "duration": 3.84
+    },
+    {
+        "text": "subtree for",
+        "start": 270.479,
+        "duration": 3.601
+    },
+    {
+        "text": "two right well it's left child is null",
+        "start": 271.44,
+        "duration": 4.64
+    },
+    {
+        "text": "and next it's right child is also",
+        "start": 274.08,
+        "duration": 4.08
+    },
+    {
+        "text": "null so therefore two is not going to",
+        "start": 276.08,
+        "duration": 3.28
+    },
+    {
+        "text": "have anything right so",
+        "start": 278.16,
+        "duration": 3.12
+    },
+    {
+        "text": "that's basically the idea so now let's",
+        "start": 279.36,
+        "duration": 3.6
+    },
+    {
+        "text": "actually do it okay since we know we",
+        "start": 281.28,
+        "duration": 3.199
+    },
+    {
+        "text": "created the string with pre-order",
+        "start": 282.96,
+        "duration": 3.04
+    },
+    {
+        "text": "traversal that's basically the idea",
+        "start": 284.479,
+        "duration": 2.401
+    },
+    {
+        "text": "we're going to use so we're going to",
+        "start": 286.0,
+        "duration": 2.0
+    },
+    {
+        "text": "have a pointer",
+        "start": 286.88,
+        "duration": 2.56
+    },
+    {
+        "text": "we'll call it i that's going to",
+        "start": 288.0,
+        "duration": 3.6
+    },
+    {
+        "text": "basically tell us what index",
+        "start": 289.44,
+        "duration": 4.24
+    },
+    {
+        "text": "of this string that we're at well in",
+        "start": 291.6,
+        "duration": 3.28
+    },
+    {
+        "text": "reality what we're going to do we're",
+        "start": 293.68,
+        "duration": 2.32
+    },
+    {
+        "text": "actually going to take this string",
+        "start": 294.88,
+        "duration": 3.759
+    },
+    {
+        "text": "and then split it based on the delimiter",
+        "start": 296.0,
+        "duration": 4.24
+    },
+    {
+        "text": "comma so then it's actually going to be",
+        "start": 298.639,
+        "duration": 3.601
+    },
+    {
+        "text": "an array but i'm not going to redraw",
+        "start": 300.24,
+        "duration": 3.12
+    },
+    {
+        "text": "that just because",
+        "start": 302.24,
+        "duration": 2.32
+    },
+    {
+        "text": "it's pretty straightforward what we're",
+        "start": 303.36,
+        "duration": 3.04
+    },
+    {
+        "text": "going to be doing with this string",
+        "start": 304.56,
+        "duration": 4.88
+    },
+    {
+        "text": "so first one is non-null so it's a one",
+        "start": 306.4,
+        "duration": 3.6
+    },
+    {
+        "text": "right so we",
+        "start": 309.44,
+        "duration": 2.72
+    },
+    {
+        "text": "are going to create a root node with the",
+        "start": 310.0,
+        "duration": 3.6
+    },
+    {
+        "text": "value one",
+        "start": 312.16,
+        "duration": 3.36
+    },
+    {
+        "text": "now let's create the left sub tree",
+        "start": 313.6,
+        "duration": 3.439
+    },
+    {
+        "text": "similar to pre-order traversal right",
+        "start": 315.52,
+        "duration": 2.959
+    },
+    {
+        "text": "we're creating the node now then we're",
+        "start": 317.039,
+        "duration": 2.641
+    },
+    {
+        "text": "gonna do the left subtree then we're",
+        "start": 318.479,
+        "duration": 2.881
+    },
+    {
+        "text": "gonna do the right subtree the question",
+        "start": 319.68,
+        "duration": 2.72
+    },
+    {
+        "text": "you might have is",
+        "start": 321.36,
+        "duration": 4.0
+    },
+    {
+        "text": "how do we know when the left sub tree",
+        "start": 322.4,
+        "duration": 3.68
+    },
+    {
+        "text": "stops",
+        "start": 325.36,
+        "duration": 3.839
+    },
+    {
+        "text": "and when the right sub sub tree starts",
+        "start": 326.08,
+        "duration": 4.72
+    },
+    {
+        "text": "i'm going to show you it's actually",
+        "start": 329.199,
+        "duration": 3.28
+    },
+    {
+        "text": "simpler than you might think",
+        "start": 330.8,
+        "duration": 3.839
+    },
+    {
+        "text": "so we know that the first value here is",
+        "start": 332.479,
+        "duration": 3.761
+    },
+    {
+        "text": "going to be the left",
+        "start": 334.639,
+        "duration": 4.081
+    },
+    {
+        "text": "child if this were null we would put a",
+        "start": 336.24,
+        "duration": 4.64
+    },
+    {
+        "text": "null here but it's not null it's two so",
+        "start": 338.72,
+        "duration": 3.44
+    },
+    {
+        "text": "we are creating a",
+        "start": 340.88,
+        "duration": 3.92
+    },
+    {
+        "text": "two node over here and once again",
+        "start": 342.16,
+        "duration": 4.24
+    },
+    {
+        "text": "recursively creating",
+        "start": 344.8,
+        "duration": 4.0
+    },
+    {
+        "text": "this subtree so start with the left so",
+        "start": 346.4,
+        "duration": 4.0
+    },
+    {
+        "text": "this first value is going to be the left",
+        "start": 348.8,
+        "duration": 2.56
+    },
+    {
+        "text": "subtree it's a",
+        "start": 350.4,
+        "duration": 4.0
+    },
+    {
+        "text": "null right so since it's a null that",
+        "start": 351.36,
+        "duration": 4.959
+    },
+    {
+        "text": "means we can't continue",
+        "start": 354.4,
+        "duration": 4.799
+    },
+    {
+        "text": "this subtree anymore right so that means",
+        "start": 356.319,
+        "duration": 3.921
+    },
+    {
+        "text": "whatever value",
+        "start": 359.199,
+        "duration": 3.201
+    },
+    {
+        "text": "so we're done with this first null now",
+        "start": 360.24,
+        "duration": 3.44
+    },
+    {
+        "text": "whatever value comes",
+        "start": 362.4,
+        "duration": 3.6
+    },
+    {
+        "text": "next here is going to be the value in",
+        "start": 363.68,
+        "duration": 3.6
+    },
+    {
+        "text": "the right subtree",
+        "start": 366.0,
+        "duration": 4.4
+    },
+    {
+        "text": "of this two node it happens to also be",
+        "start": 367.28,
+        "duration": 4.96
+    },
+    {
+        "text": "null but maybe if it wasn't unknown",
+        "start": 370.4,
+        "duration": 3.44
+    },
+    {
+        "text": "maybe it could have been a three right",
+        "start": 372.24,
+        "duration": 3.679
+    },
+    {
+        "text": "that's when we would put three over here",
+        "start": 373.84,
+        "duration": 4.639
+    },
+    {
+        "text": "but clearly it's not it's a null so that",
+        "start": 375.919,
+        "duration": 3.041
+    },
+    {
+        "text": "means",
+        "start": 378.479,
+        "duration": 3.601
+    },
+    {
+        "text": "we can actually stop this subtree",
+        "start": 378.96,
+        "duration": 5.679
+    },
+    {
+        "text": "as well so since both of the children",
+        "start": 382.08,
+        "duration": 3.28
+    },
+    {
+        "text": "were null",
+        "start": 384.639,
+        "duration": 3.201
+    },
+    {
+        "text": "that means we're actually done creating",
+        "start": 385.36,
+        "duration": 4.64
+    },
+    {
+        "text": "this entire subtree",
+        "start": 387.84,
+        "duration": 4.96
+    },
+    {
+        "text": "we reached our base case basically so",
+        "start": 390.0,
+        "duration": 3.6
+    },
+    {
+        "text": "we're done with this",
+        "start": 392.8,
+        "duration": 2.959
+    },
+    {
+        "text": "now the next value that comes in our",
+        "start": 393.6,
+        "duration": 4.56
+    },
+    {
+        "text": "string is clearly going to be the right",
+        "start": 395.759,
+        "duration": 5.521
+    },
+    {
+        "text": "child of one so the three is gonna be",
+        "start": 398.16,
+        "duration": 3.84
+    },
+    {
+        "text": "the right child",
+        "start": 401.28,
+        "duration": 3.359
+    },
+    {
+        "text": "here and now of course pre-order",
+        "start": 402.0,
+        "duration": 4.08
+    },
+    {
+        "text": "traversal we're gonna fill in the left",
+        "start": 404.639,
+        "duration": 3.041
+    },
+    {
+        "text": "subtree of three so what's the next",
+        "start": 406.08,
+        "duration": 2.0
+    },
+    {
+        "text": "value",
+        "start": 407.68,
+        "duration": 3.2
+    },
+    {
+        "text": "in our string it's a four so this does",
+        "start": 408.08,
+        "duration": 4.08
+    },
+    {
+        "text": "have a left subtree",
+        "start": 410.88,
+        "duration": 3.28
+    },
+    {
+        "text": "four continuously we're going to be",
+        "start": 412.16,
+        "duration": 4.08
+    },
+    {
+        "text": "doing the left subtree of four",
+        "start": 414.16,
+        "duration": 4.56
+    },
+    {
+        "text": "we see it's a null that's our base case",
+        "start": 416.24,
+        "duration": 4.399
+    },
+    {
+        "text": "so we're done with the left sub tree of",
+        "start": 418.72,
+        "duration": 2.479
+    },
+    {
+        "text": "four",
+        "start": 420.639,
+        "duration": 2.56
+    },
+    {
+        "text": "next we're looking for the right subtree",
+        "start": 421.199,
+        "duration": 4.161
+    },
+    {
+        "text": "of four so what's the next value in our",
+        "start": 423.199,
+        "duration": 3.681
+    },
+    {
+        "text": "string it's again",
+        "start": 425.36,
+        "duration": 4.16
+    },
+    {
+        "text": "null so we reach the base case we can be",
+        "start": 426.88,
+        "duration": 3.039
+    },
+    {
+        "text": "done",
+        "start": 429.52,
+        "duration": 2.64
+    },
+    {
+        "text": "with this entire subtree so we're gonna",
+        "start": 429.919,
+        "duration": 4.72
+    },
+    {
+        "text": "pop back up recursively over here to",
+        "start": 432.16,
+        "duration": 2.96
+    },
+    {
+        "text": "three",
+        "start": 434.639,
+        "duration": 2.4
+    },
+    {
+        "text": "and now we know we need to fill in the",
+        "start": 435.12,
+        "duration": 3.68
+    },
+    {
+        "text": "right subtree it could be null or it",
+        "start": 437.039,
+        "duration": 3.681
+    },
+    {
+        "text": "could be a real value let's find out",
+        "start": 438.8,
+        "duration": 3.92
+    },
+    {
+        "text": "well the next value in our string is a",
+        "start": 440.72,
+        "duration": 3.599
+    },
+    {
+        "text": "five so therefore",
+        "start": 442.72,
+        "duration": 4.64
+    },
+    {
+        "text": "this is going to be five so next we see",
+        "start": 444.319,
+        "duration": 4.88
+    },
+    {
+        "text": "that okay left child of five is going to",
+        "start": 447.36,
+        "duration": 3.04
+    },
+    {
+        "text": "be null and",
+        "start": 449.199,
+        "duration": 2.961
+    },
+    {
+        "text": "right child of 5 is going to be null",
+        "start": 450.4,
+        "duration": 4.239
+    },
+    {
+        "text": "right so clearly what you can see here",
+        "start": 452.16,
+        "duration": 5.2
+    },
+    {
+        "text": "is that for every single leaf node we",
+        "start": 454.639,
+        "duration": 3.28
+    },
+    {
+        "text": "have",
+        "start": 457.36,
+        "duration": 3.6
+    },
+    {
+        "text": "in our tree we we specified what their",
+        "start": 457.919,
+        "duration": 4.961
+    },
+    {
+        "text": "children were going to be we specified",
+        "start": 460.96,
+        "duration": 4.4
+    },
+    {
+        "text": "the leaf node two has two null children",
+        "start": 462.88,
+        "duration": 4.879
+    },
+    {
+        "text": "leaf node four has two nulls and leaf",
+        "start": 465.36,
+        "duration": 4.16
+    },
+    {
+        "text": "node five has two nulls",
+        "start": 467.759,
+        "duration": 3.84
+    },
+    {
+        "text": "that's how you know we're done with the",
+        "start": 469.52,
+        "duration": 3.28
+    },
+    {
+        "text": "entire string we're",
+        "start": 471.599,
+        "duration": 2.801
+    },
+    {
+        "text": "we're gonna stop here we know that",
+        "start": 472.8,
+        "duration": 3.04
+    },
+    {
+        "text": "there's nothing left to do",
+        "start": 474.4,
+        "duration": 3.44
+    },
+    {
+        "text": "right every single leaf had null",
+        "start": 475.84,
+        "duration": 3.68
+    },
+    {
+        "text": "children therefore we can't possibly",
+        "start": 477.84,
+        "duration": 3.6
+    },
+    {
+        "text": "continue this tree right so we're done",
+        "start": 479.52,
+        "duration": 4.56
+    },
+    {
+        "text": "so that's why it's not ambiguous and by",
+        "start": 481.44,
+        "duration": 3.92
+    },
+    {
+        "text": "the way what do you think the time",
+        "start": 484.08,
+        "duration": 3.2
+    },
+    {
+        "text": "complexity of this was well we know that",
+        "start": 485.36,
+        "duration": 3.839
+    },
+    {
+        "text": "pre-order traversal is pretty linear",
+        "start": 487.28,
+        "duration": 2.479
+    },
+    {
+        "text": "right so",
+        "start": 489.199,
+        "duration": 3.84
+    },
+    {
+        "text": "basically o of n for serializing and for",
+        "start": 489.759,
+        "duration": 3.521
+    },
+    {
+        "text": "d",
+        "start": 493.039,
+        "duration": 2.481
+    },
+    {
+        "text": "serializing this problem is actually a",
+        "start": 493.28,
+        "duration": 4.08
+    },
+    {
+        "text": "little simpler than you might think",
+        "start": 495.52,
+        "duration": 4.0
+    },
+    {
+        "text": "for a hard problem at least so now with",
+        "start": 497.36,
+        "duration": 4.08
+    },
+    {
+        "text": "that being said let's jump into the code",
+        "start": 499.52,
+        "duration": 3.359
+    },
+    {
+        "text": "so good thing for us we only have to",
+        "start": 501.44,
+        "duration": 3.28
+    },
+    {
+        "text": "fill in two functions so let's start out",
+        "start": 502.879,
+        "duration": 3.201
+    },
+    {
+        "text": "with the serialize so we're going to be",
+        "start": 504.72,
+        "duration": 3.28
+    },
+    {
+        "text": "given a root node for a tree and we want",
+        "start": 506.08,
+        "duration": 3.519
+    },
+    {
+        "text": "to convert it into a string and then",
+        "start": 508.0,
+        "duration": 3.52
+    },
+    {
+        "text": "return that string so let's start",
+        "start": 509.599,
+        "duration": 5.041
+    },
+    {
+        "text": "with a empty string initially right",
+        "start": 511.52,
+        "duration": 5.12
+    },
+    {
+        "text": "and actually just to make things a",
+        "start": 514.64,
+        "duration": 3.199
+    },
+    {
+        "text": "little bit easier i'm going to",
+        "start": 516.64,
+        "duration": 3.519
+    },
+    {
+        "text": "set our result to an array i'm basically",
+        "start": 517.839,
+        "duration": 3.44
+    },
+    {
+        "text": "going to be adding",
+        "start": 520.159,
+        "duration": 2.641
+    },
+    {
+        "text": "strings together like for example if we",
+        "start": 521.279,
+        "duration": 2.961
+    },
+    {
+        "text": "had a node 1 i'm going to add it like",
+        "start": 522.8,
+        "duration": 3.2
+    },
+    {
+        "text": "this if we add a node 2 i'm going to add",
+        "start": 524.24,
+        "duration": 2.08
+    },
+    {
+        "text": "it",
+        "start": 526.0,
+        "duration": 2.0
+    },
+    {
+        "text": "like this and then at the end i'm",
+        "start": 526.32,
+        "duration": 3.199
+    },
+    {
+        "text": "basically going to be joining all the",
+        "start": 528.0,
+        "duration": 3.2
+    },
+    {
+        "text": "strings together with a comma",
+        "start": 529.519,
+        "duration": 3.601
+    },
+    {
+        "text": "delimiter so i'm going to define a",
+        "start": 531.2,
+        "duration": 3.52
+    },
+    {
+        "text": "function inside a function just because",
+        "start": 533.12,
+        "duration": 3.279
+    },
+    {
+        "text": "it's easier once again right so this is",
+        "start": 534.72,
+        "duration": 3.119
+    },
+    {
+        "text": "going to be our pre-order depth first",
+        "start": 536.399,
+        "duration": 2.961
+    },
+    {
+        "text": "search we are going to be passing in the",
+        "start": 537.839,
+        "duration": 3.361
+    },
+    {
+        "text": "current root or the current node that",
+        "start": 539.36,
+        "duration": 2.8
+    },
+    {
+        "text": "we're visiting",
+        "start": 541.2,
+        "duration": 2.88
+    },
+    {
+        "text": "and of course we know that the base case",
+        "start": 542.16,
+        "duration": 3.76
+    },
+    {
+        "text": "is if the node is",
+        "start": 544.08,
+        "duration": 3.68
+    },
+    {
+        "text": "null and in that case what are we going",
+        "start": 545.92,
+        "duration": 3.919
+    },
+    {
+        "text": "to do our special character that we're",
+        "start": 547.76,
+        "duration": 2.96
+    },
+    {
+        "text": "going to define",
+        "start": 549.839,
+        "duration": 3.361
+    },
+    {
+        "text": "is going to basically be a n character",
+        "start": 550.72,
+        "duration": 4.559
+    },
+    {
+        "text": "so to result i'm going to append",
+        "start": 553.2,
+        "duration": 4.88
+    },
+    {
+        "text": "and end character and then we're going",
+        "start": 555.279,
+        "duration": 3.761
+    },
+    {
+        "text": "to return",
+        "start": 558.08,
+        "duration": 3.28
+    },
+    {
+        "text": "if it's not null then we know we can",
+        "start": 559.04,
+        "duration": 3.76
+    },
+    {
+        "text": "append we can we're since we're doing",
+        "start": 561.36,
+        "duration": 2.88
+    },
+    {
+        "text": "pre-order we're going to be appending",
+        "start": 562.8,
+        "duration": 3.039
+    },
+    {
+        "text": "before we recursively do depth for",
+        "start": 564.24,
+        "duration": 2.96
+    },
+    {
+        "text": "search we're going to append",
+        "start": 565.839,
+        "duration": 3.281
+    },
+    {
+        "text": "node.val but we know it's going to be an",
+        "start": 567.2,
+        "duration": 3.199
+    },
+    {
+        "text": "integer so we're going to we're going to",
+        "start": 569.12,
+        "duration": 3.279
+    },
+    {
+        "text": "convert it into a string so node.val",
+        "start": 570.399,
+        "duration": 3.361
+    },
+    {
+        "text": "converted into a string",
+        "start": 572.399,
+        "duration": 3.841
+    },
+    {
+        "text": "appended to result after that of course",
+        "start": 573.76,
+        "duration": 4.32
+    },
+    {
+        "text": "we just call our recursive different",
+        "start": 576.24,
+        "duration": 2.56
+    },
+    {
+        "text": "search",
+        "start": 578.08,
+        "duration": 3.28
+    },
+    {
+        "text": "on the left and right subtree so uh debt",
+        "start": 578.8,
+        "duration": 4.56
+    },
+    {
+        "text": "for search on node.left",
+        "start": 581.36,
+        "duration": 5.12
+    },
+    {
+        "text": "and depth for search on node.right and",
+        "start": 583.36,
+        "duration": 4.8
+    },
+    {
+        "text": "we don't even have to call our return",
+        "start": 586.48,
+        "duration": 3.2
+    },
+    {
+        "text": "function because once this is done",
+        "start": 588.16,
+        "duration": 2.96
+    },
+    {
+        "text": "executing it's going to basically return",
+        "start": 589.68,
+        "duration": 2.32
+    },
+    {
+        "text": "by default",
+        "start": 591.12,
+        "duration": 2.8
+    },
+    {
+        "text": "so once that is done we know that our",
+        "start": 592.0,
+        "duration": 3.279
+    },
+    {
+        "text": "result is going to contain",
+        "start": 593.92,
+        "duration": 3.76
+    },
+    {
+        "text": "all the strings that we want it to so",
+        "start": 595.279,
+        "duration": 4.881
+    },
+    {
+        "text": "basically what i'm going to do is return",
+        "start": 597.68,
+        "duration": 5.76
+    },
+    {
+        "text": "the result joined by a",
+        "start": 600.16,
+        "duration": 7.04
+    },
+    {
+        "text": "comma delimiter so comma dot join",
+        "start": 603.44,
+        "duration": 5.519
+    },
+    {
+        "text": "everything in result oh but i almost",
+        "start": 607.2,
+        "duration": 3.04
+    },
+    {
+        "text": "forgot we actually have to",
+        "start": 608.959,
+        "duration": 3.12
+    },
+    {
+        "text": "remember to call our debt for search",
+        "start": 610.24,
+        "duration": 3.36
+    },
+    {
+        "text": "function so i'm going to call it passing",
+        "start": 612.079,
+        "duration": 2.721
+    },
+    {
+        "text": "in the root value",
+        "start": 613.6,
+        "duration": 3.12
+    },
+    {
+        "text": "so our serialized function is actually",
+        "start": 614.8,
+        "duration": 3.2
+    },
+    {
+        "text": "just as simple as that so",
+        "start": 616.72,
+        "duration": 3.84
+    },
+    {
+        "text": "next we're going to be moving on to our",
+        "start": 618.0,
+        "duration": 4.079
+    },
+    {
+        "text": "deserialize function so we're going to",
+        "start": 620.56,
+        "duration": 2.88
+    },
+    {
+        "text": "be given the data right",
+        "start": 622.079,
+        "duration": 3.681
+    },
+    {
+        "text": "we know that the data is going to be",
+        "start": 623.44,
+        "duration": 4.0
+    },
+    {
+        "text": "comma delimited so we're basically going",
+        "start": 625.76,
+        "duration": 2.48
+    },
+    {
+        "text": "to split it",
+        "start": 627.44,
+        "duration": 4.399
+    },
+    {
+        "text": "based on that comma into an array a list",
+        "start": 628.24,
+        "duration": 4.0
+    },
+    {
+        "text": "of",
+        "start": 631.839,
+        "duration": 1.761
+    },
+    {
+        "text": "the data that we're going to be needing",
+        "start": 632.24,
+        "duration": 3.44
+    },
+    {
+        "text": "so i'm just going to call that vals",
+        "start": 633.6,
+        "duration": 4.0
+    },
+    {
+        "text": "and i'm also going to create a pointer",
+        "start": 635.68,
+        "duration": 3.76
+    },
+    {
+        "text": "i'm going to call it self.i",
+        "start": 637.6,
+        "duration": 3.52
+    },
+    {
+        "text": "self because it's going to be a member",
+        "start": 639.44,
+        "duration": 3.28
+    },
+    {
+        "text": "variable of this class",
+        "start": 641.12,
+        "duration": 3.36
+    },
+    {
+        "text": "basically because we want it to be",
+        "start": 642.72,
+        "duration": 3.6
+    },
+    {
+        "text": "global because i'm about to define",
+        "start": 644.48,
+        "duration": 2.479
+    },
+    {
+        "text": "another",
+        "start": 646.32,
+        "duration": 2.4
+    },
+    {
+        "text": "recursive function inside of this",
+        "start": 646.959,
+        "duration": 3.601
+    },
+    {
+        "text": "function and i don't even need to pass",
+        "start": 648.72,
+        "duration": 3.679
+    },
+    {
+        "text": "any variables into it because",
+        "start": 650.56,
+        "duration": 4.08
+    },
+    {
+        "text": "the self.i is global so i'm going to",
+        "start": 652.399,
+        "duration": 4.081
+    },
+    {
+        "text": "initialize this to 0 indicating we're",
+        "start": 654.64,
+        "duration": 3.199
+    },
+    {
+        "text": "going to start at the first",
+        "start": 656.48,
+        "duration": 4.4
+    },
+    {
+        "text": "value in our list of values and so once",
+        "start": 657.839,
+        "duration": 4.24
+    },
+    {
+        "text": "again we're going to start with the base",
+        "start": 660.88,
+        "duration": 2.639
+    },
+    {
+        "text": "case now what's the base case going to",
+        "start": 662.079,
+        "duration": 2.32
+    },
+    {
+        "text": "be well if our",
+        "start": 663.519,
+        "duration": 3.521
+    },
+    {
+        "text": "pointer is pointing at a value in the",
+        "start": 664.399,
+        "duration": 3.281
+    },
+    {
+        "text": "vowels",
+        "start": 667.04,
+        "duration": 2.96
+    },
+    {
+        "text": "and if that value happens to be null now",
+        "start": 667.68,
+        "duration": 3.839
+    },
+    {
+        "text": "how do we know if it's null",
+        "start": 670.0,
+        "duration": 3.68
+    },
+    {
+        "text": "well that's pretty easy right we can say",
+        "start": 671.519,
+        "duration": 3.76
+    },
+    {
+        "text": "vals at index",
+        "start": 673.68,
+        "duration": 4.159
+    },
+    {
+        "text": "self dot i and if it happens to be equal",
+        "start": 675.279,
+        "duration": 3.521
+    },
+    {
+        "text": "to the character n",
+        "start": 677.839,
+        "duration": 2.721
+    },
+    {
+        "text": "we know that's null so what are we going",
+        "start": 678.8,
+        "duration": 2.88
+    },
+    {
+        "text": "to do we're just going to return the",
+        "start": 680.56,
+        "duration": 2.32
+    },
+    {
+        "text": "base case we're going to return",
+        "start": 681.68,
+        "duration": 3.92
+    },
+    {
+        "text": "a null node if it's not null that means",
+        "start": 682.88,
+        "duration": 4.079
+    },
+    {
+        "text": "we have some work to do right we have to",
+        "start": 685.6,
+        "duration": 2.799
+    },
+    {
+        "text": "create a tree node",
+        "start": 686.959,
+        "duration": 3.841
+    },
+    {
+        "text": "with that particular value but we know",
+        "start": 688.399,
+        "duration": 3.361
+    },
+    {
+        "text": "this valves",
+        "start": 690.8,
+        "duration": 3.92
+    },
+    {
+        "text": "at self.i we know this is going to be a",
+        "start": 691.76,
+        "duration": 4.0
+    },
+    {
+        "text": "string right so",
+        "start": 694.72,
+        "duration": 2.96
+    },
+    {
+        "text": "and we know that tree nodes have integer",
+        "start": 695.76,
+        "duration": 3.199
+    },
+    {
+        "text": "values so we're going to convert this",
+        "start": 697.68,
+        "duration": 1.76
+    },
+    {
+        "text": "into an",
+        "start": 698.959,
+        "duration": 3.041
+    },
+    {
+        "text": "integer before we pass it in and so this",
+        "start": 699.44,
+        "duration": 4.56
+    },
+    {
+        "text": "node is going to be referred to",
+        "start": 702.0,
+        "duration": 4.399
+    },
+    {
+        "text": "as node one thing i actually almost",
+        "start": 704.0,
+        "duration": 3.12
+    },
+    {
+        "text": "forgot",
+        "start": 706.399,
+        "duration": 2.721
+    },
+    {
+        "text": "if we're create if we're saying that the",
+        "start": 707.12,
+        "duration": 3.6
+    },
+    {
+        "text": "value at this vowels",
+        "start": 709.12,
+        "duration": 4.08
+    },
+    {
+        "text": "is null so we're basically saying we're",
+        "start": 710.72,
+        "duration": 4.96
+    },
+    {
+        "text": "done visiting this right we're returning",
+        "start": 713.2,
+        "duration": 6.319
+    },
+    {
+        "text": "null for this n in our values array so",
+        "start": 715.68,
+        "duration": 5.52
+    },
+    {
+        "text": "before we return we want to make sure",
+        "start": 719.519,
+        "duration": 4.081
+    },
+    {
+        "text": "that we increment i so self.i",
+        "start": 721.2,
+        "duration": 5.68
+    },
+    {
+        "text": "plus one so that next time we go we call",
+        "start": 723.6,
+        "duration": 4.239
+    },
+    {
+        "text": "a function",
+        "start": 726.88,
+        "duration": 3.92
+    },
+    {
+        "text": "that we're at the appropriate value in",
+        "start": 727.839,
+        "duration": 4.641
+    },
+    {
+        "text": "our list of values",
+        "start": 730.8,
+        "duration": 2.96
+    },
+    {
+        "text": "and that's exactly what we're going to",
+        "start": 732.48,
+        "duration": 2.799
+    },
+    {
+        "text": "be doing down here too right so since",
+        "start": 733.76,
+        "duration": 2.639
+    },
+    {
+        "text": "we're already using",
+        "start": 735.279,
+        "duration": 3.68
+    },
+    {
+        "text": "the value at self.i once we create this",
+        "start": 736.399,
+        "duration": 4.721
+    },
+    {
+        "text": "tree node we know we have to increment",
+        "start": 738.959,
+        "duration": 4.641
+    },
+    {
+        "text": "our pointer i so that we can be moving",
+        "start": 741.12,
+        "duration": 3.68
+    },
+    {
+        "text": "on to the next",
+        "start": 743.6,
+        "duration": 3.679
+    },
+    {
+        "text": "value that we need to create a node for",
+        "start": 744.8,
+        "duration": 3.839
+    },
+    {
+        "text": "so i'm going to call depth first search",
+        "start": 747.279,
+        "duration": 3.041
+    },
+    {
+        "text": "remember we don't actually have to pass",
+        "start": 748.639,
+        "duration": 3.681
+    },
+    {
+        "text": "any parameters into this and the return",
+        "start": 750.32,
+        "duration": 3.759
+    },
+    {
+        "text": "value for this is going to be the sub",
+        "start": 752.32,
+        "duration": 3.12
+    },
+    {
+        "text": "tree i created",
+        "start": 754.079,
+        "duration": 4.56
+    },
+    {
+        "text": "for node dot left it could be null",
+        "start": 755.44,
+        "duration": 5.44
+    },
+    {
+        "text": "or it could be something else now after",
+        "start": 758.639,
+        "duration": 3.681
+    },
+    {
+        "text": "calling the step for a search function",
+        "start": 760.88,
+        "duration": 3.28
+    },
+    {
+        "text": "we don't have to increment self.i",
+        "start": 762.32,
+        "duration": 2.959
+    },
+    {
+        "text": "because that's going to be happening",
+        "start": 764.16,
+        "duration": 2.239
+    },
+    {
+        "text": "recursively so",
+        "start": 765.279,
+        "duration": 2.641
+    },
+    {
+        "text": "once this is done we're going to do the",
+        "start": 766.399,
+        "duration": 3.44
+    },
+    {
+        "text": "exact same thing for the right subtree",
+        "start": 767.92,
+        "duration": 2.56
+    },
+    {
+        "text": "so",
+        "start": 769.839,
+        "duration": 3.12
+    },
+    {
+        "text": "uh node.write is also going to be",
+        "start": 770.48,
+        "duration": 3.919
+    },
+    {
+        "text": "basically whatever debt for search",
+        "start": 772.959,
+        "duration": 2.721
+    },
+    {
+        "text": "returns for us",
+        "start": 774.399,
+        "duration": 3.601
+    },
+    {
+        "text": "and once all of that is done we know",
+        "start": 775.68,
+        "duration": 4.56
+    },
+    {
+        "text": "that we can simply return the node the",
+        "start": 778.0,
+        "duration": 4.24
+    },
+    {
+        "text": "root node that we ended up creating",
+        "start": 780.24,
+        "duration": 3.279
+    },
+    {
+        "text": "and then once that's done we've",
+        "start": 782.24,
+        "duration": 3.039
+    },
+    {
+        "text": "basically defined our debt for search",
+        "start": 783.519,
+        "duration": 2.961
+    },
+    {
+        "text": "function so what are we going to do",
+        "start": 785.279,
+        "duration": 2.721
+    },
+    {
+        "text": "we're just going to call that debt for",
+        "start": 786.48,
+        "duration": 2.56
+    },
+    {
+        "text": "search function",
+        "start": 788.0,
+        "duration": 3.839
+    },
+    {
+        "text": "and return the result because for this",
+        "start": 789.04,
+        "duration": 4.56
+    },
+    {
+        "text": "function we're taking in a string of",
+        "start": 791.839,
+        "duration": 3.68
+    },
+    {
+        "text": "data and then converting it into a tree",
+        "start": 793.6,
+        "duration": 3.44
+    },
+    {
+        "text": "and then returning that tree",
+        "start": 795.519,
+        "duration": 3.76
+    },
+    {
+        "text": "this problem is not too bad if you do",
+        "start": 797.04,
+        "duration": 4.08
+    },
+    {
+        "text": "have a pretty good understanding of",
+        "start": 799.279,
+        "duration": 3.201
+    },
+    {
+        "text": "depth first search or pre-order",
+        "start": 801.12,
+        "duration": 2.88
+    },
+    {
+        "text": "traversal or you know just",
+        "start": 802.48,
+        "duration": 4.32
+    },
+    {
+        "text": "general binary tree traversals you could",
+        "start": 804.0,
+        "duration": 4.48
+    },
+    {
+        "text": "do this with breadth-first search if you",
+        "start": 806.8,
+        "duration": 3.12
+    },
+    {
+        "text": "really wanted to it just takes a little",
+        "start": 808.48,
+        "duration": 2.96
+    },
+    {
+        "text": "bit more code but you can see that this",
+        "start": 809.92,
+        "duration": 3.52
+    },
+    {
+        "text": "is a pretty efficient enough solution",
+        "start": 811.44,
+        "duration": 3.76
+    },
+    {
+        "text": "this is about as good as it gets so i",
+        "start": 813.44,
+        "duration": 3.04
+    },
+    {
+        "text": "hope that this was helpful",
+        "start": 815.2,
+        "duration": 3.28
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 816.48,
+        "duration": 4.08
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 818.48,
+        "duration": 2.88
+    },
+    {
+        "text": "hopefully",
+        "start": 820.56,
+        "duration": 9.04
+    },
+    {
+        "text": "see you pretty soon thanks for watching",
+        "start": 821.36,
+        "duration": 8.24
+    }
+]

@@ -1,0 +1,717 @@
+[
+    {
+        "text": "all right I think we're live here",
+        "start": 0.03,
+        "duration": 5.55
+    },
+    {
+        "text": "well we're live but I think the video is",
+        "start": 3.36,
+        "duration": 4.019
+    },
+    {
+        "text": "like going okay hey how's it going guys",
+        "start": 5.58,
+        "duration": 4.2
+    },
+    {
+        "text": "Nick white here I do tech and coding",
+        "start": 7.379,
+        "duration": 4.981
+    },
+    {
+        "text": "stuff on twitch and YouTube every video",
+        "start": 9.78,
+        "duration": 4.38
+    },
+    {
+        "text": "has this intro check out my channel for",
+        "start": 12.36,
+        "duration": 4.919
+    },
+    {
+        "text": "leak code and hacker and solutions",
+        "start": 14.16,
+        "duration": 4.35
+    },
+    {
+        "text": "playlist for all of them check the",
+        "start": 17.279,
+        "duration": 3.42
+    },
+    {
+        "text": "description for everything else so guess",
+        "start": 18.51,
+        "duration": 3.599
+    },
+    {
+        "text": "what I've had a ton of interviews",
+        "start": 20.699,
+        "duration": 2.941
+    },
+    {
+        "text": "recently because I'm trying to get a",
+        "start": 22.109,
+        "duration": 3.93
+    },
+    {
+        "text": "full-time job here and everyone's asking",
+        "start": 23.64,
+        "duration": 4.86
+    },
+    {
+        "text": "me about sequel now I didn't put I put",
+        "start": 26.039,
+        "duration": 4.201
+    },
+    {
+        "text": "sequel my resume I took a class in",
+        "start": 28.5,
+        "duration": 4.98
+    },
+    {
+        "text": "sequel but I am NOT that up-to-date on",
+        "start": 30.24,
+        "duration": 5.61
+    },
+    {
+        "text": "sequel I think no sequel is much more",
+        "start": 33.48,
+        "duration": 4.829
+    },
+    {
+        "text": "popular right now but all these you know",
+        "start": 35.85,
+        "duration": 5.369
+    },
+    {
+        "text": "not gonna say older people but just",
+        "start": 38.309,
+        "duration": 4.231
+    },
+    {
+        "text": "anyone that's interviewing me right now",
+        "start": 41.219,
+        "duration": 3.631
+    },
+    {
+        "text": "is a kind of obsessed with sequel I know",
+        "start": 42.54,
+        "duration": 4.98
+    },
+    {
+        "text": "it's still used a very highly used even",
+        "start": 44.85,
+        "duration": 3.99
+    },
+    {
+        "text": "though I think it's gonna be only used",
+        "start": 47.52,
+        "duration": 3.539
+    },
+    {
+        "text": "on legacy software soon enough because I",
+        "start": 48.84,
+        "duration": 4.71
+    },
+    {
+        "text": "think no sequel is a lot better but I'm",
+        "start": 51.059,
+        "duration": 4.111
+    },
+    {
+        "text": "gonna start practicing for it just so I",
+        "start": 53.55,
+        "duration": 2.849
+    },
+    {
+        "text": "understand all these concepts like",
+        "start": 55.17,
+        "duration": 2.85
+    },
+    {
+        "text": "database normalization foreign keys and",
+        "start": 56.399,
+        "duration": 3.271
+    },
+    {
+        "text": "stuff so this is the first one on leaked",
+        "start": 58.02,
+        "duration": 3.69
+    },
+    {
+        "text": "code it's part of the problems I thought",
+        "start": 59.67,
+        "duration": 3.42
+    },
+    {
+        "text": "might as well just start doing sequel",
+        "start": 61.71,
+        "duration": 3.9
+    },
+    {
+        "text": "videos big countries I don't know why",
+        "start": 63.09,
+        "duration": 3.599
+    },
+    {
+        "text": "there's so many dislikes",
+        "start": 65.61,
+        "duration": 3.54
+    },
+    {
+        "text": "let's give it this like there's a table",
+        "start": 66.689,
+        "duration": 3.871
+    },
+    {
+        "text": "word world",
+        "start": 69.15,
+        "duration": 3.87
+    },
+    {
+        "text": "sorry world we have named continent area",
+        "start": 70.56,
+        "duration": 4.2
+    },
+    {
+        "text": "population GDP if you haven't used a",
+        "start": 73.02,
+        "duration": 2.849
+    },
+    {
+        "text": "database before this is what the",
+        "start": 74.76,
+        "duration": 3.48
+    },
+    {
+        "text": "database might look like in sequel this",
+        "start": 75.869,
+        "duration": 4.86
+    },
+    {
+        "text": "is the schema okay so we have some",
+        "start": 78.24,
+        "duration": 4.86
+    },
+    {
+        "text": "values here and what we want to do is a",
+        "start": 80.729,
+        "duration": 5.551
+    },
+    {
+        "text": "country as big as if it a big country as",
+        "start": 83.1,
+        "duration": 5.25
+    },
+    {
+        "text": "an area bigger than 3 million square",
+        "start": 86.28,
+        "duration": 4.14
+    },
+    {
+        "text": "kilometers or a population of more than",
+        "start": 88.35,
+        "duration": 5.49
+    },
+    {
+        "text": "25 million so write a sequel solution to",
+        "start": 90.42,
+        "duration": 6.21
+    },
+    {
+        "text": "output big countries named population in",
+        "start": 93.84,
+        "duration": 4.319
+    },
+    {
+        "text": "area so we just want to grab the name",
+        "start": 96.63,
+        "duration": 5.58
+    },
+    {
+        "text": "population an area if there are more",
+        "start": 98.159,
+        "duration": 7.381
+    },
+    {
+        "text": "than 3 million people or no know if",
+        "start": 102.21,
+        "duration": 5.04
+    },
+    {
+        "text": "there's one than 25 million people or if",
+        "start": 105.54,
+        "duration": 4.23
+    },
+    {
+        "text": "the continent is bader",
+        "start": 107.25,
+        "duration": 6.78
+    },
+    {
+        "text": "bigger than 3 million square kilometers",
+        "start": 109.77,
+        "duration": 6.599
+    },
+    {
+        "text": "so that's pretty easy how do we do that",
+        "start": 114.03,
+        "duration": 3.6
+    },
+    {
+        "text": "I'm targeting this video towards",
+        "start": 116.369,
+        "duration": 3.0
+    },
+    {
+        "text": "beginner sorry guys if anyone doesn't",
+        "start": 117.63,
+        "duration": 3.75
+    },
+    {
+        "text": "already know sequel so let me just",
+        "start": 119.369,
+        "duration": 5.671
+    },
+    {
+        "text": "explain sequel in my sequel we just see",
+        "start": 121.38,
+        "duration": 7.71
+    },
+    {
+        "text": "we're going to use my sequel to pull",
+        "start": 125.04,
+        "duration": 5.79
+    },
+    {
+        "text": "things out of a database manipulate",
+        "start": 129.09,
+        "duration": 4.59
+    },
+    {
+        "text": "databases and do stuff with databases",
+        "start": 130.83,
+        "duration": 5.79
+    },
+    {
+        "text": "sequel's select statement so the select",
+        "start": 133.68,
+        "duration": 4.74
+    },
+    {
+        "text": "statement is used to select data from a",
+        "start": 136.62,
+        "duration": 3.509
+    },
+    {
+        "text": "database and what do we need to do we",
+        "start": 138.42,
+        "duration": 3.39
+    },
+    {
+        "text": "need to pull data from a database when",
+        "start": 140.129,
+        "duration": 3.42
+    },
+    {
+        "text": "you didn't pull a name population an",
+        "start": 141.81,
+        "duration": 4.379
+    },
+    {
+        "text": "area of big countries even though we're",
+        "start": 143.549,
+        "duration": 3.841
+    },
+    {
+        "text": "actually using continents so they",
+        "start": 146.189,
+        "duration": 2.791
+    },
+    {
+        "text": "actually wrote this problem wrong that's",
+        "start": 147.39,
+        "duration": 4.379
+    },
+    {
+        "text": "probably why there's dislikes select",
+        "start": 148.98,
+        "duration": 4.74
+    },
+    {
+        "text": "star from table name our table name is",
+        "start": 151.769,
+        "duration": 4.11
+    },
+    {
+        "text": "world than our thing but select star",
+        "start": 153.72,
+        "duration": 3.75
+    },
+    {
+        "text": "from table name that will select all of",
+        "start": 155.879,
+        "duration": 4.131
+    },
+    {
+        "text": "the values so if we did select star from",
+        "start": 157.47,
+        "duration": 5.219
+    },
+    {
+        "text": "world let's try it",
+        "start": 160.01,
+        "duration": 9.16
+    },
+    {
+        "text": "hopefully it works then we ran this it",
+        "start": 162.689,
+        "duration": 8.431
+    },
+    {
+        "text": "would select everything right so this is",
+        "start": 169.17,
+        "duration": 4.349
+    },
+    {
+        "text": "our output it's literally everything so",
+        "start": 171.12,
+        "duration": 4.619
+    },
+    {
+        "text": "that's how you do that then you can",
+        "start": 173.519,
+        "duration": 4.62
+    },
+    {
+        "text": "select specifically fields so we",
+        "start": 175.739,
+        "duration": 4.261
+    },
+    {
+        "text": "selected customer name and city from",
+        "start": 178.139,
+        "duration": 3.511
+    },
+    {
+        "text": "customers we would just get the cuts",
+        "start": 180.0,
+        "duration": 2.939
+    },
+    {
+        "text": "from her name and city from all the",
+        "start": 181.65,
+        "duration": 4.769
+    },
+    {
+        "text": "values so if you look through sequel you",
+        "start": 182.939,
+        "duration": 5.97
+    },
+    {
+        "text": "can learn a lot about this there's a lot",
+        "start": 186.419,
+        "duration": 4.561
+    },
+    {
+        "text": "of stuff I already took the class in it",
+        "start": 188.909,
+        "duration": 3.901
+    },
+    {
+        "text": "so I know a little bit so what we have",
+        "start": 190.98,
+        "duration": 4.619
+    },
+    {
+        "text": "to do here is we're going to select the",
+        "start": 192.81,
+        "duration": 6.09
+    },
+    {
+        "text": "field names name population and area so",
+        "start": 195.599,
+        "duration": 7.17
+    },
+    {
+        "text": "select name population Callaspo that",
+        "start": 198.9,
+        "duration": 9.149
+    },
+    {
+        "text": "write an area from we can probably do",
+        "start": 202.769,
+        "duration": 10.53
+    },
+    {
+        "text": "this all in one line from world the name",
+        "start": 208.049,
+        "duration": 11.601
+    },
+    {
+        "text": "of the database world where area is",
+        "start": 213.299,
+        "duration": 10.5
+    },
+    {
+        "text": "greater than 3 million yeah",
+        "start": 219.65,
+        "duration": 9.57
+    },
+    {
+        "text": "1 2 3 4 5 6 3 million or population",
+        "start": 223.799,
+        "duration": 9.09
+    },
+    {
+        "text": "right it's or more than 25 million or",
+        "start": 229.22,
+        "duration": 8.469
+    },
+    {
+        "text": "yeah or population it's greater than 25",
+        "start": 232.889,
+        "duration": 9.57
+    },
+    {
+        "text": "1 2 3 4 5 6 so there we go that would be",
+        "start": 237.689,
+        "duration": 6.991
+    },
+    {
+        "text": "one way to do this problem let's submit",
+        "start": 242.459,
+        "duration": 5.881
+    },
+    {
+        "text": "it there we go so we select the field",
+        "start": 244.68,
+        "duration": 5.79
+    },
+    {
+        "text": "name name population area from our",
+        "start": 248.34,
+        "duration": 5.28
+    },
+    {
+        "text": "database world when the area is greater",
+        "start": 250.47,
+        "duration": 5.579
+    },
+    {
+        "text": "than 30 million 3 million kilometers or",
+        "start": 253.62,
+        "duration": 4.169
+    },
+    {
+        "text": "populations over 25 million just like it",
+        "start": 256.049,
+        "duration": 3.75
+    },
+    {
+        "text": "says there's another way to do this in",
+        "start": 257.789,
+        "duration": 3.901
+    },
+    {
+        "text": "the solution if you look at it it's",
+        "start": 259.799,
+        "duration": 4.791
+    },
+    {
+        "text": "literally the same thing it's a union",
+        "start": 261.69,
+        "duration": 5.01
+    },
+    {
+        "text": "between",
+        "start": 264.59,
+        "duration": 3.73
+    },
+    {
+        "text": "so what happens when you actually select",
+        "start": 266.7,
+        "duration": 3.75
+    },
+    {
+        "text": "data from a database it returns it in a",
+        "start": 268.32,
+        "duration": 4.23
+    },
+    {
+        "text": "new result set it literally said that",
+        "start": 270.45,
+        "duration": 4.47
+    },
+    {
+        "text": "and I looked it up to show you guys that",
+        "start": 272.55,
+        "duration": 5.1
+    },
+    {
+        "text": "but that's fine so this would return",
+        "start": 274.92,
+        "duration": 4.71
+    },
+    {
+        "text": "something so this one is a union between",
+        "start": 277.65,
+        "duration": 4.62
+    },
+    {
+        "text": "two queries this one is select name",
+        "start": 279.63,
+        "duration": 4.68
+    },
+    {
+        "text": "population area from where world area is",
+        "start": 282.27,
+        "duration": 4.65
+    },
+    {
+        "text": "greater than 3 million so this gets all",
+        "start": 284.31,
+        "duration": 5.16
+    },
+    {
+        "text": "of the continents name population area",
+        "start": 286.92,
+        "duration": 4.47
+    },
+    {
+        "text": "from the database where air is greater",
+        "start": 289.47,
+        "duration": 4.17
+    },
+    {
+        "text": "than 3 million and this gets the other",
+        "start": 291.39,
+        "duration": 4.68
+    },
+    {
+        "text": "condition and then it does a union a set",
+        "start": 293.64,
+        "duration": 3.87
+    },
+    {
+        "text": "Union because these both return a",
+        "start": 296.07,
+        "duration": 3.78
+    },
+    {
+        "text": "results set and it does a set Union",
+        "start": 297.51,
+        "duration": 3.81
+    },
+    {
+        "text": "between these and whatever's left over",
+        "start": 299.85,
+        "duration": 3.84
+    },
+    {
+        "text": "is our answer you can do either approach",
+        "start": 301.32,
+        "duration": 4.35
+    },
+    {
+        "text": "it says this is the solution you can",
+        "start": 303.69,
+        "duration": 4.68
+    },
+    {
+        "text": "look directly at this and it says that",
+        "start": 305.67,
+        "duration": 4.83
+    },
+    {
+        "text": "this is actually optimal for some reason",
+        "start": 308.37,
+        "duration": 4.56
+    },
+    {
+        "text": "I tried to look it up here why Union is",
+        "start": 310.5,
+        "duration": 4.53
+    },
+    {
+        "text": "better than or it says solution is a bit",
+        "start": 312.93,
+        "duration": 4.02
+    },
+    {
+        "text": "faster than the first one however they",
+        "start": 315.03,
+        "duration": 4.47
+    },
+    {
+        "text": "do not have a big difference so I'm not",
+        "start": 316.95,
+        "duration": 4.56
+    },
+    {
+        "text": "sure why Union is better than or please",
+        "start": 319.5,
+        "duration": 3.21
+    },
+    {
+        "text": "let me know if you know I'm gonna look",
+        "start": 321.51,
+        "duration": 3.24
+    },
+    {
+        "text": "it up after this but I'd still like to",
+        "start": 322.71,
+        "duration": 4.71
+    },
+    {
+        "text": "read the comments if you know so let me",
+        "start": 324.75,
+        "duration": 4.17
+    },
+    {
+        "text": "know I'm gonna start doing probably more",
+        "start": 327.42,
+        "duration": 4.26
+    },
+    {
+        "text": "advanced sequel ones too this was big",
+        "start": 328.92,
+        "duration": 5.22
+    },
+    {
+        "text": "countries it was just I'm just doing",
+        "start": 331.68,
+        "duration": 4.32
+    },
+    {
+        "text": "them in order here so big countries is",
+        "start": 334.14,
+        "duration": 3.75
+    },
+    {
+        "text": "right here so thank you guys for",
+        "start": 336.0,
+        "duration": 3.09
+    },
+    {
+        "text": "watching please check out the other ones",
+        "start": 337.89,
+        "duration": 3.51
+    },
+    {
+        "text": "I'm gonna do sequel from now on and that",
+        "start": 339.09,
+        "duration": 3.81
+    },
+    {
+        "text": "was it that was the first sequel problem",
+        "start": 341.4,
+        "duration": 4.52
+    },
+    {
+        "text": "see you guys next time",
+        "start": 342.9,
+        "duration": 3.02
+    }
+]

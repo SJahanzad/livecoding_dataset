@@ -1,0 +1,3312 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.76
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.839,
+        "duration": 2.801
+    },
+    {
+        "text": "we're going to solve",
+        "start": 3.76,
+        "duration": 3.519
+    },
+    {
+        "text": "longest repeating character replacement",
+        "start": 4.64,
+        "duration": 4.64
+    },
+    {
+        "text": "and so this is another problem from that",
+        "start": 7.279,
+        "duration": 3.601
+    },
+    {
+        "text": "blind 75 list",
+        "start": 9.28,
+        "duration": 3.519
+    },
+    {
+        "text": "so we are going to be one step closer to",
+        "start": 10.88,
+        "duration": 3.44
+    },
+    {
+        "text": "completing the entire list",
+        "start": 12.799,
+        "duration": 3.281
+    },
+    {
+        "text": "the link will be in the description to",
+        "start": 14.32,
+        "duration": 3.28
+    },
+    {
+        "text": "this spreadsheet if you do want to take",
+        "start": 16.08,
+        "duration": 2.08
+    },
+    {
+        "text": "a look",
+        "start": 17.6,
+        "duration": 2.48
+    },
+    {
+        "text": "and hello to the six people that are",
+        "start": 18.16,
+        "duration": 3.36
+    },
+    {
+        "text": "currently viewing the",
+        "start": 20.08,
+        "duration": 3.119
+    },
+    {
+        "text": "spreadsheet right now you're gonna be in",
+        "start": 21.52,
+        "duration": 3.919
+    },
+    {
+        "text": "the next video but okay so let's get",
+        "start": 23.199,
+        "duration": 3.761
+    },
+    {
+        "text": "into this problem because it's another",
+        "start": 25.439,
+        "duration": 3.361
+    },
+    {
+        "text": "pretty fundamental problem that's really",
+        "start": 26.96,
+        "duration": 3.6
+    },
+    {
+        "text": "good to understand so we're given a",
+        "start": 28.8,
+        "duration": 2.399
+    },
+    {
+        "text": "string",
+        "start": 30.56,
+        "duration": 3.6
+    },
+    {
+        "text": "s and a single integer k and so",
+        "start": 31.199,
+        "duration": 4.961
+    },
+    {
+        "text": "basically they tell us that we can",
+        "start": 34.16,
+        "duration": 2.64
+    },
+    {
+        "text": "choose",
+        "start": 36.16,
+        "duration": 3.76
+    },
+    {
+        "text": "any of the characters in the string and",
+        "start": 36.8,
+        "duration": 6.4
+    },
+    {
+        "text": "change it to any other uppercase english",
+        "start": 39.92,
+        "duration": 5.119
+    },
+    {
+        "text": "character so in this problem",
+        "start": 43.2,
+        "duration": 3.519
+    },
+    {
+        "text": "every character in the input string is",
+        "start": 45.039,
+        "duration": 4.161
+    },
+    {
+        "text": "going to be limited to uppercase english",
+        "start": 46.719,
+        "duration": 5.041
+    },
+    {
+        "text": "characters and we know that there's 26",
+        "start": 49.2,
+        "duration": 4.64
+    },
+    {
+        "text": "uppercase english characters from",
+        "start": 51.76,
+        "duration": 4.4
+    },
+    {
+        "text": "capital a to capital z",
+        "start": 53.84,
+        "duration": 4.719
+    },
+    {
+        "text": "and so basically we can perform a",
+        "start": 56.16,
+        "duration": 3.52
+    },
+    {
+        "text": "replacement on",
+        "start": 58.559,
+        "duration": 4.961
+    },
+    {
+        "text": "any of the characters at most k times",
+        "start": 59.68,
+        "duration": 6.16
+    },
+    {
+        "text": "so we are allowed to replace k different",
+        "start": 63.52,
+        "duration": 4.16
+    },
+    {
+        "text": "characters in the string to any other",
+        "start": 65.84,
+        "duration": 3.12
+    },
+    {
+        "text": "character we want",
+        "start": 67.68,
+        "duration": 3.68
+    },
+    {
+        "text": "and what we want to do is return the",
+        "start": 68.96,
+        "duration": 3.519
+    },
+    {
+        "text": "length of the",
+        "start": 71.36,
+        "duration": 3.92
+    },
+    {
+        "text": "longest substring containing the exact",
+        "start": 72.479,
+        "duration": 4.96
+    },
+    {
+        "text": "same character we can get after",
+        "start": 75.28,
+        "duration": 2.96
+    },
+    {
+        "text": "performing",
+        "start": 77.439,
+        "duration": 3.921
+    },
+    {
+        "text": "at most k different replacements",
+        "start": 78.24,
+        "duration": 5.28
+    },
+    {
+        "text": "so we just want to return that length we",
+        "start": 81.36,
+        "duration": 4.0
+    },
+    {
+        "text": "don't actually have to make those",
+        "start": 83.52,
+        "duration": 4.08
+    },
+    {
+        "text": "replacements in the input string",
+        "start": 85.36,
+        "duration": 4.399
+    },
+    {
+        "text": "so in this case when we take a look at",
+        "start": 87.6,
+        "duration": 3.44
+    },
+    {
+        "text": "the input string we have a",
+        "start": 89.759,
+        "duration": 3.761
+    },
+    {
+        "text": "b a b and we're allowed to replace two",
+        "start": 91.04,
+        "duration": 3.439
+    },
+    {
+        "text": "of the characters",
+        "start": 93.52,
+        "duration": 3.279
+    },
+    {
+        "text": "so what's the longest substring we could",
+        "start": 94.479,
+        "duration": 4.081
+    },
+    {
+        "text": "get with the exact same character well",
+        "start": 96.799,
+        "duration": 2.64
+    },
+    {
+        "text": "we could replace",
+        "start": 98.56,
+        "duration": 2.559
+    },
+    {
+        "text": "one of the b's we could basically",
+        "start": 99.439,
+        "duration": 3.281
+    },
+    {
+        "text": "replace both of the b's",
+        "start": 101.119,
+        "duration": 4.481
+    },
+    {
+        "text": "with a capital a and then we get four",
+        "start": 102.72,
+        "duration": 4.16
+    },
+    {
+        "text": "a's in a row",
+        "start": 105.6,
+        "duration": 3.28
+    },
+    {
+        "text": "which would give us an output of four",
+        "start": 106.88,
+        "duration": 4.0
+    },
+    {
+        "text": "and we could technically also do the",
+        "start": 108.88,
+        "duration": 4.16
+    },
+    {
+        "text": "opposite we could replace the a's",
+        "start": 110.88,
+        "duration": 4.239
+    },
+    {
+        "text": "with capital b's and that would give us",
+        "start": 113.04,
+        "duration": 4.8
+    },
+    {
+        "text": "the exact same result a length of four",
+        "start": 115.119,
+        "duration": 4.32
+    },
+    {
+        "text": "so i'm going to show you how you can",
+        "start": 117.84,
+        "duration": 3.12
+    },
+    {
+        "text": "solve this problem in big",
+        "start": 119.439,
+        "duration": 3.601
+    },
+    {
+        "text": "o of n time and technically it's going",
+        "start": 120.96,
+        "duration": 3.04
+    },
+    {
+        "text": "to be big o of",
+        "start": 123.04,
+        "duration": 4.079
+    },
+    {
+        "text": "26 multiplied by n which we know is also",
+        "start": 124.0,
+        "duration": 4.08
+    },
+    {
+        "text": "reduces to",
+        "start": 127.119,
+        "duration": 2.961
+    },
+    {
+        "text": "big o of n but there's actually",
+        "start": 128.08,
+        "duration": 3.68
+    },
+    {
+        "text": "technically an easier",
+        "start": 130.08,
+        "duration": 3.92
+    },
+    {
+        "text": "way to do it or at least a more simple",
+        "start": 131.76,
+        "duration": 4.16
+    },
+    {
+        "text": "way to do it which is just going to be",
+        "start": 134.0,
+        "duration": 3.76
+    },
+    {
+        "text": "a flat big o of n we don't even need",
+        "start": 135.92,
+        "duration": 3.84
+    },
+    {
+        "text": "this 26 constant",
+        "start": 137.76,
+        "duration": 4.16
+    },
+    {
+        "text": "but this way is actually pretty tricky",
+        "start": 139.76,
+        "duration": 3.28
+    },
+    {
+        "text": "to get to",
+        "start": 141.92,
+        "duration": 3.039
+    },
+    {
+        "text": "so i'll be going over a little bit of it",
+        "start": 143.04,
+        "duration": 3.6
+    },
+    {
+        "text": "but this is kind of the main way that",
+        "start": 144.959,
+        "duration": 3.601
+    },
+    {
+        "text": "you'd want to solve this problem",
+        "start": 146.64,
+        "duration": 4.0
+    },
+    {
+        "text": "so let's say we're given an input string",
+        "start": 148.56,
+        "duration": 3.84
+    },
+    {
+        "text": "like this and we're given a k value now",
+        "start": 150.64,
+        "duration": 3.44
+    },
+    {
+        "text": "the most brute force way would just be",
+        "start": 152.4,
+        "duration": 4.0
+    },
+    {
+        "text": "check every single substring right",
+        "start": 154.08,
+        "duration": 4.48
+    },
+    {
+        "text": "and if we were checking every single sub",
+        "start": 156.4,
+        "duration": 3.839
+    },
+    {
+        "text": "string in the entire input array we know",
+        "start": 158.56,
+        "duration": 3.2
+    },
+    {
+        "text": "there's n squared sub string so that",
+        "start": 160.239,
+        "duration": 2.801
+    },
+    {
+        "text": "wouldn't be the simple",
+        "start": 161.76,
+        "duration": 3.28
+    },
+    {
+        "text": "that wouldn't be the most efficient way",
+        "start": 163.04,
+        "duration": 3.919
+    },
+    {
+        "text": "to do it but even if we were doing it",
+        "start": 165.04,
+        "duration": 3.919
+    },
+    {
+        "text": "like that what exactly are we",
+        "start": 166.959,
+        "duration": 4.481
+    },
+    {
+        "text": "looking for if we're looking at a",
+        "start": 168.959,
+        "duration": 4.161
+    },
+    {
+        "text": "particular substring",
+        "start": 171.44,
+        "duration": 4.159
+    },
+    {
+        "text": "how do we know if this substring is",
+        "start": 173.12,
+        "duration": 4.56
+    },
+    {
+        "text": "valid because remember at the end of the",
+        "start": 175.599,
+        "duration": 2.72
+    },
+    {
+        "text": "day",
+        "start": 177.68,
+        "duration": 2.8
+    },
+    {
+        "text": "we want to maximize the result right the",
+        "start": 178.319,
+        "duration": 4.241
+    },
+    {
+        "text": "result is going to be the longest",
+        "start": 180.48,
+        "duration": 4.16
+    },
+    {
+        "text": "sub string that contains a single",
+        "start": 182.56,
+        "duration": 3.28
+    },
+    {
+        "text": "character and we can make",
+        "start": 184.64,
+        "duration": 4.0
+    },
+    {
+        "text": "two replacements so let's look at this",
+        "start": 185.84,
+        "duration": 4.24
+    },
+    {
+        "text": "substring alone",
+        "start": 188.64,
+        "duration": 4.72
+    },
+    {
+        "text": "how do we know if it's valid well which",
+        "start": 190.08,
+        "duration": 5.12
+    },
+    {
+        "text": "character are we going to replace are we",
+        "start": 193.36,
+        "duration": 4.08
+    },
+    {
+        "text": "going to want to replace the b's",
+        "start": 195.2,
+        "duration": 4.64
+    },
+    {
+        "text": "in order to make it all be amount to",
+        "start": 197.44,
+        "duration": 4.879
+    },
+    {
+        "text": "match a or would we want to replace the",
+        "start": 199.84,
+        "duration": 4.959
+    },
+    {
+        "text": "a in order to match it with the rest of",
+        "start": 202.319,
+        "duration": 3.601
+    },
+    {
+        "text": "the b's",
+        "start": 204.799,
+        "duration": 2.72
+    },
+    {
+        "text": "of course we're going to replace the",
+        "start": 205.92,
+        "duration": 3.84
+    },
+    {
+        "text": "character that occurs less frequently",
+        "start": 207.519,
+        "duration": 3.841
+    },
+    {
+        "text": "right because the number of replacements",
+        "start": 209.76,
+        "duration": 2.399
+    },
+    {
+        "text": "we have is",
+        "start": 211.36,
+        "duration": 3.2
+    },
+    {
+        "text": "limited so we would want to replace the",
+        "start": 212.159,
+        "duration": 3.201
+    },
+    {
+        "text": "character",
+        "start": 214.56,
+        "duration": 2.399
+    },
+    {
+        "text": "that the characters that are less",
+        "start": 215.36,
+        "duration": 3.28
+    },
+    {
+        "text": "frequent so in other words",
+        "start": 216.959,
+        "duration": 4.721
+    },
+    {
+        "text": "we want all characters in a particular",
+        "start": 218.64,
+        "duration": 3.84
+    },
+    {
+        "text": "window to",
+        "start": 221.68,
+        "duration": 4.0
+    },
+    {
+        "text": "match the most common character",
+        "start": 222.48,
+        "duration": 5.2
+    },
+    {
+        "text": "in that window so what we're going to be",
+        "start": 225.68,
+        "duration": 4.16
+    },
+    {
+        "text": "doing is we are going to have a",
+        "start": 227.68,
+        "duration": 5.44
+    },
+    {
+        "text": "hash map or a array which is going to",
+        "start": 229.84,
+        "duration": 3.679
+    },
+    {
+        "text": "take",
+        "start": 233.12,
+        "duration": 3.119
+    },
+    {
+        "text": "every single character in this case we",
+        "start": 233.519,
+        "duration": 4.321
+    },
+    {
+        "text": "only have characters a and b",
+        "start": 236.239,
+        "duration": 3.2
+    },
+    {
+        "text": "and we're going to count the number of",
+        "start": 237.84,
+        "duration": 4.0
+    },
+    {
+        "text": "occurrences of each character",
+        "start": 239.439,
+        "duration": 4.0
+    },
+    {
+        "text": "so for example if we were looking at",
+        "start": 241.84,
+        "duration": 3.44
+    },
+    {
+        "text": "this substring we see that there's three",
+        "start": 243.439,
+        "duration": 3.44
+    },
+    {
+        "text": "b's and we have a single",
+        "start": 245.28,
+        "duration": 5.12
+    },
+    {
+        "text": "a so how do we know if this window is",
+        "start": 246.879,
+        "duration": 6.0
+    },
+    {
+        "text": "valid what we're gonna do is we're gonna",
+        "start": 250.4,
+        "duration": 3.039
+    },
+    {
+        "text": "take",
+        "start": 252.879,
+        "duration": 2.961
+    },
+    {
+        "text": "the length of the window which is gonna",
+        "start": 253.439,
+        "duration": 3.52
+    },
+    {
+        "text": "be four",
+        "start": 255.84,
+        "duration": 3.679
+    },
+    {
+        "text": "right we're gonna take the length of the",
+        "start": 256.959,
+        "duration": 4.161
+    },
+    {
+        "text": "window right which we know in this case",
+        "start": 259.519,
+        "duration": 2.161
+    },
+    {
+        "text": "is four",
+        "start": 261.12,
+        "duration": 3.6
+    },
+    {
+        "text": "and we're gonna take the length or the",
+        "start": 261.68,
+        "duration": 5.76
+    },
+    {
+        "text": "count of the most frequent character in",
+        "start": 264.72,
+        "duration": 3.36
+    },
+    {
+        "text": "this case",
+        "start": 267.44,
+        "duration": 2.88
+    },
+    {
+        "text": "we know that that's b and the count of",
+        "start": 268.08,
+        "duration": 3.119
+    },
+    {
+        "text": "it happens to be",
+        "start": 270.32,
+        "duration": 3.12
+    },
+    {
+        "text": "three so we're gonna take four minus",
+        "start": 271.199,
+        "duration": 3.201
+    },
+    {
+        "text": "three and",
+        "start": 273.44,
+        "duration": 3.039
+    },
+    {
+        "text": "from that we're gonna get a one now what",
+        "start": 274.4,
+        "duration": 4.0
+    },
+    {
+        "text": "does this value one tell us",
+        "start": 276.479,
+        "duration": 4.481
+    },
+    {
+        "text": "it tells us the number of characters in",
+        "start": 278.4,
+        "duration": 3.68
+    },
+    {
+        "text": "our window right",
+        "start": 280.96,
+        "duration": 4.239
+    },
+    {
+        "text": "now that we need to replace in order to",
+        "start": 282.08,
+        "duration": 3.679
+    },
+    {
+        "text": "make it",
+        "start": 285.199,
+        "duration": 2.72
+    },
+    {
+        "text": "match the most frequent character b",
+        "start": 285.759,
+        "duration": 3.361
+    },
+    {
+        "text": "right we have a b here",
+        "start": 287.919,
+        "duration": 3.041
+    },
+    {
+        "text": "we want everything to match a b in this",
+        "start": 289.12,
+        "duration": 3.44
+    },
+    {
+        "text": "case we only have an a right but it",
+        "start": 290.96,
+        "duration": 2.56
+    },
+    {
+        "text": "could be possible like",
+        "start": 292.56,
+        "duration": 2.8
+    },
+    {
+        "text": "who knows maybe that we would have a c",
+        "start": 293.52,
+        "duration": 3.44
+    },
+    {
+        "text": "over here right or an x",
+        "start": 295.36,
+        "duration": 3.839
+    },
+    {
+        "text": "over here and it doesn't really matter",
+        "start": 296.96,
+        "duration": 3.2
+    },
+    {
+        "text": "what the characters",
+        "start": 299.199,
+        "duration": 3.44
+    },
+    {
+        "text": "are we just know that b is the most",
+        "start": 300.16,
+        "duration": 4.24
+    },
+    {
+        "text": "frequent character in the window",
+        "start": 302.639,
+        "duration": 4.481
+    },
+    {
+        "text": "and the other characters that are not b",
+        "start": 304.4,
+        "duration": 3.44
+    },
+    {
+        "text": "a and z",
+        "start": 307.12,
+        "duration": 2.4
+    },
+    {
+        "text": "for example are the characters we want",
+        "start": 307.84,
+        "duration": 3.68
+    },
+    {
+        "text": "to replace so we can calculate the",
+        "start": 309.52,
+        "duration": 3.679
+    },
+    {
+        "text": "number of characters we want to pull",
+        "start": 311.52,
+        "duration": 4.959
+    },
+    {
+        "text": "that we want to replace just like this",
+        "start": 313.199,
+        "duration": 5.761
+    },
+    {
+        "text": "and so so we want to replace one",
+        "start": 316.479,
+        "duration": 4.56
+    },
+    {
+        "text": "character how do we know if we have",
+        "start": 318.96,
+        "duration": 2.959
+    },
+    {
+        "text": "enough",
+        "start": 321.039,
+        "duration": 3.44
+    },
+    {
+        "text": "replacements to do one character well of",
+        "start": 321.919,
+        "duration": 4.401
+    },
+    {
+        "text": "course that's our input parameter",
+        "start": 324.479,
+        "duration": 4.801
+    },
+    {
+        "text": "k right so what we're confirming here is",
+        "start": 326.32,
+        "duration": 3.52
+    },
+    {
+        "text": "that",
+        "start": 329.28,
+        "duration": 3.68
+    },
+    {
+        "text": "this value is less than or equal to",
+        "start": 329.84,
+        "duration": 6.639
+    },
+    {
+        "text": "k as long as this condition is true",
+        "start": 332.96,
+        "duration": 6.799
+    },
+    {
+        "text": "that means our current window is valid",
+        "start": 336.479,
+        "duration": 5.681
+    },
+    {
+        "text": "that means we have enough replacements",
+        "start": 339.759,
+        "duration": 4.16
+    },
+    {
+        "text": "to make those replacements",
+        "start": 342.16,
+        "duration": 4.319
+    },
+    {
+        "text": "in our current window so this is the",
+        "start": 343.919,
+        "duration": 4.241
+    },
+    {
+        "text": "main condition that we're going to be",
+        "start": 346.479,
+        "duration": 3.841
+    },
+    {
+        "text": "checking the other question is how are",
+        "start": 348.16,
+        "duration": 3.92
+    },
+    {
+        "text": "we going to know which character is the",
+        "start": 350.32,
+        "duration": 2.96
+    },
+    {
+        "text": "most frequent well",
+        "start": 352.08,
+        "duration": 3.52
+    },
+    {
+        "text": "the brute force way is gonna be taking a",
+        "start": 353.28,
+        "duration": 3.919
+    },
+    {
+        "text": "look at our map",
+        "start": 355.6,
+        "duration": 4.4
+    },
+    {
+        "text": "of counts and we know that the max size",
+        "start": 357.199,
+        "duration": 4.161
+    },
+    {
+        "text": "of this could possibly be",
+        "start": 360.0,
+        "duration": 4.24
+    },
+    {
+        "text": "26 because we'd only have 26 different",
+        "start": 361.36,
+        "duration": 3.679
+    },
+    {
+        "text": "characters",
+        "start": 364.24,
+        "duration": 2.959
+    },
+    {
+        "text": "so doing finding the max character is",
+        "start": 365.039,
+        "duration": 4.16
+    },
+    {
+        "text": "going to be big o of 26 so that's",
+        "start": 367.199,
+        "duration": 4.081
+    },
+    {
+        "text": "a little bit more inefficient than we",
+        "start": 369.199,
+        "duration": 4.481
+    },
+    {
+        "text": "would like but it's technically still",
+        "start": 371.28,
+        "duration": 4.88
+    },
+    {
+        "text": "linear time like the overall algorithm",
+        "start": 373.68,
+        "duration": 4.079
+    },
+    {
+        "text": "is still going to be linear time",
+        "start": 376.16,
+        "duration": 3.12
+    },
+    {
+        "text": "the the last thing that we're gonna have",
+        "start": 377.759,
+        "duration": 3.761
+    },
+    {
+        "text": "to do though is to this",
+        "start": 379.28,
+        "duration": 4.4
+    },
+    {
+        "text": "uh equation we're gonna have to add a",
+        "start": 381.52,
+        "duration": 4.239
+    },
+    {
+        "text": "sliding window technique so basically",
+        "start": 383.68,
+        "duration": 3.68
+    },
+    {
+        "text": "what we're gonna do is we're gonna take",
+        "start": 385.759,
+        "duration": 2.401
+    },
+    {
+        "text": "our window",
+        "start": 387.36,
+        "duration": 3.04
+    },
+    {
+        "text": "start at the beginning expand it as much",
+        "start": 388.16,
+        "duration": 3.759
+    },
+    {
+        "text": "as we can as long as the",
+        "start": 390.4,
+        "duration": 3.76
+    },
+    {
+        "text": "the condition that we mentioned is valid",
+        "start": 391.919,
+        "duration": 4.081
+    },
+    {
+        "text": "if the condition is not valid then we're",
+        "start": 394.16,
+        "duration": 3.44
+    },
+    {
+        "text": "going to take our left pointer",
+        "start": 396.0,
+        "duration": 3.759
+    },
+    {
+        "text": "and then take our left pointer and then",
+        "start": 397.6,
+        "duration": 3.599
+    },
+    {
+        "text": "shift it as well",
+        "start": 399.759,
+        "duration": 4.081
+    },
+    {
+        "text": "until the string becomes valid once",
+        "start": 401.199,
+        "duration": 3.361
+    },
+    {
+        "text": "again",
+        "start": 403.84,
+        "duration": 2.32
+    },
+    {
+        "text": "so we're going to have a left and right",
+        "start": 404.56,
+        "duration": 3.84
+    },
+    {
+        "text": "pointer so initially left is gonna be at",
+        "start": 406.16,
+        "duration": 3.28
+    },
+    {
+        "text": "the beginning and",
+        "start": 408.4,
+        "duration": 3.6
+    },
+    {
+        "text": "right is also gonna be at the beginning",
+        "start": 409.44,
+        "duration": 4.4
+    },
+    {
+        "text": "and also the counts of a",
+        "start": 412.0,
+        "duration": 4.479
+    },
+    {
+        "text": "and b are initially gonna be zero now",
+        "start": 413.84,
+        "duration": 4.079
+    },
+    {
+        "text": "we're gonna look at the first character",
+        "start": 416.479,
+        "duration": 1.84
+    },
+    {
+        "text": "right",
+        "start": 417.919,
+        "duration": 1.84
+    },
+    {
+        "text": "that's where our right pointer happens",
+        "start": 418.319,
+        "duration": 2.641
+    },
+    {
+        "text": "to be we're gonna look at it we're gonna",
+        "start": 419.759,
+        "duration": 2.401
+    },
+    {
+        "text": "say okay we have a",
+        "start": 420.96,
+        "duration": 2.799
+    },
+    {
+        "text": "we have a single a right we're going to",
+        "start": 422.16,
+        "duration": 3.439
+    },
+    {
+        "text": "take our count of a",
+        "start": 423.759,
+        "duration": 5.041
+    },
+    {
+        "text": "and set it to 1 now so is this",
+        "start": 425.599,
+        "duration": 6.481
+    },
+    {
+        "text": "window valid as in can this window be",
+        "start": 428.8,
+        "duration": 4.56
+    },
+    {
+        "text": "the exact same character",
+        "start": 432.08,
+        "duration": 3.519
+    },
+    {
+        "text": "with within two replacements of course",
+        "start": 433.36,
+        "duration": 4.0
+    },
+    {
+        "text": "it can right that's kind of the trivial",
+        "start": 435.599,
+        "duration": 2.481
+    },
+    {
+        "text": "case but",
+        "start": 437.36,
+        "duration": 2.88
+    },
+    {
+        "text": "we would still calculate it and the way",
+        "start": 438.08,
+        "duration": 3.92
+    },
+    {
+        "text": "we would calculate it is get the size of",
+        "start": 440.24,
+        "duration": 3.12
+    },
+    {
+        "text": "our window right now we can see the size",
+        "start": 442.0,
+        "duration": 2.4
+    },
+    {
+        "text": "of our window is",
+        "start": 443.36,
+        "duration": 4.16
+    },
+    {
+        "text": "one subtracted by the count of",
+        "start": 444.4,
+        "duration": 4.96
+    },
+    {
+        "text": "the most frequent character in this case",
+        "start": 447.52,
+        "duration": 3.44
+    },
+    {
+        "text": "we know the most frequent character is a",
+        "start": 449.36,
+        "duration": 2.72
+    },
+    {
+        "text": "one minus one",
+        "start": 450.96,
+        "duration": 3.92
+    },
+    {
+        "text": "is that greater is that less than or",
+        "start": 452.08,
+        "duration": 5.6
+    },
+    {
+        "text": "equal to k we know k is two so of course",
+        "start": 454.88,
+        "duration": 4.8
+    },
+    {
+        "text": "uh this is going to equal zero zero is",
+        "start": 457.68,
+        "duration": 3.68
+    },
+    {
+        "text": "less than equal to two which is k",
+        "start": 459.68,
+        "duration": 3.519
+    },
+    {
+        "text": "right so of course this window is valid",
+        "start": 461.36,
+        "duration": 3.839
+    },
+    {
+        "text": "that's kind of a trivial case",
+        "start": 463.199,
+        "duration": 3.921
+    },
+    {
+        "text": "next we're going to shift our right",
+        "start": 465.199,
+        "duration": 4.081
+    },
+    {
+        "text": "pointer to the next character right",
+        "start": 467.12,
+        "duration": 3.68
+    },
+    {
+        "text": "so now we have a b so we're going to",
+        "start": 469.28,
+        "duration": 3.44
+    },
+    {
+        "text": "increment the count of b in our map",
+        "start": 470.8,
+        "duration": 4.48
+    },
+    {
+        "text": "so b is now going to be set to 1. in",
+        "start": 472.72,
+        "duration": 4.4
+    },
+    {
+        "text": "this case the length of our window is 2",
+        "start": 475.28,
+        "duration": 4.16
+    },
+    {
+        "text": "the most frequent character is either of",
+        "start": 477.12,
+        "duration": 3.28
+    },
+    {
+        "text": "these right and the",
+        "start": 479.44,
+        "duration": 2.72
+    },
+    {
+        "text": "the count of that frequent character is",
+        "start": 480.4,
+        "duration": 2.96
+    },
+    {
+        "text": "gonna be one so we're gonna have two",
+        "start": 482.16,
+        "duration": 2.8
+    },
+    {
+        "text": "minus one equal to one",
+        "start": 483.36,
+        "duration": 3.36
+    },
+    {
+        "text": "so this is the number of replacements",
+        "start": 484.96,
+        "duration": 3.2
+    },
+    {
+        "text": "that we would have to do and",
+        "start": 486.72,
+        "duration": 3.039
+    },
+    {
+        "text": "looking at our current window that makes",
+        "start": 488.16,
+        "duration": 2.879
+    },
+    {
+        "text": "sense right we'd have to replace at",
+        "start": 489.759,
+        "duration": 3.44
+    },
+    {
+        "text": "least one of these two characters",
+        "start": 491.039,
+        "duration": 4.801
+    },
+    {
+        "text": "so we're going to ensure that this the",
+        "start": 493.199,
+        "duration": 4.081
+    },
+    {
+        "text": "number of replacements that we need to",
+        "start": 495.84,
+        "duration": 3.039
+    },
+    {
+        "text": "do is less than or equal to k which is",
+        "start": 497.28,
+        "duration": 3.199
+    },
+    {
+        "text": "two of course that's true so",
+        "start": 498.879,
+        "duration": 3.921
+    },
+    {
+        "text": "our window is currently valid i guess i",
+        "start": 500.479,
+        "duration": 3.12
+    },
+    {
+        "text": "did forget to",
+        "start": 502.8,
+        "duration": 2.959
+    },
+    {
+        "text": "update our result so since this window",
+        "start": 503.599,
+        "duration": 4.401
+    },
+    {
+        "text": "is valid the length of the window is",
+        "start": 505.759,
+        "duration": 2.961
+    },
+    {
+        "text": "gonna be",
+        "start": 508.0,
+        "duration": 2.479
+    },
+    {
+        "text": "set to the result right so right now the",
+        "start": 508.72,
+        "duration": 3.84
+    },
+    {
+        "text": "result is two two is the length of the",
+        "start": 510.479,
+        "duration": 4.321
+    },
+    {
+        "text": "longest window that we can get",
+        "start": 512.56,
+        "duration": 3.76
+    },
+    {
+        "text": "so that's our result for now so now",
+        "start": 514.8,
+        "duration": 3.679
+    },
+    {
+        "text": "let's continue next we're gonna shift",
+        "start": 516.32,
+        "duration": 4.0
+    },
+    {
+        "text": "our right pointer to the third character",
+        "start": 518.479,
+        "duration": 2.8
+    },
+    {
+        "text": "so now",
+        "start": 520.32,
+        "duration": 3.279
+    },
+    {
+        "text": "we get another a so we're gonna take the",
+        "start": 521.279,
+        "duration": 3.201
+    },
+    {
+        "text": "count of a",
+        "start": 523.599,
+        "duration": 3.121
+    },
+    {
+        "text": "and increment it all the way to two and",
+        "start": 524.48,
+        "duration": 3.52
+    },
+    {
+        "text": "we're basically going to repeat our",
+        "start": 526.72,
+        "duration": 2.799
+    },
+    {
+        "text": "algorithm so once again we're gonna get",
+        "start": 528.0,
+        "duration": 3.44
+    },
+    {
+        "text": "the length of the window three minus the",
+        "start": 529.519,
+        "duration": 3.681
+    },
+    {
+        "text": "count of the most frequent character we",
+        "start": 531.44,
+        "duration": 3.44
+    },
+    {
+        "text": "see the most frequent character is",
+        "start": 533.2,
+        "duration": 4.56
+    },
+    {
+        "text": "a so the count of is two three minus two",
+        "start": 534.88,
+        "duration": 3.44
+    },
+    {
+        "text": "is one",
+        "start": 537.76,
+        "duration": 2.079
+    },
+    {
+        "text": "is that less than or equal to two which",
+        "start": 538.32,
+        "duration": 3.44
+    },
+    {
+        "text": "is k yes of course it is so",
+        "start": 539.839,
+        "duration": 3.921
+    },
+    {
+        "text": "this window is also valid we can update",
+        "start": 541.76,
+        "duration": 4.16
+    },
+    {
+        "text": "our result now to three so we found",
+        "start": 543.76,
+        "duration": 5.04
+    },
+    {
+        "text": "another window even longer so i'm going",
+        "start": 545.92,
+        "duration": 3.359
+    },
+    {
+        "text": "to take",
+        "start": 548.8,
+        "duration": 2.159
+    },
+    {
+        "text": "our right pointer once again and then",
+        "start": 549.279,
+        "duration": 3.841
+    },
+    {
+        "text": "shift it over to the b",
+        "start": 550.959,
+        "duration": 3.601
+    },
+    {
+        "text": "so now we're going to be since we",
+        "start": 553.12,
+        "duration": 2.719
+    },
+    {
+        "text": "reached another b we're going to",
+        "start": 554.56,
+        "duration": 2.48
+    },
+    {
+        "text": "increment the count of b",
+        "start": 555.839,
+        "duration": 3.68
+    },
+    {
+        "text": "to 2 now and so the length of our window",
+        "start": 557.04,
+        "duration": 3.68
+    },
+    {
+        "text": "now is 4",
+        "start": 559.519,
+        "duration": 2.88
+    },
+    {
+        "text": "and the count of the most frequent",
+        "start": 560.72,
+        "duration": 3.36
+    },
+    {
+        "text": "character is either of these and that's",
+        "start": 562.399,
+        "duration": 2.88
+    },
+    {
+        "text": "going to be 2",
+        "start": 564.08,
+        "duration": 3.68
+    },
+    {
+        "text": "4 minus 2 is equal to 2. is that less",
+        "start": 565.279,
+        "duration": 3.921
+    },
+    {
+        "text": "than or equal to k",
+        "start": 567.76,
+        "duration": 3.92
+    },
+    {
+        "text": "k is 2 in this case so of course once",
+        "start": 569.2,
+        "duration": 4.8
+    },
+    {
+        "text": "again this condition does hold so",
+        "start": 571.68,
+        "duration": 4.56
+    },
+    {
+        "text": "once again we found a window that's",
+        "start": 574.0,
+        "duration": 4.32
+    },
+    {
+        "text": "longer than our result we found a window",
+        "start": 576.24,
+        "duration": 3.12
+    },
+    {
+        "text": "now of length",
+        "start": 578.32,
+        "duration": 2.959
+    },
+    {
+        "text": "four and so once again we're going to",
+        "start": 579.36,
+        "duration": 3.44
+    },
+    {
+        "text": "take our right pointer and shift it so",
+        "start": 581.279,
+        "duration": 1.841
+    },
+    {
+        "text": "now",
+        "start": 582.8,
+        "duration": 2.32
+    },
+    {
+        "text": "another b let's increment the count of b",
+        "start": 583.12,
+        "duration": 4.24
+    },
+    {
+        "text": "to three so the length of the window now",
+        "start": 585.12,
+        "duration": 3.2
+    },
+    {
+        "text": "is five",
+        "start": 587.36,
+        "duration": 2.8
+    },
+    {
+        "text": "minus the count of the most frequent",
+        "start": 588.32,
+        "duration": 3.76
+    },
+    {
+        "text": "character charac that character is b",
+        "start": 590.16,
+        "duration": 5.52
+    },
+    {
+        "text": "five minus three is this two in that and",
+        "start": 592.08,
+        "duration": 4.879
+    },
+    {
+        "text": "less than or equal to k",
+        "start": 595.68,
+        "duration": 3.839
+    },
+    {
+        "text": "of course it's still true because when",
+        "start": 596.959,
+        "duration": 3.681
+    },
+    {
+        "text": "you look at our window",
+        "start": 599.519,
+        "duration": 3.281
+    },
+    {
+        "text": "we have three b's so that means we're",
+        "start": 600.64,
+        "duration": 3.759
+    },
+    {
+        "text": "going to be replacing the a's",
+        "start": 602.8,
+        "duration": 2.8
+    },
+    {
+        "text": "so we're gonna need to make two",
+        "start": 604.399,
+        "duration": 3.361
+    },
+    {
+        "text": "replacements and we are allowed to make",
+        "start": 605.6,
+        "duration": 3.44
+    },
+    {
+        "text": "two replacements",
+        "start": 607.76,
+        "duration": 3.28
+    },
+    {
+        "text": "okay so now we're finally gonna get to",
+        "start": 609.04,
+        "duration": 3.919
+    },
+    {
+        "text": "the case that i mentioned earlier where",
+        "start": 611.04,
+        "duration": 3.039
+    },
+    {
+        "text": "we're gonna have to take our left",
+        "start": 612.959,
+        "duration": 3.281
+    },
+    {
+        "text": "pointer and then slide it to the right",
+        "start": 614.079,
+        "duration": 4.161
+    },
+    {
+        "text": "which is why this is a sliding window",
+        "start": 616.24,
+        "duration": 4.0
+    },
+    {
+        "text": "problem so now we reached an",
+        "start": 618.24,
+        "duration": 4.32
+    },
+    {
+        "text": "a so we're gonna take the count of a and",
+        "start": 620.24,
+        "duration": 4.24
+    },
+    {
+        "text": "set it to three so now we have a",
+        "start": 622.56,
+        "duration": 4.32
+    },
+    {
+        "text": "count three and b count three so let's",
+        "start": 624.48,
+        "duration": 4.32
+    },
+    {
+        "text": "take the size of our window six",
+        "start": 626.88,
+        "duration": 3.68
+    },
+    {
+        "text": "subtract from it the count of the most",
+        "start": 628.8,
+        "duration": 3.2
+    },
+    {
+        "text": "frequent character it's gonna be",
+        "start": 630.56,
+        "duration": 3.6
+    },
+    {
+        "text": "either of these so six minus three means",
+        "start": 632.0,
+        "duration": 4.24
+    },
+    {
+        "text": "we need to make three replacements",
+        "start": 634.16,
+        "duration": 5.52
+    },
+    {
+        "text": "is that less than or equal to k k is two",
+        "start": 636.24,
+        "duration": 6.4
+    },
+    {
+        "text": "so we exceeded k right we exceeded the",
+        "start": 639.68,
+        "duration": 4.88
+    },
+    {
+        "text": "number of replacements we're allowed to",
+        "start": 642.64,
+        "duration": 2.319
+    },
+    {
+        "text": "make",
+        "start": 644.56,
+        "duration": 2.48
+    },
+    {
+        "text": "if we wanted this window to be valid we",
+        "start": 644.959,
+        "duration": 4.241
+    },
+    {
+        "text": "have to replace three characters in it",
+        "start": 647.04,
+        "duration": 4.08
+    },
+    {
+        "text": "but we're not allowed to do that so what",
+        "start": 649.2,
+        "duration": 2.72
+    },
+    {
+        "text": "we have to do",
+        "start": 651.12,
+        "duration": 3.76
+    },
+    {
+        "text": "is shrink the size of our window until",
+        "start": 651.92,
+        "duration": 3.28
+    },
+    {
+        "text": "we",
+        "start": 654.88,
+        "duration": 2.32
+    },
+    {
+        "text": "are valid so we're going to take our",
+        "start": 655.2,
+        "duration": 3.28
+    },
+    {
+        "text": "left pointer and",
+        "start": 657.2,
+        "duration": 3.68
+    },
+    {
+        "text": "shift it to the right so now the left",
+        "start": 658.48,
+        "duration": 3.76
+    },
+    {
+        "text": "pointer is going to be over here it's",
+        "start": 660.88,
+        "duration": 2.32
+    },
+    {
+        "text": "going to be at the b",
+        "start": 662.24,
+        "duration": 3.44
+    },
+    {
+        "text": "so since we removed this a from our",
+        "start": 663.2,
+        "duration": 3.04
+    },
+    {
+        "text": "window",
+        "start": 665.68,
+        "duration": 3.2
+    },
+    {
+        "text": "we have to decrement the count of a in",
+        "start": 666.24,
+        "duration": 4.32
+    },
+    {
+        "text": "our window so i'm going to cross this",
+        "start": 668.88,
+        "duration": 2.72
+    },
+    {
+        "text": "three out and now it's",
+        "start": 670.56,
+        "duration": 2.56
+    },
+    {
+        "text": "actually going to be set to 2. i kind of",
+        "start": 671.6,
+        "duration": 3.919
+    },
+    {
+        "text": "ran out of room but i hope this is still",
+        "start": 673.12,
+        "duration": 3.04
+    },
+    {
+        "text": "readable",
+        "start": 675.519,
+        "duration": 3.281
+    },
+    {
+        "text": "so now the count of a is two so now",
+        "start": 676.16,
+        "duration": 3.679
+    },
+    {
+        "text": "let's once again",
+        "start": 678.8,
+        "duration": 3.599
+    },
+    {
+        "text": "check is our window valid well the size",
+        "start": 679.839,
+        "duration": 3.761
+    },
+    {
+        "text": "of the window now is",
+        "start": 682.399,
+        "duration": 3.361
+    },
+    {
+        "text": "five and the count of the most frequent",
+        "start": 683.6,
+        "duration": 3.04
+    },
+    {
+        "text": "character is",
+        "start": 685.76,
+        "duration": 3.6
+    },
+    {
+        "text": "b and that's gonna be three so five",
+        "start": 686.64,
+        "duration": 4.24
+    },
+    {
+        "text": "minus three is gonna be equal to two",
+        "start": 689.36,
+        "duration": 3.68
+    },
+    {
+        "text": "is that less than or equal to k yes we",
+        "start": 690.88,
+        "duration": 3.6
+    },
+    {
+        "text": "are once again",
+        "start": 693.04,
+        "duration": 4.08
+    },
+    {
+        "text": "valid so this is technically a valid",
+        "start": 694.48,
+        "duration": 4.24
+    },
+    {
+        "text": "window and i think i forgot to update",
+        "start": 697.12,
+        "duration": 3.44
+    },
+    {
+        "text": "the result earlier when we had a window",
+        "start": 698.72,
+        "duration": 3.04
+    },
+    {
+        "text": "of size five so",
+        "start": 700.56,
+        "duration": 3.76
+    },
+    {
+        "text": "the result right now would be size five",
+        "start": 701.76,
+        "duration": 4.48
+    },
+    {
+        "text": "because the longest window we can make",
+        "start": 704.32,
+        "duration": 4.4
+    },
+    {
+        "text": "is either this window or the window that",
+        "start": 706.24,
+        "duration": 3.36
+    },
+    {
+        "text": "we had",
+        "start": 708.72,
+        "duration": 3.28
+    },
+    {
+        "text": "uh earlier with you know these first",
+        "start": 709.6,
+        "duration": 3.6
+    },
+    {
+        "text": "five characters",
+        "start": 712.0,
+        "duration": 3.2
+    },
+    {
+        "text": "but yeah and so at this point we would",
+        "start": 713.2,
+        "duration": 4.079
+    },
+    {
+        "text": "stop our algorithm because we did find a",
+        "start": 715.2,
+        "duration": 2.879
+    },
+    {
+        "text": "window of",
+        "start": 717.279,
+        "duration": 2.881
+    },
+    {
+        "text": "5 that is valid and our right pointer",
+        "start": 718.079,
+        "duration": 3.44
+    },
+    {
+        "text": "cannot be shifted",
+        "start": 720.16,
+        "duration": 4.16
+    },
+    {
+        "text": "anymore so this is the general algorithm",
+        "start": 721.519,
+        "duration": 4.56
+    },
+    {
+        "text": "so it's a basic sliding it's a",
+        "start": 724.32,
+        "duration": 3.6
+    },
+    {
+        "text": "fundamental sliding window problem with",
+        "start": 726.079,
+        "duration": 3.44
+    },
+    {
+        "text": "this particular condition",
+        "start": 727.92,
+        "duration": 4.64
+    },
+    {
+        "text": "being important but there's actually one",
+        "start": 729.519,
+        "duration": 4.641
+    },
+    {
+        "text": "way you can do it without",
+        "start": 732.56,
+        "duration": 4.16
+    },
+    {
+        "text": "having to look through the entire",
+        "start": 734.16,
+        "duration": 3.28
+    },
+    {
+        "text": "hashmap",
+        "start": 736.72,
+        "duration": 2.64
+    },
+    {
+        "text": "every time you want to find the most",
+        "start": 737.44,
+        "duration": 3.12
+    },
+    {
+        "text": "frequent character",
+        "start": 739.36,
+        "duration": 4.64
+    },
+    {
+        "text": "that occurs and it's kind of tricky",
+        "start": 740.56,
+        "duration": 5.04
+    },
+    {
+        "text": "to arrive at the solution but it's",
+        "start": 744.0,
+        "duration": 3.519
+    },
+    {
+        "text": "pretty easy to implement once you can",
+        "start": 745.6,
+        "duration": 3.039
+    },
+    {
+        "text": "figure it out",
+        "start": 747.519,
+        "duration": 3.12
+    },
+    {
+        "text": "i'll explain the algorithm at a high",
+        "start": 748.639,
+        "duration": 3.921
+    },
+    {
+        "text": "level i don't want to waste too much",
+        "start": 750.639,
+        "duration": 3.361
+    },
+    {
+        "text": "time on it but basically we're going to",
+        "start": 752.56,
+        "duration": 3.519
+    },
+    {
+        "text": "be having another variable",
+        "start": 754.0,
+        "duration": 3.519
+    },
+    {
+        "text": "and it's going to be called max",
+        "start": 756.079,
+        "duration": 3.521
+    },
+    {
+        "text": "frequency basically the count of the",
+        "start": 757.519,
+        "duration": 4.241
+    },
+    {
+        "text": "most frequent character at any given",
+        "start": 759.6,
+        "duration": 3.039
+    },
+    {
+        "text": "time",
+        "start": 761.76,
+        "duration": 2.96
+    },
+    {
+        "text": "so basically you know for example if we",
+        "start": 762.639,
+        "duration": 3.521
+    },
+    {
+        "text": "had a as",
+        "start": 764.72,
+        "duration": 3.52
+    },
+    {
+        "text": "a count of three and b is count two we'd",
+        "start": 766.16,
+        "duration": 4.0
+    },
+    {
+        "text": "say okay the count of the mo",
+        "start": 768.24,
+        "duration": 3.599
+    },
+    {
+        "text": "the most frequent character occurs three",
+        "start": 770.16,
+        "duration": 3.84
+    },
+    {
+        "text": "times so max f is going to be three",
+        "start": 771.839,
+        "duration": 4.8
+    },
+    {
+        "text": "and so any time you know if we got a b",
+        "start": 774.0,
+        "duration": 3.04
+    },
+    {
+        "text": "we inc",
+        "start": 776.639,
+        "duration": 1.841
+    },
+    {
+        "text": "let's say we incremented our b all the",
+        "start": 777.04,
+        "duration": 3.68
+    },
+    {
+        "text": "way up to four then we want to update",
+        "start": 778.48,
+        "duration": 5.28
+    },
+    {
+        "text": "our max frequency to four right so we'd",
+        "start": 780.72,
+        "duration": 4.799
+    },
+    {
+        "text": "always want this to be the most frequent",
+        "start": 783.76,
+        "duration": 2.319
+    },
+    {
+        "text": "character",
+        "start": 785.519,
+        "duration": 3.041
+    },
+    {
+        "text": "now the one problem is if we're trying",
+        "start": 786.079,
+        "duration": 3.921
+    },
+    {
+        "text": "to maintain the count of the most",
+        "start": 788.56,
+        "duration": 2.399
+    },
+    {
+        "text": "frequent character",
+        "start": 790.0,
+        "duration": 2.56
+    },
+    {
+        "text": "what happens when we take our left",
+        "start": 790.959,
+        "duration": 3.12
+    },
+    {
+        "text": "pointer for example right and then",
+        "start": 792.56,
+        "duration": 3.44
+    },
+    {
+        "text": "shift it right when we do that we're",
+        "start": 794.079,
+        "duration": 3.841
+    },
+    {
+        "text": "basically removing a character",
+        "start": 796.0,
+        "duration": 3.68
+    },
+    {
+        "text": "and therefore we're gonna have to update",
+        "start": 797.92,
+        "duration": 4.8
+    },
+    {
+        "text": "our count map right we are gonna do that",
+        "start": 799.68,
+        "duration": 4.88
+    },
+    {
+        "text": "but and if that does happen right let's",
+        "start": 802.72,
+        "duration": 3.2
+    },
+    {
+        "text": "say we took b and then",
+        "start": 804.56,
+        "duration": 4.0
+    },
+    {
+        "text": "from four we decremented it all the way",
+        "start": 805.92,
+        "duration": 3.2
+    },
+    {
+        "text": "down to",
+        "start": 808.56,
+        "duration": 3.6
+    },
+    {
+        "text": "two for example then we have to rescan",
+        "start": 809.12,
+        "duration": 4.32
+    },
+    {
+        "text": "this entire map",
+        "start": 812.16,
+        "duration": 3.2
+    },
+    {
+        "text": "and then find okay what's now what's the",
+        "start": 813.44,
+        "duration": 3.92
+    },
+    {
+        "text": "new most frequent character right so",
+        "start": 815.36,
+        "duration": 3.76
+    },
+    {
+        "text": "we'd have to take our max frequency",
+        "start": 817.36,
+        "duration": 4.4
+    },
+    {
+        "text": "and from four downgrade it all the way",
+        "start": 819.12,
+        "duration": 3.12
+    },
+    {
+        "text": "to",
+        "start": 821.76,
+        "duration": 2.96
+    },
+    {
+        "text": "a three for example so then we'd have to",
+        "start": 822.24,
+        "duration": 3.52
+    },
+    {
+        "text": "set it to a three",
+        "start": 824.72,
+        "duration": 3.28
+    },
+    {
+        "text": "but and that would basically defeat the",
+        "start": 825.76,
+        "duration": 4.16
+    },
+    {
+        "text": "purpose right we'd still have to do that",
+        "start": 828.0,
+        "duration": 5.12
+    },
+    {
+        "text": "big o of 26 calculation to scan through",
+        "start": 829.92,
+        "duration": 3.76
+    },
+    {
+        "text": "this",
+        "start": 833.12,
+        "duration": 3.68
+    },
+    {
+        "text": "but it's technically true that you",
+        "start": 833.68,
+        "duration": 5.68
+    },
+    {
+        "text": "don't have to decrement this max",
+        "start": 836.8,
+        "duration": 3.599
+    },
+    {
+        "text": "frequency",
+        "start": 839.36,
+        "duration": 4.56
+    },
+    {
+        "text": "but the main idea is this the result",
+        "start": 840.399,
+        "duration": 6.721
+    },
+    {
+        "text": "is only going to be maximized as we find",
+        "start": 843.92,
+        "duration": 3.599
+    },
+    {
+        "text": "a",
+        "start": 847.12,
+        "duration": 2.959
+    },
+    {
+        "text": "new max frequency right because remember",
+        "start": 847.519,
+        "duration": 4.241
+    },
+    {
+        "text": "what we were doing we were taking the",
+        "start": 850.079,
+        "duration": 3.44
+    },
+    {
+        "text": "length of the window",
+        "start": 851.76,
+        "duration": 5.439
+    },
+    {
+        "text": "subtracted by the max frequency right",
+        "start": 853.519,
+        "duration": 5.68
+    },
+    {
+        "text": "whatever the most occurring character",
+        "start": 857.199,
+        "duration": 5.041
+    },
+    {
+        "text": "was and we wanted to minimize this right",
+        "start": 859.199,
+        "duration": 4.401
+    },
+    {
+        "text": "so basically we want the",
+        "start": 862.24,
+        "duration": 3.52
+    },
+    {
+        "text": "length we want the length to be",
+        "start": 863.6,
+        "duration": 4.4
+    },
+    {
+        "text": "maximized because that's what our result",
+        "start": 865.76,
+        "duration": 3.92
+    },
+    {
+        "text": "is going to be set to",
+        "start": 868.0,
+        "duration": 4.639
+    },
+    {
+        "text": "so therefore we also want the max",
+        "start": 869.68,
+        "duration": 4.959
+    },
+    {
+        "text": "frequency to be maximized because we",
+        "start": 872.639,
+        "duration": 3.2
+    },
+    {
+        "text": "want to ensure",
+        "start": 874.639,
+        "duration": 4.481
+    },
+    {
+        "text": "that this is less than or equal to",
+        "start": 875.839,
+        "duration": 6.481
+    },
+    {
+        "text": "k and k is going to be a constant",
+        "start": 879.12,
+        "duration": 5.279
+    },
+    {
+        "text": "so for example let's say i had a max",
+        "start": 882.32,
+        "duration": 3.44
+    },
+    {
+        "text": "frequency of four",
+        "start": 884.399,
+        "duration": 3.841
+    },
+    {
+        "text": "but let's say now the new max frequency",
+        "start": 885.76,
+        "duration": 4.639
+    },
+    {
+        "text": "got downgraded to a three i'm",
+        "start": 888.24,
+        "duration": 4.959
+    },
+    {
+        "text": "still gonna leave this as a four because",
+        "start": 890.399,
+        "duration": 3.841
+    },
+    {
+        "text": "it's not going to",
+        "start": 893.199,
+        "duration": 4.08
+    },
+    {
+        "text": "change our result because for example if",
+        "start": 894.24,
+        "duration": 3.76
+    },
+    {
+        "text": "i had a",
+        "start": 897.279,
+        "duration": 4.401
+    },
+    {
+        "text": "6 minus 4 that was that was less than or",
+        "start": 898.0,
+        "duration": 6.48
+    },
+    {
+        "text": "equal to k which is 2 in our example",
+        "start": 901.68,
+        "duration": 6.36
+    },
+    {
+        "text": "and if i leave this as a 4 i'm basically",
+        "start": 904.48,
+        "duration": 6.0
+    },
+    {
+        "text": "overestimating what the max frequency is",
+        "start": 908.04,
+        "duration": 3.96
+    },
+    {
+        "text": "but we know at least at",
+        "start": 910.48,
+        "duration": 4.24
+    },
+    {
+        "text": "one given point in time it was a four so",
+        "start": 912.0,
+        "duration": 4.399
+    },
+    {
+        "text": "therefore we were able to take the",
+        "start": 914.72,
+        "duration": 2.16
+    },
+    {
+        "text": "length",
+        "start": 916.399,
+        "duration": 3.361
+    },
+    {
+        "text": "six and then set it equal to our result",
+        "start": 916.88,
+        "duration": 3.92
+    },
+    {
+        "text": "and now",
+        "start": 919.76,
+        "duration": 3.36
+    },
+    {
+        "text": "if we're ever so let's say our result is",
+        "start": 920.8,
+        "duration": 3.36
+    },
+    {
+        "text": "now six if we're",
+        "start": 923.12,
+        "duration": 3.68
+    },
+    {
+        "text": "ever going to increase the result from 6",
+        "start": 924.16,
+        "duration": 3.359
+    },
+    {
+        "text": "to another",
+        "start": 926.8,
+        "duration": 3.039
+    },
+    {
+        "text": "number like for example 7 we would",
+        "start": 927.519,
+        "duration": 3.44
+    },
+    {
+        "text": "require",
+        "start": 929.839,
+        "duration": 4.161
+    },
+    {
+        "text": "our max frequency to increase if it",
+        "start": 930.959,
+        "duration": 4.401
+    },
+    {
+        "text": "stays the same",
+        "start": 934.0,
+        "duration": 4.56
+    },
+    {
+        "text": "or if it decreases our result is never",
+        "start": 935.36,
+        "duration": 5.599
+    },
+    {
+        "text": "going to change because we only change",
+        "start": 938.56,
+        "duration": 3.199
+    },
+    {
+        "text": "our result",
+        "start": 940.959,
+        "duration": 3.361
+    },
+    {
+        "text": "when we increase our max frequency",
+        "start": 941.759,
+        "duration": 4.0
+    },
+    {
+        "text": "because that's the only way",
+        "start": 944.32,
+        "duration": 4.16
+    },
+    {
+        "text": "this condition here is going to be true",
+        "start": 945.759,
+        "duration": 3.281
+    },
+    {
+        "text": "so",
+        "start": 948.48,
+        "duration": 3.68
+    },
+    {
+        "text": "if our max frequency is downgraded we",
+        "start": 949.04,
+        "duration": 5.359
+    },
+    {
+        "text": "don't have to actually update it we",
+        "start": 952.16,
+        "duration": 3.76
+    },
+    {
+        "text": "don't have to look through the entire",
+        "start": 954.399,
+        "duration": 3.68
+    },
+    {
+        "text": "hash map to find the new max",
+        "start": 955.92,
+        "duration": 5.2
+    },
+    {
+        "text": "frequency but if we increase our max",
+        "start": 958.079,
+        "duration": 4.801
+    },
+    {
+        "text": "frequency for example if i took this",
+        "start": 961.12,
+        "duration": 4.32
+    },
+    {
+        "text": "a and then from three i set it equal to",
+        "start": 962.88,
+        "duration": 3.519
+    },
+    {
+        "text": "a five",
+        "start": 965.44,
+        "duration": 2.959
+    },
+    {
+        "text": "then that's that's something we can",
+        "start": 966.399,
+        "duration": 3.201
+    },
+    {
+        "text": "check and big o of",
+        "start": 968.399,
+        "duration": 5.041
+    },
+    {
+        "text": "one time and then if we increase this",
+        "start": 969.6,
+        "duration": 4.96
+    },
+    {
+        "text": "then we definitely",
+        "start": 973.44,
+        "duration": 3.759
+    },
+    {
+        "text": "do want to update our max frequency and",
+        "start": 974.56,
+        "duration": 3.92
+    },
+    {
+        "text": "increase it and that's something we can",
+        "start": 977.199,
+        "duration": 3.601
+    },
+    {
+        "text": "do in big o of one time so",
+        "start": 978.48,
+        "duration": 3.919
+    },
+    {
+        "text": "i know i probably went a little too long",
+        "start": 980.8,
+        "duration": 3.36
+    },
+    {
+        "text": "into this but the main idea here",
+        "start": 982.399,
+        "duration": 4.24
+    },
+    {
+        "text": "i'm trying to get at is the easy way to",
+        "start": 984.16,
+        "duration": 4.32
+    },
+    {
+        "text": "solve this problem with a sliding window",
+        "start": 986.639,
+        "duration": 2.961
+    },
+    {
+        "text": "is going to be big o",
+        "start": 988.48,
+        "duration": 3.52
+    },
+    {
+        "text": "of 26 times n which is technically",
+        "start": 989.6,
+        "duration": 3.679
+    },
+    {
+        "text": "linear but there is a",
+        "start": 992.0,
+        "duration": 3.199
+    },
+    {
+        "text": "clever way to do this in big o of end",
+        "start": 993.279,
+        "duration": 4.081
+    },
+    {
+        "text": "time that honestly i didn't figure out",
+        "start": 995.199,
+        "duration": 4.0
+    },
+    {
+        "text": "on my own and i wouldn't really expect",
+        "start": 997.36,
+        "duration": 3.36
+    },
+    {
+        "text": "other people to be able to figure it out",
+        "start": 999.199,
+        "duration": 4.08
+    },
+    {
+        "text": "on their own like in an interview at all",
+        "start": 1000.72,
+        "duration": 4.88
+    },
+    {
+        "text": "but i will show this the standard",
+        "start": 1003.279,
+        "duration": 4.401
+    },
+    {
+        "text": "solution and i'll also show the code for",
+        "start": 1005.6,
+        "duration": 4.0
+    },
+    {
+        "text": "this more optimized solution",
+        "start": 1007.68,
+        "duration": 4.0
+    },
+    {
+        "text": "okay so now let's jump into the code and",
+        "start": 1009.6,
+        "duration": 4.32
+    },
+    {
+        "text": "the code is actually a lot easier than",
+        "start": 1011.68,
+        "duration": 4.719
+    },
+    {
+        "text": "the visual example that i gave a lot",
+        "start": 1013.92,
+        "duration": 4.0
+    },
+    {
+        "text": "shorter for sure so we're gonna have a",
+        "start": 1016.399,
+        "duration": 3.601
+    },
+    {
+        "text": "hash map to count the occurrences",
+        "start": 1017.92,
+        "duration": 4.479
+    },
+    {
+        "text": "of each character and we're also gonna",
+        "start": 1020.0,
+        "duration": 4.079
+    },
+    {
+        "text": "have a result which is going to tell us",
+        "start": 1022.399,
+        "duration": 2.961
+    },
+    {
+        "text": "the longest",
+        "start": 1024.079,
+        "duration": 2.96
+    },
+    {
+        "text": "substring that we can create with k",
+        "start": 1025.36,
+        "duration": 3.599
+    },
+    {
+        "text": "replacements and we're going to have a",
+        "start": 1027.039,
+        "duration": 3.681
+    },
+    {
+        "text": "left pointer which is going to be at 0",
+        "start": 1028.959,
+        "duration": 3.36
+    },
+    {
+        "text": "and then our right pointer is going to",
+        "start": 1030.72,
+        "duration": 3.44
+    },
+    {
+        "text": "go through every single position",
+        "start": 1032.319,
+        "duration": 4.561
+    },
+    {
+        "text": "in the entire string s so what we're",
+        "start": 1034.16,
+        "duration": 3.2
+    },
+    {
+        "text": "going to do",
+        "start": 1036.88,
+        "duration": 2.959
+    },
+    {
+        "text": "is for the character at position r we're",
+        "start": 1037.36,
+        "duration": 4.64
+    },
+    {
+        "text": "going to increment the count of it",
+        "start": 1039.839,
+        "duration": 4.561
+    },
+    {
+        "text": "we're going to take 1 plus whatever the",
+        "start": 1042.0,
+        "duration": 3.679
+    },
+    {
+        "text": "count currently was",
+        "start": 1044.4,
+        "duration": 4.24
+    },
+    {
+        "text": "count dot get this character and if the",
+        "start": 1045.679,
+        "duration": 4.801
+    },
+    {
+        "text": "character doesn't exist in our hash map",
+        "start": 1048.64,
+        "duration": 3.12
+    },
+    {
+        "text": "we're just going to return a default",
+        "start": 1050.48,
+        "duration": 2.96
+    },
+    {
+        "text": "value of zero that's what this function",
+        "start": 1051.76,
+        "duration": 2.56
+    },
+    {
+        "text": "is doing",
+        "start": 1053.44,
+        "duration": 3.04
+    },
+    {
+        "text": "and so before what we're going to",
+        "start": 1054.32,
+        "duration": 4.0
+    },
+    {
+        "text": "obviously do is update our result right",
+        "start": 1056.48,
+        "duration": 3.439
+    },
+    {
+        "text": "and we want to set the result equal to",
+        "start": 1058.32,
+        "duration": 3.28
+    },
+    {
+        "text": "the max that it's ever been",
+        "start": 1059.919,
+        "duration": 4.0
+    },
+    {
+        "text": "and set it basically equal to the size",
+        "start": 1061.6,
+        "duration": 3.92
+    },
+    {
+        "text": "of the window we can get the size of the",
+        "start": 1063.919,
+        "duration": 2.321
+    },
+    {
+        "text": "window",
+        "start": 1065.52,
+        "duration": 2.48
+    },
+    {
+        "text": "so we're going to take the max of result",
+        "start": 1066.24,
+        "duration": 3.679
+    },
+    {
+        "text": "and the size of the window the size of",
+        "start": 1068.0,
+        "duration": 3.28
+    },
+    {
+        "text": "the window can be gotten with",
+        "start": 1069.919,
+        "duration": 4.64
+    },
+    {
+        "text": "right minus left plus one and",
+        "start": 1071.28,
+        "duration": 5.2
+    },
+    {
+        "text": "but before we do this before we update",
+        "start": 1074.559,
+        "duration": 3.36
+    },
+    {
+        "text": "the result we want to make sure that the",
+        "start": 1076.48,
+        "duration": 2.48
+    },
+    {
+        "text": "current window is",
+        "start": 1077.919,
+        "duration": 3.12
+    },
+    {
+        "text": "valid so what i'm going to do is",
+        "start": 1078.96,
+        "duration": 4.0
+    },
+    {
+        "text": "basically say while and i don't think",
+        "start": 1081.039,
+        "duration": 3.681
+    },
+    {
+        "text": "you'd actually need a while here you",
+        "start": 1082.96,
+        "duration": 3.52
+    },
+    {
+        "text": "could just do if but i'm just going to",
+        "start": 1084.72,
+        "duration": 2.8
+    },
+    {
+        "text": "do while just",
+        "start": 1086.48,
+        "duration": 4.319
+    },
+    {
+        "text": "because so while the window is not valid",
+        "start": 1087.52,
+        "duration": 5.12
+    },
+    {
+        "text": "and we would know that by taking the",
+        "start": 1090.799,
+        "duration": 3.601
+    },
+    {
+        "text": "length of the window which we have down",
+        "start": 1092.64,
+        "duration": 3.2
+    },
+    {
+        "text": "here so i'm just going to copy and paste",
+        "start": 1094.4,
+        "duration": 3.12
+    },
+    {
+        "text": "that the length of the window",
+        "start": 1095.84,
+        "duration": 4.16
+    },
+    {
+        "text": "subtracted by the most the count of the",
+        "start": 1097.52,
+        "duration": 4.08
+    },
+    {
+        "text": "most frequent character which can be",
+        "start": 1100.0,
+        "duration": 2.88
+    },
+    {
+        "text": "gotten with max",
+        "start": 1101.6,
+        "duration": 4.56
+    },
+    {
+        "text": "of count dot values",
+        "start": 1102.88,
+        "duration": 4.64
+    },
+    {
+        "text": "right we're basically going through the",
+        "start": 1106.16,
+        "duration": 3.6
+    },
+    {
+        "text": "hash map which could be size 26 and just",
+        "start": 1107.52,
+        "duration": 4.159
+    },
+    {
+        "text": "getting the max value from it",
+        "start": 1109.76,
+        "duration": 3.68
+    },
+    {
+        "text": "so this is the number of replacements",
+        "start": 1111.679,
+        "duration": 3.521
+    },
+    {
+        "text": "that we have to do and if the number of",
+        "start": 1113.44,
+        "duration": 2.72
+    },
+    {
+        "text": "replacements was",
+        "start": 1115.2,
+        "duration": 2.719
+    },
+    {
+        "text": "greater than the number of replacements",
+        "start": 1116.16,
+        "duration": 4.16
+    },
+    {
+        "text": "that's allowed which is equal to k",
+        "start": 1117.919,
+        "duration": 4.161
+    },
+    {
+        "text": "that's when we would want to shift our",
+        "start": 1120.32,
+        "duration": 3.44
+    },
+    {
+        "text": "left pointer so we'd want to increment",
+        "start": 1122.08,
+        "duration": 2.8
+    },
+    {
+        "text": "our left pointer",
+        "start": 1123.76,
+        "duration": 2.96
+    },
+    {
+        "text": "but before we increment the left pointer",
+        "start": 1124.88,
+        "duration": 3.44
+    },
+    {
+        "text": "we'd want to take the count of the",
+        "start": 1126.72,
+        "duration": 2.48
+    },
+    {
+        "text": "character",
+        "start": 1128.32,
+        "duration": 3.84
+    },
+    {
+        "text": "at the left position and then decrement",
+        "start": 1129.2,
+        "duration": 3.2
+    },
+    {
+        "text": "it",
+        "start": 1132.16,
+        "duration": 2.96
+    },
+    {
+        "text": "by one and that is the entire algorithm",
+        "start": 1132.4,
+        "duration": 4.399
+    },
+    {
+        "text": "after all of that is done after we've",
+        "start": 1135.12,
+        "duration": 3.12
+    },
+    {
+        "text": "gone through the entire string then we",
+        "start": 1136.799,
+        "duration": 3.521
+    },
+    {
+        "text": "can just simply return our result",
+        "start": 1138.24,
+        "duration": 3.6
+    },
+    {
+        "text": "and as you can see this is pretty",
+        "start": 1140.32,
+        "duration": 3.599
+    },
+    {
+        "text": "efficient it's linear time it's about",
+        "start": 1141.84,
+        "duration": 3.76
+    },
+    {
+        "text": "as efficient as you would need i think",
+        "start": 1143.919,
+        "duration": 3.201
+    },
+    {
+        "text": "but i'm going to make that slight",
+        "start": 1145.6,
+        "duration": 3.199
+    },
+    {
+        "text": "optimization that i showed you i'm going",
+        "start": 1147.12,
+        "duration": 3.6
+    },
+    {
+        "text": "to maintain the max frequency in a",
+        "start": 1148.799,
+        "duration": 2.88
+    },
+    {
+        "text": "single variable",
+        "start": 1150.72,
+        "duration": 2.319
+    },
+    {
+        "text": "so that we won't have to do this",
+        "start": 1151.679,
+        "duration": 3.041
+    },
+    {
+        "text": "operation where we're getting the max of",
+        "start": 1153.039,
+        "duration": 3.121
+    },
+    {
+        "text": "the entire",
+        "start": 1154.72,
+        "duration": 4.959
+    },
+    {
+        "text": "hash map instead up here before we",
+        "start": 1156.16,
+        "duration": 5.12
+    },
+    {
+        "text": "execute that loop i'm going to say max",
+        "start": 1159.679,
+        "duration": 3.521
+    },
+    {
+        "text": "frequency is going to be equal",
+        "start": 1161.28,
+        "duration": 5.519
+    },
+    {
+        "text": "to the max of what it currently is max",
+        "start": 1163.2,
+        "duration": 4.479
+    },
+    {
+        "text": "frequency or",
+        "start": 1166.799,
+        "duration": 2.88
+    },
+    {
+        "text": "it's equal to the frequency of the",
+        "start": 1167.679,
+        "duration": 4.161
+    },
+    {
+        "text": "character that we just added a value to",
+        "start": 1169.679,
+        "duration": 4.24
+    },
+    {
+        "text": "maybe that character became the most",
+        "start": 1171.84,
+        "duration": 3.12
+    },
+    {
+        "text": "frequent character",
+        "start": 1173.919,
+        "duration": 2.561
+    },
+    {
+        "text": "so we would have to update our max",
+        "start": 1174.96,
+        "duration": 3.04
+    },
+    {
+        "text": "frequency and we can do that",
+        "start": 1176.48,
+        "duration": 4.319
+    },
+    {
+        "text": "just like this and this is a constant",
+        "start": 1178.0,
+        "duration": 4.72
+    },
+    {
+        "text": "time operation we're not scanning any",
+        "start": 1180.799,
+        "duration": 3.201
+    },
+    {
+        "text": "list or anything",
+        "start": 1182.72,
+        "duration": 3.199
+    },
+    {
+        "text": "and then once we have this max frequency",
+        "start": 1184.0,
+        "duration": 3.44
+    },
+    {
+        "text": "we can use it in",
+        "start": 1185.919,
+        "duration": 4.241
+    },
+    {
+        "text": "this loop execution right so we can",
+        "start": 1187.44,
+        "duration": 3.68
+    },
+    {
+        "text": "replace this",
+        "start": 1190.16,
+        "duration": 3.84
+    },
+    {
+        "text": "and just use max f for that and the",
+        "start": 1191.12,
+        "duration": 3.6
+    },
+    {
+        "text": "thing is",
+        "start": 1194.0,
+        "duration": 2.96
+    },
+    {
+        "text": "notice how even when we're shifting left",
+        "start": 1194.72,
+        "duration": 3.52
+    },
+    {
+        "text": "we're incrementing the left pointer",
+        "start": 1196.96,
+        "duration": 3.12
+    },
+    {
+        "text": "we're potentially removing characters",
+        "start": 1198.24,
+        "duration": 3.439
+    },
+    {
+        "text": "from our window we're still not",
+        "start": 1200.08,
+        "duration": 3.92
+    },
+    {
+        "text": "decrementing max f because we actually",
+        "start": 1201.679,
+        "duration": 3.521
+    },
+    {
+        "text": "don't need to",
+        "start": 1204.0,
+        "duration": 3.44
+    },
+    {
+        "text": "it won't end up affecting the result if",
+        "start": 1205.2,
+        "duration": 4.64
+    },
+    {
+        "text": "we for if we just don't decrement it",
+        "start": 1207.44,
+        "duration": 5.04
+    },
+    {
+        "text": "and that very slight optimization which",
+        "start": 1209.84,
+        "duration": 3.6
+    },
+    {
+        "text": "is really simple",
+        "start": 1212.48,
+        "duration": 3.12
+    },
+    {
+        "text": "in terms of code but it's kind of hard",
+        "start": 1213.44,
+        "duration": 4.56
+    },
+    {
+        "text": "to see why we're allowed to do that",
+        "start": 1215.6,
+        "duration": 4.559
+    },
+    {
+        "text": "watch how much more efficient it makes",
+        "start": 1218.0,
+        "duration": 3.28
+    },
+    {
+        "text": "our algorithm",
+        "start": 1220.159,
+        "duration": 2.961
+    },
+    {
+        "text": "so as you can see look it definitely",
+        "start": 1221.28,
+        "duration": 3.279
+    },
+    {
+        "text": "improved it i think it was",
+        "start": 1223.12,
+        "duration": 3.919
+    },
+    {
+        "text": "50 milliseconds different so this is",
+        "start": 1224.559,
+        "duration": 3.921
+    },
+    {
+        "text": "significantly faster",
+        "start": 1227.039,
+        "duration": 3.76
+    },
+    {
+        "text": "it's hard to see why though i would",
+        "start": 1228.48,
+        "duration": 3.199
+    },
+    {
+        "text": "definitely",
+        "start": 1230.799,
+        "duration": 2.801
+    },
+    {
+        "text": "not expect most people to be able to",
+        "start": 1231.679,
+        "duration": 3.041
+    },
+    {
+        "text": "figure that out",
+        "start": 1233.6,
+        "duration": 3.04
+    },
+    {
+        "text": "so i hope that this was helpful if it",
+        "start": 1234.72,
+        "duration": 3.68
+    },
+    {
+        "text": "was please like and subscribe it",
+        "start": 1236.64,
+        "duration": 2.72
+    },
+    {
+        "text": "supports the channel",
+        "start": 1238.4,
+        "duration": 3.12
+    },
+    {
+        "text": "a lot and i'll hopefully see you pretty",
+        "start": 1239.36,
+        "duration": 6.08
+    },
+    {
+        "text": "soon thanks for watching",
+        "start": 1241.52,
+        "duration": 3.92
+    }
+]

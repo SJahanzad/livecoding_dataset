@@ -1,0 +1,707 @@
+[
+    {
+        "text": "hey what's up guys it's not quite I do",
+        "start": 1.909,
+        "duration": 5.231
+    },
+    {
+        "text": "tech encoding stuff on Twitch in YouTube",
+        "start": 4.65,
+        "duration": 5.61
+    },
+    {
+        "text": "and everything's in description doing",
+        "start": 7.14,
+        "duration": 4.53
+    },
+    {
+        "text": "all the leak oh problems get a ton of",
+        "start": 10.26,
+        "duration": 4.31
+    },
+    {
+        "text": "them up so go check those out please and",
+        "start": 11.67,
+        "duration": 8.22
+    },
+    {
+        "text": "we actually have a given in a this one's",
+        "start": 14.57,
+        "duration": 8.619
+    },
+    {
+        "text": "called threesome closest this one we're",
+        "start": 19.89,
+        "duration": 4.74
+    },
+    {
+        "text": "doing right now sorry I just got a phone",
+        "start": 23.189,
+        "duration": 3.901
+    },
+    {
+        "text": "call that says given an array of nums",
+        "start": 24.63,
+        "duration": 4.559
+    },
+    {
+        "text": "of n integers and an inner search target",
+        "start": 27.09,
+        "duration": 4.08
+    },
+    {
+        "text": "find three integers and um that's some",
+        "start": 29.189,
+        "duration": 5.611
+    },
+    {
+        "text": "closest to target so you know we're",
+        "start": 31.17,
+        "duration": 5.34
+    },
+    {
+        "text": "given an array of integers and we want",
+        "start": 34.8,
+        "duration": 3.72
+    },
+    {
+        "text": "to add three of the numbers up and we're",
+        "start": 36.51,
+        "duration": 4.229
+    },
+    {
+        "text": "giving a target two so if we have one we",
+        "start": 38.52,
+        "duration": 3.719
+    },
+    {
+        "text": "want to find a sum of three of these",
+        "start": 40.739,
+        "duration": 4.32
+    },
+    {
+        "text": "elements that gets closest to one the",
+        "start": 42.239,
+        "duration": 4.291
+    },
+    {
+        "text": "something that's closest target is two",
+        "start": 45.059,
+        "duration": 4.561
+    },
+    {
+        "text": "so that's these numbers right here",
+        "start": 46.53,
+        "duration": 6.029
+    },
+    {
+        "text": "that's pretty much it we return the sum",
+        "start": 49.62,
+        "duration": 4.169
+    },
+    {
+        "text": "of the three integers you may assume",
+        "start": 52.559,
+        "duration": 4.201
+    },
+    {
+        "text": "that's so we're returning the sum that",
+        "start": 53.789,
+        "duration": 4.86
+    },
+    {
+        "text": "is the closest to the one that we want",
+        "start": 56.76,
+        "duration": 4.11
+    },
+    {
+        "text": "you assume each input would have exactly",
+        "start": 58.649,
+        "duration": 3.39
+    },
+    {
+        "text": "one solution",
+        "start": 60.87,
+        "duration": 4.59
+    },
+    {
+        "text": "okay so to do this the optimal solution",
+        "start": 62.039,
+        "duration": 5.251
+    },
+    {
+        "text": "is actually pretty slow it's like ovince",
+        "start": 65.46,
+        "duration": 5.58
+    },
+    {
+        "text": "squared which kind of stinks but it kind",
+        "start": 67.29,
+        "duration": 6.869
+    },
+    {
+        "text": "of has to be so it's kind of just we're",
+        "start": 71.04,
+        "duration": 5.28
+    },
+    {
+        "text": "looping through and adding three numbers",
+        "start": 74.159,
+        "duration": 5.191
+    },
+    {
+        "text": "each time and then calculating the sum",
+        "start": 76.32,
+        "duration": 6.96
+    },
+    {
+        "text": "and of three numbers and then we're",
+        "start": 79.35,
+        "duration": 5.82
+    },
+    {
+        "text": "doing that for every possibility pretty",
+        "start": 83.28,
+        "duration": 5.909
+    },
+    {
+        "text": "much and making sure that the sum is as",
+        "start": 85.17,
+        "duration": 8.489
+    },
+    {
+        "text": "close to possible as the target so if if",
+        "start": 89.189,
+        "duration": 7.561
+    },
+    {
+        "text": "we calculate every time we compare three",
+        "start": 93.659,
+        "duration": 5.521
+    },
+    {
+        "text": "numbers if the difference between that",
+        "start": 96.75,
+        "duration": 5.07
+    },
+    {
+        "text": "current sum in the target is less than",
+        "start": 99.18,
+        "duration": 4.14
+    },
+    {
+        "text": "the one we already have we'll just",
+        "start": 101.82,
+        "duration": 3.45
+    },
+    {
+        "text": "update it and that's the whole problem",
+        "start": 103.32,
+        "duration": 3.9
+    },
+    {
+        "text": "right there to do it and we'll use",
+        "start": 105.27,
+        "duration": 3.72
+    },
+    {
+        "text": "actually pointers to make this more",
+        "start": 107.22,
+        "duration": 3.689
+    },
+    {
+        "text": "optimal so let's just start implementing",
+        "start": 108.99,
+        "duration": 4.769
+    },
+    {
+        "text": "it here so first thing we're gonna want",
+        "start": 110.909,
+        "duration": 8.931
+    },
+    {
+        "text": "to do is say our just get our first",
+        "start": 113.759,
+        "duration": 9.091
+    },
+    {
+        "text": "little calculation here so numbers of",
+        "start": 119.84,
+        "duration": 13.869
+    },
+    {
+        "text": "zero so",
+        "start": 122.85,
+        "duration": 12.54
+    },
+    {
+        "text": "and then we'll we're actually gonna sort",
+        "start": 133.709,
+        "duration": 6.03
+    },
+    {
+        "text": "the array so arrays dot sort numb that's",
+        "start": 135.39,
+        "duration": 6.09
+    },
+    {
+        "text": "the built-in Java sort and we're sorting",
+        "start": 139.739,
+        "duration": 3.691
+    },
+    {
+        "text": "it because we're gonna put a pointer at",
+        "start": 141.48,
+        "duration": 4.379
+    },
+    {
+        "text": "the end we're doing the two pointer",
+        "start": 143.43,
+        "duration": 5.55
+    },
+    {
+        "text": "technique for kind of adding two numbers",
+        "start": 145.859,
+        "duration": 5.19
+    },
+    {
+        "text": "and getting close to a target except",
+        "start": 148.98,
+        "duration": 5.31
+    },
+    {
+        "text": "we're doing it with an extra loop so",
+        "start": 151.049,
+        "duration": 7.11
+    },
+    {
+        "text": "we're gonna do this basic for loop to",
+        "start": 154.29,
+        "duration": 6.66
+    },
+    {
+        "text": "get to know - - that's in a lot of",
+        "start": 158.159,
+        "duration": 4.47
+    },
+    {
+        "text": "algorithm problems just so we could add",
+        "start": 160.95,
+        "duration": 5.369
+    },
+    {
+        "text": "three numbers at once and you know if",
+        "start": 162.629,
+        "duration": 5.341
+    },
+    {
+        "text": "we're doing that loop and then we're",
+        "start": 166.319,
+        "duration": 3.661
+    },
+    {
+        "text": "gonna set our pointer so our eight",
+        "start": 167.97,
+        "duration": 4.769
+    },
+    {
+        "text": "pointer is going to be set to I plus one",
+        "start": 169.98,
+        "duration": 4.83
+    },
+    {
+        "text": "because we're gonna have one element",
+        "start": 172.739,
+        "duration": 4.62
+    },
+    {
+        "text": "after the current index that we're",
+        "start": 174.81,
+        "duration": 4.289
+    },
+    {
+        "text": "looking for and then our view pointer is",
+        "start": 177.359,
+        "duration": 3.841
+    },
+    {
+        "text": "gonna be at the end and you'll see this",
+        "start": 179.099,
+        "duration": 6.39
+    },
+    {
+        "text": "and how this works in the second one and",
+        "start": 181.2,
+        "duration": 5.67
+    },
+    {
+        "text": "then just like all these other pointer",
+        "start": 185.489,
+        "duration": 3.42
+    },
+    {
+        "text": "problems a pointer is left me pointer",
+        "start": 186.87,
+        "duration": 4.08
+    },
+    {
+        "text": "and we're just the only difference is",
+        "start": 188.909,
+        "duration": 5.03
+    },
+    {
+        "text": "we're doing this with the in a for loop",
+        "start": 190.95,
+        "duration": 5.81
+    },
+    {
+        "text": "so we're doing the two pointer technique",
+        "start": 193.939,
+        "duration": 6.97
+    },
+    {
+        "text": "except with every possible I so the for",
+        "start": 196.76,
+        "duration": 5.349
+    },
+    {
+        "text": "loop will loop through the whole thing",
+        "start": 200.909,
+        "duration": 3.33
+    },
+    {
+        "text": "and we're also doing this inner pointer",
+        "start": 202.109,
+        "duration": 5.761
+    },
+    {
+        "text": "loop to we'll calculate a current sum",
+        "start": 204.239,
+        "duration": 9.03
+    },
+    {
+        "text": "here is equal to gnomes of i + gnomes of",
+        "start": 207.87,
+        "duration": 10.679
+    },
+    {
+        "text": "a pointer plus b pointer in the b",
+        "start": 213.269,
+        "duration": 7.021
+    },
+    {
+        "text": "pointer the numbers of B pointer is",
+        "start": 218.549,
+        "duration": 3.78
+    },
+    {
+        "text": "gonna be the highest element in nums of",
+        "start": 220.29,
+        "duration": 3.599
+    },
+    {
+        "text": "a pointer is gonna be one of the lower",
+        "start": 222.329,
+        "duration": 3.93
+    },
+    {
+        "text": "elements number I will be the lowest",
+        "start": 223.889,
+        "duration": 4.05
+    },
+    {
+        "text": "element first on the numbers a pointer",
+        "start": 226.259,
+        "duration": 3.98
+    },
+    {
+        "text": "would be the lowest elements after that",
+        "start": 227.939,
+        "duration": 8.931
+    },
+    {
+        "text": "if current sum is greater than target",
+        "start": 230.239,
+        "duration": 13.15
+    },
+    {
+        "text": "then we will if current sum is greater",
+        "start": 236.87,
+        "duration": 8.649
+    },
+    {
+        "text": "than the target then we're gonna want to",
+        "start": 243.389,
+        "duration": 3.361
+    },
+    {
+        "text": "deke riman our people in there because",
+        "start": 245.519,
+        "duration": 3.39
+    },
+    {
+        "text": "that means we want to get closer to the",
+        "start": 246.75,
+        "duration": 4.799
+    },
+    {
+        "text": "target and our B pointer numbers of B",
+        "start": 248.909,
+        "duration": 4.86
+    },
+    {
+        "text": "pointer is gonna be the greatest element",
+        "start": 251.549,
+        "duration": 4.891
+    },
+    {
+        "text": "because we sorted the array otherwise",
+        "start": 253.769,
+        "duration": 5.46
+    },
+    {
+        "text": "we'll increment our a pointer hopefully",
+        "start": 256.44,
+        "duration": 4.139
+    },
+    {
+        "text": "this makes sense it's a little tough to",
+        "start": 259.229,
+        "duration": 3.06
+    },
+    {
+        "text": "explain and that's pretty much it for",
+        "start": 260.579,
+        "duration": 5.4
+    },
+    {
+        "text": "the pointer loops we just have to to get",
+        "start": 262.289,
+        "duration": 5.311
+    },
+    {
+        "text": "closer to the target we want",
+        "start": 265.979,
+        "duration": 3.661
+    },
+    {
+        "text": "take a smaller number in addition",
+        "start": 267.6,
+        "duration": 3.78
+    },
+    {
+        "text": "because this is gonna be one of the",
+        "start": 269.64,
+        "duration": 3.12
+    },
+    {
+        "text": "greatest elements is gonna be one of the",
+        "start": 271.38,
+        "duration": 4.11
+    },
+    {
+        "text": "smallest elements so well we calculate",
+        "start": 272.76,
+        "duration": 5.12
+    },
+    {
+        "text": "our current sum each time we want to",
+        "start": 275.49,
+        "duration": 6.0
+    },
+    {
+        "text": "choose sum to get closer if the current",
+        "start": 277.88,
+        "duration": 5.02
+    },
+    {
+        "text": "sum is greater than target we're gonna",
+        "start": 281.49,
+        "duration": 3.6
+    },
+    {
+        "text": "want to try an element that might be",
+        "start": 282.9,
+        "duration": 5.1
+    },
+    {
+        "text": "less in value so by decorating the bee",
+        "start": 285.09,
+        "duration": 6.0
+    },
+    {
+        "text": "pollen or otherwise increase in value if",
+        "start": 288.0,
+        "duration": 7.08
+    },
+    {
+        "text": "it's smaller so that's pretty much it",
+        "start": 291.09,
+        "duration": 5.49
+    },
+    {
+        "text": "and then all we have to do is keep",
+        "start": 295.08,
+        "duration": 4.65
+    },
+    {
+        "text": "updating this results variable that we",
+        "start": 296.58,
+        "duration": 7.2
+    },
+    {
+        "text": "initially set so if math.abs of current",
+        "start": 299.73,
+        "duration": 8.04
+    },
+    {
+        "text": "some minus target the difference between",
+        "start": 303.78,
+        "duration": 5.76
+    },
+    {
+        "text": "the current sum that we calculated",
+        "start": 307.77,
+        "duration": 4.53
+    },
+    {
+        "text": "because we're trying all of them is less",
+        "start": 309.54,
+        "duration": 5.76
+    },
+    {
+        "text": "than math.abs the difference between the",
+        "start": 312.3,
+        "duration": 4.71
+    },
+    {
+        "text": "results and the target which is the",
+        "start": 315.3,
+        "duration": 5.46
+    },
+    {
+        "text": "initial thing we set then we're just",
+        "start": 317.01,
+        "duration": 7.43
+    },
+    {
+        "text": "going to update results with current sum",
+        "start": 320.76,
+        "duration": 6.6
+    },
+    {
+        "text": "all right and that's going to give us",
+        "start": 324.44,
+        "duration": 5.11
+    },
+    {
+        "text": "the closest sum the target and then",
+        "start": 327.36,
+        "duration": 4.02
+    },
+    {
+        "text": "obviously after all this loop we just",
+        "start": 329.55,
+        "duration": 4.47
+    },
+    {
+        "text": "returned result so it's just in",
+        "start": 331.38,
+        "duration": 6.12
+    },
+    {
+        "text": "worst-case over N squared problem first",
+        "start": 334.02,
+        "duration": 6.09
+    },
+    {
+        "text": "try solution submitted hopefully you",
+        "start": 337.5,
+        "duration": 4.59
+    },
+    {
+        "text": "guys kind of understand that and why we",
+        "start": 340.11,
+        "duration": 3.96
+    },
+    {
+        "text": "have to do the two pointers with every",
+        "start": 342.09,
+        "duration": 5.75
+    },
+    {
+        "text": "combination of numbers just to try off",
+        "start": 344.07,
+        "duration": 6.3
+    },
+    {
+        "text": "we just because we have three numbers",
+        "start": 347.84,
+        "duration": 5.82
+    },
+    {
+        "text": "that's gonna it has to be over N squared",
+        "start": 350.37,
+        "duration": 6.42
+    },
+    {
+        "text": "so we try every I I is looping through",
+        "start": 353.66,
+        "duration": 5.47
+    },
+    {
+        "text": "everything and then a and B the a and B",
+        "start": 356.79,
+        "duration": 5.58
+    },
+    {
+        "text": "pointers within that outside for loop",
+        "start": 359.13,
+        "duration": 5.79
+    },
+    {
+        "text": "are gonna kind of be getting us closer",
+        "start": 362.37,
+        "duration": 5.97
+    },
+    {
+        "text": "and closer to the target sum that we",
+        "start": 364.92,
+        "duration": 5.91
+    },
+    {
+        "text": "actually want so that's pretty much it",
+        "start": 368.34,
+        "duration": 3.99
+    },
+    {
+        "text": "and then we return the result we were",
+        "start": 370.83,
+        "duration": 3.72
+    },
+    {
+        "text": "update everything the sorting helps us",
+        "start": 372.33,
+        "duration": 4.08
+    },
+    {
+        "text": "with that and that's pretty much it",
+        "start": 374.55,
+        "duration": 3.24
+    },
+    {
+        "text": "check out the other problems let me know",
+        "start": 376.41,
+        "duration": 2.73
+    },
+    {
+        "text": "in the comments below if I did an okay",
+        "start": 377.79,
+        "duration": 4.28
+    },
+    {
+        "text": "job explaining this",
+        "start": 379.14,
+        "duration": 2.93
+    }
+]

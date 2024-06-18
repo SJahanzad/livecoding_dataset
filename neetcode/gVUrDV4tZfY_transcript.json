@@ -1,0 +1,1462 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.08,
+        "duration": 3.44
+    },
+    {
+        "text": "some more neat code today so today let's",
+        "start": 1.68,
+        "duration": 4.96
+    },
+    {
+        "text": "solve sum of two integers and finally",
+        "start": 3.52,
+        "duration": 5.76
+    },
+    {
+        "text": "this is actually the last blind 75",
+        "start": 6.64,
+        "duration": 4.72
+    },
+    {
+        "text": "question that we have to do on this",
+        "start": 9.28,
+        "duration": 3.76
+    },
+    {
+        "text": "channel we've been tracking all the",
+        "start": 11.36,
+        "duration": 3.84
+    },
+    {
+        "text": "blind 75 problems on the spreadsheet",
+        "start": 13.04,
+        "duration": 3.28
+    },
+    {
+        "text": "link will be in the description if you",
+        "start": 15.2,
+        "duration": 2.079
+    },
+    {
+        "text": "want to take a look i've actually",
+        "start": 16.32,
+        "duration": 2.799
+    },
+    {
+        "text": "finished all the questions even a couple",
+        "start": 17.279,
+        "duration": 3.76
+    },
+    {
+        "text": "of them that are blank i've recorded",
+        "start": 19.119,
+        "duration": 3.841
+    },
+    {
+        "text": "those and this sum of two integers is",
+        "start": 21.039,
+        "duration": 4.881
+    },
+    {
+        "text": "finally the last blind 75 question we",
+        "start": 22.96,
+        "duration": 5.36
+    },
+    {
+        "text": "have remaining okay now let's get into",
+        "start": 25.92,
+        "duration": 4.64
+    },
+    {
+        "text": "the problem so we're given two integers",
+        "start": 28.32,
+        "duration": 5.36
+    },
+    {
+        "text": "a and b and we want to return the sum of",
+        "start": 30.56,
+        "duration": 5.999
+    },
+    {
+        "text": "these two integers and the only catch is",
+        "start": 33.68,
+        "duration": 6.0
+    },
+    {
+        "text": "that we have to do this without using",
+        "start": 36.559,
+        "duration": 6.801
+    },
+    {
+        "text": "the plus and minus operators and that's",
+        "start": 39.68,
+        "duration": 6.719
+    },
+    {
+        "text": "definitely going to make this tricky and",
+        "start": 43.36,
+        "duration": 5.28
+    },
+    {
+        "text": "by the way don't uh pay attention to",
+        "start": 46.399,
+        "duration": 5.121
+    },
+    {
+        "text": "this dislike up above so i'm sure you",
+        "start": 48.64,
+        "duration": 4.72
+    },
+    {
+        "text": "know how addition works we have one plus",
+        "start": 51.52,
+        "duration": 3.519
+    },
+    {
+        "text": "two and the output is going to be three",
+        "start": 53.36,
+        "duration": 4.56
+    },
+    {
+        "text": "so if we can't use plus and minus we",
+        "start": 55.039,
+        "duration": 5.84
+    },
+    {
+        "text": "have to get creative and by creative we",
+        "start": 57.92,
+        "duration": 6.72
+    },
+    {
+        "text": "mean bit manipulation so when we look at",
+        "start": 60.879,
+        "duration": 5.761
+    },
+    {
+        "text": "the integer 1 it's going to look like",
+        "start": 64.64,
+        "duration": 4.08
+    },
+    {
+        "text": "this in binary representation the",
+        "start": 66.64,
+        "duration": 6.08
+    },
+    {
+        "text": "integer 2 is going to look like this so",
+        "start": 68.72,
+        "duration": 5.759
+    },
+    {
+        "text": "we know of course if we add these right",
+        "start": 72.72,
+        "duration": 3.6
+    },
+    {
+        "text": "we can do it digit by digit this is",
+        "start": 74.479,
+        "duration": 4.401
+    },
+    {
+        "text": "going to be 1 this is also going to be 1",
+        "start": 76.32,
+        "duration": 4.72
+    },
+    {
+        "text": "and this is the binary representation",
+        "start": 78.88,
+        "duration": 4.64
+    },
+    {
+        "text": "for 3. so that works but of course we",
+        "start": 81.04,
+        "duration": 4.64
+    },
+    {
+        "text": "have to do it without doing the plus",
+        "start": 83.52,
+        "duration": 4.16
+    },
+    {
+        "text": "operation so we're gonna have to do some",
+        "start": 85.68,
+        "duration": 4.799
+    },
+    {
+        "text": "kind of bit manipulation operation on",
+        "start": 87.68,
+        "duration": 5.52
+    },
+    {
+        "text": "each of these bits so let's think about",
+        "start": 90.479,
+        "duration": 6.801
+    },
+    {
+        "text": "this if we had a one and we had a zero",
+        "start": 93.2,
+        "duration": 7.12
+    },
+    {
+        "text": "we know that adding these two together",
+        "start": 97.28,
+        "duration": 6.64
+    },
+    {
+        "text": "is gonna give us a one in the output but",
+        "start": 100.32,
+        "duration": 5.68
+    },
+    {
+        "text": "we can't use addition what kind of",
+        "start": 103.92,
+        "duration": 5.199
+    },
+    {
+        "text": "operation logical operation could we do",
+        "start": 106.0,
+        "duration": 5.6
+    },
+    {
+        "text": "on these two bits to figure out that the",
+        "start": 109.119,
+        "duration": 5.36
+    },
+    {
+        "text": "answer is one we know that this could be",
+        "start": 111.6,
+        "duration": 4.96
+    },
+    {
+        "text": "a zero and this could be a one or this",
+        "start": 114.479,
+        "duration": 5.521
+    },
+    {
+        "text": "could be a zero and this could be a one",
+        "start": 116.56,
+        "duration": 5.28
+    },
+    {
+        "text": "and adding these together still would be",
+        "start": 120.0,
+        "duration": 4.0
+    },
+    {
+        "text": "a one in the output so if one of these",
+        "start": 121.84,
+        "duration": 4.48
+    },
+    {
+        "text": "digits is a one we will have a one in",
+        "start": 124.0,
+        "duration": 5.2
+    },
+    {
+        "text": "the output but what would happen if both",
+        "start": 126.32,
+        "duration": 4.88
+    },
+    {
+        "text": "of these digits were a one then we'd",
+        "start": 129.2,
+        "duration": 4.0
+    },
+    {
+        "text": "have a zero in the output and we'd have",
+        "start": 131.2,
+        "duration": 4.56
+    },
+    {
+        "text": "a one that's a carry value that we're",
+        "start": 133.2,
+        "duration": 4.399
+    },
+    {
+        "text": "gonna you know shift left and then add",
+        "start": 135.76,
+        "duration": 4.559
+    },
+    {
+        "text": "that carry to the remaining digits and",
+        "start": 137.599,
+        "duration": 4.881
+    },
+    {
+        "text": "by the way we could also have two",
+        "start": 140.319,
+        "duration": 4.241
+    },
+    {
+        "text": "zeros and of course zero added together",
+        "start": 142.48,
+        "duration": 4.479
+    },
+    {
+        "text": "would be zero so what we really",
+        "start": 144.56,
+        "duration": 6.08
+    },
+    {
+        "text": "discovered is that if one of these is a",
+        "start": 146.959,
+        "duration": 6.161
+    },
+    {
+        "text": "one digit only one of these is a one",
+        "start": 150.64,
+        "duration": 4.4
+    },
+    {
+        "text": "digit then we'll have a one in the",
+        "start": 153.12,
+        "duration": 4.8
+    },
+    {
+        "text": "output but if they're both ones then",
+        "start": 155.04,
+        "duration": 4.32
+    },
+    {
+        "text": "we'll have a zero in the output and if",
+        "start": 157.92,
+        "duration": 3.84
+    },
+    {
+        "text": "they're both zeros then we'll also have",
+        "start": 159.36,
+        "duration": 4.56
+    },
+    {
+        "text": "a zero in the output so what we have",
+        "start": 161.76,
+        "duration": 4.559
+    },
+    {
+        "text": "discovered is actually a logical",
+        "start": 163.92,
+        "duration": 6.8
+    },
+    {
+        "text": "operator called xor or exclusive or it",
+        "start": 166.319,
+        "duration": 7.681
+    },
+    {
+        "text": "basically means only one of these two",
+        "start": 170.72,
+        "duration": 6.0
+    },
+    {
+        "text": "digits is one then you'll have a one in",
+        "start": 174.0,
+        "duration": 4.879
+    },
+    {
+        "text": "the output if both of the digits are the",
+        "start": 176.72,
+        "duration": 4.56
+    },
+    {
+        "text": "same then we'll have a zero in the",
+        "start": 178.879,
+        "duration": 4.64
+    },
+    {
+        "text": "output and that's exactly what we need",
+        "start": 181.28,
+        "duration": 6.239
+    },
+    {
+        "text": "in this problem so xor works if we have",
+        "start": 183.519,
+        "duration": 7.041
+    },
+    {
+        "text": "two ones here though and we do the xor",
+        "start": 187.519,
+        "duration": 5.521
+    },
+    {
+        "text": "operation we're gonna get a zero",
+        "start": 190.56,
+        "duration": 4.16
+    },
+    {
+        "text": "in the output digit which is exactly",
+        "start": 193.04,
+        "duration": 4.24
+    },
+    {
+        "text": "what we want but we also want a one",
+        "start": 194.72,
+        "duration": 6.4
+    },
+    {
+        "text": "carry how do we get that one carry well",
+        "start": 197.28,
+        "duration": 5.679
+    },
+    {
+        "text": "you first have to ask yourself in what",
+        "start": 201.12,
+        "duration": 4.72
+    },
+    {
+        "text": "case are we going to have a carry digit",
+        "start": 202.959,
+        "duration": 4.0
+    },
+    {
+        "text": "right when are we going to have this",
+        "start": 205.84,
+        "duration": 3.84
+    },
+    {
+        "text": "carry well if we have two zeros we're",
+        "start": 206.959,
+        "duration": 4.56
+    },
+    {
+        "text": "definitely not going to have a carry if",
+        "start": 209.68,
+        "duration": 4.24
+    },
+    {
+        "text": "we have a single zero then we're also",
+        "start": 211.519,
+        "duration": 4.321
+    },
+    {
+        "text": "not going to have a carry but if we have",
+        "start": 213.92,
+        "duration": 4.56
+    },
+    {
+        "text": "two ones this is the only case that",
+        "start": 215.84,
+        "duration": 5.119
+    },
+    {
+        "text": "we're going to have a carry so how do we",
+        "start": 218.48,
+        "duration": 5.119
+    },
+    {
+        "text": "know if we have two ones well we can use",
+        "start": 220.959,
+        "duration": 5.92
+    },
+    {
+        "text": "another logic operator called the and",
+        "start": 223.599,
+        "duration": 7.681
+    },
+    {
+        "text": "operator so if a and b are one then we",
+        "start": 226.879,
+        "duration": 7.681
+    },
+    {
+        "text": "know we'll have a one carry but that one",
+        "start": 231.28,
+        "duration": 6.879
+    },
+    {
+        "text": "carry is not going to be added over here",
+        "start": 234.56,
+        "duration": 6.48
+    },
+    {
+        "text": "that one carry is gonna be in",
+        "start": 238.159,
+        "duration": 4.961
+    },
+    {
+        "text": "the left spot it's gonna be shifted to",
+        "start": 241.04,
+        "duration": 5.36
+    },
+    {
+        "text": "the left by one so actually when we do",
+        "start": 243.12,
+        "duration": 7.52
+    },
+    {
+        "text": "this a and b operation we want to take",
+        "start": 246.4,
+        "duration": 7.839
+    },
+    {
+        "text": "it and then shift it to the left by one",
+        "start": 250.64,
+        "duration": 6.879
+    },
+    {
+        "text": "and then take this or this new integer",
+        "start": 254.239,
+        "duration": 5.441
+    },
+    {
+        "text": "that we've discovered right and then",
+        "start": 257.519,
+        "duration": 4.801
+    },
+    {
+        "text": "take that and then add it here so we're",
+        "start": 259.68,
+        "duration": 4.56
+    },
+    {
+        "text": "actually gonna have a loop we're gonna",
+        "start": 262.32,
+        "duration": 5.2
+    },
+    {
+        "text": "do an xor operation and then if we have",
+        "start": 264.24,
+        "duration": 5.679
+    },
+    {
+        "text": "a carry value we're going to actually",
+        "start": 267.52,
+        "duration": 5.119
+    },
+    {
+        "text": "take that new carry value and then add",
+        "start": 269.919,
+        "duration": 6.0
+    },
+    {
+        "text": "it again to whatever we have left",
+        "start": 272.639,
+        "duration": 6.481
+    },
+    {
+        "text": "remaining now let's try this idea that i",
+        "start": 275.919,
+        "duration": 5.28
+    },
+    {
+        "text": "just talked about on one of these",
+        "start": 279.12,
+        "duration": 3.84
+    },
+    {
+        "text": "examples and what we're going to figure",
+        "start": 281.199,
+        "duration": 4.241
+    },
+    {
+        "text": "out is actually when we're doing these",
+        "start": 282.96,
+        "duration": 4.72
+    },
+    {
+        "text": "logic operators we don't have to do them",
+        "start": 285.44,
+        "duration": 4.56
+    },
+    {
+        "text": "one by one we can do them on the",
+        "start": 287.68,
+        "duration": 6.079
+    },
+    {
+        "text": "entirety of a and b that we're given",
+        "start": 290.0,
+        "duration": 5.36
+    },
+    {
+        "text": "okay so now let's take a look at an",
+        "start": 293.759,
+        "duration": 3.841
+    },
+    {
+        "text": "example we want to add a which is the",
+        "start": 295.36,
+        "duration": 4.399
+    },
+    {
+        "text": "integer 9 in binary representation it",
+        "start": 297.6,
+        "duration": 3.84
+    },
+    {
+        "text": "looks like this and we want to add b",
+        "start": 299.759,
+        "duration": 3.761
+    },
+    {
+        "text": "which is 11 and this is what it looks",
+        "start": 301.44,
+        "duration": 4.0
+    },
+    {
+        "text": "like in binary representation well we",
+        "start": 303.52,
+        "duration": 3.36
+    },
+    {
+        "text": "want to add them but we know we can't",
+        "start": 305.44,
+        "duration": 3.36
+    },
+    {
+        "text": "use plus and minus so",
+        "start": 306.88,
+        "duration": 5.36
+    },
+    {
+        "text": "what we're gonna do is run the exclusive",
+        "start": 308.8,
+        "duration": 5.839
+    },
+    {
+        "text": "or operation which in code i think it",
+        "start": 312.24,
+        "duration": 4.08
+    },
+    {
+        "text": "looks like this we want to run the",
+        "start": 314.639,
+        "duration": 4.881
+    },
+    {
+        "text": "exclusive or on these bit by bit and we",
+        "start": 316.32,
+        "duration": 5.84
+    },
+    {
+        "text": "can do it on the entire integer a and b",
+        "start": 319.52,
+        "duration": 4.88
+    },
+    {
+        "text": "if we exclusive or them together uh",
+        "start": 322.16,
+        "duration": 4.72
+    },
+    {
+        "text": "first this bit well they're both one so",
+        "start": 324.4,
+        "duration": 4.72
+    },
+    {
+        "text": "that's going to be a zero in this case",
+        "start": 326.88,
+        "duration": 4.319
+    },
+    {
+        "text": "one of them is a one so we're going to",
+        "start": 329.12,
+        "duration": 4.32
+    },
+    {
+        "text": "have a one in the output in this case",
+        "start": 331.199,
+        "duration": 4.241
+    },
+    {
+        "text": "they're both zero we have a zero in the",
+        "start": 333.44,
+        "duration": 4.72
+    },
+    {
+        "text": "output in this case they're both one we",
+        "start": 335.44,
+        "duration": 5.52
+    },
+    {
+        "text": "have a zero in the output but what",
+        "start": 338.16,
+        "duration": 5.36
+    },
+    {
+        "text": "integer is this this is just the integer",
+        "start": 340.96,
+        "duration": 4.959
+    },
+    {
+        "text": "two but obviously nine plus eleven is",
+        "start": 343.52,
+        "duration": 5.679
+    },
+    {
+        "text": "not two so we missed something basically",
+        "start": 345.919,
+        "duration": 6.081
+    },
+    {
+        "text": "we didn't do the and right in this case",
+        "start": 349.199,
+        "duration": 4.56
+    },
+    {
+        "text": "we're going to have a carry one that's",
+        "start": 352.0,
+        "duration": 3.919
+    },
+    {
+        "text": "going to be over here right and we're",
+        "start": 353.759,
+        "duration": 4.16
+    },
+    {
+        "text": "also going to have a carry from these",
+        "start": 355.919,
+        "duration": 3.761
+    },
+    {
+        "text": "two which is going to be over here so",
+        "start": 357.919,
+        "duration": 3.84
+    },
+    {
+        "text": "what we want to do is take this new",
+        "start": 359.68,
+        "duration": 4.72
+    },
+    {
+        "text": "integer which is going to look like this",
+        "start": 361.759,
+        "duration": 6.56
+    },
+    {
+        "text": "and then add that with the result of a",
+        "start": 364.4,
+        "duration": 5.2
+    },
+    {
+        "text": "xor b",
+        "start": 368.319,
+        "duration": 4.0
+    },
+    {
+        "text": "the xor does add these numbers it just",
+        "start": 369.6,
+        "duration": 4.719
+    },
+    {
+        "text": "doesn't take care of the carry so we",
+        "start": 372.319,
+        "duration": 4.32
+    },
+    {
+        "text": "have to take care of the carry ourselves",
+        "start": 374.319,
+        "duration": 4.32
+    },
+    {
+        "text": "and uh when we",
+        "start": 376.639,
+        "duration": 4.881
+    },
+    {
+        "text": "basically take a logic and with b we",
+        "start": 378.639,
+        "duration": 5.361
+    },
+    {
+        "text": "also want to shift it to the left by one",
+        "start": 381.52,
+        "duration": 5.28
+    },
+    {
+        "text": "and then we'll get some other integer so",
+        "start": 384.0,
+        "duration": 4.16
+    },
+    {
+        "text": "by the way over here we're going to take",
+        "start": 386.8,
+        "duration": 3.92
+    },
+    {
+        "text": "a and b and then shift it to the left by",
+        "start": 388.16,
+        "duration": 4.0
+    },
+    {
+        "text": "one so",
+        "start": 390.72,
+        "duration": 4.72
+    },
+    {
+        "text": "when we end these two together we get a",
+        "start": 392.16,
+        "duration": 5.599
+    },
+    {
+        "text": "one when we and these two together we",
+        "start": 395.44,
+        "duration": 4.4
+    },
+    {
+        "text": "get a zero when we and these two we get",
+        "start": 397.759,
+        "duration": 3.921
+    },
+    {
+        "text": "a zero when we and these two we get a",
+        "start": 399.84,
+        "duration": 3.919
+    },
+    {
+        "text": "one but we remember we want to take this",
+        "start": 401.68,
+        "duration": 5.359
+    },
+    {
+        "text": "and shift it to the left by one so what",
+        "start": 403.759,
+        "duration": 5.361
+    },
+    {
+        "text": "we're actually gonna have is a one here",
+        "start": 407.039,
+        "duration": 5.28
+    },
+    {
+        "text": "zero zero one right and then this will",
+        "start": 409.12,
+        "duration": 5.04
+    },
+    {
+        "text": "just this uh place will just get filled",
+        "start": 412.319,
+        "duration": 5.28
+    },
+    {
+        "text": "with a zero so now we wanna take these",
+        "start": 414.16,
+        "duration": 6.96
+    },
+    {
+        "text": "two numbers and add them together and",
+        "start": 417.599,
+        "duration": 5.201
+    },
+    {
+        "text": "when we say add them together we're",
+        "start": 421.12,
+        "duration": 3.44
+    },
+    {
+        "text": "going to do the same exact operations we",
+        "start": 422.8,
+        "duration": 4.88
+    },
+    {
+        "text": "did here so we're going to first xor",
+        "start": 424.56,
+        "duration": 5.199
+    },
+    {
+        "text": "these exclusive wearing these we get a",
+        "start": 427.68,
+        "duration": 4.079
+    },
+    {
+        "text": "zero exclusive wearing these we get a",
+        "start": 429.759,
+        "duration": 4.56
+    },
+    {
+        "text": "zero exclusive or these we get zero",
+        "start": 431.759,
+        "duration": 6.481
+    },
+    {
+        "text": "again zero here though we do get a one",
+        "start": 434.319,
+        "duration": 5.6
+    },
+    {
+        "text": "so we got the exclusive or now we want",
+        "start": 438.24,
+        "duration": 3.76
+    },
+    {
+        "text": "to get the and of them shifted to the",
+        "start": 439.919,
+        "duration": 5.041
+    },
+    {
+        "text": "left by one so and these two nothing and",
+        "start": 442.0,
+        "duration": 5.36
+    },
+    {
+        "text": "these two we get a one and of course we",
+        "start": 444.96,
+        "duration": 4.0
+    },
+    {
+        "text": "want to shift it to the left by one",
+        "start": 447.36,
+        "duration": 3.44
+    },
+    {
+        "text": "which means we'll have a one over here",
+        "start": 448.96,
+        "duration": 3.6
+    },
+    {
+        "text": "so i'll just put that one over here",
+        "start": 450.8,
+        "duration": 4.56
+    },
+    {
+        "text": "because we know for the rest of these uh",
+        "start": 452.56,
+        "duration": 4.639
+    },
+    {
+        "text": "this is not going to be ended and this",
+        "start": 455.36,
+        "duration": 3.52
+    },
+    {
+        "text": "is not going to be ended so",
+        "start": 457.199,
+        "duration": 4.0
+    },
+    {
+        "text": "this will basically be zero zero",
+        "start": 458.88,
+        "duration": 4.48
+    },
+    {
+        "text": "everything is zero except this so now we",
+        "start": 461.199,
+        "duration": 4.72
+    },
+    {
+        "text": "want to add these two together again",
+        "start": 463.36,
+        "duration": 4.64
+    },
+    {
+        "text": "we're going to do our xor operation",
+        "start": 465.919,
+        "duration": 4.72
+    },
+    {
+        "text": "first xoring these these nothing here we",
+        "start": 468.0,
+        "duration": 3.84
+    },
+    {
+        "text": "get a 1",
+        "start": 470.639,
+        "duration": 4.161
+    },
+    {
+        "text": "nothing here here we get a 1 and",
+        "start": 471.84,
+        "duration": 5.28
+    },
+    {
+        "text": "when you and these two together we just",
+        "start": 474.8,
+        "duration": 4.799
+    },
+    {
+        "text": "get a zero in the output right logic",
+        "start": 477.12,
+        "duration": 4.16
+    },
+    {
+        "text": "ending these two will get us a zero",
+        "start": 479.599,
+        "duration": 3.921
+    },
+    {
+        "text": "which basically means we don't have a",
+        "start": 481.28,
+        "duration": 4.96
+    },
+    {
+        "text": "carry in this case which means we are",
+        "start": 483.52,
+        "duration": 5.119
+    },
+    {
+        "text": "finished adding them together right if",
+        "start": 486.24,
+        "duration": 4.079
+    },
+    {
+        "text": "we don't have a carry that means we're",
+        "start": 488.639,
+        "duration": 4.881
+    },
+    {
+        "text": "done so this is the result in that case",
+        "start": 490.319,
+        "duration": 6.32
+    },
+    {
+        "text": "now what number is this well it's 16",
+        "start": 493.52,
+        "duration": 5.92
+    },
+    {
+        "text": "plus 4 which is 20 which is exactly what",
+        "start": 496.639,
+        "duration": 4.0
+    },
+    {
+        "text": "we were looking for right because we",
+        "start": 499.44,
+        "duration": 3.759
+    },
+    {
+        "text": "were adding 9 plus 11. so i hope that",
+        "start": 500.639,
+        "duration": 4.641
+    },
+    {
+        "text": "this makes sense and i hope you kind of",
+        "start": 503.199,
+        "duration": 4.321
+    },
+    {
+        "text": "understand why it works so now we can",
+        "start": 505.28,
+        "duration": 4.24
+    },
+    {
+        "text": "get into the code and actually what is",
+        "start": 507.52,
+        "duration": 3.6
+    },
+    {
+        "text": "going to be the time complexity of this",
+        "start": 509.52,
+        "duration": 3.759
+    },
+    {
+        "text": "solution well it's going to be constant",
+        "start": 511.12,
+        "duration": 4.159
+    },
+    {
+        "text": "time because first we're we're told that",
+        "start": 513.279,
+        "duration": 3.521
+    },
+    {
+        "text": "the integers a and b are going to be",
+        "start": 515.279,
+        "duration": 4.32
+    },
+    {
+        "text": "between negative 1000 and positive 1000",
+        "start": 516.8,
+        "duration": 4.56
+    },
+    {
+        "text": "and how many times could we actually do",
+        "start": 519.599,
+        "duration": 4.161
+    },
+    {
+        "text": "this loop uh you know before getting a",
+        "start": 521.36,
+        "duration": 4.8
+    },
+    {
+        "text": "carry that's you know zero",
+        "start": 523.76,
+        "duration": 4.639
+    },
+    {
+        "text": "it can't go run forever like of course",
+        "start": 526.16,
+        "duration": 4.799
+    },
+    {
+        "text": "if these were arbitrarily large integers",
+        "start": 528.399,
+        "duration": 4.241
+    },
+    {
+        "text": "then in that case",
+        "start": 530.959,
+        "duration": 3.521
+    },
+    {
+        "text": "we might have like a linear time",
+        "start": 532.64,
+        "duration": 4.0
+    },
+    {
+        "text": "algorithm but for the most part this is",
+        "start": 534.48,
+        "duration": 4.08
+    },
+    {
+        "text": "constant time and one more thing i want",
+        "start": 536.64,
+        "duration": 4.08
+    },
+    {
+        "text": "to mention is how are we going to handle",
+        "start": 538.56,
+        "duration": 4.08
+    },
+    {
+        "text": "negative numbers well negative numbers",
+        "start": 540.72,
+        "duration": 3.84
+    },
+    {
+        "text": "will actually handle themselves and i",
+        "start": 542.64,
+        "duration": 4.08
+    },
+    {
+        "text": "don't want to go too in detail to that",
+        "start": 544.56,
+        "duration": 3.52
+    },
+    {
+        "text": "we could talk about like two's",
+        "start": 546.72,
+        "duration": 2.88
+    },
+    {
+        "text": "complement and stuff like that but what",
+        "start": 548.08,
+        "duration": 3.759
+    },
+    {
+        "text": "you need to know is this operation um",
+        "start": 549.6,
+        "duration": 4.56
+    },
+    {
+        "text": "xoring and ending them this is",
+        "start": 551.839,
+        "duration": 4.881
+    },
+    {
+        "text": "equivalent to addition and we know that",
+        "start": 554.16,
+        "duration": 4.56
+    },
+    {
+        "text": "in most languages if you take negative",
+        "start": 556.72,
+        "duration": 4.16
+    },
+    {
+        "text": "three you know plus positive number this",
+        "start": 558.72,
+        "duration": 4.239
+    },
+    {
+        "text": "will give us the correct output which is",
+        "start": 560.88,
+        "duration": 4.399
+    },
+    {
+        "text": "positive one in this case and since this",
+        "start": 562.959,
+        "duration": 4.801
+    },
+    {
+        "text": "is basically equivalent to addition as",
+        "start": 565.279,
+        "duration": 4.721
+    },
+    {
+        "text": "long as the language we're using handles",
+        "start": 567.76,
+        "duration": 4.32
+    },
+    {
+        "text": "binary representation correctly it",
+        "start": 570.0,
+        "duration": 4.16
+    },
+    {
+        "text": "should work for us one thing i want to",
+        "start": 572.08,
+        "duration": 3.439
+    },
+    {
+        "text": "mention is i'm actually going to code",
+        "start": 574.16,
+        "duration": 4.16
+    },
+    {
+        "text": "this up in java today not python because",
+        "start": 575.519,
+        "duration": 5.601
+    },
+    {
+        "text": "python integers are arbitrarily large",
+        "start": 578.32,
+        "duration": 5.92
+    },
+    {
+        "text": "they're not 32-bit so it kind of runs",
+        "start": 581.12,
+        "duration": 5.12
+    },
+    {
+        "text": "into problems with this algorithm and",
+        "start": 584.24,
+        "duration": 3.2
+    },
+    {
+        "text": "just to keep it simple i'm just going to",
+        "start": 586.24,
+        "duration": 3.44
+    },
+    {
+        "text": "use java okay so now let's code it up",
+        "start": 587.44,
+        "duration": 4.56
+    },
+    {
+        "text": "and yes uh believe it or not i do know",
+        "start": 589.68,
+        "duration": 4.24
+    },
+    {
+        "text": "java i have coded java even though i use",
+        "start": 592.0,
+        "duration": 3.68
+    },
+    {
+        "text": "python pretty much exclusively on this",
+        "start": 593.92,
+        "duration": 5.2
+    },
+    {
+        "text": "channel so now let's do our loop and",
+        "start": 595.68,
+        "duration": 5.36
+    },
+    {
+        "text": "remember the condition we're doing our",
+        "start": 599.12,
+        "duration": 5.92
+    },
+    {
+        "text": "loop is basically until the carry value",
+        "start": 601.04,
+        "duration": 6.96
+    },
+    {
+        "text": "ends up being 0 and b is what we're",
+        "start": 605.04,
+        "duration": 5.76
+    },
+    {
+        "text": "going to use for the carry in this case",
+        "start": 608.0,
+        "duration": 4.8
+    },
+    {
+        "text": "and you'll see what i mean in a second",
+        "start": 610.8,
+        "duration": 3.76
+    },
+    {
+        "text": "so what we want to do is we want to",
+        "start": 612.8,
+        "duration": 6.159
+    },
+    {
+        "text": "assign a equal to a x or b just like we",
+        "start": 614.56,
+        "duration": 6.719
+    },
+    {
+        "text": "kind of did in the drawing explanation",
+        "start": 618.959,
+        "duration": 4.241
+    },
+    {
+        "text": "and we want to set b",
+        "start": 621.279,
+        "duration": 6.481
+    },
+    {
+        "text": "equal to a anded with b and then bit",
+        "start": 623.2,
+        "duration": 7.92
+    },
+    {
+        "text": "shifted to the left by one and then we",
+        "start": 627.76,
+        "duration": 5.36
+    },
+    {
+        "text": "want to go to the next iteration of the",
+        "start": 631.12,
+        "duration": 4.719
+    },
+    {
+        "text": "loop basically doing the same thing and",
+        "start": 633.12,
+        "duration": 4.719
+    },
+    {
+        "text": "we learned that these two operations are",
+        "start": 635.839,
+        "duration": 4.801
+    },
+    {
+        "text": "equivalent to adding a and b together",
+        "start": 637.839,
+        "duration": 5.601
+    },
+    {
+        "text": "but one little catch is that if we",
+        "start": 640.64,
+        "duration": 5.6
+    },
+    {
+        "text": "already assign a to the exclusive or",
+        "start": 643.44,
+        "duration": 5.76
+    },
+    {
+        "text": "then when we try to assign b we're using",
+        "start": 646.24,
+        "duration": 5.76
+    },
+    {
+        "text": "the new value of a when we actually want",
+        "start": 649.2,
+        "duration": 5.759
+    },
+    {
+        "text": "to use the old value of a",
+        "start": 652.0,
+        "duration": 4.8
+    },
+    {
+        "text": "so before we",
+        "start": 654.959,
+        "duration": 4.161
+    },
+    {
+        "text": "reassign a i'm just going to actually",
+        "start": 656.8,
+        "duration": 5.68
+    },
+    {
+        "text": "calculate a temporary integer which is",
+        "start": 659.12,
+        "duration": 5.68
+    },
+    {
+        "text": "basically our and condition which is",
+        "start": 662.48,
+        "duration": 4.88
+    },
+    {
+        "text": "going to be a and b",
+        "start": 664.8,
+        "duration": 4.96
+    },
+    {
+        "text": "shifted to the left by one and then",
+        "start": 667.36,
+        "duration": 4.88
+    },
+    {
+        "text": "instead i'm going to assign b equal to",
+        "start": 669.76,
+        "duration": 4.72
+    },
+    {
+        "text": "that temporary value to make sure that",
+        "start": 672.24,
+        "duration": 5.039
+    },
+    {
+        "text": "we use the original value of a not the",
+        "start": 674.48,
+        "duration": 5.599
+    },
+    {
+        "text": "new value of a and once we're done with",
+        "start": 677.279,
+        "duration": 6.161
+    },
+    {
+        "text": "that eventually b will equal 0 b is the",
+        "start": 680.079,
+        "duration": 6.0
+    },
+    {
+        "text": "carry and then we can go ahead and",
+        "start": 683.44,
+        "duration": 4.72
+    },
+    {
+        "text": "return the result which is going to be",
+        "start": 686.079,
+        "duration": 4.641
+    },
+    {
+        "text": "stored in a okay now let's run it to",
+        "start": 688.16,
+        "duration": 4.56
+    },
+    {
+        "text": "make sure that it works and on the left",
+        "start": 690.72,
+        "duration": 3.76
+    },
+    {
+        "text": "you can see that yes it works and it is",
+        "start": 692.72,
+        "duration": 3.359
+    },
+    {
+        "text": "pretty efficient so i really hope that",
+        "start": 694.48,
+        "duration": 3.84
+    },
+    {
+        "text": "this was helpful if it was please like",
+        "start": 696.079,
+        "duration": 3.921
+    },
+    {
+        "text": "and subscribe it really supports the",
+        "start": 698.32,
+        "duration": 3.44
+    },
+    {
+        "text": "channel a lot consider checking out my",
+        "start": 700.0,
+        "duration": 3.2
+    },
+    {
+        "text": "patreon where you can further support",
+        "start": 701.76,
+        "duration": 3.519
+    },
+    {
+        "text": "the channel and hopefully i'll see you",
+        "start": 703.2,
+        "duration": 5.84
+    },
+    {
+        "text": "pretty soon thanks for watching",
+        "start": 705.279,
+        "duration": 3.761
+    }
+]

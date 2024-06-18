@@ -1,0 +1,992 @@
+[
+    {
+        "text": "wasn't it quite here dude tech encoding",
+        "start": 2.06,
+        "duration": 4.989
+    },
+    {
+        "text": "stuff on twitch on YouTube check the",
+        "start": 4.259,
+        "duration": 4.681
+    },
+    {
+        "text": "description for all my information I",
+        "start": 7.049,
+        "duration": 4.141
+    },
+    {
+        "text": "have a patreon if you want to support me",
+        "start": 8.94,
+        "duration": 3.829
+    },
+    {
+        "text": "on there I do the premium problems",
+        "start": 11.19,
+        "duration": 3.93
+    },
+    {
+        "text": "discord is a great way to get in contact",
+        "start": 12.769,
+        "duration": 3.791
+    },
+    {
+        "text": "with everyone building the community",
+        "start": 15.12,
+        "duration": 2.64
+    },
+    {
+        "text": "there and then you can follow me on",
+        "start": 16.56,
+        "duration": 1.95
+    },
+    {
+        "text": "github too",
+        "start": 17.76,
+        "duration": 4.32
+    },
+    {
+        "text": "thanks for that reverse link list - we",
+        "start": 18.51,
+        "duration": 5.25
+    },
+    {
+        "text": "did a reverse link list one recommend",
+        "start": 22.08,
+        "duration": 3.33
+    },
+    {
+        "text": "learning that one before this but we'll",
+        "start": 23.76,
+        "duration": 4.62
+    },
+    {
+        "text": "go over it a little bit here this is a",
+        "start": 25.41,
+        "duration": 4.65
+    },
+    {
+        "text": "medium problem a lot of likes pretty",
+        "start": 28.38,
+        "duration": 3.479
+    },
+    {
+        "text": "easy it's not too bad",
+        "start": 30.06,
+        "duration": 3.95
+    },
+    {
+        "text": "same as reverse link list a little twist",
+        "start": 31.859,
+        "duration": 4.95
+    },
+    {
+        "text": "so reversal link list from position and",
+        "start": 34.01,
+        "duration": 5.53
+    },
+    {
+        "text": "the end do it in one pass so instead of",
+        "start": 36.809,
+        "duration": 5.25
+    },
+    {
+        "text": "reversing the whole list so instead of",
+        "start": 39.54,
+        "duration": 4.109
+    },
+    {
+        "text": "one two three four five becoming five",
+        "start": 42.059,
+        "duration": 4.531
+    },
+    {
+        "text": "four three two one we're only reversing",
+        "start": 43.649,
+        "duration": 6.061
+    },
+    {
+        "text": "from position two to four inclusive",
+        "start": 46.59,
+        "duration": 5.82
+    },
+    {
+        "text": "meaning the position two is reversed in",
+        "start": 49.71,
+        "duration": 4.529
+    },
+    {
+        "text": "position four and position three all",
+        "start": 52.41,
+        "duration": 5.219
+    },
+    {
+        "text": "reversed so you can see here we have one",
+        "start": 54.239,
+        "duration": 5.131
+    },
+    {
+        "text": "two three four five so this is position",
+        "start": 57.629,
+        "duration": 4.471
+    },
+    {
+        "text": "one this is position two so we start",
+        "start": 59.37,
+        "duration": 6.27
+    },
+    {
+        "text": "here so from position two - three - four",
+        "start": 62.1,
+        "duration": 5.91
+    },
+    {
+        "text": "these will get reversed so from two to",
+        "start": 65.64,
+        "duration": 4.589
+    },
+    {
+        "text": "four it gets reversed inclusive and you",
+        "start": 68.01,
+        "duration": 4.649
+    },
+    {
+        "text": "can see the output is two three four",
+        "start": 70.229,
+        "duration": 4.651
+    },
+    {
+        "text": "reversed is four three two so it's just",
+        "start": 72.659,
+        "duration": 4.921
+    },
+    {
+        "text": "one four three two five that's it",
+        "start": 74.88,
+        "duration": 5.43
+    },
+    {
+        "text": "not too difficult so what is the",
+        "start": 77.58,
+        "duration": 4.91
+    },
+    {
+        "text": "strategy here well the strategy here is",
+        "start": 80.31,
+        "duration": 5.46
+    },
+    {
+        "text": "you just use these counters kind of you",
+        "start": 82.49,
+        "duration": 5.23
+    },
+    {
+        "text": "can you can make your own counter or you",
+        "start": 85.77,
+        "duration": 4.19
+    },
+    {
+        "text": "could just use these and decrement them",
+        "start": 87.72,
+        "duration": 5.91
+    },
+    {
+        "text": "just get up to the position so just you",
+        "start": 89.96,
+        "duration": 5.74
+    },
+    {
+        "text": "know loop up to the traverse the list of",
+        "start": 93.63,
+        "duration": 3.599
+    },
+    {
+        "text": "the position so once you get here and",
+        "start": 95.7,
+        "duration": 4.29
+    },
+    {
+        "text": "then reverse this portion of the list",
+        "start": 97.229,
+        "duration": 6.301
+    },
+    {
+        "text": "and then just connect it make sure",
+        "start": 99.99,
+        "duration": 4.949
+    },
+    {
+        "text": "everything is connected and then you're",
+        "start": 103.53,
+        "duration": 2.82
+    },
+    {
+        "text": "good to go I mean that's it it's pretty",
+        "start": 104.939,
+        "duration": 4.021
+    },
+    {
+        "text": "easy so to start off we'll just check if",
+        "start": 106.35,
+        "duration": 4.89
+    },
+    {
+        "text": "had is null so we can return null if it",
+        "start": 108.96,
+        "duration": 4.26
+    },
+    {
+        "text": "is because there's nothing to be",
+        "start": 111.24,
+        "duration": 5.309
+    },
+    {
+        "text": "reversed or returned or anything then we",
+        "start": 113.22,
+        "duration": 6.78
+    },
+    {
+        "text": "will set up our nodes so previz gonna be",
+        "start": 116.549,
+        "duration": 6.0
+    },
+    {
+        "text": "equal to null list no - current node",
+        "start": 120.0,
+        "duration": 5.759
+    },
+    {
+        "text": "will be equal to head and then we'll say",
+        "start": 122.549,
+        "duration": 7.41
+    },
+    {
+        "text": "okay while M is greater than one we will",
+        "start": 125.759,
+        "duration": 7.081
+    },
+    {
+        "text": "do pre equalization",
+        "start": 129.959,
+        "duration": 4.62
+    },
+    {
+        "text": "a current node equals current node done",
+        "start": 132.84,
+        "duration": 4.619
+    },
+    {
+        "text": "next so this is just traversing until we",
+        "start": 134.579,
+        "duration": 5.22
+    },
+    {
+        "text": "get to the correct position correct",
+        "start": 137.459,
+        "duration": 3.661
+    },
+    {
+        "text": "positioning and we're going to be",
+        "start": 139.799,
+        "duration": 4.681
+    },
+    {
+        "text": "decrementing m and n we're tink",
+        "start": 141.12,
+        "duration": 6.539
+    },
+    {
+        "text": "reminding both m and because we're going",
+        "start": 144.48,
+        "duration": 5.099
+    },
+    {
+        "text": "to do a similar loop later on where we",
+        "start": 147.659,
+        "duration": 4.711
+    },
+    {
+        "text": "say well n is greater than 0 so we want",
+        "start": 149.579,
+        "duration": 6.871
+    },
+    {
+        "text": "to decriminalization we get 2 we only",
+        "start": 152.37,
+        "duration": 6.959
+    },
+    {
+        "text": "have to go and spaces to get to the end",
+        "start": 156.45,
+        "duration": 5.55
+    },
+    {
+        "text": "of you know what I mean so like for",
+        "start": 159.329,
+        "duration": 5.671
+    },
+    {
+        "text": "example like and we're passing in 2 & 4",
+        "start": 162.0,
+        "duration": 3.54
+    },
+    {
+        "text": "right",
+        "start": 165.0,
+        "duration": 2.189
+    },
+    {
+        "text": "so the first we're just going to",
+        "start": 165.54,
+        "duration": 3.66
+    },
+    {
+        "text": "traverse so the current node starts at",
+        "start": 167.189,
+        "duration": 4.351
+    },
+    {
+        "text": "head we go current node equals while M",
+        "start": 169.2,
+        "duration": 4.319
+    },
+    {
+        "text": "is greater than 1 so 2 is greater than 1",
+        "start": 171.54,
+        "duration": 4.5
+    },
+    {
+        "text": "we go okay this node let's go to this",
+        "start": 173.519,
+        "duration": 4.44
+    },
+    {
+        "text": "node so then we get here it breaks out",
+        "start": 176.04,
+        "duration": 2.879
+    },
+    {
+        "text": "of the loop we're at the right",
+        "start": 177.959,
+        "duration": 2.941
+    },
+    {
+        "text": "positioning so previous will be here",
+        "start": 178.919,
+        "duration": 4.5
+    },
+    {
+        "text": "current node will be here and then we",
+        "start": 180.9,
+        "duration": 5.759
+    },
+    {
+        "text": "can start to actually do our second loop",
+        "start": 183.419,
+        "duration": 6.811
+    },
+    {
+        "text": "while n is greater than 0 n is 3 now so",
+        "start": 186.659,
+        "duration": 6.66
+    },
+    {
+        "text": "we would do a 3 to 1 and you know that",
+        "start": 190.23,
+        "duration": 5.189
+    },
+    {
+        "text": "it's 0 so you know what I mean that's",
+        "start": 193.319,
+        "duration": 4.92
+    },
+    {
+        "text": "the whole point of decrementing n the",
+        "start": 195.419,
+        "duration": 4.081
+    },
+    {
+        "text": "only thing we're going to need to do as",
+        "start": 198.239,
+        "duration": 3.87
+    },
+    {
+        "text": "well is create some variables one's a",
+        "start": 199.5,
+        "duration": 5.489
+    },
+    {
+        "text": "connection variable list node variable",
+        "start": 202.109,
+        "duration": 6.03
+    },
+    {
+        "text": "for we're setting that to prove this is",
+        "start": 204.989,
+        "duration": 6.03
+    },
+    {
+        "text": "gonna we're gonna use this to connect to",
+        "start": 208.139,
+        "duration": 5.07
+    },
+    {
+        "text": "the head of the reverse part of the list",
+        "start": 211.019,
+        "duration": 5.131
+    },
+    {
+        "text": "I'll explain that in a second tail is",
+        "start": 213.209,
+        "duration": 5.31
+    },
+    {
+        "text": "going to use to connect to the end as",
+        "start": 216.15,
+        "duration": 5.489
+    },
+    {
+        "text": "well so we're just gonna set this one to",
+        "start": 218.519,
+        "duration": 7.83
+    },
+    {
+        "text": "current node so while n is greater than",
+        "start": 221.639,
+        "duration": 7.35
+    },
+    {
+        "text": "0 obviously decrement and while we loop",
+        "start": 226.349,
+        "duration": 4.38
+    },
+    {
+        "text": "and then this is just the same as",
+        "start": 228.989,
+        "duration": 5.071
+    },
+    {
+        "text": "reverse linked list so I'm hopefully you",
+        "start": 230.729,
+        "duration": 6.6
+    },
+    {
+        "text": "guys are familiar you just do you get",
+        "start": 234.06,
+        "duration": 8.069
+    },
+    {
+        "text": "the next node as you traverse so we're",
+        "start": 237.329,
+        "duration": 7.47
+    },
+    {
+        "text": "at position 2 we're saying okay get the",
+        "start": 242.129,
+        "duration": 5.13
+    },
+    {
+        "text": "next node 3 and then we're saying okay",
+        "start": 244.799,
+        "duration": 5.22
+    },
+    {
+        "text": "current node dot next is equal to prove",
+        "start": 247.259,
+        "duration": 6.211
+    },
+    {
+        "text": "so we set the previous node as the next",
+        "start": 250.019,
+        "duration": 5.521
+    },
+    {
+        "text": "node then we do previous current node",
+        "start": 253.47,
+        "duration": 5.85
+    },
+    {
+        "text": "and then current node equals next node",
+        "start": 255.54,
+        "duration": 5.22
+    },
+    {
+        "text": "that's why we needed the next node",
+        "start": 259.32,
+        "duration": 3.75
+    },
+    {
+        "text": "variable so we didn't lose reference so",
+        "start": 260.76,
+        "duration": 4.529
+    },
+    {
+        "text": "you grab the next node before you update",
+        "start": 263.07,
+        "duration": 3.03
+    },
+    {
+        "text": "it so",
+        "start": 265.289,
+        "duration": 3.001
+    },
+    {
+        "text": "don't lose reference then you set the",
+        "start": 266.1,
+        "duration": 4.29
+    },
+    {
+        "text": "previous as the next node obviously this",
+        "start": 268.29,
+        "duration": 3.93
+    },
+    {
+        "text": "is just how you reverse checkout the",
+        "start": 270.39,
+        "duration": 3.93
+    },
+    {
+        "text": "reverse link list for a more in-depth",
+        "start": 272.22,
+        "duration": 4.05
+    },
+    {
+        "text": "explanation I did it one time pretty",
+        "start": 274.32,
+        "duration": 5.97
+    },
+    {
+        "text": "professionally and yeah that's how you",
+        "start": 276.27,
+        "duration": 6.0
+    },
+    {
+        "text": "reverse it and then we're gonna be",
+        "start": 280.29,
+        "duration": 3.54
+    },
+    {
+        "text": "returning ahead at the end of all of",
+        "start": 282.27,
+        "duration": 4.38
+    },
+    {
+        "text": "this but we're gonna say okay if",
+        "start": 283.83,
+        "duration": 5.42
+    },
+    {
+        "text": "connection node is not equal to null",
+        "start": 286.65,
+        "duration": 5.01
+    },
+    {
+        "text": "then what we're gonna do is we're gonna",
+        "start": 289.25,
+        "duration": 6.73
+    },
+    {
+        "text": "say connection dot next is equal to",
+        "start": 291.66,
+        "duration": 8.64
+    },
+    {
+        "text": "prief and we do this else head is equal",
+        "start": 295.98,
+        "duration": 6.39
+    },
+    {
+        "text": "to prove and let me explain this is",
+        "start": 300.3,
+        "duration": 3.99
+    },
+    {
+        "text": "probably the these are probably the only",
+        "start": 302.37,
+        "duration": 6.3
+    },
+    {
+        "text": "tricky parts is we do that Chino's sorry",
+        "start": 304.29,
+        "duration": 6.0
+    },
+    {
+        "text": "I don't know what's going on we do this",
+        "start": 308.67,
+        "duration": 5.76
+    },
+    {
+        "text": "because connection is previous before we",
+        "start": 310.29,
+        "duration": 8.25
+    },
+    {
+        "text": "start so when we end when we get out of",
+        "start": 314.43,
+        "duration": 6.0
+    },
+    {
+        "text": "this loop when you're if you know",
+        "start": 318.54,
+        "duration": 3.27
+    },
+    {
+        "text": "anything about reversing a linked list",
+        "start": 320.43,
+        "duration": 6.3
+    },
+    {
+        "text": "when we turn 2 3 4 into 4 3 2 it doesn't",
+        "start": 321.81,
+        "duration": 10.23
+    },
+    {
+        "text": "exactly look like this it's it is like",
+        "start": 326.73,
+        "duration": 12.3
+    },
+    {
+        "text": "this but there's no reference from 1 2 4",
+        "start": 332.04,
+        "duration": 11.49
+    },
+    {
+        "text": "3 2 4 3 4 3 2 is all set up like though",
+        "start": 339.03,
+        "duration": 6.78
+    },
+    {
+        "text": "the list gets reversed but there's no",
+        "start": 343.53,
+        "duration": 4.59
+    },
+    {
+        "text": "reference from you know where we left",
+        "start": 345.81,
+        "duration": 4.38
+    },
+    {
+        "text": "off at the that's why we make this",
+        "start": 348.12,
+        "duration": 4.68
+    },
+    {
+        "text": "connection variable because we break out",
+        "start": 350.19,
+        "duration": 4.98
+    },
+    {
+        "text": "of this loop up here at the correct",
+        "start": 352.8,
+        "duration": 3.51
+    },
+    {
+        "text": "position where we want to start",
+        "start": 355.17,
+        "duration": 3.96
+    },
+    {
+        "text": "reversing but we need to connect you",
+        "start": 356.31,
+        "duration": 5.58
+    },
+    {
+        "text": "know the 1 so we'd see 1 we'd get here",
+        "start": 359.13,
+        "duration": 4.2
+    },
+    {
+        "text": "and we'd be we'd be like okay let's",
+        "start": 361.89,
+        "duration": 3.93
+    },
+    {
+        "text": "reverse all this one in 4 3 2 are not",
+        "start": 363.33,
+        "duration": 4.02
+    },
+    {
+        "text": "connected so we have to connect those",
+        "start": 365.82,
+        "duration": 5.37
+    },
+    {
+        "text": "down here and if connection is equal to",
+        "start": 367.35,
+        "duration": 5.43
+    },
+    {
+        "text": "null then you just set head to prove",
+        "start": 371.19,
+        "duration": 3.54
+    },
+    {
+        "text": "because that would just be the reverse",
+        "start": 372.78,
+        "duration": 4.47
+    },
+    {
+        "text": "list right and then this is pretty much",
+        "start": 374.73,
+        "duration": 4.11
+    },
+    {
+        "text": "the whole solution there's only one",
+        "start": 377.25,
+        "duration": 3.84
+    },
+    {
+        "text": "other thing is this tail variable that",
+        "start": 378.84,
+        "duration": 6.03
+    },
+    {
+        "text": "we also need tail dot next is going to",
+        "start": 381.09,
+        "duration": 7.02
+    },
+    {
+        "text": "be equal to current node and yeah that's",
+        "start": 384.87,
+        "duration": 7.8
+    },
+    {
+        "text": "that should be everything current node",
+        "start": 388.11,
+        "duration": 7.74
+    },
+    {
+        "text": "dot next not a statement sorry about",
+        "start": 392.67,
+        "duration": 4.1
+    },
+    {
+        "text": "that I don't even",
+        "start": 395.85,
+        "duration": 4.55
+    },
+    {
+        "text": "or that is line 20 current node equals",
+        "start": 396.77,
+        "duration": 4.829
+    },
+    {
+        "text": "current node next that's how you",
+        "start": 400.4,
+        "duration": 4.13
+    },
+    {
+        "text": "traverse sorry about that",
+        "start": 401.599,
+        "duration": 2.931
+    },
+    {
+        "text": "there you go",
+        "start": 405.13,
+        "duration": 3.49
+    },
+    {
+        "text": "and you shut tail dot next to current",
+        "start": 406.669,
+        "duration": 9.321
+    },
+    {
+        "text": "node because tail is the end of the list",
+        "start": 408.62,
+        "duration": 12.359
+    },
+    {
+        "text": "so you want to connect sorry let me",
+        "start": 415.99,
+        "duration": 6.97
+    },
+    {
+        "text": "think about this current you loop",
+        "start": 420.979,
+        "duration": 3.961
+    },
+    {
+        "text": "through tail gets at the current node",
+        "start": 422.96,
+        "duration": 5.4
+    },
+    {
+        "text": "- yeah tail is that tail is the you",
+        "start": 424.94,
+        "duration": 5.159
+    },
+    {
+        "text": "could see if you were looping through",
+        "start": 428.36,
+        "duration": 4.98
+    },
+    {
+        "text": "and you get to this initial point it",
+        "start": 430.099,
+        "duration": 6.991
+    },
+    {
+        "text": "current node leaves off at 2 and you",
+        "start": 433.34,
+        "duration": 8.79
+    },
+    {
+        "text": "want to set to dot next equal to current",
+        "start": 437.09,
+        "duration": 11.579
+    },
+    {
+        "text": "node at the end of so you're sorry I'm",
+        "start": 442.13,
+        "duration": 9.5
+    },
+    {
+        "text": "not that good of explaining I guess but",
+        "start": 448.669,
+        "duration": 5.97
+    },
+    {
+        "text": "this it's a little talk to explain the",
+        "start": 451.63,
+        "duration": 6.069
+    },
+    {
+        "text": "the current node after this is the head",
+        "start": 454.639,
+        "duration": 5.221
+    },
+    {
+        "text": "of the part that you want to reverse so",
+        "start": 457.699,
+        "duration": 3.871
+    },
+    {
+        "text": "this chunk it would be like - in this",
+        "start": 459.86,
+        "duration": 4.5
+    },
+    {
+        "text": "case you want to have a reference to",
+        "start": 461.57,
+        "duration": 4.62
+    },
+    {
+        "text": "that with tail so that once it's",
+        "start": 464.36,
+        "duration": 3.869
+    },
+    {
+        "text": "reversed you have to we connected the 1",
+        "start": 466.19,
+        "duration": 3.9
+    },
+    {
+        "text": "to the 4 3 2 but we have to connect the",
+        "start": 468.229,
+        "duration": 4.5
+    },
+    {
+        "text": "end of the reverse part to the rest of",
+        "start": 470.09,
+        "duration": 4.74
+    },
+    {
+        "text": "the list so that's what tail necks does",
+        "start": 472.729,
+        "duration": 4.261
+    },
+    {
+        "text": "it equals to current node because I'm",
+        "start": 474.83,
+        "duration": 3.869
+    },
+    {
+        "text": "the last iteration loop current node",
+        "start": 476.99,
+        "duration": 3.359
+    },
+    {
+        "text": "equals current node necks so it equals",
+        "start": 478.699,
+        "duration": 3.481
+    },
+    {
+        "text": "the last part of the list",
+        "start": 480.349,
+        "duration": 3.481
+    },
+    {
+        "text": "Susa tail dot next to current node to",
+        "start": 482.18,
+        "duration": 3.269
+    },
+    {
+        "text": "connect all the lists together then you",
+        "start": 483.83,
+        "duration": 4.739
+    },
+    {
+        "text": "return head to get everything you know",
+        "start": 485.449,
+        "duration": 5.25
+    },
+    {
+        "text": "straightened out and yeah that's it I",
+        "start": 488.569,
+        "duration": 3.811
+    },
+    {
+        "text": "mean I think I went over every part in",
+        "start": 490.699,
+        "duration": 3.631
+    },
+    {
+        "text": "detail now so let me know if you guys",
+        "start": 492.38,
+        "duration": 3.9
+    },
+    {
+        "text": "have any questions check out the reverse",
+        "start": 494.33,
+        "duration": 4.05
+    },
+    {
+        "text": "one first if you didn't understand I",
+        "start": 496.28,
+        "duration": 4.05
+    },
+    {
+        "text": "know I was fumbling a little bit there",
+        "start": 498.38,
+        "duration": 4.05
+    },
+    {
+        "text": "but these are long I don't have you know",
+        "start": 500.33,
+        "duration": 3.75
+    },
+    {
+        "text": "I'm doing hundreds of these so I don't",
+        "start": 502.43,
+        "duration": 3.269
+    },
+    {
+        "text": "have time to just keep redoing or",
+        "start": 504.08,
+        "duration": 3.959
+    },
+    {
+        "text": "editing all this stuff so I think just",
+        "start": 505.699,
+        "duration": 4.951
+    },
+    {
+        "text": "watching think ever on that sports me",
+        "start": 508.039,
+        "duration": 6.92
+    },
+    {
+        "text": "and see you guys in the next one",
+        "start": 510.65,
+        "duration": 4.309
+    }
+]

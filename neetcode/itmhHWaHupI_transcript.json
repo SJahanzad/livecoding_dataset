@@ -1,0 +1,3632 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.36
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.52,
+        "duration": 2.72
+    },
+    {
+        "text": "let's solve",
+        "start": 3.36,
+        "duration": 3.84
+    },
+    {
+        "text": "find median from a data stream so this",
+        "start": 4.24,
+        "duration": 3.599
+    },
+    {
+        "text": "is another",
+        "start": 7.2,
+        "duration": 2.479
+    },
+    {
+        "text": "hard problem but it's not super",
+        "start": 7.839,
+        "duration": 3.84
+    },
+    {
+        "text": "difficult if you know the data structure",
+        "start": 9.679,
+        "duration": 2.801
+    },
+    {
+        "text": "behind it",
+        "start": 11.679,
+        "duration": 2.801
+    },
+    {
+        "text": "so they basically tell us we know the",
+        "start": 12.48,
+        "duration": 4.639
+    },
+    {
+        "text": "median is defined as the middle value",
+        "start": 14.48,
+        "duration": 5.68
+    },
+    {
+        "text": "in a sorted integer list if the list is",
+        "start": 17.119,
+        "duration": 5.041
+    },
+    {
+        "text": "even there is no middle value so you",
+        "start": 20.16,
+        "duration": 3.84
+    },
+    {
+        "text": "take the average of the two middle",
+        "start": 22.16,
+        "duration": 2.879
+    },
+    {
+        "text": "values right",
+        "start": 24.0,
+        "duration": 3.519
+    },
+    {
+        "text": "so with this sorted array the middle",
+        "start": 25.039,
+        "duration": 5.121
+    },
+    {
+        "text": "value is three so the median is three",
+        "start": 27.519,
+        "duration": 4.961
+    },
+    {
+        "text": "with this there is no middle value so",
+        "start": 30.16,
+        "duration": 4.0
+    },
+    {
+        "text": "you take the two middle values",
+        "start": 32.48,
+        "duration": 3.68
+    },
+    {
+        "text": "add them together divide by two and then",
+        "start": 34.16,
+        "duration": 4.239
+    },
+    {
+        "text": "you get a median of 2.5",
+        "start": 36.16,
+        "duration": 4.399
+    },
+    {
+        "text": "and so we're actually designing a data",
+        "start": 38.399,
+        "duration": 3.441
+    },
+    {
+        "text": "structure that's going to have two",
+        "start": 40.559,
+        "duration": 2.081
+    },
+    {
+        "text": "operations",
+        "start": 41.84,
+        "duration": 2.719
+    },
+    {
+        "text": "one operation is going to be adding a",
+        "start": 42.64,
+        "duration": 4.32
+    },
+    {
+        "text": "number to our data stream so we had",
+        "start": 44.559,
+        "duration": 5.361
+    },
+    {
+        "text": "we actually have to store the list of",
+        "start": 46.96,
+        "duration": 5.439
+    },
+    {
+        "text": "numbers and that list of numbers is not",
+        "start": 49.92,
+        "duration": 5.2
+    },
+    {
+        "text": "constant it's going to be changing every",
+        "start": 52.399,
+        "duration": 3.041
+    },
+    {
+        "text": "time",
+        "start": 55.12,
+        "duration": 3.919
+    },
+    {
+        "text": "add number is called and then from that",
+        "start": 55.44,
+        "duration": 5.279
+    },
+    {
+        "text": "list of numbers that we're going to be",
+        "start": 59.039,
+        "duration": 3.441
+    },
+    {
+        "text": "maintaining ourselves",
+        "start": 60.719,
+        "duration": 4.241
+    },
+    {
+        "text": "we are going to need to constantly be",
+        "start": 62.48,
+        "duration": 3.84
+    },
+    {
+        "text": "finding the median",
+        "start": 64.96,
+        "duration": 4.08
+    },
+    {
+        "text": "of that list so every time this function",
+        "start": 66.32,
+        "duration": 3.119
+    },
+    {
+        "text": "find",
+        "start": 69.04,
+        "duration": 2.8
+    },
+    {
+        "text": "median is called we have to return what",
+        "start": 69.439,
+        "duration": 3.68
+    },
+    {
+        "text": "the median is",
+        "start": 71.84,
+        "duration": 4.4
+    },
+    {
+        "text": "from the elements so far so this is just",
+        "start": 73.119,
+        "duration": 4.0
+    },
+    {
+        "text": "an example",
+        "start": 76.24,
+        "duration": 3.199
+    },
+    {
+        "text": "if we add num1 then our list is going to",
+        "start": 77.119,
+        "duration": 3.201
+    },
+    {
+        "text": "have one in it",
+        "start": 79.439,
+        "duration": 2.961
+    },
+    {
+        "text": "if we add another number two then our",
+        "start": 80.32,
+        "duration": 3.68
+    },
+    {
+        "text": "list is going to have two numbers",
+        "start": 82.4,
+        "duration": 3.92
+    },
+    {
+        "text": "then if we want to find the median we",
+        "start": 84.0,
+        "duration": 3.84
+    },
+    {
+        "text": "will take the average of these two and",
+        "start": 86.32,
+        "duration": 2.24
+    },
+    {
+        "text": "it's going to be",
+        "start": 87.84,
+        "duration": 3.36
+    },
+    {
+        "text": "1.5 after that we'll add another number",
+        "start": 88.56,
+        "duration": 3.44
+    },
+    {
+        "text": "three",
+        "start": 91.2,
+        "duration": 2.72
+    },
+    {
+        "text": "and then we'll find the median again in",
+        "start": 92.0,
+        "duration": 3.28
+    },
+    {
+        "text": "this case the median is different",
+        "start": 93.92,
+        "duration": 3.28
+    },
+    {
+        "text": "because our list got updated the middle",
+        "start": 95.28,
+        "duration": 2.96
+    },
+    {
+        "text": "value is now",
+        "start": 97.2,
+        "duration": 4.239
+    },
+    {
+        "text": "two so what's the most obvious way to",
+        "start": 98.24,
+        "duration": 4.559
+    },
+    {
+        "text": "solve this problem well i",
+        "start": 101.439,
+        "duration": 4.081
+    },
+    {
+        "text": "basically just hinted at it right so",
+        "start": 102.799,
+        "duration": 3.121
+    },
+    {
+        "text": "where",
+        "start": 105.52,
+        "duration": 2.639
+    },
+    {
+        "text": "the way the obvious way to solve this is",
+        "start": 105.92,
+        "duration": 3.519
+    },
+    {
+        "text": "insert elements",
+        "start": 108.159,
+        "duration": 4.081
+    },
+    {
+        "text": "in order so let's say these are the",
+        "start": 109.439,
+        "duration": 4.561
+    },
+    {
+        "text": "function calls that are gonna be made so",
+        "start": 112.24,
+        "duration": 2.64
+    },
+    {
+        "text": "we're gonna add",
+        "start": 114.0,
+        "duration": 2.399
+    },
+    {
+        "text": "four numbers and then we're gonna try to",
+        "start": 114.88,
+        "duration": 4.239
+    },
+    {
+        "text": "get the median so we're gonna maintain",
+        "start": 116.399,
+        "duration": 5.841
+    },
+    {
+        "text": "a list or an array right and",
+        "start": 119.119,
+        "duration": 5.6
+    },
+    {
+        "text": "every time we get a function call add",
+        "start": 122.24,
+        "duration": 3.12
+    },
+    {
+        "text": "three",
+        "start": 124.719,
+        "duration": 3.52
+    },
+    {
+        "text": "we're gonna insert in order just like it",
+        "start": 125.36,
+        "duration": 4.239
+    },
+    {
+        "text": "says up here",
+        "start": 128.239,
+        "duration": 4.881
+    },
+    {
+        "text": "and basically if our array is always",
+        "start": 129.599,
+        "duration": 4.321
+    },
+    {
+        "text": "sorted",
+        "start": 133.12,
+        "duration": 3.04
+    },
+    {
+        "text": "then it's going to be easy to identify",
+        "start": 133.92,
+        "duration": 4.08
+    },
+    {
+        "text": "the middle number right which is going",
+        "start": 136.16,
+        "duration": 3.2
+    },
+    {
+        "text": "to be the median",
+        "start": 138.0,
+        "duration": 3.76
+    },
+    {
+        "text": "right so the median is always going to",
+        "start": 139.36,
+        "duration": 4.56
+    },
+    {
+        "text": "be in the middle position and if our",
+        "start": 141.76,
+        "duration": 3.839
+    },
+    {
+        "text": "array is sorted we'll always know where",
+        "start": 143.92,
+        "duration": 2.0
+    },
+    {
+        "text": "that",
+        "start": 145.599,
+        "duration": 2.961
+    },
+    {
+        "text": "is so the first one we have is add three",
+        "start": 145.92,
+        "duration": 5.039
+    },
+    {
+        "text": "so just add it to the first spot",
+        "start": 148.56,
+        "duration": 5.28
+    },
+    {
+        "text": "next we want to add two so how do we do",
+        "start": 150.959,
+        "duration": 4.161
+    },
+    {
+        "text": "that in order well",
+        "start": 153.84,
+        "duration": 3.92
+    },
+    {
+        "text": "we have to traverse our array so far so",
+        "start": 155.12,
+        "duration": 3.199
+    },
+    {
+        "text": "we get",
+        "start": 157.76,
+        "duration": 2.4
+    },
+    {
+        "text": "we see that there's a three over here",
+        "start": 158.319,
+        "duration": 4.321
+    },
+    {
+        "text": "right so then we gotta replace that",
+        "start": 160.16,
+        "duration": 5.12
+    },
+    {
+        "text": "three we shift the three to the next",
+        "start": 162.64,
+        "duration": 4.0
+    },
+    {
+        "text": "position and then we put a",
+        "start": 165.28,
+        "duration": 3.679
+    },
+    {
+        "text": "two in the position that the three was",
+        "start": 166.64,
+        "duration": 3.36
+    },
+    {
+        "text": "initially at",
+        "start": 168.959,
+        "duration": 4.401
+    },
+    {
+        "text": "right so now our array is in sorted",
+        "start": 170.0,
+        "duration": 4.8
+    },
+    {
+        "text": "order we had to",
+        "start": 173.36,
+        "duration": 3.36
+    },
+    {
+        "text": "uh shift some elements and we had to",
+        "start": 174.8,
+        "duration": 4.64
+    },
+    {
+        "text": "search for the spot that we put the two",
+        "start": 176.72,
+        "duration": 5.2
+    },
+    {
+        "text": "in right so you can tell that every time",
+        "start": 179.44,
+        "duration": 3.68
+    },
+    {
+        "text": "we add a number",
+        "start": 181.92,
+        "duration": 4.239
+    },
+    {
+        "text": "it's going to be an o of n operation",
+        "start": 183.12,
+        "duration": 3.36
+    },
+    {
+        "text": "where",
+        "start": 186.159,
+        "duration": 2.72
+    },
+    {
+        "text": "n is the number of elements we have",
+        "start": 186.48,
+        "duration": 4.0
+    },
+    {
+        "text": "added so far",
+        "start": 188.879,
+        "duration": 5.121
+    },
+    {
+        "text": "so we added two next let's add one",
+        "start": 190.48,
+        "duration": 5.759
+    },
+    {
+        "text": "well we're gonna traverse the array",
+        "start": 194.0,
+        "duration": 3.44
+    },
+    {
+        "text": "right we're gonna see okay the first",
+        "start": 196.239,
+        "duration": 2.64
+    },
+    {
+        "text": "element is two we know that",
+        "start": 197.44,
+        "duration": 3.92
+    },
+    {
+        "text": "one is less than two so really what",
+        "start": 198.879,
+        "duration": 3.761
+    },
+    {
+        "text": "we're gonna do is",
+        "start": 201.36,
+        "duration": 3.04
+    },
+    {
+        "text": "cross out the two cross out the three",
+        "start": 202.64,
+        "duration": 3.599
+    },
+    {
+        "text": "right shift the two over here",
+        "start": 204.4,
+        "duration": 3.759
+    },
+    {
+        "text": "shift the three over here and then put a",
+        "start": 206.239,
+        "duration": 3.121
+    },
+    {
+        "text": "one here but",
+        "start": 208.159,
+        "duration": 4.08
+    },
+    {
+        "text": "i'll just to keep the picture simple i'm",
+        "start": 209.36,
+        "duration": 4.799
+    },
+    {
+        "text": "just gonna put the one over here but we",
+        "start": 212.239,
+        "duration": 2.72
+    },
+    {
+        "text": "know that",
+        "start": 214.159,
+        "duration": 2.881
+    },
+    {
+        "text": "in the worst case every time we insert",
+        "start": 214.959,
+        "duration": 3.521
+    },
+    {
+        "text": "an element it's gonna be o of",
+        "start": 217.04,
+        "duration": 4.64
+    },
+    {
+        "text": "n lastly we're gonna take the four and",
+        "start": 218.48,
+        "duration": 5.28
+    },
+    {
+        "text": "add the four so we're gonna see",
+        "start": 221.68,
+        "duration": 4.24
+    },
+    {
+        "text": "one nope four is bigger than that two",
+        "start": 223.76,
+        "duration": 3.839
+    },
+    {
+        "text": "nope four is bigger than that three",
+        "start": 225.92,
+        "duration": 3.36
+    },
+    {
+        "text": "nope four is bigger than that so we add",
+        "start": 227.599,
+        "duration": 3.36
+    },
+    {
+        "text": "the four at the end",
+        "start": 229.28,
+        "duration": 4.159
+    },
+    {
+        "text": "so now we finally have a get median call",
+        "start": 230.959,
+        "duration": 4.321
+    },
+    {
+        "text": "well good thing for us since our",
+        "start": 233.439,
+        "duration": 3.52
+    },
+    {
+        "text": "array is in sorted order we know getting",
+        "start": 235.28,
+        "duration": 3.84
+    },
+    {
+        "text": "the median is super easy in this case we",
+        "start": 236.959,
+        "duration": 2.64
+    },
+    {
+        "text": "have an",
+        "start": 239.12,
+        "duration": 2.24
+    },
+    {
+        "text": "even length list right we have four",
+        "start": 239.599,
+        "duration": 3.521
+    },
+    {
+        "text": "elements so we are going to take",
+        "start": 241.36,
+        "duration": 4.48
+    },
+    {
+        "text": "the two middle elements two and three",
+        "start": 243.12,
+        "duration": 3.679
+    },
+    {
+        "text": "add them together",
+        "start": 245.84,
+        "duration": 3.679
+    },
+    {
+        "text": "divide by two we're going to get 2.5 so",
+        "start": 246.799,
+        "duration": 3.52
+    },
+    {
+        "text": "we know that",
+        "start": 249.519,
+        "duration": 3.121
+    },
+    {
+        "text": "the get median operation is always going",
+        "start": 250.319,
+        "duration": 3.84
+    },
+    {
+        "text": "to be o of 1",
+        "start": 252.64,
+        "duration": 3.28
+    },
+    {
+        "text": "but adding a number is always going to",
+        "start": 254.159,
+        "duration": 3.36
+    },
+    {
+        "text": "be o of n",
+        "start": 255.92,
+        "duration": 4.879
+    },
+    {
+        "text": "so how can we speed this o of n",
+        "start": 257.519,
+        "duration": 6.081
+    },
+    {
+        "text": "operation up and let me just tell you",
+        "start": 260.799,
+        "duration": 4.641
+    },
+    {
+        "text": "basically what we're going to do",
+        "start": 263.6,
+        "duration": 4.56
+    },
+    {
+        "text": "is instead of having just a single list",
+        "start": 265.44,
+        "duration": 3.039
+    },
+    {
+        "text": "of",
+        "start": 268.16,
+        "duration": 2.4
+    },
+    {
+        "text": "elements we're gonna break this up into",
+        "start": 268.479,
+        "duration": 3.121
+    },
+    {
+        "text": "two and",
+        "start": 270.56,
+        "duration": 3.68
+    },
+    {
+        "text": "the we're gonna have basically two",
+        "start": 271.6,
+        "duration": 4.0
+    },
+    {
+        "text": "subsets right",
+        "start": 274.24,
+        "duration": 4.239
+    },
+    {
+        "text": "and one is always gonna be less so this",
+        "start": 275.6,
+        "duration": 3.44
+    },
+    {
+        "text": "has one",
+        "start": 278.479,
+        "duration": 4.561
+    },
+    {
+        "text": "and two and this has three and four",
+        "start": 279.04,
+        "duration": 7.28
+    },
+    {
+        "text": "and all elements from the left are",
+        "start": 283.04,
+        "duration": 4.08
+    },
+    {
+        "text": "always going to be",
+        "start": 286.32,
+        "duration": 3.04
+    },
+    {
+        "text": "less than or equal to all elements in",
+        "start": 287.12,
+        "duration": 3.04
+    },
+    {
+        "text": "the right",
+        "start": 289.36,
+        "duration": 3.279
+    },
+    {
+        "text": "so this will also make it easy for us to",
+        "start": 290.16,
+        "duration": 3.52
+    },
+    {
+        "text": "get the median",
+        "start": 292.639,
+        "duration": 3.12
+    },
+    {
+        "text": "but i'm not just gonna have arrays i'm",
+        "start": 293.68,
+        "duration": 3.519
+    },
+    {
+        "text": "going to use a",
+        "start": 295.759,
+        "duration": 4.88
+    },
+    {
+        "text": "heap or a priority queue so we're going",
+        "start": 297.199,
+        "duration": 5.361
+    },
+    {
+        "text": "to use a heap data structure",
+        "start": 300.639,
+        "duration": 4.081
+    },
+    {
+        "text": "so i'm going to have two heaps in this",
+        "start": 302.56,
+        "duration": 4.56
+    },
+    {
+        "text": "case a small heap and a large heap",
+        "start": 304.72,
+        "duration": 4.56
+    },
+    {
+        "text": "small heap all elements in the small",
+        "start": 307.12,
+        "duration": 3.84
+    },
+    {
+        "text": "heap are always going to be less than or",
+        "start": 309.28,
+        "duration": 2.4
+    },
+    {
+        "text": "equal to",
+        "start": 310.96,
+        "duration": 4.0
+    },
+    {
+        "text": "all elements in the large heap also",
+        "start": 311.68,
+        "duration": 5.6
+    },
+    {
+        "text": "the size of these heaps is always going",
+        "start": 314.96,
+        "duration": 4.239
+    },
+    {
+        "text": "to be approximately equal so",
+        "start": 317.28,
+        "duration": 4.08
+    },
+    {
+        "text": "if there were two elements in this heap",
+        "start": 319.199,
+        "duration": 4.161
+    },
+    {
+        "text": "then there's there has to be two",
+        "start": 321.36,
+        "duration": 4.08
+    },
+    {
+        "text": "elements in this heap what if we had an",
+        "start": 323.36,
+        "duration": 3.76
+    },
+    {
+        "text": "odd number of elements so what if there",
+        "start": 325.44,
+        "duration": 3.199
+    },
+    {
+        "text": "were three elements in this heap",
+        "start": 327.12,
+        "duration": 3.919
+    },
+    {
+        "text": "that's allowed because we know that we",
+        "start": 328.639,
+        "duration": 3.12
+    },
+    {
+        "text": "can't actually",
+        "start": 331.039,
+        "duration": 3.521
+    },
+    {
+        "text": "have these be equal if there's a two and",
+        "start": 331.759,
+        "duration": 3.601
+    },
+    {
+        "text": "a three right",
+        "start": 334.56,
+        "duration": 2.56
+    },
+    {
+        "text": "or in the opposite case there could be",
+        "start": 335.36,
+        "duration": 2.96
+    },
+    {
+        "text": "two elements here and there could",
+        "start": 337.12,
+        "duration": 2.16
+    },
+    {
+        "text": "actually be",
+        "start": 338.32,
+        "duration": 3.12
+    },
+    {
+        "text": "three elements here that's also allowed",
+        "start": 339.28,
+        "duration": 3.84
+    },
+    {
+        "text": "because we know that's approximately",
+        "start": 341.44,
+        "duration": 2.08
+    },
+    {
+        "text": "equal",
+        "start": 343.12,
+        "duration": 2.72
+    },
+    {
+        "text": "if the difference though is ever greater",
+        "start": 343.52,
+        "duration": 3.679
+    },
+    {
+        "text": "than one so if there were",
+        "start": 345.84,
+        "duration": 3.68
+    },
+    {
+        "text": "four here and two here we know then we",
+        "start": 347.199,
+        "duration": 4.081
+    },
+    {
+        "text": "have to balance them right make this",
+        "start": 349.52,
+        "duration": 2.64
+    },
+    {
+        "text": "equal",
+        "start": 351.28,
+        "duration": 4.0
+    },
+    {
+        "text": "three and make this equal three right we",
+        "start": 352.16,
+        "duration": 5.039
+    },
+    {
+        "text": "always have to keep it as balanced as",
+        "start": 355.28,
+        "duration": 2.8
+    },
+    {
+        "text": "possible",
+        "start": 357.199,
+        "duration": 2.72
+    },
+    {
+        "text": "and if you're not familiar with what",
+        "start": 358.08,
+        "duration": 3.28
+    },
+    {
+        "text": "exactly a heap is",
+        "start": 359.919,
+        "duration": 4.4
+    },
+    {
+        "text": "it's basically like a list it's pretty",
+        "start": 361.36,
+        "duration": 4.64
+    },
+    {
+        "text": "similar to a list it's implemented",
+        "start": 364.319,
+        "duration": 4.241
+    },
+    {
+        "text": "using arrays or lists the only",
+        "start": 366.0,
+        "duration": 3.6
+    },
+    {
+        "text": "difference is though",
+        "start": 368.56,
+        "duration": 3.12
+    },
+    {
+        "text": "adding a number we don't add at the",
+        "start": 369.6,
+        "duration": 4.48
+    },
+    {
+        "text": "beginning or at the end we just",
+        "start": 371.68,
+        "duration": 4.56
+    },
+    {
+        "text": "add elements to the heap and adding an",
+        "start": 374.08,
+        "duration": 3.36
+    },
+    {
+        "text": "element to this",
+        "start": 376.24,
+        "duration": 4.079
+    },
+    {
+        "text": "heap is always going to be a log n",
+        "start": 377.44,
+        "duration": 3.759
+    },
+    {
+        "text": "operation",
+        "start": 380.319,
+        "duration": 3.6
+    },
+    {
+        "text": "and removing an element is also going to",
+        "start": 381.199,
+        "duration": 3.041
+    },
+    {
+        "text": "be",
+        "start": 383.919,
+        "duration": 3.681
+    },
+    {
+        "text": "a log n operation right so add",
+        "start": 384.24,
+        "duration": 7.12
+    },
+    {
+        "text": "or remove is log n and there happen to",
+        "start": 387.6,
+        "duration": 4.08
+    },
+    {
+        "text": "be",
+        "start": 391.36,
+        "duration": 3.44
+    },
+    {
+        "text": "two kinds of heaps a max heap or",
+        "start": 391.68,
+        "duration": 6.48
+    },
+    {
+        "text": "a min heap and the thing about these",
+        "start": 394.8,
+        "duration": 6.959
+    },
+    {
+        "text": "is so for a max heap finding the max",
+        "start": 398.16,
+        "duration": 7.039
+    },
+    {
+        "text": "in this list so find max in a max heap",
+        "start": 401.759,
+        "duration": 4.801
+    },
+    {
+        "text": "is always going to be",
+        "start": 405.199,
+        "duration": 4.801
+    },
+    {
+        "text": "o of one so that's the advantage",
+        "start": 406.56,
+        "duration": 5.52
+    },
+    {
+        "text": "we know that finding the max in a",
+        "start": 410.0,
+        "duration": 3.039
+    },
+    {
+        "text": "regular list",
+        "start": 412.08,
+        "duration": 3.119
+    },
+    {
+        "text": "is o of n because you have to search the",
+        "start": 413.039,
+        "duration": 3.121
+    },
+    {
+        "text": "entire list",
+        "start": 415.199,
+        "duration": 3.521
+    },
+    {
+        "text": "but with a heap we can find the max in",
+        "start": 416.16,
+        "duration": 3.92
+    },
+    {
+        "text": "constant time",
+        "start": 418.72,
+        "duration": 3.44
+    },
+    {
+        "text": "similarly with a min heap if you want to",
+        "start": 420.08,
+        "duration": 3.679
+    },
+    {
+        "text": "find the min",
+        "start": 422.16,
+        "duration": 4.72
+    },
+    {
+        "text": "that's also an o of one operation",
+        "start": 423.759,
+        "duration": 5.761
+    },
+    {
+        "text": "so with that being said the small heap",
+        "start": 426.88,
+        "duration": 4.64
+    },
+    {
+        "text": "is going to be implemented as a",
+        "start": 429.52,
+        "duration": 5.36
+    },
+    {
+        "text": "max heap and the reason we have a max",
+        "start": 431.52,
+        "duration": 4.88
+    },
+    {
+        "text": "heap and not a min heap it's kind of",
+        "start": 434.88,
+        "duration": 3.12
+    },
+    {
+        "text": "counterintuitive right if this is the",
+        "start": 436.4,
+        "duration": 3.12
+    },
+    {
+        "text": "small heap why are we using a",
+        "start": 438.0,
+        "duration": 4.0
+    },
+    {
+        "text": "max heap and that for this one we're",
+        "start": 439.52,
+        "duration": 3.44
+    },
+    {
+        "text": "actually going to have a",
+        "start": 442.0,
+        "duration": 4.08
+    },
+    {
+        "text": "min heap instead of a max heap",
+        "start": 442.96,
+        "duration": 5.28
+    },
+    {
+        "text": "and the reason is what if we had",
+        "start": 446.08,
+        "duration": 3.28
+    },
+    {
+        "text": "elements to",
+        "start": 448.24,
+        "duration": 4.56
+    },
+    {
+        "text": "these heaps such as right what if we had",
+        "start": 449.36,
+        "duration": 5.44
+    },
+    {
+        "text": "these elements in each of the heaps",
+        "start": 452.8,
+        "duration": 4.0
+    },
+    {
+        "text": "right we see that all elements here are",
+        "start": 454.8,
+        "duration": 3.92
+    },
+    {
+        "text": "less than or equal to the elements in",
+        "start": 456.8,
+        "duration": 2.399
+    },
+    {
+        "text": "the",
+        "start": 458.72,
+        "duration": 2.64
+    },
+    {
+        "text": "right heap but if you actually want to",
+        "start": 459.199,
+        "duration": 3.361
+    },
+    {
+        "text": "find the median",
+        "start": 461.36,
+        "duration": 4.239
+    },
+    {
+        "text": "of these we know we need to get the max",
+        "start": 462.56,
+        "duration": 5.759
+    },
+    {
+        "text": "value in the small heap right two and we",
+        "start": 465.599,
+        "duration": 3.6
+    },
+    {
+        "text": "need to get the",
+        "start": 468.319,
+        "duration": 4.0
+    },
+    {
+        "text": "min value in the large heap three",
+        "start": 469.199,
+        "duration": 5.201
+    },
+    {
+        "text": "add them together and then divide by two",
+        "start": 472.319,
+        "duration": 3.201
+    },
+    {
+        "text": "right that's how we're going to get the",
+        "start": 474.4,
+        "duration": 3.04
+    },
+    {
+        "text": "median so that's why we need the min",
+        "start": 475.52,
+        "duration": 2.56
+    },
+    {
+        "text": "heap right",
+        "start": 477.44,
+        "duration": 2.72
+    },
+    {
+        "text": "we always want the minimum value from",
+        "start": 478.08,
+        "duration": 4.16
+    },
+    {
+        "text": "our large heap and we always want the",
+        "start": 480.16,
+        "duration": 5.36
+    },
+    {
+        "text": "max value from our small heap and of",
+        "start": 482.24,
+        "duration": 3.76
+    },
+    {
+        "text": "course",
+        "start": 485.52,
+        "duration": 2.72
+    },
+    {
+        "text": "finding the median like this way right",
+        "start": 486.0,
+        "duration": 3.44
+    },
+    {
+        "text": "getting the",
+        "start": 488.24,
+        "duration": 2.959
+    },
+    {
+        "text": "value getting the value from each of the",
+        "start": 489.44,
+        "duration": 3.759
+    },
+    {
+        "text": "heaps it only works",
+        "start": 491.199,
+        "duration": 4.4
+    },
+    {
+        "text": "if the size of the heaps is",
+        "start": 493.199,
+        "duration": 4.4
+    },
+    {
+        "text": "approximately the same right if",
+        "start": 495.599,
+        "duration": 4.32
+    },
+    {
+        "text": "in this case they're equal but what if",
+        "start": 497.599,
+        "duration": 3.44
+    },
+    {
+        "text": "we had a",
+        "start": 499.919,
+        "duration": 2.96
+    },
+    {
+        "text": "third element in this heap what if we",
+        "start": 501.039,
+        "duration": 4.0
+    },
+    {
+        "text": "had a three well they're approximately",
+        "start": 502.879,
+        "duration": 3.681
+    },
+    {
+        "text": "equal right but you can see the length",
+        "start": 505.039,
+        "duration": 2.16
+    },
+    {
+        "text": "of this one",
+        "start": 506.56,
+        "duration": 2.479
+    },
+    {
+        "text": "is greater right but the difference in",
+        "start": 507.199,
+        "duration": 3.84
+    },
+    {
+        "text": "length is one so they're approximately",
+        "start": 509.039,
+        "duration": 2.56
+    },
+    {
+        "text": "equal",
+        "start": 511.039,
+        "duration": 2.24
+    },
+    {
+        "text": "in that case how are we going to find",
+        "start": 511.599,
+        "duration": 4.081
+    },
+    {
+        "text": "the median well since we know that the",
+        "start": 513.279,
+        "duration": 4.481
+    },
+    {
+        "text": "length of this heap is bigger than the",
+        "start": 515.68,
+        "duration": 3.44
+    },
+    {
+        "text": "length of this heap",
+        "start": 517.76,
+        "duration": 3.519
+    },
+    {
+        "text": "we know that we have an odd number of",
+        "start": 519.12,
+        "duration": 3.919
+    },
+    {
+        "text": "elements in that case right if one heap",
+        "start": 521.279,
+        "duration": 3.201
+    },
+    {
+        "text": "is bigger than the other there's",
+        "start": 523.039,
+        "duration": 3.681
+    },
+    {
+        "text": "always going to be an odd number and in",
+        "start": 524.48,
+        "duration": 4.479
+    },
+    {
+        "text": "that case we're going to want to get the",
+        "start": 526.72,
+        "duration": 3.04
+    },
+    {
+        "text": "value",
+        "start": 528.959,
+        "duration": 3.361
+    },
+    {
+        "text": "from this heap so if the length of this",
+        "start": 529.76,
+        "duration": 3.04
+    },
+    {
+        "text": "heap",
+        "start": 532.32,
+        "duration": 2.639
+    },
+    {
+        "text": "is bigger we're going to want to get the",
+        "start": 532.8,
+        "duration": 3.36
+    },
+    {
+        "text": "max from",
+        "start": 534.959,
+        "duration": 3.44
+    },
+    {
+        "text": "here we're going to want to get the max",
+        "start": 536.16,
+        "duration": 4.08
+    },
+    {
+        "text": "value from this heap and that's going to",
+        "start": 538.399,
+        "duration": 2.161
+    },
+    {
+        "text": "be",
+        "start": 540.24,
+        "duration": 2.8
+    },
+    {
+        "text": "3 and we know in this case 3 happens to",
+        "start": 540.56,
+        "duration": 3.92
+    },
+    {
+        "text": "be the median right if you",
+        "start": 543.04,
+        "duration": 3.28
+    },
+    {
+        "text": "because look at them these values are in",
+        "start": 544.48,
+        "duration": 4.0
+    },
+    {
+        "text": "sorted order we get rid of these two we",
+        "start": 546.32,
+        "duration": 3.44
+    },
+    {
+        "text": "get rid of these through",
+        "start": 548.48,
+        "duration": 3.68
+    },
+    {
+        "text": "two the middle value is three and i'm",
+        "start": 549.76,
+        "duration": 4.079
+    },
+    {
+        "text": "not going to walk you through this case",
+        "start": 552.16,
+        "duration": 2.16
+    },
+    {
+        "text": "but",
+        "start": 553.839,
+        "duration": 2.641
+    },
+    {
+        "text": "let's just say imagine we had a two over",
+        "start": 554.32,
+        "duration": 4.48
+    },
+    {
+        "text": "here the exact same thing would happen",
+        "start": 556.48,
+        "duration": 4.08
+    },
+    {
+        "text": "right we would get the min value from",
+        "start": 558.8,
+        "duration": 3.44
+    },
+    {
+        "text": "here we get the two",
+        "start": 560.56,
+        "duration": 3.76
+    },
+    {
+        "text": "and notice that look the max value from",
+        "start": 562.24,
+        "duration": 3.76
+    },
+    {
+        "text": "here and the min value from here are",
+        "start": 564.32,
+        "duration": 3.6
+    },
+    {
+        "text": "equal right that's why i say",
+        "start": 566.0,
+        "duration": 4.64
+    },
+    {
+        "text": "every value in here has to be less than",
+        "start": 567.92,
+        "duration": 4.72
+    },
+    {
+        "text": "or equal it's possible that they are",
+        "start": 570.64,
+        "duration": 2.56
+    },
+    {
+        "text": "equal",
+        "start": 572.64,
+        "duration": 2.24
+    },
+    {
+        "text": "okay so now let me just go through a",
+        "start": 573.2,
+        "duration": 3.759
+    },
+    {
+        "text": "quick walkthrough of this code again",
+        "start": 574.88,
+        "duration": 4.56
+    },
+    {
+        "text": "so what we're gonna do add the first",
+        "start": 576.959,
+        "duration": 4.081
+    },
+    {
+        "text": "element which is a three",
+        "start": 579.44,
+        "duration": 3.44
+    },
+    {
+        "text": "which heap are we gonna add it to in",
+        "start": 581.04,
+        "duration": 3.52
+    },
+    {
+        "text": "this case it doesn't really matter so",
+        "start": 582.88,
+        "duration": 3.84
+    },
+    {
+        "text": "what i'm gonna do is just by default add",
+        "start": 584.56,
+        "duration": 3.92
+    },
+    {
+        "text": "it to the small heap",
+        "start": 586.72,
+        "duration": 4.4
+    },
+    {
+        "text": "so let's add three to the small heap and",
+        "start": 588.48,
+        "duration": 5.2
+    },
+    {
+        "text": "we know that that was roughly a log",
+        "start": 591.12,
+        "duration": 5.92
+    },
+    {
+        "text": "n operation right next let's add",
+        "start": 593.68,
+        "duration": 6.48
+    },
+    {
+        "text": "two so by default i'm always gonna take",
+        "start": 597.04,
+        "duration": 4.799
+    },
+    {
+        "text": "whatever element we add and i'm gonna",
+        "start": 600.16,
+        "duration": 3.76
+    },
+    {
+        "text": "take it and add it to the small heap now",
+        "start": 601.839,
+        "duration": 2.961
+    },
+    {
+        "text": "i added",
+        "start": 603.92,
+        "duration": 3.599
+    },
+    {
+        "text": "two to the small heap but wait a minute",
+        "start": 604.8,
+        "duration": 5.039
+    },
+    {
+        "text": "now the heaps are not approximately",
+        "start": 607.519,
+        "duration": 2.961
+    },
+    {
+        "text": "equal",
+        "start": 609.839,
+        "duration": 3.361
+    },
+    {
+        "text": "this has a length of two this has a",
+        "start": 610.48,
+        "duration": 5.039
+    },
+    {
+        "text": "length of zero it was okay when this had",
+        "start": 613.2,
+        "duration": 4.079
+    },
+    {
+        "text": "a length of one because that's still",
+        "start": 615.519,
+        "duration": 3.281
+    },
+    {
+        "text": "approximately equal",
+        "start": 617.279,
+        "duration": 4.56
+    },
+    {
+        "text": "but 2 is that's too big of a difference",
+        "start": 618.8,
+        "duration": 5.36
+    },
+    {
+        "text": "so now what we're going to do is find",
+        "start": 621.839,
+        "duration": 3.281
+    },
+    {
+        "text": "the max",
+        "start": 624.16,
+        "duration": 4.16
+    },
+    {
+        "text": "value in this heap and add it to",
+        "start": 625.12,
+        "duration": 5.76
+    },
+    {
+        "text": "this heap the large heap which is always",
+        "start": 628.32,
+        "duration": 4.24
+    },
+    {
+        "text": "going to have elements greater than or",
+        "start": 630.88,
+        "duration": 3.44
+    },
+    {
+        "text": "equal to the small heap",
+        "start": 632.56,
+        "duration": 5.04
+    },
+    {
+        "text": "so we need to get the max value from",
+        "start": 634.32,
+        "duration": 6.32
+    },
+    {
+        "text": "this heap and since this is a max heap",
+        "start": 637.6,
+        "duration": 5.84
+    },
+    {
+        "text": "actually finding the maximum is an o of",
+        "start": 640.64,
+        "duration": 3.28
+    },
+    {
+        "text": "one",
+        "start": 643.44,
+        "duration": 2.959
+    },
+    {
+        "text": "operation now the downside is we have to",
+        "start": 643.92,
+        "duration": 3.359
+    },
+    {
+        "text": "remove",
+        "start": 646.399,
+        "duration": 4.801
+    },
+    {
+        "text": "that value which is a log n operation",
+        "start": 647.279,
+        "duration": 5.201
+    },
+    {
+        "text": "and we're going to take that element",
+        "start": 651.2,
+        "duration": 3.36
+    },
+    {
+        "text": "that we removed and add it",
+        "start": 652.48,
+        "duration": 5.2
+    },
+    {
+        "text": "to the min heap and that's also going to",
+        "start": 654.56,
+        "duration": 3.68
+    },
+    {
+        "text": "be a",
+        "start": 657.68,
+        "duration": 2.8
+    },
+    {
+        "text": "log n operation we know adding and",
+        "start": 658.24,
+        "duration": 3.039
+    },
+    {
+        "text": "removing",
+        "start": 660.48,
+        "duration": 3.68
+    },
+    {
+        "text": "from heaps is always login finding the",
+        "start": 661.279,
+        "duration": 4.56
+    },
+    {
+        "text": "maximum in a max heap",
+        "start": 664.16,
+        "duration": 4.88
+    },
+    {
+        "text": "is o of one finding the minimum in a min",
+        "start": 665.839,
+        "duration": 5.201
+    },
+    {
+        "text": "heap is also o of one",
+        "start": 669.04,
+        "duration": 4.56
+    },
+    {
+        "text": "okay so now we did add three add two now",
+        "start": 671.04,
+        "duration": 3.52
+    },
+    {
+        "text": "let's add",
+        "start": 673.6,
+        "duration": 3.76
+    },
+    {
+        "text": "one i'm gonna change this add one to a",
+        "start": 674.56,
+        "duration": 3.279
+    },
+    {
+        "text": "add",
+        "start": 677.36,
+        "duration": 3.76
+    },
+    {
+        "text": "seven just to illustrate one last thing",
+        "start": 677.839,
+        "duration": 4.0
+    },
+    {
+        "text": "about this",
+        "start": 681.12,
+        "duration": 2.32
+    },
+    {
+        "text": "algorithm that we're gonna do and let me",
+        "start": 681.839,
+        "duration": 3.041
+    },
+    {
+        "text": "just cross this out we're not doing",
+        "start": 683.44,
+        "duration": 3.12
+    },
+    {
+        "text": "insert order anymore we're doing the",
+        "start": 684.88,
+        "duration": 2.72
+    },
+    {
+        "text": "heap solution",
+        "start": 686.56,
+        "duration": 3.68
+    },
+    {
+        "text": "so we're gonna add seven right by",
+        "start": 687.6,
+        "duration": 3.2
+    },
+    {
+        "text": "default",
+        "start": 690.24,
+        "duration": 2.4
+    },
+    {
+        "text": "i know that i'm adding it to the small",
+        "start": 690.8,
+        "duration": 3.2
+    },
+    {
+        "text": "heap so what am i gonna do i'm gonna",
+        "start": 692.64,
+        "duration": 1.759
+    },
+    {
+        "text": "take",
+        "start": 694.0,
+        "duration": 2.72
+    },
+    {
+        "text": "seven and add it to the small heap now",
+        "start": 694.399,
+        "duration": 4.641
+    },
+    {
+        "text": "the size of this heap is two the size of",
+        "start": 696.72,
+        "duration": 4.16
+    },
+    {
+        "text": "this heap is one so they are",
+        "start": 699.04,
+        "duration": 4.479
+    },
+    {
+        "text": "approximately equal the last condition",
+        "start": 700.88,
+        "duration": 3.36
+    },
+    {
+        "text": "though",
+        "start": 703.519,
+        "duration": 3.44
+    },
+    {
+        "text": "is every element in the small heap less",
+        "start": 704.24,
+        "duration": 3.76
+    },
+    {
+        "text": "than or equal",
+        "start": 706.959,
+        "duration": 3.921
+    },
+    {
+        "text": "to every element in the min heap now how",
+        "start": 708.0,
+        "duration": 4.32
+    },
+    {
+        "text": "are we going to check that well",
+        "start": 710.88,
+        "duration": 3.759
+    },
+    {
+        "text": "we can find the minimum of the min heap",
+        "start": 712.32,
+        "duration": 3.68
+    },
+    {
+        "text": "in o of one time",
+        "start": 714.639,
+        "duration": 4.0
+    },
+    {
+        "text": "right it happens to be three we can find",
+        "start": 716.0,
+        "duration": 5.04
+    },
+    {
+        "text": "the max of the small heap in o of one",
+        "start": 718.639,
+        "duration": 2.801
+    },
+    {
+        "text": "time",
+        "start": 721.04,
+        "duration": 3.68
+    },
+    {
+        "text": "it happens to be seven is that",
+        "start": 721.44,
+        "duration": 6.0
+    },
+    {
+        "text": "is seven less than or equal to three no",
+        "start": 724.72,
+        "duration": 3.679
+    },
+    {
+        "text": "it's not so",
+        "start": 727.44,
+        "duration": 3.44
+    },
+    {
+        "text": "what are we gonna do well we're actually",
+        "start": 728.399,
+        "duration": 4.0
+    },
+    {
+        "text": "gonna do the exact same",
+        "start": 730.88,
+        "duration": 3.84
+    },
+    {
+        "text": "thing we did before so i'm gonna find",
+        "start": 732.399,
+        "duration": 3.201
+    },
+    {
+        "text": "the max",
+        "start": 734.72,
+        "duration": 3.76
+    },
+    {
+        "text": "from the small heap in o of one time i'm",
+        "start": 735.6,
+        "duration": 4.799
+    },
+    {
+        "text": "gonna remove that max so",
+        "start": 738.48,
+        "duration": 4.479
+    },
+    {
+        "text": "seven is removed to remove we know it",
+        "start": 740.399,
+        "duration": 4.161
+    },
+    {
+        "text": "takes login time",
+        "start": 742.959,
+        "duration": 4.161
+    },
+    {
+        "text": "and then i'm going to add it to the min",
+        "start": 744.56,
+        "duration": 3.12
+    },
+    {
+        "text": "heap",
+        "start": 747.12,
+        "duration": 3.68
+    },
+    {
+        "text": "which also takes log n time so now",
+        "start": 747.68,
+        "duration": 5.92
+    },
+    {
+        "text": "i'm adding seven and the lengths are",
+        "start": 750.8,
+        "duration": 4.719
+    },
+    {
+        "text": "approximately equal still right this has",
+        "start": 753.6,
+        "duration": 3.2
+    },
+    {
+        "text": "one element this has",
+        "start": 755.519,
+        "duration": 3.521
+    },
+    {
+        "text": "two elements and now if we get the",
+        "start": 756.8,
+        "duration": 3.52
+    },
+    {
+        "text": "maximum from here",
+        "start": 759.04,
+        "duration": 3.919
+    },
+    {
+        "text": "two and we get the min from here three",
+        "start": 760.32,
+        "duration": 4.639
+    },
+    {
+        "text": "we see that the condition actually now",
+        "start": 762.959,
+        "duration": 3.841
+    },
+    {
+        "text": "is true every element in the left",
+        "start": 764.959,
+        "duration": 4.801
+    },
+    {
+        "text": "is less than or equal to every element",
+        "start": 766.8,
+        "duration": 3.76
+    },
+    {
+        "text": "in the right",
+        "start": 769.76,
+        "duration": 4.24
+    },
+    {
+        "text": "now we added seven now let's do add four",
+        "start": 770.56,
+        "duration": 5.44
+    },
+    {
+        "text": "so by default i'm always going to add it",
+        "start": 774.0,
+        "duration": 3.12
+    },
+    {
+        "text": "to the small heap",
+        "start": 776.0,
+        "duration": 3.279
+    },
+    {
+        "text": "so i'm adding four to the small heap the",
+        "start": 777.12,
+        "duration": 3.519
+    },
+    {
+        "text": "small heap has two",
+        "start": 779.279,
+        "duration": 4.321
+    },
+    {
+        "text": "the large g has two also but we know",
+        "start": 780.639,
+        "duration": 3.281
+    },
+    {
+        "text": "that",
+        "start": 783.6,
+        "duration": 2.0
+    },
+    {
+        "text": "this condition doesn't hold right the",
+        "start": 783.92,
+        "duration": 3.76
+    },
+    {
+        "text": "less than or equal condition if we get",
+        "start": 785.6,
+        "duration": 3.039
+    },
+    {
+        "text": "the max",
+        "start": 787.68,
+        "duration": 2.24
+    },
+    {
+        "text": "from here that's going to be four if we",
+        "start": 788.639,
+        "duration": 3.041
+    },
+    {
+        "text": "get the min from here that's going to be",
+        "start": 789.92,
+        "duration": 2.479
+    },
+    {
+        "text": "three",
+        "start": 791.68,
+        "duration": 2.64
+    },
+    {
+        "text": "this is just not true right four is not",
+        "start": 792.399,
+        "duration": 3.361
+    },
+    {
+        "text": "less than or equal to three",
+        "start": 794.32,
+        "duration": 4.24
+    },
+    {
+        "text": "so we have to pop this and we have to",
+        "start": 795.76,
+        "duration": 3.6
+    },
+    {
+        "text": "move it",
+        "start": 798.56,
+        "duration": 3.68
+    },
+    {
+        "text": "to this heap so now everything is good",
+        "start": 799.36,
+        "duration": 3.52
+    },
+    {
+        "text": "right it's",
+        "start": 802.24,
+        "duration": 2.399
+    },
+    {
+        "text": "every value is less than or equal write",
+        "start": 802.88,
+        "duration": 4.24
+    },
+    {
+        "text": "this as two this has three that's less",
+        "start": 804.639,
+        "duration": 3.76
+    },
+    {
+        "text": "than or equal gray",
+        "start": 807.12,
+        "duration": 3.839
+    },
+    {
+        "text": "only problem now is the lengths are not",
+        "start": 808.399,
+        "duration": 3.68
+    },
+    {
+        "text": "approximately equal",
+        "start": 810.959,
+        "duration": 4.32
+    },
+    {
+        "text": "this has one element this has three",
+        "start": 812.079,
+        "duration": 4.081
+    },
+    {
+        "text": "elements",
+        "start": 815.279,
+        "duration": 3.201
+    },
+    {
+        "text": "so since the length of this one is",
+        "start": 816.16,
+        "duration": 4.0
+    },
+    {
+        "text": "greater what are we gonna do we're gonna",
+        "start": 818.48,
+        "duration": 3.52
+    },
+    {
+        "text": "get we're gonna find the min",
+        "start": 820.16,
+        "duration": 4.96
+    },
+    {
+        "text": "o of one time remove that min and",
+        "start": 822.0,
+        "duration": 6.0
+    },
+    {
+        "text": "then move it to this heap so we know",
+        "start": 825.12,
+        "duration": 3.6
+    },
+    {
+        "text": "that the min",
+        "start": 828.0,
+        "duration": 3.12
+    },
+    {
+        "text": "is three we can do that in o of one time",
+        "start": 828.72,
+        "duration": 4.08
+    },
+    {
+        "text": "but removing it is gonna be",
+        "start": 831.12,
+        "duration": 5.44
+    },
+    {
+        "text": "log n and adding it to the left heap is",
+        "start": 832.8,
+        "duration": 5.2
+    },
+    {
+        "text": "also gonna be log n",
+        "start": 836.56,
+        "duration": 4.24
+    },
+    {
+        "text": "so now the lengths are approximately",
+        "start": 838.0,
+        "duration": 4.639
+    },
+    {
+        "text": "equal this has two elements",
+        "start": 840.8,
+        "duration": 3.839
+    },
+    {
+        "text": "this has two elements and the other",
+        "start": 842.639,
+        "duration": 4.401
+    },
+    {
+        "text": "condition find the max from here find",
+        "start": 844.639,
+        "duration": 3.361
+    },
+    {
+        "text": "the min here",
+        "start": 847.04,
+        "duration": 3.12
+    },
+    {
+        "text": "we'll end up with three and four and",
+        "start": 848.0,
+        "duration": 4.639
+    },
+    {
+        "text": "less than or equal is definitely true",
+        "start": 850.16,
+        "duration": 4.96
+    },
+    {
+        "text": "so it looks like a lot of work and it",
+        "start": 852.639,
+        "duration": 3.361
+    },
+    {
+        "text": "definitely is",
+        "start": 855.12,
+        "duration": 3.12
+    },
+    {
+        "text": "it's a lot harder than just having one",
+        "start": 856.0,
+        "duration": 3.199
+    },
+    {
+        "text": "array right",
+        "start": 858.24,
+        "duration": 2.959
+    },
+    {
+        "text": "it's definitely more code but it's also",
+        "start": 859.199,
+        "duration": 3.681
+    },
+    {
+        "text": "a lot more efficient now",
+        "start": 861.199,
+        "duration": 3.681
+    },
+    {
+        "text": "the only thing we have to do is get the",
+        "start": 862.88,
+        "duration": 3.12
+    },
+    {
+        "text": "median and",
+        "start": 864.88,
+        "duration": 3.36
+    },
+    {
+        "text": "the time complexity for get median is",
+        "start": 866.0,
+        "duration": 3.36
+    },
+    {
+        "text": "actually still",
+        "start": 868.24,
+        "duration": 3.76
+    },
+    {
+        "text": "o of one which is exactly what we wanted",
+        "start": 869.36,
+        "duration": 3.919
+    },
+    {
+        "text": "let me show you why",
+        "start": 872.0,
+        "duration": 3.199
+    },
+    {
+        "text": "well we need in this case we have an",
+        "start": 873.279,
+        "duration": 3.36
+    },
+    {
+        "text": "even number of elements right",
+        "start": 875.199,
+        "duration": 4.401
+    },
+    {
+        "text": "two plus two is even so we wanna find",
+        "start": 876.639,
+        "duration": 5.281
+    },
+    {
+        "text": "the maximum from our left heap which is",
+        "start": 879.6,
+        "duration": 4.16
+    },
+    {
+        "text": "three right we know we can do that in",
+        "start": 881.92,
+        "duration": 4.719
+    },
+    {
+        "text": "o of one time because this is a max heap",
+        "start": 883.76,
+        "duration": 5.04
+    },
+    {
+        "text": "we want to find the minimum value from",
+        "start": 886.639,
+        "duration": 4.401
+    },
+    {
+        "text": "our right heap and we know we can do",
+        "start": 888.8,
+        "duration": 4.56
+    },
+    {
+        "text": "that in o of one time because this is a",
+        "start": 891.04,
+        "duration": 4.799
+    },
+    {
+        "text": "min heap and we know that four happens",
+        "start": 893.36,
+        "duration": 3.839
+    },
+    {
+        "text": "to be the min value",
+        "start": 895.839,
+        "duration": 3.921
+    },
+    {
+        "text": "so we get these two values three plus",
+        "start": 897.199,
+        "duration": 3.281
+    },
+    {
+        "text": "four",
+        "start": 899.76,
+        "duration": 2.8
+    },
+    {
+        "text": "add them together divide by two and",
+        "start": 900.48,
+        "duration": 4.24
+    },
+    {
+        "text": "that's going to be our median so we can",
+        "start": 902.56,
+        "duration": 2.639
+    },
+    {
+        "text": "still",
+        "start": 904.72,
+        "duration": 3.119
+    },
+    {
+        "text": "find the median in o of one time which",
+        "start": 905.199,
+        "duration": 3.681
+    },
+    {
+        "text": "is great",
+        "start": 907.839,
+        "duration": 2.881
+    },
+    {
+        "text": "now with all that being said let me",
+        "start": 908.88,
+        "duration": 3.12
+    },
+    {
+        "text": "finally show you the code",
+        "start": 910.72,
+        "duration": 2.96
+    },
+    {
+        "text": "and show you that it's not as long as",
+        "start": 912.0,
+        "duration": 4.16
+    },
+    {
+        "text": "you might expect okay so now let's look",
+        "start": 913.68,
+        "duration": 3.599
+    },
+    {
+        "text": "at the code",
+        "start": 916.16,
+        "duration": 2.799
+    },
+    {
+        "text": "so here's a couple comments we're gonna",
+        "start": 917.279,
+        "duration": 4.0
+    },
+    {
+        "text": "have two heaps large and small",
+        "start": 918.959,
+        "duration": 4.88
+    },
+    {
+        "text": "large is gonna be a min heap mac or",
+        "start": 921.279,
+        "duration": 4.321
+    },
+    {
+        "text": "small is gonna be a max heap",
+        "start": 923.839,
+        "duration": 4.641
+    },
+    {
+        "text": "and the heaps should be roughly equal to",
+        "start": 925.6,
+        "duration": 3.44
+    },
+    {
+        "text": "roughly",
+        "start": 928.48,
+        "duration": 2.96
+    },
+    {
+        "text": "the same size so in python you can",
+        "start": 929.04,
+        "duration": 3.84
+    },
+    {
+        "text": "actually have a heap",
+        "start": 931.44,
+        "duration": 4.16
+    },
+    {
+        "text": "be just a list and i'll show you the",
+        "start": 932.88,
+        "duration": 4.56
+    },
+    {
+        "text": "other things we'll need to do later so",
+        "start": 935.6,
+        "duration": 3.52
+    },
+    {
+        "text": "actually in python since these are",
+        "start": 937.44,
+        "duration": 2.639
+    },
+    {
+        "text": "members",
+        "start": 939.12,
+        "duration": 3.44
+    },
+    {
+        "text": "of this object large and small we need",
+        "start": 940.079,
+        "duration": 3.12
+    },
+    {
+        "text": "to",
+        "start": 942.56,
+        "duration": 3.92
+    },
+    {
+        "text": "have a self as the prefix and so",
+        "start": 943.199,
+        "duration": 5.361
+    },
+    {
+        "text": "now we have two functions to implement",
+        "start": 946.48,
+        "duration": 4.159
+    },
+    {
+        "text": "find median and add num let's start with",
+        "start": 948.56,
+        "duration": 2.959
+    },
+    {
+        "text": "add num",
+        "start": 950.639,
+        "duration": 2.721
+    },
+    {
+        "text": "so just like i showed you what i'm going",
+        "start": 951.519,
+        "duration": 3.12
+    },
+    {
+        "text": "to do is",
+        "start": 953.36,
+        "duration": 4.0
+    },
+    {
+        "text": "i'm always going to take num and add it",
+        "start": 954.639,
+        "duration": 4.32
+    },
+    {
+        "text": "to the small heap so",
+        "start": 957.36,
+        "duration": 4.399
+    },
+    {
+        "text": "heap q dot heap push this is how you do",
+        "start": 958.959,
+        "duration": 3.921
+    },
+    {
+        "text": "it in python",
+        "start": 961.759,
+        "duration": 2.801
+    },
+    {
+        "text": "other languages might be different",
+        "start": 962.88,
+        "duration": 4.079
+    },
+    {
+        "text": "obviously so to the small heap we're",
+        "start": 964.56,
+        "duration": 4.079
+    },
+    {
+        "text": "going to push num",
+        "start": 966.959,
+        "duration": 4.641
+    },
+    {
+        "text": "now python is kind of annoying in that",
+        "start": 968.639,
+        "duration": 3.841
+    },
+    {
+        "text": "it only",
+        "start": 971.6,
+        "duration": 3.28
+    },
+    {
+        "text": "implements min heaps we know small is",
+        "start": 972.48,
+        "duration": 3.2
+    },
+    {
+        "text": "actually a",
+        "start": 974.88,
+        "duration": 4.959
+    },
+    {
+        "text": "max heap so to get around that what i'm",
+        "start": 975.68,
+        "duration": 4.56
+    },
+    {
+        "text": "going to",
+        "start": 979.839,
+        "duration": 2.081
+    },
+    {
+        "text": "have to do is take every number and",
+        "start": 980.24,
+        "duration": 4.08
+    },
+    {
+        "text": "actually multiply it by negative one",
+        "start": 981.92,
+        "duration": 4.64
+    },
+    {
+        "text": "this allows us to actually implement a",
+        "start": 984.32,
+        "duration": 3.36
+    },
+    {
+        "text": "max heap which",
+        "start": 986.56,
+        "duration": 3.199
+    },
+    {
+        "text": "isn't implemented by default in python",
+        "start": 987.68,
+        "duration": 3.279
+    },
+    {
+        "text": "for some reason",
+        "start": 989.759,
+        "duration": 3.44
+    },
+    {
+        "text": "but what i'm doing here is taking num",
+        "start": 990.959,
+        "duration": 3.68
+    },
+    {
+        "text": "and adding it to",
+        "start": 993.199,
+        "duration": 4.481
+    },
+    {
+        "text": "the small heap the max heap right but",
+        "start": 994.639,
+        "duration": 4.88
+    },
+    {
+        "text": "now we want to make sure",
+        "start": 997.68,
+        "duration": 5.279
+    },
+    {
+        "text": "every element in small",
+        "start": 999.519,
+        "duration": 6.801
+    },
+    {
+        "text": "is less is less than or equal to",
+        "start": 1002.959,
+        "duration": 6.961
+    },
+    {
+        "text": "every element in large right so every",
+        "start": 1006.32,
+        "duration": 5.28
+    },
+    {
+        "text": "element in the small heap has to be less",
+        "start": 1009.92,
+        "duration": 3.12
+    },
+    {
+        "text": "than or equal to every element in the",
+        "start": 1011.6,
+        "duration": 2.96
+    },
+    {
+        "text": "large heap so i'm going to make sure",
+        "start": 1013.04,
+        "duration": 2.64
+    },
+    {
+        "text": "that that's true so",
+        "start": 1014.56,
+        "duration": 4.8
+    },
+    {
+        "text": "if if small and large are non-null",
+        "start": 1015.68,
+        "duration": 6.88
+    },
+    {
+        "text": "and so from from small from our",
+        "start": 1019.36,
+        "duration": 5.04
+    },
+    {
+        "text": "small heap our max heap what i'm going",
+        "start": 1022.56,
+        "duration": 4.72
+    },
+    {
+        "text": "to do is get the max value from it so",
+        "start": 1024.4,
+        "duration": 4.559
+    },
+    {
+        "text": "how can i do that i can just take the",
+        "start": 1027.28,
+        "duration": 3.6
+    },
+    {
+        "text": "index of 0 because it's",
+        "start": 1028.959,
+        "duration": 3.761
+    },
+    {
+        "text": "implemented as a list heaps are",
+        "start": 1030.88,
+        "duration": 3.199
+    },
+    {
+        "text": "implemented as lists",
+        "start": 1032.72,
+        "duration": 3.119
+    },
+    {
+        "text": "so if you get the 0th index you're",
+        "start": 1034.079,
+        "duration": 3.281
+    },
+    {
+        "text": "getting the max value",
+        "start": 1035.839,
+        "duration": 3.521
+    },
+    {
+        "text": "we know that every time we add a value",
+        "start": 1037.36,
+        "duration": 3.52
+    },
+    {
+        "text": "to the small heap we're multiplying it",
+        "start": 1039.36,
+        "duration": 2.479
+    },
+    {
+        "text": "by negative one",
+        "start": 1040.88,
+        "duration": 3.199
+    },
+    {
+        "text": "so to reverse that i'm going to take",
+        "start": 1041.839,
+        "duration": 3.281
+    },
+    {
+        "text": "this value",
+        "start": 1044.079,
+        "duration": 2.96
+    },
+    {
+        "text": "and multiply it by negative one and get",
+        "start": 1045.12,
+        "duration": 4.08
+    },
+    {
+        "text": "the true value that we actually added to",
+        "start": 1047.039,
+        "duration": 3.041
+    },
+    {
+        "text": "the heap",
+        "start": 1049.2,
+        "duration": 3.68
+    },
+    {
+        "text": "and so i wanna know is this value",
+        "start": 1050.08,
+        "duration": 4.0
+    },
+    {
+        "text": "somehow",
+        "start": 1052.88,
+        "duration": 4.32
+    },
+    {
+        "text": "greater than the smallest value in our",
+        "start": 1054.08,
+        "duration": 4.88
+    },
+    {
+        "text": "large heap how can i get the smallest",
+        "start": 1057.2,
+        "duration": 3.359
+    },
+    {
+        "text": "value in our large heap i can do the",
+        "start": 1058.96,
+        "duration": 2.56
+    },
+    {
+        "text": "exact same thing",
+        "start": 1060.559,
+        "duration": 2.881
+    },
+    {
+        "text": "index of zero but i didn't have to",
+        "start": 1061.52,
+        "duration": 3.92
+    },
+    {
+        "text": "multiply this by negative one",
+        "start": 1063.44,
+        "duration": 4.64
+    },
+    {
+        "text": "because this is a min heap and that's",
+        "start": 1065.44,
+        "duration": 4.64
+    },
+    {
+        "text": "what python does by default",
+        "start": 1068.08,
+        "duration": 5.36
+    },
+    {
+        "text": "so if this condition is true let me make",
+        "start": 1070.08,
+        "duration": 4.8
+    },
+    {
+        "text": "it look a little nicer so",
+        "start": 1073.44,
+        "duration": 4.4
+    },
+    {
+        "text": "so that mainly this condition is true",
+        "start": 1074.88,
+        "duration": 4.799
+    },
+    {
+        "text": "meaning that some value",
+        "start": 1077.84,
+        "duration": 4.719
+    },
+    {
+        "text": "in our our small heap is greater than",
+        "start": 1079.679,
+        "duration": 4.481
+    },
+    {
+        "text": "our large heap then we have to",
+        "start": 1082.559,
+        "duration": 4.401
+    },
+    {
+        "text": "pop from our small heap and then add to",
+        "start": 1084.16,
+        "duration": 3.84
+    },
+    {
+        "text": "our large heap",
+        "start": 1086.96,
+        "duration": 4.24
+    },
+    {
+        "text": "so i'm going to heap q dot",
+        "start": 1088.0,
+        "duration": 5.6
+    },
+    {
+        "text": "heap pop so i'm going to pop from our",
+        "start": 1091.2,
+        "duration": 4.4
+    },
+    {
+        "text": "small heap i'm going to get the largest",
+        "start": 1093.6,
+        "duration": 4.48
+    },
+    {
+        "text": "value from our small heap stored in val",
+        "start": 1095.6,
+        "duration": 5.04
+    },
+    {
+        "text": "and then i'm going to i'm going to push",
+        "start": 1098.08,
+        "duration": 3.68
+    },
+    {
+        "text": "that value",
+        "start": 1100.64,
+        "duration": 4.159
+    },
+    {
+        "text": "to our large heap so to our large heap",
+        "start": 1101.76,
+        "duration": 4.56
+    },
+    {
+        "text": "i'm going to push that value",
+        "start": 1104.799,
+        "duration": 3.601
+    },
+    {
+        "text": "basically exactly what i did in the",
+        "start": 1106.32,
+        "duration": 3.76
+    },
+    {
+        "text": "picture but maybe the",
+        "start": 1108.4,
+        "duration": 3.76
+    },
+    {
+        "text": "code is a little confusing oh and",
+        "start": 1110.08,
+        "duration": 3.44
+    },
+    {
+        "text": "actually since we know",
+        "start": 1112.16,
+        "duration": 4.08
+    },
+    {
+        "text": "every value pushed to the small heap is",
+        "start": 1113.52,
+        "duration": 4.399
+    },
+    {
+        "text": "being multiplied by negative one",
+        "start": 1116.24,
+        "duration": 3.84
+    },
+    {
+        "text": "to reverse that we have to also multiply",
+        "start": 1117.919,
+        "duration": 4.561
+    },
+    {
+        "text": "it by negative one when we pop from it",
+        "start": 1120.08,
+        "duration": 4.0
+    },
+    {
+        "text": "because look when we pushed to it we",
+        "start": 1122.48,
+        "duration": 4.0
+    },
+    {
+        "text": "multiplied that number by negative one",
+        "start": 1124.08,
+        "duration": 5.2
+    },
+    {
+        "text": "but to our large heap we can actually",
+        "start": 1126.48,
+        "duration": 4.88
+    },
+    {
+        "text": "give the correct values we don't have to",
+        "start": 1129.28,
+        "duration": 3.92
+    },
+    {
+        "text": "multiply by negative one",
+        "start": 1131.36,
+        "duration": 3.439
+    },
+    {
+        "text": "that is actually probably one of the",
+        "start": 1133.2,
+        "duration": 3.52
+    },
+    {
+        "text": "more confusing parts about this",
+        "start": 1134.799,
+        "duration": 4.161
+    },
+    {
+        "text": "which is annoying because there's no way",
+        "start": 1136.72,
+        "duration": 4.24
+    },
+    {
+        "text": "to really get around it in python",
+        "start": 1138.96,
+        "duration": 4.32
+    },
+    {
+        "text": "so now we check this condition the only",
+        "start": 1140.96,
+        "duration": 4.079
+    },
+    {
+        "text": "other condition that we have to check",
+        "start": 1143.28,
+        "duration": 4.88
+    },
+    {
+        "text": "is what if the size is uneven",
+        "start": 1145.039,
+        "duration": 5.601
+    },
+    {
+        "text": "and so by uneven size we actually mean a",
+        "start": 1148.16,
+        "duration": 3.04
+    },
+    {
+        "text": "difference",
+        "start": 1150.64,
+        "duration": 3.52
+    },
+    {
+        "text": "greater than one so if the length of",
+        "start": 1151.2,
+        "duration": 4.0
+    },
+    {
+        "text": "small",
+        "start": 1154.16,
+        "duration": 4.56
+    },
+    {
+        "text": "is greater than the length of large plus",
+        "start": 1155.2,
+        "duration": 5.92
+    },
+    {
+        "text": "one that means the difference is two or",
+        "start": 1158.72,
+        "duration": 3.199
+    },
+    {
+        "text": "greater",
+        "start": 1161.12,
+        "duration": 3.04
+    },
+    {
+        "text": "in that case in that case what are we",
+        "start": 1161.919,
+        "duration": 3.76
+    },
+    {
+        "text": "going to do this is too big so what",
+        "start": 1164.16,
+        "duration": 2.24
+    },
+    {
+        "text": "we're going to do is",
+        "start": 1165.679,
+        "duration": 2.961
+    },
+    {
+        "text": "pop from the small and then up and then",
+        "start": 1166.4,
+        "duration": 4.159
+    },
+    {
+        "text": "push to the large which is actually",
+        "start": 1168.64,
+        "duration": 2.96
+    },
+    {
+        "text": "exactly what we did",
+        "start": 1170.559,
+        "duration": 2.961
+    },
+    {
+        "text": "up here so i'm just going to copy and",
+        "start": 1171.6,
+        "duration": 3.12
+    },
+    {
+        "text": "paste that",
+        "start": 1173.52,
+        "duration": 4.48
+    },
+    {
+        "text": "and the other case is if the length",
+        "start": 1174.72,
+        "duration": 5.92
+    },
+    {
+        "text": "of the large heap is greater than the",
+        "start": 1178.0,
+        "duration": 4.4
+    },
+    {
+        "text": "length of the small heap",
+        "start": 1180.64,
+        "duration": 4.399
+    },
+    {
+        "text": "plus one meaning the difference is two",
+        "start": 1182.4,
+        "duration": 3.519
+    },
+    {
+        "text": "or greater",
+        "start": 1185.039,
+        "duration": 2.561
+    },
+    {
+        "text": "and in that case i'm basically going to",
+        "start": 1185.919,
+        "duration": 3.841
+    },
+    {
+        "text": "do the opposite of what we just did up",
+        "start": 1187.6,
+        "duration": 4.959
+    },
+    {
+        "text": "here so let me copy and paste that so",
+        "start": 1189.76,
+        "duration": 4.799
+    },
+    {
+        "text": "we don't need this negative one because",
+        "start": 1192.559,
+        "duration": 3.681
+    },
+    {
+        "text": "we are going to be popping from",
+        "start": 1194.559,
+        "duration": 4.48
+    },
+    {
+        "text": "the large heap which has the correct",
+        "start": 1196.24,
+        "duration": 4.96
+    },
+    {
+        "text": "values not the negative one multiplied",
+        "start": 1199.039,
+        "duration": 2.88
+    },
+    {
+        "text": "values",
+        "start": 1201.2,
+        "duration": 3.44
+    },
+    {
+        "text": "and with that value though i'm going to",
+        "start": 1201.919,
+        "duration": 4.801
+    },
+    {
+        "text": "take that value and add it to the",
+        "start": 1204.64,
+        "duration": 4.0
+    },
+    {
+        "text": "small heap and actually we are going to",
+        "start": 1206.72,
+        "duration": 3.36
+    },
+    {
+        "text": "need to take this value and then",
+        "start": 1208.64,
+        "duration": 3.36
+    },
+    {
+        "text": "multiply it by negative 1",
+        "start": 1210.08,
+        "duration": 3.76
+    },
+    {
+        "text": "because we have to do that whenever we",
+        "start": 1212.0,
+        "duration": 3.12
+    },
+    {
+        "text": "add to this",
+        "start": 1213.84,
+        "duration": 3.76
+    },
+    {
+        "text": "small heap so now we are making sure we",
+        "start": 1215.12,
+        "duration": 4.4
+    },
+    {
+        "text": "take every element add it to one of the",
+        "start": 1217.6,
+        "duration": 3.76
+    },
+    {
+        "text": "heaps and if there happens to be",
+        "start": 1219.52,
+        "duration": 4.48
+    },
+    {
+        "text": "a size difference we're handling that if",
+        "start": 1221.36,
+        "duration": 3.679
+    },
+    {
+        "text": "there happens to be",
+        "start": 1224.0,
+        "duration": 3.36
+    },
+    {
+        "text": "an order difference right like the",
+        "start": 1225.039,
+        "duration": 4.0
+    },
+    {
+        "text": "values are in the wrong order we're",
+        "start": 1227.36,
+        "duration": 3.199
+    },
+    {
+        "text": "handling that as well",
+        "start": 1229.039,
+        "duration": 3.361
+    },
+    {
+        "text": "and remember all of these heap",
+        "start": 1230.559,
+        "duration": 3.521
+    },
+    {
+        "text": "operations are",
+        "start": 1232.4,
+        "duration": 5.2
+    },
+    {
+        "text": "log n operations log n",
+        "start": 1234.08,
+        "duration": 5.52
+    },
+    {
+        "text": "and now the last thing we have to handle",
+        "start": 1237.6,
+        "duration": 3.92
+    },
+    {
+        "text": "is finding the median",
+        "start": 1239.6,
+        "duration": 4.48
+    },
+    {
+        "text": "so one case is that there's an odd",
+        "start": 1241.52,
+        "duration": 4.399
+    },
+    {
+        "text": "length how do we know if there's an odd",
+        "start": 1244.08,
+        "duration": 2.64
+    },
+    {
+        "text": "length well",
+        "start": 1245.919,
+        "duration": 3.921
+    },
+    {
+        "text": "if the length of small was ever",
+        "start": 1246.72,
+        "duration": 6.16
+    },
+    {
+        "text": "greater than the length of large we know",
+        "start": 1249.84,
+        "duration": 4.079
+    },
+    {
+        "text": "that then we have an",
+        "start": 1252.88,
+        "duration": 2.88
+    },
+    {
+        "text": "odd length right because maybe one of",
+        "start": 1253.919,
+        "duration": 3.681
+    },
+    {
+        "text": "them has three elements the other has",
+        "start": 1255.76,
+        "duration": 2.799
+    },
+    {
+        "text": "two elements",
+        "start": 1257.6,
+        "duration": 3.36
+    },
+    {
+        "text": "we know with this function we're always",
+        "start": 1258.559,
+        "duration": 3.36
+    },
+    {
+        "text": "making sure that they're",
+        "start": 1260.96,
+        "duration": 3.839
+    },
+    {
+        "text": "about roughly equal so if this evaluated",
+        "start": 1261.919,
+        "duration": 4.481
+    },
+    {
+        "text": "true that means we have an odd number of",
+        "start": 1264.799,
+        "duration": 2.24
+    },
+    {
+        "text": "elements",
+        "start": 1266.4,
+        "duration": 2.72
+    },
+    {
+        "text": "and small happens to have an extra",
+        "start": 1267.039,
+        "duration": 3.76
+    },
+    {
+        "text": "element so what we can do",
+        "start": 1269.12,
+        "duration": 4.88
+    },
+    {
+        "text": "is return the largest value in small",
+        "start": 1270.799,
+        "duration": 6.081
+    },
+    {
+        "text": "which is stored in index 0 of small",
+        "start": 1274.0,
+        "duration": 5.52
+    },
+    {
+        "text": "if the opposite is true if the length of",
+        "start": 1276.88,
+        "duration": 3.12
+    },
+    {
+        "text": "large",
+        "start": 1279.52,
+        "duration": 2.88
+    },
+    {
+        "text": "is somehow greater than the length of",
+        "start": 1280.0,
+        "duration": 3.12
+    },
+    {
+        "text": "small",
+        "start": 1282.4,
+        "duration": 2.56
+    },
+    {
+        "text": "we know that the opposite happens to be",
+        "start": 1283.12,
+        "duration": 3.52
+    },
+    {
+        "text": "true so we can return",
+        "start": 1284.96,
+        "duration": 5.36
+    },
+    {
+        "text": "the smallest value in large now if",
+        "start": 1286.64,
+        "duration": 4.64
+    },
+    {
+        "text": "neither of these",
+        "start": 1290.32,
+        "duration": 2.88
+    },
+    {
+        "text": "evaluates that means we have an even",
+        "start": 1291.28,
+        "duration": 3.04
+    },
+    {
+        "text": "number of elements so",
+        "start": 1293.2,
+        "duration": 3.28
+    },
+    {
+        "text": "each each of these heaps has the exact",
+        "start": 1294.32,
+        "duration": 4.56
+    },
+    {
+        "text": "same size so what we can do in that case",
+        "start": 1296.48,
+        "duration": 5.84
+    },
+    {
+        "text": "is return the largest value",
+        "start": 1298.88,
+        "duration": 6.72
+    },
+    {
+        "text": "in the small heap plus the smallest",
+        "start": 1302.32,
+        "duration": 6.16
+    },
+    {
+        "text": "value in the large heap add them",
+        "start": 1305.6,
+        "duration": 3.68
+    },
+    {
+        "text": "together",
+        "start": 1308.48,
+        "duration": 2.88
+    },
+    {
+        "text": "and then divide by two and then return",
+        "start": 1309.28,
+        "duration": 3.44
+    },
+    {
+        "text": "the result of that",
+        "start": 1311.36,
+        "duration": 4.559
+    },
+    {
+        "text": "so here is the final code it's 34 lines",
+        "start": 1312.72,
+        "duration": 4.88
+    },
+    {
+        "text": "but you can see we have some comments",
+        "start": 1315.919,
+        "duration": 2.561
+    },
+    {
+        "text": "and some",
+        "start": 1317.6,
+        "duration": 3.92
+    },
+    {
+        "text": "you know boilerplate type uh code",
+        "start": 1318.48,
+        "duration": 4.96
+    },
+    {
+        "text": "but the code that itself that we had to",
+        "start": 1321.52,
+        "duration": 4.08
+    },
+    {
+        "text": "write was relatively short right because",
+        "start": 1323.44,
+        "duration": 3.76
+    },
+    {
+        "text": "we did this with a heap",
+        "start": 1325.6,
+        "duration": 3.76
+    },
+    {
+        "text": "and we did it pretty efficiently let me",
+        "start": 1327.2,
+        "duration": 4.479
+    },
+    {
+        "text": "just run it to prove that it works",
+        "start": 1329.36,
+        "duration": 5.36
+    },
+    {
+        "text": "okay uh just one time i forgot to",
+        "start": 1331.679,
+        "duration": 6.161
+    },
+    {
+        "text": "say that this small is a member object",
+        "start": 1334.72,
+        "duration": 4.64
+    },
+    {
+        "text": "so self.small",
+        "start": 1337.84,
+        "duration": 2.959
+    },
+    {
+        "text": "and i actually forgot to do that in a",
+        "start": 1339.36,
+        "duration": 3.76
+    },
+    {
+        "text": "couple places so let me just fix that so",
+        "start": 1340.799,
+        "duration": 5.801
+    },
+    {
+        "text": "self.small self.large self.small",
+        "start": 1343.12,
+        "duration": 7.2
+    },
+    {
+        "text": "self.large self.small self.large",
+        "start": 1346.6,
+        "duration": 6.199
+    },
+    {
+        "text": "and a couple more places okay so we",
+        "start": 1350.32,
+        "duration": 3.2
+    },
+    {
+        "text": "corrected",
+        "start": 1352.799,
+        "duration": 3.36
+    },
+    {
+        "text": "the self errors one last thing i forgot",
+        "start": 1353.52,
+        "duration": 3.76
+    },
+    {
+        "text": "is remember",
+        "start": 1356.159,
+        "duration": 3.601
+    },
+    {
+        "text": "small as negative we multiplied the",
+        "start": 1357.28,
+        "duration": 3.92
+    },
+    {
+        "text": "numbers by negative so when we're",
+        "start": 1359.76,
+        "duration": 2.799
+    },
+    {
+        "text": "getting the number and actually trying",
+        "start": 1361.2,
+        "duration": 3.2
+    },
+    {
+        "text": "to calculate the median we have to take",
+        "start": 1362.559,
+        "duration": 3.841
+    },
+    {
+        "text": "that number and multiply it by negative",
+        "start": 1364.4,
+        "duration": 2.639
+    },
+    {
+        "text": "one",
+        "start": 1366.4,
+        "duration": 3.36
+    },
+    {
+        "text": "before we add it to this number and then",
+        "start": 1367.039,
+        "duration": 3.681
+    },
+    {
+        "text": "divide by two",
+        "start": 1369.76,
+        "duration": 3.039
+    },
+    {
+        "text": "and let me not forget to do the exact",
+        "start": 1370.72,
+        "duration": 4.319
+    },
+    {
+        "text": "same calculation when we're returning",
+        "start": 1372.799,
+        "duration": 5.921
+    },
+    {
+        "text": "the value here right so i somehow had",
+        "start": 1375.039,
+        "duration": 5.681
+    },
+    {
+        "text": "too many bugs in here but okay so now",
+        "start": 1378.72,
+        "duration": 3.04
+    },
+    {
+        "text": "finally",
+        "start": 1380.72,
+        "duration": 3.92
+    },
+    {
+        "text": "this should be the final code the big",
+        "start": 1381.76,
+        "duration": 4.72
+    },
+    {
+        "text": "thing in python at least is to remember",
+        "start": 1384.64,
+        "duration": 3.279
+    },
+    {
+        "text": "these negative ones if you're doing this",
+        "start": 1386.48,
+        "duration": 1.84
+    },
+    {
+        "text": "in c",
+        "start": 1387.919,
+        "duration": 2.801
+    },
+    {
+        "text": "plus plus or java i'm pretty sure you",
+        "start": 1388.32,
+        "duration": 4.239
+    },
+    {
+        "text": "will not have to worry about that",
+        "start": 1390.72,
+        "duration": 4.319
+    },
+    {
+        "text": "this should be the final code finally",
+        "start": 1392.559,
+        "duration": 3.441
+    },
+    {
+        "text": "and you can see",
+        "start": 1395.039,
+        "duration": 4.64
+    },
+    {
+        "text": "yes it is pretty efficient and in python",
+        "start": 1396.0,
+        "duration": 4.64
+    },
+    {
+        "text": "at least it's not",
+        "start": 1399.679,
+        "duration": 4.0
+    },
+    {
+        "text": "a lot of code i think even in java and c",
+        "start": 1400.64,
+        "duration": 4.56
+    },
+    {
+        "text": "plus it shouldn't be that much code",
+        "start": 1403.679,
+        "duration": 3.841
+    },
+    {
+        "text": "either so i hope this was helpful",
+        "start": 1405.2,
+        "duration": 4.719
+    },
+    {
+        "text": "if you enjoyed please like and subscribe",
+        "start": 1407.52,
+        "duration": 3.519
+    },
+    {
+        "text": "it supports the channel",
+        "start": 1409.919,
+        "duration": 3.401
+    },
+    {
+        "text": "a lot and i'll hopefully see you pretty",
+        "start": 1411.039,
+        "duration": 5.281
+    },
+    {
+        "text": "soon",
+        "start": 1413.32,
+        "duration": 3.0
+    }
+]

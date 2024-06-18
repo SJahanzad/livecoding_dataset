@@ -1,0 +1,1392 @@
+[
+    {
+        "text": "hey guys it's me neat code again solving",
+        "start": 0.08,
+        "duration": 3.92
+    },
+    {
+        "text": "another leak code problem this time",
+        "start": 2.08,
+        "duration": 2.96
+    },
+    {
+        "text": "we're doing merge",
+        "start": 4.0,
+        "duration": 3.839
+    },
+    {
+        "text": "k sorted linked list before we've done",
+        "start": 5.04,
+        "duration": 4.96
+    },
+    {
+        "text": "merging two sorted linked list",
+        "start": 7.839,
+        "duration": 4.561
+    },
+    {
+        "text": "which is i which is an easy problem i",
+        "start": 10.0,
+        "duration": 3.04
+    },
+    {
+        "text": "think it was",
+        "start": 12.4,
+        "duration": 3.68
+    },
+    {
+        "text": "leak code 21 so if you haven't solved",
+        "start": 13.04,
+        "duration": 5.04
+    },
+    {
+        "text": "that one yet i would recommend doing so",
+        "start": 16.08,
+        "duration": 3.279
+    },
+    {
+        "text": "because it's basically",
+        "start": 18.08,
+        "duration": 3.68
+    },
+    {
+        "text": "we're basically extending that problem",
+        "start": 19.359,
+        "duration": 3.041
+    },
+    {
+        "text": "so",
+        "start": 21.76,
+        "duration": 2.56
+    },
+    {
+        "text": "this problem is actually easier than you",
+        "start": 22.4,
+        "duration": 4.0
+    },
+    {
+        "text": "might think for a leak code hard problem",
+        "start": 24.32,
+        "duration": 3.84
+    },
+    {
+        "text": "there's some really basic ideas that we",
+        "start": 26.4,
+        "duration": 2.56
+    },
+    {
+        "text": "can use",
+        "start": 28.16,
+        "duration": 3.039
+    },
+    {
+        "text": "to solve it efficiently so to illustrate",
+        "start": 28.96,
+        "duration": 3.04
+    },
+    {
+        "text": "that i have",
+        "start": 31.199,
+        "duration": 4.001
+    },
+    {
+        "text": "four single node linked lists right so",
+        "start": 32.0,
+        "duration": 4.8
+    },
+    {
+        "text": "each of these link lists only has one",
+        "start": 35.2,
+        "duration": 3.44
+    },
+    {
+        "text": "node right so five for example",
+        "start": 36.8,
+        "duration": 3.919
+    },
+    {
+        "text": "so basically how can we merge them in an",
+        "start": 38.64,
+        "duration": 4.239
+    },
+    {
+        "text": "efficient way let me show you",
+        "start": 40.719,
+        "duration": 5.441
+    },
+    {
+        "text": "uh like the general idea so first we can",
+        "start": 42.879,
+        "duration": 5.921
+    },
+    {
+        "text": "merge these two five and seven right so",
+        "start": 46.16,
+        "duration": 4.0
+    },
+    {
+        "text": "the first two nodes",
+        "start": 48.8,
+        "duration": 3.12
+    },
+    {
+        "text": "when we merge them we know that the five",
+        "start": 50.16,
+        "duration": 3.68
+    },
+    {
+        "text": "is smaller than the seven so we put the",
+        "start": 51.92,
+        "duration": 2.24
+    },
+    {
+        "text": "five",
+        "start": 53.84,
+        "duration": 3.359
+    },
+    {
+        "text": "first so now we have a partially so uh",
+        "start": 54.16,
+        "duration": 5.199
+    },
+    {
+        "text": "a partial linked list so now we want to",
+        "start": 57.199,
+        "duration": 4.241
+    },
+    {
+        "text": "get the next value which is 3 and we",
+        "start": 59.359,
+        "duration": 3.2
+    },
+    {
+        "text": "want to merge it",
+        "start": 61.44,
+        "duration": 4.16
+    },
+    {
+        "text": "into this linked list again",
+        "start": 62.559,
+        "duration": 5.121
+    },
+    {
+        "text": "the 3 is smaller than the beginning of",
+        "start": 65.6,
+        "duration": 4.08
+    },
+    {
+        "text": "the linked list which is the 5 over here",
+        "start": 67.68,
+        "duration": 2.64
+    },
+    {
+        "text": "right",
+        "start": 69.68,
+        "duration": 2.16
+    },
+    {
+        "text": "so we can just put the three at the",
+        "start": 70.32,
+        "duration": 3.28
+    },
+    {
+        "text": "beginning",
+        "start": 71.84,
+        "duration": 4.4
+    },
+    {
+        "text": "and next we only have one value left so",
+        "start": 73.6,
+        "duration": 4.08
+    },
+    {
+        "text": "we want to merge",
+        "start": 76.24,
+        "duration": 4.879
+    },
+    {
+        "text": "this eight into our linked list and so",
+        "start": 77.68,
+        "duration": 5.36
+    },
+    {
+        "text": "what's the general idea of how to do",
+        "start": 81.119,
+        "duration": 3.04
+    },
+    {
+        "text": "that well we're gonna have to",
+        "start": 83.04,
+        "duration": 3.439
+    },
+    {
+        "text": "take our eight right look at look at",
+        "start": 84.159,
+        "duration": 4.241
+    },
+    {
+        "text": "this three right well it's bigger than",
+        "start": 86.479,
+        "duration": 3.441
+    },
+    {
+        "text": "the three so we're not putting it",
+        "start": 88.4,
+        "duration": 4.079
+    },
+    {
+        "text": "there is it bigger than the five yep is",
+        "start": 89.92,
+        "duration": 3.839
+    },
+    {
+        "text": "it bigger than the seven",
+        "start": 92.479,
+        "duration": 3.441
+    },
+    {
+        "text": "yep so we're going to put it at the end",
+        "start": 93.759,
+        "duration": 4.161
+    },
+    {
+        "text": "so notice how we had to iterate through",
+        "start": 95.92,
+        "duration": 5.12
+    },
+    {
+        "text": "every single node to find where to put",
+        "start": 97.92,
+        "duration": 5.76
+    },
+    {
+        "text": "8 that's kind of a problem but we did",
+        "start": 101.04,
+        "duration": 3.92
+    },
+    {
+        "text": "find the output",
+        "start": 103.68,
+        "duration": 4.479
+    },
+    {
+        "text": "the output is going to be the 3 5 7 and",
+        "start": 104.96,
+        "duration": 3.76
+    },
+    {
+        "text": "8.",
+        "start": 108.159,
+        "duration": 2.801
+    },
+    {
+        "text": "so doing it this way is not the most",
+        "start": 108.72,
+        "duration": 3.679
+    },
+    {
+        "text": "efficient way to do it because",
+        "start": 110.96,
+        "duration": 4.4
+    },
+    {
+        "text": "notice for each node or linked list",
+        "start": 112.399,
+        "duration": 4.961
+    },
+    {
+        "text": "we're going to be merging it into our",
+        "start": 115.36,
+        "duration": 4.16
+    },
+    {
+        "text": "current output or our current",
+        "start": 117.36,
+        "duration": 4.16
+    },
+    {
+        "text": "you know result we're going to be",
+        "start": 119.52,
+        "duration": 3.599
+    },
+    {
+        "text": "merging it that's not going to be super",
+        "start": 121.52,
+        "duration": 2.8
+    },
+    {
+        "text": "efficient we have k",
+        "start": 123.119,
+        "duration": 4.481
+    },
+    {
+        "text": "lists right and the total number of",
+        "start": 124.32,
+        "duration": 4.4
+    },
+    {
+        "text": "nodes we have is",
+        "start": 127.6,
+        "duration": 4.88
+    },
+    {
+        "text": "n so every time we're merging a list",
+        "start": 128.72,
+        "duration": 5.599
+    },
+    {
+        "text": "we're gonna potentially have to iterate",
+        "start": 132.48,
+        "duration": 4.08
+    },
+    {
+        "text": "through every single node we have so far",
+        "start": 134.319,
+        "duration": 3.761
+    },
+    {
+        "text": "which could be big o of n",
+        "start": 136.56,
+        "duration": 3.679
+    },
+    {
+        "text": "so the overall time complexity is gonna",
+        "start": 138.08,
+        "duration": 3.36
+    },
+    {
+        "text": "be k times",
+        "start": 140.239,
+        "duration": 4.401
+    },
+    {
+        "text": "n now i bet you already know where i'm",
+        "start": 141.44,
+        "duration": 4.72
+    },
+    {
+        "text": "going with the solution now because the",
+        "start": 144.64,
+        "duration": 2.16
+    },
+    {
+        "text": "picture",
+        "start": 146.16,
+        "duration": 3.04
+    },
+    {
+        "text": "really makes it obvious why would we",
+        "start": 146.8,
+        "duration": 3.36
+    },
+    {
+        "text": "merge it like",
+        "start": 149.2,
+        "duration": 4.319
+    },
+    {
+        "text": "this when we're",
+        "start": 150.16,
+        "duration": 5.92
+    },
+    {
+        "text": "by doing that we're really repeating a",
+        "start": 153.519,
+        "duration": 4.481
+    },
+    {
+        "text": "lot of work that's really not the most",
+        "start": 156.08,
+        "duration": 3.6
+    },
+    {
+        "text": "efficient way to do it if you know",
+        "start": 158.0,
+        "duration": 3.76
+    },
+    {
+        "text": "the algorithm merge sort you know that",
+        "start": 159.68,
+        "duration": 3.68
+    },
+    {
+        "text": "there's a better way to do this",
+        "start": 161.76,
+        "duration": 4.72
+    },
+    {
+        "text": "so and it's a really basic idea right",
+        "start": 163.36,
+        "duration": 3.68
+    },
+    {
+        "text": "like",
+        "start": 166.48,
+        "duration": 2.64
+    },
+    {
+        "text": "why merge it that way when we can merge",
+        "start": 167.04,
+        "duration": 3.36
+    },
+    {
+        "text": "these two",
+        "start": 169.12,
+        "duration": 4.0
+    },
+    {
+        "text": "and merge these two eliminate a bit of",
+        "start": 170.4,
+        "duration": 3.919
+    },
+    {
+        "text": "that repeated work",
+        "start": 173.12,
+        "duration": 4.399
+    },
+    {
+        "text": "right and then when we have that",
+        "start": 174.319,
+        "duration": 6.721
+    },
+    {
+        "text": "like the five and the seven now",
+        "start": 177.519,
+        "duration": 5.841
+    },
+    {
+        "text": "using this we're going to merge these",
+        "start": 181.04,
+        "duration": 3.279
+    },
+    {
+        "text": "two together",
+        "start": 183.36,
+        "duration": 3.92
+    },
+    {
+        "text": "as well and and assuming you know the",
+        "start": 184.319,
+        "duration": 4.801
+    },
+    {
+        "text": "algorithm to merge two sorted linked",
+        "start": 187.28,
+        "duration": 2.72
+    },
+    {
+        "text": "lists",
+        "start": 189.12,
+        "duration": 3.199
+    },
+    {
+        "text": "you we will get the standard we'll get",
+        "start": 190.0,
+        "duration": 3.84
+    },
+    {
+        "text": "the same solution right",
+        "start": 192.319,
+        "duration": 4.401
+    },
+    {
+        "text": "but let's analyze what exactly is going",
+        "start": 193.84,
+        "duration": 5.119
+    },
+    {
+        "text": "on here when we did this",
+        "start": 196.72,
+        "duration": 5.28
+    },
+    {
+        "text": "first step right over here when we",
+        "start": 198.959,
+        "duration": 5.601
+    },
+    {
+        "text": "went from four linked lists right one",
+        "start": 202.0,
+        "duration": 3.44
+    },
+    {
+        "text": "two three",
+        "start": 204.56,
+        "duration": 3.12
+    },
+    {
+        "text": "four and then we went to just two of",
+        "start": 205.44,
+        "duration": 4.32
+    },
+    {
+        "text": "them remaining right",
+        "start": 207.68,
+        "duration": 4.639
+    },
+    {
+        "text": "we did have to iterate we did have to go",
+        "start": 209.76,
+        "duration": 4.8
+    },
+    {
+        "text": "through every single node so this was",
+        "start": 212.319,
+        "duration": 5.601
+    },
+    {
+        "text": "a o of n operation right so it's still",
+        "start": 214.56,
+        "duration": 6.08
+    },
+    {
+        "text": "not cheap it's o of n but the question",
+        "start": 217.92,
+        "duration": 3.039
+    },
+    {
+        "text": "is",
+        "start": 220.64,
+        "duration": 2.879
+    },
+    {
+        "text": "how many times do we have to do this in",
+        "start": 220.959,
+        "duration": 4.401
+    },
+    {
+        "text": "this case we only have to do it two",
+        "start": 223.519,
+        "duration": 2.72
+    },
+    {
+        "text": "times right",
+        "start": 225.36,
+        "duration": 3.2
+    },
+    {
+        "text": "so we did the same thing we took our two",
+        "start": 226.239,
+        "duration": 4.241
+    },
+    {
+        "text": "linked lists down here",
+        "start": 228.56,
+        "duration": 6.08
+    },
+    {
+        "text": "and merged them into our result",
+        "start": 230.48,
+        "duration": 6.88
+    },
+    {
+        "text": "and again we had to potentially iterate",
+        "start": 234.64,
+        "duration": 3.04
+    },
+    {
+        "text": "through",
+        "start": 237.36,
+        "duration": 2.959
+    },
+    {
+        "text": "every single one of our four nodes so it",
+        "start": 237.68,
+        "duration": 3.6
+    },
+    {
+        "text": "was an o of",
+        "start": 240.319,
+        "duration": 4.0
+    },
+    {
+        "text": "n operation but basically what we're",
+        "start": 241.28,
+        "duration": 4.959
+    },
+    {
+        "text": "doing is we're taking our lists",
+        "start": 244.319,
+        "duration": 4.801
+    },
+    {
+        "text": "and dividing them by two every time so",
+        "start": 246.239,
+        "duration": 4.72
+    },
+    {
+        "text": "how many times can we take",
+        "start": 249.12,
+        "duration": 5.119
+    },
+    {
+        "text": "the k lists and divide them by two well",
+        "start": 250.959,
+        "duration": 4.0
+    },
+    {
+        "text": "it's going to be",
+        "start": 254.239,
+        "duration": 4.081
+    },
+    {
+        "text": "log k this is the part where we",
+        "start": 254.959,
+        "duration": 6.24
+    },
+    {
+        "text": "speed up our algorithm it's log k it's",
+        "start": 258.32,
+        "duration": 3.759
+    },
+    {
+        "text": "the log k",
+        "start": 261.199,
+        "duration": 3.201
+    },
+    {
+        "text": "is the number of times we're repeating",
+        "start": 262.079,
+        "duration": 3.201
+    },
+    {
+        "text": "this o of",
+        "start": 264.4,
+        "duration": 3.68
+    },
+    {
+        "text": "n step so in this case with this",
+        "start": 265.28,
+        "duration": 3.52
+    },
+    {
+        "text": "algorithm",
+        "start": 268.08,
+        "duration": 3.119
+    },
+    {
+        "text": "the total time complexity is going to be",
+        "start": 268.8,
+        "duration": 3.119
+    },
+    {
+        "text": "n",
+        "start": 271.199,
+        "duration": 3.761
+    },
+    {
+        "text": "log k",
+        "start": 271.919,
+        "duration": 5.121
+    },
+    {
+        "text": "and that's a lot better than the brute",
+        "start": 274.96,
+        "duration": 3.04
+    },
+    {
+        "text": "force which was",
+        "start": 277.04,
+        "duration": 4.96
+    },
+    {
+        "text": "n times k right so this is a lot better",
+        "start": 278.0,
+        "duration": 5.84
+    },
+    {
+        "text": "okay so now let's actually get into the",
+        "start": 282.0,
+        "duration": 3.04
+    },
+    {
+        "text": "code",
+        "start": 283.84,
+        "duration": 4.32
+    },
+    {
+        "text": "uh remember that we have to understand",
+        "start": 285.04,
+        "duration": 4.08
+    },
+    {
+        "text": "how to merge",
+        "start": 288.16,
+        "duration": 2.88
+    },
+    {
+        "text": "two sorted linked lists so i'm just",
+        "start": 289.12,
+        "duration": 3.28
+    },
+    {
+        "text": "gonna put",
+        "start": 291.04,
+        "duration": 3.599
+    },
+    {
+        "text": "that function here right now so we'll",
+        "start": 292.4,
+        "duration": 4.64
+    },
+    {
+        "text": "have list one and list two as parameters",
+        "start": 294.639,
+        "duration": 3.361
+    },
+    {
+        "text": "and we'll return",
+        "start": 297.04,
+        "duration": 2.64
+    },
+    {
+        "text": "the output list i'm not even going to do",
+        "start": 298.0,
+        "duration": 3.12
+    },
+    {
+        "text": "this yet because we know",
+        "start": 299.68,
+        "duration": 3.12
+    },
+    {
+        "text": "this is not the most important part of",
+        "start": 301.12,
+        "duration": 3.84
+    },
+    {
+        "text": "the algorithm that's the leak code easy",
+        "start": 302.8,
+        "duration": 2.88
+    },
+    {
+        "text": "portion",
+        "start": 304.96,
+        "duration": 2.56
+    },
+    {
+        "text": "we want to do the real part of the",
+        "start": 305.68,
+        "duration": 3.2
+    },
+    {
+        "text": "problem which is merging",
+        "start": 307.52,
+        "duration": 3.6
+    },
+    {
+        "text": "k linked list so the first thing i'm",
+        "start": 308.88,
+        "duration": 4.0
+    },
+    {
+        "text": "going to handle is the annoying edge",
+        "start": 311.12,
+        "duration": 2.96
+    },
+    {
+        "text": "cases where",
+        "start": 312.88,
+        "duration": 4.72
+    },
+    {
+        "text": "maybe the list is null or",
+        "start": 314.08,
+        "duration": 8.64
+    },
+    {
+        "text": "or the list is of length zero",
+        "start": 317.6,
+        "duration": 5.12
+    },
+    {
+        "text": "in that case we can just return an empty",
+        "start": 323.6,
+        "duration": 3.68
+    },
+    {
+        "text": "linked list",
+        "start": 326.16,
+        "duration": 3.759
+    },
+    {
+        "text": "and now to get to the actual problem so",
+        "start": 327.28,
+        "duration": 4.32
+    },
+    {
+        "text": "we're basically going to be taking",
+        "start": 329.919,
+        "duration": 3.921
+    },
+    {
+        "text": "pairs of linked lists and merging them",
+        "start": 331.6,
+        "duration": 3.28
+    },
+    {
+        "text": "each time",
+        "start": 333.84,
+        "duration": 2.88
+    },
+    {
+        "text": "and we're going to keep doing this until",
+        "start": 334.88,
+        "duration": 3.28
+    },
+    {
+        "text": "there's only one",
+        "start": 336.72,
+        "duration": 3.12
+    },
+    {
+        "text": "linked list remaining and that's going",
+        "start": 338.16,
+        "duration": 3.52
+    },
+    {
+        "text": "to be our output so",
+        "start": 339.84,
+        "duration": 4.48
+    },
+    {
+        "text": "while the length of lists is greater",
+        "start": 341.68,
+        "duration": 4.0
+    },
+    {
+        "text": "than one we're going to keep",
+        "start": 344.32,
+        "duration": 3.599
+    },
+    {
+        "text": "reducing it right we're going to keep",
+        "start": 345.68,
+        "duration": 3.68
+    },
+    {
+        "text": "cutting it in half",
+        "start": 347.919,
+        "duration": 4.161
+    },
+    {
+        "text": "so as we merge these lists i'm going to",
+        "start": 349.36,
+        "duration": 3.279
+    },
+    {
+        "text": "put them",
+        "start": 352.08,
+        "duration": 3.679
+    },
+    {
+        "text": "in a new list called merged list",
+        "start": 352.639,
+        "duration": 5.361
+    },
+    {
+        "text": "so now we want to iterate through each",
+        "start": 355.759,
+        "duration": 5.121
+    },
+    {
+        "text": "of these lists",
+        "start": 358.0,
+        "duration": 2.88
+    },
+    {
+        "text": "and each time we're going to we know we",
+        "start": 363.68,
+        "duration": 3.04
+    },
+    {
+        "text": "want to do",
+        "start": 366.16,
+        "duration": 2.64
+    },
+    {
+        "text": "pairs of linked lists so my incrementer",
+        "start": 366.72,
+        "duration": 5.039
+    },
+    {
+        "text": "is going to be 2.",
+        "start": 368.8,
+        "duration": 6.32
+    },
+    {
+        "text": "so list 1 is just going to be",
+        "start": 371.759,
+        "duration": 7.361
+    },
+    {
+        "text": "at index i now list 2",
+        "start": 375.12,
+        "duration": 6.56
+    },
+    {
+        "text": "might be out of bounds right because if",
+        "start": 379.12,
+        "duration": 3.12
+    },
+    {
+        "text": "we have an",
+        "start": 381.68,
+        "duration": 2.88
+    },
+    {
+        "text": "odd number of lists and we're",
+        "start": 382.24,
+        "duration": 4.0
+    },
+    {
+        "text": "incrementing by 2 each time",
+        "start": 384.56,
+        "duration": 3.84
+    },
+    {
+        "text": "list 2 could be null so we have to check",
+        "start": 386.24,
+        "duration": 4.799
+    },
+    {
+        "text": "for that we'll say it's lists of i",
+        "start": 388.4,
+        "duration": 5.76
+    },
+    {
+        "text": "plus 1 the adjacent list but we want to",
+        "start": 391.039,
+        "duration": 4.0
+    },
+    {
+        "text": "make sure",
+        "start": 394.16,
+        "duration": 4.96
+    },
+    {
+        "text": "so if i plus 1 is in bounds so we'll",
+        "start": 395.039,
+        "duration": 4.481
+    },
+    {
+        "text": "check",
+        "start": 399.12,
+        "duration": 5.44
+    },
+    {
+        "text": "i plus 1 is less than the length",
+        "start": 399.52,
+        "duration": 8.08
+    },
+    {
+        "text": "of the list then we'll do that otherwise",
+        "start": 404.56,
+        "duration": 5.28
+    },
+    {
+        "text": "we're going to say it's none if it's",
+        "start": 407.6,
+        "duration": 3.039
+    },
+    {
+        "text": "none that's still",
+        "start": 409.84,
+        "duration": 3.84
+    },
+    {
+        "text": "okay right because merging one non-null",
+        "start": 410.639,
+        "duration": 5.041
+    },
+    {
+        "text": "linked list and one null linked list is",
+        "start": 413.68,
+        "duration": 4.079
+    },
+    {
+        "text": "perfectly fine we can still do that",
+        "start": 415.68,
+        "duration": 4.4
+    },
+    {
+        "text": "i want to take these two lists merge",
+        "start": 417.759,
+        "duration": 3.921
+    },
+    {
+        "text": "them together",
+        "start": 420.08,
+        "duration": 3.6
+    },
+    {
+        "text": "with my helper function which i haven't",
+        "start": 421.68,
+        "duration": 4.799
+    },
+    {
+        "text": "even written yet",
+        "start": 423.68,
+        "duration": 2.799
+    },
+    {
+        "text": "and i want to take this and append it to",
+        "start": 427.199,
+        "duration": 5.84
+    },
+    {
+        "text": "our merged lists",
+        "start": 431.759,
+        "duration": 4.16
+    },
+    {
+        "text": "variable over here where we are storing",
+        "start": 433.039,
+        "duration": 5.041
+    },
+    {
+        "text": "the lists after we merge them",
+        "start": 435.919,
+        "duration": 4.241
+    },
+    {
+        "text": "this is the way i like to do it but i've",
+        "start": 438.08,
+        "duration": 3.76
+    },
+    {
+        "text": "seen people do it a different way",
+        "start": 440.16,
+        "duration": 4.72
+    },
+    {
+        "text": "but now so we want to update our lists",
+        "start": 441.84,
+        "duration": 5.12
+    },
+    {
+        "text": "variable because that's where we're",
+        "start": 444.88,
+        "duration": 4.08
+    },
+    {
+        "text": "uh you know actually getting our lists",
+        "start": 446.96,
+        "duration": 4.0
+    },
+    {
+        "text": "from so i'm going to update it with",
+        "start": 448.96,
+        "duration": 5.12
+    },
+    {
+        "text": "merged lists so merge list is basically",
+        "start": 450.96,
+        "duration": 5.04
+    },
+    {
+        "text": "like a temporary variable",
+        "start": 454.08,
+        "duration": 3.28
+    },
+    {
+        "text": "and of course we're going to keep doing",
+        "start": 456.0,
+        "duration": 3.28
+    },
+    {
+        "text": "that until there's only one list left",
+        "start": 457.36,
+        "duration": 4.559
+    },
+    {
+        "text": "and then we're going to return that list",
+        "start": 459.28,
+        "duration": 3.52
+    },
+    {
+        "text": "so list",
+        "start": 461.919,
+        "duration": 4.641
+    },
+    {
+        "text": "of zero so see that really wasn't",
+        "start": 462.8,
+        "duration": 6.16
+    },
+    {
+        "text": "too bad i mean you might uh kind of",
+        "start": 466.56,
+        "duration": 3.919
+    },
+    {
+        "text": "struggle with a little bit of the edge",
+        "start": 468.96,
+        "duration": 3.44
+    },
+    {
+        "text": "cases that's perfectly fine but once you",
+        "start": 470.479,
+        "duration": 3.681
+    },
+    {
+        "text": "get the idea you see it's really not",
+        "start": 472.4,
+        "duration": 3.76
+    },
+    {
+        "text": "that bad now we've reduced it to",
+        "start": 474.16,
+        "duration": 3.92
+    },
+    {
+        "text": "an easy problem we know how to merge two",
+        "start": 476.16,
+        "duration": 3.52
+    },
+    {
+        "text": "linked lists i've done it before in a",
+        "start": 478.08,
+        "duration": 2.72
+    },
+    {
+        "text": "video but i'll",
+        "start": 479.68,
+        "duration": 3.28
+    },
+    {
+        "text": "type it out again really quickly and",
+        "start": 480.8,
+        "duration": 3.92
+    },
+    {
+        "text": "maybe if you're lucky your interviewer",
+        "start": 482.96,
+        "duration": 3.12
+    },
+    {
+        "text": "won't even want you to",
+        "start": 484.72,
+        "duration": 4.56
+    },
+    {
+        "text": "merge the list anyway but",
+        "start": 486.08,
+        "duration": 5.6
+    },
+    {
+        "text": "let me go ahead and show off and try to",
+        "start": 489.28,
+        "duration": 4.16
+    },
+    {
+        "text": "speedrun it and hopefully not have a bug",
+        "start": 491.68,
+        "duration": 4.72
+    },
+    {
+        "text": "and embarrass myself",
+        "start": 493.44,
+        "duration": 2.96
+    },
+    {
+        "text": "and i'm speedrunning it i'm showing off",
+        "start": 504.0,
+        "duration": 3.52
+    },
+    {
+        "text": "but i literally solved this problem",
+        "start": 505.84,
+        "duration": 4.32
+    },
+    {
+        "text": "right before i recorded this video so",
+        "start": 507.52,
+        "duration": 14.319
+    },
+    {
+        "text": "uh it's not really a show off",
+        "start": 510.16,
+        "duration": 11.679
+    },
+    {
+        "text": "i'm br i'm basically typing basically",
+        "start": 539.12,
+        "duration": 4.719
+    },
+    {
+        "text": "off of memory so",
+        "start": 541.36,
+        "duration": 8.479
+    },
+    {
+        "text": "just get this over with",
+        "start": 543.839,
+        "duration": 6.0
+    },
+    {
+        "text": "and i'm a super slow typer once you guys",
+        "start": 550.0,
+        "duration": 5.6
+    },
+    {
+        "text": "honestly once you guys practice enough",
+        "start": 553.36,
+        "duration": 3.68
+    },
+    {
+        "text": "lead code you'll probably be 10 times",
+        "start": 555.6,
+        "duration": 4.56
+    },
+    {
+        "text": "better than me and wonder",
+        "start": 557.04,
+        "duration": 3.12
+    },
+    {
+        "text": "okay so let's dummy.",
+        "start": 560.56,
+        "duration": 7.52
+    },
+    {
+        "text": "okay and once again let me prove to",
+        "start": 565.68,
+        "duration": 6.32
+    },
+    {
+        "text": "myself that i don't have any bugs",
+        "start": 568.08,
+        "duration": 3.92
+    },
+    {
+        "text": "and i do so okay so it was pretty small",
+        "start": 573.519,
+        "duration": 8.88
+    },
+    {
+        "text": "uh merged lists dot append",
+        "start": 577.92,
+        "duration": 6.56
+    },
+    {
+        "text": "we're appending to the output or",
+        "start": 582.399,
+        "duration": 3.601
+    },
+    {
+        "text": "appending to this list",
+        "start": 584.48,
+        "duration": 4.799
+    },
+    {
+        "text": "and hopefully that is good enough okay",
+        "start": 586.0,
+        "duration": 6.64
+    },
+    {
+        "text": "of course i get messed up with the typos",
+        "start": 589.279,
+        "duration": 6.481
+    },
+    {
+        "text": "merged list i guess the confusing part",
+        "start": 592.64,
+        "duration": 4.96
+    },
+    {
+        "text": "was that this variable name is",
+        "start": 595.76,
+        "duration": 5.36
+    },
+    {
+        "text": "pretty similar to this function name",
+        "start": 597.6,
+        "duration": 5.28
+    },
+    {
+        "text": "probably should have done it a little",
+        "start": 601.12,
+        "duration": 3.76
+    },
+    {
+        "text": "differently",
+        "start": 602.88,
+        "duration": 5.12
+    },
+    {
+        "text": "okay but it does work so hopefully",
+        "start": 604.88,
+        "duration": 5.6
+    },
+    {
+        "text": "you get the general idea it's not too",
+        "start": 608.0,
+        "duration": 3.68
+    },
+    {
+        "text": "bad of a problem",
+        "start": 610.48,
+        "duration": 2.72
+    },
+    {
+        "text": "there are actually a lot of ways to",
+        "start": 611.68,
+        "duration": 4.399
+    },
+    {
+        "text": "solve it even a heap solution",
+        "start": 613.2,
+        "duration": 4.96
+    },
+    {
+        "text": "but i think kind of sticking with this",
+        "start": 616.079,
+        "duration": 3.281
+    },
+    {
+        "text": "is fine",
+        "start": 618.16,
+        "duration": 3.119
+    },
+    {
+        "text": "but thank you so much for watching",
+        "start": 619.36,
+        "duration": 4.0
+    },
+    {
+        "text": "hopefully this was helpful if you have",
+        "start": 621.279,
+        "duration": 3.601
+    },
+    {
+        "text": "any tips and tricks you can feel free to",
+        "start": 623.36,
+        "duration": 3.2
+    },
+    {
+        "text": "share them with me and feel free to",
+        "start": 624.88,
+        "duration": 2.24
+    },
+    {
+        "text": "suggest",
+        "start": 626.56,
+        "duration": 2.32
+    },
+    {
+        "text": "any other problems that you would like",
+        "start": 627.12,
+        "duration": 3.76
+    },
+    {
+        "text": "me to solve and i'll see you",
+        "start": 628.88,
+        "duration": 4.959
+    },
+    {
+        "text": "pretty soon maybe",
+        "start": 630.88,
+        "duration": 2.959
+    }
+]

@@ -1,0 +1,1187 @@
+[
+    {
+        "text": "what's up guys Nick white here doing",
+        "start": 0.03,
+        "duration": 6.93
+    },
+    {
+        "text": "some more leak code might as well right",
+        "start": 3.21,
+        "duration": 6.27
+    },
+    {
+        "text": "now please join the discourse for me on",
+        "start": 6.96,
+        "duration": 3.78
+    },
+    {
+        "text": "patreon if you can really appreciate",
+        "start": 9.48,
+        "duration": 4.77
+    },
+    {
+        "text": "that spend a lot of time on these and",
+        "start": 10.74,
+        "duration": 5.879
+    },
+    {
+        "text": "yeah let's get into it max increase to",
+        "start": 14.25,
+        "duration": 5.279
+    },
+    {
+        "text": "keep city skyline medium level",
+        "start": 16.619,
+        "duration": 5.101
+    },
+    {
+        "text": "difficulty some dislikes will give it a",
+        "start": 19.529,
+        "duration": 5.311
+    },
+    {
+        "text": "like you're given a two-dimensional grid",
+        "start": 21.72,
+        "duration": 4.62
+    },
+    {
+        "text": "array or grid",
+        "start": 24.84,
+        "duration": 5.519
+    },
+    {
+        "text": "so right here 2d array each value of",
+        "start": 26.34,
+        "duration": 6.87
+    },
+    {
+        "text": "grit grit oh I of J represents the",
+        "start": 30.359,
+        "duration": 5.161
+    },
+    {
+        "text": "height of a building located there okay",
+        "start": 33.21,
+        "duration": 3.81
+    },
+    {
+        "text": "so we have a grid and we have a bunch of",
+        "start": 35.52,
+        "duration": 4.68
+    },
+    {
+        "text": "buildings each individual index is a",
+        "start": 37.02,
+        "duration": 5.46
+    },
+    {
+        "text": "building so these are all buildings the",
+        "start": 40.2,
+        "duration": 6.539
+    },
+    {
+        "text": "3 the 0 the 8 the four all the ok we are",
+        "start": 42.48,
+        "duration": 5.91
+    },
+    {
+        "text": "allowed to increase the height of any",
+        "start": 46.739,
+        "duration": 4.471
+    },
+    {
+        "text": "number of buildings by any amount and",
+        "start": 48.39,
+        "duration": 4.47
+    },
+    {
+        "text": "the amounts can be different for each",
+        "start": 51.21,
+        "duration": 5.669
+    },
+    {
+        "text": "building so we can increase the height",
+        "start": 52.86,
+        "duration": 6.51
+    },
+    {
+        "text": "of any of these buildings like the 3 we",
+        "start": 56.879,
+        "duration": 4.351
+    },
+    {
+        "text": "can change to 4 or we could change it to",
+        "start": 59.37,
+        "duration": 3.81
+    },
+    {
+        "text": "5 or we could change it to 15 or",
+        "start": 61.23,
+        "duration": 4.44
+    },
+    {
+        "text": "whatever we could change 0 to 5 we can",
+        "start": 63.18,
+        "duration": 5.36
+    },
+    {
+        "text": "change 6 to 9 we can do whatever we want",
+        "start": 65.67,
+        "duration": 5.16
+    },
+    {
+        "text": "and you know one way to make it change",
+        "start": 68.54,
+        "duration": 4.66
+    },
+    {
+        "text": "we if we change this by 3 if we increase",
+        "start": 70.83,
+        "duration": 3.69
+    },
+    {
+        "text": "this by 3 it doesn't mean we have to",
+        "start": 73.2,
+        "duration": 3.0
+    },
+    {
+        "text": "increase all of them by 3 we could",
+        "start": 74.52,
+        "duration": 3.959
+    },
+    {
+        "text": "change each of them individually with",
+        "start": 76.2,
+        "duration": 3.959
+    },
+    {
+        "text": "different amounts but we're only",
+        "start": 78.479,
+        "duration": 5.161
+    },
+    {
+        "text": "increasing ok and these are all the",
+        "start": 80.159,
+        "duration": 5.221
+    },
+    {
+        "text": "heights of the buildings by the way so",
+        "start": 83.64,
+        "duration": 3.69
+    },
+    {
+        "text": "this building is a height of 3 this one",
+        "start": 85.38,
+        "duration": 4.529
+    },
+    {
+        "text": "and it says height 0 is considered a",
+        "start": 87.33,
+        "duration": 4.859
+    },
+    {
+        "text": "building as well even though a height of",
+        "start": 89.909,
+        "duration": 4.831
+    },
+    {
+        "text": "0 usually means nothing so it would be",
+        "start": 92.189,
+        "duration": 4.89
+    },
+    {
+        "text": "like a building that goes from",
+        "start": 94.74,
+        "duration": 4.26
+    },
+    {
+        "text": "underground to like floor level I guess",
+        "start": 97.079,
+        "duration": 4.951
+    },
+    {
+        "text": "but you know no it's a height 0 I guess",
+        "start": 99.0,
+        "duration": 5.04
+    },
+    {
+        "text": "basically just a building with height 0",
+        "start": 102.03,
+        "duration": 4.65
+    },
+    {
+        "text": "okay so what's the objective we have",
+        "start": 104.04,
+        "duration": 3.84
+    },
+    {
+        "text": "these buildings we're allowed to",
+        "start": 106.68,
+        "duration": 3.57
+    },
+    {
+        "text": "increase the heights of any of them so",
+        "start": 107.88,
+        "duration": 4.349
+    },
+    {
+        "text": "what is the objective okay",
+        "start": 110.25,
+        "duration": 6.049
+    },
+    {
+        "text": "at the end it looks like the skyline",
+        "start": 112.229,
+        "duration": 7.17
+    },
+    {
+        "text": "viewed from all four directions bottom",
+        "start": 116.299,
+        "duration": 5.621
+    },
+    {
+        "text": "left top right must be the same as the",
+        "start": 119.399,
+        "duration": 7.021
+    },
+    {
+        "text": "original grid okay so we can increase",
+        "start": 121.92,
+        "duration": 6.99
+    },
+    {
+        "text": "the buildings as much as we want but the",
+        "start": 126.42,
+        "duration": 4.679
+    },
+    {
+        "text": "skyline has to be the same as the",
+        "start": 128.91,
+        "duration": 3.64
+    },
+    {
+        "text": "original grid and I'll get into",
+        "start": 131.099,
+        "duration": 3.671
+    },
+    {
+        "text": "what that means in a second a city",
+        "start": 132.55,
+        "duration": 5.25
+    },
+    {
+        "text": "skyline is the outer contour of the",
+        "start": 134.77,
+        "duration": 4.74
+    },
+    {
+        "text": "rectangles formed by the building when",
+        "start": 137.8,
+        "duration": 4.17
+    },
+    {
+        "text": "viewed from a distance what is the",
+        "start": 139.51,
+        "duration": 4.59
+    },
+    {
+        "text": "maximum total sum of the height of the",
+        "start": 141.97,
+        "duration": 5.22
+    },
+    {
+        "text": "buildings that that can be increased",
+        "start": 144.1,
+        "duration": 5.58
+    },
+    {
+        "text": "okay so this might seem confusing what",
+        "start": 147.19,
+        "duration": 4.53
+    },
+    {
+        "text": "is a skyline we're looking at a 2d array",
+        "start": 149.68,
+        "duration": 4.14
+    },
+    {
+        "text": "this is you know there's buildings well",
+        "start": 151.72,
+        "duration": 5.1
+    },
+    {
+        "text": "what they mean is they mean that the",
+        "start": 153.82,
+        "duration": 6.9
+    },
+    {
+        "text": "highest the maximum value in each column",
+        "start": 156.82,
+        "duration": 7.41
+    },
+    {
+        "text": "has to stay the same and the maximum",
+        "start": 160.72,
+        "duration": 6.66
+    },
+    {
+        "text": "value in each row has to say the same so",
+        "start": 164.23,
+        "duration": 4.89
+    },
+    {
+        "text": "let's look at these examples the first",
+        "start": 167.38,
+        "duration": 5.13
+    },
+    {
+        "text": "row what is the maximum row value the",
+        "start": 169.12,
+        "duration": 6.87
+    },
+    {
+        "text": "maximum row value is 8 well in the",
+        "start": 172.51,
+        "duration": 5.94
+    },
+    {
+        "text": "output array the maximum row value is",
+        "start": 175.99,
+        "duration": 7.86
+    },
+    {
+        "text": "also 8 the second row is 7 the second",
+        "start": 178.45,
+        "duration": 9.44
+    },
+    {
+        "text": "row of the output 7 still maximum then 9",
+        "start": 183.85,
+        "duration": 10.05
+    },
+    {
+        "text": "9 3 3 right see what I'm saying all of",
+        "start": 187.89,
+        "duration": 8.65
+    },
+    {
+        "text": "the maximum row values have to be the",
+        "start": 193.9,
+        "duration": 5.089
+    },
+    {
+        "text": "same for the columns first one's 9",
+        "start": 196.54,
+        "duration": 8.1
+    },
+    {
+        "text": "output array 9 4 4 you know what I'm",
+        "start": 198.989,
+        "duration": 6.011
+    },
+    {
+        "text": "saying",
+        "start": 204.64,
+        "duration": 3.78
+    },
+    {
+        "text": "8 8 7 7",
+        "start": 205.0,
+        "duration": 7.2
+    },
+    {
+        "text": "ok but for any value that isn't to the",
+        "start": 208.42,
+        "duration": 6.87
+    },
+    {
+        "text": "maximum row or column value we want to",
+        "start": 212.2,
+        "duration": 6.03
+    },
+    {
+        "text": "increase those as much as we can we just",
+        "start": 215.29,
+        "duration": 6.69
+    },
+    {
+        "text": "cannot go past the highest value in each",
+        "start": 218.23,
+        "duration": 5.79
+    },
+    {
+        "text": "row and the highest value in each column",
+        "start": 221.98,
+        "duration": 5.34
+    },
+    {
+        "text": "right so we can increase this 3 to an 8",
+        "start": 224.02,
+        "duration": 6.0
+    },
+    {
+        "text": "because the maximum column is 9 in the",
+        "start": 227.32,
+        "duration": 4.8
+    },
+    {
+        "text": "maximum row is 8 so as long as we don't",
+        "start": 230.02,
+        "duration": 5.13
+    },
+    {
+        "text": "go above 9 or 8 we can increase it to 8",
+        "start": 232.12,
+        "duration": 5.88
+    },
+    {
+        "text": "we cannot go above the minimum of the",
+        "start": 235.15,
+        "duration": 5.55
+    },
+    {
+        "text": "column or the row value and what we want",
+        "start": 238.0,
+        "duration": 5.22
+    },
+    {
+        "text": "to do is we want to increase each of the",
+        "start": 240.7,
+        "duration": 4.05
+    },
+    {
+        "text": "buildings as much as we can without",
+        "start": 243.22,
+        "duration": 4.05
+    },
+    {
+        "text": "going past the skyline the skyline is",
+        "start": 244.75,
+        "duration": 4.44
+    },
+    {
+        "text": "the maximum row maximum column values",
+        "start": 247.27,
+        "duration": 4.38
+    },
+    {
+        "text": "and as long as we do that we're going to",
+        "start": 249.19,
+        "duration": 4.65
+    },
+    {
+        "text": "be adding so if we increase this 3 to an",
+        "start": 251.65,
+        "duration": 5.07
+    },
+    {
+        "text": "8 that's a 5 height difference so we add",
+        "start": 253.84,
+        "duration": 5.49
+    },
+    {
+        "text": "that on to an ongoing sum and then we",
+        "start": 256.72,
+        "duration": 5.31
+    },
+    {
+        "text": "output it when we increase the 0 to a 4",
+        "start": 259.33,
+        "duration": 5.19
+    },
+    {
+        "text": "because the 4 is the max column we can",
+        "start": 262.03,
+        "duration": 4.02
+    },
+    {
+        "text": "only go up to the either the",
+        "start": 264.52,
+        "duration": 3.81
+    },
+    {
+        "text": "minimum of the max column in the maximum",
+        "start": 266.05,
+        "duration": 5.19
+    },
+    {
+        "text": "row so the max columns for max rows 8",
+        "start": 268.33,
+        "duration": 5.1
+    },
+    {
+        "text": "and then we have 2 we can only go up to",
+        "start": 271.24,
+        "duration": 6.12
+    },
+    {
+        "text": "4 ok so that's pretty much easy what we",
+        "start": 273.43,
+        "duration": 6.06
+    },
+    {
+        "text": "do here to solve this problem it was a",
+        "start": 277.36,
+        "duration": 4.23
+    },
+    {
+        "text": "little wordy bad but the problem is",
+        "start": 279.49,
+        "duration": 4.98
+    },
+    {
+        "text": "pretty cool all we want to do is we want",
+        "start": 281.59,
+        "duration": 6.06
+    },
+    {
+        "text": "to find the maximum row value for each",
+        "start": 284.47,
+        "duration": 6.0
+    },
+    {
+        "text": "row and put it into an array and we want",
+        "start": 287.65,
+        "duration": 4.65
+    },
+    {
+        "text": "to find the maximum column value of each",
+        "start": 290.47,
+        "duration": 3.599
+    },
+    {
+        "text": "column and put that into an array and",
+        "start": 292.3,
+        "duration": 6.869
+    },
+    {
+        "text": "then the formula is basically we we have",
+        "start": 294.069,
+        "duration": 7.5
+    },
+    {
+        "text": "this result variable or like some or",
+        "start": 299.169,
+        "duration": 4.381
+    },
+    {
+        "text": "whatever you want to call it and we're",
+        "start": 301.569,
+        "duration": 4.621
+    },
+    {
+        "text": "gonna be adding the minimum of the max",
+        "start": 303.55,
+        "duration": 9.78
+    },
+    {
+        "text": "column Val and the max row Val and then",
+        "start": 306.19,
+        "duration": 9.93
+    },
+    {
+        "text": "subtracting the current element and we",
+        "start": 313.33,
+        "duration": 5.13
+    },
+    {
+        "text": "this this is this is the whole formula",
+        "start": 316.12,
+        "duration": 5.22
+    },
+    {
+        "text": "right here we do result plus equal min",
+        "start": 318.46,
+        "duration": 5.15
+    },
+    {
+        "text": "of the max column Val in the max row Val",
+        "start": 321.34,
+        "duration": 5.819
+    },
+    {
+        "text": "minus the current value so if the",
+        "start": 323.61,
+        "duration": 7.51
+    },
+    {
+        "text": "minimum of the so for example 0 the max",
+        "start": 327.159,
+        "duration": 6.63
+    },
+    {
+        "text": "the minimum of 4 & 8 because 4 is the",
+        "start": 331.12,
+        "duration": 5.88
+    },
+    {
+        "text": "max column and 8 is the max row is 4 so",
+        "start": 333.789,
+        "duration": 6.421
+    },
+    {
+        "text": "we do 4 minus the current element which",
+        "start": 337.0,
+        "duration": 5.279
+    },
+    {
+        "text": "is 0 and then we get the answer which is",
+        "start": 340.21,
+        "duration": 4.56
+    },
+    {
+        "text": "4 and we subtract the current element",
+        "start": 342.279,
+        "duration": 4.531
+    },
+    {
+        "text": "just to get how much we would increase",
+        "start": 344.77,
+        "duration": 6.48
+    },
+    {
+        "text": "it by if that makes sense right like for",
+        "start": 346.81,
+        "duration": 7.079
+    },
+    {
+        "text": "example 7 is the max column value and 8",
+        "start": 351.25,
+        "duration": 4.379
+    },
+    {
+        "text": "is the max row value so we can only go",
+        "start": 353.889,
+        "duration": 4.59
+    },
+    {
+        "text": "to 7 so we wouldn't be increasing by 3",
+        "start": 355.629,
+        "duration": 4.561
+    },
+    {
+        "text": "so we just take the minimum of these",
+        "start": 358.479,
+        "duration": 4.53
+    },
+    {
+        "text": "value 7 we subtract 4 and that gives us",
+        "start": 360.19,
+        "duration": 4.589
+    },
+    {
+        "text": "what we would have increased it by 3 I",
+        "start": 363.009,
+        "duration": 4.111
+    },
+    {
+        "text": "think it's really straightforward all",
+        "start": 364.779,
+        "duration": 4.651
+    },
+    {
+        "text": "right so yeah that's it so first let's",
+        "start": 367.12,
+        "duration": 4.889
+    },
+    {
+        "text": "just get n is going to be equal to grid",
+        "start": 369.43,
+        "duration": 6.87
+    },
+    {
+        "text": "length we're gonna set up some max row",
+        "start": 372.009,
+        "duration": 7.53
+    },
+    {
+        "text": "Val's array is equal to new in Turay of",
+        "start": 376.3,
+        "duration": 10.649
+    },
+    {
+        "text": "n and int max column Val's is equal to",
+        "start": 379.539,
+        "duration": 11.69
+    },
+    {
+        "text": "nu into then as well so we can say n is",
+        "start": 386.949,
+        "duration": 8.19
+    },
+    {
+        "text": "and is going to be the side of the the",
+        "start": 391.229,
+        "duration": 5.5
+    },
+    {
+        "text": "number of rows or the number of columns",
+        "start": 395.139,
+        "duration": 3.481
+    },
+    {
+        "text": "because if you look here it says number",
+        "start": 396.729,
+        "duration": 2.771
+    },
+    {
+        "text": "of rows and columns are",
+        "start": 398.62,
+        "duration": 3.07
+    },
+    {
+        "text": "same is what this statement says so it's",
+        "start": 399.5,
+        "duration": 4.29
+    },
+    {
+        "text": "like a square grid basically so that's",
+        "start": 401.69,
+        "duration": 3.6
+    },
+    {
+        "text": "why we can do this because there's gonna",
+        "start": 403.79,
+        "duration": 3.3
+    },
+    {
+        "text": "be the same number of columns and rows",
+        "start": 405.29,
+        "duration": 4.44
+    },
+    {
+        "text": "so you just get the number of rows is n",
+        "start": 407.09,
+        "duration": 5.22
+    },
+    {
+        "text": "and then you just say okay the we're",
+        "start": 409.73,
+        "duration": 5.16
+    },
+    {
+        "text": "gonna this this Verret this array max",
+        "start": 412.31,
+        "duration": 4.62
+    },
+    {
+        "text": "row valves is going to store the maximum",
+        "start": 414.89,
+        "duration": 4.8
+    },
+    {
+        "text": "value in each row so if the it's a four",
+        "start": 416.93,
+        "duration": 4.68
+    },
+    {
+        "text": "by four it's gonna store four values and",
+        "start": 419.69,
+        "duration": 3.03
+    },
+    {
+        "text": "then this is going to store the max",
+        "start": 421.61,
+        "duration": 2.85
+    },
+    {
+        "text": "value in each column that's gonna store",
+        "start": 422.72,
+        "duration": 3.93
+    },
+    {
+        "text": "four values as well how do we get these",
+        "start": 424.46,
+        "duration": 5.99
+    },
+    {
+        "text": "values well we just loop through the Ray",
+        "start": 426.65,
+        "duration": 8.49
+    },
+    {
+        "text": "rows by column loop here which kind of",
+        "start": 430.45,
+        "duration": 6.19
+    },
+    {
+        "text": "stinks but it's no big deal",
+        "start": 435.14,
+        "duration": 3.48
+    },
+    {
+        "text": "you could really just do less than n",
+        "start": 436.64,
+        "duration": 3.779
+    },
+    {
+        "text": "since you do that for everything",
+        "start": 438.62,
+        "duration": 5.91
+    },
+    {
+        "text": "honestly so we could do less than and J",
+        "start": 440.419,
+        "duration": 6.241
+    },
+    {
+        "text": "plus plus make sure you're doing J not",
+        "start": 444.53,
+        "duration": 5.07
+    },
+    {
+        "text": "being dumb like me so standard loop",
+        "start": 446.66,
+        "duration": 5.64
+    },
+    {
+        "text": "through a 2d array right and we're gonna",
+        "start": 449.6,
+        "duration": 4.319
+    },
+    {
+        "text": "need to do these twice so let me just",
+        "start": 452.3,
+        "duration": 2.22
+    },
+    {
+        "text": "put that there",
+        "start": 453.919,
+        "duration": 3.301
+    },
+    {
+        "text": "what so first we construct that we get",
+        "start": 454.52,
+        "duration": 5.82
+    },
+    {
+        "text": "the maximum row value of each row and",
+        "start": 457.22,
+        "duration": 6.36
+    },
+    {
+        "text": "that is the math dot max between the",
+        "start": 460.34,
+        "duration": 5.43
+    },
+    {
+        "text": "current maximum row value we have in the",
+        "start": 463.58,
+        "duration": 5.899
+    },
+    {
+        "text": "index which they all start a zero and",
+        "start": 465.77,
+        "duration": 10.59
+    },
+    {
+        "text": "the the current grid cell that's it and",
+        "start": 469.479,
+        "duration": 11.651
+    },
+    {
+        "text": "it's the same for the columns obviously",
+        "start": 476.36,
+        "duration": 8.85
+    },
+    {
+        "text": "with J's so if you look at this I don't",
+        "start": 481.13,
+        "duration": 5.25
+    },
+    {
+        "text": "know if I want to explain this because",
+        "start": 485.21,
+        "duration": 2.58
+    },
+    {
+        "text": "it might take I feel like this video is",
+        "start": 486.38,
+        "duration": 3.45
+    },
+    {
+        "text": "already getting along but if while",
+        "start": 487.79,
+        "duration": 3.57
+    },
+    {
+        "text": "you're looping through you're checking",
+        "start": 489.83,
+        "duration": 3.96
+    },
+    {
+        "text": "the max these are just empty arrays that",
+        "start": 491.36,
+        "duration": 5.01
+    },
+    {
+        "text": "start as a bunch of zeros so you check",
+        "start": 493.79,
+        "duration": 6.3
+    },
+    {
+        "text": "the current element so on the first the",
+        "start": 496.37,
+        "duration": 5.94
+    },
+    {
+        "text": "first let's do the column ones so on the",
+        "start": 500.09,
+        "duration": 5.46
+    },
+    {
+        "text": "columns it goes you know J goes one two",
+        "start": 502.31,
+        "duration": 6.18
+    },
+    {
+        "text": "three four right so it goes well it goes",
+        "start": 505.55,
+        "duration": 4.5
+    },
+    {
+        "text": "zero one two three",
+        "start": 508.49,
+        "duration": 4.29
+    },
+    {
+        "text": "that's the indexes so we do max row",
+        "start": 510.05,
+        "duration": 5.19
+    },
+    {
+        "text": "values of zero is equal to the max of 0",
+        "start": 512.78,
+        "duration": 5.55
+    },
+    {
+        "text": "in the current element right so the",
+        "start": 515.24,
+        "duration": 6.21
+    },
+    {
+        "text": "column valves would check against 3 and",
+        "start": 518.33,
+        "duration": 5.43
+    },
+    {
+        "text": "0 and be like ok this is the max column",
+        "start": 521.45,
+        "duration": 6.36
+    },
+    {
+        "text": "value is 3 okay now the max column value",
+        "start": 523.76,
+        "duration": 7.079
+    },
+    {
+        "text": "is 0 it stays 0 ok now the max column",
+        "start": 527.81,
+        "duration": 5.37
+    },
+    {
+        "text": "value is 8 for this one",
+        "start": 530.839,
+        "duration": 3.931
+    },
+    {
+        "text": "you just get it by index now the max",
+        "start": 533.18,
+        "duration": 3.39
+    },
+    {
+        "text": "column values for and then as you go",
+        "start": 534.77,
+        "duration": 2.819
+    },
+    {
+        "text": "through the whole thing you keep",
+        "start": 536.57,
+        "duration": 3.06
+    },
+    {
+        "text": "updating them because it goes back to 0",
+        "start": 537.589,
+        "duration": 5.521
+    },
+    {
+        "text": "1 2 3 0 1 2 3 J does that a bunch of",
+        "start": 539.63,
+        "duration": 3.93
+    },
+    {
+        "text": "times",
+        "start": 543.11,
+        "duration": 1.979
+    },
+    {
+        "text": "checks all the values and puts them in",
+        "start": 543.56,
+        "duration": 3.54
+    },
+    {
+        "text": "the right indexes should be pretty",
+        "start": 545.089,
+        "duration": 3.361
+    },
+    {
+        "text": "straightforward maybe think about it",
+        "start": 547.1,
+        "duration": 3.0
+    },
+    {
+        "text": "comment below if you don't get it and",
+        "start": 548.45,
+        "duration": 3.889
+    },
+    {
+        "text": "maybe I'll message you an explanation",
+        "start": 550.1,
+        "duration": 4.89
+    },
+    {
+        "text": "and now once you have all these you have",
+        "start": 552.339,
+        "duration": 4.481
+    },
+    {
+        "text": "the all the max row valves in the max",
+        "start": 554.99,
+        "duration": 3.659
+    },
+    {
+        "text": "column value so we just use the formula",
+        "start": 556.82,
+        "duration": 4.76
+    },
+    {
+        "text": "from earlier we do result plus equals",
+        "start": 558.649,
+        "duration": 6.781
+    },
+    {
+        "text": "the minimum of those values the minimum",
+        "start": 561.58,
+        "duration": 11.53
+    },
+    {
+        "text": "of the the current max row val max row",
+        "start": 565.43,
+        "duration": 14.87
+    },
+    {
+        "text": "valves of i and max column vows of J",
+        "start": 573.11,
+        "duration": 14.01
+    },
+    {
+        "text": "minus grid of I of J and yeah that that",
+        "start": 580.3,
+        "duration": 8.71
+    },
+    {
+        "text": "should be it and then you return the",
+        "start": 587.12,
+        "duration": 4.5
+    },
+    {
+        "text": "result I feel like I messed up and just",
+        "start": 589.01,
+        "duration": 4.86
+    },
+    {
+        "text": "have a bad feeling but I also nope there",
+        "start": 591.62,
+        "duration": 5.61
+    },
+    {
+        "text": "we go perfect okay so that's it yeah we",
+        "start": 593.87,
+        "duration": 4.969
+    },
+    {
+        "text": "used the formula from earlier you just",
+        "start": 597.23,
+        "duration": 4.35
+    },
+    {
+        "text": "get the minimum of those I mean I",
+        "start": 598.839,
+        "duration": 5.531
+    },
+    {
+        "text": "explained it already but you get the to",
+        "start": 601.58,
+        "duration": 4.379
+    },
+    {
+        "text": "find out how much you're increasing each",
+        "start": 604.37,
+        "duration": 3.48
+    },
+    {
+        "text": "element by you would just check ok",
+        "start": 605.959,
+        "duration": 3.991
+    },
+    {
+        "text": "what's the minimum of the the max column",
+        "start": 607.85,
+        "duration": 5.25
+    },
+    {
+        "text": "values for here max row val is 8 here so",
+        "start": 609.95,
+        "duration": 5.009
+    },
+    {
+        "text": "the minimum is 4 and then you just do 4",
+        "start": 613.1,
+        "duration": 3.9
+    },
+    {
+        "text": "minus 0 is 4 and then that's what you",
+        "start": 614.959,
+        "duration": 3.871
+    },
+    {
+        "text": "updated to you add that to have some and",
+        "start": 617.0,
+        "duration": 4.11
+    },
+    {
+        "text": "you're returning at the end result thank",
+        "start": 618.83,
+        "duration": 3.78
+    },
+    {
+        "text": "you guys for watching I really",
+        "start": 621.11,
+        "duration": 3.24
+    },
+    {
+        "text": "appreciate it or appreciate everyone",
+        "start": 622.61,
+        "duration": 4.65
+    },
+    {
+        "text": "that sports and let me know if you have",
+        "start": 624.35,
+        "duration": 4.109
+    },
+    {
+        "text": "any questions I think this is a cool",
+        "start": 627.26,
+        "duration": 3.81
+    },
+    {
+        "text": "problem and you know thanks for watching",
+        "start": 628.459,
+        "duration": 6.021
+    },
+    {
+        "text": "see you guys in the next",
+        "start": 631.07,
+        "duration": 3.41
+    }
+]

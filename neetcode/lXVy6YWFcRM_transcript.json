@@ -1,0 +1,2182 @@
+[
+    {
+        "text": "everyone welcome back and let's write",
+        "start": 0.16,
+        "duration": 4.0
+    },
+    {
+        "text": "some more neat code today let's look at",
+        "start": 1.68,
+        "duration": 5.44
+    },
+    {
+        "text": "maximum product subarray and this is",
+        "start": 4.16,
+        "duration": 4.08
+    },
+    {
+        "text": "actually a",
+        "start": 7.12,
+        "duration": 3.12
+    },
+    {
+        "text": "dynamic programming problem and i'm",
+        "start": 8.24,
+        "duration": 3.76
+    },
+    {
+        "text": "going to show you how to",
+        "start": 10.24,
+        "duration": 4.399
+    },
+    {
+        "text": "solve this problem easily so we're given",
+        "start": 12.0,
+        "duration": 4.88
+    },
+    {
+        "text": "an integer array of numbers",
+        "start": 14.639,
+        "duration": 4.48
+    },
+    {
+        "text": "and we want to find the contiguous",
+        "start": 16.88,
+        "duration": 3.12
+    },
+    {
+        "text": "subarray",
+        "start": 19.119,
+        "duration": 3.681
+    },
+    {
+        "text": "that contains at least num one number",
+        "start": 20.0,
+        "duration": 3.199
+    },
+    {
+        "text": "and",
+        "start": 22.8,
+        "duration": 3.84
+    },
+    {
+        "text": "has the largest product so in this case",
+        "start": 23.199,
+        "duration": 6.881
+    },
+    {
+        "text": "we have a 2 a 3 a negative 2 and a 4",
+        "start": 26.64,
+        "duration": 5.759
+    },
+    {
+        "text": "and the largest continuous product we",
+        "start": 30.08,
+        "duration": 4.159
+    },
+    {
+        "text": "can make is 2 and 3 because",
+        "start": 32.399,
+        "duration": 4.881
+    },
+    {
+        "text": "2 times 3 is 6. that",
+        "start": 34.239,
+        "duration": 4.881
+    },
+    {
+        "text": "is the largest product we can't really",
+        "start": 37.28,
+        "duration": 2.959
+    },
+    {
+        "text": "make it bigger because there's a",
+        "start": 39.12,
+        "duration": 2.88
+    },
+    {
+        "text": "negative 2 if we multiply this by",
+        "start": 40.239,
+        "duration": 3.201
+    },
+    {
+        "text": "negative 2 it's going to be",
+        "start": 42.0,
+        "duration": 4.8
+    },
+    {
+        "text": "negative 12 that's not bigger than",
+        "start": 43.44,
+        "duration": 5.599
+    },
+    {
+        "text": "6. so what's like your first idea how to",
+        "start": 46.8,
+        "duration": 3.68
+    },
+    {
+        "text": "solve this problem maybe",
+        "start": 49.039,
+        "duration": 4.081
+    },
+    {
+        "text": "brute force right is there a brute force",
+        "start": 50.48,
+        "duration": 3.599
+    },
+    {
+        "text": "solution to this",
+        "start": 53.12,
+        "duration": 3.36
+    },
+    {
+        "text": "well we want to find a subarray right so",
+        "start": 54.079,
+        "duration": 3.681
+    },
+    {
+        "text": "why don't we just try",
+        "start": 56.48,
+        "duration": 4.32
+    },
+    {
+        "text": "every single subarray so let's say all",
+        "start": 57.76,
+        "duration": 5.279
+    },
+    {
+        "text": "sub arrays starting at two we got one",
+        "start": 60.8,
+        "duration": 3.359
+    },
+    {
+        "text": "sub array",
+        "start": 63.039,
+        "duration": 4.561
+    },
+    {
+        "text": "two sub arrays three four right",
+        "start": 64.159,
+        "duration": 4.96
+    },
+    {
+        "text": "and for each of these let's just",
+        "start": 67.6,
+        "duration": 3.12
+    },
+    {
+        "text": "calculate the product right like the",
+        "start": 69.119,
+        "duration": 3.761
+    },
+    {
+        "text": "first one is two the next one is two",
+        "start": 70.72,
+        "duration": 3.12
+    },
+    {
+        "text": "times three",
+        "start": 72.88,
+        "duration": 3.76
+    },
+    {
+        "text": "the next one is two times three times",
+        "start": 73.84,
+        "duration": 3.919
+    },
+    {
+        "text": "negative two",
+        "start": 76.64,
+        "duration": 3.839
+    },
+    {
+        "text": "the last one is two times three times",
+        "start": 77.759,
+        "duration": 3.601
+    },
+    {
+        "text": "negative two",
+        "start": 80.479,
+        "duration": 3.761
+    },
+    {
+        "text": "times four and we end up saying that so",
+        "start": 81.36,
+        "duration": 3.84
+    },
+    {
+        "text": "far the biggest",
+        "start": 84.24,
+        "duration": 2.96
+    },
+    {
+        "text": "is this but we're technically not done",
+        "start": 85.2,
+        "duration": 4.0
+    },
+    {
+        "text": "yet all of these sub-arrays contain",
+        "start": 87.2,
+        "duration": 4.48
+    },
+    {
+        "text": "two so now let's look at all sub-arrays",
+        "start": 89.2,
+        "duration": 4.08
+    },
+    {
+        "text": "containing three so we got",
+        "start": 91.68,
+        "duration": 4.0
+    },
+    {
+        "text": "one right just three then we got three",
+        "start": 93.28,
+        "duration": 3.92
+    },
+    {
+        "text": "times negative two then we got three",
+        "start": 95.68,
+        "duration": 2.88
+    },
+    {
+        "text": "times negative two",
+        "start": 97.2,
+        "duration": 4.32
+    },
+    {
+        "text": "times 4 and basically we repeat this",
+        "start": 98.56,
+        "duration": 3.68
+    },
+    {
+        "text": "process",
+        "start": 101.52,
+        "duration": 3.12
+    },
+    {
+        "text": "now you can tell that this is not super",
+        "start": 102.24,
+        "duration": 3.28
+    },
+    {
+        "text": "efficient",
+        "start": 104.64,
+        "duration": 3.92
+    },
+    {
+        "text": "the time complexity is big o n",
+        "start": 105.52,
+        "duration": 5.68
+    },
+    {
+        "text": "squared for each of these numbers we're",
+        "start": 108.56,
+        "duration": 3.839
+    },
+    {
+        "text": "going to end up having",
+        "start": 111.2,
+        "duration": 4.64
+    },
+    {
+        "text": "n sub arrays and we see that the total",
+        "start": 112.399,
+        "duration": 5.68
+    },
+    {
+        "text": "number of elements we have is also",
+        "start": 115.84,
+        "duration": 5.12
+    },
+    {
+        "text": "n right it's n elements in the array so",
+        "start": 118.079,
+        "duration": 3.521
+    },
+    {
+        "text": "we're going to get",
+        "start": 120.96,
+        "duration": 4.0
+    },
+    {
+        "text": "n times n is n squared so my question is",
+        "start": 121.6,
+        "duration": 5.519
+    },
+    {
+        "text": "can we do better and how can we do",
+        "start": 124.96,
+        "duration": 3.84
+    },
+    {
+        "text": "better maybe there's some",
+        "start": 127.119,
+        "duration": 4.081
+    },
+    {
+        "text": "patterns to this problem that we can use",
+        "start": 128.8,
+        "duration": 4.4
+    },
+    {
+        "text": "to our advantage to find a better",
+        "start": 131.2,
+        "duration": 3.039
+    },
+    {
+        "text": "solution than",
+        "start": 133.2,
+        "duration": 4.72
+    },
+    {
+        "text": "n squared so let's look at one example",
+        "start": 134.239,
+        "duration": 5.681
+    },
+    {
+        "text": "do you notice anything about this",
+        "start": 137.92,
+        "duration": 3.12
+    },
+    {
+        "text": "subarray well",
+        "start": 139.92,
+        "duration": 3.6
+    },
+    {
+        "text": "all elements are positive so what does",
+        "start": 141.04,
+        "duration": 3.76
+    },
+    {
+        "text": "that end up",
+        "start": 143.52,
+        "duration": 3.6
+    },
+    {
+        "text": "doing like this is all positive so we",
+        "start": 144.8,
+        "duration": 3.6
+    },
+    {
+        "text": "got a one",
+        "start": 147.12,
+        "duration": 3.839
+    },
+    {
+        "text": "okay and next we want to check this sub",
+        "start": 148.4,
+        "duration": 4.479
+    },
+    {
+        "text": "array okay multiply it by two",
+        "start": 150.959,
+        "duration": 4.721
+    },
+    {
+        "text": "we want to go even farther check the",
+        "start": 152.879,
+        "duration": 3.121
+    },
+    {
+        "text": "three",
+        "start": 155.68,
+        "duration": 3.04
+    },
+    {
+        "text": "okay multiply it by three and what if we",
+        "start": 156.0,
+        "duration": 5.2
+    },
+    {
+        "text": "kept having positive elements four",
+        "start": 158.72,
+        "duration": 6.0
+    },
+    {
+        "text": "five multiply by four multiply by five",
+        "start": 161.2,
+        "duration": 6.16
+    },
+    {
+        "text": "do you notice something up until this",
+        "start": 164.72,
+        "duration": 4.64
+    },
+    {
+        "text": "point our product is going to be a one",
+        "start": 167.36,
+        "duration": 3.599
+    },
+    {
+        "text": "up until this point it's going to be a",
+        "start": 169.36,
+        "duration": 3.92
+    },
+    {
+        "text": "two up until this point it's going to be",
+        "start": 170.959,
+        "duration": 3.201
+    },
+    {
+        "text": "a six",
+        "start": 173.28,
+        "duration": 2.48
+    },
+    {
+        "text": "up until this point it's going to be a",
+        "start": 174.16,
+        "duration": 3.999
+    },
+    {
+        "text": "24 up until this point is going to be",
+        "start": 175.76,
+        "duration": 3.28
+    },
+    {
+        "text": "120.",
+        "start": 178.159,
+        "duration": 4.16
+    },
+    {
+        "text": "if we have positive numbers no matter",
+        "start": 179.04,
+        "duration": 3.68
+    },
+    {
+        "text": "what",
+        "start": 182.319,
+        "duration": 3.521
+    },
+    {
+        "text": "happens they're going to keep increasing",
+        "start": 182.72,
+        "duration": 3.68
+    },
+    {
+        "text": "right",
+        "start": 185.84,
+        "duration": 3.119
+    },
+    {
+        "text": "so this is the simple case if we get all",
+        "start": 186.4,
+        "duration": 3.919
+    },
+    {
+        "text": "positive numbers",
+        "start": 188.959,
+        "duration": 3.681
+    },
+    {
+        "text": "then our product is always going to be",
+        "start": 190.319,
+        "duration": 3.521
+    },
+    {
+        "text": "increasing",
+        "start": 192.64,
+        "duration": 3.2
+    },
+    {
+        "text": "so now let's actually look at the",
+        "start": 193.84,
+        "duration": 4.319
+    },
+    {
+        "text": "opposite scenario what if we had",
+        "start": 195.84,
+        "duration": 4.24
+    },
+    {
+        "text": "all negative numbers because all",
+        "start": 198.159,
+        "duration": 4.0
+    },
+    {
+        "text": "positives is easy you just multiply",
+        "start": 200.08,
+        "duration": 3.92
+    },
+    {
+        "text": "all of them and you get the max product",
+        "start": 202.159,
+        "duration": 3.921
+    },
+    {
+        "text": "but with negative numbers it's a lot",
+        "start": 204.0,
+        "duration": 3.2
+    },
+    {
+        "text": "more tricky",
+        "start": 206.08,
+        "duration": 3.6
+    },
+    {
+        "text": "so let's look at the first number so up",
+        "start": 207.2,
+        "duration": 4.8
+    },
+    {
+        "text": "until here the max product is just",
+        "start": 209.68,
+        "duration": 5.76
+    },
+    {
+        "text": "negative one and then we we add",
+        "start": 212.0,
+        "duration": 6.239
+    },
+    {
+        "text": "a second element a negative two and then",
+        "start": 215.44,
+        "duration": 4.0
+    },
+    {
+        "text": "what do we get we get",
+        "start": 218.239,
+        "duration": 4.401
+    },
+    {
+        "text": "negative one times negative two and",
+        "start": 219.44,
+        "duration": 6.24
+    },
+    {
+        "text": "we know that the product of that is",
+        "start": 222.64,
+        "duration": 6.48
+    },
+    {
+        "text": "two right positive two now the last sub",
+        "start": 225.68,
+        "duration": 4.24
+    },
+    {
+        "text": "array we check",
+        "start": 229.12,
+        "duration": 3.36
+    },
+    {
+        "text": "from all the way from negative one to",
+        "start": 229.92,
+        "duration": 3.2
+    },
+    {
+        "text": "negative",
+        "start": 232.48,
+        "duration": 3.28
+    },
+    {
+        "text": "three so we introduce one more value a",
+        "start": 233.12,
+        "duration": 3.199
+    },
+    {
+        "text": "negative",
+        "start": 235.76,
+        "duration": 3.839
+    },
+    {
+        "text": "three and now if we multiply all three",
+        "start": 236.319,
+        "duration": 3.681
+    },
+    {
+        "text": "of these",
+        "start": 239.599,
+        "duration": 3.36
+    },
+    {
+        "text": "numbers together we see that our product",
+        "start": 240.0,
+        "duration": 4.159
+    },
+    {
+        "text": "actually got",
+        "start": 242.959,
+        "duration": 4.64
+    },
+    {
+        "text": "smaller now it's negative six and what's",
+        "start": 244.159,
+        "duration": 4.321
+    },
+    {
+        "text": "going to happen",
+        "start": 247.599,
+        "duration": 3.761
+    },
+    {
+        "text": "if we had a another element over here",
+        "start": 248.48,
+        "duration": 5.039
+    },
+    {
+        "text": "what if we had a negative four",
+        "start": 251.36,
+        "duration": 5.439
+    },
+    {
+        "text": "then we multiply by negative 4",
+        "start": 253.519,
+        "duration": 7.201
+    },
+    {
+        "text": "and now we see that our product is going",
+        "start": 256.799,
+        "duration": 4.321
+    },
+    {
+        "text": "to be",
+        "start": 260.72,
+        "duration": 3.44
+    },
+    {
+        "text": "24. so you see that when you have",
+        "start": 261.12,
+        "duration": 7.28
+    },
+    {
+        "text": "negatives consecutively the sign is",
+        "start": 264.16,
+        "duration": 9.12
+    },
+    {
+        "text": "alternating so when you want the maximum",
+        "start": 268.4,
+        "duration": 6.799
+    },
+    {
+        "text": "it makes it kind of tricky to have",
+        "start": 273.28,
+        "duration": 4.16
+    },
+    {
+        "text": "negatives but we also see that",
+        "start": 275.199,
+        "duration": 4.881
+    },
+    {
+        "text": "even though we got a negative six over",
+        "start": 277.44,
+        "duration": 3.039
+    },
+    {
+        "text": "here",
+        "start": 280.08,
+        "duration": 3.36
+    },
+    {
+        "text": "there's actually a subarray that has a",
+        "start": 280.479,
+        "duration": 4.561
+    },
+    {
+        "text": "better solution if you just take",
+        "start": 283.44,
+        "duration": 3.92
+    },
+    {
+        "text": "these two numbers negative two times",
+        "start": 285.04,
+        "duration": 3.92
+    },
+    {
+        "text": "negative three we get a",
+        "start": 287.36,
+        "duration": 4.24
+    },
+    {
+        "text": "positive six so why did we get a",
+        "start": 288.96,
+        "duration": 4.16
+    },
+    {
+        "text": "negative six over here",
+        "start": 291.6,
+        "duration": 4.64
+    },
+    {
+        "text": "how can we find the real maximum which",
+        "start": 293.12,
+        "duration": 3.519
+    },
+    {
+        "text": "is",
+        "start": 296.24,
+        "duration": 3.2
+    },
+    {
+        "text": "positive six so even though we're",
+        "start": 296.639,
+        "duration": 4.241
+    },
+    {
+        "text": "looking for the max",
+        "start": 299.44,
+        "duration": 3.68
+    },
+    {
+        "text": "product sub array we're actually also",
+        "start": 300.88,
+        "duration": 4.08
+    },
+    {
+        "text": "going to need to keep track of the",
+        "start": 303.12,
+        "duration": 3.919
+    },
+    {
+        "text": "minimum as well and i'm going to show",
+        "start": 304.96,
+        "duration": 3.2
+    },
+    {
+        "text": "you why",
+        "start": 307.039,
+        "duration": 4.081
+    },
+    {
+        "text": "so first do you at least agree with me",
+        "start": 308.16,
+        "duration": 3.52
+    },
+    {
+        "text": "that",
+        "start": 311.12,
+        "duration": 3.919
+    },
+    {
+        "text": "if we want to find the max product array",
+        "start": 311.68,
+        "duration": 6.16
+    },
+    {
+        "text": "sub array of this of the of the entire",
+        "start": 315.039,
+        "duration": 3.361
+    },
+    {
+        "text": "thing",
+        "start": 317.84,
+        "duration": 3.28
+    },
+    {
+        "text": "it might be helpful for us to at least",
+        "start": 318.4,
+        "duration": 3.92
+    },
+    {
+        "text": "solve the sub",
+        "start": 321.12,
+        "duration": 3.2
+    },
+    {
+        "text": "problem which is the max product",
+        "start": 322.32,
+        "duration": 4.8
+    },
+    {
+        "text": "subarray of just the first two elements",
+        "start": 324.32,
+        "duration": 6.4
+    },
+    {
+        "text": "first and then use that to get",
+        "start": 327.12,
+        "duration": 6.88
+    },
+    {
+        "text": "the entire one okay that makes sense",
+        "start": 330.72,
+        "duration": 5.759
+    },
+    {
+        "text": "we know that the max product subarray of",
+        "start": 334.0,
+        "duration": 3.039
+    },
+    {
+        "text": "this",
+        "start": 336.479,
+        "duration": 3.761
+    },
+    {
+        "text": "is two now if we had a positive three",
+        "start": 337.039,
+        "duration": 4.081
+    },
+    {
+        "text": "over here",
+        "start": 340.24,
+        "duration": 4.08
+    },
+    {
+        "text": "then we would say okay if i can get the",
+        "start": 341.12,
+        "duration": 5.519
+    },
+    {
+        "text": "max sub array of the first two elements",
+        "start": 344.32,
+        "duration": 3.599
+    },
+    {
+        "text": "and multiply it by",
+        "start": 346.639,
+        "duration": 3.681
+    },
+    {
+        "text": "three i'm gonna get two times three it",
+        "start": 347.919,
+        "duration": 4.881
+    },
+    {
+        "text": "works when these are positive numbers",
+        "start": 350.32,
+        "duration": 5.599
+    },
+    {
+        "text": "but we actually have a negative 3 over",
+        "start": 352.8,
+        "duration": 3.92
+    },
+    {
+        "text": "here",
+        "start": 355.919,
+        "duration": 4.481
+    },
+    {
+        "text": "so i'm gonna say get the max product sub",
+        "start": 356.72,
+        "duration": 5.52
+    },
+    {
+        "text": "array which is positive 2",
+        "start": 360.4,
+        "duration": 6.079
+    },
+    {
+        "text": "but let's also get the the minimum",
+        "start": 362.24,
+        "duration": 7.44
+    },
+    {
+        "text": "product sub array of these two as well",
+        "start": 366.479,
+        "duration": 5.601
+    },
+    {
+        "text": "and what do we know about the minimum",
+        "start": 369.68,
+        "duration": 3.12
+    },
+    {
+        "text": "what's the",
+        "start": 372.08,
+        "duration": 3.44
+    },
+    {
+        "text": "minimum product sub array of these two",
+        "start": 372.8,
+        "duration": 4.16
+    },
+    {
+        "text": "it's going to be",
+        "start": 375.52,
+        "duration": 4.959
+    },
+    {
+        "text": "negative two so i'm going to keep track",
+        "start": 376.96,
+        "duration": 6.88
+    },
+    {
+        "text": "of both positive and negative",
+        "start": 380.479,
+        "duration": 5.921
+    },
+    {
+        "text": "so we have a positive 2 and a negative",
+        "start": 383.84,
+        "duration": 3.359
+    },
+    {
+        "text": "2.",
+        "start": 386.4,
+        "duration": 3.919
+    },
+    {
+        "text": "we keep the max and we keep",
+        "start": 387.199,
+        "duration": 5.921
+    },
+    {
+        "text": "the minimum so now when we want to",
+        "start": 390.319,
+        "duration": 5.041
+    },
+    {
+        "text": "compute the max product subarray",
+        "start": 393.12,
+        "duration": 5.6
+    },
+    {
+        "text": "when we include this 3 then",
+        "start": 395.36,
+        "duration": 5.839
+    },
+    {
+        "text": "we can compute that we can compute that",
+        "start": 398.72,
+        "duration": 3.44
+    },
+    {
+        "text": "using",
+        "start": 401.199,
+        "duration": 4.481
+    },
+    {
+        "text": "both of these values so we know that",
+        "start": 402.16,
+        "duration": 6.159
+    },
+    {
+        "text": "when we take the maximum 2 we get",
+        "start": 405.68,
+        "duration": 3.12
+    },
+    {
+        "text": "negative",
+        "start": 408.319,
+        "duration": 3.681
+    },
+    {
+        "text": "3 times 2 which is negative 6",
+        "start": 408.8,
+        "duration": 5.36
+    },
+    {
+        "text": "and we know when we take the minimum we",
+        "start": 412.0,
+        "duration": 3.36
+    },
+    {
+        "text": "get we get",
+        "start": 414.16,
+        "duration": 4.319
+    },
+    {
+        "text": "negative 3 times negative",
+        "start": 415.36,
+        "duration": 6.239
+    },
+    {
+        "text": "2 and that gives us a result",
+        "start": 418.479,
+        "duration": 6.241
+    },
+    {
+        "text": "of positive six so we know the maximum",
+        "start": 421.599,
+        "duration": 6.241
+    },
+    {
+        "text": "is positive six and the minimum is",
+        "start": 424.72,
+        "duration": 6.479
+    },
+    {
+        "text": "negative six so we take positive six",
+        "start": 427.84,
+        "duration": 5.84
+    },
+    {
+        "text": "and put it over here and we can take",
+        "start": 431.199,
+        "duration": 3.601
+    },
+    {
+        "text": "negative six",
+        "start": 433.68,
+        "duration": 3.6
+    },
+    {
+        "text": "and put it over here and hypothetically",
+        "start": 434.8,
+        "duration": 4.32
+    },
+    {
+        "text": "maybe we get another element",
+        "start": 437.28,
+        "duration": 4.479
+    },
+    {
+        "text": "and this time and this time whether it's",
+        "start": 439.12,
+        "duration": 3.359
+    },
+    {
+        "text": "positive",
+        "start": 441.759,
+        "duration": 2.961
+    },
+    {
+        "text": "or negative right so in this case let's",
+        "start": 442.479,
+        "duration": 3.44
+    },
+    {
+        "text": "say it's negative 4",
+        "start": 444.72,
+        "duration": 2.96
+    },
+    {
+        "text": "we will be able to find the solution",
+        "start": 445.919,
+        "duration": 3.12
+    },
+    {
+        "text": "because the",
+        "start": 447.68,
+        "duration": 3.519
+    },
+    {
+        "text": "minimum or rather we're looking for the",
+        "start": 449.039,
+        "duration": 3.681
+    },
+    {
+        "text": "max product sub array",
+        "start": 451.199,
+        "duration": 4.081
+    },
+    {
+        "text": "and we know if we take negative four",
+        "start": 452.72,
+        "duration": 3.84
+    },
+    {
+        "text": "multiply it by",
+        "start": 455.28,
+        "duration": 3.84
+    },
+    {
+        "text": "the current minimum which is a negative",
+        "start": 456.56,
+        "duration": 3.359
+    },
+    {
+        "text": "number",
+        "start": 459.12,
+        "duration": 4.16
+    },
+    {
+        "text": "negative six we will end up getting 24",
+        "start": 459.919,
+        "duration": 5.521
+    },
+    {
+        "text": "which is what we're looking for but if",
+        "start": 463.28,
+        "duration": 4.24
+    },
+    {
+        "text": "you reverse it what if we had a",
+        "start": 465.44,
+        "duration": 4.8
+    },
+    {
+        "text": "positive 4 here instead well in that",
+        "start": 467.52,
+        "duration": 4.079
+    },
+    {
+        "text": "case we can say okay",
+        "start": 470.24,
+        "duration": 4.639
+    },
+    {
+        "text": "positive 4 multiplied by our",
+        "start": 471.599,
+        "duration": 6.561
+    },
+    {
+        "text": "maximum right our maximum which is",
+        "start": 474.879,
+        "duration": 7.04
+    },
+    {
+        "text": "positive 6. so 4 times positive 6",
+        "start": 478.16,
+        "duration": 8.479
+    },
+    {
+        "text": "we get 24. we still get it right so this",
+        "start": 481.919,
+        "duration": 7.041
+    },
+    {
+        "text": "if we maintain the maximum and the",
+        "start": 486.639,
+        "duration": 3.28
+    },
+    {
+        "text": "minimum",
+        "start": 488.96,
+        "duration": 3.76
+    },
+    {
+        "text": "we have all the information we need as",
+        "start": 489.919,
+        "duration": 4.96
+    },
+    {
+        "text": "we continue to add more",
+        "start": 492.72,
+        "duration": 5.44
+    },
+    {
+        "text": "elements to our array so now let's just",
+        "start": 494.879,
+        "duration": 4.561
+    },
+    {
+        "text": "look at",
+        "start": 498.16,
+        "duration": 4.4
+    },
+    {
+        "text": "one edge case so we're talking about",
+        "start": 499.44,
+        "duration": 5.199
+    },
+    {
+        "text": "positive numbers and negative numbers",
+        "start": 502.56,
+        "duration": 3.52
+    },
+    {
+        "text": "but we know that one last",
+        "start": 504.639,
+        "duration": 4.721
+    },
+    {
+        "text": "edge case exists the dreaded zero value",
+        "start": 506.08,
+        "duration": 5.2
+    },
+    {
+        "text": "right so what if we had a zero value and",
+        "start": 509.36,
+        "duration": 3.679
+    },
+    {
+        "text": "then maybe some other numbers three",
+        "start": 511.28,
+        "duration": 5.199
+    },
+    {
+        "text": "five our zero is gonna kind of",
+        "start": 513.039,
+        "duration": 5.761
+    },
+    {
+        "text": "kill us right it's gonna kill our streak",
+        "start": 516.479,
+        "duration": 3.601
+    },
+    {
+        "text": "like look what's going to happen",
+        "start": 518.8,
+        "duration": 4.159
+    },
+    {
+        "text": "to our min and max if we take 6",
+        "start": 520.08,
+        "duration": 4.48
+    },
+    {
+        "text": "multiplied by 0",
+        "start": 522.959,
+        "duration": 5.201
+    },
+    {
+        "text": "we get 0 if we take negative 6",
+        "start": 524.56,
+        "duration": 6.959
+    },
+    {
+        "text": "multiplied by 0 we get 0 again",
+        "start": 528.16,
+        "duration": 6.56
+    },
+    {
+        "text": "right x times 0 equals zero",
+        "start": 531.519,
+        "duration": 5.76
+    },
+    {
+        "text": "and then if we try taking this zero and",
+        "start": 534.72,
+        "duration": 4.64
+    },
+    {
+        "text": "making it a product of maybe three and",
+        "start": 537.279,
+        "duration": 2.56
+    },
+    {
+        "text": "five",
+        "start": 539.36,
+        "duration": 2.08
+    },
+    {
+        "text": "it's going to continue being zero right",
+        "start": 539.839,
+        "duration": 3.041
+    },
+    {
+        "text": "because any number times",
+        "start": 541.44,
+        "duration": 3.92
+    },
+    {
+        "text": "zero is going to be zero so i'm gonna",
+        "start": 542.88,
+        "duration": 4.079
+    },
+    {
+        "text": "decide to handle this",
+        "start": 545.36,
+        "duration": 5.84
+    },
+    {
+        "text": "in a different way so anytime we get a",
+        "start": 546.959,
+        "duration": 5.281
+    },
+    {
+        "text": "zero value",
+        "start": 551.2,
+        "duration": 4.639
+    },
+    {
+        "text": "i'm going to reset our max to zero or",
+        "start": 552.24,
+        "duration": 6.56
+    },
+    {
+        "text": "rather to one and i'm also going to",
+        "start": 555.839,
+        "duration": 3.601
+    },
+    {
+        "text": "reset",
+        "start": 558.8,
+        "duration": 3.68
+    },
+    {
+        "text": "our minimum to 1",
+        "start": 559.44,
+        "duration": 5.04
+    },
+    {
+        "text": "and the reason i'm gonna do this is",
+        "start": 562.48,
+        "duration": 3.76
+    },
+    {
+        "text": "because i don't want to",
+        "start": 564.48,
+        "duration": 4.799
+    },
+    {
+        "text": "kill our product right i'm just going to",
+        "start": 566.24,
+        "duration": 3.68
+    },
+    {
+        "text": "say that",
+        "start": 569.279,
+        "duration": 2.881
+    },
+    {
+        "text": "zeros are ignored we don't really care",
+        "start": 569.92,
+        "duration": 4.16
+    },
+    {
+        "text": "about zeros and the reason i'm setting",
+        "start": 572.16,
+        "duration": 2.64
+    },
+    {
+        "text": "this to",
+        "start": 574.08,
+        "duration": 3.6
+    },
+    {
+        "text": "one is because then when we start",
+        "start": 574.8,
+        "duration": 4.64
+    },
+    {
+        "text": "introducing new values like",
+        "start": 577.68,
+        "duration": 4.48
+    },
+    {
+        "text": "3 it's just going to be 1 times 3 right",
+        "start": 579.44,
+        "duration": 3.36
+    },
+    {
+        "text": "which is",
+        "start": 582.16,
+        "duration": 3.44
+    },
+    {
+        "text": "going to end up being 3 so 1 is like a",
+        "start": 582.8,
+        "duration": 4.719
+    },
+    {
+        "text": "neutral value for us",
+        "start": 585.6,
+        "duration": 3.679
+    },
+    {
+        "text": "so those are the main things we want to",
+        "start": 587.519,
+        "duration": 3.521
+    },
+    {
+        "text": "maintain the max",
+        "start": 589.279,
+        "duration": 4.881
+    },
+    {
+        "text": "and minimum of our product and we want",
+        "start": 591.04,
+        "duration": 4.0
+    },
+    {
+        "text": "to handle the",
+        "start": 594.16,
+        "duration": 4.239
+    },
+    {
+        "text": "zero case by resetting everything",
+        "start": 595.04,
+        "duration": 6.479
+    },
+    {
+        "text": "to a neutral value like one okay so now",
+        "start": 598.399,
+        "duration": 4.56
+    },
+    {
+        "text": "let's code it out",
+        "start": 601.519,
+        "duration": 4.801
+    },
+    {
+        "text": "i'm going to say our result is initially",
+        "start": 602.959,
+        "duration": 5.521
+    },
+    {
+        "text": "just going to be set to the max value",
+        "start": 606.32,
+        "duration": 4.079
+    },
+    {
+        "text": "contained in nums because we at least",
+        "start": 608.48,
+        "duration": 3.68
+    },
+    {
+        "text": "have to set it to some value",
+        "start": 610.399,
+        "duration": 4.961
+    },
+    {
+        "text": "we can't just initialize it to 0 because",
+        "start": 612.16,
+        "duration": 5.76
+    },
+    {
+        "text": "what if we had an array with just one",
+        "start": 615.36,
+        "duration": 4.08
+    },
+    {
+        "text": "number and it happened to be negative",
+        "start": 617.92,
+        "duration": 2.72
+    },
+    {
+        "text": "one right",
+        "start": 619.44,
+        "duration": 3.68
+    },
+    {
+        "text": "in that case this is our max product",
+        "start": 620.64,
+        "duration": 3.52
+    },
+    {
+        "text": "which is",
+        "start": 623.12,
+        "duration": 3.6
+    },
+    {
+        "text": "even less than zero so zero is not a",
+        "start": 624.16,
+        "duration": 3.119
+    },
+    {
+        "text": "good",
+        "start": 626.72,
+        "duration": 3.04
+    },
+    {
+        "text": "default case and i'm going to maintain",
+        "start": 627.279,
+        "duration": 3.521
+    },
+    {
+        "text": "the current",
+        "start": 629.76,
+        "duration": 4.72
+    },
+    {
+        "text": "min and the current max and i'm gonna",
+        "start": 630.8,
+        "duration": 4.96
+    },
+    {
+        "text": "initialize these",
+        "start": 634.48,
+        "duration": 4.32
+    },
+    {
+        "text": "to one e because we know one is like a",
+        "start": 635.76,
+        "duration": 4.16
+    },
+    {
+        "text": "neutral value",
+        "start": 638.8,
+        "duration": 3.12
+    },
+    {
+        "text": "and then we're just gonna start",
+        "start": 639.92,
+        "duration": 3.359
+    },
+    {
+        "text": "iterating through",
+        "start": 641.92,
+        "duration": 5.2
+    },
+    {
+        "text": "every single number in our input array",
+        "start": 643.279,
+        "duration": 7.12
+    },
+    {
+        "text": "we know that if we ever get to a zero",
+        "start": 647.12,
+        "duration": 5.76
+    },
+    {
+        "text": "we do not want to handle that we don't",
+        "start": 650.399,
+        "duration": 3.601
+    },
+    {
+        "text": "want to add that",
+        "start": 652.88,
+        "duration": 3.28
+    },
+    {
+        "text": "as a part of our product so we don't",
+        "start": 654.0,
+        "duration": 3.839
+    },
+    {
+        "text": "want to mess up our current min and max",
+        "start": 656.16,
+        "duration": 3.28
+    },
+    {
+        "text": "by multiplying it by zero",
+        "start": 657.839,
+        "duration": 3.281
+    },
+    {
+        "text": "because then it's going to stay zero",
+        "start": 659.44,
+        "duration": 3.6
+    },
+    {
+        "text": "forever so instead what we're going to",
+        "start": 661.12,
+        "duration": 2.32
+    },
+    {
+        "text": "do",
+        "start": 663.04,
+        "duration": 4.08
+    },
+    {
+        "text": "is we're going to reset our min and",
+        "start": 663.44,
+        "duration": 6.72
+    },
+    {
+        "text": "our max to one each",
+        "start": 667.12,
+        "duration": 5.68
+    },
+    {
+        "text": "and we're just going to continue to the",
+        "start": 670.16,
+        "duration": 4.64
+    },
+    {
+        "text": "next iteration of the loop",
+        "start": 672.8,
+        "duration": 4.64
+    },
+    {
+        "text": "if this doesn't execute that's when",
+        "start": 674.8,
+        "duration": 3.84
+    },
+    {
+        "text": "we're going to actually",
+        "start": 677.44,
+        "duration": 3.92
+    },
+    {
+        "text": "do our code and recompute the current",
+        "start": 678.64,
+        "duration": 3.12
+    },
+    {
+        "text": "min",
+        "start": 681.36,
+        "duration": 3.44
+    },
+    {
+        "text": "and current max so our current max how",
+        "start": 681.76,
+        "duration": 5.12
+    },
+    {
+        "text": "are we actually going to compute it well",
+        "start": 684.8,
+        "duration": 5.52
+    },
+    {
+        "text": "in python it's really convenient for us",
+        "start": 686.88,
+        "duration": 6.639
+    },
+    {
+        "text": "because we can say okay the current max",
+        "start": 690.32,
+        "duration": 4.959
+    },
+    {
+        "text": "could potentially be",
+        "start": 693.519,
+        "duration": 3.921
+    },
+    {
+        "text": "the the new number that we just found",
+        "start": 695.279,
+        "duration": 4.0
+    },
+    {
+        "text": "multiplied by the current max",
+        "start": 697.44,
+        "duration": 3.519
+    },
+    {
+        "text": "if the current max happens to be",
+        "start": 699.279,
+        "duration": 3.841
+    },
+    {
+        "text": "positive and n is positive",
+        "start": 700.959,
+        "duration": 5.761
+    },
+    {
+        "text": "it could also end up being the",
+        "start": 703.12,
+        "duration": 6.0
+    },
+    {
+        "text": "the input value n multiplied by the",
+        "start": 706.72,
+        "duration": 3.04
+    },
+    {
+        "text": "current",
+        "start": 709.12,
+        "duration": 3.519
+    },
+    {
+        "text": "minimum right what if n is negative and",
+        "start": 709.76,
+        "duration": 4.72
+    },
+    {
+        "text": "current minimum is negative then",
+        "start": 712.639,
+        "duration": 3.521
+    },
+    {
+        "text": "this could end up being a positive",
+        "start": 714.48,
+        "duration": 2.96
+    },
+    {
+        "text": "number which could be our current",
+        "start": 716.16,
+        "duration": 2.479
+    },
+    {
+        "text": "maximum",
+        "start": 717.44,
+        "duration": 4.8
+    },
+    {
+        "text": "the third option is n itself",
+        "start": 718.639,
+        "duration": 6.481
+    },
+    {
+        "text": "because what if we had an input such as",
+        "start": 722.24,
+        "duration": 4.0
+    },
+    {
+        "text": "negative one",
+        "start": 725.12,
+        "duration": 3.92
+    },
+    {
+        "text": "and eight well in that case the current",
+        "start": 726.24,
+        "duration": 4.64
+    },
+    {
+        "text": "min and max is going to end up being",
+        "start": 729.04,
+        "duration": 5.039
+    },
+    {
+        "text": "negative 1 and either of those numbers",
+        "start": 730.88,
+        "duration": 4.079
+    },
+    {
+        "text": "multiplied by",
+        "start": 734.079,
+        "duration": 3.601
+    },
+    {
+        "text": "8 which could be our hypothetical n",
+        "start": 734.959,
+        "duration": 3.601
+    },
+    {
+        "text": "value",
+        "start": 737.68,
+        "duration": 2.64
+    },
+    {
+        "text": "it's going to end up being negative 8 so",
+        "start": 738.56,
+        "duration": 3.6
+    },
+    {
+        "text": "8 it's by itself",
+        "start": 740.32,
+        "duration": 5.04
+    },
+    {
+        "text": "which is n is the maximum and",
+        "start": 742.16,
+        "duration": 5.679
+    },
+    {
+        "text": "the fun thing about python is that look",
+        "start": 745.36,
+        "duration": 3.2
+    },
+    {
+        "text": "we just put",
+        "start": 747.839,
+        "duration": 3.841
+    },
+    {
+        "text": "three values into our max function some",
+        "start": 748.56,
+        "duration": 5.12
+    },
+    {
+        "text": "languages don't allow for this but",
+        "start": 751.68,
+        "duration": 4.32
+    },
+    {
+        "text": "there's obviously ways to get around it",
+        "start": 753.68,
+        "duration": 4.719
+    },
+    {
+        "text": "and so now that we have our current max",
+        "start": 756.0,
+        "duration": 3.04
+    },
+    {
+        "text": "we can",
+        "start": 758.399,
+        "duration": 2.641
+    },
+    {
+        "text": "do the exact same thing for our current",
+        "start": 759.04,
+        "duration": 3.039
+    },
+    {
+        "text": "min",
+        "start": 761.04,
+        "duration": 4.72
+    },
+    {
+        "text": "so min so we can actually take all three",
+        "start": 762.079,
+        "duration": 4.88
+    },
+    {
+        "text": "of these values",
+        "start": 765.76,
+        "duration": 2.96
+    },
+    {
+        "text": "copy and paste them and then put them in",
+        "start": 766.959,
+        "duration": 3.041
+    },
+    {
+        "text": "the min because",
+        "start": 768.72,
+        "duration": 3.84
+    },
+    {
+        "text": "we want whatever the min containing n is",
+        "start": 770.0,
+        "duration": 4.24
+    },
+    {
+        "text": "and it could be anything it could be",
+        "start": 772.56,
+        "duration": 4.32
+    },
+    {
+        "text": "n times current max n times current min",
+        "start": 774.24,
+        "duration": 3.039
+    },
+    {
+        "text": "or",
+        "start": 776.88,
+        "duration": 2.959
+    },
+    {
+        "text": "n itself so an example would be negative",
+        "start": 777.279,
+        "duration": 3.36
+    },
+    {
+        "text": "one",
+        "start": 779.839,
+        "duration": 4.081
+    },
+    {
+        "text": "and negative eight if we multiply",
+        "start": 780.639,
+        "duration": 5.76
+    },
+    {
+        "text": "these together we get a positive eight",
+        "start": 783.92,
+        "duration": 4.4
+    },
+    {
+        "text": "but we don't want that we want",
+        "start": 786.399,
+        "duration": 4.161
+    },
+    {
+        "text": "the minimum which could be just negative",
+        "start": 788.32,
+        "duration": 4.079
+    },
+    {
+        "text": "eight by itself which would be",
+        "start": 790.56,
+        "duration": 4.56
+    },
+    {
+        "text": "this third case but this is where i",
+        "start": 792.399,
+        "duration": 4.641
+    },
+    {
+        "text": "always end up with a bug",
+        "start": 795.12,
+        "duration": 4.959
+    },
+    {
+        "text": "so do you see how we actually recomputed",
+        "start": 797.04,
+        "duration": 5.44
+    },
+    {
+        "text": "the current max but we want to use the",
+        "start": 800.079,
+        "duration": 5.521
+    },
+    {
+        "text": "old current max so i'm actually going to",
+        "start": 802.48,
+        "duration": 4.72
+    },
+    {
+        "text": "have a temporary variable",
+        "start": 805.6,
+        "duration": 5.28
+    },
+    {
+        "text": "up here temp and before we end up",
+        "start": 807.2,
+        "duration": 5.759
+    },
+    {
+        "text": "reassigning current max i'm just going",
+        "start": 810.88,
+        "duration": 3.12
+    },
+    {
+        "text": "to compute",
+        "start": 812.959,
+        "duration": 4.481
+    },
+    {
+        "text": "current max times n and then save it in",
+        "start": 814.0,
+        "duration": 5.279
+    },
+    {
+        "text": "temp so then we can use it",
+        "start": 817.44,
+        "duration": 4.16
+    },
+    {
+        "text": "down here so we're going to replace this",
+        "start": 819.279,
+        "duration": 3.601
+    },
+    {
+        "text": "with temp",
+        "start": 821.6,
+        "duration": 3.76
+    },
+    {
+        "text": "so this way we're always keeping track",
+        "start": 822.88,
+        "duration": 4.0
+    },
+    {
+        "text": "of what the current max is",
+        "start": 825.36,
+        "duration": 4.479
+    },
+    {
+        "text": "and what the current minimum is and so",
+        "start": 826.88,
+        "duration": 3.68
+    },
+    {
+        "text": "we can",
+        "start": 829.839,
+        "duration": 4.0
+    },
+    {
+        "text": "update our result after each iteration",
+        "start": 830.56,
+        "duration": 4.24
+    },
+    {
+        "text": "of the loop",
+        "start": 833.839,
+        "duration": 3.36
+    },
+    {
+        "text": "and we want the max product so we can",
+        "start": 834.8,
+        "duration": 3.92
+    },
+    {
+        "text": "take the maximum",
+        "start": 837.199,
+        "duration": 4.161
+    },
+    {
+        "text": "of result itself because result could",
+        "start": 838.72,
+        "duration": 3.6
+    },
+    {
+        "text": "still be the max",
+        "start": 841.36,
+        "duration": 4.159
+    },
+    {
+        "text": "current max and current minimum so",
+        "start": 842.32,
+        "duration": 5.6
+    },
+    {
+        "text": "that's actually it like we've done it",
+        "start": 845.519,
+        "duration": 3.68
+    },
+    {
+        "text": "and we can",
+        "start": 847.92,
+        "duration": 3.359
+    },
+    {
+        "text": "now just return what our result and so",
+        "start": 849.199,
+        "duration": 3.361
+    },
+    {
+        "text": "this is actually not",
+        "start": 851.279,
+        "duration": 4.321
+    },
+    {
+        "text": "that much code and it's not even like",
+        "start": 852.56,
+        "duration": 3.44
+    },
+    {
+        "text": "when you",
+        "start": 855.6,
+        "duration": 2.08
+    },
+    {
+        "text": "look at it it's hard to recognize that",
+        "start": 856.0,
+        "duration": 4.32
+    },
+    {
+        "text": "it's even a dynamic programming problem",
+        "start": 857.68,
+        "duration": 4.399
+    },
+    {
+        "text": "because it's not like we're storing an",
+        "start": 860.32,
+        "duration": 3.6
+    },
+    {
+        "text": "entire array like dp",
+        "start": 862.079,
+        "duration": 3.521
+    },
+    {
+        "text": "and then having an array we're just",
+        "start": 863.92,
+        "duration": 3.76
+    },
+    {
+        "text": "maintaining two values",
+        "start": 865.6,
+        "duration": 4.32
+    },
+    {
+        "text": "current min and current max and what",
+        "start": 867.68,
+        "duration": 3.519
+    },
+    {
+        "text": "they tell us",
+        "start": 869.92,
+        "duration": 4.4
+    },
+    {
+        "text": "is for let's say for example",
+        "start": 871.199,
+        "duration": 6.401
+    },
+    {
+        "text": "we were at this value n then we're going",
+        "start": 874.32,
+        "duration": 4.079
+    },
+    {
+        "text": "to have",
+        "start": 877.6,
+        "duration": 3.84
+    },
+    {
+        "text": "the current maximum of this subarray",
+        "start": 878.399,
+        "duration": 6.0
+    },
+    {
+        "text": "and the current minimum product of this",
+        "start": 881.44,
+        "duration": 3.759
+    },
+    {
+        "text": "subarray",
+        "start": 884.399,
+        "duration": 3.12
+    },
+    {
+        "text": "and then when our n gets shifted to the",
+        "start": 885.199,
+        "duration": 3.44
+    },
+    {
+        "text": "next value",
+        "start": 887.519,
+        "duration": 3.201
+    },
+    {
+        "text": "we're going to have the current maximum",
+        "start": 888.639,
+        "duration": 3.121
+    },
+    {
+        "text": "of these three",
+        "start": 890.72,
+        "duration": 3.2
+    },
+    {
+        "text": "and the current minimum product of these",
+        "start": 891.76,
+        "duration": 3.92
+    },
+    {
+        "text": "three and then by the time",
+        "start": 893.92,
+        "duration": 5.039
+    },
+    {
+        "text": "our n value is out of bounds we will",
+        "start": 895.68,
+        "duration": 4.959
+    },
+    {
+        "text": "have the current max",
+        "start": 898.959,
+        "duration": 4.481
+    },
+    {
+        "text": "and the current minimum of the entire",
+        "start": 900.639,
+        "duration": 4.161
+    },
+    {
+        "text": "array computed",
+        "start": 903.44,
+        "duration": 3.36
+    },
+    {
+        "text": "so it runs efficiently and that's",
+        "start": 904.8,
+        "duration": 3.12
+    },
+    {
+        "text": "because we're",
+        "start": 906.8,
+        "duration": 2.96
+    },
+    {
+        "text": "only iterating through the input so",
+        "start": 907.92,
+        "duration": 3.44
+    },
+    {
+        "text": "instead of being n squared",
+        "start": 909.76,
+        "duration": 4.72
+    },
+    {
+        "text": "the time complexity is just big o of n",
+        "start": 911.36,
+        "duration": 6.159
+    },
+    {
+        "text": "the memory complexity is big o of one",
+        "start": 914.48,
+        "duration": 5.52
+    },
+    {
+        "text": "because we are not using an array we're",
+        "start": 917.519,
+        "duration": 3.601
+    },
+    {
+        "text": "just using",
+        "start": 920.0,
+        "duration": 3.519
+    },
+    {
+        "text": "uh single variables i hope this was",
+        "start": 921.12,
+        "duration": 3.04
+    },
+    {
+        "text": "helpful",
+        "start": 923.519,
+        "duration": 2.88
+    },
+    {
+        "text": "if you enjoyed please like and subscribe",
+        "start": 924.16,
+        "duration": 4.08
+    },
+    {
+        "text": "it supports the channel a lot and i'll",
+        "start": 926.399,
+        "duration": 2.401
+    },
+    {
+        "text": "hopefully",
+        "start": 928.24,
+        "duration": 3.68
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 928.8,
+        "duration": 3.12
+    }
+]

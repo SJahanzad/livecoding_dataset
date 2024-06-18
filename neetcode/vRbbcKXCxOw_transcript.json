@@ -1,0 +1,1202 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.52
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.599,
+        "duration": 2.641
+    },
+    {
+        "text": "let's solve",
+        "start": 3.52,
+        "duration": 2.799
+    },
+    {
+        "text": "same tree so i'm going to upload this on",
+        "start": 4.24,
+        "duration": 3.599
+    },
+    {
+        "text": "a friday so today we're going to be",
+        "start": 6.319,
+        "duration": 3.121
+    },
+    {
+        "text": "doing an easy-ish problem",
+        "start": 7.839,
+        "duration": 3.92
+    },
+    {
+        "text": "so we're given the root of two binary",
+        "start": 9.44,
+        "duration": 3.199
+    },
+    {
+        "text": "trees p",
+        "start": 11.759,
+        "duration": 3.281
+    },
+    {
+        "text": "and q we need to write a function to",
+        "start": 12.639,
+        "duration": 3.281
+    },
+    {
+        "text": "check if they",
+        "start": 15.04,
+        "duration": 3.999
+    },
+    {
+        "text": "are the exact same tree or not we can",
+        "start": 15.92,
+        "duration": 4.4
+    },
+    {
+        "text": "determine that by",
+        "start": 19.039,
+        "duration": 3.681
+    },
+    {
+        "text": "one making sure that the structure is",
+        "start": 20.32,
+        "duration": 3.6
+    },
+    {
+        "text": "the exact same",
+        "start": 22.72,
+        "duration": 3.76
+    },
+    {
+        "text": "so for example basically the number of",
+        "start": 23.92,
+        "duration": 4.48
+    },
+    {
+        "text": "nodes right like they both have a root",
+        "start": 26.48,
+        "duration": 2.4
+    },
+    {
+        "text": "node",
+        "start": 28.4,
+        "duration": 2.639
+    },
+    {
+        "text": "they both have a left child and they",
+        "start": 28.88,
+        "duration": 4.08
+    },
+    {
+        "text": "both have a right child right the",
+        "start": 31.039,
+        "duration": 3.36
+    },
+    {
+        "text": "structure is the same",
+        "start": 32.96,
+        "duration": 3.52
+    },
+    {
+        "text": "not only that though they also have to",
+        "start": 34.399,
+        "duration": 3.521
+    },
+    {
+        "text": "have the exact same",
+        "start": 36.48,
+        "duration": 3.919
+    },
+    {
+        "text": "values at every node position so in this",
+        "start": 37.92,
+        "duration": 3.68
+    },
+    {
+        "text": "case we can see",
+        "start": 40.399,
+        "duration": 3.921
+    },
+    {
+        "text": "they have the same value once again same",
+        "start": 41.6,
+        "duration": 4.32
+    },
+    {
+        "text": "value in the left side",
+        "start": 44.32,
+        "duration": 4.48
+    },
+    {
+        "text": "and lastly same value on the right side",
+        "start": 45.92,
+        "duration": 5.119
+    },
+    {
+        "text": "so these are the exact same tree right",
+        "start": 48.8,
+        "duration": 2.72
+    },
+    {
+        "text": "so",
+        "start": 51.039,
+        "duration": 3.2
+    },
+    {
+        "text": "we can return true now if i got rid of",
+        "start": 51.52,
+        "duration": 3.92
+    },
+    {
+        "text": "one of these nodes right",
+        "start": 54.239,
+        "duration": 2.881
+    },
+    {
+        "text": "let's say i just got rid of this then",
+        "start": 55.44,
+        "duration": 3.439
+    },
+    {
+        "text": "it's definitely not the same tree right",
+        "start": 57.12,
+        "duration": 2.239
+    },
+    {
+        "text": "or",
+        "start": 58.879,
+        "duration": 2.48
+    },
+    {
+        "text": "if i took this value and changed it",
+        "start": 59.359,
+        "duration": 3.761
+    },
+    {
+        "text": "let's say to a",
+        "start": 61.359,
+        "duration": 4.481
+    },
+    {
+        "text": "hunt a 10 or whatever then it's also not",
+        "start": 63.12,
+        "duration": 4.48
+    },
+    {
+        "text": "the same tree because the values in this",
+        "start": 65.84,
+        "duration": 2.08
+    },
+    {
+        "text": "case",
+        "start": 67.6,
+        "duration": 2.96
+    },
+    {
+        "text": "are different right the main thing to",
+        "start": 67.92,
+        "duration": 4.32
+    },
+    {
+        "text": "notice with this problem is it",
+        "start": 70.56,
+        "duration": 4.48
+    },
+    {
+        "text": "lends itself very well to recursion and",
+        "start": 72.24,
+        "duration": 4.0
+    },
+    {
+        "text": "we know that there's a",
+        "start": 75.04,
+        "duration": 3.92
+    },
+    {
+        "text": "pretty convenient uh recurs recursive",
+        "start": 76.24,
+        "duration": 4.16
+    },
+    {
+        "text": "way to traverse",
+        "start": 78.96,
+        "duration": 3.6
+    },
+    {
+        "text": "trees and that's depth first search",
+        "start": 80.4,
+        "duration": 4.32
+    },
+    {
+        "text": "we're going to be using that recursive",
+        "start": 82.56,
+        "duration": 5.44
+    },
+    {
+        "text": "uh function to solve this problem so",
+        "start": 84.72,
+        "duration": 5.439
+    },
+    {
+        "text": "remember we're trying to check if these",
+        "start": 88.0,
+        "duration": 3.2
+    },
+    {
+        "text": "are the same",
+        "start": 90.159,
+        "duration": 4.161
+    },
+    {
+        "text": "tree right so that's a big problem we're",
+        "start": 91.2,
+        "duration": 3.76
+    },
+    {
+        "text": "comparing",
+        "start": 94.32,
+        "duration": 4.08
+    },
+    {
+        "text": "the big trees can we break that down",
+        "start": 94.96,
+        "duration": 6.0
+    },
+    {
+        "text": "recursively well first thing to",
+        "start": 98.4,
+        "duration": 3.759
+    },
+    {
+        "text": "intuitively check is",
+        "start": 100.96,
+        "duration": 3.199
+    },
+    {
+        "text": "we really just need to check the root",
+        "start": 102.159,
+        "duration": 3.761
+    },
+    {
+        "text": "nodes right are these the same that's",
+        "start": 104.159,
+        "duration": 2.96
+    },
+    {
+        "text": "the first thing to check",
+        "start": 105.92,
+        "duration": 3.92
+    },
+    {
+        "text": "are the root nodes the same if they are",
+        "start": 107.119,
+        "duration": 4.561
+    },
+    {
+        "text": "we're going to continue the function now",
+        "start": 109.84,
+        "duration": 3.599
+    },
+    {
+        "text": "if they were different for example maybe",
+        "start": 111.68,
+        "duration": 3.28
+    },
+    {
+        "text": "this had a different value if it was",
+        "start": 113.439,
+        "duration": 1.921
+    },
+    {
+        "text": "true",
+        "start": 114.96,
+        "duration": 3.04
+    },
+    {
+        "text": "we immediately return false right if",
+        "start": 115.36,
+        "duration": 3.84
+    },
+    {
+        "text": "even a single node",
+        "start": 118.0,
+        "duration": 2.799
+    },
+    {
+        "text": "doesn't match we can return false",
+        "start": 119.2,
+        "duration": 3.919
+    },
+    {
+        "text": "nothing more is needed now if they do",
+        "start": 120.799,
+        "duration": 4.96
+    },
+    {
+        "text": "match right these are equal great now",
+        "start": 123.119,
+        "duration": 4.241
+    },
+    {
+        "text": "this is the recursive part we don't have",
+        "start": 125.759,
+        "duration": 3.36
+    },
+    {
+        "text": "to consider this node anymore and we",
+        "start": 127.36,
+        "duration": 3.519
+    },
+    {
+        "text": "don't have to consider this node anymore",
+        "start": 129.119,
+        "duration": 4.401
+    },
+    {
+        "text": "and now we have changed the problem now",
+        "start": 130.879,
+        "duration": 3.601
+    },
+    {
+        "text": "we actually have",
+        "start": 133.52,
+        "duration": 4.96
+    },
+    {
+        "text": "two trees left we have one left sub tree",
+        "start": 134.48,
+        "duration": 6.24
+    },
+    {
+        "text": "right these are the left sub trees and",
+        "start": 138.48,
+        "duration": 4.16
+    },
+    {
+        "text": "we also have two",
+        "start": 140.72,
+        "duration": 3.68
+    },
+    {
+        "text": "right sub trees so this is the right",
+        "start": 142.64,
+        "duration": 3.2
+    },
+    {
+        "text": "subtree of the first",
+        "start": 144.4,
+        "duration": 3.199
+    },
+    {
+        "text": "tree and this is the second right",
+        "start": 145.84,
+        "duration": 3.36
+    },
+    {
+        "text": "subtree so now",
+        "start": 147.599,
+        "duration": 3.92
+    },
+    {
+        "text": "the problem is change now we're checking",
+        "start": 149.2,
+        "duration": 4.24
+    },
+    {
+        "text": "are these two trees",
+        "start": 151.519,
+        "duration": 5.841
+    },
+    {
+        "text": "the exact same and are these two trees",
+        "start": 153.44,
+        "duration": 6.32
+    },
+    {
+        "text": "the exact same right so we've changed",
+        "start": 157.36,
+        "duration": 3.2
+    },
+    {
+        "text": "the problem",
+        "start": 159.76,
+        "duration": 2.72
+    },
+    {
+        "text": "it becomes recursive right we're now",
+        "start": 160.56,
+        "duration": 3.759
+    },
+    {
+        "text": "going to be looking at the sub trees",
+        "start": 162.48,
+        "duration": 2.96
+    },
+    {
+        "text": "comparing them",
+        "start": 164.319,
+        "duration": 3.28
+    },
+    {
+        "text": "now both of the sub trees need to be",
+        "start": 165.44,
+        "duration": 4.56
+    },
+    {
+        "text": "equal right these two need to be equal",
+        "start": 167.599,
+        "duration": 4.801
+    },
+    {
+        "text": "and these two need to be equal and then",
+        "start": 170.0,
+        "duration": 3.84
+    },
+    {
+        "text": "we can return true",
+        "start": 172.4,
+        "duration": 3.119
+    },
+    {
+        "text": "and we're just going to continue to",
+        "start": 173.84,
+        "duration": 3.84
+    },
+    {
+        "text": "break this down obviously the tree",
+        "start": 175.519,
+        "duration": 4.481
+    },
+    {
+        "text": "could be much larger than this in which",
+        "start": 177.68,
+        "duration": 4.479
+    },
+    {
+        "text": "case we would continue to do that",
+        "start": 180.0,
+        "duration": 4.239
+    },
+    {
+        "text": "now let's not consider this example",
+        "start": 182.159,
+        "duration": 4.16
+    },
+    {
+        "text": "anymore we know with recursive functions",
+        "start": 184.239,
+        "duration": 2.401
+    },
+    {
+        "text": "the",
+        "start": 186.319,
+        "duration": 2.241
+    },
+    {
+        "text": "the main thing to consider is the base",
+        "start": 186.64,
+        "duration": 3.84
+    },
+    {
+        "text": "case so what are a couple base cases",
+        "start": 188.56,
+        "duration": 3.2
+    },
+    {
+        "text": "well what if we had",
+        "start": 190.48,
+        "duration": 4.32
+    },
+    {
+        "text": "two null nodes right they're both empty",
+        "start": 191.76,
+        "duration": 4.399
+    },
+    {
+        "text": "what's what's what are we going to",
+        "start": 194.8,
+        "duration": 3.6
+    },
+    {
+        "text": "return then is this the same tree or is",
+        "start": 196.159,
+        "duration": 3.761
+    },
+    {
+        "text": "this not the same tree well they're both",
+        "start": 198.4,
+        "duration": 3.04
+    },
+    {
+        "text": "empty right so that's technically the",
+        "start": 199.92,
+        "duration": 3.36
+    },
+    {
+        "text": "same tree in this base case",
+        "start": 201.44,
+        "duration": 4.96
+    },
+    {
+        "text": "we return true what if the left",
+        "start": 203.28,
+        "duration": 5.12
+    },
+    {
+        "text": "tree is null but maybe the right tree",
+        "start": 206.4,
+        "duration": 3.36
+    },
+    {
+        "text": "has a single node in it",
+        "start": 208.4,
+        "duration": 3.28
+    },
+    {
+        "text": "now this is obviously going to be false",
+        "start": 209.76,
+        "duration": 4.08
+    },
+    {
+        "text": "right these are not the same tree and",
+        "start": 211.68,
+        "duration": 3.919
+    },
+    {
+        "text": "the exact same thing could be true we",
+        "start": 213.84,
+        "duration": 2.479
+    },
+    {
+        "text": "could have",
+        "start": 215.599,
+        "duration": 4.161
+    },
+    {
+        "text": "a null in the right tree and a real node",
+        "start": 216.319,
+        "duration": 5.601
+    },
+    {
+        "text": "in the left tree and that would also be",
+        "start": 219.76,
+        "duration": 2.96
+    },
+    {
+        "text": "false",
+        "start": 221.92,
+        "duration": 3.679
+    },
+    {
+        "text": "now the case where both nodes are",
+        "start": 222.72,
+        "duration": 3.84
+    },
+    {
+        "text": "non-null",
+        "start": 225.599,
+        "duration": 2.161
+    },
+    {
+        "text": "then we're going to be looking at the",
+        "start": 226.56,
+        "duration": 3.28
+    },
+    {
+        "text": "values obviously if the values are the",
+        "start": 227.76,
+        "duration": 2.88
+    },
+    {
+        "text": "same",
+        "start": 229.84,
+        "duration": 3.039
+    },
+    {
+        "text": "that's true right that we're going to be",
+        "start": 230.64,
+        "duration": 4.0
+    },
+    {
+        "text": "returning true they're the same tree",
+        "start": 232.879,
+        "duration": 3.44
+    },
+    {
+        "text": "if the values are different we're going",
+        "start": 234.64,
+        "duration": 3.2
+    },
+    {
+        "text": "to be returning false so",
+        "start": 236.319,
+        "duration": 3.601
+    },
+    {
+        "text": "these are basically all of the base",
+        "start": 237.84,
+        "duration": 3.679
+    },
+    {
+        "text": "cases that i went over",
+        "start": 239.92,
+        "duration": 4.16
+    },
+    {
+        "text": "and the code is just basically going to",
+        "start": 241.519,
+        "duration": 4.401
+    },
+    {
+        "text": "be implementing exactly what we just",
+        "start": 244.08,
+        "duration": 4.0
+    },
+    {
+        "text": "showed right now so let's jump into that",
+        "start": 245.92,
+        "duration": 4.239
+    },
+    {
+        "text": "oh and last but not least",
+        "start": 248.08,
+        "duration": 4.079
+    },
+    {
+        "text": "the time complexity of this so the time",
+        "start": 250.159,
+        "duration": 3.681
+    },
+    {
+        "text": "complexity is overall going to be",
+        "start": 252.159,
+        "duration": 4.48
+    },
+    {
+        "text": "basically the size of both trees added",
+        "start": 253.84,
+        "duration": 4.32
+    },
+    {
+        "text": "together so the size of p",
+        "start": 256.639,
+        "duration": 3.761
+    },
+    {
+        "text": "plus q because worst case we would have",
+        "start": 258.16,
+        "duration": 4.64
+    },
+    {
+        "text": "to iterate through every single node",
+        "start": 260.4,
+        "duration": 5.28
+    },
+    {
+        "text": "in both trees so that's basically the",
+        "start": 262.8,
+        "duration": 4.64
+    },
+    {
+        "text": "overall time complexity",
+        "start": 265.68,
+        "duration": 3.28
+    },
+    {
+        "text": "so like i said this is going to be a",
+        "start": 267.44,
+        "duration": 3.44
+    },
+    {
+        "text": "recursive function since we already went",
+        "start": 268.96,
+        "duration": 3.44
+    },
+    {
+        "text": "through most of the base cases this is",
+        "start": 270.88,
+        "duration": 3.44
+    },
+    {
+        "text": "going to be pretty easy peasy so",
+        "start": 272.4,
+        "duration": 3.68
+    },
+    {
+        "text": "if you know debt first search already we",
+        "start": 274.32,
+        "duration": 3.36
+    },
+    {
+        "text": "know the base case is important",
+        "start": 276.08,
+        "duration": 4.559
+    },
+    {
+        "text": "so if the first tree is empty and if the",
+        "start": 277.68,
+        "duration": 4.56
+    },
+    {
+        "text": "second tree is empty so",
+        "start": 280.639,
+        "duration": 4.961
+    },
+    {
+        "text": "if p and q are empty then what are we",
+        "start": 282.24,
+        "duration": 4.0
+    },
+    {
+        "text": "gonna do",
+        "start": 285.6,
+        "duration": 2.319
+    },
+    {
+        "text": "we're gonna return true because they're",
+        "start": 286.24,
+        "duration": 4.0
+    },
+    {
+        "text": "both empty trees empty trees are",
+        "start": 287.919,
+        "duration": 3.681
+    },
+    {
+        "text": "technically equal",
+        "start": 290.24,
+        "duration": 4.08
+    },
+    {
+        "text": "now if they're both not empty but maybe",
+        "start": 291.6,
+        "duration": 3.52
+    },
+    {
+        "text": "one of them",
+        "start": 294.32,
+        "duration": 3.28
+    },
+    {
+        "text": "is empty so if this this statement did",
+        "start": 295.12,
+        "duration": 3.44
+    },
+    {
+        "text": "not execute",
+        "start": 297.6,
+        "duration": 2.159
+    },
+    {
+        "text": "then we're going to go to the next one",
+        "start": 298.56,
+        "duration": 3.52
+    },
+    {
+        "text": "so if not p or",
+        "start": 299.759,
+        "duration": 4.641
+    },
+    {
+        "text": "not q the only thing difference between",
+        "start": 302.08,
+        "duration": 4.8
+    },
+    {
+        "text": "this and the one above is this one is",
+        "start": 304.4,
+        "duration": 5.28
+    },
+    {
+        "text": "and this one is or so if this one did",
+        "start": 306.88,
+        "duration": 3.2
+    },
+    {
+        "text": "not",
+        "start": 309.68,
+        "duration": 2.88
+    },
+    {
+        "text": "execute that means both of them are not",
+        "start": 310.08,
+        "duration": 3.44
+    },
+    {
+        "text": "null but if",
+        "start": 312.56,
+        "duration": 3.84
+    },
+    {
+        "text": "this executes that means only one of",
+        "start": 313.52,
+        "duration": 3.28
+    },
+    {
+        "text": "them",
+        "start": 316.4,
+        "duration": 2.639
+    },
+    {
+        "text": "is null now what happens if one of them",
+        "start": 316.8,
+        "duration": 4.16
+    },
+    {
+        "text": "is null but the other one is",
+        "start": 319.039,
+        "duration": 4.481
+    },
+    {
+        "text": "not null well then they're not the same",
+        "start": 320.96,
+        "duration": 4.0
+    },
+    {
+        "text": "tree right so we're going to have to",
+        "start": 323.52,
+        "duration": 3.28
+    },
+    {
+        "text": "return false in that case",
+        "start": 324.96,
+        "duration": 3.92
+    },
+    {
+        "text": "and we had one more base case right so",
+        "start": 326.8,
+        "duration": 4.64
+    },
+    {
+        "text": "let's say if neither of these statements",
+        "start": 328.88,
+        "duration": 3.2
+    },
+    {
+        "text": "executes",
+        "start": 331.44,
+        "duration": 2.72
+    },
+    {
+        "text": "that means that both of the trees are",
+        "start": 332.08,
+        "duration": 3.6
+    },
+    {
+        "text": "non-empty so",
+        "start": 334.16,
+        "duration": 3.52
+    },
+    {
+        "text": "now we can actually look at the values",
+        "start": 335.68,
+        "duration": 3.28
+    },
+    {
+        "text": "so if p dot",
+        "start": 337.68,
+        "duration": 5.44
+    },
+    {
+        "text": "val is not equal to q dot val",
+        "start": 338.96,
+        "duration": 6.64
+    },
+    {
+        "text": "what does that tell us that tells us",
+        "start": 343.12,
+        "duration": 4.16
+    },
+    {
+        "text": "that the values are not the same so the",
+        "start": 345.6,
+        "duration": 2.72
+    },
+    {
+        "text": "trees are not the same",
+        "start": 347.28,
+        "duration": 4.08
+    },
+    {
+        "text": "so we can return false in this case",
+        "start": 348.32,
+        "duration": 5.439
+    },
+    {
+        "text": "one thing to notice here is that both of",
+        "start": 351.36,
+        "duration": 3.2
+    },
+    {
+        "text": "these two",
+        "start": 353.759,
+        "duration": 2.88
+    },
+    {
+        "text": "are executing the exact same thing right",
+        "start": 354.56,
+        "duration": 3.359
+    },
+    {
+        "text": "this is returning false",
+        "start": 356.639,
+        "duration": 3.12
+    },
+    {
+        "text": "and this is returning false so we can",
+        "start": 357.919,
+        "duration": 3.601
+    },
+    {
+        "text": "actually condense this i'm going to copy",
+        "start": 359.759,
+        "duration": 3.28
+    },
+    {
+        "text": "and paste this here so if",
+        "start": 361.52,
+        "duration": 4.56
+    },
+    {
+        "text": "if this is true or if",
+        "start": 363.039,
+        "duration": 5.521
+    },
+    {
+        "text": "this last thing is true then we can also",
+        "start": 366.08,
+        "duration": 4.48
+    },
+    {
+        "text": "return false we don't actually need",
+        "start": 368.56,
+        "duration": 4.56
+    },
+    {
+        "text": "this third condition so if this",
+        "start": 370.56,
+        "duration": 4.24
+    },
+    {
+        "text": "statement does not execute",
+        "start": 373.12,
+        "duration": 4.4
+    },
+    {
+        "text": "that means that both of the nodes p and",
+        "start": 374.8,
+        "duration": 3.04
+    },
+    {
+        "text": "q",
+        "start": 377.52,
+        "duration": 3.519
+    },
+    {
+        "text": "are not are are non-empty right and the",
+        "start": 377.84,
+        "duration": 5.68
+    },
+    {
+        "text": "values are actually the same",
+        "start": 381.039,
+        "duration": 4.081
+    },
+    {
+        "text": "because if this does not execute so then",
+        "start": 383.52,
+        "duration": 3.119
+    },
+    {
+        "text": "what are we going to do over here now",
+        "start": 385.12,
+        "duration": 3.6
+    },
+    {
+        "text": "we're going to do the recursive step",
+        "start": 386.639,
+        "duration": 5.201
+    },
+    {
+        "text": "we're going to call is same tree",
+        "start": 388.72,
+        "duration": 6.88
+    },
+    {
+        "text": "on the left and right subtree so if p",
+        "start": 391.84,
+        "duration": 6.0
+    },
+    {
+        "text": "we're going to call it on p left and q",
+        "start": 395.6,
+        "duration": 3.2
+    },
+    {
+        "text": "left",
+        "start": 397.84,
+        "duration": 4.799
+    },
+    {
+        "text": "and we're going to call it on p right",
+        "start": 398.8,
+        "duration": 6.88
+    },
+    {
+        "text": "and q right and what do we",
+        "start": 402.639,
+        "duration": 5.84
+    },
+    {
+        "text": "want to know from for the when we're",
+        "start": 405.68,
+        "duration": 4.4
+    },
+    {
+        "text": "comparing the left tree",
+        "start": 408.479,
+        "duration": 3.361
+    },
+    {
+        "text": "and the right trees what do we want to",
+        "start": 410.08,
+        "duration": 3.44
+    },
+    {
+        "text": "know we want to know that both",
+        "start": 411.84,
+        "duration": 4.079
+    },
+    {
+        "text": "of the the left sub trees and the right",
+        "start": 413.52,
+        "duration": 3.04
+    },
+    {
+        "text": "sub trees",
+        "start": 415.919,
+        "duration": 3.441
+    },
+    {
+        "text": "are equal so we want this to be true and",
+        "start": 416.56,
+        "duration": 5.039
+    },
+    {
+        "text": "we want this to return true as well so",
+        "start": 419.36,
+        "duration": 3.119
+    },
+    {
+        "text": "we're gonna take",
+        "start": 421.599,
+        "duration": 4.32
+    },
+    {
+        "text": "these two uh the return values of these",
+        "start": 422.479,
+        "duration": 5.361
+    },
+    {
+        "text": "two function calls and we're gonna",
+        "start": 425.919,
+        "duration": 5.361
+    },
+    {
+        "text": "and them together and if the and is true",
+        "start": 427.84,
+        "duration": 6.079
+    },
+    {
+        "text": "we're gonna return true if the and is",
+        "start": 431.28,
+        "duration": 3.12
+    },
+    {
+        "text": "false",
+        "start": 433.919,
+        "duration": 2.56
+    },
+    {
+        "text": "we're gonna end up returning false and",
+        "start": 434.4,
+        "duration": 3.919
+    },
+    {
+        "text": "this is the recursive step",
+        "start": 436.479,
+        "duration": 3.44
+    },
+    {
+        "text": "this is the only thing that we have to",
+        "start": 438.319,
+        "duration": 3.921
+    },
+    {
+        "text": "return this is the entire",
+        "start": 439.919,
+        "duration": 4.641
+    },
+    {
+        "text": "function so this is a pretty good",
+        "start": 442.24,
+        "duration": 4.72
+    },
+    {
+        "text": "problem to practice your tree traversals",
+        "start": 444.56,
+        "duration": 3.68
+    },
+    {
+        "text": "your debt for search",
+        "start": 446.96,
+        "duration": 3.6
+    },
+    {
+        "text": "practicing so i think it's a pretty good",
+        "start": 448.24,
+        "duration": 3.359
+    },
+    {
+        "text": "problem",
+        "start": 450.56,
+        "duration": 3.12
+    },
+    {
+        "text": "and i hope that this was helpful i hope",
+        "start": 451.599,
+        "duration": 4.081
+    },
+    {
+        "text": "you do understand the edge cases and how",
+        "start": 453.68,
+        "duration": 3.519
+    },
+    {
+        "text": "we simplified the code",
+        "start": 455.68,
+        "duration": 3.76
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 457.199,
+        "duration": 3.201
+    },
+    {
+        "text": "supports the channel",
+        "start": 459.44,
+        "duration": 2.96
+    },
+    {
+        "text": "a lot and i'll hopefully see you pretty",
+        "start": 460.4,
+        "duration": 5.44
+    },
+    {
+        "text": "soon thank you so much for watching",
+        "start": 462.4,
+        "duration": 3.44
+    }
+]

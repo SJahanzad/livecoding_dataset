@@ -1,0 +1,3262 @@
+[
+    {
+        "text": "welcome guys today we are going to be",
+        "start": 0.469,
+        "duration": 6.191
+    },
+    {
+        "text": "doing a hard problem and these are gonna",
+        "start": 3.689,
+        "duration": 5.551
+    },
+    {
+        "text": "be a lot longer of an explanation I",
+        "start": 6.66,
+        "duration": 4.59
+    },
+    {
+        "text": "would say cuz they're harder which makes",
+        "start": 9.24,
+        "duration": 5.34
+    },
+    {
+        "text": "sense right but you know that's what you",
+        "start": 11.25,
+        "duration": 5.46
+    },
+    {
+        "text": "got to do so just listen closely I'm",
+        "start": 14.58,
+        "duration": 3.66
+    },
+    {
+        "text": "gonna go pretty slow so you guys",
+        "start": 16.71,
+        "duration": 3.989
+    },
+    {
+        "text": "understand this to be fair this is a",
+        "start": 18.24,
+        "duration": 4.83
+    },
+    {
+        "text": "dynamic programming problem so if you",
+        "start": 20.699,
+        "duration": 3.931
+    },
+    {
+        "text": "don't understand that at all this might",
+        "start": 23.07,
+        "duration": 3.42
+    },
+    {
+        "text": "be difficult for you to understand in",
+        "start": 24.63,
+        "duration": 3.84
+    },
+    {
+        "text": "general but I'll try to briefly touch on",
+        "start": 26.49,
+        "duration": 5.729
+    },
+    {
+        "text": "it you know so maybe learn the",
+        "start": 28.47,
+        "duration": 5.07
+    },
+    {
+        "text": "fundamentals of dynamic programming",
+        "start": 32.219,
+        "duration": 3.661
+    },
+    {
+        "text": "before you try and attempt this problem",
+        "start": 33.54,
+        "duration": 3.87
+    },
+    {
+        "text": "if not I'll try and give a little bit of",
+        "start": 35.88,
+        "duration": 4.14
+    },
+    {
+        "text": "a rundown so here we go how to even jump",
+        "start": 37.41,
+        "duration": 4.8
+    },
+    {
+        "text": "this is on leak code I'll post the",
+        "start": 40.02,
+        "duration": 4.41
+    },
+    {
+        "text": "problem description below you're given",
+        "start": 42.21,
+        "duration": 3.96
+    },
+    {
+        "text": "an integer array a so we have this",
+        "start": 44.43,
+        "duration": 3.539
+    },
+    {
+        "text": "method you can see here called odd-even",
+        "start": 46.17,
+        "duration": 3.119
+    },
+    {
+        "text": "jump so we're given an array of integers",
+        "start": 47.969,
+        "duration": 3.541
+    },
+    {
+        "text": "a for example this is an array of",
+        "start": 49.289,
+        "duration": 5.071
+    },
+    {
+        "text": "integers right from a starting index I",
+        "start": 51.51,
+        "duration": 5.22
+    },
+    {
+        "text": "or from a starting index so you can make",
+        "start": 54.36,
+        "duration": 5.129
+    },
+    {
+        "text": "a series of jumps right so we have you",
+        "start": 56.73,
+        "duration": 4.86
+    },
+    {
+        "text": "could start at any index that's others",
+        "start": 59.489,
+        "duration": 4.111
+    },
+    {
+        "text": "problems going to work and we make a",
+        "start": 61.59,
+        "duration": 3.929
+    },
+    {
+        "text": "series of jumps so if we started at 10",
+        "start": 63.6,
+        "duration": 3.66
+    },
+    {
+        "text": "we could jump you know here maybe we",
+        "start": 65.519,
+        "duration": 6.541
+    },
+    {
+        "text": "could just jump and the first third and",
+        "start": 67.26,
+        "duration": 8.34
+    },
+    {
+        "text": "fifth to the first third fifth etc so",
+        "start": 72.06,
+        "duration": 7.68
+    },
+    {
+        "text": "7th 9th 11th etc are odd number jumps so",
+        "start": 75.6,
+        "duration": 5.909
+    },
+    {
+        "text": "if we started at 10 the first jump would",
+        "start": 79.74,
+        "duration": 4.98
+    },
+    {
+        "text": "be an odd number jump the 2nd 4th 6 the",
+        "start": 81.509,
+        "duration": 5.701
+    },
+    {
+        "text": "8th 10th etc are going to be",
+        "start": 84.72,
+        "duration": 4.71
+    },
+    {
+        "text": "even-numbered jumps right so if we jump",
+        "start": 87.21,
+        "duration": 3.81
+    },
+    {
+        "text": "from 10 to 13 that would be an odd",
+        "start": 89.43,
+        "duration": 3.78
+    },
+    {
+        "text": "number jump now the next jump after that",
+        "start": 91.02,
+        "duration": 3.57
+    },
+    {
+        "text": "that would be an even number jump",
+        "start": 93.21,
+        "duration": 3.03
+    },
+    {
+        "text": "because that would be that we go first",
+        "start": 94.59,
+        "duration": 4.5
+    },
+    {
+        "text": "jump and then 2nd jump would be even etc",
+        "start": 96.24,
+        "duration": 7.46
+    },
+    {
+        "text": "now you can only jump forward so index I",
+        "start": 99.09,
+        "duration": 8.16
+    },
+    {
+        "text": "to you can jump from index I to index J",
+        "start": 103.7,
+        "duration": 6.01
+    },
+    {
+        "text": "where I is less than J meaning the index",
+        "start": 107.25,
+        "duration": 4.2
+    },
+    {
+        "text": "you jump from has to be less than the",
+        "start": 109.71,
+        "duration": 3.96
+    },
+    {
+        "text": "index you jump to so we can only jump",
+        "start": 111.45,
+        "duration": 4.68
+    },
+    {
+        "text": "forward so for you can go 10th from 10",
+        "start": 113.67,
+        "duration": 4.62
+    },
+    {
+        "text": "you can move at always to the right from",
+        "start": 116.13,
+        "duration": 4.23
+    },
+    {
+        "text": "13 you can move to the right but you",
+        "start": 118.29,
+        "duration": 3.929
+    },
+    {
+        "text": "cannot go to the left so it's always",
+        "start": 120.36,
+        "duration": 3.719
+    },
+    {
+        "text": "going you're always going jumping to the",
+        "start": 122.219,
+        "duration": 5.671
+    },
+    {
+        "text": "right moment moving forward ok this is",
+        "start": 124.079,
+        "duration": 5.04
+    },
+    {
+        "text": "all pretty quick we have our array of",
+        "start": 127.89,
+        "duration": 3.48
+    },
+    {
+        "text": "integers even an odd number jumps they",
+        "start": 129.119,
+        "duration": 4.321
+    },
+    {
+        "text": "alternate you start the first jump is",
+        "start": 131.37,
+        "duration": 2.59
+    },
+    {
+        "text": "odd",
+        "start": 133.44,
+        "duration": 2.92
+    },
+    {
+        "text": "then it's even odd alternating and we",
+        "start": 133.96,
+        "duration": 4.83
+    },
+    {
+        "text": "can only jump forward we understand to",
+        "start": 136.36,
+        "duration": 5.97
+    },
+    {
+        "text": "this point now during odd number jumps",
+        "start": 138.79,
+        "duration": 7.65
+    },
+    {
+        "text": "you jump to an index where a of I is",
+        "start": 142.33,
+        "duration": 6.63
+    },
+    {
+        "text": "less than or equal to a of J so you have",
+        "start": 146.44,
+        "duration": 4.8
+    },
+    {
+        "text": "to jump to a value that is greater than",
+        "start": 148.96,
+        "duration": 4.11
+    },
+    {
+        "text": "or equal to the value you're currently",
+        "start": 151.24,
+        "duration": 5.97
+    },
+    {
+        "text": "at but you have to pick the smallest",
+        "start": 153.07,
+        "duration": 6.21
+    },
+    {
+        "text": "possible value if there's multiple",
+        "start": 157.21,
+        "duration": 5.28
+    },
+    {
+        "text": "values greater than or equal to it so if",
+        "start": 159.28,
+        "duration": 6.39
+    },
+    {
+        "text": "we're at 10 we could we have to jump to",
+        "start": 162.49,
+        "duration": 4.8
+    },
+    {
+        "text": "a value that's greater than or equal to",
+        "start": 165.67,
+        "duration": 3.54
+    },
+    {
+        "text": "10 which all of these are greater than",
+        "start": 167.29,
+        "duration": 3.9
+    },
+    {
+        "text": "or equal to 10 but we have to jump to",
+        "start": 169.21,
+        "duration": 5.34
+    },
+    {
+        "text": "the smallest possible value so 12 would",
+        "start": 171.19,
+        "duration": 6.3
+    },
+    {
+        "text": "be in this case now if there are",
+        "start": 174.55,
+        "duration": 5.4
+    },
+    {
+        "text": "multiple indexes you can only jump to",
+        "start": 177.49,
+        "duration": 4.65
+    },
+    {
+        "text": "the smallest index okay so for example",
+        "start": 179.95,
+        "duration": 6.41
+    },
+    {
+        "text": "if there was another 12 right here and",
+        "start": 182.14,
+        "duration": 7.05
+    },
+    {
+        "text": "another 12 right here so let's say there",
+        "start": 186.36,
+        "duration": 5.17
+    },
+    {
+        "text": "are three 12s in this case and we start",
+        "start": 189.19,
+        "duration": 3.32
+    },
+    {
+        "text": "at 10",
+        "start": 191.53,
+        "duration": 3.6
+    },
+    {
+        "text": "what would we jump to we have to jump to",
+        "start": 192.51,
+        "duration": 4.69
+    },
+    {
+        "text": "a greater value we have to jump forward",
+        "start": 195.13,
+        "duration": 3.6
+    },
+    {
+        "text": "greater than or equal to value we have",
+        "start": 197.2,
+        "duration": 3.75
+    },
+    {
+        "text": "to jump forward and it looks like the",
+        "start": 198.73,
+        "duration": 4.53
+    },
+    {
+        "text": "smallest value too so we have to jump to",
+        "start": 200.95,
+        "duration": 5.94
+    },
+    {
+        "text": "12 but there's three 12 so we pick the",
+        "start": 203.26,
+        "duration": 6.72
+    },
+    {
+        "text": "smallest index so that would be 12 this",
+        "start": 206.89,
+        "duration": 6.0
+    },
+    {
+        "text": "12 the first 12 we see okay that's",
+        "start": 209.98,
+        "duration": 4.92
+    },
+    {
+        "text": "pretty clear so that's an odd number",
+        "start": 212.89,
+        "duration": 4.77
+    },
+    {
+        "text": "jump you jump forward array of integers",
+        "start": 214.9,
+        "duration": 4.53
+    },
+    {
+        "text": "and it's the smallest value that's",
+        "start": 217.66,
+        "duration": 4.65
+    },
+    {
+        "text": "greater than or equal to even number",
+        "start": 219.43,
+        "duration": 6.87
+    },
+    {
+        "text": "jumps you jump to the index that is less",
+        "start": 222.31,
+        "duration": 6.69
+    },
+    {
+        "text": "than or equal to and it is the largest",
+        "start": 226.3,
+        "duration": 7.02
+    },
+    {
+        "text": "possible value so if we're at 12 we can",
+        "start": 229.0,
+        "duration": 8.04
+    },
+    {
+        "text": "jump to less than or equal to well let's",
+        "start": 233.32,
+        "duration": 8.24
+    },
+    {
+        "text": "let's pick 13 13 there's two values",
+        "start": 237.04,
+        "duration": 6.96
+    },
+    {
+        "text": "there's all but we can only go to the",
+        "start": 241.56,
+        "duration": 4.0
+    },
+    {
+        "text": "right we're only jumping forward so for",
+        "start": 244.0,
+        "duration": 4.68
+    },
+    {
+        "text": "a 13 we're jumping forward and we have",
+        "start": 245.56,
+        "duration": 5.01
+    },
+    {
+        "text": "to jump to a value that is less than or",
+        "start": 248.68,
+        "duration": 5.28
+    },
+    {
+        "text": "equal to 13 okay well 12 is less than or",
+        "start": 250.57,
+        "duration": 6.06
+    },
+    {
+        "text": "equal to 13 once again up to the index",
+        "start": 253.96,
+        "duration": 5.19
+    },
+    {
+        "text": "that's smaller but the largest of the",
+        "start": 256.63,
+        "duration": 5.28
+    },
+    {
+        "text": "smallest okay so for example if we had a",
+        "start": 259.15,
+        "duration": 6.42
+    },
+    {
+        "text": "11 here and we're at 13 we have to jump",
+        "start": 261.91,
+        "duration": 5.61
+    },
+    {
+        "text": "to a value smaller than",
+        "start": 265.57,
+        "duration": 5.52
+    },
+    {
+        "text": "or equal to 13 but as large as it can be",
+        "start": 267.52,
+        "duration": 5.73
+    },
+    {
+        "text": "so we picked 12 and there's three",
+        "start": 271.09,
+        "duration": 3.66
+    },
+    {
+        "text": "twelves",
+        "start": 273.25,
+        "duration": 3.69
+    },
+    {
+        "text": "in when there's multiple cases you hit",
+        "start": 274.75,
+        "duration": 4.379
+    },
+    {
+        "text": "the smallest index okay so the first 12",
+        "start": 276.94,
+        "duration": 3.84
+    },
+    {
+        "text": "we would choose hopefully this makes",
+        "start": 279.129,
+        "duration": 2.04
+    },
+    {
+        "text": "sense",
+        "start": 280.78,
+        "duration": 2.879
+    },
+    {
+        "text": "so evens you go smaller odds you they're",
+        "start": 281.169,
+        "duration": 6.84
+    },
+    {
+        "text": "larger than or equal to and there's the",
+        "start": 283.659,
+        "duration": 5.94
+    },
+    {
+        "text": "rules for if there's multiple of the",
+        "start": 288.009,
+        "duration": 3.78
+    },
+    {
+        "text": "values and whatever so just keep these",
+        "start": 289.599,
+        "duration": 4.35
+    },
+    {
+        "text": "rules in mind right sometimes there are",
+        "start": 291.789,
+        "duration": 4.35
+    },
+    {
+        "text": "no legal jumps in that case we just stop",
+        "start": 293.949,
+        "duration": 4.59
+    },
+    {
+        "text": "so let's go back to our main example",
+        "start": 296.139,
+        "duration": 6.421
+    },
+    {
+        "text": "here starting and here's the last thing",
+        "start": 298.539,
+        "duration": 5.581
+    },
+    {
+        "text": "to keep in mind this is how we solved",
+        "start": 302.56,
+        "duration": 4.169
+    },
+    {
+        "text": "the problem a starting index is good if",
+        "start": 304.12,
+        "duration": 5.1
+    },
+    {
+        "text": "from that starting index you can reach",
+        "start": 306.729,
+        "duration": 4.891
+    },
+    {
+        "text": "the end of the array by jumping some",
+        "start": 309.22,
+        "duration": 4.949
+    },
+    {
+        "text": "number of times possibly zero or more",
+        "start": 311.62,
+        "duration": 5.46
+    },
+    {
+        "text": "than once return the number of good",
+        "start": 314.169,
+        "duration": 7.021
+    },
+    {
+        "text": "starting indexes okay so here's some",
+        "start": 317.08,
+        "duration": 6.36
+    },
+    {
+        "text": "things they don't explain you can start",
+        "start": 321.19,
+        "duration": 5.099
+    },
+    {
+        "text": "at any index so we're this is a starting",
+        "start": 323.44,
+        "duration": 4.409
+    },
+    {
+        "text": "index we can start here we could start",
+        "start": 326.289,
+        "duration": 2.97
+    },
+    {
+        "text": "here we could start here we could start",
+        "start": 327.849,
+        "duration": 3.901
+    },
+    {
+        "text": "here right and you the starting index is",
+        "start": 329.259,
+        "duration": 4.71
+    },
+    {
+        "text": "good if you can reach the end of the",
+        "start": 331.75,
+        "duration": 4.68
+    },
+    {
+        "text": "array with zero or more jumps so if",
+        "start": 333.969,
+        "duration": 4.44
+    },
+    {
+        "text": "we're starting here that's already one",
+        "start": 336.43,
+        "duration": 3.93
+    },
+    {
+        "text": "we're at the end so that's one",
+        "start": 338.409,
+        "duration": 3.75
+    },
+    {
+        "text": "automatically we have one good starting",
+        "start": 340.36,
+        "duration": 4.109
+    },
+    {
+        "text": "index and if you pick the last element",
+        "start": 342.159,
+        "duration": 4.56
+    },
+    {
+        "text": "in the array every single time because",
+        "start": 344.469,
+        "duration": 3.871
+    },
+    {
+        "text": "you're already at the end of the array",
+        "start": 346.719,
+        "duration": 4.23
+    },
+    {
+        "text": "okay so that's not very clearly you",
+        "start": 348.34,
+        "duration": 4.37
+    },
+    {
+        "text": "could start it on the index but you can",
+        "start": 350.949,
+        "duration": 3.991
+    },
+    {
+        "text": "so we start here that's one",
+        "start": 352.71,
+        "duration": 5.44
+    },
+    {
+        "text": "automatically if we start here and the",
+        "start": 354.94,
+        "duration": 5.729
+    },
+    {
+        "text": "odd number jump is the first jump well",
+        "start": 358.15,
+        "duration": 4.56
+    },
+    {
+        "text": "we could from 14 we could jump higher",
+        "start": 360.669,
+        "duration": 3.75
+    },
+    {
+        "text": "because the odd number jumps you jump",
+        "start": 362.71,
+        "duration": 3.87
+    },
+    {
+        "text": "higher so we just jump to 15 right",
+        "start": 364.419,
+        "duration": 3.99
+    },
+    {
+        "text": "that's one jump and that's another good",
+        "start": 366.58,
+        "duration": 3.119
+    },
+    {
+        "text": "starting index so now we have two",
+        "start": 368.409,
+        "duration": 3.66
+    },
+    {
+        "text": "because this is a good one this is also",
+        "start": 369.699,
+        "duration": 2.97
+    },
+    {
+        "text": "a good one",
+        "start": 372.069,
+        "duration": 3.78
+    },
+    {
+        "text": "now if this was 16 this would not be a",
+        "start": 372.669,
+        "duration": 6.421
+    },
+    {
+        "text": "good starting index because you on odd",
+        "start": 375.849,
+        "duration": 4.56
+    },
+    {
+        "text": "number jumps you have to jump higher I",
+        "start": 379.09,
+        "duration": 3.66
+    },
+    {
+        "text": "hope I said that correctly but this is a",
+        "start": 380.409,
+        "duration": 4.471
+    },
+    {
+        "text": "lower value so you can't jump to it and",
+        "start": 382.75,
+        "duration": 4.409
+    },
+    {
+        "text": "you're basically screwed so this would",
+        "start": 384.88,
+        "duration": 4.56
+    },
+    {
+        "text": "count as one this would not count okay",
+        "start": 387.159,
+        "duration": 4.711
+    },
+    {
+        "text": "let's go back to the original example",
+        "start": 389.44,
+        "duration": 6.33
+    },
+    {
+        "text": "here I think I've laid out this problem",
+        "start": 391.87,
+        "duration": 6.63
+    },
+    {
+        "text": "pretty well so far now from starting",
+        "start": 395.77,
+        "duration": 4.769
+    },
+    {
+        "text": "index I equals zero we can jump now",
+        "start": 398.5,
+        "duration": 2.389
+    },
+    {
+        "text": "let's",
+        "start": 400.539,
+        "duration": 3.41
+    },
+    {
+        "text": "for some examples let's go through some",
+        "start": 400.889,
+        "duration": 4.86
+    },
+    {
+        "text": "of these examples really quick so we can",
+        "start": 403.949,
+        "duration": 5.4
+    },
+    {
+        "text": "see from starting index 0 so it's",
+        "start": 405.749,
+        "duration": 6.181
+    },
+    {
+        "text": "checking all the we're gonna check we're",
+        "start": 409.349,
+        "duration": 3.481
+    },
+    {
+        "text": "just going to go through",
+        "start": 411.93,
+        "duration": 4.53
+    },
+    {
+        "text": "so here's starting index 0 from 10 you",
+        "start": 412.83,
+        "duration": 5.579
+    },
+    {
+        "text": "can the first jump you could jump higher",
+        "start": 416.46,
+        "duration": 2.549
+    },
+    {
+        "text": "right",
+        "start": 418.409,
+        "duration": 2.82
+    },
+    {
+        "text": "well what's higher than 10 in the",
+        "start": 419.009,
+        "duration": 4.41
+    },
+    {
+        "text": "smallest of the higher ones right that's",
+        "start": 421.229,
+        "duration": 4.44
+    },
+    {
+        "text": "what it says the smallest possible value",
+        "start": 423.419,
+        "duration": 4.77
+    },
+    {
+        "text": "that's higher than or equal to 10 so",
+        "start": 425.669,
+        "duration": 5.731
+    },
+    {
+        "text": "that's 12 so we jump to 12 right",
+        "start": 428.189,
+        "duration": 6.421
+    },
+    {
+        "text": "and then we have to jump lower than 12",
+        "start": 431.4,
+        "duration": 5.31
+    },
+    {
+        "text": "now and we can only go forward you can't",
+        "start": 434.61,
+        "duration": 4.109
+    },
+    {
+        "text": "do that so we're ending that's not gonna",
+        "start": 436.71,
+        "duration": 3.06
+    },
+    {
+        "text": "make it to the end of the array that",
+        "start": 438.719,
+        "duration": 3.181
+    },
+    {
+        "text": "doesn't count as a good and good index",
+        "start": 439.77,
+        "duration": 5.399
+    },
+    {
+        "text": "good that doesn't count as a good",
+        "start": 441.9,
+        "duration": 6.329
+    },
+    {
+        "text": "starting index so there's there's one if",
+        "start": 445.169,
+        "duration": 6.27
+    },
+    {
+        "text": "we started at 10 if we start at 13 so",
+        "start": 448.229,
+        "duration": 6.421
+    },
+    {
+        "text": "let's go from starting index 1 and 2 so",
+        "start": 451.439,
+        "duration": 5.34
+    },
+    {
+        "text": "13 you have to jump to a greater one at",
+        "start": 454.65,
+        "duration": 4.199
+    },
+    {
+        "text": "first so you can only pick any of these",
+        "start": 456.779,
+        "duration": 3.69
+    },
+    {
+        "text": "but it has to be the smallest of",
+        "start": 458.849,
+        "duration": 3.72
+    },
+    {
+        "text": "anything greater than or equal to so 14",
+        "start": 460.469,
+        "duration": 3.66
+    },
+    {
+        "text": "is the smallest that is greater than or",
+        "start": 462.569,
+        "duration": 4.59
+    },
+    {
+        "text": "equal to 13 and then from 14 you have to",
+        "start": 464.129,
+        "duration": 5.88
+    },
+    {
+        "text": "go lower and you can't go lower when you",
+        "start": 467.159,
+        "duration": 5.16
+    },
+    {
+        "text": "go to the right so that's it if we",
+        "start": 470.009,
+        "duration": 5.28
+    },
+    {
+        "text": "started at 12 we have to go higher at",
+        "start": 472.319,
+        "duration": 4.77
+    },
+    {
+        "text": "first you go to 14 then you have to go",
+        "start": 475.289,
+        "duration": 5.61
+    },
+    {
+        "text": "lower can't do it so then 14 we already",
+        "start": 477.089,
+        "duration": 5.79
+    },
+    {
+        "text": "did in 15 we already did that's a whole",
+        "start": 480.899,
+        "duration": 4.591
+    },
+    {
+        "text": "example there now I might have to edit",
+        "start": 482.879,
+        "duration": 4.53
+    },
+    {
+        "text": "this video because it is like I said",
+        "start": 485.49,
+        "duration": 3.929
+    },
+    {
+        "text": "this is a long explanation but hopefully",
+        "start": 487.409,
+        "duration": 4.111
+    },
+    {
+        "text": "I made that clear I think you guys get",
+        "start": 489.419,
+        "duration": 4.11
+    },
+    {
+        "text": "it now odd indexes you have to go to",
+        "start": 491.52,
+        "duration": 4.679
+    },
+    {
+        "text": "greater than or equal to values even you",
+        "start": 493.529,
+        "duration": 5.7
+    },
+    {
+        "text": "have to go to lower values yeah so I'm",
+        "start": 496.199,
+        "duration": 5.22
+    },
+    {
+        "text": "certainly gonna have to edit this video",
+        "start": 499.229,
+        "duration": 5.94
+    },
+    {
+        "text": "since it's so long but some time to do",
+        "start": 501.419,
+        "duration": 5.881
+    },
+    {
+        "text": "that anyway I thought I just stopped I",
+        "start": 505.169,
+        "duration": 4.831
+    },
+    {
+        "text": "look up some thing to explain dynamic",
+        "start": 507.3,
+        "duration": 4.2
+    },
+    {
+        "text": "programming and the idea really quick",
+        "start": 510.0,
+        "duration": 4.589
+    },
+    {
+        "text": "for anyone who doesn't know so basically",
+        "start": 511.5,
+        "duration": 6.479
+    },
+    {
+        "text": "dynamic programming uses memory to speed",
+        "start": 514.589,
+        "duration": 6.12
+    },
+    {
+        "text": "up our algorithms usually and we use it",
+        "start": 517.979,
+        "duration": 5.961
+    },
+    {
+        "text": "almost in all cases when we're",
+        "start": 520.709,
+        "duration": 7.201
+    },
+    {
+        "text": "repetitively solving problems when it's",
+        "start": 523.94,
+        "duration": 6.85
+    },
+    {
+        "text": "unnecessary so for example we see in a",
+        "start": 527.91,
+        "duration": 4.38
+    },
+    {
+        "text": "factorial this is a really",
+        "start": 530.79,
+        "duration": 4.289
+    },
+    {
+        "text": "example of dynamic programming we see",
+        "start": 532.29,
+        "duration": 5.159
+    },
+    {
+        "text": "that it's we all know how to what it is",
+        "start": 535.079,
+        "duration": 4.5
+    },
+    {
+        "text": "it's 4 times 3 times 2 times 1 4",
+        "start": 537.449,
+        "duration": 4.351
+    },
+    {
+        "text": "factorial is all the numbers from 1 to",
+        "start": 539.579,
+        "duration": 5.88
+    },
+    {
+        "text": "the number multiplied right so here's",
+        "start": 541.8,
+        "duration": 4.26
+    },
+    {
+        "text": "the thing",
+        "start": 545.459,
+        "duration": 2.88
+    },
+    {
+        "text": "why wouldn't we just do this why",
+        "start": 546.06,
+        "duration": 3.12
+    },
+    {
+        "text": "wouldn't we",
+        "start": 548.339,
+        "duration": 3.631
+    },
+    {
+        "text": "for huge numbers when things are we can",
+        "start": 549.18,
+        "duration": 5.399
+    },
+    {
+        "text": "speed up our algorithm by using memory",
+        "start": 551.97,
+        "duration": 5.58
+    },
+    {
+        "text": "to just access an answer why would we",
+        "start": 554.579,
+        "duration": 6.421
+    },
+    {
+        "text": "calculate 1 times 2 times 3 times 4 when",
+        "start": 557.55,
+        "duration": 5.61
+    },
+    {
+        "text": "we've already calculated 1 times 2 times",
+        "start": 561.0,
+        "duration": 4.74
+    },
+    {
+        "text": "3 let's say that we've calculated you",
+        "start": 563.16,
+        "duration": 4.289
+    },
+    {
+        "text": "know we're calculating all the",
+        "start": 565.74,
+        "duration": 3.99
+    },
+    {
+        "text": "factorials from one to a thousand if",
+        "start": 567.449,
+        "duration": 4.26
+    },
+    {
+        "text": "we've already kept made a calculation",
+        "start": 569.73,
+        "duration": 3.81
+    },
+    {
+        "text": "why don't we just store it and then we",
+        "start": 571.709,
+        "duration": 4.591
+    },
+    {
+        "text": "have it you know later so for example we",
+        "start": 573.54,
+        "duration": 5.07
+    },
+    {
+        "text": "have 4 factorial we compute that here",
+        "start": 576.3,
+        "duration": 4.86
+    },
+    {
+        "text": "it's 24 right how about we store that in",
+        "start": 578.61,
+        "duration": 5.88
+    },
+    {
+        "text": "an array and then when we do 6 factorial",
+        "start": 581.16,
+        "duration": 8.369
+    },
+    {
+        "text": "we just do 6 times 5 times 24 so that's",
+        "start": 584.49,
+        "duration": 7.23
+    },
+    {
+        "text": "the whole point of it is you use memory",
+        "start": 589.529,
+        "duration": 5.341
+    },
+    {
+        "text": "as a trade-off for time because when you",
+        "start": 591.72,
+        "duration": 5.91
+    },
+    {
+        "text": "store these problems then we can just",
+        "start": 594.87,
+        "duration": 5.79
+    },
+    {
+        "text": "access them and use the answers to those",
+        "start": 597.63,
+        "duration": 5.16
+    },
+    {
+        "text": "to solve the newer problem right it's a",
+        "start": 600.66,
+        "duration": 3.659
+    },
+    {
+        "text": "lot faster that's just basically dynamic",
+        "start": 602.79,
+        "duration": 3.029
+    },
+    {
+        "text": "programming I'd recommend looking it up",
+        "start": 604.319,
+        "duration": 4.71
+    },
+    {
+        "text": "a lot more like I said this problem is",
+        "start": 605.819,
+        "duration": 5.7
+    },
+    {
+        "text": "you know a little bit more advanced it's",
+        "start": 609.029,
+        "duration": 4.591
+    },
+    {
+        "text": "not as easy as the factorial maybe try",
+        "start": 611.519,
+        "duration": 5.07
+    },
+    {
+        "text": "some of those ones out before in this",
+        "start": 613.62,
+        "duration": 6.209
+    },
+    {
+        "text": "case we're doing repetitive problem",
+        "start": 616.589,
+        "duration": 6.511
+    },
+    {
+        "text": "solving right so for example we are",
+        "start": 619.829,
+        "duration": 6.271
+    },
+    {
+        "text": "solving when we get to a certain number",
+        "start": 623.1,
+        "duration": 6.0
+    },
+    {
+        "text": "it's either going to be a successful",
+        "start": 626.1,
+        "duration": 5.039
+    },
+    {
+        "text": "it's gonna be a good index to get to the",
+        "start": 629.1,
+        "duration": 4.56
+    },
+    {
+        "text": "end or it's not right and we know for",
+        "start": 631.139,
+        "duration": 4.44
+    },
+    {
+        "text": "example in this case this guy explains",
+        "start": 633.66,
+        "duration": 4.44
+    },
+    {
+        "text": "it really well here we have this array 5",
+        "start": 635.579,
+        "duration": 6.0
+    },
+    {
+        "text": "1 3 4 2 we know the last index is",
+        "start": 638.1,
+        "duration": 4.979
+    },
+    {
+        "text": "automatically a good index because we're",
+        "start": 641.579,
+        "duration": 6.351
+    },
+    {
+        "text": "at the end now 4 right 4 cannot get to 2",
+        "start": 643.079,
+        "duration": 8.45
+    },
+    {
+        "text": "because it has to go higher at first but",
+        "start": 647.93,
+        "duration": 7.75
+    },
+    {
+        "text": "now now let's save that answer now",
+        "start": 651.529,
+        "duration": 7.24
+    },
+    {
+        "text": "let's once we know that 4 cannot go to 2",
+        "start": 655.68,
+        "duration": 6.209
+    },
+    {
+        "text": "one word when we're on an odd jump let's",
+        "start": 658.769,
+        "duration": 5.581
+    },
+    {
+        "text": "save that answer somewhere so if we",
+        "start": 661.889,
+        "duration": 3.511
+    },
+    {
+        "text": "start at 1",
+        "start": 664.35,
+        "duration": 3.09
+    },
+    {
+        "text": "and we end up at four or if we start a",
+        "start": 665.4,
+        "duration": 3.9
+    },
+    {
+        "text": "three and wind up at four we already",
+        "start": 667.44,
+        "duration": 3.84
+    },
+    {
+        "text": "know that answer so we could just access",
+        "start": 669.3,
+        "duration": 3.93
+    },
+    {
+        "text": "in memory and we could just say oh we",
+        "start": 671.28,
+        "duration": 4.77
+    },
+    {
+        "text": "can't go higher at this point so that's",
+        "start": 673.23,
+        "duration": 4.89
+    },
+    {
+        "text": "an automatic wrong now the hard part",
+        "start": 676.05,
+        "duration": 3.96
+    },
+    {
+        "text": "about this is we need to approach it a",
+        "start": 678.12,
+        "duration": 3.63
+    },
+    {
+        "text": "little bit differently than when it",
+        "start": 680.01,
+        "duration": 3.06
+    },
+    {
+        "text": "comes with dynamic programming because",
+        "start": 681.75,
+        "duration": 4.02
+    },
+    {
+        "text": "if we're not playing with one thing here",
+        "start": 683.07,
+        "duration": 5.07
+    },
+    {
+        "text": "we're playing with odds and evens and",
+        "start": 685.77,
+        "duration": 4.59
+    },
+    {
+        "text": "going higher and lower as well so",
+        "start": 688.14,
+        "duration": 5.1
+    },
+    {
+        "text": "instead of just one array for the memory",
+        "start": 690.36,
+        "duration": 4.83
+    },
+    {
+        "text": "of for dynamic programming we need to",
+        "start": 693.24,
+        "duration": 6.21
+    },
+    {
+        "text": "keep track of the hot the higher and",
+        "start": 695.19,
+        "duration": 8.22
+    },
+    {
+        "text": "lower values and whether we can go",
+        "start": 699.45,
+        "duration": 6.99
+    },
+    {
+        "text": "we need a boolean arrays basically for",
+        "start": 703.41,
+        "duration": 7.8
+    },
+    {
+        "text": "each index as to whether going higher or",
+        "start": 706.44,
+        "duration": 7.14
+    },
+    {
+        "text": "lower is going to take us to the end of",
+        "start": 711.21,
+        "duration": 4.53
+    },
+    {
+        "text": "the array and we're going to construct",
+        "start": 713.58,
+        "duration": 6.15
+    },
+    {
+        "text": "these boolean arrays while we go",
+        "start": 715.74,
+        "duration": 6.27
+    },
+    {
+        "text": "backwards through the array the whole",
+        "start": 719.73,
+        "duration": 3.78
+    },
+    {
+        "text": "thing is we're starting our dynamic",
+        "start": 722.01,
+        "duration": 2.67
+    },
+    {
+        "text": "programming problem at the end because",
+        "start": 723.51,
+        "duration": 2.82
+    },
+    {
+        "text": "we have a piece of information here",
+        "start": 724.68,
+        "duration": 3.9
+    },
+    {
+        "text": "right we know that this index is always",
+        "start": 726.33,
+        "duration": 4.17
+    },
+    {
+        "text": "going to be good and we could start to",
+        "start": 728.58,
+        "duration": 4.29
+    },
+    {
+        "text": "construct our arrays so we could say",
+        "start": 730.5,
+        "duration": 5.82
+    },
+    {
+        "text": "from 4 ok well if it's an odd jump then",
+        "start": 732.87,
+        "duration": 5.73
+    },
+    {
+        "text": "we have to go higher and we cannot so",
+        "start": 736.32,
+        "duration": 3.75
+    },
+    {
+        "text": "that's going to be false in our boolean",
+        "start": 738.6,
+        "duration": 4.59
+    },
+    {
+        "text": "array if it was lower we actually can so",
+        "start": 740.07,
+        "duration": 4.92
+    },
+    {
+        "text": "if it's an even then we actually can",
+        "start": 743.19,
+        "duration": 3.42
+    },
+    {
+        "text": "reach the end of the array so that would",
+        "start": 744.99,
+        "duration": 4.53
+    },
+    {
+        "text": "be true and then for this case we build",
+        "start": 746.61,
+        "duration": 5.04
+    },
+    {
+        "text": "the answers to this one based on the",
+        "start": 749.52,
+        "duration": 4.95
+    },
+    {
+        "text": "answers to this one and etc and that's",
+        "start": 751.65,
+        "duration": 4.77
+    },
+    {
+        "text": "how you end up doing dynamic programming",
+        "start": 754.47,
+        "duration": 4.35
+    },
+    {
+        "text": "in this case now what we're going to use",
+        "start": 756.42,
+        "duration": 5.18
+    },
+    {
+        "text": "here is this is the solution that I've",
+        "start": 758.82,
+        "duration": 5.37
+    },
+    {
+        "text": "walked through and this is the solution",
+        "start": 761.6,
+        "duration": 5.89
+    },
+    {
+        "text": "that we're gonna use and you can see",
+        "start": 764.19,
+        "duration": 4.44
+    },
+    {
+        "text": "that we have this higher and lower",
+        "start": 767.49,
+        "duration": 4.08
+    },
+    {
+        "text": "boolean values and we're using a tree",
+        "start": 768.63,
+        "duration": 5.25
+    },
+    {
+        "text": "map to speed up our algorithm and a tree",
+        "start": 771.57,
+        "duration": 4.26
+    },
+    {
+        "text": "map is really good for this thing we're",
+        "start": 773.88,
+        "duration": 4.23
+    },
+    {
+        "text": "going to be looping from the end to the",
+        "start": 775.83,
+        "duration": 4.23
+    },
+    {
+        "text": "beginning so the second-last index",
+        "start": 778.11,
+        "duration": 3.81
+    },
+    {
+        "text": "because we already know the answer to",
+        "start": 780.06,
+        "duration": 3.15
+    },
+    {
+        "text": "this one so we're going to start",
+        "start": 781.92,
+        "duration": 2.67
+    },
+    {
+        "text": "constructing our arrays from the",
+        "start": 783.21,
+        "duration": 3.75
+    },
+    {
+        "text": "second-last index up to the first",
+        "start": 784.59,
+        "duration": 5.1
+    },
+    {
+        "text": "element of the array and we're going to",
+        "start": 786.96,
+        "duration": 5.19
+    },
+    {
+        "text": "throw out this array keep putting the",
+        "start": 789.69,
+        "duration": 5.04
+    },
+    {
+        "text": "int the corresponding element with the",
+        "start": 792.15,
+        "duration": 5.58
+    },
+    {
+        "text": "indices into the tree map and then we're",
+        "start": 794.73,
+        "duration": 4.43
+    },
+    {
+        "text": "going to build our",
+        "start": 797.73,
+        "duration": 5.9
+    },
+    {
+        "text": "in arrays based on the higher and lower",
+        "start": 799.16,
+        "duration": 7.02
+    },
+    {
+        "text": "values that are in the tree map and we",
+        "start": 803.63,
+        "duration": 4.26
+    },
+    {
+        "text": "use these built-in methods called",
+        "start": 806.18,
+        "duration": 4.5
+    },
+    {
+        "text": "ceiling entry and floor entry to get the",
+        "start": 807.89,
+        "duration": 5.49
+    },
+    {
+        "text": "higher and lower values within the tree",
+        "start": 810.68,
+        "duration": 5.94
+    },
+    {
+        "text": "map in a really fast amount of time",
+        "start": 813.38,
+        "duration": 5.91
+    },
+    {
+        "text": "these these there's ceiling key and",
+        "start": 816.62,
+        "duration": 5.43
+    },
+    {
+        "text": "floor key methods too but ceiling entry",
+        "start": 819.29,
+        "duration": 4.32
+    },
+    {
+        "text": "and floor entry are actually faster and",
+        "start": 822.05,
+        "duration": 3.33
+    },
+    {
+        "text": "we use these it's a really unique data",
+        "start": 823.61,
+        "duration": 4.38
+    },
+    {
+        "text": "structure and its really great for this",
+        "start": 825.38,
+        "duration": 7.02
+    },
+    {
+        "text": "problem specifically so that's kind of",
+        "start": 827.99,
+        "duration": 6.87
+    },
+    {
+        "text": "the approach here I'm gonna coat it out",
+        "start": 832.4,
+        "duration": 4.32
+    },
+    {
+        "text": "and kind of walk through it step by step",
+        "start": 834.86,
+        "duration": 5.34
+    },
+    {
+        "text": "a little bit more but I guess you can",
+        "start": 836.72,
+        "duration": 5.07
+    },
+    {
+        "text": "kind of you really need to look at the",
+        "start": 840.2,
+        "duration": 2.76
+    },
+    {
+        "text": "solution I'm gonna link it in the",
+        "start": 841.79,
+        "duration": 3.63
+    },
+    {
+        "text": "description I'm sorry for jumping all",
+        "start": 842.96,
+        "duration": 4.53
+    },
+    {
+        "text": "over the place it's really a top this is",
+        "start": 845.42,
+        "duration": 3.78
+    },
+    {
+        "text": "the first hard problem I'm explaining so",
+        "start": 847.49,
+        "duration": 3.06
+    },
+    {
+        "text": "it's kind of difficult especially with",
+        "start": 849.2,
+        "duration": 4.77
+    },
+    {
+        "text": "dynamic programming he kind of explains",
+        "start": 850.55,
+        "duration": 5.34
+    },
+    {
+        "text": "it here though right so we you you could",
+        "start": 853.97,
+        "duration": 3.99
+    },
+    {
+        "text": "see down here in this solution that he",
+        "start": 855.89,
+        "duration": 4.47
+    },
+    {
+        "text": "has down here we have these boolean",
+        "start": 857.96,
+        "duration": 4.38
+    },
+    {
+        "text": "arrays and I'm telling you that these",
+        "start": 860.36,
+        "duration": 5.07
+    },
+    {
+        "text": "boolean ZAR gonna hold the value of",
+        "start": 862.34,
+        "duration": 4.17
+    },
+    {
+        "text": "whether we're going to be able to make",
+        "start": 865.43,
+        "duration": 2.88
+    },
+    {
+        "text": "it to the end or not based on whether we",
+        "start": 866.51,
+        "duration": 5.13
+    },
+    {
+        "text": "go higher or lower right at each index",
+        "start": 868.31,
+        "duration": 6.27
+    },
+    {
+        "text": "so this index were starting out our",
+        "start": 871.64,
+        "duration": 5.16
+    },
+    {
+        "text": "array with okay we're at the end it's",
+        "start": 874.58,
+        "duration": 4.41
+    },
+    {
+        "text": "already true right so it's just",
+        "start": 876.8,
+        "duration": 4.71
+    },
+    {
+        "text": "automatic true see the last elements",
+        "start": 878.99,
+        "duration": 4.17
+    },
+    {
+        "text": "automatic true whether we go higher or",
+        "start": 881.51,
+        "duration": 3.51
+    },
+    {
+        "text": "lower it doesn't matter so you can see",
+        "start": 883.16,
+        "duration": 3.66
+    },
+    {
+        "text": "here we're starting at two if we start",
+        "start": 885.02,
+        "duration": 4.02
+    },
+    {
+        "text": "at two we're already there so higher and",
+        "start": 886.82,
+        "duration": 4.26
+    },
+    {
+        "text": "lower of two we're just gonna give it a",
+        "start": 889.04,
+        "duration": 4.26
+    },
+    {
+        "text": "true value in the boolean arrays because",
+        "start": 891.08,
+        "duration": 4.23
+    },
+    {
+        "text": "that means we're already there now if we",
+        "start": 893.3,
+        "duration": 4.8
+    },
+    {
+        "text": "started at four lower is going to give",
+        "start": 895.31,
+        "duration": 4.26
+    },
+    {
+        "text": "us a value true because if we can go",
+        "start": 898.1,
+        "duration": 3.63
+    },
+    {
+        "text": "lower if we're on an even jump so say we",
+        "start": 899.57,
+        "duration": 4.68
+    },
+    {
+        "text": "jump to four and then we're on an even",
+        "start": 901.73,
+        "duration": 5.01
+    },
+    {
+        "text": "jump so the first jump is to four second",
+        "start": 904.25,
+        "duration": 4.56
+    },
+    {
+        "text": "jump we can go to two so going lower",
+        "start": 906.74,
+        "duration": 3.87
+    },
+    {
+        "text": "we're gonna have a true value in that",
+        "start": 908.81,
+        "duration": 5.19
+    },
+    {
+        "text": "case if we can't go higher so that's for",
+        "start": 910.61,
+        "duration": 6.33
+    },
+    {
+        "text": "sure gonna be a false value three going",
+        "start": 914.0,
+        "duration": 5.34
+    },
+    {
+        "text": "higher is gonna get us somewhere because",
+        "start": 916.94,
+        "duration": 4.95
+    },
+    {
+        "text": "then we can go lower right so three can",
+        "start": 919.34,
+        "duration": 4.71
+    },
+    {
+        "text": "jump to four and then we have to jump to",
+        "start": 921.89,
+        "duration": 6.449
+    },
+    {
+        "text": "two which gives us a true now jumping",
+        "start": 924.05,
+        "duration": 8.01
+    },
+    {
+        "text": "lower we would jump just to two which",
+        "start": 928.339,
+        "duration": 4.501
+    },
+    {
+        "text": "would all",
+        "start": 932.06,
+        "duration": 2.73
+    },
+    {
+        "text": "so workout for us in this case because",
+        "start": 932.84,
+        "duration": 4.26
+    },
+    {
+        "text": "if we're jumping lower the only lower or",
+        "start": 934.79,
+        "duration": 4.44
+    },
+    {
+        "text": "equal to value is two so we just go",
+        "start": 937.1,
+        "duration": 5.76
+    },
+    {
+        "text": "right to two if we started at 1 we can",
+        "start": 939.23,
+        "duration": 5.19
+    },
+    {
+        "text": "jumped I mean I'm not gonna go through",
+        "start": 942.86,
+        "duration": 3.21
+    },
+    {
+        "text": "any more of the solution you can kind of",
+        "start": 944.42,
+        "duration": 3.3
+    },
+    {
+        "text": "look at it yourself but you get the idea",
+        "start": 946.07,
+        "duration": 4.74
+    },
+    {
+        "text": "we store these boolean's and then we can",
+        "start": 947.72,
+        "duration": 6.45
+    },
+    {
+        "text": "just access from the arrays using these",
+        "start": 950.81,
+        "duration": 5.52
+    },
+    {
+        "text": "methods and a tree map is a great data",
+        "start": 954.17,
+        "duration": 3.66
+    },
+    {
+        "text": "structure to look up a tree map if you",
+        "start": 956.33,
+        "duration": 4.26
+    },
+    {
+        "text": "don't understand it as well to actually",
+        "start": 957.83,
+        "duration": 5.72
+    },
+    {
+        "text": "grab these values I'm gonna code this",
+        "start": 960.59,
+        "duration": 5.22
+    },
+    {
+        "text": "solution out right now and we'll walk",
+        "start": 963.55,
+        "duration": 4.72
+    },
+    {
+        "text": "through it a little bit more but yeah",
+        "start": 965.81,
+        "duration": 3.93
+    },
+    {
+        "text": "that's it and I'm gonna edit this all",
+        "start": 968.27,
+        "duration": 3.45
+    },
+    {
+        "text": "together and hopefully this makes sense",
+        "start": 969.74,
+        "duration": 4.35
+    },
+    {
+        "text": "I'd recommend asking questions if you",
+        "start": 971.72,
+        "duration": 3.66
+    },
+    {
+        "text": "don't understand anything I'm trying my",
+        "start": 974.09,
+        "duration": 4.44
+    },
+    {
+        "text": "best to explain this and you know it's a",
+        "start": 975.38,
+        "duration": 4.5
+    },
+    {
+        "text": "little bit difficult because it's a hard",
+        "start": 978.53,
+        "duration": 4.38
+    },
+    {
+        "text": "one all right all right guys here we go",
+        "start": 979.88,
+        "duration": 4.41
+    },
+    {
+        "text": "I'm gonna walk through this really",
+        "start": 982.91,
+        "duration": 3.81
+    },
+    {
+        "text": "quickly basically what we're gonna have",
+        "start": 984.29,
+        "duration": 5.61
+    },
+    {
+        "text": "here is we're going to start out like I",
+        "start": 986.72,
+        "duration": 6.48
+    },
+    {
+        "text": "said with well first of all what are we",
+        "start": 989.9,
+        "duration": 4.74
+    },
+    {
+        "text": "trying to achieve we're trying to find",
+        "start": 993.2,
+        "duration": 4.05
+    },
+    {
+        "text": "if an in how many good indexes good",
+        "start": 994.64,
+        "duration": 4.26
+    },
+    {
+        "text": "starting indexes there are so we're",
+        "start": 997.25,
+        "duration": 6.87
+    },
+    {
+        "text": "gonna say okay it's good starting index",
+        "start": 998.9,
+        "duration": 8.37
+    },
+    {
+        "text": "count so we'll set that to 1 and that's",
+        "start": 1004.12,
+        "duration": 5.52
+    },
+    {
+        "text": "because the last element of the array is",
+        "start": 1007.27,
+        "duration": 4.08
+    },
+    {
+        "text": "always one of them so we're going to",
+        "start": 1009.64,
+        "duration": 3.63
+    },
+    {
+        "text": "just count one automatically right off",
+        "start": 1011.35,
+        "duration": 5.31
+    },
+    {
+        "text": "the bat let's grab the length of the",
+        "start": 1013.27,
+        "duration": 4.95
+    },
+    {
+        "text": "array because we're gonna need that to",
+        "start": 1016.66,
+        "duration": 3.21
+    },
+    {
+        "text": "use that a lot here so we'll just call",
+        "start": 1018.22,
+        "duration": 5.22
+    },
+    {
+        "text": "it n we're gonna create our boolean",
+        "start": 1019.87,
+        "duration": 5.37
+    },
+    {
+        "text": "array is higher and lower so we'll say",
+        "start": 1023.44,
+        "duration": 6.03
+    },
+    {
+        "text": "boolean higher is equal to sorry boolean",
+        "start": 1025.24,
+        "duration": 6.57
+    },
+    {
+        "text": "array of higher is equal to new boolean",
+        "start": 1029.47,
+        "duration": 5.76
+    },
+    {
+        "text": "and we're going to set it to length n",
+        "start": 1031.81,
+        "duration": 5.22
+    },
+    {
+        "text": "which is just the length of the array",
+        "start": 1035.23,
+        "duration": 4.26
+    },
+    {
+        "text": "we're gonna need one called lower as",
+        "start": 1037.03,
+        "duration": 4.62
+    },
+    {
+        "text": "well these want once again this keeps",
+        "start": 1039.49,
+        "duration": 5.99
+    },
+    {
+        "text": "track of the boolean of whether at each",
+        "start": 1041.65,
+        "duration": 7.29
+    },
+    {
+        "text": "step in the each index whether it's",
+        "start": 1045.48,
+        "duration": 5.11
+    },
+    {
+        "text": "going to make it to the end or not so",
+        "start": 1048.94,
+        "duration": 3.51
+    },
+    {
+        "text": "keep track of you know whether it's",
+        "start": 1050.59,
+        "duration": 5.03
+    },
+    {
+        "text": "going to be able to make it to the end",
+        "start": 1052.45,
+        "duration": 6.09
+    },
+    {
+        "text": "we're gonna need a tree map as well but",
+        "start": 1055.62,
+        "duration": 4.54
+    },
+    {
+        "text": "first thing we can do is we could say",
+        "start": 1058.54,
+        "duration": 4.35
+    },
+    {
+        "text": "okay higher of n minus 1 is equal to",
+        "start": 1060.16,
+        "duration": 5.37
+    },
+    {
+        "text": "true because we know that at the last",
+        "start": 1062.89,
+        "duration": 4.64
+    },
+    {
+        "text": "impact",
+        "start": 1065.53,
+        "duration": 5.61
+    },
+    {
+        "text": "going higher or lower gives us a result",
+        "start": 1067.53,
+        "duration": 4.96
+    },
+    {
+        "text": "of true because you're gonna make it to",
+        "start": 1071.14,
+        "duration": 2.25
+    },
+    {
+        "text": "the end of the array because you're",
+        "start": 1072.49,
+        "duration": 3.3
+    },
+    {
+        "text": "already at the end of the array so we",
+        "start": 1073.39,
+        "duration": 5.04
+    },
+    {
+        "text": "count one one good starting index and we",
+        "start": 1075.79,
+        "duration": 5.01
+    },
+    {
+        "text": "set true for both of the initial values",
+        "start": 1078.43,
+        "duration": 3.9
+    },
+    {
+        "text": "of the higher and lower arrays because",
+        "start": 1080.8,
+        "duration": 3.15
+    },
+    {
+        "text": "going higher or lower from the last",
+        "start": 1082.33,
+        "duration": 3.12
+    },
+    {
+        "text": "index doesn't matter you're already",
+        "start": 1083.95,
+        "duration": 3.84
+    },
+    {
+        "text": "there we're going to declare our tree",
+        "start": 1085.45,
+        "duration": 4.65
+    },
+    {
+        "text": "map so tree map it's going to be a",
+        "start": 1087.79,
+        "duration": 5.82
+    },
+    {
+        "text": "integer type integer integer the first",
+        "start": 1090.1,
+        "duration": 5.61
+    },
+    {
+        "text": "integer is going to be an element of the",
+        "start": 1093.61,
+        "duration": 3.84
+    },
+    {
+        "text": "array and the second integer is going to",
+        "start": 1095.71,
+        "duration": 4.59
+    },
+    {
+        "text": "be the index let's just call it tree map",
+        "start": 1097.45,
+        "duration": 9.3
+    },
+    {
+        "text": "is equal to new tree map we're going to",
+        "start": 1100.3,
+        "duration": 9.63
+    },
+    {
+        "text": "put our first value into the map the",
+        "start": 1106.75,
+        "duration": 9.21
+    },
+    {
+        "text": "first value is just a of n minus 1 the",
+        "start": 1109.93,
+        "duration": 9.32
+    },
+    {
+        "text": "last element and n minus 1 for the index",
+        "start": 1115.96,
+        "duration": 5.7
+    },
+    {
+        "text": "and then we're gonna start our loop from",
+        "start": 1119.25,
+        "duration": 4.87
+    },
+    {
+        "text": "the second last element so from n minus",
+        "start": 1121.66,
+        "duration": 6.09
+    },
+    {
+        "text": "2y equals n minus 2 I greater than or",
+        "start": 1124.12,
+        "duration": 6.42
+    },
+    {
+        "text": "equal to 0 all the way down to 0 and I -",
+        "start": 1127.75,
+        "duration": 6.66
+    },
+    {
+        "text": "- now here's where we I have to explain",
+        "start": 1130.54,
+        "duration": 6.6
+    },
+    {
+        "text": "everything so we're gonna get some map",
+        "start": 1134.41,
+        "duration": 5.93
+    },
+    {
+        "text": "entries and map down entry is a type of",
+        "start": 1137.14,
+        "duration": 6.33
+    },
+    {
+        "text": "what the tree map will return to us and",
+        "start": 1140.34,
+        "duration": 6.25
+    },
+    {
+        "text": "we're gonna say higher key value pair",
+        "start": 1143.47,
+        "duration": 5.16
+    },
+    {
+        "text": "this is going to give us a key value",
+        "start": 1146.59,
+        "duration": 6.98
+    },
+    {
+        "text": "pair using the tree map class method",
+        "start": 1148.63,
+        "duration": 9.63
+    },
+    {
+        "text": "ceiling entry in ceiling entry if we",
+        "start": 1153.57,
+        "duration": 6.61
+    },
+    {
+        "text": "pass in the current index so we're going",
+        "start": 1158.26,
+        "duration": 6.15
+    },
+    {
+        "text": "from the end we're going from 14 down to",
+        "start": 1160.18,
+        "duration": 7.23
+    },
+    {
+        "text": "12 to 13 to 10 we start here ceiling",
+        "start": 1164.41,
+        "duration": 6.42
+    },
+    {
+        "text": "entry is going to check the tree map and",
+        "start": 1167.41,
+        "duration": 6.93
+    },
+    {
+        "text": "find the next highest or equal to value",
+        "start": 1170.83,
+        "duration": 6.63
+    },
+    {
+        "text": "so it's a perfect method for this there",
+        "start": 1174.34,
+        "duration": 6.15
+    },
+    {
+        "text": "is some debate of whether this is faster",
+        "start": 1177.46,
+        "duration": 5.25
+    },
+    {
+        "text": "than logarithmic time this guy is saying",
+        "start": 1180.49,
+        "duration": 4.62
+    },
+    {
+        "text": "that I use ceiling entry and floor entry",
+        "start": 1182.71,
+        "duration": 4.2
+    },
+    {
+        "text": "instead of ceiling keen floor key to",
+        "start": 1185.11,
+        "duration": 4.59
+    },
+    {
+        "text": "avoid oval log and query in the end this",
+        "start": 1186.91,
+        "duration": 5.4
+    },
+    {
+        "text": "the runtime of this solution if we look",
+        "start": 1189.7,
+        "duration": 5.61
+    },
+    {
+        "text": "at the solution is going to be O of n",
+        "start": 1192.31,
+        "duration": 6.18
+    },
+    {
+        "text": "space for the tree map and then",
+        "start": 1195.31,
+        "duration": 5.79
+    },
+    {
+        "text": "n log n runtime I guess have used the",
+        "start": 1198.49,
+        "duration": 5.7
+    },
+    {
+        "text": "floor key and ceiling key methods it's a",
+        "start": 1201.1,
+        "duration": 6.3
+    },
+    {
+        "text": "log n query but I think more from what",
+        "start": 1204.19,
+        "duration": 5.34
+    },
+    {
+        "text": "I've read also these methods do the same",
+        "start": 1207.4,
+        "duration": 3.39
+    },
+    {
+        "text": "thing so maybe you can use either way",
+        "start": 1209.53,
+        "duration": 3.96
+    },
+    {
+        "text": "either way these methods do the similar",
+        "start": 1210.79,
+        "duration": 5.34
+    },
+    {
+        "text": "thing where ceiling entry is going to",
+        "start": 1213.49,
+        "duration": 5.64
+    },
+    {
+        "text": "get check the index 14 and then get the",
+        "start": 1216.13,
+        "duration": 5.46
+    },
+    {
+        "text": "greater than or equal to value so it's",
+        "start": 1219.13,
+        "duration": 4.2
+    },
+    {
+        "text": "perfect and then there's floor entry",
+        "start": 1221.59,
+        "duration": 2.88
+    },
+    {
+        "text": "that gets the less than or equal to",
+        "start": 1223.33,
+        "duration": 4.5
+    },
+    {
+        "text": "value the next smallest value in the map",
+        "start": 1224.47,
+        "duration": 6.33
+    },
+    {
+        "text": "so you know perfect methods for this",
+        "start": 1227.83,
+        "duration": 5.21
+    },
+    {
+        "text": "true map is just great for this problem",
+        "start": 1230.8,
+        "duration": 5.73
+    },
+    {
+        "text": "so we're gonna say map dot entry lower",
+        "start": 1233.04,
+        "duration": 5.92
+    },
+    {
+        "text": "key Val pair and remember these methods",
+        "start": 1236.53,
+        "duration": 4.29
+    },
+    {
+        "text": "return a key value pair so we'll have to",
+        "start": 1238.96,
+        "duration": 4.29
+    },
+    {
+        "text": "access the values at some point but in",
+        "start": 1240.82,
+        "duration": 5.609
+    },
+    {
+        "text": "this case this way we have access to the",
+        "start": 1243.25,
+        "duration": 5.55
+    },
+    {
+        "text": "key and the value if we want it value",
+        "start": 1246.429,
+        "duration": 6.571
+    },
+    {
+        "text": "being index key being the elements so",
+        "start": 1248.8,
+        "duration": 8.64
+    },
+    {
+        "text": "lower key value pair is going to be tree",
+        "start": 1253.0,
+        "duration": 10.2
+    },
+    {
+        "text": "map dot floor entry of a of I so now we",
+        "start": 1257.44,
+        "duration": 8.43
+    },
+    {
+        "text": "have the index well we don't have we",
+        "start": 1263.2,
+        "duration": 4.56
+    },
+    {
+        "text": "have the key value pairs right now now",
+        "start": 1265.87,
+        "duration": 3.39
+    },
+    {
+        "text": "we're gonna do a check and make sure",
+        "start": 1267.76,
+        "duration": 3.0
+    },
+    {
+        "text": "these aren't null because if they don't",
+        "start": 1269.26,
+        "duration": 3.33
+    },
+    {
+        "text": "find anything smaller greater than the",
+        "start": 1270.76,
+        "duration": 4.049
+    },
+    {
+        "text": "values then it's going to return null so",
+        "start": 1272.59,
+        "duration": 5.4
+    },
+    {
+        "text": "we do these checks really quick and then",
+        "start": 1274.809,
+        "duration": 4.921
+    },
+    {
+        "text": "this after this is where we could do our",
+        "start": 1277.99,
+        "duration": 3.81
+    },
+    {
+        "text": "calculations now this is where we do it",
+        "start": 1279.73,
+        "duration": 3.69
+    },
+    {
+        "text": "we have these boolean arrays to measure",
+        "start": 1281.8,
+        "duration": 4.89
+    },
+    {
+        "text": "this you know what at cert at which at",
+        "start": 1283.42,
+        "duration": 5.91
+    },
+    {
+        "text": "are certain index in this loop is it",
+        "start": 1286.69,
+        "duration": 4.47
+    },
+    {
+        "text": "gonna be possible to get to the end and",
+        "start": 1289.33,
+        "duration": 4.29
+    },
+    {
+        "text": "we're gonna calculate that based on the",
+        "start": 1291.16,
+        "duration": 5.55
+    },
+    {
+        "text": "previous things so we're gonna say okay",
+        "start": 1293.62,
+        "duration": 8.93
+    },
+    {
+        "text": "higher of I is equal to lower of",
+        "start": 1296.71,
+        "duration": 10.53
+    },
+    {
+        "text": "typecasted to int higher key value pair",
+        "start": 1302.55,
+        "duration": 8.08
+    },
+    {
+        "text": "dot get value so you use doc you to get",
+        "start": 1307.24,
+        "duration": 5.54
+    },
+    {
+        "text": "the value from the key value pair and",
+        "start": 1310.63,
+        "duration": 6.39
+    },
+    {
+        "text": "this gives us what this does is at the",
+        "start": 1312.78,
+        "duration": 6.39
+    },
+    {
+        "text": "certain index we're going to be able to",
+        "start": 1317.02,
+        "duration": 5.4
+    },
+    {
+        "text": "check whether we're going this works",
+        "start": 1319.17,
+        "duration": 6.31
+    },
+    {
+        "text": "because Alice is so annoying to explain",
+        "start": 1322.42,
+        "duration": 5.249
+    },
+    {
+        "text": "but in the hires to keeping track of",
+        "start": 1325.48,
+        "duration": 3.42
+    },
+    {
+        "text": "whether we're going to be able to get to",
+        "start": 1327.669,
+        "duration": 2.851
+    },
+    {
+        "text": "the end at this index if we're going",
+        "start": 1328.9,
+        "duration": 2.77
+    },
+    {
+        "text": "higher right",
+        "start": 1330.52,
+        "duration": 3.4
+    },
+    {
+        "text": "in the lower checks at that index if we",
+        "start": 1331.67,
+        "duration": 4.65
+    },
+    {
+        "text": "can go lower and get to the final index",
+        "start": 1333.92,
+        "duration": 4.41
+    },
+    {
+        "text": "so this is gonna be true or false",
+        "start": 1336.32,
+        "duration": 5.37
+    },
+    {
+        "text": "based on whether if we go higher can we",
+        "start": 1338.33,
+        "duration": 5.61
+    },
+    {
+        "text": "get to the last index of the array well",
+        "start": 1341.69,
+        "duration": 4.38
+    },
+    {
+        "text": "to calculate that we're setting it equal",
+        "start": 1343.94,
+        "duration": 7.55
+    },
+    {
+        "text": "to lower the boolean or a lower so of",
+        "start": 1346.07,
+        "duration": 9.84
+    },
+    {
+        "text": "the higher value so we get the hot we",
+        "start": 1351.49,
+        "duration": 5.86
+    },
+    {
+        "text": "look for the higher value in the array",
+        "start": 1355.91,
+        "duration": 6.75
+    },
+    {
+        "text": "so at 14 we find 15 and we get the index",
+        "start": 1357.35,
+        "duration": 7.65
+    },
+    {
+        "text": "for 15 which is n minus 1 which is the",
+        "start": 1362.66,
+        "duration": 4.29
+    },
+    {
+        "text": "last element of the array and then we",
+        "start": 1365.0,
+        "duration": 4.89
+    },
+    {
+        "text": "say okay is lower of the last element of",
+        "start": 1366.95,
+        "duration": 5.91
+    },
+    {
+        "text": "the array is lower of that index true",
+        "start": 1369.89,
+        "duration": 4.92
+    },
+    {
+        "text": "and in this case it is true because it's",
+        "start": 1372.86,
+        "duration": 3.99
+    },
+    {
+        "text": "already set and that means higher is",
+        "start": 1374.81,
+        "duration": 4.74
+    },
+    {
+        "text": "true so at 14 if you go higher that is",
+        "start": 1376.85,
+        "duration": 5.46
+    },
+    {
+        "text": "true that should make sense if you think",
+        "start": 1379.55,
+        "duration": 5.52
+    },
+    {
+        "text": "about it hard enough we check for the",
+        "start": 1382.31,
+        "duration": 5.25
+    },
+    {
+        "text": "index of the higher value pass it into",
+        "start": 1385.07,
+        "duration": 5.13
+    },
+    {
+        "text": "the lower array and that will calculate",
+        "start": 1387.56,
+        "duration": 6.48
+    },
+    {
+        "text": "the value for us of the current you know",
+        "start": 1390.2,
+        "duration": 6.09
+    },
+    {
+        "text": "position and higher and we do just the",
+        "start": 1394.04,
+        "duration": 5.45
+    },
+    {
+        "text": "vice-versa on lower so we do higher of",
+        "start": 1396.29,
+        "duration": 8.37
+    },
+    {
+        "text": "typecast as int lower key Val pair dot",
+        "start": 1399.49,
+        "duration": 7.9
+    },
+    {
+        "text": "get value I think I'm explaining it",
+        "start": 1404.66,
+        "duration": 6.51
+    },
+    {
+        "text": "pretty well and once you have this then",
+        "start": 1407.39,
+        "duration": 5.34
+    },
+    {
+        "text": "we're filling up the entire array right",
+        "start": 1411.17,
+        "duration": 3.9
+    },
+    {
+        "text": "but we need to keep adding things to map",
+        "start": 1412.73,
+        "duration": 4.77
+    },
+    {
+        "text": "because we're retrieving values at each",
+        "start": 1415.07,
+        "duration": 4.02
+    },
+    {
+        "text": "iteration for map as well",
+        "start": 1417.5,
+        "duration": 4.05
+    },
+    {
+        "text": "so each iteration we're also doing this",
+        "start": 1419.09,
+        "duration": 5.64
+    },
+    {
+        "text": "tree map dot put the current element as",
+        "start": 1421.55,
+        "duration": 6.9
+    },
+    {
+        "text": "well as the index now this is almost",
+        "start": 1424.73,
+        "duration": 5.28
+    },
+    {
+        "text": "complete this is the whole thing but",
+        "start": 1428.45,
+        "duration": 2.88
+    },
+    {
+        "text": "here's what we have to return we have to",
+        "start": 1430.01,
+        "duration": 3.33
+    },
+    {
+        "text": "return how many good starting indexes",
+        "start": 1431.33,
+        "duration": 3.87
+    },
+    {
+        "text": "there are so that's what we're gonna be",
+        "start": 1433.34,
+        "duration": 3.09
+    },
+    {
+        "text": "returning so how do we increment that",
+        "start": 1435.2,
+        "duration": 4.17
+    },
+    {
+        "text": "here's the final thing we increment that",
+        "start": 1436.43,
+        "duration": 9.57
+    },
+    {
+        "text": "if higher of I is true so if I ever I we",
+        "start": 1439.37,
+        "duration": 8.73
+    },
+    {
+        "text": "have found a good starting index and",
+        "start": 1446.0,
+        "duration": 4.91
+    },
+    {
+        "text": "that is because what at each iteration",
+        "start": 1448.1,
+        "duration": 6.99
+    },
+    {
+        "text": "were pretending that this this while we",
+        "start": 1450.91,
+        "duration": 6.52
+    },
+    {
+        "text": "go backwards we're gonna pretend okay",
+        "start": 1455.09,
+        "duration": 3.54
+    },
+    {
+        "text": "well we're not pretending we're gonna",
+        "start": 1457.43,
+        "duration": 4.41
+    },
+    {
+        "text": "check is the it possible to go higher",
+        "start": 1458.63,
+        "duration": 6.81
+    },
+    {
+        "text": "meaning the odd jump the first jump",
+        "start": 1461.84,
+        "duration": 5.88
+    },
+    {
+        "text": "means that if this is true the first",
+        "start": 1465.44,
+        "duration": 4.979
+    },
+    {
+        "text": "jump the odd number jump from that point",
+        "start": 1467.72,
+        "duration": 5.13
+    },
+    {
+        "text": "is gonna give us get us to the end of",
+        "start": 1470.419,
+        "duration": 5.22
+    },
+    {
+        "text": "the array and in that case that's where",
+        "start": 1472.85,
+        "duration": 4.079
+    },
+    {
+        "text": "we're starting out at that's the whole",
+        "start": 1475.639,
+        "duration": 3.301
+    },
+    {
+        "text": "problem we're gonna increment the good",
+        "start": 1476.929,
+        "duration": 4.891
+    },
+    {
+        "text": "starting index count because if we're at",
+        "start": 1478.94,
+        "duration": 4.859
+    },
+    {
+        "text": "this index and we can go higher and get",
+        "start": 1481.82,
+        "duration": 3.989
+    },
+    {
+        "text": "to the end that's good if we're this",
+        "start": 1483.799,
+        "duration": 3.451
+    },
+    {
+        "text": "index and we can go higher and somehow",
+        "start": 1485.809,
+        "duration": 3.12
+    },
+    {
+        "text": "end up at the end that counts",
+        "start": 1487.25,
+        "duration": 3.45
+    },
+    {
+        "text": "this index that counts the whole point",
+        "start": 1488.929,
+        "duration": 4.801
+    },
+    {
+        "text": "is that the first jump is odd so you",
+        "start": 1490.7,
+        "duration": 4.709
+    },
+    {
+        "text": "have to go higher so if you can go",
+        "start": 1493.73,
+        "duration": 2.789
+    },
+    {
+        "text": "higher and get to the end from that",
+        "start": 1495.409,
+        "duration": 2.64
+    },
+    {
+        "text": "point that means it's a good starting",
+        "start": 1496.519,
+        "duration": 4.471
+    },
+    {
+        "text": "index count I think I explained this",
+        "start": 1498.049,
+        "duration": 6.271
+    },
+    {
+        "text": "just about as well as I could hopefully",
+        "start": 1500.99,
+        "duration": 5.85
+    },
+    {
+        "text": "there you go it runs it's successful",
+        "start": 1504.32,
+        "duration": 4.439
+    },
+    {
+        "text": "only thing I'm a little iffy about is",
+        "start": 1506.84,
+        "duration": 6.419
+    },
+    {
+        "text": "that thing I saw in the solution where",
+        "start": 1508.759,
+        "duration": 7.77
+    },
+    {
+        "text": "the dude said that you can avoid a login",
+        "start": 1513.259,
+        "duration": 5.191
+    },
+    {
+        "text": "query by using ceiling floor and ceiling",
+        "start": 1516.529,
+        "duration": 4.201
+    },
+    {
+        "text": "entry I would recommend checking out",
+        "start": 1518.45,
+        "duration": 5.55
+    },
+    {
+        "text": "this other solution where it's just they",
+        "start": 1520.73,
+        "duration": 4.679
+    },
+    {
+        "text": "have the solution in here they do the",
+        "start": 1524.0,
+        "duration": 3.059
+    },
+    {
+        "text": "same thing everyone's kind of doing the",
+        "start": 1525.409,
+        "duration": 3.99
+    },
+    {
+        "text": "same thing here he uses lower key and",
+        "start": 1527.059,
+        "duration": 6.0
+    },
+    {
+        "text": "higher key so you know whatever you want",
+        "start": 1529.399,
+        "duration": 5.221
+    },
+    {
+        "text": "to do you can do it but I think I",
+        "start": 1533.059,
+        "duration": 4.441
+    },
+    {
+        "text": "explained it the main idea is just these",
+        "start": 1534.62,
+        "duration": 4.5
+    },
+    {
+        "text": "things you're filling up a boolean array",
+        "start": 1537.5,
+        "duration": 5.34
+    },
+    {
+        "text": "of whether your go index your loop and",
+        "start": 1539.12,
+        "duration": 6.059
+    },
+    {
+        "text": "through backwards you're storing values",
+        "start": 1542.84,
+        "duration": 5.28
+    },
+    {
+        "text": "and you're saying can i if i go higher",
+        "start": 1545.179,
+        "duration": 4.801
+    },
+    {
+        "text": "can I get to the end if I go lower can I",
+        "start": 1548.12,
+        "duration": 3.299
+    },
+    {
+        "text": "get to the end and you're saying true or",
+        "start": 1549.98,
+        "duration": 4.02
+    },
+    {
+        "text": "false based on that and you're checking",
+        "start": 1551.419,
+        "duration": 5.671
+    },
+    {
+        "text": "but to do that you're checking well it",
+        "start": 1554.0,
+        "duration": 5.399
+    },
+    {
+        "text": "can I go higher well let me check the",
+        "start": 1557.09,
+        "duration": 6.839
+    },
+    {
+        "text": "higher value index if that in the lower",
+        "start": 1559.399,
+        "duration": 6.9
+    },
+    {
+        "text": "array because what you're gonna say if",
+        "start": 1563.929,
+        "duration": 6.33
+    },
+    {
+        "text": "you can go lower after you go higher if",
+        "start": 1566.299,
+        "duration": 6.48
+    },
+    {
+        "text": "you can go lower and get to the end then",
+        "start": 1570.259,
+        "duration": 4.29
+    },
+    {
+        "text": "that's good so you have to check that",
+        "start": 1572.779,
+        "duration": 3.571
+    },
+    {
+        "text": "you have to check the lower and for",
+        "start": 1574.549,
+        "duration": 3.901
+    },
+    {
+        "text": "lower if you go lower then you have to",
+        "start": 1576.35,
+        "duration": 3.84
+    },
+    {
+        "text": "check if you can go higher and get to",
+        "start": 1578.45,
+        "duration": 4.349
+    },
+    {
+        "text": "the end this these this has the value",
+        "start": 1580.19,
+        "duration": 5.069
+    },
+    {
+        "text": "the boolean value of whether if you go",
+        "start": 1582.799,
+        "duration": 6.931
+    },
+    {
+        "text": "lower can you get to the end so that's",
+        "start": 1585.259,
+        "duration": 6.811
+    },
+    {
+        "text": "the whole thing let me know what you",
+        "start": 1589.73,
+        "duration": 3.419
+    },
+    {
+        "text": "guys think let me know if you have any",
+        "start": 1592.07,
+        "duration": 2.76
+    },
+    {
+        "text": "questions I'm trying to explain it I",
+        "start": 1593.149,
+        "duration": 3.15
+    },
+    {
+        "text": "think I did a good job I went through",
+        "start": 1594.83,
+        "duration": 4.2
+    },
+    {
+        "text": "all on examples I went through all the",
+        "start": 1596.299,
+        "duration": 4.741
+    },
+    {
+        "text": "I walked through this guy he has like a",
+        "start": 1599.03,
+        "duration": 5.49
+    },
+    {
+        "text": "great solution 11 K you know 150 up",
+        "start": 1601.04,
+        "duration": 5.22
+    },
+    {
+        "text": "votes I think he's a smart dude I see",
+        "start": 1604.52,
+        "duration": 3.63
+    },
+    {
+        "text": "him in the posts and the things all the",
+        "start": 1606.26,
+        "duration": 4.67
+    },
+    {
+        "text": "time so I went off of his solution and",
+        "start": 1608.15,
+        "duration": 5.88
+    },
+    {
+        "text": "I'm not an expert at tree maps by any",
+        "start": 1610.93,
+        "duration": 4.42
+    },
+    {
+        "text": "means I've used them in interviews",
+        "start": 1614.03,
+        "duration": 3.33
+    },
+    {
+        "text": "before and you know this just happened",
+        "start": 1615.35,
+        "duration": 3.45
+    },
+    {
+        "text": "to be one of the cases where these",
+        "start": 1617.36,
+        "duration": 3.84
+    },
+    {
+        "text": "methods come in handy really well so",
+        "start": 1618.8,
+        "duration": 5.04
+    },
+    {
+        "text": "keep keep that in mind tree Maps do come",
+        "start": 1621.2,
+        "duration": 4.32
+    },
+    {
+        "text": "up in interviews let me know if you have",
+        "start": 1623.84,
+        "duration": 4.47
+    },
+    {
+        "text": "any questions about this problem and I",
+        "start": 1625.52,
+        "duration": 7.04
+    },
+    {
+        "text": "thank you guys for watching you know so",
+        "start": 1628.31,
+        "duration": 7.68
+    },
+    {
+        "text": "hopefully you enjoy and I'll see you",
+        "start": 1632.56,
+        "duration": 6.27
+    },
+    {
+        "text": "guys next time",
+        "start": 1635.99,
+        "duration": 2.84
+    }
+]

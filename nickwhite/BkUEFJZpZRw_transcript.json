@@ -1,0 +1,452 @@
+[
+    {
+        "text": "hey what's up guys Nick white here I do",
+        "start": 0.35,
+        "duration": 4.48
+    },
+    {
+        "text": "tech encoding stuff on twitch and",
+        "start": 3.0,
+        "duration": 3.27
+    },
+    {
+        "text": "YouTube and everything's in description",
+        "start": 4.83,
+        "duration": 4.08
+    },
+    {
+        "text": "if you want to see I do although eco",
+        "start": 6.27,
+        "duration": 4.17
+    },
+    {
+        "text": "problems I've done I don't know how many",
+        "start": 8.91,
+        "duration": 3.42
+    },
+    {
+        "text": "at this point I'm doing a ton of them so",
+        "start": 10.44,
+        "duration": 3.21
+    },
+    {
+        "text": "just check them out on my channel if you",
+        "start": 12.33,
+        "duration": 3.779
+    },
+    {
+        "text": "like and it's explained to you doing all",
+        "start": 13.65,
+        "duration": 4.23
+    },
+    {
+        "text": "the tree ones today just getting them",
+        "start": 16.109,
+        "duration": 5.01
+    },
+    {
+        "text": "completely done just trees I want to",
+        "start": 17.88,
+        "duration": 5.52
+    },
+    {
+        "text": "have done I think they're pretty easy",
+        "start": 21.119,
+        "duration": 4.951
+    },
+    {
+        "text": "problems so this one is easy",
+        "start": 23.4,
+        "duration": 5.85
+    },
+    {
+        "text": "it's called Univ alley binary tree it's",
+        "start": 26.07,
+        "duration": 5.279
+    },
+    {
+        "text": "just a binary tree is Univ al u diff",
+        "start": 29.25,
+        "duration": 3.63
+    },
+    {
+        "text": "every node in the tree has the same",
+        "start": 31.349,
+        "duration": 3.361
+    },
+    {
+        "text": "value so we see here there's a tree with",
+        "start": 32.88,
+        "duration": 3.839
+    },
+    {
+        "text": "all ones so that would be Yoona valued",
+        "start": 34.71,
+        "duration": 5.31
+    },
+    {
+        "text": "return true if and only true if and only",
+        "start": 36.719,
+        "duration": 5.731
+    },
+    {
+        "text": "if the given tree is Univ al you'd so",
+        "start": 40.02,
+        "duration": 6.09
+    },
+    {
+        "text": "yeah we give a tree node a root and we",
+        "start": 42.45,
+        "duration": 6.81
+    },
+    {
+        "text": "just basically traverse the tree and if",
+        "start": 46.11,
+        "duration": 5.28
+    },
+    {
+        "text": "we find a node that is different than",
+        "start": 49.26,
+        "duration": 4.68
+    },
+    {
+        "text": "what the other nodes values are it's",
+        "start": 51.39,
+        "duration": 4.2
+    },
+    {
+        "text": "gonna be false and if every node is the",
+        "start": 53.94,
+        "duration": 4.08
+    },
+    {
+        "text": "same value it's gonna be true we've done",
+        "start": 55.59,
+        "duration": 4.62
+    },
+    {
+        "text": "a lot harder to read problems here so",
+        "start": 58.02,
+        "duration": 5.1
+    },
+    {
+        "text": "this really isn't anything too difficult",
+        "start": 60.21,
+        "duration": 5.07
+    },
+    {
+        "text": "we basically just want to do recursive",
+        "start": 63.12,
+        "duration": 4.2
+    },
+    {
+        "text": "calls as we traverse the tree just like",
+        "start": 65.28,
+        "duration": 4.35
+    },
+    {
+        "text": "any other problem and we want to make",
+        "start": 67.32,
+        "duration": 5.46
+    },
+    {
+        "text": "sure that the root so the current route",
+        "start": 69.63,
+        "duration": 5.91
+    },
+    {
+        "text": "has the same value as its left child and",
+        "start": 72.78,
+        "duration": 4.92
+    },
+    {
+        "text": "right child so we're gonna do that this",
+        "start": 75.54,
+        "duration": 3.66
+    },
+    {
+        "text": "is a method we used in a different one",
+        "start": 77.7,
+        "duration": 5.7
+    },
+    {
+        "text": "so we'll be left Univ al as a boolean to",
+        "start": 79.2,
+        "duration": 5.88
+    },
+    {
+        "text": "make sure the left is you know valid and",
+        "start": 83.4,
+        "duration": 4.17
+    },
+    {
+        "text": "if we see a null node that doesn't count",
+        "start": 85.08,
+        "duration": 4.649
+    },
+    {
+        "text": "right we see a null it doesn't count as",
+        "start": 87.57,
+        "duration": 4.229
+    },
+    {
+        "text": "different than the other ones right so",
+        "start": 89.729,
+        "duration": 3.121
+    },
+    {
+        "text": "the first thing we're gonna want to do",
+        "start": 91.799,
+        "duration": 3.03
+    },
+    {
+        "text": "in this left boolean is say root dot",
+        "start": 92.85,
+        "duration": 5.79
+    },
+    {
+        "text": "left equals equals null cuz or and then",
+        "start": 94.829,
+        "duration": 6.33
+    },
+    {
+        "text": "we'll do our other conditions because if",
+        "start": 98.64,
+        "duration": 4.89
+    },
+    {
+        "text": "it's null that's automatically true it's",
+        "start": 101.159,
+        "duration": 4.681
+    },
+    {
+        "text": "you know it is it will count as you know",
+        "start": 103.53,
+        "duration": 5.28
+    },
+    {
+        "text": "valid if it's not so if you so the Left",
+        "start": 105.84,
+        "duration": 4.98
+    },
+    {
+        "text": "making sure the left side is Univ al",
+        "start": 108.81,
+        "duration": 4.739
+    },
+    {
+        "text": "will either be the root left is a null",
+        "start": 110.82,
+        "duration": 6.63
+    },
+    {
+        "text": "or the root down left val has to be",
+        "start": 113.549,
+        "duration": 8.1
+    },
+    {
+        "text": "equal to the root dot Val so the current",
+        "start": 117.45,
+        "duration": 6.209
+    },
+    {
+        "text": "node has to be equal to the left node",
+        "start": 121.649,
+        "duration": 6.39
+    },
+    {
+        "text": "and we also want to do this check on the",
+        "start": 123.659,
+        "duration": 6.63
+    },
+    {
+        "text": "rest of the left side too so it's the",
+        "start": 128.039,
+        "duration": 4.551
+    },
+    {
+        "text": "recursive call on the rest",
+        "start": 130.289,
+        "duration": 5.271
+    },
+    {
+        "text": "the left side so the boolean that's the",
+        "start": 132.59,
+        "duration": 4.83
+    },
+    {
+        "text": "boolean it's gonna be the same for the",
+        "start": 135.56,
+        "duration": 3.39
+    },
+    {
+        "text": "right side so we'll have the right unit",
+        "start": 137.42,
+        "duration": 3.84
+    },
+    {
+        "text": "valve equals to root right equals equals",
+        "start": 138.95,
+        "duration": 4.74
+    },
+    {
+        "text": "null because that is Univ AB or root dot",
+        "start": 141.26,
+        "duration": 4.8
+    },
+    {
+        "text": "right dot Val is equal to equal to root",
+        "start": 143.69,
+        "duration": 6.18
+    },
+    {
+        "text": "up out and then is you know Val Tree on",
+        "start": 146.06,
+        "duration": 6.149
+    },
+    {
+        "text": "the root right side so we just do",
+        "start": 149.87,
+        "duration": 3.6
+    },
+    {
+        "text": "recursive calls on the left and right",
+        "start": 152.209,
+        "duration": 3.871
+    },
+    {
+        "text": "side and then these bullying's will be",
+        "start": 153.47,
+        "duration": 4.379
+    },
+    {
+        "text": "able to recurse on the left and right",
+        "start": 156.08,
+        "duration": 3.42
+    },
+    {
+        "text": "all the way through the whole tree and",
+        "start": 157.849,
+        "duration": 3.631
+    },
+    {
+        "text": "then all we have to do is return the",
+        "start": 159.5,
+        "duration": 3.51
+    },
+    {
+        "text": "combination of these boolean x'",
+        "start": 161.48,
+        "duration": 4.319
+    },
+    {
+        "text": "so if the left is Univ AB and we're",
+        "start": 163.01,
+        "duration": 4.68
+    },
+    {
+        "text": "accursed everything and the right is",
+        "start": 165.799,
+        "duration": 2.671
+    },
+    {
+        "text": "Univ AB",
+        "start": 167.69,
+        "duration": 2.879
+    },
+    {
+        "text": "so they're both Univ alt on both sides",
+        "start": 168.47,
+        "duration": 4.349
+    },
+    {
+        "text": "then we just return a combination of",
+        "start": 170.569,
+        "duration": 5.491
+    },
+    {
+        "text": "both and and is good because if they're",
+        "start": 172.819,
+        "duration": 4.621
+    },
+    {
+        "text": "both true that's gonna be true and if",
+        "start": 176.06,
+        "duration": 2.85
+    },
+    {
+        "text": "one of them is false it's gonna be false",
+        "start": 177.44,
+        "duration": 3.81
+    },
+    {
+        "text": "so if one of the sides isn't Univ AB",
+        "start": 178.91,
+        "duration": 3.719
+    },
+    {
+        "text": "then we're gonna be returning false",
+        "start": 181.25,
+        "duration": 2.91
+    },
+    {
+        "text": "which is what we want but the whole",
+        "start": 182.629,
+        "duration": 2.821
+    },
+    {
+        "text": "thing is Univ out then we're gonna",
+        "start": 184.16,
+        "duration": 3.719
+    },
+    {
+        "text": "return true which is what we want so so",
+        "start": 185.45,
+        "duration": 4.679
+    },
+    {
+        "text": "this is this one's easy it's easy it's a",
+        "start": 187.879,
+        "duration": 3.39
+    },
+    {
+        "text": "lot easier than some of the other",
+        "start": 190.129,
+        "duration": 3.42
+    },
+    {
+        "text": "problems we did and that's pretty much",
+        "start": 191.269,
+        "duration": 3.841
+    },
+    {
+        "text": "it so let me know what you guys think",
+        "start": 193.549,
+        "duration": 2.91
+    },
+    {
+        "text": "about the explanation in the comments",
+        "start": 195.11,
+        "duration": 2.849
+    },
+    {
+        "text": "below and check out the other ones",
+        "start": 196.459,
+        "duration": 3.18
+    },
+    {
+        "text": "because I'm explaining them all so",
+        "start": 197.959,
+        "duration": 3.81
+    },
+    {
+        "text": "thanks guys for watching and I'll see",
+        "start": 199.639,
+        "duration": 4.671
+    },
+    {
+        "text": "you next time",
+        "start": 201.769,
+        "duration": 2.541
+    }
+]

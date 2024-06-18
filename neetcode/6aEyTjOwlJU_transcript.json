@@ -1,0 +1,2062 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.76
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.839,
+        "duration": 4.801
+    },
+    {
+        "text": "let's solve the problem decode ways so",
+        "start": 3.76,
+        "duration": 5.36
+    },
+    {
+        "text": "we're basically given a string of",
+        "start": 6.64,
+        "duration": 5.44
+    },
+    {
+        "text": "integers and we want to know with that",
+        "start": 9.12,
+        "duration": 5.439
+    },
+    {
+        "text": "string of integers how many different",
+        "start": 12.08,
+        "duration": 4.88
+    },
+    {
+        "text": "ways can we take that string of integers",
+        "start": 14.559,
+        "duration": 5.281
+    },
+    {
+        "text": "and decode it into a string of",
+        "start": 16.96,
+        "duration": 5.76
+    },
+    {
+        "text": "characters and we're given a specific",
+        "start": 19.84,
+        "duration": 6.48
+    },
+    {
+        "text": "mapping so we have 26 characters and",
+        "start": 22.72,
+        "duration": 5.76
+    },
+    {
+        "text": "each integer maps to a different",
+        "start": 26.32,
+        "duration": 5.039
+    },
+    {
+        "text": "character so we have an integer 1 2 all",
+        "start": 28.48,
+        "duration": 6.56
+    },
+    {
+        "text": "the way to 26 and each of these integers",
+        "start": 31.359,
+        "duration": 5.521
+    },
+    {
+        "text": "maps to a different character now we",
+        "start": 35.04,
+        "duration": 3.839
+    },
+    {
+        "text": "don't actually need to build that string",
+        "start": 36.88,
+        "duration": 4.24
+    },
+    {
+        "text": "that we are mapping to we just have to",
+        "start": 38.879,
+        "duration": 4.081
+    },
+    {
+        "text": "count the number of different ways we",
+        "start": 41.12,
+        "duration": 4.08
+    },
+    {
+        "text": "can decode it so down here in the",
+        "start": 42.96,
+        "duration": 5.52
+    },
+    {
+        "text": "example you can see a string like 12 can",
+        "start": 45.2,
+        "duration": 6.24
+    },
+    {
+        "text": "be decoded in two different ways one way",
+        "start": 48.48,
+        "duration": 6.64
+    },
+    {
+        "text": "to decode it is just one and two because",
+        "start": 51.44,
+        "duration": 5.36
+    },
+    {
+        "text": "one maps to a",
+        "start": 55.12,
+        "duration": 5.599
+    },
+    {
+        "text": "two maps to b so that's one string but",
+        "start": 56.8,
+        "duration": 6.8
+    },
+    {
+        "text": "remember we can have double digit values",
+        "start": 60.719,
+        "duration": 5.76
+    },
+    {
+        "text": "so 12 actually maps to its own character",
+        "start": 63.6,
+        "duration": 6.72
+    },
+    {
+        "text": "12 itself maps to 11. so there are two",
+        "start": 66.479,
+        "duration": 5.68
+    },
+    {
+        "text": "different ways that this string this",
+        "start": 70.32,
+        "duration": 3.52
+    },
+    {
+        "text": "string of integers could be mapped to a",
+        "start": 72.159,
+        "duration": 4.0
+    },
+    {
+        "text": "string of characters so we return two in",
+        "start": 73.84,
+        "duration": 4.72
+    },
+    {
+        "text": "the output now as you can see it would",
+        "start": 76.159,
+        "duration": 4.481
+    },
+    {
+        "text": "be very simple if we just had numbers",
+        "start": 78.56,
+        "duration": 4.72
+    },
+    {
+        "text": "one through nine that map to characters",
+        "start": 80.64,
+        "duration": 4.799
+    },
+    {
+        "text": "right the problem comes from double",
+        "start": 83.28,
+        "duration": 5.519
+    },
+    {
+        "text": "digits right from 10 10 a string like",
+        "start": 85.439,
+        "duration": 5.121
+    },
+    {
+        "text": "this can be taken in two different ways",
+        "start": 88.799,
+        "duration": 4.96
+    },
+    {
+        "text": "right 1 0 or just 10 right so that's",
+        "start": 90.56,
+        "duration": 4.64
+    },
+    {
+        "text": "where the complexity is going to come",
+        "start": 93.759,
+        "duration": 3.36
+    },
+    {
+        "text": "from from a string like this we could",
+        "start": 95.2,
+        "duration": 4.959
+    },
+    {
+        "text": "have two different decisions so we're",
+        "start": 97.119,
+        "duration": 5.28
+    },
+    {
+        "text": "going to be using a decision tree to",
+        "start": 100.159,
+        "duration": 4.0
+    },
+    {
+        "text": "kind of figure out all the possibilities",
+        "start": 102.399,
+        "duration": 3.201
+    },
+    {
+        "text": "with this at least that's going to be",
+        "start": 104.159,
+        "duration": 3.681
+    },
+    {
+        "text": "the brute force approach the only",
+        "start": 105.6,
+        "duration": 3.92
+    },
+    {
+        "text": "problem is that there's going to be a",
+        "start": 107.84,
+        "duration": 3.2
+    },
+    {
+        "text": "few different edge cases we have to",
+        "start": 109.52,
+        "duration": 3.68
+    },
+    {
+        "text": "worry about for example we could have a",
+        "start": 111.04,
+        "duration": 3.759
+    },
+    {
+        "text": "string like this we could have a string",
+        "start": 113.2,
+        "duration": 3.12
+    },
+    {
+        "text": "like zero",
+        "start": 114.799,
+        "duration": 3.521
+    },
+    {
+        "text": "six right how what what exactly does",
+        "start": 116.32,
+        "duration": 5.839
+    },
+    {
+        "text": "this map to well zero is not even in our",
+        "start": 118.32,
+        "duration": 6.159
+    },
+    {
+        "text": "our input right basically zero itself",
+        "start": 122.159,
+        "duration": 5.121
+    },
+    {
+        "text": "does not map to any character right six",
+        "start": 124.479,
+        "duration": 5.28
+    },
+    {
+        "text": "could map to a character but zero does",
+        "start": 127.28,
+        "duration": 5.039
+    },
+    {
+        "text": "not so if we ever get a zero you know a",
+        "start": 129.759,
+        "duration": 5.761
+    },
+    {
+        "text": "string starting with zero that's invalid",
+        "start": 132.319,
+        "duration": 4.961
+    },
+    {
+        "text": "so we have to return zero in that case",
+        "start": 135.52,
+        "duration": 4.4
+    },
+    {
+        "text": "this cannot be mapped to any uh this",
+        "start": 137.28,
+        "duration": 4.64
+    },
+    {
+        "text": "cannot be decoded in any way so we",
+        "start": 139.92,
+        "duration": 4.56
+    },
+    {
+        "text": "return zero okay let's try to figure out",
+        "start": 141.92,
+        "duration": 4.8
+    },
+    {
+        "text": "the brute force approach to solving this",
+        "start": 144.48,
+        "duration": 4.24
+    },
+    {
+        "text": "problem and in doing that we'll try to",
+        "start": 146.72,
+        "duration": 3.519
+    },
+    {
+        "text": "figure out some of the edge cases that",
+        "start": 148.72,
+        "duration": 3.2
+    },
+    {
+        "text": "we're gonna have to deal with suppose we",
+        "start": 150.239,
+        "duration": 4.0
+    },
+    {
+        "text": "have a string like this one two one how",
+        "start": 151.92,
+        "duration": 4.56
+    },
+    {
+        "text": "many different ways can this be decoded",
+        "start": 154.239,
+        "duration": 3.841
+    },
+    {
+        "text": "well let's say we start at the beginning",
+        "start": 156.48,
+        "duration": 4.72
+    },
+    {
+        "text": "right we could take one by itself right",
+        "start": 158.08,
+        "duration": 5.04
+    },
+    {
+        "text": "that's going to be some character right",
+        "start": 161.2,
+        "duration": 3.36
+    },
+    {
+        "text": "we don't really care what it is but it's",
+        "start": 163.12,
+        "duration": 3.199
+    },
+    {
+        "text": "going to be some character now we could",
+        "start": 164.56,
+        "duration": 4.56
+    },
+    {
+        "text": "also take the first two characters by",
+        "start": 166.319,
+        "duration": 4.881
+    },
+    {
+        "text": "themselves 12 by itself right because",
+        "start": 169.12,
+        "duration": 4.32
+    },
+    {
+        "text": "that's valid right so that's another",
+        "start": 171.2,
+        "duration": 4.56
+    },
+    {
+        "text": "decision starting from here we could",
+        "start": 173.44,
+        "duration": 5.12
+    },
+    {
+        "text": "take one or we could take 12. and by the",
+        "start": 175.76,
+        "duration": 4.96
+    },
+    {
+        "text": "way if this was a zero we definitely",
+        "start": 178.56,
+        "duration": 3.599
+    },
+    {
+        "text": "could not take it then we'd have to just",
+        "start": 180.72,
+        "duration": 3.12
+    },
+    {
+        "text": "stop immediately right because we can't",
+        "start": 182.159,
+        "duration": 4.16
+    },
+    {
+        "text": "start with a string starting at zero but",
+        "start": 183.84,
+        "duration": 4.72
+    },
+    {
+        "text": "if we had something like one zero right",
+        "start": 186.319,
+        "duration": 4.56
+    },
+    {
+        "text": "a ten maybe then we can take it because",
+        "start": 188.56,
+        "duration": 5.12
+    },
+    {
+        "text": "it's okay if a zero comes after a one",
+        "start": 190.879,
+        "duration": 5.201
+    },
+    {
+        "text": "and so basically any any integer by",
+        "start": 193.68,
+        "duration": 5.04
+    },
+    {
+        "text": "itself right one two three four five any",
+        "start": 196.08,
+        "duration": 6.32
+    },
+    {
+        "text": "integer by itself except for zero can be",
+        "start": 198.72,
+        "duration": 6.0
+    },
+    {
+        "text": "taken right so basically we can create",
+        "start": 202.4,
+        "duration": 4.24
+    },
+    {
+        "text": "any string of one",
+        "start": 204.72,
+        "duration": 4.799
+    },
+    {
+        "text": "you know one number from one through",
+        "start": 206.64,
+        "duration": 4.959
+    },
+    {
+        "text": "nine except zero right we're just not",
+        "start": 209.519,
+        "duration": 4.321
+    },
+    {
+        "text": "including zero it cannot be taken by",
+        "start": 211.599,
+        "duration": 4.161
+    },
+    {
+        "text": "itself but any from one through nine are",
+        "start": 213.84,
+        "duration": 4.24
+    },
+    {
+        "text": "okay right so what we're gonna see here",
+        "start": 215.76,
+        "duration": 4.16
+    },
+    {
+        "text": "is okay if we went down this path where",
+        "start": 218.08,
+        "duration": 4.0
+    },
+    {
+        "text": "we chose a one then the next character",
+        "start": 219.92,
+        "duration": 4.0
+    },
+    {
+        "text": "we're gonna be at is the two right of",
+        "start": 222.08,
+        "duration": 4.0
+    },
+    {
+        "text": "course two can be taken by itself right",
+        "start": 223.92,
+        "duration": 4.72
+    },
+    {
+        "text": "any number except for zero can be taken",
+        "start": 226.08,
+        "duration": 5.2
+    },
+    {
+        "text": "by itself it can be decoded in that way",
+        "start": 228.64,
+        "duration": 5.519
+    },
+    {
+        "text": "so when we're at this one or one when",
+        "start": 231.28,
+        "duration": 4.64
+    },
+    {
+        "text": "we're at this position we can take two",
+        "start": 234.159,
+        "duration": 6.241
+    },
+    {
+        "text": "by itself or we can take 21 right 21 is",
+        "start": 235.92,
+        "duration": 6.319
+    },
+    {
+        "text": "also some character i don't know what it",
+        "start": 240.4,
+        "duration": 4.24
+    },
+    {
+        "text": "is but remember we had values from 1",
+        "start": 242.239,
+        "duration": 6.56
+    },
+    {
+        "text": "through 26 right so having a 20 21 is",
+        "start": 244.64,
+        "duration": 6.319
+    },
+    {
+        "text": "completely fine that will decode to its",
+        "start": 248.799,
+        "duration": 4.16
+    },
+    {
+        "text": "own character right now of course if we",
+        "start": 250.959,
+        "duration": 4.961
+    },
+    {
+        "text": "had something like a 27 over here then",
+        "start": 252.959,
+        "duration": 4.96
+    },
+    {
+        "text": "we could not go down this path right",
+        "start": 255.92,
+        "duration": 3.599
+    },
+    {
+        "text": "then we just would not go down this path",
+        "start": 257.919,
+        "duration": 4.321
+    },
+    {
+        "text": "because 27 does not map to any character",
+        "start": 259.519,
+        "duration": 4.881
+    },
+    {
+        "text": "right so we're kind of learning that you",
+        "start": 262.24,
+        "duration": 4.56
+    },
+    {
+        "text": "know anything the integers have to be",
+        "start": 264.4,
+        "duration": 6.16
+    },
+    {
+        "text": "within 1 through 26 right and this 27 is",
+        "start": 266.8,
+        "duration": 7.119
+    },
+    {
+        "text": "not okay and so down this path we reach",
+        "start": 270.56,
+        "duration": 5.84
+    },
+    {
+        "text": "the end right we had a 1 and we had a 21",
+        "start": 273.919,
+        "duration": 4.56
+    },
+    {
+        "text": "right so there's no more characters to",
+        "start": 276.4,
+        "duration": 4.88
+    },
+    {
+        "text": "choose from here so basically this was",
+        "start": 278.479,
+        "duration": 5.361
+    },
+    {
+        "text": "one way that we could decode this input",
+        "start": 281.28,
+        "duration": 4.96
+    },
+    {
+        "text": "so when we reach the end we're gonna",
+        "start": 283.84,
+        "duration": 4.16
+    },
+    {
+        "text": "count that as a one right that means we",
+        "start": 286.24,
+        "duration": 4.72
+    },
+    {
+        "text": "found a single way to decode this input",
+        "start": 288.0,
+        "duration": 4.96
+    },
+    {
+        "text": "so this was a good base case where we",
+        "start": 290.96,
+        "duration": 4.56
+    },
+    {
+        "text": "return one and from here let's continue",
+        "start": 292.96,
+        "duration": 4.64
+    },
+    {
+        "text": "this one so we left off at two then we",
+        "start": 295.52,
+        "duration": 4.399
+    },
+    {
+        "text": "get to one can one be taken by itself of",
+        "start": 297.6,
+        "duration": 4.24
+    },
+    {
+        "text": "course again it's not a zero so we can",
+        "start": 299.919,
+        "duration": 3.921
+    },
+    {
+        "text": "take it by itself and so then we reach",
+        "start": 301.84,
+        "duration": 3.359
+    },
+    {
+        "text": "the end of the string again so this is",
+        "start": 303.84,
+        "duration": 4.4
+    },
+    {
+        "text": "another good base case one two one is a",
+        "start": 305.199,
+        "duration": 5.601
+    },
+    {
+        "text": "valid way to decode this string so if we",
+        "start": 308.24,
+        "duration": 4.799
+    },
+    {
+        "text": "started with one you know over here we",
+        "start": 310.8,
+        "duration": 3.839
+    },
+    {
+        "text": "could decode this in two different ways",
+        "start": 313.039,
+        "duration": 3.761
+    },
+    {
+        "text": "if we start with 12 how many ways can we",
+        "start": 314.639,
+        "duration": 4.241
+    },
+    {
+        "text": "decode it well if we start with 12 then",
+        "start": 316.8,
+        "duration": 4.239
+    },
+    {
+        "text": "we just have one character left the one",
+        "start": 318.88,
+        "duration": 3.28
+    },
+    {
+        "text": "character",
+        "start": 321.039,
+        "duration": 3.121
+    },
+    {
+        "text": "so that can be decoded another way so",
+        "start": 322.16,
+        "duration": 3.92
+    },
+    {
+        "text": "this is another good base case so",
+        "start": 324.16,
+        "duration": 4.24
+    },
+    {
+        "text": "basically we saw that we have three",
+        "start": 326.08,
+        "duration": 4.32
+    },
+    {
+        "text": "different ways that we can decode this",
+        "start": 328.4,
+        "duration": 4.56
+    },
+    {
+        "text": "string now just to kind of add a couple",
+        "start": 330.4,
+        "duration": 4.079
+    },
+    {
+        "text": "values to the string what if we had",
+        "start": 332.96,
+        "duration": 3.76
+    },
+    {
+        "text": "something like 31 after it so then you",
+        "start": 334.479,
+        "duration": 4.321
+    },
+    {
+        "text": "know let's say we left off over here you",
+        "start": 336.72,
+        "duration": 4.64
+    },
+    {
+        "text": "know we can choose the three by itself",
+        "start": 338.8,
+        "duration": 4.399
+    },
+    {
+        "text": "right because any character except for",
+        "start": 341.36,
+        "duration": 4.0
+    },
+    {
+        "text": "zero can be taken by itself could we",
+        "start": 343.199,
+        "duration": 5.201
+    },
+    {
+        "text": "take 31 we could not right the same",
+        "start": 345.36,
+        "duration": 5.92
+    },
+    {
+        "text": "reason we can't take 27 we can't take 31",
+        "start": 348.4,
+        "duration": 5.359
+    },
+    {
+        "text": "because it's it's greater than 26 right",
+        "start": 351.28,
+        "duration": 3.759
+    },
+    {
+        "text": "how are we going to determine that in",
+        "start": 353.759,
+        "duration": 2.481
+    },
+    {
+        "text": "the code you can do it a lot of",
+        "start": 355.039,
+        "duration": 2.481
+    },
+    {
+        "text": "different ways what i'm just going to",
+        "start": 356.24,
+        "duration": 4.72
+    },
+    {
+        "text": "say is we can only take double digit",
+        "start": 357.52,
+        "duration": 7.119
+    },
+    {
+        "text": "values if the the first digit starts",
+        "start": 360.96,
+        "duration": 5.28
+    },
+    {
+        "text": "with a one",
+        "start": 364.639,
+        "duration": 3.921
+    },
+    {
+        "text": "because if it starts with a one then for",
+        "start": 366.24,
+        "duration": 5.04
+    },
+    {
+        "text": "the second digit we can take anything",
+        "start": 368.56,
+        "duration": 5.04
+    },
+    {
+        "text": "from zero to nine right anything from",
+        "start": 371.28,
+        "duration": 4.24
+    },
+    {
+        "text": "zero to nine because then you know this",
+        "start": 373.6,
+        "duration": 3.84
+    },
+    {
+        "text": "this this double digit value will either",
+        "start": 375.52,
+        "duration": 5.84
+    },
+    {
+        "text": "be between 10 to 19 right and this value",
+        "start": 377.44,
+        "duration": 6.879
+    },
+    {
+        "text": "is less than 26 so that's perfectly fine",
+        "start": 381.36,
+        "duration": 6.48
+    },
+    {
+        "text": "but if we start with a two digit",
+        "start": 384.319,
+        "duration": 5.681
+    },
+    {
+        "text": "if we start with a two digit then the",
+        "start": 387.84,
+        "duration": 4.72
+    },
+    {
+        "text": "second digit has to be between zero and",
+        "start": 390.0,
+        "duration": 5.199
+    },
+    {
+        "text": "six because 26 is going to be less than",
+        "start": 392.56,
+        "duration": 4.96
+    },
+    {
+        "text": "or equal to 26 but if this became too",
+        "start": 395.199,
+        "duration": 4.72
+    },
+    {
+        "text": "large if it became a 27 that's not less",
+        "start": 397.52,
+        "duration": 4.32
+    },
+    {
+        "text": "than or equal to 26 so we can't do that",
+        "start": 399.919,
+        "duration": 3.601
+    },
+    {
+        "text": "that's how i'm going to decide it now",
+        "start": 401.84,
+        "duration": 5.359
+    },
+    {
+        "text": "what if the first digit started with a 3",
+        "start": 403.52,
+        "duration": 5.679
+    },
+    {
+        "text": "you know or or a four or a five or",
+        "start": 407.199,
+        "duration": 3.521
+    },
+    {
+        "text": "anything that's never going to work",
+        "start": 409.199,
+        "duration": 2.72
+    },
+    {
+        "text": "because if we're going to have some",
+        "start": 410.72,
+        "duration": 2.8
+    },
+    {
+        "text": "other second digit here it's never going",
+        "start": 411.919,
+        "duration": 4.241
+    },
+    {
+        "text": "to be less than or equal to 26 right",
+        "start": 413.52,
+        "duration": 4.799
+    },
+    {
+        "text": "it just won't be so we're only gonna",
+        "start": 416.16,
+        "duration": 4.479
+    },
+    {
+        "text": "have uh two decisions right we're only",
+        "start": 418.319,
+        "duration": 4.641
+    },
+    {
+        "text": "gonna have two branches if our first",
+        "start": 420.639,
+        "duration": 5.601
+    },
+    {
+        "text": "digit is a one or if it is a two so this",
+        "start": 422.96,
+        "duration": 5.76
+    },
+    {
+        "text": "is kind of the brute force approach that",
+        "start": 426.24,
+        "duration": 4.32
+    },
+    {
+        "text": "i'm showing you but it might not be",
+        "start": 428.72,
+        "duration": 3.12
+    },
+    {
+        "text": "super efficient because we could have",
+        "start": 430.56,
+        "duration": 3.359
+    },
+    {
+        "text": "two decisions at every single every",
+        "start": 431.84,
+        "duration": 4.72
+    },
+    {
+        "text": "single position then our time complexity",
+        "start": 433.919,
+        "duration": 3.921
+    },
+    {
+        "text": "would be something like 2 to the power",
+        "start": 436.56,
+        "duration": 3.84
+    },
+    {
+        "text": "of n where n is the length of the input",
+        "start": 437.84,
+        "duration": 4.88
+    },
+    {
+        "text": "string so how can we kind of do a little",
+        "start": 440.4,
+        "duration": 4.639
+    },
+    {
+        "text": "bit better well notice the sub problem",
+        "start": 442.72,
+        "duration": 4.56
+    },
+    {
+        "text": "that we're doing for example when we",
+        "start": 445.039,
+        "duration": 4.961
+    },
+    {
+        "text": "take when we take just 1 by itself and",
+        "start": 447.28,
+        "duration": 4.4
+    },
+    {
+        "text": "consider okay this is just going to be",
+        "start": 450.0,
+        "duration": 3.28
+    },
+    {
+        "text": "one way that we decode it then we're",
+        "start": 451.68,
+        "duration": 3.359
+    },
+    {
+        "text": "asking okay how many different ways can",
+        "start": 453.28,
+        "duration": 4.16
+    },
+    {
+        "text": "we decode the remaining of the string",
+        "start": 455.039,
+        "duration": 4.72
+    },
+    {
+        "text": "right that's the sub problem over here",
+        "start": 457.44,
+        "duration": 3.84
+    },
+    {
+        "text": "we're asking how many different ways can",
+        "start": 459.759,
+        "duration": 4.801
+    },
+    {
+        "text": "we decode 21 when we take the first two",
+        "start": 461.28,
+        "duration": 5.44
+    },
+    {
+        "text": "characters 12 then we're asking how many",
+        "start": 464.56,
+        "duration": 4.319
+    },
+    {
+        "text": "different ways can we decode the string",
+        "start": 466.72,
+        "duration": 4.72
+    },
+    {
+        "text": "one right so that's kind of how the sub",
+        "start": 468.879,
+        "duration": 4.081
+    },
+    {
+        "text": "problem is going to work the sub problem",
+        "start": 471.44,
+        "duration": 3.759
+    },
+    {
+        "text": "is just going to be some portion of the",
+        "start": 472.96,
+        "duration": 4.56
+    },
+    {
+        "text": "string you know for example you know",
+        "start": 475.199,
+        "duration": 3.921
+    },
+    {
+        "text": "starting from",
+        "start": 477.52,
+        "duration": 3.6
+    },
+    {
+        "text": "from here all the way to the end of the",
+        "start": 479.12,
+        "duration": 3.759
+    },
+    {
+        "text": "string how many ways can we decode this",
+        "start": 481.12,
+        "duration": 3.759
+    },
+    {
+        "text": "or how many ways can we decode this or",
+        "start": 482.879,
+        "duration": 3.76
+    },
+    {
+        "text": "how many ways can we decode the entire",
+        "start": 484.879,
+        "duration": 4.32
+    },
+    {
+        "text": "thing right to to be able to solve this",
+        "start": 486.639,
+        "duration": 4.161
+    },
+    {
+        "text": "problem how many ways can we decode this",
+        "start": 489.199,
+        "duration": 3.361
+    },
+    {
+        "text": "we have to solve the sub problem how",
+        "start": 490.8,
+        "duration": 3.44
+    },
+    {
+        "text": "many ways can we decode everything",
+        "start": 492.56,
+        "duration": 4.8
+    },
+    {
+        "text": "except the beginning and so basically",
+        "start": 494.24,
+        "duration": 4.72
+    },
+    {
+        "text": "you know how many different ways can we",
+        "start": 497.36,
+        "duration": 3.279
+    },
+    {
+        "text": "cache it well we're going to have some",
+        "start": 498.96,
+        "duration": 3.84
+    },
+    {
+        "text": "index i which could either be here or it",
+        "start": 500.639,
+        "duration": 3.521
+    },
+    {
+        "text": "could be here or it could be here it's",
+        "start": 502.8,
+        "duration": 2.799
+    },
+    {
+        "text": "just going to designate starting from",
+        "start": 504.16,
+        "duration": 4.0
+    },
+    {
+        "text": "here and taking the remaining portion of",
+        "start": 505.599,
+        "duration": 3.921
+    },
+    {
+        "text": "the string how many ways can we decode",
+        "start": 508.16,
+        "duration": 3.439
+    },
+    {
+        "text": "it so basically the dimension of our",
+        "start": 509.52,
+        "duration": 4.8
+    },
+    {
+        "text": "cache is going to be n right so that's",
+        "start": 511.599,
+        "duration": 4.24
+    },
+    {
+        "text": "kind of that's also going to be the time",
+        "start": 514.32,
+        "duration": 3.279
+    },
+    {
+        "text": "complexity because every time we get to",
+        "start": 515.839,
+        "duration": 4.32
+    },
+    {
+        "text": "a position i at most we have two",
+        "start": 517.599,
+        "duration": 4.401
+    },
+    {
+        "text": "different decisions to make right so",
+        "start": 520.159,
+        "duration": 3.841
+    },
+    {
+        "text": "that's going to be an o of one operation",
+        "start": 522.0,
+        "duration": 3.68
+    },
+    {
+        "text": "making those two decisions it's not like",
+        "start": 524.0,
+        "duration": 3.2
+    },
+    {
+        "text": "we're gonna have to run through a loop",
+        "start": 525.68,
+        "duration": 2.8
+    },
+    {
+        "text": "or anything like that we're not gonna",
+        "start": 527.2,
+        "duration": 3.199
+    },
+    {
+        "text": "have any loops and you'll see that when",
+        "start": 528.48,
+        "duration": 3.76
+    },
+    {
+        "text": "i write out the code if this is the size",
+        "start": 530.399,
+        "duration": 3.281
+    },
+    {
+        "text": "of our cache this is also going to be",
+        "start": 532.24,
+        "duration": 3.68
+    },
+    {
+        "text": "the size of our time complexity and this",
+        "start": 533.68,
+        "duration": 4.4
+    },
+    {
+        "text": "is also going to be the size of our",
+        "start": 535.92,
+        "duration": 4.479
+    },
+    {
+        "text": "memory this is because it's the size of",
+        "start": 538.08,
+        "duration": 4.4
+    },
+    {
+        "text": "the cache now just so you know i think",
+        "start": 540.399,
+        "duration": 4.0
+    },
+    {
+        "text": "this problem actually can be solved when",
+        "start": 542.48,
+        "duration": 3.76
+    },
+    {
+        "text": "we write out the actual dynamic",
+        "start": 544.399,
+        "duration": 3.681
+    },
+    {
+        "text": "programming solution not using a cache",
+        "start": 546.24,
+        "duration": 3.44
+    },
+    {
+        "text": "not doing it recursively but natural",
+        "start": 548.08,
+        "duration": 3.36
+    },
+    {
+        "text": "dynamic programming it can be solved",
+        "start": 549.68,
+        "duration": 4.0
+    },
+    {
+        "text": "with of one memory because one thing you",
+        "start": 551.44,
+        "duration": 4.399
+    },
+    {
+        "text": "might notice okay when we want to know",
+        "start": 553.68,
+        "duration": 5.279
+    },
+    {
+        "text": "how many ways can we decode this entire",
+        "start": 555.839,
+        "duration": 5.201
+    },
+    {
+        "text": "string well you know when we're at a",
+        "start": 558.959,
+        "duration": 3.921
+    },
+    {
+        "text": "pointer i we can either take this",
+        "start": 561.04,
+        "duration": 3.359
+    },
+    {
+        "text": "character by itself in which case then",
+        "start": 562.88,
+        "duration": 3.68
+    },
+    {
+        "text": "we're going to shift i by one over here",
+        "start": 564.399,
+        "duration": 3.841
+    },
+    {
+        "text": "and ask you know what's the result of",
+        "start": 566.56,
+        "duration": 3.839
+    },
+    {
+        "text": "this sub problem or if we take the first",
+        "start": 568.24,
+        "duration": 4.32
+    },
+    {
+        "text": "two characters 12 then we're gonna ask",
+        "start": 570.399,
+        "duration": 4.801
+    },
+    {
+        "text": "okay what's the result of this sub",
+        "start": 572.56,
+        "duration": 4.719
+    },
+    {
+        "text": "problem right so we're either gonna so",
+        "start": 575.2,
+        "duration": 5.04
+    },
+    {
+        "text": "basically you know it's a set dp of i",
+        "start": 577.279,
+        "duration": 7.281
+    },
+    {
+        "text": "we're either gonna ask dp of i plus one",
+        "start": 580.24,
+        "duration": 7.279
+    },
+    {
+        "text": "or i plus two right those are the only",
+        "start": 584.56,
+        "duration": 4.959
+    },
+    {
+        "text": "ones that we would need to look at right",
+        "start": 587.519,
+        "duration": 4.081
+    },
+    {
+        "text": "to compute a value like this we'd only",
+        "start": 589.519,
+        "duration": 4.161
+    },
+    {
+        "text": "need to at most look at two different",
+        "start": 591.6,
+        "duration": 4.239
+    },
+    {
+        "text": "positions that come after it so you know",
+        "start": 593.68,
+        "duration": 4.32
+    },
+    {
+        "text": "when we have our dp cache we actually",
+        "start": 595.839,
+        "duration": 4.721
+    },
+    {
+        "text": "don't need a full array to solve this",
+        "start": 598.0,
+        "duration": 4.88
+    },
+    {
+        "text": "problem we could do it with two just two",
+        "start": 600.56,
+        "duration": 4.48
+    },
+    {
+        "text": "variables similar to like a house robber",
+        "start": 602.88,
+        "duration": 4.48
+    },
+    {
+        "text": "problem approach to dynamic programming",
+        "start": 605.04,
+        "duration": 4.64
+    },
+    {
+        "text": "or like a fibonacci sequence problem",
+        "start": 607.36,
+        "duration": 4.0
+    },
+    {
+        "text": "right but with that being said i think",
+        "start": 609.68,
+        "duration": 3.92
+    },
+    {
+        "text": "we're ready to get into the code now now",
+        "start": 611.36,
+        "duration": 4.159
+    },
+    {
+        "text": "let's write the code so the first way",
+        "start": 613.6,
+        "duration": 3.2
+    },
+    {
+        "text": "i'm going to show you the solution is",
+        "start": 615.519,
+        "duration": 4.32
+    },
+    {
+        "text": "basically the recursive caching solution",
+        "start": 616.8,
+        "duration": 6.0
+    },
+    {
+        "text": "the o of n time and memory solution so",
+        "start": 619.839,
+        "duration": 4.56
+    },
+    {
+        "text": "we're going to initialize our cache we",
+        "start": 622.8,
+        "duration": 3.44
+    },
+    {
+        "text": "are going to put a single value in here",
+        "start": 624.399,
+        "duration": 3.601
+    },
+    {
+        "text": "basically the entire length of the",
+        "start": 626.24,
+        "duration": 4.24
+    },
+    {
+        "text": "string is going to map to one because if",
+        "start": 628.0,
+        "duration": 4.959
+    },
+    {
+        "text": "we get an empty string we want to return",
+        "start": 630.48,
+        "duration": 4.32
+    },
+    {
+        "text": "one in that case that's just kind of our",
+        "start": 632.959,
+        "duration": 4.161
+    },
+    {
+        "text": "good base case right and then we're",
+        "start": 634.8,
+        "duration": 3.92
+    },
+    {
+        "text": "ready to write out the recursive",
+        "start": 637.12,
+        "duration": 3.2
+    },
+    {
+        "text": "function i'm just going to call it dfs",
+        "start": 638.72,
+        "duration": 4.16
+    },
+    {
+        "text": "pass in a single variable i basically i",
+        "start": 640.32,
+        "duration": 3.92
+    },
+    {
+        "text": "is the position that we're at in our",
+        "start": 642.88,
+        "duration": 5.199
+    },
+    {
+        "text": "string s now one base case is if i is in",
+        "start": 644.24,
+        "duration": 6.08
+    },
+    {
+        "text": "our dp neither meaning either it's",
+        "start": 648.079,
+        "duration": 5.521
+    },
+    {
+        "text": "already been cached or i is the last",
+        "start": 650.32,
+        "duration": 5.759
+    },
+    {
+        "text": "position in the string in which case",
+        "start": 653.6,
+        "duration": 3.919
+    },
+    {
+        "text": "that's our base case right and then we",
+        "start": 656.079,
+        "duration": 4.641
+    },
+    {
+        "text": "would just return dp of i so that's you",
+        "start": 657.519,
+        "duration": 5.201
+    },
+    {
+        "text": "know our good base case it's either been",
+        "start": 660.72,
+        "duration": 4.0
+    },
+    {
+        "text": "cached or you know it's just the end of",
+        "start": 662.72,
+        "duration": 3.76
+    },
+    {
+        "text": "the string our bad base case is going to",
+        "start": 664.72,
+        "duration": 4.08
+    },
+    {
+        "text": "be if it's not the end of the string",
+        "start": 666.48,
+        "duration": 3.919
+    },
+    {
+        "text": "then we have to check what character it",
+        "start": 668.8,
+        "duration": 4.24
+    },
+    {
+        "text": "is if the character is starting with",
+        "start": 670.399,
+        "duration": 4.161
+    },
+    {
+        "text": "zero right if the string is starting",
+        "start": 673.04,
+        "duration": 3.2
+    },
+    {
+        "text": "with zero then it's invalid right",
+        "start": 674.56,
+        "duration": 4.16
+    },
+    {
+        "text": "there's no ways to decode a string that",
+        "start": 676.24,
+        "duration": 4.24
+    },
+    {
+        "text": "starts with zero so then we have to",
+        "start": 678.72,
+        "duration": 4.0
+    },
+    {
+        "text": "return zero so that's like our bad base",
+        "start": 680.48,
+        "duration": 4.4
+    },
+    {
+        "text": "case so so these are the two main base",
+        "start": 682.72,
+        "duration": 4.64
+    },
+    {
+        "text": "cases that we have but remember if it's",
+        "start": 684.88,
+        "duration": 4.639
+    },
+    {
+        "text": "not zero that means it's between one",
+        "start": 687.36,
+        "duration": 4.88
+    },
+    {
+        "text": "through nine in which case uh we know we",
+        "start": 689.519,
+        "duration": 5.521
+    },
+    {
+        "text": "can take this value as a single digit",
+        "start": 692.24,
+        "duration": 4.8
+    },
+    {
+        "text": "right so then the sub problem becomes",
+        "start": 695.04,
+        "duration": 4.799
+    },
+    {
+        "text": "dfs of i plus one right so that's what",
+        "start": 697.04,
+        "duration": 4.799
+    },
+    {
+        "text": "the result is going to be we're just",
+        "start": 699.839,
+        "duration": 4.961
+    },
+    {
+        "text": "going to call dfs on i plus 1 because we",
+        "start": 701.839,
+        "duration": 5.44
+    },
+    {
+        "text": "took the character at i as a single",
+        "start": 704.8,
+        "duration": 4.56
+    },
+    {
+        "text": "digit right but we know that there are",
+        "start": 707.279,
+        "duration": 4.641
+    },
+    {
+        "text": "some cases where we can also call i plus",
+        "start": 709.36,
+        "duration": 4.8
+    },
+    {
+        "text": "2. now what's a good way that we can",
+        "start": 711.92,
+        "duration": 4.64
+    },
+    {
+        "text": "write out that case well first",
+        "start": 714.16,
+        "duration": 4.479
+    },
+    {
+        "text": "let's this is one of the ways you can do",
+        "start": 716.56,
+        "duration": 3.279
+    },
+    {
+        "text": "it i'm sure there are better ways but",
+        "start": 718.639,
+        "duration": 5.281
+    },
+    {
+        "text": "basically if i plus 1 is less than the",
+        "start": 719.839,
+        "duration": 6.161
+    },
+    {
+        "text": "length of the string basically if we do",
+        "start": 723.92,
+        "duration": 4.24
+    },
+    {
+        "text": "have a second character that comes after",
+        "start": 726.0,
+        "duration": 3.519
+    },
+    {
+        "text": "the current one right because we're",
+        "start": 728.16,
+        "duration": 3.6
+    },
+    {
+        "text": "looking for a double digit character so",
+        "start": 729.519,
+        "duration": 6.161
+    },
+    {
+        "text": "if i plus one is in bounds and either",
+        "start": 731.76,
+        "duration": 7.44
+    },
+    {
+        "text": "the character s of i starts with a one",
+        "start": 735.68,
+        "duration": 5.92
+    },
+    {
+        "text": "right s of i is a one because if it",
+        "start": 739.2,
+        "duration": 4.24
+    },
+    {
+        "text": "starts with a one and there is a second",
+        "start": 741.6,
+        "duration": 3.76
+    },
+    {
+        "text": "digit that means that definitely we can",
+        "start": 743.44,
+        "duration": 3.6
+    },
+    {
+        "text": "take a double digit value right because",
+        "start": 745.36,
+        "duration": 5.44
+    },
+    {
+        "text": "anything between 10 all the way to 19 is",
+        "start": 747.04,
+        "duration": 5.919
+    },
+    {
+        "text": "a double digit value right so if as long",
+        "start": 750.8,
+        "duration": 3.92
+    },
+    {
+        "text": "as it starts with one we know we can",
+        "start": 752.959,
+        "duration": 4.081
+    },
+    {
+        "text": "make a double digit value or the other",
+        "start": 754.72,
+        "duration": 4.48
+    },
+    {
+        "text": "case is basically i'm trying to figure",
+        "start": 757.04,
+        "duration": 3.84
+    },
+    {
+        "text": "out a good way to format this in a",
+        "start": 759.2,
+        "duration": 5.04
+    },
+    {
+        "text": "readable way but basically or if s of i",
+        "start": 760.88,
+        "duration": 6.24
+    },
+    {
+        "text": "is equal to two right it starts with a",
+        "start": 764.24,
+        "duration": 5.92
+    },
+    {
+        "text": "two but if it does start with a two then",
+        "start": 767.12,
+        "duration": 7.36
+    },
+    {
+        "text": "the second digit right s of i plus one",
+        "start": 770.16,
+        "duration": 7.2
+    },
+    {
+        "text": "must be between zero and six right how",
+        "start": 774.48,
+        "duration": 4.72
+    },
+    {
+        "text": "can we check that in python at least we",
+        "start": 777.36,
+        "duration": 4.159
+    },
+    {
+        "text": "can check okay if this uh character",
+        "start": 779.2,
+        "duration": 5.12
+    },
+    {
+        "text": "happens to be in this substring one two",
+        "start": 781.519,
+        "duration": 4.88
+    },
+    {
+        "text": "three four five six right basically",
+        "start": 784.32,
+        "duration": 4.16
+    },
+    {
+        "text": "we're saying is that second digit any",
+        "start": 786.399,
+        "duration": 5.281
+    },
+    {
+        "text": "value between zero through six at least",
+        "start": 788.48,
+        "duration": 5.919
+    },
+    {
+        "text": "this is a clean ish way to write it so i",
+        "start": 791.68,
+        "duration": 4.64
+    },
+    {
+        "text": "encourage you to reread this uh",
+        "start": 794.399,
+        "duration": 3.68
+    },
+    {
+        "text": "condition if you don't fully understand",
+        "start": 796.32,
+        "duration": 3.28
+    },
+    {
+        "text": "it but it's basically what i mentioned",
+        "start": 798.079,
+        "duration": 3.44
+    },
+    {
+        "text": "in the drawing explanation we're",
+        "start": 799.6,
+        "duration": 4.0
+    },
+    {
+        "text": "basically checking if this double digit",
+        "start": 801.519,
+        "duration": 5.201
+    },
+    {
+        "text": "value is between 10 to 26 so then we can",
+        "start": 803.6,
+        "duration": 4.88
+    },
+    {
+        "text": "actually take it as a double digit value",
+        "start": 806.72,
+        "duration": 3.919
+    },
+    {
+        "text": "if we can do that then to our result",
+        "start": 808.48,
+        "duration": 3.84
+    },
+    {
+        "text": "we're going to add",
+        "start": 810.639,
+        "duration": 5.44
+    },
+    {
+        "text": "dfs of i plus two right it makes sense",
+        "start": 812.32,
+        "duration": 5.36
+    },
+    {
+        "text": "we're doing i plus two because this is a",
+        "start": 816.079,
+        "duration": 3.281
+    },
+    {
+        "text": "double digit value the sub problem",
+        "start": 817.68,
+        "duration": 4.08
+    },
+    {
+        "text": "becomes i plus two and then once we're",
+        "start": 819.36,
+        "duration": 3.68
+    },
+    {
+        "text": "done with that we can just go ahead and",
+        "start": 821.76,
+        "duration": 2.96
+    },
+    {
+        "text": "return the result but before we do don't",
+        "start": 823.04,
+        "duration": 4.08
+    },
+    {
+        "text": "forget to cache it so dp of i is going",
+        "start": 824.72,
+        "duration": 4.32
+    },
+    {
+        "text": "to be equal to result we're caching it",
+        "start": 827.12,
+        "duration": 2.88
+    },
+    {
+        "text": "and then we're going to return the",
+        "start": 829.04,
+        "duration": 3.359
+    },
+    {
+        "text": "result and then uh you know when we",
+        "start": 830.0,
+        "duration": 3.6
+    },
+    {
+        "text": "actually want to return the result in",
+        "start": 832.399,
+        "duration": 2.721
+    },
+    {
+        "text": "the outer function we can just return",
+        "start": 833.6,
+        "duration": 3.76
+    },
+    {
+        "text": "dfs of zero because we want to know how",
+        "start": 835.12,
+        "duration": 3.92
+    },
+    {
+        "text": "many ways can we decode the string",
+        "start": 837.36,
+        "duration": 4.32
+    },
+    {
+        "text": "starting at index zero and i ran it and",
+        "start": 839.04,
+        "duration": 4.32
+    },
+    {
+        "text": "as you can see it works and it's pretty",
+        "start": 841.68,
+        "duration": 3.839
+    },
+    {
+        "text": "efficient let me just copy and paste the",
+        "start": 843.36,
+        "duration": 4.0
+    },
+    {
+        "text": "actual dynamic programming solution i",
+        "start": 845.519,
+        "duration": 3.041
+    },
+    {
+        "text": "don't want to waste too much time to",
+        "start": 847.36,
+        "duration": 3.2
+    },
+    {
+        "text": "write it out because it is very similar",
+        "start": 848.56,
+        "duration": 3.6
+    },
+    {
+        "text": "and i think if you can come up with the",
+        "start": 850.56,
+        "duration": 3.839
+    },
+    {
+        "text": "recursive approach the logic for the",
+        "start": 852.16,
+        "duration": 4.16
+    },
+    {
+        "text": "dynamic programming solution is also",
+        "start": 854.399,
+        "duration": 3.921
+    },
+    {
+        "text": "pretty simple we have the exact same",
+        "start": 856.32,
+        "duration": 4.079
+    },
+    {
+        "text": "cache the only thing is we're doing this",
+        "start": 858.32,
+        "duration": 3.759
+    },
+    {
+        "text": "bottom up so we're starting at the end",
+        "start": 860.399,
+        "duration": 3.921
+    },
+    {
+        "text": "of the string iterating in reverse order",
+        "start": 862.079,
+        "duration": 4.641
+    },
+    {
+        "text": "we have the same base cases basically if",
+        "start": 864.32,
+        "duration": 4.959
+    },
+    {
+        "text": "s of i starts with zero then the dp is",
+        "start": 866.72,
+        "duration": 4.96
+    },
+    {
+        "text": "going to be zero right and basically you",
+        "start": 869.279,
+        "duration": 4.481
+    },
+    {
+        "text": "know this is the same as these two lines",
+        "start": 871.68,
+        "duration": 4.48
+    },
+    {
+        "text": "of code where where we just return zero",
+        "start": 873.76,
+        "duration": 5.04
+    },
+    {
+        "text": "else meaning you know that means it's a",
+        "start": 876.16,
+        "duration": 4.239
+    },
+    {
+        "text": "digit between one through nine then we",
+        "start": 878.8,
+        "duration": 3.76
+    },
+    {
+        "text": "can call dp of i plus one that's the",
+        "start": 880.399,
+        "duration": 4.321
+    },
+    {
+        "text": "same as when down here when we call dfs",
+        "start": 882.56,
+        "duration": 4.719
+    },
+    {
+        "text": "of i plus 1. now this bottom part is the",
+        "start": 884.72,
+        "duration": 4.64
+    },
+    {
+        "text": "exact same as the if statement we had",
+        "start": 887.279,
+        "duration": 4.24
+    },
+    {
+        "text": "down below right you can see the logic",
+        "start": 889.36,
+        "duration": 4.64
+    },
+    {
+        "text": "is the exact same you know the condition",
+        "start": 891.519,
+        "duration": 3.921
+    },
+    {
+        "text": "is the exact same only difference is",
+        "start": 894.0,
+        "duration": 3.76
+    },
+    {
+        "text": "here we're saying dp of i plus two is",
+        "start": 895.44,
+        "duration": 4.72
+    },
+    {
+        "text": "added down here instead of using dp of i",
+        "start": 897.76,
+        "duration": 3.92
+    },
+    {
+        "text": "plus two we actually called the",
+        "start": 900.16,
+        "duration": 4.32
+    },
+    {
+        "text": "recursive function dfs so this the logic",
+        "start": 901.68,
+        "duration": 4.56
+    },
+    {
+        "text": "is definitely pretty similar and in this",
+        "start": 904.48,
+        "duration": 4.0
+    },
+    {
+        "text": "solution at least the memory is o of n",
+        "start": 906.24,
+        "duration": 4.399
+    },
+    {
+        "text": "but i do think that you can instead of",
+        "start": 908.48,
+        "duration": 4.4
+    },
+    {
+        "text": "having an entire cache or array or",
+        "start": 910.639,
+        "duration": 4.161
+    },
+    {
+        "text": "whatever you're using you can just have",
+        "start": 912.88,
+        "duration": 4.0
+    },
+    {
+        "text": "two variables so i hope that this was",
+        "start": 914.8,
+        "duration": 4.24
+    },
+    {
+        "text": "helpful if it was please like and",
+        "start": 916.88,
+        "duration": 4.399
+    },
+    {
+        "text": "subscribe it supports the channel a lot",
+        "start": 919.04,
+        "duration": 4.4
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 921.279,
+        "duration": 5.201
+    },
+    {
+        "text": "thanks for watching",
+        "start": 923.44,
+        "duration": 3.04
+    }
+]

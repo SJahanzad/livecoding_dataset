@@ -1,0 +1,677 @@
+[
+    {
+        "text": "hey what's up guys it's a nick white",
+        "start": 0.829,
+        "duration": 5.321
+    },
+    {
+        "text": "tear new attack and coding stuff on",
+        "start": 3.659,
+        "duration": 4.2
+    },
+    {
+        "text": "twitch and youtube I'm in the libraries",
+        "start": 6.15,
+        "duration": 3.36
+    },
+    {
+        "text": "there's a lot of people talking around",
+        "start": 7.859,
+        "duration": 3.24
+    },
+    {
+        "text": "me right now but we're gonna try and do",
+        "start": 9.51,
+        "duration": 4.14
+    },
+    {
+        "text": "one of these videos really quickly",
+        "start": 11.099,
+        "duration": 4.29
+    },
+    {
+        "text": "this one this problem is called valenpac",
+        "start": 13.65,
+        "duration": 5.01
+    },
+    {
+        "text": "valid to palindrome and you'd think it's",
+        "start": 15.389,
+        "duration": 4.321
+    },
+    {
+        "text": "pretty easy I've done a lot of",
+        "start": 18.66,
+        "duration": 2.94
+    },
+    {
+        "text": "palindrome videos I did like link lists",
+        "start": 19.71,
+        "duration": 4.86
+    },
+    {
+        "text": "pound rum and stuff it is really easy",
+        "start": 21.6,
+        "duration": 4.71
+    },
+    {
+        "text": "it's the same method is the other ones",
+        "start": 24.57,
+        "duration": 3.75
+    },
+    {
+        "text": "you're using two pointers which is a lot",
+        "start": 26.31,
+        "duration": 3.57
+    },
+    {
+        "text": "of palindrome problems",
+        "start": 28.32,
+        "duration": 3.539
+    },
+    {
+        "text": "the only difference about this one is",
+        "start": 29.88,
+        "duration": 3.72
+    },
+    {
+        "text": "they do throw in this little trick here",
+        "start": 31.859,
+        "duration": 3.63
+    },
+    {
+        "text": "given a string determine if it is a",
+        "start": 33.6,
+        "duration": 3.389
+    },
+    {
+        "text": "palindrome and you guys know a",
+        "start": 35.489,
+        "duration": 3.781
+    },
+    {
+        "text": "palindrome just means a word that",
+        "start": 36.989,
+        "duration": 4.23
+    },
+    {
+        "text": "spelled backwards the same way as as",
+        "start": 39.27,
+        "duration": 4.53
+    },
+    {
+        "text": "well forwards a racecar would be a",
+        "start": 41.219,
+        "duration": 4.68
+    },
+    {
+        "text": "racecar backward so that would be a",
+        "start": 43.8,
+        "duration": 5.04
+    },
+    {
+        "text": "palindrome right so though the way we do",
+        "start": 45.899,
+        "duration": 5.221
+    },
+    {
+        "text": "this is we just have two pointers one at",
+        "start": 48.84,
+        "duration": 3.87
+    },
+    {
+        "text": "the beginning and one at the end and we",
+        "start": 51.12,
+        "duration": 4.02
+    },
+    {
+        "text": "move inwards letter by letter one going",
+        "start": 52.71,
+        "duration": 4.05
+    },
+    {
+        "text": "backwards through the word one going",
+        "start": 55.14,
+        "duration": 3.12
+    },
+    {
+        "text": "forward through the word and we make",
+        "start": 56.76,
+        "duration": 3.569
+    },
+    {
+        "text": "sure the letters are the same so you",
+        "start": 58.26,
+        "duration": 4.319
+    },
+    {
+        "text": "know we would have this we'd have a",
+        "start": 60.329,
+        "duration": 4.201
+    },
+    {
+        "text": "pointer here and a pointer here and you",
+        "start": 62.579,
+        "duration": 3.481
+    },
+    {
+        "text": "know R and R would have to be the same a",
+        "start": 64.53,
+        "duration": 2.94
+    },
+    {
+        "text": "and a it would have to be the same C and",
+        "start": 66.06,
+        "duration": 3.239
+    },
+    {
+        "text": "see what F again same and so on that's",
+        "start": 67.47,
+        "duration": 3.66
+    },
+    {
+        "text": "the method for doing it now for",
+        "start": 69.299,
+        "duration": 3.631
+    },
+    {
+        "text": "alphanumeric characters only and",
+        "start": 71.13,
+        "duration": 3.69
+    },
+    {
+        "text": "ignoring cases all we're gonna have to",
+        "start": 72.93,
+        "duration": 3.72
+    },
+    {
+        "text": "do is basically remove all the",
+        "start": 74.82,
+        "duration": 3.72
+    },
+    {
+        "text": "punctuation from this string first of",
+        "start": 76.65,
+        "duration": 3.359
+    },
+    {
+        "text": "all so we're gonna do is we're gonna",
+        "start": 78.54,
+        "duration": 3.719
+    },
+    {
+        "text": "have a you know we're gonna have this",
+        "start": 80.009,
+        "duration": 7.171
+    },
+    {
+        "text": "this little string you can call whatever",
+        "start": 82.259,
+        "duration": 6.36
+    },
+    {
+        "text": "you want you could call it you know",
+        "start": 87.18,
+        "duration": 4.74
+    },
+    {
+        "text": "remove or the you know fixed fixed",
+        "start": 88.619,
+        "duration": 4.921
+    },
+    {
+        "text": "string let's call it right so we have",
+        "start": 91.92,
+        "duration": 3.54
+    },
+    {
+        "text": "this thing called fixed string and then",
+        "start": 93.54,
+        "duration": 9.38
+    },
+    {
+        "text": "we're gonna want to do for char C in s s",
+        "start": 95.46,
+        "duration": 10.11
+    },
+    {
+        "text": "so we're gonna hit a rake through this",
+        "start": 102.92,
+        "duration": 5.17
+    },
+    {
+        "text": "oh no no s to char a I always forget",
+        "start": 105.57,
+        "duration": 5.52
+    },
+    {
+        "text": "that so you do to char array so we have",
+        "start": 108.09,
+        "duration": 5.669
+    },
+    {
+        "text": "this array of characters of the string s",
+        "start": 111.09,
+        "duration": 4.68
+    },
+    {
+        "text": "we iterate through character by",
+        "start": 113.759,
+        "duration": 5.131
+    },
+    {
+        "text": "character if and then use the character",
+        "start": 115.77,
+        "duration": 6.66
+    },
+    {
+        "text": "class dot is digits and you pass in the",
+        "start": 118.89,
+        "duration": 6.979
+    },
+    {
+        "text": "character current character or character",
+        "start": 122.43,
+        "duration": 6.42
+    },
+    {
+        "text": "dot is",
+        "start": 125.869,
+        "duration": 4.191
+    },
+    {
+        "text": "[Music]",
+        "start": 128.85,
+        "duration": 6.74
+    },
+    {
+        "text": "letter I think it's letter crap think",
+        "start": 130.06,
+        "duration": 10.66
+    },
+    {
+        "text": "letter then we can do fixed string add",
+        "start": 135.59,
+        "duration": 6.99
+    },
+    {
+        "text": "it to our fixed string right cuz that's",
+        "start": 140.72,
+        "duration": 2.97
+    },
+    {
+        "text": "the stuff we want to look at",
+        "start": 142.58,
+        "duration": 3.0
+    },
+    {
+        "text": "alphanumeric alphanumeric digits or",
+        "start": 143.69,
+        "duration": 2.49
+    },
+    {
+        "text": "letter",
+        "start": 145.58,
+        "duration": 4.5
+    },
+    {
+        "text": "alright so plus equals C right so that's",
+        "start": 146.18,
+        "duration": 5.67
+    },
+    {
+        "text": "gonna have our fixed string exactly",
+        "start": 150.08,
+        "duration": 2.88
+    },
+    {
+        "text": "where we want it now the only other",
+        "start": 151.85,
+        "duration": 4.2
+    },
+    {
+        "text": "thing we had to do was case oh we want",
+        "start": 152.96,
+        "duration": 5.91
+    },
+    {
+        "text": "to ignore case so there's a built-in",
+        "start": 156.05,
+        "duration": 4.83
+    },
+    {
+        "text": "method in Java called two lower case so",
+        "start": 158.87,
+        "duration": 4.88
+    },
+    {
+        "text": "we'll just do fixed string equals fixed",
+        "start": 160.88,
+        "duration": 8.55
+    },
+    {
+        "text": "string to lower case now we could do",
+        "start": 163.75,
+        "duration": 7.72
+    },
+    {
+        "text": "Claire our a pointer and B pointer so",
+        "start": 169.43,
+        "duration": 3.75
+    },
+    {
+        "text": "we'll have a pointer is equal to zero",
+        "start": 171.47,
+        "duration": 3.87
+    },
+    {
+        "text": "just like I said of pinning a B pointer",
+        "start": 173.18,
+        "duration": 5.94
+    },
+    {
+        "text": "is equal to now we're gonna be doing",
+        "start": 175.34,
+        "duration": 5.46
+    },
+    {
+        "text": "this on fixed string now fix string",
+        "start": 179.12,
+        "duration": 5.49
+    },
+    {
+        "text": "length minus 1 because we're you know",
+        "start": 180.8,
+        "duration": 6.15
+    },
+    {
+        "text": "use the indices and then we'll do well a",
+        "start": 184.61,
+        "duration": 4.92
+    },
+    {
+        "text": "pointer is less than or equal to B",
+        "start": 186.95,
+        "duration": 5.43
+    },
+    {
+        "text": "pointer because we're going until we get",
+        "start": 189.53,
+        "duration": 4.38
+    },
+    {
+        "text": "to the middle obviously we don't have to",
+        "start": 192.38,
+        "duration": 2.91
+    },
+    {
+        "text": "traverse the whole thing that's why we",
+        "start": 193.91,
+        "duration": 3.42
+    },
+    {
+        "text": "use pointers because it cuts the search",
+        "start": 195.29,
+        "duration": 6.9
+    },
+    {
+        "text": "time down substantially and then all we",
+        "start": 197.33,
+        "duration": 8.18
+    },
+    {
+        "text": "have to do from here on out is check if",
+        "start": 202.19,
+        "duration": 9.75
+    },
+    {
+        "text": "fix trip string dot char at a pointer is",
+        "start": 205.51,
+        "duration": 12.25
+    },
+    {
+        "text": "not equal 6 string dot char at B pointer",
+        "start": 211.94,
+        "duration": 7.62
+    },
+    {
+        "text": "then there's a problem right that's",
+        "start": 217.76,
+        "duration": 3.54
+    },
+    {
+        "text": "that's what I'm saying when we go",
+        "start": 219.56,
+        "duration": 3.6
+    },
+    {
+        "text": "through if the letters aren't the same",
+        "start": 221.3,
+        "duration": 3.48
+    },
+    {
+        "text": "at the beginning in the end as we move",
+        "start": 223.16,
+        "duration": 5.43
+    },
+    {
+        "text": "inwards then that is not a palindrome so",
+        "start": 224.78,
+        "duration": 5.85
+    },
+    {
+        "text": "we're gonna return false and if we make",
+        "start": 228.59,
+        "duration": 3.39
+    },
+    {
+        "text": "it through that whole thing will return",
+        "start": 230.63,
+        "duration": 3.27
+    },
+    {
+        "text": "true and now the only last thing we have",
+        "start": 231.98,
+        "duration": 5.1
+    },
+    {
+        "text": "to do is increment our a pointer by one",
+        "start": 233.9,
+        "duration": 6.21
+    },
+    {
+        "text": "each time and decrement our B pliner to",
+        "start": 237.08,
+        "duration": 5.01
+    },
+    {
+        "text": "move in where it's towards each other in",
+        "start": 240.11,
+        "duration": 7.32
+    },
+    {
+        "text": "this hopefully will work first time and",
+        "start": 242.09,
+        "duration": 8.55
+    },
+    {
+        "text": "it does it works perfectly first try",
+        "start": 247.43,
+        "duration": 6.6
+    },
+    {
+        "text": "yeah what it so one more time what do we",
+        "start": 250.64,
+        "duration": 5.1
+    },
+    {
+        "text": "do is we take the initial string because",
+        "start": 254.03,
+        "duration": 2.97
+    },
+    {
+        "text": "we're only looking at alphanumeric",
+        "start": 255.74,
+        "duration": 5.34
+    },
+    {
+        "text": "letters and lowercase characters or I",
+        "start": 257.0,
+        "duration": 5.28
+    },
+    {
+        "text": "guess you can make them all up",
+        "start": 261.08,
+        "duration": 4.77
+    },
+    {
+        "text": "case but we remake the string so that",
+        "start": 262.28,
+        "duration": 6.57
+    },
+    {
+        "text": "our initial string is s we go through we",
+        "start": 265.85,
+        "duration": 4.74
+    },
+    {
+        "text": "only grab the letters and numbers we",
+        "start": 268.85,
+        "duration": 3.33
+    },
+    {
+        "text": "throw it into our new string variable",
+        "start": 270.59,
+        "duration": 4.14
+    },
+    {
+        "text": "called fixed string then we make all the",
+        "start": 272.18,
+        "duration": 5.25
+    },
+    {
+        "text": "letters lowercase you could essentially",
+        "start": 274.73,
+        "duration": 4.59
+    },
+    {
+        "text": "make them uppercase too we just have to",
+        "start": 277.43,
+        "duration": 3.72
+    },
+    {
+        "text": "have them all in one case because we do",
+        "start": 279.32,
+        "duration": 5.57
+    },
+    {
+        "text": "not care about case here or ignoring it",
+        "start": 281.15,
+        "duration": 5.42
+    },
+    {
+        "text": "[Music]",
+        "start": 284.89,
+        "duration": 4.21
+    },
+    {
+        "text": "yep so it still works with uppercase and",
+        "start": 286.57,
+        "duration": 4.36
+    },
+    {
+        "text": "then you have the a pointer at the",
+        "start": 289.1,
+        "duration": 3.24
+    },
+    {
+        "text": "beginning and the B pointer at the end",
+        "start": 290.93,
+        "duration": 3.15
+    },
+    {
+        "text": "you move inwards and you make sure all",
+        "start": 292.34,
+        "duration": 3.66
+    },
+    {
+        "text": "the letters are the same so we can make",
+        "start": 294.08,
+        "duration": 4.08
+    },
+    {
+        "text": "sure it's a palindrome and once we get",
+        "start": 296.0,
+        "duration": 3.81
+    },
+    {
+        "text": "to the middle which is this case we",
+        "start": 298.16,
+        "duration": 3.57
+    },
+    {
+        "text": "break out and we return true",
+        "start": 299.81,
+        "duration": 5.04
+    },
+    {
+        "text": "otherwise we'd get a false that's pretty",
+        "start": 301.73,
+        "duration": 4.59
+    },
+    {
+        "text": "much it pretty straightforward just",
+        "start": 304.85,
+        "duration": 3.9
+    },
+    {
+        "text": "always be aware that you read the",
+        "start": 306.32,
+        "duration": 4.17
+    },
+    {
+        "text": "problem when you get problems especially",
+        "start": 308.75,
+        "duration": 3.419
+    },
+    {
+        "text": "in interviews and stuff because you do",
+        "start": 310.49,
+        "duration": 3.75
+    },
+    {
+        "text": "want to check for little cases like",
+        "start": 312.169,
+        "duration": 3.691
+    },
+    {
+        "text": "these like alphanumeric and stuff like",
+        "start": 314.24,
+        "duration": 3.6
+    },
+    {
+        "text": "that so that you can account for that",
+        "start": 315.86,
+        "duration": 2.79
+    },
+    {
+        "text": "stuff",
+        "start": 317.84,
+        "duration": 2.67
+    },
+    {
+        "text": "I think you guys for watching and check",
+        "start": 318.65,
+        "duration": 3.329
+    },
+    {
+        "text": "out the other problems because I do them",
+        "start": 320.51,
+        "duration": 4.82
+    },
+    {
+        "text": "all and I'll see you guys",
+        "start": 321.979,
+        "duration": 3.351
+    }
+]

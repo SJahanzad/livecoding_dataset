@@ -1,0 +1,372 @@
+[
+    {
+        "text": "hey what's up guys Nick white here I do",
+        "start": 0.079,
+        "duration": 5.111
+    },
+    {
+        "text": "tech encoding stuff on twitch and",
+        "start": 3.0,
+        "duration": 4.859
+    },
+    {
+        "text": "YouTube you all the hacker ink and late",
+        "start": 5.19,
+        "duration": 7.26
+    },
+    {
+        "text": "code problem solutions so if you're",
+        "start": 7.859,
+        "duration": 5.761
+    },
+    {
+        "text": "interested to check those out I have",
+        "start": 12.45,
+        "duration": 2.79
+    },
+    {
+        "text": "playlist form on my channel this one's",
+        "start": 13.62,
+        "duration": 3.9
+    },
+    {
+        "text": "called the rate partition 1 given an",
+        "start": 15.24,
+        "duration": 3.959
+    },
+    {
+        "text": "array of 2 on integers your task is to",
+        "start": 17.52,
+        "duration": 3.87
+    },
+    {
+        "text": "group these integers and to end pairs of",
+        "start": 19.199,
+        "duration": 6.391
+    },
+    {
+        "text": "integers say a1 b1 a2 b2 and PN which",
+        "start": 21.39,
+        "duration": 7.11
+    },
+    {
+        "text": "the sum of all min values for those",
+        "start": 25.59,
+        "duration": 7.89
+    },
+    {
+        "text": "pairs for one from 1 to N is as large as",
+        "start": 28.5,
+        "duration": 11.7
+    },
+    {
+        "text": "possible so basically take the sum take",
+        "start": 33.48,
+        "duration": 9.09
+    },
+    {
+        "text": "have a sum so we're just gonna have this",
+        "start": 40.2,
+        "duration": 4.83
+    },
+    {
+        "text": "int you gonna call it sum I mean I",
+        "start": 42.57,
+        "duration": 3.87
+    },
+    {
+        "text": "wouldn't use the word sum because of",
+        "start": 45.03,
+        "duration": 4.77
+    },
+    {
+        "text": "built in it's built into some languages",
+        "start": 46.44,
+        "duration": 6.869
+    },
+    {
+        "text": "I don't think it isn't Java so you loop",
+        "start": 49.8,
+        "duration": 8.939
+    },
+    {
+        "text": "through the numbers by 2 I'm just gonna",
+        "start": 53.309,
+        "duration": 8.721
+    },
+    {
+        "text": "do plus equals 2 and then you would want",
+        "start": 58.739,
+        "duration": 7.38
+    },
+    {
+        "text": "the min of the pair you know",
+        "start": 62.03,
+        "duration": 7.96
+    },
+    {
+        "text": "so actually num num length minus 1 we",
+        "start": 66.119,
+        "duration": 6.091
+    },
+    {
+        "text": "would want a min of the pair of 2 if",
+        "start": 69.99,
+        "duration": 5.309
+    },
+    {
+        "text": "we're going by 2 and then we'd add it to",
+        "start": 72.21,
+        "duration": 4.74
+    },
+    {
+        "text": "the sum and then we'd return sum at the",
+        "start": 75.299,
+        "duration": 4.021
+    },
+    {
+        "text": "end well it's not sorted so we can't",
+        "start": 76.95,
+        "duration": 5.73
+    },
+    {
+        "text": "really do that but actually where we can",
+        "start": 79.32,
+        "duration": 5.22
+    },
+    {
+        "text": "we can just sort it so actually just",
+        "start": 82.68,
+        "duration": 3.03
+    },
+    {
+        "text": "sort it",
+        "start": 84.54,
+        "duration": 3.96
+    },
+    {
+        "text": "sorry array of numbers and then just use",
+        "start": 85.71,
+        "duration": 12.57
+    },
+    {
+        "text": "some plus equals nums of I plus 1 no no",
+        "start": 88.5,
+        "duration": 12.99
+    },
+    {
+        "text": "just numbs of I because they're all in",
+        "start": 98.28,
+        "duration": 5.4
+    },
+    {
+        "text": "pairs if you're skipping by 2 there it's",
+        "start": 101.49,
+        "duration": 3.93
+    },
+    {
+        "text": "basically you're skipping by the pairs",
+        "start": 103.68,
+        "duration": 3.81
+    },
+    {
+        "text": "if it's pairs of 2 and you're getting",
+        "start": 105.42,
+        "duration": 3.87
+    },
+    {
+        "text": "them in because it's sorted so the",
+        "start": 107.49,
+        "duration": 3.809
+    },
+    {
+        "text": "minimum would be the first one so I is",
+        "start": 109.29,
+        "duration": 4.289
+    },
+    {
+        "text": "the first one I plus 1 would be the",
+        "start": 111.299,
+        "duration": 8.661
+    },
+    {
+        "text": "second one yeah I think that's it right",
+        "start": 113.579,
+        "duration": 8.79
+    },
+    {
+        "text": "yeah that's it ok that was it yeah",
+        "start": 119.96,
+        "duration": 5.86
+    },
+    {
+        "text": "that's super easy see I just sort it and",
+        "start": 122.369,
+        "duration": 5.401
+    },
+    {
+        "text": "then just skip by 2 and then grab the",
+        "start": 125.82,
+        "duration": 6.9
+    },
+    {
+        "text": "first element because skipping by 2",
+        "start": 127.77,
+        "duration": 7.14
+    },
+    {
+        "text": "would be pairs of 2",
+        "start": 132.72,
+        "duration": 4.17
+    },
+    {
+        "text": "yeah that was like one of the easiest",
+        "start": 134.91,
+        "duration": 4.14
+    },
+    {
+        "text": "ones I've seen that out of easy problems",
+        "start": 136.89,
+        "duration": 5.16
+    },
+    {
+        "text": "let me see if there's it okay so this",
+        "start": 139.05,
+        "duration": 4.77
+    },
+    {
+        "text": "guy's saying there is a different",
+        "start": 142.05,
+        "duration": 3.9
+    },
+    {
+        "text": "solution maybe it's better than sorting",
+        "start": 143.82,
+        "duration": 3.75
+    },
+    {
+        "text": "because sorting is just analog in that's",
+        "start": 145.95,
+        "duration": 4.77
+    },
+    {
+        "text": "not bad you could have a linear solution",
+        "start": 147.57,
+        "duration": 8.31
+    },
+    {
+        "text": "but you know this is constant space so",
+        "start": 150.72,
+        "duration": 8.13
+    },
+    {
+        "text": "that's good what is this solution this",
+        "start": 155.88,
+        "duration": 4.98
+    },
+    {
+        "text": "looks like you have space though I mean",
+        "start": 158.85,
+        "duration": 3.69
+    },
+    {
+        "text": "it is kind of constant because it's only",
+        "start": 160.86,
+        "duration": 5.91
+    },
+    {
+        "text": "to 2001 is what we're seeing here what",
+        "start": 162.54,
+        "duration": 7.2
+    },
+    {
+        "text": "is it's 10,000 no it's not that good",
+        "start": 166.77,
+        "duration": 6.51
+    },
+    {
+        "text": "because it's you know space of",
+        "start": 169.74,
+        "duration": 6.66
+    },
+    {
+        "text": "constraints so you know I would just say",
+        "start": 173.28,
+        "duration": 4.77
+    },
+    {
+        "text": "the first solution was good just sort it",
+        "start": 176.4,
+        "duration": 4.35
+    },
+    {
+        "text": "and then do a loop by two I can I guess",
+        "start": 178.05,
+        "duration": 4.08
+    },
+    {
+        "text": "if there's a lot of dislikes cuz it's",
+        "start": 180.75,
+        "duration": 3.75
+    },
+    {
+        "text": "easy let me know if you see a better",
+        "start": 182.13,
+        "duration": 4.47
+    },
+    {
+        "text": "solution out there for linear run time",
+        "start": 184.5,
+        "duration": 3.93
+    },
+    {
+        "text": "constant space but I think that solution",
+        "start": 186.6,
+        "duration": 4.62
+    },
+    {
+        "text": "is pretty good let me know if you guys",
+        "start": 188.43,
+        "duration": 5.19
+    },
+    {
+        "text": "have a better solution ever understand",
+        "start": 191.22,
+        "duration": 4.11
+    },
+    {
+        "text": "how this is this doesn't seem like a",
+        "start": 193.62,
+        "duration": 4.32
+    },
+    {
+        "text": "good solution really I think sorting is",
+        "start": 195.33,
+        "duration": 4.05
+    },
+    {
+        "text": "better so all right let me know what you",
+        "start": 197.94,
+        "duration": 1.89
+    },
+    {
+        "text": "guys think",
+        "start": 199.38,
+        "duration": 1.89
+    },
+    {
+        "text": "thank you very much trigger the other",
+        "start": 199.83,
+        "duration": 3.18
+    },
+    {
+        "text": "problems and that was just an easy one",
+        "start": 201.27,
+        "duration": 4.16
+    },
+    {
+        "text": "so yeah",
+        "start": 203.01,
+        "duration": 2.42
+    }
+]

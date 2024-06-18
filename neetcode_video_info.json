@@ -1,0 +1,377 @@
+[
+    {
+        "video_id": "KLlXCFG5TnA",
+        "title": "Two Sum - Leetcode 1 - HashMap - Python",
+        "length": "506"
+    },
+    {
+        "video_id": "1pkOgXD63yU",
+        "title": "Sliding Window: Best Time to Buy and Sell Stock - Leetcode 121 - Python",
+        "length": "526"
+    },
+    {
+        "video_id": "3OamzN90kPg",
+        "title": "Contains Duplicate - Leetcode 217 - Python",
+        "length": "391"
+    },
+    {
+        "video_id": "bNvIQI2wAjk",
+        "title": "Product of Array Except Self - Leetcode 238 - Python",
+        "length": "714"
+    },
+    {
+        "video_id": "5WZl3MMT0Eg",
+        "title": "Maximum Subarray - Amazon Coding Interview Question - Leetcode 53 - Python",
+        "length": "483"
+    },
+    {
+        "video_id": "lXVy6YWFcRM",
+        "title": "Maximum Product Subarray - Dynamic Programming - Leetcode 152",
+        "length": "931"
+    },
+    {
+        "video_id": "nIVW4P8b1VA",
+        "title": "Find Minimum in Rotated Sorted Array - Binary Search - Leetcode 153 - Python",
+        "length": "750"
+    },
+    {
+        "video_id": "U8XENwh8Oy8",
+        "title": "Search in rotated sorted array - Leetcode 33 - Python",
+        "length": "808"
+    },
+    {
+        "video_id": "jzZsG8n2R9A",
+        "title": "3Sum - Leetcode 15 - Python",
+        "length": "774"
+    },
+    {
+        "video_id": "UuiTKBwPgAo",
+        "title": "Container with Most Water - Leetcode 11 - Python",
+        "length": "757"
+    },
+    {
+        "video_id": "5Km3utixwZs",
+        "title": "Number of 1 Bits - Leetcode 191 - Python",
+        "length": "719"
+    },
+    {
+        "video_id": "RyBM56RIWrM",
+        "title": "Counting Bits - Dynamic Programming - Leetcode 338 - Python",
+        "length": "804"
+    },
+    {
+        "video_id": "WnPLSRLSANE",
+        "title": "Missing Number - Blind 75 - Leetcode 268 - Python",
+        "length": "731"
+    },
+    {
+        "video_id": "UcoN6UjAI64",
+        "title": "Reverse Bits - Binary - Leetcode 190 - Python",
+        "length": "613"
+    },
+    {
+        "video_id": "Y0lT9Fck7qI",
+        "title": "Climbing Stairs - Dynamic Programming - Leetcode 70 - Python",
+        "length": "1088"
+    },
+    {
+        "video_id": "H9bfqozjoqs",
+        "title": "Coin Change - Dynamic Programming Bottom Up - Leetcode 322",
+        "length": "1163"
+    },
+    {
+        "video_id": "cjWnW0hdF1Y",
+        "title": "Longest Increasing Subsequence - Dynamic Programming - Leetcode 300",
+        "length": "1093"
+    },
+    {
+        "video_id": "Ua0GhsJSlWM",
+        "title": "Longest Common Subsequence - Dynamic Programming - Leetcode 1143",
+        "length": "1105"
+    },
+    {
+        "video_id": "Sx9NNgInc3A",
+        "title": "Word Break - Dynamic Programming - Leetcode 139 - Python",
+        "length": "935"
+    },
+    {
+        "video_id": "GBKI9VSKdGg",
+        "title": "Combination Sum - Backtracking - Leetcode 39 - Python",
+        "length": "910"
+    },
+    {
+        "video_id": "73r3KWiEvyk",
+        "title": "House Robber -  Leetcode 198 - Python Dynamic Programming",
+        "length": "635"
+    },
+    {
+        "video_id": "rWAJCfYYOvM",
+        "title": "House Robber II - Dynamic Programming - Leetcode 213",
+        "length": "640"
+    },
+    {
+        "video_id": "6aEyTjOwlJU",
+        "title": "Decode Ways - Dynamic Programming - Leetcode 91 - Python",
+        "length": "925"
+    },
+    {
+        "video_id": "IlEsdxuD4lY",
+        "title": "Unique Paths - Dynamic Programming - Leetcode 62",
+        "length": "648"
+    },
+    {
+        "video_id": "Yan0cv2cLy8",
+        "title": "Jump Game - Greedy - Leetcode 55",
+        "length": "988"
+    },
+    {
+        "video_id": "mQeF6bN8hMk",
+        "title": "Clone Graph - Depth First Search - Leetcode 133",
+        "length": "708"
+    },
+    {
+        "video_id": "EgI5nU9etnU",
+        "title": "Course Schedule - Graph Adjacency List - Leetcode 207",
+        "length": "947"
+    },
+    {
+        "video_id": "s-VkcjHqkGI",
+        "title": "Pacific Atlantic Water Flow - Leetcode 417 - Python",
+        "length": "988"
+    },
+    {
+        "video_id": "pV2kpPD66nE",
+        "title": "NUMBER OF ISLANDS - Leetcode 200 - Python",
+        "length": "701"
+    },
+    {
+        "video_id": "P6RZZMu_maU",
+        "title": "Leetcode 128 - LONGEST CONSECUTIVE SEQUENCE",
+        "length": "564"
+    },
+    {
+        "video_id": "6kTZYvNNyps",
+        "title": "Alien Dictionary - Topological Sort - Leetcode 269 - Python",
+        "length": "1325"
+    },
+    {
+        "video_id": "bXsUuownnoQ",
+        "title": "Graph Valid Tree - Leetcode 261 - Python",
+        "length": "851"
+    },
+    {
+        "video_id": "8f1XPm4WOUc",
+        "title": "Number of Connected Components in an Undirected Graph - Union Find - Leetcode 323 - Python",
+        "length": "959"
+    },
+    {
+        "video_id": "A8NUOmlwOlM",
+        "title": "Insert Interval - Leetcode 57 - Python",
+        "length": "711"
+    },
+    {
+        "video_id": "44H3cEC2fFM",
+        "title": "Merge Intervals - Sorting - Leetcode 56",
+        "length": "615"
+    },
+    {
+        "video_id": "nONCGxWoUfM",
+        "title": "Non-Overlapping Intervals - Leetcode 435 - Python",
+        "length": "773"
+    },
+    {
+        "video_id": "PaJxqZVPhbg",
+        "title": "Meeting Rooms - Leetcode 252 - Python",
+        "length": "496"
+    },
+    {
+        "video_id": "FdzJmTCVyJU",
+        "title": "Meeting Rooms II - Leetcode 253 - Python",
+        "length": "706"
+    },
+    {
+        "video_id": "G0_I-ZF0S38",
+        "title": "Reverse Linked List - Iterative AND Recursive - Leetcode 206 - Python",
+        "length": "667"
+    },
+    {
+        "video_id": "gBTe7lFR3vc",
+        "title": "Linked List Cycle - Floyd's Tortoise and Hare - Leetcode 141 - Python",
+        "length": "644"
+    },
+    {
+        "video_id": "XIdigk956u0",
+        "title": "Merge Two Sorted Lists - Leetcode 21 - Python",
+        "length": "376"
+    },
+    {
+        "video_id": "q5a5OiGbT6Q",
+        "title": "Merge K Sorted Lists - Leetcode 23 - Python",
+        "length": "634"
+    },
+    {
+        "video_id": "XVuQxVej6y8",
+        "title": "Remove Nth Node from End of List - Oracle Interview Question - Leetcode 19",
+        "length": "429"
+    },
+    {
+        "video_id": "S5bfdUTrKLM",
+        "title": "Linkedin Interview Question - Reorder List - Leetcode 143 - Python",
+        "length": "827"
+    },
+    {
+        "video_id": "T41rL0L3Pnw",
+        "title": "Set Matrix Zeroes - In-place - Leetcode 73",
+        "length": "1085"
+    },
+    {
+        "video_id": "BJnMZNwUk1M",
+        "title": "Spiral Matrix - Microsoft Interview Question - Leetcode 54",
+        "length": "1006"
+    },
+    {
+        "video_id": "fMSJSS7eO1w",
+        "title": "Rotate Image - Matrix - Leetcode 48",
+        "length": "946"
+    },
+    {
+        "video_id": "pfiQ_PS1g8E",
+        "title": "Word Search - Backtracking - Leetcode 79 - Python",
+        "length": "618"
+    },
+    {
+        "video_id": "wiGpQwVHdE0",
+        "title": "Longest Substring Without Repeating Characters - Leetcode 3 - Python",
+        "length": "406"
+    },
+    {
+        "video_id": "gqXU1UyA8pk",
+        "title": "Longest Repeating Character Replacement - Leetcode 424 - Python",
+        "length": "1244"
+    },
+    {
+        "video_id": "jSto0O4AJbM",
+        "title": "Minimum Window Substring - Airbnb Interview Question - Leetcode 76",
+        "length": "1541"
+    },
+    {
+        "video_id": "vzdNOK2oB2E",
+        "title": "Group Anagrams - Categorize Strings by Count - Leetcode 49",
+        "length": "492"
+    },
+    {
+        "video_id": "WTzjTskDFMg",
+        "title": "Valid Parentheses - Stack - Leetcode 20 - Python",
+        "length": "643"
+    },
+    {
+        "video_id": "jJXJ16kPFWg",
+        "title": "Valid Palindrome - Leetcode 125 - Python",
+        "length": "898"
+    },
+    {
+        "video_id": "XYQecbcd6_c",
+        "title": "Longest Palindromic Substring - Python - Leetcode 5",
+        "length": "491"
+    },
+    {
+        "video_id": "4RACzI5-du8",
+        "title": "Palindromic Substrings - Leetcode 647 - Python",
+        "length": "902"
+    },
+    {
+        "video_id": "B1k_sxOSgv8",
+        "title": "Encode and Decode Strings - Leetcode 271 - Python",
+        "length": "693"
+    },
+    {
+        "video_id": "hTM3phVI6YQ",
+        "title": "Maximum Depth of Binary Tree - 3 Solutions - Leetcode 104 - Python",
+        "length": "1003"
+    },
+    {
+        "video_id": "vRbbcKXCxOw",
+        "title": "Same Tree - Leetcode 100 - Python",
+        "length": "472"
+    },
+    {
+        "video_id": "OnSn2XEQ4MY",
+        "title": "Invert Binary Tree - Depth First Search - Leetcode 226",
+        "length": "235"
+    },
+    {
+        "video_id": "Hr5cWUld4vU",
+        "title": "Binary Tree Maximum Path Sum - DFS - Leetcode 124 - Python",
+        "length": "919"
+    },
+    {
+        "video_id": "6ZnyEApgFYg",
+        "title": "Binary Tree Level Order Traversal - BFS - Leetcode 102",
+        "length": "576"
+    },
+    {
+        "video_id": "u4JAi2JJhI8",
+        "title": "Serialize and Deserialize Binary Tree - Preorder Traversal - Leetcode 297 - Python",
+        "length": "828"
+    },
+    {
+        "video_id": "E36O5SWp-LE",
+        "title": "Subtree of Another Tree - Leetcode 572 - Python",
+        "length": "855"
+    },
+    {
+        "video_id": "ihj4IQGZ2zc",
+        "title": "Construct Binary Tree from Inorder and Preorder Traversal - Leetcode 105 - Python",
+        "length": "1022"
+    },
+    {
+        "video_id": "s6ATEkipzow",
+        "title": "Validate Binary Search Tree - Depth First Search - Leetcode 98",
+        "length": "596"
+    },
+    {
+        "video_id": "5LUXSvjmGCw",
+        "title": "Kth Smallest Element in a BST",
+        "length": "656"
+    },
+    {
+        "video_id": "gs2LMfuOR9k",
+        "title": "Lowest Common Ancestor of a Binary Search Tree - Leetcode 235 - Python",
+        "length": "403"
+    },
+    {
+        "video_id": "oobqoCJlHA0",
+        "title": "Implement Trie (Prefix Tree) - Leetcode 208",
+        "length": "1136"
+    },
+    {
+        "video_id": "BTf05gs_8iU",
+        "title": "Design Add and Search Words Data Structure - Leetcode 211 - Python",
+        "length": "1190"
+    },
+    {
+        "video_id": "asbcE9mZz_U",
+        "title": "Word Search II - Backtracking Trie - Leetcode 212 - Python",
+        "length": "1254"
+    },
+    {
+        "video_id": "YPTqKIgVk-k",
+        "title": "Top K Frequent Elements - Bucket Sort - Leetcode 347 - Python",
+        "length": "793"
+    },
+    {
+        "video_id": "itmhHWaHupI",
+        "title": "Find Median from Data Stream - Heap & Priority Queue - Leetcode 295",
+        "length": "1415"
+    },
+    {
+        "video_id": "9UtInBqnCgA",
+        "title": "Valid Anagram - Leetcode 242 - Python",
+        "length": "721"
+    },
+    {
+        "video_id": "gVUrDV4tZfY",
+        "title": "Sum of Two Integers - Leetcode 371 - Java",
+        "length": "708"
+    }
+]

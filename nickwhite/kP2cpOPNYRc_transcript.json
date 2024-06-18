@@ -1,0 +1,492 @@
+[
+    {
+        "text": "what's up guys Nick white tear tech",
+        "start": 0.03,
+        "duration": 6.47
+    },
+    {
+        "text": "encoding stuff on Twitch on YouTube and",
+        "start": 3.12,
+        "duration": 6.689
+    },
+    {
+        "text": "we are doing rotate string today very",
+        "start": 6.5,
+        "duration": 6.37
+    },
+    {
+        "text": "easy problem really could just message",
+        "start": 9.809,
+        "duration": 5.641
+    },
+    {
+        "text": "to this or make like a status update but",
+        "start": 12.87,
+        "duration": 4.68
+    },
+    {
+        "text": "to even explain this one it's so easy",
+        "start": 15.45,
+        "duration": 5.43
+    },
+    {
+        "text": "but it's kind of a trick solution it's",
+        "start": 17.55,
+        "duration": 4.62
+    },
+    {
+        "text": "kind of something you have to know is",
+        "start": 20.88,
+        "duration": 2.25
+    },
+    {
+        "text": "kind of something you have to think",
+        "start": 22.17,
+        "duration": 2.79
+    },
+    {
+        "text": "about you could get asked this into an",
+        "start": 23.13,
+        "duration": 3.78
+    },
+    {
+        "text": "interview in an interview I highly doubt",
+        "start": 24.96,
+        "duration": 4.86
+    },
+    {
+        "text": "it but I actually did get asked this in",
+        "start": 26.91,
+        "duration": 3.959
+    },
+    {
+        "text": "an interview before now that I'm",
+        "start": 29.82,
+        "duration": 2.01
+    },
+    {
+        "text": "thinking about it",
+        "start": 30.869,
+        "duration": 3.151
+    },
+    {
+        "text": "some people will can basically here's",
+        "start": 31.83,
+        "duration": 5.19
+    },
+    {
+        "text": "the problem first rotate a string given",
+        "start": 34.02,
+        "duration": 5.19
+    },
+    {
+        "text": "two strings a and B a shift on a",
+        "start": 37.02,
+        "duration": 4.08
+    },
+    {
+        "text": "consists of taking a string a and moving",
+        "start": 39.21,
+        "duration": 3.63
+    },
+    {
+        "text": "the less most leftmost character to the",
+        "start": 41.1,
+        "duration": 5.58
+    },
+    {
+        "text": "rightmost position for example ABCDE",
+        "start": 42.84,
+        "duration": 7.17
+    },
+    {
+        "text": "would become b c d e a that mate that's",
+        "start": 46.68,
+        "duration": 5.64
+    },
+    {
+        "text": "because we take the a when we shift it",
+        "start": 50.01,
+        "duration": 4.229
+    },
+    {
+        "text": "and we move it to the end so it's b c d",
+        "start": 52.32,
+        "duration": 5.64
+    },
+    {
+        "text": "e a after one shift so we're doing it's",
+        "start": 54.239,
+        "duration": 5.671
+    },
+    {
+        "text": "like left shift it's not a right shift",
+        "start": 57.96,
+        "duration": 5.79
+    },
+    {
+        "text": "it's a left shifting return true if a",
+        "start": 59.91,
+        "duration": 6.72
+    },
+    {
+        "text": "can become b after some number of shifts",
+        "start": 63.75,
+        "duration": 4.86
+    },
+    {
+        "text": "so we're looking at this when we see a",
+        "start": 66.63,
+        "duration": 6.09
+    },
+    {
+        "text": "is a b c d e and b is c d e a B well if",
+        "start": 68.61,
+        "duration": 6.78
+    },
+    {
+        "text": "we did shift this twice we would put a",
+        "start": 72.72,
+        "duration": 4.95
+    },
+    {
+        "text": "to the end then we put B to the end see",
+        "start": 75.39,
+        "duration": 5.04
+    },
+    {
+        "text": "that and then we do get CDE a B so we",
+        "start": 77.67,
+        "duration": 5.16
+    },
+    {
+        "text": "would return true and then this one is",
+        "start": 80.43,
+        "duration": 3.81
+    },
+    {
+        "text": "false because no matter what you can't",
+        "start": 82.83,
+        "duration": 3.81
+    },
+    {
+        "text": "now how do you do this well some people",
+        "start": 84.24,
+        "duration": 4.14
+    },
+    {
+        "text": "think it's smart to split it into an",
+        "start": 86.64,
+        "duration": 3.869
+    },
+    {
+        "text": "array and then shift the array and then",
+        "start": 88.38,
+        "duration": 4.41
+    },
+    {
+        "text": "do that you could do that but I think",
+        "start": 90.509,
+        "duration": 3.57
+    },
+    {
+        "text": "that's a bad idea",
+        "start": 92.79,
+        "duration": 4.38
+    },
+    {
+        "text": "because this solution is a one-line",
+        "start": 94.079,
+        "duration": 5.881
+    },
+    {
+        "text": "solution if you think about if you're",
+        "start": 97.17,
+        "duration": 4.82
+    },
+    {
+        "text": "smart and you know how to do it I",
+        "start": 99.96,
+        "duration": 4.199
+    },
+    {
+        "text": "realistically I only I don't even",
+        "start": 101.99,
+        "duration": 3.76
+    },
+    {
+        "text": "remember if I thought of this on my own",
+        "start": 104.159,
+        "duration": 4.231
+    },
+    {
+        "text": "but this is I I knew about this one like",
+        "start": 105.75,
+        "duration": 4.259
+    },
+    {
+        "text": "three years ago is one of the first ones",
+        "start": 108.39,
+        "duration": 3.6
+    },
+    {
+        "text": "because it's so tricky I remember",
+        "start": 110.009,
+        "duration": 5.241
+    },
+    {
+        "text": "upperclassmen showing me this in college",
+        "start": 111.99,
+        "duration": 5.339
+    },
+    {
+        "text": "so let's just look at it for a second",
+        "start": 115.25,
+        "duration": 4.509
+    },
+    {
+        "text": "what what you need to know is that if",
+        "start": 117.329,
+        "duration": 6.54
+    },
+    {
+        "text": "you do double a if you just add it onto",
+        "start": 119.759,
+        "duration": 6.631
+    },
+    {
+        "text": "a if you add another version of a on a",
+        "start": 123.869,
+        "duration": 6.991
+    },
+    {
+        "text": "so if we do a plus a that would be this",
+        "start": 126.39,
+        "duration": 7.53
+    },
+    {
+        "text": "string Plus this string into a final",
+        "start": 130.86,
+        "duration": 4.89
+    },
+    {
+        "text": "right so that would be this we would add",
+        "start": 133.92,
+        "duration": 4.47
+    },
+    {
+        "text": "ABCDE onto the end of ABC to eat and",
+        "start": 135.75,
+        "duration": 6.23
+    },
+    {
+        "text": "when you look at this this contains",
+        "start": 138.39,
+        "duration": 7.23
+    },
+    {
+        "text": "every possible shift every possible left",
+        "start": 141.98,
+        "duration": 8.02
+    },
+    {
+        "text": "shift that could happen so you see here",
+        "start": 145.62,
+        "duration": 7.02
+    },
+    {
+        "text": "it's not just ap CDE anymore",
+        "start": 150.0,
+        "duration": 6.42
+    },
+    {
+        "text": "it's BC it's here's the first version of",
+        "start": 152.64,
+        "duration": 6.78
+    },
+    {
+        "text": "the shift here would be one shift here",
+        "start": 156.42,
+        "duration": 6.27
+    },
+    {
+        "text": "would be two shifts here would be three",
+        "start": 159.42,
+        "duration": 4.649
+    },
+    {
+        "text": "shifts I don't even know from",
+        "start": 162.69,
+        "duration": 2.97
+    },
+    {
+        "text": "highlighting these right here would be",
+        "start": 164.069,
+        "duration": 3.931
+    },
+    {
+        "text": "four shifts and here would be the you",
+        "start": 165.66,
+        "duration": 4.68
+    },
+    {
+        "text": "know the final shift here and then",
+        "start": 168.0,
+        "duration": 4.53
+    },
+    {
+        "text": "you're back to the beginning so it has",
+        "start": 170.34,
+        "duration": 4.02
+    },
+    {
+        "text": "every shift now you just have to see",
+        "start": 172.53,
+        "duration": 4.29
+    },
+    {
+        "text": "whether this string contains this string",
+        "start": 174.36,
+        "duration": 5.31
+    },
+    {
+        "text": "and you know that it does in this case",
+        "start": 176.82,
+        "duration": 6.84
+    },
+    {
+        "text": "you see de a B so if you just do add an",
+        "start": 179.67,
+        "duration": 6.87
+    },
+    {
+        "text": "extra version if you just say return",
+        "start": 183.66,
+        "duration": 5.16
+    },
+    {
+        "text": "first of all we have to say a dot length",
+        "start": 186.54,
+        "duration": 4.44
+    },
+    {
+        "text": "has to be equal to B dot length so they",
+        "start": 188.82,
+        "duration": 4.56
+    },
+    {
+        "text": "have to be the same size and then the",
+        "start": 190.98,
+        "duration": 3.78
+    },
+    {
+        "text": "only other condition that has to match",
+        "start": 193.38,
+        "duration": 6.419
+    },
+    {
+        "text": "is a plus a dot contains the string B",
+        "start": 194.76,
+        "duration": 8.759
+    },
+    {
+        "text": "and that's it you can return this and",
+        "start": 199.799,
+        "duration": 5.16
+    },
+    {
+        "text": "that's gonna give you your answer if",
+        "start": 203.519,
+        "duration": 4.921
+    },
+    {
+        "text": "this string of a plus a contains B then",
+        "start": 204.959,
+        "duration": 6.12
+    },
+    {
+        "text": "that means that because it has every",
+        "start": 208.44,
+        "duration": 5.37
+    },
+    {
+        "text": "version of every shift within it then",
+        "start": 211.079,
+        "duration": 4.741
+    },
+    {
+        "text": "that's going to contain the string then",
+        "start": 213.81,
+        "duration": 3.63
+    },
+    {
+        "text": "that means it's possible to shift to get",
+        "start": 215.82,
+        "duration": 2.639
+    },
+    {
+        "text": "to it you don't have to do anything",
+        "start": 217.44,
+        "duration": 3.48
+    },
+    {
+        "text": "crazy just a cool trick solution",
+        "start": 218.459,
+        "duration": 4.231
+    },
+    {
+        "text": "hopefully you guys have heard of this",
+        "start": 220.92,
+        "duration": 4.2
+    },
+    {
+        "text": "one before it's pretty cool I could come",
+        "start": 222.69,
+        "duration": 3.72
+    },
+    {
+        "text": "up in an interview and instead of having",
+        "start": 225.12,
+        "duration": 3.33
+    },
+    {
+        "text": "to be like split it into an array and",
+        "start": 226.41,
+        "duration": 4.47
+    },
+    {
+        "text": "start shifting the array you could just",
+        "start": 228.45,
+        "duration": 3.9
+    },
+    {
+        "text": "do this little trick and they might be",
+        "start": 230.88,
+        "duration": 3.0
+    },
+    {
+        "text": "impressed they might think that you're",
+        "start": 232.35,
+        "duration": 3.15
+    },
+    {
+        "text": "on top of your game it's a little nerd",
+        "start": 233.88,
+        "duration": 5.16
+    },
+    {
+        "text": "trick for you so alright that's a rotate",
+        "start": 235.5,
+        "duration": 5.64
+    },
+    {
+        "text": "string thank you guys for watching and",
+        "start": 239.04,
+        "duration": 5.449
+    },
+    {
+        "text": "the see guys next",
+        "start": 241.14,
+        "duration": 3.349
+    }
+]

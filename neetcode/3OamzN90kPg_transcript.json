@@ -1,0 +1,817 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.439
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.599,
+        "duration": 4.401
+    },
+    {
+        "text": "let's solve contains duplicate this is",
+        "start": 3.439,
+        "duration": 5.361
+    },
+    {
+        "text": "another problem from the blind 75 list",
+        "start": 6.0,
+        "duration": 4.639
+    },
+    {
+        "text": "of questions we've been working on so i",
+        "start": 8.8,
+        "duration": 3.759
+    },
+    {
+        "text": "like this problem because it's a good",
+        "start": 10.639,
+        "duration": 3.92
+    },
+    {
+        "text": "problem for beginners but there's also",
+        "start": 12.559,
+        "duration": 3.681
+    },
+    {
+        "text": "multiple solutions to it that i'd like",
+        "start": 14.559,
+        "duration": 3.841
+    },
+    {
+        "text": "to go over in this video so we're given",
+        "start": 16.24,
+        "duration": 4.64
+    },
+    {
+        "text": "an array of numbers we want to return",
+        "start": 18.4,
+        "duration": 4.799
+    },
+    {
+        "text": "true if there's any value in that list",
+        "start": 20.88,
+        "duration": 5.2
+    },
+    {
+        "text": "of numbers that appears at least twice",
+        "start": 23.199,
+        "duration": 4.721
+    },
+    {
+        "text": "but maybe it could appear three times or",
+        "start": 26.08,
+        "duration": 4.8
+    },
+    {
+        "text": "four times write just at least twice and",
+        "start": 27.92,
+        "duration": 5.36
+    },
+    {
+        "text": "we want to return false if there aren't",
+        "start": 30.88,
+        "duration": 4.72
+    },
+    {
+        "text": "any values that appear at least twice",
+        "start": 33.28,
+        "duration": 4.08
+    },
+    {
+        "text": "basically what that means is that every",
+        "start": 35.6,
+        "duration": 4.88
+    },
+    {
+        "text": "value in the array is distinct so let's",
+        "start": 37.36,
+        "duration": 4.719
+    },
+    {
+        "text": "take a look at an example we have one",
+        "start": 40.48,
+        "duration": 5.12
+    },
+    {
+        "text": "two three and then we have 1 again so of",
+        "start": 42.079,
+        "duration": 5.921
+    },
+    {
+        "text": "course this has duplicates right so we",
+        "start": 45.6,
+        "duration": 5.279
+    },
+    {
+        "text": "return true and the easiest way we would",
+        "start": 48.0,
+        "duration": 5.84
+    },
+    {
+        "text": "be able to detect that is by brute",
+        "start": 50.879,
+        "duration": 6.401
+    },
+    {
+        "text": "forcing this so given these numbers the",
+        "start": 53.84,
+        "duration": 5.519
+    },
+    {
+        "text": "first thing we do is look at the first",
+        "start": 57.28,
+        "duration": 4.48
+    },
+    {
+        "text": "number it's 1. how do we know if this is",
+        "start": 59.359,
+        "duration": 4.561
+    },
+    {
+        "text": "a duplicate or not well we'd have to",
+        "start": 61.76,
+        "duration": 5.76
+    },
+    {
+        "text": "compare it to every single number in the",
+        "start": 63.92,
+        "duration": 6.72
+    },
+    {
+        "text": "rest of the array so that would be a big",
+        "start": 67.52,
+        "duration": 5.919
+    },
+    {
+        "text": "o of n time operation just to check if",
+        "start": 70.64,
+        "duration": 5.44
+    },
+    {
+        "text": "the first number is a duplicate or not",
+        "start": 73.439,
+        "duration": 4.481
+    },
+    {
+        "text": "and then we'd have to do that for every",
+        "start": 76.08,
+        "duration": 3.6
+    },
+    {
+        "text": "number then we have to check is the",
+        "start": 77.92,
+        "duration": 3.519
+    },
+    {
+        "text": "second number a duplicate how do we know",
+        "start": 79.68,
+        "duration": 3.759
+    },
+    {
+        "text": "we have to compare it to every other",
+        "start": 81.439,
+        "duration": 4.0
+    },
+    {
+        "text": "number we do the same thing with the",
+        "start": 83.439,
+        "duration": 5.36
+    },
+    {
+        "text": "third one and the last one and so since",
+        "start": 85.439,
+        "duration": 4.961
+    },
+    {
+        "text": "we're doing it for every number in the",
+        "start": 88.799,
+        "duration": 3.201
+    },
+    {
+        "text": "array the overall time complexity is",
+        "start": 90.4,
+        "duration": 4.16
+    },
+    {
+        "text": "going to become n squared and by the way",
+        "start": 92.0,
+        "duration": 5.84
+    },
+    {
+        "text": "in this case n is just the size of the",
+        "start": 94.56,
+        "duration": 5.919
+    },
+    {
+        "text": "input array so the brute force solution",
+        "start": 97.84,
+        "duration": 5.52
+    },
+    {
+        "text": "is big o n squared time complexity but",
+        "start": 100.479,
+        "duration": 4.32
+    },
+    {
+        "text": "the good thing is we don't need any",
+        "start": 103.36,
+        "duration": 4.0
+    },
+    {
+        "text": "extra memory so the memory complexity is",
+        "start": 104.799,
+        "duration": 5.36
+    },
+    {
+        "text": "big of one it's definitely not a bad",
+        "start": 107.36,
+        "duration": 5.2
+    },
+    {
+        "text": "solution but the question is can we do",
+        "start": 110.159,
+        "duration": 4.481
+    },
+    {
+        "text": "better than that and yes we definitely",
+        "start": 112.56,
+        "duration": 4.96
+    },
+    {
+        "text": "can a second approach that will help us",
+        "start": 114.64,
+        "duration": 5.6
+    },
+    {
+        "text": "is sorting what happens if we took this",
+        "start": 117.52,
+        "duration": 4.879
+    },
+    {
+        "text": "array and we sorted it it would look a",
+        "start": 120.24,
+        "duration": 4.0
+    },
+    {
+        "text": "little bit different it would look like",
+        "start": 122.399,
+        "duration": 5.281
+    },
+    {
+        "text": "this okay but how does sorting help us",
+        "start": 124.24,
+        "duration": 6.4
+    },
+    {
+        "text": "well let's think about it if we sort the",
+        "start": 127.68,
+        "duration": 6.08
+    },
+    {
+        "text": "input then any duplicates that do exist",
+        "start": 130.64,
+        "duration": 5.28
+    },
+    {
+        "text": "in the array and clearly we see that two",
+        "start": 133.76,
+        "duration": 3.839
+    },
+    {
+        "text": "duplicates exist at the beginning of the",
+        "start": 135.92,
+        "duration": 4.08
+    },
+    {
+        "text": "array they're going to be adjacent so",
+        "start": 137.599,
+        "duration": 3.441
+    },
+    {
+        "text": "when we're",
+        "start": 140.0,
+        "duration": 3.28
+    },
+    {
+        "text": "trying to detect any duplicates in here",
+        "start": 141.04,
+        "duration": 3.919
+    },
+    {
+        "text": "we only have to iterate through the",
+        "start": 143.28,
+        "duration": 4.24
+    },
+    {
+        "text": "array once and as we do that we're just",
+        "start": 144.959,
+        "duration": 5.841
+    },
+    {
+        "text": "going to be comparing two neighbors in",
+        "start": 147.52,
+        "duration": 5.84
+    },
+    {
+        "text": "the array checking if they're duplicates",
+        "start": 150.8,
+        "duration": 4.48
+    },
+    {
+        "text": "next we're going to shift our pointers",
+        "start": 153.36,
+        "duration": 4.239
+    },
+    {
+        "text": "to the next spot are these duplicates",
+        "start": 155.28,
+        "duration": 4.72
+    },
+    {
+        "text": "are these duplicates etc etc until we",
+        "start": 157.599,
+        "duration": 4.241
+    },
+    {
+        "text": "finish the entire array in this case we",
+        "start": 160.0,
+        "duration": 3.92
+    },
+    {
+        "text": "see that these two adjacent values are",
+        "start": 161.84,
+        "duration": 5.119
+    },
+    {
+        "text": "duplicates so we can return true and",
+        "start": 163.92,
+        "duration": 4.959
+    },
+    {
+        "text": "what's the time complexity of this well",
+        "start": 166.959,
+        "duration": 3.92
+    },
+    {
+        "text": "the one pass is just going to be big o",
+        "start": 168.879,
+        "duration": 4.321
+    },
+    {
+        "text": "of n but we know that sorting does take",
+        "start": 170.879,
+        "duration": 4.64
+    },
+    {
+        "text": "extra memory or not extra memory it does",
+        "start": 173.2,
+        "duration": 4.319
+    },
+    {
+        "text": "take uh extra time complexity and that",
+        "start": 175.519,
+        "duration": 4.961
+    },
+    {
+        "text": "time complexity is n log n so that's the",
+        "start": 177.519,
+        "duration": 5.681
+    },
+    {
+        "text": "bottleneck in this solution but again we",
+        "start": 180.48,
+        "duration": 4.96
+    },
+    {
+        "text": "don't need extra space if you don't",
+        "start": 183.2,
+        "duration": 4.399
+    },
+    {
+        "text": "count the space that's used by the",
+        "start": 185.44,
+        "duration": 5.439
+    },
+    {
+        "text": "sorting algorithm so in this case we do",
+        "start": 187.599,
+        "duration": 5.521
+    },
+    {
+        "text": "have a slightly better solution than",
+        "start": 190.879,
+        "duration": 5.601
+    },
+    {
+        "text": "brute force but actually if we use a",
+        "start": 193.12,
+        "duration": 5.36
+    },
+    {
+        "text": "little bit extra memory and it's really",
+        "start": 196.48,
+        "duration": 4.72
+    },
+    {
+        "text": "a trade-off if we sacrifice space",
+        "start": 198.48,
+        "duration": 5.119
+    },
+    {
+        "text": "complexity we can actually achieve",
+        "start": 201.2,
+        "duration": 4.399
+    },
+    {
+        "text": "better memory complexity and let me show",
+        "start": 203.599,
+        "duration": 4.72
+    },
+    {
+        "text": "you how so suppose we don't sort our",
+        "start": 205.599,
+        "duration": 5.36
+    },
+    {
+        "text": "input we're given the default input but",
+        "start": 208.319,
+        "duration": 6.401
+    },
+    {
+        "text": "we use extra memory we use a hash set",
+        "start": 210.959,
+        "duration": 6.321
+    },
+    {
+        "text": "but what exactly is a hash set gonna do",
+        "start": 214.72,
+        "duration": 5.439
+    },
+    {
+        "text": "for us it's gonna allow us to insert",
+        "start": 217.28,
+        "duration": 5.519
+    },
+    {
+        "text": "elements into the hash set in big o of",
+        "start": 220.159,
+        "duration": 5.521
+    },
+    {
+        "text": "one time but it's also gonna allow us to",
+        "start": 222.799,
+        "duration": 6.16
+    },
+    {
+        "text": "check we can ask our hashmap does a",
+        "start": 225.68,
+        "duration": 6.16
+    },
+    {
+        "text": "certain value exist we want to know does",
+        "start": 228.959,
+        "duration": 5.36
+    },
+    {
+        "text": "this 1 exist in the hashmap well if we",
+        "start": 231.84,
+        "duration": 4.319
+    },
+    {
+        "text": "start at the beginning of the array so",
+        "start": 234.319,
+        "duration": 4.48
+    },
+    {
+        "text": "far nothing is in our hashmap so a 1",
+        "start": 236.159,
+        "duration": 4.64
+    },
+    {
+        "text": "does not exist in our hashmap that means",
+        "start": 238.799,
+        "duration": 4.72
+    },
+    {
+        "text": "this 1 is not a duplicate you can see",
+        "start": 240.799,
+        "duration": 5.201
+    },
+    {
+        "text": "that this is an improvement over the",
+        "start": 243.519,
+        "duration": 5.201
+    },
+    {
+        "text": "brute force previously to determine if",
+        "start": 246.0,
+        "duration": 4.4
+    },
+    {
+        "text": "this was a duplicate we had to check",
+        "start": 248.72,
+        "duration": 4.079
+    },
+    {
+        "text": "every other value in the array this time",
+        "start": 250.4,
+        "duration": 4.559
+    },
+    {
+        "text": "we don't but after we have checked if",
+        "start": 252.799,
+        "duration": 4.4
+    },
+    {
+        "text": "this is a duplicate we do have to add it",
+        "start": 254.959,
+        "duration": 4.8
+    },
+    {
+        "text": "to our hash set because later on if we",
+        "start": 257.199,
+        "duration": 5.041
+    },
+    {
+        "text": "encounter a one like over here then we",
+        "start": 259.759,
+        "duration": 4.561
+    },
+    {
+        "text": "determine that this is a duplicate",
+        "start": 262.24,
+        "duration": 3.92
+    },
+    {
+        "text": "because we know that there's already a",
+        "start": 264.32,
+        "duration": 4.48
+    },
+    {
+        "text": "one in our hash set so next we're gonna",
+        "start": 266.16,
+        "duration": 4.64
+    },
+    {
+        "text": "check two two is not a duplicate added",
+        "start": 268.8,
+        "duration": 3.76
+    },
+    {
+        "text": "here is three a duplicate nope add it",
+        "start": 270.8,
+        "duration": 4.32
+    },
+    {
+        "text": "here one is this a duplicate yep there's",
+        "start": 272.56,
+        "duration": 5.84
+    },
+    {
+        "text": "a one over here so we return true this",
+        "start": 275.12,
+        "duration": 6.32
+    },
+    {
+        "text": "does contain duplicates and by the way",
+        "start": 278.4,
+        "duration": 5.6
+    },
+    {
+        "text": "since each operation was just big o of",
+        "start": 281.44,
+        "duration": 4.64
+    },
+    {
+        "text": "one we had to do that for every value in",
+        "start": 284.0,
+        "duration": 4.16
+    },
+    {
+        "text": "the input array and we only had to scan",
+        "start": 286.08,
+        "duration": 4.399
+    },
+    {
+        "text": "through the list of inputs once the time",
+        "start": 288.16,
+        "duration": 5.28
+    },
+    {
+        "text": "complexity is going to be big o of n but",
+        "start": 290.479,
+        "duration": 4.72
+    },
+    {
+        "text": "the space complexity we did have to",
+        "start": 293.44,
+        "duration": 3.84
+    },
+    {
+        "text": "sacrifice a little bit we have to create",
+        "start": 295.199,
+        "duration": 4.481
+    },
+    {
+        "text": "a hash set and the memory that that hash",
+        "start": 297.28,
+        "duration": 5.359
+    },
+    {
+        "text": "set will use could be up to the size of",
+        "start": 299.68,
+        "duration": 5.92
+    },
+    {
+        "text": "the input array which is n so we do end",
+        "start": 302.639,
+        "duration": 5.361
+    },
+    {
+        "text": "up using extra memory but that's not too",
+        "start": 305.6,
+        "duration": 4.319
+    },
+    {
+        "text": "bad this is about as efficient as we can",
+        "start": 308.0,
+        "duration": 4.16
+    },
+    {
+        "text": "get in terms of time complexity so let's",
+        "start": 309.919,
+        "duration": 4.641
+    },
+    {
+        "text": "get into the code now okay so now let's",
+        "start": 312.16,
+        "duration": 3.92
+    },
+    {
+        "text": "get into the code so the first thing i'm",
+        "start": 314.56,
+        "duration": 4.079
+    },
+    {
+        "text": "going to do is create that hash set in",
+        "start": 316.08,
+        "duration": 5.2
+    },
+    {
+        "text": "python you can do that just like this",
+        "start": 318.639,
+        "duration": 5.601
+    },
+    {
+        "text": "it's just called a set and then the",
+        "start": 321.28,
+        "duration": 5.44
+    },
+    {
+        "text": "simple thing is just going through every",
+        "start": 324.24,
+        "duration": 6.08
+    },
+    {
+        "text": "value in the input array nums and",
+        "start": 326.72,
+        "duration": 5.919
+    },
+    {
+        "text": "before we end up adding it to our hash",
+        "start": 330.32,
+        "duration": 4.4
+    },
+    {
+        "text": "set because remember we want to add",
+        "start": 332.639,
+        "duration": 3.921
+    },
+    {
+        "text": "every one of these values to our hash",
+        "start": 334.72,
+        "duration": 4.4
+    },
+    {
+        "text": "set just like this but before we even do",
+        "start": 336.56,
+        "duration": 6.0
+    },
+    {
+        "text": "that we want to know is n a duplicate",
+        "start": 339.12,
+        "duration": 6.16
+    },
+    {
+        "text": "does this value already exist in our",
+        "start": 342.56,
+        "duration": 6.32
+    },
+    {
+        "text": "hash set and if it does we know that our",
+        "start": 345.28,
+        "duration": 6.0
+    },
+    {
+        "text": "array contains duplicates so we don't",
+        "start": 348.88,
+        "duration": 3.84
+    },
+    {
+        "text": "even have to continue through the rest",
+        "start": 351.28,
+        "duration": 3.6
+    },
+    {
+        "text": "of the array we can immediately return",
+        "start": 352.72,
+        "duration": 4.72
+    },
+    {
+        "text": "true because we found a duplicate but if",
+        "start": 354.88,
+        "duration": 4.319
+    },
+    {
+        "text": "it doesn't contain a duplicate we're",
+        "start": 357.44,
+        "duration": 3.84
+    },
+    {
+        "text": "going to add that value then iterate",
+        "start": 359.199,
+        "duration": 4.56
+    },
+    {
+        "text": "through the rest of the array of nums",
+        "start": 361.28,
+        "duration": 4.88
+    },
+    {
+        "text": "and then the loop will exit and then we",
+        "start": 363.759,
+        "duration": 4.88
+    },
+    {
+        "text": "can return false to indicate that we did",
+        "start": 366.16,
+        "duration": 5.599
+    },
+    {
+        "text": "not find any duplicates in the array now",
+        "start": 368.639,
+        "duration": 4.881
+    },
+    {
+        "text": "let's run the code to make sure that it",
+        "start": 371.759,
+        "duration": 4.0
+    },
+    {
+        "text": "works and on the left you can see that",
+        "start": 373.52,
+        "duration": 4.16
+    },
+    {
+        "text": "yes it does work and it is about as",
+        "start": 375.759,
+        "duration": 3.841
+    },
+    {
+        "text": "efficient as we can get so i really hope",
+        "start": 377.68,
+        "duration": 4.32
+    },
+    {
+        "text": "that this was helpful if it was please",
+        "start": 379.6,
+        "duration": 4.08
+    },
+    {
+        "text": "like and subscribe it supports the",
+        "start": 382.0,
+        "duration": 3.44
+    },
+    {
+        "text": "channel a lot consider checking out my",
+        "start": 383.68,
+        "duration": 3.2
+    },
+    {
+        "text": "patreon where you can further support",
+        "start": 385.44,
+        "duration": 3.36
+    },
+    {
+        "text": "the channel and hopefully i'll see you",
+        "start": 386.88,
+        "duration": 5.68
+    },
+    {
+        "text": "pretty soon thanks for watching",
+        "start": 388.8,
+        "duration": 3.76
+    }
+]

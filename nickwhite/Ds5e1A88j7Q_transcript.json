@@ -1,0 +1,1027 @@
+[
+    {
+        "text": "be good here hey guys what's up it's",
+        "start": 0.0,
+        "duration": 9.059
+    },
+    {
+        "text": "Nick here and yeah I do a lot of twitch",
+        "start": 5.49,
+        "duration": 7.08
+    },
+    {
+        "text": "and tech stuff on YouTube whit sorry I",
+        "start": 9.059,
+        "duration": 5.37
+    },
+    {
+        "text": "do a lot of tech encoding stuff on",
+        "start": 12.57,
+        "duration": 3.33
+    },
+    {
+        "text": "YouTube and twitch so check the",
+        "start": 14.429,
+        "duration": 2.43
+    },
+    {
+        "text": "description you can find out anything",
+        "start": 15.9,
+        "duration": 2.459
+    },
+    {
+        "text": "about me but I'm doing a lot of elite",
+        "start": 16.859,
+        "duration": 2.881
+    },
+    {
+        "text": "I'm doing a leak code series where i go",
+        "start": 18.359,
+        "duration": 2.641
+    },
+    {
+        "text": "through every problem and explain it as",
+        "start": 19.74,
+        "duration": 3.539
+    },
+    {
+        "text": "i learn them and just do them in general",
+        "start": 21.0,
+        "duration": 4.71
+    },
+    {
+        "text": "so this is one of those videos so this",
+        "start": 23.279,
+        "duration": 4.83
+    },
+    {
+        "text": "one is an eerie tree post order",
+        "start": 25.71,
+        "duration": 4.079
+    },
+    {
+        "text": "traversal right and there's a lot of",
+        "start": 28.109,
+        "duration": 2.91
+    },
+    {
+        "text": "tree problems I've been doing and I",
+        "start": 29.789,
+        "duration": 3.091
+    },
+    {
+        "text": "think tree problems really easy if you",
+        "start": 31.019,
+        "duration": 3.091
+    },
+    {
+        "text": "go on leak code you can just go through",
+        "start": 32.88,
+        "duration": 2.94
+    },
+    {
+        "text": "them all really quickly there's only",
+        "start": 34.11,
+        "duration": 3.24
+    },
+    {
+        "text": "like 20 or something like that there's",
+        "start": 35.82,
+        "duration": 3.93
+    },
+    {
+        "text": "barely on each may be like 40 but should",
+        "start": 37.35,
+        "duration": 6.33
+    },
+    {
+        "text": "be pretty easy so there are a few known",
+        "start": 39.75,
+        "duration": 6.149
+    },
+    {
+        "text": "traversals for trees",
+        "start": 43.68,
+        "duration": 4.109
+    },
+    {
+        "text": "and some of the main ones are in order",
+        "start": 45.899,
+        "duration": 4.051
+    },
+    {
+        "text": "post order and pre-order and I just",
+        "start": 47.789,
+        "duration": 5.34
+    },
+    {
+        "text": "learned about this a minute ago and what",
+        "start": 49.95,
+        "duration": 5.73
+    },
+    {
+        "text": "pre-order post order and in order",
+        "start": 53.129,
+        "duration": 4.891
+    },
+    {
+        "text": "traversal really mean or the order which",
+        "start": 55.68,
+        "duration": 4.8
+    },
+    {
+        "text": "the left-to-right and route the left",
+        "start": 58.02,
+        "duration": 3.75
+    },
+    {
+        "text": "sub-tree the right subtree and the route",
+        "start": 60.48,
+        "duration": 4.02
+    },
+    {
+        "text": "are you know traversed right so in a",
+        "start": 61.77,
+        "duration": 4.98
+    },
+    {
+        "text": "post order traversal the route will be",
+        "start": 64.5,
+        "duration": 4.38
+    },
+    {
+        "text": "traversed last so the routes gonna be",
+        "start": 66.75,
+        "duration": 3.54
+    },
+    {
+        "text": "the last thing you know I'll put it here",
+        "start": 68.88,
+        "duration": 3.21
+    },
+    {
+        "text": "right so we see one is the last thing in",
+        "start": 70.29,
+        "duration": 3.75
+    },
+    {
+        "text": "a pre-order traversal the route would be",
+        "start": 72.09,
+        "duration": 4.8
+    },
+    {
+        "text": "at the front of this list and in an",
+        "start": 74.04,
+        "duration": 4.2
+    },
+    {
+        "text": "inorder traversal would be in the middle",
+        "start": 76.89,
+        "duration": 2.94
+    },
+    {
+        "text": "that you know the route would be",
+        "start": 78.24,
+        "duration": 4.199
+    },
+    {
+        "text": "processed in the middle traversed in the",
+        "start": 79.83,
+        "duration": 4.829
+    },
+    {
+        "text": "middle of this you know I don't know if",
+        "start": 82.439,
+        "duration": 3.241
+    },
+    {
+        "text": "that makes sense you should look it up",
+        "start": 84.659,
+        "duration": 2.521
+    },
+    {
+        "text": "on your own your to really understand",
+        "start": 85.68,
+        "duration": 4.619
+    },
+    {
+        "text": "and we just went over it but so if you",
+        "start": 87.18,
+        "duration": 5.67
+    },
+    {
+        "text": "see what it's you know in post order it",
+        "start": 90.299,
+        "duration": 5.28
+    },
+    {
+        "text": "should we should see you know we have 5",
+        "start": 92.85,
+        "duration": 7.71
+    },
+    {
+        "text": "6 3 right 5 6 3 2 4 1 so we got left",
+        "start": 95.579,
+        "duration": 7.65
+    },
+    {
+        "text": "subtree right subtree and then the route",
+        "start": 100.56,
+        "duration": 6.12
+    },
+    {
+        "text": "I think I think the I I don't remember",
+        "start": 103.229,
+        "duration": 5.221
+    },
+    {
+        "text": "it was a minute ago but I think the",
+        "start": 106.68,
+        "duration": 3.78
+    },
+    {
+        "text": "right subtree is always after the left",
+        "start": 108.45,
+        "duration": 3.449
+    },
+    {
+        "text": "subtree and we're traversing and either",
+        "start": 110.46,
+        "duration": 4.26
+    },
+    {
+        "text": "inorder preorder a post order but I",
+        "start": 111.899,
+        "duration": 5.341
+    },
+    {
+        "text": "think post order I think it's just",
+        "start": 114.72,
+        "duration": 4.109
+    },
+    {
+        "text": "depending on where the route gets",
+        "start": 117.24,
+        "duration": 3.809
+    },
+    {
+        "text": "traversed right so this algorithm is not",
+        "start": 118.829,
+        "duration": 3.15
+    },
+    {
+        "text": "too bad",
+        "start": 121.049,
+        "duration": 2.551
+    },
+    {
+        "text": "all we have to really do here is",
+        "start": 121.979,
+        "duration": 4.231
+    },
+    {
+        "text": "implement a stack right a stack of nodes",
+        "start": 123.6,
+        "duration": 4.35
+    },
+    {
+        "text": "we have a node and the node has children",
+        "start": 126.21,
+        "duration": 3.24
+    },
+    {
+        "text": "right so one's children would be three",
+        "start": 127.95,
+        "duration": 3.63
+    },
+    {
+        "text": "to four threes children would be five",
+        "start": 129.45,
+        "duration": 3.69
+    },
+    {
+        "text": "six right makes sense right so we're",
+        "start": 131.58,
+        "duration": 2.239
+    },
+    {
+        "text": "gonna have a link",
+        "start": 133.14,
+        "duration": 3.799
+    },
+    {
+        "text": "list to implement our stack here so a",
+        "start": 133.819,
+        "duration": 6.09
+    },
+    {
+        "text": "linked list of notes and we'll have",
+        "start": 136.939,
+        "duration": 5.601
+    },
+    {
+        "text": "linked list equals new linked list right",
+        "start": 139.909,
+        "duration": 4.83
+    },
+    {
+        "text": "and this is gonna be called stack",
+        "start": 142.54,
+        "duration": 3.88
+    },
+    {
+        "text": "because we're gonna use a linked list",
+        "start": 144.739,
+        "duration": 3.211
+    },
+    {
+        "text": "implement a stack there's a few ways to",
+        "start": 146.42,
+        "duration": 2.879
+    },
+    {
+        "text": "make a stack but this is the one we're",
+        "start": 147.95,
+        "duration": 3.149
+    },
+    {
+        "text": "gonna do and our output is going to be a",
+        "start": 149.299,
+        "duration": 4.08
+    },
+    {
+        "text": "link to list of integers right this",
+        "start": 151.099,
+        "duration": 3.931
+    },
+    {
+        "text": "one's gonna be called output array for",
+        "start": 153.379,
+        "duration": 6.03
+    },
+    {
+        "text": "now equals new linked list shouldn't be",
+        "start": 155.03,
+        "duration": 6.87
+    },
+    {
+        "text": "too bad here and then the first thing",
+        "start": 159.409,
+        "duration": 3.601
+    },
+    {
+        "text": "we're obviously going to want to do you",
+        "start": 161.9,
+        "duration": 3.0
+    },
+    {
+        "text": "do this in almost all algorithm problems",
+        "start": 163.01,
+        "duration": 4.17
+    },
+    {
+        "text": "in some way shape or form you're going",
+        "start": 164.9,
+        "duration": 3.78
+    },
+    {
+        "text": "to want to check if something's equal to",
+        "start": 167.18,
+        "duration": 2.94
+    },
+    {
+        "text": "null in this case we all we get as a",
+        "start": 168.68,
+        "duration": 3.929
+    },
+    {
+        "text": "root node which is our tree and then",
+        "start": 170.12,
+        "duration": 4.17
+    },
+    {
+        "text": "we're just gonna you know obviously if",
+        "start": 172.609,
+        "duration": 3.69
+    },
+    {
+        "text": "the rows equal no we have no tree so we",
+        "start": 174.29,
+        "duration": 3.899
+    },
+    {
+        "text": "have no output really so we have an",
+        "start": 176.299,
+        "duration": 4.201
+    },
+    {
+        "text": "output array that's initialized to an",
+        "start": 178.189,
+        "duration": 3.69
+    },
+    {
+        "text": "empty linked list here so we'll just",
+        "start": 180.5,
+        "duration": 4.639
+    },
+    {
+        "text": "return well just return our output a",
+        "start": 181.879,
+        "duration": 6.03
+    },
+    {
+        "text": "pretty standard next thing we're going",
+        "start": 185.139,
+        "duration": 5.921
+    },
+    {
+        "text": "to want to do is add our root node to",
+        "start": 187.909,
+        "duration": 4.41
+    },
+    {
+        "text": "the stack because we know that the root",
+        "start": 191.06,
+        "duration": 5.7
+    },
+    {
+        "text": "node is not null and that's good enough",
+        "start": 192.319,
+        "duration": 7.14
+    },
+    {
+        "text": "for us so we'll add it to the stack we",
+        "start": 196.76,
+        "duration": 6.869
+    },
+    {
+        "text": "will now loop through the stack by",
+        "start": 199.459,
+        "duration": 5.7
+    },
+    {
+        "text": "checking whether the stack is empty or",
+        "start": 203.629,
+        "duration": 1.711
+    },
+    {
+        "text": "not",
+        "start": 205.159,
+        "duration": 3.0
+    },
+    {
+        "text": "so while stack is not empty this",
+        "start": 205.34,
+        "duration": 4.56
+    },
+    {
+        "text": "exclamation point means not and we're",
+        "start": 208.159,
+        "duration": 5.64
+    },
+    {
+        "text": "doing this in job obviously we'll pull",
+        "start": 209.9,
+        "duration": 5.339
+    },
+    {
+        "text": "the van owed from the stack right so all",
+        "start": 213.799,
+        "duration": 3.3
+    },
+    {
+        "text": "we have to do to do that is you know no",
+        "start": 215.239,
+        "duration": 4.981
+    },
+    {
+        "text": "node equals stack top poll last right",
+        "start": 217.099,
+        "duration": 7.051
+    },
+    {
+        "text": "there and then we will add the nodes",
+        "start": 220.22,
+        "duration": 7.469
+    },
+    {
+        "text": "value to the output array and we're not",
+        "start": 224.15,
+        "duration": 5.22
+    },
+    {
+        "text": "going to add it to the end of the output",
+        "start": 227.689,
+        "duration": 3.3
+    },
+    {
+        "text": "array we're gonna add it to the first",
+        "start": 229.37,
+        "duration": 3.69
+    },
+    {
+        "text": "part of the output erases output array",
+        "start": 230.989,
+        "duration": 4.92
+    },
+    {
+        "text": "dot add first there's a method in the",
+        "start": 233.06,
+        "duration": 4.98
+    },
+    {
+        "text": "linked list called add first in which we",
+        "start": 235.909,
+        "duration": 3.931
+    },
+    {
+        "text": "can add the value which is an integer",
+        "start": 238.04,
+        "duration": 4.05
+    },
+    {
+        "text": "value to the beginning of our output",
+        "start": 239.84,
+        "duration": 4.919
+    },
+    {
+        "text": "array right so as you can see one is",
+        "start": 242.09,
+        "duration": 4.56
+    },
+    {
+        "text": "going to get added first to our array",
+        "start": 244.759,
+        "duration": 3.331
+    },
+    {
+        "text": "right and I can explain how this works",
+        "start": 246.65,
+        "duration": 3.809
+    },
+    {
+        "text": "in a second in stack top hole last",
+        "start": 248.09,
+        "duration": 4.56
+    },
+    {
+        "text": "that's how we you know actually have our",
+        "start": 250.459,
+        "duration": 4.5
+    },
+    {
+        "text": "link to list called stack",
+        "start": 252.65,
+        "duration": 4.679
+    },
+    {
+        "text": "turn into a stack because pull last is",
+        "start": 254.959,
+        "duration": 5.041
+    },
+    {
+        "text": "gonna pull the top the you know the the",
+        "start": 257.329,
+        "duration": 5.131
+    },
+    {
+        "text": "top of the stack basically right so I",
+        "start": 260.0,
+        "duration": 4.139
+    },
+    {
+        "text": "you know I don't know if I'm explaining",
+        "start": 262.46,
+        "duration": 3.26
+    },
+    {
+        "text": "this very well but",
+        "start": 264.139,
+        "duration": 2.991
+    },
+    {
+        "text": "let me just finish implementing this and",
+        "start": 265.72,
+        "duration": 2.64
+    },
+    {
+        "text": "then we'll try and do a final",
+        "start": 267.13,
+        "duration": 2.25
+    },
+    {
+        "text": "explanation here right",
+        "start": 268.36,
+        "duration": 4.08
+    },
+    {
+        "text": "then we're gonna loop through the node",
+        "start": 269.38,
+        "duration": 5.19
+    },
+    {
+        "text": "dot children right child",
+        "start": 272.44,
+        "duration": 3.63
+    },
+    {
+        "text": "this just loops through all the children",
+        "start": 274.57,
+        "duration": 3.45
+    },
+    {
+        "text": "so if we were at 3 this would loop",
+        "start": 276.07,
+        "duration": 3.75
+    },
+    {
+        "text": "through five and six the five and six",
+        "start": 278.02,
+        "duration": 4.08
+    },
+    {
+        "text": "value nodes and then we're gonna add",
+        "start": 279.82,
+        "duration": 4.32
+    },
+    {
+        "text": "these to the stack and it'll repeat the",
+        "start": 282.1,
+        "duration": 3.63
+    },
+    {
+        "text": "process until we've traversed the whole",
+        "start": 284.14,
+        "duration": 5.07
+    },
+    {
+        "text": "tree right stack dot add just child",
+        "start": 285.73,
+        "duration": 5.85
+    },
+    {
+        "text": "right very easy and then all we have to",
+        "start": 289.21,
+        "duration": 4.44
+    },
+    {
+        "text": "do is actually just return our output",
+        "start": 291.58,
+        "duration": 4.17
+    },
+    {
+        "text": "array and our output array is gonna look",
+        "start": 293.65,
+        "duration": 4.23
+    },
+    {
+        "text": "exactly like this if we run the code it",
+        "start": 295.75,
+        "duration": 5.7
+    },
+    {
+        "text": "should work should be great here yeah I",
+        "start": 297.88,
+        "duration": 6.21
+    },
+    {
+        "text": "just give it a second sorry my Wi-Fi is",
+        "start": 301.45,
+        "duration": 4.2
+    },
+    {
+        "text": "pretty bad yep there we go",
+        "start": 304.09,
+        "duration": 5.13
+    },
+    {
+        "text": "output is expected just as we wanted and",
+        "start": 305.65,
+        "duration": 5.22
+    },
+    {
+        "text": "then we will submit it and we'll you",
+        "start": 309.22,
+        "duration": 3.06
+    },
+    {
+        "text": "know will see accepted here twenty two",
+        "start": 310.87,
+        "duration": 3.72
+    },
+    {
+        "text": "point five three percent leak code for",
+        "start": 312.28,
+        "duration": 4.14
+    },
+    {
+        "text": "some reason basis it's run times",
+        "start": 314.59,
+        "duration": 4.17
+    },
+    {
+        "text": "sometimes on Wi-Fi so we might see up",
+        "start": 316.42,
+        "duration": 4.23
+    },
+    {
+        "text": "different percentage here so don't",
+        "start": 318.76,
+        "duration": 5.09
+    },
+    {
+        "text": "always be discouraged by you know the",
+        "start": 320.65,
+        "duration": 5.73
+    },
+    {
+        "text": "faster than percentage here because it's",
+        "start": 323.85,
+        "duration": 6.25
+    },
+    {
+        "text": "not really they're very accurate so we",
+        "start": 326.38,
+        "duration": 5.85
+    },
+    {
+        "text": "let me just explain this one more time",
+        "start": 330.1,
+        "duration": 3.87
+    },
+    {
+        "text": "so we have two linked list and one of",
+        "start": 332.23,
+        "duration": 3.42
+    },
+    {
+        "text": "them will be implemented as a stack one",
+        "start": 333.97,
+        "duration": 3.14
+    },
+    {
+        "text": "of them will be just a list of integers",
+        "start": 335.65,
+        "duration": 3.84
+    },
+    {
+        "text": "we add the first we have the root if",
+        "start": 337.11,
+        "duration": 3.88
+    },
+    {
+        "text": "it's not equal to null and then well",
+        "start": 339.49,
+        "duration": 3.06
+    },
+    {
+        "text": "stack is not empty which it won't be",
+        "start": 340.99,
+        "duration": 3.36
+    },
+    {
+        "text": "until we traverse the entire tree we",
+        "start": 342.55,
+        "duration": 3.99
+    },
+    {
+        "text": "pull the last element of the array which",
+        "start": 344.35,
+        "duration": 3.99
+    },
+    {
+        "text": "is just gonna pull the top of the array",
+        "start": 346.54,
+        "duration": 3.689
+    },
+    {
+        "text": "you know basically the last element in",
+        "start": 348.34,
+        "duration": 3.72
+    },
+    {
+        "text": "the array is the top of the stack that's",
+        "start": 350.229,
+        "duration": 3.421
+    },
+    {
+        "text": "why it's a stack because as we put",
+        "start": 352.06,
+        "duration": 3.48
+    },
+    {
+        "text": "things into the array you know the last",
+        "start": 353.65,
+        "duration": 4.35
+    },
+    {
+        "text": "element would be like the top of the the",
+        "start": 355.54,
+        "duration": 4.68
+    },
+    {
+        "text": "stack right and then we're going to be",
+        "start": 358.0,
+        "duration": 6.12
+    },
+    {
+        "text": "adding adding the value of the that's we",
+        "start": 360.22,
+        "duration": 5.88
+    },
+    {
+        "text": "pull from the stack to the first element",
+        "start": 364.12,
+        "duration": 3.69
+    },
+    {
+        "text": "of the array each time so in the first",
+        "start": 366.1,
+        "duration": 3.66
+    },
+    {
+        "text": "case it would be one would be a root",
+        "start": 367.81,
+        "duration": 3.21
+    },
+    {
+        "text": "because if we look at the description",
+        "start": 369.76,
+        "duration": 4.74
+    },
+    {
+        "text": "one would be our root we add root to the",
+        "start": 371.02,
+        "duration": 5.31
+    },
+    {
+        "text": "stack right here so the stack is",
+        "start": 374.5,
+        "duration": 3.419
+    },
+    {
+        "text": "literally just a node with the value of",
+        "start": 376.33,
+        "duration": 5.28
+    },
+    {
+        "text": "one you know no when we pull last the",
+        "start": 377.919,
+        "duration": 6.271
+    },
+    {
+        "text": "only element is 1 so we pull 1 1 is",
+        "start": 381.61,
+        "duration": 4.68
+    },
+    {
+        "text": "equal to node then we add 1 to the array",
+        "start": 384.19,
+        "duration": 4.11
+    },
+    {
+        "text": "so ones get added into the array so the",
+        "start": 386.29,
+        "duration": 4.05
+    },
+    {
+        "text": "output array is just an array of 1 and",
+        "start": 388.3,
+        "duration": 3.99
+    },
+    {
+        "text": "then we go through the children 3 to 4",
+        "start": 390.34,
+        "duration": 4.32
+    },
+    {
+        "text": "right 3 to 4 we animal it's the stack",
+        "start": 392.29,
+        "duration": 4.559
+    },
+    {
+        "text": "the top of the stack is now going to be",
+        "start": 394.66,
+        "duration": 4.29
+    },
+    {
+        "text": "4 and then we pull 4",
+        "start": 396.849,
+        "duration": 4.681
+    },
+    {
+        "text": "da-da-da-da-dah keep going for his next",
+        "start": 398.95,
+        "duration": 6.0
+    },
+    {
+        "text": "element two three five six five that's",
+        "start": 401.53,
+        "duration": 5.31
+    },
+    {
+        "text": "pretty much it I'm gonna do pre-order",
+        "start": 404.95,
+        "duration": 4.08
+    },
+    {
+        "text": "and inorder to so if you guys want to",
+        "start": 406.84,
+        "duration": 3.84
+    },
+    {
+        "text": "see those check it out but hopefully I",
+        "start": 409.03,
+        "duration": 4.35
+    },
+    {
+        "text": "did an okay job at explaining and you",
+        "start": 410.68,
+        "duration": 4.26
+    },
+    {
+        "text": "kind of understand how it works a little",
+        "start": 413.38,
+        "duration": 3.48
+    },
+    {
+        "text": "bit I highly recommend going through all",
+        "start": 414.94,
+        "duration": 3.3
+    },
+    {
+        "text": "the true problems I think you'll get a",
+        "start": 416.86,
+        "duration": 2.97
+    },
+    {
+        "text": "really good idea about true problems if",
+        "start": 418.24,
+        "duration": 2.73
+    },
+    {
+        "text": "you just go through them all I'm still",
+        "start": 419.83,
+        "duration": 3.06
+    },
+    {
+        "text": "learning as I go and I'm still trying to",
+        "start": 420.97,
+        "duration": 3.12
+    },
+    {
+        "text": "get better at explaining these so thank",
+        "start": 422.89,
+        "duration": 2.07
+    },
+    {
+        "text": "you guys for watching please subscribe",
+        "start": 424.09,
+        "duration": 2.43
+    },
+    {
+        "text": "please follow me on Twitch on whatever",
+        "start": 424.96,
+        "duration": 3.03
+    },
+    {
+        "text": "and just you know check out the",
+        "start": 426.52,
+        "duration": 4.02
+    },
+    {
+        "text": "description and see what else if you if",
+        "start": 427.99,
+        "duration": 3.87
+    },
+    {
+        "text": "you thought this video was good if you",
+        "start": 430.54,
+        "duration": 2.58
+    },
+    {
+        "text": "thought the video sucked comment below",
+        "start": 431.86,
+        "duration": 2.46
+    },
+    {
+        "text": "and you know maybe I'll take your advice",
+        "start": 433.12,
+        "duration": 3.63
+    },
+    {
+        "text": "into consideration maybe not thanks for",
+        "start": 434.32,
+        "duration": 2.94
+    },
+    {
+        "text": "watching",
+        "start": 436.75,
+        "duration": 3.92
+    },
+    {
+        "text": "really appreciate it have a good one",
+        "start": 437.26,
+        "duration": 3.41
+    }
+]

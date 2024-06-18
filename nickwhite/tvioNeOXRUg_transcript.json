@@ -1,0 +1,1537 @@
+[
+    {
+        "text": "hey what's up guy isn't it quite here I",
+        "start": 1.1,
+        "duration": 5.14
+    },
+    {
+        "text": "do tech and coding stuff on twitch and",
+        "start": 4.08,
+        "duration": 4.559
+    },
+    {
+        "text": "youtube and I'm doing one more problem",
+        "start": 6.24,
+        "duration": 4.62
+    },
+    {
+        "text": "here I'm getting pretty good at these",
+        "start": 8.639,
+        "duration": 5.071
+    },
+    {
+        "text": "honestly I can pretty much do most of",
+        "start": 10.86,
+        "duration": 4.649
+    },
+    {
+        "text": "the medium ones at this point there's",
+        "start": 13.71,
+        "duration": 3.12
+    },
+    {
+        "text": "definitely still some difficult ones",
+        "start": 15.509,
+        "duration": 4.261
+    },
+    {
+        "text": "dynamic programming but definitely",
+        "start": 16.83,
+        "duration": 4.699
+    },
+    {
+        "text": "making progress this is called word",
+        "start": 19.77,
+        "duration": 6.269
+    },
+    {
+        "text": "subsets we're given two arrays a and B",
+        "start": 21.529,
+        "duration": 10.361
+    },
+    {
+        "text": "of words so we see a is a array B is an",
+        "start": 26.039,
+        "duration": 8.52
+    },
+    {
+        "text": "array and we're given strings and",
+        "start": 31.89,
+        "duration": 5.34
+    },
+    {
+        "text": "they're representing words each word is",
+        "start": 34.559,
+        "duration": 5.16
+    },
+    {
+        "text": "a string of lowercase letters so we know",
+        "start": 37.23,
+        "duration": 5.82
+    },
+    {
+        "text": "they're all lowercase now say that B is",
+        "start": 39.719,
+        "duration": 6.241
+    },
+    {
+        "text": "a subset of word a if every letter and B",
+        "start": 43.05,
+        "duration": 7.8
+    },
+    {
+        "text": "occurs in a including multiplicity so if",
+        "start": 45.96,
+        "duration": 9.329
+    },
+    {
+        "text": "we see an E and an O then we would say",
+        "start": 50.85,
+        "duration": 10.56
+    },
+    {
+        "text": "that B is a subset of a if a in O occurs",
+        "start": 55.289,
+        "duration": 9.781
+    },
+    {
+        "text": "in every word here so subset of word a",
+        "start": 61.41,
+        "duration": 7.23
+    },
+    {
+        "text": "okay so in Amazon we don't see an E and",
+        "start": 65.07,
+        "duration": 6.96
+    },
+    {
+        "text": "an O in Amazon so that's not a subset an",
+        "start": 68.64,
+        "duration": 7.2
+    },
+    {
+        "text": "apple we see we see no oh so that's not",
+        "start": 72.03,
+        "duration": 6.6
+    },
+    {
+        "text": "a subset Facebook we see an E and we see",
+        "start": 75.84,
+        "duration": 5.16
+    },
+    {
+        "text": "two O's but we only need one but this is",
+        "start": 78.63,
+        "duration": 4.86
+    },
+    {
+        "text": "a subset of Facebook so we add that to",
+        "start": 81.0,
+        "duration": 5.13
+    },
+    {
+        "text": "the output it looks like Google as well",
+        "start": 83.49,
+        "duration": 5.22
+    },
+    {
+        "text": "we have an E and an O and I'm guessing",
+        "start": 86.13,
+        "duration": 4.199
+    },
+    {
+        "text": "if we had multiple O's we'd have to have",
+        "start": 88.71,
+        "duration": 3.81
+    },
+    {
+        "text": "multiple O's here because that's what it",
+        "start": 90.329,
+        "duration": 5.071
+    },
+    {
+        "text": "says including multiplicity for example",
+        "start": 92.52,
+        "duration": 7.529
+    },
+    {
+        "text": "WRR is a subset of warrior so w RR w RR",
+        "start": 95.4,
+        "duration": 7.35
+    },
+    {
+        "text": "we can see but is not a subset of world",
+        "start": 100.049,
+        "duration": 5.221
+    },
+    {
+        "text": "w RR is not a subset of world because",
+        "start": 102.75,
+        "duration": 5.04
+    },
+    {
+        "text": "there's two R's and there's only one RN",
+        "start": 105.27,
+        "duration": 5.52
+    },
+    {
+        "text": "world so I think I understand now say a",
+        "start": 107.79,
+        "duration": 7.039
+    },
+    {
+        "text": "word a from a capital A is universal if",
+        "start": 110.79,
+        "duration": 13.939
+    },
+    {
+        "text": "for every B in B B is a subset of a ok",
+        "start": 114.829,
+        "duration": 13.0
+    },
+    {
+        "text": "sure return a list of all universal",
+        "start": 124.729,
+        "duration": 5.62
+    },
+    {
+        "text": "words and a you can return the words in",
+        "start": 127.829,
+        "duration": 5.55
+    },
+    {
+        "text": "any order okay so we're just labeling it",
+        "start": 130.349,
+        "duration": 3.451
+    },
+    {
+        "text": "you know",
+        "start": 133.379,
+        "duration": 3.361
+    },
+    {
+        "text": "so if it's the same as the example we",
+        "start": 133.8,
+        "duration": 6.18
+    },
+    {
+        "text": "just went through where you know the the",
+        "start": 136.74,
+        "duration": 7.02
+    },
+    {
+        "text": "all the combination of these are subsets",
+        "start": 139.98,
+        "duration": 5.67
+    },
+    {
+        "text": "of the word then we're gonna label it",
+        "start": 143.76,
+        "duration": 4.19
+    },
+    {
+        "text": "universal and then we're gonna return",
+        "start": 145.65,
+        "duration": 3.48
+    },
+    {
+        "text": "okay",
+        "start": 147.95,
+        "duration": 4.9
+    },
+    {
+        "text": "so pretty straightforward here let's go",
+        "start": 149.13,
+        "duration": 5.34
+    },
+    {
+        "text": "ahead and initialize our return",
+        "start": 152.85,
+        "duration": 3.06
+    },
+    {
+        "text": "structure and then I'll tell you guys",
+        "start": 154.47,
+        "duration": 3.18
+    },
+    {
+        "text": "how we're gonna do this so let's say",
+        "start": 155.91,
+        "duration": 4.89
+    },
+    {
+        "text": "result is equal to new ArrayList rib",
+        "start": 157.65,
+        "duration": 8.37
+    },
+    {
+        "text": "strings so to do this problem we're",
+        "start": 160.8,
+        "duration": 6.66
+    },
+    {
+        "text": "going to have to check that these",
+        "start": 166.02,
+        "duration": 3.33
+    },
+    {
+        "text": "letters we're gonna have to loop through",
+        "start": 167.46,
+        "duration": 3.66
+    },
+    {
+        "text": "each of these words and we're gonna have",
+        "start": 169.35,
+        "duration": 4.77
+    },
+    {
+        "text": "to check that the whatever word contains",
+        "start": 171.12,
+        "duration": 6.63
+    },
+    {
+        "text": "all of these letters gets put into this",
+        "start": 174.12,
+        "duration": 7.41
+    },
+    {
+        "text": "array now to check that all check all",
+        "start": 177.75,
+        "duration": 6.48
+    },
+    {
+        "text": "these letters here's the problem the",
+        "start": 181.53,
+        "duration": 4.89
+    },
+    {
+        "text": "algorithm the brute-force algorithm is",
+        "start": 184.23,
+        "duration": 5.13
+    },
+    {
+        "text": "to go through each letter and then or",
+        "start": 186.42,
+        "duration": 4.86
+    },
+    {
+        "text": "each word and then go through each",
+        "start": 189.36,
+        "duration": 3.96
+    },
+    {
+        "text": "letter and make sure each letter appears",
+        "start": 191.28,
+        "duration": 2.7
+    },
+    {
+        "text": "in each word",
+        "start": 193.32,
+        "duration": 6.389
+    },
+    {
+        "text": "this is gonna be O of M times n where m",
+        "start": 193.98,
+        "duration": 8.43
+    },
+    {
+        "text": "is the length of a or we could say a",
+        "start": 199.709,
+        "duration": 5.551
+    },
+    {
+        "text": "times B this is gonna be the length of a",
+        "start": 202.41,
+        "duration": 4.88
+    },
+    {
+        "text": "times B because we're going through",
+        "start": 205.26,
+        "duration": 5.31
+    },
+    {
+        "text": "every element of a for every element of",
+        "start": 207.29,
+        "duration": 6.19
+    },
+    {
+        "text": "B as we loop through so what we want to",
+        "start": 210.57,
+        "duration": 4.95
+    },
+    {
+        "text": "do is we want to you know optimize this",
+        "start": 213.48,
+        "duration": 3.84
+    },
+    {
+        "text": "right that's not a good solution we want",
+        "start": 215.52,
+        "duration": 4.17
+    },
+    {
+        "text": "it to be a plus B so for it to a be a",
+        "start": 217.32,
+        "duration": 7.32
+    },
+    {
+        "text": "plus B we don't want to loop through we",
+        "start": 219.69,
+        "duration": 6.18
+    },
+    {
+        "text": "don't want to loop through this input",
+        "start": 224.64,
+        "duration": 3.06
+    },
+    {
+        "text": "array we don't want to do that that's",
+        "start": 225.87,
+        "duration": 4.05
+    },
+    {
+        "text": "crazy we don't have to do that that's",
+        "start": 227.7,
+        "duration": 2.94
+    },
+    {
+        "text": "insane",
+        "start": 229.92,
+        "duration": 2.13
+    },
+    {
+        "text": "there's no point of looping through",
+        "start": 230.64,
+        "duration": 3.569
+    },
+    {
+        "text": "every element of an input array what we",
+        "start": 232.05,
+        "duration": 9.38
+    },
+    {
+        "text": "should do is combine these elements and",
+        "start": 234.209,
+        "duration": 12.211
+    },
+    {
+        "text": "create a char frequency array so this",
+        "start": 241.43,
+        "duration": 7.33
+    },
+    {
+        "text": "char frequency array is going to have",
+        "start": 246.42,
+        "duration": 7.349
+    },
+    {
+        "text": "the number of characters the the number",
+        "start": 248.76,
+        "duration": 6.72
+    },
+    {
+        "text": "of characters we need to find within",
+        "start": 253.769,
+        "duration": 5.34
+    },
+    {
+        "text": "each word and that's going to be easy",
+        "start": 255.48,
+        "duration": 10.05
+    },
+    {
+        "text": "for us very easy for us because we just",
+        "start": 259.109,
+        "duration": 8.281
+    },
+    {
+        "text": "we're gonna create a separate method so",
+        "start": 265.53,
+        "duration": 2.09
+    },
+    {
+        "text": "let's",
+        "start": 267.39,
+        "duration": 7.58
+    },
+    {
+        "text": "we have public ins you know count get it",
+        "start": 267.62,
+        "duration": 9.6
+    },
+    {
+        "text": "sharp frequency you can call whatever",
+        "start": 274.97,
+        "duration": 5.87
+    },
+    {
+        "text": "you want and we're gonna pass in string",
+        "start": 277.22,
+        "duration": 8.25
+    },
+    {
+        "text": "s right so to do chart frequencies",
+        "start": 280.84,
+        "duration": 8.71
+    },
+    {
+        "text": "this is gonna be constant size data so",
+        "start": 285.47,
+        "duration": 5.61
+    },
+    {
+        "text": "we don't really have to worry about data",
+        "start": 289.55,
+        "duration": 7.32
+    },
+    {
+        "text": "here I'm gonna have results is equal to",
+        "start": 291.08,
+        "duration": 11.64
+    },
+    {
+        "text": "Nu into 26 and we're going to loop",
+        "start": 296.87,
+        "duration": 7.95
+    },
+    {
+        "text": "through each character in the string so",
+        "start": 302.72,
+        "duration": 5.699
+    },
+    {
+        "text": "we can do char C in s dot to char array",
+        "start": 304.82,
+        "duration": 5.52
+    },
+    {
+        "text": "there's a few ways of doing this but",
+        "start": 308.419,
+        "duration": 7.581
+    },
+    {
+        "text": "this is fun and then just the standard",
+        "start": 310.34,
+        "duration": 5.66
+    },
+    {
+        "text": "incrementing of each character so the",
+        "start": 316.72,
+        "duration": 7.72
+    },
+    {
+        "text": "index and increment and then return",
+        "start": 319.55,
+        "duration": 6.72
+    },
+    {
+        "text": "result so this is gonna be our helper",
+        "start": 324.44,
+        "duration": 5.729
+    },
+    {
+        "text": "method we're gonna use this a few times",
+        "start": 326.27,
+        "duration": 7.74
+    },
+    {
+        "text": "here now the main idea of this is we're",
+        "start": 330.169,
+        "duration": 7.081
+    },
+    {
+        "text": "gonna loop through be first right so we",
+        "start": 334.01,
+        "duration": 5.04
+    },
+    {
+        "text": "don't want to have nested for-loops here",
+        "start": 337.25,
+        "duration": 3.539
+    },
+    {
+        "text": "we're gonna do separate for loops and",
+        "start": 339.05,
+        "duration": 3.48
+    },
+    {
+        "text": "this is going to give us that a plus B",
+        "start": 340.789,
+        "duration": 4.591
+    },
+    {
+        "text": "run time so we're gonna do for int I",
+        "start": 342.53,
+        "duration": 7.59
+    },
+    {
+        "text": "equals 0 I less than B lame I plus plus",
+        "start": 345.38,
+        "duration": 6.84
+    },
+    {
+        "text": "and B's in the race I don't know why I",
+        "start": 350.12,
+        "duration": 4.34
+    },
+    {
+        "text": "did that",
+        "start": 352.22,
+        "duration": 2.24
+    },
+    {
+        "text": "string current word is equal to B of I",
+        "start": 354.76,
+        "duration": 6.52
+    },
+    {
+        "text": "so we have the current word and we're",
+        "start": 358.76,
+        "duration": 7.4
+    },
+    {
+        "text": "gonna want to build this this char",
+        "start": 361.28,
+        "duration": 10.58
+    },
+    {
+        "text": "frequency is equal to get char frequency",
+        "start": 366.16,
+        "duration": 9.129
+    },
+    {
+        "text": "of current work and now that we have the",
+        "start": 371.86,
+        "duration": 6.88
+    },
+    {
+        "text": "char frequencies of current word in an",
+        "start": 375.289,
+        "duration": 5.431
+    },
+    {
+        "text": "array this array with the char",
+        "start": 378.74,
+        "duration": 3.63
+    },
+    {
+        "text": "frequencies I you hopefully you're",
+        "start": 380.72,
+        "duration": 3.449
+    },
+    {
+        "text": "familiar with that concept we're gonna",
+        "start": 382.37,
+        "duration": 8.51
+    },
+    {
+        "text": "have this max array so max the",
+        "start": 384.169,
+        "duration": 10.201
+    },
+    {
+        "text": "frequencies bad variable name in here is",
+        "start": 390.88,
+        "duration": 7.39
+    },
+    {
+        "text": "equal to new int of 26 and we're going",
+        "start": 394.37,
+        "duration": 7.35
+    },
+    {
+        "text": "to do a simple loop through from I to",
+        "start": 398.27,
+        "duration": 5.13
+    },
+    {
+        "text": "so it is a nested for loop you see here",
+        "start": 401.72,
+        "duration": 4.62
+    },
+    {
+        "text": "but the inner for loop is only 226 and",
+        "start": 403.4,
+        "duration": 5.609
+    },
+    {
+        "text": "on it obviously you'd want to break that",
+        "start": 406.34,
+        "duration": 6.389
+    },
+    {
+        "text": "down eventually if your input size was",
+        "start": 409.009,
+        "duration": 6.66
+    },
+    {
+        "text": "12 you know 20 million then you'd have",
+        "start": 412.729,
+        "duration": 6.271
+    },
+    {
+        "text": "to go do 26 million so that's not",
+        "start": 415.669,
+        "duration": 5.611
+    },
+    {
+        "text": "amazing but it's definitely better than",
+        "start": 419.0,
+        "duration": 4.259
+    },
+    {
+        "text": "if both input sizes are a million in a",
+        "start": 421.28,
+        "duration": 3.569
+    },
+    {
+        "text": "million times a million is definitely",
+        "start": 423.259,
+        "duration": 5.12
+    },
+    {
+        "text": "way bigger than you know 26 million so",
+        "start": 424.849,
+        "duration": 5.22
+    },
+    {
+        "text": "hopefully that makes sense",
+        "start": 428.379,
+        "duration": 4.151
+    },
+    {
+        "text": "so we're gonna loop up to 26 26 is",
+        "start": 430.069,
+        "duration": 5.011
+    },
+    {
+        "text": "constant so it's not that difficult to",
+        "start": 432.53,
+        "duration": 6.72
+    },
+    {
+        "text": "handle here and we're going to set max B",
+        "start": 435.08,
+        "duration": 8.25
+    },
+    {
+        "text": "frequencies of I equal 2 and we're gonna",
+        "start": 439.25,
+        "duration": 5.129
+    },
+    {
+        "text": "actually we're actually gonna have to",
+        "start": 443.33,
+        "duration": 3.54
+    },
+    {
+        "text": "use J here because we're used I above so",
+        "start": 444.379,
+        "duration": 5.671
+    },
+    {
+        "text": "max frequencies of J is equal to math",
+        "start": 446.87,
+        "duration": 9.139
+    },
+    {
+        "text": "max of the max frequency of the current",
+        "start": 450.05,
+        "duration": 11.7
+    },
+    {
+        "text": "value which would be 0 at first and the",
+        "start": 456.009,
+        "duration": 10.181
+    },
+    {
+        "text": "char frequency we got from the word so",
+        "start": 461.75,
+        "duration": 6.81
+    },
+    {
+        "text": "both of these arrays are 26 in length so",
+        "start": 466.19,
+        "duration": 4.469
+    },
+    {
+        "text": "this char frequencies and this max B",
+        "start": 468.56,
+        "duration": 4.169
+    },
+    {
+        "text": "frequencies both 26 so only loop through",
+        "start": 470.659,
+        "duration": 4.5
+    },
+    {
+        "text": "we can access each end is in index",
+        "start": 472.729,
+        "duration": 4.861
+    },
+    {
+        "text": "respectively we're initializing a max",
+        "start": 475.159,
+        "duration": 6.23
+    },
+    {
+        "text": "value so for each word we're getting the",
+        "start": 477.59,
+        "duration": 6.479
+    },
+    {
+        "text": "you know we're getting the max frequency",
+        "start": 481.389,
+        "duration": 4.601
+    },
+    {
+        "text": "of the characters so for example this is",
+        "start": 484.069,
+        "duration": 5.13
+    },
+    {
+        "text": "our input array what we want is we want",
+        "start": 485.99,
+        "duration": 6.87
+    },
+    {
+        "text": "to have you know 0 1 we're gonna have 0",
+        "start": 489.199,
+        "duration": 7.321
+    },
+    {
+        "text": "a is 0 B's and then we're gonna have it",
+        "start": 492.86,
+        "duration": 6.63
+    },
+    {
+        "text": "looks like 1 C is gonna be the max of",
+        "start": 496.52,
+        "duration": 4.769
+    },
+    {
+        "text": "all 3 of these words right we're looping",
+        "start": 499.49,
+        "duration": 2.85
+    },
+    {
+        "text": "through each word and we're getting the",
+        "start": 501.289,
+        "duration": 3.481
+    },
+    {
+        "text": "max frequency count now imagine that",
+        "start": 502.34,
+        "duration": 5.129
+    },
+    {
+        "text": "this had 4 C's we would actually loop",
+        "start": 504.77,
+        "duration": 4.619
+    },
+    {
+        "text": "through each word and we'd grab the one",
+        "start": 507.469,
+        "duration": 4.471
+    },
+    {
+        "text": "with 4 C's and we would make sure that 4",
+        "start": 509.389,
+        "duration": 8.101
+    },
+    {
+        "text": "C's were at least in the in each in the",
+        "start": 511.94,
+        "duration": 6.719
+    },
+    {
+        "text": "words that we're gonna put into our",
+        "start": 517.49,
+        "duration": 3.69
+    },
+    {
+        "text": "ending array so it's kind of hard to",
+        "start": 518.659,
+        "duration": 4.92
+    },
+    {
+        "text": "explain but and this is a longer video",
+        "start": 521.18,
+        "duration": 5.37
+    },
+    {
+        "text": "because it is a little bit of a brain",
+        "start": 523.579,
+        "duration": 5.401
+    },
+    {
+        "text": "teaser here but as you could see we're",
+        "start": 526.55,
+        "duration": 6.539
+    },
+    {
+        "text": "looping through each word in B so this",
+        "start": 528.98,
+        "duration": 5.79
+    },
+    {
+        "text": "could be B we're looping",
+        "start": 533.089,
+        "duration": 5.251
+    },
+    {
+        "text": "and we're building a frequency array of",
+        "start": 534.77,
+        "duration": 4.53
+    },
+    {
+        "text": "each character",
+        "start": 538.34,
+        "duration": 4.07
+    },
+    {
+        "text": "so whatever the max frequency character",
+        "start": 539.3,
+        "duration": 6.12
+    },
+    {
+        "text": "in in each separate word you know we",
+        "start": 542.41,
+        "duration": 5.32
+    },
+    {
+        "text": "have one C one C whatever the max words",
+        "start": 545.42,
+        "duration": 4.56
+    },
+    {
+        "text": "frequency is is what's gonna be put into",
+        "start": 547.73,
+        "duration": 5.4
+    },
+    {
+        "text": "this array this they don't really give",
+        "start": 549.98,
+        "duration": 5.25
+    },
+    {
+        "text": "good examples to work on but I think you",
+        "start": 553.13,
+        "duration": 4.89
+    },
+    {
+        "text": "should understand that so we get the max",
+        "start": 555.23,
+        "duration": 5.1
+    },
+    {
+        "text": "now we have our max table right so we",
+        "start": 558.02,
+        "duration": 5.43
+    },
+    {
+        "text": "know the maximum character frequencies",
+        "start": 560.33,
+        "duration": 5.73
+    },
+    {
+        "text": "that we're going to need to now look for",
+        "start": 563.45,
+        "duration": 6.57
+    },
+    {
+        "text": "in each of these words of a so now we",
+        "start": 566.06,
+        "duration": 6.78
+    },
+    {
+        "text": "can look through a so let's just make",
+        "start": 570.02,
+        "duration": 4.17
+    },
+    {
+        "text": "sure that we have everything in order",
+        "start": 572.84,
+        "duration": 2.85
+    },
+    {
+        "text": "here looks like we have an extra brace",
+        "start": 574.19,
+        "duration": 3.03
+    },
+    {
+        "text": "here",
+        "start": 575.69,
+        "duration": 4.44
+    },
+    {
+        "text": "I think that's fine I don't know where",
+        "start": 577.22,
+        "duration": 6.48
+    },
+    {
+        "text": "that extra brace came from but this is a",
+        "start": 580.13,
+        "duration": 7.59
+    },
+    {
+        "text": "separate method that's why okay okay so",
+        "start": 583.7,
+        "duration": 6.33
+    },
+    {
+        "text": "now what do we have to do all we have to",
+        "start": 587.72,
+        "duration": 6.63
+    },
+    {
+        "text": "do is loop through I less than a dot",
+        "start": 590.03,
+        "duration": 8.19
+    },
+    {
+        "text": "length I plus plus we're gonna just use",
+        "start": 594.35,
+        "duration": 9.51
+    },
+    {
+        "text": "string current word again equals a a",
+        "start": 598.22,
+        "duration": 8.13
+    },
+    {
+        "text": "we're gonna get the frequency counts of",
+        "start": 603.86,
+        "duration": 6.9
+    },
+    {
+        "text": "these words now right you know the ones",
+        "start": 606.35,
+        "duration": 7.44
+    },
+    {
+        "text": "from a so we're just gonna this method",
+        "start": 610.76,
+        "duration": 6.5
+    },
+    {
+        "text": "is really coming in handy here char",
+        "start": 613.79,
+        "duration": 8.4
+    },
+    {
+        "text": "frequencies is equal to guitar frequency",
+        "start": 617.26,
+        "duration": 8.53
+    },
+    {
+        "text": "a parent word and we're not gonna use",
+        "start": 622.19,
+        "duration": 6.03
+    },
+    {
+        "text": "char frequencies will do char",
+        "start": 625.79,
+        "duration": 8.04
+    },
+    {
+        "text": "frequencies char counts right because we",
+        "start": 628.22,
+        "duration": 8.91
+    },
+    {
+        "text": "use char pregnancy's opener okay so now",
+        "start": 633.83,
+        "duration": 4.98
+    },
+    {
+        "text": "that we have chart outs and we have this",
+        "start": 637.13,
+        "duration": 7.28
+    },
+    {
+        "text": "max B frequencies we can loop through",
+        "start": 638.81,
+        "duration": 12.27
+    },
+    {
+        "text": "226 again still constant and we can",
+        "start": 644.41,
+        "duration": 10.66
+    },
+    {
+        "text": "compare the each words frequency count",
+        "start": 651.08,
+        "duration": 8.48
+    },
+    {
+        "text": "to the total frequency count of B",
+        "start": 655.07,
+        "duration": 6.93
+    },
+    {
+        "text": "hopefully that makes sense the max",
+        "start": 659.56,
+        "duration": 5.79
+    },
+    {
+        "text": "frequency we need to at least have",
+        "start": 662.0,
+        "duration": 6.46
+    },
+    {
+        "text": "whatever vet whatever index were at in",
+        "start": 665.35,
+        "duration": 7.55
+    },
+    {
+        "text": "max frequency be all right so whatever",
+        "start": 668.46,
+        "duration": 7.38
+    },
+    {
+        "text": "count we have at each index of this if",
+        "start": 672.9,
+        "duration": 6.36
+    },
+    {
+        "text": "max frequency of B of we're gonna have",
+        "start": 675.84,
+        "duration": 8.94
+    },
+    {
+        "text": "to use J here if this count of the the",
+        "start": 679.26,
+        "duration": 11.7
+    },
+    {
+        "text": "max B frequency character is you know",
+        "start": 684.78,
+        "duration": 9.96
+    },
+    {
+        "text": "less than the eighth the current words",
+        "start": 690.96,
+        "duration": 5.85
+    },
+    {
+        "text": "frequency that's good we want it to be",
+        "start": 694.74,
+        "duration": 4.26
+    },
+    {
+        "text": "less than but if it's greater than it",
+        "start": 696.81,
+        "duration": 4.17
+    },
+    {
+        "text": "then that means that the word doesn't",
+        "start": 699.0,
+        "duration": 4.17
+    },
+    {
+        "text": "have all the characters that we need if",
+        "start": 700.98,
+        "duration": 2.97
+    },
+    {
+        "text": "that makes sense",
+        "start": 703.17,
+        "duration": 3.78
+    },
+    {
+        "text": "so if char counts if max B frequencies",
+        "start": 703.95,
+        "duration": 4.92
+    },
+    {
+        "text": "of J is greater than char counts of J",
+        "start": 706.95,
+        "duration": 3.9
+    },
+    {
+        "text": "that means that the word doesn't have",
+        "start": 708.87,
+        "duration": 4.05
+    },
+    {
+        "text": "all the characters we need so that words",
+        "start": 710.85,
+        "duration": 3.72
+    },
+    {
+        "text": "gonna get the word we're not gonna be",
+        "start": 712.92,
+        "duration": 6.42
+    },
+    {
+        "text": "putting that into our result array so we",
+        "start": 714.57,
+        "duration": 6.54
+    },
+    {
+        "text": "could have a boolean to handle this and",
+        "start": 719.34,
+        "duration": 5.58
+    },
+    {
+        "text": "we could have a boolean valid is equal",
+        "start": 721.11,
+        "duration": 5.46
+    },
+    {
+        "text": "to true so we'll have it set to true at",
+        "start": 724.92,
+        "duration": 5.34
+    },
+    {
+        "text": "the beginning if it's you know if we're",
+        "start": 726.57,
+        "duration": 5.43
+    },
+    {
+        "text": "looping if we're doing this loop and we",
+        "start": 730.26,
+        "duration": 3.93
+    },
+    {
+        "text": "see that that can this condition hits",
+        "start": 732.0,
+        "duration": 3.84
+    },
+    {
+        "text": "then we're obviously going to do valid",
+        "start": 734.19,
+        "duration": 4.44
+    },
+    {
+        "text": "equals false so this is no longer a",
+        "start": 735.84,
+        "duration": 4.62
+    },
+    {
+        "text": "valid string and we're gonna just keep",
+        "start": 738.63,
+        "duration": 4.29
+    },
+    {
+        "text": "looping to the next string and we might",
+        "start": 740.46,
+        "duration": 4.26
+    },
+    {
+        "text": "as well just break out of this 26 loop",
+        "start": 742.92,
+        "duration": 3.72
+    },
+    {
+        "text": "while we're at it and then we could just",
+        "start": 744.72,
+        "duration": 5.16
+    },
+    {
+        "text": "do if valid then we can just do results",
+        "start": 746.64,
+        "duration": 8.49
+    },
+    {
+        "text": "dot add current work and that is going",
+        "start": 749.88,
+        "duration": 7.98
+    },
+    {
+        "text": "to be building our whole result array",
+        "start": 755.13,
+        "duration": 5.64
+    },
+    {
+        "text": "we're making sure that all of the kit we",
+        "start": 757.86,
+        "duration": 5.46
+    },
+    {
+        "text": "combine all of the strings and be the B",
+        "start": 760.77,
+        "duration": 6.78
+    },
+    {
+        "text": "array this is the ending wrap up here we",
+        "start": 763.32,
+        "duration": 6.75
+    },
+    {
+        "text": "get the character counts of the combined",
+        "start": 767.55,
+        "duration": 7.86
+    },
+    {
+        "text": "words so imagine Lo and I oh you know",
+        "start": 770.07,
+        "duration": 8.7
+    },
+    {
+        "text": "it's gonna be 100 but we're we're kind",
+        "start": 775.41,
+        "duration": 5.48
+    },
+    {
+        "text": "of getting the max frequency account",
+        "start": 778.77,
+        "duration": 5.94
+    },
+    {
+        "text": "count from B's words we're looping",
+        "start": 780.89,
+        "duration": 5.5
+    },
+    {
+        "text": "through getting the max frequency count",
+        "start": 784.71,
+        "duration": 3.84
+    },
+    {
+        "text": "of each split up word and then we're",
+        "start": 786.39,
+        "duration": 5.94
+    },
+    {
+        "text": "making sure that each word has at least",
+        "start": 788.55,
+        "duration": 9.09
+    },
+    {
+        "text": "that many characters that we have this",
+        "start": 792.33,
+        "duration": 8.31
+    },
+    {
+        "text": "new subset now and we're making sure",
+        "start": 797.64,
+        "duration": 4.95
+    },
+    {
+        "text": "that each word",
+        "start": 800.64,
+        "duration": 5.13
+    },
+    {
+        "text": "you know has at least that many letters",
+        "start": 802.59,
+        "duration": 6.79
+    },
+    {
+        "text": "hopefully this makes sense to you",
+        "start": 805.77,
+        "duration": 5.44
+    },
+    {
+        "text": "it's really kind of hard to explain",
+        "start": 809.38,
+        "duration": 4.26
+    },
+    {
+        "text": "honestly one of the hardest ones I've",
+        "start": 811.21,
+        "duration": 5.49
+    },
+    {
+        "text": "had to explain was you know still rusty",
+        "start": 813.64,
+        "duration": 5.4
+    },
+    {
+        "text": "so let's submit probably some errors",
+        "start": 816.7,
+        "duration": 7.98
+    },
+    {
+        "text": "here you cannot be converted to int I",
+        "start": 819.04,
+        "duration": 7.74
+    },
+    {
+        "text": "said public int but it's actually in",
+        "start": 824.68,
+        "duration": 10.34
+    },
+    {
+        "text": "Turay sting not sting",
+        "start": 826.78,
+        "duration": 8.24
+    },
+    {
+        "text": "there we go success so okay one more",
+        "start": 836.01,
+        "duration": 5.23
+    },
+    {
+        "text": "time I know I've been having a tough",
+        "start": 839.5,
+        "duration": 6.03
+    },
+    {
+        "text": "time if we look at a it's so hard to",
+        "start": 841.24,
+        "duration": 7.83
+    },
+    {
+        "text": "explain this guy's like without sounding",
+        "start": 845.53,
+        "duration": 9.12
+    },
+    {
+        "text": "stupid and we look at B so B we in this",
+        "start": 849.07,
+        "duration": 7.29
+    },
+    {
+        "text": "case we'd want to make sure that each",
+        "start": 854.65,
+        "duration": 4.77
+    },
+    {
+        "text": "word has an en you know so why not build",
+        "start": 856.36,
+        "duration": 5.76
+    },
+    {
+        "text": "a table which is what we're doing we're",
+        "start": 859.42,
+        "duration": 5.45
+    },
+    {
+        "text": "building a table char counts or whatever",
+        "start": 862.12,
+        "duration": 6.59
+    },
+    {
+        "text": "it's actually the machspeed frequencies",
+        "start": 864.87,
+        "duration": 7.39
+    },
+    {
+        "text": "is the table that we're looking at and",
+        "start": 868.71,
+        "duration": 6.01
+    },
+    {
+        "text": "the table has the count at each index",
+        "start": 872.26,
+        "duration": 7.89
+    },
+    {
+        "text": "from 0 to 26 of our so for Z there's 0 s",
+        "start": 874.72,
+        "duration": 13.26
+    },
+    {
+        "text": "0 is 0 B 0 C 0 DS 1e and then there",
+        "start": 880.15,
+        "duration": 10.11
+    },
+    {
+        "text": "would be one at ease index and o's index",
+        "start": 887.98,
+        "duration": 4.74
+    },
+    {
+        "text": "now we have to make sure each of these",
+        "start": 890.26,
+        "duration": 8.61
+    },
+    {
+        "text": "words also has a 1 at the e index it can",
+        "start": 892.72,
+        "duration": 7.83
+    },
+    {
+        "text": "have whatever it wants before that I can",
+        "start": 898.87,
+        "duration": 3.24
+    },
+    {
+        "text": "have you know all these other it could",
+        "start": 900.55,
+        "duration": 3.75
+    },
+    {
+        "text": "have two it could have two ways you",
+        "start": 902.11,
+        "duration": 4.26
+    },
+    {
+        "text": "could have three B's or whatever but it",
+        "start": 904.3,
+        "duration": 5.01
+    },
+    {
+        "text": "has to have at least one it could have",
+        "start": 906.37,
+        "duration": 5.85
+    },
+    {
+        "text": "to gonna have two E's but it has to have",
+        "start": 909.31,
+        "duration": 4.5
+    },
+    {
+        "text": "at least one e so that's the whole",
+        "start": 912.22,
+        "duration": 5.28
+    },
+    {
+        "text": "problem we were able to cut it down into",
+        "start": 913.81,
+        "duration": 5.67
+    },
+    {
+        "text": "two separate for loops instead of a",
+        "start": 917.5,
+        "duration": 3.81
+    },
+    {
+        "text": "nested for loop where we have a constant",
+        "start": 919.48,
+        "duration": 4.61
+    },
+    {
+        "text": "iteration of 26 this is a longer problem",
+        "start": 921.31,
+        "duration": 4.89
+    },
+    {
+        "text": "hopefully you guys understand that it's",
+        "start": 924.09,
+        "duration": 4.51
+    },
+    {
+        "text": "pretty cool problem and sorry for the",
+        "start": 926.2,
+        "duration": 5.52
+    },
+    {
+        "text": "rough explanation but I really you",
+        "start": 928.6,
+        "duration": 5.43
+    },
+    {
+        "text": "really need to understand this these",
+        "start": 931.72,
+        "duration": 4.32
+    },
+    {
+        "text": "problems so thank you",
+        "start": 934.03,
+        "duration": 3.69
+    },
+    {
+        "text": "for watching and check the next video",
+        "start": 936.04,
+        "duration": 4.07
+    },
+    {
+        "text": "see ya",
+        "start": 937.72,
+        "duration": 2.39
+    }
+]

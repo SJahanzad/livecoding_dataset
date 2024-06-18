@@ -1,0 +1,1562 @@
+[
+    {
+        "text": "hey everyone welcome back and let's",
+        "start": 0.0,
+        "duration": 3.36
+    },
+    {
+        "text": "write some more neat code today so today",
+        "start": 1.599,
+        "duration": 4.641
+    },
+    {
+        "text": "let's solve number of one bits this is",
+        "start": 3.36,
+        "duration": 6.0
+    },
+    {
+        "text": "actually another blind 75 problem and",
+        "start": 6.24,
+        "duration": 4.88
+    },
+    {
+        "text": "we've been tracking all blind 75",
+        "start": 9.36,
+        "duration": 3.52
+    },
+    {
+        "text": "problems on this spreadsheet the link to",
+        "start": 11.12,
+        "duration": 3.2
+    },
+    {
+        "text": "that will be in the description today",
+        "start": 12.88,
+        "duration": 3.36
+    },
+    {
+        "text": "we'll be doing number of one bits one of",
+        "start": 14.32,
+        "duration": 3.6
+    },
+    {
+        "text": "the last problems remaining that we",
+        "start": 16.24,
+        "duration": 4.4
+    },
+    {
+        "text": "haven't done and i also have a youtube",
+        "start": 17.92,
+        "duration": 5.279
+    },
+    {
+        "text": "playlist for the blind 75 solutions link",
+        "start": 20.64,
+        "duration": 4.16
+    },
+    {
+        "text": "to that will also be in the description",
+        "start": 23.199,
+        "duration": 3.361
+    },
+    {
+        "text": "if you do want to take a look okay so",
+        "start": 24.8,
+        "duration": 3.92
+    },
+    {
+        "text": "now let's get into it we are told to",
+        "start": 26.56,
+        "duration": 4.08
+    },
+    {
+        "text": "write a function that takes in an",
+        "start": 28.72,
+        "duration": 3.76
+    },
+    {
+        "text": "unsigned integer which isn't really",
+        "start": 30.64,
+        "duration": 3.919
+    },
+    {
+        "text": "important for this problem because all",
+        "start": 32.48,
+        "duration": 5.04
+    },
+    {
+        "text": "we want to do is count the number of one",
+        "start": 34.559,
+        "duration": 5.601
+    },
+    {
+        "text": "bits that it has so the concept is",
+        "start": 37.52,
+        "duration": 4.08
+    },
+    {
+        "text": "pretty simple so when you take a look at",
+        "start": 40.16,
+        "duration": 3.2
+    },
+    {
+        "text": "this number we can see it's made up of",
+        "start": 41.6,
+        "duration": 3.2
+    },
+    {
+        "text": "zeros and ones and we just want to count",
+        "start": 43.36,
+        "duration": 3.519
+    },
+    {
+        "text": "how many ones it has clearly it has one",
+        "start": 44.8,
+        "duration": 5.36
+    },
+    {
+        "text": "two three so we can return three but how",
+        "start": 46.879,
+        "duration": 5.281
+    },
+    {
+        "text": "can we actually count the bits so",
+        "start": 50.16,
+        "duration": 3.44
+    },
+    {
+        "text": "obviously we need to do a little bit of",
+        "start": 52.16,
+        "duration": 3.039
+    },
+    {
+        "text": "bit manipulation i'm going to be showing",
+        "start": 53.6,
+        "duration": 3.599
+    },
+    {
+        "text": "you two different solutions one of the",
+        "start": 55.199,
+        "duration": 3.68
+    },
+    {
+        "text": "solutions the second one is going to be",
+        "start": 57.199,
+        "duration": 3.921
+    },
+    {
+        "text": "slightly faster if you're interested in",
+        "start": 58.879,
+        "duration": 4.32
+    },
+    {
+        "text": "it and it's pretty difficult to come up",
+        "start": 61.12,
+        "duration": 4.16
+    },
+    {
+        "text": "with but the",
+        "start": 63.199,
+        "duration": 3.841
+    },
+    {
+        "text": "first solution is a little bit more",
+        "start": 65.28,
+        "duration": 3.68
+    },
+    {
+        "text": "straightforward and is more doable so",
+        "start": 67.04,
+        "duration": 3.6
+    },
+    {
+        "text": "like i said the easiest way is just to",
+        "start": 68.96,
+        "duration": 4.72
+    },
+    {
+        "text": "count manually bit by bit and then see",
+        "start": 70.64,
+        "duration": 5.28
+    },
+    {
+        "text": "which one of them is our ones and then",
+        "start": 73.68,
+        "duration": 4.4
+    },
+    {
+        "text": "increment our total and then return the",
+        "start": 75.92,
+        "duration": 4.8
+    },
+    {
+        "text": "total but let's see how we can actually",
+        "start": 78.08,
+        "duration": 4.719
+    },
+    {
+        "text": "accomplish that so how do we know let's",
+        "start": 80.72,
+        "duration": 4.64
+    },
+    {
+        "text": "say we want to look at the first a bit",
+        "start": 82.799,
+        "duration": 4.481
+    },
+    {
+        "text": "on the right side how do we know if it's",
+        "start": 85.36,
+        "duration": 4.32
+    },
+    {
+        "text": "a one or a zero well there's actually",
+        "start": 87.28,
+        "duration": 4.72
+    },
+    {
+        "text": "two different ways one way is you can",
+        "start": 89.68,
+        "duration": 5.28
+    },
+    {
+        "text": "and it with the integer one so",
+        "start": 92.0,
+        "duration": 5.04
+    },
+    {
+        "text": "since the integer one just has a one",
+        "start": 94.96,
+        "duration": 3.92
+    },
+    {
+        "text": "here and then the rest of them are zeros",
+        "start": 97.04,
+        "duration": 4.64
+    },
+    {
+        "text": "when we do a logic and operation logic",
+        "start": 98.88,
+        "duration": 5.199
+    },
+    {
+        "text": "and is basically taking the and of every",
+        "start": 101.68,
+        "duration": 5.36
+    },
+    {
+        "text": "bit but we know that every bit is gonna",
+        "start": 104.079,
+        "duration": 5.761
+    },
+    {
+        "text": "be zero when we take the logic and",
+        "start": 107.04,
+        "duration": 5.359
+    },
+    {
+        "text": "it's gonna be zero for every bit except",
+        "start": 109.84,
+        "duration": 5.76
+    },
+    {
+        "text": "for this one which can either be zero or",
+        "start": 112.399,
+        "duration": 6.961
+    },
+    {
+        "text": "one it'll be one if the bit in the input",
+        "start": 115.6,
+        "duration": 5.68
+    },
+    {
+        "text": "integer is one then we'll get a one in",
+        "start": 119.36,
+        "duration": 4.64
+    },
+    {
+        "text": "the output if it's a zero over here then",
+        "start": 121.28,
+        "duration": 4.799
+    },
+    {
+        "text": "we'll get a zero in the output so that",
+        "start": 124.0,
+        "duration": 5.44
+    },
+    {
+        "text": "can tell us if there's a 1 here or a 0",
+        "start": 126.079,
+        "duration": 4.4
+    },
+    {
+        "text": "here",
+        "start": 129.44,
+        "duration": 3.519
+    },
+    {
+        "text": "another way to do it is just to mod this",
+        "start": 130.479,
+        "duration": 5.601
+    },
+    {
+        "text": "by 2. modding is basically taking this",
+        "start": 132.959,
+        "duration": 4.64
+    },
+    {
+        "text": "dividing it by 2 and getting the",
+        "start": 136.08,
+        "duration": 4.08
+    },
+    {
+        "text": "remainder since this is the ones place",
+        "start": 137.599,
+        "duration": 4.801
+    },
+    {
+        "text": "if we mod it by two and there is a one",
+        "start": 140.16,
+        "duration": 4.64
+    },
+    {
+        "text": "here we'll get a one in the output if",
+        "start": 142.4,
+        "duration": 4.64
+    },
+    {
+        "text": "there's a zero here we'll get a zero in",
+        "start": 144.8,
+        "duration": 4.24
+    },
+    {
+        "text": "the output so we have two different ways",
+        "start": 147.04,
+        "duration": 3.919
+    },
+    {
+        "text": "to do it i think i'm gonna stick with",
+        "start": 149.04,
+        "duration": 4.16
+    },
+    {
+        "text": "modding but you can do it either way",
+        "start": 150.959,
+        "duration": 4.961
+    },
+    {
+        "text": "okay so we have a way to detect if the",
+        "start": 153.2,
+        "duration": 5.36
+    },
+    {
+        "text": "first bit is a one or a zero but what if",
+        "start": 155.92,
+        "duration": 4.8
+    },
+    {
+        "text": "we want to look at the next bit and the",
+        "start": 158.56,
+        "duration": 4.24
+    },
+    {
+        "text": "next bit and the next bit how do we do",
+        "start": 160.72,
+        "duration": 4.239
+    },
+    {
+        "text": "that well the easiest way would just be",
+        "start": 162.8,
+        "duration": 4.64
+    },
+    {
+        "text": "to take all the rest of the bits and",
+        "start": 164.959,
+        "duration": 5.841
+    },
+    {
+        "text": "then shift them to the right by one and",
+        "start": 167.44,
+        "duration": 5.36
+    },
+    {
+        "text": "luckily most languages can natively",
+        "start": 170.8,
+        "duration": 4.079
+    },
+    {
+        "text": "support this and it's a very efficient",
+        "start": 172.8,
+        "duration": 4.56
+    },
+    {
+        "text": "cpu operation this is kind of the",
+        "start": 174.879,
+        "duration": 4.321
+    },
+    {
+        "text": "preferred way to usually do it in bit",
+        "start": 177.36,
+        "duration": 4.08
+    },
+    {
+        "text": "manipulation just shift every bit to the",
+        "start": 179.2,
+        "duration": 3.759
+    },
+    {
+        "text": "right by one",
+        "start": 181.44,
+        "duration": 3.36
+    },
+    {
+        "text": "we can achieve basically the exact same",
+        "start": 182.959,
+        "duration": 4.081
+    },
+    {
+        "text": "thing by taking this and then integer",
+        "start": 184.8,
+        "duration": 4.96
+    },
+    {
+        "text": "division by two dividing it by two will",
+        "start": 187.04,
+        "duration": 4.72
+    },
+    {
+        "text": "basically shift all the bits to the",
+        "start": 189.76,
+        "duration": 4.72
+    },
+    {
+        "text": "right by one as well but usually the bit",
+        "start": 191.76,
+        "duration": 4.559
+    },
+    {
+        "text": "shift operation is a little bit more",
+        "start": 194.48,
+        "duration": 3.6
+    },
+    {
+        "text": "efficient on your cpu so that's what i'm",
+        "start": 196.319,
+        "duration": 3.121
+    },
+    {
+        "text": "going to prefer so basically we're going",
+        "start": 198.08,
+        "duration": 3.519
+    },
+    {
+        "text": "to take these shift them to the right so",
+        "start": 199.44,
+        "duration": 4.4
+    },
+    {
+        "text": "now we're going to have a new integer 1",
+        "start": 201.599,
+        "duration": 3.681
+    },
+    {
+        "text": "0 1.",
+        "start": 203.84,
+        "duration": 3.52
+    },
+    {
+        "text": "again we want to know if this bit is 1",
+        "start": 205.28,
+        "duration": 4.08
+    },
+    {
+        "text": "or 0. we're going to mod it by 2 we're",
+        "start": 207.36,
+        "duration": 4.32
+    },
+    {
+        "text": "going to get another one so so far we",
+        "start": 209.36,
+        "duration": 4.64
+    },
+    {
+        "text": "have counted two",
+        "start": 211.68,
+        "duration": 4.479
+    },
+    {
+        "text": "two ones and again we would want to take",
+        "start": 214.0,
+        "duration": 4.56
+    },
+    {
+        "text": "these shift them to the right this time",
+        "start": 216.159,
+        "duration": 5.761
+    },
+    {
+        "text": "we get a one zero we mod this by two we",
+        "start": 218.56,
+        "duration": 4.88
+    },
+    {
+        "text": "get a zero in the output that means",
+        "start": 221.92,
+        "duration": 4.0
+    },
+    {
+        "text": "there's a zero here so we don't add to",
+        "start": 223.44,
+        "duration": 5.12
+    },
+    {
+        "text": "our total this time and lastly we take",
+        "start": 225.92,
+        "duration": 5.679
+    },
+    {
+        "text": "this shift it by one we get another we",
+        "start": 228.56,
+        "duration": 4.72
+    },
+    {
+        "text": "basically get the integer one we mod it",
+        "start": 231.599,
+        "duration": 4.961
+    },
+    {
+        "text": "by two one divided by two the remainder",
+        "start": 233.28,
+        "duration": 5.679
+    },
+    {
+        "text": "after that is just one so we got our",
+        "start": 236.56,
+        "duration": 4.48
+    },
+    {
+        "text": "third one so our total so far is three",
+        "start": 238.959,
+        "duration": 4.161
+    },
+    {
+        "text": "ones that we counted and lastly we're",
+        "start": 241.04,
+        "duration": 3.68
+    },
+    {
+        "text": "going to take this and then shift it to",
+        "start": 243.12,
+        "duration": 3.119
+    },
+    {
+        "text": "the right but what exactly is going to",
+        "start": 244.72,
+        "duration": 3.439
+    },
+    {
+        "text": "be remaining after we do that well",
+        "start": 246.239,
+        "duration": 4.801
+    },
+    {
+        "text": "basically zero and once we have a zero",
+        "start": 248.159,
+        "duration": 4.64
+    },
+    {
+        "text": "it basically means we have all zeros",
+        "start": 251.04,
+        "duration": 4.8
+    },
+    {
+        "text": "right 32 bit integer we'll have 32 zeros",
+        "start": 252.799,
+        "duration": 4.881
+    },
+    {
+        "text": "and that basically means that we can",
+        "start": 255.84,
+        "duration": 4.16
+    },
+    {
+        "text": "stop our algorithm now and we're done so",
+        "start": 257.68,
+        "duration": 5.12
+    },
+    {
+        "text": "we counted in total three ones and",
+        "start": 260.0,
+        "duration": 4.72
+    },
+    {
+        "text": "that's what we can return so once you're",
+        "start": 262.8,
+        "duration": 4.16
+    },
+    {
+        "text": "familiar with these bit operations it's",
+        "start": 264.72,
+        "duration": 3.759
+    },
+    {
+        "text": "a pretty straightforward problem so",
+        "start": 266.96,
+        "duration": 4.08
+    },
+    {
+        "text": "let's code up the first solution okay so",
+        "start": 268.479,
+        "duration": 4.0
+    },
+    {
+        "text": "now let's code it up i'm going to",
+        "start": 271.04,
+        "duration": 3.28
+    },
+    {
+        "text": "declare one variable for the result",
+        "start": 272.479,
+        "duration": 3.521
+    },
+    {
+        "text": "which is basically the total account the",
+        "start": 274.32,
+        "duration": 3.12
+    },
+    {
+        "text": "total number of ones that we're going to",
+        "start": 276.0,
+        "duration": 3.44
+    },
+    {
+        "text": "have and i'm going to continue",
+        "start": 277.44,
+        "duration": 5.52
+    },
+    {
+        "text": "counting the ones while n is greater",
+        "start": 279.44,
+        "duration": 5.68
+    },
+    {
+        "text": "than zero or in other words while it's",
+        "start": 282.96,
+        "duration": 4.56
+    },
+    {
+        "text": "not equal to zero which i can you know",
+        "start": 285.12,
+        "duration": 4.72
+    },
+    {
+        "text": "do just like this and that'll work in",
+        "start": 287.52,
+        "duration": 4.32
+    },
+    {
+        "text": "most languages i think and",
+        "start": 289.84,
+        "duration": 4.4
+    },
+    {
+        "text": "then we want to know if the ones place",
+        "start": 291.84,
+        "duration": 4.799
+    },
+    {
+        "text": "is a one or a zero so we can take n and",
+        "start": 294.24,
+        "duration": 5.36
+    },
+    {
+        "text": "mod it by two now this will either be a",
+        "start": 296.639,
+        "duration": 5.28
+    },
+    {
+        "text": "one or this will be a zero if it's a one",
+        "start": 299.6,
+        "duration": 4.319
+    },
+    {
+        "text": "then we wanna increment result if it's a",
+        "start": 301.919,
+        "duration": 4.401
+    },
+    {
+        "text": "zero we don't wanna increment result so",
+        "start": 303.919,
+        "duration": 5.12
+    },
+    {
+        "text": "in other words we can just basically add",
+        "start": 306.32,
+        "duration": 6.319
+    },
+    {
+        "text": "this to our result itself and then we",
+        "start": 309.039,
+        "duration": 5.281
+    },
+    {
+        "text": "don't want to forget to",
+        "start": 312.639,
+        "duration": 3.84
+    },
+    {
+        "text": "shift everything to the right by one so",
+        "start": 314.32,
+        "duration": 4.96
+    },
+    {
+        "text": "what we can do is set an equal to itself",
+        "start": 316.479,
+        "duration": 6.0
+    },
+    {
+        "text": "bit shifted to the right by one after",
+        "start": 319.28,
+        "duration": 4.88
+    },
+    {
+        "text": "that last thing we have to do is just",
+        "start": 322.479,
+        "duration": 3.681
+    },
+    {
+        "text": "return the result so now let's run it to",
+        "start": 324.16,
+        "duration": 3.84
+    },
+    {
+        "text": "make sure that it works and as you can",
+        "start": 326.16,
+        "duration": 3.92
+    },
+    {
+        "text": "see it does work and it is pretty",
+        "start": 328.0,
+        "duration": 4.16
+    },
+    {
+        "text": "efficient but what exactly is the time",
+        "start": 330.08,
+        "duration": 4.0
+    },
+    {
+        "text": "complexity of the solution",
+        "start": 332.16,
+        "duration": 3.68
+    },
+    {
+        "text": "well the good thing is that we're",
+        "start": 334.08,
+        "duration": 3.44
+    },
+    {
+        "text": "guaranteed that every input is going to",
+        "start": 335.84,
+        "duration": 4.48
+    },
+    {
+        "text": "be a 32-bit integer so we know that that",
+        "start": 337.52,
+        "duration": 4.8
+    },
+    {
+        "text": "while loop we had is going to run 32",
+        "start": 340.32,
+        "duration": 5.12
+    },
+    {
+        "text": "times so really the time complexity is",
+        "start": 342.32,
+        "duration": 6.96
+    },
+    {
+        "text": "big o of 32 which is constant time right",
+        "start": 345.44,
+        "duration": 5.759
+    },
+    {
+        "text": "no matter what the input is the time",
+        "start": 349.28,
+        "duration": 3.919
+    },
+    {
+        "text": "complexity is not going to scale up so",
+        "start": 351.199,
+        "duration": 3.521
+    },
+    {
+        "text": "basically the time complexity is",
+        "start": 353.199,
+        "duration": 3.84
+    },
+    {
+        "text": "constant we can say it's big o of one",
+        "start": 354.72,
+        "duration": 3.759
+    },
+    {
+        "text": "and there's no real extra memory",
+        "start": 357.039,
+        "duration": 3.28
+    },
+    {
+        "text": "complexity needed as well so that's also",
+        "start": 358.479,
+        "duration": 5.041
+    },
+    {
+        "text": "big o of one but a small downside of our",
+        "start": 360.319,
+        "duration": 5.921
+    },
+    {
+        "text": "solution is it has to count it has to",
+        "start": 363.52,
+        "duration": 4.88
+    },
+    {
+        "text": "look at every bit even the ones that",
+        "start": 366.24,
+        "duration": 4.0
+    },
+    {
+        "text": "aren't ones so for example what if we",
+        "start": 368.4,
+        "duration": 3.68
+    },
+    {
+        "text": "had a number like this in this case",
+        "start": 370.24,
+        "duration": 3.84
+    },
+    {
+        "text": "we're gonna look at this bit first okay",
+        "start": 372.08,
+        "duration": 3.679
+    },
+    {
+        "text": "it's a one we're done with that then",
+        "start": 374.08,
+        "duration": 3.92
+    },
+    {
+        "text": "we're going to look at this bit this bit",
+        "start": 375.759,
+        "duration": 5.201
+    },
+    {
+        "text": "this bit this bit every bit here even",
+        "start": 378.0,
+        "duration": 4.88
+    },
+    {
+        "text": "though they're zeros right that kind of",
+        "start": 380.96,
+        "duration": 4.48
+    },
+    {
+        "text": "wastes time wouldn't it be convenient if",
+        "start": 382.88,
+        "duration": 4.879
+    },
+    {
+        "text": "we only had to look at the bits that",
+        "start": 385.44,
+        "duration": 5.039
+    },
+    {
+        "text": "were one that meaning our algorithm only",
+        "start": 387.759,
+        "duration": 5.121
+    },
+    {
+        "text": "has to run as many times as how many",
+        "start": 390.479,
+        "duration": 5.28
+    },
+    {
+        "text": "ones are actually in the input and yes",
+        "start": 392.88,
+        "duration": 5.12
+    },
+    {
+        "text": "there actually is a way we can do this",
+        "start": 395.759,
+        "duration": 4.801
+    },
+    {
+        "text": "but it's not very easy to come up with",
+        "start": 398.0,
+        "duration": 4.319
+    },
+    {
+        "text": "and it's probably not even worth coming",
+        "start": 400.56,
+        "duration": 3.28
+    },
+    {
+        "text": "up with because the time complexity will",
+        "start": 402.319,
+        "duration": 4.0
+    },
+    {
+        "text": "be the same it'll still be constant time",
+        "start": 403.84,
+        "duration": 4.56
+    },
+    {
+        "text": "and constant space but",
+        "start": 406.319,
+        "duration": 4.16
+    },
+    {
+        "text": "it might be good to just you know get",
+        "start": 408.4,
+        "duration": 3.76
+    },
+    {
+        "text": "really good at your bit manipulation",
+        "start": 410.479,
+        "duration": 4.081
+    },
+    {
+        "text": "tricks and stuff and maybe you'll see",
+        "start": 412.16,
+        "duration": 4.479
+    },
+    {
+        "text": "this in an interview so the main",
+        "start": 414.56,
+        "duration": 4.4
+    },
+    {
+        "text": "operation we're going to be doing in our",
+        "start": 416.639,
+        "duration": 5.041
+    },
+    {
+        "text": "while loop with this trick is basically",
+        "start": 418.96,
+        "duration": 6.4
+    },
+    {
+        "text": "taking n and setting it equal to n",
+        "start": 421.68,
+        "duration": 8.48
+    },
+    {
+        "text": "logic ended with n minus one and this is",
+        "start": 425.36,
+        "duration": 6.08
+    },
+    {
+        "text": "what we're going to do in every",
+        "start": 430.16,
+        "duration": 2.96
+    },
+    {
+        "text": "iteration of the loop and each time we",
+        "start": 431.44,
+        "duration": 3.84
+    },
+    {
+        "text": "do that we're going to increment our",
+        "start": 433.12,
+        "duration": 6.16
+    },
+    {
+        "text": "result by one but the question is why",
+        "start": 435.28,
+        "duration": 6.4
+    },
+    {
+        "text": "does this work first let's see what will",
+        "start": 439.28,
+        "duration": 4.96
+    },
+    {
+        "text": "happen so okay so what's gonna happen",
+        "start": 441.68,
+        "duration": 5.2
+    },
+    {
+        "text": "let's take this integer and subtract one",
+        "start": 444.24,
+        "duration": 4.0
+    },
+    {
+        "text": "from it right that's what we're gonna do",
+        "start": 446.88,
+        "duration": 3.759
+    },
+    {
+        "text": "over here so n minus 1 which is going to",
+        "start": 448.24,
+        "duration": 3.12
+    },
+    {
+        "text": "be",
+        "start": 450.639,
+        "duration": 3.521
+    },
+    {
+        "text": "this and now we're going to logic and",
+        "start": 451.36,
+        "duration": 4.559
+    },
+    {
+        "text": "them together what are we going to get",
+        "start": 454.16,
+        "duration": 3.439
+    },
+    {
+        "text": "when we do that we're basically going to",
+        "start": 455.919,
+        "duration": 3.521
+    },
+    {
+        "text": "be removing this right this we're going",
+        "start": 457.599,
+        "duration": 4.801
+    },
+    {
+        "text": "to get n minus 1 itself and we're also",
+        "start": 459.44,
+        "duration": 6.319
+    },
+    {
+        "text": "going to increment our result by 1 now",
+        "start": 462.4,
+        "duration": 5.44
+    },
+    {
+        "text": "regardless of what the output happens to",
+        "start": 465.759,
+        "duration": 4.56
+    },
+    {
+        "text": "be okay so now our n value is going to",
+        "start": 467.84,
+        "duration": 6.56
+    },
+    {
+        "text": "be set to this okay so now our new value",
+        "start": 470.319,
+        "duration": 5.6
+    },
+    {
+        "text": "is going to be",
+        "start": 474.4,
+        "duration": 5.28
+    },
+    {
+        "text": "1 0 0 and all zeros okay now we're going",
+        "start": 475.919,
+        "duration": 7.28
+    },
+    {
+        "text": "to take this number and subtract one",
+        "start": 479.68,
+        "duration": 6.079
+    },
+    {
+        "text": "from it what what is that going to look",
+        "start": 483.199,
+        "duration": 5.521
+    },
+    {
+        "text": "like in binary well it's going to be 0 1",
+        "start": 485.759,
+        "duration": 8.401
+    },
+    {
+        "text": "1 1 1 1 1 1. okay and now we are gonna",
+        "start": 488.72,
+        "duration": 8.4
+    },
+    {
+        "text": "logic and these two together what's that",
+        "start": 494.16,
+        "duration": 5.12
+    },
+    {
+        "text": "gonna look like well we're logic handing",
+        "start": 497.12,
+        "duration": 4.32
+    },
+    {
+        "text": "every bit this one is gonna turn into",
+        "start": 499.28,
+        "duration": 5.12
+    },
+    {
+        "text": "zero now and the rest of these are also",
+        "start": 501.44,
+        "duration": 5.439
+    },
+    {
+        "text": "gonna be zero even though we have ones",
+        "start": 504.4,
+        "duration": 4.639
+    },
+    {
+        "text": "in the bottom number we have all zeros",
+        "start": 506.879,
+        "duration": 4.72
+    },
+    {
+        "text": "in the number above so now we're",
+        "start": 509.039,
+        "duration": 4.8
+    },
+    {
+        "text": "actually done with our entire loop now",
+        "start": 511.599,
+        "duration": 4.32
+    },
+    {
+        "text": "we have all zeros we incremented our",
+        "start": 513.839,
+        "duration": 5.281
+    },
+    {
+        "text": "result by two so now our result is two",
+        "start": 515.919,
+        "duration": 4.961
+    },
+    {
+        "text": "and then we return right which makes",
+        "start": 519.12,
+        "duration": 2.88
+    },
+    {
+        "text": "sense because when you look at the",
+        "start": 520.88,
+        "duration": 3.279
+    },
+    {
+        "text": "original number we started with it yes",
+        "start": 522.0,
+        "duration": 4.72
+    },
+    {
+        "text": "it did have two ones in it but how did",
+        "start": 524.159,
+        "duration": 4.961
+    },
+    {
+        "text": "this algorithm work well it's actually",
+        "start": 526.72,
+        "duration": 4.559
+    },
+    {
+        "text": "really simple but it's definitely not",
+        "start": 529.12,
+        "duration": 4.399
+    },
+    {
+        "text": "easy to come up with what we're doing",
+        "start": 531.279,
+        "duration": 5.041
+    },
+    {
+        "text": "when we're subtracting one from itself",
+        "start": 533.519,
+        "duration": 5.44
+    },
+    {
+        "text": "is we're basically getting rid of a bit",
+        "start": 536.32,
+        "duration": 4.639
+    },
+    {
+        "text": "right when we took this number and",
+        "start": 538.959,
+        "duration": 4.56
+    },
+    {
+        "text": "subtracted one from it we got rid of",
+        "start": 540.959,
+        "duration": 5.201
+    },
+    {
+        "text": "this one bit right and remember we're",
+        "start": 543.519,
+        "duration": 4.961
+    },
+    {
+        "text": "counting one bits so when we did that we",
+        "start": 546.16,
+        "duration": 5.28
+    },
+    {
+        "text": "increment our result by one but then why",
+        "start": 548.48,
+        "duration": 7.039
+    },
+    {
+        "text": "did we logic and it together with itself",
+        "start": 551.44,
+        "duration": 6.32
+    },
+    {
+        "text": "well basically since the rest of the",
+        "start": 555.519,
+        "duration": 4.481
+    },
+    {
+        "text": "numbers stayed the same and you know we",
+        "start": 557.76,
+        "duration": 4.4
+    },
+    {
+        "text": "took this one away here and then we",
+        "start": 560.0,
+        "duration": 4.0
+    },
+    {
+        "text": "logic and them together we're basically",
+        "start": 562.16,
+        "duration": 4.4
+    },
+    {
+        "text": "removing that one bit so then when we",
+        "start": 564.0,
+        "duration": 4.399
+    },
+    {
+        "text": "when we logic ended these two together",
+        "start": 566.56,
+        "duration": 4.0
+    },
+    {
+        "text": "you can see that the one bit was removed",
+        "start": 568.399,
+        "duration": 4.241
+    },
+    {
+        "text": "but the rest of the number stayed the",
+        "start": 570.56,
+        "duration": 4.959
+    },
+    {
+        "text": "exact same on the left okay that works",
+        "start": 572.64,
+        "duration": 6.0
+    },
+    {
+        "text": "but what about this number right then we",
+        "start": 575.519,
+        "duration": 4.641
+    },
+    {
+        "text": "were left with this and then we",
+        "start": 578.64,
+        "duration": 3.92
+    },
+    {
+        "text": "subtracted one from it then what did we",
+        "start": 580.16,
+        "duration": 4.799
+    },
+    {
+        "text": "do well again when we subtracted one",
+        "start": 582.56,
+        "duration": 5.44
+    },
+    {
+        "text": "from it we basically got rid of the the",
+        "start": 584.959,
+        "duration": 6.241
+    },
+    {
+        "text": "next one bit right you can see that when",
+        "start": 588.0,
+        "duration": 4.72
+    },
+    {
+        "text": "we subtracted one from it this is what",
+        "start": 591.2,
+        "duration": 3.12
+    },
+    {
+        "text": "the number looked like we got rid of",
+        "start": 592.72,
+        "duration": 4.88
+    },
+    {
+        "text": "this one bit but we introduced a bunch",
+        "start": 594.32,
+        "duration": 6.88
+    },
+    {
+        "text": "of other one bits but these are all okay",
+        "start": 597.6,
+        "duration": 6.16
+    },
+    {
+        "text": "because we know they're gonna be and any",
+        "start": 601.2,
+        "duration": 4.16
+    },
+    {
+        "text": "one bits that we introduce are going to",
+        "start": 603.76,
+        "duration": 3.759
+    },
+    {
+        "text": "be on the right side and we know that if",
+        "start": 605.36,
+        "duration": 4.719
+    },
+    {
+        "text": "we just deleted this one it was the it",
+        "start": 607.519,
+        "duration": 4.961
+    },
+    {
+        "text": "was the right most one bit that we had",
+        "start": 610.079,
+        "duration": 4.241
+    },
+    {
+        "text": "so any ones that are introduced to the",
+        "start": 612.48,
+        "duration": 5.68
+    },
+    {
+        "text": "right side won't matter in this number",
+        "start": 614.32,
+        "duration": 6.4
+    },
+    {
+        "text": "this is n minus 1 by the way any ones",
+        "start": 618.16,
+        "duration": 4.72
+    },
+    {
+        "text": "here won't matter because remember every",
+        "start": 620.72,
+        "duration": 5.04
+    },
+    {
+        "text": "time we do that we're logic ending them",
+        "start": 622.88,
+        "duration": 5.68
+    },
+    {
+        "text": "together we're logic ending n with n",
+        "start": 625.76,
+        "duration": 5.36
+    },
+    {
+        "text": "minus 1 so these are all gonna cancel",
+        "start": 628.56,
+        "duration": 4.88
+    },
+    {
+        "text": "out and this is going to cancel out as",
+        "start": 631.12,
+        "duration": 4.48
+    },
+    {
+        "text": "well well the position where we you know",
+        "start": 633.44,
+        "duration": 4.32
+    },
+    {
+        "text": "remove the one bit so basically what",
+        "start": 635.6,
+        "duration": 4.72
+    },
+    {
+        "text": "we're doing here is we're skipping all",
+        "start": 637.76,
+        "duration": 4.72
+    },
+    {
+        "text": "the zeros in between we're basically",
+        "start": 640.32,
+        "duration": 4.88
+    },
+    {
+        "text": "allowing ourself to run the loop as many",
+        "start": 642.48,
+        "duration": 3.919
+    },
+    {
+        "text": "times as",
+        "start": 645.2,
+        "duration": 3.92
+    },
+    {
+        "text": "as basically as many one bits exist in",
+        "start": 646.399,
+        "duration": 4.961
+    },
+    {
+        "text": "the input integer it's kind of a really",
+        "start": 649.12,
+        "duration": 4.719
+    },
+    {
+        "text": "weird trick but it definitely works and",
+        "start": 651.36,
+        "duration": 5.039
+    },
+    {
+        "text": "it makes sense why it works now we can",
+        "start": 653.839,
+        "duration": 5.12
+    },
+    {
+        "text": "code it up and it's pretty simple so you",
+        "start": 656.399,
+        "duration": 3.841
+    },
+    {
+        "text": "can see that this was our original",
+        "start": 658.959,
+        "duration": 3.521
+    },
+    {
+        "text": "solution and we only have to modify this",
+        "start": 660.24,
+        "duration": 4.8
+    },
+    {
+        "text": "a little bit so what we're going to do",
+        "start": 662.48,
+        "duration": 4.799
+    },
+    {
+        "text": "is get rid of this line and instead of",
+        "start": 665.04,
+        "duration": 4.64
+    },
+    {
+        "text": "incrementing our result by n mod 2 we're",
+        "start": 667.279,
+        "duration": 3.601
+    },
+    {
+        "text": "actually going to increment our result",
+        "start": 669.68,
+        "duration": 4.159
+    },
+    {
+        "text": "by one each time because each time we",
+        "start": 670.88,
+        "duration": 5.76
+    },
+    {
+        "text": "increment this we are going to be",
+        "start": 673.839,
+        "duration": 5.521
+    },
+    {
+        "text": "setting n equal to n",
+        "start": 676.64,
+        "duration": 4.879
+    },
+    {
+        "text": "anded with n minus one so we're going to",
+        "start": 679.36,
+        "duration": 4.159
+    },
+    {
+        "text": "be counting the number of one bits",
+        "start": 681.519,
+        "duration": 4.481
+    },
+    {
+        "text": "exactly and this line can actually be",
+        "start": 683.519,
+        "duration": 4.0
+    },
+    {
+        "text": "slightly shortened",
+        "start": 686.0,
+        "duration": 5.76
+    },
+    {
+        "text": "by doing this in most languages and yeah",
+        "start": 687.519,
+        "duration": 6.081
+    },
+    {
+        "text": "so this is about as efficient as we can",
+        "start": 691.76,
+        "duration": 4.56
+    },
+    {
+        "text": "get we won't run any extra iterations of",
+        "start": 693.6,
+        "duration": 4.4
+    },
+    {
+        "text": "this loop when we have zero so let's run",
+        "start": 696.32,
+        "duration": 3.68
+    },
+    {
+        "text": "it to make sure that it works and you",
+        "start": 698.0,
+        "duration": 3.6
+    },
+    {
+        "text": "can see yes on the left side it works",
+        "start": 700.0,
+        "duration": 3.36
+    },
+    {
+        "text": "yeah the run time is about the same",
+        "start": 701.6,
+        "duration": 4.239
+    },
+    {
+        "text": "because it's still the same exact big o",
+        "start": 703.36,
+        "duration": 4.479
+    },
+    {
+        "text": "time complexity but i hope that this was",
+        "start": 705.839,
+        "duration": 3.841
+    },
+    {
+        "text": "helpful if it was please like and",
+        "start": 707.839,
+        "duration": 3.841
+    },
+    {
+        "text": "subscribe it really supports the channel",
+        "start": 709.68,
+        "duration": 3.92
+    },
+    {
+        "text": "a lot consider checking out my patreon",
+        "start": 711.68,
+        "duration": 2.959
+    },
+    {
+        "text": "where you can further support the",
+        "start": 713.6,
+        "duration": 2.64
+    },
+    {
+        "text": "channel and hopefully i'll see you",
+        "start": 714.639,
+        "duration": 5.281
+    },
+    {
+        "text": "pretty soon thanks for watching",
+        "start": 716.24,
+        "duration": 3.68
+    }
+]
