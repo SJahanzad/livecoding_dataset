@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnnMfYZUBvky3GWbxuL61nkvDbfU",
+  "object": "chat.completion",
+  "created": 1719273232,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! The code for the class `Solution` seen in the image is as follows:\n\n```java\nclass Solution {\n    int num_moves;\n\n    public int distributeCoins(TreeNode root) {\n        num_moves = 0;\n        give_coins(root);\n        return num_moves;\n    }\n\n    public int give_coins(TreeNode node) {\n        if (node == null) return 0;\n        int left = give_coins(node.left);\n        int right = give_coins(node.right);\n        num_moves += Math.abs(left) + Math.abs(right);\n        return node.val + left + right - 1;\n    }\n}\n```\n\nThis code is part of a solution to a problem involving distributing coins in a binary tree."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 149,
+    "total_tokens": 1280
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dneuCVbhxy45O3E6HygADAG0rba1",
+  "object": "chat.completion",
+  "created": 1719272708,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here is the code for the class `Solution` from the image:\n\n```java\nclass Solution {\n    public int maxIncreaseKeepingSkyline(int[][] grid) {\n        int result = 0;\n        int n = grid.length;\n        \n        int[] max_row_vals = new int[n];\n        int[] max_column_vals = new int[n];\n        \n        for (int i=0; i<n; i++) {\n            for (int j=0; j<n; j++) {\n                max_row_vals[i] = Math.max(max_row_vals[i], grid[i][j]);\n                max_column_vals[j] = Math.max(max_column_vals[j], grid[i][j]);\n            }\n        }\n        \n        for (int i=0; i<n; i++) {\n            for (int j=0; j<n; j++) {\n                result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];\n            }\n        }\n        \n        return result;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 206,
+    "total_tokens": 1337
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

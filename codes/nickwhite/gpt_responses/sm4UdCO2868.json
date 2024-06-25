@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnknIA3TVFzspycbPQLid79aJETF",
+  "object": "chat.completion",
+  "created": 1719273073,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class that is seen in the image:\n\n```java\nclass Solution {\n    int max_width;\n    HashMap<Integer, Integer> leftmost_positions;\n    \n    public int widthOfBinaryTree(TreeNode root) {\n        max_width = 0;\n        leftmost_positions = new HashMap<>();\n        get_width(root, 0, 0);\n        return max_width;\n    }\n    \n    public void get_width(TreeNode root, int depth, int position) {\n        if (root == null) return;\n        leftmost_positions.computeIfAbsent(depth, x->position);\n        max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);\n        get_width(root.left, depth+1, position*2);\n        get_width(root.right, depth+1, position*2+1);\n    }\n}\n```\n\nThis code defines the `Solution` class with methods to compute the maximum width of a binary tree. The `get_width` method is used recursively to traverse the tree and compute the width."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 220,
+    "total_tokens": 1351
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

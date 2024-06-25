@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnpACgi9rW1DTftfIuWbJ2BwDBjQ",
+  "object": "chat.completion",
+  "created": 1719273344,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as seen in the image:\n\n```java\nclass Solution {\n    public int findBottomLeftValue(TreeNode root) {\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.offer(root);\n        while (!queue.isEmpty()) {\n            root = queue.poll();\n            if (root.right != null) {\n                queue.offer(root.right);\n            }\n            if (root.left != null) {\n                queue.offer(root.left);\n            }\n        }\n        return root.val;\n    }\n}\n```\n\nThis code defines a `Solution` class with a method `findBottomLeftValue` that finds the bottom-left value in a binary tree. The traversal is done using a queue for level-order (BFS) traversal, ensuring that the most recent node processed in the queue is the bottom-left node when the queue becomes empty."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 177,
+    "total_tokens": 1308
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

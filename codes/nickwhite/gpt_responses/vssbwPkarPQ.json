@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnmYFrFatiUMXkM6gtgdL7lL8DAN",
+  "object": "chat.completion",
+  "created": 1719273182,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class as shown in the image:\n\n```java\nclass Solution {\n    public void flatten(TreeNode root) {\n        if (root == null) return;\n        Stack<TreeNode> stack = new Stack<>();\n        stack.push(root);\n        \n        while (!stack.isEmpty()) {\n            TreeNode current_node = stack.pop();\n            if (current_node.right != null) {\n                stack.push(current_node.right);\n            }\n            \n            if (current_node.left != null) {\n                stack.push(current_node.left);\n            }\n            \n            if (!stack.isEmpty()) {\n                current_node.right = stack.peek();\n            }\n            \n            current_node.left = null;\n        }\n    }\n}\n```\n\nThis is a Java class `Solution` that contains a method `flatten` which takes a `TreeNode` root and flattens the binary tree to a linked list in-place."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 185,
+    "total_tokens": 1316
+  },
+  "system_fingerprint": "fp_66b29dffce"
+}

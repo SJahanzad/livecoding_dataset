@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnfLzwMZSxUMjygVjHPPpWvgO49L",
+  "object": "chat.completion",
+  "created": 1719272735,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here is the code for the class `Solution` from the image:\n\n```java\n/* The isBadVersion API is defined in the parent class VersionControl.\nboolean isBadVersion(int version); */\n\npublic class Solution extends VersionControl {\n    public int firstBadVersion(int n) {\n        int left = 0;\n        int right = n;\n        \n        while (left < right) {\n            int midpoint = left + (right - left) / 2;\n            if (isBadVersion(midpoint)) {\n                right = midpoint;\n            } else {\n                left = midpoint + 1;\n            }\n        }\n        \n        if (left == right && isBadVersion(left)) {\n            return left;\n        }\n        \n        return -1;\n    }\n}\n```\n\nThis class extends from `VersionControl` and uses binary search to find the first bad version."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 177,
+    "total_tokens": 1308
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

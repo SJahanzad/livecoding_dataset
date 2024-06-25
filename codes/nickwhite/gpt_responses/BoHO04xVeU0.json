@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnk3IDK84BNc23k3EvEx7tmIH4SK",
+  "object": "chat.completion",
+  "created": 1719273027,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as it appears in the image:\n\n```java\nimport java.util.HashMap;\nimport java.util.Map;\n\nclass Solution {\n    public int[] twoSum(int[] nums, int target) {\n        Map<Integer, Integer> num_map = new HashMap<>();\n        for (int i = 0; i < nums.length; i++) {\n            int complement = target - nums[i];\n            if (num_map.containsKey(complement)) {\n                return new int[] { num_map.get(complement), i };\n            }\n            num_map.put(nums[i], i);\n        }\n        throw new IllegalArgumentException(\"No match found!\");\n    }\n}\n```\n\nThis code defines a `Solution` class with a `twoSum` method that solves the \"Two Sum\" problem by using a hash map to store the indices of the numbers encountered so far. It checks if the complement of the current number (the difference between the target and the current number) is already in the map and returns the indices if a match is found. If no match is found by the end of the loop, it throws an exception."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 234,
+    "total_tokens": 1365
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnnuegtnucLrQBSeJuNWISfWm0Xp",
+  "object": "chat.completion",
+  "created": 1719273266,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as seen in the image:\n\n```java\nclass Solution {\n    public int[] sortArrayByParity(int[] A) {\n        int i = 0;\n        int j = A.length - 1;\n\n        while (i < j) {\n            if (A[i] % 2 > A[j] % 2) {\n                int temp = A[i];\n                A[i] = A[j];\n                A[j] = temp;\n            }\n\n            if (A[i] % 2 == 0) i++;\n            if (A[j] % 2 == 1) j--;\n        }\n\n        return A;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 144,
+    "total_tokens": 1275
+  },
+  "system_fingerprint": "fp_66b29dffce"
+}

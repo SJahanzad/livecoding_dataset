@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnl8V23nbd65okYbIo2oTFk5VbMH",
+  "object": "chat.completion",
+  "created": 1719273094,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the `Solution` class code from the image:\n\n```java\nclass Solution {\n    public List<String> letterCombinations(String digits) {\n        LinkedList<String> ans = new LinkedList<String>();\n        if (digits.isEmpty()) return ans;\n        String[] mapping = new String[] { \"0\", \"1\", \"abc\", \"def\", \"ghi\", \"jkl\", \"mno\", \"pqrs\", \"tuv\", \"wxyz\" };\n        ans.add(\"\");\n        for (int i = 0; i < digits.length(); i++) {\n            int x = Character.getNumericValue(digits.charAt(i));\n            while (ans.peek().length() == i) {\n                String t = ans.remove();\n                for (char s : mapping[x].toCharArray()) {\n                    ans.add(t + s);\n                }\n            }\n        }\n        return ans;\n    }\n}\n```\n\nThis code provides a solution to the problem of generating all possible letter combinations that a given number string could represent on a telephone keypad."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 214,
+    "total_tokens": 1345
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

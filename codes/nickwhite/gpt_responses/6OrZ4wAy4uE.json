@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnmIWsynfPH4XBn6rHidElGxMooU",
+  "object": "chat.completion",
+  "created": 1719273166,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class as seen in the image:\n\n```java\n// Definition for singly-linked list.\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int x) {\n        val = x;\n        next = null;\n    }\n}\n\npublic class Solution {\n    public boolean hasCycle(ListNode head) {\n        if (head == null) return false;\n\n        ListNode slow = head;\n        ListNode fast = head.next;\n\n        while (slow != fast) {\n            if (fast == null || fast.next == null) {\n                return false;\n            }\n            slow = slow.next;\n            fast = fast.next.next;\n        }\n        return true;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 150,
+    "total_tokens": 1281
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

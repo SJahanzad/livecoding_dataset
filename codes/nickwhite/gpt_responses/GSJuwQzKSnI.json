@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dngBhN9LXXjkDrma8K7rxHAJaI3G",
+  "object": "chat.completion",
+  "created": 1719272787,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as seen in the provided image:\n\n```java\nclass Solution {\n    public ListNode reverseBetween(ListNode head, int m, int n) {\n        if (head == null) {\n            return null;\n        }\n\n        ListNode prev = null;\n        ListNode current_node = head;\n\n        while (m > 1) {\n            prev = current_node;\n            current_node = current_node.next;\n            m--;\n            n--;\n        }\n\n        ListNode connection = prev;\n        ListNode tail = current_node;\n\n        while (n > 0) {\n            ListNode next_node = current_node.next;\n            current_node.next = prev;\n            prev = current_node;\n            current_node = next_node;\n            n--;\n        }\n\n        if (connection != null) {\n            connection.next = prev;\n        } else {\n            head = prev;\n        }\n\n        tail.next = current_node;\n        return head;\n    }\n}\n```\n\nYou will need the definition of the `ListNode` class for this `Solution` class to work properly. Here’s a typical definition for `ListNode`:\n\n```java\nclass ListNode {\n    int val;\n    ListNode next;\n    ListNode(int x) { val = x; }\n}\n```\n\nMake sure to include the `ListNode` class definition along with the `Solution` class in your code to test it effectively."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 292,
+    "total_tokens": 1423
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

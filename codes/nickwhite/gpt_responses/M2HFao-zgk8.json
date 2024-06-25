@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnpMv2yNM4a8kO6Vpc6otXUgbANK",
+  "object": "chat.completion",
+  "created": 1719273356,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public int countCharacters(String[] words, String chars) {\n        int good_word_lengths_sum = 0;\n        int[] char_counts = new int[26];\n\n        for (char c : chars.toCharArray()) {\n            char_counts[c - 'a']++;\n        }\n\n        for (String word : words) {\n            int[] temp_char_counts = Arrays.copyOf(char_counts, char_counts.length);\n            int valid_char_count = 0;\n\n            for (char c : word.toCharArray()) {\n                if (temp_char_counts[c - 'a'] > 0) {\n                    valid_char_count++;\n                    temp_char_counts[c - 'a']--;\n                }\n            }\n\n            if (valid_char_count == word.length()) {\n                good_word_lengths_sum += word.length();\n            }\n        }\n\n        return good_word_lengths_sum;\n    }\n}\n```\n\nThis class contains a method `countCharacters` that calculates the sum of lengths of words that can be formed using characters from a given string `chars`. Each character in `chars` can only be used once."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 240,
+    "total_tokens": 1371
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

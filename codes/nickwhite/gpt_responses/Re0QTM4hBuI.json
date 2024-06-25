@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnjo9JRaujbfVbFLr7I15fB9Jiiw",
+  "object": "chat.completion",
+  "created": 1719273012,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the class `Solution` from the image:\n\n```java\n/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    int range_sum;\n    public int rangeSumBST(TreeNode root, int L, int R) {\n        range_sum = 0;\n        get_range_sum(root, L, R);\n        return range_sum;\n    }\n\n    public void get_range_sum(TreeNode root, int L, int R) {\n        if (root != null) {\n            if (root.val >= L && root.val <= R) {\n                range_sum += root.val;\n            }\n            if (root.val > L) {\n                get_range_sum(root.left, L, R);\n            }\n            if (root.val < R) {\n                get_range_sum(root.right, L, R);\n            }\n        }\n    }\n}\n```\n\nThis code defines a class `Solution` that contains methods to calculate the sum of values of all nodes with a value in the range `[L, R]` in a Binary Search Tree."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 253,
+    "total_tokens": 1384
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

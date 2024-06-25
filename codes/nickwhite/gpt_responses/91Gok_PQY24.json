@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnp1nWM9Yotshab0guiJbDNTUM7k",
+  "object": "chat.completion",
+  "created": 1719273335,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class as seen in the image:\n\n```java\n/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<Integer> largestValues(TreeNode root) {\n        List<Integer> largest_vals = new ArrayList<>();\n        helper_method(root, largest_vals, 0);\n        return largest_vals;\n    }\n    \n    public void helper_method(TreeNode root, List<Integer> largest_vals, int level) {\n        if (root == null) return;\n        \n        if (level == largest_vals.size()) {\n            largest_vals.add(root.val);\n        } else {\n            largest_vals.set(level, Math.max(largest_vals.get(level), root.val));\n        }\n        \n        helper_method(root.left, largest_vals, level + 1);\n        helper_method(root.right, largest_vals, level + 1);\n    }\n}\n```\n\nThis code consists of the following:\n\n1. A main method `largestValues` that initializes an array list and calls a helper method to process the binary tree.\n2. A `helper_method` that traverses the tree, updating the list with the largest value found at each level."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 274,
+    "total_tokens": 1405
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

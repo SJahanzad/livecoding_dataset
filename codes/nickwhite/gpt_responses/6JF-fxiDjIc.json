@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnftSGeMLT0BCTgFp49uLHNP1lAt",
+  "object": "chat.completion",
+  "created": 1719272769,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Below is the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public boolean isNStraightHand(int[] hand, int W) {\n        TreeMap<Integer, Integer> count = new TreeMap<>();\n        for (int card: hand) {\n            if (!count.containsKey(card)) {\n                count.put(card, 1);\n            } else {\n                count.replace(card, count.get(card) + 1);\n            }\n        }\n\n        while (count.size() > 0) {\n            int first = count.firstKey();\n            for (int card = first; card < first + W; ++card) {\n                if (!count.containsKey(card)) return false;\n                int c = count.get(card);\n                if (c == 1) {\n                    count.remove(card);\n                } else {\n                    count.replace(card, c - 1);\n                }\n            }\n        }\n\n        return true;\n    }\n}\n```\n\nThis code checks if the given hand of cards can be rearranged into groups of W consecutive cards."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 219,
+    "total_tokens": 1350
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

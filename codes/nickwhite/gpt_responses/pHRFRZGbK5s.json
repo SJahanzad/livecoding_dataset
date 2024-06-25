@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnqsDVWki7rhq0cub71pcpeZ9kJo",
+  "object": "chat.completion",
+  "created": 1719273450,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here is the code for the class `Solution` seen in the image:\n\n```java\nclass Solution {\n    public int[] sortArrayByParityII(int[] A) {\n        int i = 0;\n        int j = 1;\n        int n = A.length;\n        \n        while (i < n && j < n) {\n            while (i < n && A[i] % 2 == 0) {\n                i += 2;\n            }\n            while (j < n && A[j] % 2 == 1) {\n                j += 2;\n            }\n            if (i < n && j < n) {\n                int temp = A[i];\n                A[i] = A[j];\n                A[j] = temp;\n            }\n        }\n        \n        return A;\n    }\n}\n```\n\nThis code defines a class `Solution` with a method `sortArrayByParityII` that sorts an array such that elements at even indices are even and elements at odd indices are odd."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 209,
+    "total_tokens": 1340
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

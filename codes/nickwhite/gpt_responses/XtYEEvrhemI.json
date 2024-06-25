@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dniZFlaQDODoesMpTlSaxeoSvoff",
+  "object": "chat.completion",
+  "created": 1719272935,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class seen in the image:\n\n```java\n/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public ListNode removeNthFromEnd(ListNode head, int n) {\n        ListNode dummy_head = new ListNode(0);\n        dummy_head.next = head;\n        \n        ListNode slow = dummy_head;\n        ListNode fast = dummy_head;\n        \n        for (int i = 1; i <= n + 1; i++) {\n            fast = fast.next;\n        }\n        \n        while (fast != null) {\n            slow = slow.next;\n            fast = fast.next;\n        }\n        \n        slow.next = slow.next.next;\n        return dummy_head.next;\n    }\n}\n```\n\nThis Java code is used to remove the nth node from the end of a singly linked list. The `ListNode` class is assumed to be pre-defined elsewhere in the program."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 223,
+    "total_tokens": 1354
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

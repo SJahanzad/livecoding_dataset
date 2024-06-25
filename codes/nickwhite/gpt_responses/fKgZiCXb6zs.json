@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnkdXPFsqTjK0fO3VnWFwdqh7ohC",
+  "object": "chat.completion",
+  "created": 1719273063,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here is the code for the class `Solution` from the image:\n\n```java\nclass Solution {\n    public TreeNode invertTree(TreeNode root) {\n        if (root == null) {\n            return root;\n        }\n        TreeNode left = invertTree(root.left);\n        TreeNode right = invertTree(root.right);\n        // swap\n        root.right = left;\n        root.left = right;\n        return root;\n    }\n}\n```\n\nThis code defines a method `invertTree` that inverts a binary tree. If the root is `null`, it returns the root. Otherwise, it recursively inverts the left and right subtrees and then swaps them."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 137,
+    "total_tokens": 1268
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

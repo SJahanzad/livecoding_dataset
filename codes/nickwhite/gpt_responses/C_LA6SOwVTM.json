@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnkKUCEMRQJcFBD7bXOPI35k4XZ0",
+  "object": "chat.completion",
+  "created": 1719273044,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the Java code for the `Solution` class as shown in the image:\n\n```java\n/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next;}\n * }\n */\npublic class Solution {\n    public ListNode oddEvenList(ListNode head) {\n        if (head == null) return null;\n\n        ListNode odd = head;\n        ListNode even = head.next;\n        ListNode evenHead = even;\n\n        while (even != null && even.next != null) {\n            odd.next = even.next;\n            odd = odd.next;\n            even.next = odd.next;\n            even = even.next;\n        }\n\n        odd.next = evenHead;\n        return head;\n    }\n}\n```\n\nThis code defines a `Solution` class with a method `oddEvenList` that rearranges the nodes of a singly linked list. The nodes at odd positions are followed by nodes at even positions while maintaining their relative order within each group."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 246,
+    "total_tokens": 1377
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

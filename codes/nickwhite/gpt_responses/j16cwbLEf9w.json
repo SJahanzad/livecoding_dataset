@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnnH5yoARg06y1vOPum0eMiSW9yM",
+  "object": "chat.completion",
+  "created": 1719273227,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public boolean isCompleteTree(TreeNode root) {\n        boolean end = false;\n        Queue<TreeNode> queue = new LinkedList<>();\n        queue.offer(root);\n\n        while (!queue.isEmpty()) {\n            TreeNode current_node = queue.poll();\n            if (current_node == null) {\n                end = true;\n            } else {\n                if (end) return false;\n                queue.offer(current_node.left);\n                queue.offer(current_node.right);\n            }\n        }\n\n        return true;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 126,
+    "total_tokens": 1257
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

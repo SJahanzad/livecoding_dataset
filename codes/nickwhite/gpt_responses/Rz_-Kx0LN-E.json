@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnqnK1WWS7Sns6hloT3K2KhF3ha4",
+  "object": "chat.completion",
+  "created": 1719273445,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here's the code for the `Solution` class as seen in the image:\n\n```java\nclass Solution {\n    public boolean canVisitAllRooms(List<List<Integer>> rooms) {\n        boolean[] seen = new boolean[rooms.size()];\n        seen[0] = true;\n\n        Stack<Integer> keys = new Stack<>();\n        keys.add(0);\n\n        while (!keys.isEmpty()) {\n            int current_key = keys.pop();\n            for (int new_key : rooms.get(current_key)) {\n                if (!seen[new_key]) {\n                    seen[new_key] = true;\n                    keys.add(new_key);\n                }\n            }\n        }\n\n        for (boolean visited : seen) {\n            if (!visited) return false;\n        }\n\n        return true;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 155,
+    "total_tokens": 1286
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

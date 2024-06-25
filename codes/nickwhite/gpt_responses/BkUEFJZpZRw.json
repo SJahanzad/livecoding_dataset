@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dng00yGjmdHIQkSOg1soDIp0xLWG",
+  "object": "chat.completion",
+  "created": 1719272776,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class as seen in the image:\n\n```java\n// Definition for a binary tree node.\npublic class TreeNode {\n    int val;\n    TreeNode left;\n    TreeNode right;\n    TreeNode(int x) { val = x; }\n}\n\nclass Solution {\n    public boolean isUnivalTree(TreeNode root) {\n        boolean left_univaled = root.left == null || root.left.val == root.val && isUnivalTree(root.left);\n        boolean right_univaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);\n        return left_univaled && right_univaled;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 144,
+    "total_tokens": 1275
+  },
+  "system_fingerprint": "fp_66b29dffce"
+}

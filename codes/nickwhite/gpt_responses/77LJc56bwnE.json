@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnoG4ufIzapIcA86R2bl3GxwR3nS",
+  "object": "chat.completion",
+  "created": 1719273288,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the class `Solution` from the image:\n\n```java\nclass Solution {\n    public TreeNode pruneTree(TreeNode root) {\n        if (root == null) return null;\n        containsOne(root);\n        return root;\n    }\n\n    public boolean containsOne(TreeNode node) {\n        if (node == null) return false;\n        boolean left_contains = containsOne(node.left);\n        boolean right_contains = containsOne(node.right);\n        if (!left_contains) {\n            node.left = null;\n        }\n        if (!right_contains) {\n            node.right = null;\n        }\n        return node.val == 1 || left_contains || right_contains;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 142,
+    "total_tokens": 1273
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

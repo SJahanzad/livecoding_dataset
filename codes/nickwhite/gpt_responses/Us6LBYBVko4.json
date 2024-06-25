@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnnipP23HgkyoUL95Jnuh1ojCzRR",
+  "object": "chat.completion",
+  "created": 1719273254,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Here is the code for the `Solution` class seen in the image:\n\n```java\nclass Solution {\n    boolean seen[][];\n\n    public int maxAreaOfIsland(int[][] grid) {\n        int max_area = 0;\n\n        int rows = grid.length;\n        int columns = grid[0].length;\n\n        seen = new boolean[rows][columns];\n\n        for (int i = 0; i < rows; i++) {\n            for (int j = 0; j < columns; j++) {\n                max_area = Math.max(max_area, area(i, j, grid));\n            }\n        }\n\n        return max_area;\n    }\n\n    public int area(int row, int column, int[][] grid) {\n        if (row < 0 || row >= grid.length || column < 0 || column >= grid[row].length || seen[row][column] || grid[row][column] == 0) {\n            return 0;\n        }\n\n        seen[row][column] = true;\n        return 1 + area(row + 1, column, grid) \n                 + area(row - 1, column, grid)\n                 + area(row, column + 1, grid) \n                 + area(row, column - 1, grid);\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 261,
+    "total_tokens": 1392
+  },
+  "system_fingerprint": "fp_66b29dffce"
+}

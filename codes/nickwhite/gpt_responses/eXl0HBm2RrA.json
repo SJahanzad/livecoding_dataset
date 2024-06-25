@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnlIEAZSaSGbBQAqVvsSvY5AwUSG",
+  "object": "chat.completion",
+  "created": 1719273104,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! The code for the class `Solution` seen in the image is as follows:\n\n```java\nclass Solution {\n    public int singleNumber(int[] nums) {\n        int result = 0;\n        for (int i = 0; i < nums.length; i++) {\n            result ^= nums[i];\n        }\n        return result;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 74,
+    "total_tokens": 1205
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

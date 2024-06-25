@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnim5RY9Jk5Fcg2urQ4MW2krS662",
+  "object": "chat.completion",
+  "created": 1719272948,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the class `Solution` from the image:\n\n```java\nclass Solution {\n    public List<List<Integer>> generate(int numRows) {\n        List<List<Integer>> triangle = new ArrayList<>();\n\n        if (numRows == 0) return triangle;\n\n        List<Integer> first_row = new ArrayList<>();\n        first_row.add(1);\n        triangle.add(first_row);\n\n        for (int i = 1; i < numRows; i++) {\n            List<Integer> prev_row = triangle.get(i - 1);\n            List<Integer> row = new ArrayList<>();\n\n            row.add(1);\n\n            for (int j = 1; j < i; j++) {\n                row.add(prev_row.get(j - 1) + prev_row.get(j));\n            }\n\n            row.add(1);\n            triangle.add(row);\n        }\n\n        return triangle;\n    }\n}\n```\n\nThis code generates the first `numRows` of Pascal's triangle."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 199,
+    "total_tokens": 1330
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

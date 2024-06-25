@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnhluanNV9tIPbEnh4sJmyq9bgdS",
+  "object": "chat.completion",
+  "created": 1719272885,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public boolean isSymmetric(TreeNode root) {\n        return isMirror(root, root);\n    }\n\n    public boolean isMirror(TreeNode t1, TreeNode t2) {\n        if (t1 == null && t2 == null) return true;\n        if (t1 == null || t2 == null) return false;\n\n        return (t1.val == t2.val)\n            && isMirror(t1.left, t2.right)\n            && isMirror(t1.right, t2.left);\n    }\n}\n```\n\nThis code defines a function to check if a binary tree is symmetric around its center. The main function `isSymmetric` calls a helper function `isMirror` to recursively check if two trees are mirrors of each other."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 178,
+    "total_tokens": 1309
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

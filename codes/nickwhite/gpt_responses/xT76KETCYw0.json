@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnnSoIlrBYosfpuchrr2irOftKmF",
+  "object": "chat.completion",
+  "created": 1719273238,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class as seen in the image:\n\n```java\nclass Solution {\n    public List<Integer> selfDividingNumbers(int left, int right) {\n        List<Integer> list = new ArrayList<>();\n        for (int i = left; i <= right; i++) {\n            int j = i;\n            for (; j > 0; j /= 10) {\n                if ((j % 10 == 0) || (i % (j % 10) != 0)) break;\n            }\n            if (j == 0) list.add(i);\n        }\n        return list;\n    }\n}\n```\n\nThis code defines a `Solution` class with a method `selfDividingNumbers` that generates a list of self-dividing numbers within a given range."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 168,
+    "total_tokens": 1299
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnmy1Np8rLbBTGEHYjrsf5MlZVRG",
+  "object": "chat.completion",
+  "created": 1719273208,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here is the code for the class `Solution` that is seen in the image:\n\n```java\nclass Solution {\n    public String mostCommonWord(String paragraph, String[] banned) {\n        HashSet<String> banned_words = new HashSet<>();\n        HashMap<String, Integer> valid_word_counts = new HashMap<>();\n\n        for (String banned_word : banned) {\n            banned_words.add(banned_word);\n        }\n\n        String[] words = paragraph.toLowerCase().split(\"\\\\W+\");\n\n        for (String word : words) {\n            if (!banned_words.contains(word)) {\n                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);\n            }\n        }\n\n        int max = 0;\n        String result = \"\";\n\n        for (String word : valid_word_counts.keySet()) {\n            if (valid_word_counts.get(word) > max) {\n                max = valid_word_counts.get(word);\n                result = word;\n            }\n        }\n\n        return result;\n    }\n}\n```\n\nThis class defines a method `mostCommonWord` that finds the most common word in a paragraph that is not in a list of banned words."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 240,
+    "total_tokens": 1371
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

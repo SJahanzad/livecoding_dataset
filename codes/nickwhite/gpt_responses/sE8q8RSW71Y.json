@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnowtxaGfbCvVky3EP7PSb00HstW",
+  "object": "chat.completion",
+  "created": 1719273330,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public TreeNode searchBST(TreeNode root, int val) {\n        if (root == null) return null;\n        if (root.val == val) return root;\n        \n        if (val < root.val) {\n            return searchBST(root.left, val);\n        } else {\n            return searchBST(root.right, val);\n        }\n    }\n}\n```\n\nThis method performs a search in a Binary Search Tree (BST) to find a node with a specific value. If it finds the node, it returns it; otherwise, it returns `null`."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 137,
+    "total_tokens": 1268
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

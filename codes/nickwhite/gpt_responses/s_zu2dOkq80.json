@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnoRWDaIxKTgm1vgunVz4DQV9433",
+  "object": "chat.completion",
+  "created": 1719273299,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public int totalFruit(int[] tree) {\n        int last_fruit = -1;\n        int second_last_fruit = -1;\n        int last_fruit_count = 0;\n        int current_max = 0;\n        int max = 0;\n\n        for (Integer fruit : tree) {\n\n            if (fruit == last_fruit || fruit == second_last_fruit) {\n                current_max += 1;\n            } else {\n                current_max = last_fruit_count + 1;\n            }\n\n            if (fruit == last_fruit) {\n                last_fruit_count += 1;\n            } else {\n                last_fruit_count = 1;\n            }\n\n            if (fruit != last_fruit) {\n                second_last_fruit = last_fruit;\n                last_fruit = fruit;\n            }\n\n            max = Math.max(current_max, max);\n        }\n\n        return max;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 211,
+    "total_tokens": 1342
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnpYt1EmH0aFcAT4JAmeumMLkX8I",
+  "object": "chat.completion",
+  "created": 1719273368,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the Java code for the `Solution` class as seen in the image:\n\n```java\nclass Solution {\n    public int islandPerimeter(int[][] grid) {\n        if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;\n        \n        int result = 0;\n        for (int i = 0; i < grid.length; i++) {\n            for (int j = 0; j < grid[0].length; j++) {\n                if (grid[i][j] == 1) {\n                    result += 4;\n                    \n                    if (i > 0 && grid[i - 1][j] == 1) {\n                        result -= 2;\n                    }\n                    \n                    if (j > 0 && grid[i][j - 1] == 1) {\n                        result -= 2;\n                    }\n                }\n            }\n        }\n        \n        return result;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 200,
+    "total_tokens": 1331
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

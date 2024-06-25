@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnjuVSih00I6F7nMIMxPgI2uyxg3",
+  "object": "chat.completion",
+  "created": 1719273018,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public int uniqueMorseRepresentations(String[] words) {\n        HashSet<String> unique_codes = new HashSet<>();\n        String[] MORSE = new String[]{\".-\", \"-...\", \"-.-.\", \"-..\", \".\", \"..-.\", \"--.\", \"....\", \"..\", \".---\", \"-.-\", \".-..\", \"--\", \"-.\", \"---\", \".--.\", \"--.-\", \".-.\", \"...\", \"-\", \"..-\", \"...-\", \".--\", \"-..-\", \"-.--\", \"--..\"};\n        \n        for (String word : words) {\n            StringBuilder transformation = new StringBuilder();\n            \n            for (char c : word.toCharArray()) {\n                transformation.append(MORSE[c - 'a']);\n            }\n            \n            unique_codes.add(transformation.toString());\n        }\n        \n        return unique_codes.size();\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 190,
+    "total_tokens": 1321
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnlSMJy6h8igLqS4HIB9SDFhigiE",
+  "object": "chat.completion",
+  "created": 1719273114,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class as seen in the image:\n\n```java\nclass Solution {\n    public String removeDuplicates(String S) {\n        char[] stack = new char[S.length()];\n        int i = 0;\n\n        for(int j = 0; j < S.length(); j++) {\n            char current_char = S.charAt(j);\n            if (i > 0 && stack[i - 1] == current_char) {\n                i--;\n            } else {\n                stack[i] = current_char;\n                i++;\n            }\n        }\n\n        return new String(stack, 0, i);\n    }\n}\n```\n\nThis implementation uses a stack to remove all adjacent duplicates in a string."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 147,
+    "total_tokens": 1278
+  },
+  "system_fingerprint": "fp_66b29dffce"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnmo3UPMUWBUNRdcLfuyg1X2teXp",
+  "object": "chat.completion",
+  "created": 1719273198,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here's the code for the `Solution` class as seen in the image:\n\n```java\nclass Solution {\n    public int maxProfit(int[] prices) {\n        int min_val = Integer.MAX_VALUE;\n        int max_profit = 0;\n        \n        for (int i = 0; i < prices.length; i++) {\n            if (prices[i] < min_val) {\n                min_val = prices[i];\n            } else if (prices[i] - min_val > max_profit) {\n                max_profit = prices[i] - min_val;\n            }\n        }\n        \n        return max_profit;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 127,
+    "total_tokens": 1258
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

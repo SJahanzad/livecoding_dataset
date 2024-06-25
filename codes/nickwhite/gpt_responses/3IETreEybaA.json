@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnmtRS8zaV5Mg3sbecbzpe8z3Fja",
+  "object": "chat.completion",
+  "created": 1719273203,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the Java code for the `Solution` class as seen in the image:\n\n```java\nimport java.util.HashSet;\n\nclass Solution {\n    public int lengthOfLongestSubstring(String s) {\n        int a_pointer = 0;\n        int b_pointer = 0;\n        int max = 0;\n\n        HashSet<Character> hash_set = new HashSet<>();\n\n        while (b_pointer < s.length()) {\n            if (!hash_set.contains(s.charAt(b_pointer))) {\n                hash_set.add(s.charAt(b_pointer));\n                b_pointer++;\n                max = Math.max(hash_set.size(), max);\n            } else {\n                hash_set.remove(s.charAt(a_pointer));\n                a_pointer++;\n            }\n        }\n\n        return max;\n    }\n}\n```\n\nThis code defines a method `lengthOfLongestSubstring` that finds the length of the longest substring without repeating characters in a given string `s`."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 185,
+    "total_tokens": 1316
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

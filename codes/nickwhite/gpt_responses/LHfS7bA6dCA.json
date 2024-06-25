@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dnhwYqmqTFEAWk5KFvk0DBU0Sx5o",
+  "object": "chat.completion",
+  "created": 1719272896,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public int peakIndexInMountainArray(int[] A) {\n        int left = 0;\n        int right = A.length - 1;\n        \n        while (left < right) {\n            int midpoint = left + (right - left) / 2;\n            if (A[midpoint] < A[midpoint + 1]) {\n                left = midpoint + 1;\n            } else {\n                right = midpoint;\n            }\n        }\n        \n        return right;\n    }\n}\n```\n\nThis code defines a class `Solution` with a method `peakIndexInMountainArray` that finds the peak index in a mountain array using a binary search approach."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 158,
+    "total_tokens": 1289
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

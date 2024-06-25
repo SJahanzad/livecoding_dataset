@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dngndgJr3Knr6Jojl9VsDZyV7Eek",
+  "object": "chat.completion",
+  "created": 1719272825,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here is the code for the class `Solution` from the image:\n\n```java\nclass Solution {\n    public int[] nextGreaterElements(int[] nums) {\n        int n = nums.length;\n        int[] output_arr = new int[n];\n        Arrays.fill(output_arr, -1);\n        \n        Stack<Integer> stack = new Stack<>();\n        \n        for (int i = 0; i < n * 2; i++) {\n            while (!stack.isEmpty() && nums[stack.peek()] < nums[i % n]) {\n                output_arr[stack.pop()] = nums[i % n];\n            }\n            if (i < n) stack.push(i);\n        }\n        \n        return output_arr;\n    }\n}\n```\n\nThis implementation handles the \"Next Greater Element II\" problem using a stack and takes into account the circular nature of the array."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 174,
+    "total_tokens": 1305
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

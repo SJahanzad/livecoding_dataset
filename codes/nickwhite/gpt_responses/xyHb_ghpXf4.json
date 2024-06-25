@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dngIouWqlH9DnDhDuROBtZXlGtfw",
+  "object": "chat.completion",
+  "created": 1719272794,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the `Solution` class that is seen in the image:\n\n```java\nclass Solution {\n    public List<Integer> rightSideView(TreeNode root) {\n        List<Integer> result = new ArrayList<>();\n        Queue<TreeNode> queue = new LinkedList<>();\n        \n        if (root == null) return result;\n        queue.offer(root);\n        \n        while (!queue.isEmpty()) {\n            int size = queue.size();\n            for (int i = 0; i < size; i++) {\n                TreeNode current_node = queue.poll();\n                if (i == 0) result.add(current_node.val);\n                if (current_node.right != null) queue.offer(current_node.right);\n                if (current_node.left != null) queue.offer(current_node.left);\n            }\n        }\n        \n        return result;\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 173,
+    "total_tokens": 1304
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

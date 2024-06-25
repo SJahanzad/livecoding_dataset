@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dngXlFcTQYk18JfBHrxTUphH7eFh",
+  "object": "chat.completion",
+  "created": 1719272809,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the class `Solution` as seen in the image:\n\n```java\nclass Solution {\n    public String licenseKeyFormatting(String S, int K) {\n        S = S.toUpperCase();\n        S = S.replaceAll(\"-\", \"\");\n        \n        StringBuilder sb = new StringBuilder(S);\n        \n        for (int i = S.length() - K; i > 0; i -= K) {\n            sb.insert(i, \"-\");\n        }\n        \n        return sb.toString();\n    }\n}\n```"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 107,
+    "total_tokens": 1238
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}

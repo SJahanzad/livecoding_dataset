@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9dno6SQXFYzyxwLMq765BMux38rh6",
+  "object": "chat.completion",
+  "created": 1719273278,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here's the code for the class `Solution` based on the image:\n\n```java\nclass Solution {\n    public int numIslands(char[][] grid) {\n        int count = 0;\n        for (int i = 0; i < grid.length; i++) {\n            for (int j = 0; j < grid[i].length; j++) {\n                if (grid[i][j] == '1') {\n                    count++;\n                    callBFS(grid, i, j);\n                }\n            }\n        }\n        return count;\n    }\n\n    public void callBFS(char[][] grid, int i, int j) {\n        if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {\n            return;\n        }\n        grid[i][j] = '0';\n        callBFS(grid, i + 1, j); // up\n        callBFS(grid, i - 1, j); // down\n        callBFS(grid, i, j - 1); // left\n        callBFS(grid, i, j + 1); // right\n    }\n}\n```\n\nThis solution employs a breadth-first search (BFS) approach to count the number of islands in a given 2D grid. Each '1' in the grid represents land, while '0' represents water. The `numIslands` method"
+      },
+      "logprobs": null,
+      "finish_reason": "length"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 300,
+    "total_tokens": 1431
+  },
+  "system_fingerprint": "fp_9cb5d38cf7"
+}
