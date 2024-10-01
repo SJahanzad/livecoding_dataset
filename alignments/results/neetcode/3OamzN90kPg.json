@@ -1,0 +1,50 @@
+[
+    {
+        "text": "let's solve contains duplicate this is",
+        "start": 3.439,
+        "duration": 5.361,
+        "code": [
+            "class Solution:"
+        ]
+    },
+    {
+        "text": "we're doing it for every number in the",
+        "start": 88.799,
+        "duration": 3.201,
+        "code": [
+            "hashset = set()"
+        ]
+    },
+    {
+        "text": "going to do is create that hash set in",
+        "start": 316.08,
+        "duration": 5.2,
+        "code": [
+            "if n in hashset:"
+        ]
+    },
+    {
+        "text": "python you can do that just like this",
+        "start": 318.639,
+        "duration": 5.601,
+        "code": [
+            "return True"
+        ]
+    },
+    {
+        "text": "value in the input array nums and",
+        "start": 326.72,
+        "duration": 5.919,
+        "code": [
+            "hashset.add(n)"
+        ]
+    },
+    {
+        "text": "does this value already exist in our",
+        "start": 342.56,
+        "duration": 6.32,
+        "code": [
+            "return False"
+        ]
+    }
+]

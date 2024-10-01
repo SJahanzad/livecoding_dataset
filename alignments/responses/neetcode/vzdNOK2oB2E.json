@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yOPesIkPEoJgVtvWCw7n8kdYqvId",
+        "object": "chat.completion",
+        "created": 1724180550,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Below is the alignment of the transcript and the associated code:\n\n```json\n[\n    {\n        \"text\": \"what we have here right so these three\",\n        \"code\": [\n            \"# Transcript Entry for: let\\'s create our hashmap we\\'ll call it\",\n            \"from collections import defaultdict\",\n            \"ans = defaultdict(list)\"\n        ]\n    },\n    {\n        \"text\": \"are grouped together so we're going to\",\n        \"code\": [\n            \"# Transcript Entry for: go through every string\",\n            \"for s in strs:\"\n        ]\n    },\n    {\n        \"text\": \"use a hash map\",\n        \"code\": [\n            \"# Transcript Entry for: initially a array so it we're going to\",\n            \"count = [0] * 26\"\n        ]\n    },\n    {\n        \"text\": \"of each character it has so we'll have\",\n        \"code\": [\n            \"# Transcript Entry for: go through\",\n            \"for c in s:\",\n            \"count[ord(c) - ord(\\\"a\\\")] += 1\"\n        ]\n    },\n    {\n        \"text\": \"in our result we want to\",\n        \"code\": [\n            \"# Transcript Entry for: add so for this particular count we want to add\",\n            \"ans[tuple(count)].append(s)\"\n        ]\n    },\n    {\n        \"text\": \"for this particular count\",\n        \"code\": [\n            \"# Transcript Entry for: result.values\",\n            \"return ans.values()\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6206,
+            "completion_tokens": 311,
+            "total_tokens": 6517
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yOPkBQ40BD3RIuJ1CNKy2j8iGzVD",
+        "object": "chat.completion",
+        "created": 1724180556,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here is the aligned JSON with the lines of code connected to the respective text entries from the transcript.\n\n```json\n[\n    {\n        \"text\": \"so now in our dictionary we have grouped\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:\",\n            \"        ans = defaultdict(list)\"\n        ]\n    },\n    {\n        \"text\": \"the anagrams together so we just can\",\n        \"code\": [\n            \"        for s in strs:\",\n            \"            count = [0] * 26\",\n            \"            for c in s:\",\n            \"                count[ord(c) - ord(\\\"a\\\")] += 1\",\n            \"            ans[tuple(count)].append(s)\"\n        ]\n    },\n    {\n        \"text\": \"result.values we don't want the keys\",\n        \"code\": [\n            \"        return ans.values()\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 737,
+            "completion_tokens": 200,
+            "total_tokens": 937
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

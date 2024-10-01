@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRlqQTTbsMn7n2uA72Vfk062OO8N",
+        "object": "chat.completion",
+        "created": 1724193458,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here is the revised transcript with the related lines of code added:\n\n```json\n[\n    {\"text\": \"so this one's called\", \"code\": [\"class Solution {\", \"    public int findBottomLeftValue(TreeNode root) {\"]},\n    {\"text\": \"find bottom left tree value so give it a\", \"code\": [\"    public int findBottomLeftValue(TreeNode root) {\"]},\n    {\"text\": \"binary tree find the leftmost value in\", \"code\": [\"        Queue<TreeNode> queue = new LinkedList<>();\"]},\n    {\"text\": \"the last row of a binary tree so yeah we\", \"code\": [\"        queue.offer(root);\"]},\n    {\"text\": \"just want to find the last the left most node in the last row\", \"code\": [\"        while (!queue.isEmpty()) {\"]},\n    {\"text\": \"obviously so to do this we're gonna use aq and all\", \"code\": [\"            root = queue.poll();\"]},\n    {\"text\": \"we're gonna do is basically a traversal\", \"code\": [\"            if (root.right != null) {\"]},\n    {\"text\": \"we just do if routes dot rights is not equal to null\", \"code\": [\"                queue.offer(root.right);\"]},\n    {\"text\": \"we'll add that right child to the queue\", \"code\": [\"            }\"]},\n    {\"text\": \"what we'll do our left traversal afterwards\", \"code\": [\"            if (root.left != null) {\"]},\n    {\"text\": \"we'll add our left notes to the queue at the end\", \"code\": [\"                queue.offer(root.left);\"]},\n    {\"text\": \"when we add all of our left notes to the queue at the end\", \"code\": [\"            }\"]},\n    {\"text\": \"the loop will end with our left notes being pulled off\", \"code\": [\"        }\"]},\n    {\"text\": \"you know we have to do is return our final left node value at the end\", \"code\": [\"        return root.val;\"]},\n    {\"text\": \"which will be rooftop out because\", \"code\": [\"    }\"]},\n    {\"text\": \"return the root bail which will be the\", \"code\": [\"}\"]}\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2534,
+            "completion_tokens": 476,
+            "total_tokens": 3010
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

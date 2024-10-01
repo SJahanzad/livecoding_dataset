@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRNSU7bllZNgA1EuNWQ5AhVEVZkx",
+        "object": "chat.completion",
+        "created": 1724191946,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"so we're given a linked list and all we need to do\",\n        \"code\": [\n            \"# Definition for singly-linked list.\",\n            \"# class ListNode:\",\n            \"#     def __init__(self, val=0, next=None):\",\n            \"#         self.val = val\",\n            \"#         self.next = next\"\n        ]\n    },\n    {\n        \"text\": \"we can use two pointers\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:\",\n            \"        dummy = ListNode(0, head)\",\n            \"        left = dummy\",\n            \"        right = head\"\n        ]\n    },\n    {\n        \"text\": \"so we can shift our left pointer and we can shift our right pointer\",\n        \"code\": [\n            \"        while n > 0:\",\n            \"            right = right.next\",\n            \"            n -= 1\"\n        ]\n    },\n    {\n        \"text\": \"now last but not least we actually want to delete the node and remember all we need to do to delete is update the left node's next pointer\",\n        \"code\": [\n            \"        while right:\",\n            \"            left = left.next\",\n            \"            right = right.next\",\n            \"        left.next = left.next.next\",\n            \"        return dummy.next\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 5534,
+            "completion_tokens": 302,
+            "total_tokens": 5836
+        },
+        "system_fingerprint": "fp_c9aa9c0491"
+    }
+]

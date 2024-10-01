@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLrBDwx28wz7cD0gNAkVvdLlUgU1",
+  "object": "chat.completion",
+  "created": 1724170725,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 12,\n        \"value\": [\n            11,\n            12\n        ]\n    },\n    {\n        \"key\": 13,\n        \"value\": [\n            13\n        ]\n    },\n    {\n        \"key\": 14,\n        \"value\": [\n            5,\n            19\n        ]\n    },\n    {\n        \"key\": 15,\n        \"value\": [\n            13,\n            20\n        ]\n    },\n    {\n        \"key\": 19,\n        \"value\": [\n            11,\n            12\n        ]\n    },\n    {\n        \"key\": 22,\n        \"value\": [\n            21,\n            22,\n            23,\n            24\n        ]\n    },\n    {\n        \"key\": 50,\n        \"value\": [\n            26,\n            27\n        ]\n    },\n    {\n        \"key\": 67,\n        \"value\": [\n            5,\n            19\n        ]\n    },\n    {\n        \"key\": 72,\n        \"value\": [\n            20,\n            21,\n            22,\n            23,\n            24\n        ]\n    },\n    {\n        \"key\": 78,\n        \"value\": [\n            21,\n            22,\n            23,\n            24\n        ]\n    },\n    {\n        \"key\": 84,\n        \"value\": [\n            27,\n            28\n        ]\n    },\n    {\n        \"key\": 87,\n        \"value\": [\n            28,\n            29,\n            30\n        ]\n    },\n    {\n        \"key\": 92,\n        \"value\": [\n            31,\n            32\n        ]\n    },\n    {\n        \"key\": 98,\n        \"value\": [\n            6,\n            14,\n            15,\n            16,\n            17,\n            18,\n            25\n        ]\n    },\n    {\n        \"key\": 102,\n        \"value\": [\n            32,\n            33,\n            34,\n            35,\n            36\n        ]\n    },\n    {\n        \"key\": 109,\n        \"value\": [\n            37,\n            38,\n            39,\n            40,\n            41\n        ]\n    },\n    {\n        \"key\": 120,\n        \"value\": [\n            3,\n            4\n        ]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6533,
+    "completion_tokens": 520,
+    "total_tokens": 7053
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

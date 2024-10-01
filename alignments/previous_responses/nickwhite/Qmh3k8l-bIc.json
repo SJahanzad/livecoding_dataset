@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLuID04DIqy0qPCm4npOobRf57Zx",
+  "object": "chat.completion",
+  "created": 1724170918,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 13,\n        \"value\": [2] // public class Solution {\n    },\n    {\n        \"key\": 7,\n        \"value\": [3] // public int arrayPairSum(int[] nums) {\n    },\n    {\n        \"key\": 49,\n        \"value\": [4] // int[] hash = new int[20001];\n    },\n    {\n        \"key\": 147,\n        \"value\": [5] // for (int ele : nums) {\n    },\n    {\n        \"key\": 150,\n        \"value\": [6] // hash[ele + 10000]++;\n    },\n    {\n        \"key\": 150,\n        \"value\": [7] // }\n    },\n    {\n        \"key\": 33,\n        \"value\": [8] // int sum = 0;\n    },\n    {\n        \"key\": 75,\n        \"value\": [9] // int p = 0;\n    },\n    {\n        \"key\": 179,\n        \"value\": [10] // for (int i = 0; i < 20001; i++) {\n    },\n    {\n        \"key\": 72,\n        \"value\": [11] // if (hash[i] == 0) continue;\n    },\n    {\n        \"key\": 62,\n        \"value\": [12] // while (hash[i] != 0) {\n    },\n    {\n        \"key\": 14,\n        \"value\": [13] // if (p % 2 == 0) {\n    },\n    {\n        \"key\": 72,\n        \"value\": [14] // sum += (i - 10000);\n    },\n    {\n        \"key\": 75,\n        \"value\": [15] // }\n    },\n    {\n        \"key\": 14,\n        \"value\": [16] // p++;\n    },\n    {\n        \"key\": 33,\n        \"value\": [17] // hash[i]--;\n    },\n    {\n        \"key\": 62,\n        \"value\": [18] // }\n    },\n    {\n        \"key\": 179,\n        \"value\": [19] // }\n    },\n    {\n        \"key\": 79,\n        \"value\": [20] // return sum;\n    },\n    {\n        \"key\": 13,\n        \"value\": [21] // }\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2972,
+    "completion_tokens": 510,
+    "total_tokens": 3482
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

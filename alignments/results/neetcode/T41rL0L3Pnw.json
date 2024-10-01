@@ -1,0 +1,656 @@
+[
+    {
+        "text": "column is zero we want to set that",
+        "start": 863.6,
+        "duration": 6.4,
+        "code": [
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "row position to zero as well",
+        "start": 866.639,
+        "duration": 7.121,
+        "code": [
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "but just one catch we cannot set that",
+        "start": 870.0,
+        "duration": 7.04,
+        "code": [
+            "if r > 0",
+            "else:",
+            "rowZero = True"
+        ]
+    },
+    {
+        "text": "if rho 0 is greater than 0 then we do",
+        "start": 887.44,
+        "duration": 3.28,
+        "code": [
+            "if r > 0"
+        ]
+    },
+    {
+        "text": "this",
+        "start": 890.0,
+        "duration": 3.76,
+        "code": [
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "but otherwise we're going to actually",
+        "start": 890.72,
+        "duration": 3.679,
+        "code": [
+            "else:",
+            "rowZero = True"
+        ]
+    },
+    {
+        "text": "update",
+        "start": 893.76,
+        "duration": 3.759,
+        "code": [
+            "rowZero = True"
+        ]
+    },
+    {
+        "text": "this value our boolean so",
+        "start": 894.399,
+        "duration": 5.921,
+        "code": [
+            "rowZero = True"
+        ]
+    },
+    {
+        "text": "we're going to set that to true and so",
+        "start": 897.519,
+        "duration": 3.281,
+        "code": [
+            "rowZero = True"
+        ]
+    },
+    {
+        "text": "every position one more time",
+        "start": 911.92,
+        "duration": 4.479,
+        "code": [
+            "for r in range(1, ROWS):",
+            "for c in range(1, COLS):"
+        ]
+    },
+    {
+        "text": "so every uh row column pair and i'm",
+        "start": 913.68,
+        "duration": 3.68,
+        "code": [
+            "for r in range(1, ROWS):",
+            "for c in range(1, COLS):"
+        ]
+    },
+    {
+        "text": "gonna check",
+        "start": 916.399,
+        "duration": 3.281,
+        "code": [
+            "if matrix[0][c] == 0 or matrix[r][0] == 0:"
+        ]
+    },
+    {
+        "text": "for each position so for this row column",
+        "start": 917.36,
+        "duration": 3.2,
+        "code": [
+            "if matrix[0][c] == 0 or matrix[r][0] == 0:"
+        ]
+    },
+    {
+        "text": "pair is",
+        "start": 919.68,
+        "duration": 3.92,
+        "code": [
+            "if matrix[0][c] == 0 or matrix[r][0] == 0:"
+        ]
+    },
+    {
+        "text": "well see up here we would set the first",
+        "start": 925.12,
+        "duration": 4.88,
+        "code": [
+            "if matrix[0][c] == 0"
+        ]
+    },
+    {
+        "text": "row to zero so if",
+        "start": 928.32,
+        "duration": 5.759,
+        "code": [
+            "if matrix[0][c] == 0"
+        ]
+    },
+    {
+        "text": "the first row value is zero that means",
+        "start": 930.0,
+        "duration": 6.24,
+        "code": [
+            "if matrix[0][c] == 0"
+        ]
+    },
+    {
+        "text": "also",
+        "start": 936.24,
+        "duration": 5.2,
+        "code": [
+            "or matrix[r][0] == 0"
+        ]
+    },
+    {
+        "text": "if the column is zero so if",
+        "start": 937.12,
+        "duration": 7.76,
+        "code": [
+            "or matrix[r][0] == 0"
+        ]
+    },
+    {
+        "text": "then in either of these cases we wanna",
+        "start": 948.16,
+        "duration": 4.32,
+        "code": [
+            "matrix[r][c] = 0"
+        ]
+    },
+    {
+        "text": "set",
+        "start": 951.839,
+        "duration": 3.281,
+        "code": [
+            "matrix[r][c] = 0"
+        ]
+    },
+    {
+        "text": "the current position that we're at to",
+        "start": 952.48,
+        "duration": 3.52,
+        "code": [
+            "matrix[r][c] = 0"
+        ]
+    },
+    {
+        "text": "zero",
+        "start": 955.12,
+        "duration": 3.76,
+        "code": [
+            "matrix[r][c] = 0"
+        ]
+    },
+    {
+        "text": "and so we cannot actually just do this",
+        "start": 956.0,
+        "duration": 5.12,
+        "code": [
+            "for r in range(1, ROWS):",
+            "for c in range(1, COLS):"
+        ]
+    },
+    {
+        "text": "we have to actually skip the first row",
+        "start": 961.12,
+        "duration": 6.88,
+        "code": [
+            "for r in range(1, ROWS):",
+            "for c in range(1, COLS):"
+        ]
+    },
+    {
+        "text": "and we have to skip the first column",
+        "start": 964.88,
+        "duration": 5.84,
+        "code": [
+            "for r in range(1, ROWS):",
+            "for c in range(1, COLS):"
+        ]
+    },
+    {
+        "text": "because we're gonna handle that after so",
+        "start": 968.0,
+        "duration": 4.32,
+        "code": [
+            "if matrix[0][0] == 0:",
+            "for r in range(ROWS):"
+        ]
+    },
+    {
+        "text": "now that we zeroed out",
+        "start": 970.72,
+        "duration": 4.32,
+        "code": [
+            "if matrix[0][0] == 0:",
+            "for r in range(ROWS):"
+        ]
+    },
+    {
+        "text": "the main part of our matrix we can",
+        "start": 972.32,
+        "duration": 3.84,
+        "code": [
+            "if matrix[0][0] == 0:",
+            "for r in range(ROWS):"
+        ]
+    },
+    {
+        "text": "potentially",
+        "start": 975.04,
+        "duration": 3.359,
+        "code": [
+            "for r in range(ROWS):",
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "zero out the first row and the first",
+        "start": 976.16,
+        "duration": 4.479,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):"
+        ]
+    },
+    {
+        "text": "column if we need to so",
+        "start": 978.399,
+        "duration": 5.44,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):"
+        ]
+    },
+    {
+        "text": "for we're gonna check if the",
+        "start": 980.639,
+        "duration": 6.32,
+        "code": [
+            "if matrix[0][0] == 0:"
+        ]
+    },
+    {
+        "text": "origin of our matrix is zero",
+        "start": 983.839,
+        "duration": 5.92,
+        "code": [
+            "if matrix[0][0] == 0:"
+        ]
+    },
+    {
+        "text": "so remember the first row of the matrix",
+        "start": 986.959,
+        "duration": 3.44,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "tells us",
+        "start": 989.759,
+        "duration": 3.041,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "which columns we can zero out so if this",
+        "start": 990.399,
+        "duration": 5.44,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "is equal to zero that means we can set",
+        "start": 992.8,
+        "duration": 3.68,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "every",
+        "start": 995.839,
+        "duration": 4.24,
+        "code": [
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "value we can set every value",
+        "start": 996.48,
+        "duration": 6.96,
+        "code": [
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "in our matrix in the first column",
+        "start": 1000.079,
+        "duration": 6.401,
+        "code": [
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "so i'm gonna say column is zero",
+        "start": 1003.44,
+        "duration": 6.24,
+        "code": [
+            "for r in range(ROWS):",
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "so if the first column in the first row",
+        "start": 1006.48,
+        "duration": 3.599,
+        "code": [
+            "if matrix[0][0] == 0:"
+        ]
+    },
+    {
+        "text": "is zero",
+        "start": 1009.68,
+        "duration": 4.159,
+        "code": [
+            "if matrix[0][0] == 0:"
+        ]
+    },
+    {
+        "text": "then every value so what we're doing",
+        "start": 1010.079,
+        "duration": 6.961,
+        "code": [
+            "for r in range(ROWS):",
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "here is basically zeroing out the first",
+        "start": 1013.839,
+        "duration": 6.641,
+        "code": [
+            "for r in range(ROWS):",
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "column of our matrix and",
+        "start": 1017.04,
+        "duration": 5.76,
+        "code": [
+            "for r in range(ROWS):",
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "last but not least we have to take a",
+        "start": 1020.48,
+        "duration": 3.2,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "look at",
+        "start": 1022.8,
+        "duration": 4.8,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "our last uh variable that we declared so",
+        "start": 1023.68,
+        "duration": 5.84,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "row zero this tells us if we're going to",
+        "start": 1027.6,
+        "duration": 3.439,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "zero out the first",
+        "start": 1029.52,
+        "duration": 4.72,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "row so if row zero is true",
+        "start": 1031.039,
+        "duration": 5.121,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "meaning we have to zero out the first",
+        "start": 1034.24,
+        "duration": 4.719,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "row we're gonna go through every",
+        "start": 1036.16,
+        "duration": 5.919,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "value in the first row",
+        "start": 1038.959,
+        "duration": 6.96,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "and zero it out so matrix of the first",
+        "start": 1042.079,
+        "duration": 4.48,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "row",
+        "start": 1045.919,
+        "duration": 3.76,
+        "code": [
+            "if rowZero:"
+        ]
+    },
+    {
+        "text": "row index zero and every position in",
+        "start": 1046.559,
+        "duration": 3.841,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "that row",
+        "start": 1049.679,
+        "duration": 3.281,
+        "code": [
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "we're gonna zero it out so that's the",
+        "start": 1050.4,
+        "duration": 3.279,
+        "code": [
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "algorithm",
+        "start": 1052.96,
+        "duration": 2.959,
+        "code": [
+            "class Solution:",
+            "def setZeroes(self, matrix: List[List[int]]) -> None:"
+        ]
+    },
+    {
+        "text": "first we've determined which rows and",
+        "start": 1053.679,
+        "duration": 3.681,
+        "code": [
+            "for r in range(ROWS):",
+            "for c in range(COLS):",
+            "if matrix[r][c] == 0:",
+            "matrix[0][c] = 0",
+            "if r > 0:",
+            "matrix[r][0] = 0",
+            "else:",
+            "rowZero = True"
+        ]
+    },
+    {
+        "text": "columns to zero out",
+        "start": 1055.919,
+        "duration": 4.961,
+        "code": [
+            "for r in range(ROWS):",
+            "for c in range(COLS):",
+            "if matrix[r][c] == 0:",
+            "matrix[0][c] = 0",
+            "if r > 0:",
+            "matrix[r][0] = 0",
+            "else:",
+            "rowZero = True"
+        ]
+    },
+    {
+        "text": "then we zero out most of them",
+        "start": 1057.36,
+        "duration": 6.72,
+        "code": [
+            "for r in range(1, ROWS):",
+            "for c in range(1, COLS):",
+            "if matrix[0][c] == 0 or matrix[r][0] == 0:",
+            "matrix[r][c] = 0"
+        ]
+    },
+    {
+        "text": "then we zero out the first column",
+        "start": 1060.88,
+        "duration": 6.4,
+        "code": [
+            "if matrix[0][0] == 0:",
+            "for r in range(ROWS):",
+            "matrix[r][0] = 0"
+        ]
+    },
+    {
+        "text": "if we need to and lastly we zero out the",
+        "start": 1064.08,
+        "duration": 3.839,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "first",
+        "start": 1067.28,
+        "duration": 3.2,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "row if we need to and we don't have to",
+        "start": 1067.919,
+        "duration": 3.521,
+        "code": [
+            "if rowZero:",
+            "for c in range(COLS):",
+            "matrix[0][c] = 0"
+        ]
+    },
+    {
+        "text": "return anything",
+        "start": 1070.48,
+        "duration": 2.88,
+        "code": []
+    },
+    {
+        "text": "because we did this in place which is",
+        "start": 1071.44,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "what the problem wanted us to do",
+        "start": 1073.36,
+        "duration": 4.559,
+        "code": []
+    },
+    {
+        "text": "okay i'm so dumb i don't know why i",
+        "start": 1075.76,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "didn't finish this line of code don't",
+        "start": 1077.919,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "forget to",
+        "start": 1080.0,
+        "duration": 6.72,
+        "code": []
+    },
+    {
+        "text": "put this to zero",
+        "start": 1080.96,
+        "duration": 5.76,
+        "code": []
+    }
+]

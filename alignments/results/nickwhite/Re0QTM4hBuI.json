@@ -1,0 +1,75 @@
+[
+    {
+        "text": "some of a binary search tree given root",
+        "start": 25.8,
+        "duration": 4.2,
+        "code": [
+            "/**",
+            " * Definition for a binary tree node.",
+            " * public class TreeNode {",
+            " *     int val;",
+            " *     TreeNode left;",
+            " *     TreeNode right;",
+            " *     TreeNode(int x) { val = x; }",
+            " * }",
+            " */"
+        ]
+    },
+    {
+        "text": "variable set to 0 at the beginning we're",
+        "start": 56.43,
+        "duration": 4.8,
+        "code": [
+            "int range_sum;"
+        ]
+    },
+    {
+        "text": "added to our range some and then here's",
+        "start": 137.4,
+        "duration": 4.05,
+        "code": [
+            "range_sum += root.val;"
+        ]
+    },
+    {
+        "text": "children anymore and that's pretty much",
+        "start": 201.63,
+        "duration": 4.58,
+        "code": [
+            "}",
+            "public int rangeSumBST(TreeNode root, int L, int R) {",
+            "    range_sum = 0;",
+            "    get_range_sum(root, L, R);",
+            "    return range_sum;",
+            "}"
+        ]
+    },
+    {
+        "text": "updated down below so if root is not",
+        "start": 325.88,
+        "duration": 9.69,
+        "code": [
+            "if (root != null) {"
+        ]
+    },
+    {
+        "text": "children because it's still greater than",
+        "start": 368.509,
+        "duration": 4.011,
+        "code": [
+            "if (root.val > L) {",
+            "    get_range_sum(root.left, L, R);",
+            "}"
+        ]
+    },
+    {
+        "text": "as less than our right hopefully this",
+        "start": 379.87,
+        "duration": 15.22,
+        "code": [
+            "if (root.val < R) {",
+            "    get_range_sum(root.right, L, R);",
+            "}"
+        ]
+    }
+]

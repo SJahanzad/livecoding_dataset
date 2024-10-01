@@ -1,0 +1,99 @@
+[
+    {
+        "text": "traversing this tree and setting the",
+        "start": 103.2,
+        "duration": 4.8,
+        "code": [
+            "class Solution {",
+            "    public void flatten(TreeNode root) {"
+        ]
+    },
+    {
+        "text": "have to do is if root equals no it's",
+        "start": 108.0,
+        "duration": 5.939,
+        "code": [
+            "        if (root == null) return;"
+        ]
+    },
+    {
+        "text": "pretty easy honestly so return a lot",
+        "start": 110.28,
+        "duration": 5.79,
+        "code": [
+            "        Stack<TreeNode> stack = new Stack<>();"
+        ]
+    },
+    {
+        "text": "easier I've seen harder easier problems",
+        "start": 113.939,
+        "duration": 4.53,
+        "code": [
+            "        stack.push(root);"
+        ]
+    },
+    {
+        "text": "and trees than this so then we'll have",
+        "start": 116.07,
+        "duration": 4.229,
+        "code": [
+            "        while (!stack.isEmpty()) {"
+        ]
+    },
+    {
+        "text": "our stack like all the other problems so",
+        "start": 118.469,
+        "duration": 3.451,
+        "code": [
+            "            TreeNode current_node = stack.pop();"
+        ]
+    },
+    {
+        "text": "empty",
+        "start": 129.479,
+        "duration": 2.39,
+        "code": [
+            "            if (current_node.right != null) {",
+            "                stack.push(current_node.right);",
+            "            }"
+        ]
+    },
+    {
+        "text": "so while the stack is an empty pop the",
+        "start": 134.95,
+        "duration": 8.19,
+        "code": [
+            "            if (current_node.left != null) {",
+            "                stack.push(current_node.left);",
+            "            }"
+        ]
+    },
+    {
+        "text": "current node tree node current stack pop",
+        "start": 137.2,
+        "duration": 8.61,
+        "code": [
+            "            if (!stack.isEmpty()) {",
+            "                current_node.right = stack.peek();",
+            "            }"
+        ]
+    },
+    {
+        "text": "and then what we do is since it's a",
+        "start": 143.14,
+        "duration": 5.25,
+        "code": [
+            "            current_node.left = null;",
+            "        }"
+        ]
+    },
+    {
+        "text": "stack we're going to traverse we're",
+        "start": 145.81,
+        "duration": 4.32,
+        "code": [
+            "    }",
+            "}"
+        ]
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "text": "given a paragraph and a list of banned",
+        "start": 23.939,
+        "duration": 5.731,
+        "code": [
+            "    public String mostCommonWord(String paragraph, String[] banned) {"
+        ]
+    },
+    {
+        "text": "words so we're given a string paragraph",
+        "start": 27.599,
+        "duration": 4.17,
+        "code": [
+            "    public String mostCommonWord(String paragraph, String[] banned) {"
+        ]
+    },
+    {
+        "text": "we're gonna make that hash set here",
+        "start": 151.47,
+        "duration": 5.45,
+        "code": [
+            "        HashSet<String> banned_words = new HashSet<>();",
+            "        HashMap<String, Integer> valid_word_counts = new HashMap<>();"
+        ]
+    },
+    {
+        "text": "we're gonna say Pasha of strings banned",
+        "start": 153.06,
+        "duration": 7.17,
+        "code": [
+            "        for (String banned_word : banned) {",
+            "            banned_words.add(banned_word);",
+            "        }"
+        ]
+    },
+    {
+        "text": "so let's fill the fill the hash set with",
+        "start": 197.22,
+        "duration": 6.09,
+        "code": [
+            "        for (String banned_word : banned) {",
+            "            banned_words.add(banned_word);",
+            "        }"
+        ]
+    },
+    {
+        "text": "words we'll just do the classic hash map",
+        "start": 291.84,
+        "duration": 5.73,
+        "code": [
+            "        String[] words = paragraph.toLowerCase().split(\"\\\\W+\");",
+            "        for (String word : words) {",
+            "            if (!banned_words.contains(word)) {",
+            "                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);",
+            "            }",
+            "        }"
+        ]
+    },
+    {
+        "text": "not be in band words before we put it in",
+        "start": 299.76,
+        "duration": 3.03,
+        "code": [
+            "        for (String word : words) {",
+            "            if (!banned_words.contains(word)) {",
+            "                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);",
+            "            }",
+            "        }"
+        ]
+    },
+    {
+        "text": "or is it add I don't know whatever we'll",
+        "start": 216.269,
+        "duration": 4.561,
+        "code": [
+            "        String[] words = paragraph.toLowerCase().split(\"\\\\W+\");",
+            "        for (String word : words) {",
+            "            if (!banned_words.contains(word)) {",
+            "                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);",
+            "            }",
+            "        }"
+        ]
+    }
+]

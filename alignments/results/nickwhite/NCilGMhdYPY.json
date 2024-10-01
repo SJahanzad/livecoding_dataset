@@ -1,0 +1,18 @@
+[
+    {
+        "text": "well head is not equal no had done no",
+        "start": 57.42,
+        "duration": 9.9,
+        "code": [
+            "        while (head != null) {"
+        ]
+    },
+    {
+        "text": "sorry list node next is equal to head next so get head next basically set then",
+        "start": 61.59,
+        "duration": 18.75,
+        "code": [
+            "            ListNode next = head.next;"
+        ]
+    }
+]

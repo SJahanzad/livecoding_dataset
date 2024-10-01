@@ -1,0 +1,827 @@
+[
+    {
+        "text": "remember we don't want to reuse the same",
+        "start": 495.74,
+        "duration": 7.15,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "value in the same position twice so if I",
+        "start": 498.54,
+        "duration": 6.75,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "is greater than zero meaning this isn't",
+        "start": 502.89,
+        "duration": 4.67,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "the first value in the input array and",
+        "start": 505.29,
+        "duration": 6.75,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "this value a is equal to nums",
+        "start": 507.56,
+        "duration": 7.84,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "of I minus 1 that means it's the same",
+        "start": 512.04,
+        "duration": 5.13,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "value as before that means we want to",
+        "start": 515.4,
+        "duration": 3.99,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "continue we don't want to reuse the same",
+        "start": 517.17,
+        "duration": 3.87,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "value twice so we're going to continue",
+        "start": 519.39,
+        "duration": 4.26,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "to the next iteration of the loop next",
+        "start": 521.04,
+        "duration": 3.99,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue"
+        ]
+    },
+    {
+        "text": "we're going to use our two pointer",
+        "start": 523.65,
+        "duration": 3.27,
+        "code": [
+            "l, r = i + 1, len(nums) - 1",
+            "while l < r:"
+        ]
+    },
+    {
+        "text": "solution for the remaining portion of",
+        "start": 525.03,
+        "duration": 4.5,
+        "code": [
+            "l, r = i + 1, len(nums) - 1",
+            "while l < r:"
+        ]
+    },
+    {
+        "text": "the array to basically solve to sum so",
+        "start": 526.92,
+        "duration": 5.07,
+        "code": [
+            "l, r = i + 1, len(nums) - 1",
+            "while l < r:"
+        ]
+    },
+    {
+        "text": "we'll have left and right pointers left",
+        "start": 529.53,
+        "duration": 4.05,
+        "code": [
+            "l, r = i + 1, len(nums) - 1",
+            "while l < r:"
+        ]
+    },
+    {
+        "text": "will initially be I've",
+        "start": 531.99,
+        "duration": 5.31,
+        "code": [
+            "l, r = i + 1, len(nums) - 1"
+        ]
+    },
+    {
+        "text": "plus one right will be the end of the",
+        "start": 533.58,
+        "duration": 8.19,
+        "code": [
+            "l, r = i + 1, len(nums) - 1"
+        ]
+    },
+    {
+        "text": "list length minus one left and right",
+        "start": 537.3,
+        "duration": 6.69,
+        "code": [
+            "l, r = i + 1, len(nums) - 1"
+        ]
+    },
+    {
+        "text": "can't be equal so we're gonna say left",
+        "start": 541.77,
+        "duration": 4.32,
+        "code": [
+            "while l < r:"
+        ]
+    },
+    {
+        "text": "is less than right now we're going to",
+        "start": 543.99,
+        "duration": 4.2,
+        "code": [
+            "while l < r:"
+        ]
+    },
+    {
+        "text": "actually compute the sums so we'll say",
+        "start": 546.09,
+        "duration": 7.02,
+        "code": [
+            "threeSum = a + nums[l] + nums[r]"
+        ]
+    },
+    {
+        "text": "our three sum is a plus numbers of left",
+        "start": 548.19,
+        "duration": 11.31,
+        "code": [
+            "threeSum = a + nums[l] + nums[r]"
+        ]
+    },
+    {
+        "text": "plus numbers of right so if the sum is",
+        "start": 553.11,
+        "duration": 11.34,
+        "code": [
+            "threeSum = a + nums[l] + nums[r]"
+        ]
+    },
+    {
+        "text": "too great remember if it's greater than",
+        "start": 559.5,
+        "duration": 6.57,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "zero which is what we're looking for",
+        "start": 564.45,
+        "duration": 3.75,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "then we need to decrease it in which",
+        "start": 566.07,
+        "duration": 3.93,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "case we would say our right pointer",
+        "start": 568.2,
+        "duration": 5.43,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "needs to be decremented on the other",
+        "start": 570.0,
+        "duration": 6.6,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "hand if it's too small we need to make",
+        "start": 573.63,
+        "duration": 4.08,
+        "code": [
+            "elif threeSum < 0:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "the sum bigger",
+        "start": 576.6,
+        "duration": 6.69,
+        "code": [
+            "elif threeSum < 0:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "if only I could type today if it's too",
+        "start": 577.71,
+        "duration": 7.41,
+        "code": [
+            "elif threeSum < 0:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "small we need to make it bigger so shift",
+        "start": 583.29,
+        "duration": 5.49,
+        "code": [
+            "elif threeSum < 0:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "our left pointer to the right the last",
+        "start": 585.12,
+        "duration": 6.81,
+        "code": [
+            "elif threeSum < 0:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "case is if this is equal to zero so of",
+        "start": 588.78,
+        "duration": 4.8,
+        "code": [
+            "else:",
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "course we have to add it to our result",
+        "start": 591.93,
+        "duration": 3.27,
+        "code": [
+            "else:",
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "so to our result we're going to append",
+        "start": 593.58,
+        "duration": 4.11,
+        "code": [
+            "else:",
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "all three numbers so the numbers are a",
+        "start": 595.2,
+        "duration": 7.98,
+        "code": [
+            "else:",
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "number of left and nums of right now of",
+        "start": 597.69,
+        "duration": 7.11,
+        "code": [
+            "else:",
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "course we got to update our pointers",
+        "start": 603.18,
+        "duration": 3.63,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "about how do we update it there's a lot",
+        "start": 604.8,
+        "duration": 3.45,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "of ways you can do it but I'm going to",
+        "start": 606.81,
+        "duration": 3.3,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "show you the way that you can do it with",
+        "start": 608.25,
+        "duration": 4.26,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "writing the minimal amount of code so",
+        "start": 610.11,
+        "duration": 4.17,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "let me just write a comment to show you",
+        "start": 612.51,
+        "duration": 4.32,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "a little bit what if we had the to sum",
+        "start": 614.28,
+        "duration": 4.68,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "basically for these left and right and",
+        "start": 616.83,
+        "duration": 5.7,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "we were at negative 2 negative 2 so",
+        "start": 618.96,
+        "duration": 9.45,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "negative 2 0 0 2 & 2 what if our left",
+        "start": 622.53,
+        "duration": 7.8,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "pointer was here and our right pointer",
+        "start": 628.41,
+        "duration": 3.78,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "was here in that case we might have we",
+        "start": 630.33,
+        "duration": 3.75,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "found a solution let's say right then",
+        "start": 632.19,
+        "duration": 3.87,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "we'd want to update our left pointer",
+        "start": 634.08,
+        "duration": 3.45,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "right so then our left pointer gets to",
+        "start": 636.06,
+        "duration": 3.9,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "negative 2 again but that's the same one",
+        "start": 637.53,
+        "duration": 4.35,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "as before so in that case we want to",
+        "start": 639.96,
+        "duration": 3.9,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "update it one more time to get it over",
+        "start": 641.88,
+        "duration": 4.68,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "here right now in that case now our sum",
+        "start": 643.86,
+        "duration": 3.87,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "is going to be too big because we're",
+        "start": 646.56,
+        "duration": 3.39,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "going to be at 0 plus 2 so that's",
+        "start": 647.73,
+        "duration": 5.46,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "greater than 0 so then our loop is gonna",
+        "start": 649.95,
+        "duration": 5.64,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "execute saying that this is too big and",
+        "start": 653.19,
+        "duration": 3.78,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "we're gonna shift the right pointer to",
+        "start": 655.59,
+        "duration": 3.69,
+        "code": [
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "the left but notice how that right value",
+        "start": 656.97,
+        "duration": 4.38,
+        "code": [
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "is now the same as it previously was to",
+        "start": 659.28,
+        "duration": 3.36,
+        "code": [
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "but that's ok",
+        "start": 661.35,
+        "duration": 4.5,
+        "code": [
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "because our sum is gonna our sum is",
+        "start": 662.64,
+        "duration": 4.8,
+        "code": [
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "going to evaluate as too big",
+        "start": 665.85,
+        "duration": 2.67,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "to our right corner is going to be",
+        "start": 667.44,
+        "duration": 3.75,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "shifted again notice how each value is",
+        "start": 668.52,
+        "duration": 4.92,
+        "code": [
+            "if threeSum > 0:",
+            "r -= 1"
+        ]
+    },
+    {
+        "text": "only going to have one corresponding",
+        "start": 671.19,
+        "duration": 4.92,
+        "code": [
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "value that it can sum equal to the",
+        "start": 673.44,
+        "duration": 4.98,
+        "code": [
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "target which is zero so we only have to",
+        "start": 676.11,
+        "duration": 5.07,
+        "code": [
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "update one pointer and there are two",
+        "start": 678.42,
+        "duration": 4.8,
+        "code": [
+            "l += 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "conditions up here we'll update the",
+        "start": 681.18,
+        "duration": 4.11,
+        "code": [
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "other pointer by itself we don't even",
+        "start": 683.22,
+        "duration": 3.24,
+        "code": [
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "have to worry about it",
+        "start": 685.29,
+        "duration": 3.03,
+        "code": [
+            "res.append([a, nums[l], nums[r]])"
+        ]
+    },
+    {
+        "text": "so in this case we're only going to",
+        "start": 686.46,
+        "duration": 4.11,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "shift our left pointer because we don't",
+        "start": 688.32,
+        "duration": 3.93,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "want to have the same sum we're gonna",
+        "start": 690.57,
+        "duration": 4.44,
+        "code": [
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "have to use a loop so in this case if",
+        "start": 692.25,
+        "duration": 6.6,
+        "code": [
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "nums of left is equal to num of left",
+        "start": 695.01,
+        "duration": 7.41,
+        "code": [
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "minus one that means it's the same value",
+        "start": 698.85,
+        "duration": 6.2,
+        "code": [
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "so we have to keep shifting our pointer",
+        "start": 702.42,
+        "duration": 5.1,
+        "code": [
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "but remember we don't want our left",
+        "start": 705.05,
+        "duration": 4.36,
+        "code": [
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "pointer to ever pass the right pointer",
+        "start": 707.52,
+        "duration": 3.89,
+        "code": [
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "so we're gonna add that to the condition",
+        "start": 709.41,
+        "duration": 4.86,
+        "code": [
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "so this is all we need to do now I",
+        "start": 711.41,
+        "duration": 5.11,
+        "code": [
+            "if i > 0 and a == nums[i - 1]:",
+            "continue",
+            "l, r = i + 1, len(nums) - 1",
+            "while l < r:",
+            "threeSum = a + nums[l] + nums[r]",
+            "if threeSum > 0:",
+            "r -= 1",
+            "elif threeSum < 0:",
+            "l += 1",
+            "else:",
+            "res.append([a, nums[l], nums[r]])",
+            "l += 1",
+            "r -= 1",
+            "while nums[l] == nums[l - 1] and l < r:",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "believe unless I've made another stupid",
+        "start": 714.27,
+        "duration": 5.04,
+        "code": [
+            "return res"
+        ]
+    }
+]

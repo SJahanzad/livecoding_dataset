@@ -1,0 +1,65 @@
+[
+    {
+        "text": "let's solve the problem decode ways so",
+        "start": 3.76,
+        "duration": 5.36,
+        "code": [
+            "# Memoization solution",
+            "class Solution:",
+            "    def numDecodings(self, s: str) -> int:"
+        ]
+    },
+    {
+        "text": "plus two we actually called the",
+        "start": 900.16,
+        "duration": 4.32,
+        "code": [
+            "if i + 1 < len(s) and (",
+            "    s[i] == \"1\" or s[i] == \"2\" and s[i + 1] in \"0123456\"",
+            "):",
+            "    res += dfs(i + 2)"
+        ]
+    },
+    {
+        "text": "recursive function dfs so this the logic",
+        "start": 901.68,
+        "duration": 4.56,
+        "code": [
+            "def dfs(i):",
+            "    if i in dp:",
+            "        return dp[i]",
+            "    if s[i] == \"0\":",
+            "        return 0",
+            "    res = dfs(i + 1)"
+        ]
+    },
+    {
+        "text": "is definitely pretty similar and in this",
+        "start": 904.48,
+        "duration": 4.0,
+        "code": [
+            "# Dynamic Programming solution",
+            "# class Solution:",
+            "#     def numDecodings(self, s: str) -> int:",
+            "#         dp = {len(s): 1}",
+            "#         for i in range(len(s) - 1, -1, -1):",
+            "#             if s[i] == \"0\":",
+            "#                 dp[i] = 0",
+            "#             else:",
+            "#                 dp[i] = dp[i + 1]",
+            "#             if i + 1 < len(s) and (",
+            "#                 s[i] == \"1\" or s[i] == \"2\" and s[i + 1] in \"0123456\"",
+            "#             ):",
+            "#                 dp[i] += dp[i + 2]",
+            "#         return dp[0]"
+        ]
+    },
+    {
+        "text": "solution at least the memory is o of n",
+        "start": 906.24,
+        "duration": 4.399,
+        "code": [
+            "dp = {len(s): 1}"
+        ]
+    }
+]

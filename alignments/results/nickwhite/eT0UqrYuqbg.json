@@ -1,0 +1,541 @@
+[
+    {
+        "text": "length is equal to zero we'll just",
+        "start": 168.98,
+        "duration": 5.13,
+        "code": [
+            "if (matrix.length == 0) return false;"
+        ]
+    },
+    {
+        "text": "return false and then in like every",
+        "start": 171.74,
+        "duration": 3.93,
+        "code": [
+            "if (matrix.length == 0) return false;"
+        ]
+    },
+    {
+        "text": "other 2d array problem we'll just get",
+        "start": 174.11,
+        "duration": 3.54,
+        "code": [
+            "int rows = matrix.length;",
+            "int columns = matrix[0].length;"
+        ]
+    },
+    {
+        "text": "our number of rows so we'll do matrix",
+        "start": 175.67,
+        "duration": 4.85,
+        "code": [
+            "int rows = matrix.length;"
+        ]
+    },
+    {
+        "text": "domain we'll get our number of columns",
+        "start": 177.65,
+        "duration": 9.57,
+        "code": [
+            "int columns = matrix[0].length;"
+        ]
+    },
+    {
+        "text": "matrix of zero down and we will start",
+        "start": 180.52,
+        "duration": 7.96,
+        "code": [
+            "int rows = matrix.length;",
+            "int columns = matrix[0].length;"
+        ]
+    },
+    {
+        "text": "our binary search so hopefully you guys",
+        "start": 187.22,
+        "duration": 2.94,
+        "code": [
+            "int left = 0;",
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "are familiar with a binary search do you",
+        "start": 188.48,
+        "duration": 5.67,
+        "code": [
+            "while (left <= right) {",
+            "  int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "have a left you have a right right is",
+        "start": 190.16,
+        "duration": 6.87,
+        "code": [
+            "int left = 0;",
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "usually the very end of the array so in",
+        "start": 194.15,
+        "duration": 5.28,
+        "code": [
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "this case we would imagine you know in a",
+        "start": 197.03,
+        "duration": 4.5,
+        "code": [
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "like oh look 11 right in the middle so",
+        "start": 120.78,
+        "duration": 3.78,
+        "code": [
+            "int midpoint = left + (right - left) / 2;",
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "you just check the middle each time and",
+        "start": 122.82,
+        "duration": 3.509,
+        "code": [
+            "int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "then you make a decision to cut out 1/2",
+        "start": 124.56,
+        "duration": 4.02,
+        "code": [
+            "if (midpoint_element == target) {",
+            "  return true;",
+            "} else if (target < midpoint_element) {",
+            "  right = midpoint - 1;",
+            "} else if (target > midpoint_element) {",
+            "  left = midpoint + 1;",
+            "}"
+        ]
+    },
+    {
+        "text": "to right you calculate a midpoint so the",
+        "start": 236.51,
+        "duration": 4.74,
+        "code": [
+            "int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "middle element of the Ray and we're",
+        "start": 239.45,
+        "duration": 4.17,
+        "code": [
+            "int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "imagining it as 1d array so we have the",
+        "start": 241.25,
+        "duration": 4.86,
+        "code": [
+            "int midpoint = left + (right - left) / 2;",
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "bottom right corner we have this top",
+        "start": 246.11,
+        "duration": 4.02,
+        "code": [
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "left corner right left is the top left",
+        "start": 248.12,
+        "duration": 3.929,
+        "code": [
+            "int left = 0;"
+        ]
+    },
+    {
+        "text": "right is the bottom right and we want",
+        "start": 250.13,
+        "duration": 3.99,
+        "code": [
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "the middle so we're gonna grab something",
+        "start": 252.049,
+        "duration": 4.861,
+        "code": [
+            "int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "like 11 right so we'll do midpoint is",
+        "start": 254.12,
+        "duration": 5.88,
+        "code": [
+            "int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "so right as in 12 it's 11 so 0 plus 11 /",
+        "start": 439.69,
+        "duration": 5.55,
+        "code": [
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "matrix of 5 is not that would be the",
+        "start": 448.42,
+        "duration": 7.29,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "row number you the midpoint divided by",
+        "start": 594.339,
+        "duration": 5.581,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "columns will easily give us the row",
+        "start": 597.97,
+        "duration": 6.78,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "number because it'll be the number of",
+        "start": 599.92,
+        "duration": 6.81,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "rows it's so it's so obvious it's almost",
+        "start": 604.75,
+        "duration": 4.26,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "divided by the number of columns it's",
+        "start": 609.01,
+        "duration": 5.19,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "just like obviously that's going to give",
+        "start": 611.529,
+        "duration": 4.5,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "us the number of rows and modulus the",
+        "start": 614.2,
+        "duration": 3.36,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "number of columns gives us the position",
+        "start": 616.029,
+        "duration": 3.031,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "I don't really even know how to explain",
+        "start": 617.56,
+        "duration": 4.23,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "it any better than that like it's so",
+        "start": 619.06,
+        "duration": 4.74,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "obvious please just like look at it and",
+        "start": 621.79,
+        "duration": 7.08,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "like think about it I mean just because",
+        "start": 623.8,
+        "duration": 10.14,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "like if it's 5 and you divide by it's so",
+        "start": 628.87,
+        "duration": 6.57,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "midpoint value in a 1d array divided by",
+        "start": 661.329,
+        "duration": 4.06,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "the column",
+        "start": 664.24,
+        "duration": 2.949,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "wrong it's mid Pont know we want",
+        "start": 535.18,
+        "duration": 6.78,
+        "code": [
+            "int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "midpoint so sorry about that let's do",
+        "start": 538.45,
+        "duration": 6.02,
+        "code": [
+            "int midpoint = left + (right - left) / 2;"
+        ]
+    },
+    {
+        "text": "binary search 100% of solutions would be",
+        "start": 547.99,
+        "duration": 5.34,
+        "code": [
+            "class Solution {\n    public boolean searchMatrix(int[][] matrix, int target) {",
+            "if (matrix.length == 0) return false;",
+            "int rows = matrix.length;",
+            "int columns = matrix[0].length;",
+            "int left = 0;",
+            "int right = rows * columns - 1;"
+        ]
+    },
+    {
+        "text": "tit and the midpoint element why do we",
+        "start": 550.39,
+        "duration": 5.78,
+        "code": [
+            "while (left <= right) {",
+            "int midpoint = left + (right - left) / 2;",
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "have to do this well let's look the",
+        "start": 553.33,
+        "duration": 5.64,
+        "code": [
+            "if (midpoint_element == target) {",
+            "return true;",
+            "} else if (target < midpoint_element) {",
+            "right = midpoint - 1;",
+            "} else if (target > midpoint_element) {",
+            "left = midpoint + 1;",
+            "}"
+        ]
+    },
+    {
+        "text": "get this in a 2d array we would do 5",
+        "start": 564.88,
+        "duration": 6.149,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "divided by columns and what is columns",
+        "start": 567.82,
+        "duration": 7.44,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "modulus columns is five modules columns",
+        "start": 581.23,
+        "duration": 7.14,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "about it you have to divide to get the",
+        "start": 591.1,
+        "duration": 6.87,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "row number you the midpoint divided by",
+        "start": 594.339,
+        "duration": 5.581,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "columns will easily give us the row",
+        "start": 597.97,
+        "duration": 6.78,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "just like obviously that's going to give",
+        "start": 611.529,
+        "duration": 4.5,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "us the number of rows and modulus the",
+        "start": 614.2,
+        "duration": 3.36,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "number of columns gives us the position",
+        "start": 616.029,
+        "duration": 3.031,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "midpoint value in a 1d array divided by",
+        "start": 661.329,
+        "duration": 4.06,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "the column",
+        "start": 664.24,
+        "duration": 2.949,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "you're gonna get the perfect row like",
+        "start": 665.389,
+        "duration": 2.88,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "really hope you do and then modulus is",
+        "start": 669.889,
+        "duration": 4.11,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "is in that column too because it's just",
+        "start": 673.999,
+        "duration": 4.44,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "and there's four columns that we know",
+        "start": 678.439,
+        "duration": 3.601,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "one remainder after that division so",
+        "start": 682.04,
+        "duration": 4.83,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "it's pretty obvious I think I explained",
+        "start": 686.87,
+        "duration": 3.99,
+        "code": [
+            "int midpoint_element = matrix[midpoint / columns][midpoint % columns];"
+        ]
+    },
+    {
+        "text": "it well enough but yeah that's how you",
+        "start": 689.42,
+        "duration": 2.88,
+        "code": [
+            "}"
+        ]
+    },
+    {
+        "text": "do a binary search I didn't even know",
+        "start": 690.86,
+        "duration": 3.18,
+        "code": [
+            "return false;",
+            "}"
+        ]
+    },
+    {
+        "text": "you could do a logarithmic binary search",
+        "start": 692.3,
+        "duration": 3.57,
+        "code": [
+            "}"
+        ]
+    }
+]

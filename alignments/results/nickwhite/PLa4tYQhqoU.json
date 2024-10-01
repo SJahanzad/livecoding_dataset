@@ -1,0 +1,41 @@
+[
+    {
+        "text": "because binary encoding if you didn't",
+        "start": 29.609,
+        "duration": 7.29,
+        "code": [
+            "        int max = 0;",
+            "        int current_number_of_ones = 0;"
+        ]
+    },
+    {
+        "text": "know zeros and ones and you output the",
+        "start": 32.13,
+        "duration": 7.53,
+        "code": [
+            "        for (int i=0; i<nums.length; i++) {"
+        ]
+    },
+    {
+        "text": "questions oppression it's pretty easy and I'm doing the premium I got premium",
+        "start": 212.79,
+        "duration": 10.02,
+        "code": [
+            "class Solution {",
+            "    public int findMaxConsecutiveOnes(int[] nums) {",
+            "        int max = 0;",
+            "        int current_number_of_ones = 0;",
+            "        for (int i=0; i<nums.length; i++) {",
+            "            if (nums[i] == 1) {",
+            "                current_number_of_ones += 1;",
+            "                max = Math.max(max, current_number_of_ones);",
+            "            } else {",
+            "                current_number_of_ones = 0;",
+            "            }",
+            "        }",
+            "        return max;",
+            "    }",
+            "}"
+        ]
+    }
+]

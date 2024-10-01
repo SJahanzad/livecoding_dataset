@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRl1RZMYUMQUbkTjit8OAvE5a3BT",
+        "object": "chat.completion",
+        "created": 1724193407,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure! Here's the alignment of the code with the transcript:\n\n```json\n[\n    {\n        \"text\": \"hey what's a Knick white a Tekken I do\",\n        \"code\": [\n            \"class Solution {\"\n        ]\n    },\n    {\n        \"text\": \"this is called reversed\",\n        \"code\": [\n            \"public String reverseOnlyLetters(String S) {\"\n        ]\n    },\n    {\n        \"text\": \"so we're gonna stack\",\n        \"code\": [\n            \"StringBuilder reversed_string = new StringBuilder();\",\n            \"int j = S.length() - 1;\"\n        ]\n    },\n    {\n        \"text\": \"literally just call the method is letter\",\n        \"code\": [\n            \"for (int i = 0; i < S.length(); i++) {\",\n            \"if (Character.isLetter(S.charAt(i))) {\",\n            \"while (!Character.isLetter(S.charAt(j))) {\",\n            \"j--;\",\n            \"}\",\n            \"reversed_string.append(S.charAt(j));\",\n            \"j--;\",\n            \"} else {\",\n            \"reversed_string.append(S.charAt(i));\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"easier way to see how it's working and\",\n        \"code\": [\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"return a\",\n        \"code\": [\n            \"return reversed_string.toString();\"\n        ]\n    },\n    {\n        \"text\": \"that's pretty much it that's the\",\n        \"code\": [\n            \"}\"\n        ]\n    }\n]\n```\n\nThis should correctly align the segments of the code with the parts of the transcript discussing those segments.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 5152,
+            "completion_tokens": 350,
+            "total_tokens": 5502
+        },
+        "system_fingerprint": "fp_df84d6bd70"
+    }
+]

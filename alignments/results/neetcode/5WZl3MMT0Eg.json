@@ -1,0 +1,20 @@
+[
+    {
+        "text": "so we can initialize our Max sub-array to the first value in the array that's",
+        "start": 400.639,
+        "duration": 8.791,
+        "code": [
+            "class Solution:",
+            "    def maxSubArray(self, nums: List[int]) -> int:",
+            "        res = nums[0]"
+        ]
+    },
+    {
+        "text": "so let's go through each number in nomes",
+        "start": 425.349,
+        "duration": 5.13,
+        "code": [
+            "        for n in nums:"
+        ]
+    }
+]

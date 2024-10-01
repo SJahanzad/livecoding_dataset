@@ -1,0 +1,77 @@
+[
+    {
+        "text": "so basically we're given the head of a",
+        "start": 47.76,
+        "duration": 3.119,
+        "code": [
+            "class Solution:",
+            "    def hasCycle(self, head: Optional[ListNode]) -> bool:"
+        ]
+    },
+    {
+        "text": "linked list",
+        "start": 50.0,
+        "duration": 2.719,
+        "code": [
+            "slow, fast = head, head"
+        ]
+    },
+    {
+        "text": "so the solution is really as simple as",
+        "start": 629.92,
+        "duration": 3.039,
+        "code": [
+            "while fast and fast.next:",
+            "    slow = slow.next",
+            "    fast = fast.next.next",
+            "    if slow == fast:",
+            "        return True",
+            "return False"
+        ]
+    },
+    {
+        "text": "the code is usually pretty easy to write",
+        "start": 558.24,
+        "duration": 4.48,
+        "code": [
+            "# Definition for singly-linked list.",
+            "# class ListNode:",
+            "#     def __init__(self, val=0, next=None):",
+            "#         self.val = val",
+            "#         self.next = next"
+        ]
+    },
+    {
+        "text": "let's get into that now so like i said",
+        "start": 560.16,
+        "duration": 4.16,
+        "code": [
+            "class Solution:",
+            "    def hasCycle(self, head: Optional[ListNode]) -> bool:"
+        ]
+    },
+    {
+        "text": "we're going to start our slow and fast",
+        "start": 562.72,
+        "duration": 3.44,
+        "code": [
+            "        slow, fast = head, head"
+        ]
+    },
+    {
+        "text": "and now if we if they meet each other",
+        "start": 614.399,
+        "duration": 6.241,
+        "code": [
+            "            if slow == fast:"
+        ]
+    },
+    {
+        "text": "then we can return true there does exist",
+        "start": 620.64,
+        "duration": 4.08,
+        "code": [
+            "                return True"
+        ]
+    }
+]

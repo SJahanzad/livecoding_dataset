@@ -1,0 +1,114 @@
+[
+    {
+        "text": "this one's called swab nodes in pairs",
+        "start": 12.78,
+        "duration": 5.28,
+        "code": [
+            "public ListNode swapPairs(ListNode head) {"
+        ]
+    },
+    {
+        "text": "given a linked list swap every two adjacent nodes and return its head you",
+        "start": 15.619,
+        "duration": 7.961,
+        "code": [
+            "public ListNode swapPairs(ListNode head) {"
+        ]
+    },
+    {
+        "text": "declare a temp node because we're actually going to be f2 set we're gonna",
+        "start": 39.66,
+        "duration": 8.789,
+        "code": [
+            "ListNode temp = new ListNode(0);"
+        ]
+    },
+    {
+        "text": "have come to our next point to head just so we have a kind of a reference to head",
+        "start": 95.28,
+        "duration": 13.949,
+        "code": [
+            "temp.next = head;"
+        ]
+    },
+    {
+        "text": "and then we're gonna also have a list node current equals 10",
+        "start": 102.06,
+        "duration": 15.951,
+        "code": [
+            "ListNode current = temp;"
+        ]
+    },
+    {
+        "text": "be the nose we swap we're gonna say listen over the first node is equal to",
+        "start": 126.63,
+        "duration": 9.29,
+        "code": [
+            "ListNode first_node = current.next;"
+        ]
+    },
+    {
+        "text": "current",
+        "start": 131.79,
+        "duration": 4.97,
+        "code": [
+            "ListNode first_node = current.next;"
+        ]
+    },
+    {
+        "text": "next list node second node is equal to current dot next done next so we grab",
+        "start": 132.65,
+        "duration": 14.159,
+        "code": [
+            "ListNode second_node = current.next.next;"
+        ]
+    },
+    {
+        "text": "then we set first node dot next equal to second node next like I said earlier",
+        "start": 142.58,
+        "duration": 8.939,
+        "code": [
+            "first_node.next = second_node.next;"
+        ]
+    },
+    {
+        "text": "that's basically taking this first node and it's setting the next to that and it",
+        "start": 147.349,
+        "duration": 10.862,
+        "code": [
+            "first_node.next = second_node.next;"
+        ]
+    },
+    {
+        "text": "order here cuz current dot next was first node now it's gonna be second node",
+        "start": 182.239,
+        "duration": 10.440999999999999,
+        "code": [
+            "current.next = second_node;"
+        ]
+    },
+    {
+        "text": "as we loop through this length list and",
+        "start": 204.38,
+        "duration": 5.37,
+        "code": [
+            "current = current.next.next;"
+        ]
+    },
+    {
+        "text": "that's pretty much it all you have to do is return temp dot next because temps",
+        "start": 208.43,
+        "duration": 8.49,
+        "code": [
+            "}"
+        ]
+    },
+    {
+        "text": "next reference was to the head of the",
+        "start": 211.97,
+        "duration": 5.22,
+        "code": [
+            "return temp.next;"
+        ]
+    }
+]

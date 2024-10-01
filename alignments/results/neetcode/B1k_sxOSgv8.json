@@ -1,0 +1,896 @@
+[
+    {
+        "text": "function it's a little bit easier so",
+        "start": 433.36,
+        "duration": 3.679,
+        "code": [
+            "def encode(self, strs: List[str]) -> str:"
+        ]
+    },
+    {
+        "text": "remember we're given a list of strings",
+        "start": 435.199,
+        "duration": 4.4,
+        "code": [
+            "def encode(self, strs: List[str]) -> str:"
+        ]
+    },
+    {
+        "text": "and we want to encode it into a single",
+        "start": 437.039,
+        "duration": 4.481,
+        "code": [
+            "res = \"\"",
+            "for s in strs:"
+        ]
+    },
+    {
+        "text": "we're going to go string by string in",
+        "start": 441.52,
+        "duration": 5.119,
+        "code": [
+            "for s in strs:"
+        ]
+    },
+    {
+        "text": "the input and to the result we want to",
+        "start": 443.36,
+        "duration": 6.399,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "append this encoded string s how are we",
+        "start": 446.639,
+        "duration": 5.12,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "encoding it again well remember we're",
+        "start": 449.759,
+        "duration": 4.56,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "going to take the length of the string",
+        "start": 451.759,
+        "duration": 4.56,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "and you know this the length of the",
+        "start": 454.319,
+        "duration": 3.361,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "string is going to be an integer but we",
+        "start": 456.319,
+        "duration": 4.0,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "want to transform that into a string so",
+        "start": 457.68,
+        "duration": 4.56,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "let's do that in python pretty easily",
+        "start": 460.319,
+        "duration": 3.28,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "just like this",
+        "start": 462.24,
+        "duration": 2.32,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "plus",
+        "start": 463.599,
+        "duration": 2.561,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "we want to add the delimiter to the",
+        "start": 464.56,
+        "duration": 3.6,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "pound sign so we have the length of the",
+        "start": 466.16,
+        "duration": 4.479,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "string followed by the delimiter pound",
+        "start": 468.16,
+        "duration": 6.0,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "sign followed by the string itself s so",
+        "start": 470.639,
+        "duration": 5.441,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "then you know this is kind of the format",
+        "start": 474.16,
+        "duration": 4.4,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "that we agreed upon this is how we're",
+        "start": 476.08,
+        "duration": 3.76,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "going to be encoding it because it's",
+        "start": 478.56,
+        "duration": 3.039,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "going to be easy for us to decode this",
+        "start": 479.84,
+        "duration": 2.96,
+        "code": [
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "as well so we're going to do this for",
+        "start": 481.599,
+        "duration": 3.28,
+        "code": [
+            "for s in strs:",
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "every single string in the input add it",
+        "start": 482.8,
+        "duration": 3.839,
+        "code": [
+            "for s in strs:",
+            "res += str(len(s)) + \"#\" + s"
+        ]
+    },
+    {
+        "text": "to the result and then we can go ahead",
+        "start": 484.879,
+        "duration": 4.961,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "and return that result so encode was",
+        "start": 486.639,
+        "duration": 4.801,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "pretty straightforward d decode is going",
+        "start": 489.84,
+        "duration": 3.6,
+        "code": [
+            "def decode(self, s: str) -> List[str]:"
+        ]
+    },
+    {
+        "text": "to be a little bit more tricky but we",
+        "start": 491.44,
+        "duration": 4.24,
+        "code": [
+            "def decode(self, s: str) -> List[str]:"
+        ]
+    },
+    {
+        "text": "know the rules that we can follow so",
+        "start": 493.44,
+        "duration": 4.08,
+        "code": [
+            "def decode(self, s: str) -> List[str]:"
+        ]
+    },
+    {
+        "text": "this time we're given a single string a",
+        "start": 495.68,
+        "duration": 4.16,
+        "code": [
+            "def decode(self, s: str) -> List[str]:"
+        ]
+    },
+    {
+        "text": "single encoded string which is going to",
+        "start": 497.52,
+        "duration": 4.239,
+        "code": [
+            "def decode(self, s: str) -> List[str]:"
+        ]
+    },
+    {
+        "text": "be you know encoded using the function",
+        "start": 499.84,
+        "duration": 3.44,
+        "code": [
+            "def decode(self, s: str) -> List[str]:"
+        ]
+    },
+    {
+        "text": "that we just wrote so how are we going",
+        "start": 501.759,
+        "duration": 3.761,
+        "code": [
+            "def decode(self, s: str) -> List[str]:"
+        ]
+    },
+    {
+        "text": "to decode it into a list of strings in",
+        "start": 503.28,
+        "duration": 4.0,
+        "code": [
+            "res = []",
+            "i = 0"
+        ]
+    },
+    {
+        "text": "this case our result is going to be a",
+        "start": 505.52,
+        "duration": 4.16,
+        "code": [
+            "res = []",
+            "i = 0"
+        ]
+    },
+    {
+        "text": "list of strings and i'm also going to",
+        "start": 507.28,
+        "duration": 4.639,
+        "code": [
+            "res = []",
+            "i = 0"
+        ]
+    },
+    {
+        "text": "have a pointer i which is going to tell",
+        "start": 509.68,
+        "duration": 4.719,
+        "code": [
+            "i = 0"
+        ]
+    },
+    {
+        "text": "us what position that we're at in the",
+        "start": 511.919,
+        "duration": 5.68,
+        "code": [
+            "i = 0"
+        ]
+    },
+    {
+        "text": "input string so far so i'm going to just",
+        "start": 514.399,
+        "duration": 5.12,
+        "code": [
+            "while i < len(s):"
+        ]
+    },
+    {
+        "text": "iterate character by character so while",
+        "start": 517.599,
+        "duration": 4.401,
+        "code": [
+            "while i < len(s):"
+        ]
+    },
+    {
+        "text": "i is still in bounds we are going to",
+        "start": 519.519,
+        "duration": 4.561,
+        "code": [
+            "while i < len(s):"
+        ]
+    },
+    {
+        "text": "read character by character basically",
+        "start": 522.0,
+        "duration": 4.56,
+        "code": [
+            "j = i",
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "decoding each string so when we start",
+        "start": 524.08,
+        "duration": 4.16,
+        "code": [
+            "j = i"
+        ]
+    },
+    {
+        "text": "off the first position that we're going",
+        "start": 526.56,
+        "duration": 4.64,
+        "code": [
+            "j = i",
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "to be at is going to be an integer right",
+        "start": 528.24,
+        "duration": 5.44,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "so what we want to do is we want to find",
+        "start": 531.2,
+        "duration": 4.72,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "the delimiter we want to find the end of",
+        "start": 533.68,
+        "duration": 3.44,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "the integer so we're going to have a",
+        "start": 535.92,
+        "duration": 3.12,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "second pointer j initially it's going to",
+        "start": 537.12,
+        "duration": 6.0,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "be at i and while the characters the",
+        "start": 539.04,
+        "duration": 5.359,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "character at",
+        "start": 543.12,
+        "duration": 4.64,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "pointer j is not equal to the pound",
+        "start": 544.399,
+        "duration": 5.281,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "meaning that we're still at an integer",
+        "start": 547.76,
+        "duration": 3.04,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "character we're going to keep",
+        "start": 549.68,
+        "duration": 3.68,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "incrementing j by 1. and we're",
+        "start": 550.8,
+        "duration": 4.96,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "guaranteed to find a pound character",
+        "start": 553.36,
+        "duration": 3.84,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "right because we that's kind of how we",
+        "start": 555.76,
+        "duration": 3.44,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "encoded it up above so we're going to",
+        "start": 557.2,
+        "duration": 3.84,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "keep incrementing until we get to that",
+        "start": 559.2,
+        "duration": 3.68,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "pound character and then once we get to",
+        "start": 561.04,
+        "duration": 3.6,
+        "code": [
+            "while s[j] != '#':",
+            "    j += 1"
+        ]
+    },
+    {
+        "text": "the pound character we know that our",
+        "start": 562.88,
+        "duration": 4.0,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "integer the length of the following",
+        "start": 564.64,
+        "duration": 5.28,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "string is going to be from our string",
+        "start": 566.88,
+        "duration": 5.92,
+        "code": [
+            "length = int(s[i:j])",
+            "i = j + 1",
+            "j = i + length"
+        ]
+    },
+    {
+        "text": "starting at index i going all the way up",
+        "start": 569.92,
+        "duration": 6.0,
+        "code": [
+            "i = j + 1",
+            "j = i + length"
+        ]
+    },
+    {
+        "text": "until index j but not including index j",
+        "start": 572.8,
+        "duration": 4.88,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "right so that's this portion is going to",
+        "start": 575.92,
+        "duration": 3.84,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "be the integer right now it's a string",
+        "start": 577.68,
+        "duration": 4.96,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "so we want to uh transform it into or",
+        "start": 579.76,
+        "duration": 5.12,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "convert it into an integer we can do",
+        "start": 582.64,
+        "duration": 4.08,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "that in python pretty easily just like",
+        "start": 584.88,
+        "duration": 4.56,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "this so now this length variable tells",
+        "start": 586.72,
+        "duration": 5.04,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "us how many following characters we have",
+        "start": 589.44,
+        "duration": 5.92,
+        "code": [
+            "length = int(s[i:j])"
+        ]
+    },
+    {
+        "text": "to read after j in order to get every",
+        "start": 591.76,
+        "duration": 6.4,
+        "code": [
+            "i = j + 1",
+            "j = i + length"
+        ]
+    },
+    {
+        "text": "character of the string so in other",
+        "start": 595.36,
+        "duration": 7.2,
+        "code": [
+            "j = i + length"
+        ]
+    },
+    {
+        "text": "words if we start string at index j plus",
+        "start": 598.16,
+        "duration": 7.28,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "1 because remember j is at the delimiter",
+        "start": 602.56,
+        "duration": 4.56,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "character so j plus one is going to be",
+        "start": 605.44,
+        "duration": 4.48,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "the first character in the string itself",
+        "start": 607.12,
+        "duration": 5.12,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "and we want to go all the way until the",
+        "start": 609.92,
+        "duration": 4.24,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "end of that string how do we get that",
+        "start": 612.24,
+        "duration": 3.76,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "well right now we have the length of",
+        "start": 614.16,
+        "duration": 4.239,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "that string so we can say j",
+        "start": 616.0,
+        "duration": 6.56,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "plus 1 plus length this will give us the",
+        "start": 618.399,
+        "duration": 6.56,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "entire string and what do we want to do",
+        "start": 622.56,
+        "duration": 4.399,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "with the string well we want to append",
+        "start": 624.959,
+        "duration": 5.041,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "it to the result so let's go ahead and",
+        "start": 626.959,
+        "duration": 6.721,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "do just that so basically each iteration",
+        "start": 630.0,
+        "duration": 6.0,
+        "code": [
+            "res.append(s[i:j])"
+        ]
+    },
+    {
+        "text": "of this loop is gonna read one entire",
+        "start": 633.68,
+        "duration": 4.56,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "word and then we're gonna go again loop",
+        "start": 636.0,
+        "duration": 4.48,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "again and read more words until we reach",
+        "start": 638.24,
+        "duration": 4.159,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "the end of the string but one thing we",
+        "start": 640.48,
+        "duration": 3.68,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "forgot is how are we gonna update our",
+        "start": 642.399,
+        "duration": 4.241,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "pointer i well we just read a single",
+        "start": 644.16,
+        "duration": 4.4,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "word so now we want to start at the next",
+        "start": 646.64,
+        "duration": 4.24,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "word how do we get that well our pointer",
+        "start": 648.56,
+        "duration": 4.64,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "i is just going to be set to j",
+        "start": 650.88,
+        "duration": 5.519,
+        "code": [
+            "i = j"
+        ]
+    },
+    {
+        "text": "plus 1 plus length because this is",
+        "start": 653.2,
+        "duration": 4.48,
+        "code": [
+            "i = j + 1 + length"
+        ]
+    },
+    {
+        "text": "actually not this is going to be",
+        "start": 656.399,
+        "duration": 3.361,
+        "code": [
+            "i = j + 1 + length"
+        ]
+    },
+    {
+        "text": "basically the beginning of the next",
+        "start": 657.68,
+        "duration": 4.08,
+        "code": [
+            "i = j + 1 + length"
+        ]
+    },
+    {
+        "text": "string or it could be the end of the",
+        "start": 659.76,
+        "duration": 4.16,
+        "code": [
+            "i = j + 1 + length"
+        ]
+    },
+    {
+        "text": "entire string right but either way this",
+        "start": 661.76,
+        "duration": 4.24,
+        "code": [
+            "i = j + 1 + length"
+        ]
+    },
+    {
+        "text": "is how we are going to be updating our j",
+        "start": 663.92,
+        "duration": 3.76,
+        "code": [
+            "i = j + 1 + length"
+        ]
+    },
+    {
+        "text": "each iteration of the loop once we're",
+        "start": 666.0,
+        "duration": 4.24,
+        "code": [
+            "i = j + 1 + length"
+        ]
+    },
+    {
+        "text": "done with that our result will be",
+        "start": 667.68,
+        "duration": 4.64,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "containing all the decoded strings so we",
+        "start": 670.24,
+        "duration": 4.24,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "can go ahead and return that result",
+        "start": 672.32,
+        "duration": 4.4,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "and as you can see i just ran the code",
+        "start": 674.48,
+        "duration": 4.08,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "and it looks like it works and it is",
+        "start": 676.72,
+        "duration": 4.4,
+        "code": [
+            "return res"
+        ]
+    }
+]

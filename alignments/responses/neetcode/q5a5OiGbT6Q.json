@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yP30a4HdQYVevCuUwAHlb2VsjEV5",
+        "object": "chat.completion",
+        "created": 1724182990,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Below is the alignment of the transcript entries with the final code solution, connecting the relevant lines of code with their respective transcript entries:\n\n```json\n[\n  {\n    \"text\": \"uh remember that we have to understand\",\n    \"code\": [\n      \"class Solution:\",\n      \"def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\"\n    ]\n  },\n  {\n    \"text\": \"to merge two sorted linked lists so i'm just\",\n    \"code\": [\n      \"dummy = ListNode(0, head)\",\n      \"groupPrev = dummy\"\n    ]\n  },\n  {\n    \"text\": \"that function here right now so we'll\",\n    \"code\": [\n      \"while True:\",\n      \"kth = self.getKth(groupPrev, k)\",\n      \"if not kth:\",\n      \"break\",\n      \"groupNext = kth.next\"\n    ]\n  },\n  {\n    \"text\": \"and we'll return\",\n    \"code\": [\n      \"prev, curr = kth.next, groupPrev.next\"\n    ]\n  },\n  {\n    \"text\": \"the output list i'm not even going to do\",\n    \"code\": [\n      \"while curr != groupNext:\",\n      \"tmp = curr.next\",\n      \"curr.next = prev\",\n      \"prev = curr\",\n      \"curr = tmp\",\n      \"tmp = groupPrev.next\",\n      \"groupPrev.next = kth\",\n      \"groupPrev = tmp\",\n      \"return dummy.next\"\n    ]\n  },\n  {\n    \"text\": \"that portion, we want to do the real part of the\",\n    \"code\": [\n        \"def getKth(self, curr, k):\",\n        \"while curr and k > 0:\",\n        \"curr = curr.next\",\n        \"k -= 1\",\n        \"return curr\"\n    ]\n  },\n  {\n    \"text\": \"right before i recorded this video so\",\n    \"code\": [\n      \"class ListNode:\",\n      \"def __init__(self, val=0, next=None):\",\n      \"self.val = val\",\n      \"self.next = next\"\n    ]\n  },\n  {\n    \"text\": \"initialize a dummy node and a pointer\",\n    \"code\": [\n      \"dummy = ListNode(0, head)\"\n    ]\n  },\n  {\n    \"text\": \"and then traverse the list to reverse\",\n    \"code\": [\n      \"while True:\",\n      \"kth = self.getKth(groupPrev, k)\",\n      \"if not kth:\",\n      \"break\",\n      \"groupNext = kth.next\"\n    ]\n  }\n]\n```\n\nThis alignment ensures each code snippet is directly connected to the relevant segment of the transcript, providing context where applicable.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 7981,
+            "completion_tokens": 562,
+            "total_tokens": 8543
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yP3BcmCsjRh6kELtILcg8B1BTa7d",
+        "object": "chat.completion",
+        "created": 1724183001,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Below is the JSON with the \"code\" key added to each relevant entry where lines of code from the final solution are connected to the text of that entry. Unnecessary entries without corresponding code have been excluded:\n\n```json\n[\n    {\n        \"text\": \"with my helper function which i haven't\",\n        \"code\": [\n            \"class Solution:\",\n            \"def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\",\n            \"dummy = ListNode(0, head)\",\n            \"groupPrev = dummy\"\n        ]\n    },\n    {\n        \"text\": \"i want to take this and append it to\",\n        \"code\": [\n            \"while True:\",\n            \"kth = self.getKth(groupPrev, k)\",\n            \"if not kth:\",\n            \"break\"\n        ]\n    },\n    {\n        \"text\": \"our merged lists\",\n        \"code\": [\n            \"groupNext = kth.next\",\n            \"prev, curr = kth.next, groupPrev.next\",\n            \"while curr != groupNext:\",\n            \"tmp = curr.next\",\n            \"curr.next = prev\",\n            \"prev = curr\",\n            \"curr = tmp\"\n        ]\n    },\n    {\n        \"text\": \"variable over here where we are storing\",\n        \"code\": [\n            \"tmp = groupPrev.next\",\n            \"groupPrev.next = kth\",\n            \"groupPrev = tmp\",\n            \"return dummy.next\"\n        ]\n    },\n    {\n        \"text\": \"i've seen people do it a different way\",\n        \"code\": [\n            \"def getKth(self, curr, k):\",\n            \"while curr and k > 0:\",\n            \"curr = curr.next\",\n            \"k -= 1\",\n            \"return curr\"\n        ]\n    }\n]\n```\n\nIn this alignment, several segments of the transcript related to planning and logic have been matched with the appropriate blocks of code. Note how each segment matches logically to sections of the solution.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2522,
+            "completion_tokens": 409,
+            "total_tokens": 2931
+        },
+        "system_fingerprint": "fp_c9aa9c0491"
+    }
+]

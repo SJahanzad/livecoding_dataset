@@ -1,0 +1,67 @@
+[
+    {
+        "text": "our bottom boundary and the last value is 12.",
+        "start": 370.8,
+        "duration": 7.4399999999999995,
+        "code": [
+            "            left += 1"
+        ]
+    },
+    {
+        "text": "so we did the top row and we did the",
+        "start": 810.079,
+        "duration": 4.241,
+        "code": [
+            "for i in range(left, right):",
+            "    res.append(matrix[top][i])",
+            "top += 1"
+        ]
+    },
+    {
+        "text": "rightmost column so now we have to do",
+        "start": 812.16,
+        "duration": 3.919,
+        "code": [
+            "for i in range(top, bottom):",
+            "    res.append(matrix[i][right - 1])",
+            "right -= 1"
+        ]
+    },
+    {
+        "text": "the bottom row",
+        "start": 814.32,
+        "duration": 3.44,
+        "code": [
+            "if not (left < right and top < bottom):",
+            "    break"
+        ]
+    },
+    {
+        "text": "right to left so that's going to be a",
+        "start": 817.76,
+        "duration": 3.519,
+        "code": [
+            "for i in range(right - 1, left - 1, -1):",
+            "    res.append(matrix[bottom - 1][i])",
+            "bottom -= 1"
+        ]
+    },
+    {
+        "text": "one if we want to shift it upwards so",
+        "start": 884.16,
+        "duration": 6.08,
+        "code": [
+            "for i in range(bottom - 1, top - 1, -1):",
+            "    res.append(matrix[i][left])",
+            "left += 1"
+        ]
+    },
+    {
+        "text": "return the result that we just",
+        "start": 957.56,
+        "duration": 6.04,
+        "code": [
+            "return res"
+        ]
+    }
+]

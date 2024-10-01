@@ -1,0 +1,51 @@
+[
+    {
+        "text": "we're given two trees right and if you",
+        "start": 38.16,
+        "duration": 4.44,
+        "code": [
+            "public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {"
+        ]
+    },
+    {
+        "text": "look at our method merge trees we have a",
+        "start": 40.469,
+        "duration": 5.011,
+        "code": [
+            "public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {"
+        ]
+    },
+    {
+        "text": "tree node one tree no.2 and you know",
+        "start": 42.6,
+        "duration": 5.07,
+        "code": [
+            "public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {"
+        ]
+    },
+    {
+        "text": "giving us just though these tree nodes",
+        "start": 45.48,
+        "duration": 4.95,
+        "code": [
+            "public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {"
+        ]
+    },
+    {
+        "text": "if neither of them are no we have to add",
+        "start": 159.98,
+        "duration": 4.08,
+        "code": [
+            "t1.val += t2.val;"
+        ]
+    },
+    {
+        "text": "then we'd go and make the recursive call",
+        "start": 340.46,
+        "duration": 7.68,
+        "code": [
+            "t1.left = mergeTrees(t1.left, t2.left);",
+            "t1.right = mergeTrees(t1.right, t2.right);"
+        ]
+    }
+]

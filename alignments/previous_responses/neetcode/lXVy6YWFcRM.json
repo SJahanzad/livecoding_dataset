@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMPdWgqzCM3bMIj5YopjBuTH54L7",
+  "object": "chat.completion",
+  "created": 1724172861,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 7,\n        \"value\": [3]\n    },\n    {\n        \"key\": 257,\n        \"value\": [3]\n    },\n    {\n        \"key\": 502,\n        \"value\": [3]\n    },\n    {\n        \"key\": 612,\n        \"value\": [4]\n    },\n    {\n        \"key\": 618,\n        \"value\": [4]\n    },\n    {\n        \"key\": 622,\n        \"value\": [5]\n    },\n    {\n        \"key\": 629,\n        \"value\": [3, 5]\n    },\n    {\n        \"key\": 639,\n        \"value\": [7]\n    },\n    {\n        \"key\": 678,\n        \"value\": [10, 11]\n    },\n    {\n        \"key\": 684,\n        \"value\": [12]\n    },\n    {\n        \"key\": 689,\n        \"value\": [13]\n    },\n    {\n        \"key\": 690,\n        \"value\": [13]\n    },\n    {\n        \"key\": 699,\n        \"value\": [14, 15, 16]\n    },\n    {\n        \"key\": 700,\n        \"value\": [14, 15, 16]\n    },\n    {\n        \"key\": 718,\n        \"value\": [16]\n    },\n    {\n        \"key\": 756,\n        \"value\": [17]\n    },\n    {\n        \"key\": 761,\n        \"value\": [17]\n    },\n    {\n        \"key\": 765,\n        \"value\": [18, 19, 20]\n    },\n    {\n        \"key\": 776,\n        \"value\": [19, 20]\n    },\n    {\n        \"key\": 821,\n        \"value\": [8]\n    },\n    {\n        \"key\": 825,\n        \"value\": [8]\n    },\n    {\n        \"key\": 833,\n        \"value\": [21]\n    },\n    {\n        \"key\": 837,\n        \"value\": [21]\n    },\n    {\n        \"key\": 845,\n        \"value\": [22]\n    },\n    {\n        \"key\": 849,\n        \"value\": [23]\n    },\n    {\n        \"key\": 871,\n        \"value\": [7]\n    },\n    {\n        \"key\": 893,\n        \"value\": [7]\n    },\n    {\n        \"key\": 911,\n        \"value\": [7]\n    },\n    {\n        \"key\": 920,\n        \"value\": [3, 5, 8]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 15142,
+    "completion_tokens": 561,
+    "total_tokens": 15703
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

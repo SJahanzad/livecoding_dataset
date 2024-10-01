@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRgCPlKN6L23YKznzOfpA0GlOhHX",
+        "object": "chat.completion",
+        "created": 1724193108,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"some people will can basically here's the problem first rotate a string given\",\n        \"code\": [\n            \"class Solution {\"\n        ]\n    },\n    {\n        \"text\": \"two strings a and B a shift on a consists of taking a string a and moving\",\n        \"code\": [\n            \"public boolean rotateString(String A, String B) {\"\n        ]\n    },\n    {\n        \"text\": \"and you know that it does in this case you see de a B so if you just do add an\",\n        \"code\": [\n            \"return (A.length() == B.length()) && (A + A).contains(B);\"\n        ]\n    },\n    {\n        \"text\": \"extra version if you just say return\",\n        \"code\": [\n            \"}\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3042,
+            "completion_tokens": 176,
+            "total_tokens": 3218
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "text": "and we're gonna have a max area only",
+        "start": 120.54,
+        "duration": 4.079,
+        "code": [
+            "        int max_area = 0;"
+        ]
+    },
+    {
+        "text": "we're also gonna have this max area variable so max area is gonna start at 0",
+        "start": 122.79,
+        "duration": 9.120000000000001,
+        "code": [
+            "        int max_area = 0;"
+        ]
+    },
+    {
+        "text": "our a pointer start at zero and then",
+        "start": 131.23,
+        "duration": 4.92,
+        "code": [
+            "        int a_pointer = 0;"
+        ]
+    },
+    {
+        "text": "we'll have our a pointer start it height length minus one right and then like all",
+        "start": 133.3,
+        "duration": 12.27,
+        "code": [
+            "        int b_pointer = height.length - 1;"
+        ]
+    }
+]

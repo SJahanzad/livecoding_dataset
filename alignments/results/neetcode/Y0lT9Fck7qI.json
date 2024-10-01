@@ -1,0 +1,93 @@
+[
+    {
+        "text": "if this number of steps ever exceeds",
+        "start": 358.639,
+        "duration": 4.081,
+        "code": [
+            "if n <= 3:",
+            "return n"
+        ]
+    },
+    {
+        "text": "so now we have another four we're just",
+        "start": 393.52,
+        "duration": 3.119,
+        "code": [
+            "if n <= 3:",
+            "return n"
+        ]
+    },
+    {
+        "text": "so i hope that this was helpful if it",
+        "start": 1078.559,
+        "duration": 3.761,
+        "code": [
+            "class Solution:",
+            "def climbStairs(self, n: int) -> int:",
+            "if n <= 3:",
+            "return n",
+            "n1, n2 = 2, 3",
+            "for i in range(4, n + 1):",
+            "temp = n1 + n2",
+            "n1 = n2",
+            "n2 = temp",
+            "return n2"
+        ]
+    },
+    {
+        "text": "well that's just gonna be",
+        "start": 737.279,
+        "duration": 3.521,
+        "code": [
+            "if n <= 3:"
+        ]
+    },
+    {
+        "text": "one right that's our default value so",
+        "start": 738.24,
+        "duration": 3.039,
+        "code": [
+            "return n"
+        ]
+    },
+    {
+        "text": "so from here let's say we're starting",
+        "start": 748.0,
+        "duration": 3.04,
+        "code": [
+            "n1, n2 = 2, 3"
+        ]
+    },
+    {
+        "text": "here we can take",
+        "start": 750.0,
+        "duration": 3.36,
+        "code": [
+            "for i in range(4, n + 1):"
+        ]
+    },
+    {
+        "text": "one step which lands us at the result we",
+        "start": 751.04,
+        "duration": 3.2,
+        "code": [
+            "temp = n1 + n2"
+        ]
+    },
+    {
+        "text": "two steps which lands us out of bounds",
+        "start": 754.24,
+        "duration": 3.92,
+        "code": [
+            "n1 = n2"
+        ]
+    },
+    {
+        "text": "from here can we reach the goal again",
+        "start": 758.16,
+        "duration": 4.32,
+        "code": [
+            "return n2"
+        ]
+    }
+]

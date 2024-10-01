@@ -1,0 +1,559 @@
+[
+    {
+        "text": "and it requires depth first search we can't",
+        "start": 148.48,
+        "duration": 6.800000000000001,
+        "code": [
+            "class Solution:",
+            "    def isValidBST(self, root: Optional[TreeNode]) -> bool:"
+        ]
+    },
+    {
+        "text": "write the algorithm and the best way to",
+        "start": 410.16,
+        "duration": 2.56,
+        "code": [
+            "def valid(node, left, right):"
+        ]
+    },
+    {
+        "text": "is recursively so that's what i'm going",
+        "start": 412.72,
+        "duration": 2.879,
+        "code": [
+            "if not node:",
+            "    return True",
+            "if not (left < node.val < right):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "of our original",
+        "start": 418.8,
+        "duration": 3.44,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "    node.right, node.val, right",
+            ")"
+        ]
+    },
+    {
+        "text": "function we'll call it valid we know we",
+        "start": 419.68,
+        "duration": 3.44,
+        "code": [
+            "return valid(root, float('-inf'), float('inf'))"
+        ]
+    },
+    {
+        "text": "need to pass",
+        "start": 422.24,
+        "duration": 2.88,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "    node.right, node.val, right",
+            ")"
+        ]
+    },
+    {
+        "text": "function that we just defined",
+        "start": 558.56,
+        "duration": 3.76,
+        "code": [
+            "return valid(root, float('-inf'), float('inf'))"
+        ]
+    },
+    {
+        "text": "function we'll call it valid we know we",
+        "start": 419.68,
+        "duration": 3.44,
+        "code": [
+            "def valid(node, left, right):"
+        ]
+    },
+    {
+        "text": "it can be any value between negative",
+        "start": 203.68,
+        "duration": 3.839,
+        "code": [
+            "return valid(root, float('-inf'), float('inf'))"
+        ]
+    },
+    {
+        "text": "and node value is greater than the left",
+        "start": 454.0,
+        "duration": 4.72,
+        "code": [
+            "if not (left < node.val < right):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "technically an empty binary search tree",
+        "start": 439.44,
+        "duration": 5.28,
+        "code": [
+            "if not node:",
+            "    return True"
+        ]
+    },
+    {
+        "text": "if we reach a null node we can just",
+        "start": 433.039,
+        "duration": 4.72,
+        "code": [
+            "if not node:"
+        ]
+    },
+    {
+        "text": "return what are we going to return",
+        "start": 436.16,
+        "duration": 3.28,
+        "code": [
+            "return True"
+        ]
+    },
+    {
+        "text": "we're going to return true because",
+        "start": 437.759,
+        "duration": 4.401,
+        "code": [
+            "return True"
+        ]
+    },
+    {
+        "text": "technically an empty binary search tree",
+        "start": 439.44,
+        "duration": 5.28,
+        "code": [
+            "return True"
+        ]
+    },
+    {
+        "text": "but we know if this is not true if",
+        "start": 458.72,
+        "duration": 6.479,
+        "code": [
+            "if not (left < node.val < right):"
+        ]
+    },
+    {
+        "text": "these conditions do not satisfy then",
+        "start": 461.759,
+        "duration": 6.321,
+        "code": [
+            "if not (left < node.val < right):"
+        ]
+    },
+    {
+        "text": "we have to return false because we found",
+        "start": 465.199,
+        "duration": 3.84,
+        "code": [
+            "return False"
+        ]
+    },
+    {
+        "text": "a node that",
+        "start": 468.08,
+        "duration": 3.6,
+        "code": [
+            "return False"
+        ]
+    },
+    {
+        "text": "broke our binary search tree and now",
+        "start": 469.039,
+        "duration": 3.84,
+        "code": [
+            "return False"
+        ]
+    },
+    {
+        "text": "it's time to make",
+        "start": 471.68,
+        "duration": 3.76,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "our recursive call so we want to make",
+        "start": 472.879,
+        "duration": 5.44,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "sure that the left subtree of node",
+        "start": 475.44,
+        "duration": 6.08,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "is valid so we can pass node.left and",
+        "start": 478.319,
+        "duration": 5.041,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "update the right boundary to the node's",
+        "start": 489.12,
+        "duration": 4.0,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "value because we know",
+        "start": 491.68,
+        "duration": 4.959,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "that a left sub tree has to be less than",
+        "start": 493.12,
+        "duration": 6.079,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "every value we know every value in the",
+        "start": 496.639,
+        "duration": 4.081,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "left sub tree has to be",
+        "start": 499.199,
+        "duration": 4.56,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "less than the parent and so the parent",
+        "start": 500.72,
+        "duration": 4.08,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "is going to be set",
+        "start": 503.759,
+        "duration": 4.0,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "to the right boundary because we need we",
+        "start": 504.8,
+        "duration": 4.16,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "need to make sure that this is going to",
+        "start": 507.759,
+        "duration": 1.521,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "be",
+        "start": 508.96,
+        "duration": 2.079,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "less than that so we want to make sure",
+        "start": 509.28,
+        "duration": 3.92,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "that the left sub tree is valid we",
+        "start": 511.039,
+        "duration": 4.8,
+        "code": [
+            "return valid(node.left, left, node.val)"
+        ]
+    },
+    {
+        "text": "also want to make sure that the right",
+        "start": 513.2,
+        "duration": 3.44,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "subtree",
+        "start": 515.839,
+        "duration": 2.961,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "is valid and in this case we're going to",
+        "start": 516.64,
+        "duration": 4.16,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "do the opposite of what we just did",
+        "start": 518.8,
+        "duration": 4.719,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "so the left boundary is going to be",
+        "start": 520.8,
+        "duration": 3.84,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "updated",
+        "start": 523.519,
+        "duration": 3.201,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "and the right boundary is going to stay",
+        "start": 524.64,
+        "duration": 3.36,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "the same because we know",
+        "start": 526.72,
+        "duration": 4.88,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "every value in a right subtree has to be",
+        "start": 528.0,
+        "duration": 7.6,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "greater than the root or the parent node",
+        "start": 531.6,
+        "duration": 6.96,
+        "code": [
+            "return valid(node.right, node.val, right)"
+        ]
+    },
+    {
+        "text": "which is the left boundary and if both",
+        "start": 535.6,
+        "duration": 4.64,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "of these return true",
+        "start": 538.56,
+        "duration": 3.76,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "then we can return true if they both",
+        "start": 540.24,
+        "duration": 3.36,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "then we can return false so what we can",
+        "start": 543.6,
+        "duration": 3.44,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "do is just",
+        "start": 545.839,
+        "duration": 4.721,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "return the result of this so whatever",
+        "start": 547.04,
+        "duration": 5.04,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "this evaluates to",
+        "start": 550.56,
+        "duration": 3.839,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "is going to be our result we don't",
+        "start": 552.08,
+        "duration": 4.08,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "really need any variables",
+        "start": 554.399,
+        "duration": 4.161,
+        "code": [
+            "return valid(node.left, left, node.val) and valid(",
+            "node.right, node.val, right"
+        ]
+    },
+    {
+        "text": "and now we just need to call the",
+        "start": 556.16,
+        "duration": 3.84,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "function that we just defined",
+        "start": 558.56,
+        "duration": 3.76,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "valid we'll pass in the root we want to",
+        "start": 560.0,
+        "duration": 4.0,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "make sure that this is a binary search",
+        "start": 562.32,
+        "duration": 2.639,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "tree",
+        "start": 564.0,
+        "duration": 3.92,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "initially the left boundary can be set",
+        "start": 564.959,
+        "duration": 4.401,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "to negative infinity",
+        "start": 567.92,
+        "duration": 4.24,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "and the right boundary can be set to",
+        "start": 569.36,
+        "duration": 4.4,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "positive infinity because",
+        "start": 572.16,
+        "duration": 3.84,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "the root value could be anything there's",
+        "start": 573.76,
+        "duration": 4.56,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "no restrictions on what the root value",
+        "start": 576.0,
+        "duration": 3.2,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    },
+    {
+        "text": "can be",
+        "start": 578.32,
+        "duration": 2.88,
+        "code": [
+            "return valid(root, float(\"-inf\"), float(\"inf\"))"
+        ]
+    }
+]

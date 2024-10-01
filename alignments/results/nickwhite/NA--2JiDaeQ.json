@@ -1,0 +1,400 @@
+[
+    {
+        "text": "easy it's a two pointer method not a two",
+        "start": 15.089,
+        "duration": 4.621,
+        "code": [
+            "        int a_pointer = 0;",
+            "        int b_pointer = s.length - 1;"
+        ]
+    },
+    {
+        "text": "pointer method it's a two pointer",
+        "start": 18.27,
+        "duration": 3.839,
+        "code": []
+    },
+    {
+        "text": "algorithm problem write a function that",
+        "start": 19.71,
+        "duration": 5.46,
+        "code": []
+    },
+    {
+        "text": "reverses a string the input is given as",
+        "start": 22.109,
+        "duration": 4.771,
+        "code": []
+    },
+    {
+        "text": "an array of characters so yeah we give",
+        "start": 25.17,
+        "duration": 3.3,
+        "code": []
+    },
+    {
+        "text": "them an array of characters look like",
+        "start": 26.88,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "this if we're given the water I mean if",
+        "start": 28.47,
+        "duration": 3.719,
+        "code": []
+    },
+    {
+        "text": "we're given the words hello we just get",
+        "start": 30.48,
+        "duration": 4.55,
+        "code": []
+    },
+    {
+        "text": "out an array with every letter in hello",
+        "start": 32.189,
+        "duration": 5.37,
+        "code": []
+    },
+    {
+        "text": "do not allocate space for an extra array",
+        "start": 35.03,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "we just got to modify it in place so",
+        "start": 37.559,
+        "duration": 4.081,
+        "code": []
+    },
+    {
+        "text": "really easy it's just like all the other",
+        "start": 39.51,
+        "duration": 5.01,
+        "code": []
+    },
+    {
+        "text": "two pointer ones you set one pointer to",
+        "start": 41.64,
+        "duration": 4.77,
+        "code": [
+            "        while (a_pointer <= b_pointer) {"
+        ]
+    },
+    {
+        "text": "the beginning so a pointer will have",
+        "start": 44.52,
+        "duration": 3.539,
+        "code": []
+    },
+    {
+        "text": "this at the beginning we call whatever",
+        "start": 46.41,
+        "duration": 4.62,
+        "code": []
+    },
+    {
+        "text": "you want the pointer will be set to s",
+        "start": 48.059,
+        "duration": 6.361,
+        "code": []
+    },
+    {
+        "text": "dot length minus 1 and it's not what the",
+        "start": 51.03,
+        "duration": 5.549,
+        "code": []
+    },
+    {
+        "text": "parentheses because this is a array and",
+        "start": 54.42,
+        "duration": 4.29,
+        "code": []
+    },
+    {
+        "text": "then just like all the other ones while",
+        "start": 56.579,
+        "duration": 4.05,
+        "code": []
+    },
+    {
+        "text": "a pointer is less than or equal to B",
+        "start": 58.71,
+        "duration": 7.68,
+        "code": []
+    },
+    {
+        "text": "pointer then we do our loop that's the",
+        "start": 60.629,
+        "duration": 7.53,
+        "code": []
+    },
+    {
+        "text": "condition and when we're done that means",
+        "start": 66.39,
+        "duration": 4.11,
+        "code": []
+    },
+    {
+        "text": "we're moving from the beginning in the",
+        "start": 68.159,
+        "duration": 4.411,
+        "code": []
+    },
+    {
+        "text": "end to middle and when we hit the middle",
+        "start": 70.5,
+        "duration": 4.65,
+        "code": []
+    },
+    {
+        "text": "we're done and we don't return anything",
+        "start": 72.57,
+        "duration": 5.7,
+        "code": []
+    },
+    {
+        "text": "it's a void method okay so all there is",
+        "start": 75.15,
+        "duration": 5.25,
+        "code": []
+    },
+    {
+        "text": "all we have to do for this is we take",
+        "start": 78.27,
+        "duration": 4.62,
+        "code": []
+    },
+    {
+        "text": "the letter at the beginning and we do a",
+        "start": 80.4,
+        "duration": 5.1,
+        "code": []
+    },
+    {
+        "text": "basic swap that's in a lot of algorithm",
+        "start": 82.89,
+        "duration": 4.17,
+        "code": []
+    },
+    {
+        "text": "problems so we're gonna make H into au",
+        "start": 85.5,
+        "duration": 3.659,
+        "code": [
+            "            char temp = s[a_pointer];"
+        ]
+    },
+    {
+        "text": "and au into H and that's just going to",
+        "start": 87.06,
+        "duration": 3.84,
+        "code": [
+            "            s[a_pointer] = s[b_pointer];"
+        ]
+    },
+    {
+        "text": "reverse it and we do that as we go",
+        "start": 89.159,
+        "duration": 3.061,
+        "code": [
+            "            s[b_pointer] = temp;"
+        ]
+    },
+    {
+        "text": "through the middle it's gonna reverse",
+        "start": 90.9,
+        "duration": 3.539,
+        "code": []
+    },
+    {
+        "text": "the string and then e will become L and",
+        "start": 92.22,
+        "duration": 5.64,
+        "code": [
+            "            a_pointer += 1;",
+            "            b_pointer -= 1;"
+        ]
+    },
+    {
+        "text": "L will become super easy so we're gonna",
+        "start": 94.439,
+        "duration": 10.11,
+        "code": []
+    },
+    {
+        "text": "say char temp is equal to s of a pointer",
+        "start": 97.86,
+        "duration": 8.82,
+        "code": []
+    },
+    {
+        "text": "right so we'll have a temp variable",
+        "start": 104.549,
+        "duration": 5.761,
+        "code": []
+    },
+    {
+        "text": "pointing to the first letter then we'll",
+        "start": 106.68,
+        "duration": 5.579,
+        "code": []
+    },
+    {
+        "text": "set the first letter equal to the last",
+        "start": 110.31,
+        "duration": 6.419,
+        "code": []
+    },
+    {
+        "text": "letter s of B pointer and then we'll",
+        "start": 112.259,
+        "duration": 7.71,
+        "code": []
+    },
+    {
+        "text": "just set the last letter to the temp",
+        "start": 116.729,
+        "duration": 5.941,
+        "code": []
+    },
+    {
+        "text": "that's why we make the temp to save it",
+        "start": 119.969,
+        "duration": 4.591,
+        "code": []
+    },
+    {
+        "text": "because we're losing our variable up",
+        "start": 122.67,
+        "duration": 5.159,
+        "code": []
+    },
+    {
+        "text": "here is equal to temp and that's it and",
+        "start": 124.56,
+        "duration": 5.009,
+        "code": []
+    },
+    {
+        "text": "then all you do is increment your a",
+        "start": 127.829,
+        "duration": 4.861,
+        "code": []
+    },
+    {
+        "text": "pointer as we go through but one and",
+        "start": 129.569,
+        "duration": 4.241,
+        "code": []
+    },
+    {
+        "text": "decrement the people",
+        "start": 132.69,
+        "duration": 2.91,
+        "code": []
+    },
+    {
+        "text": "so we can move through the middle",
+        "start": 133.81,
+        "duration": 3.66,
+        "code": []
+    },
+    {
+        "text": "hopefully that makes sense to you guys",
+        "start": 135.6,
+        "duration": 3.79,
+        "code": []
+    },
+    {
+        "text": "should work first try",
+        "start": 137.47,
+        "duration": 8.94,
+        "code": []
+    },
+    {
+        "text": "I hope sorry alright yep works for",
+        "start": 139.39,
+        "duration": 10.08,
+        "code": []
+    },
+    {
+        "text": "strike right that's it just moving in",
+        "start": 146.41,
+        "duration": 4.89,
+        "code": []
+    },
+    {
+        "text": "towards the middle swapping the letters",
+        "start": 149.47,
+        "duration": 3.69,
+        "code": []
+    },
+    {
+        "text": "as we go one of the simpler problems",
+        "start": 151.3,
+        "duration": 4.23,
+        "code": []
+    },
+    {
+        "text": "really easy thing goes for watching",
+        "start": 153.16,
+        "duration": 3.93,
+        "code": []
+    },
+    {
+        "text": "check out any other problems they might",
+        "start": 155.53,
+        "duration": 3.42,
+        "code": []
+    },
+    {
+        "text": "be interested in I'm doing a lot of two",
+        "start": 157.09,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "pointer ones right now and I have some",
+        "start": 158.95,
+        "duration": 4.13,
+        "code": []
+    },
+    {
+        "text": "other this is related to the reverse",
+        "start": 160.93,
+        "duration": 4.83,
+        "code": []
+    },
+    {
+        "text": "reversing things and palindromic type",
+        "start": 163.08,
+        "duration": 4.99,
+        "code": []
+    },
+    {
+        "text": "problems so thanks for watching let me",
+        "start": 165.76,
+        "duration": 3.21,
+        "code": []
+    },
+    {
+        "text": "know what you think in the comments",
+        "start": 168.07,
+        "duration": 2.07,
+        "code": []
+    },
+    {
+        "text": "below let me know if I'm explaining",
+        "start": 168.97,
+        "duration": 5.12,
+        "code": []
+    },
+    {
+        "text": "these well and see you guys later",
+        "start": 170.14,
+        "duration": 3.95,
+        "code": []
+    }
+]

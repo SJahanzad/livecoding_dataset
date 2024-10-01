@@ -1,0 +1,282 @@
+[
+    {
+        "text": "the main thing to consider is the base case so what are a couple base cases",
+        "start": 186.64,
+        "duration": 7.04,
+        "code": [
+            "if not p and not q:",
+            "    return True"
+        ]
+    },
+    {
+        "text": "we're going to do the recursive step",
+        "start": 386.639,
+        "duration": 5.201,
+        "code": [
+            "if p and q and p.val == q.val:"
+        ]
+    },
+    {
+        "text": "we're going to call is same tree",
+        "start": 388.72,
+        "duration": 6.88,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "on the left and right subtree so if p",
+        "start": 391.84,
+        "duration": 6.0,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "we're going to call it on p left and q",
+        "start": 395.6,
+        "duration": 3.2,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "left",
+        "start": 397.84,
+        "duration": 4.799,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "and we're going to call it on p right",
+        "start": 398.8,
+        "duration": 6.88,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "and q right and what do we",
+        "start": 402.639,
+        "duration": 5.84,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "want to know from for the when we're",
+        "start": 405.68,
+        "duration": 4.4,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "comparing the left tree",
+        "start": 408.479,
+        "duration": 3.361,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "and the right trees what do we want to",
+        "start": 410.08,
+        "duration": 3.44,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "know we want to know that both",
+        "start": 411.84,
+        "duration": 4.079,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "of the the left sub trees and the right",
+        "start": 413.52,
+        "duration": 3.04,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "sub trees",
+        "start": 415.919,
+        "duration": 3.441,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "are equal so we want this to be true and",
+        "start": 416.56,
+        "duration": 5.039,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "we want this to return true as well so",
+        "start": 419.36,
+        "duration": 3.119,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "we're gonna take",
+        "start": 421.599,
+        "duration": 4.32,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "these two uh the return values of these",
+        "start": 422.479,
+        "duration": 5.361,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "two function calls and we're gonna",
+        "start": 425.919,
+        "duration": 5.361,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "and them together and if the and is true",
+        "start": 427.84,
+        "duration": 6.079,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "we're gonna return true if the and is",
+        "start": 431.28,
+        "duration": 3.12,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "false",
+        "start": 433.919,
+        "duration": 2.56,
+        "code": [
+            "return False"
+        ]
+    },
+    {
+        "text": "we're gonna end up returning false and",
+        "start": 434.4,
+        "duration": 3.919,
+        "code": [
+            "return False"
+        ]
+    },
+    {
+        "text": "this is the recursive step",
+        "start": 436.479,
+        "duration": 3.44,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "this is the only thing that we have to",
+        "start": 438.319,
+        "duration": 3.921,
+        "code": [
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)"
+        ]
+    },
+    {
+        "text": "return this is the entire",
+        "start": 439.919,
+        "duration": 4.641,
+        "code": [
+            "if not p and not q:",
+            "return True",
+            "if p and q and p.val == q.val:",
+            "return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)",
+            "else:",
+            "return False"
+        ]
+    },
+    {
+        "text": "problem to practice your tree traversals",
+        "start": 444.56,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "your debt for search",
+        "start": 446.96,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "practicing so i think it's a pretty good",
+        "start": 448.24,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "problem",
+        "start": 450.56,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "and i hope that this was helpful i hope",
+        "start": 451.599,
+        "duration": 4.081,
+        "code": []
+    },
+    {
+        "text": "you do understand the edge cases and how",
+        "start": 453.68,
+        "duration": 3.519,
+        "code": []
+    },
+    {
+        "text": "we simplified the code",
+        "start": 455.68,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 457.199,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "supports the channel",
+        "start": 459.44,
+        "duration": 2.96,
+        "code": []
+    },
+    {
+        "text": "a lot and i'll hopefully see you pretty",
+        "start": 460.4,
+        "duration": 5.44,
+        "code": []
+    },
+    {
+        "text": "soon thank you so much for watching",
+        "start": 462.4,
+        "duration": 3.44,
+        "code": []
+    }
+]

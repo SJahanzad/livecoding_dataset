@@ -1,0 +1,21 @@
+[
+    {
+        "text": "can determine the count of it so that we don't use it again so we'll just do - -",
+        "start": 315.96,
+        "duration": 12.0,
+        "code": [
+            "    if (temp_char_counts[c - 'a'] > 0) {",
+            "        valid_char_count++;",
+            "        temp_char_counts[c - 'a']--;",
+            "    }"
+        ]
+    },
+    {
+        "text": "be pretty much all we need to do here to complete our problem cannot find symbol",
+        "start": 388.89,
+        "duration": 10.33,
+        "code": [
+            "return good_word_lengths_sum;"
+        ]
+    }
+]

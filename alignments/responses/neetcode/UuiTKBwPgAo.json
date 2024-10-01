@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yRJgHabXFLoYMlduphAx7FmcJjJE",
+        "object": "chat.completion",
+        "created": 1724191712,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here is the JSON with the \"code\" key added, aligning each related transcript entry with the lines of code from the given solution:\n\n```json\n[\n    {\"text\": \"let me just quickly code up the solution\", \"code\": [\"class Solution:\", \"    def maxArea(self, heights: List[int]) -> int:\"]},\n    {\"text\": \"for that so this is the brute force of n solution let's first initialize our result\", \"code\": [\"        res = 0\"]},\n    {\"text\": \"so i'm going to set our result equal to zero\", \"code\": [\"        res = 0\"]},\n    {\"text\": \"so remember our condition for the loop is while\", \"code\": [\"        while l < r:\"]},\n    {\"text\": \"so let's compute the area again i'm just going to copy and paste it from my above solution because\", \"code\": [\"            res = max(res, min(heights[l], heights[r]) * (r - l))\"]},\n    {\"text\": \"now the part that we have to change though is\", \"code\": [\"            if heights[l] < heights[r]:\", \"                l += 1\", \"            elif heights[r] <= heights[l]:\", \"                r -= 1\"]},\n    {\"text\": \"now all we need to do is return the maximum that we computed\", \"code\": [\"        return res\"]},\n    {\"text\": \"let's see if it actually works this time\", \"code\": [\"        return res\"]}\n]\n```\n\nThis alignment connects the explanatory parts of the transcript to the relevant lines of code in the solution.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 9729,
+            "completion_tokens": 337,
+            "total_tokens": 10066
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yRJnzejJ8zE7m9cgCi8rkjSJS2yE",
+        "object": "chat.completion",
+        "created": 1724191719,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Below is the alignment of the transcript entries with the corresponding lines of the code:\n\n```json\n[\n    {\n        \"text\": \"so now left is over here and we have a\",\n        \"code\": [\n            \"if heights[l] < heights[r]:\",\n            \"    l += 1\"\n        ]\n    },\n    {\n        \"text\": \"seven by seven which we know is\",\n        \"code\": [\n            \"res = max(res, min(heights[l], heights[r]) * (r - l))\"\n        ]\n    },\n    {\n        \"text\": \"max area gets updated our max is\",\n        \"code\": [\n            \"res = max(res, min(heights[l], heights[r]) * (r - l))\"\n        ]\n    },\n    {\n        \"text\": \"take the minimum\",\n        \"code\": [\n            \"res = max(res, min(heights[l], heights[r]) * (r - l))\"\n        ]\n    },\n    {\n        \"text\": \"right pointer to the left\",\n        \"code\": [\n            \"elif heights[r] <= heights[l]:\",\n            \"    r -= 1\"\n        ]\n    },\n    {\n        \"text\": \"now our right height is looks like three\",\n        \"code\": [\n            \"if heights[l] < heights[r]:\",\n            \"    l += 1\"\n        ]\n    },\n    {\n        \"text\": \"six by four which is 24 too small\",\n        \"code\": [\n            \"res = max(res, min(heights[l], heights[r]) * (r - l))\"\n        ]\n    },\n    {\n        \"text\": \"height of right\",\n        \"code\": [\n            \"elif heights[r] <= heights[l]:\",\n            \"    r -= 1\"\n        ]\n    },\n    {\n        \"text\": \"let's get rid of this let's\",\n        \"code\": [\n            \"if heights[l] < heights[r]:\",\n            \"    l += 1\",\n            \"elif heights[r] <= heights[l]:\",\n            \"    r -= 1\"\n        ]\n    },\n    {\n        \"text\": \"set our result equal to zero\",\n        \"code\": [\n            \"res = 0\"\n        ]\n    },\n    {\n        \"text\": \"be initialized\",\n        \"code\": [\n            \"l, r = 0, len(heights) - 1\"\n        ]\n    },\n    {\n        \"text\": \"length of heights minus one\",\n        \"code\": [\n            \"l, r = 0, len(heights) - 1\"\n        ]\n    },\n    {\n        \"text\": \"condition for the loop\",\n        \"code\": [\n            \"while l < r:\"\n        ]\n    },\n    {\n        \"text\": \"condition that's going to\",\n        \"code\": [\n            \"while l < r:\"   \n        ]\n    },\n    {\n        \"text\": \"ends our code so now that we shift our\",\n        \"code\": [\n            \"while l < r:\"\n        ]\n    },\n    {\n        \"text\": \"solution in your interview if the\",\n        \"code\": [\n            \"class Solution:\",\n            \"def maxArea(self, heights: List[int]) -> int:\"\n        ]\n    },\n    {\n        \"text\": \"both of these heights now the other\",\n        \"code\": [\n            \"elif heights[r] <= heights[l]:\",\n            \"    r -= 1\"\n        ]\n    },\n    {\n        \"text\": \"is the opposite case so if height of\",\n        \"code\": [\n            \"elif heights[r] <= heights[l]:\",\n            \"    r -= 1\"\n        ]\n    },\n    {\n        \"text\": \"would want to shift our right\",\n        \"code\": [\n            \"elif heights[r] <= heights[l]:\",\n            \"    r -= 1\"\n        ]\n    },\n    {\n        \"text\": \"now all we need to do is return the\",\n        \"code\": [\n            \"return res\"\n        ]\n    },\n    {\n        \"text\": \"running one more time and this time\",\n        \"code\": [\n            \"return res\"\n        ]\n    },\n    {\n        \"text\": \"this is the actual linear time solution\",\n        \"code\": [\n            \"class Solution:\",\n            \"def maxArea(self, heights: List[int]) -> int:\",\n            \"    l, r = 0, len(heights) - 1\",\n            \"    res = 0\",\n            \"    while l < r:\",\n            \"        res = max(res, min(heights[l], heights[r]) * (r - l))\",\n            \"        if heights[l] < heights[r]:\",\n            \"            l += 1\",\n            \"        elif heights[r] <= heights[l]:\",\n            \"            r -= 1\",\n            \"    return res\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 4274,
+            "completion_tokens": 1020,
+            "total_tokens": 5294
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

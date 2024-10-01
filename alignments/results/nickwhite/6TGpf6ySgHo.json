@@ -1,0 +1,182 @@
+[
+    {
+        "text": "then we're gonna iterate through our",
+        "start": 69.95,
+        "duration": 5.26,
+        "code": [
+            "class Solution {",
+            "    public String toLowerCase(String str) {",
+            "        String result = \"\";",
+            "        for (char c : str.toCharArray()) {",
+            "            if (Character.isUpperCase(c)) {",
+            "                result = result + (char)(c + 32);",
+            "            } else {",
+            "                result = result + c;",
+            "            }",
+            "        }",
+            "        return result;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "new string that's gonna be all lowercase",
+        "start": 67.74,
+        "duration": 4.32,
+        "code": [
+            "String result = \"\";"
+        ]
+    },
+    {
+        "text": "then we're gonna iterate through our",
+        "start": 69.95,
+        "duration": 5.26,
+        "code": [
+            "for (char c : str.toCharArray()) {"
+        ]
+    },
+    {
+        "text": "actual string here so char C or char C",
+        "start": 72.06,
+        "duration": 6.72,
+        "code": [
+            "char c : str.toCharArray()"
+        ]
+    },
+    {
+        "text": "character array C we can iterate",
+        "start": 80.28,
+        "duration": 3.57,
+        "code": [
+            "for (char c : str.toCharArray()) {"
+        ]
+    },
+    {
+        "text": "just gonna want to check if using the",
+        "start": 83.85,
+        "duration": 3.87,
+        "code": [
+            "if (Character.isUpperCase(c)) {"
+        ]
+    },
+    {
+        "text": "character class the character class has",
+        "start": 85.86,
+        "duration": 4.38,
+        "code": [
+            "if (Character.isUpperCase(c)) {"
+        ]
+    },
+    {
+        "text": "a method called is upper case where you",
+        "start": 87.72,
+        "duration": 4.439,
+        "code": [
+            "if (Character.isUpperCase(c)) {"
+        ]
+    },
+    {
+        "text": "capital then we're going to append to",
+        "start": 93.78,
+        "duration": 11.1,
+        "code": [
+            "result = result + (char)(c + 32);"
+        ]
+    },
+    {
+        "text": "our result variable result plus we're",
+        "start": 98.009,
+        "duration": 11.551,
+        "code": [
+            "result = result + (char)(c + 32);"
+        ]
+    },
+    {
+        "text": "casting char C plus 32",
+        "start": 104.88,
+        "duration": 8.07,
+        "code": [
+            "result = result + (char)(c + 32);"
+        ]
+    },
+    {
+        "text": "so why C plus 32 because we're taking",
+        "start": 109.56,
+        "duration": 6.239,
+        "code": [
+            "(char)(c + 32)"
+        ]
+    },
+    {
+        "text": "uppercase character we take that ASCII",
+        "start": 115.799,
+        "duration": 7.021,
+        "code": [
+            "(char)(c + 32)"
+        ]
+    },
+    {
+        "text": "value and we add 32 to it adding 32 to",
+        "start": 118.74,
+        "duration": 6.15,
+        "code": [
+            "(char)(c + 32)"
+        ]
+    },
+    {
+        "text": "lowercase version of it which is exactly",
+        "start": 124.89,
+        "duration": 3.63,
+        "code": [
+            "(char)(c + 32)"
+        ]
+    },
+    {
+        "text": "what we want then we append the",
+        "start": 127.02,
+        "duration": 2.84,
+        "code": [
+            "result = result + (char)(c + 32);"
+        ]
+    },
+    {
+        "text": "lowercase version to the result",
+        "start": 128.52,
+        "duration": 5.02,
+        "code": [
+            "result = result + (char)(c + 32);"
+        ]
+    },
+    {
+        "text": "otherwise it's already lowercase",
+        "start": 129.86,
+        "duration": 6.3,
+        "code": [
+            "result = result + c;"
+        ]
+    },
+    {
+        "text": "we just add the lowercase version right",
+        "start": 133.54,
+        "duration": 5.16,
+        "code": [
+            "result = result + c;"
+        ]
+    },
+    {
+        "text": "onto the result we're all good to go",
+        "start": 136.16,
+        "duration": 4.62,
+        "code": [
+            "result = result + c;"
+        ]
+    },
+    {
+        "text": "just return results pretty simple one",
+        "start": 142.97,
+        "duration": 9.81,
+        "code": [
+            "return result;"
+        ]
+    }
+]

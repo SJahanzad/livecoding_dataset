@@ -1,0 +1,116 @@
+[
+    {
+        "text": "now the part that we have to change though is",
+        "start": 642.88,
+        "duration": 6.399,
+        "code": [
+            "            if heights[l] < heights[r]:",
+            "                l += 1",
+            "            elif heights[r] <= heights[l]:",
+            "                r -= 1"
+        ]
+    },
+    {
+        "text": "now all we need to do is return the maximum that we computed",
+        "start": 711.839,
+        "duration": 8.401,
+        "code": [
+            "        return res"
+        ]
+    },
+    {
+        "text": "let's see if it actually works this time",
+        "start": 716.24,
+        "duration": 3.2,
+        "code": [
+            "        return res"
+        ]
+    },
+    {
+        "text": "so now left is over here and we have a",
+        "start": 421.36,
+        "duration": 4.48,
+        "code": [
+            "if heights[l] < heights[r]:",
+            "    l += 1"
+        ]
+    },
+    {
+        "text": "right pointer to the left",
+        "start": 451.919,
+        "duration": 5.68,
+        "code": [
+            "elif heights[r] <= heights[l]:",
+            "    r -= 1"
+        ]
+    },
+    {
+        "text": "now our right height is looks like three",
+        "start": 453.68,
+        "duration": 5.919,
+        "code": [
+            "if heights[l] < heights[r]:",
+            "    l += 1"
+        ]
+    },
+    {
+        "text": "six by four which is 24 too small",
+        "start": 522.479,
+        "duration": 6.001,
+        "code": [
+            "res = max(res, min(heights[l], heights[r]) * (r - l))"
+        ]
+    },
+    {
+        "text": "be initialized",
+        "start": 593.44,
+        "duration": 4.24,
+        "code": [
+            "l, r = 0, len(heights) - 1"
+        ]
+    },
+    {
+        "text": "both of these heights now the other",
+        "start": 667.44,
+        "duration": 3.519,
+        "code": [
+            "elif heights[r] <= heights[l]:",
+            "    r -= 1"
+        ]
+    },
+    {
+        "text": "is the opposite case so if height of",
+        "start": 670.959,
+        "duration": 3.041,
+        "code": [
+            "elif heights[r] <= heights[l]:",
+            "    r -= 1"
+        ]
+    },
+    {
+        "text": "now all we need to do is return the",
+        "start": 711.839,
+        "duration": 4.401,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "this is the actual linear time solution",
+        "start": 726.959,
+        "duration": 8.801,
+        "code": [
+            "class Solution:",
+            "def maxArea(self, heights: List[int]) -> int:",
+            "    l, r = 0, len(heights) - 1",
+            "    res = 0",
+            "    while l < r:",
+            "        res = max(res, min(heights[l], heights[r]) * (r - l))",
+            "        if heights[l] < heights[r]:",
+            "            l += 1",
+            "        elif heights[r] <= heights[l]:",
+            "            r -= 1",
+            "    return res"
+        ]
+    }
+]

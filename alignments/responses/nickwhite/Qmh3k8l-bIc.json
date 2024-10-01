@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRmdYitoIkSMx5tnN3KNk2rVwwo2",
+        "object": "chat.completion",
+        "created": 1724193507,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, I can align the provided code snippets with the respective parts of the transcript. Here is the output:\n\n```json\n[\n    {\n        \"text\": \"so basically take the sum take\",\n        \"code\": [\n            \"int sum = 0;\"\n        ]\n    },\n    {\n        \"text\": \"have a sum so we're just gonna have this\",\n        \"code\": [\n            \"int sum = 0;\"\n        ]\n    },\n    {\n        \"text\": \"int you gonna call it sum I mean I\",\n        \"code\": [\n            \"int sum = 0;\"\n        ]\n    },\n    {\n        \"text\": \"take the sum take\",\n        \"code\": [\n            \"int sum = 0;\"\n        ]\n    },\n    {\n        \"text\": \"I don't think it isn't Java so you loop\",\n        \"code\": [\n            \"for (int i = 0; i < 20001; i++) {\",\n            \"    if (hash[i] == 0) continue;\",\n            \"    while (hash[i] != 0) {\",\n            \"        if (p % 2 == 0) {\",\n            \"            sum += (i - 10000);\",\n            \"        }\",\n            \"        p++;\",\n            \"        hash[i]--\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"the minimum would be the first one so I is\",\n        \"code\": [\n            \"for (int ele : nums) {\",\n            \"    hash[ele + 10000]++;\"\n        ]\n    },\n    {\n        \"text\": \"right\",\n        \"code\": [\n            \"int[] hash = new int[20001];\",\n            \"for (int ele : nums) {\",\n            \"    hash[ele + 10000]++;\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"yeah that's it ok that was it yeah\",\n        \"code\": [\n            \"return sum;\"\n        ]\n    },\n    {\n        \"text\": \"that's super easy see I just sort it and\",\n        \"code\": [\n            \"public class Solution {\",\n            \"    public int arrayPairSum(int[] nums) {\"\n        ]\n    },\n    {\n        \"text\": \"then just skip by 2 and then grab the\",\n        \"code\": [\n            \"        int sum = 0;\",\n            \"        int p = 0;\"\n        ]\n    },\n    {\n        \"text\": \"first element because skipping by 2\",\n        \"code\": [\n            \"                if (p % 2 == 0) {\",\n            \"                    sum += (i - 10000);\",\n            \"                }\"\n        ]\n    },\n    {\n        \"text\": \"yeah that was like one of the easiest\",\n        \"code\": [\n            \"    }\",\n            \"}\"\n        ]\n    }\n]\n``` \n\nNote:\n- I ensured that for each relevant text entry, the corresponding code snippet is placed in the `\"code\"` array.\n- Multiple occurrences of the same lines of code are consolidated in a single entry, aligning with both their starting and repeating mentions in the transcript.\n",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2453,
+            "completion_tokens": 660,
+            "total_tokens": 3113
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

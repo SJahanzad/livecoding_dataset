@@ -1,0 +1,58 @@
+[
+    {
+        "text": "find bottom left tree value so give it a",
+        "start": 16.76,
+        "duration": 5.769,
+        "code": [
+            "    public int findBottomLeftValue(TreeNode root) {"
+        ]
+    },
+    {
+        "text": "binary tree find the leftmost value in",
+        "start": 20.52,
+        "duration": 7.11,
+        "code": [
+            "        Queue<TreeNode> queue = new LinkedList<>();"
+        ]
+    },
+    {
+        "text": "the last row of a binary tree so yeah we",
+        "start": 22.529,
+        "duration": 7.801,
+        "code": [
+            "        queue.offer(root);"
+        ]
+    },
+    {
+        "text": "we're gonna do is basically a traversal",
+        "start": 43.98,
+        "duration": 5.07,
+        "code": [
+            "            if (root.right != null) {"
+        ]
+    },
+    {
+        "text": "we'll add that right child to the queue",
+        "start": 108.0,
+        "duration": 10.17,
+        "code": [
+            "            }"
+        ]
+    },
+    {
+        "text": "what we'll do our left traversal afterwards",
+        "start": 118.17,
+        "duration": 8.83,
+        "code": [
+            "            if (root.left != null) {"
+        ]
+    },
+    {
+        "text": "return the root bail which will be the",
+        "start": 163.94,
+        "duration": 4.2,
+        "code": [
+            "}"
+        ]
+    }
+]

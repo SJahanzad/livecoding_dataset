@@ -1,0 +1,94 @@
+[
+    {
+        "text": "uh remember that we have to understand",
+        "start": 285.04,
+        "duration": 4.08,
+        "code": [
+            "class Solution:",
+            "def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:"
+        ]
+    },
+    {
+        "text": "that function here right now so we'll",
+        "start": 292.4,
+        "duration": 4.64,
+        "code": [
+            "while True:",
+            "kth = self.getKth(groupPrev, k)",
+            "if not kth:",
+            "break",
+            "groupNext = kth.next"
+        ]
+    },
+    {
+        "text": "and we'll return",
+        "start": 297.04,
+        "duration": 2.64,
+        "code": [
+            "prev, curr = kth.next, groupPrev.next"
+        ]
+    },
+    {
+        "text": "the output list i'm not even going to do",
+        "start": 298.0,
+        "duration": 3.12,
+        "code": [
+            "while curr != groupNext:",
+            "tmp = curr.next",
+            "curr.next = prev",
+            "prev = curr",
+            "curr = tmp",
+            "tmp = groupPrev.next",
+            "groupPrev.next = kth",
+            "groupPrev = tmp",
+            "return dummy.next"
+        ]
+    },
+    {
+        "text": "right before i recorded this video so",
+        "start": 507.52,
+        "duration": 14.319,
+        "code": [
+            "class ListNode:",
+            "def __init__(self, val=0, next=None):",
+            "self.val = val",
+            "self.next = next"
+        ]
+    },
+    {
+        "text": "with my helper function which i haven't",
+        "start": 421.68,
+        "duration": 4.799,
+        "code": [
+            "class Solution:",
+            "def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:",
+            "dummy = ListNode(0, head)",
+            "groupPrev = dummy"
+        ]
+    },
+    {
+        "text": "our merged lists",
+        "start": 431.759,
+        "duration": 4.16,
+        "code": [
+            "groupNext = kth.next",
+            "prev, curr = kth.next, groupPrev.next",
+            "while curr != groupNext:",
+            "tmp = curr.next",
+            "curr.next = prev",
+            "prev = curr",
+            "curr = tmp"
+        ]
+    },
+    {
+        "text": "variable over here where we are storing",
+        "start": 433.039,
+        "duration": 5.041,
+        "code": [
+            "tmp = groupPrev.next",
+            "groupPrev.next = kth",
+            "groupPrev = tmp",
+            "return dummy.next"
+        ]
+    }
+]

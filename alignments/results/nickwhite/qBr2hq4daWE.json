@@ -1,0 +1,27 @@
+[
+    {
+        "text": "find three integers and um that's some",
+        "start": 29.189,
+        "duration": 5.611,
+        "code": [
+            "class Solution {",
+            "    public int threeSumClosest(int[] nums, int target) {"
+        ]
+    },
+    {
+        "text": "actually pointers to make this more optimal so let's just start implementing",
+        "start": 107.22,
+        "duration": 8.458,
+        "code": [
+            "        Arrays.sort(nums);"
+        ]
+    },
+    {
+        "text": "the array so arrays dot sort numb that's",
+        "start": 135.39,
+        "duration": 6.09,
+        "code": [
+            "        for (int i=0; i<nums.length-2; i++) {"
+        ]
+    }
+]

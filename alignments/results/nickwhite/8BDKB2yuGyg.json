@@ -1,0 +1,321 @@
+[
+    {
+        "text": "the stack if we make this a while loop",
+        "start": 484.01,
+        "duration": 3.48,
+        "code": [
+            "while (!stack.isEmpty() && stack.peek() < num) {"
+        ]
+    },
+    {
+        "text": "this is gonna work because we're gonna",
+        "start": 485.87,
+        "duration": 3.78,
+        "code": []
+    },
+    {
+        "text": "be putting things onto the stack in this",
+        "start": 487.49,
+        "duration": 3.54,
+        "code": [
+            "stack.push(num);"
+        ]
+    },
+    {
+        "text": "condition will never trigger because",
+        "start": 489.65,
+        "duration": 3.57,
+        "code": []
+    },
+    {
+        "text": "stack dot peak won't be less than num",
+        "start": 491.03,
+        "duration": 4.92,
+        "code": [
+            "while (!stack.isEmpty() && stack.peek() < num) {"
+        ]
+    },
+    {
+        "text": "for example when we get to you know",
+        "start": 493.22,
+        "duration": 5.1,
+        "code": []
+    },
+    {
+        "text": "eight goes onto the stack and then is",
+        "start": 495.95,
+        "duration": 4.53,
+        "code": [
+            "stack.push(num);"
+        ]
+    },
+    {
+        "text": "stack top peak less than seven no eight",
+        "start": 498.32,
+        "duration": 3.99,
+        "code": [
+            "while (!stack.isEmpty() && stack.peek() < num) {"
+        ]
+    },
+    {
+        "text": "isn't less than seven so we keep we put",
+        "start": 500.48,
+        "duration": 3.54,
+        "code": [
+            "stack.push(num);"
+        ]
+    },
+    {
+        "text": "seven on then we put six on then we put",
+        "start": 502.31,
+        "duration": 4.08,
+        "code": [
+            "stack.push(num);"
+        ]
+    },
+    {
+        "text": "five on so it's just a stack with all",
+        "start": 504.02,
+        "duration": 4.83,
+        "code": [
+            "stack.push(num);"
+        ]
+    },
+    {
+        "text": "these values but once we see a ten and",
+        "start": 506.39,
+        "duration": 6.12,
+        "code": []
+    },
+    {
+        "text": "we see that stack top peak is less than",
+        "start": 508.85,
+        "duration": 6.06,
+        "code": [
+            "while (!stack.isEmpty() && stack.peek() < num) {"
+        ]
+    },
+    {
+        "text": "num now we just keep popping off those",
+        "start": 512.51,
+        "duration": 4.26,
+        "code": [
+            "next_greatest.put(stack.pop(), num);"
+        ]
+    },
+    {
+        "text": "stacks and we put into the hash map",
+        "start": 514.91,
+        "duration": 4.62,
+        "code": [
+            "next_greatest.put(stack.pop(), num);"
+        ]
+    },
+    {
+        "text": "every single value because you'll notice",
+        "start": 516.77,
+        "duration": 4.8,
+        "code": []
+    },
+    {
+        "text": "that all decree if it's a row of",
+        "start": 519.53,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "decreasing values followed by an",
+        "start": 521.57,
+        "duration": 5.1,
+        "code": []
+    },
+    {
+        "text": "increased value it will put the every",
+        "start": 523.13,
+        "duration": 6.42,
+        "code": []
+    },
+    {
+        "text": "single one of these indexes the next",
+        "start": 526.67,
+        "duration": 5.16,
+        "code": [
+            "next_greatest.put(stack.pop(), num);"
+        ]
+    },
+    {
+        "text": "greater value put into the hash map is",
+        "start": 529.55,
+        "duration": 4.71,
+        "code": [
+            "next_greatest.put(stack.pop(), num);"
+        ]
+    },
+    {
+        "text": "going to be 10 so 5s next greatest is",
+        "start": 531.83,
+        "duration": 3.0,
+        "code": []
+    },
+    {
+        "text": "town",
+        "start": 534.26,
+        "duration": 3.75,
+        "code": []
+    },
+    {
+        "text": "ten seven eight so we need a while loop",
+        "start": 534.83,
+        "duration": 5.34,
+        "code": [
+            "while (!stack.isEmpty() && stack.peek() < num) {"
+        ]
+    },
+    {
+        "text": "to pop all of those off to the stat off",
+        "start": 538.01,
+        "duration": 4.29,
+        "code": [
+            "next_greatest.put(stack.pop(), num);"
+        ]
+    },
+    {
+        "text": "of the stack and put that next greatest",
+        "start": 540.17,
+        "duration": 5.34,
+        "code": [
+            "next_greatest.put(stack.pop(), num);"
+        ]
+    },
+    {
+        "text": "value so that's the whole problem pretty",
+        "start": 542.3,
+        "duration": 4.65,
+        "code": []
+    },
+    {
+        "text": "straightforward we could run it make",
+        "start": 545.51,
+        "duration": 4.8,
+        "code": [
+            "for (int i = 0; i < nums1.length; i++) {",
+            "nums1[i] = next_greatest.getOrDefault(nums1[i], -1);",
+            "}",
+            "return nums1;"
+        ]
+    },
+    {
+        "text": "sure it's all good let me know if you",
+        "start": 546.95,
+        "duration": 5.82,
+        "code": []
+    },
+    {
+        "text": "guys have any questions about this it's",
+        "start": 550.31,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "not too difficult to understand but I",
+        "start": 552.77,
+        "duration": 4.68,
+        "code": []
+    },
+    {
+        "text": "mean it's a little bit of a trick for an",
+        "start": 554.87,
+        "duration": 5.1,
+        "code": []
+    },
+    {
+        "text": "easy problem you know but I don't think",
+        "start": 557.45,
+        "duration": 4.53,
+        "code": []
+    },
+    {
+        "text": "it's too difficult so let me know if you",
+        "start": 559.97,
+        "duration": 4.41,
+        "code": []
+    },
+    {
+        "text": "guys have any questions I'll be glad to",
+        "start": 561.98,
+        "duration": 4.8,
+        "code": []
+    },
+    {
+        "text": "answer them and yeah definitely thank",
+        "start": 564.38,
+        "duration": 4.44,
+        "code": []
+    },
+    {
+        "text": "you guys for watching I'm gonna continue",
+        "start": 566.78,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "going I guess there's a next greatest",
+        "start": 568.82,
+        "duration": 3.06,
+        "code": []
+    },
+    {
+        "text": "element too as well and some other ones",
+        "start": 570.14,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "I do think they throw you off with these",
+        "start": 571.88,
+        "duration": 4.86,
+        "code": []
+    },
+    {
+        "text": "two arrays because in some of them I've",
+        "start": 573.98,
+        "duration": 5.61,
+        "code": []
+    },
+    {
+        "text": "seen it looks like there's a you know",
+        "start": 576.74,
+        "duration": 7.17,
+        "code": []
+    },
+    {
+        "text": "some extra I mean someone just wanna",
+        "start": 579.59,
+        "duration": 6.6,
+        "code": []
+    },
+    {
+        "text": "write some all right and that's what we",
+        "start": 583.91,
+        "duration": 3.69,
+        "code": []
+    },
+    {
+        "text": "kind of do we just ignore the first",
+        "start": 586.19,
+        "duration": 3.45,
+        "code": []
+    },
+    {
+        "text": "array honestly so alright see you guys",
+        "start": 587.6,
+        "duration": 4.85,
+        "code": []
+    },
+    {
+        "text": "in the next one",
+        "start": 589.64,
+        "duration": 2.81,
+        "code": []
+    }
+]

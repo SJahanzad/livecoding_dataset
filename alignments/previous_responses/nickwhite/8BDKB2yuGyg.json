@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLyBUnFm1ZSDnvY152yS5fCjuo3v",
+  "object": "chat.completion",
+  "created": 1724171159,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 205,\n        \"value\": [3]\n    },\n    {\n        \"key\": 207,\n        \"value\": [4]\n    },\n    {\n        \"key\": 209,\n        \"value\": [5]\n    },\n    {\n        \"key\": 213,\n        \"value\": [3]\n    },\n    {\n        \"key\": 222,\n        \"value\": [4]\n    },\n    {\n        \"key\": 226,\n        \"value\": [8]\n    },\n    {\n        \"key\": 255,\n        \"value\": [9]\n    },\n    {\n        \"key\": 258,\n        \"value\": [10]\n    },\n    {\n        \"key\": 267,\n        \"value\": [11]\n    },\n    {\n        \"key\": 274,\n        \"value\": [12]\n    },\n    {\n        \"key\": 384,\n        \"value\": [14]\n    },\n    {\n        \"key\": 394,\n        \"value\": [14]\n    },\n    {\n        \"key\": 399,\n        \"value\": [15, 16, 17]\n    },\n    {\n        \"key\": 422,\n        \"value\": [19]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9229,
+    "completion_tokens": 264,
+    "total_tokens": 9493
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

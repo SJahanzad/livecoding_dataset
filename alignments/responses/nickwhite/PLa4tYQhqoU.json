@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRhYOSDl8vExzcQgNVlUHOHagezj",
+        "object": "chat.completion",
+        "created": 1724193192,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, I can help align the code with the transcript. Here's the updated transcript with relevant lines of code:\n\n```json\n[\n    {\n        \"text\": \"so you're giving a binary array which is an array where\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int findMaxConsecutiveOnes(int[] nums) {\"\n        ]\n    },\n    {\n        \"text\": \"because binary encoding if you didn't\",\n        \"code\": [\n            \"        int max = 0;\",\n            \"        int current_number_of_ones = 0;\"\n        ]\n    },\n    {\n        \"text\": \"know zeros and ones and you output the\",\n        \"code\": [\n            \"        for (int i=0; i<nums.length; i++) {\"\n        ]\n    },\n    {\n        \"text\": \"of zeros and ones\",\n        \"code\": [\n            \"            if (nums[i] == 1) {\",\n            \"                current_number_of_ones += 1;\",\n            \"                max = Math.max(max, current_number_of_ones);\",\n            \"            } else {\",\n            \"                current_number_of_ones = 0;\",\n            \"            }\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"so that means however many ones and the\",\n        \"code\": [\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"so you understand it no I'm stop so look\",\n        \"code\": [\n            \"        for (int i=0; i<nums.length; i++) {\",\n            \"            if (nums[i] == 1) {\",\n            \"                current_number_of_ones += 1;\",\n            \"                max = Math.max(max, current_number_of_ones);\",\n            \"            } else {\",\n            \"                current_number_of_ones = 0;\",\n            \"            }\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"what we're gonna return at the end is max so if it's\",\n        \"code\": [\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"easy problem great beginner problem though so I I don't\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int findMaxConsecutiveOnes(int[] nums) {\",\n            \"        int max = 0;\",\n            \"        int current_number_of_ones = 0;\",\n            \"        for (int i=0; i<nums.length; i++) {\",\n            \"            if (nums[i] == 1) {\",\n            \"                current_number_of_ones += 1;\",\n            \"                max = Math.max(max, current_number_of_ones);\",\n            \"            } else {\",\n            \"                current_number_of_ones = 0;\",\n            \"            }\",\n            \"        }\",\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"questions oppression it's pretty easy and I'm doing the premium I got premium\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int findMaxConsecutiveOnes(int[] nums) {\",\n            \"        int max = 0;\",\n            \"        int current_number_of_ones = 0;\",\n            \"        for (int i=0; i<nums.length; i++) {\",\n            \"            if (nums[i] == 1) {\",\n            \"                current_number_of_ones += 1;\",\n            \"                max = Math.max(max, current_number_of_ones);\",\n            \"            } else {\",\n            \"                current_number_of_ones = 0;\",\n            \"            }\",\n            \"        }\",\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    }\n]\n```\n\nIn this modified transcript, the \"code\" key maps parts of the code to relevant parts of the transcript. If any part of the transcript doesn't directly relate to any code, it's not included.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3049,
+            "completion_tokens": 853,
+            "total_tokens": 3902
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

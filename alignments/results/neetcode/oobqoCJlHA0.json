@@ -1,0 +1,307 @@
+[
+    {
+        "text": "to check",
+        "start": 412.4,
+        "duration": 3.6,
+        "code": [
+            "def search(self, word: str) -> bool:",
+            "    curr = self.root",
+            "    for c in word:",
+            "        i = ord(c) - ord('a')",
+            "        if curr.children[i] == None:",
+            "            return False",
+            "        curr = curr.children[i]",
+            "    return curr.end"
+        ]
+    },
+    {
+        "text": "does a word start with app how can we",
+        "start": 412.88,
+        "duration": 4.24,
+        "code": [
+            "def startsWith(self, prefix: str) -> bool:",
+            "    curr = self.root",
+            "    for c in prefix:",
+            "        i = ord(c) - ord('a')",
+            "        if curr.children[i] == None:",
+            "            return False",
+            "        curr = curr.children[i]",
+            "    return True"
+        ]
+    },
+    {
+        "text": "all three of the functions insert",
+        "start": 690.32,
+        "duration": 4.4,
+        "code": [
+            "    def insert(self, word: str) -> None:",
+            "        curr = self.root",
+            "        for c in word:",
+            "            i = ord(c) - ord('a')",
+            "            if curr.children[i] == None:",
+            "                curr.children[i] = PrefixTreeNode()",
+            "            curr = curr.children[i]",
+            "        curr.end = True",
+            "",
+            "    def search(self, word: str) -> bool:",
+            "        curr = self.root",
+            "        for c in word:",
+            "            i = ord(c) - ord('a')",
+            "            if curr.children[i] == None:",
+            "                return False",
+            "            curr = curr.children[i]",
+            "        return curr.end",
+            "",
+            "    def startsWith(self, prefix: str) -> bool:",
+            "        curr = self.root",
+            "        for c in prefix:",
+            "            i = ord(c) - ord('a')",
+            "            if curr.children[i] == None:",
+            "                return False",
+            "            curr = curr.children[i]",
+            "        return True"
+        ]
+    },
+    {
+        "text": "so our job is to implement a try but we",
+        "start": 701.04,
+        "duration": 3.76,
+        "code": [
+            "class PrefixTreeNode:",
+            "    def __init__(self):",
+            "        self.children = [None] * 26",
+            "        self.end = False",
+            "",
+            "class PrefixTree:",
+            "    def __init__(self):",
+            "        self.root = PrefixTreeNode()"
+        ]
+    },
+    {
+        "text": "to children we would say children for",
+        "start": 762.16,
+        "duration": 3.84,
+        "code": [
+            "                curr.children[i] = PrefixTreeNode()"
+        ]
+    },
+    {
+        "text": "node so that's our entire trinode",
+        "start": 774.56,
+        "duration": 6.32,
+        "code": [
+            "        self.root = PrefixTreeNode()"
+        ]
+    },
+    {
+        "text": "search so we want to search to determine",
+        "start": 948.399,
+        "duration": 4.721,
+        "code": [
+            "    def search(self, word: str) -> bool:",
+            "        curr = self.root",
+            "        for c in word:",
+            "            i = ord(c) - ord('a')",
+            "            if curr.children[i] == None:",
+            "                return False",
+            "            curr = curr.children[i]",
+            "        return curr.end"
+        ]
+    },
+    {
+        "text": "variable set to true so this is the",
+        "start": 1009.68,
+        "duration": 3.76,
+        "code": [
+            "        return curr.end"
+        ]
+    },
+    {
+        "text": "is the key and we're going to create a",
+        "start": 766.0,
+        "duration": 3.36,
+        "code": [
+            "i = ord(c) - ord(\"a\")"
+        ]
+    },
+    {
+        "text": "new tri node",
+        "start": 768.079,
+        "duration": 3.681,
+        "code": [
+            "if curr.children[i] == None:",
+            "    curr.children[i] = PrefixTreeNode()"
+        ]
+    },
+    {
+        "text": "node so that's our entire trinode",
+        "start": 774.56,
+        "duration": 6.32,
+        "code": [
+            "class PrefixTreeNode:",
+            "    def __init__(self):",
+            "        self.children = [None] * 26",
+            "        self.end = False"
+        ]
+    },
+    {
+        "text": "try class so the first thing we're going",
+        "start": 780.88,
+        "duration": 3.6,
+        "code": [
+            "class PrefixTree:"
+        ]
+    },
+    {
+        "text": "to do is initialize this so let's get",
+        "start": 782.639,
+        "duration": 3.76,
+        "code": [
+            "def __init__(self):"
+        ]
+    },
+    {
+        "text": "do for the constructor and once the try",
+        "start": 797.6,
+        "duration": 4.96,
+        "code": [
+            "        self.root = PrefixTreeNode()"
+        ]
+    },
+    {
+        "text": "well we're going to",
+        "start": 918.56,
+        "duration": 3.04,
+        "code": [
+            "    def insert(self, word: str) -> None:"
+        ]
+    },
+    {
+        "text": "insert word method this method",
+        "start": 813.12,
+        "duration": 4.399,
+        "code": [
+            "    def insert(self, word: str) -> None:"
+        ]
+    },
+    {
+        "text": "is gonna be set to the root so we're",
+        "start": 823.279,
+        "duration": 3.441,
+        "code": [
+            "        curr = self.root"
+        ]
+    },
+    {
+        "text": "character by character in the word and",
+        "start": 827.68,
+        "duration": 4.24,
+        "code": [
+            "        for c in word:"
+        ]
+    },
+    {
+        "text": "does the word all does this character",
+        "start": 833.6,
+        "duration": 3.84,
+        "code": [
+            "            if curr.children[i] == None:"
+        ]
+    },
+    {
+        "text": "not in the current nodes",
+        "start": 840.48,
+        "duration": 5.68,
+        "code": [
+            "            if curr.children[i] == None:"
+        ]
+    },
+    {
+        "text": "dot children and the key value we're",
+        "start": 857.36,
+        "duration": 4.08,
+        "code": [
+            "            curr = curr.children[i]"
+        ]
+    },
+    {
+        "text": "tri node so this is how we are going to",
+        "start": 865.36,
+        "duration": 4.0,
+        "code": [
+            "                curr.children[i] = PrefixTreeNode()"
+        ]
+    },
+    {
+        "text": "our for loop right so we're going to do",
+        "start": 896.079,
+        "duration": 3.521,
+        "code": [
+            "        curr.end = True"
+        ]
+    },
+    {
+        "text": "we have to create",
+        "start": 902.32,
+        "duration": 3.92,
+        "code": [
+            "        curr.end = True"
+        ]
+    },
+    {
+        "text": "very similar to this insert function so",
+        "start": 944.079,
+        "duration": 4.32,
+        "code": [
+            "    def search(self, word: str) -> bool:"
+        ]
+    },
+    {
+        "text": "search so we want to search to determine",
+        "start": 948.399,
+        "duration": 4.721,
+        "code": [
+            "    def search(self, word: str) -> bool:"
+        ]
+    },
+    {
+        "text": "just like the previous function we're",
+        "start": 953.12,
+        "duration": 3.279,
+        "code": [
+            "        curr = self.root"
+        ]
+    },
+    {
+        "text": "character by character",
+        "start": 959.04,
+        "duration": 3.599,
+        "code": [
+            "        for c in word:"
+        ]
+    },
+    {
+        "text": "search function except we're not going",
+        "start": 1032.0,
+        "duration": 3.52,
+        "code": [
+            "    def startsWith(self, prefix: str) -> bool:"
+        ]
+    },
+    {
+        "text": "just want to know if there's any word",
+        "start": 1044.64,
+        "duration": 1.84,
+        "code": [
+            "        return True"
+        ]
+    },
+    {
+        "text": "look for the third time we're going to",
+        "start": 1049.76,
+        "duration": 3.6,
+        "code": [
+            "        return True"
+        ]
+    }
+]

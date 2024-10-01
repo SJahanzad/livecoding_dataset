@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLzrlHLX17SBrcLmGmIe0AjX3A9h",
+  "object": "chat.completion",
+  "created": 1724171263,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 83,\n        \"value\": [2]\n    },\n    {\n        \"key\": 85,\n        \"value\": [4]\n    },\n    {\n        \"key\": 87,\n        \"value\": [6]\n    },\n    {\n        \"key\": 89,\n        \"value\": [6]\n    },\n    {\n        \"key\": 93,\n        \"value\": [6]\n    },\n    {\n        \"key\": 95,\n        \"value\": [6]\n    },\n    {\n        \"key\": 97,\n        \"value\": [6]\n    },\n    {\n        \"key\": 103,\n        \"value\": [8]\n    },\n    {\n        \"key\": 106,\n        \"value\": [8, 10]\n    },\n    {\n        \"key\": 108,\n        \"value\": [10, 12]\n    },\n    {\n        \"key\": 113,\n        \"value\": [6]\n    },\n    {\n        \"key\": 119,\n        \"value\": [6]\n    },\n    {\n        \"key\": 121,\n        \"value\": [6]\n    },\n    {\n        \"key\": 123,\n        \"value\": [12]\n    },\n    {\n        \"key\": 133,\n        \"value\": [8]\n    },\n    {\n        \"key\": 137,\n        \"value\": [8]\n    },\n    {\n        \"key\": 142,\n        \"value\": [8]\n    },\n    {\n        \"key\": 146,\n        \"value\": [8]\n    },\n    {\n        \"key\": 150,\n        \"value\": [8]\n    },\n    {\n        \"key\": 153,\n        \"value\": [8]\n    },\n    {\n        \"key\": 155,\n        \"value\": [8]\n    },\n    {\n        \"key\": 157,\n        \"value\": [10]\n    },\n    {\n        \"key\": 161,\n        \"value\": [10, 12]\n    },\n    {\n        \"key\": 163,\n        \"value\": [10]\n    },\n    {\n        \"key\": 167,\n        \"value\": [6]\n    },\n    {\n        \"key\": 168,\n        \"value\": [8]\n    },\n    {\n        \"key\": 172,\n        \"value\": [12]\n    },\n    {\n        \"key\": 175,\n        \"value\": [8]\n    },\n    {\n        \"key\": 177,\n        \"value\": [10]\n    },\n    {\n        \"key\": 179,\n        \"value\": [10]\n    },\n    {\n        \"key\": 180,\n        \"value\": [12]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3708,
+    "completion_tokens": 573,
+    "total_tokens": 4281
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

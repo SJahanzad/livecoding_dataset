@@ -1,0 +1,46 @@
+[
+    {
+        "text": "characters it's a hash sad so in this",
+        "start": 488.51,
+        "duration": 5.52,
+        "code": [
+            "import java.util.HashSet;",
+            "HashSet<Character> hash_set = new HashSet<>();"
+        ]
+    },
+    {
+        "text": "case it's pretty good and it's linear",
+        "start": 492.169,
+        "duration": 4.081,
+        "code": [
+            "int a_pointer = 0;",
+            "int b_pointer = 0;",
+            "int max = 0;"
+        ]
+    },
+    {
+        "text": "runtime and linear if it what worst case",
+        "start": 494.03,
+        "duration": 4.98,
+        "code": [
+            "while (b_pointer < s.length()) {",
+            "    if (!hash_set.contains(s.charAt(b_pointer))) {",
+            "        hash_set.add(s.charAt(b_pointer));",
+            "        b_pointer++;",
+            "        max = Math.max(hash_set.size(), max);",
+            "    } else {",
+            "        hash_set.remove(s.charAt(a_pointer));",
+            "        a_pointer++;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "or not even it would be em you know oven",
+        "start": 499.01,
+        "duration": 7.14,
+        "code": [
+            "return max;"
+        ]
+    }
+]

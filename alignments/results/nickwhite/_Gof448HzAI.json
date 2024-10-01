@@ -1,0 +1,12 @@
+[
+    {
+        "text": "and then you return your output array at the end pretty simple problem",
+        "start": 267.13,
+        "duration": 9.0,
+        "code": [
+            "        return output_arr;",
+            "    }",
+            "}"
+        ]
+    }
+]

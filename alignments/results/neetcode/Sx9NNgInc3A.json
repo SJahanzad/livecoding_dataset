@@ -1,0 +1,516 @@
+[
+    {
+        "text": "so with that being said let's jump into the code so our cache is going to be",
+        "start": 766.399,
+        "duration": 9.92,
+        "code": [
+            "class Solution:",
+            "    def wordBreak(self, s: str, wordDict: List[str]) -> bool:"
+        ]
+    },
+    {
+        "text": "let's say a one-dimensional array right because for every position i",
+        "start": 771.12,
+        "duration": 9.281,
+        "code": [
+            "        dp = [False] * (len(s) + 1)"
+        ]
+    },
+    {
+        "text": "in the string s we are going to have a value so we're going to initialize this",
+        "start": 775.36,
+        "duration": 7.839,
+        "code": [
+            "        dp = [False] * (len(s) + 1)"
+        ]
+    },
+    {
+        "text": "to false it's going to be the length of the string s",
+        "start": 780.079,
+        "duration": 6.561,
+        "code": [
+            "        dp = [False] * (len(s) + 1)"
+        ]
+    },
+    {
+        "text": "plus 1 for our base case and we are going to initialize our base case we",
+        "start": 782.72,
+        "duration": 7.9990000000000006,
+        "code": [
+            "        dp[len(s)] = True"
+        ]
+    },
+    {
+        "text": "know that it's the last position basically the position",
+        "start": 787.279,
+        "duration": 6.0,
+        "code": [
+            "        dp[len(s)] = True"
+        ]
+    },
+    {
+        "text": "so now we're going to go through every position i in",
+        "start": 797.44,
+        "duration": 7.92,
+        "code": [
+            "        for i in range(len(s) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "the length of the string starting at the last index and working our way to the",
+        "start": 800.48,
+        "duration": 8.561,
+        "code": [
+            "        for i in range(len(s) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "beginning so that's why i'm using the decrementer of negative one",
+        "start": 805.44,
+        "duration": 6.959,
+        "code": [
+            "        for i in range(len(s) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "and for each position i we want to try every single word in our word dictionary",
+        "start": 812.24,
+        "duration": 9.92,
+        "code": [
+            "            for w in wordDict:"
+        ]
+    },
+    {
+        "text": "and see if the word",
+        "start": 818.16,
+        "duration": 4.32,
+        "code": [
+            "            for w in wordDict:"
+        ]
+    },
+    {
+        "text": "matches this portion so first we have to see if",
+        "start": 819.839,
+        "duration": 6.961,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "starting at position i the string s even has enough",
+        "start": 823.12,
+        "duration": 7.279999999999999,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "characters for w to be compared to it so what we're going to do is we're going to",
+        "start": 826.88,
+        "duration": 5.439,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "check",
+        "start": 830.8,
+        "duration": 3.76,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "i plus the length of w and we want to know is it less than or",
+        "start": 831.199,
+        "duration": 9.36,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "equal to the length of s if that's the case",
+        "start": 835.92,
+        "duration": 6.720000000000001,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "then that means there are enough",
+        "start": 839.839,
+        "duration": 3.12,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "characters in",
+        "start": 842.0,
+        "duration": 2.72,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "if this is true then let's compare so we want to know if that's true",
+        "start": 846.079,
+        "duration": 7.9990000000000006,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "and if s starting at index i",
+        "start": 849.279,
+        "duration": 6.721,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "going up until i plus the length of w so basically let's say",
+        "start": 852.959,
+        "duration": 11.759,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "w was three characters then we want to know the first three characters in",
+        "start": 859.199,
+        "duration": 8.481,
+        "code": [
+            "                if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "s starting at index i are they exactly equal",
+        "start": 863.279,
+        "duration": 6.0,
+        "code": [
+            "                    dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "if they are equal then we wanna know okay so dp of",
+        "start": 866.399,
+        "duration": 8.721,
+        "code": [
+            "                    dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "i is going to be set to dp",
+        "start": 870.24,
+        "duration": 6.719,
+        "code": [
+            "                    dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "of i plus the length of w right that was the relationship we got",
+        "start": 873.68,
+        "duration": 9.52,
+        "code": [
+            "                    dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "i plus the length of whatever the word happens to be",
+        "start": 878.32,
+        "duration": 9.280000000000001,
+        "code": [
+            "                    dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "now if we got a single a way to word break this",
+        "start": 882.959,
+        "duration": 6.880000000000001,
+        "code": [
+            "                if dp[i]:"
+        ]
+    },
+    {
+        "text": "starting at index i that means we can basically stop this loop right we don't",
+        "start": 887.04,
+        "duration": 7.281000000000001,
+        "code": [
+            "                if dp[i]:"
+        ]
+    },
+    {
+        "text": "have to look at every single word in the dictionary if we found at least",
+        "start": 891.04,
+        "duration": 6.0,
+        "code": [
+            "                if dp[i]:"
+        ]
+    },
+    {
+        "text": "one way we were able to word break it then we're gonna stop so basically if dp",
+        "start": 893.92,
+        "duration": 6.48,
+        "code": [
+            "                if dp[i]:"
+        ]
+    },
+    {
+        "text": "of i is true then we can break out of this",
+        "start": 897.6,
+        "duration": 8.64,
+        "code": [
+            "                    break"
+        ]
+    },
+    {
+        "text": "for loop and then move on to the next index so we're going to start basically",
+        "start": 901.12,
+        "duration": 7.84,
+        "code": [
+            "        return dp[0]"
+        ]
+    },
+    {
+        "text": "at the last index keep going until we've gotten to index 0",
+        "start": 905.76,
+        "duration": 7.199,
+        "code": [
+            "        return dp[0]"
+        ]
+    },
+    {
+        "text": "and then once we've done that we know we can actually return that",
+        "start": 909.12,
+        "duration": 6.48,
+        "code": [
+            "        return dp[0]"
+        ]
+    },
+    {
+        "text": "and that's going to be stored in dp of zero so believe it or not",
+        "start": 912.079,
+        "duration": 8.561,
+        "code": [
+            "        return dp[0]"
+        ]
+    },
+    {
+        "text": "going to be",
+        "start": 363.6,
+        "duration": 2.56,
+        "code": [
+            "class Solution:",
+            "    def wordBreak(self, s: str, wordDict: List[str]) -> bool:"
+        ]
+    },
+    {
+        "text": "so really we're only going to have one",
+        "start": 364.4,
+        "duration": 3.6,
+        "code": [
+            "dp = [False] * (len(s) + 1)",
+            "dp[len(s)] = True"
+        ]
+    },
+    {
+        "text": "we're not going to be doing it like this",
+        "start": 371.919,
+        "duration": 2.961,
+        "code": [
+            "for i in range(len(s) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "we're not going to check every single",
+        "start": 373.6,
+        "duration": 2.0,
+        "code": [
+            "for w in wordDict:"
+        ]
+    },
+    {
+        "text": "variable that we're keeping track of",
+        "start": 366.16,
+        "duration": 4.4,
+        "code": [
+            "if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "prefix",
+        "start": 374.88,
+        "duration": 2.319,
+        "code": []
+    },
+    {
+        "text": "we're going to have decisions in our",
+        "start": 375.6,
+        "duration": 3.599,
+        "code": [
+            "dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "decision tree based on the number of",
+        "start": 377.199,
+        "duration": 4.161,
+        "code": [
+            "if dp[i]:",
+            "    break"
+        ]
+    },
+    {
+        "text": "words that are in the word dictionary so",
+        "start": 379.199,
+        "duration": 5.28,
+        "code": []
+    },
+    {
+        "text": "four we know that was true",
+        "start": 747.839,
+        "duration": 5.68,
+        "code": [
+            "dp[len(s)] = True"
+        ]
+    },
+    {
+        "text": "so we can set dp of zero equal to true",
+        "start": 749.68,
+        "duration": 7.12,
+        "code": [
+            "dp[len(s)] = True"
+        ]
+    },
+    {
+        "text": "let's say a one-dimensional array right",
+        "start": 771.12,
+        "duration": 4.24,
+        "code": [
+            "dp = [False] * (len(s) + 1)"
+        ]
+    },
+    {
+        "text": "beginning of the string",
+        "start": 810.56,
+        "duration": 5.279,
+        "code": [
+            "for i in range(len(s) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "and see if the word",
+        "start": 818.16,
+        "duration": 4.32,
+        "code": [
+            "for w in wordDict:"
+        ]
+    },
+    {
+        "text": "characters for w to be compared to it so",
+        "start": 826.88,
+        "duration": 3.92,
+        "code": [
+            "if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "if this is true then let's compare so we",
+        "start": 846.079,
+        "duration": 3.2,
+        "code": [
+            "if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "and if s starting at index i",
+        "start": 849.279,
+        "duration": 6.721,
+        "code": [
+            "if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "if they are equal then we wanna know",
+        "start": 866.399,
+        "duration": 3.841,
+        "code": [
+            "if (i + len(w)) <= len(s) and s[i : i + len(w)] == w:"
+        ]
+    },
+    {
+        "text": "okay so dp of",
+        "start": 868.8,
+        "duration": 4.88,
+        "code": [
+            "dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "the relationship we got",
+        "start": 876.959,
+        "duration": 4.88,
+        "code": [
+            "dp[i] = dp[i + len(w)]"
+        ]
+    },
+    {
+        "text": "one way we were able to word break it",
+        "start": 893.92,
+        "duration": 3.68,
+        "code": [
+            "if dp[i]:",
+            "break"
+        ]
+    },
+    {
+        "text": "for loop and then move on to the next",
+        "start": 901.12,
+        "duration": 4.64,
+        "code": [
+            "if dp[i]:",
+            "break"
+        ]
+    },
+    {
+        "text": "index so we're going to start basically",
+        "start": 903.6,
+        "duration": 3.2,
+        "code": [
+            "for i in range(len(s) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "keep going until we've gotten to index 0",
+        "start": 906.8,
+        "duration": 3.839,
+        "code": [
+            "for i in range(len(s) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "can actually return that",
+        "start": 910.639,
+        "duration": 3.521,
+        "code": [
+            "return dp[0]"
+        ]
+    },
+    {
+        "text": "and that's going to be stored in dp of",
+        "start": 912.079,
+        "duration": 3.921,
+        "code": [
+            "return dp[0]"
+        ]
+    },
+    {
+        "text": "zero so believe it or not",
+        "start": 914.16,
+        "duration": 4.64,
+        "code": [
+            "return dp[0]"
+        ]
+    }
+]

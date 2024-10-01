@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMHWcmRBiIijX2CMyYt0j8fRNUif",
+  "object": "chat.completion",
+  "created": 1724172358,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 26,\n        \"value\": [\n            2,\n            3\n        ]\n    },\n    {\n        \"key\": 267,\n        \"value\": [\n            4\n        ]\n    },\n    {\n        \"key\": 269,\n        \"value\": [\n            5\n        ]\n    },\n    {\n        \"key\": 270,\n        \"value\": [\n            6,\n            7\n        ]\n    },\n    {\n        \"key\": 273,\n        \"value\": [\n            8\n        ]\n    },\n    {\n        \"key\": 274,\n        \"value\": [\n            9\n        ]\n    },\n    {\n        \"key\": 276,\n        \"value\": [\n            10,\n            11,\n            12\n        ]\n    },\n    {\n        \"key\": 278,\n        \"value\": [\n            13,\n            14\n        ]\n    },\n    {\n        \"key\": 285,\n        \"value\": [\n            15,\n            16\n        ]\n    },\n    {\n        \"key\": 295,\n        \"value\": [\n            17,\n            18\n        ]\n    },\n    {\n        \"key\": 302,\n        \"value\": [\n            19,\n            20\n        ]\n    },\n    {\n        \"key\": 308,\n        \"value\": [\n            21\n        ]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 15076,
+    "completion_tokens": 302,
+    "total_tokens": 15378
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

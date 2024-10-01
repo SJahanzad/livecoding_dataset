@@ -1,0 +1,854 @@
+[
+    {
+        "text": "so today let's look at unique paths so",
+        "start": 3.04,
+        "duration": 5.04,
+        "code": [
+            "class Solution:"
+        ]
+    },
+    {
+        "text": "this is a dynamic programming problem",
+        "start": 5.68,
+        "duration": 4.48,
+        "code": [
+            "def uniquePaths(self, m: int, n: int) -> int:"
+        ]
+    },
+    {
+        "text": "so let's do what we just did in the",
+        "start": 501.36,
+        "duration": 3.6,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "picture so i'm going to have",
+        "start": 503.36,
+        "duration": 3.519,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "a row and this is initially going to be",
+        "start": 504.96,
+        "duration": 4.16,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "the bottom row it's going to be",
+        "start": 506.879,
+        "duration": 4.561,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "the length of the number of rows that we",
+        "start": 509.12,
+        "duration": 3.44,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "have which is",
+        "start": 511.44,
+        "duration": 3.12,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "n but since it's a grid you could",
+        "start": 512.56,
+        "duration": 3.2,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "probably use either m",
+        "start": 514.56,
+        "duration": 3.52,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "or n and so since we know the bottom row",
+        "start": 515.76,
+        "duration": 4.32,
+        "code": [
+            "row = [1] * n"
+        ]
+    },
+    {
+        "text": "is going to be all ones we can start",
+        "start": 518.08,
+        "duration": 5.28,
+        "code": [
+            "for i in range(m - 1):"
+        ]
+    },
+    {
+        "text": "going through the other rows",
+        "start": 520.08,
+        "duration": 5.12,
+        "code": [
+            "for i in range(m - 1):"
+        ]
+    },
+    {
+        "text": "so we can go through all of the other",
+        "start": 523.36,
+        "duration": 3.76,
+        "code": [
+            "for i in range(m - 1):"
+        ]
+    },
+    {
+        "text": "rows except for the last one so",
+        "start": 525.2,
+        "duration": 4.72,
+        "code": [
+            "for i in range(m - 1):"
+        ]
+    },
+    {
+        "text": "m minus one and for each row we're going",
+        "start": 527.12,
+        "duration": 3.6,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "to compute",
+        "start": 529.92,
+        "duration": 3.28,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "a new row so this new row is going to be",
+        "start": 530.72,
+        "duration": 3.44,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "above",
+        "start": 533.2,
+        "duration": 3.28,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "the old row and so it's going to be the",
+        "start": 534.16,
+        "duration": 4.08,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "same dimensions of course",
+        "start": 536.48,
+        "duration": 4.4,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "we'll initialize it to all ones and to",
+        "start": 538.24,
+        "duration": 3.44,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "avoid",
+        "start": 540.88,
+        "duration": 2.959,
+        "code": [
+            "newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "the edge case of having to check out of",
+        "start": 541.68,
+        "duration": 3.76,
+        "code": [
+            "for j in range(n - 2, -1, -1):"
+        ]
+    },
+    {
+        "text": "bounds what i'm going to do",
+        "start": 543.839,
+        "duration": 4.56,
+        "code": [
+            "for j in range(n - 2, -1, -1):"
+        ]
+    },
+    {
+        "text": "is go through every position every",
+        "start": 545.44,
+        "duration": 4.0,
+        "code": [
+            "for j in range(n - 2, -1, -1):"
+        ]
+    },
+    {
+        "text": "column except",
+        "start": 548.399,
+        "duration": 3.601,
+        "code": [
+            "for j in range(n - 2, -1, -1):"
+        ]
+    },
+    {
+        "text": "the rightmost column and we can do that",
+        "start": 549.44,
+        "duration": 4.72,
+        "code": [
+            "for j in range(n - 2, -1, -1):"
+        ]
+    },
+    {
+        "text": "like this because we know the rightmost",
+        "start": 552.0,
+        "duration": 2.88,
+        "code": [
+            "newRow[j] = newRow[j + 1] + row[j]"
+        ]
+    },
+    {
+        "text": "column",
+        "start": 554.16,
+        "duration": 3.92,
+        "code": [
+            "newRow[j] = newRow[j + 1] + row[j]"
+        ]
+    },
+    {
+        "text": "or the last value in every single row is",
+        "start": 554.88,
+        "duration": 4.079,
+        "code": [
+            "newRow[j] = newRow[j + 1] + row[j]"
+        ]
+    },
+    {
+        "text": "always going to be",
+        "start": 558.08,
+        "duration": 3.52,
+        "code": [
+            "newRow[j] = newRow[j + 1] + row[j]"
+        ]
+    },
+    {
+        "text": "one right i showed that in the drawing",
+        "start": 558.959,
+        "duration": 3.521,
+        "code": [
+            "newRow[j] = newRow[j + 1] + row[j]"
+        ]
+    },
+    {
+        "text": "and so we're going to",
+        "start": 561.6,
+        "duration": 3.359,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "start at the second to last position",
+        "start": 562.48,
+        "duration": 4.32,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "keep going until we get to the beginning",
+        "start": 564.959,
+        "duration": 2.32,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "and go",
+        "start": 566.8,
+        "duration": 2.479,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "in reverse order so we're going from",
+        "start": 567.279,
+        "duration": 3.041,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "right to left",
+        "start": 569.279,
+        "duration": 3.521,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "and we know that the new row so if we're",
+        "start": 570.32,
+        "duration": 3.76,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "computing new row of",
+        "start": 572.8,
+        "duration": 4.719,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "j it's going to be new",
+        "start": 574.08,
+        "duration": 6.72,
+        "code": [
+            "row = newRow"
+        ]
+    },
+    {
+        "text": "row of j plus 1 so the",
+        "start": 577.519,
+        "duration": 5.44,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "this is the right value and the value",
+        "start": 580.8,
+        "duration": 3.76,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "below is just going to be",
+        "start": 582.959,
+        "duration": 5.281,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "the old row at index j and so with this",
+        "start": 584.56,
+        "duration": 5.52,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "loop we'll be able to compute the new",
+        "start": 588.24,
+        "duration": 4.56,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "row and so after we do that we can",
+        "start": 590.08,
+        "duration": 4.8,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "update the row so the old row is now",
+        "start": 592.8,
+        "duration": 3.599,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "going to be set to the",
+        "start": 594.88,
+        "duration": 3.92,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "new row and so it's going to keep doing",
+        "start": 596.399,
+        "duration": 3.44,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "that until we",
+        "start": 598.8,
+        "duration": 4.0,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "end up getting the last or rather the",
+        "start": 599.839,
+        "duration": 4.24,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "first row the top",
+        "start": 602.8,
+        "duration": 3.52,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "row that we actually want to compute so",
+        "start": 604.079,
+        "duration": 4.161,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "after this has been executed that's",
+        "start": 606.32,
+        "duration": 3.44,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "what's going to happen and what we",
+        "start": 608.24,
+        "duration": 3.039,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "actually want to return though",
+        "start": 609.76,
+        "duration": 4.24,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "is in that first row which will be in",
+        "start": 611.279,
+        "duration": 3.921,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "this variable",
+        "start": 614.0,
+        "duration": 4.0,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "we want the first value so at index 0",
+        "start": 615.2,
+        "duration": 4.319,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "that's what we're going to return",
+        "start": 618.0,
+        "duration": 4.56,
+        "code": [
+            "return row[0]"
+        ]
+    },
+    {
+        "text": "so let's do what we just did in the",
+        "start": 501.36,
+        "duration": 3.6,
+        "code": [
+            "class Solution:"
+        ]
+    },
+    {
+        "text": "picture so i'm going to have",
+        "start": 503.36,
+        "duration": 3.519,
+        "code": [
+            "    def uniquePaths(self, m: int, n: int) -> int:"
+        ]
+    },
+    {
+        "text": "a row and this is initially going to be",
+        "start": 504.96,
+        "duration": 4.16,
+        "code": [
+            "        row = [1] * n"
+        ]
+    },
+    {
+        "text": "the bottom row it's going to be",
+        "start": 506.879,
+        "duration": 4.561,
+        "code": [
+            "        for i in range(m - 1):"
+        ]
+    },
+    {
+        "text": "the length of the number of rows that we",
+        "start": 509.12,
+        "duration": 3.44,
+        "code": [
+            "            newRow = [1] * n"
+        ]
+    },
+    {
+        "text": "the edge case of having to check out of",
+        "start": 541.68,
+        "duration": 3.76,
+        "code": [
+            "            row = newRow"
+        ]
+    },
+    {
+        "text": "bounds what i'm going to do",
+        "start": 543.839,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "is go through every position every",
+        "start": 545.44,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "column except",
+        "start": 548.399,
+        "duration": 3.601,
+        "code": []
+    },
+    {
+        "text": "the rightmost column and we can do that",
+        "start": 549.44,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "like this because we know the rightmost",
+        "start": 552.0,
+        "duration": 2.88,
+        "code": []
+    },
+    {
+        "text": "column",
+        "start": 554.16,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "or the last value in every single row is",
+        "start": 554.88,
+        "duration": 4.079,
+        "code": []
+    },
+    {
+        "text": "always going to be",
+        "start": 558.08,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "one right i showed that in the drawing",
+        "start": 558.959,
+        "duration": 3.521,
+        "code": []
+    },
+    {
+        "text": "and so we're going to",
+        "start": 561.6,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "start at the second to last position",
+        "start": 562.48,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "keep going until we get to the beginning",
+        "start": 564.959,
+        "duration": 2.32,
+        "code": []
+    },
+    {
+        "text": "and go",
+        "start": 566.8,
+        "duration": 2.479,
+        "code": []
+    },
+    {
+        "text": "in reverse order so we're going from",
+        "start": 567.279,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "right to left",
+        "start": 569.279,
+        "duration": 3.521,
+        "code": []
+    },
+    {
+        "text": "and we know that the new row so if we're",
+        "start": 570.32,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "computing new row of",
+        "start": 572.8,
+        "duration": 4.719,
+        "code": []
+    },
+    {
+        "text": "j it's going to be new",
+        "start": 574.08,
+        "duration": 6.72,
+        "code": []
+    },
+    {
+        "text": "row of j plus 1 so the",
+        "start": 577.519,
+        "duration": 5.44,
+        "code": []
+    },
+    {
+        "text": "this is the right value and the value",
+        "start": 580.8,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "below is just going to be",
+        "start": 582.959,
+        "duration": 5.281,
+        "code": []
+    },
+    {
+        "text": "the old row at index j and so with this",
+        "start": 584.56,
+        "duration": 5.52,
+        "code": []
+    },
+    {
+        "text": "loop we'll be able to compute the new",
+        "start": 588.24,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "row and so after we do that we can",
+        "start": 590.08,
+        "duration": 4.8,
+        "code": []
+    },
+    {
+        "text": "update the row so the old row is now",
+        "start": 592.8,
+        "duration": 3.599,
+        "code": []
+    },
+    {
+        "text": "going to be set to the",
+        "start": 594.88,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "new row and so it's going to keep doing",
+        "start": 596.399,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "that until we",
+        "start": 598.8,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "end up getting the last or rather the",
+        "start": 599.839,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "first row the top",
+        "start": 602.8,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "row that we actually want to compute so",
+        "start": 604.079,
+        "duration": 4.161,
+        "code": []
+    },
+    {
+        "text": "after this has been executed that's",
+        "start": 606.32,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "what's going to happen and what we",
+        "start": 608.24,
+        "duration": 3.039,
+        "code": []
+    },
+    {
+        "text": "actually want to return though",
+        "start": 609.76,
+        "duration": 4.24,
+        "code": [
+            "        return row[0]"
+        ]
+    },
+    {
+        "text": "is in that first row which will be in",
+        "start": 611.279,
+        "duration": 3.921,
+        "code": []
+    },
+    {
+        "text": "this variable",
+        "start": 614.0,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "we want the first value so at index 0",
+        "start": 615.2,
+        "duration": 4.319,
+        "code": []
+    },
+    {
+        "text": "that's what we're going to return",
+        "start": 618.0,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "so now we can run our code and by the",
+        "start": 619.519,
+        "duration": 3.681,
+        "code": []
+    },
+    {
+        "text": "way",
+        "start": 622.56,
+        "duration": 2.88,
+        "code": []
+    },
+    {
+        "text": "so it is pretty efficient because we did",
+        "start": 623.2,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "this in o",
+        "start": 625.44,
+        "duration": 4.639,
+        "code": []
+    },
+    {
+        "text": "of n times n time and the memory",
+        "start": 626.48,
+        "duration": 6.08,
+        "code": []
+    },
+    {
+        "text": "complexity is just the",
+        "start": 630.079,
+        "duration": 5.921,
+        "code": []
+    },
+    {
+        "text": "big o of n because that's the length of",
+        "start": 632.56,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "a",
+        "start": 636.0,
+        "duration": 2.8,
+        "code": []
+    },
+    {
+        "text": "row so i hope this was helpful if you",
+        "start": 636.24,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "enjoyed",
+        "start": 638.8,
+        "duration": 2.32,
+        "code": []
+    },
+    {
+        "text": "please like and subscribe it supports",
+        "start": 639.36,
+        "duration": 3.919,
+        "code": []
+    },
+    {
+        "text": "the channel a lot and i'll hopefully",
+        "start": 641.12,
+        "duration": 6.719,
+        "code": []
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 643.279,
+        "duration": 4.56,
+        "code": []
+    }
+]

@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMAutcovuxI6p2iUbjlfJokXk1Lg",
+  "object": "chat.completion",
+  "created": 1724171948,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n    \"423\": [\n        0\n    ],\n    \"426\": [\n        2\n    ],\n    \"428\": [\n        4\n    ],\n    \"430\": [\n        6,\n        8\n    ],\n    \"432\": [\n        12\n    ],\n    \"438\": [\n        14\n    ],\n    \"444\": [\n        16\n    ],\n    \"446\": [\n        18\n    ],\n    \"450\": [\n        20\n    ],\n    \"452\": [\n        22\n    ],\n    \"460\": [\n        24,\n        26\n    ],\n    \"462\": [\n        28,\n        30\n    ],\n    \"469\": [\n        32,\n        34\n    ],\n    \"472\": [\n        36\n    ],\n    \"474\": [\n        38\n    ],\n    \"476\": [\n        40\n    ],\n    \"480\": [\n        42\n    ],\n    \"483\": [\n        44\n    ],\n    \"485\": [\n        46\n    ],\n    \"487\": [\n        48\n    ],\n    \"489\": [\n        50\n    ],\n    \"491\": [\n        52\n    ],\n    \"494\": [\n        54\n    ],\n    \"496\": [\n        56\n    ],\n    \"498\": [\n        58\n    ],\n    \"500\": [\n        60\n    ],\n    \"501\": [\n        62\n    ],\n    \"504\": [\n        64\n    ]\n}\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7289,
+    "completion_tokens": 330,
+    "total_tokens": 7619
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

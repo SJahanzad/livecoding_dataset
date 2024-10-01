@@ -1,0 +1,244 @@
+[
+    {
+        "text": "so my first instinct was okay we just",
+        "start": 28.32,
+        "duration": 5.1,
+        "code": [
+            "class Solution {",
+            "    public int singleNumber(int[] nums) {"
+        ]
+    },
+    {
+        "text": "need the frequency of the number to be 1",
+        "start": 31.23,
+        "duration": 4.41,
+        "code": []
+    },
+    {
+        "text": "obviously there's a hashmap right so we",
+        "start": 33.42,
+        "duration": 3.81,
+        "code": []
+    },
+    {
+        "text": "just have number of frequencies loop",
+        "start": 35.64,
+        "duration": 4.56,
+        "code": [
+            "        int result = 0;"
+        ]
+    },
+    {
+        "text": "through basic loop if the hash map",
+        "start": 37.23,
+        "duration": 5.099,
+        "code": [
+            "        for (int i = 0; i < nums.length; i++) {"
+        ]
+    },
+    {
+        "text": "doesn't contain the value we put it in",
+        "start": 40.2,
+        "duration": 4.199,
+        "code": []
+    },
+    {
+        "text": "with a you know the count of 1",
+        "start": 42.329,
+        "duration": 4.111,
+        "code": []
+    },
+    {
+        "text": "otherwise we update the value and then",
+        "start": 44.399,
+        "duration": 3.601,
+        "code": []
+    },
+    {
+        "text": "we have this is basically a frequency",
+        "start": 46.44,
+        "duration": 3.15,
+        "code": []
+    },
+    {
+        "text": "map then you just loop through the",
+        "start": 48.0,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "frequency map if the frequency is 1 we",
+        "start": 49.59,
+        "duration": 4.53,
+        "code": []
+    },
+    {
+        "text": "return the key so then that's it that's",
+        "start": 51.6,
+        "duration": 5.01,
+        "code": []
+    },
+    {
+        "text": "it you run it it works perfectly but",
+        "start": 54.12,
+        "duration": 5.97,
+        "code": []
+    },
+    {
+        "text": "what they wanted in the problem was to",
+        "start": 56.61,
+        "duration": 7.47,
+        "code": []
+    },
+    {
+        "text": "not use extra space right so how do we",
+        "start": 60.09,
+        "duration": 6.18,
+        "code": []
+    },
+    {
+        "text": "do that well I looked at the solution",
+        "start": 64.08,
+        "duration": 5.789,
+        "code": []
+    },
+    {
+        "text": "and I'm not really that confident in my",
+        "start": 66.27,
+        "duration": 6.209,
+        "code": []
+    },
+    {
+        "text": "bit manipulation abilities I learned bit",
+        "start": 69.869,
+        "duration": 4.711,
+        "code": []
+    },
+    {
+        "text": "manipulation of data structures but I",
+        "start": 72.479,
+        "duration": 4.591,
+        "code": []
+    },
+    {
+        "text": "have to know it to get a job probably so",
+        "start": 74.58,
+        "duration": 4.71,
+        "code": []
+    },
+    {
+        "text": "I'm gonna get better at it but I you can",
+        "start": 77.07,
+        "duration": 4.95,
+        "code": []
+    },
+    {
+        "text": "bid manipulations useful I just saw this",
+        "start": 79.29,
+        "duration": 4.2,
+        "code": []
+    },
+    {
+        "text": "solution you just loop through the array",
+        "start": 82.02,
+        "duration": 3.87,
+        "code": []
+    },
+    {
+        "text": "and I was surprised by how simple it was",
+        "start": 83.49,
+        "duration": 6.089,
+        "code": []
+    },
+    {
+        "text": "and then I looked it up and had it",
+        "start": 85.89,
+        "duration": 5.04,
+        "code": []
+    },
+    {
+        "text": "explained to me and I was like wow this",
+        "start": 89.579,
+        "duration": 5.101,
+        "code": []
+    },
+    {
+        "text": "is really cool so I guess you can do you",
+        "start": 90.93,
+        "duration": 5.46,
+        "code": []
+    },
+    {
+        "text": "know like plus equals but like carat",
+        "start": 94.68,
+        "duration": 3.72,
+        "code": []
+    },
+    {
+        "text": "equals with these I'm not sure if you",
+        "start": 96.39,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "can do in a Java the solution he had was",
+        "start": 98.4,
+        "duration": 6.09,
+        "code": []
+    },
+    {
+        "text": "in Python so let's try it and then I'll",
+        "start": 100.71,
+        "duration": 6.93,
+        "code": []
+    },
+    {
+        "text": "explain it so this one is a linear scan",
+        "start": 104.49,
+        "duration": 4.559,
+        "code": []
+    },
+    {
+        "text": "and obviously we don't know if storage",
+        "start": 107.64,
+        "duration": 3.03,
+        "code": []
+    },
+    {
+        "text": "space we're just doing bit manipulation",
+        "start": 109.049,
+        "duration": 4.5,
+        "code": []
+    },
+    {
+        "text": "so looks like it works you can do this",
+        "start": 110.67,
+        "duration": 5.549,
+        "code": []
+    },
+    {
+        "text": "which again just means result equals",
+        "start": 113.549,
+        "duration": 9.091,
+        "code": [
+            "            result ^= nums[i];"
+        ]
+    },
+    {
+        "text": "results caret num shevai so yeah pretty",
+        "start": 116.219,
+        "duration": 9.301,
+        "code": []
+    },
+    {
+        "text": "fast hundred percent how does this work",
+        "start": 122.64,
+        "duration": 5.88,
+        "code": [
+            "        }",
+            "        return result;",
+            "    }",
+            "}"
+        ]
+    }
+]

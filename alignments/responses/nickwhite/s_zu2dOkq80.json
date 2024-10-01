@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yRk30PxIAc7BLBTzHlG5Z1QjPWSo",
+        "object": "chat.completion",
+        "created": 1724193347,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"so you know let's break it down you have two baskets and there's a bunch of trees and you can add one piece of fruit from each tree into your basket...\",\n        \"code\": [\n            \"public int totalFruit(int[] tree) {\",\n            \"    int last_fruit = -1;\",\n            \"    int second_last_fruit = -1;\",\n            \"    int last_fruit_count = 0;\",\n            \"    int current_max = 0;\",\n            \"    int max = 0;\"\n        ]\n    },\n    {\n        \"text\": \"so what we're gonna do now is we're gonna loop through each of the fruits and trees...\",\n        \"code\": [\n            \"    for (Integer fruit : tree) {\"\n        ]\n    },\n    {\n        \"text\": \"we see a new fruit and then we're gonna do mint the current maximum because we have to...\",\n        \"code\": [\n            \"        if (fruit == last_fruit || fruit == second_last_fruit) {\",\n            \"            current_max += 1;\",\n            \"        } else {\",\n            \"            current_max = last_fruit_count + 1;\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"if the current fruit is equal to last fruit or the current fruit is equal to second last fruit...\",\n        \"code\": [\n            \"        if (fruit == last_fruit) {\",\n            \"            last_fruit_count += 1;\",\n            \"        } else {\",\n            \"            last_fruit_count = 1;\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"if fruit does not equal last fruit we have to update the last fruit and second last fruit...\",\n        \"code\": [\n            \"        if (fruit != last_fruit) {\",\n            \"            second_last_fruit = last_fruit;\",\n            \"            last_fruit = fruit;\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"at each iteration is always updating the max...\",\n        \"code\": [\n            \"        max = Math.max(current_max, max);\",\n            \"    }\"\n        ]\n    },\n    {\n        \"text\": \"then you return the maximum of all of that...\",\n        \"code\": [\n            \"    return max;\",\n            \"}\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6678,
+            "completion_tokens": 491,
+            "total_tokens": 7169
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yRkAlWH9WudSc1f0Z3ZrLstfyYgQ",
+        "object": "chat.completion",
+        "created": 1724193354,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here\u2019s the alignment of the code with the relevant parts of the transcript:\n\n```json\n[\n    {\n        \"text\": \"that's pretty much it pretty easy I\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int totalFruit(int[] tree) {\",\n            \"        int last_fruit = -1;\",\n            \"        int second_last_fruit = -1;\",\n            \"        int last_fruit_count = 0;\",\n            \"        int current_max = 0;\",\n            \"        int max = 0;\"\n        ]\n    },\n    {\n        \"text\": \"I think you don't need a hashmap and yeah\",\n        \"code\": [\n            \"        for (Integer fruit : tree) {\",\n            \"\",\n            \"            if (fruit == last_fruit || fruit == second_last_fruit) {\",\n            \"                current_max += 1;\",\n            \"            } else {\",\n            \"                current_max = last_fruit_count + 1;\",\n            \"            }\",\n            \"\",\n            \"            if (fruit == last_fruit) {\",\n            \"                last_fruit_count += 1;\",\n            \"            } else {\",\n            \"                last_fruit_count = 1;\",\n            \"            }\",\n            \"\",\n            \"            if (fruit != last_fruit) {\",\n            \"                second_last_fruit = last_fruit;\",\n            \"                last_fruit = fruit;\",\n            \"            }\",\n            \"\",\n            \"            max = Math.max(current_max, max);\",\n            \"        }\",\n            \"\",\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"that's it let me know what you guys\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int totalFruit(int[] tree) {\",\n            \"        int last_fruit = -1;\",\n            \"        int second_last_fruit = -1;\",\n            \"        int last_fruit_count = 0;\",\n            \"        int current_max = 0;\",\n            \"        int max = 0;\",\n            \"        for (Integer fruit : tree) {\",\n            \"            if (fruit == last_fruit || fruit == second_last_fruit) {\",\n            \"                current_max += 1;\",\n            \"            } else {\",\n            \"                current_max = last_fruit_count + 1;\",\n            \"            }\",\n            \"            if (fruit == last_fruit) {\",\n            \"                last_fruit_count += 1;\",\n            \"            } else {\",\n            \"                last_fruit_count = 1;\",\n            \"            }\",\n            \"            if (fruit != last_fruit) {\",\n            \"                second_last_fruit = last_fruit;\",\n            \"                last_fruit = fruit;\",\n            \"            }\",\n            \"            max = Math.max(current_max, max);\",\n            \"        }\",\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"all these big companies names so love no\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int totalFruit(int[] tree) {\",\n            \"        int last_fruit = -1;\",\n            \"        int second_last_fruit = -1;\",\n            \"        int last_fruit_count = 0;\",\n            \"        int current_max = 0;\",\n            \"        int max = 0;\",\n            \"        for (Integer fruit : tree) {\",\n            \"            if (fruit == last_fruit || fruit == second_last_fruit) {\",\n            \"                current_max += 1;\",\n            \"            } else {\",\n            \"                current_max = last_fruit_count + 1;\",\n            \"            }\",\n            \"            if (fruit == last_fruit) {\",\n            \"                last_fruit_count += 1;\",\n            \"            } else {\",\n            \"                last_fruit_count = 1;\",\n            \"            }\",\n            \"            if (fruit != last_fruit) {\",\n            \"                second_last_fruit = last_fruit;\",\n            \"                last_fruit = fruit;\",\n            \"            }\",\n            \"            max = Math.max(current_max, max);\",\n            \"        }\",\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"questions about this I think it's pretty\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int totalFruit(int[] tree) {\",\n            \"        int last_fruit = -1;\",\n            \"        int second_last_fruit = -1;\",\n            \"        int last_fruit_count = 0;\",\n            \"        int current_max = 0;\",\n            \"        int max = 0;\",\n            \"        for (Integer fruit : tree) {\",\n            \"            if (fruit == last_fruit || fruit == second_last_fruit) {\",\n            \"                current_max += 1;\",\n            \"            } else {\",\n            \"                current_max = last_fruit_count + 1;\",\n            \"            }\",\n            \"            if (fruit == last_fruit) {\",\n            \"                last_fruit_count += 1;\",\n            \"            } else {\",\n            \"                last_fruit_count = 1;\",\n            \"            }\",\n            \"            if (fruit != last_fruit) {\",\n            \"                second_last_fruit = last_fruit;\",\n            \"                last_fruit = fruit;\",\n            \"            }\",\n            \"            max = Math.max(current_max, max);\",\n            \"        }\",\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 875,
+            "completion_tokens": 1189,
+            "total_tokens": 2064
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

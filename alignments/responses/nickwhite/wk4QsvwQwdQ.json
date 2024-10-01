@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yRygrciQ8iJOJSdatModgA2kuJob",
+        "object": "chat.completion",
+        "created": 1724194254,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here's the alignment between the transcript and the code. This alignment includes only those transcript entries that have corresponding code lines:\n\n```json\n[\n    {\n        \"text\": \"so let's note slow equals head and let's\",\n        \"code\": [\"ListNode slow = head;\"]\n    },\n    {\n        \"text\": \"note fast equals head and then one's\",\n        \"code\": [\"ListNode fast = head;\"]\n    },\n    {\n        \"text\": \"your loop that's gonna be your break\",\n        \"code\": [\"while (fast != null && fast.next != null) {\"]\n    },\n    {\n        \"text\": \"condition basically so while fast is not\",\n        \"code\": [\"fast = fast.next.next;\", \"slow = slow.next;\"]\n    },\n    {\n        \"text\": \"reversed so slow is going to be equal to\",\n        \"code\": [\"slow = reversed(slow);\"]\n    },\n    {\n        \"text\": \"set back fast to head so ahead fast really doesn't\",\n        \"code\": [\"fast = head;\"]\n    },\n    {\n        \"text\": \"all we're gonna have to do is do well slow is not equal null\",\n        \"code\": [\"while (slow != null) {\"]\n    },\n    {\n        \"text\": \"slow slow equals slow down next\",\n        \"code\": [\"if (slow.val != fast.val) {\", \"return false;\", \"}\", \"slow = slow.next;\", \"fast = fast.next;\"]\n    },\n    {\n        \"text\": \"then it's true it's a palindrome\",\n        \"code\": [\"return true;\"]\n    },\n    {\n        \"text\": \"should be obvious at this point why now\",\n        \"code\": [\"}\"]\n    },\n    {\n        \"text\": \"public list node reversed it takes in our list node slow\",\n        \"code\": [\"public ListNode reversed(ListNode head) {\"]\n    },\n    {\n        \"text\": \"we're gonna we're gonna iterate until slow\",\n        \"code\": [\"ListNode prev = null;\", \"while (head != null) {\"]\n    },\n    {\n        \"text\": \"is our node that we're making is gonna\",\n        \"code\": [\"ListNode next = head.next;\"]\n    },\n    {\n        \"text\": \"next is going to be two and then we're gonna do head dot\",\n        \"code\": [\"head.next = prev;\"]\n    },\n    {\n        \"text\": \"previous head and\",\n        \"code\": [\"prev = head;\", \"head = next;\"]\n    },\n    {\n        \"text\": \"end up being off and that would\",\n        \"code\": [\"}\", \"return prev;\"]\n    },\n    {\n        \"text\": \"fine not a statement out return false sir you know\",\n        \"code\": [\"class Solution {\", \"public boolean isPalindrome(ListNode head) {\"]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 7288,
+            "completion_tokens": 594,
+            "total_tokens": 7882
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yRyoUJxGSAw3ozYKF9lGM6jgrS1m",
+        "object": "chat.completion",
+        "created": 1724194262,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here's the alignment of the code with the transcript:\n\n```json\n[{\"text\": \n  \"gets to the end slow is at the middle\", \n  \"code\": [\n    \"ListNode slow = head;\",\n    \"ListNode fast = head;\",\n    \"\",\n    \"while (fast != null && fast.next != null) {\",\n    \"    fast = fast.next.next;\",\n    \"    slow = slow.next;\",\n    \"}\",\n  ]\n},\n{\n  \"text\": \n  \"and then you pass slow into this\", \n  \"code\": [\n    \"slow = reversed(slow);\"\n  ]\n},\n{\n  \"text\": \n  \"reversed method it reverses the right\",\n  \"code\": [\n    \"public ListNode reversed(ListNode head) {\",\n    \"    ListNode prev = null;\",\n    \"    while (head != null) {\",\n    \"        ListNode next = head.next;\",\n    \"        head.next = prev;\",\n    \"        prev = head;\",\n    \"        head = next;\",\n    \"    }\",\n    \"    return prev;\",\n    \"}\"\n  ]\n},\n{\n  \"text\": \n  \"just iterate from the beginning in the\",\n  \"code\": [\n    \"fast = head;\",\n    \"\",\n    \"while (slow != null) {\",\n    \"    if (slow.val != fast.val) {\",\n    \"        return false;\",\n    \"    }\",\n    \"    slow = slow.next;\",\n    \"    fast = fast.next;\",\n    \"}\",\n    \"\",\n    \"return true;\"\n  ]\n},\n{\n  \"text\": \n  \"middle to the end and they should be the\",\n  \"code\": [\n    \"fast = head;\",\n    \"\",\n    \"while (slow != null) {\",\n    \"    if (slow.val != fast.val) {\",\n    \"        return false;\",\n    \"    }\",\n    \"    slow = slow.next;\",\n    \"    fast = fast.next;\",\n    \"}\",\n    \"\",\n    \"return true;\"\n  ]\n},\n{\n  \"text\": \n  \"same list so hopefully that makes sense\",\n  \"code\": [\n    \"return true;\"\n  ]\n},\n{\n  \"text\": \n  \"to you this is the reverse method maybe\",\n  \"code\": [\n    \"public ListNode reversed(ListNode head) {\",\n    \"    ListNode prev = null;\",\n    \"    while (head != null) {\",\n    \"        ListNode next = head.next;\",\n    \"        head.next = prev;\",\n    \"        prev = head;\",\n    \"        head = next;\",\n    \"    }\",\n    \"    return prev;\",\n    \"}\"\n  ]\n},\n{\n  \"text\": \n  \"set one's next to null but one's next\",\n  \"code\": [\n    \"head.next = prev;\",\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"right now is two so setting it to null\",\n  \"code\": [\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"null because you know before that is\",\n  \"code\": [\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"makes sense right because it's you know\",\n  \"code\": [\n    \"head.next = prev;\",\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"no it would be one then\",\n  \"code\": [\n    \"ListNode prev = null;\",\n    \"while (head != null) {\",\n    \"    ListNode next = head.next;\",\n    \"    head.next = prev;\",\n    \"    prev = head;\",\n    \"    head = next;\",\n    \"}\"\n  ]\n},\n{\n  \"text\": \n  \"previous keeps getting set to head so\",\n  \"code\": [\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"and head necks keeps getting set to\",\n  \"code\": [\n    \"head.next = prev;\"\n  ]\n},\n{\n  \"text\": \n  \"previous right that's where the changes\",\n  \"code\": [\n    \"head.next = prev;\",\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"are taking place so you know two dot\",\n  \"code\": [\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"next is getting set to one and then\",\n  \"code\": [\n    \"head.next = prev;\",\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"three dot next is getting set to two\",\n  \"code\": [\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n},\n{\n  \"text\": \n  \"right cuz previous keeps getting updated\",\n  \"code\": [\n    \"prev = head;\",\n    \"head = next;\"\n  ]\n}\n]\n```\n\nThis JSON object aligns each specific transcript entry with its corresponding lines of code.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 1499,
+            "completion_tokens": 1061,
+            "total_tokens": 2560
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

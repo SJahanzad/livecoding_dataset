@@ -1,0 +1,53 @@
+[
+    {
+        "text": "doing the code sword array by parody",
+        "start": 8.67,
+        "duration": 5.58,
+        "code": [
+            "class Solution {",
+            "    public int[] sortArrayByParity(int[] A) {"
+        ]
+    },
+    {
+        "text": "array you loop through this array and",
+        "start": 31.89,
+        "duration": 5.189,
+        "code": [
+            "        while (i < j) {"
+        ]
+    },
+    {
+        "text": "check if a of I modulus two is equal to",
+        "start": 58.35,
+        "duration": 5.669,
+        "code": [
+            "            if (A[i] % 2 > A[j] % 2) {"
+        ]
+    },
+    {
+        "text": "zero that means it's even we're gonna",
+        "start": 61.949,
+        "duration": 7.111,
+        "code": [
+            "                int temp = A[i];",
+            "                A[i] = A[j];",
+            "                A[j] = temp;"
+        ]
+    },
+    {
+        "text": "put those ones in first with counter is",
+        "start": 64.019,
+        "duration": 7.051,
+        "code": [
+            "            }"
+        ]
+    },
+    {
+        "text": "return to counter sorry in return",
+        "start": 95.22,
+        "duration": 7.2,
+        "code": [
+            "        return A;"
+        ]
+    }
+]

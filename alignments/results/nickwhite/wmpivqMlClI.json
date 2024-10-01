@@ -1,0 +1,140 @@
+[
+    {
+        "text": "really easy actually so this one is",
+        "start": 19.41,
+        "duration": 4.77,
+        "code": []
+    },
+    {
+        "text": "given a non empty singly linked list",
+        "start": 21.63,
+        "duration": 4.229,
+        "code": [
+            "        ListNode a_pointer = head;",
+            "        ListNode b_pointer = head;"
+        ]
+    },
+    {
+        "text": "with a head node head return the middle",
+        "start": 24.18,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "of a middle node of the linked list",
+        "start": 25.859,
+        "duration": 4.471,
+        "code": []
+    },
+    {
+        "text": "there are two middle nodes return the",
+        "start": 28.26,
+        "duration": 4.65,
+        "code": []
+    },
+    {
+        "text": "second metal node okay guys super easy",
+        "start": 30.33,
+        "duration": 5.43,
+        "code": []
+    },
+    {
+        "text": "one this is a pointer problem just like",
+        "start": 32.91,
+        "duration": 6.6,
+        "code": []
+    },
+    {
+        "text": "a lot of linked list node problems so",
+        "start": 35.76,
+        "duration": 6.93,
+        "code": []
+    },
+    {
+        "text": "we'll have a pointer our a pointer node",
+        "start": 39.51,
+        "duration": 5.52,
+        "code": []
+    },
+    {
+        "text": "is going to be equal to head and then",
+        "start": 42.69,
+        "duration": 6.029,
+        "code": []
+    },
+    {
+        "text": "we'll have our B pointer also equal to",
+        "start": 45.03,
+        "duration": 6.18,
+        "code": []
+    },
+    {
+        "text": "head and this is the whole problem right",
+        "start": 48.719,
+        "duration": 4.86,
+        "code": [
+            "        while (b_pointer != null && b_pointer.next != null) {",
+            "            a_pointer = a_pointer.next;",
+            "            b_pointer = b_pointer.next.next;",
+            "        }"
+        ]
+    },
+    {
+        "text": "here just like a lot of these pointer",
+        "start": 51.21,
+        "duration": 4.65,
+        "code": []
+    },
+    {
+        "text": "ones well be point is not equal to null",
+        "start": 53.579,
+        "duration": 6.171,
+        "code": []
+    },
+    {
+        "text": "and the pointer X is not equal to null",
+        "start": 55.86,
+        "duration": 7.289,
+        "code": []
+    },
+    {
+        "text": "we just do a pointer and I should have",
+        "start": 59.75,
+        "duration": 5.019,
+        "code": []
+    },
+    {
+        "text": "called these slow and fast but it",
+        "start": 63.149,
+        "duration": 4.681,
+        "code": []
+    },
+    {
+        "text": "doesn't really matter a pointer next I",
+        "start": 64.769,
+        "duration": 8.42,
+        "code": []
+    },
+    {
+        "text": "mean a pointer equals eight pointer next",
+        "start": 67.83,
+        "duration": 5.359,
+        "code": []
+    },
+    {
+        "text": "any pointer is equal to be pointer next",
+        "start": 73.34,
+        "duration": 11.08,
+        "code": []
+    },
+    {
+        "text": "up and then we just return and then I'll",
+        "start": 79.59,
+        "duration": 6.779,
+        "code": [
+            "        return a_pointer;",
+            "    }",
+            "}"
+        ]
+    }
+]

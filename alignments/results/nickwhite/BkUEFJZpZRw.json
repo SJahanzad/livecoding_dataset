@@ -1,0 +1,65 @@
+[
+    {
+        "text": "just basically traverse the tree and if",
+        "start": 46.11,
+        "duration": 5.28,
+        "code": [
+            "class Solution {",
+            "    public boolean isUnivalTree(TreeNode root) {"
+        ]
+    },
+    {
+        "text": "we find a node that is different than",
+        "start": 49.26,
+        "duration": 4.68,
+        "code": [
+            "        boolean left_univaled = root.left == null || root.left.val == root.val && isUnivalTree(root.left);"
+        ]
+    },
+    {
+        "text": "what the other nodes values are it's",
+        "start": 51.39,
+        "duration": 4.2,
+        "code": [
+            "        boolean right_univaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);"
+        ]
+    },
+    {
+        "text": "gonna be false and if every node is the",
+        "start": 53.94,
+        "duration": 4.08,
+        "code": [
+            "        return left_univaled && right_univaled;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "same value it's gonna be true we've done",
+        "start": 55.59,
+        "duration": 4.62,
+        "code": [
+            "        return left_univaled && right_univaled;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "side and then these bullying's will be",
+        "start": 153.47,
+        "duration": 4.379,
+        "code": [
+            "        boolean right_univaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);",
+            "        return left_univaled && right_univaled;"
+        ]
+    },
+    {
+        "text": "able to recurse on the left and right",
+        "start": 156.08,
+        "duration": 3.42,
+        "code": [
+            "        boolean right_univaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);",
+            "        return left_univaled && right_univaled;"
+        ]
+    }
+]

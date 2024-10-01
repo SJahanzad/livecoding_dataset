@@ -1,0 +1,24 @@
+[
+    {
+        "text": "so we're given a linked list and all we need to do",
+        "start": 7.68,
+        "duration": 7.281000000000001,
+        "code": [
+            "# Definition for singly-linked list.",
+            "# class ListNode:",
+            "#     def __init__(self, val=0, next=None):",
+            "#         self.val = val",
+            "#         self.next = next"
+        ]
+    },
+    {
+        "text": "so we can shift our left pointer and we can shift our right pointer",
+        "start": 347.84,
+        "duration": 13.919,
+        "code": [
+            "        while n > 0:",
+            "            right = right.next",
+            "            n -= 1"
+        ]
+    }
+]

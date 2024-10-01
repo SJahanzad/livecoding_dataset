@@ -1,0 +1,169 @@
+[
+    {
+        "text": "think we found the easiest problem on LY",
+        "start": 18.96,
+        "duration": 4.59,
+        "code": [
+            "class Solution {",
+            "    public boolean judgeCircle(String moves) {"
+        ]
+    },
+    {
+        "text": "code this is actually a probably the",
+        "start": 21.39,
+        "duration": 4.77,
+        "code": [
+            "class Solution {",
+            "    public boolean judgeCircle(String moves) {"
+        ]
+    },
+    {
+        "text": "position zero zero and all we have to do",
+        "start": 30.179,
+        "duration": 5.491,
+        "code": [
+            "        int x = 0;",
+            "        int y = 0;"
+        ]
+    },
+    {
+        "text": "is given a sequence of moves judge if",
+        "start": 33.48,
+        "duration": 4.68,
+        "code": [
+            "        for (char move : moves.toCharArray()) {"
+        ]
+    },
+    {
+        "text": "current move so which are you can call",
+        "start": 96.81,
+        "duration": 5.01,
+        "code": [
+            "        for (char move : moves.toCharArray()) {"
+        ]
+    },
+    {
+        "text": "it whatever you want and moves we'll",
+        "start": 100.259,
+        "duration": 5.04,
+        "code": [
+            "        for (char move : moves.toCharArray()) {"
+        ]
+    },
+    {
+        "text": "just call it move in moves to char ray",
+        "start": 101.82,
+        "duration": 5.61,
+        "code": [
+            "        for (char move : moves.toCharArray()) {"
+        ]
+    },
+    {
+        "text": "well we do y axis plus equals one if you",
+        "start": 118.49,
+        "duration": 6.489,
+        "code": [
+            "            if (move == 'U') {",
+            "                y += 1;"
+        ]
+    },
+    {
+        "text": "took basic math I think in seventh grade",
+        "start": 122.67,
+        "duration": 6.569,
+        "code": [
+            "            if (move == 'U') {",
+            "                y += 1;"
+        ]
+    },
+    {
+        "text": "we learn this if mu equals down then",
+        "start": 124.979,
+        "duration": 6.661,
+        "code": [
+            "            } else if (move == 'D') {",
+            "                y -= 1;"
+        ]
+    },
+    {
+        "text": "we'll do y minus equals one right",
+        "start": 129.239,
+        "duration": 6.301,
+        "code": [
+            "            } else if (move == 'D') {",
+            "                y -= 1;"
+        ]
+    },
+    {
+        "text": "up and down on the y-axis Elsa move the",
+        "start": 131.64,
+        "duration": 6.9,
+        "code": [
+            "            } else if (move == 'D') {",
+            "                y -= 1;"
+        ]
+    },
+    {
+        "text": "equals and left this is the left X these",
+        "start": 135.54,
+        "duration": 7.05,
+        "code": [
+            "            } else if (move == 'L') {",
+            "                x -= 1;"
+        ]
+    },
+    {
+        "text": "x axes guys will do minus equals 1 on",
+        "start": 138.54,
+        "duration": 9.0,
+        "code": [
+            "            } else if (move == 'L') {",
+            "                x -= 1;"
+        ]
+    },
+    {
+        "text": "the left x-axis not else else if move",
+        "start": 142.59,
+        "duration": 8.85,
+        "code": [
+            "            } else if (move == 'L') {",
+            "                x -= 1;"
+        ]
+    },
+    {
+        "text": "equals right then we just do X plus",
+        "start": 147.54,
+        "duration": 6.99,
+        "code": [
+            "            } else if (move == 'R') {",
+            "                x += 1;"
+        ]
+    },
+    {
+        "text": "equals 1 on the x axis and that is the",
+        "start": 151.44,
+        "duration": 4.98,
+        "code": [
+            "            } else if (move == 'R') {",
+            "                x += 1;"
+        ]
+    },
+    {
+        "text": "whole problem super easy",
+        "start": 154.53,
+        "duration": 5.9,
+        "code": [
+            "        return (x == 0 && y == 0);",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "always to do now is return if x equals 0",
+        "start": 156.42,
+        "duration": 6.69,
+        "code": [
+            "        return (x == 0 && y == 0);"
+        ]
+    }
+]

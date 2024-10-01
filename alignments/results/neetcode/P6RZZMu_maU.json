@@ -1,0 +1,448 @@
+[
+    {
+        "text": "now let's get to the code so we remember",
+        "start": 446.03,
+        "duration": 3.9,
+        "code": [
+            "class Solution:",
+            "    def longestConsecutive(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "we need to create a set from the initial",
+        "start": 447.92,
+        "duration": 3.12,
+        "code": [
+            "        numSet = set(nums)"
+        ]
+    },
+    {
+        "text": "array nums",
+        "start": 449.93,
+        "duration": 3.12,
+        "code": [
+            "        numSet = set(nums)"
+        ]
+    },
+    {
+        "text": "so it's really easy to do that in Python",
+        "start": 451.04,
+        "duration": 4.62,
+        "code": [
+            "        numSet = set(nums)"
+        ]
+    },
+    {
+        "text": "we can just pass their D array into a",
+        "start": 453.05,
+        "duration": 5.22,
+        "code": [
+            "        numSet = set(nums)"
+        ]
+    },
+    {
+        "text": "set constructor next we want to keep",
+        "start": 455.66,
+        "duration": 4.62,
+        "code": [
+            "        numSet = set(nums)",
+            "        longest = 0"
+        ]
+    },
+    {
+        "text": "track of what the longest consecutive",
+        "start": 458.27,
+        "duration": 4.79,
+        "code": [
+            "        longest = 0"
+        ]
+    },
+    {
+        "text": "sequence is initially we can say it's 0",
+        "start": 460.28,
+        "duration": 5.76,
+        "code": [
+            "        longest = 0"
+        ]
+    },
+    {
+        "text": "so we want to iterate through every",
+        "start": 463.06,
+        "duration": 6.4,
+        "code": [
+            "        for n in numSet:"
+        ]
+    },
+    {
+        "text": "number in the number Rea and we want to",
+        "start": 466.04,
+        "duration": 8.46,
+        "code": [
+            "        for n in numSet:"
+        ]
+    },
+    {
+        "text": "check if it's the start of a sequence",
+        "start": 469.46,
+        "duration": 9.42,
+        "code": [
+            "            if (n - 1) not in numSet:"
+        ]
+    },
+    {
+        "text": "and we can check that simply by checking",
+        "start": 474.5,
+        "duration": 8.73,
+        "code": [
+            "            if (n - 1) not in numSet:"
+        ]
+    },
+    {
+        "text": "if n minus 1 does not exist in our num",
+        "start": 478.88,
+        "duration": 7.65,
+        "code": [
+            "            if (n - 1) not in numSet:"
+        ]
+    },
+    {
+        "text": "set if this number doesn't have a left",
+        "start": 483.23,
+        "duration": 4.92,
+        "code": [
+            "            if (n - 1) not in numSet:"
+        ]
+    },
+    {
+        "text": "neighbour that means the start of a",
+        "start": 486.53,
+        "duration": 3.36,
+        "code": [
+            "            if (n - 1) not in numSet:"
+        ]
+    },
+    {
+        "text": "sequence so now we want to get the",
+        "start": 488.15,
+        "duration": 3.84,
+        "code": [
+            "                length = 1"
+        ]
+    },
+    {
+        "text": "length of the sequence initially we can",
+        "start": 489.89,
+        "duration": 4.77,
+        "code": [
+            "                length = 1"
+        ]
+    },
+    {
+        "text": "say the length is 0 and we want to keep",
+        "start": 491.99,
+        "duration": 4.74,
+        "code": [
+            "                length = 1",
+            "                while (n + length) in numSet:"
+        ]
+    },
+    {
+        "text": "getting each consecutive number and",
+        "start": 494.66,
+        "duration": 4.62,
+        "code": [
+            "                while (n + length) in numSet:"
+        ]
+    },
+    {
+        "text": "checking if it exists in our num set if",
+        "start": 496.73,
+        "duration": 5.37,
+        "code": [
+            "                while (n + length) in numSet:"
+        ]
+    },
+    {
+        "text": "it does then we can keep expanding the",
+        "start": 499.28,
+        "duration": 6.65,
+        "code": [
+            "                while (n + length) in numSet:",
+            "                    length += 1"
+        ]
+    },
+    {
+        "text": "length so initially I'm going to check n",
+        "start": 502.1,
+        "duration": 6.03,
+        "code": [
+            "                    length += 1"
+        ]
+    },
+    {
+        "text": "plus lengths because that's going to",
+        "start": 505.93,
+        "duration": 7.15,
+        "code": [
+            "                    length += 1"
+        ]
+    },
+    {
+        "text": "check the current number initially",
+        "start": 508.13,
+        "duration": 6.78,
+        "code": [
+            "                    length += 1"
+        ]
+    },
+    {
+        "text": "length is 0 so we're just checking the",
+        "start": 513.08,
+        "duration": 5.13,
+        "code": [
+            "                    length += 1"
+        ]
+    },
+    {
+        "text": "current number as it as the length grows",
+        "start": 514.91,
+        "duration": 5.43,
+        "code": [
+            "                    length += 1"
+        ]
+    },
+    {
+        "text": "we'll check more consecutive numbers at",
+        "start": 518.21,
+        "duration": 4.8,
+        "code": [
+            "                    length += 1"
+        ]
+    },
+    {
+        "text": "the end we could have potentially found",
+        "start": 520.34,
+        "duration": 4.77,
+        "code": [
+            "                longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "the longest sequence so we want to",
+        "start": 523.01,
+        "duration": 4.35,
+        "code": [
+            "                longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "potentially update our longest by just",
+        "start": 525.11,
+        "duration": 4.23,
+        "code": [
+            "                longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "taking the max of the current length we",
+        "start": 527.36,
+        "duration": 3.78,
+        "code": [
+            "                longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "just computed as well as what the",
+        "start": 529.34,
+        "duration": 4.5,
+        "code": [
+            "                longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "longest originally was",
+        "start": 531.14,
+        "duration": 5.52,
+        "code": [
+            "                longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "and it's really that simple so now all",
+        "start": 533.84,
+        "duration": 4.8,
+        "code": [
+            "        return longest"
+        ]
+    },
+    {
+        "text": "we have left to do is just return what",
+        "start": 536.66,
+        "duration": 5.52,
+        "code": [
+            "        return longest"
+        ]
+    },
+    {
+        "text": "the longest subsequence was that we just",
+        "start": 538.64,
+        "duration": 5.88,
+        "code": [
+            "        return longest"
+        ]
+    },
+    {
+        "text": "computed so we did this in such a small",
+        "start": 542.18,
+        "duration": 4.56,
+        "code": [
+            "        return longest"
+        ]
+    },
+    {
+        "text": "potentially update our longest by just",
+        "start": 525.11,
+        "duration": 4.23,
+        "code": [
+            "longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "taking the max of the current length we",
+        "start": 527.36,
+        "duration": 3.78,
+        "code": [
+            "longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "just computed as well as what the",
+        "start": 529.34,
+        "duration": 4.5,
+        "code": [
+            "longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "longest originally was",
+        "start": 531.14,
+        "duration": 5.52,
+        "code": [
+            "longest = max(length, longest)"
+        ]
+    },
+    {
+        "text": "and it's really that simple so now all",
+        "start": 533.84,
+        "duration": 4.8,
+        "code": [
+            "return longest"
+        ]
+    },
+    {
+        "text": "we have left to do is just return what",
+        "start": 536.66,
+        "duration": 5.52,
+        "code": [
+            "return longest"
+        ]
+    },
+    {
+        "text": "the longest subsequence was that we just",
+        "start": 538.64,
+        "duration": 5.88,
+        "code": [
+            "return longest"
+        ]
+    },
+    {
+        "text": "computed so we did this in such a small",
+        "start": 542.18,
+        "duration": 4.56,
+        "code": [
+            "class Solution:",
+            "    def longestConsecutive(self, nums: List[int]) -> int:",
+            "        numSet = set(nums)",
+            "        longest = 0",
+            "        for n in numSet:",
+            "            if (n - 1) not in numSet:",
+            "                length = 1",
+            "                while (n + length) in numSet:",
+            "                    length += 1",
+            "                longest = max(length, longest)",
+            "        return longest"
+        ]
+    },
+    {
+        "text": "amount of code now let's just run it to",
+        "start": 544.52,
+        "duration": 8.58,
+        "code": [
+            "class Solution:",
+            "    def longestConsecutive(self, nums: List[int]) -> int:",
+            "        numSet = set(nums)",
+            "        longest = 0",
+            "        for n in numSet:",
+            "            if (n - 1) not in numSet:",
+            "                length = 1",
+            "                while (n + length) in numSet:",
+            "                    length += 1",
+            "                longest = max(length, longest)",
+            "        return longest"
+        ]
+    },
+    {
+        "text": "see that it works and it works perfectly",
+        "start": 546.74,
+        "duration": 9.63,
+        "code": [
+            "class Solution:",
+            "    def longestConsecutive(self, nums: List[int]) -> int:",
+            "        numSet = set(nums)",
+            "        longest = 0",
+            "        for n in numSet:",
+            "            if (n - 1) not in numSet:",
+            "                length = 1",
+            "                while (n + length) in numSet:",
+            "                    length += 1",
+            "                longest = max(length, longest)",
+            "        return longest"
+        ]
+    },
+    {
+        "text": "so this is a linear time solution in a",
+        "start": 553.1,
+        "duration": 5.73,
+        "code": [
+            "class Solution:",
+            "    def longestConsecutive(self, nums: List[int]) -> int:",
+            "        numSet = set(nums)",
+            "        longest = 0",
+            "        for n in numSet:",
+            "            if (n - 1) not in numSet:",
+            "                length = 1",
+            "                while (n + length) in numSet:",
+            "                    length += 1",
+            "                longest = max(length, longest)",
+            "        return longest"
+        ]
+    },
+    {
+        "text": "linear memory complexity solution once",
+        "start": 556.37,
+        "duration": 4.29,
+        "code": [
+            "class Solution:",
+            "    def longestConsecutive(self, nums: List[int]) -> int:",
+            "        numSet = set(nums)",
+            "        longest = 0",
+            "        for n in numSet:",
+            "            if (n - 1) not in numSet:",
+            "                length = 1",
+            "                while (n + length) in numSet:",
+            "                    length += 1",
+            "                longest = max(length, longest)",
+            "        return longest"
+        ]
+    }
+]

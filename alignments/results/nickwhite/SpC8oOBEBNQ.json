@@ -1,0 +1,35 @@
+[
+    {
+        "text": "some of even numbers after queries we",
+        "start": 10.98,
+        "duration": 3.569,
+        "code": [
+            "class Solution {",
+            "    public int[] sumEvenAfterQueries(int[] A, int[][] queries) {"
+        ]
+    },
+    {
+        "text": "we have a is just a bunch of integers",
+        "start": 16.529,
+        "duration": 3.42,
+        "code": [
+            "            if (x % 2 == 0) {",
+            "                S += x;",
+            "            }",
+            "        }"
+        ]
+    },
+    {
+        "text": "when you look at it because if counter is what we're gonna do we use two like",
+        "start": 144.14,
+        "duration": 10.709,
+        "code": [
+            "            A[index] += val;",
+            "            if (A[index] % 2 == 0) {",
+            "                S += A[index];",
+            "            }",
+            "            ans[i] = S;",
+            "        }"
+        ]
+    }
+]

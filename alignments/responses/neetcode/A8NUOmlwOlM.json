@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yP3Ri6z416P4zOPmu5MASZ7x4bJP",
+        "object": "chat.completion",
+        "created": 1724183017,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here is the aligned transcript with relevant code snippets included. Entries where no code is related are omitted as requested:\n\n```json\n[\n    {\n        \"text\": \"we might have to merge some intervals\",\n        \"code\": [\"newInterval = [\", \"min(newInterval[0], intervals[i][0]),\", \"max(newInterval[1], intervals[i][1]),\", \"]\"]\n    },\n    {\n        \"text\": \"so i hope that this was helpful if it was please like\",\n        \"code\": [\"class Solution:\", \"def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:\", \"res = []\", \"for i in range(len(intervals)):\", \"if newInterval[1] < intervals[i][0]:\", \"res.append(newInterval)\", \"return res + intervals[i:]\", \"elif newInterval[0] > intervals[i][1]:\", \"res.append(intervals[i])\", \"else:\", \"newInterval = [\", \"min(newInterval[0], intervals[i][0]),\", \"max(newInterval[1], intervals[i][1]),\", \"] res.append(newInterval)\", \"return res\"]\n    }\n]\n```\n\nWith this structure, each JSON object in the array contains the key `\"text\"` from the transcript with its associated `\"code\"` snippet(s) where appropriate. If you need further customization or modifications, feel free to ask.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 9925,
+            "completion_tokens": 291,
+            "total_tokens": 10216
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yP3WfsN7iJsOdoIxctO5WTVKNWyP",
+        "object": "chat.completion",
+        "created": 1724183022,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"and then we're going to go to the next\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:\",\n            \"        res = []\"\n        ]\n    },\n    {\n        \"text\": \"intervals remaining and then we're done\",\n        \"code\": [\n            \"        for i in range(len(intervals)):\"\n        ]\n    },\n    {\n        \"text\": \"so this is going to be our result in\",\n        \"code\": [\n            \"        res = []\"\n        ]\n    },\n    {\n        \"text\": \"this case 0 4 and 5 6 our new intervals\",\n        \"code\": [\n            \"            if newInterval[1] < intervals[i][0]:\"\n        ]\n    },\n    {\n        \"text\": \"after we've merged them and they're in\",\n        \"code\": [\n            \"                res.append(newInterval)\",\n            \"                return res + intervals[i:]\"\n        ]\n    },\n    {\n        \"text\": \"ascending order so that's kind of the\",\n        \"code\": [\n            \"            elif newInterval[0] > intervals[i][1]:\",\n            \"                res.append(intervals[i])\"\n        ]\n    },\n    {\n        \"text\": \"general algorithm as you can see since\",\n        \"code\": [\n            \"            else:\",\n            \"                newInterval = [\",\n            \"                    min(newInterval[0], intervals[i][0]),\",\n            \"                    max(newInterval[1], intervals[i][1])\",\n            \"                ]\"\n        ]\n    },\n    {\n        \"text\": \"we're going to use to create the result array with\",\n        \"code\": [\n            \"        res.append(newInterval)\",\n            \"        return res\"\n        ]\n    },\n    {\n        \"text\": \"once that's done we have written the\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:\",\n            \"        res = []\",\n            \"        for i in range(len(intervals)):\",\n            \"            if newInterval[1] < intervals[i][0]:\",\n            \"                res.append(newInterval)\",\n            \"                return res + intervals[i:]\",\n            \"            elif newInterval[0] > intervals[i][1]:\",\n            \"                res.append(intervals[i])\",\n            \"            else:\",\n            \"                newInterval = [\",\n            \"                    min(newInterval[0], intervals[i][0]),\",\n            \"                    max(newInterval[1], intervals[i][1])\",\n            \"                ]\",\n            \"        res.append(newInterval)\",\n            \"        return res\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 4232,
+            "completion_tokens": 586,
+            "total_tokens": 4818
+        },
+        "system_fingerprint": "fp_df84d6bd70"
+    }
+]

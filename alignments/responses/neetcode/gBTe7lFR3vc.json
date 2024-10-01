@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yRK6HVFns2S2RzppT6QVyMEamChO",
+        "object": "chat.completion",
+        "created": 1724191738,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"so basically we're given the head of a\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def hasCycle(self, head: Optional[ListNode]) -> bool:\"\n        ]\n    },\n    {\n        \"text\": \"linked list\",\n        \"code\": [\n            \"slow, fast = head, head\"\n        ]\n    },\n    {\n        \"text\": \"so the solution is really as simple as\",\n        \"code\": [\n            \"while fast and fast.next:\",\n            \"    slow = slow.next\",\n            \"    fast = fast.next.next\",\n            \"    if slow == fast:\",\n            \"        return True\",\n            \"return False\"\n        ]\n    }\n]\n```\n",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 9684,
+            "completion_tokens": 152,
+            "total_tokens": 9836
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yRK95Wa0D8cUeNpZpzoSBL7b6RV1",
+        "object": "chat.completion",
+        "created": 1724191741,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure! Here is the JSON transcript with the \"code\" key added to each relevant entry, aligning the lines of code connected to the text:\n\n```json\n[\n    {\n        \"text\": \"the code is usually pretty easy to write\",\n        \"code\": [\n            \"# Definition for singly-linked list.\",\n            \"# class ListNode:\",\n            \"#     def __init__(self, val=0, next=None):\",\n            \"#         self.val = val\",\n            \"#         self.next = next\"\n        ]\n    },\n    {\n        \"text\": \"let's get into that now so like i said\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def hasCycle(self, head: Optional[ListNode]) -> bool:\"\n        ]\n    },\n    {\n        \"text\": \"we're going to start our slow and fast\",\n        \"code\": [\n            \"        slow, fast = head, head\"\n        ]\n    },\n    {\n        \"text\": \"because we need to make sure that\",\n        \"code\": [\n            \"        while fast and fast.next:\"\n        ]\n    },\n    {\n        \"text\": \"we're going to take our slow pointer\",\n        \"code\": [\n            \"            slow = slow.next\",\n            \"            fast = fast.next.next\"\n        ]\n    },\n    {\n        \"text\": \"and now if we if they meet each other\",\n        \"code\": [\n            \"            if slow == fast:\"\n        ]\n    },\n    {\n        \"text\": \"then we can return true there does exist\",\n        \"code\": [\n            \"                return True\"\n        ]\n    },\n    {\n        \"text\": \"the solution is really as simple as\",\n        \"code\": [\n            \"        return False\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 4158,
+            "completion_tokens": 363,
+            "total_tokens": 4521
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

@@ -1,0 +1,648 @@
+[
+    {
+        "text": "so now let's write the code remember we",
+        "start": 344.24,
+        "duration": 4.239,
+        "code": [
+            "class Solution:",
+            "def merge(self, intervals: List[List[int]]) -> List[List[int]]:"
+        ]
+    },
+    {
+        "text": "are sorting the entire input",
+        "start": 346.479,
+        "duration": 4.081,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "single interval in sorted order",
+        "start": 413.199,
+        "duration": 5.84,
+        "code": [
+            "for start, end in intervals:"
+        ]
+    },
+    {
+        "text": "itself we know we're going to use the",
+        "start": 426.88,
+        "duration": 3.039,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "we're going to merge them",
+        "start": 242.799,
+        "duration": 4.481,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "non-overlapping what are we going to do",
+        "start": 548.12,
+        "duration": 4.12,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "the interval is overlapping with the",
+        "start": 434.24,
+        "duration": 3.519,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "most recent",
+        "start": 436.639,
+        "duration": 3.601,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "output we can get the most recently",
+        "start": 443.599,
+        "duration": 4.88,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "added interval",
+        "start": 447.12,
+        "duration": 4.72,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "and get the end value of it because",
+        "start": 448.479,
+        "duration": 5.201,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "that's what we need to know if it",
+        "start": 451.84,
+        "duration": 2.799,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "overlaps",
+        "start": 453.68,
+        "duration": 3.28,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "so the end value of the most recent",
+        "start": 454.639,
+        "duration": 3.12,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "interval",
+        "start": 536.959,
+        "duration": 3.281,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "we'll call it last end and we're going",
+        "start": 457.759,
+        "duration": 4.801,
+        "code": [
+            "lastEnd = output[-1][1]"
+        ]
+    },
+    {
+        "text": "to check of the current interval we're",
+        "start": 460.8,
+        "duration": 3.6,
+        "code": [
+            "for start, end in intervals:"
+        ]
+    },
+    {
+        "text": "at the start and end value",
+        "start": 462.56,
+        "duration": 5.44,
+        "code": [
+            "for start, end in intervals:"
+        ]
+    },
+    {
+        "text": "we're iterating through if the star",
+        "start": 464.4,
+        "duration": 7.199,
+        "code": [
+            "for start, end in intervals:"
+        ]
+    },
+    {
+        "text": "is less than or equal",
+        "start": 468.0,
+        "duration": 6.8,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "to the last ending value that means",
+        "start": 471.599,
+        "duration": 5.121,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "they're overlapping the equal is",
+        "start": 474.8,
+        "duration": 3.2,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "important because they",
+        "start": 476.72,
+        "duration": 3.199,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "they told us in the second example that",
+        "start": 478.0,
+        "duration": 3.199,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "we are counting",
+        "start": 479.919,
+        "duration": 4.0,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "equal as overlapping so if they are",
+        "start": 481.199,
+        "duration": 4.161,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "overlapping what are we gonna do we're",
+        "start": 483.919,
+        "duration": 2.4,
+        "code": [
+            "if start <= lastEnd:"
+        ]
+    },
+    {
+        "text": "gonna merge them",
+        "start": 485.36,
+        "duration": 3.679,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "how do we merge them well all we have to",
+        "start": 486.319,
+        "duration": 3.28,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "do",
+        "start": 489.039,
+        "duration": 4.241,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "is take the most recently added",
+        "start": 489.599,
+        "duration": 7.04,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "interval and take the ending value",
+        "start": 493.28,
+        "duration": 7.039,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "of it and set it to the max",
+        "start": 496.639,
+        "duration": 7.12,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "of itself which we already have in last",
+        "start": 500.319,
+        "duration": 4.241,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "end",
+        "start": 503.759,
+        "duration": 3.681,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "and the max of the current end value",
+        "start": 504.56,
+        "duration": 4.0,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "that we're at",
+        "start": 507.44,
+        "duration": 3.039,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "and the reason we need to take the max",
+        "start": 508.56,
+        "duration": 3.28,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "is what if we had",
+        "start": 510.479,
+        "duration": 4.721,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "two intervals starting at 1 5",
+        "start": 511.84,
+        "duration": 7.04,
+        "code": [
+            "if start <= lastEnd:",
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "and the second interval is 2",
+        "start": 515.2,
+        "duration": 6.8,
+        "code": [
+            "if start <= lastEnd:",
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "4 because we would iterate through them",
+        "start": 518.88,
+        "duration": 5.12,
+        "code": [
+            "for start, end in intervals:"
+        ]
+    },
+    {
+        "text": "in this order because this has a",
+        "start": 522.0,
+        "duration": 3.68,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])",
+            "for start, end in intervals:"
+        ]
+    },
+    {
+        "text": "starting value of 1 this has a starting",
+        "start": 524.0,
+        "duration": 4.08,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "value of 2 but notice how this actually",
+        "start": 525.68,
+        "duration": 2.96,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "has a",
+        "start": 528.08,
+        "duration": 3.84,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "larger end value than this one so if we",
+        "start": 528.64,
+        "duration": 3.92,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "just take",
+        "start": 531.92,
+        "duration": 3.68,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "4 and merge this together and set this",
+        "start": 532.56,
+        "duration": 4.399,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "to four we're actually making the",
+        "start": 535.6,
+        "duration": 1.84,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "interval",
+        "start": 536.959,
+        "duration": 3.281,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "smaller we want to keep the five because",
+        "start": 537.44,
+        "duration": 4.399,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "merging these two together",
+        "start": 540.24,
+        "duration": 5.039,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "is going to actually result in one",
+        "start": 541.839,
+        "duration": 6.281,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "five so in the case that they're",
+        "start": 545.279,
+        "duration": 4.801,
+        "code": [
+            "output[-1][1] = max(lastEnd, end)"
+        ]
+    },
+    {
+        "text": "non-overlapping what are we going to do",
+        "start": 548.12,
+        "duration": 4.12,
+        "code": [
+            "else:"
+        ]
+    },
+    {
+        "text": "well we don't have to merge but we do",
+        "start": 550.08,
+        "duration": 2.96,
+        "code": [
+            "else:"
+        ]
+    },
+    {
+        "text": "have to",
+        "start": 552.24,
+        "duration": 4.0,
+        "code": [
+            "else:"
+        ]
+    },
+    {
+        "text": "take that interval and still add it to",
+        "start": 553.04,
+        "duration": 3.52,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "our",
+        "start": 556.24,
+        "duration": 3.599,
+        "code": [
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "output so we're going to take start end",
+        "start": 556.56,
+        "duration": 5.44,
+        "code": [
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "and just add it to our output so what",
+        "start": 559.839,
+        "duration": 3.841,
+        "code": [
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "would be an example of that well what if",
+        "start": 562.0,
+        "duration": 2.48,
+        "code": [
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "we had",
+        "start": 563.68,
+        "duration": 4.36,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "7 a right these two intervals are",
+        "start": 564.48,
+        "duration": 5.6,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "non-overlapping so the result would",
+        "start": 568.04,
+        "duration": 2.52,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "actually",
+        "start": 570.08,
+        "duration": 2.8,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "be itself right we don't have to make",
+        "start": 570.56,
+        "duration": 4.16,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "any changes we don't have to merge",
+        "start": 572.88,
+        "duration": 4.48,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "we can just leave it as it is and that's",
+        "start": 574.72,
+        "duration": 3.76,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "actually it",
+        "start": 577.36,
+        "duration": 3.039,
+        "code": [
+            "else:",
+            "output.append([start, end])"
+        ]
+    },
+    {
+        "text": "so we didn't really have to do anything",
+        "start": 578.48,
+        "duration": 3.6,
+        "code": [
+            "return output"
+        ]
+    },
+    {
+        "text": "since we used the",
+        "start": 580.399,
+        "duration": 4.481,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "built in sort we took care of the main",
+        "start": 582.08,
+        "duration": 3.6,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "problem",
+        "start": 584.88,
+        "duration": 2.88,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "main part of this problem and all we",
+        "start": 585.68,
+        "duration": 3.76,
+        "code": [
+            "intervals.sort(key=lambda pair: pair[0])"
+        ]
+    },
+    {
+        "text": "have to do now is return",
+        "start": 587.76,
+        "duration": 4.0,
+        "code": [
+            "return output"
+        ]
+    },
+    {
+        "text": "the output and so this is a pretty",
+        "start": 589.44,
+        "duration": 3.6,
+        "code": [
+            "return output"
+        ]
+    },
+    {
+        "text": "efficient solution",
+        "start": 591.76,
+        "duration": 3.12,
+        "code": [
+            "return output"
+        ]
+    }
+]

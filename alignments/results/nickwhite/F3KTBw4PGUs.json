@@ -1,0 +1,253 @@
+[
+    {
+        "text": "and now once you have all these you have",
+        "start": 552.339,
+        "duration": 4.481,
+        "code": [
+            "int[] max_row_vals = new int[n];",
+            "int[] max_column_vals = new int[n];"
+        ]
+    },
+    {
+        "text": "the all the max row valves in the max",
+        "start": 554.99,
+        "duration": 3.659,
+        "code": [
+            "int[] max_row_vals = new int[n];",
+            "int[] max_column_vals = new int[n];"
+        ]
+    },
+    {
+        "text": "column value so we just use the formula",
+        "start": 556.82,
+        "duration": 4.76,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        max_row_vals[i] = Math.max(max_row_vals[i], grid[i][j]);",
+            "        max_column_vals[j] = Math.max(max_column_vals[j], grid[i][j]);",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "from earlier we do result plus equals",
+        "start": 558.649,
+        "duration": 6.781,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "the minimum of those values the minimum",
+        "start": 561.58,
+        "duration": 11.53,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "of the the current max row val max row",
+        "start": 565.43,
+        "duration": 14.87,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "valves of i and max column vows of J",
+        "start": 573.11,
+        "duration": 14.01,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "minus grid of I of J and yeah that that",
+        "start": 580.3,
+        "duration": 8.71,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "should be it and then you return the",
+        "start": 587.12,
+        "duration": 4.5,
+        "code": [
+            "return result;"
+        ]
+    },
+    {
+        "text": "result I feel like I messed up and just",
+        "start": 589.01,
+        "duration": 4.86,
+        "code": [
+            "return result;"
+        ]
+    },
+    {
+        "text": "have a bad feeling but I also nope there",
+        "start": 591.62,
+        "duration": 5.61,
+        "code": [
+            "return result;"
+        ]
+    },
+    {
+        "text": "we go perfect okay so that's it yeah we",
+        "start": 593.87,
+        "duration": 4.969,
+        "code": [
+            "return result;"
+        ]
+    },
+    {
+        "text": "used the formula from earlier you just",
+        "start": 597.23,
+        "duration": 4.35,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "get the minimum of those I mean I",
+        "start": 598.839,
+        "duration": 5.531,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "explained it already but you get the to",
+        "start": 601.58,
+        "duration": 4.379,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "find out how much you're increasing each",
+        "start": 604.37,
+        "duration": 3.48,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "element by you would just check ok",
+        "start": 605.959,
+        "duration": 3.991,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "what's the minimum of the the max column",
+        "start": 607.85,
+        "duration": 5.25,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "values for here max row val is 8 here so",
+        "start": 609.95,
+        "duration": 5.009,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "the minimum is 4 and then you just do 4",
+        "start": 613.1,
+        "duration": 3.9,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "minus 0 is 4 and then that's what you",
+        "start": 614.959,
+        "duration": 3.871,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "updated to you add that to have some and",
+        "start": 617.0,
+        "duration": 4.11,
+        "code": [
+            "for (int i=0; i<n; i++) {",
+            "    for (int j=0; j<n; j++) {",
+            "        result += Math.min(max_row_vals[i], max_column_vals[j]) - grid[i][j];",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "you're returning at the end result thank",
+        "start": 618.83,
+        "duration": 3.78,
+        "code": [
+            "return result;"
+        ]
+    }
+]

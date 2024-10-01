@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yRUzw8Tweh57BMa2ig00CB72jSOn",
+        "object": "chat.completion",
+        "created": 1724192413,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"i'm going to use a hash map like pretty\",\n        \"code\": [\n            \"oldToNew = {}\"\n        ]\n    },\n    {\n        \"text\": \"much every graph problem and we're going\",\n        \"code\": [\n            \"def dfs(node):\",\n            \"    if node in oldToNew:\",\n            \"        return oldToNew[node]\"\n        ]\n    },\n    {\n        \"text\": \"we're going to use\",\n        \"code\": [\n            \"    copy = Node(node.val)\",\n            \"    oldToNew[node] = copy\",\n            \"    for nei in node.neighbors:\",\n            \"        copy.neighbors.append(dfs(nei))\",\n            \"    return copy\"\n        ]\n    },\n    {\n        \"text\": \"now let's jump into the code\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:\",\n            \"        oldToNew = {}\",\n            \"        def dfs(node):\",\n            \"            if node in oldToNew:\",\n            \"                return oldToNew[node]\",\n            \"            copy = Node(node.val)\",\n            \"            oldToNew[node] = copy\",\n            \"            for nei in node.neighbors:\",\n            \"                copy.neighbors.append(dfs(nei))\",\n            \"            return copy\",\n            \"        return dfs(node) if node else None\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 10214,
+            "completion_tokens": 307,
+            "total_tokens": 10521
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yRV4rC3wAbOuh6SRoeWH0rUcRzH5",
+        "object": "chat.completion",
+        "created": 1724192418,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here's the information aligned accordingly:\n\n```json\n[\n    {\n        \"text\": \"so now you can see that we finally\",\n        \"code\": [\n            \"class Solution:\",\n            \"    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:\",\n            \"        oldToNew = {}\"\n        ]\n    },\n    {\n        \"text\": \"and with that being said now let's jump\",\n        \"code\": [\n            \"        def dfs(node):\",\n            \"            if node in oldToNew:\",\n            \"                return oldToNew[node]\"\n        ]\n    },\n    {\n        \"text\": \"so we remember that we only need a\",\n        \"code\": [\n            \"            copy = Node(node.val)\",\n            \"            oldToNew[node] = copy\"\n        ]\n    },\n    {\n        \"text\": \"but we do need to pass in everything\",\n        \"code\": [\n            \"            for nei in node.neighbors:\",\n            \"                copy.neighbors.append(dfs(nei))\"\n        ]\n    },\n    {\n        \"text\": \"adding them or appending them to the\",\n        \"code\": [\n            \"            return copy\"\n        ]\n    },\n    {\n        \"text\": \"call debt for search passing in the\",\n        \"code\": [\n            \"        return dfs(node) if node else None\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 4652,
+            "completion_tokens": 285,
+            "total_tokens": 4937
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

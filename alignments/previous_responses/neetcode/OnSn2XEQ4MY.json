@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMObHKJZFvJKHItvxktjMRTzIlId",
+  "object": "chat.completion",
+  "created": 1724172797,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 130,\n        \"value\": [6, 7, 9, 11]\n    },\n    {\n        \"key\": 132,\n        \"value\": [7]\n    },\n    {\n        \"key\": 134,\n        \"value\": [7]\n    },\n    {\n        \"key\": 136,\n        \"value\": [7]\n    },\n    {\n        \"key\": 139,\n        \"value\": [9, 11]\n    },\n    {\n        \"key\": 142,\n        \"value\": [9]\n    },\n    {\n        \"key\": 151,\n        \"value\": [9]\n    },\n    {\n        \"key\": 153,\n        \"value\": [9]\n    },\n    {\n        \"key\": 154,\n        \"value\": [9]\n    },\n    {\n        \"key\": 156,\n        \"value\": [9]\n    },\n    {\n        \"key\": 160,\n        \"value\": [11]\n    },\n    {\n        \"key\": 163,\n        \"value\": [11, 11, 11, 13]\n    },\n    {\n        \"key\": 165,\n        \"value\": [11]\n    },\n    {\n        \"key\": 166,\n        \"value\": [11]\n    },\n    {\n        \"key\": 170,\n        \"value\": [11]\n    },\n    {\n        \"key\": 171,\n        \"value\": [11]\n    },\n    {\n        \"key\": 174,\n        \"value\": [11]\n    },\n    {\n        \"key\": 176,\n        \"value\": [11]\n    },\n    {\n        \"key\": 178,\n        \"value\": [11]\n    },\n    {\n        \"key\": 179,\n        \"value\": [11]\n    },\n    {\n        \"key\": 182,\n        \"value\": [13]\n    },\n    {\n        \"key\": 184,\n        \"value\": [11]\n    },\n    {\n        \"key\": 185,\n        \"value\": [13]\n    },\n    {\n        \"key\": 187,\n        \"value\": [13]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4120,
+    "completion_tokens": 459,
+    "total_tokens": 4579
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

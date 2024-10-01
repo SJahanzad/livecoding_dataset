@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLzodXDEJqCKfWGTBfavszdKb4gY",
+  "object": "chat.completion",
+  "created": 1724171260,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n    \"5\": [2],\n    \"8\": [3],\n    \"9\": [3, 4],\n    \"17\": [5],\n    \"19\": [6],\n    \"23\": [7],\n    \"24\": [8],\n    \"25\": [9],\n    \"26\": [10],\n    \"27\": [11],\n    \"31\": [12],\n    \"33\": [13],\n    \"35\": [14],\n    \"37\": [15],\n    \"39\": [16],\n    \"41\": [17]\n}\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2752,
+    "completion_tokens": 121,
+    "total_tokens": 2873
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

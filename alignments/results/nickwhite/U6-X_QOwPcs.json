@@ -1,0 +1,424 @@
+[
+    {
+        "text": "our initial count is equal to zero right",
+        "start": 117.06,
+        "duration": 3.96,
+        "code": [
+            "int count = 0;"
+        ]
+    },
+    {
+        "text": "so this is going to be what we returned the number of islands and we loop",
+        "start": 119.7,
+        "duration": 8.459,
+        "code": [
+            "for (int i = 0; i < grid.length; i++) {",
+            "for (int j = 0; j < grid[i].length; j++) {"
+        ]
+    },
+    {
+        "text": "through this is a 2d grid so we have you know each each element is a row of it",
+        "start": 122.969,
+        "duration": 19.471,
+        "code": [
+            "for (int i = 0; i < grid.length; i++) {",
+            "for (int j = 0; j < grid[i].length; j++) {"
+        ]
+    },
+    {
+        "text": "char's and so first thing we want to do is we want to do in size zero I is less",
+        "start": 132.72,
+        "duration": 12.21,
+        "code": [
+            "for (int i = 0; i < grid.length; i++) {",
+            "for (int j = 0; j < grid[i].length; j++) {"
+        ]
+    },
+    {
+        "text": "to get the columns right you know just that's just how you live through a 2d",
+        "start": 154.53,
+        "duration": 10.05,
+        "code": [
+            "for (int i = 0; i < grid.length; i++) {",
+            "for (int j = 0; j < grid[i].length; j++) {"
+        ]
+    },
+    {
+        "text": "single one that we see into a 0 so we we",
+        "start": 190.74,
+        "duration": 7.95,
+        "code": [
+            "count++;",
+            "callBFS(grid, i, j);"
+        ]
+    },
+    {
+        "text": "go horizontally and vertically through",
+        "start": 196.32,
+        "duration": 4.68,
+        "code": [
+            "count++;",
+            "callBFS(grid, i, j);"
+        ]
+    },
+    {
+        "text": "all connected ones so we go through the",
+        "start": 198.69,
+        "duration": 4.92,
+        "code": [
+            "count++;",
+            "callBFS(grid, i, j);"
+        ]
+    },
+    {
+        "text": "whole island once we see it and we turn",
+        "start": 201.0,
+        "duration": 4.47,
+        "code": [
+            "count++;",
+            "callBFS(grid, i, j);"
+        ]
+    },
+    {
+        "text": "all the ones into zeros so that it's",
+        "start": 203.61,
+        "duration": 3.84,
+        "code": [
+            "grid[i][j] = '0';"
+        ]
+    },
+    {
+        "text": "like and we increment the counter by one",
+        "start": 205.47,
+        "duration": 3.9,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "so it's like we see the island we see a",
+        "start": 207.45,
+        "duration": 3.81,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "one we explore all the other ones we",
+        "start": 209.37,
+        "duration": 4.02,
+        "code": [
+            "callBFS(grid, i, j);"
+        ]
+    },
+    {
+        "text": "turn everything to a zero so in this",
+        "start": 211.26,
+        "duration": 4.44,
+        "code": [
+            "grid[i][j] = '0';"
+        ]
+    },
+    {
+        "text": "case everything would be a zero in the",
+        "start": 213.39,
+        "duration": 4.379,
+        "code": [
+            "grid[i][j] = '0';"
+        ]
+    },
+    {
+        "text": "island count would be one and then we",
+        "start": 215.7,
+        "duration": 4.319,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "didn't see any other ones so there we go",
+        "start": 217.769,
+        "duration": 4.051,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "that's what we would return in this one",
+        "start": 220.019,
+        "duration": 3.72,
+        "code": [
+            "return count;"
+        ]
+    },
+    {
+        "text": "we would we would turn all of we would",
+        "start": 221.82,
+        "duration": 3.18,
+        "code": [
+            "grid[i][j] = '0';"
+        ]
+    },
+    {
+        "text": "see this one right away",
+        "start": 223.739,
+        "duration": 3.271,
+        "code": [
+            "count++;",
+            "callBFS(grid, i, j);"
+        ]
+    },
+    {
+        "text": "we'd find all the ones connected to it",
+        "start": 225.0,
+        "duration": 4.14,
+        "code": [
+            "callBFS(grid, i, j + 1);",
+            "callBFS(grid, i, j - 1);",
+            "callBFS(grid, i + 1, j);",
+            "callBFS(grid, i - 1, j);"
+        ]
+    },
+    {
+        "text": "this new one we'd check for you know",
+        "start": 237.33,
+        "duration": 5.45,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "this case there's only one one so we",
+        "start": 246.209,
+        "duration": 4.291,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "explore everything that's easy it's just",
+        "start": 248.34,
+        "duration": 4.59,
+        "code": [
+            "callBFS(grid, i, j + 1);",
+            "callBFS(grid, i, j - 1);",
+            "callBFS(grid, i + 1, j);",
+            "callBFS(grid, i - 1, j);"
+        ]
+    },
+    {
+        "text": "you can call it whatever you want this",
+        "start": 270.84,
+        "duration": 3.78,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "is the method we pass in our grid we",
+        "start": 272.19,
+        "duration": 4.349,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "pass in the position we saw the one that",
+        "start": 274.62,
+        "duration": 5.73,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "you in using the I and J and also we",
+        "start": 276.539,
+        "duration": 5.671,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "want to increment counter because once",
+        "start": 280.35,
+        "duration": 3.72,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "we see a one we know that we're we've",
+        "start": 282.21,
+        "duration": 4.89,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "found at least one island and then at",
+        "start": 284.07,
+        "duration": 4.74,
+        "code": [
+            "count++;"
+        ]
+    },
+    {
+        "text": "the end of this whole loop we're going",
+        "start": 287.1,
+        "duration": 3.03,
+        "code": [
+            "return count;"
+        ]
+    },
+    {
+        "text": "do now is implement this BFS method so",
+        "start": 292.259,
+        "duration": 7.201,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "public void call BFS and this can be",
+        "start": 295.83,
+        "duration": 6.48,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "going to do it right here into ICU",
+        "start": 303.78,
+        "duration": 4.65,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "taking what we passed in right the",
+        "start": 306.18,
+        "duration": 6.06,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "position in the grid so first thing what",
+        "start": 308.43,
+        "duration": 5.43,
+        "code": [
+            "public void callBFS(char[][] grid, int i, int j) {"
+        ]
+    },
+    {
+        "text": "I like to do is I like to do the",
+        "start": 312.24,
+        "duration": 3.0,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "boundary checks or it away so some",
+        "start": 313.86,
+        "duration": 2.94,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "people like to do this differently you",
+        "start": 315.24,
+        "duration": 3.72,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "can use math you can do a few different",
+        "start": 316.8,
+        "duration": 4.95,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "ways to do these boundary checks but I",
+        "start": 318.96,
+        "duration": 5.31,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "just like to do it right away so if I is",
+        "start": 321.75,
+        "duration": 4.83,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "less than zero over I is greater than or",
+        "start": 324.27,
+        "duration": 6.57,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "equal to grid dot length or J is less",
+        "start": 326.58,
+        "duration": 8.339,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "than zero or J is greater than or equal",
+        "start": 330.84,
+        "duration": 6.48,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "to this is the trickier part you just",
+        "start": 334.919,
+        "duration": 3.81,
+        "code": [
+            "if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0') {",
+            "return;"
+        ]
+    },
+    {
+        "text": "considered a medium problem really I'll",
+        "start": 495.729,
+        "duration": 6.901,
+        "code": [
+            "class Solution {",
+            "    public int numIslands(char[][] grid) {",
+            "        int count = 0;",
+            "        for (int i = 0; i < grid.length; i++) {",
+            "            for (int j = 0; j < grid[i].length; j++) {",
+            "                if (grid[i][j] == '1') {",
+            "                    count++;",
+            "                    callBFS(grid, i, j);",
+            "                }",
+            "            }",
+            "        }",
+            "        return count;",
+            "    }"
+        ]
+    }
+]

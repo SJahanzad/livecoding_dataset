@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRkj8ZUc1BieIdF8feb5Nll9Q48q",
+        "object": "chat.completion",
+        "created": 1724193389,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here\u2019s the alignment of the code snippets with the corresponding parts of the transcript:\n\n```json\n[\n    {\n        \"text\": \"so my first instinct was okay we just\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int singleNumber(int[] nums) {\"\n        ]\n    },\n    {\n        \"text\": \"need the frequency of the number to be 1\",\n        \"code\": []\n    },\n    {\n        \"text\": \"obviously there's a hashmap right so we\",\n        \"code\": []\n    },\n    {\n        \"text\": \"just have number of frequencies loop\",\n        \"code\": [\n            \"        int result = 0;\"\n        ]\n    },\n    {\n        \"text\": \"through basic loop if the hash map\",\n        \"code\": [\n            \"        for (int i = 0; i < nums.length; i++) {\"\n        ]\n    },\n    {\n        \"text\": \"doesn't contain the value we put it in\",\n        \"code\": []\n    },\n    {\n        \"text\": \"with a you know the count of 1\",\n        \"code\": []\n    },\n    {\n        \"text\": \"otherwise we update the value and then\",\n        \"code\": []\n    },\n    {\n        \"text\": \"we have this is basically a frequency\",\n        \"code\": []\n    },\n    {\n        \"text\": \"map then you just loop through the\",\n        \"code\": []\n    },\n    {\n        \"text\": \"frequency map if the frequency is 1 we\",\n        \"code\": []\n    },\n    {\n        \"text\": \"return the key so then that's it that's\",\n        \"code\": []\n    },\n    {\n        \"text\": \"it you run it it works perfectly but\",\n        \"code\": []\n    },\n    {\n        \"text\": \"what they wanted in the problem was to\",\n        \"code\": []\n    },\n    {\n        \"text\": \"not use extra space right so how do we\",\n        \"code\": []\n    },\n    {\n        \"text\": \"do that well I looked at the solution\",\n        \"code\": []\n    },\n    {\n        \"text\": \"and I'm not really that confident in my\",\n        \"code\": []\n    },\n    {\n        \"text\": \"bit manipulation abilities I learned bit\",\n        \"code\": []\n    },\n    {\n        \"text\": \"manipulation of data structures but I\",\n        \"code\": []\n    },\n    {\n        \"text\": \"have to know it to get a job probably so\",\n        \"code\": []\n    },\n    {\n        \"text\": \"I'm gonna get better at it but I you can\",\n        \"code\": []\n    },\n    {\n        \"text\": \"bid manipulations useful I just saw this\",\n        \"code\": []\n    },\n    {\n        \"text\": \"solution you just loop through the array\",\n        \"code\": []\n    },\n    {\n        \"text\": \"and I was surprised by how simple it was\",\n        \"code\": []\n    },\n    {\n        \"text\": \"and then I looked it up and had it\",\n        \"code\": []\n    },\n    {\n        \"text\": \"explained to me and I was like wow this\",\n        \"code\": []\n    },\n    {\n        \"text\": \"is really cool so I guess you can do you\",\n        \"code\": []\n    },\n    {\n        \"text\": \"know like plus equals but like carat\",\n        \"code\": []\n    },\n    {\n        \"text\": \"equals with these I'm not sure if you\",\n        \"code\": []\n    },\n    {\n        \"text\": \"can do in a Java the solution he had was\",\n        \"code\": []\n    },\n    {\n        \"text\": \"in Python so let's try it and then I'll\",\n        \"code\": []\n    },\n    {\n        \"text\": \"explain it so this one is a linear scan\",\n        \"code\": []\n    },\n    {\n        \"text\": \"and obviously we don't know if storage\",\n        \"code\": []\n    },\n    {\n        \"text\": \"space we're just doing bit manipulation\",\n        \"code\": []\n    },\n    {\n        \"text\": \"so looks like it works you can do this\",\n        \"code\": []\n    },\n    {\n        \"text\": \"which again just means result equals\",\n        \"code\": [\n            \"            result ^= nums[i];\"\n        ]\n    },\n    {\n        \"text\": \"results caret num shevai so yeah pretty\",\n        \"code\": []\n    },\n    {\n        \"text\": \"fast hundred percent how does this work\",\n        \"code\": [\n            \"        }\",\n            \"        return result;\",\n            \"    }\",\n            \"}\"\n        ]\n    }\n]\n```\n\nThis JSON document maps specific segments of the transcript to the lines of code related to them. Entries where no code matched the transcript were omitted as requested.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 4413,
+            "completion_tokens": 1022,
+            "total_tokens": 5435
+        },
+        "system_fingerprint": "fp_c9aa9c0491"
+    }
+]

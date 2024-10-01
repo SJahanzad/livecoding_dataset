@@ -1,0 +1,46 @@
+[
+    {
+        "text": "this one's called distribute coins in a",
+        "start": 13.5,
+        "duration": 5.85,
+        "code": [
+            "class Solution {",
+            "    int num_moves;",
+            "    public int distributeCoins(TreeNode root) {",
+            "        num_moves = 0;",
+            "        give_coins(root);",
+            "        return num_moves;",
+            "    }"
+        ]
+    },
+    {
+        "text": "this one's called distribute coins in a",
+        "start": 13.5,
+        "duration": 5.85,
+        "code": [
+            "    public int give_coins(TreeNode node) {",
+            "        if (node == null) return 0;",
+            "        int left = give_coins(node.left);",
+            "        int right = give_coins(node.right);",
+            "        num_moves += Math.abs(left) + Math.abs(right);",
+            "        return node.val + left + right - 1;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "this one's called distribute coins in a",
+        "start": 13.5,
+        "duration": 5.85,
+        "code": [
+            "    public int give_coins(TreeNode node) {",
+            "        if (node == null) return 0;",
+            "        int left = give_coins(node.left);",
+            "        int right = give_coins(node.right);",
+            "        num_moves += Math.abs(left) + Math.abs(right);",
+            "        return node.val + left + right - 1;",
+            "    }",
+            "}"
+        ]
+    }
+]

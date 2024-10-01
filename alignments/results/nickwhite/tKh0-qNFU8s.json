@@ -1,0 +1,30 @@
+[
+    {
+        "text": "jewels and stones probably one of the",
+        "start": 26.849,
+        "duration": 3.721,
+        "code": [
+            "class Solution {",
+            "    public int numJewelsInStones(String J, String S) {",
+            "        int num_jewels = 0;"
+        ]
+    },
+    {
+        "text": "stones that we have our jewels as well",
+        "start": 61.079,
+        "duration": 5.281,
+        "code": [
+            "            if (J.indexOf(S.charAt(i)) > -1) {",
+            "                num_jewels += 1;",
+            "            }"
+        ]
+    },
+    {
+        "text": "super easy problem I don't even know why",
+        "start": 109.77,
+        "duration": 3.45,
+        "code": [
+            "        }"
+        ]
+    }
+]

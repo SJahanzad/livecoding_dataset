@@ -1,0 +1,812 @@
+[
+    {
+        "text": "serialize and deserialize a binary tree",
+        "start": 4.319,
+        "duration": 5.121,
+        "code": [
+            "class Codec:",
+            "    # Encodes a tree to a single string.",
+            "    def serialize(self, root: TreeNode) -> str:",
+            "        res = []",
+            "        def dfs(node):",
+            "            if not node:",
+            "                res.append(\"N\")",
+            "                return",
+            "            res.append(str(node.val))",
+            "            dfs(node.left)",
+            "            dfs(node.right)",
+            "        dfs(root)",
+            "        return \",\".join(res)",
+            "    # Decodes your encoded data to tree.",
+            "    def deserialize(self, data: str) -> TreeNode:",
+            "        vals = data.split(\",\")",
+            "        self.i = 0",
+            "        def dfs():",
+            "            if vals[self.i] == \"N\":",
+            "                self.i += 1",
+            "                return None",
+            "            node = TreeNode(int(vals[self.i]))",
+            "            self.i += 1",
+            "            node.left = dfs()",
+            "            node.right = dfs()",
+            "            return node",
+            "        return dfs()"
+        ]
+    },
+    {
+        "text": "so we're done with this first null now",
+        "start": 360.24,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "whatever value comes",
+        "start": 362.4,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "next here is going to be the value in",
+        "start": 363.68,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "the right subtree",
+        "start": 366.0,
+        "duration": 4.4,
+        "code": []
+    },
+    {
+        "text": "of this two node it happens to also be",
+        "start": 367.28,
+        "duration": 4.96,
+        "code": []
+    },
+    {
+        "text": "null but maybe if it wasn't unknown",
+        "start": 370.4,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "maybe it could have been a three right",
+        "start": 372.24,
+        "duration": 3.679,
+        "code": []
+    },
+    {
+        "text": "that's when we would put three over here",
+        "start": 373.84,
+        "duration": 4.639,
+        "code": []
+    },
+    {
+        "text": "but clearly it's not it's a null so that",
+        "start": 375.919,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "means",
+        "start": 378.479,
+        "duration": 3.601,
+        "code": []
+    },
+    {
+        "text": "we can actually stop this subtree",
+        "start": 378.96,
+        "duration": 5.679,
+        "code": []
+    },
+    {
+        "text": "as well so since both of the children",
+        "start": 382.08,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "were null",
+        "start": 384.639,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "that means we're actually done creating",
+        "start": 385.36,
+        "duration": 4.64,
+        "code": []
+    },
+    {
+        "text": "this entire subtree",
+        "start": 387.84,
+        "duration": 4.96,
+        "code": []
+    },
+    {
+        "text": "we reached our base case basically so",
+        "start": 390.0,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "we're done with this",
+        "start": 392.8,
+        "duration": 2.959,
+        "code": []
+    },
+    {
+        "text": "now the next value that comes in our",
+        "start": 393.6,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "string is clearly going to be the right",
+        "start": 395.759,
+        "duration": 5.521,
+        "code": []
+    },
+    {
+        "text": "child of one so the three is gonna be",
+        "start": 398.16,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "the right child",
+        "start": 401.28,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "here and now of course pre-order",
+        "start": 402.0,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "traversal we're gonna fill in the left",
+        "start": 404.639,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "subtree of three so what's the next",
+        "start": 406.08,
+        "duration": 2.0,
+        "code": []
+    },
+    {
+        "text": "value",
+        "start": 407.68,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "in our string it's a four so this does",
+        "start": 408.08,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "have a left subtree",
+        "start": 410.88,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "four continuously we're going to be",
+        "start": 412.16,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "doing the left subtree of four",
+        "start": 414.16,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "we see it's a null that's our base case",
+        "start": 416.24,
+        "duration": 4.399,
+        "code": []
+    },
+    {
+        "text": "so we're done with the left sub tree of",
+        "start": 418.72,
+        "duration": 2.479,
+        "code": []
+    },
+    {
+        "text": "four",
+        "start": 420.639,
+        "duration": 2.56,
+        "code": []
+    },
+    {
+        "text": "next we're looking for the right subtree",
+        "start": 421.199,
+        "duration": 4.161,
+        "code": []
+    },
+    {
+        "text": "of four so what's the next value in our",
+        "start": 423.199,
+        "duration": 3.681,
+        "code": []
+    },
+    {
+        "text": "string it's again",
+        "start": 425.36,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "null so we reach the base case we can be",
+        "start": 426.88,
+        "duration": 3.039,
+        "code": []
+    },
+    {
+        "text": "done",
+        "start": 429.52,
+        "duration": 2.64,
+        "code": []
+    },
+    {
+        "text": "with this entire subtree so we're gonna",
+        "start": 429.919,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "pop back up recursively over here to",
+        "start": 432.16,
+        "duration": 2.96,
+        "code": []
+    },
+    {
+        "text": "three",
+        "start": 434.639,
+        "duration": 2.4,
+        "code": []
+    },
+    {
+        "text": "and now we know we need to fill in the",
+        "start": 435.12,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "right subtree it could be null or it",
+        "start": 437.039,
+        "duration": 3.681,
+        "code": []
+    },
+    {
+        "text": "could be a real value let's find out",
+        "start": 438.8,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "well the next value in our string is a",
+        "start": 440.72,
+        "duration": 3.599,
+        "code": []
+    },
+    {
+        "text": "five so therefore",
+        "start": 442.72,
+        "duration": 4.64,
+        "code": []
+    },
+    {
+        "text": "this is going to be five so next we see",
+        "start": 444.319,
+        "duration": 4.88,
+        "code": []
+    },
+    {
+        "text": "that okay left child of five is going to",
+        "start": 447.36,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "be null and",
+        "start": 449.199,
+        "duration": 2.961,
+        "code": []
+    },
+    {
+        "text": "right child of 5 is going to be null",
+        "start": 450.4,
+        "duration": 4.239,
+        "code": []
+    },
+    {
+        "text": "right so clearly what you can see here",
+        "start": 452.16,
+        "duration": 5.2,
+        "code": []
+    },
+    {
+        "text": "is that for every single leaf node we",
+        "start": 454.639,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "have",
+        "start": 457.36,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "in our tree we we specified what their",
+        "start": 457.919,
+        "duration": 4.961,
+        "code": []
+    },
+    {
+        "text": "children were going to be we specified",
+        "start": 460.96,
+        "duration": 4.4,
+        "code": []
+    },
+    {
+        "text": "the leaf node two has two null children",
+        "start": 462.88,
+        "duration": 4.879,
+        "code": []
+    },
+    {
+        "text": "leaf node four has two nulls and leaf",
+        "start": 465.36,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "node five has two nulls",
+        "start": 467.759,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "that's how you know we're done with the",
+        "start": 469.52,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "entire string we're",
+        "start": 471.599,
+        "duration": 2.801,
+        "code": []
+    },
+    {
+        "text": "we're gonna stop here we know that",
+        "start": 472.8,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "there's nothing left to do",
+        "start": 474.4,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "right every single leaf had null",
+        "start": 475.84,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "children therefore we can't possibly",
+        "start": 477.84,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "continue this tree right so we're done",
+        "start": 479.52,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "with the serialize so we're going to be",
+        "start": 504.72,
+        "duration": 3.28,
+        "code": [
+            "def serialize(self, root: TreeNode) -> str:"
+        ]
+    },
+    {
+        "text": "given a root node for a tree and we want",
+        "start": 506.08,
+        "duration": 3.519,
+        "code": [
+            "def serialize(self, root: TreeNode) -> str:"
+        ]
+    },
+    {
+        "text": "to convert it into a string and then",
+        "start": 508.0,
+        "duration": 3.52,
+        "code": [
+            "res = []"
+        ]
+    },
+    {
+        "text": "return that string so let's start",
+        "start": 509.599,
+        "duration": 5.041,
+        "code": [
+            "def dfs(node):"
+        ]
+    },
+    {
+        "text": "with a empty string initially right",
+        "start": 511.52,
+        "duration": 5.12,
+        "code": [
+            " if not node:"
+        ]
+    },
+    {
+        "text": "set our result to an array i'm basically",
+        "start": 517.839,
+        "duration": 3.44,
+        "code": [
+            "res.append(\"N\")"
+        ]
+    },
+    {
+        "text": "current root or the current node that",
+        "start": 539.36,
+        "duration": 2.8,
+        "code": [
+            "return \",\".join(res)"
+        ]
+    },
+    {
+        "text": "that we increment i so self.i",
+        "start": 721.2,
+        "duration": 5.68,
+        "code": [
+            "self.i += 1"
+        ]
+    },
+    {
+        "text": "plus one so that next time we go we call",
+        "start": 723.6,
+        "duration": 4.239,
+        "code": [
+            "self.i += 1"
+        ]
+    },
+    {
+        "text": "a function",
+        "start": 726.88,
+        "duration": 3.92,
+        "code": [
+            "def dfs():"
+        ]
+    },
+    {
+        "text": "that we're at the appropriate value in",
+        "start": 727.839,
+        "duration": 4.641,
+        "code": [
+            "self.i += 1"
+        ]
+    },
+    {
+        "text": "our list of values",
+        "start": 730.8,
+        "duration": 2.96,
+        "code": [
+            "vals = data.split(',')"
+        ]
+    },
+    {
+        "text": "and that's exactly what we're going to",
+        "start": 732.48,
+        "duration": 2.799,
+        "code": [
+            "def dfs():"
+        ]
+    },
+    {
+        "text": "be doing down here too right so since",
+        "start": 733.76,
+        "duration": 2.639,
+        "code": [
+            "def dfs():"
+        ]
+    },
+    {
+        "text": "we're already using",
+        "start": 735.279,
+        "duration": 3.68,
+        "code": [
+            "node = TreeNode(int(vals[self.i]))"
+        ]
+    },
+    {
+        "text": "the value at self.i once we create this",
+        "start": 736.399,
+        "duration": 4.721,
+        "code": [
+            "node = TreeNode(int(vals[self.i]))"
+        ]
+    },
+    {
+        "text": "tree node we know we have to increment",
+        "start": 738.959,
+        "duration": 4.641,
+        "code": [
+            "self.i += 1"
+        ]
+    },
+    {
+        "text": "our pointer i so that we can be moving",
+        "start": 741.12,
+        "duration": 3.68,
+        "code": [
+            "self.i += 1"
+        ]
+    },
+    {
+        "text": "on to the next",
+        "start": 743.6,
+        "duration": 3.679,
+        "code": [
+            "node.left = dfs()"
+        ]
+    },
+    {
+        "text": "value that we need to create a node for",
+        "start": 744.8,
+        "duration": 3.839,
+        "code": [
+            "node = TreeNode(int(vals[self.i]))"
+        ]
+    },
+    {
+        "text": "so i'm going to call depth first search",
+        "start": 747.279,
+        "duration": 3.041,
+        "code": [
+            "node.left = dfs()"
+        ]
+    },
+    {
+        "text": "remember we don't actually have to pass",
+        "start": 748.639,
+        "duration": 3.681,
+        "code": [
+            "node.left = dfs()"
+        ]
+    },
+    {
+        "text": "any parameters into this and the return",
+        "start": 750.32,
+        "duration": 3.759,
+        "code": [
+            "def dfs():"
+        ]
+    },
+    {
+        "text": "value for this is going to be the sub",
+        "start": 752.32,
+        "duration": 3.12,
+        "code": [
+            "return node"
+        ]
+    },
+    {
+        "text": "tree i created",
+        "start": 754.079,
+        "duration": 4.56,
+        "code": [
+            "return node"
+        ]
+    },
+    {
+        "text": "for node dot left it could be null",
+        "start": 755.44,
+        "duration": 5.44,
+        "code": [
+            "if vals[self.i] == 'N':\n    self.i += 1\n    return None"
+        ]
+    },
+    {
+        "text": "or it could be something else now after",
+        "start": 758.639,
+        "duration": 3.681,
+        "code": [
+            "if vals[self.i] == 'N':\n    self.i += 1\n    return None"
+        ]
+    },
+    {
+        "text": "calling the step for a search function",
+        "start": 760.88,
+        "duration": 3.28,
+        "code": [
+            "node.left = dfs()"
+        ]
+    },
+    {
+        "text": "we don't have to increment self.i",
+        "start": 762.32,
+        "duration": 2.959,
+        "code": [
+            "self.i += 1"
+        ]
+    },
+    {
+        "text": "because that's going to be happening",
+        "start": 764.16,
+        "duration": 2.239,
+        "code": [
+            "self.i += 1"
+        ]
+    },
+    {
+        "text": "recursively so",
+        "start": 765.279,
+        "duration": 2.641,
+        "code": [
+            "node.left = dfs()"
+        ]
+    },
+    {
+        "text": "once this is done we're going to do the",
+        "start": 766.399,
+        "duration": 3.44,
+        "code": [
+            "node.right = dfs()"
+        ]
+    },
+    {
+        "text": "exact same thing for the right subtree",
+        "start": 767.92,
+        "duration": 2.56,
+        "code": [
+            "node.right = dfs()"
+        ]
+    },
+    {
+        "text": "so",
+        "start": 769.839,
+        "duration": 3.12,
+        "code": [
+            "node.right = dfs()"
+        ]
+    },
+    {
+        "text": "uh node.write is also going to be",
+        "start": 770.48,
+        "duration": 3.919,
+        "code": [
+            "node.right = dfs()"
+        ]
+    },
+    {
+        "text": "basically whatever debt for search",
+        "start": 772.959,
+        "duration": 2.721,
+        "code": [
+            "node.right = dfs()"
+        ]
+    },
+    {
+        "text": "returns for us",
+        "start": 774.399,
+        "duration": 3.601,
+        "code": [
+            "return node"
+        ]
+    },
+    {
+        "text": "and once all of that is done we know",
+        "start": 775.68,
+        "duration": 4.56,
+        "code": [
+            "return node"
+        ]
+    },
+    {
+        "text": "that we can simply return the node the",
+        "start": 778.0,
+        "duration": 4.24,
+        "code": [
+            "return node"
+        ]
+    },
+    {
+        "text": "root node that we ended up creating",
+        "start": 780.24,
+        "duration": 3.279,
+        "code": [
+            "return node"
+        ]
+    },
+    {
+        "text": "and then once that's done we've",
+        "start": 782.24,
+        "duration": 3.039,
+        "code": [
+            "return dfs()"
+        ]
+    },
+    {
+        "text": "basically defined our debt for search",
+        "start": 783.519,
+        "duration": 2.961,
+        "code": [
+            "def dfs():"
+        ]
+    },
+    {
+        "text": "function so what are we going to do",
+        "start": 785.279,
+        "duration": 2.721,
+        "code": [
+            "def dfs():"
+        ]
+    },
+    {
+        "text": "we're just going to call that debt for",
+        "start": 786.48,
+        "duration": 2.56,
+        "code": [
+            "return dfs()"
+        ]
+    },
+    {
+        "text": "search function",
+        "start": 788.0,
+        "duration": 3.839,
+        "code": [
+            "return dfs()"
+        ]
+    },
+    {
+        "text": "and return the result because for this",
+        "start": 789.04,
+        "duration": 4.56,
+        "code": [
+            "return dfs()"
+        ]
+    },
+    {
+        "text": "function we're taking in a string of",
+        "start": 791.839,
+        "duration": 3.68,
+        "code": [
+            "vals = data.split(',')"
+        ]
+    },
+    {
+        "text": "data and then converting it into a tree",
+        "start": 793.6,
+        "duration": 3.44,
+        "code": [
+            "vals = data.split(',')"
+        ]
+    },
+    {
+        "text": "and then returning that tree",
+        "start": 795.519,
+        "duration": 3.76,
+        "code": [
+            "return dfs()"
+        ]
+    }
+]

@@ -1,0 +1,1043 @@
+[
+    {
+        "text": "so that's how we're going to decide",
+        "start": 433.199,
+        "duration": 3.361,
+        "code": []
+    },
+    {
+        "text": "which one to remove and just to look at",
+        "start": 434.4,
+        "duration": 4.4,
+        "code": []
+    },
+    {
+        "text": "a third example so what if they were",
+        "start": 436.56,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "inter overlapping like this right of",
+        "start": 438.8,
+        "duration": 3.679,
+        "code": []
+    },
+    {
+        "text": "course we're going to first compare",
+        "start": 441.28,
+        "duration": 2.96,
+        "code": []
+    },
+    {
+        "text": "these two intervals okay yes they're",
+        "start": 442.479,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "overlapping and we can detect that",
+        "start": 444.24,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "because this one starts before this one",
+        "start": 445.68,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "ends so now we have a choice do we",
+        "start": 447.52,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "remove this one or do we remove this one",
+        "start": 449.039,
+        "duration": 4.401,
+        "code": []
+    },
+    {
+        "text": "again we're moving the one that ends",
+        "start": 451.12,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "first so we're going to remove this one",
+        "start": 453.44,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "and you can see",
+        "start": 455.44,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "exactly why because now these two do not",
+        "start": 456.72,
+        "duration": 5.36,
+        "code": []
+    },
+    {
+        "text": "overlap but what if instead we decided",
+        "start": 459.68,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "to remove this one well we removed it",
+        "start": 462.08,
+        "duration": 3.839,
+        "code": []
+    },
+    {
+        "text": "but it didn't help us because these two",
+        "start": 464.24,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "are still overlapping we want to",
+        "start": 465.919,
+        "duration": 4.4,
+        "code": []
+    },
+    {
+        "text": "minimize that so",
+        "start": 468.0,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "basically i just explained to you the",
+        "start": 470.319,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "exact algorithm that we're going to be",
+        "start": 471.84,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "using we're going to sort the entire",
+        "start": 473.36,
+        "duration": 3.76,
+        "code": [
+            "intervals.sort()"
+        ]
+    },
+    {
+        "text": "array based on the starting value then",
+        "start": 475.36,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "we're going to compare adjacent pairs",
+        "start": 477.12,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "and then use the conditions that i just",
+        "start": 479.68,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "mentioned now what's the time complexity",
+        "start": 481.36,
+        "duration": 3.679,
+        "code": []
+    },
+    {
+        "text": "of this well we're going to sort and",
+        "start": 483.12,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "then we're just going to iterate through",
+        "start": 485.039,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "the array a single pass right so the",
+        "start": 486.24,
+        "duration": 4.639,
+        "code": []
+    },
+    {
+        "text": "iterating is simple it's just big o of n",
+        "start": 488.319,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "we're just going to iterate through the",
+        "start": 490.879,
+        "duration": 2.801,
+        "code": [
+            "for start, end in intervals[1:]:"
+        ]
+    },
+    {
+        "text": "entire array but the sorting is where",
+        "start": 491.919,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "the bottleneck is so that's what the",
+        "start": 493.68,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "overall time complexity is going to be",
+        "start": 495.68,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "big o log",
+        "start": 497.28,
+        "duration": 4.319,
+        "code": []
+    },
+    {
+        "text": "n log n and just to run the algorithm",
+        "start": 498.72,
+        "duration": 5.12,
+        "code": []
+    },
+    {
+        "text": "that i explained on this input example",
+        "start": 501.599,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "because they have the first two starting",
+        "start": 503.84,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "values so we're going to have this array",
+        "start": 505.36,
+        "duration": 3.839,
+        "code": []
+    },
+    {
+        "text": "in sorted order based on the start",
+        "start": 507.28,
+        "duration": 3.919,
+        "code": []
+    },
+    {
+        "text": "values we're actually going to take the",
+        "start": 509.199,
+        "duration": 4.881,
+        "code": [
+            "prevEnd = intervals[0][1]"
+        ]
+    },
+    {
+        "text": "first interval and just take its end",
+        "start": 511.199,
+        "duration": 5.041,
+        "code": []
+    },
+    {
+        "text": "value and then keep track of it because",
+        "start": 514.08,
+        "duration": 3.519,
+        "code": []
+    },
+    {
+        "text": "since this is the first interval there's",
+        "start": 516.24,
+        "duration": 3.279,
+        "code": []
+    },
+    {
+        "text": "nothing going to be that comes before it",
+        "start": 517.599,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "on the left okay so now we're going to",
+        "start": 519.519,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "iterate through the intervals that come",
+        "start": 521.279,
+        "duration": 4.24,
+        "code": [
+            "for start, end in intervals[1:]:"
+        ]
+    },
+    {
+        "text": "after this one so the first interval is",
+        "start": 523.279,
+        "duration": 4.641,
+        "code": []
+    },
+    {
+        "text": "this one it has the next start value so",
+        "start": 525.519,
+        "duration": 4.481,
+        "code": []
+    },
+    {
+        "text": "we're going to check is the start value",
+        "start": 527.92,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "less than",
+        "start": 530.0,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "this ones yes they are so they're",
+        "start": 531.12,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "overlapping so which one are we going to",
+        "start": 533.2,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "delete the one with the larger end value",
+        "start": 534.8,
+        "duration": 4.56,
+        "code": [
+            "if start >= prevEnd:",
+            "    prevEnd = end"
+        ]
+    },
+    {
+        "text": "so we're going to delete this one we can",
+        "start": 537.2,
+        "duration": 4.8,
+        "code": []
+    },
+    {
+        "text": "leave this interval as is and save its",
+        "start": 539.36,
+        "duration": 4.479,
+        "code": []
+    },
+    {
+        "text": "end value so that we can compare it with",
+        "start": 542.0,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "the following intervals so this is the",
+        "start": 543.839,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "interval that comes next is its start",
+        "start": 545.68,
+        "duration": 4.159,
+        "code": []
+    },
+    {
+        "text": "value less than the end value of the",
+        "start": 547.6,
+        "duration": 5.12,
+        "code": []
+    },
+    {
+        "text": "previous one no it's not so we don't",
+        "start": 549.839,
+        "duration": 5.761,
+        "code": []
+    },
+    {
+        "text": "delete either of these intervals but",
+        "start": 552.72,
+        "duration": 4.4,
+        "code": []
+    },
+    {
+        "text": "since we didn't delete either of these",
+        "start": 555.6,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "intervals and since we know this one",
+        "start": 557.12,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "started after this one ended we know",
+        "start": 558.64,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "that this one is going to have a larger",
+        "start": 560.72,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "end value so we're not going to be using",
+        "start": 562.56,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "this one to compare anymore we're going",
+        "start": 564.64,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "to be using this end value to compare to",
+        "start": 566.16,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "the following intervals on the right",
+        "start": 568.16,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "side okay so now let's look at this",
+        "start": 570.0,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "interval and the next interval that's",
+        "start": 572.16,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "coming up is this one so is this one",
+        "start": 574.08,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "starting before this one ends nope it",
+        "start": 575.92,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "does not so we don't delete either of",
+        "start": 578.0,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "these and",
+        "start": 579.76,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "uh we just set this to the new end value",
+        "start": 581.2,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "that we're going to keep track of but",
+        "start": 584.08,
+        "duration": 2.48,
+        "code": []
+    },
+    {
+        "text": "there's nothing that comes after it so",
+        "start": 585.12,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "we're done here we only had to remove",
+        "start": 586.56,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "one interval as you can see so the",
+        "start": 588.64,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "answer in this case is one which is what",
+        "start": 590.48,
+        "duration": 3.919,
+        "code": []
+    },
+    {
+        "text": "they also had in the output so that's",
+        "start": 592.32,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "the entire algorithm now we can actually",
+        "start": 594.399,
+        "duration": 4.641,
+        "code": []
+    },
+    {
+        "text": "code it up it's not too bad",
+        "start": 596.56,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "okay so now let's get into everybody's",
+        "start": 599.04,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "favorite part writing out the code so",
+        "start": 600.88,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "remember the first thing we want to do",
+        "start": 602.88,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "is sort the list of intervals so in",
+        "start": 604.32,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "python i can just say sort and it'll",
+        "start": 606.32,
+        "duration": 4.079,
+        "code": [
+            "intervals.sort()"
+        ]
+    },
+    {
+        "text": "actually sort it based on",
+        "start": 608.48,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "the entire pair it'll first sort it",
+        "start": 610.399,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "based on the start value and then sort",
+        "start": 612.32,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "it based on the end value if there's a",
+        "start": 614.16,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "tie between the start but you know in",
+        "start": 616.0,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "java and stuff you can specify the key",
+        "start": 618.32,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "is just the start or you can use just",
+        "start": 620.16,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "the end if you want to and then",
+        "start": 622.16,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "you can slightly change your algorithm",
+        "start": 624.32,
+        "duration": 3.759,
+        "code": []
+    },
+    {
+        "text": "if you're sorting by the end value but",
+        "start": 626.24,
+        "duration": 3.039,
+        "code": []
+    },
+    {
+        "text": "the result that we're going to keep",
+        "start": 628.079,
+        "duration": 3.841,
+        "code": [
+            "res = 0"
+        ]
+    },
+    {
+        "text": "track of is just the entire count that",
+        "start": 629.279,
+        "duration": 4.081,
+        "code": []
+    },
+    {
+        "text": "we have to remove so initially it's",
+        "start": 631.92,
+        "duration": 3.12,
+        "code": [
+            "prevEnd = intervals[0][1]"
+        ]
+    },
+    {
+        "text": "going to be set to zero and remember",
+        "start": 633.36,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "we're going to initially keep track of",
+        "start": 635.04,
+        "duration": 4.4,
+        "code": []
+    },
+    {
+        "text": "the first end value in our sorted",
+        "start": 636.64,
+        "duration": 5.04,
+        "code": []
+    },
+    {
+        "text": "intervals so we can get that just like",
+        "start": 639.44,
+        "duration": 4.639,
+        "code": []
+    },
+    {
+        "text": "this intervals the first interval and we",
+        "start": 641.68,
+        "duration": 5.36,
+        "code": [
+            "prevEnd = intervals[0][1]"
+        ]
+    },
+    {
+        "text": "want its end value which is at index one",
+        "start": 644.079,
+        "duration": 4.561,
+        "code": []
+    },
+    {
+        "text": "then we're going to iterate through the",
+        "start": 647.04,
+        "duration": 3.919,
+        "code": [
+            "for start, end in intervals[1:]:"
+        ]
+    },
+    {
+        "text": "remaining list of intervals so we can",
+        "start": 648.64,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "iterate through the start and end value",
+        "start": 650.959,
+        "duration": 5.201,
+        "code": []
+    },
+    {
+        "text": "of the remaining intervals like this and",
+        "start": 652.88,
+        "duration": 5.6,
+        "code": []
+    },
+    {
+        "text": "we want to start at index one so we can",
+        "start": 656.16,
+        "duration": 5.84,
+        "code": []
+    },
+    {
+        "text": "specify like that in python and now we",
+        "start": 658.48,
+        "duration": 5.84,
+        "code": []
+    },
+    {
+        "text": "get to our if-else case because we want",
+        "start": 662.0,
+        "duration": 5.36,
+        "code": []
+    },
+    {
+        "text": "to know are they overlapping or not so",
+        "start": 664.32,
+        "duration": 5.28,
+        "code": []
+    },
+    {
+        "text": "they're not overlapping if the start",
+        "start": 667.36,
+        "duration": 4.24,
+        "code": [
+            "if start >= prevEnd:"
+        ]
+    },
+    {
+        "text": "value of the interval that we're looking",
+        "start": 669.6,
+        "duration": 6.16,
+        "code": []
+    },
+    {
+        "text": "at is greater than or equal to the",
+        "start": 671.6,
+        "duration": 6.88,
+        "code": []
+    },
+    {
+        "text": "previous end value and remember the",
+        "start": 675.76,
+        "duration": 4.8,
+        "code": [
+            "prevEnd = end"
+        ]
+    },
+    {
+        "text": "equal is very important that's the edge",
+        "start": 678.48,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "case we talked about at the beginning if",
+        "start": 680.56,
+        "duration": 3.839,
+        "code": []
+    },
+    {
+        "text": "they're equal they're technically not",
+        "start": 682.56,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "overlapping and if they are not",
+        "start": 684.399,
+        "duration": 4.721,
+        "code": []
+    },
+    {
+        "text": "overlapping the only thing we need to do",
+        "start": 686.8,
+        "duration": 5.44,
+        "code": []
+    },
+    {
+        "text": "is update our previous end set it to the",
+        "start": 689.12,
+        "duration": 4.959,
+        "code": [
+            "prevEnd = end"
+        ]
+    },
+    {
+        "text": "new end value",
+        "start": 692.24,
+        "duration": 3.839,
+        "code": []
+    },
+    {
+        "text": "because we know that the new end value",
+        "start": 694.079,
+        "duration": 4.721,
+        "code": []
+    },
+    {
+        "text": "is going to be greater than the previous",
+        "start": 696.079,
+        "duration": 5.601,
+        "code": []
+    },
+    {
+        "text": "one and the else case is if they are",
+        "start": 698.8,
+        "duration": 5.039,
+        "code": [
+            "else:",
+            "    res += 1",
+            "    prevEnd = min(end, prevEnd)"
+        ]
+    },
+    {
+        "text": "actually overlapping and if they are",
+        "start": 701.68,
+        "duration": 5.36,
+        "code": []
+    },
+    {
+        "text": "overlapping then we need to remove one",
+        "start": 703.839,
+        "duration": 4.961,
+        "code": []
+    },
+    {
+        "text": "of the intervals so definitely we are",
+        "start": 707.04,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "going to increment our result count by",
+        "start": 708.8,
+        "duration": 3.839,
+        "code": [
+            "    res += 1"
+        ]
+    },
+    {
+        "text": "one because we have to remove one of",
+        "start": 710.88,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "these now the question is which one are",
+        "start": 712.639,
+        "duration": 3.921,
+        "code": []
+    },
+    {
+        "text": "we going to remove and how are we",
+        "start": 714.8,
+        "duration": 3.599,
+        "code": []
+    },
+    {
+        "text": "actually even going to handle that well",
+        "start": 716.56,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "the only thing we actually need to",
+        "start": 718.399,
+        "duration": 4.081,
+        "code": []
+    },
+    {
+        "text": "update is our previous end because",
+        "start": 719.92,
+        "duration": 3.76,
+        "code": [
+            "    prevEnd = min(end, prevEnd)"
+        ]
+    },
+    {
+        "text": "remember we don't actually have to",
+        "start": 722.48,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "delete the interval in the array we just",
+        "start": 723.68,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "have to count how many we delete but we",
+        "start": 725.68,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "have we do have to update the previous",
+        "start": 727.76,
+        "duration": 3.759,
+        "code": []
+    },
+    {
+        "text": "end uh remember which one of these end",
+        "start": 729.44,
+        "duration": 3.519,
+        "code": []
+    },
+    {
+        "text": "values are we actually going to keep",
+        "start": 731.519,
+        "duration": 2.721,
+        "code": []
+    },
+    {
+        "text": "which one of the intervals are we going",
+        "start": 732.959,
+        "duration": 2.88,
+        "code": []
+    },
+    {
+        "text": "to keep we're going to keep the one that",
+        "start": 734.24,
+        "duration": 3.599,
+        "code": []
+    },
+    {
+        "text": "has the minimum end value so we're going",
+        "start": 735.839,
+        "duration": 4.321,
+        "code": [
+            "    prevEnd = min(end, prevEnd)"
+        ]
+    },
+    {
+        "text": "to set previous end equal to the minimum",
+        "start": 737.839,
+        "duration": 6.161,
+        "code": []
+    },
+    {
+        "text": "of end and itself previous end so that",
+        "start": 740.16,
+        "duration": 5.52,
+        "code": []
+    },
+    {
+        "text": "once we've updated this we can use this",
+        "start": 744.0,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "new end value uh in the future",
+        "start": 745.68,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "iterations of the loop but that's",
+        "start": 747.92,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "actually the entire algorithm once we've",
+        "start": 749.68,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "done that we just have to return the the",
+        "start": 751.44,
+        "duration": 4.56,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "count of how many we deleted and then",
+        "start": 753.92,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "run the code and make sure that it works",
+        "start": 756.0,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "and as you can see yes it does work and",
+        "start": 757.92,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "it is pretty efficient so i really hope",
+        "start": 759.92,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "that this was helpful if it was please",
+        "start": 761.76,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "like and subscribe it really supports",
+        "start": 763.76,
+        "duration": 3.199,
+        "code": []
+    },
+    {
+        "text": "the channel a lot consider checking out",
+        "start": 765.44,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "my patreon where you can further support",
+        "start": 766.959,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "the channel and hopefully i'll see you",
+        "start": 768.48,
+        "duration": 5.359,
+        "code": []
+    },
+    {
+        "text": "pretty soon thanks for watching",
+        "start": 770.16,
+        "duration": 3.679,
+        "code": []
+    }
+]

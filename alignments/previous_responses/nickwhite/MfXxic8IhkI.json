@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yM0Dtj1O0MTbeUYozfK2788hXCHY",
+  "object": "chat.completion",
+  "created": 1724171285,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 227,\n        \"value\": [\n            1\n        ]\n    },\n    {\n        \"key\": 234,\n        \"value\": [\n            3,\n            7,\n            10\n        ]\n    },\n    {\n        \"key\": 243,\n        \"value\": [\n            9\n        ]\n    },\n    {\n        \"key\": 246,\n        \"value\": [\n            11,\n            15\n        ]\n    },\n    {\n        \"key\": 267,\n        \"value\": [\n            13,\n            17\n        ]\n    },\n    {\n        \"key\": 269,\n        \"value\": [\n            19\n        ]\n    },\n    {\n        \"key\": 272,\n        \"value\": [\n            21\n        ]\n    },\n    {\n        \"key\": 279,\n        \"value\": [\n            22\n        ]\n    },\n    {\n        \"key\": 285,\n        \"value\": [\n            23,\n            25\n        ]\n    },\n    {\n        \"key\": 288,\n        \"value\": [\n            27\n        ]\n    },\n    {\n        \"key\": 292,\n        \"value\": [\n            29\n        ]\n    },\n    {\n        \"key\": 297,\n        \"value\": [\n            30\n        ]\n    },\n    {\n        \"key\": 303,\n        \"value\": [\n            31,\n            33\n        ]\n    },\n    {\n        \"key\": 305,\n        \"value\": [\n            34\n        ]\n    },\n    {\n        \"key\": 309,\n        \"value\": [\n            35,\n            37\n        ]\n    },\n    {\n        \"key\": 315,\n        \"value\": [\n            41\n        ]\n    },\n    {\n        \"key\": 318,\n        \"value\": [\n            42,\n            44\n        ]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7433,
+    "completion_tokens": 412,
+    "total_tokens": 7845
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

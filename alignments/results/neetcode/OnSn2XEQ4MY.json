@@ -1,0 +1,254 @@
+[
+    {
+        "text": "we can first check the base case so if",
+        "start": 132.16,
+        "duration": 3.84,
+        "code": [
+            "def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:",
+            "    if not root: return None"
+        ]
+    },
+    {
+        "text": "the root is null",
+        "start": 134.48,
+        "duration": 4.24,
+        "code": [
+            "    if not root: return None"
+        ]
+    },
+    {
+        "text": "then we can return null we don't have to",
+        "start": 136.0,
+        "duration": 3.68,
+        "code": [
+            "    if not root: return None"
+        ]
+    },
+    {
+        "text": "continue",
+        "start": 138.72,
+        "duration": 3.68,
+        "code": [
+            "    if not root: return None"
+        ]
+    },
+    {
+        "text": "otherwise what we're going to do is swap",
+        "start": 139.68,
+        "duration": 3.68,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "the children",
+        "start": 142.4,
+        "duration": 4.76,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "so we're going to save the left value",
+        "start": 143.36,
+        "duration": 7.04,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "root.left in a temporary variable then",
+        "start": 147.16,
+        "duration": 3.96,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "we're going to",
+        "start": 150.4,
+        "duration": 3.24,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "replace the root.left value with",
+        "start": 151.12,
+        "duration": 3.759,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "root.right",
+        "start": 153.64,
+        "duration": 2.679,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "and then we're going to replace the",
+        "start": 154.879,
+        "duration": 4.08,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "root.right value with the left value",
+        "start": 156.319,
+        "duration": 3.841,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "which we know is now",
+        "start": 158.959,
+        "duration": 3.841,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "stored in temp so after we swap the",
+        "start": 160.16,
+        "duration": 3.12,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "nodes",
+        "start": 162.8,
+        "duration": 2.64,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "all we have to do is now recursively",
+        "start": 163.28,
+        "duration": 3.12,
+        "code": [
+            "self.invertTree(root.left)",
+            "self.invertTree(root.right)"
+        ]
+    },
+    {
+        "text": "invert the",
+        "start": 165.44,
+        "duration": 4.72,
+        "code": [
+            "self.invertTree(root.left)",
+            "self.invertTree(root.right)"
+        ]
+    },
+    {
+        "text": "subtrees so we can invert the left",
+        "start": 166.4,
+        "duration": 4.64,
+        "code": [
+            "self.invertTree(root.left)"
+        ]
+    },
+    {
+        "text": "subtree",
+        "start": 170.16,
+        "duration": 4.0,
+        "code": [
+            "self.invertTree(root.left)"
+        ]
+    },
+    {
+        "text": "and then we can invert the right subtree",
+        "start": 171.04,
+        "duration": 5.6,
+        "code": [
+            "self.invertTree(root.right)"
+        ]
+    },
+    {
+        "text": "so by doing self.invert tree what we're",
+        "start": 174.16,
+        "duration": 4.24,
+        "code": [
+            "self.invertTree(root.left)",
+            "self.invertTree(root.right)"
+        ]
+    },
+    {
+        "text": "doing is making a recursive call to the",
+        "start": 176.64,
+        "duration": 3.12,
+        "code": [
+            "self.invertTree(root.left)",
+            "self.invertTree(root.right)"
+        ]
+    },
+    {
+        "text": "function we're inside",
+        "start": 178.4,
+        "duration": 3.759,
+        "code": [
+            "self.invertTree(root.left)",
+            "self.invertTree(root.right)"
+        ]
+    },
+    {
+        "text": "and once we have swapped the roots",
+        "start": 179.76,
+        "duration": 4.479,
+        "code": [
+            "root.left, root.right = root.right, root.left"
+        ]
+    },
+    {
+        "text": "children once we have inverted the left",
+        "start": 182.159,
+        "duration": 2.881,
+        "code": [
+            "self.invertTree(root.left)"
+        ]
+    },
+    {
+        "text": "subtree and",
+        "start": 184.239,
+        "duration": 3.041,
+        "code": [
+            "self.invertTree(root.left)"
+        ]
+    },
+    {
+        "text": "inverted the right subtree we know we're",
+        "start": 185.04,
+        "duration": 4.64,
+        "code": [
+            "self.invertTree(root.right)"
+        ]
+    },
+    {
+        "text": "finished so then we can return the root",
+        "start": 187.28,
+        "duration": 4.8,
+        "code": [
+            "return root"
+        ]
+    },
+    {
+        "text": "so there it is this problem is a",
+        "start": 189.68,
+        "duration": 4.24,
+        "code": [
+            "class Solution:",
+            "    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:",
+            "        if not root: return None",
+            "        root.left, root.right = root.right, root.left",
+            "        self.invertTree(root.left)",
+            "        self.invertTree(root.right)",
+            "        return root"
+        ]
+    }
+]

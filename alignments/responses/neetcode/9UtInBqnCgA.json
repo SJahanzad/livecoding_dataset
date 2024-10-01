@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yREz7yrFrQwkOzJJAJC76DcmO1yP",
+        "object": "chat.completion",
+        "created": 1724191421,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[{\"text\": \"and we want to return true if\", \"code\": [\"class Solution:\", \"    def isAnagram(self, s: str, t: str) -> bool:\", \"        if len(s) != len(t):\", \"            return False\"]}, {\"text\": \"we're just going to be doing is counting the characters in both of the strings so\", \"code\": [\"countS, countT = {}, {}\"]}, {\"text\": \"both strings right\", \"code\": [\"for i in range(len(s)):\"]}, {\"text\": \"we're going to create hashmaps for that\", \"code\": [\"countS[s[i]] = 1 + countS.get(s[i], 0)\", \"countT[t[i]] = 1 + countT.get(t[i], 0)\"]}, {\"text\": \"then we can go ahead and return true that's the\", \"code\": [\"return countS == countT\"]}, {\"text\": \"make sure the counts are the same so let's\", \"code\": [\"return countS == countT\"]}]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 9694,
+            "completion_tokens": 227,
+            "total_tokens": 9921
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    },
+    {
+        "id": "chatcmpl-9yRF4ZH8e1E2QBLDWSbTk4sosrwP8",
+        "object": "chat.completion",
+        "created": 1724191426,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"then we basically know to return false\",\n        \"code\": [\n            \"if len(s) != len(t):\",\n            \"    return False\"\n        ]\n    },\n    {\n        \"text\": \"immediately because\",\n        \"code\": [\n            \"if len(s) != len(t):\",\n            \"    return False\"\n        ]\n    },\n    {\n        \"text\": \"then we know that they're not anagrams\",\n        \"code\": [\n            \"if len(s) != len(t):\",\n            \"    return False\"\n        ]\n    },\n    {\n        \"text\": \"we're iterating through all the key\",\n        \"code\": [\n            \"for i in range(len(s)):\",\n            \"    countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"    countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"values of account s right the the count\",\n        \"code\": [\n            \"countS, countT = {}, {}\",\n            \"for i in range(len(s)):\",\n            \"    countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"    countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"map of string s and c\",\n        \"code\": [\n            \"countS, countT = {}, {}\",\n            \"for i in range(len(s)):\",\n            \"    countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"    countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"is going to be the key but what if that\",\n        \"code\": [\n            \"for i in range(len(s)):\",\n            \"    countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"    countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"key does not exist in the t map right\",\n        \"code\": [\n            \"countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"count t what if it doesn't exist in this\",\n        \"code\": [\n            \"countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"map well again we can use that default\",\n        \"code\": [\n            \"countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"function of get so that it doesn't throw\",\n        \"code\": [\n            \"countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"a key error for us and it'll return a\",\n        \"code\": [\n            \"countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"default value of zero so\",\n        \"code\": [\n            \"countS[s[i]] = 1 + countS.get(s[i], 0)\",\n            \"countT[t[i]] = 1 + countT.get(t[i], 0)\"\n        ]\n    },\n    {\n        \"text\": \"that's uh basically the entire algorithm\",\n        \"code\": [\n            \"return countS == countT\"\n        ]\n    },\n    {\n        \"text\": \"right we built the hash map we performed\",\n        \"code\": [\n            \"return countS == countT\"\n        ]\n    },\n    {\n        \"text\": \"the check and then if if we never return\",\n        \"code\": [\n            \"return countS == countT\"\n        ]\n    },\n    {\n        \"text\": \"false here that must mean that they are\",\n        \"code\": [\n            \"return countS == countT\"\n        ]\n    },\n    {\n        \"text\": \"anagram so then if the loop exits we can\",\n        \"code\": [\n            \"return countS == countT\"\n        ]\n    },\n    {\n        \"text\": \"go ahead and return true that's the\",\n        \"code\": [\n            \"return countS == countT\"\n        ]\n    },\n    {\n        \"text\": \"entire code let's run it to make sure\",\n        \"code\": [\n            \"return countS == countT\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3955,
+            "completion_tokens": 1085,
+            "total_tokens": 5040
+        },
+        "system_fingerprint": "fp_df84d6bd70"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "text": "number that is divisible by every digit",
+        "start": 16.8,
+        "duration": 4.95,
+        "code": [
+            "for (int i = left; i <= right; i++) {"
+        ]
+    },
+    {
+        "text": "then the remainder is 0 obviously and if",
+        "start": 43.02,
+        "duration": 4.019,
+        "code": [
+            "if (j == 0) list.add(i);"
+        ]
+    },
+    {
+        "text": "contain the digit zero so if the digit",
+        "start": 51.96,
+        "duration": 4.65,
+        "code": [
+            "}"
+        ]
+    }
+]

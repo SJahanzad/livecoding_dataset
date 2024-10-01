@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMYoZaN8BEq8sXO37MXbjlP64IaI",
+  "object": "chat.completion",
+  "created": 1724173430,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 593,\n        \"value\": [1, 2, 3]\n    },\n    {\n        \"key\": 619,\n        \"value\": [4]\n    },\n    {\n        \"key\": 623,\n        \"value\": [7]\n    },\n    {\n        \"key\": 625,\n        \"value\": [11, 12, 13, 14]\n    },\n    {\n        \"key\": 629,\n        \"value\": [16, 17]\n    },\n    {\n        \"key\": 633,\n        \"value\": [21]\n    },\n    {\n        \"key\": 639,\n        \"value\": [24]\n    },\n    {\n        \"key\": 654,\n        \"value\": [27, 28]\n    },\n    {\n        \"key\": 672,\n        \"value\": [30]\n    },\n    {\n        \"key\": 674,\n        \"value\": [31, 32]\n    },\n    {\n        \"key\": 676,\n        \"value\": [33, 34]\n    },\n    {\n        \"key\": 678,\n        \"value\": [36, 37]\n    },\n    {\n        \"key\": 680,\n        \"value\": [38] \n    },\n    {\n        \"key\": 681,\n        \"value\": [39]\n    },\n    {\n        \"key\": 686,\n        \"value\": [45]\n    },\n    {\n        \"key\": 689,\n        \"value\": [47]\n    },\n    {\n        \"key\": 700, \n        \"value\": [52]\n    },\n    {\n        \"key\": 739,\n        \"value\": [56]\n    },\n    {\n        \"key\": 741,\n        \"value\": [57]\n    },\n    {\n        \"key\": 743,\n        \"value\": [58]\n    },\n    {\n        \"key\": 748,\n        \"value\": [61]\n    },\n    {\n        \"key\": 750,\n        \"value\": [62]\n    },\n    {\n        \"key\": 753,\n        \"value\": [63]\n    },\n    {\n        \"key\": 756,\n        \"value\": [65]\n    },\n    {\n        \"key\": 765,\n        \"value\": [68]\n    },\n    {\n        \"key\": 774,\n        \"value\": [71]\n    },\n    {\n        \"key\": 778,\n        \"value\": [73]\n    },\n    {\n        \"key\": 787,\n        \"value\": [75]\n    },\n    {\n        \"key\": 791,\n        \"value\": [77]\n    },\n    {\n        \"key\": 796,\n        \"value\": [79]\n    },\n    {\n        \"key\": 799,\n        \"value\": [81]\n    },\n    {\n        \"key\": 809,\n        \"value\": [86]\n    },\n    {\n        \"key\": 814,\n        \"value\": [88]\n    },\n    {\n        \"key\": 822,\n        \"value\": [93]\n    },\n    {\n        \"key\": 829,\n        \"value\": [95]\n    },\n    {\n        \"key\": 837,\n        \"value\": [97]\n    },\n    {\n        \"key\": 847,\n        \"value\": [100]\n    },\n    {\n        \"key\": 859,\n        \"value\": [103]\n    },\n    {\n        \"key\": 871,\n        \"value\": [106]\n    },\n    {\n        \"key\": 877,\n        \"value\": [107]\n    },\n    {\n        \"key\": 881,\n        \"value\": [108]\n    },\n    {\n        \"key\": 886,\n        \"value\": [109]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17337,
+    "completion_tokens": 794,
+    "total_tokens": 18131
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

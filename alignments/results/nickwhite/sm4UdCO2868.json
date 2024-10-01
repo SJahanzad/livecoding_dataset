@@ -1,0 +1,722 @@
+[
+    {
+        "text": "the leftmost position and we're grabbing",
+        "start": 501.63,
+        "duration": 5.039,
+        "code": [
+            "leftmost_positions.computeIfAbsent(depth, x->position);"
+        ]
+    },
+    {
+        "text": "the rightmost position because this is",
+        "start": 504.33,
+        "duration": 5.07,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "then every other node in that current",
+        "start": 513.96,
+        "duration": 5.43,
+        "code": [
+            "get_width(root.left, depth+1, position*2);",
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "level we are going to test this exact",
+        "start": 516.36,
+        "duration": 5.82,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "statement on we're gonna test the max",
+        "start": 519.39,
+        "duration": 5.52,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "width against every right note so am i",
+        "start": 522.18,
+        "duration": 5.159,
+        "code": [
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "tested on you know not the rightmost",
+        "start": 524.91,
+        "duration": 4.44,
+        "code": [
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "node at first but when we get to the",
+        "start": 527.339,
+        "duration": 3.571,
+        "code": [
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "rightmost node the max width will be",
+        "start": 529.35,
+        "duration": 3.93,
+        "code": [
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "greater anyway so we're going to be grew",
+        "start": 530.91,
+        "duration": 2.73,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "up",
+        "start": 533.28,
+        "duration": 2.16,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "the max with each time hopefully this is",
+        "start": 533.64,
+        "duration": 3.69,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "making sense but it's kind of hard to",
+        "start": 535.44,
+        "duration": 3.54,
+        "code": []
+    },
+    {
+        "text": "explain this one this one's pretty hard",
+        "start": 537.33,
+        "duration": 4.26,
+        "code": []
+    },
+    {
+        "text": "to explain when we're so every every",
+        "start": 538.98,
+        "duration": 4.71,
+        "code": []
+    },
+    {
+        "text": "node we Traverse in every level",
+        "start": 541.59,
+        "duration": 4.32,
+        "code": [
+            "get_width(root.left, depth+1, position*2);",
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "we're tested we're reading the max with",
+        "start": 543.69,
+        "duration": 5.04,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "if it's bigger so we test her max with",
+        "start": 545.91,
+        "duration": 4.95,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "against the max with and we do the",
+        "start": 548.73,
+        "duration": 3.66,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "current position of the current node",
+        "start": 550.86,
+        "duration": 4.2,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "we're traversing subtracted subtracting",
+        "start": 552.39,
+        "duration": 4.62,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);",
+            "position*2",
+            "position*2+1"
+        ]
+    },
+    {
+        "text": "the leftmost position and we have to add",
+        "start": 555.06,
+        "duration": 4.23,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "one no matter what so we have that",
+        "start": 557.01,
+        "duration": 5.34,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "rightmost position and subtracting the",
+        "start": 559.29,
+        "duration": 5.3,
+        "code": [
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "leftmost position is going to give us",
+        "start": 562.35,
+        "duration": 6.15,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;"
+        ]
+    },
+    {
+        "text": "exactly the width it's going to give us",
+        "start": 564.59,
+        "duration": 8.05,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;"
+        ]
+    },
+    {
+        "text": "the exact width and -1 that we need so",
+        "start": 568.5,
+        "duration": 6.18,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;"
+        ]
+    },
+    {
+        "text": "all we have to do is add one to that",
+        "start": 572.64,
+        "duration": 4.77,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;"
+        ]
+    },
+    {
+        "text": "width and that is because of the way",
+        "start": 574.68,
+        "duration": 4.23,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "that the positions are set up where all",
+        "start": 577.41,
+        "duration": 3.84,
+        "code": [
+            "position*2",
+            "position*2+1"
+        ]
+    },
+    {
+        "text": "the leftmost nodes are the value is",
+        "start": 578.91,
+        "duration": 6.78,
+        "code": [
+            "position*2"
+        ]
+    },
+    {
+        "text": "position times 2 when we set them at the",
+        "start": 581.25,
+        "duration": 7.26,
+        "code": [
+            "position*2"
+        ]
+    },
+    {
+        "text": "beginning in position times 2 plus 1 to",
+        "start": 585.69,
+        "duration": 4.52,
+        "code": [
+            "position*2+1"
+        ]
+    },
+    {
+        "text": "get to the right node it's just",
+        "start": 588.51,
+        "duration": 5.25,
+        "code": [
+            "position*2+1"
+        ]
+    },
+    {
+        "text": "organizing in an ordered way our tree so",
+        "start": 590.21,
+        "duration": 6.16,
+        "code": []
+    },
+    {
+        "text": "that when we do this math at the end the",
+        "start": 593.76,
+        "duration": 4.77,
+        "code": []
+    },
+    {
+        "text": "positions are set up perfectly so that",
+        "start": 596.37,
+        "duration": 5.04,
+        "code": []
+    },
+    {
+        "text": "the subtraction is going to give us the",
+        "start": 598.53,
+        "duration": 4.92,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;"
+        ]
+    },
+    {
+        "text": "width perfectly hopefully that makes",
+        "start": 601.41,
+        "duration": 3.66,
+        "code": []
+    },
+    {
+        "text": "sense for you guys I know it's kind of",
+        "start": 603.45,
+        "duration": 3.24,
+        "code": []
+    },
+    {
+        "text": "tough to visualize I wish I could give",
+        "start": 605.07,
+        "duration": 3.75,
+        "code": []
+    },
+    {
+        "text": "you a diagram here there's not really a",
+        "start": 606.69,
+        "duration": 4.65,
+        "code": []
+    },
+    {
+        "text": "diagram that I can show you here but I",
+        "start": 608.82,
+        "duration": 5.19,
+        "code": []
+    },
+    {
+        "text": "think it's a really good and intuitive",
+        "start": 611.34,
+        "duration": 5.46,
+        "code": []
+    },
+    {
+        "text": "solution just imagine a tree if you",
+        "start": 614.01,
+        "duration": 5.52,
+        "code": []
+    },
+    {
+        "text": "could take a pencil and pen and draw the",
+        "start": 616.8,
+        "duration": 5.13,
+        "code": []
+    },
+    {
+        "text": "exact positions like it would be it",
+        "start": 619.53,
+        "duration": 8.46,
+        "code": []
+    },
+    {
+        "text": "would look like 1 2 3 4 5 now if it was",
+        "start": 621.93,
+        "duration": 10.59,
+        "code": []
+    },
+    {
+        "text": "one if the tree was 1 2 3 4 5 you could",
+        "start": 627.99,
+        "duration": 6.6,
+        "code": []
+    },
+    {
+        "text": "the max width is going to be 2 no matter",
+        "start": 632.52,
+        "duration": 6.69,
+        "code": []
+    },
+    {
+        "text": "what because 2 & 3 are 2 & 4 & 5 or 2",
+        "start": 634.59,
+        "duration": 9.6,
+        "code": []
+    },
+    {
+        "text": "and if you subtract 3 minus 2 that's",
+        "start": 639.21,
+        "duration": 6.84,
+        "code": []
+    },
+    {
+        "text": "gonna be 1 but we need 2 is the max",
+        "start": 644.19,
+        "duration": 4.35,
+        "code": []
+    },
+    {
+        "text": "width so we just add 1 every time it's",
+        "start": 646.05,
+        "duration": 3.81,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "gonna work out perfectly you just have",
+        "start": 648.54,
+        "duration": 3.3,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "to add 1 you do the subtraction from the",
+        "start": 649.86,
+        "duration": 4.56,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "rightmost node and the leftmost out so 2",
+        "start": 651.84,
+        "duration": 5.43,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;",
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "& 3 would be rightmost - leftmost 3",
+        "start": 654.42,
+        "duration": 5.49,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;",
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "minus 2 plus 1 gives us 2 or it would be",
+        "start": 657.27,
+        "duration": 6.0,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;",
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "4 & 5 5 minus 4 plus 1 gives us 2 so",
+        "start": 659.91,
+        "duration": 5.13,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;",
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "those are just some examples if you do a",
+        "start": 663.27,
+        "duration": 3.27,
+        "code": []
+    },
+    {
+        "text": "couple examples of this tree you'll just",
+        "start": 665.04,
+        "duration": 2.04,
+        "code": []
+    },
+    {
+        "text": "notice that the",
+        "start": 666.54,
+        "duration": 2.28,
+        "code": []
+    },
+    {
+        "text": "rightmost position - the leftmost",
+        "start": 667.08,
+        "duration": 3.9,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;"
+        ]
+    },
+    {
+        "text": "position plus one will give us the max",
+        "start": 668.82,
+        "duration": 4.11,
+        "code": [
+            "position-leftmost_positions.get(depth) + 1;"
+        ]
+    },
+    {
+        "text": "with every single time you just have to",
+        "start": 670.98,
+        "duration": 3.36,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "be sure this is something you learn in",
+        "start": 672.93,
+        "duration": 3.99,
+        "code": []
+    },
+    {
+        "text": "data structures in school that you when",
+        "start": 674.34,
+        "duration": 4.23,
+        "code": []
+    },
+    {
+        "text": "you're setting the positions for these",
+        "start": 676.92,
+        "duration": 3.6,
+        "code": [
+            "position*2",
+            "position*2+1"
+        ]
+    },
+    {
+        "text": "nodes and doing these recursive calls",
+        "start": 678.57,
+        "duration": 4.44,
+        "code": [
+            "get_width(root.left, depth+1, position*2);",
+            "get_width(root.right, depth+1, position*2+1);"
+        ]
+    },
+    {
+        "text": "the left mode the left nodes get the",
+        "start": 680.52,
+        "duration": 5.7,
+        "code": [
+            "position*2"
+        ]
+    },
+    {
+        "text": "position x 2 as the new position and the",
+        "start": 683.01,
+        "duration": 5.01,
+        "code": [
+            "position*2"
+        ]
+    },
+    {
+        "text": "position x 2 plus 1 is for the right",
+        "start": 686.22,
+        "duration": 3.51,
+        "code": [
+            "position*2+1"
+        ]
+    },
+    {
+        "text": "node and then you just think about the",
+        "start": 688.02,
+        "duration": 4.08,
+        "code": [
+            "position*2",
+            "position*2+1"
+        ]
+    },
+    {
+        "text": "depth I 1 each time you have this",
+        "start": 689.73,
+        "duration": 4.95,
+        "code": []
+    },
+    {
+        "text": "leftmost hash map which I explained",
+        "start": 692.1,
+        "duration": 4.44,
+        "code": [
+            "leftmost_positions = new HashMap<>();"
+        ]
+    },
+    {
+        "text": "earlier the compute if absent just puts",
+        "start": 694.68,
+        "duration": 5.46,
+        "code": [
+            "leftmost_positions.computeIfAbsent(depth, x->position);"
+        ]
+    },
+    {
+        "text": "it in there if it's not there yet at",
+        "start": 696.54,
+        "duration": 5.43,
+        "code": [
+            "leftmost_positions.computeIfAbsent(depth, x->position);"
+        ]
+    },
+    {
+        "text": "that current depth so the only nodes",
+        "start": 700.14,
+        "duration": 3.09,
+        "code": [
+            "leftmost_positions.computeIfAbsent(depth, x->position);"
+        ]
+    },
+    {
+        "text": "getting put in that leftmost position",
+        "start": 701.97,
+        "duration": 4.53,
+        "code": [
+            "leftmost_positions.computeIfAbsent(depth, x->position);"
+        ]
+    },
+    {
+        "text": "are the leftmost position nodes because",
+        "start": 703.23,
+        "duration": 5.49,
+        "code": [
+            "leftmost_positions.computeIfAbsent(depth, x->position);"
+        ]
+    },
+    {
+        "text": "we're cursing on the left side first and",
+        "start": 706.5,
+        "duration": 3.81,
+        "code": [
+            "get_width(root.left, depth+1, position*2);"
+        ]
+    },
+    {
+        "text": "I'm really trying to explain this well",
+        "start": 708.72,
+        "duration": 3.96,
+        "code": []
+    },
+    {
+        "text": "so let me know if I did a good job at",
+        "start": 710.31,
+        "duration": 2.72,
+        "code": []
+    },
+    {
+        "text": "that",
+        "start": 712.68,
+        "duration": 2.7,
+        "code": []
+    },
+    {
+        "text": "it's pretty intuitive we're updating",
+        "start": 713.03,
+        "duration": 4.9,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "these up we set them up here so that we",
+        "start": 715.38,
+        "duration": 4.02,
+        "code": [
+            "leftmost_positions = new HashMap<>();"
+        ]
+    },
+    {
+        "text": "can update them down here and we just",
+        "start": 717.93,
+        "duration": 3.06,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "return the max whoops at the end because",
+        "start": 719.4,
+        "duration": 2.64,
+        "code": [
+            "return max_width;"
+        ]
+    },
+    {
+        "text": "it's getting updated throughout the",
+        "start": 720.99,
+        "duration": 2.94,
+        "code": [
+            "max_width = Math.max(max_width, position-leftmost_positions.get(depth) + 1);"
+        ]
+    },
+    {
+        "text": "whole thing so let me know what you guys",
+        "start": 722.04,
+        "duration": 3.9,
+        "code": []
+    },
+    {
+        "text": "think about that explanation it was a",
+        "start": 723.93,
+        "duration": 4.02,
+        "code": []
+    },
+    {
+        "text": "really hard one to explain for me here",
+        "start": 725.94,
+        "duration": 5.46,
+        "code": []
+    },
+    {
+        "text": "without visualizations maybe I'll try",
+        "start": 727.95,
+        "duration": 5.13,
+        "code": []
+    },
+    {
+        "text": "and incorporate those a little more next",
+        "start": 731.4,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "time but I do all the problems so check",
+        "start": 733.08,
+        "duration": 3.57,
+        "code": []
+    },
+    {
+        "text": "those out on my channel and thank you",
+        "start": 734.76,
+        "duration": 6.26,
+        "code": []
+    },
+    {
+        "text": "guys for watching and good luck",
+        "start": 736.65,
+        "duration": 4.37,
+        "code": []
+    }
+]

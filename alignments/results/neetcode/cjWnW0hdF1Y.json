@@ -1,0 +1,689 @@
+[
+    {
+        "text": "we're given",
+        "start": 16.08,
+        "duration": 3.359,
+        "code": [
+            "class Solution:",
+            "    def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "another problem today",
+        "start": 2.0,
+        "duration": 4.319,
+        "code": []
+    },
+    {
+        "text": "we're given",
+        "start": 16.08,
+        "duration": 3.359,
+        "code": [
+            "        LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "which in this case is four so we return",
+        "start": 97.68,
+        "duration": 3.439,
+        "code": []
+    },
+    {
+        "text": "what do we have left to do well we want",
+        "start": 1053.84,
+        "duration": 3.52,
+        "code": [
+            "        return max(LIS)"
+        ]
+    },
+    {
+        "text": "so we iterate through these two values",
+        "start": 907.68,
+        "duration": 7.279,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "when we start at two we have to check",
+        "start": 911.44,
+        "duration": 5.839,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "so then we have to end up iterating",
+        "start": 918.0,
+        "duration": 3.36,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "and every value that comes after and we",
+        "start": 921.36,
+        "duration": 3.76,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "do the same",
+        "start": 924.16,
+        "duration": 3.919,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "thing for one so we iterate through one",
+        "start": 925.12,
+        "duration": 3.279,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "this pattern is similar to an n squared",
+        "start": 932.399,
+        "duration": 5.841,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "pattern so now let's finally write the",
+        "start": 936.0,
+        "duration": 4.0,
+        "code": [
+            "class Solution:",
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "code so we know we're going to do this",
+        "start": 938.24,
+        "duration": 4.159,
+        "code": [
+            "class Solution:",
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "dynamic programming style so let's have",
+        "start": 940.0,
+        "duration": 3.04,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "cache or a list it's initially going to",
+        "start": 943.04,
+        "duration": 3.599,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "be set to",
+        "start": 945.6,
+        "duration": 3.12,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "1 every value is going to be set to 1",
+        "start": 946.639,
+        "duration": 4.241,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "it's going to be the length of the input",
+        "start": 948.72,
+        "duration": 4.0,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "array that we're given",
+        "start": 950.88,
+        "duration": 4.24,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "so every longest increasing subsequence",
+        "start": 952.72,
+        "duration": 4.799,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "starting at every value or every index",
+        "start": 955.12,
+        "duration": 4.0,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "is initially just set to one we're going",
+        "start": 957.519,
+        "duration": 3.44,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "to try to find what the max is",
+        "start": 959.12,
+        "duration": 4.24,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "so we want to iterate through every",
+        "start": 960.959,
+        "duration": 3.601,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "index",
+        "start": 963.36,
+        "duration": 4.64,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "in the range of our input array",
+        "start": 964.56,
+        "duration": 5.92,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "and we want to do it in reverse order so",
+        "start": 968.0,
+        "duration": 4.56,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "that's what i'm going to do in python",
+        "start": 970.48,
+        "duration": 3.84,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "it if you're not familiar with python",
+        "start": 972.56,
+        "duration": 3.199,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "this might look a little weird but",
+        "start": 974.32,
+        "duration": 3.199,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "basically what i'm doing is starting at",
+        "start": 975.759,
+        "duration": 2.88,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "the last index",
+        "start": 977.519,
+        "duration": 3.601,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "and then going all the way to zero and",
+        "start": 978.639,
+        "duration": 4.56,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "just like i showed in the example",
+        "start": 981.12,
+        "duration": 4.32,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "we're going to start at index i like",
+        "start": 983.199,
+        "duration": 3.521,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "this could be i and then we want to",
+        "start": 985.44,
+        "duration": 2.079,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "iterate through",
+        "start": 986.72,
+        "duration": 3.919,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "every subsequence that came after it so",
+        "start": 987.519,
+        "duration": 5.521,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "i'm going to have another nested loop",
+        "start": 990.639,
+        "duration": 3.521,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "for j",
+        "start": 993.04,
+        "duration": 4.56,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "in range so starting at i plus 1",
+        "start": 994.16,
+        "duration": 6.0,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "and then going to the end of the input",
+        "start": 997.6,
+        "duration": 3.359,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "array",
+        "start": 1000.16,
+        "duration": 4.239,
+        "code": [
+            "for j in range(i + 1, len(nums)):"
+        ]
+    },
+    {
+        "text": "and before we can update lis",
+        "start": 1000.959,
+        "duration": 7.761,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "we want to know is the value",
+        "start": 1004.399,
+        "duration": 7.761,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "at i actually less than the value",
+        "start": 1008.72,
+        "duration": 6.64,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "at j because j comes after it if we want",
+        "start": 1012.16,
+        "duration": 4.08,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "this to be an",
+        "start": 1015.36,
+        "duration": 3.52,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "increasing subsequence this condition",
+        "start": 1016.24,
+        "duration": 3.599,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "has to",
+        "start": 1018.88,
+        "duration": 4.639,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "be true and only then are we allowed",
+        "start": 1019.839,
+        "duration": 5.84,
+        "code": [
+            "if nums[i] < nums[j]:"
+        ]
+    },
+    {
+        "text": "to update the longest increasing",
+        "start": 1023.519,
+        "duration": 3.04,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "subsequence",
+        "start": 1025.679,
+        "duration": 4.88,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "at index i and we can set it to the max",
+        "start": 1026.559,
+        "duration": 7.36,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "of itself and or the max",
+        "start": 1030.559,
+        "duration": 6.561,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "of 1 plus the lis",
+        "start": 1033.919,
+        "duration": 6.481,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "starting at j because we know for sure",
+        "start": 1037.12,
+        "duration": 6.079,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "j is going to be in increasing order",
+        "start": 1040.4,
+        "duration": 3.76,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "with i",
+        "start": 1043.199,
+        "duration": 4.0,
+        "code": [
+            "LIS[i] = max(LIS[i], 1 + LIS[j])"
+        ]
+    },
+    {
+        "text": "and literally that is it we made sure to",
+        "start": 1044.16,
+        "duration": 5.28,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "evaluate that it's an increasing order",
+        "start": 1047.199,
+        "duration": 4.561,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "we did it backwards we made sure to",
+        "start": 1049.44,
+        "duration": 4.4,
+        "code": [
+            "for i in range(len(nums) - 1, -1, -1):"
+        ]
+    },
+    {
+        "text": "cache the repeated work",
+        "start": 1051.76,
+        "duration": 3.6,
+        "code": [
+            "LIS = [1] * len(nums)"
+        ]
+    },
+    {
+        "text": "what do we have left to do well we want",
+        "start": 1053.84,
+        "duration": 3.52,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "to return what the max is how can we do",
+        "start": 1055.36,
+        "duration": 2.72,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "that well",
+        "start": 1057.36,
+        "duration": 2.72,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "in python you can just take the max of a",
+        "start": 1058.08,
+        "duration": 4.08,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "list so whatever",
+        "start": 1060.08,
+        "duration": 4.64,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "uh the long whatever the greatest value",
+        "start": 1062.16,
+        "duration": 3.519,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "is in here",
+        "start": 1064.72,
+        "duration": 2.959,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "is going to be returned and they're",
+        "start": 1065.679,
+        "duration": 3.041,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "actually so this is",
+        "start": 1067.679,
+        "duration": 3.601,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "o of n squared and there actually is a",
+        "start": 1068.72,
+        "duration": 3.839,
+        "code": [
+            "return max(LIS)"
+        ]
+    },
+    {
+        "text": "better solution",
+        "start": 1071.28,
+        "duration": 4.8,
+        "code": [
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "big o of n log n but i really",
+        "start": 1072.559,
+        "duration": 5.041,
+        "code": [
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "doubt your interviewer is going to",
+        "start": 1076.08,
+        "duration": 3.2,
+        "code": [
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "expect you to get this on your own",
+        "start": 1077.6,
+        "duration": 2.56,
+        "code": [
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "without a hint",
+        "start": 1079.28,
+        "duration": 3.12,
+        "code": [
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "if they do i would personally just walk",
+        "start": 1080.16,
+        "duration": 3.28,
+        "code": [
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "out of the room",
+        "start": 1082.4,
+        "duration": 3.04,
+        "code": [
+            "def lengthOfLIS(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "but i hope this was helpful if you",
+        "start": 1083.44,
+        "duration": 4.08,
+        "code": [
+            "if you enjoyed please like and subscribe it supports the channel a lot and i'll hopefully see you pretty soon"
+        ]
+    },
+    {
+        "text": "enjoyed please like and subscribe it",
+        "start": 1085.44,
+        "duration": 3.76,
+        "code": [
+            "if you enjoyed please like and subscribe it supports the channel a lot and i'll hopefully see you pretty soon"
+        ]
+    },
+    {
+        "text": "supports the channel a lot and i'll",
+        "start": 1087.52,
+        "duration": 2.32,
+        "code": [
+            "if you enjoyed please like and subscribe it supports the channel a lot and i'll hopefully see you pretty soon"
+        ]
+    },
+    {
+        "text": "hopefully",
+        "start": 1089.2,
+        "duration": 5.599,
+        "code": [
+            "if you enjoyed please like and subscribe it supports the channel a lot and i'll hopefully see you pretty soon"
+        ]
+    },
+    {
+        "text": "see you pretty soon",
+        "start": 1089.84,
+        "duration": 4.959,
+        "code": [
+            "if you enjoyed please like and subscribe it supports the channel a lot and i'll hopefully see you pretty soon"
+        ]
+    }
+]

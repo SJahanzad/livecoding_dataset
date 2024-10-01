@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLyV7vxj3uOSxl2rBlIurI7ZLYVr",
+  "object": "chat.completion",
+  "created": 1724171179,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 125,\n        \"value\": [3]\n    },\n    {\n        \"key\": 127,\n        \"value\": [4]\n    },\n    {\n        \"key\": 129,\n        \"value\": [5]\n    },\n    {\n        \"key\": 130,\n        \"value\": [6]\n    },\n    {\n        \"key\": 131,\n        \"value\": [7]\n    },\n    {\n        \"key\": 133,\n        \"value\": [9]\n    },\n    {\n        \"key\": 134,\n        \"value\": [10]\n    },\n    {\n        \"key\": 136,\n        \"value\": [12]\n    },\n    {\n        \"key\": 138,\n        \"value\": [13]\n    },\n    {\n        \"key\": 140,\n        \"value\": [14]\n    },\n    {\n        \"key\": 144,\n        \"value\": [15]\n    },\n    {\n        \"key\": 145,\n        \"value\": [16]\n    },\n    {\n        \"key\": 146,\n        \"value\": [17]\n    },\n    {\n        \"key\": 148,\n        \"value\": [19]\n    },\n    {\n        \"key\": 149,\n        \"value\": [20]\n    },\n    {\n        \"key\": 152,\n        \"value\": [21]\n    },\n    {\n        \"key\": 154,\n        \"value\": [22]\n    },\n    {\n        \"key\": 157,\n        \"value\": [24]\n    },\n    {\n        \"key\": 158,\n        \"value\": [25]\n    },\n    {\n        \"key\": 159,\n        \"value\": [26]\n    },\n    {\n        \"key\": 161,\n        \"value\": [27]\n    },\n    {\n        \"key\": 164,\n        \"value\": [28]\n    },\n    {\n        \"key\": 165,\n        \"value\": [29]\n    },\n    {\n        \"key\": 166,\n        \"value\": [30]\n    },\n    {\n        \"key\": 168,\n        \"value\": [31]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6058,
+    "completion_tokens": 456,
+    "total_tokens": 6514
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

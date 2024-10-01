@@ -1,0 +1,18 @@
+[
+    {
+        "text": "what i like to do is just create like a dummy node so",
+        "start": 80.72,
+        "duration": 8.158,
+        "code": [
+            "dummy = node = ListNode()"
+        ]
+    },
+    {
+        "text": "so if the value of list one is less than the value of list2",
+        "start": 235.12,
+        "duration": 12.24,
+        "code": [
+            "if list1.val < list2.val:"
+        ]
+    }
+]

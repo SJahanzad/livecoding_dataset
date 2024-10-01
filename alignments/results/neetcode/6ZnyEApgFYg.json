@@ -1,0 +1,1230 @@
+[
+    {
+        "text": "so with that being said let's jump into",
+        "start": 389.28,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "the code",
+        "start": 391.36,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "so first let's initialize an array for",
+        "start": 392.639,
+        "duration": 3.84,
+        "code": [
+            "class Solution:",
+            "    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:",
+            "        res = []"
+        ]
+    },
+    {
+        "text": "the result",
+        "start": 395.36,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "and we also remember want to have a q so",
+        "start": 396.479,
+        "duration": 3.601,
+        "code": [
+            "        q = deque()"
+        ]
+    },
+    {
+        "text": "in python",
+        "start": 399.36,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "we can do that with collections dot deck",
+        "start": 400.08,
+        "duration": 6.0,
+        "code": []
+    },
+    {
+        "text": "this will give us a q and the first",
+        "start": 403.6,
+        "duration": 4.4,
+        "code": []
+    },
+    {
+        "text": "value we want to initialize this q",
+        "start": 406.08,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "with is the root node that we're given",
+        "start": 408.0,
+        "duration": 4.639,
+        "code": [
+            "        if root:",
+            "            q.append(root)"
+        ]
+    },
+    {
+        "text": "so with that we can start running the",
+        "start": 410.56,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "breadth first search and we're going to",
+        "start": 412.639,
+        "duration": 2.801,
+        "code": []
+    },
+    {
+        "text": "run breadth first search",
+        "start": 414.24,
+        "duration": 4.079,
+        "code": []
+    },
+    {
+        "text": "while our queue is non-empty remember",
+        "start": 415.44,
+        "duration": 4.24,
+        "code": [
+            "        while q:"
+        ]
+    },
+    {
+        "text": "and since the queue is not",
+        "start": 418.319,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "empty we're going to get the length of",
+        "start": 419.68,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "the cube right so we're going to get the",
+        "start": 421.36,
+        "duration": 2.64,
+        "code": []
+    },
+    {
+        "text": "number of",
+        "start": 422.88,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "nodes or values that are in this queue",
+        "start": 424.0,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "currently and we're going to go we're",
+        "start": 427.12,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "going to loop through",
+        "start": 428.72,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "every single one of those values this q",
+        "start": 430.16,
+        "duration": 4.479,
+        "code": []
+    },
+    {
+        "text": "length is basically ensuring that we we",
+        "start": 432.56,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "iterate through",
+        "start": 434.639,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "one level at a time we're going through",
+        "start": 435.68,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "one",
+        "start": 438.319,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "level at a time and with those nodes",
+        "start": 438.96,
+        "duration": 4.639,
+        "code": []
+    },
+    {
+        "text": "from that level we're going to be adding",
+        "start": 441.919,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "them to its own",
+        "start": 443.599,
+        "duration": 2.961,
+        "code": [
+            "            val = []",
+            "            for i in range(len(q)):",
+            "                node = q.popleft()",
+            "                val.append(node.val)"
+        ]
+    },
+    {
+        "text": "list right and then we're going to add",
+        "start": 444.96,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "that list to the result",
+        "start": 446.56,
+        "duration": 4.96,
+        "code": []
+    },
+    {
+        "text": "list so i'm going to loop through every",
+        "start": 448.4,
+        "duration": 6.56,
+        "code": []
+    },
+    {
+        "text": "value in this queue currently so for",
+        "start": 451.52,
+        "duration": 6.799,
+        "code": []
+    },
+    {
+        "text": "q length i'm going to pop nodes from the",
+        "start": 454.96,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "left",
+        "start": 458.319,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "of the queue right first in first out",
+        "start": 458.72,
+        "duration": 4.8,
+        "code": []
+    },
+    {
+        "text": "and it's technically possible that the",
+        "start": 461.759,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "node could be null",
+        "start": 463.52,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "so i'm going to have a check to make",
+        "start": 464.96,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "sure it's not null",
+        "start": 467.12,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "then we're going to take the node value",
+        "start": 468.16,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "and",
+        "start": 470.96,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "append it to the list level",
+        "start": 471.28,
+        "duration": 5.599,
+        "code": []
+    },
+    {
+        "text": "and and don't forget this is also",
+        "start": 474.319,
+        "duration": 4.481,
+        "code": []
+    },
+    {
+        "text": "important that to our queue",
+        "start": 476.879,
+        "duration": 4.641,
+        "code": []
+    },
+    {
+        "text": "we make sure to add the children of this",
+        "start": 478.8,
+        "duration": 4.56,
+        "code": [
+            "                if node.left:",
+            "                    q.append(node.left)",
+            "                if node.right:",
+            "                    q.append(node.right)"
+        ]
+    },
+    {
+        "text": "node so node.left",
+        "start": 481.52,
+        "duration": 4.959,
+        "code": []
+    },
+    {
+        "text": "and node.right technically these could",
+        "start": 483.36,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "be",
+        "start": 486.479,
+        "duration": 2.56,
+        "code": []
+    },
+    {
+        "text": "null but that's why we have this if",
+        "start": 486.8,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "statement",
+        "start": 489.039,
+        "duration": 2.801,
+        "code": []
+    },
+    {
+        "text": "so then when the next loop comes around",
+        "start": 490.0,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "right we come around to the next",
+        "start": 491.84,
+        "duration": 2.72,
+        "code": []
+    },
+    {
+        "text": "iteration",
+        "start": 493.44,
+        "duration": 3.199,
+        "code": []
+    },
+    {
+        "text": "of the while loop it'll make sure to",
+        "start": 494.56,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "check that these nodes are non-null",
+        "start": 496.639,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "before adding them to its own",
+        "start": 498.56,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "level list okay so now we have the loop",
+        "start": 500.479,
+        "duration": 4.321,
+        "code": []
+    },
+    {
+        "text": "in place that's going to iterate through",
+        "start": 503.28,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "every node of a single",
+        "start": 504.8,
+        "duration": 4.88,
+        "code": []
+    },
+    {
+        "text": "level after we've done that entire level",
+        "start": 506.72,
+        "duration": 3.759,
+        "code": []
+    },
+    {
+        "text": "what we're going to do",
+        "start": 509.68,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "is take our result and make sure we add",
+        "start": 510.479,
+        "duration": 3.92,
+        "code": [
+            "            res.append(val)"
+        ]
+    },
+    {
+        "text": "every single level",
+        "start": 513.039,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "to that result right and then we're",
+        "start": 514.399,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "going to keep running",
+        "start": 516.24,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "this outside while loop the outer while",
+        "start": 517.599,
+        "duration": 3.281,
+        "code": []
+    },
+    {
+        "text": "loop",
+        "start": 520.24,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "until there are no nodes left",
+        "start": 520.88,
+        "duration": 5.519,
+        "code": []
+    },
+    {
+        "text": "in our queue that's how we know we've",
+        "start": 524.32,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "gone through every single level",
+        "start": 526.399,
+        "duration": 3.841,
+        "code": []
+    },
+    {
+        "text": "added it to the result and then at the",
+        "start": 528.32,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "end we can finally return the result",
+        "start": 530.24,
+        "duration": 5.12,
+        "code": [
+            "        return res"
+        ]
+    },
+    {
+        "text": "and one last thing we want to do is make",
+        "start": 532.88,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "sure that",
+        "start": 535.36,
+        "duration": 2.8,
+        "code": []
+    },
+    {
+        "text": "if we're adding a level to the result we",
+        "start": 536.08,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "want to make sure that level is",
+        "start": 538.16,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "non-empty because we know technically",
+        "start": 539.68,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "our queue could have",
+        "start": 542.64,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "null nodes we're not adding null nodes",
+        "start": 543.68,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "to the level list so",
+        "start": 546.0,
+        "duration": 3.279,
+        "code": []
+    },
+    {
+        "text": "we want to make sure that level is",
+        "start": 547.36,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "non-empty if we're adding it to the",
+        "start": 549.279,
+        "duration": 2.481,
+        "code": []
+    },
+    {
+        "text": "result",
+        "start": 551.04,
+        "duration": 2.96,
+        "code": []
+    },
+    {
+        "text": "we can run the code and see that it does",
+        "start": 551.76,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "work and it is pretty efficient this is",
+        "start": 554.0,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "a breadth-first search",
+        "start": 556.24,
+        "duration": 5.12,
+        "code": []
+    },
+    {
+        "text": "level order traversal of a binary tree",
+        "start": 557.92,
+        "duration": 6.16,
+        "code": []
+    },
+    {
+        "text": "and we did it in linear time and i hope",
+        "start": 561.36,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "that this was helpful",
+        "start": 564.08,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 565.68,
+        "duration": 4.159,
+        "code": []
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 568.08,
+        "duration": 9.12,
+        "code": []
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 569.839,
+        "duration": 7.361,
+        "code": []
+    },
+    {
+        "text": "so first let's initialize an array for",
+        "start": 392.639,
+        "duration": 3.84,
+        "code": [
+            "res = []"
+        ]
+    },
+    {
+        "text": "and we also remember want to have a q so",
+        "start": 396.479,
+        "duration": 3.601,
+        "code": [
+            "q = deque()"
+        ]
+    },
+    {
+        "text": "we can do that with collections dot deck",
+        "start": 400.08,
+        "duration": 6.0,
+        "code": [
+            "q = deque()"
+        ]
+    },
+    {
+        "text": "this will give us a q and the first",
+        "start": 403.6,
+        "duration": 4.4,
+        "code": [
+            "q = deque()"
+        ]
+    },
+    {
+        "text": "value we want to initialize this q",
+        "start": 406.08,
+        "duration": 4.48,
+        "code": [
+            "if root:",
+            "    q.append(root)"
+        ]
+    },
+    {
+        "text": "with is the root node that we're given",
+        "start": 408.0,
+        "duration": 4.639,
+        "code": [
+            "if root:",
+            "    q.append(root)"
+        ]
+    },
+    {
+        "text": "so with that we can start running the",
+        "start": 410.56,
+        "duration": 3.68,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "breadth first search and we're going to",
+        "start": 412.639,
+        "duration": 2.801,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "run breadth first search",
+        "start": 414.24,
+        "duration": 4.079,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "while our queue is non-empty remember",
+        "start": 415.44,
+        "duration": 4.24,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "and since the queue is not",
+        "start": 418.319,
+        "duration": 3.041,
+        "code": []
+    },
+    {
+        "text": "empty we're going to get the length of",
+        "start": 419.68,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "the cube right so we're going to get the",
+        "start": 421.36,
+        "duration": 2.64,
+        "code": []
+    },
+    {
+        "text": "number of",
+        "start": 422.88,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "nodes or values that are in this queue",
+        "start": 424.0,
+        "duration": 4.72,
+        "code": [
+            "val = []",
+            "for i in range(len(q)):"
+        ]
+    },
+    {
+        "text": "currently and we're going to go we're",
+        "start": 427.12,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "going to loop through",
+        "start": 428.72,
+        "duration": 3.84,
+        "code": [
+            "for i in range(len(q)):"
+        ]
+    },
+    {
+        "text": "every single one of those values this q",
+        "start": 430.16,
+        "duration": 4.479,
+        "code": [
+            "for i in range(len(q)):"
+        ]
+    },
+    {
+        "text": "length is basically ensuring that we we",
+        "start": 432.56,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "iterate through",
+        "start": 434.639,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "one level at a time we're going through",
+        "start": 435.68,
+        "duration": 3.28,
+        "code": [
+            "node = q.popleft()"
+        ]
+    },
+    {
+        "text": "one",
+        "start": 438.319,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "level at a time and with those nodes",
+        "start": 438.96,
+        "duration": 4.639,
+        "code": []
+    },
+    {
+        "text": "from that level we're going to be adding",
+        "start": 441.919,
+        "duration": 3.041,
+        "code": [
+            "val.append(node.val)",
+            "if node.left:",
+            "    q.append(node.left)",
+            "if node.right:",
+            "    q.append(node.right)"
+        ]
+    },
+    {
+        "text": "them to its own",
+        "start": 443.599,
+        "duration": 2.961,
+        "code": [
+            "val.append(node.val)"
+        ]
+    },
+    {
+        "text": "list right and then we're going to add",
+        "start": 444.96,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "that list to the result",
+        "start": 446.56,
+        "duration": 4.96,
+        "code": [
+            "res.append(val)"
+        ]
+    },
+    {
+        "text": "list so i'm going to loop through every",
+        "start": 448.4,
+        "duration": 6.56,
+        "code": [
+            "for i in range(len(q)):"
+        ]
+    },
+    {
+        "text": "value in this queue currently so for",
+        "start": 451.52,
+        "duration": 6.799,
+        "code": [
+            "for i in range(len(q)):"
+        ]
+    },
+    {
+        "text": "q length i'm going to pop nodes from the",
+        "start": 454.96,
+        "duration": 3.76,
+        "code": [
+            "node = q.popleft()"
+        ]
+    },
+    {
+        "text": "left",
+        "start": 458.319,
+        "duration": 3.44,
+        "code": [
+            "node = q.popleft()"
+        ]
+    },
+    {
+        "text": "of the queue right first in first out",
+        "start": 458.72,
+        "duration": 4.8,
+        "code": [
+            "node = q.popleft()"
+        ]
+    },
+    {
+        "text": "and it's technically possible that the",
+        "start": 461.759,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "node could be null",
+        "start": 463.52,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "so i'm going to have a check to make",
+        "start": 464.96,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "sure it's not null",
+        "start": 467.12,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "then we're going to take the node value",
+        "start": 468.16,
+        "duration": 3.12,
+        "code": [
+            "val.append(node.val)"
+        ]
+    },
+    {
+        "text": "and",
+        "start": 470.96,
+        "duration": 3.359,
+        "code": []
+    },
+    {
+        "text": "append it to the list level",
+        "start": 471.28,
+        "duration": 5.599,
+        "code": [
+            "val.append(node.val)"
+        ]
+    },
+    {
+        "text": "and and don't forget this is also",
+        "start": 474.319,
+        "duration": 4.481,
+        "code": []
+    },
+    {
+        "text": "important that to our queue",
+        "start": 476.879,
+        "duration": 4.641,
+        "code": [
+            "if node.left:",
+            "    q.append(node.left)",
+            "if node.right:",
+            "    q.append(node.right)"
+        ]
+    },
+    {
+        "text": "we make sure to add the children of this",
+        "start": 478.8,
+        "duration": 4.56,
+        "code": [
+            "if node.left:",
+            "    q.append(node.left)",
+            "if node.right:",
+            "    q.append(node.right)"
+        ]
+    },
+    {
+        "text": "node so node.left",
+        "start": 481.52,
+        "duration": 4.959,
+        "code": [
+            "if node.left:",
+            "    q.append(node.left)"
+        ]
+    },
+    {
+        "text": "and node.right technically these could",
+        "start": 483.36,
+        "duration": 3.44,
+        "code": [
+            "if node.right:",
+            "    q.append(node.right)"
+        ]
+    },
+    {
+        "text": "be",
+        "start": 486.479,
+        "duration": 2.56,
+        "code": []
+    },
+    {
+        "text": "null but that's why we have this if",
+        "start": 486.8,
+        "duration": 3.2,
+        "code": [
+            "if node.left:",
+            "    q.append(node.left)",
+            "if node.right:",
+            "    q.append(node.right)"
+        ]
+    },
+    {
+        "text": "statement",
+        "start": 489.039,
+        "duration": 2.801,
+        "code": [
+            "if node.left:",
+            "    q.append(node.left)",
+            "if node.right:",
+            "    q.append(node.right)"
+        ]
+    },
+    {
+        "text": "so then when the next loop comes around",
+        "start": 490.0,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "right we come around to the next",
+        "start": 491.84,
+        "duration": 2.72,
+        "code": []
+    },
+    {
+        "text": "iteration",
+        "start": 493.44,
+        "duration": 3.199,
+        "code": []
+    },
+    {
+        "text": "of the while loop it'll make sure to",
+        "start": 494.56,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "check that these nodes are non-null",
+        "start": 496.639,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "before adding them to its own",
+        "start": 498.56,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "level list okay so now we have the loop",
+        "start": 500.479,
+        "duration": 4.321,
+        "code": []
+    },
+    {
+        "text": "in place that's going to iterate through",
+        "start": 503.28,
+        "duration": 3.44,
+        "code": [
+            "for i in range(len(q)):"
+        ]
+    },
+    {
+        "text": "every node of a single",
+        "start": 504.8,
+        "duration": 4.88,
+        "code": [
+            "for i in range(len(q)):"
+        ]
+    },
+    {
+        "text": "level after we've done that entire level",
+        "start": 506.72,
+        "duration": 3.759,
+        "code": [
+            "res.append(val)"
+        ]
+    },
+    {
+        "text": "what we're going to do",
+        "start": 509.68,
+        "duration": 3.359,
+        "code": [
+            "res.append(val)"
+        ]
+    },
+    {
+        "text": "is take our result and make sure we add",
+        "start": 510.479,
+        "duration": 3.92,
+        "code": [
+            "res.append(val)"
+        ]
+    },
+    {
+        "text": "every single level",
+        "start": 513.039,
+        "duration": 3.201,
+        "code": [
+            "res.append(val)"
+        ]
+    },
+    {
+        "text": "to that result right and then we're",
+        "start": 514.399,
+        "duration": 3.2,
+        "code": [
+            "res.append(val)"
+        ]
+    },
+    {
+        "text": "going to keep running",
+        "start": 516.24,
+        "duration": 4.0,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "this outside while loop the outer while",
+        "start": 517.599,
+        "duration": 3.281,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "loop",
+        "start": 520.24,
+        "duration": 4.08,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "until there are no nodes left",
+        "start": 520.88,
+        "duration": 5.519,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "in our queue that's how we know we've",
+        "start": 524.32,
+        "duration": 4.0,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "gone through every single level",
+        "start": 526.399,
+        "duration": 3.841,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "added it to the result and then at the",
+        "start": 528.32,
+        "duration": 4.56,
+        "code": [
+            "while q:"
+        ]
+    },
+    {
+        "text": "end we can finally return the result",
+        "start": 530.24,
+        "duration": 5.12,
+        "code": [
+            "return res"
+        ]
+    },
+    {
+        "text": "and one last thing we want to do is make",
+        "start": 532.88,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "sure that",
+        "start": 535.36,
+        "duration": 2.8,
+        "code": []
+    },
+    {
+        "text": "if we're adding a level to the result we",
+        "start": 536.08,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "want to make sure that level is",
+        "start": 538.16,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "non-empty because we know technically",
+        "start": 539.68,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "our queue could have",
+        "start": 542.64,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "null nodes we're not adding null nodes",
+        "start": 543.68,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "to the level list so",
+        "start": 546.0,
+        "duration": 3.279,
+        "code": []
+    },
+    {
+        "text": "we want to make sure that level is",
+        "start": 547.36,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "non-empty if we're adding it to the",
+        "start": 549.279,
+        "duration": 2.481,
+        "code": []
+    },
+    {
+        "text": "result",
+        "start": 551.04,
+        "duration": 2.96,
+        "code": []
+    },
+    {
+        "text": "we can run the code and see that it does",
+        "start": 551.76,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "work and it is pretty efficient this is",
+        "start": 554.0,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "a breadth-first search",
+        "start": 556.24,
+        "duration": 5.12,
+        "code": []
+    },
+    {
+        "text": "level order traversal of a binary tree",
+        "start": 557.92,
+        "duration": 6.16,
+        "code": []
+    },
+    {
+        "text": "and we did it in linear time and i hope",
+        "start": 561.36,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "that this was helpful",
+        "start": 564.08,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "if it was please like and subscribe it",
+        "start": 565.68,
+        "duration": 4.159,
+        "code": []
+    },
+    {
+        "text": "supports the channel a lot",
+        "start": 568.08,
+        "duration": 9.12,
+        "code": []
+    },
+    {
+        "text": "and i'll hopefully see you pretty soon",
+        "start": 569.839,
+        "duration": 7.361,
+        "code": []
+    }
+]

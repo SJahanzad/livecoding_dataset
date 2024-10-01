@@ -1,0 +1,34 @@
+[
+    {
+        "text": "some people will can basically here's the problem first rotate a string given",
+        "start": 31.83,
+        "duration": 10.38,
+        "code": [
+            "class Solution {"
+        ]
+    },
+    {
+        "text": "two strings a and B a shift on a consists of taking a string a and moving",
+        "start": 37.02,
+        "duration": 7.71,
+        "code": [
+            "public boolean rotateString(String A, String B) {"
+        ]
+    },
+    {
+        "text": "and you know that it does in this case you see de a B so if you just do add an",
+        "start": 176.82,
+        "duration": 13.71,
+        "code": [
+            "return (A.length() == B.length()) && (A + A).contains(B);"
+        ]
+    },
+    {
+        "text": "extra version if you just say return",
+        "start": 183.66,
+        "duration": 5.16,
+        "code": [
+            "}"
+        ]
+    }
+]

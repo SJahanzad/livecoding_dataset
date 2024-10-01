@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yRUkfSEVVZT0oefd4LPJ6hmgSypC",
+        "object": "chat.completion",
+        "created": 1724192398,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, here's the aligned transcript with the corresponding code passages:\n\n```json\n[{\"text\": \"first thing you do is initialize your pointer so we have a left and we have a right\", \"code\": [\n    \"l, r = 0, len(nums) - 1\"\n]}, {\"text\": \"while left is less than or equal to right\", \"code\": [\n    \"while l <= r:\"\n]}, {\"text\": \"we can compute the middle value middle is just going to be left + right divided by 2 the average of them\", \"code\": [\n    \"mid = (l + r) // 2\"\n]}, {\"text\": \"it's possible the middle value could be the target if it is we simply return the index\", \"code\": [\n    \"if target == nums[mid]:\",\n    \"return mid\"\n]}, {\"text\": \"we can check that if the middle value is greater than the left value\", \"code\": [\n    \"if nums[l] <= nums[mid]:\"\n]}, {\"text\": \"target is greater than the middle in that case we're going to search right so we can say our left pointer is now going to be mid plus 1\", \"code\": [\n    \"if target > nums[mid] or target < nums[l]:\",\n    \"l = mid + 1\"\n]}, {\"text\": \"but if target is less than the middle but it's greater than the left that means we search the left portions so we can update our right pointer\", \"code\": [\n    \"else:\",\n    \"r = mid - 1\"\n]}, {\"text\": \"if we were in the right sorted portion of the array if target is less than the middle that means we go left so we can update our right pointer to mid minus one\", \"code\": [\n    \"else:\",\n    \"if target < nums[mid] or target > nums[r]:\",\n    \"r = mid - 1\"\n]}, {\"text\": \"the target is greater than the middle value in that case we only have to search the right portion of the array so we update our left pointer to mid plus one\", \"code\": [\n    \"else:\",\n    \"l = mid + 1\"\n]}, {\"text\": \"if we don't find it we'll exit the loop and we'll return negative one\", \"code\": [\n    \"return -1\"\n]}]\n```\n\nThis aligns the transcript explanations with their relevant parts of the code.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 9102,
+            "completion_tokens": 496,
+            "total_tokens": 9598
+        },
+        "system_fingerprint": "fp_c9aa9c0491"
+    },
+    {
+        "id": "chatcmpl-9yRUqXH5MaJNktrvjXeCE09H7Pqcg",
+        "object": "chat.completion",
+        "created": 1724192404,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Here is the aligned \"text\" and \"code\" data:\n\n```json\n[\n    {\"text\": \"doing binary search first thing you do is initialize your pointer so we have a left and we have a right left is going to be 0 right is going to be the length of the array minus 1\", \"code\": [\"l, r = 0, len(nums) - 1\"]},\n    {\"text\": \"our condition is while left is less than or equal to right because imagine we're given an array like this with just one value\", \"code\": [\"while l <= r:\"]},\n    {\"text\": \"we can compute the middle value middle is just going to be left + right / to the average of them\", \"code\": [\"mid = (l + r) // 2\"]},\n    {\"text\": \"middle value could be the target if it is we simply return the index\", \"code\": [\"if target == nums[mid]:\", \"return mid\"]},\n    {\"text\": \"portion of the array are we in are we in the left sorted portion and like I mentioned before we can check that if the middle value is greater than the left value\", \"code\": [\"if nums[l] <= nums[mid]:\"]},\n    {\"text\": \"target is greater than the middle value in that case we're going to search right so we can say our left pointer is now going to be mid plus 1\", \"code\": [\"if target > nums[mid] or target < nums[l]:\", \"l = mid + 1\"]},\n    {\"text\": \"if this isn't true that means the target is less than the middle but it's greater than the left that means we search the left portions so we can update our right pointer\", \"code\": [\"else:\", \"r = mid - 1\"]},\n    {\"text\": \"if we were in the right sorted portion of the array\", \"code\": [\"else:\"]},\n    {\"text\": \"the easy thing is if target is less than the middle that means we go left so we can update our right pointer to mid minus one\", \"code\": [\"if target < nums[mid] or target > nums[r]:\", \"r = mid - 1\"]},\n    {\"text\": \"else condition is that the target is greater than the middle value and the target is less than the right value in that case we only have to search the right portion of the array so we update our left pointer to mid plus one\", \"code\": [\"else:\", \"l = mid + 1\"]},\n    {\"text\": \"if we find our result we're going to return it up here but if we don't find it we'll exit the loop and we'll return negative one\", \"code\": [\"return -1\"]}\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3382,
+            "completion_tokens": 566,
+            "total_tokens": 3948
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

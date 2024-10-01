@@ -1,0 +1,15 @@
+[
+    {
+        "text": "okay while M is greater than one we will",
+        "start": 125.759,
+        "duration": 7.081,
+        "code": [
+            "while (m > 1) {",
+            "    prev = current_node;",
+            "    current_node = current_node.next;",
+            "    m--;",
+            "    n--;",
+            "}"
+        ]
+    }
+]

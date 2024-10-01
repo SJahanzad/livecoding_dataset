@@ -1,0 +1,132 @@
+[
+    {
+        "text": "this is a linked list cycle question",
+        "start": 8.12,
+        "duration": 6.96,
+        "code": [
+            "// Definition for singly-linked list."
+        ]
+    },
+    {
+        "text": "basically we're given a linked list and",
+        "start": 12.36,
+        "duration": 5.07,
+        "code": [
+            "class ListNode {",
+            "    int val;",
+            "    ListNode next;",
+            "    ListNode(int x) {",
+            "        val = x;",
+            "        next = null;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "don't worry about this input they don't",
+        "start": 15.08,
+        "duration": 4.0,
+        "code": [
+            "public class Solution {",
+            "    public boolean hasCycle(ListNode head) {"
+        ]
+    },
+    {
+        "text": "talking about here so we're given a",
+        "start": 19.08,
+        "duration": 4.109,
+        "code": [
+            "        if (head == null) return false;"
+        ]
+    },
+    {
+        "text": "linked list and we want to determine",
+        "start": 22.02,
+        "duration": 4.29,
+        "code": [
+            "        ListNode slow = head;",
+            "        ListNode fast = head.next;"
+        ]
+    },
+    {
+        "text": "whether there's a cycle and pretty much",
+        "start": 23.189,
+        "duration": 6.24,
+        "code": [
+            "        while (slow != fast) {",
+            "            if (fast == null || fast.next == null) {",
+            "                return false;",
+            "            }",
+            "            slow = slow.next;",
+            "            fast = fast.next.next;",
+            "        }",
+            "        return true;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "more giving a head node we just wanna",
+        "start": 26.31,
+        "duration": 5.219,
+        "code": [
+            "        if (head == null) return false;"
+        ]
+    },
+    {
+        "text": "this it's a two pointer kind of method",
+        "start": 31.529,
+        "duration": 5.851,
+        "code": [
+            "        ListNode slow = head;",
+            "        ListNode fast = head.next;"
+        ]
+    },
+    {
+        "text": "hopefully that makes sense so we'll be",
+        "start": 71.119,
+        "duration": 9.64,
+        "code": [
+            "        while (slow != fast) {"
+        ]
+    },
+    {
+        "text": "able to see if the slow node is equal to",
+        "start": 76.32,
+        "duration": 8.01,
+        "code": [
+            "            if (fast == null || fast.next == null) {",
+            "                return false;",
+            "            }"
+        ]
+    },
+    {
+        "text": "obviously because it without the fast",
+        "start": 84.33,
+        "duration": 4.56,
+        "code": [
+            "            slow = slow.next;",
+            "            fast = fast.next.next;"
+        ]
+    },
+    {
+        "text": "do is this check if fast is equal to",
+        "start": 154.77,
+        "duration": 7.77,
+        "code": [
+            "            if (fast == null || fast.next == null) {",
+            "                return false;",
+            "            }"
+        ]
+    },
+    {
+        "text": "there's no cycle and yep some success",
+        "start": 171.48,
+        "duration": 7.229,
+        "code": [
+            "        return true;",
+            "    }",
+            "}"
+        ]
+    }
+]

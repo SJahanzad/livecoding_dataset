@@ -1,0 +1,923 @@
+[
+    {
+        "text": "so let's just look at the first example",
+        "start": 41.52,
+        "duration": 3.76,
+        "code": [
+            "class Solution:",
+            "    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:"
+        ]
+    },
+    {
+        "text": "this is good right so now we see that",
+        "start": 352.88,
+        "duration": 3.2,
+        "code": [
+            "        def dfs(crs):"
+        ]
+    },
+    {
+        "text": "course that we're visiting and so like",
+        "start": 733.04,
+        "duration": 4.32,
+        "code": [
+            "            if crs in visiting:",
+            "                return False",
+            "            if preMap[crs] == []:",
+            "                return True"
+        ]
+    },
+    {
+        "text": "course 4 can be completed and so recursively",
+        "start": 373.36,
+        "duration": 7.52,
+        "code": [
+            "            visiting.add(crs)",
+            "            for pre in preMap[crs]:",
+            "                if not dfs(pre):",
+            "                    return False",
+            "            visiting.remove(crs)",
+            "            preMap[crs] = []",
+            "            return True"
+        ]
+    },
+    {
+        "text": "the first thing i want to do is create",
+        "start": 656.16,
+        "duration": 3.919,
+        "code": [
+            "class Solution:",
+            "    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:"
+        ]
+    },
+    {
+        "text": "our pre-map",
+        "start": 658.56,
+        "duration": 4.08,
+        "code": [
+            "        preMap = {i: [] for i in range(numCourses)}"
+        ]
+    },
+    {
+        "text": "so our list of prerequisites so we know",
+        "start": 660.079,
+        "duration": 3.281,
+        "code": []
+    },
+    {
+        "text": "for each",
+        "start": 662.64,
+        "duration": 3.92,
+        "code": []
+    },
+    {
+        "text": "course initially we can set it to an",
+        "start": 663.36,
+        "duration": 5.039,
+        "code": []
+    },
+    {
+        "text": "empty list so an empty list of",
+        "start": 666.56,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "prerequisites and we want to do that for",
+        "start": 668.399,
+        "duration": 4.721,
+        "code": []
+    },
+    {
+        "text": "every course that we got which the",
+        "start": 670.72,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "number of that is just",
+        "start": 673.12,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "number of courses so this is if you're",
+        "start": 674.56,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "not familiar this is some python stuff",
+        "start": 676.32,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "i'm just saying that for every course",
+        "start": 678.24,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "initially we want to map it to an",
+        "start": 679.92,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "empty list and we know that the",
+        "start": 681.76,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "prerequisites are actually contained in",
+        "start": 683.76,
+        "duration": 2.079,
+        "code": []
+    },
+    {
+        "text": "this",
+        "start": 685.44,
+        "duration": 2.24,
+        "code": []
+    },
+    {
+        "text": "nested list variable so let's iterate",
+        "start": 685.839,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "through that let's get each",
+        "start": 687.68,
+        "duration": 5.68,
+        "code": []
+    },
+    {
+        "text": "course prerequisite pair from that list",
+        "start": 689.6,
+        "duration": 6.72,
+        "code": []
+    },
+    {
+        "text": "and then just start appending them so",
+        "start": 693.36,
+        "duration": 3.68,
+        "code": [
+            "        for crs, pre in prerequisites:",
+            "            preMap[crs].append(pre)"
+        ]
+    },
+    {
+        "text": "pre-map",
+        "start": 696.32,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "of course we want to append to this list",
+        "start": 697.04,
+        "duration": 6.239,
+        "code": []
+    },
+    {
+        "text": "this prerequisite so we also want a",
+        "start": 700.48,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "visit",
+        "start": 703.279,
+        "duration": 4.081,
+        "code": [
+            "        visiting = set()"
+        ]
+    },
+    {
+        "text": "set which is going to store",
+        "start": 703.76,
+        "duration": 6.96,
+        "code": []
+    },
+    {
+        "text": "the it's going to store all the courses",
+        "start": 707.36,
+        "duration": 6.719,
+        "code": []
+    },
+    {
+        "text": "along the current depth first search",
+        "start": 710.72,
+        "duration": 5.2,
+        "code": []
+    },
+    {
+        "text": "path and of course it's initially just",
+        "start": 714.079,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "going to be empty so since we're going",
+        "start": 715.92,
+        "duration": 2.479,
+        "code": []
+    },
+    {
+        "text": "to do this",
+        "start": 717.519,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "recursively i'm going to define a nested",
+        "start": 718.399,
+        "duration": 4.481,
+        "code": [
+            "        def dfs(crs):"
+        ]
+    },
+    {
+        "text": "function depth first search inside of",
+        "start": 720.639,
+        "duration": 4.241,
+        "code": []
+    },
+    {
+        "text": "our can finish function because then",
+        "start": 722.88,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "we'll have access",
+        "start": 724.88,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "to all these variables without having to",
+        "start": 726.16,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "pass them in as a parameter",
+        "start": 728.16,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "the only parameter that we have to pass",
+        "start": 730.0,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "in is the current",
+        "start": 731.76,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "course that we're visiting and so like",
+        "start": 733.04,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "most recursive functions we want to look",
+        "start": 735.6,
+        "duration": 3.919,
+        "code": []
+    },
+    {
+        "text": "at our base cases first the first",
+        "start": 737.36,
+        "duration": 5.599,
+        "code": []
+    },
+    {
+        "text": "base case is if course is in",
+        "start": 739.519,
+        "duration": 6.721,
+        "code": []
+    },
+    {
+        "text": "the visit set already so what this",
+        "start": 742.959,
+        "duration": 6.161,
+        "code": [
+            "            if crs in visiting:",
+            "                return False"
+        ]
+    },
+    {
+        "text": "means is that we're visiting a course",
+        "start": 746.24,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "twice",
+        "start": 749.12,
+        "duration": 4.159,
+        "code": []
+    },
+    {
+        "text": "so we detected a loop so we can return",
+        "start": 749.76,
+        "duration": 6.16,
+        "code": []
+    },
+    {
+        "text": "false meaning that this course cannot be",
+        "start": 753.279,
+        "duration": 3.521,
+        "code": []
+    },
+    {
+        "text": "completed",
+        "start": 755.92,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "the other base case we know is if",
+        "start": 756.8,
+        "duration": 6.719,
+        "code": []
+    },
+    {
+        "text": "the prerequisites of this course happen",
+        "start": 760.24,
+        "duration": 4.159,
+        "code": []
+    },
+    {
+        "text": "to be an",
+        "start": 763.519,
+        "duration": 3.361,
+        "code": []
+    },
+    {
+        "text": "empty list what that tells us is that",
+        "start": 764.399,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "this course",
+        "start": 766.88,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "has no prerequisites and we can return",
+        "start": 767.6,
+        "duration": 4.56,
+        "code": [
+            "            if preMap[crs] == []:",
+            "                return True"
+        ]
+    },
+    {
+        "text": "true because it can definitely",
+        "start": 770.48,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "be completed if neither of these",
+        "start": 772.16,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "conditions that",
+        "start": 774.48,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "is satisfied then we can take this",
+        "start": 775.44,
+        "duration": 4.079,
+        "code": []
+    },
+    {
+        "text": "course",
+        "start": 777.76,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "and add it to our visit set because that",
+        "start": 779.519,
+        "duration": 4.081,
+        "code": [
+            "            visiting.add(crs)"
+        ]
+    },
+    {
+        "text": "means we are currently visiting this and",
+        "start": 781.6,
+        "duration": 3.679,
+        "code": []
+    },
+    {
+        "text": "we're going to recursively run debt",
+        "start": 783.6,
+        "duration": 2.4,
+        "code": []
+    },
+    {
+        "text": "first search",
+        "start": 785.279,
+        "duration": 3.921,
+        "code": []
+    },
+    {
+        "text": "on its prerequisites so i'm gonna loop",
+        "start": 786.0,
+        "duration": 8.0,
+        "code": [
+            "            for pre in preMap[crs]:"
+        ]
+    },
+    {
+        "text": "through the prerequisites of this course",
+        "start": 789.2,
+        "duration": 7.439,
+        "code": []
+    },
+    {
+        "text": "for each one i'm gonna run debt for",
+        "start": 794.0,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "search on it",
+        "start": 796.639,
+        "duration": 2.64,
+        "code": []
+    },
+    {
+        "text": "so debt first search on this",
+        "start": 797.68,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "prerequisite if it happens to return",
+        "start": 799.279,
+        "duration": 5.921,
+        "code": [
+            "                if not dfs(pre):",
+            "                    return False"
+        ]
+    },
+    {
+        "text": "false though then we know we can return",
+        "start": 802.16,
+        "duration": 5.2,
+        "code": []
+    },
+    {
+        "text": "false immediately we don't have to wait",
+        "start": 805.2,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "because if we find",
+        "start": 807.36,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "one course that can't be completed then",
+        "start": 808.32,
+        "duration": 4.319,
+        "code": []
+    },
+    {
+        "text": "we can return false for the entire",
+        "start": 810.72,
+        "duration": 2.48,
+        "code": []
+    },
+    {
+        "text": "function",
+        "start": 812.639,
+        "duration": 2.64,
+        "code": []
+    },
+    {
+        "text": "so i forgot to put a not over here so if",
+        "start": 813.2,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "not meaning if",
+        "start": 815.279,
+        "duration": 3.601,
+        "code": []
+    },
+    {
+        "text": "it returns false then we return false",
+        "start": 816.48,
+        "duration": 5.28,
+        "code": []
+    },
+    {
+        "text": "but if this does not execute that means",
+        "start": 818.88,
+        "duration": 5.92,
+        "code": []
+    },
+    {
+        "text": "it's a course that can be taken and",
+        "start": 821.76,
+        "duration": 6.4,
+        "code": []
+    },
+    {
+        "text": "we want to return true in that case but",
+        "start": 824.8,
+        "duration": 5.599,
+        "code": [
+            "            visiting.remove(crs)",
+            "            preMap[crs] = []",
+            "            return True"
+        ]
+    },
+    {
+        "text": "before we return true we want to remove",
+        "start": 828.16,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "it from our visit set",
+        "start": 830.399,
+        "duration": 4.081,
+        "code": []
+    },
+    {
+        "text": "because we are no longer visiting this",
+        "start": 832.16,
+        "duration": 5.119,
+        "code": []
+    },
+    {
+        "text": "we've already finished visiting it",
+        "start": 834.48,
+        "duration": 6.96,
+        "code": []
+    },
+    {
+        "text": "so visit remove this course",
+        "start": 837.279,
+        "duration": 7.201,
+        "code": []
+    },
+    {
+        "text": "and also since we know this course can",
+        "start": 841.44,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "be visited",
+        "start": 844.48,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "what we can do is say pre-map we can",
+        "start": 845.44,
+        "duration": 6.16,
+        "code": []
+    },
+    {
+        "text": "set it to an empty list so that",
+        "start": 848.48,
+        "duration": 5.599,
+        "code": []
+    },
+    {
+        "text": "if if we ever have to run debt first",
+        "start": 851.6,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "search on it again",
+        "start": 854.079,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "we will in that case execute this",
+        "start": 855.44,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "condition",
+        "start": 858.399,
+        "duration": 3.281,
+        "code": []
+    },
+    {
+        "text": "and return true immediately we will not",
+        "start": 859.04,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "have to repeat",
+        "start": 861.68,
+        "duration": 3.76,
+        "code": []
+    },
+    {
+        "text": "all this work of running debt first",
+        "start": 862.8,
+        "duration": 3.52,
+        "code": []
+    },
+    {
+        "text": "search on",
+        "start": 865.44,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "its neighbors so that's all for our debt",
+        "start": 866.32,
+        "duration": 3.759,
+        "code": []
+    },
+    {
+        "text": "for search function",
+        "start": 868.88,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "the function is done all we have to do",
+        "start": 870.079,
+        "duration": 3.76,
+        "code": [
+            "        for c in range(numCourses):",
+            "            if not dfs(c):",
+            "                return False",
+            "        return True"
+        ]
+    },
+    {
+        "text": "is call it now",
+        "start": 872.24,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "but we have to potentially call it for",
+        "start": 873.839,
+        "duration": 3.921,
+        "code": []
+    },
+    {
+        "text": "every single",
+        "start": 876.72,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "course in the number of courses that we",
+        "start": 877.76,
+        "duration": 5.199,
+        "code": []
+    },
+    {
+        "text": "have",
+        "start": 880.56,
+        "duration": 2.399,
+        "code": []
+    },
+    {
+        "text": "and if any of them happen to return",
+        "start": 883.44,
+        "duration": 3.199,
+        "code": []
+    },
+    {
+        "text": "false",
+        "start": 885.519,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "then we have to return false immediately",
+        "start": 886.639,
+        "duration": 5.521,
+        "code": []
+    },
+    {
+        "text": "and if they don't return false then we",
+        "start": 889.839,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "can return",
+        "start": 892.16,
+        "duration": 4.239,
+        "code": []
+    },
+    {
+        "text": "true all courses can be completed",
+        "start": 892.959,
+        "duration": 6.0,
+        "code": []
+    },
+    {
+        "text": "we will in that case execute this",
+        "start": 855.44,
+        "duration": 3.6,
+        "code": [
+            "if crs in visiting:",
+            "    return False"
+        ]
+    },
+    {
+        "text": "condition",
+        "start": 858.399,
+        "duration": 3.281,
+        "code": [
+            "if crs in visiting:",
+            "    return False"
+        ]
+    },
+    {
+        "text": "and return true immediately we will not",
+        "start": 859.04,
+        "duration": 3.76,
+        "code": [
+            "if preMap[crs] == []:",
+            "    return True"
+        ]
+    },
+    {
+        "text": "have to repeat",
+        "start": 861.68,
+        "duration": 3.76,
+        "code": [
+            "preMap[crs] = []"
+        ]
+    },
+    {
+        "text": "for search function",
+        "start": 868.88,
+        "duration": 3.36,
+        "code": [
+            "def dfs(crs):",
+            "    if crs in visiting:",
+            "        return False",
+            "    if preMap[crs] == []:",
+            "        return True",
+            "    visiting.add(crs)",
+            "    for pre in preMap[crs]:",
+            "        if not dfs(pre):",
+            "            return False",
+            "    visiting.remove(crs)",
+            "    preMap[crs] = []",
+            "    return True"
+        ]
+    },
+    {
+        "text": "the function is done all we have to do",
+        "start": 870.079,
+        "duration": 3.76,
+        "code": [
+            "for c in range(numCourses):",
+            "    if not dfs(c):",
+            "        return False",
+            "return True"
+        ]
+    },
+    {
+        "text": "is call it now",
+        "start": 872.24,
+        "duration": 4.48,
+        "code": [
+            "for c in range(numCourses):",
+            "    if not dfs(c):",
+            "        return False",
+            "return True"
+        ]
+    },
+    {
+        "text": "but we have to potentially call it for",
+        "start": 873.839,
+        "duration": 3.921,
+        "code": [
+            "for c in range(numCourses):"
+        ]
+    },
+    {
+        "text": "every single",
+        "start": 876.72,
+        "duration": 3.84,
+        "code": [
+            "for c in range(numCourses):"
+        ]
+    },
+    {
+        "text": "course in the number of courses that we",
+        "start": 877.76,
+        "duration": 5.199,
+        "code": [
+            "for c in range(numCourses):"
+        ]
+    },
+    {
+        "text": "and if any of them happen to return",
+        "start": 883.44,
+        "duration": 3.199,
+        "code": [
+            "if not dfs(c):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "false",
+        "start": 885.519,
+        "duration": 4.32,
+        "code": [
+            "if not dfs(c):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "then we have to return false immediately",
+        "start": 886.639,
+        "duration": 5.521,
+        "code": [
+            "if not dfs(c):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "and if they don't return false then we",
+        "start": 889.839,
+        "duration": 3.12,
+        "code": [
+            "return True"
+        ]
+    },
+    {
+        "text": "can return",
+        "start": 892.16,
+        "duration": 4.239,
+        "code": [
+            "return True"
+        ]
+    },
+    {
+        "text": "true all courses can be completed",
+        "start": 892.959,
+        "duration": 6.0,
+        "code": [
+            "return True"
+        ]
+    },
+    {
+        "text": "what if our graph is not fully connected",
+        "start": 900.56,
+        "duration": 5.279,
+        "code": [
+            "for c in range(numCourses):",
+            "    if not dfs(c):",
+            "        return False",
+            "return True"
+        ]
+    },
+    {
+        "text": "like what if we have a graph like this",
+        "start": 903.68,
+        "duration": 5.68,
+        "code": [
+            "for c in range(numCourses):",
+            "    if not dfs(c):",
+            "        return False",
+            "return True"
+        ]
+    }
+]

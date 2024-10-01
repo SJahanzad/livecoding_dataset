@@ -1,0 +1,75 @@
+[
+    {
+        "text": "so we're basically given an array of",
+        "start": 20.939,
+        "duration": 5.371,
+        "code": [
+            "class Solution:",
+            "    def rob(self, nums: List[int]) -> int:"
+        ]
+    },
+    {
+        "text": "adjacent to each other so it's basically",
+        "start": 31.92,
+        "duration": 4.35,
+        "code": [
+            "        rob1, rob2 = 0, 0"
+        ]
+    },
+    {
+        "text": "question to understand",
+        "start": 19.56,
+        "duration": 3.75,
+        "code": [
+            "        for n in nums:"
+        ]
+    },
+    {
+        "text": "start out with the brute force approach",
+        "start": 60.84,
+        "duration": 3.99,
+        "code": [
+            "            temp = max(n + rob1, rob2)"
+        ]
+    },
+    {
+        "text": "first house right so let's draw out what",
+        "start": 69.72,
+        "duration": 4.14,
+        "code": [
+            "            rob1 = rob2"
+        ]
+    },
+    {
+        "text": "get would be n+ Rob one meaning there's",
+        "start": 532.67,
+        "duration": 7.62,
+        "code": [
+            "temp = max(n + rob1, rob2)"
+        ]
+    },
+    {
+        "text": "we iterate to the next position meaning",
+        "start": 571.04,
+        "duration": 5.04,
+        "code": [
+            "for n in nums:"
+        ]
+    },
+    {
+        "text": "now equal Rob - so let's do that",
+        "start": 576.08,
+        "duration": 9.06,
+        "code": [
+            "rob1 = rob2"
+        ]
+    },
+    {
+        "text": "temporary value that we just computed at",
+        "start": 589.19,
+        "duration": 6.81,
+        "code": [
+            "rob2 = temp"
+        ]
+    }
+]

@@ -1,0 +1,100 @@
+[
+    {
+        "text": "we might have to merge some intervals",
+        "start": 33.76,
+        "duration": 6.08,
+        "code": [
+            "newInterval = [",
+            "min(newInterval[0], intervals[i][0]),",
+            "max(newInterval[1], intervals[i][1]),",
+            "]"
+        ]
+    },
+    {
+        "text": "and then we're going to go to the next",
+        "start": 419.52,
+        "duration": 3.28,
+        "code": [
+            "class Solution:",
+            "    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:",
+            "        res = []"
+        ]
+    },
+    {
+        "text": "intervals remaining and then we're done",
+        "start": 422.8,
+        "duration": 3.6,
+        "code": [
+            "        for i in range(len(intervals)):"
+        ]
+    },
+    {
+        "text": "so this is going to be our result in",
+        "start": 424.4,
+        "duration": 6.0,
+        "code": [
+            "        res = []"
+        ]
+    },
+    {
+        "text": "this case 0 4 and 5 6 our new intervals",
+        "start": 426.4,
+        "duration": 5.84,
+        "code": [
+            "            if newInterval[1] < intervals[i][0]:"
+        ]
+    },
+    {
+        "text": "after we've merged them and they're in",
+        "start": 430.4,
+        "duration": 3.919,
+        "code": [
+            "                res.append(newInterval)",
+            "                return res + intervals[i:]"
+        ]
+    },
+    {
+        "text": "ascending order so that's kind of the",
+        "start": 432.24,
+        "duration": 4.0,
+        "code": [
+            "            elif newInterval[0] > intervals[i][1]:",
+            "                res.append(intervals[i])"
+        ]
+    },
+    {
+        "text": "general algorithm as you can see since",
+        "start": 434.319,
+        "duration": 3.44,
+        "code": [
+            "            else:",
+            "                newInterval = [",
+            "                    min(newInterval[0], intervals[i][0]),",
+            "                    max(newInterval[1], intervals[i][1])",
+            "                ]"
+        ]
+    },
+    {
+        "text": "once that's done we have written the",
+        "start": 695.68,
+        "duration": 4.24,
+        "code": [
+            "class Solution:",
+            "    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:",
+            "        res = []",
+            "        for i in range(len(intervals)):",
+            "            if newInterval[1] < intervals[i][0]:",
+            "                res.append(newInterval)",
+            "                return res + intervals[i:]",
+            "            elif newInterval[0] > intervals[i][1]:",
+            "                res.append(intervals[i])",
+            "            else:",
+            "                newInterval = [",
+            "                    min(newInterval[0], intervals[i][0]),",
+            "                    max(newInterval[1], intervals[i][1])",
+            "                ]",
+            "        res.append(newInterval)",
+            "        return res"
+        ]
+    }
+]

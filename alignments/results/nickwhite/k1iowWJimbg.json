@@ -1,0 +1,84 @@
+[
+    {
+        "text": "given an array of strings made from only",
+        "start": 32.55,
+        "duration": 4.89,
+        "code": [
+            "class Solution {",
+            "    public List<String> commonChars(String[] A) {",
+            "        // Code to process the array of strings"
+        ]
+    },
+    {
+        "text": "lowercase letters return a list of all",
+        "start": 35.25,
+        "duration": 4.11,
+        "code": [
+            "        List<String> common_chars = new ArrayList<>();"
+        ]
+    },
+    {
+        "text": "characters that show up in all strings",
+        "start": 37.44,
+        "duration": 6.0,
+        "code": [
+            "        int[] min_frequencies = new int[26];",
+            "        Arrays.fill(min_frequencies, Integer.MAX_VALUE);"
+        ]
+    },
+    {
+        "text": "frequency of we want to have a list of",
+        "start": 60.21,
+        "duration": 9.03,
+        "code": [
+            "            for (char c : current_string.toCharArray()) {",
+            "                char_frequencies[c - 'a']++;",
+            "            }"
+        ]
+    },
+    {
+        "text": "characters that show up in each string",
+        "start": 66.049,
+        "duration": 5.411,
+        "code": [
+            "            for (int i = 0; i < 26; i++) {",
+            "                min_frequencies[i] = Math.min(min_frequencies[i], char_frequencies[i]);",
+            "            }",
+            "        }"
+        ]
+    },
+    {
+        "text": "then we just output them in a list of",
+        "start": 87.42,
+        "duration": 4.17,
+        "code": [
+            "        return common_chars;",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "just do this exactly how I'm saying it",
+        "start": 96.75,
+        "duration": 4.5,
+        "code": [
+            "        // Implementation of the method"
+        ]
+    },
+    {
+        "text": "just do I plus a or you know the current",
+        "start": 531.279,
+        "duration": 6.211,
+        "code": [
+            "char_frequencies[c - 'a']++;"
+        ]
+    },
+    {
+        "text": "charm minus a to get the index in the",
+        "start": 534.519,
+        "duration": 5.37,
+        "code": [
+            "char_frequencies[c - 'a']++;"
+        ]
+    }
+]

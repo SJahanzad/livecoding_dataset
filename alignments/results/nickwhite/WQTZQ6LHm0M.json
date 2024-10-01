@@ -1,0 +1,26 @@
+[
+    {
+        "text": "while a pointer is less than or equal to",
+        "start": 100.56,
+        "duration": 6.839,
+        "code": [
+            "while (a_pointer <= b_pointer) {"
+        ]
+    },
+    {
+        "text": "because I'll explain it in a second yes",
+        "start": 287.72,
+        "duration": 7.84,
+        "code": [
+            "}"
+        ]
+    },
+    {
+        "text": "do literally the same thing so it's",
+        "start": 248.34,
+        "duration": 7.86,
+        "code": [
+            "while (a_pointer <= b_pointer) {"
+        ]
+    }
+]

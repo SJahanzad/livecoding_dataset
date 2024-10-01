@@ -1,0 +1,156 @@
+[
+    {
+        "text": "you instantiate the output array if the",
+        "start": 499.41,
+        "duration": 4.98,
+        "code": [
+            "List<List<Integer>> triangle = new ArrayList<>();"
+        ]
+    },
+    {
+        "text": "number is a 0 return triangle you have",
+        "start": 501.78,
+        "duration": 5.49,
+        "code": [
+            "if (numRows == 0) return triangle;"
+        ]
+    },
+    {
+        "text": "you get your first row you add one to it",
+        "start": 504.39,
+        "duration": 4.89,
+        "code": [
+            "List<Integer> first_row = new ArrayList<>();",
+            "first_row.add(1);"
+        ]
+    },
+    {
+        "text": "so we have our first list with one then",
+        "start": 507.27,
+        "duration": 3.269,
+        "code": [
+            "triangle.add(first_row);"
+        ]
+    },
+    {
+        "text": "you add it to our output array of",
+        "start": 509.28,
+        "duration": 3.569,
+        "code": [
+            "triangle.add(first_row);"
+        ]
+    },
+    {
+        "text": "triangle then we do our inner loops like",
+        "start": 510.539,
+        "duration": 4.38,
+        "code": [
+            "for (int i = 1; i < numRows; i++) {",
+            "List<Integer> prev_row = triangle.get(i - 1);",
+            "List<Integer> row = new ArrayList<>();"
+        ]
+    },
+    {
+        "text": "I explained earlier the inner loop will",
+        "start": 512.849,
+        "duration": 3.901,
+        "code": [
+            "for (int i = 1; i < numRows; i++) {",
+            "List<Integer> prev_row = triangle.get(i - 1);",
+            "List<Integer> row = new ArrayList<>();"
+        ]
+    },
+    {
+        "text": "grab the previous row and we instantiate",
+        "start": 514.919,
+        "duration": 4.021,
+        "code": [
+            "List<Integer> prev_row = triangle.get(i - 1);",
+            "List<Integer> row = new ArrayList<>();"
+        ]
+    },
+    {
+        "text": "the current row we had one of the",
+        "start": 516.75,
+        "duration": 3.36,
+        "code": [
+            "row.add(1);"
+        ]
+    },
+    {
+        "text": "current row at the beginning of the loop",
+        "start": 518.94,
+        "duration": 3.75,
+        "code": [
+            "row.add(1);"
+        ]
+    },
+    {
+        "text": "because the first element is 1 we loop",
+        "start": 520.11,
+        "duration": 4.62,
+        "code": [
+            "for (int j = 1; j < i; j++) {",
+            "row.add(prev_row.get(j - 1) + prev_row.get(j));"
+        ]
+    },
+    {
+        "text": "through the rest of the elements to up",
+        "start": 522.69,
+        "duration": 4.59,
+        "code": [
+            "for (int j = 1; j < i; j++) {",
+            "row.add(prev_row.get(j - 1) + prev_row.get(j));"
+        ]
+    },
+    {
+        "text": "the previous row those elements so we",
+        "start": 527.58,
+        "duration": 2.67,
+        "code": [
+            "row.add(prev_row.get(j - 1) + prev_row.get(j));"
+        ]
+    },
+    {
+        "text": "can add them together and put them in",
+        "start": 529.14,
+        "duration": 3.15,
+        "code": [
+            "row.add(prev_row.get(j - 1) + prev_row.get(j));"
+        ]
+    },
+    {
+        "text": "the right spots and then we just add the",
+        "start": 530.25,
+        "duration": 3.9,
+        "code": [
+            "row.add(1);"
+        ]
+    },
+    {
+        "text": "completed row we had one of the",
+        "start": 532.29,
+        "duration": 3.09,
+        "code": [
+            "row.add(1);",
+            "triangle.add(row);"
+        ]
+    },
+    {
+        "text": "completed row and then we add a to",
+        "start": 534.15,
+        "duration": 2.97,
+        "code": [
+            "triangle.add(row);"
+        ]
+    },
+    {
+        "text": "triangle and return triangle hopefully",
+        "start": 535.38,
+        "duration": 3.57,
+        "code": [
+            "triangle.add(row);",
+            "return triangle;"
+        ]
+    }
+]

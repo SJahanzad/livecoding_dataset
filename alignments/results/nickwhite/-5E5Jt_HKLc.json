@@ -1,0 +1,61 @@
+[
+    {
+        "text": "take we're taking in a tree node t1 tree",
+        "start": 106.439,
+        "duration": 8.04,
+        "code": [
+            "public boolean isMirror(TreeNode t1, TreeNode t2) {"
+        ]
+    },
+    {
+        "text": "checks right so if T 1 is equal no all",
+        "start": 116.159,
+        "duration": 4.411,
+        "code": [
+            "if (t1 == null && t2 == null) return true;"
+        ]
+    },
+    {
+        "text": "and t2 is equal to null then that's good",
+        "start": 125.64,
+        "duration": 5.849,
+        "code": [
+            "if (t1 == null && t2 == null) return true;"
+        ]
+    },
+    {
+        "text": "if only one of them that's bad because",
+        "start": 141.72,
+        "duration": 4.65,
+        "code": [
+            "if (t1 == null || t2 == null) return false;"
+        ]
+    },
+    {
+        "text": "you have to recursively call on the left",
+        "start": 169.95,
+        "duration": 6.569,
+        "code": [
+            "    return (t1.val == t2.val)",
+            "        && isMirror(t1.left, t2.right)",
+            "        && isMirror(t1.right, t2.left);"
+        ]
+    },
+    {
+        "text": "second trees that's how you handle",
+        "start": 176.519,
+        "duration": 4.741,
+        "code": [
+            "        && isMirror(t1.left, t2.right)"
+        ]
+    },
+    {
+        "text": "make sure that they're the same so",
+        "start": 189.18,
+        "duration": 6.36,
+        "code": [
+            "        && isMirror(t1.left, t2.right)",
+            "        && isMirror(t1.right, t2.left);"
+        ]
+    }
+]

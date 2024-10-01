@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yM71nOH3tKNJY8cS6J6zm4fO3pRS",
+  "object": "chat.completion",
+  "created": 1724171707,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 253,\n        \"value\": [\n            8\n        ]\n    },\n    {\n        \"key\": 254,\n        \"value\": [\n            9,\n            10\n        ]\n    },\n    {\n        \"key\": 258,\n        \"value\": [\n            11\n        ]\n    },\n    {\n        \"key\": 259,\n        \"value\": [\n            11\n        ]\n    },\n    {\n        \"key\": 260,\n        \"value\": [\n            11,\n            12,\n            13\n        ]\n    },\n    {\n        \"key\": 261,\n        \"value\": [\n            13\n        ]\n    },\n    {\n        \"key\": 262,\n        \"value\": [\n            13\n        ]\n    },\n    {\n        \"key\": 267,\n        \"value\": [\n            13\n        ]\n    },\n    {\n        \"key\": 272,\n        \"value\": [\n            9,\n            10,\n            12,\n            13\n        ]\n    },\n    {\n        \"key\": 276,\n        \"value\": []\n    },\n    {\n        \"key\": 280,\n        \"value\": [\n            46,\n            47,\n            48\n        ]\n    },\n    {\n        \"key\": 281,\n        \"value\": [\n            46,\n            47,\n            48\n        ]\n    },\n    {\n        \"key\": 282,\n        \"value\": [\n            49\n        ]\n    },\n    {\n        \"key\": 283,\n        \"value\": [\n            48,\n            49,\n            50,\n            51,\n            52\n        ]\n    },\n    {\n        \"key\": 284,\n        \"value\": [\n            50,\n            51,\n            52,\n            53,\n            54\n        ]\n    },\n    {\n        \"key\": 285,\n        \"value\": [\n            54,\n            55,\n            56,\n            57,\n            58,\n            59,\n            60,\n            61\n        ]\n    },\n    {\n        \"key\": 307,\n        \"value\": [\n            37\n        ]\n    },\n    {\n        \"key\": 308,\n        \"value\": [\n            38\n        ]\n    },\n    {\n        \"key\": 309,\n        \"value\": [\n            39,\n            40\n        ]\n    },\n    {\n        \"key\": 310,\n        \"value\": [\n            41,\n            42,\n            43,\n            44\n        ]\n    },\n    {\n        \"key\": 311,\n        \"value\": [\n            45,\n            46\n        ]\n    },\n    {\n        \"key\": 312,\n        \"value\": [\n            47,\n            48\n        ]\n    },\n    {\n        \"key\": 313,\n        \"value\": [\n            49,\n            50,\n            51\n        ]\n    },\n    {\n        \"key\": 314,\n        \"value\": [\n            52,\n            53,\n            54\n        ]\n    },\n    {\n        \"key\": 315,\n        \"value\": [\n            55,\n            56\n        ]\n    },\n    {\n        \"key\": 316,\n        \"value\": [\n            57,\n            58,\n            59,\n            60\n        ]\n    },\n    {\n        \"key\": 317,\n        \"value\": [\n            61,\n            62,\n            63\n        ]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 20199,
+    "completion_tokens": 758,
+    "total_tokens": 20957
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

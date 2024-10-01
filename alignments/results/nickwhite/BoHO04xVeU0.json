@@ -1,0 +1,255 @@
+[
+    {
+        "text": "so this one's called twosome so to sum",
+        "start": 36.29,
+        "duration": 5.41,
+        "code": [
+            "class Solution {"
+        ]
+    },
+    {
+        "text": "so this one's called twosome so to sum",
+        "start": 36.29,
+        "duration": 5.41,
+        "code": [
+            "class Solution {"
+        ]
+    },
+    {
+        "text": "says given an array of integers return",
+        "start": 39.45,
+        "duration": 3.66,
+        "code": [
+            "public int[] twoSum(int[] nums, int target) {"
+        ]
+    },
+    {
+        "text": "we're iterating through it right each",
+        "start": 145.95,
+        "duration": 6.09,
+        "code": [
+            "for (int i = 0; i < nums.length; i++) {"
+        ]
+    },
+    {
+        "text": "because that's what we're looking for in",
+        "start": 200.549,
+        "duration": 3.78,
+        "code": [
+            "if (num_map.containsKey(complement)) {",
+            "return new int[] { num_map.get(complement), i };"
+        ]
+    },
+    {
+        "text": "hopefully it works actually we might",
+        "start": 475.69,
+        "duration": 4.62,
+        "code": [
+            "throw new IllegalArgumentException(\"No match found!\");"
+        ]
+    },
+    {
+        "text": "those are basically two solutions for",
+        "start": 571.17,
+        "duration": 5.68,
+        "code": [
+            "import java.util.HashMap;",
+            "import java.util.Map;",
+            "class Solution {",
+            "    public int[] twoSum(int[] nums, int target) {",
+            "        Map<Integer, Integer> num_map = new HashMap<>();",
+            "        for (int i = 0; i < nums.length; i++) {",
+            "            int complement = target - nums[i];",
+            "            if (num_map.containsKey(complement)) {",
+            "                return new int[] { num_map.get(complement), i };",
+            "            }",
+            "            num_map.put(nums[i], i);",
+            "        }",
+            "        throw new IllegalArgumentException(\"No match found!\");",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "this I mean I think you guys from what I",
+        "start": 573.67,
+        "duration": 4.889,
+        "code": [
+            "        Map<Integer, Integer> num_map = new HashMap<>();",
+            "        for (int i = 0; i < nums.length; i++) {",
+            "            int complement = target - nums[i];",
+            "            if (num_map.containsKey(complement)) {",
+            "                return new int[] { num_map.get(complement), i };",
+            "            }",
+            "            num_map.put(nums[i], i);",
+            "        }",
+            "        throw new IllegalArgumentException(\"No match found!\");"
+        ]
+    },
+    {
+        "text": "explained like I might have not have",
+        "start": 576.85,
+        "duration": 3.209,
+        "code": [
+            "for (int i = 0; i < nums.length; i++) {",
+            "    int complement = target - nums[i];",
+            "    if (num_map.containsKey(complement)) {",
+            "        return new int[] { num_map.get(complement), i };",
+            "    }",
+            "    num_map.put(nums[i], i);",
+            "}",
+            "throw new IllegalArgumentException(\"No match found!\");"
+        ]
+    },
+    {
+        "text": "done a perfect job but I think you",
+        "start": 578.559,
+        "duration": 4.02,
+        "code": [
+            "    int complement = target - nums[i];",
+            "    if (num_map.containsKey(complement)) {",
+            "        return new int[] { num_map.get(complement), i };",
+            "    }",
+            "    num_map.put(nums[i], i);",
+            "}"
+        ]
+    },
+    {
+        "text": "should be able to kind of understand the",
+        "start": 580.059,
+        "duration": 5.181,
+        "code": [
+            "    if (num_map.containsKey(complement)) {",
+            "        return new int[] { num_map.get(complement), i };",
+            "    }",
+            "    num_map.put(nums[i], i);"
+        ]
+    },
+    {
+        "text": "two for loop thing ovince squared",
+        "start": 582.579,
+        "duration": 5.31,
+        "code": [
+            "import java.util.HashMap;",
+            "import java.util.Map;",
+            "class Solution {",
+            "    public int[] twoSum(int[] nums, int target) {",
+            "        Map<Integer, Integer> num_map = new HashMap<>();",
+            "        for (int i = 0; i < nums.length; i++) {",
+            "            int complement = target - nums[i];",
+            "            if (num_map.containsKey(complement)) {",
+            "                return new int[] { num_map.get(complement), i };",
+            "            }",
+            "            num_map.put(nums[i], i);",
+            "        }",
+            "        throw new IllegalArgumentException(\"No match found!\");",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "because it's nested for-loops if the",
+        "start": 585.24,
+        "duration": 4.329,
+        "code": [
+            "        for (int i = 0; i < nums.length; i++) {",
+            "            int complement = target - nums[i];",
+            "            if (num_map.containsKey(complement)) {",
+            "                return new int[] { num_map.get(complement), i };",
+            "            }",
+            "            num_map.put(nums[i], i);",
+            "        }"
+        ]
+    },
+    {
+        "text": "four loops are separated that's just o",
+        "start": 587.889,
+        "duration": 5.06,
+        "code": [
+            "for (int i = 0; i < nums.length; i++) {",
+            "    int complement = target - nums[i];",
+            "    if (num_map.containsKey(complement)) {",
+            "        return new int[] { num_map.get(complement), i };",
+            "    }",
+            "    num_map.put(nums[i], i);",
+            "}"
+        ]
+    },
+    {
+        "text": "of T line right when you go through the",
+        "start": 589.569,
+        "duration": 6.151,
+        "code": [
+            "    int complement = target - nums[i];",
+            "    if (num_map.containsKey(complement)) {",
+            "        return new int[] { num_map.get(complement), i };",
+            "    }",
+            "    num_map.put(nums[i], i);"
+        ]
+    },
+    {
+        "text": "hashmap version it's better because we",
+        "start": 592.949,
+        "duration": 4.481,
+        "code": [
+            "import java.util.HashMap;",
+            "import java.util.Map;",
+            "class Solution {",
+            "    public int[] twoSum(int[] nums, int target) {",
+            "        Map<Integer, Integer> num_map = new HashMap<>();",
+            "        for (int i = 0; i < nums.length; i++) {",
+            "            int complement = target - nums[i];",
+            "            if (num_map.containsKey(complement)) {",
+            "                return new int[] { num_map.get(complement), i };",
+            "            }",
+            "            num_map.put(nums[i], i);",
+            "        }",
+            "        throw new IllegalArgumentException(\"No match found!\");",
+            "    }",
+            "}"
+        ]
+    },
+    {
+        "text": "just store things and we pull them down",
+        "start": 595.72,
+        "duration": 3.659,
+        "code": [
+            "        Map<Integer, Integer> num_map = new HashMap<>();",
+            "        for (int i = 0; i < nums.length; i++) {",
+            "            int complement = target - nums[i];",
+            "            if (num_map.containsKey(complement)) {",
+            "                return new int[] { num_map.get(complement), i };",
+            "            }",
+            "            num_map.put(nums[i], i);",
+            "        }"
+        ]
+    },
+    {
+        "text": "at constant time but we do have to take",
+        "start": 597.43,
+        "duration": 3.93,
+        "code": [
+            "            if (num_map.containsKey(complement)) {",
+            "                return new int[] { num_map.get(complement), i };",
+            "            }",
+            "            num_map.put(nums[i], i);"
+        ]
+    },
+    {
+        "text": "space into consideration too sometimes",
+        "start": 599.379,
+        "duration": 4.64,
+        "code": [
+            "            }",
+            "            num_map.put(nums[i], i);"
+        ]
+    },
+    {
+        "text": "so that's pretty much it for this",
+        "start": 601.36,
+        "duration": 6.269,
+        "code": [
+            "}"
+        ]
+    }
+]

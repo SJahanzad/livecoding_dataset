@@ -1,0 +1,29 @@
+[
+    {
+        "text": "a java solution for a number problem number 226 invertible",
+        "start": 25.289,
+        "duration": 10.59,
+        "code": [
+            "class Solution {",
+            "    public TreeNode invertTree(TreeNode root) {"
+        ]
+    },
+    {
+        "text": "sorry about that invert a binary tree so",
+        "start": 30.029,
+        "duration": 5.731,
+        "code": [
+            "class Solution {",
+            "    public TreeNode invertTree(TreeNode root) {"
+        ]
+    },
+    {
+        "text": "number 226 invertible",
+        "start": 27.75,
+        "duration": 5.85,
+        "code": [
+            "class Solution {",
+            "    public TreeNode invertTree(TreeNode root) {"
+        ]
+    }
+]

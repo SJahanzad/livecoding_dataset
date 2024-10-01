@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMREwG3X1hVDmey6cE0XETItaHjj",
+  "object": "chat.completion",
+  "created": 1724172960,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"key\": 446,\n    \"value\": [\n      2\n    ]\n  },\n  {\n    \"key\": 451,\n    \"value\": [\n      3\n    ]\n  },\n  {\n    \"key\": 455,\n    \"value\": [\n      4\n    ]\n  },\n  {\n    \"key\": 458,\n    \"value\": [\n      5\n    ]\n  },\n  {\n    \"key\": 460,\n    \"value\": [\n      5\n    ]\n  },\n  {\n    \"key\": 463,\n    \"value\": [\n      7\n    ]\n  },\n  {\n    \"key\": 469,\n    \"value\": [\n      7\n    ]\n  },\n  {\n    \"key\": 474,\n    \"value\": [\n      8\n    ]\n  },\n  {\n    \"key\": 478,\n    \"value\": [\n      8\n    ]\n  },\n  {\n    \"key\": 483,\n    \"value\": [\n      9\n    ]\n  },\n  {\n    \"key\": 486,\n    \"value\": [\n      9\n    ]\n  },\n  {\n    \"key\": 488,\n    \"value\": [\n      10\n    ]\n  },\n  {\n    \"key\": 489,\n    \"value\": [\n      10\n    ]\n  },\n  {\n    \"key\": 491,\n    \"value\": [\n      11\n    ]\n  },\n  {\n    \"key\": 494,\n    \"value\": [\n      12\n    ]\n  },\n  {\n    \"key\": 496,\n    \"value\": [\n      12,\n      13\n    ]\n  },\n  {\n    \"key\": 499,\n    \"value\": [\n      15\n    ]\n  },\n  {\n    \"key\": 502,\n    \"value\": [\n      16\n    ]\n  },\n  {\n    \"key\": 505,\n    \"value\": [\n      17\n    ]\n  },\n  {\n    \"key\": 508,\n    \"value\": [\n      17\n    ]\n  },\n  {\n    \"key\": 513,\n    \"value\": [\n      18\n    ]\n  },\n  {\n    \"key\": 514,\n    \"value\": [\n      18\n    ]\n  },\n  {\n    \"key\": 518,\n    \"value\": [\n      19\n    ]\n  },\n  {\n    \"key\": 520,\n    \"value\": [\n      20\n    ]\n  },\n  {\n    \"key\": 523,\n    \"value\": [\n      21\n    ]\n  },\n  {\n    \"key\": 525,\n    \"value\": [\n      21\n    ]\n  },\n  {\n    \"key\": 527,\n    \"value\": [\n      22\n    ]\n  },\n  {\n    \"key\": 529,\n    \"value\": [\n      23\n    ]\n  },\n  {\n    \"key\": 531,\n    \"value\": [\n      23\n    ]\n  },\n  {\n    \"key\": 533,\n    \"value\": [\n      24\n    ]\n  },\n  {\n    \"key\": 536,\n    \"value\": [\n      25\n    ]\n  },\n  {\n    \"key\": 538,\n    \"value\": [\n      25\n    ]\n  },\n  {\n    \"key\": 542,\n    \"value\": [\n      25\n    ]\n  }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8029,
+    "completion_tokens": 736,
+    "total_tokens": 8765
+  },
+  "system_fingerprint": "fp_c9aa9c0491"
+}

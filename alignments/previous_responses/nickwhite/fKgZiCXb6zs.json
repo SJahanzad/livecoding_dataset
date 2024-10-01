@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLw7kHBLXhUFYDhD64zSiC3wKfrY",
+  "object": "chat.completion",
+  "created": 1724171031,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 11,\n        \"value\": [1]\n    },\n    {\n        \"key\": 123,\n        \"value\": [2]\n    },\n    {\n        \"key\": 135,\n        \"value\": [3]\n    },\n    {\n        \"key\": 145,\n        \"value\": [4]\n    },\n    {\n        \"key\": 147,\n        \"value\": [5, 6]\n    },\n    {\n        \"key\": 159,\n        \"value\": [7]\n    },\n    {\n        \"key\": 167,\n        \"value\": [8]\n    },\n    {\n        \"key\": 199,\n        \"value\": [9, 10, 11, 12]\n    },\n    {\n        \"key\": 203,\n        \"value\": [13]\n    },\n    {\n        \"key\": 240,\n        \"value\": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]\n    },\n    {\n        \"key\": 243,\n        \"value\": [5]\n    },\n    {\n        \"key\": 249,\n        \"value\": [6]\n    },\n    {\n        \"key\": 298,\n        \"value\": [7]\n    },\n    {\n        \"key\": 321,\n        \"value\": [9]\n    },\n    {\n        \"key\": 329,\n        \"value\": [10]\n    },\n    {\n        \"key\": 331,\n        \"value\": [11]\n    },\n    {\n        \"key\": 336,\n        \"value\": [12]\n    },\n    {\n        \"key\": 344,\n        \"value\": [13]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6059,
+    "completion_tokens": 375,
+    "total_tokens": 6434
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

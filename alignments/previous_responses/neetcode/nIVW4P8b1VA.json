@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMOun2cVY3MGZDhVW2zh09cNa27K",
+  "object": "chat.completion",
+  "created": 1724172816,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 1,\n        \"value\": [1]\n    },\n    {\n        \"key\": 2,\n        \"value\": [1]\n    },\n    {\n        \"key\": 133,\n        \"value\": [2]\n    },\n    {\n        \"key\": 210,\n        \"value\": [2]\n    },\n    {\n        \"key\": 234,\n        \"value\": [3]\n    },\n    {\n        \"key\": 257,\n        \"value\": [3]\n    },\n    {\n        \"key\": 303,\n        \"value\": [4]\n    },\n    {\n        \"key\": 307,\n        \"value\": [5]\n    },\n    {\n        \"key\": 309,\n        \"value\": [5]\n    },\n    {\n        \"key\": 323,\n        \"value\": [6]\n    },\n    {\n        \"key\": 337,\n        \"value\": [6]\n    },\n    {\n        \"key\": 695,\n        \"value\": [14]\n    },\n    {\n        \"key\": 708,\n        \"value\": [15]\n    },\n    {\n        \"key\": 715,\n        \"value\": [16]\n    },\n    {\n        \"key\": 716,\n        \"value\": [17]\n    },\n    {\n        \"key\": 623,\n        \"value\": [18, 19]\n    },\n    {\n        \"key\": 626,\n        \"value\": [20]\n    },\n    {\n        \"key\": 634,\n        \"value\": [21]\n    },\n    {\n        \"key\": 636,\n        \"value\": [23]\n    },\n    {\n        \"key\": 654,\n        \"value\": [25]\n    },\n    {\n        \"key\": 657,\n        \"value\": [26]\n    },\n    {\n        \"key\": 666,\n        \"value\": [32]\n    },\n    {\n        \"key\": 669,\n        \"value\": [33]\n    },\n    {\n        \"key\": 671,\n        \"value\": [34]\n    },\n    {\n        \"key\": 690,\n        \"value\": [35]\n    },\n    {\n        \"key\": 702,\n        \"value\": [37]\n    },\n    {\n        \"key\": 716,\n        \"value\": [41]\n    },\n    {\n        \"key\": 718,\n        \"value\": [44]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12518,
+    "completion_tokens": 513,
+    "total_tokens": 13031
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yR8WTwdH36apwYbIXF1AAxIavY2Z",
+        "object": "chat.completion",
+        "created": 1724191020,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Here's the aligned JSON data with the code snippets connected to their corresponding parts of the transcript.\n\n```json\n[\n    {\n        \"text\": \"suppose we declare an output variable for result and this is\",\n        \"code\": [\n            \"res = 0\"\n        ]\n    },\n    {\n        \"text\": \"set all of these to\",\n        \"code\": [\n            \"res = 0\"\n        ]\n    },\n    {\n        \"text\": \"we're going to go through every single\",\n        \"code\": [\n            \"for i in range(32):\"\n        ]\n    },\n    {\n        \"text\": \"bit in the input end so i'm going to say\",\n        \"code\": [\n            \"for i in range(32):\"\n        ]\n    },\n    {\n        \"text\": \"remember the first thing we want to do\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"is we want to get the i th bit of n so\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"well we have this i variable right it's going to go\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"logic or and we want to set the result equal to the result of this logic or operation\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"and then we're going to return the result\",\n        \"code\": [\n            \"return res\"\n        ]\n    }\n]\n```\nThe provided entries in the transcript map closely to the specified operations in the final code. If more specific sections of the code (like individual operations) correspond to certain lines in the transcript, they can be further broken down and added to the map.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 8034,
+            "completion_tokens": 412,
+            "total_tokens": 8446
+        },
+        "system_fingerprint": "fp_df84d6bd70"
+    },
+    {
+        "id": "chatcmpl-9yR8mv3us8hcn7pFJcoZNNoyVPe2e",
+        "object": "chat.completion",
+        "created": 1724191036,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Of course! Here is the alignment of the code with the relevant parts of the transcript:\n\n```json\n[\n    {\n        \"text\": \"is we want to get the i th bit of n so\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"then in n we will have the the target\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"bit that we're looking for and it will\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"be in the one spot so then we can just\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"take this and end it with one and then\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"we'll get the result bit that we're\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"looking for in the ones spot so this bit\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"will be either one or it will be zero\",\n        \"code\": [\n            \"bit = (n >> i) & 1\"\n        ]\n    },\n    {\n        \"text\": \"shift our bit to the right by 31 minus i\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"and putting it in the 31 spot of the result\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"and the next iteration will be doing the\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"opposite will be getting the bit in\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"index 1 from n and putting it in index\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"30 in the output so then we're going to\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"this is the operation we're doing and we\",\n        \"code\": [\n            \"bit = (n >> i) & 1\",\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"want to set the result equal to the\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"result of this logic or operation and\",\n        \"code\": [\n            \"res += (bit << (31 - i))\"\n        ]\n    },\n    {\n        \"text\": \"that is the entire code once we're done\",\n        \"code\": [\n            \"res += (bit << (31 - i))\",\n            \"return res\"\n        ]\n    },\n    {\n        \"text\": \"with that we can go ahead and return the\",\n        \"code\": [\n            \"return res\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2162,
+            "completion_tokens": 775,
+            "total_tokens": 2937
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

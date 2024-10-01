@@ -1,0 +1,198 @@
+[
+    {
+        "text": "both strings right",
+        "start": 141.12,
+        "duration": 3.68,
+        "code": [
+            "for i in range(len(s)):"
+        ]
+    },
+    {
+        "text": "we're going to create hashmaps for that",
+        "start": 293.919,
+        "duration": 4.161,
+        "code": [
+            "countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "then we basically know to return false",
+        "start": 440.16,
+        "duration": 4.56,
+        "code": [
+            "if len(s) != len(t):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "immediately because",
+        "start": 442.8,
+        "duration": 4.48,
+        "code": [
+            "if len(s) != len(t):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "then we know that they're not anagrams",
+        "start": 444.72,
+        "duration": 4.479,
+        "code": [
+            "if len(s) != len(t):",
+            "    return False"
+        ]
+    },
+    {
+        "text": "we're iterating through all the key",
+        "start": 450.96,
+        "duration": 4.88,
+        "code": [
+            "for i in range(len(s)):",
+            "    countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "    countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "values of account s right the the count",
+        "start": 452.56,
+        "duration": 6.16,
+        "code": [
+            "countS, countT = {}, {}",
+            "for i in range(len(s)):",
+            "    countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "    countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "map of string s and c",
+        "start": 455.84,
+        "duration": 5.199,
+        "code": [
+            "countS, countT = {}, {}",
+            "for i in range(len(s)):",
+            "    countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "    countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "is going to be the key but what if that",
+        "start": 458.72,
+        "duration": 6.319,
+        "code": [
+            "for i in range(len(s)):",
+            "    countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "    countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "key does not exist in the t map right",
+        "start": 461.039,
+        "duration": 6.16,
+        "code": [
+            "countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "count t what if it doesn't exist in this",
+        "start": 465.039,
+        "duration": 4.401,
+        "code": [
+            "countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "map well again we can use that default",
+        "start": 467.199,
+        "duration": 5.28,
+        "code": [
+            "countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "function of get so that it doesn't throw",
+        "start": 469.44,
+        "duration": 5.36,
+        "code": [
+            "countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "a key error for us and it'll return a",
+        "start": 472.479,
+        "duration": 5.201,
+        "code": [
+            "countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "default value of zero so",
+        "start": 474.8,
+        "duration": 5.6,
+        "code": [
+            "countS[s[i]] = 1 + countS.get(s[i], 0)",
+            "countT[t[i]] = 1 + countT.get(t[i], 0)"
+        ]
+    },
+    {
+        "text": "that's uh basically the entire algorithm",
+        "start": 477.68,
+        "duration": 4.88,
+        "code": [
+            "return countS == countT"
+        ]
+    },
+    {
+        "text": "right we built the hash map we performed",
+        "start": 480.4,
+        "duration": 4.56,
+        "code": [
+            "return countS == countT"
+        ]
+    },
+    {
+        "text": "the check and then if if we never return",
+        "start": 482.56,
+        "duration": 4.639,
+        "code": [
+            "return countS == countT"
+        ]
+    },
+    {
+        "text": "false here that must mean that they are",
+        "start": 484.96,
+        "duration": 4.88,
+        "code": [
+            "return countS == countT"
+        ]
+    },
+    {
+        "text": "anagram so then if the loop exits we can",
+        "start": 487.199,
+        "duration": 4.72,
+        "code": [
+            "return countS == countT"
+        ]
+    },
+    {
+        "text": "go ahead and return true that's the",
+        "start": 489.84,
+        "duration": 3.68,
+        "code": [
+            "return countS == countT"
+        ]
+    },
+    {
+        "text": "entire code let's run it to make sure",
+        "start": 491.919,
+        "duration": 3.361,
+        "code": [
+            "return countS == countT"
+        ]
+    }
+]

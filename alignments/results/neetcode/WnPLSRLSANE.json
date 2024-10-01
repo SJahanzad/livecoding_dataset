@@ -1,0 +1,10 @@
+[
+    {
+        "text": "the array from zero to the length of this array nums right",
+        "start": 572.24,
+        "duration": 11.039000000000001,
+        "code": [
+            "            res += i - nums[i]"
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRwjE5PETSY1jMkiNHPrgWtsopmF",
+        "object": "chat.completion",
+        "created": 1724194133,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"so yeah we give a tree node a root and we\",\n        \"code\": [\n            \"// Definition for a binary tree node.\",\n            \"public class TreeNode {\",\n            \"    int val;\",\n            \"    TreeNode left;\",\n            \"    TreeNode right;\",\n            \"    TreeNode(int x) { val = x; }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"just basically traverse the tree and if\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public boolean isUnivalTree(TreeNode root) {\"\n        ]\n    },\n    {\n        \"text\": \"we find a node that is different than\",\n        \"code\": [\n            \"        boolean left_univaled = root.left == null || root.left.val == root.val && isUnivalTree(root.left);\"\n        ]\n    },\n    {\n        \"text\": \"what the other nodes values are it's\",\n        \"code\": [\n            \"        boolean right_univaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);\"\n        ]\n    },\n    {\n        \"text\": \"gonna be false and if every node is the\",\n        \"code\": [\n            \"        return left_univaled && right_univaled;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"same value it's gonna be true we've done\",\n        \"code\": [\n            \"        return left_univaled && right_univaled;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"so the current route\",\n        \"code\": [\n            \"        boolean left_univaled = root.left == null || root.left.val == root.val && isUnivalTree(root.left);\"\n        ]\n    },\n    {\n        \"text\": \"side and then these bullying's will be\",\n        \"code\": [\n            \"        boolean right_univaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);\",\n            \"        return left_univaled && right_univaled;\"\n        ]\n    },\n    {\n        \"text\": \"able to recurse on the left and right\",\n        \"code\": [\n            \"        boolean right_univaled = root.right == null || root.right.val == root.val && isUnivalTree(root.right);\",\n            \"        return left_univaled && right_univaled;\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 2884,
+            "completion_tokens": 523,
+            "total_tokens": 3407
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

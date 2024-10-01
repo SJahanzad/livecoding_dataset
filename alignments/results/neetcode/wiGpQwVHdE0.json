@@ -1,0 +1,286 @@
+[
+    {
+        "text": "our left will be initialized to zero and our right pointer is going to",
+        "start": 298.25,
+        "duration": 8.58,
+        "code": [
+            "l = 0"
+        ]
+    },
+    {
+        "text": "continuously be changing as we visit",
+        "start": 303.05,
+        "duration": 4.83,
+        "code": [
+            "for r in range(len(s)):"
+        ]
+    },
+    {
+        "text": "every character so I can just use it in",
+        "start": 305.0,
+        "duration": 8.31,
+        "code": [
+            "for r in range(len(s)):"
+        ]
+    },
+    {
+        "text": "this for loop so the right pointer is",
+        "start": 307.88,
+        "duration": 6.69,
+        "code": [
+            "for r in range(len(s)):"
+        ]
+    },
+    {
+        "text": "going to go through every single",
+        "start": 313.31,
+        "duration": 3.66,
+        "code": [
+            "for r in range(len(s)):"
+        ]
+    },
+    {
+        "text": "character now remember if we get to a",
+        "start": 314.57,
+        "duration": 4.2,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "duplicate character that means we have",
+        "start": 316.97,
+        "duration": 4.53,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "to update our window and our set so",
+        "start": 318.77,
+        "duration": 5.82,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "while this character that we just visit",
+        "start": 321.5,
+        "duration": 6.84,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "at the right pointer s of R is equal is",
+        "start": 324.59,
+        "duration": 6.72,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "already inside our character set meaning",
+        "start": 328.34,
+        "duration": 5.49,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "it's a duplicate then we got to update",
+        "start": 331.31,
+        "duration": 5.4,
+        "code": [
+            "charSet.remove(s[l])",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "our window so we have to take the left",
+        "start": 333.83,
+        "duration": 5.22,
+        "code": [
+            "charSet.remove(s[l])",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "character and remove it from our set so",
+        "start": 336.71,
+        "duration": 6.239,
+        "code": [
+            "charSet.remove(s[l])",
+            "l += 1"
+        ]
+    },
+    {
+        "text": "character set dot remove the leftmost",
+        "start": 339.05,
+        "duration": 6.51,
+        "code": [
+            "charSet.remove(s[l])"
+        ]
+    },
+    {
+        "text": "character and then of course we have to",
+        "start": 342.949,
+        "duration": 4.891,
+        "code": [
+            "l += 1"
+        ]
+    },
+    {
+        "text": "update that left pointer incremented by",
+        "start": 345.56,
+        "duration": 5.07,
+        "code": [
+            "l += 1"
+        ]
+    },
+    {
+        "text": "1 and we're going to keep doing this",
+        "start": 347.84,
+        "duration": 5.22,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "while that duplicate remains in the",
+        "start": 350.63,
+        "duration": 4.98,
+        "code": [
+            "while s[r] in charSet:"
+        ]
+    },
+    {
+        "text": "character set after we've removed all",
+        "start": 353.06,
+        "duration": 4.74,
+        "code": [
+            "charSet.add(s[r])"
+        ]
+    },
+    {
+        "text": "duplicates then we can just add this",
+        "start": 355.61,
+        "duration": 8.549,
+        "code": [
+            "charSet.add(s[r])"
+        ]
+    },
+    {
+        "text": "rightmost character to our set and since",
+        "start": 357.8,
+        "duration": 8.58,
+        "code": [
+            "charSet.add(s[r])"
+        ]
+    },
+    {
+        "text": "at this point we know for sure that our",
+        "start": 364.159,
+        "duration": 4.201,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "substring doesn't have any duplicates we",
+        "start": 366.38,
+        "duration": 4.56,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "can potentially update ours our result",
+        "start": 368.36,
+        "duration": 4.38,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "variable which I never declared so let",
+        "start": 370.94,
+        "duration": 3.719,
+        "code": [
+            "res = 0"
+        ]
+    },
+    {
+        "text": "me declare it up here result is",
+        "start": 372.74,
+        "duration": 4.5,
+        "code": [
+            "res = 0"
+        ]
+    },
+    {
+        "text": "initially going to be 0 and now we can",
+        "start": 374.659,
+        "duration": 4.551,
+        "code": [
+            "res = 0"
+        ]
+    },
+    {
+        "text": "update our results so we can potentially",
+        "start": 377.24,
+        "duration": 6.66,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "make it larger than it is if the current",
+        "start": 379.21,
+        "duration": 6.699,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "window size is greater than what it is",
+        "start": 383.9,
+        "duration": 4.44,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "right now which we can compute by right",
+        "start": 385.909,
+        "duration": 7.32,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "minus left plus 1 and then at the end",
+        "start": 388.34,
+        "duration": 7.28,
+        "code": [
+            "res = max(res, r - l + 1)"
+        ]
+    },
+    {
+        "text": "once we've gone through the entire or",
+        "start": 393.229,
+        "duration": 5.31,
+        "code": [
+            "res = max(res, r - l + 1)",
+            "return res"
+        ]
+    },
+    {
+        "text": "substring we can return the result if",
+        "start": 395.62,
+        "duration": 5.17,
+        "code": [
+            "return res"
+        ]
+    }
+]

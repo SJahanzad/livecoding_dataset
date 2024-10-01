@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yM5zPbA6yk4UvcRYEZZ5nxn6z6N9",
+  "object": "chat.completion",
+  "created": 1724171643,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n    {\n        \"key\": 484,\n        \"value\": [2, 3]\n    },\n    {\n        \"key\": 491,\n        \"value\": [5, 6]\n    },\n    {\n        \"key\": 498,\n        \"value\": [8, 9]\n    },\n    {\n        \"key\": 503,\n        \"value\": [11, 12]\n    },\n    {\n        \"key\": 505,\n        \"value\": [14]\n    },\n    {\n        \"key\": 509,\n        \"value\": [15]\n    },\n    {\n        \"key\": 512,\n        \"value\": [16]\n    },\n    {\n        \"key\": 515,\n        \"value\": [17]\n    },\n    {\n        \"key\": 517,\n        \"value\": [18]\n    },\n    {\n        \"key\": 520,\n        \"value\": [20]\n    },\n    {\n        \"key\": 522,\n        \"value\": [22]\n    },\n    {\n        \"key\": 526,\n        \"value\": [24]\n    },\n    {\n        \"key\": 527,\n        \"value\": [25, 26, 27]\n    },\n    {\n        \"key\": 529,\n        \"value\": [29]\n    },\n    {\n        \"key\": 532,\n        \"value\": [30, 31]\n    },\n    {\n        \"key\": 536,\n        \"value\": [32]\n    },\n    {\n        \"key\": 540,\n        \"value\": [33]\n    },\n    {\n        \"key\": 545,\n        \"value\": [35]\n    },\n    {\n        \"key\": 547,\n        \"value\": [36]\n    },\n    {\n        \"key\": 549,\n        \"value\": [37]\n    },\n    {\n        \"key\": 551,\n        \"value\": [39]\n    },\n    {\n        \"key\": 553,\n        \"value\": [40]\n    },\n    {\n        \"key\": 559,\n        \"value\": [41]\n    },\n    {\n        \"key\": 562,\n        \"value\": [42]\n    },\n    {\n        \"key\": 565,\n        \"value\": [43]\n    },\n    {\n        \"key\": 568,\n        \"value\": [44]\n    },\n    {\n        \"key\": 571,\n        \"value\": [45]\n    },\n    {\n        \"key\": 572,\n        \"value\": [46]\n    },\n    {\n        \"key\": 576,\n        \"value\": [47]\n    },\n    {\n        \"key\": 579,\n        \"value\": [48]\n    },\n    {\n        \"key\": 585,\n        \"value\": [49]\n    },\n    {\n        \"key\": 589,\n        \"value\": [50]\n    },\n    {\n        \"key\": 592,\n        \"value\": [51]\n    },\n    {\n        \"key\": 596,\n        \"value\": [52]\n    },\n    {\n        \"key\": 598,\n        \"value\": [53]\n    },\n    {\n        \"key\": 600,\n        \"value\": [54]\n    }\n]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9187,
+    "completion_tokens": 675,
+    "total_tokens": 9862
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

@@ -1,0 +1,615 @@
+[
+    {
+        "text": "so iteratively we start at the root right",
+        "start": 181.36,
+        "duration": 6.5600000000000005,
+        "code": [
+            "curr = root"
+        ]
+    },
+    {
+        "text": "let me show you the code for it now",
+        "start": 416.479,
+        "duration": 6.321,
+        "code": [
+            "class Solution:",
+            "    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:"
+        ]
+    },
+    {
+        "text": "so i'm going to declare a variable n",
+        "start": 419.68,
+        "duration": 5.28,
+        "code": [
+            "        stack = []"
+        ]
+    },
+    {
+        "text": "to basically tell us the number of",
+        "start": 422.8,
+        "duration": 4.32,
+        "code": [
+            "        curr = root"
+        ]
+    },
+    {
+        "text": "elements that we visited from our tree",
+        "start": 424.96,
+        "duration": 2.639,
+        "code": []
+    },
+    {
+        "text": "once",
+        "start": 427.12,
+        "duration": 2.96,
+        "code": []
+    },
+    {
+        "text": "n equals k that's how you know we",
+        "start": 427.599,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "visited",
+        "start": 430.08,
+        "duration": 1.92,
+        "code": []
+    },
+    {
+        "text": "the element that we wanted to and then",
+        "start": 430.639,
+        "duration": 3.201,
+        "code": []
+    },
+    {
+        "text": "we can return that value",
+        "start": 432.0,
+        "duration": 3.52,
+        "code": [
+            "        while stack or curr:"
+        ]
+    },
+    {
+        "text": "and remember i'm also going to have a",
+        "start": 433.84,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "stack which is going to help us",
+        "start": 435.52,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "because we we need it because we're",
+        "start": 436.96,
+        "duration": 3.679,
+        "code": []
+    },
+    {
+        "text": "doing this iteratively",
+        "start": 438.88,
+        "duration": 3.68,
+        "code": [
+            "            while curr:"
+        ]
+    },
+    {
+        "text": "so i'm also going to have actually a",
+        "start": 440.639,
+        "duration": 3.28,
+        "code": [
+            "                stack.append(curr)"
+        ]
+    },
+    {
+        "text": "pointer cur",
+        "start": 442.56,
+        "duration": 2.56,
+        "code": [
+            "                curr = curr.left"
+        ]
+    },
+    {
+        "text": "it's going to initially point at the",
+        "start": 443.919,
+        "duration": 2.641,
+        "code": []
+    },
+    {
+        "text": "root it's basically going to tell us",
+        "start": 445.12,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "what node that we're currently visiting",
+        "start": 446.56,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "or at the node that we're currently at",
+        "start": 448.72,
+        "duration": 3.759,
+        "code": []
+    },
+    {
+        "text": "and so i'm going to have a while loop",
+        "start": 450.56,
+        "duration": 5.28,
+        "code": [
+            "            curr = stack.pop()"
+        ]
+    },
+    {
+        "text": "basically while current is not null and",
+        "start": 452.479,
+        "duration": 6.56,
+        "code": []
+    },
+    {
+        "text": "the stack is non-empty we're going to",
+        "start": 455.84,
+        "duration": 4.639,
+        "code": []
+    },
+    {
+        "text": "continue",
+        "start": 459.039,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "traversing our binary tree right that",
+        "start": 460.479,
+        "duration": 3.921,
+        "code": []
+    },
+    {
+        "text": "makes sense so far",
+        "start": 462.8,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "and remember the first thing we want to",
+        "start": 464.4,
+        "duration": 3.519,
+        "code": []
+    },
+    {
+        "text": "do is let's say we're at ker what are we",
+        "start": 466.24,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "going to do",
+        "start": 467.919,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "while current is not null we're just",
+        "start": 469.28,
+        "duration": 3.199,
+        "code": []
+    },
+    {
+        "text": "going to keep",
+        "start": 471.68,
+        "duration": 3.199,
+        "code": []
+    },
+    {
+        "text": "going left right remember we want to go",
+        "start": 472.479,
+        "duration": 5.12,
+        "code": []
+    },
+    {
+        "text": "through every node in the left sub tree",
+        "start": 474.879,
+        "duration": 5.201,
+        "code": []
+    },
+    {
+        "text": "before we visit the current node so",
+        "start": 477.599,
+        "duration": 4.481,
+        "code": []
+    },
+    {
+        "text": "while current is not null we're going to",
+        "start": 480.08,
+        "duration": 5.28,
+        "code": []
+    },
+    {
+        "text": "set current equal to current dot left",
+        "start": 482.08,
+        "duration": 5.6,
+        "code": []
+    },
+    {
+        "text": "but remember before we do that we have",
+        "start": 485.36,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "to go back",
+        "start": 487.68,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "up to current after we're done",
+        "start": 488.8,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "processing current dot",
+        "start": 490.72,
+        "duration": 3.759,
+        "code": []
+    },
+    {
+        "text": "left so before i do that i'm going to",
+        "start": 492.0,
+        "duration": 3.039,
+        "code": []
+    },
+    {
+        "text": "take",
+        "start": 494.479,
+        "duration": 3.681,
+        "code": []
+    },
+    {
+        "text": "the stack and add current",
+        "start": 495.039,
+        "duration": 6.081,
+        "code": []
+    },
+    {
+        "text": "to it and so when this loop is done",
+        "start": 498.16,
+        "duration": 4.879,
+        "code": []
+    },
+    {
+        "text": "executing that means current is at",
+        "start": 501.12,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "null so that means we went too far and",
+        "start": 503.039,
+        "duration": 3.761,
+        "code": []
+    },
+    {
+        "text": "that means we have to pop",
+        "start": 505.36,
+        "duration": 4.16,
+        "code": []
+    },
+    {
+        "text": "the last element that we added to our",
+        "start": 506.8,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "stack so actually stack",
+        "start": 509.52,
+        "duration": 4.079,
+        "code": []
+    },
+    {
+        "text": "pop we're popping the most recently",
+        "start": 511.36,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "added value from our stack",
+        "start": 513.599,
+        "duration": 4.961,
+        "code": []
+    },
+    {
+        "text": "and we're going to set it to cur so now",
+        "start": 516.08,
+        "duration": 4.24,
+        "code": []
+    },
+    {
+        "text": "that we popped this element",
+        "start": 518.56,
+        "duration": 3.839,
+        "code": []
+    },
+    {
+        "text": "curve that means we're processing it so",
+        "start": 520.32,
+        "duration": 3.44,
+        "code": []
+    },
+    {
+        "text": "what we can do is actually",
+        "start": 522.399,
+        "duration": 4.961,
+        "code": []
+    },
+    {
+        "text": "update our n value that means n",
+        "start": 523.76,
+        "duration": 5.36,
+        "code": [
+            "            k -= 1",
+            "            if k == 0:",
+            "                return curr.val"
+        ]
+    },
+    {
+        "text": "that means we just visited another node",
+        "start": 527.36,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "so we can increment n",
+        "start": 529.12,
+        "duration": 4.88,
+        "code": []
+    },
+    {
+        "text": "by 1. and if n happens to be equal",
+        "start": 530.48,
+        "duration": 5.76,
+        "code": []
+    },
+    {
+        "text": "to k that means the current node that we",
+        "start": 534.0,
+        "duration": 3.2,
+        "code": []
+    },
+    {
+        "text": "just",
+        "start": 536.24,
+        "duration": 3.279,
+        "code": []
+    },
+    {
+        "text": "processed is the value we're looking for",
+        "start": 537.2,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "because remember we are",
+        "start": 539.519,
+        "duration": 4.561,
+        "code": []
+    },
+    {
+        "text": "looking for the kth smallest element",
+        "start": 540.88,
+        "duration": 5.76,
+        "code": []
+    },
+    {
+        "text": "so if that's true then we can just",
+        "start": 544.08,
+        "duration": 3.04,
+        "code": []
+    },
+    {
+        "text": "return",
+        "start": 546.64,
+        "duration": 2.639,
+        "code": []
+    },
+    {
+        "text": "current.value and we're done we don't",
+        "start": 547.12,
+        "duration": 4.64,
+        "code": []
+    },
+    {
+        "text": "have to visit any extra elements",
+        "start": 549.279,
+        "duration": 5.12,
+        "code": []
+    },
+    {
+        "text": "but what happens if this is not the case",
+        "start": 551.76,
+        "duration": 3.12,
+        "code": []
+    },
+    {
+        "text": "well",
+        "start": 554.399,
+        "duration": 3.281,
+        "code": []
+    },
+    {
+        "text": "we just processed current right that",
+        "start": 554.88,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "means",
+        "start": 557.68,
+        "duration": 2.8,
+        "code": []
+    },
+    {
+        "text": "that we're allowed to now go to its",
+        "start": 558.24,
+        "duration": 4.08,
+        "code": []
+    },
+    {
+        "text": "right subtree so we can actually",
+        "start": 560.48,
+        "duration": 4.24,
+        "code": [
+            "            curr = curr.right"
+        ]
+    },
+    {
+        "text": "update current now and set it to current",
+        "start": 562.32,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "dot",
+        "start": 564.72,
+        "duration": 3.28,
+        "code": []
+    },
+    {
+        "text": "right and so what's gonna happen now",
+        "start": 565.6,
+        "duration": 4.48,
+        "code": []
+    },
+    {
+        "text": "well the loop is gonna actually go back",
+        "start": 568.0,
+        "duration": 4.959,
+        "code": []
+    },
+    {
+        "text": "up if current dot write is non-null or",
+        "start": 570.08,
+        "duration": 5.36,
+        "code": []
+    },
+    {
+        "text": "the stack is not null then we're gonna",
+        "start": 572.959,
+        "duration": 4.88,
+        "code": []
+    },
+    {
+        "text": "start our loop and for that node we're",
+        "start": 575.44,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "gonna keep going left as much as we can",
+        "start": 577.839,
+        "duration": 3.921,
+        "code": []
+    },
+    {
+        "text": "maybe it doesn't have a left",
+        "start": 580.16,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "sub tree so then this part isn't is not",
+        "start": 581.76,
+        "duration": 4.32,
+        "code": []
+    },
+    {
+        "text": "gonna execute and then we'll end up",
+        "start": 584.16,
+        "duration": 4.239,
+        "code": []
+    },
+    {
+        "text": "we're gonna end up just popping again",
+        "start": 586.08,
+        "duration": 3.6,
+        "code": []
+    },
+    {
+        "text": "from our stack",
+        "start": 588.399,
+        "duration": 4.721,
+        "code": []
+    },
+    {
+        "text": "and conveniently for us in this problem",
+        "start": 589.68,
+        "duration": 6.159,
+        "code": []
+    },
+    {
+        "text": "we're guaranteed to have at least k",
+        "start": 593.12,
+        "duration": 4.56,
+        "code": []
+    },
+    {
+        "text": "nodes in our tree so this",
+        "start": 595.839,
+        "duration": 4.0,
+        "code": []
+    },
+    {
+        "text": "is actually always going to execute",
+        "start": 597.68,
+        "duration": 3.36,
+        "code": []
+    },
+    {
+        "text": "we're not going to end up",
+        "start": 599.839,
+        "duration": 3.68,
+        "code": []
+    },
+    {
+        "text": "exiting this while loop so we actually",
+        "start": 601.04,
+        "duration": 4.72,
+        "code": []
+    },
+    {
+        "text": "don't even need a return statement over",
+        "start": 603.519,
+        "duration": 3.121,
+        "code": []
+    },
+    {
+        "text": "here",
+        "start": 605.76,
+        "duration": 2.88,
+        "code": []
+    },
+    {
+        "text": "and this actually is the entire code let",
+        "start": 606.64,
+        "duration": 3.84,
+        "code": []
+    },
+    {
+        "text": "me just run it for you to prove that it",
+        "start": 608.64,
+        "duration": 2.56,
+        "code": []
+    },
+    {
+        "text": "works",
+        "start": 610.48,
+        "duration": 3.12,
+        "code": []
+    }
+]

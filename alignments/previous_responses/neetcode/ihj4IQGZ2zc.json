@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yMBytR6IjPuHMiXAZY4GYL5zmwEO",
+  "object": "chat.completion",
+  "created": 1724172014,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n    \"271\": [\n        7,\n        8,\n        9,\n        19\n    ],\n    \"273\": [\n        10,\n        11,\n        12,\n        19\n    ],\n    \"279\": [\n        13,\n        14,\n        15\n    ],\n    \"283\": [\n        16,\n        17,\n        18\n    ],\n    \"287\": [\n        20,\n        21,\n        22\n    ],\n    \"313\": [\n        23\n    ],\n    \"315\": [\n        24,\n        25,\n        26,\n        27,\n        28,\n        29,\n        30,\n        31\n    ],\n    \"320\": [\n        32,\n        33,\n        34,\n        35,\n        36,\n        37,\n        38,\n        39,\n        40\n    ],\n    \"752\": [\n        3,\n        4,\n        5,\n        6\n    ],\n    \"774\": [\n        6\n    ],\n    \"785\": [\n        7,\n        8,\n        9\n    ],\n    \"803\": [\n        10,\n        11,\n        12,\n        13,\n        14,\n        15,\n        16,\n        17,\n        18,\n        19\n    ]\n}\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17508,
+    "completion_tokens": 302,
+    "total_tokens": 17810
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "chatcmpl-9yLuDVGAWxyZrjnku9raysxsvKYq5",
+  "object": "chat.completion",
+  "created": 1724170913,
+  "model": "gpt-4o-2024-05-13",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n    \"316\": [2],\n    \"331\": [2],\n    \"336\": [2],\n    \"340\": [4],\n    \"341\": [5],\n    \"344\": [7],\n    \"345\": [8],\n    \"346\": [9],\n    \"351\": [10],\n    \"354\": [11],\n    \"356\": [12],\n    \"363\": [14],\n    \"366\": [15],\n    \"369\": [16],\n    \"371\": [17],\n    \"373\": [18],\n    \"375\": [19],\n    \"377\": [19],\n    \"382\": [21],\n    \"384\": [22],\n    \"386\": [23],\n    \"388\": [24],\n    \"390\": [25],\n    \"396\": [27],\n    \"399\": [28]\n}\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7164,
+    "completion_tokens": 181,
+    "total_tokens": 7345
+  },
+  "system_fingerprint": "fp_3aa7262c27"
+}
