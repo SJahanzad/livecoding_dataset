@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRioK7nkBrjFWBTuvyIEiURh9tZs",
+        "object": "chat.completion",
+        "created": 1724193270,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, I can align the transcript with the code. Here\u2019s the relevant part of the transcript aligned with the corresponding code:\n\n```json\n[\n    {\n        \"text\": \"this problem is called is symmetric basically\",\n        \"code\": [\n            \"public boolean isSymmetric(TreeNode root) {\",\n            \"    return isMirror(root, root);\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"so I do public boolean is mirror and then I\",\n        \"code\": [\n            \"public boolean isMirror(TreeNode t1, TreeNode t2) {\"\n        ]\n    },\n    {\n        \"text\": \"take we're taking in a tree node t1 tree\",\n        \"code\": [\n            \"public boolean isMirror(TreeNode t1, TreeNode t2) {\"\n        ]\n    },\n    {\n        \"text\": \"checks right so if T 1 is equal no all\",\n        \"code\": [\n            \"if (t1 == null && t2 == null) return true;\"\n        ]\n    },\n    {\n        \"text\": \"and t2 is equal to null then that's good\",\n        \"code\": [\n            \"if (t1 == null && t2 == null) return true;\"\n        ]\n    },\n    {\n        \"text\": \"if only one of them that's bad because\",\n        \"code\": [\n            \"if (t1 == null || t2 == null) return false;\"\n        ]\n    },\n    {\n        \"text\": \"because that means they're different in some way\",\n        \"code\": [\n            \"if (t1 == null || t2 == null) return false;\"\n        ]\n    },\n    {\n        \"text\": \"you have to recursively call on the left\",\n        \"code\": [\n            \"    return (t1.val == t2.val)\",\n            \"        && isMirror(t1.left, t2.right)\",\n            \"        && isMirror(t1.right, t2.left);\"\n        ]\n    },\n    {\n        \"text\": \"left of the first trees and the rights of the\",\n        \"code\": [\n            \"        && isMirror(t1.left, t2.right)\"\n        ]\n    },\n    {\n        \"text\": \"second trees that's how you handle\",\n        \"code\": [\n            \"        && isMirror(t1.left, t2.right)\"\n        ]\n    },\n    {\n        \"text\": \"make sure that they're the same so\",\n        \"code\": [\n            \"        && isMirror(t1.left, t2.right)\",\n            \"        && isMirror(t1.right, t2.left);\"\n        ]\n    },\n    {\n        \"text\": \"you do the same thing with the right in the left of the second\",\n        \"code\": [\n            \"        && isMirror(t1.right, t2.left);\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 3006,
+            "completion_tokens": 589,
+            "total_tokens": 3595
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "chatcmpl-9yRtnrUuUYrj6y8qDxXzOryVNX1dh",
+        "object": "chat.completion",
+        "created": 1724193951,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Below is the aligned JSON file where each entry contains the corresponding lines of code connected to the text:\n\n```json\n[\n    {\n        \"text\": \"this is the longest substring without repeating characters\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public int lengthOfLongestSubstring(String s) {\"\n        ]\n    },\n    {\n        \"text\": \"you have two pointers and you're going to set them both to the beginning\",\n        \"code\": [\n            \"        int a_pointer = 0;\",\n            \"        int b_pointer = 0;\"\n        ]\n    },\n    {\n        \"text\": \"and then we're gonna have our max\",\n        \"code\": [\n            \"        int max = 0;\"\n        ]\n    },\n    {\n        \"text\": \"and then we need a hash set of characters\",\n        \"code\": [\n            \"        HashSet<Character> hash_set = new HashSet<>();\"\n        ]\n    },\n    {\n        \"text\": \"while J is less than s dot length\",\n        \"code\": [\n            \"        while (b_pointer < s.length()) {\"\n        ]\n    },\n    {\n        \"text\": \"if the hash set doesn't contain the character add it to the hash set\",\n        \"code\": [\n            \"            if (!hash_set.contains(s.charAt(b_pointer))) {\",\n            \"                hash_set.add(s.charAt(b_pointer));\",\n            \"                b_pointer++;\",\n            \"                max = Math.max(hash_set.size(), max);\"\n        ]\n    },\n    {\n        \"text\": \"if the character is already in the hash set meaning we find a duplicate\",\n        \"code\": [\n            \"            } else {\",\n            \"                hash_set.remove(s.charAt(a_pointer));\",\n            \"                a_pointer++;\"\n        ]\n    },\n    {\n        \"text\": \"then you know that would be all right let me know you guys think comment blue check out the patreon and subscribe and like and all that stuff and see\",\n        \"code\": [\n            \"        }\",\n            \"        return max;\",\n            \"    }\",\n            \"}\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6394,
+            "completion_tokens": 443,
+            "total_tokens": 6837
+        },
+        "system_fingerprint": "fp_c9aa9c0491"
+    },
+    {
+        "id": "chatcmpl-9yRttgZ1uZ0Qjp8DSKkmOqjuHnXlo",
+        "object": "chat.completion",
+        "created": 1724193957,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Here's the alignment of the code to the transcript. Each relevant part of the transcript is annotated with the corresponding lines of code that they describe or relate to.\n\n```json\n[\n    {\n        \"text\": \"characters it's a hash sad so in this\",\n        \"code\": [\n            \"import java.util.HashSet;\",\n            \"HashSet<Character> hash_set = new HashSet<>();\"\n        ]\n    },\n    {\n        \"text\": \"case it's pretty good and it's linear\",\n        \"code\": [\n            \"int a_pointer = 0;\",\n            \"int b_pointer = 0;\",\n            \"int max = 0;\"\n        ]\n    },\n    {\n        \"text\": \"runtime and linear if it what worst case\",\n        \"code\": [\n            \"while (b_pointer < s.length()) {\",\n            \"    if (!hash_set.contains(s.charAt(b_pointer))) {\",\n            \"        hash_set.add(s.charAt(b_pointer));\",\n            \"        b_pointer++;\",\n            \"        max = Math.max(hash_set.size(), max);\",\n            \"    } else {\",\n            \"        hash_set.remove(s.charAt(a_pointer));\",\n            \"        a_pointer++;\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"or not even it would be em you know oven\",\n        \"code\": [\n            \"return max;\"\n        ]\n    }\n]\n```\n\nExplanation:\n- The first entry relates to introducing hash sets in Java, hence importing and initializing a `HashSet`.\n- The second entry speaks about a linear algorithm and pointers, matching the setup of the two pointers and max variable.\n- The third entry refers to the while loop and its logic, which is the core part of the function's linear runtime.\n- The fourth entry mentions the final step, which is returning the maximum value found.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 657,
+            "completion_tokens": 380,
+            "total_tokens": 1037
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

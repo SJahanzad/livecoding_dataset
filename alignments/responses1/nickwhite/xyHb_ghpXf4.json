@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRkRxIhPh2NKOG6kFzsSM4Ab7FTO",
+        "object": "chat.completion",
+        "created": 1724193371,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Sure, I've aligned the relevant lines of code with their corresponding parts of the transcript. Here is the modified JSON:\n\n```json\n[\n    {\n        \"text\": \"what we're gonna do is we're gonna have a list of integer which is what we're returning we'll call this\",\n        \"code\": [\"List<Integer> result = new ArrayList<>();\"]\n    },\n    {\n        \"text\": \"and we're also gonna have a queue of tree nodes called queue which we doing a lot of problems\",\n        \"code\": [\"Queue<TreeNode> queue = new LinkedList<>();\"]\n    },\n    {\n        \"text\": \"if root actually first will do we'll do a check if we're equals and all like all these problems we return result because then we have nothing to work with here\",\n        \"code\": [\"if (root == null) return result;\", \"queue.offer(root);\"]\n    },\n    {\n        \"text\": \"okay that's fine now all we have to do is while queue is not empty then we will do a we'll get the size of the queue\",\n        \"code\": [\"while (!queue.isEmpty()) {\", \"int size = queue.size();\"]\n    },\n    {\n        \"text\": \"so why is less than size the increment I and then when the only reason we do this is that so we can get the rightmost note at each level so each level we're going to do this for loop as\",\n        \"code\": [\"for (int i = 0; i < size; i++) {\"]\n    },\n    {\n        \"text\": \"so first we'll pop off the current node like list node current node is equal to Q dot pol not pop up but pull the current node then we just do current node dot Val gets added to result so\",\n        \"code\": [\"TreeNode current_node = queue.poll();\"]\n    },\n    {\n        \"text\": \"if I is equal to 0 that means we have the rightmost node\",\n        \"code\": [\"if (i == 0) result.add(current_node.val);\"]\n    },\n    {\n        \"text\": \"then we obviously do queue if if the current node right value is not equal to null we were add the right node to the Q so Q dot offer current node rights and same thing for the left side if current node left is not equal to null we offer current node dot left\",\n        \"code\": [\"if (current_node.right != null) queue.offer(current_node.right);\", \"if (current_node.left != null) queue.offer(current_node.left);\"]\n    },\n    {\n        \"text\": \"and then all we do at the end of this is just return result\",\n        \"code\": [\"}\", \"return result;\"]\n    }\n]\n```\n\nThis code linking should help correlate specific explanations in the transcript with the corresponding parts of the code.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 4937,
+            "completion_tokens": 577,
+            "total_tokens": 5514
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

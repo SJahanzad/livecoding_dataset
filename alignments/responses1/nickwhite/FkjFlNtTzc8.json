@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRkuG2Nb7zqcsYF71IJrLVm1542L",
+        "object": "chat.completion",
+        "created": 1724193400,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "Certainly! Here is the modified JSON with the lines of code aligned with the relevant parts of the transcript:\n\n```json\n[\n    {\n        \"text\": \"we're onto another one this one's called\",\n        \"code\": [\n            \"class Solution {\",\n            \"public int islandPerimeter(int[][] grid) {\"\n        ]\n    },\n    {\n        \"text\": \"island perimeter very similar to all the\",\n        \"code\": [\n            \"if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;\"\n        ]\n    },\n    {\n        \"text\": \"problems but I mean I you know this is\",\n        \"code\": [\n            \"int result = 0;\"\n        ]\n    },\n    {\n        \"text\": \"loop through you loop through\",\n        \"code\": [\n            \"for (int i = 0; i < grid.length; i++) {\",\n            \"for (int j = 0; j < grid[0].length; j++) {\"\n        ]\n    },\n    {\n        \"text\": \"doing o of M times n complexity rows\",\n        \"code\": [\n            \"if (grid[i][j] == 1) {\",\n            \"result += 4;\"\n        ]\n    },\n    {\n        \"text\": \"to go through the 2d array\",\n        \"code\": [\n            \"if (i > 0 && grid[i - 1][j] == 1) {\",\n            \"result -= 2;\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"the rest of our calculations in here because\",\n        \"code\": [\n            \"if (j > 0 && grid[i][j - 1] == 1) {\",\n            \"result -= 2;\",\n            \"}\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"initially for this object when we get\",\n        \"code\": [\n            \"}\",\n        ]\n    },\n    {\n        \"text\": \"there you go that's the whole thing that was the\",\n        \"code\": [\n            \"return result;\",\n            \"}\"\n        ]\n    }\n]\n```\n\nEach entry containing \"text\" now includes the corresponding lines of Java code under the \"code\" key. This connects the verbal explanation in the transcript to the actual implementation in the code snippet.",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 5847,
+            "completion_tokens": 489,
+            "total_tokens": 6336
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]

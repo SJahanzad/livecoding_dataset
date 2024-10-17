@@ -6,12 +6,11 @@ import json
 
 # OpenAI API Key
 api_key = "API_KEY"
-api_key = "REDACTED_OPENAI_API_KEY"
 
 CATEGORIES = ['nickwhite', 'neetcode']
 CODE_EXTENSIONS = {'nickwhite': '.java', 'neetcode': '.py'}
 
-category_name = CATEGORIES[0]
+category_name = CATEGORIES[1]
 code_extension = CODE_EXTENSIONS[category_name]
 codes_prefix_path = os.path.join('./codes', category_name)
 all_codes = os.listdir(codes_prefix_path)
@@ -52,7 +51,10 @@ for youtube_id in tqdm(youtube_ids):
     # message_header = "We have a video where a coding problem is discussed and solved. The following are the transcript to the video and the final code of the solution. Can you please align the code with the transcript? In other words, add a key named \"code\" to each entry in the json file where the value would contain the lines of code connected to the text of that entry. If no line of code is related to that entry, do not include it in the answer."
     message_header = "We have a video where a coding problem is discussed and solved. The following are the transcript to the video and the final code of the solution. Can you please align the code with the transcript? In other words, add a key named \"code\" to each entry in the json file where the value would contain the lines of code connected to the text of that entry. Please just include the \"text\" and \"code\" keys. If no line of code is related to that entry, do not include it in the answer. In other words, do not include any entry in the json file where the \"code\" key is an empty list."
     # message = 'We have a video where a coding problem is discussed and solved. The following are the transcript to the video and the final code of the solution. Can you please align the code with the transcript? In other words, for each entry in the transcript, include an item with a "key" and a "value" where the "key" would contain the integer index of the item in the transcript and the "value" would contain the integer indices of the lines of code connected to the text of that entry. If no line of code is related to that entry, do not include it in the answer. Please just reply with the resulting json.'
-    
+    message_header = '''We have a video where an algorithmic problem is solved. The following are the transcript of the video and the final solution to the problem. Can you please align the transcript with the code, and include your confidence score for each of the items?
+
+In other words, for each entry in the transcript, add the related line of code and its corresponding alignment confidence score.'''
+
     result = []
     for i in range(0, len(transcript), 200):
         partial_transcript = json.dumps(transcript[i:i+500])
@@ -81,42 +83,3 @@ for youtube_id in tqdm(youtube_ids):
     response_path = os.path.join(response_prefix_path, youtube_id + '.json')
     with open(response_path, 'w') as f:
         json.dump(result, f, indent=4)
-
-# for image in tqdm(all_images):
-#     if image[:-4] + '.json' in existing_responses:
-#         with open(response_prefix_path + image[:-4] + '.json') as f:
-#             response_json = json.load(f)
-#         if 'choices' in response_json:
-#             continue
-#     if not image.endswith('.png'):
-#         continue
-#     image_path = prefix_path + image
-
-#     base64_image = encode_image(image_path)
-
-#     payload = {
-#         "model": "gpt-4o",
-#         "messages": [
-#         {
-#             "role": "user",
-#             "content": [
-#             {
-#                 "type": "text",
-#                 "text": "Can you give me the code for the class `Solution` that is seen in this image?"
-#             },
-#             {
-#                 "type": "image_url",
-#                 "image_url": {
-#                 "url": f"data:image/png;base64,{base64_image}"
-#                 }
-#             }
-#             ]
-#         }
-#         ],
-#         "max_tokens": 300
-#     }
-
-#     response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
-
-#     with open(response_prefix_path + image[:-4] + '.json', 'w') as f:
-#         f.write(response.text)

@@ -1,15 +1,15 @@
 [
     {
-        "id": "chatcmpl-9yRsuyOUVftax7rTzKqtxLRbssRZc",
+        "id": "chatcmpl-ADY9FjZXhDQYIZGMcCpI2cQBibaBw",
         "object": "chat.completion",
-        "created": 1724193896,
+        "created": 1727792893,
         "model": "gpt-4o-2024-05-13",
         "choices": [
             {
                 "index": 0,
                 "message": {
                     "role": "assistant",
-                    "content": "```json\n[\n    {\n        \"text\": \"this problem wants me to remove vowels from a string\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public String removeVowels(String S) {\",\n            \"        return S.replaceAll(\\\"[aeiou]\\\", \\\"\\\");\",\n            \"    }\",\n            \"}\"\n        ]\n    },\n    {\n        \"text\": \"check it out s doubt replace all a e i o you should add sometimes why but you know\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public String removeVowels(String S) {\",\n            \"        return S.replaceAll(\\\"[aeiou]\\\", \\\"\\\");\",\n            \"    }\",\n            \"}\"\n        ]\n    }\n]\n```",
+                    "content": "Sure, I'll align the transcript with the code and provide a confidence score for each match. The confidence score will be based on the relevance and context of the transcript to the code. \n\nHere's the aligned transcript with the code:\n\n1. Transcript: \"guys I am at a loss for words I have\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n2. Transcript: \"stumbled across probably the hardest\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n3. Transcript: \"problem I have ever seen this problem\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n4. Transcript: \"wants me to remove vowels from a string\"  \n   Code: `public String removeVowels(String S) {`  \n   Confidence: 80% (Directly talks about the problem which matches the method name)\n   \n5. Transcript: \"do I look like Albert Einstein to you am\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n6. Transcript: \"I freaking Isaac Newton in the flush no\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n7. Transcript: \"I can't do this I've been working at\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n8. Transcript: \"this problem for weeks on it and there\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n9. Transcript: \"is no end in sight I I don't know what\"  \n   Code: *(No direct code association)*  \n   Confidence: 0%\n   \n10. Transcript: \"to do please help me guys no I'm just\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n11. Transcript: \"kidding though I mean literally check it\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n12. Transcript: \"out s doubt replace all a e i o you\"  \n    Code: `return S.replaceAll(\"[aeiou]\", \"\");`  \n    Confidence: 90% (Directly talks about replacing vowels, which aligns with the replaceAll method in the code)\n    \n13. Transcript: \"should add sometimes why but you know I\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n14. Transcript: \"don't know if I have the you know\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n15. Transcript: \"intellect to do this oh my god I did it\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n16. Transcript: \"I did it I am the smartest man alive\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n17. Transcript: \"put this in the history books people I\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n18. Transcript: \"am a genius or something I didn't even\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n19. Transcript: \"know I was this smart that was pretty\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n20. Transcript: \"good okay so this is the hardest problem\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n21. Transcript: \"on LY code let me know if you guys have\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n22. Transcript: \"a better solution than this I probably\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n23. Transcript: \"don't even know if there is any other\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n24. Transcript: \"solution I might be the smartest person\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n\n25. Transcript: \"alive so thanks for watching and try I\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n26. Transcript: \"hope that you never stumble across a\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n27. Transcript: \"problem this hard ever in an interview\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \n28. Transcript: \"all right so\"  \n    Code: *(No direct code association)*  \n    Confidence: 0%\n    \nWith this alignment, only two transcript entries relate closely to the specific sections of the provided code, highlighting the problem of removing vowels and the method used to do so.",
                     "refusal": null
                 },
                 "logprobs": null,
@@ -17,10 +17,13 @@
             }
         ],
         "usage": {
-            "prompt_tokens": 993,
-            "completion_tokens": 157,
-            "total_tokens": 1150
+            "prompt_tokens": 936,
+            "completion_tokens": 1020,
+            "total_tokens": 1956,
+            "completion_tokens_details": {
+                "reasoning_tokens": 0
+            }
         },
-        "system_fingerprint": "fp_3aa7262c27"
+        "system_fingerprint": "fp_c17d3befe7"
     }
 ]

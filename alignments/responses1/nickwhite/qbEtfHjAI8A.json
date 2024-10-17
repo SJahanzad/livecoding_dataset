@@ -1,0 +1,26 @@
+[
+    {
+        "id": "chatcmpl-9yRjrkLriiNLT4mlqYUTsg1enWjyr",
+        "object": "chat.completion",
+        "created": 1724193335,
+        "model": "gpt-4o-2024-05-13",
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "```json\n[\n    {\n        \"text\": \"so what we're doing right now is\",\n        \"code\": [\n            \"class Solution {\",\n            \"    public String mostCommonWord(String paragraph, String[] banned) {\"\n        ]\n    },\n    {\n        \"text\": \"given a paragraph and a list of banned\",\n        \"code\": [\n            \"    public String mostCommonWord(String paragraph, String[] banned) {\"\n        ]\n    },\n    {\n        \"text\": \"words so we're given a string paragraph\",\n        \"code\": [\n            \"    public String mostCommonWord(String paragraph, String[] banned) {\"\n        ]\n    },\n    {\n        \"text\": \"check if the bet if the word isn't\",\n        \"code\": [\n            \"        HashSet<String> banned_words = new HashSet<>();\",\n            \"        HashMap<String, Integer> valid_word_counts = new HashMap<>();\"\n        ]\n    },\n    {\n        \"text\": \"we're gonna make that hash set here\",\n        \"code\": [\n            \"        HashSet<String> banned_words = new HashSet<>();\",\n            \"        HashMap<String, Integer> valid_word_counts = new HashMap<>();\"\n        ]\n    },\n    {\n        \"text\": \"we're gonna say Pasha of strings banned\",\n        \"code\": [\n            \"        for (String banned_word : banned) {\",\n            \"            banned_words.add(banned_word);\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"so let's fill the fill the hash set with\",\n        \"code\": [\n            \"        for (String banned_word : banned) {\",\n            \"            banned_words.add(banned_word);\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"so if you have a hash out of the banned\",\n        \"code\": [\n            \"        for (String banned_word : banned) {\",\n            \"            banned_words.add(banned_word);\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"words we'll just do the classic hash map\",\n        \"code\": [\n            \"        String[] words = paragraph.toLowerCase().split(\\\"\\\\\\\\W+\\\");\",\n            \"        for (String word : words) {\",\n            \"            if (!banned_words.contains(word)) {\",\n            \"                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);\",\n            \"            }\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"want to say okay it has to\",\n        \"code\": [\n            \"        for (String word : words) {\",\n            \"            if (!banned_words.contains(word)) {\",\n            \"                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);\",\n            \"            }\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"not be in band words before we put it in\",\n        \"code\": [\n            \"        for (String word : words) {\",\n            \"            if (!banned_words.contains(word)) {\",\n            \"                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);\",\n            \"            }\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"or is it add I don't know whatever we'll\",\n        \"code\": [\n            \"        String[] words = paragraph.toLowerCase().split(\\\"\\\\\\\\W+\\\");\",\n            \"        for (String word : words) {\",\n            \"            if (!banned_words.contains(word)) {\",\n            \"                valid_word_counts.put(word, valid_word_counts.getOrDefault(word, 0) + 1);\",\n            \"            }\",\n            \"        }\"\n        ]\n    },\n    {\n        \"text\": \"loop through string word in\",\n        \"code\": [\n            \"        int max = 0;\",\n            \"        String result = \\\"\\\";\",\n            \"        for (String word : valid_word_counts.keySet()) {\",\n            \"            if (valid_word_counts.get(word) > max) {\",\n            \"                max = valid_word_counts.get(word);\",\n            \"                result = word;\",\n            \"            }\",\n            \"        }\",\n            \"        return result;\",\n            \"    }\",\n            \"}\"\n        ]\n    }\n]\n```",
+                    "refusal": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop"
+            }
+        ],
+        "usage": {
+            "prompt_tokens": 6039,
+            "completion_tokens": 917,
+            "total_tokens": 6956
+        },
+        "system_fingerprint": "fp_3aa7262c27"
+    }
+]
