@@ -14,3 +14,9 @@ venv/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Local tool binaries (install these locally instead of committing)
+yt-dlp
+yt-dlp-m
+geckodriver
+geckodriver*
