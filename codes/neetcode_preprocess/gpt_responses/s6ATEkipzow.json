@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLAbYN3kJOdxYCIopCYUB1Gk7bM9",
+  "object": "chat.completion",
+  "created": 1730126285,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def isValidBST(self, root: TreeNode) -> bool:\n        def valid(node, left, right):\n            if not node:\n                return True\n            if not (node.val < right and node.val > left):\n                return False\n\n            return (valid(node.left, left, node.val) and\n                    valid(node.right, node.val, right))\n\n        return valid(root, float(\"-inf\"), float(\"inf\"))\n```\n",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 111,
+    "total_tokens": 1242,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

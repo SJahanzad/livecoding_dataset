@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLDTZKrBYwA47NXYQehhvaRqw7ix",
+  "object": "chat.completion",
+  "created": 1730126463,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class:\n\n```python\n# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\n\nimport collections\nfrom typing import List, Optional\n\nclass Solution:\n    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:\n        res = []\n        q = collections.deque()\n        q.append(root)\n        \n        while q:\n            qlen = len(q)\n            level = []\n            for i in range(qlen):\n                node = q.popleft()\n                if node:\n                    level.append(node.val)\n                    q.append(node.left)\n                    q.append(node.right)\n            if level:\n                res.append(level)\n                \n        return res\n```\n\nThis code performs a level-order traversal of a binary tree.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 197,
+    "total_tokens": 1328,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

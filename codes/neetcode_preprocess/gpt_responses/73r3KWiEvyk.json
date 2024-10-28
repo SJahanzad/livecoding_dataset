@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLCAYf9L2K2EVS4vdRqmqQG7qUKa",
+  "object": "chat.completion",
+  "created": 1730126382,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as seen in the image:\n\n```python\nclass Solution:\n    def rob(self, nums: List[int]) -> int:\n        rob1, rob2 = 0, 0\n        \n        # [rob1, rob2, n, n+1, ...]\n        for n in nums:\n            temp = max(n + rob1, rob2)\n            rob1 = rob2\n            rob2 = temp\n        return rob2\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 104,
+    "total_tokens": 1235,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

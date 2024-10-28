@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLBwBz5jzUY6H5X0ewSM0piyTUFt",
+  "object": "chat.completion",
+  "created": 1730126368,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def lengthOfLIS(self, nums: List[int]) -> int:\n        LIS = [1] * len(nums)\n\n        for i in range(len(nums) - 1, -1, -1):\n            for j in range(i + 1, len(nums)):\n                if nums[i] < nums[j]:\n                    LIS[i] = max(LIS[i], 1 + LIS[j])\n\n        return max(LIS)\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 110,
+    "total_tokens": 1241,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

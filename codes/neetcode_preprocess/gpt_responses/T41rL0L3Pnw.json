@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLBCry6DsWsnH3rk3f36op1E5pA1",
+  "object": "chat.completion",
+  "created": 1730126322,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as seen in the image:\n\n```python\nclass Solution:\n    def setZeroes(self, matrix: List[List[int]]) -> None:\n        ROWS, COLS = len(matrix), len(matrix[0])\n        rowZero = False\n\n        # determine which rows/cols need to be zero\n        for r in range(ROWS):\n            for c in range(COLS):\n                if matrix[r][c] == 0:\n                    matrix[0][c] = 0\n                    if r > 0:\n                        matrix[r][0] = 0\n                    else:\n                        rowZero = True\n\n        for r in range(1, ROWS):\n            for c in range(1, COLS):\n                if matrix[r][0] == 0 or matrix[0][c] == 0:\n                    matrix[r][c] = 0\n\n        if matrix[0][0] == 0:\n            for r in range(ROWS):\n                matrix[r][0] = 0\n\n        if rowZero:\n            for c in range(COLS):\n                matrix[0][c] = 0\n```\n\nThis code identifies which rows and columns in a matrix need to be set to zero based on the presence of zeros.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 269,
+    "total_tokens": 1400,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

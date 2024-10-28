@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL9bUM8YQMVKztxgesUaSjmnu8oO",
+  "object": "chat.completion",
+  "created": 1730126223,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def maxProduct(self, nums: List[int]) -> int:\n        res = max(nums)\n        curMin, curMax = 1, 1\n\n        for n in nums:\n            if n == 0:\n                curMin, curMax = 1, 1\n                continue\n            tmp = curMax * n\n            curMax = max(n * curMax, n * curMin, n)\n            curMin = min(tmp, n * curMin, n)\n            res = max(res, curMax)\n        return res\n\n# O(n)\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 140,
+    "total_tokens": 1271,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

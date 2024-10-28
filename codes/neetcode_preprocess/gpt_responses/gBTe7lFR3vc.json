@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLC5CRCCkJ5udEJHMMtGo82QTCuF",
+  "object": "chat.completion",
+  "created": 1730126377,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class shown in the image:\n\n```python\nclass Solution:\n    def hasCycle(self, head: ListNode) -> bool:\n        slow, fast = head, head\n\n        while fast and fast.next:\n            slow = slow.next\n            fast = fast.next.next\n            if slow == fast:\n                return True\n\n        return False\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 81,
+    "total_tokens": 1212,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL6xXMmQPB8y5uHoNnashyo6uyXd",
+  "object": "chat.completion",
+  "created": 1730126059,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def topKFrequent(self, nums: List[int], k: int) -> List[int]:\n        count = {}\n        freq = [[] for i in range(len(nums) + 1)]\n\n        for n in nums:\n            count[n] = 1 + count.get(n, 0)\n        for n, c in count.items():\n            freq[c].append(n)\n\n        res = []\n        for i in range(len(freq) - 1, 0, -1):\n            for n in freq[i]:\n                res.append(n)\n                if len(res) == k:\n                    return res\n```\n\nThis function takes a list of integers `nums` and an integer `k`, and returns a list of the `k` most frequent elements.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 175,
+    "total_tokens": 1306,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

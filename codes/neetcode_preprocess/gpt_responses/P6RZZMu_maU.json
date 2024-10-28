@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLAFvt77EODVqrb8ofvtVoaN1zLe",
+  "object": "chat.completion",
+  "created": 1730126263,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def longestConsecutive(self, nums: List[int]) -> int:\n        numSet = set(nums)\n        longest = 0\n        \n        for n in nums:\n            # check if it's the start of a sequence\n            if (n - 1) not in numSet:\n                length = 0\n                while (n + length) in numSet:\n                    length += 1\n                longest = max(length, longest)\n        \n        return longest\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 116,
+    "total_tokens": 1247,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

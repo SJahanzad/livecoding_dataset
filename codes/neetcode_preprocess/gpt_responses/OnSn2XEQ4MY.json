@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL8sRXxvyCvM4I0MnofkQYVKAQZe",
+  "object": "chat.completion",
+  "created": 1730126178,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class:\n\n```python\nclass Solution:\n    def invertTree(self, root: TreeNode) -> TreeNode:\n        if not root:\n            return None\n        \n        # swap the children\n        tmp = root.left\n        root.left = root.right\n        root.right = tmp\n        \n        self.invertTree(root.left)\n        self.invertTree(root.right)\n        return root\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 89,
+    "total_tokens": 1220,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

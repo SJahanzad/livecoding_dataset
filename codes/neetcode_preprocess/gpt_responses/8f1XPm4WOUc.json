@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLBYoDNfSAnPISmaOYpvHuVKGkVG",
+  "object": "chat.completion",
+  "created": 1730126344,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def countComponents(self, n: int, edges: List[List[int]]) -> int:\n        par = [i for i in range(n)]\n        rank = [1] * n\n\n        def find(n1):\n            res = n1\n            while res != par[res]:\n                par[res] = par[par[res]]\n                res = par[res]\n            return res\n\n        def union(n1, n2):\n            p1, p2 = find(n1), find(n2)\n            if p1 == p2:\n                return 0\n\n            if rank[p2] > rank[p1]:\n                par[p1] = p2\n                rank[p2] += rank[p1]\n            else:\n                par[p2] = p1\n                rank[p1] += rank[p2]\n            return 1\n\n        res = n\n        for n1, n2 in edges:\n            res -= union(n1, n2)\n        return res\n```\n\nThis Python class uses Union-Find (or Disjoint Set Union) to count the number of connected components in an undirected graph.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 255,
+    "total_tokens": 1386,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

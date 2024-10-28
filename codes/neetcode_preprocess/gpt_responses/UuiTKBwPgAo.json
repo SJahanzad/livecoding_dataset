@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL7OV6swbkeUntOBuGxh2rDCoc5Q",
+  "object": "chat.completion",
+  "created": 1730126086,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def maxArea(self, height: List[int]) -> int:\n        # BRUTE FORCE\n        # res = 0\n        # for l in range(len(height)):\n        #     for r in range(l + 1, len(height)):\n        #         area = (r - l) * min(height[l], height[r])\n        #         res = max(res, area)\n        # return res\n        \n        # LINEAR TIME SOLUTION: O(n)\n        res = 0\n        l, r = 0, len(height) - 1\n        \n        while l < r:\n            area = (r - l) * min(height[l], height[r])\n            res = max(res, area)\n            \n            if height[l] < height[r]:\n                l += 1\n            else:\n                r -= 1\n        \n        return res\n```\n\nThis class defines a function that calculates the maximum area of water that can be contained, given an array of heights. The solution uses a two-pointer technique for an efficient O(n) runtime.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 237,
+    "total_tokens": 1368,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

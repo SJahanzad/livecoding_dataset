@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLA5IqZ4kQUn0pmkKYoDFa15N7T9",
+  "object": "chat.completion",
+  "created": 1730126253,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def merge(self, intervals: List[List[int]]) -> List[List[int]]:\n        # O(nlogn)\n        intervals.sort(key=lambda i: i[0])\n        output = [intervals[0]]\n\n        for start, end in intervals[1:]:\n            lastEnd = output[-1][1]\n\n            if start <= lastEnd:\n                output[-1][1] = max(lastEnd, end)\n            else:\n                output.append([start, end])\n\n        return output\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 123,
+    "total_tokens": 1254,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

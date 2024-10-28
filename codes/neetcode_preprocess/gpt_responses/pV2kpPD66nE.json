@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL72YtOJchcs2M4j6GFalMInGNjA",
+  "object": "chat.completion",
+  "created": 1730126064,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def numIslands(self, grid: List[List[str]]) -> int:\n        if not grid:\n            return 0\n\n        rows, cols = len(grid), len(grid[0])\n        visit = set()\n        islands = 0\n\n        def bfs(r, c):\n            q = collections.deque()\n            visit.add((r, c))\n            q.append((r, c))\n            while q:\n                row, col = q.pop()\n                directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]\n                for dr, dc in directions:\n                    r, c = row + dr, col + dc\n                    if (r in range(rows) and\n                            c in range(cols) and\n                            grid[r][c] == \"1\" and\n                            (r, c) not in visit):\n                        q.append((r, c))\n                        visit.add((r, c))\n\n        for r in range(rows):\n            for c in range(cols):\n                if grid[r][c] == \"1\" and (r, c) not in visit:\n                    bfs(r, c)\n                    islands += 1\n\n        return islands\n```\n\nMake sure to import the `List` and `collections` libraries for this code to work correctly.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 290,
+    "total_tokens": 1421,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

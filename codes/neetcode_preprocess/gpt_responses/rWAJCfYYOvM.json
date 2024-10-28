@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL9QU5pDYXHoiylTIhPzDAKPnyce",
+  "object": "chat.completion",
+  "created": 1730126212,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def rob(self, nums: List[int]) -> int:\n        return max(nums[0], self.helper(nums[1:]), self.helper(nums[:-1]))\n\n    def helper(self, nums):\n        rob1, rob2 = 0, 0\n\n        for n in nums:\n            newRob = max(rob1 + n, rob2)\n            rob1 = rob2\n            rob2 = newRob\n\n        return rob2\n```\n\nThis code defines a solution for the \"House Robber II\" problem, using a helper function to calculate the maximum amount you can rob from a list of houses.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 149,
+    "total_tokens": 1280,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

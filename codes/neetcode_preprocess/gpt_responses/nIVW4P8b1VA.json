@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLAsSZfy6rNKQoNta45NalQpC6AW",
+  "object": "chat.completion",
+  "created": 1730126302,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def findMin(self, nums: List[int]) -> int:\n        res = nums[0]\n        l, r = 0, len(nums) - 1\n        \n        while l <= r:\n            if nums[l] < nums[r]:\n                res = min(res, nums[l])\n                break\n            \n            m = (l + r) // 2\n            res = min(res, nums[m])\n            if nums[m] >= nums[l]:\n                l = m + 1\n            else:\n                r = m - 1\n        \n        return res\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 139,
+    "total_tokens": 1270,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

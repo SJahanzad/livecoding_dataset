@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLAobVdMPoAhHO7rFSvMSKqxIHeW",
+  "object": "chat.completion",
+  "created": 1730126298,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as seen in the image:\n\n```python\nclass Solution:\n    def kthSmallest(self, root: TreeNode, k: int) -> int:\n        n = 0\n        stack = []\n        cur = root\n\n        while cur or stack:\n            while cur:\n                stack.append(cur)\n                cur = cur.left\n\n            cur = stack.pop()\n            n += 1\n            if n == k:\n                return cur.val\n            cur = cur.right\n```\n\nThis code snippet is for finding the k-th smallest element in a binary search tree (BST). It uses an iterative in-order traversal approach to solve the problem.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 142,
+    "total_tokens": 1273,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

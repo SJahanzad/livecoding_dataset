@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLBj40mJrFtdnRXCB0onSNIhrVHA",
+  "object": "chat.completion",
+  "created": 1730126355,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the class `Solution` from the image:\n\n```python\nclass Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        prevMap = {}  # val : index\n\n        for i, n in enumerate(nums):\n            diff = target - n\n            if diff in prevMap:\n                return [prevMap[diff], i]\n            prevMap[n] = i\n        return\n```\n\nThis code defines a method `twoSum` that finds two numbers in a list that add up to a specific target. It uses a hash map to track the indices of the numbers and returns the indices of the numbers that add up to the target.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 147,
+    "total_tokens": 1278,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

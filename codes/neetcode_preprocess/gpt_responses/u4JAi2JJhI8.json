@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL8ktIhcey9abfM4htz0S6ghfsHx",
+  "object": "chat.completion",
+  "created": 1730126170,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the class `Codec`:\n\n```python\nclass Codec:\n\n    def serialize(self, root):\n        res = []\n\n        def dfs(node):\n            if not node:\n                res.append(\"N\")\n                return\n            res.append(str(node.val))\n            dfs(node.left)\n            dfs(node.right)\n        \n        dfs(root)\n        return \" \".join(res)\n\n    def deserialize(self, data):\n        vals = data.split()\n        self.i = 0\n\n        def dfs():\n            if vals[self.i] == \"N\":\n                self.i += 1\n                return None\n            node = TreeNode(int(vals[self.i]))\n            self.i += 1\n            node.left = dfs()\n            node.right = dfs()\n            return node\n\n        return dfs()\n```\n\nThis code defines methods to serialize and deserialize a binary tree.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 174,
+    "total_tokens": 1305,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_45c6de4934"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLAxNgkQNribs3vSWhKObd7v6iSh",
+  "object": "chat.completion",
+  "created": 1730126307,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    \"\"\"\n    @return: the minimum number of conference rooms required\n    \"\"\"\n    def minMeetingRooms(self, intervals):\n        start = sorted([i.start for i in intervals])\n        end = sorted([i.end for i in intervals])\n\n        res, count = 0, 0\n        s, e = 0, 0\n\n        while s < len(intervals):\n            if start[s] < end[e]:\n                s += 1\n                count += 1\n            else:\n                e += 1\n                count -= 1\n            res = max(res, count)\n\n        return res\n```\n\nThis class contains a method to determine the minimum number of conference rooms required for a given set of meeting intervals.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 172,
+    "total_tokens": 1303,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

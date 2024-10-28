@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL9LqxDkNqVPnzJlXKiOyxGM4Dhl",
+  "object": "chat.completion",
+  "created": 1730126207,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code from the image:\n\n```python\nclass Solution:\n    def longestCommonSubsequence(self, text1: str, text2: str) -> int:\n        dp = [[0 for j in range(len(text2) + 1)] for i in range(len(text1) + 1)]\n\n        for i in range(len(text1) - 1, -1, -1):\n            for j in range(len(text2) - 1, -1, -1):\n                if text1[i] == text2[j]:\n                    dp[i][j] = 1 + dp[i + 1][j + 1]\n                else:\n                    dp[i][j] = max(dp[i][j + 1], dp[i + 1][j])\n\n        return dp[0][0]\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 172,
+    "total_tokens": 1303,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

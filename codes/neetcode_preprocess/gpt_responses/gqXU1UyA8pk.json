@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLCophAeBJdpvhcIYcH1z1KBaoWE",
+  "object": "chat.completion",
+  "created": 1730126422,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class shown in the image:\n\n```python\nclass Solution:\n    def characterReplacement(self, s: str, k: int) -> int:\n        count = {}\n        res = 0\n        \n        l = 0\n        maxf = 0\n        for r in range(len(s)):\n            count[s[r]] = 1 + count.get(s[r], 0)\n            maxf = max(maxf, count[s[r]])\n            \n            while (r - l + 1) - maxf > k:\n                count[s[l]] -= 1\n                l += 1\n            \n            res = max(res, r - l + 1)\n        return res\n```\n",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 150,
+    "total_tokens": 1281,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

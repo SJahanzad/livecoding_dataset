@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL8xQCX822HkGCJJRF5q7Lsm4adZ",
+  "object": "chat.completion",
+  "created": 1730126183,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def cloneGraph(self, node: 'Node') -> 'Node':\n        oldToNew = {}\n\n        def dfs(node):\n            if node in oldToNew:\n                return oldToNew[node]\n\n            copy = Node(node.val)\n            oldToNew[node] = copy\n            for nei in node.neighbors:\n                copy.neighbors.append(dfs(nei))\n            return copy\n\n        return dfs(node) if node else None\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 112,
+    "total_tokens": 1243,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

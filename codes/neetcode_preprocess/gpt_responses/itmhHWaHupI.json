@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL993AVfTd6cXzaZNyqvqIROy9Lv",
+  "object": "chat.completion",
+  "created": 1730126195,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code for the class `MedianFinder` from the image:\n\n```python\nimport heapq\n\nclass MedianFinder:\n    def __init__(self):\n        \"\"\"\n        initialize your data structure here.\n        \"\"\"\n        # two heaps, large, small, minheap, maxheap\n        # heaps should be equal size\n        self.small, self.large = [], []\n\n    def addNum(self, num: int) -> None:\n        heapq.heappush(self.small, -1 * num)\n\n        # make sure every num small is <= every num in large\n        if (self.small and self.large and\n            (-1 * self.small[0]) > self.large[0]):\n            val = -1 * heapq.heappop(self.small)\n            heapq.heappush(self.large, val)\n\n        # uneven size?\n        if len(self.small) > len(self.large) + 1:\n            val = -1 * heapq.heappop(self.small)\n            heapq.heappush(self.large, val)\n        if len(self.large) > len(self.small) + 1:\n            val = heapq.heappop(self.large)\n            heapq.heappush(self.small, -1 * val)\n\n    def findMedian(self) -> float:\n        if len(self.small) > len(self.large):\n            return -1 * self.small[0]\n        if len(self.large) > len(self.small):\n            return self.large[",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "length"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 300,
+    "total_tokens": 1431,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

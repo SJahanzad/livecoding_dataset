@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLBQdiv0F4HQttSffi9xqC6B1J1B",
+  "object": "chat.completion",
+  "created": 1730126336,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class:\n\n```python\nclass Solution:\n    def reverseBits(self, n: int) -> int:\n        res = 0\n        for i in range(32):\n            bit = (n >> i) & 1\n            res = res | (bit << (31 - i))\n        return res\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 75,
+    "total_tokens": 1206,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL91i6rd2r3am6julNkTaiG7PbBU",
+  "object": "chat.completion",
+  "created": 1730126187,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here’s the code for the class `WordDictionary` as depicted in the image:\n\n```python\nclass TrieNode:\n    def __init__(self):\n        self.children = {}  # a : TrieNode\n        self.word = False\n\nclass WordDictionary:\n    def __init__(self):\n        self.root = TrieNode()\n\n    def addWord(self, word: str) -> None:\n        cur = self.root\n        for c in word:\n            if c not in cur.children:\n                cur.children[c] = TrieNode()\n            cur = cur.children[c]\n        cur.word = True\n\n    def search(self, word: str) -> bool:\n        def dfs(j, root):\n            cur = root\n            for i in range(j, len(word)):\n                c = word[i]\n                if c == \".\":\n                    for child in cur.children.values():\n                        if dfs(i + 1, child):\n                            return True\n                    return False\n                else:\n                    if c not in cur.children:\n                        return False\n                    cur = cur.children[c]\n            return cur.word\n        \n        return dfs(0, self.root)\n```\n\nThis code defines a trie-based data structure with methods to add words and search for words with support for wildcards.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 257,
+    "total_tokens": 1388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

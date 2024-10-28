@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL9UFrtjbH5FqhAX4qJ8aP0i34us",
+  "object": "chat.completion",
+  "created": 1730126216,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code from the image:\n\n```python\nclass Solution:\n    def canJump(self, nums: List[int]) -> bool:\n        goal = len(nums) - 1\n        \n        for i in range(len(nums) - 1, -1, -1):\n            if i + nums[i] >= goal:\n                goal = i\n        \n        return True if goal == 0 else False\n```\nMake sure you have the necessary imports if needed:\n\n```python\nfrom typing import List\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 105,
+    "total_tokens": 1236,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

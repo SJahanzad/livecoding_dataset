@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLBTySKM0sahCbhI2rRV5jMWgrWV",
+  "object": "chat.completion",
+  "created": 1730126339,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure, here is the code for the class `Solution` from the image:\n\n```python\nclass Solution:\n    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:\n        intervals.sort()\n        \n        res = 0\n        prevEnd = intervals[0][1]\n        for start, end in intervals[1:]:\n            if start >= prevEnd:\n                prevEnd = end\n            else:\n                res += 1\n                prevEnd = min(end, prevEnd)\n        \n        return res\n```\n\nMake sure to import `List` from the `typing` module if you are using type hints:\n\n```python\nfrom typing import List\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 138,
+    "total_tokens": 1269,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

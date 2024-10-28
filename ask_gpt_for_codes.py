@@ -12,10 +12,15 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-prefix_path = './codes/nickwhite/images/'
+channels = ['nickwhite', 'neetcode']
+channel = channels[1]
+
+prefix_path = f'./codes/{channel}/images/'
 all_images = os.listdir(prefix_path)
 
-response_prefix_path = './codes/nickwhite/gpt_responses/'
+response_prefix_path = f'./codes/{channel}/gpt_responses/'
+if not os.path.exists(response_prefix_path):
+    os.makedirs(response_prefix_path)
 existing_responses = os.listdir(response_prefix_path)
 
 

@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLEKKyMios2r7qwcZGwQtE23tpxk",
+  "object": "chat.completion",
+  "created": 1730126516,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here is the code from the image:\n\n```python\nclass Solution:\n    def containsDuplicate(self, nums: List[int]) -> bool:\n        hashset = set()\n\n        for n in nums:\n            if n in hashset:\n                return True\n            hashset.add(n)\n        return False\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 64,
+    "total_tokens": 1195,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

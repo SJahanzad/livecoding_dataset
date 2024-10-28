@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL7IQDzSGfr0RGLfUJPsUSajKjis",
+  "object": "chat.completion",
+  "created": 1730126080,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        l, r = 0, 1\n        maxP = 0\n\n        while r < len(prices):\n            if prices[l] < prices[r]:\n                profit = prices[r] - prices[l]\n                maxP = max(maxP, profit)\n            else:\n                l = r\n            r += 1\n\n        return maxP\n```\n\nMake sure to import `List` from `typing` if you use this code:\n\n```python\nfrom typing import List\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 138,
+    "total_tokens": 1269,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

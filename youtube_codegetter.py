@@ -11,8 +11,8 @@ import time
 from selenium.webdriver.common.by import By
 
 playlists = [
-    # 'neetcode', 
-    'nickwhite',
+    'neetcode', 
+    # 'nickwhite',
 ]
 
 # c_service = webdriver.FirefoxService(executable_path='./geckodriver1')
@@ -31,15 +31,17 @@ for playlist in playlists:
     for video in tqdm(video_info):
         video_id = video['video_id']
         video_len = int(video['length'])
-        desired_position = video_len - 20
+        desired_position = video_len - 3
         url = f'https://www.youtube.com/watch?v={video_id}'
         mins = int(desired_position // 60)
         secs = int(desired_position % 60)
         if secs == 59:
             secs -= 1
-        os.system(f'./yt-dlp --download-sections "*{mins}:{secs}-{mins}:{secs + 1}" -o "{dirpath}/{video_id}.mp4" {url}')
+        # print(f'./yt-dlp --download-sections "*{mins}:{secs}-{mins}:{secs + 1}" -o "{dirpath}/{video_id}.mp4" "{url}"')
+        os.system(f'./yt-dlp-m --download-sections "*{mins}:{secs}-{mins}:{secs + 1}" -o "{dirpath}/{video_id}.mp4" "{url}"')
+        # print(f'ffmpeg -i {dirpath}/{video_id}.mp4* -vf "select=eq(n\,34)" -vframes 1 {dirpath}/{video_id}.png -y')
         os.system(f'ffmpeg -i {dirpath}/{video_id}.mp4* -vf "select=eq(n\,34)" -vframes 1 {dirpath}/{video_id}.png -y')
-        os.system(f'rm {dirpath}/{video_id}.mp4*')
+        # os.system(f'rm {dirpath}/{video_id}.mp4*')
 
         # driver.get(url)
         # driver.implicitly_wait(10)

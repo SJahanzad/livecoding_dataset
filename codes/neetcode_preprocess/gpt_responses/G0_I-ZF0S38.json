@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL9ITCKj10uIsXS9PkKbCGvEQPIL",
+  "object": "chat.completion",
+  "created": 1730126204,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the code from the image for the `Solution` class:\n\n```python\nclass Solution:\n    def reverseList(self, head: ListNode) -> ListNode:\n        # recursive: T O(n), M O(n)\n        \n        if not head:\n            return None\n\n        newHead = head\n        if head.next:\n            newHead = self.reverseList(head.next)\n            head.next.next = head\n        head.next = None\n\n        return newHead\n```\n",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 99,
+    "total_tokens": 1230,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

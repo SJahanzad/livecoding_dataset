@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLB9o4aKzlTo0s0kGK80YfpwgGtm",
+  "object": "chat.completion",
+  "created": 1730126319,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the code from the image:\n\n```java\nclass Solution {\n    public int getSum(int a, int b) {\n        while (b != 0) {\n            int tmp = (a & b) << 1;\n            a = a ^ b;\n            b = tmp;\n        }\n        return a;\n    }\n}\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 71,
+    "total_tokens": 1202,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL6tG1w1FxEghhS32wOJVbc5tPC1",
+  "object": "chat.completion",
+  "created": 1730126055,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here is the code for the `Solution` class as seen in the image:\n\n```python\nclass Solution:\n    def maxDepth(self, root: TreeNode) -> int:\n        stack = [[root, 1]]\n        res = 0\n\n        while stack:\n            node, depth = stack.pop()\n            if node:\n                res = max(res, depth)\n                stack.append([node.left, depth + 1])\n                stack.append([node.right, depth + 1])\n        \n        return res\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 107,
+    "total_tokens": 1238,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

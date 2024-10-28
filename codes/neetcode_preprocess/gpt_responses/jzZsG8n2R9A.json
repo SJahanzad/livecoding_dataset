@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLAOIpK7ng7jgd85CnefzPrIxcXc",
+  "object": "chat.completion",
+  "created": 1730126272,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the class `Solution` from the image:\n\n```python\nclass Solution:\n    def threeSum(self, nums: List[int]) -> List[List[int]]:\n        res = []\n        nums.sort()\n        \n        for i, a in enumerate(nums):\n            if i > 0 and a == nums[i - 1]:\n                continue\n                \n            l, r = i + 1, len(nums) - 1\n            while l < r:\n                threeSum = a + nums[l] + nums[r]\n                if threeSum > 0:\n                    r -= 1\n                elif threeSum < 0:\n                    l += 1\n                else:\n                    res.append([a, nums[l], nums[r]])\n                    l += 1\n                    while nums[l] == nums[l - 1] and l < r:\n                        l += 1\n                        \n        return res\n```\n\nThis code solves the \"3Sum\" problem by finding all unique triplets in `nums` that sum up to zero.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 213,
+    "total_tokens": 1344,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

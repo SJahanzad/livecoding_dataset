@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL9wQvjr6m6EpFfASiFPH0TajqqW",
+  "object": "chat.completion",
+  "created": 1730126244,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Sure! Here's the code for the `Solution` class as seen in the image:\n\n```python\nclass Solution:\n    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:\n        if not preorder or not inorder:\n            return None\n\n        root = TreeNode(preorder[0])\n        mid = inorder.index(preorder[0])\n        root.left = self.buildTree(preorder[1:mid + 1], inorder[:mid])\n        root.right = self.buildTree(preorder[mid + 1:], inorder[mid + 1:])\n        return root\n```",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 121,
+    "total_tokens": 1252,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_45c6de4934"
+}

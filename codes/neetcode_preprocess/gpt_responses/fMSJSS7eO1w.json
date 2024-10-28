@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL9gIAa5bhvBGKFFhwAH94oTxONf",
+  "object": "chat.completion",
+  "created": 1730126228,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class shown in the image:\n\n```python\nclass Solution:\n    def rotate(self, matrix: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        l, r = 0, len(matrix) - 1\n\n        while l < r:\n            for i in range(r - l):\n                top, bottom = l, r\n\n                # save the top-left\n                topLeft = matrix[top][l + i]\n\n                # move bottom-left into top-left\n                matrix[top][l + i] = matrix[bottom - i][l]\n\n                # move bottom-right into bottom-left\n                matrix[bottom - i][l] = matrix[bottom][r - i]\n\n                # move top-right into bottom-right\n                matrix[bottom][r - i] = matrix[top + i][r]\n\n                # move top-left into top-right\n                matrix[top + i][r] = topLeft\n\n            r -= 1\n            l += 1\n```\n\nLet me know if you need further assistance!",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 232,
+    "total_tokens": 1363,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANLAguqVSGy9hDhDxDk2lKiuQVJQG",
+  "object": "chat.completion",
+  "created": 1730126290,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code for the `Solution` class from the image:\n\n```python\nclass Solution:\n    def countSubstrings(self, s: str) -> int:\n        res = 0\n        \n        for i in range(len(s)):\n            res += self.countPali(s, i, i)\n            res += self.countPali(s, i, i + 1)\n        \n        return res\n\n    def countPali(self, s, l, r):\n        res = 0\n        while l >= 0 and r < len(s) and s[l] == s[r]:\n            res += 1\n            l -= 1\n            r += 1\n        return res\n```\n\nThis code counts the number of palindromic substrings in a given string `s`.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 165,
+    "total_tokens": 1296,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chatcmpl-ANL7BmS42mBka9cBmaTE1oPPDSxnP",
+  "object": "chat.completion",
+  "created": 1730126073,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Certainly! Here's the code from the image for the `TrieNode` and `Trie` classes:\n\n```python\nclass TrieNode:\n    def __init__(self):\n        self.children = {}\n        self.endOfWord = False\n\nclass Trie:\n    def __init__(self):\n        self.root = TrieNode()\n\n    def insert(self, word: str) -> None:\n        cur = self.root\n        for c in word:\n            if c not in cur.children:\n                cur.children[c] = TrieNode()\n            cur = cur.children[c]\n        cur.endOfWord = True\n\n    def search(self, word: str) -> bool:\n        cur = self.root\n        for c in word:\n            if c not in cur.children:\n                return False\n            cur = cur.children[c]\n        return cur.endOfWord\n\n    def startsWith(self, prefix: str) -> bool:\n        cur = self.root\n        for c in prefix:\n            if c not in cur.children:\n                return False\n            cur = cur.children[c]\n        return True\n```\n\nThis code implements a basic trie data structure with methods to insert words, search for full words, and check if any word starts with a given prefix.",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1131,
+    "completion_tokens": 250,
+    "total_tokens": 1381,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "system_fingerprint": "fp_72bbfa6014"
+}
