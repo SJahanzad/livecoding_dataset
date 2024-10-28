@@ -4,8 +4,8 @@ import os
 from tqdm import tqdm
 import json
 
-# OpenAI API Key
-api_key = "API_KEY"
+# OpenAI API Key (read from the environment; set OPENAI_API_KEY before running)
+api_key = os.environ["OPENAI_API_KEY"]
 
 CATEGORIES = ['nickwhite', 'neetcode']
 CODE_EXTENSIONS = {'nickwhite': '.java', 'neetcode': '.py'}

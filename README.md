@@ -2,6 +2,8 @@
 
 This dataset contains solutions for Leetcode problems from YouTube channels [Nick White](https://www.youtube.com/c/NickWhite) and [NeetCode](https://www.youtube.com/@NeetCode).
 
+The final alignments can be found in `alignments/results`. These are intended to assess LLMs' ability to align the instructors' lecture with the code they are writing, understanding their potential role in classrooms of future.
+
 To extract the data, we use the Leetcode playlists the channels provide and take the following steps.
 
 - `scraper.py`: Extract the list of videos in the playlist, along with their useful metadata, using [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/).
